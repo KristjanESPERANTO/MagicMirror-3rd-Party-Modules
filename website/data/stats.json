@@ -1,9 +1,9 @@
 {
   "moduleCounter": 1300,
-  "modulesWithImageCounter": 925,
-  "modulesWithIssuesCounter": 1300,
-  "issueCounter": 12653,
-  "lastUpdate": "2025-10-04T21:28:35+02:00",
+  "modulesWithImageCounter": 926,
+  "modulesWithIssuesCounter": 1299,
+  "issueCounter": 13030,
+  "lastUpdate": "2025-10-05T01:01:52+02:00",
   "repositoryHoster": {
     "github": 1287,
     "gitlab": 12,
@@ -260,7 +260,6 @@
     "falafel2222": 1,
     "stonecrown": 1,
     "kuitin": 1,
-    "ethanwang4": 1,
     "MajorChris1983": 1,
     "splattner": 1,
     "Tydyrium": 1,
@@ -408,8 +407,8 @@
     "NateBrownProjects": 1,
     "winstonma": 1,
     "tomgroenwoldt": 1,
-    "zuo000": 1,
     "ambarusa": 1,
+    "zuo000": 1,
     "ledsi": 1,
     "mathewmeconry": 1,
     "wonderslug": 1,
@@ -753,6 +752,7 @@
     "lindsaycole": 1,
     "QNimbus": 1,
     "HolmstromL": 1,
+    "andreakn": 1,
     "Yr": 1,
     "fmandal": 1
   }

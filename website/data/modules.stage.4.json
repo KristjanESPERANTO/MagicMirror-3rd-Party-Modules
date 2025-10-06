@@ -879,7 +879,7 @@
     },
     {
       "name": "MMM-alexa",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/sakirtemel/MMM-alexa",
       "id": "sakirtemel/MMM-alexa",
       "maintainer": "sakirtemel",
@@ -890,6 +890,7 @@
         "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
         "No image found."
       ],
+      "outdated": "Abandoned. No longer works, no reactions to issues and no updates since years.",
       "stars": 52,
       "license": "MIT",
       "packageJson": {
@@ -2425,24 +2426,6 @@
           "No repository field.",
           "No license field."
         ]
-      }
-    },
-    {
-      "name": "MMM-Bengali",
-      "category": "Education",
-      "url": "https://github.com/ethanwang4/MMM-Bengali",
-      "id": "ethanwang4/MMM-Bengali",
-      "maintainer": "ethanwang4",
-      "maintainerURL": "https://github.com/ethanwang4",
-      "description": "Cyclically displays Bengali Words and Bengali Pronunciations with English Translations.",
-      "issues": [
-        "There is no `package.json`. We need this file to gather information about the module for the module list page."
-      ],
-      "stars": 0,
-      "packageJson": {
-        "path": "./modules/MMM-Bengali-----ethanwang4/package.json",
-        "status": "missing",
-        "warnings": []
       }
     },
     {
@@ -4142,10 +4125,10 @@
       "packageJson": {
         "path": "./modules/MMM-CalendarExt3-----MMRIZE/package.json",
         "status": "parsed",
-        "raw": "{\n  \"name\": \"mmm-calendarext3\",\n  \"version\": \"1.10.1\",\n  \"description\": \"MagicMirror module for calendar view\",\n  \"main\": \"MMM-CalendarExt3.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"postinstall\": \"git submodule update --init --recursive\",\n    \"postupdate\": \"git submodule update --init --recursive\",\n    \"test\": \"node --run lint\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/MMRIZE/MMM-CalendarExt3.git\"\n  },\n  \"keywords\": [\n    \"MM\",\n    \"MagicMirror\",\n    \"calendar\",\n    \"CALEXT3\"\n  ],\n  \"author\": \"eouia0819@gmail.com\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/MMRIZE/MMM-CalendarExt3/issues\"\n  },\n  \"homepage\": \"https://github.com/MMRIZE/MMM-CalendarExt3#readme\",\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.11.0\",\n    \"@eslint/js\": \"^9.34.0\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"eslint\": \"^9.34.0\",\n    \"globals\": \"^16.3.0\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-calendarext3\",\n  \"version\": \"1.10.2\",\n  \"description\": \"MagicMirror module for calendar view\",\n  \"keywords\": [\n    \"MM\",\n    \"MagicMirror\",\n    \"calendar\",\n    \"CALEXT3\"\n  ],\n  \"homepage\": \"https://github.com/MMRIZE/MMM-CalendarExt3#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/MMRIZE/MMM-CalendarExt3/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/MMRIZE/MMM-CalendarExt3.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"eouia0819@gmail.com\",\n  \"type\": \"commonjs\",\n  \"main\": \"MMM-CalendarExt3.js\",\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"postinstall\": \"git submodule update --init --recursive\",\n    \"postupdate\": \"git submodule update --init --recursive\",\n    \"test\": \"node --run lint\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.11.1\",\n    \"@eslint/js\": \"^9.37.0\",\n    \"@eslint/markdown\": \"^7.3.0\",\n    \"eslint\": \"^9.37.0\",\n    \"globals\": \"^16.4.0\"\n  }\n}\n",
         "summary": {
           "name": "mmm-calendarext3",
-          "version": "1.10.1",
+          "version": "1.10.2",
           "description": "MagicMirror module for calendar view",
           "keywords": [
             "MM",
@@ -4162,11 +4145,11 @@
             "test": "node --run lint"
           },
           "devDependencies": {
-            "@eslint/css": "^0.11.0",
-            "@eslint/js": "^9.34.0",
-            "@eslint/markdown": "^7.2.0",
-            "eslint": "^9.34.0",
-            "globals": "^16.3.0"
+            "@eslint/css": "^0.11.1",
+            "@eslint/js": "^9.37.0",
+            "@eslint/markdown": "^7.3.0",
+            "eslint": "^9.37.0",
+            "globals": "^16.4.0"
           },
           "type": "commonjs"
         },
@@ -5769,7 +5752,7 @@
       "packageJson": {
         "path": "./modules/MMM-Config-----sdetweil/package.json",
         "status": "parsed",
-        "raw": "{\n  \"name\": \"MMM-Config\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Enable form based (in browser) configuration for MagicMirror\",\n  \"main\": \"MMM-Config.js\",\n  \"scripts\": {\n    \"postinstall\": \"node exec_script.js ./postinstall.sh:postinstall.cmd\",\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\":\"https://github.com/sdetweil/MMM-Config\",\n  \"author\": \"Sam Detweiler\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"child_process\": \"^1.0.2\",\n    \"deep-object-diff\": \"^1.1.0\",\n    \"electron-reload\": \"^1.5.0\",\n    \"jsonform\": \"github:sdetweil/jsonform#w_add_delete_and_template\",\n    \"lodash\": \"^4.17.21\",\n    \"os\": \"^0.1.1\",\n    \"path\": \"^0.12.7\",\n    \"prettier\": \"^2.0.5\",\n    \"pretty-ms\": \"^7.0.0\",\n    \"qrcode\": \"^1.4.4\",\n    \"showdown\": \"^2.1.0\",\n    \"socket.io-client\": \"^4.0.1\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"MMM-Config\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Enable form based (in browser) configuration for MagicMirror\",\n  \"main\": \"MMM-Config.js\",\n  \"scripts\": {\n    \"postinstall\": \"node exec_script.js ./postinstall.sh:postinstall.cmd\",\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": \"https://github.com/sdetweil/MMM-Config\",\n  \"author\": \"Sam Detweiler\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"child_process\": \"^1.0.2\",\n    \"deep-object-diff\": \"^1.1.0\",\n    \"dynamic-middleware\": \"^4.0.4\",\n    \"electron-reload\": \"^1.5.0\",\n    \"jsonform\": \"github:sdetweil/jsonform#w_add_delete_and_template\",\n    \"lodash\": \"^4.17.21\",\n    \"os\": \"^0.1.1\",\n    \"path\": \"^0.12.7\",\n    \"prettier\": \"^2.0.5\",\n    \"pretty-ms\": \"^7.0.0\",\n    \"qrcode\": \"^1.4.4\",\n    \"serve-index\": \"^1.9.1\",\n    \"showdown\": \"^2.1.0\",\n    \"socket.io-client\": \"^4.0.1\"\n  }\n}\n",
         "summary": {
           "name": "MMM-Config",
           "version": "1.0.0",
@@ -5782,6 +5765,7 @@
           "dependencies": {
             "child_process": "^1.0.2",
             "deep-object-diff": "^1.1.0",
+            "dynamic-middleware": "^4.0.4",
             "electron-reload": "^1.5.0",
             "jsonform": "github:sdetweil/jsonform#w_add_delete_and_template",
             "lodash": "^4.17.21",
@@ -5790,6 +5774,7 @@
             "prettier": "^2.0.5",
             "pretty-ms": "^7.0.0",
             "qrcode": "^1.4.4",
+            "serve-index": "^1.9.1",
             "showdown": "^2.1.0",
             "socket.io-client": "^4.0.1"
           }
@@ -6556,7 +6541,7 @@
         "`package.json` issue: No license field.",
         "There are no keywords in 'package.json'. We would use them as tags on the module list page."
       ],
-      "stars": 0,
+      "stars": 1,
       "license": "NOASSERTION",
       "packageJson": {
         "path": "./modules/MMM-CryptoPortfolio-----DzMassi/package.json",
@@ -13407,7 +13392,7 @@
       "maintainerURL": "https://github.com/randomBrainstormer",
       "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
       "issues": [],
-      "stars": 86,
+      "stars": 87,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-GoogleCalendar-----randomBrainstormer/package.json",
@@ -13501,7 +13486,7 @@
         "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
         "No image found."
       ],
-      "stars": 21,
+      "stars": 22,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-GoogleDocs-Notes-----No3x/package.json",
@@ -13618,7 +13603,7 @@
         "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
         "No image found."
       ],
-      "stars": 16,
+      "stars": 17,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-GoogleKeep-----taxilof/package.json",
@@ -13748,7 +13733,7 @@
       "maintainerURL": "https://github.com/hermanho",
       "description": "Image gallery or wallpaper with your Google Photos account.",
       "issues": [],
-      "stars": 192,
+      "stars": 193,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-GooglePhotos-----hermanho/package.json",
@@ -13804,7 +13789,7 @@
       "maintainerURL": "https://github.com/ryan-d-williams",
       "description": "Display Google Sheets data. Highly customizable.",
       "issues": [],
-      "stars": 34,
+      "stars": 37,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-GoogleSheets-----ryan-d-williams/package.json",
@@ -13964,7 +13949,7 @@
       "maintainerURL": "https://github.com/jacopo1891",
       "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
       "issues": [],
-      "stars": 24,
+      "stars": 25,
       "packageJson": {
         "path": "./modules/MMM-GoogleTrafficTimes-----Jacopo1891/package.json",
         "status": "parsed",
@@ -14002,7 +13987,7 @@
       "maintainerURL": "https://github.com/MMRIZE",
       "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
       "issues": [],
-      "stars": 15,
+      "stars": 16,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-GoogleTTS-----MMRIZE/package.json",
@@ -14443,7 +14428,7 @@
         "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
         "No image found."
       ],
-      "stars": 8,
+      "stars": 9,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-GyeonggiBus-----iceship/package.json",
@@ -14481,7 +14466,7 @@
         "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
         "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
       ],
-      "stars": 20,
+      "stars": 21,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-HabiticaStats-----delightedCrow/package.json",
@@ -15207,26 +15192,6 @@
     {
       "name": "MMM-HomeAssistant",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/zuo000/MMM-HomeAssistant",
-      "id": "zuo000/MMM-HomeAssistant",
-      "maintainer": "zuo000",
-      "maintainerURL": "https://github.com/zuo000",
-      "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
-      "issues": [
-        "There is no `package.json`. We need this file to gather information about the module for the module list page."
-      ],
-      "stars": 27,
-      "license": "MIT",
-      "packageJson": {
-        "path": "./modules/MMM-HomeAssistant-----zuo000/package.json",
-        "status": "missing",
-        "warnings": []
-      },
-      "image": "screenshot.jpg"
-    },
-    {
-      "name": "MMM-HomeAssistant",
-      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/yourdawi/MMM-HomeAssistant",
       "id": "yourdawi/MMM-HomeAssistant",
       "maintainer": "yourdawi",
@@ -15305,6 +15270,48 @@
       "image": "example_MMM-HomeAsisstant.jpg"
     },
     {
+      "name": "MMM-HomeAssistant",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/zuo000/MMM-HomeAssistant",
+      "id": "zuo000/MMM-HomeAssistant",
+      "maintainer": "zuo000",
+      "maintainerURL": "https://github.com/zuo000",
+      "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
+      "issues": [
+        "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      ],
+      "stars": 27,
+      "license": "MIT",
+      "packageJson": {
+        "path": "./modules/MMM-HomeAssistant-----zuo000/package.json",
+        "status": "missing",
+        "warnings": []
+      },
+      "image": "screenshot.jpg"
+    },
+    {
+      "name": "MMM-homeassistant-sensors",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
+      "id": "ledsi/MMM-homeassistant-sensors",
+      "maintainer": "ledsi",
+      "maintainerURL": "https://github.com/ledsi",
+      "description": "Display information from Home Assistant using the home assistant REST API.",
+      "issues": [
+        "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+        "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+        "No image found."
+      ],
+      "stars": 0,
+      "hasGithubIssues": false,
+      "license": "MIT",
+      "packageJson": {
+        "path": "./modules/MMM-homeassistant-sensors-----ledsi/package.json",
+        "status": "missing",
+        "warnings": []
+      }
+    },
+    {
       "name": "MMM-homeassistant-sensors",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Snille/MMM-homeassistant-sensors",
@@ -15313,7 +15320,7 @@
       "maintainerURL": "https://github.com/Snille",
       "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
       "issues": [],
-      "stars": 67,
+      "stars": 68,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-homeassistant-sensors-----Snille/package.json",
@@ -15344,28 +15351,6 @@
         "ha"
       ],
       "image": ".github-screen01-advanced.jpg"
-    },
-    {
-      "name": "MMM-homeassistant-sensors",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
-      "id": "ledsi/MMM-homeassistant-sensors",
-      "maintainer": "ledsi",
-      "maintainerURL": "https://github.com/ledsi",
-      "description": "Display information from Home Assistant using the home assistant REST API.",
-      "issues": [
-        "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-        "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
-        "No image found."
-      ],
-      "stars": 0,
-      "hasGithubIssues": false,
-      "license": "MIT",
-      "packageJson": {
-        "path": "./modules/MMM-homeassistant-sensors-----ledsi/package.json",
-        "status": "missing",
-        "warnings": []
-      }
     },
     {
       "name": "MMM-HomeAssistant-Touch",
@@ -15447,7 +15432,7 @@
       "maintainerURL": "https://github.com/wonderslug",
       "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
       "issues": [],
-      "stars": 110,
+      "stars": 112,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-HomeAssistantDisplay-----wonderslug/package.json",
@@ -15834,7 +15819,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 17,
+      "stars": 18,
       "license": "GPL-3.0",
       "packageJson": {
         "path": "./modules/MMM-HTMLSnippet-----ulrichwisser/package.json",
@@ -15856,7 +15841,7 @@
         "No image found."
       ],
       "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
-      "stars": 17,
+      "stars": 16,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-HTTPRequestDisplay-----Eunanibus/package.json",
@@ -17442,7 +17427,7 @@
       "maintainerURL": "https://github.com/fewieden",
       "description": "Display IPv4/IPv6 Network Address.",
       "issues": [],
-      "stars": 28,
+      "stars": 29,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-ip-----fewieden/package.json",
@@ -17678,15 +17663,15 @@
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "description": "Displays live video from the International Space Station.",
       "issues": [],
-      "stars": 7,
+      "stars": 8,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-ISS-Live-----KristjanESPERANTO/package.json",
         "status": "parsed",
-        "raw": "{\n  \"name\": \"mmm-iss-live\",\n  \"version\": \"2.0.8\",\n  \"description\": \"Displays live video from the International Space Station on your MagicMirror².\",\n  \"type\": \"module\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"ISS\",\n    \"livestream\"\n  ],\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"mykle1 (https://github.com/mykle1/MMM-ISS-Live)\",\n  \"main\": \"MMM-ISS-Live.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"husky\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.34.0\",\n    \"@eslint/json\": \"^0.13.1\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"@stylistic/eslint-plugin\": \"^5.2.3\",\n    \"cspell\": \"^9.2.0\",\n    \"eslint\": \"^9.34.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.1.5\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-iss-live\",\n  \"version\": \"2.1.0\",\n  \"description\": \"Displays live video from the International Space Station on your MagicMirror².\",\n  \"type\": \"module\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"ISS\",\n    \"livestream\"\n  ],\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"mykle1 (https://github.com/mykle1/MMM-ISS-Live)\",\n  \"main\": \"MMM-ISS-Live.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"husky\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.37.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.3.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.37.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
         "summary": {
           "name": "mmm-iss-live",
-          "version": "2.0.8",
+          "version": "2.1.0",
           "description": "Displays live video from the International Space Station on your MagicMirror².",
           "keywords": [
             "MagicMirror",
@@ -17702,16 +17687,16 @@
             "test:spelling": "cspell ."
           },
           "devDependencies": {
-            "@eslint/js": "^9.34.0",
-            "@eslint/json": "^0.13.1",
-            "@eslint/markdown": "^7.2.0",
-            "@stylistic/eslint-plugin": "^5.2.3",
-            "cspell": "^9.2.0",
-            "eslint": "^9.34.0",
+            "@eslint/js": "^9.37.0",
+            "@eslint/json": "^0.13.2",
+            "@eslint/markdown": "^7.3.0",
+            "@stylistic/eslint-plugin": "^5.4.0",
+            "cspell": "^9.2.1",
+            "eslint": "^9.37.0",
             "eslint-plugin-import-x": "^4.16.1",
-            "globals": "^16.3.0",
+            "globals": "^16.4.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.1.5",
+            "lint-staged": "^16.2.3",
             "prettier": "^3.6.2"
           },
           "type": "module"
@@ -18386,17 +18371,16 @@
       "packageJson": {
         "path": "./modules/MMM-JukeBox-----gitgitaway/package.json",
         "status": "parsed",
-        "raw": "{\r\n  \"name\": \"MMM-JukeBox\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"MagicMirror module for playing 50 local or remote audio tracks with random play.\",\r\n  \"main\": \"MMM-JukeBox.js\",\r\n  \"author\": \"gitgitaway\",\r\n  \"license\": \"MIT\",\r\n  \"keywords\": [\r\n    \"JukeBox\",\r\n    \"Juke\",\r\n    \"Celtic\",\r\n    \"music\",\r\n    \"Mp3 player\"\r\n  ],\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/gitgitaway/MMM-JukeBox.git\"\r\n  },\r\n  \"scripts\": {\r\n    \"lint\": \"eslint .\",\r\n    \"format\": \"prettier --write .\",\r\n    \"debug\": \"nodemon MMM-JukeBox.js\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"eslint\": \"^8.57.0\",\r\n    \"prettier\": \"^3.2.5\",\r\n    \"debug\": \"^4.3.4\",\r\n    \"nodemon\": \"^3.0.2\"\r\n  }\r\n}\r\n  \r\n\r\n\r\n",
+        "raw": "{\r\n  \"name\": \"MMM-JukeBox\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"MagicMirror module for playing 50 local or remote audio tracks with random play.\",\r\n  \"main\": \"MMM-JukeBox.js\",\r\n  \"author\": \"gitgitaway\",\r\n  \"license\": \"MIT\",\r\n  \"keywords\": [\r\n    \"JukeBox\",\r\n    \"juke\",\r\n    \"Celtic\",\r\n    \"gitgitaway\"\r\n  ],\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/gitgitaway/MMM-JukeBox.git\"\r\n  },\r\n  \"scripts\": {\r\n    \"lint\": \"eslint .\",\r\n    \"format\": \"prettier --write .\",\r\n    \"debug\": \"nodemon MMM-JukeBox.js\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"eslint\": \"^8.57.0\",\r\n    \"prettier\": \"^3.2.5\",\r\n    \"debug\": \"^4.3.4\",\r\n    \"nodemon\": \"^3.0.2\"\r\n  }\r\n}\r\n  \r\n",
         "summary": {
           "name": "MMM-JukeBox",
           "version": "1.0.0",
           "description": "MagicMirror module for playing 50 local or remote audio tracks with random play.",
           "keywords": [
             "JukeBox",
-            "Juke",
+            "juke",
             "Celtic",
-            "music",
-            "Mp3 player"
+            "gitgitaway"
           ],
           "license": "MIT",
           "scripts": {
@@ -18417,8 +18401,7 @@
         "jukebox",
         "juke",
         "celtic",
-        "music",
-        "mp3 player"
+        "gitgitaway"
       ],
       "license": "MIT",
       "image": "screenshots-celticmm-screenshot.jpg"
@@ -18524,7 +18507,7 @@
       "maintainerURL": "https://github.com/shbatm",
       "description": "Getting Bluetooth remote control and keyboard inputs.",
       "issues": [],
-      "stars": 22,
+      "stars": 23,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-KeyBindings-----shbatm/package.json",
@@ -18927,7 +18910,7 @@
       "issues": [
         "`package.json` issue: No license field."
       ],
-      "stars": 6,
+      "stars": 7,
       "license": "NOASSERTION",
       "packageJson": {
         "path": "./modules/MMM-Lastfm-----RineshRamadhin/package.json",
@@ -19342,7 +19325,7 @@
       "maintainerURL": "https://github.com/2hdlockness/",
       "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
       "issues": [],
-      "stars": 4,
+      "stars": 3,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-Linky-----2hdlockness/package.json",
@@ -19947,7 +19930,7 @@
       "maintainerURL": "https://github.com/MMRIZE",
       "description": "Deliver the logs from frontend to backend and more features.",
       "issues": [],
-      "stars": 2,
+      "stars": 3,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-LogExt-----MMRIZE/package.json",
@@ -20821,7 +20804,7 @@
       "maintainerURL": "https://github.com/Lavve",
       "description": "Prevent screen burn-in on your display.",
       "issues": [],
-      "stars": 60,
+      "stars": 62,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-MagicMover-----Lavve/package.json",
@@ -21333,7 +21316,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 3,
+      "stars": 4,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-MD-----AndreaGrandieri/package.json",
@@ -21351,7 +21334,7 @@
       "maintainerURL": "https://github.com/zanix",
       "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
       "issues": [],
-      "stars": 16,
+      "stars": 17,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-MealieMenu-----zanix/package.json",
@@ -21907,7 +21890,7 @@
       "maintainerURL": "https://github.com/thess",
       "description": "Display market indices using (free) Yahoo Finance API.",
       "issues": [],
-      "stars": 7,
+      "stars": 8,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-MktIndex-----thess/package.json",
@@ -22102,7 +22085,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 65,
+      "stars": 66,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MM-Remote-----Klettner/package.json",
@@ -22573,7 +22556,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 33,
+      "stars": 32,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/mmm-openhabfloorplan-----paphko/package.json",
@@ -22934,7 +22917,7 @@
       "maintainerURL": "https://github.com/Bee-Mar",
       "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
       "issues": [],
-      "stars": 224,
+      "stars": 229,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/mmpm-----Bee-Mar/package.json",
@@ -23894,7 +23877,7 @@
       "maintainerURL": "https://github.com/Tom-Hirschberger",
       "description": "Play m3u radio streams. Controllable by touch and notification.",
       "issues": [],
-      "stars": 8,
+      "stars": 9,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-MplayerRadio-----Tom-Hirschberger/package.json",
@@ -24009,7 +23992,7 @@
       "issues": [
         "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
       ],
-      "stars": 58,
+      "stars": 59,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-MQTT-----ottopaulsen/package.json",
@@ -24703,7 +24686,7 @@
       "issues": [
         "There are no keywords in 'package.json'. We would use them as tags on the module list page."
       ],
-      "stars": 2,
+      "stars": 3,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-MyBMW-----Jargendas/package.json",
@@ -29944,10 +29927,10 @@
       "packageJson": {
         "path": "./modules/MMM-page-indicator-----edward-shen/package.json",
         "status": "parsed",
-        "raw": "{\n  \"name\": \"mmm-page-indicator\",\n  \"version\": \"0.3.3\",\n  \"description\": \"A helper module for MagicMirror² to display what page you're on.\",\n  \"main\": \"MMM-page-indicator.js\",\n  \"type\": \"module\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/edward-shen/MMM-page-indicator.git\"\n  },\n  \"keywords\": [\n    \"Pages\",\n    \"Slides\"\n  ],\n  \"author\": \"Edward Shen\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/edward-shen/MMM-page-indicator/issues\"\n  },\n  \"homepage\": \"https://github.com/edward-shen/MMM-page-indicator#readme\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.9.0\",\n    \"@eslint/js\": \"^9.29.0\",\n    \"@eslint/json\": \"^0.12.0\",\n    \"@eslint/markdown\": \"^6.6.0\",\n    \"@stylistic/eslint-plugin\": \"^5.0.0\",\n    \"cspell\": \"^9.1.2\",\n    \"eslint\": \"^9.29.0\",\n    \"eslint-plugin-import-x\": \"^4.16.0\",\n    \"globals\": \"^16.2.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.1.2\",\n    \"prettier\": \"^3.6.1\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-page-indicator\",\n  \"version\": \"0.3.4\",\n  \"description\": \"A helper module for MagicMirror² to display what page you're on.\",\n  \"main\": \"MMM-page-indicator.js\",\n  \"type\": \"module\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/edward-shen/MMM-page-indicator.git\"\n  },\n  \"keywords\": [\n    \"Pages\",\n    \"Slides\"\n  ],\n  \"author\": \"Edward Shen\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/edward-shen/MMM-page-indicator/issues\"\n  },\n  \"homepage\": \"https://github.com/edward-shen/MMM-page-indicator#readme\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.11.1\",\n    \"@eslint/js\": \"^9.36.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.3.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.36.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
         "summary": {
           "name": "mmm-page-indicator",
-          "version": "0.3.3",
+          "version": "0.3.4",
           "description": "A helper module for MagicMirror² to display what page you're on.",
           "keywords": [
             "Pages",
@@ -29962,18 +29945,18 @@
             "test:spelling": "cspell ."
           },
           "devDependencies": {
-            "@eslint/css": "^0.9.0",
-            "@eslint/js": "^9.29.0",
-            "@eslint/json": "^0.12.0",
-            "@eslint/markdown": "^6.6.0",
-            "@stylistic/eslint-plugin": "^5.0.0",
-            "cspell": "^9.1.2",
-            "eslint": "^9.29.0",
-            "eslint-plugin-import-x": "^4.16.0",
-            "globals": "^16.2.0",
+            "@eslint/css": "^0.11.1",
+            "@eslint/js": "^9.36.0",
+            "@eslint/json": "^0.13.2",
+            "@eslint/markdown": "^7.3.0",
+            "@stylistic/eslint-plugin": "^5.4.0",
+            "cspell": "^9.2.1",
+            "eslint": "^9.36.0",
+            "eslint-plugin-import-x": "^4.16.1",
+            "globals": "^16.4.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.1.2",
-            "prettier": "^3.6.1"
+            "lint-staged": "^16.2.3",
+            "prettier": "^3.6.2"
           },
           "type": "module"
         },
@@ -38150,11 +38133,13 @@
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
       "stars": 0,
+      "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-Solunar-----poolis/package.json",
         "status": "missing",
         "warnings": []
-      }
+      },
+      "image": "screenshot.jpg"
     },
     {
       "name": "MMM-Sonarr",
@@ -39570,11 +39555,8 @@
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "description": "Display your processor temperature. Optional: Shut down your system safely if the temperature is too high (using MMM-Remote-Control).",
-      "issues": [
-        "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-      ],
-      "stars": 0,
-      "hasGithubIssues": false,
+      "issues": [],
+      "stars": 1,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-SystemTemperature-----KristjanESPERANTO/package.json",
@@ -39890,7 +39872,7 @@
       "maintainerURL": "https://github.com/MMRIZE",
       "description": "Interact with your mirror via Telegram. Revamped 2024.",
       "issues": [],
-      "stars": 25,
+      "stars": 26,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-TelegramBot-----MMRIZE/package.json",
@@ -43912,7 +43894,7 @@
       "maintainerURL": "https://github.com/cgillinger",
       "description": "Adds dynamic weather-based effects to your mirror.",
       "issues": [],
-      "stars": 3,
+      "stars": 5,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-WeatherEffects-----cgillinger/package.json",
@@ -44336,11 +44318,8 @@
       "maintainer": "arnaudsnomsed",
       "maintainerURL": "https://github.com/arnaudsnomsed",
       "description": "Calendar of current month with weeks numbers.",
-      "issues": [
-        "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-      ],
+      "issues": [],
       "stars": 0,
-      "hasGithubIssues": false,
       "license": "BSD-3-Clause",
       "packageJson": {
         "path": "./modules/MMM-WeeksCalendar-----arnaudsnomsed/package.json",
@@ -45655,6 +45634,26 @@
       ],
       "license": "MIT",
       "image": "ScreenShots-K-pop-1.jpg"
+    },
+    {
+      "name": "MMM-YrMeteogram",
+      "category": "Weather",
+      "url": "https://github.com/andreakn/MMM-YrMeteogram",
+      "id": "andreakn/MMM-YrMeteogram",
+      "maintainer": "andreakn",
+      "maintainerURL": "https://github.com/andreakn",
+      "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. in image form (SVG) Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
+      "issues": [
+        "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+        "No image found."
+      ],
+      "stars": 0,
+      "license": "CC0-1.0",
+      "packageJson": {
+        "path": "./modules/MMM-YrMeteogram-----andreakn/package.json",
+        "status": "missing",
+        "warnings": []
+      }
     },
     {
       "name": "MMM-YrNow",

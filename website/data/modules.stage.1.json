@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-10-02T15:48:38.710Z",
+  "lastUpdate": "2025-10-04T22:33:28.154Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -245,13 +245,14 @@
     },
     {
       "name": "MMM-alexa",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/sakirtemel/MMM-alexa",
       "id": "sakirtemel/MMM-alexa",
       "maintainer": "sakirtemel",
       "maintainerURL": "https://github.com/sakirtemel",
       "description": "Amazon Alexa integration with using JavaScript only.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No longer works, no reactions to issues and no updates since years."
     },
     {
       "name": "MMM-AlexaControl",
@@ -665,16 +666,6 @@
       "maintainer": "vincep5",
       "maintainerURL": "https://github.com/vincep5",
       "description": "Display Ecobee runtime data from beestat.io API.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Bengali",
-      "category": "Education",
-      "url": "https://github.com/ethanwang4/MMM-Bengali",
-      "id": "ethanwang4/MMM-Bengali",
-      "maintainer": "ethanwang4",
-      "maintainerURL": "https://github.com/ethanwang4",
-      "description": "Cyclically displays Bengali Words and Bengali Pronunciations with English Translations.",
       "issues": []
     },
     {
@@ -13075,6 +13066,16 @@
       "maintainer": "doctorfree",
       "maintainerURL": "https://github.com/doctorfree",
       "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
+      "issues": []
+    },
+    {
+      "name": "MMM-YrMeteogram",
+      "category": "Weather",
+      "url": "https://github.com/andreakn/MMM-YrMeteogram",
+      "id": "andreakn/MMM-YrMeteogram",
+      "maintainer": "andreakn",
+      "maintainerURL": "https://github.com/andreakn",
+      "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. in image form (SVG) Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
       "issues": []
     },
     {

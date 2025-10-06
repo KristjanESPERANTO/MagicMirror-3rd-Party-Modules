@@ -57,7 +57,7 @@
         "noaa"
       ],
       "image": "example1.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2024-07-21T12:29:15-04:00"
     },
     {
@@ -76,7 +76,7 @@
         "forecast"
       ],
       "image": "3-day2.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2024-05-06T12:59:09-07:00"
     },
     {
@@ -105,7 +105,7 @@
       "issues": true,
       "stars": 2,
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-07-14T23:06:51+02:00"
     },
     {
@@ -123,7 +123,7 @@
       ],
       "license": "MIT",
       "image": "screenshots-layout-bars-daily.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-09-10T10:46:47-07:00"
     },
     {
@@ -208,7 +208,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "Example.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "lastCommit": "2024-12-07T09:50:05+01:00"
     },
     {
@@ -226,7 +226,7 @@
         "template"
       ],
       "image": "example_1.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-05-18T12:40:33+02:00"
     },
     {
@@ -257,7 +257,7 @@
       "description": "Shows the current status of air raid sirens in Ukraine.",
       "issues": true,
       "stars": 7,
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2022-10-11T19:29:43+03:00"
     },
     {
@@ -308,7 +308,7 @@
         "quality"
       ],
       "image": "airquality.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2020-08-24T11:51:02-07:00"
     },
     {
@@ -424,16 +424,17 @@
     },
     {
       "name": "MMM-alexa",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/sakirtemel/MMM-alexa",
       "id": "sakirtemel/MMM-alexa",
       "maintainer": "sakirtemel",
       "maintainerURL": "https://github.com/sakirtemel",
       "description": "Amazon Alexa integration with using JavaScript only.",
-      "issues": true,
+      "issues": false,
+      "outdated": "Abandoned. No longer works, no reactions to issues and no updates since years.",
       "stars": 52,
       "license": "MIT",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 901,
       "lastCommit": "2016-11-08T21:32:41+01:00"
     },
     {
@@ -474,7 +475,7 @@
         "wemos",
         "fauxmo"
       ],
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2019-09-22T20:44:11-05:00"
     },
     {
@@ -536,7 +537,7 @@
         "lakes"
       ],
       "image": "screenshots-temperature.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-01-08T18:26:04+01:00"
     },
     {
@@ -639,7 +640,7 @@
         "age of empire 2"
       ],
       "image": "pictures-preview.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2020-11-05T08:48:08+01:00"
     },
     {
@@ -690,7 +691,7 @@
         "control",
         "api"
       ],
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2018-03-10T21:54:43+01:00"
     },
     {
@@ -788,7 +789,7 @@
         "panasonic"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-10-18T01:10:02+02:00"
     },
     {
@@ -856,7 +857,7 @@
         "auckland"
       ],
       "image": "resources-MMM-AT-Bus_Stop_screenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-02-12T21:52:37+13:00"
     },
     {
@@ -919,7 +920,7 @@
       "stars": 1,
       "license": "ISC",
       "image": "img-demo.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-10-02T20:05:03+01:00"
     },
     {
@@ -983,7 +984,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "img-examples.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2020-11-26T19:19:55+01:00"
     },
     {
@@ -998,7 +999,7 @@
       "stars": 4,
       "license": "Apache-2.0",
       "image": "preview.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2017-01-16T21:41:13-08:00"
     },
     {
@@ -1082,7 +1083,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-08-23T16:37:15-07:00"
     },
     {
@@ -1131,7 +1132,7 @@
       "issues": true,
       "stars": 2,
       "license": "NOASSERTION",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2022-09-15T22:47:06+02:00"
     },
     {
@@ -1144,21 +1145,8 @@
       "description": "Display Ecobee runtime data from beestat.io API.",
       "issues": true,
       "stars": 5,
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2022-01-05T20:43:00-06:00"
-    },
-    {
-      "name": "MMM-Bengali",
-      "category": "Education",
-      "url": "https://github.com/ethanwang4/MMM-Bengali",
-      "id": "ethanwang4/MMM-Bengali",
-      "maintainer": "ethanwang4",
-      "maintainerURL": "https://github.com/ethanwang4",
-      "description": "Cyclically displays Bengali Words and Bengali Pronunciations with English Translations.",
-      "issues": true,
-      "stars": 0,
-      "defaultSortWeight": 10,
-      "lastCommit": "2023-03-11T16:24:26-06:00"
     },
     {
       "name": "MMM-Bensinpriser",
@@ -1233,7 +1221,7 @@
         "biathlon"
       ],
       "image": "resources-img-_Screenshot.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-02-27T18:51:08+01:00"
     },
     {
@@ -1267,7 +1255,7 @@
       "issues": true,
       "stars": 0,
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2025-02-21T21:31:51-06:00"
     },
     {
@@ -1280,7 +1268,7 @@
       "description": "Display cryptocurrency information from the Binance website.",
       "issues": true,
       "stars": 3,
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2022-11-05T20:46:22+03:00"
     },
     {
@@ -1316,7 +1304,7 @@
       ],
       "license": "MIT",
       "image": "display.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2024-03-04T20:53:01-05:00"
     },
     {
@@ -1351,7 +1339,7 @@
       "stars": 14,
       "license": "Apache-2.0",
       "image": "example.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-01-19T15:10:54Z"
     },
     {
@@ -1428,7 +1416,7 @@
         "jokes"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2024-07-03T21:11:54+02:00"
     },
     {
@@ -1442,7 +1430,7 @@
       "issues": true,
       "stars": 2,
       "license": "MIT",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-01-26T22:36:23+01:00"
     },
     {
@@ -1533,7 +1521,7 @@
       "stars": 10,
       "license": "MIT",
       "image": ".github-example.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2025-04-24T23:06:56+02:00"
     },
     {
@@ -1642,7 +1630,7 @@
       "stars": 5,
       "license": "MIT",
       "image": "screenshots-Recreational Idea 1.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2023-03-30T12:53:16+11:00"
     },
     {
@@ -1691,7 +1679,7 @@
       "stars": 3,
       "license": "MIT",
       "image": "Soundtouch-preview.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 15,
       "lastCommit": "2021-02-12T10:55:55+01:00"
     },
     {
@@ -1734,7 +1722,7 @@
       "description": "Displays information about beers available from Brewdog.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2019-07-30T16:10:23-04:00"
     },
     {
@@ -1752,7 +1740,7 @@
         "bring"
       ],
       "image": "img-readme-example.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2022-05-10T08:12:12+02:00"
     },
     {
@@ -1800,7 +1788,7 @@
       "issues": true,
       "stars": 7,
       "license": "NOASSERTION",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2021-04-12T17:23:56+02:00"
     },
     {
@@ -1856,7 +1844,7 @@
         "screensaver"
       ],
       "image": "img-readme-burnin.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2021-06-21T09:30:30+02:00"
     },
     {
@@ -1893,7 +1881,7 @@
         "button"
       ],
       "license": "MIT",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2019-02-25T09:40:47+01:00"
     },
     {
@@ -1960,7 +1948,7 @@
       "hasGithubIssues": false,
       "license": "MIT",
       "image": "assets-demo_screenshot.jpg",
-      "defaultSortWeight": 18,
+      "defaultSortWeight": 19,
       "lastCommit": "2025-06-29T10:07:31+02:00"
     },
     {
@@ -2013,7 +2001,7 @@
       ],
       "image": "screenshot.jpg",
       "defaultSortWeight": -3,
-      "lastCommit": "2025-08-31T16:48:32+02:00"
+      "lastCommit": "2025-10-04T12:37:57+02:00"
     },
     {
       "name": "MMM-CalendarExt3Agenda",
@@ -2050,7 +2038,7 @@
         "calendarext3",
         "cx3"
       ],
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 6,
       "lastCommit": "2024-05-31T10:23:08+02:00"
     },
     {
@@ -2113,7 +2101,7 @@
       "stars": 17,
       "license": "MIT",
       "image": "timeline_static.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2022-04-05T19:57:21+02:00"
     },
     {
@@ -2126,7 +2114,7 @@
       "description": "This calendar module functions the same as the default calendar app, but it only displays Today and Tomorrows events.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2022-07-23T23:22:57+02:00"
     },
     {
@@ -2141,7 +2129,7 @@
       "stars": 55,
       "license": "MIT",
       "image": "screenshots-With calendar title.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2019-08-25T19:28:27+02:00"
     },
     {
@@ -2155,7 +2143,7 @@
       "issues": true,
       "stars": 2,
       "hasGithubIssues": false,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-04-21T23:05:01+02:00"
     },
     {
@@ -2170,7 +2158,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshots-delays.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2019-10-22T18:28:33-07:00"
     },
     {
@@ -2198,7 +2186,7 @@
       "stars": 5,
       "license": "ISC",
       "image": ".screenshots-CAH_screenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2025-05-25T22:21:10+02:00"
     },
     {
@@ -2243,7 +2231,7 @@
         "territories"
       ],
       "image": "img-AlertExample.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2024-04-18T10:40:13-04:00"
     },
     {
@@ -2297,7 +2285,7 @@
         "calendar"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-04-25T01:54:34+02:00"
     },
     {
@@ -2504,7 +2492,7 @@
       "issues": true,
       "stars": 45,
       "license": "MIT",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2023-03-05T20:51:52+01:00"
     },
     {
@@ -2536,7 +2524,7 @@
       "stars": 5,
       "license": "MIT",
       "image": "assets-img-screenshot.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2019-08-24T10:09:58-04:00"
     },
     {
@@ -2557,7 +2545,7 @@
         "movie"
       ],
       "image": "example_1.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-06-15T01:59:38+02:00"
     },
     {
@@ -2633,7 +2621,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2019-03-18T17:17:58-04:00"
     },
     {
@@ -2737,7 +2725,7 @@
         "bitcoin"
       ],
       "image": "images-sample.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2022-02-02T00:21:20-05:00"
     },
     {
@@ -2750,7 +2738,7 @@
       "description": "Displays cryptocurreency values and trends in different currencies based of COINSQUARE.",
       "issues": true,
       "stars": 0,
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2022-01-05T18:03:28-05:00"
     },
     {
@@ -2832,8 +2820,8 @@
       "stars": 46,
       "license": "MIT",
       "image": "doc_images-MMM-Config_example_base.jpg",
-      "defaultSortWeight": 6,
-      "lastCommit": "2025-09-30T09:52:22-05:00"
+      "defaultSortWeight": 7,
+      "lastCommit": "2025-10-03T16:26:25-05:00"
     },
     {
       "name": "MMM-Confucius-say",
@@ -2868,7 +2856,7 @@
         "magicmirror internet connection"
       ],
       "image": "docs-preview.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-08-23T00:39:14+01:00"
     },
     {
@@ -2911,7 +2899,7 @@
       "stars": 5,
       "license": "MIT",
       "image": ".github-CountDown-1.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-01-01T10:16:45-08:00"
     },
     {
@@ -2982,7 +2970,7 @@
         "berlin"
       ],
       "image": "screenshots-screenshot.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-07-22T15:41:54+02:00"
     },
     {
@@ -3114,7 +3102,7 @@
         "sports"
       ],
       "image": "Example_1.jpg",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 4,
       "lastCommit": "2024-09-06T23:57:40+02:00"
     },
     {
@@ -3132,7 +3120,7 @@
         "cricket"
       ],
       "image": "Screenshots-Screenshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2021-12-10T10:16:25-06:00"
     },
     {
@@ -3150,7 +3138,7 @@
         "crisis"
       ],
       "image": "docs-ScreenShot1.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-10-16T20:27:33+02:00"
     },
     {
@@ -3216,7 +3204,7 @@
       "stars": 95,
       "license": "MIT",
       "image": "MMM-cryptocurrency.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2022-05-04T11:10:42+02:00"
     },
     {
@@ -3228,9 +3216,9 @@
       "maintainerURL": "https://github.com/DzMassi",
       "description": "Displays real-time performance and balance of your cryptocurrency portfolio.",
       "issues": true,
-      "stars": 0,
+      "stars": 1,
       "license": "NOASSERTION",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2024-12-29T19:03:35+01:00"
     },
     {
@@ -3378,7 +3366,7 @@
         "message"
       ],
       "image": "example1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2024-10-31T11:05:32-04:00"
     },
     {
@@ -3433,7 +3421,7 @@
         "explosm"
       ],
       "image": "cyanidehappiness.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2020-07-30T20:04:29+02:00"
     },
     {
@@ -3447,7 +3435,7 @@
       "issues": true,
       "stars": 10,
       "license": "MIT",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2021-02-23T20:07:38+01:00"
     },
     {
@@ -3512,7 +3500,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "images-screenshot.jpg",
-      "defaultSortWeight": 18,
+      "defaultSortWeight": 19,
       "lastCommit": "2023-10-04T16:11:56+02:00"
     },
     {
@@ -3550,7 +3538,7 @@
         "airbase"
       ],
       "image": "screenshots-DaikinAirbase.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-03-24T09:13:01+11:00"
     },
     {
@@ -3595,7 +3583,7 @@
       "issues": true,
       "stars": 28,
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-04-14T22:58:43+02:00"
     },
     {
@@ -3625,7 +3613,7 @@
       "stars": 11,
       "license": "MIT",
       "image": "dilbert.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2021-10-13T10:50:40+02:00"
     },
     {
@@ -3673,7 +3661,7 @@
       "description": "Display the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2021-10-05T11:33:48+02:00"
     },
     {
@@ -3703,7 +3691,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 18,
+      "defaultSortWeight": 19,
       "lastCommit": "2021-10-14T11:06:18-04:00"
     },
     {
@@ -3717,7 +3705,7 @@
       "issues": true,
       "stars": 53,
       "license": "MIT",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2021-10-19T23:33:25-04:00"
     },
     {
@@ -3777,7 +3765,7 @@
       "stars": 7,
       "license": "MIT",
       "image": "screenshots-default-moment-fromNow-no-icon.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-01-06T10:13:35-06:00"
     },
     {
@@ -3873,7 +3861,7 @@
       "stars": 15,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-08-23T15:18:45+02:00"
     },
     {
@@ -3886,7 +3874,7 @@
       "description": "Retrieves live timings of busses for a specific bus stop.",
       "issues": true,
       "stars": 2,
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2020-10-30T17:32:11+01:00"
     },
     {
@@ -4012,7 +4000,7 @@
         "digital alarm clock"
       ],
       "image": "Screenshot (1).jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-03-24T22:50:54-05:00"
     },
     {
@@ -4069,7 +4057,7 @@
         "notifications"
       ],
       "image": "docs-images-module_preview.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2021-05-15T10:55:42+02:00"
     },
     {
@@ -4112,7 +4100,7 @@
       "issues": true,
       "stars": 0,
       "hasGithubIssues": false,
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2024-07-01T12:21:21-05:00"
     },
     {
@@ -4162,7 +4150,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "MMM-Dorba-Trails.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2023-10-29T08:57:14-05:00"
     },
     {
@@ -4254,7 +4242,7 @@
         "irish rail"
       ],
       "image": "docs-preview.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2018-01-09T11:58:39Z"
     },
     {
@@ -4272,7 +4260,7 @@
         "duolingo streak"
       ],
       "image": "duolingo-streak-image.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-04-21T16:26:36+02:00"
     },
     {
@@ -4294,7 +4282,7 @@
         "local transit"
       ],
       "image": "screenshot_en.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2023-05-06T22:29:32+02:00"
     },
     {
@@ -4327,7 +4315,7 @@
       "tags": [
         "irishrail"
       ],
-      "defaultSortWeight": 20,
+      "defaultSortWeight": 21,
       "lastCommit": "2022-05-31T12:48:16+01:00"
     },
     {
@@ -4342,7 +4330,7 @@
       "stars": 64,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2024-02-13T16:41:34+01:00"
     },
     {
@@ -4499,7 +4487,7 @@
         "thermostat"
       ],
       "image": "sample.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2025-04-01T17:21:46-05:00"
     },
     {
@@ -4513,7 +4501,7 @@
       "issues": true,
       "stars": 2,
       "license": "MIT",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-02-05T22:55:53+01:00"
     },
     {
@@ -4554,7 +4542,7 @@
       ],
       "license": "MIT",
       "image": "assets-MMM-edgerouter.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-07-30T10:06:20+02:00"
     },
     {
@@ -4593,7 +4581,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshot-alert.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-05-09T10:45:19+01:00"
     },
     {
@@ -4659,7 +4647,7 @@
         "videostream"
       ],
       "image": "doc-screenshots-SomeGrafanaPanels.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-09-29T22:04:52+02:00"
     },
     {
@@ -4692,7 +4680,7 @@
       ],
       "license": "MIT",
       "image": "img-emby.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-08-28T10:07:44-03:00"
     },
     {
@@ -4764,7 +4752,7 @@
       "stars": 3,
       "license": "MIT",
       "image": "Screenshot-Exporting.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2023-08-20T13:25:29+10:00"
     },
     {
@@ -4803,7 +4791,7 @@
         "forecast"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "lastCommit": "2025-09-12T11:58:22-04:00"
     },
     {
@@ -4838,7 +4826,7 @@
         "smart home"
       ],
       "image": "images-image-1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-05-10T10:14:42+02:00"
     },
     {
@@ -4898,7 +4886,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "showAllTemps.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-09-10T13:37:41+02:00"
     },
     {
@@ -4913,7 +4901,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "barchart.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2024-11-05T22:23:30+01:00"
     },
     {
@@ -4958,7 +4946,7 @@
       "stars": 15,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2020-12-12T21:48:22-05:00"
     },
     {
@@ -4989,7 +4977,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "MMM-EventSearch.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-07-02T10:54:45+02:00"
     },
     {
@@ -5004,7 +4992,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2025-04-06T08:53:09-04:00"
     },
     {
@@ -5019,7 +5007,7 @@
       "stars": 52,
       "license": "MIT",
       "image": "pix-1.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2020-05-10T21:37:36-04:00"
     },
     {
@@ -5091,7 +5079,7 @@
         "neural",
         "network"
       ],
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-11-26T22:30:59-08:00"
     },
     {
@@ -5106,7 +5094,7 @@
       "stars": 90,
       "license": "MIT",
       "image": "img-readme-face-recognition-guest-smai.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2020-06-12T11:58:46-07:00"
     },
     {
@@ -5435,7 +5423,7 @@
         "fhem",
         "home automation"
       ],
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-10-28T17:57:07+01:00"
     },
     {
@@ -5525,7 +5513,7 @@
       "stars": 6,
       "license": "MIT",
       "image": "MMM-Fireworks.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-02-11T19:44:30+01:00"
     },
     {
@@ -5540,7 +5528,7 @@
       "stars": 8,
       "license": "MIT",
       "image": "fish.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-03-15T11:35:10-07:00"
     },
     {
@@ -5582,7 +5570,7 @@
       "issues": true,
       "stars": 1,
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2021-01-17T21:56:25+01:00"
     },
     {
@@ -5618,7 +5606,7 @@
       "tags": [
         "flickr"
       ],
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2023-02-22T15:04:29-06:00"
     },
     {
@@ -5659,7 +5647,7 @@
       ],
       "license": "MIT",
       "image": "data-flights_mapbox.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-09-18T23:14:29+02:00"
     },
     {
@@ -5754,7 +5742,7 @@
       "stars": 16,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 10,
       "lastCommit": "2019-04-22T22:47:00-04:00"
     },
     {
@@ -5871,7 +5859,7 @@
         "nodebb"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "lastCommit": "2025-08-22T21:37:36+02:00"
     },
     {
@@ -5896,7 +5884,7 @@
         "system notification input"
       ],
       "image": "MMM-FrameLight_presentation_picture.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 11,
       "lastCommit": "2024-02-11T18:39:29+01:00"
     },
     {
@@ -5947,7 +5935,7 @@
       ],
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2025-01-17T22:51:27+01:00"
     },
     {
@@ -5981,7 +5969,7 @@
       "stars": 1,
       "hasGithubIssues": false,
       "license": "MIT",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 12,
       "lastCommit": "2019-02-20T16:17:06+11:00"
     },
     {
@@ -6161,7 +6149,7 @@
         "gas station"
       ],
       "image": ".github-example3.jpg",
-      "defaultSortWeight": 22,
+      "defaultSortWeight": 23,
       "lastCommit": "2024-03-10T12:37:44+01:00"
     },
     {
@@ -6279,7 +6267,7 @@
       "stars": 1,
       "license": "GPL-3.0",
       "image": "image.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-06-26T01:51:27+01:00"
     },
     {
@@ -6408,7 +6396,7 @@
       "stars": 10,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-01-04T13:09:56+01:00"
     },
     {
@@ -6421,7 +6409,7 @@
       "description": "Displays clickable GitHub notifications.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2023-01-07T00:45:21+01:00"
     },
     {
@@ -6486,7 +6474,7 @@
       "issues": true,
       "stars": 46,
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-09-15T14:01:40-07:00"
     },
     {
@@ -6501,7 +6489,7 @@
       "stars": 76,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2021-01-17T08:49:11+01:00"
     },
     {
@@ -6534,7 +6522,7 @@
       "stars": 3,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-05-13T08:35:02+02:00"
     },
     {
@@ -6594,7 +6582,7 @@
       "stars": 31,
       "license": "BSD-3-Clause",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2019-01-13T16:50:07+01:00"
     },
     {
@@ -6606,14 +6594,14 @@
       "maintainerURL": "https://github.com/randomBrainstormer",
       "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
       "issues": true,
-      "stars": 86,
+      "stars": 87,
       "license": "MIT",
       "tags": [
         "google",
         "calendar"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 4,
       "lastCommit": "2025-06-02T16:43:47+02:00"
     },
     {
@@ -6634,7 +6622,7 @@
         "connected home"
       ],
       "image": "mockup-sample_cover.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-02-07T22:59:29+01:00"
     },
     {
@@ -6646,9 +6634,9 @@
       "maintainerURL": "https://github.com/No3x",
       "description": "Display notes from a Google Doc.",
       "issues": true,
-      "stars": 21,
+      "stars": 22,
       "license": "MIT",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2023-09-26T20:39:56+02:00"
     },
     {
@@ -6694,7 +6682,7 @@
       "maintainerURL": "https://github.com/taxilof",
       "description": "Displays one list from Google Keep.",
       "issues": true,
-      "stars": 16,
+      "stars": 17,
       "license": "MIT",
       "defaultSortWeight": 14,
       "lastCommit": "2024-11-08T21:47:21+01:00"
@@ -6760,13 +6748,13 @@
       "maintainerURL": "https://github.com/hermanho",
       "description": "Image gallery or wallpaper with your Google Photos account.",
       "issues": true,
-      "stars": 192,
+      "stars": 193,
       "license": "MIT",
       "tags": [
         "googlephotos"
       ],
       "image": "images-screenshot.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-05-07T09:51:41+01:00"
     },
     {
@@ -6778,7 +6766,7 @@
       "maintainerURL": "https://github.com/ryan-d-williams",
       "description": "Display Google Sheets data. Highly customizable.",
       "issues": true,
-      "stars": 34,
+      "stars": 37,
       "license": "MIT",
       "tags": [
         "googlesheets",
@@ -6786,7 +6774,7 @@
         "spreadsheet"
       ],
       "image": "screenshots-Orders_Custom.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-10-25T22:47:10-04:00"
     },
     {
@@ -6820,7 +6808,7 @@
         "scheduler"
       ],
       "image": "images-sample.jpg",
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 20,
       "lastCommit": "2024-03-28T10:17:32-04:00"
     },
     {
@@ -6832,7 +6820,7 @@
       "maintainerURL": "https://github.com/jacopo1891",
       "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
       "issues": true,
-      "stars": 24,
+      "stars": 25,
       "tags": [
         "traffic",
         "googlemap"
@@ -6851,7 +6839,7 @@
       "maintainerURL": "https://github.com/MMRIZE",
       "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
       "issues": true,
-      "stars": 15,
+      "stars": 16,
       "license": "MIT",
       "tags": [
         "text-to-speech",
@@ -6859,7 +6847,7 @@
         "google"
       ],
       "image": ".github-TTS.jpg",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 4,
       "lastCommit": "2023-11-27T16:14:27+01:00"
     },
     {
@@ -6929,7 +6917,7 @@
       "stars": 0,
       "license": "MIT",
       "image": ".github-screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2021-06-13T14:37:23-04:00"
     },
     {
@@ -7031,7 +7019,7 @@
       "issues": true,
       "stars": 2,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2025-03-13T09:33:53+10:00"
     },
     {
@@ -7062,7 +7050,7 @@
       "maintainerURL": "https://github.com/iceship",
       "description": "Gyeonggi-Do, South Korea Bus Location ETA Time, Remaining Seat information.",
       "issues": true,
-      "stars": 8,
+      "stars": 9,
       "license": "MIT",
       "defaultSortWeight": 13,
       "lastCommit": "2022-02-03T22:40:50+09:00"
@@ -7076,10 +7064,10 @@
       "maintainerURL": "https://github.com/delightedCrow",
       "description": "Display your an overview of your <a target=\"_blank\" href=\"https://habitica.com\">Habitica</a> player stats.",
       "issues": true,
-      "stars": 20,
+      "stars": 21,
       "license": "MIT",
       "image": "screenshots-MM_landscape_DefaultTheme.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2020-04-06T19:39:10-07:00"
     },
     {
@@ -7252,7 +7240,7 @@
       "issues": true,
       "stars": 27,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2017-03-02T09:05:02+01:00"
     },
     {
@@ -7378,7 +7366,7 @@
       "stars": 2,
       "license": "GPL-3.0",
       "image": "docs-result.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2020-09-30T08:35:34+02:00"
     },
     {
@@ -7428,21 +7416,6 @@
     {
       "name": "MMM-HomeAssistant",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/zuo000/MMM-HomeAssistant",
-      "id": "zuo000/MMM-HomeAssistant",
-      "maintainer": "zuo000",
-      "maintainerURL": "https://github.com/zuo000",
-      "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
-      "issues": true,
-      "stars": 27,
-      "license": "MIT",
-      "image": "screenshot.jpg",
-      "defaultSortWeight": 9,
-      "lastCommit": "2020-04-08T18:54:01-07:00"
-    },
-    {
-      "name": "MMM-HomeAssistant",
-      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/yourdawi/MMM-HomeAssistant",
       "id": "yourdawi/MMM-HomeAssistant",
       "maintainer": "yourdawi",
@@ -7451,7 +7424,7 @@
       "issues": true,
       "stars": 3,
       "license": "MIT",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-12-22T13:05:46+01:00"
     },
     {
@@ -7469,27 +7442,23 @@
         "homeassistant"
       ],
       "image": "example_MMM-HomeAsisstant.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-09-23T09:25:11+02:00"
     },
     {
-      "name": "MMM-homeassistant-sensors",
+      "name": "MMM-HomeAssistant",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/Snille/MMM-homeassistant-sensors",
-      "id": "Snille/MMM-homeassistant-sensors",
-      "maintainer": "Snille",
-      "maintainerURL": "https://github.com/Snille",
-      "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+      "url": "https://github.com/zuo000/MMM-HomeAssistant",
+      "id": "zuo000/MMM-HomeAssistant",
+      "maintainer": "zuo000",
+      "maintainerURL": "https://github.com/zuo000",
+      "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
       "issues": true,
-      "stars": 67,
+      "stars": 27,
       "license": "MIT",
-      "tags": [
-        "home assistant",
-        "ha"
-      ],
-      "image": ".github-screen01-advanced.jpg",
-      "defaultSortWeight": 9,
-      "lastCommit": "2023-03-21T13:52:46+01:00"
+      "image": "screenshot.jpg",
+      "defaultSortWeight": 10,
+      "lastCommit": "2020-04-08T18:54:01-07:00"
     },
     {
       "name": "MMM-homeassistant-sensors",
@@ -7503,8 +7472,27 @@
       "stars": 0,
       "hasGithubIssues": false,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2024-06-30T09:48:34+02:00"
+    },
+    {
+      "name": "MMM-homeassistant-sensors",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/Snille/MMM-homeassistant-sensors",
+      "id": "Snille/MMM-homeassistant-sensors",
+      "maintainer": "Snille",
+      "maintainerURL": "https://github.com/Snille",
+      "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+      "issues": true,
+      "stars": 68,
+      "license": "MIT",
+      "tags": [
+        "home assistant",
+        "ha"
+      ],
+      "image": ".github-screen01-advanced.jpg",
+      "defaultSortWeight": 9,
+      "lastCommit": "2023-03-21T13:52:46+01:00"
     },
     {
       "name": "MMM-HomeAssistant-Touch",
@@ -7544,7 +7532,7 @@
       "maintainerURL": "https://github.com/wonderslug",
       "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
       "issues": true,
-      "stars": 110,
+      "stars": 112,
       "license": "MIT",
       "tags": [
         "home assistant"
@@ -7565,7 +7553,7 @@
       "stars": 14,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2025-03-12T22:38:08-05:00"
     },
     {
@@ -7599,7 +7587,7 @@
         "smart home"
       ],
       "image": "screenshot_01.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2024-12-26T14:44:25+01:00"
     },
     {
@@ -7700,7 +7688,7 @@
       "stars": 1,
       "license": "GPL-3.0",
       "image": "mmm-hoymiles.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2024-12-10T14:31:29+01:00"
     },
     {
@@ -7715,7 +7703,7 @@
       "stars": 0,
       "license": "ISC",
       "image": "MMM-HRS-PickupPlanScreenShot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2025-01-02T17:58:42+01:00"
     },
     {
@@ -7727,7 +7715,7 @@
       "maintainerURL": "https://github.com/ulrichwisser",
       "description": "Include arbitrary HTML snippets in an iframe (script tags work).",
       "issues": true,
-      "stars": 17,
+      "stars": 18,
       "license": "GPL-3.0",
       "image": "HTMLSnippet-screenshot-grafana.jpg",
       "defaultSortWeight": 8,
@@ -7743,7 +7731,7 @@
       "description": "Display XML data from a HTTP response.",
       "issues": false,
       "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
-      "stars": 17,
+      "stars": 16,
       "license": "MIT",
       "defaultSortWeight": 901,
       "lastCommit": "2016-06-24T15:31:02-04:00"
@@ -7758,7 +7746,7 @@
       "description": "Display the status of groups or lights in your Philips Hue setup.",
       "issues": true,
       "stars": 28,
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2022-11-10T15:27:39Z"
     },
     {
@@ -7773,7 +7761,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "MMM-Hue-Controller-screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2020-12-01T14:59:08+01:00"
     },
     {
@@ -7807,7 +7795,7 @@
         "smart home"
       ],
       "image": "images-screen.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-02-12T19:59:40+01:00"
     },
     {
@@ -7835,7 +7823,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2019-11-29T20:27:49-05:00"
     },
     {
@@ -7850,7 +7838,7 @@
       "stars": 3,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2019-11-30T21:46:01-05:00"
     },
     {
@@ -7873,7 +7861,7 @@
         "smart home"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-07-05T16:21:35+02:00"
     },
     {
@@ -7940,7 +7928,7 @@
       "tags": [
         "icloud"
       ],
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2023-12-12T09:02:05+01:00"
     },
     {
@@ -7953,7 +7941,7 @@
       "description": "Show an icon according to a MagicMirror² notification.",
       "issues": true,
       "stars": 0,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-01-23T12:29:43+01:00"
     },
     {
@@ -8018,7 +8006,7 @@
       ],
       "license": "MIT",
       "image": "img-screenshot.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2020-10-19T20:02:52+02:00"
     },
     {
@@ -8218,7 +8206,7 @@
         "public transport"
       ],
       "image": "img-screenshoot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2021-05-10T19:48:29+02:00"
     },
     {
@@ -8277,7 +8265,7 @@
       "issues": true,
       "stars": 1,
       "license": "MIT",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-04-10T19:04:51+02:00"
     },
     {
@@ -8309,7 +8297,7 @@
       "description": "Displays AI generated inspirational images from Inspirobot.me.",
       "issues": true,
       "stars": 5,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2018-11-18T02:54:23-06:00"
     },
     {
@@ -8346,7 +8334,7 @@
         "entertainment"
       ],
       "image": "readme_images-Example.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-05-03T17:48:35+01:00"
     },
     {
@@ -8365,7 +8353,7 @@
       ],
       "license": "MIT",
       "image": "screenshots-Auth_Step_4.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2021-11-10T11:17:46-08:00"
     },
     {
@@ -8380,7 +8368,7 @@
       "stars": 7,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-08-17T21:11:57-04:00"
     },
     {
@@ -8395,7 +8383,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-07-27T08:59:17-05:00"
     },
     {
@@ -8430,7 +8418,7 @@
         "speed"
       ],
       "image": ".previews-almost.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2024-01-08T18:27:41-05:00"
     },
     {
@@ -8449,7 +8437,7 @@
         "iot",
         "home automation"
       ],
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-10-29T14:25:07Z"
     },
     {
@@ -8464,7 +8452,7 @@
       "stars": 12,
       "license": "MIT",
       "image": "docs-images-all-devices-green.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2019-06-15T16:56:25-05:00"
     },
     {
@@ -8476,14 +8464,14 @@
       "maintainerURL": "https://github.com/fewieden",
       "description": "Display IPv4/IPv6 Network Address.",
       "issues": true,
-      "stars": 28,
+      "stars": 29,
       "license": "MIT",
       "tags": [
         "network interfaces",
         "ip"
       ],
       "image": ".github-example.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2022-02-13T13:03:12+01:00"
     },
     {
@@ -8523,7 +8511,7 @@
       "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-10-07T00:52:57+03:00"
     },
     {
@@ -8578,7 +8566,7 @@
         "space station"
       ],
       "image": ".github-ISS-SS.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-02-23T16:09:30-08:00"
     },
     {
@@ -8605,8 +8593,8 @@
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "description": "Displays live video from the International Space Station.",
-      "issues": true,
-      "stars": 7,
+      "issues": false,
+      "stars": 8,
       "license": "MIT",
       "tags": [
         "iss",
@@ -8615,7 +8603,7 @@
       ],
       "image": "images-screenshot1.jpg",
       "defaultSortWeight": 1,
-      "lastCommit": "2025-08-26T00:29:21+02:00"
+      "lastCommit": "2025-10-04T18:55:46+02:00"
     },
     {
       "name": "MMM-ISS-Map",
@@ -8634,7 +8622,7 @@
       ],
       "license": "MIT",
       "image": "data-iss_cartodb.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-06-18T20:49:30Z"
     },
     {
@@ -8723,7 +8711,7 @@
       "stars": 18,
       "license": "GPL-3.0",
       "image": "screenshots-MMM-Jeedom.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 12,
       "lastCommit": "2022-11-02T15:36:32+01:00"
     },
     {
@@ -8738,7 +8726,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "pix-clue.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2018-02-07T16:05:47-05:00"
     },
     {
@@ -8751,7 +8739,7 @@
       "description": "Displays the current Jewish date.",
       "issues": true,
       "stars": 2,
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2018-10-21T14:50:38Z"
     },
     {
@@ -8783,7 +8771,7 @@
       "issues": true,
       "stars": 2,
       "license": "MIT",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2020-08-31T21:08:39+02:00"
     },
     {
@@ -8811,7 +8799,7 @@
       "description": "Show jokes from the JokeAPI.",
       "issues": true,
       "stars": 12,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-09-25T11:29:55+02:00"
     },
     {
@@ -8844,7 +8832,7 @@
       "stars": 17,
       "license": "MIT",
       "image": "sample.jpg",
-      "defaultSortWeight": 23,
+      "defaultSortWeight": 24,
       "lastCommit": "2023-01-14T19:04:41+01:00"
     },
     {
@@ -8894,7 +8882,7 @@
         "api"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-02-23T19:43:05-06:00"
     },
     {
@@ -8951,13 +8939,12 @@
         "jukebox",
         "juke",
         "celtic",
-        "music",
-        "mp3 player"
+        "gitgitaway"
       ],
       "license": "MIT",
       "image": "screenshots-celticmm-screenshot.jpg",
-      "defaultSortWeight": 6,
-      "lastCommit": "2025-09-25T10:29:28+01:00"
+      "defaultSortWeight": 5,
+      "lastCommit": "2025-10-03T20:30:20+01:00"
     },
     {
       "name": "MMM-JustForTodayMeditation",
@@ -8984,7 +8971,7 @@
       "description": "Control MM from Kalliope assistant.",
       "issues": true,
       "stars": 8,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2018-07-24T10:50:15+02:00"
     },
     {
@@ -8999,7 +8986,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2025-05-04T14:45:56-04:00"
     },
     {
@@ -9011,7 +8998,7 @@
       "maintainerURL": "https://github.com/shbatm",
       "description": "Getting Bluetooth remote control and keyboard inputs.",
       "issues": true,
-      "stars": 22,
+      "stars": 23,
       "license": "MIT",
       "tags": [
         "fire stick",
@@ -9034,7 +9021,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "keyboard-example.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2020-06-11T23:49:01+02:00"
     },
     {
@@ -9120,7 +9107,7 @@
         "screen"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-09-29T19:43:17+02:00"
     },
     {
@@ -9142,7 +9129,7 @@
         "local transit"
       ],
       "image": "screenshots-screenshot_de.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2018-10-14T12:54:11+02:00"
     },
     {
@@ -9162,7 +9149,7 @@
         "trias"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-07-29T20:24:59+02:00"
     },
     {
@@ -9192,7 +9179,7 @@
       "maintainerURL": "https://github.com/RineshRamadhin",
       "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
       "issues": true,
-      "stars": 6,
+      "stars": 7,
       "license": "NOASSERTION",
       "tags": [
         "spotify",
@@ -9298,7 +9285,7 @@
         "mqtt"
       ],
       "image": "screenshots-led-control-all-options.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2023-11-24T19:37:50+01:00"
     },
     {
@@ -9376,7 +9363,7 @@
       "description": "The lichess.org daily puzzle.",
       "issues": true,
       "stars": 7,
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2018-11-08T23:01:11+10:00"
     },
     {
@@ -9412,7 +9399,7 @@
       "maintainerURL": "https://github.com/2hdlockness/",
       "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
       "issues": true,
-      "stars": 4,
+      "stars": 3,
       "license": "MIT",
       "tags": [
         "linky",
@@ -9457,7 +9444,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-09-13T08:25:28+02:00"
     },
     {
@@ -9513,7 +9500,7 @@
         "song lyrics"
       ],
       "image": ".github-content-banner-api.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-12-31T18:50:28-03:00"
     },
     {
@@ -9534,7 +9521,7 @@
         "teleinfo"
       ],
       "image": "doc-shots-Sample1.jpg",
-      "defaultSortWeight": 21,
+      "defaultSortWeight": 22,
       "lastCommit": "2025-01-07T22:21:24+01:00"
     },
     {
@@ -9547,7 +9534,7 @@
       "description": "Display the expected power cut periods throughout the day.",
       "issues": true,
       "stars": 0,
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2023-04-25T16:57:19+02:00"
     },
     {
@@ -9567,7 +9554,7 @@
         "status"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-09-22T09:54:00+02:00"
     },
     {
@@ -9601,7 +9588,7 @@
       "stars": 23,
       "license": "MIT",
       "image": "images-sample.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2021-09-19T14:44:46-04:00"
     },
     {
@@ -9644,7 +9631,7 @@
       "maintainerURL": "https://github.com/MMRIZE",
       "description": "Deliver the logs from frontend to backend and more features.",
       "issues": true,
-      "stars": 2,
+      "stars": 3,
       "license": "MIT",
       "tags": [
         "logging",
@@ -9813,7 +9800,7 @@
       "stars": 11,
       "license": "MIT",
       "image": "getControlUuid.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2021-08-22T18:11:24+02:00"
     },
     {
@@ -9898,7 +9885,7 @@
       "description": "Estimated arrival times for lyft.",
       "issues": true,
       "stars": 9,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-09-16T09:05:37-04:00"
     },
     {
@@ -9971,7 +9958,7 @@
         "draw"
       ],
       "image": "MagicDraw.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-02-16T20:38:25+01:00"
     },
     {
@@ -9986,7 +9973,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "images-example.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2020-12-12T11:57:03+01:00"
     },
     {
@@ -10033,7 +10020,7 @@
         "quotes"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2018-02-25T21:15:21-05:00"
     },
     {
@@ -10045,7 +10032,7 @@
       "maintainerURL": "https://github.com/Lavve",
       "description": "Prevent screen burn-in on your display.",
       "issues": true,
-      "stars": 60,
+      "stars": 62,
       "license": "MIT",
       "tags": [
         "screensaver",
@@ -10088,7 +10075,7 @@
       "issues": true,
       "stars": 0,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2022-02-18T12:51:42+01:00"
     },
     {
@@ -10124,7 +10111,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 4,
       "lastCommit": "2025-07-16T20:57:58-04:00"
     },
     {
@@ -10263,7 +10250,7 @@
       "issues": true,
       "stars": 1,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-11-10T17:23:33+01:00"
     },
     {
@@ -10290,7 +10277,7 @@
       "maintainerURL": "https://github.com/AndreaGrandieri",
       "description": "Write Markdown. Render it on the MagicMirror².",
       "issues": true,
-      "stars": 3,
+      "stars": 4,
       "license": "MIT",
       "image": "public-AndreaGrandieri_pp.jpg",
       "defaultSortWeight": 17,
@@ -10305,7 +10292,7 @@
       "maintainerURL": "https://github.com/zanix",
       "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
       "issues": true,
-      "stars": 16,
+      "stars": 17,
       "license": "MIT",
       "tags": [
         "mealie",
@@ -10345,7 +10332,7 @@
         "menu"
       ],
       "image": "screenshots-multiple-instance.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-10-27T12:44:51-04:00"
     },
     {
@@ -10394,7 +10381,7 @@
         "mensmax",
         "speiseplan"
       ],
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2023-01-07T12:37:20+01:00"
     },
     {
@@ -10408,7 +10395,7 @@
       "issues": true,
       "stars": 6,
       "license": "MIT",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-08-19T10:24:44+02:00"
     },
     {
@@ -10440,7 +10427,7 @@
       "issues": true,
       "stars": 0,
       "license": "Apache-2.0",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-05-28T11:34:22-05:00"
     },
     {
@@ -10468,7 +10455,7 @@
       "stars": 3,
       "license": "MIT",
       "image": ".github-example.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-02-02T15:19:35+01:00"
     },
     {
@@ -10548,7 +10535,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "img-example.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2020-12-02T23:46:42+01:00"
     },
     {
@@ -10581,7 +10568,7 @@
       "maintainerURL": "https://github.com/thess",
       "description": "Display market indices using (free) Yahoo Finance API.",
       "issues": true,
-      "stars": 7,
+      "stars": 8,
       "license": "MIT",
       "tags": [
         "stock",
@@ -10683,7 +10670,7 @@
       "description": "Display all of the planets and their current positions relative to the sun.",
       "issues": true,
       "stars": 6,
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-02-08T06:10:18-05:00"
     },
     {
@@ -10695,10 +10682,10 @@
       "maintainerURL": "https://github.com/Klettner",
       "description": "Android 📱 and Windows-desktop 💻 app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
       "issues": true,
-      "stars": 65,
+      "stars": 66,
       "license": "MIT",
       "image": "LauncherIcon-MMM-Remote-LauncherIcon.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2021-05-27T16:42:41+02:00"
     },
     {
@@ -10727,7 +10714,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "doc-colored_non_simple.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2022-01-27T21:51:11+01:00"
     },
     {
@@ -10780,7 +10767,7 @@
       "issues": true,
       "stars": 6,
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-03-15T16:38:06-05:00"
     },
     {
@@ -10808,7 +10795,7 @@
       "issues": true,
       "stars": 41,
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-03-15T15:39:35-05:00"
     },
     {
@@ -10823,7 +10810,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "brickell-station-colored.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2021-04-04T18:10:27-04:00"
     },
     {
@@ -10874,7 +10861,7 @@
       "stars": 12,
       "license": "MIT",
       "image": "images-no-snapshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2018-12-28T12:42:50-06:00"
     },
     {
@@ -10889,7 +10876,7 @@
       "stars": 42,
       "license": "MIT",
       "image": "icons-icon-fan-white.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2022-05-05T12:59:19-05:00"
     },
     {
@@ -10909,7 +10896,7 @@
       ],
       "license": "MIT",
       "image": "images-screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2024-11-12T18:22:57+01:00"
     },
     {
@@ -10921,7 +10908,7 @@
       "maintainerURL": "https://github.com/paphko",
       "description": "Show lights and window states on a floorplan of an openhab server.",
       "issues": true,
-      "stars": 33,
+      "stars": 32,
       "license": "MIT",
       "image": "images-floorplan-default.jpg",
       "defaultSortWeight": 13,
@@ -10941,7 +10928,7 @@
       "tags": [
         "pins"
       ],
-      "defaultSortWeight": 18,
+      "defaultSortWeight": 19,
       "lastCommit": "2019-07-03T09:18:21+02:00"
     },
     {
@@ -10988,7 +10975,7 @@
       "issues": true,
       "stars": 4,
       "license": "MIT",
-      "defaultSortWeight": 21,
+      "defaultSortWeight": 22,
       "lastCommit": "2023-06-08T20:41:55+07:00"
     },
     {
@@ -11003,7 +10990,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2021-03-03T15:10:22+02:00"
     },
     {
@@ -11096,7 +11083,7 @@
       "maintainerURL": "https://github.com/Bee-Mar",
       "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
       "issues": true,
-      "stars": 224,
+      "stars": 229,
       "license": "MIT",
       "keywords": [
         "package manager",
@@ -11135,7 +11122,7 @@
       "description": "Simplifies module installation in MagicMirror.",
       "issues": true,
       "stars": 3,
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-09-26T00:37:39+02:00"
     },
     {
@@ -11438,7 +11425,7 @@
         "upcoming movies"
       ],
       "image": ".github-example.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2017-03-09T11:24:50+01:00"
     },
     {
@@ -11457,7 +11444,7 @@
         "cinema"
       ],
       "image": "image-1.jpg",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 3,
       "lastCommit": "2025-08-14T15:50:13+02:00"
     },
     {
@@ -11477,7 +11464,7 @@
         "music"
       ],
       "image": "Capture1.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 13,
       "lastCommit": "2025-08-08T23:49:18+03:00"
     },
     {
@@ -11514,7 +11501,7 @@
         "poland"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-05-22T22:31:24+02:00"
     },
     {
@@ -11537,7 +11524,7 @@
         "media"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-07-11T15:08:11+02:00"
     },
     {
@@ -11549,7 +11536,7 @@
       "maintainerURL": "https://github.com/Tom-Hirschberger",
       "description": "Play m3u radio streams. Controllable by touch and notification.",
       "issues": true,
-      "stars": 8,
+      "stars": 9,
       "license": "MIT",
       "tags": [
         "sound",
@@ -11559,7 +11546,7 @@
         "mp3"
       ],
       "image": "examples-initialScreen.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2024-08-10T18:54:04+02:00"
     },
     {
@@ -11592,7 +11579,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2023-11-16T21:47:23+01:00"
     },
     {
@@ -11604,7 +11591,7 @@
       "maintainerURL": "https://github.com/ottopaulsen",
       "description": "Subscribe topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
       "issues": true,
-      "stars": 58,
+      "stars": 59,
       "license": "MIT",
       "tags": [
         "smart home",
@@ -11612,7 +11599,7 @@
         "mqtt"
       ],
       "image": "doc-MQTT.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-07-30T12:48:12+02:00"
     },
     {
@@ -11642,7 +11629,7 @@
       "hasGithubIssues": false,
       "license": "MIT",
       "image": "doc-MQTT-Publisher.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-06-23T08:54:59+02:00"
     },
     {
@@ -11660,7 +11647,7 @@
         "mqtt"
       ],
       "image": "github-MQTTbind.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2020-05-21T21:22:42+02:00"
     },
     {
@@ -11744,7 +11731,7 @@
       "issues": true,
       "stars": 2,
       "license": "MIT",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2017-09-25T22:45:58-04:00"
     },
     {
@@ -11854,7 +11841,7 @@
         "deezer"
       ],
       "image": "img-Example.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-04-16T21:55:21+02:00"
     },
     {
@@ -11927,10 +11914,10 @@
       "maintainerURL": "https://github.com/Jargendas",
       "description": "Display data from MyBMW for your car.",
       "issues": true,
-      "stars": 2,
+      "stars": 3,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-12-31T21:16:13+01:00"
     },
     {
@@ -11945,7 +11932,7 @@
       "stars": 8,
       "hasGithubIssues": false,
       "license": "MIT",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2025-06-12T10:46:58-04:00"
     },
     {
@@ -11964,7 +11951,7 @@
       ],
       "license": "MIT",
       "image": "screenshots-MMM-MyCommute-screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-02-15T17:23:15+01:00"
     },
     {
@@ -11979,7 +11966,7 @@
       "stars": 1,
       "license": "GPL-3.0",
       "image": "wakeword.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2022-08-25T14:49:28+02:00"
     },
     {
@@ -12234,7 +12221,7 @@
         "study"
       ],
       "image": "Screenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2021-11-24T14:28:14-06:00"
     },
     {
@@ -12316,8 +12303,8 @@
         "sports"
       ],
       "image": "screenshots-celticmm-screenshot.jpg",
-      "defaultSortWeight": 6,
-      "lastCommit": "2025-09-28T23:23:27+01:00"
+      "defaultSortWeight": 11,
+      "lastCommit": "2025-10-03T20:54:29+01:00"
     },
     {
       "name": "MMM-MyTraffic",
@@ -12361,7 +12348,7 @@
       "stars": 2,
       "license": "ISC",
       "image": "example.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-10-10T11:18:14-04:00"
     },
     {
@@ -12375,7 +12362,7 @@
       "issues": true,
       "stars": 7,
       "license": "ISC",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2017-07-06T22:48:39-04:00"
     },
     {
@@ -12395,7 +12382,7 @@
       ],
       "license": "ISC",
       "image": "Screenshot (1).jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2019-05-04T18:56:16-05:00"
     },
     {
@@ -12415,7 +12402,7 @@
       ],
       "license": "MIT",
       "image": "gallery-example.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2023-11-13T10:06:04+01:00"
     },
     {
@@ -12430,7 +12417,7 @@
       "stars": 12,
       "license": "MIT",
       "image": "node_modules-npm-node_modules-read-node_modules-mute-stream-coverage-lcov-report-sort-arrow-sprite.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2022-03-12T21:41:36-05:00"
     },
     {
@@ -12591,7 +12578,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2019-11-23T22:40:32-05:00"
     },
     {
@@ -12671,7 +12658,7 @@
         "modules"
       ],
       "license": "MIT",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2022-08-06T21:49:55+02:00"
     },
     {
@@ -12700,7 +12687,7 @@
       "description": "Display your photovoltaic statistics from neoom.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2023-05-24T18:43:50+02:00"
     },
     {
@@ -12715,7 +12702,7 @@
       "stars": 9,
       "license": "MIT",
       "image": "doc-Screenshot-MMM-NesteBussAtB-Stacked.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2019-09-18T22:29:41+02:00"
     },
     {
@@ -12829,7 +12816,7 @@
       ],
       "license": "MIT",
       "image": "others-MMM-NetworkConnection-screenshot-01.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2018-05-12T17:14:36+07:00"
     },
     {
@@ -12886,7 +12873,7 @@
         "news"
       ],
       "image": "screenshot1.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-05-10T10:22:54+02:00"
     },
     {
@@ -12945,7 +12932,7 @@
         "movies"
       ],
       "image": "img-screenshot1.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-08-31T19:11:38+02:00"
     },
     {
@@ -12979,7 +12966,7 @@
       ],
       "license": "MIT",
       "image": "screenshots-screenshot_de.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-11-01T19:07:10+01:00"
     },
     {
@@ -13000,7 +12987,7 @@
         "media"
       ],
       "image": "screenshots-fullscreen_with_tag.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-09-24T12:11:41+02:00"
     },
     {
@@ -13030,7 +13017,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "screenshots-screenshot1.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2025-02-26T14:37:37+11:00"
     },
     {
@@ -13063,7 +13050,7 @@
         "nfl"
       ],
       "image": ".github-global.jpg",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2022-08-13T06:57:02+02:00"
     },
     {
@@ -13134,7 +13121,7 @@
       "stars": 16,
       "license": "MIT",
       "image": "docs-screenshot-2.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 13,
       "lastCommit": "2024-01-09T23:03:51+01:00"
     },
     {
@@ -13218,7 +13205,7 @@
       "description": "Do I need an umbrella when i go out, or shall i take my chances? Shows rainintensity for a location in the Netherlands in the next hour.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-06-15T23:56:53+02:00"
     },
     {
@@ -13259,7 +13246,7 @@
         "sncb"
       ],
       "image": "screenshots-screenshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-02-19T10:47:11+01:00"
     },
     {
@@ -13278,7 +13265,7 @@
         "noaa"
       ],
       "image": "examples-1.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-05-17T11:00:05+02:00"
     },
     {
@@ -13307,7 +13294,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshots-MMM-NOAAForecast.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-09-07T14:58:26-07:00"
     },
     {
@@ -13328,7 +13315,7 @@
         "cool graphs"
       ],
       "image": "Capture.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-11-27T18:43:15-05:00"
     },
     {
@@ -13633,7 +13620,7 @@
       "stars": 1,
       "license": "MIT",
       "image": ".github-images-preview_MMM-NsInfo_module.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2021-05-03T15:43:16+02:00"
     },
     {
@@ -13648,7 +13635,7 @@
       "stars": 12,
       "license": "ISC",
       "image": ".previews-nstreinen-destination.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-04-13T20:51:00+02:00"
     },
     {
@@ -13797,7 +13784,7 @@
       "stars": 1,
       "license": "MIT",
       "image": ".github-even.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2022-03-03T00:14:01-08:00"
     },
     {
@@ -13816,7 +13803,7 @@
         "öbb"
       ],
       "image": "assets-screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-09-17T08:09:17+02:00"
     },
     {
@@ -13854,7 +13841,7 @@
         "medal"
       ],
       "image": "images-Abbreviations.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-07-24T10:29:05-04:00"
     },
     {
@@ -13872,7 +13859,7 @@
         "olympic games"
       ],
       "image": ".github-countries.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2024-07-28T16:21:52+02:00"
     },
     {
@@ -13885,7 +13872,7 @@
       "description": "Shows ETA for buses for a given stop using OneBusAway API.",
       "issues": true,
       "stars": 2,
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2018-06-04T21:45:59-07:00"
     },
     {
@@ -13922,7 +13909,7 @@
         "onedrive"
       ],
       "image": "images-screenshot.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2025-09-01T18:27:50+01:00"
     },
     {
@@ -13952,7 +13939,7 @@
       "stars": 19,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-01-02T11:44:43-07:00"
     },
     {
@@ -14026,7 +14013,7 @@
         "spotify connect"
       ],
       "image": ".github-content-banner-social.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-09-23T20:22:48-03:00"
     },
     {
@@ -14130,7 +14117,7 @@
         "smart home"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-07-07T17:05:42+02:00"
     },
     {
@@ -14160,7 +14147,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "doc-screenshot.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2020-05-19T14:27:29-05:00"
     },
     {
@@ -14255,7 +14242,7 @@
       "issues": true,
       "stars": 3,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2021-05-07T10:49:55Z"
     },
     {
@@ -14270,7 +14257,7 @@
       "stars": 6,
       "license": "MIT",
       "image": "MMM-Oura-screenshot.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2021-01-05T12:45:32-06:00"
     },
     {
@@ -14283,7 +14270,7 @@
       "description": "A more detailed Oura data display including readiness scores and heart rate data.",
       "issues": true,
       "stars": 4,
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-04-01T12:50:09-04:00"
     },
     {
@@ -14335,8 +14322,8 @@
         "slides"
       ],
       "image": "examples-screencast_1_without-styling.jpg",
-      "defaultSortWeight": 2,
-      "lastCommit": "2025-06-25T22:20:29+02:00"
+      "defaultSortWeight": -1,
+      "lastCommit": "2025-10-03T23:07:59+02:00"
     },
     {
       "name": "MMM-Page-Pusher",
@@ -14478,7 +14465,7 @@
       "stars": 26,
       "license": "MIT",
       "image": "pictures-1.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 16,
       "lastCommit": "2021-05-18T09:35:29+02:00"
     },
     {
@@ -14532,7 +14519,7 @@
       "stars": 3,
       "hasGithubIssues": false,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2020-05-26T09:40:12-04:00"
     },
     {
@@ -14577,7 +14564,7 @@
       "stars": 6,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2018-12-25T21:15:00-05:00"
     },
     {
@@ -14616,7 +14603,7 @@
         "local transit"
       ],
       "image": "screenshots-screenshot_pl.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2023-03-04T22:51:43+01:00"
     },
     {
@@ -14692,7 +14679,7 @@
       "hasGithubIssues": false,
       "license": "MIT",
       "image": "pix-1.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-12-02T10:58:53-06:00"
     },
     {
@@ -14732,7 +14719,7 @@
         "smart home"
       ],
       "image": "images-screenshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 9,
       "lastCommit": "2024-03-06T18:49:26+02:00"
     },
     {
@@ -14749,7 +14736,7 @@
         "phone notification",
         "notification"
       ],
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2019-07-01T11:24:28-04:00"
     },
     {
@@ -14769,7 +14756,7 @@
         "detection"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 4,
       "lastCommit": "2024-04-28T21:30:50+02:00"
     },
     {
@@ -14790,7 +14777,7 @@
         "images",
         "media"
       ],
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-06-29T19:59:43+02:00"
     },
     {
@@ -14810,7 +14797,7 @@
         "file handling"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-07-05T16:21:06+02:00"
     },
     {
@@ -14841,7 +14828,7 @@
         "pi-hole"
       ],
       "image": "docs-preview-showSources.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-02-28T18:17:28Z"
     },
     {
@@ -14911,7 +14898,7 @@
         "offline"
       ],
       "image": ".github-example.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2020-05-12T19:14:00+02:00"
     },
     {
@@ -14926,7 +14913,7 @@
       "stars": 8,
       "license": "MIT",
       "image": ".github-preview.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2018-04-08T08:08:21+02:00"
     },
     {
@@ -14960,7 +14947,7 @@
         "motion detection"
       ],
       "image": "screenshot-screenshot.jpg",
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 20,
       "lastCommit": "2025-05-04T11:41:55+02:00"
     },
     {
@@ -15045,7 +15032,7 @@
       ],
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-07-28T13:37:30+02:00"
     },
     {
@@ -15104,7 +15091,7 @@
       "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
       "issues": true,
       "stars": 4,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-06-24T11:02:16-04:00"
     },
     {
@@ -15204,7 +15191,7 @@
       "stars": 27,
       "license": "MIT",
       "image": "images-sample.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2021-08-05T13:39:38-04:00"
     },
     {
@@ -15272,7 +15259,7 @@
         "media"
       ],
       "license": "MIT",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2019-12-19T16:25:20+01:00"
     },
     {
@@ -15317,7 +15304,7 @@
       "stars": 11,
       "license": "MIT",
       "image": "preview.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2020-03-21T10:56:51+01:00"
     },
     {
@@ -15345,7 +15332,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshot1.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2021-07-25T17:03:06+02:00"
     },
     {
@@ -15375,7 +15362,7 @@
       "stars": 5,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2020-05-14T22:03:15-04:00"
     },
     {
@@ -15415,7 +15402,7 @@
       "stars": 6,
       "license": "GPL-3.0",
       "image": ".github-screenshot.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2018-01-27T12:12:34+01:00"
     },
     {
@@ -15445,7 +15432,7 @@
       "stars": 6,
       "license": "ISC",
       "image": "docs-screenshot.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 18,
       "lastCommit": "2021-05-22T10:58:08+02:00"
     },
     {
@@ -15481,7 +15468,7 @@
         "adzan"
       ],
       "image": "screenshot-alert.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2022-08-05T10:21:12+07:00"
     },
     {
@@ -15930,7 +15917,7 @@
       "description": "Displays your Questrade positions.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-12-26T19:25:51-08:00"
     },
     {
@@ -15950,7 +15937,7 @@
         "interactive"
       ],
       "image": "example_1.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-09-07T14:18:23+02:00"
     },
     {
@@ -15963,7 +15950,7 @@
       "description": "Display random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-03-15T22:37:06Z"
     },
     {
@@ -15994,7 +15981,7 @@
       "description": "Uses a radar sensor to detect presence and control your MagicMirror's display accordingly.",
       "issues": true,
       "stars": 1,
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-09-24T12:18:52+05:30"
     },
     {
@@ -16022,7 +16009,7 @@
       "description": "Display Raider IO score for multiple characters over any realms or regions.",
       "issues": true,
       "stars": 3,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2021-05-31T17:56:51+01:00"
     },
     {
@@ -16075,7 +16062,7 @@
       "stars": 15,
       "license": "MIT",
       "image": "images-img1.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2020-01-29T22:54:25-06:00"
     },
     {
@@ -16108,7 +16095,7 @@
       "issues": true,
       "stars": 2,
       "license": "MIT",
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 20,
       "lastCommit": "2025-06-20T15:36:12+02:00"
     },
     {
@@ -16137,7 +16124,7 @@
       "issues": true,
       "stars": 20,
       "license": "MIT",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2016-06-22T13:13:10-06:00"
     },
     {
@@ -16177,7 +16164,7 @@
         "quotes"
       ],
       "image": "screen-01-quote_apex.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-01-08T00:11:14+01:00"
     },
     {
@@ -16197,7 +16184,7 @@
         "quran"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-05-17T15:12:06+07:00"
     },
     {
@@ -16296,7 +16283,7 @@
       "issues": true,
       "stars": 35,
       "license": "ISC",
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 20,
       "lastCommit": "2020-06-25T17:03:18-04:00"
     },
     {
@@ -16314,7 +16301,7 @@
         "news"
       ],
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2025-07-02T20:01:15+02:00"
     },
     {
@@ -16379,7 +16366,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "zoomlvl 1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2023-11-08T23:51:37+01:00"
     },
     {
@@ -16393,7 +16380,7 @@
       "issues": true,
       "stars": 1,
       "license": "MIT",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2023-11-16T21:46:40+01:00"
     },
     {
@@ -16412,7 +16399,7 @@
         "control"
       ],
       "image": "img-main_screenshot.jpg",
-      "defaultSortWeight": -25,
+      "defaultSortWeight": -24,
       "lastCommit": "2025-10-01T20:13:28+02:00"
     },
     {
@@ -16443,7 +16430,7 @@
       "stars": 22,
       "license": "MIT",
       "image": ".Github-Preview.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 14,
       "lastCommit": "2018-11-16T12:37:45-05:00"
     },
     {
@@ -16506,7 +16493,7 @@
       ],
       "license": "MIT",
       "image": "img-example_3_types.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-04-07T21:52:07+02:00"
     },
     {
@@ -16538,7 +16525,7 @@
         "productivity"
       ],
       "image": "mmm-rescuetime-screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2018-10-28T19:16:02+01:00"
     },
     {
@@ -16576,7 +16563,7 @@
         "api"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-05-08T00:00:49-07:00"
     },
     {
@@ -16595,7 +16582,7 @@
         "rijksmuseum"
       ],
       "image": "scr1.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-01-13T14:09:44+01:00"
     },
     {
@@ -16626,7 +16613,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2025-06-25T23:02:44-05:00"
     },
     {
@@ -16666,7 +16653,7 @@
         "local transit"
       ],
       "image": "screenshots-de.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2022-01-30T12:53:50+01:00"
     },
     {
@@ -16703,7 +16690,7 @@
         "public transport",
         "rnv"
       ],
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2025-06-20T18:15:57+02:00"
     },
     {
@@ -16721,7 +16708,7 @@
         "rnv"
       ],
       "license": "MIT",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2022-09-18T16:51:33+02:00"
     },
     {
@@ -16757,7 +16744,7 @@
         "roomba"
       ],
       "image": "screenshots-charging_full.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2022-01-05T19:55:08-05:00"
     },
     {
@@ -16787,7 +16774,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-02-05T20:54:09+01:00"
     },
     {
@@ -16821,7 +16808,7 @@
       "issues": true,
       "stars": 6,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-12-05T12:38:26+01:00"
     },
     {
@@ -16835,7 +16822,7 @@
       "issues": true,
       "stars": 25,
       "license": "MIT",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 13,
       "lastCommit": "2016-12-14T19:47:07+01:00"
     },
     {
@@ -16854,7 +16841,7 @@
         "camera"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 0,
+      "defaultSortWeight": 1,
       "lastCommit": "2025-09-08T23:07:56+02:00"
     },
     {
@@ -16967,7 +16954,7 @@
       "stars": 6,
       "license": "MIT",
       "image": "res-screenshot_de.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2021-01-21T09:04:08+01:00"
     },
     {
@@ -17018,7 +17005,7 @@
       "hasGithubIssues": false,
       "license": "MIT",
       "image": ".github-example.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2025-03-28T13:44:42+01:00"
     },
     {
@@ -17071,7 +17058,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshots-img.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-09-08T08:37:57+02:00"
     },
     {
@@ -17106,7 +17093,7 @@
       "stars": 3,
       "license": "ISC",
       "image": "img-demo-2.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-08-07T12:18:19+01:00"
     },
     {
@@ -17162,7 +17149,7 @@
       "stars": 3,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2023-07-19T07:17:26-10:00"
     },
     {
@@ -17196,7 +17183,7 @@
       "issues": true,
       "stars": 39,
       "license": "MIT",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-09-10T15:53:49+02:00"
     },
     {
@@ -17226,7 +17213,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2019-12-29T22:31:07-05:00"
     },
     {
@@ -17273,7 +17260,7 @@
       "stars": 8,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2022-09-27T20:49:46-04:00"
     },
     {
@@ -17342,7 +17329,7 @@
         "iot"
       ],
       "image": "documentation-exampleui.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-07-14T08:04:08+03:00"
     },
     {
@@ -17397,7 +17384,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "docs-MMM-ServiceViewer.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2020-01-24T03:56:14+02:00"
     },
     {
@@ -17433,7 +17420,7 @@
       "stars": 5,
       "license": "ISC",
       "image": "screenshots-screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2021-01-31T20:42:36+08:00"
     },
     {
@@ -17452,7 +17439,7 @@
         "hebrew",
         "jewish"
       ],
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2020-11-18T12:45:52Z"
     },
     {
@@ -17569,7 +17556,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "example_1.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-01-18T20:42:38+01:00"
     },
     {
@@ -17584,7 +17571,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "example_1.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-11-30T18:57:54+01:00"
     },
     {
@@ -17602,7 +17589,7 @@
         "shipment tracking"
       ],
       "image": ".github-example.jpg",
-      "defaultSortWeight": 20,
+      "defaultSortWeight": 21,
       "lastCommit": "2017-02-26T20:53:31+01:00"
     },
     {
@@ -17617,7 +17604,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "docs-screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 13,
       "lastCommit": "2019-10-06T14:29:49+02:00"
     },
     {
@@ -17782,7 +17769,7 @@
       "issues": true,
       "stars": 0,
       "license": "NOASSERTION",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-07-31T17:17:14+05:30"
     },
     {
@@ -17857,7 +17844,7 @@
         "stockholm"
       ],
       "image": "docs-MMM-SL-Screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 12,
       "lastCommit": "2024-03-25T13:48:17+01:00"
     },
     {
@@ -17889,7 +17876,7 @@
       "stars": 5,
       "license": "MIT",
       "image": "images-sample.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2018-10-17T23:19:31-07:00"
     },
     {
@@ -17926,7 +17913,7 @@
       "stars": 1,
       "license": "MIT",
       "image": ".github-screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2023-09-08T10:15:10-07:00"
     },
     {
@@ -17939,7 +17926,7 @@
       "description": "Use an external source for motion detection, like a web camera.",
       "issues": true,
       "stars": 19,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2024-02-02T22:25:01-07:00"
     },
     {
@@ -17996,7 +17983,7 @@
       "stars": 97,
       "license": "MIT",
       "image": "img-readme-default-ui.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2021-03-29T14:21:39+01:00"
     },
     {
@@ -18035,7 +18022,7 @@
         "motivation"
       ],
       "image": "preview-magnet.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 3,
       "lastCommit": "2025-07-23T17:14:07+02:00"
     },
     {
@@ -18070,7 +18057,7 @@
         "train"
       ],
       "image": "screenshots-transilien.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-06-25T11:19:41+02:00"
     },
     {
@@ -18120,7 +18107,7 @@
         "soccer standings"
       ],
       "image": ".github-modal.jpg",
-      "defaultSortWeight": 20,
+      "defaultSortWeight": 21,
       "lastCommit": "2021-02-13T07:55:03+01:00"
     },
     {
@@ -18140,7 +18127,7 @@
         "sports"
       ],
       "image": "screenshots-MMM-SoccerLiveScores-Scorers.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-11-02T16:03:39+01:00"
     },
     {
@@ -18185,7 +18172,7 @@
       ],
       "license": "MIT",
       "image": "screenshots-socialbicycles1.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2018-01-15T14:27:53+01:00"
     },
     {
@@ -18221,7 +18208,7 @@
       "stars": 5,
       "license": "MIT",
       "image": "AppSample.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2017-03-29T18:27:12-06:00"
     },
     {
@@ -18252,7 +18239,7 @@
       "hasGithubIssues": false,
       "license": "MIT",
       "image": "SolarEdge.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2019-05-03T12:37:45+01:00"
     },
     {
@@ -18283,7 +18270,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2025-03-23T10:37:30+01:00"
     },
     {
@@ -18345,6 +18332,8 @@
       "description": "Display day rating and optimal fishing/hunting times based on the Solunar theory.",
       "issues": true,
       "stars": 0,
+      "license": "MIT",
+      "image": "screenshot.jpg",
       "defaultSortWeight": 6,
       "lastCommit": "2025-08-20T17:52:41-04:00"
     },
@@ -18469,7 +18458,7 @@
       "description": "Show the previous and upcoming launches of SpaceX rockets.",
       "issues": true,
       "stars": 9,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-02-22T12:59:56+01:00"
     },
     {
@@ -18482,7 +18471,7 @@
       "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
       "issues": true,
       "stars": 0,
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2020-09-04T17:14:47+02:00"
     },
     {
@@ -18501,7 +18490,7 @@
         "music"
       ],
       "image": "screenshots-miniature_bar.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-06-06T23:19:35+02:00"
     },
     {
@@ -18516,7 +18505,7 @@
       "stars": 53,
       "license": "MIT",
       "image": "images-Example.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2017-02-15T19:48:37+01:00"
     },
     {
@@ -18561,7 +18550,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "screenshots-MMM-Star-Metro.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2020-04-29T23:55:51+02:00"
     },
     {
@@ -18594,7 +18583,7 @@
       "stars": 10,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-12-28T15:12:54+01:00"
     },
     {
@@ -18728,7 +18717,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "public-assets-images-StravaLastActivityMapScreenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-02-04T20:59:41-05:00"
     },
     {
@@ -18743,7 +18732,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "public-assets-images-StravaWeekInBike.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2024-06-01T16:10:08-04:00"
     },
     {
@@ -18775,7 +18764,7 @@
         "dexcom"
       ],
       "image": "screen.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2025-08-03T12:13:13+01:00"
     },
     {
@@ -18841,7 +18830,7 @@
         "station clock"
       ],
       "image": "image.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-05-10T10:16:30+02:00"
     },
     {
@@ -18861,7 +18850,7 @@
         "modules"
       ],
       "license": "MIT",
-      "defaultSortWeight": 21,
+      "defaultSortWeight": 22,
       "lastCommit": "2018-03-16T10:31:46+01:00"
     },
     {
@@ -19006,7 +18995,7 @@
       "issues": true,
       "stars": 2,
       "hasGithubIssues": false,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-03-17T00:03:10+01:00"
     },
     {
@@ -19021,7 +19010,7 @@
       "stars": 10,
       "license": "MIT",
       "image": "screenshots-screenshot-compact.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-03-08T21:38:05-03:00"
     },
     {
@@ -19059,7 +19048,7 @@
         "system load"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2025-05-18T19:50:52+02:00"
     },
     {
@@ -19071,8 +19060,7 @@
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "description": "Display your processor temperature. Optional: Shut down your system safely if the temperature is too high (using MMM-Remote-Control).",
       "issues": true,
-      "stars": 0,
-      "hasGithubIssues": false,
+      "stars": 1,
       "license": "MIT",
       "tags": [
         "temperature",
@@ -19129,7 +19117,7 @@
       "stars": 1,
       "license": "Apache-2.0",
       "image": "preview.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-07-10T22:11:18-04:00"
     },
     {
@@ -19173,7 +19161,7 @@
         "diesel",
         "tanken"
       ],
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-04-12T22:21:44+02:00"
     },
     {
@@ -19218,7 +19206,7 @@
       "maintainerURL": "https://github.com/MMRIZE",
       "description": "Interact with your mirror via Telegram. Revamped 2024.",
       "issues": true,
-      "stars": 25,
+      "stars": 26,
       "license": "MIT",
       "tags": [
         "telegram"
@@ -19307,7 +19295,7 @@
         "sht31d"
       ],
       "image": "examples-htu21-htu21.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2024-08-21T13:31:17+02:00"
     },
     {
@@ -19325,7 +19313,7 @@
         "template"
       ],
       "image": "example_1.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-07-07T14:43:25+02:00"
     },
     {
@@ -19360,7 +19348,7 @@
       "stars": 3,
       "license": "ISC",
       "image": "images-MMM-Tesla3.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2025-09-04T21:26:01-04:00"
     },
     {
@@ -19390,7 +19378,7 @@
       "stars": 57,
       "license": "MIT",
       "image": "doc-charge_starting.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-06-15T12:44:19+02:00"
     },
     {
@@ -19405,7 +19393,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "docs-images-all-devices-green.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2019-06-20T00:12:34-05:00"
     },
     {
@@ -19476,7 +19464,7 @@
       "stars": 11,
       "license": "MIT",
       "image": "tube.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2024-12-03T13:54:21Z"
     },
     {
@@ -19512,7 +19500,7 @@
         "space"
       ],
       "image": "detail_view.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2024-09-08T14:06:50-07:00"
     },
     {
@@ -19548,7 +19536,7 @@
         "power"
       ],
       "image": "doc-MMM-Tibber-screenshot-3phase.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-04-07T08:28:39+02:00"
     },
     {
@@ -19671,7 +19659,7 @@
         "wunderlist"
       ],
       "image": "1x1px.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-08-14T13:43:32-05:00"
     },
     {
@@ -19685,7 +19673,7 @@
       "issues": true,
       "stars": 0,
       "license": "MIT",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-05-16T14:32:47-04:00"
     },
     {
@@ -19700,7 +19688,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "screenshots-route.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-01-07T11:31:31+01:00"
     },
     {
@@ -19758,7 +19746,7 @@
       "stars": 16,
       "license": "MIT",
       "image": "MMM-Touch.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2020-10-24T00:16:43+02:00"
     },
     {
@@ -19818,7 +19806,7 @@
       ],
       "license": "MIT",
       "image": "others-MMM-TPLink-screenshot-01.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-09-22T17:30:41+07:00"
     },
     {
@@ -19864,7 +19852,7 @@
       "description": "Display trains from your favorite departure station to any destination in Europe.",
       "issues": true,
       "stars": 3,
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2017-02-06T14:49:57+01:00"
     },
     {
@@ -19994,7 +19982,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "MMM-Transmission.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2022-08-06T19:25:56+03:00"
     },
     {
@@ -20042,7 +20030,7 @@
       "stars": 7,
       "license": "MIT",
       "image": "screenshots-compact.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-02-22T23:15:01+01:00"
     },
     {
@@ -20059,7 +20047,7 @@
       "tags": [
         "text-to-speech"
       ],
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2017-02-26T22:40:11+01:00"
     },
     {
@@ -20072,7 +20060,7 @@
       "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.).",
       "issues": true,
       "stars": 3,
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2018-08-17T13:59:59-07:00"
     },
     {
@@ -20095,7 +20083,7 @@
       ],
       "license": "MIT",
       "image": "others-MMM-TuyaSL-screenshot-01.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2021-01-05T10:23:49+07:00"
     },
     {
@@ -20163,7 +20151,7 @@
       "stars": 3,
       "license": "MIT",
       "image": "public-imgs-readme_example_1.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2023-01-11T12:46:29-05:00"
     },
     {
@@ -20177,7 +20165,7 @@
       "issues": true,
       "stars": 9,
       "license": "MIT",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2017-01-30T16:55:39-05:00"
     },
     {
@@ -20212,7 +20200,7 @@
       "description": "Estimated arrival times for UBER.",
       "issues": true,
       "stars": 17,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2019-09-30T10:30:14-04:00"
     },
     {
@@ -20281,7 +20269,7 @@
         "uk met office"
       ],
       "image": "warnings-bw.jpg",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2019-03-27T09:57:31Z"
     },
     {
@@ -20344,7 +20332,7 @@
       "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
       "issues": true,
       "stars": 9,
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-04-17T22:11:52+02:00"
     },
     {
@@ -20364,7 +20352,7 @@
         "monitoring"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-09-06T23:52:02+01:00"
     },
     {
@@ -20378,7 +20366,7 @@
       "issues": true,
       "stars": 8,
       "license": "MIT",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2024-07-20T12:49:46-05:00"
     },
     {
@@ -20425,7 +20413,7 @@
         "kuma"
       ],
       "image": ".github-icons_color_single.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2024-02-26T23:46:48-05:00"
     },
     {
@@ -20460,7 +20448,7 @@
       "issues": true,
       "stars": 3,
       "license": "MIT",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-11-05T22:08:36+01:00"
     },
     {
@@ -20474,7 +20462,7 @@
       "issues": true,
       "stars": 4,
       "license": "MIT",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2022-05-21T10:05:44+02:00"
     },
     {
@@ -20531,7 +20519,7 @@
         "conditions"
       ],
       "image": "doc-screenshots-basicConfiguration.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2024-11-13T22:12:51+01:00"
     },
     {
@@ -20571,7 +20559,7 @@
       ],
       "license": "MIT",
       "image": "docs-screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 13,
       "lastCommit": "2024-10-03T08:11:32+02:00"
     },
     {
@@ -20590,7 +20578,7 @@
         "module\""
       ],
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2021-02-03T18:20:55+01:00"
     },
     {
@@ -20614,7 +20602,7 @@
         "avfall"
       ],
       "image": "images-mmm-vesar-medium.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-08-04T13:28:13+02:00"
     },
     {
@@ -20659,7 +20647,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "resources-MMM-VietNamEventsCalendar.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 10,
       "lastCommit": "2021-09-10T23:16:34+07:00"
     },
     {
@@ -20674,7 +20662,7 @@
       "stars": 8,
       "license": "MIT",
       "image": "images-sample.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "lastCommit": "2021-12-28T23:20:17-05:00"
     },
     {
@@ -20749,7 +20737,7 @@
         "vocabulary trainer"
       ],
       "image": ".github-example.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2017-05-17T23:17:58+02:00"
     },
     {
@@ -20767,7 +20755,7 @@
         "voice recognition",
         "speech to text"
       ],
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2017-06-07T17:53:52+02:00"
     },
     {
@@ -20781,7 +20769,7 @@
       "issues": true,
       "stars": 18,
       "license": "ISC",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2019-03-05T22:24:16-05:00"
     },
     {
@@ -20798,7 +20786,7 @@
       "tags": [
         "voice control"
       ],
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2017-03-26T20:05:46+01:00"
     },
     {
@@ -20882,7 +20870,7 @@
         "transportation"
       ],
       "image": "mmm-vrr-table.jpg",
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 20,
       "lastCommit": "2024-06-16T06:50:02+02:00"
     },
     {
@@ -20903,7 +20891,7 @@
         "arrivals"
       ],
       "image": "511SFBay_color_web.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2022-04-08T17:13:33-07:00"
     },
     {
@@ -21034,7 +21022,7 @@
       "description": "A simple Water Reminder Module.",
       "issues": true,
       "stars": 8,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2021-01-03T15:07:57-03:00"
     },
     {
@@ -21047,7 +21035,7 @@
       "description": "Displays energy consumption from Wattvision.",
       "issues": true,
       "stars": 4,
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2022-01-05T20:44:24-06:00"
     },
     {
@@ -21081,7 +21069,7 @@
         "forecast"
       ],
       "image": "images-day-0000.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "lastCommit": "2025-02-26T15:42:14+01:00"
     },
     {
@@ -21096,7 +21084,7 @@
       "stars": 2,
       "license": "GPL-3.0",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-05-16T10:36:10+02:00"
     },
     {
@@ -21183,7 +21171,7 @@
       "maintainerURL": "https://github.com/cgillinger",
       "description": "Adds dynamic weather-based effects to your mirror.",
       "issues": true,
-      "stars": 3,
+      "stars": 5,
       "license": "MIT",
       "tags": [
         "snow",
@@ -21224,7 +21212,7 @@
       "description": "Weather forecast with rain &amp; temp graphs. Lots of options to turn on &amp; off. Data from OpenWeatherMap API.",
       "issues": true,
       "stars": 18,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2024-11-01T07:31:05-04:00"
     },
     {
@@ -21259,7 +21247,7 @@
       "stars": 22,
       "license": "MIT",
       "image": "images-1.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2020-11-22T21:21:53-05:00"
     },
     {
@@ -21291,7 +21279,7 @@
         "alerts"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2022-09-06T08:37:46+01:00"
     },
     {
@@ -21329,7 +21317,7 @@
         "webuntis"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 4,
       "lastCommit": "2025-10-01T17:43:51Z"
     },
     {
@@ -21392,7 +21380,6 @@
       "description": "Calendar of current month with weeks numbers.",
       "issues": true,
       "stars": 0,
-      "hasGithubIssues": false,
       "license": "BSD-3-Clause",
       "tags": [
         "calendar"
@@ -21413,7 +21400,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-07-20T12:46:20+01:00"
     },
     {
@@ -21516,7 +21503,7 @@
         "öpnv"
       ],
       "image": ".github-example.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-12-28T21:09:08+01:00"
     },
     {
@@ -21531,7 +21518,7 @@
       "stars": 120,
       "license": "MIT",
       "image": "mm.jpg",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 3,
       "lastCommit": "2022-09-26T13:37:23-05:00"
     },
     {
@@ -21599,7 +21586,7 @@
         "template"
       ],
       "image": "wootdeals-screenshot.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-06-25T01:12:01-04:00"
     },
     {
@@ -21687,7 +21674,7 @@
         "flood"
       ],
       "license": "MIT",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2017-10-05T09:49:38+02:00"
     },
     {
@@ -21707,7 +21694,7 @@
         "wotd"
       ],
       "image": "image-1.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-04-06T18:18:04+02:00"
     },
     {
@@ -21726,7 +21713,7 @@
         "rgb",
         "neopixels"
       ],
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2024-10-15T20:36:15+02:00"
     },
     {
@@ -21801,7 +21788,7 @@
       "issues": true,
       "stars": 0,
       "license": "MIT",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "lastCommit": "2020-01-24T05:16:43+02:00"
     },
     {
@@ -21818,7 +21805,7 @@
         "wunderlist"
       ],
       "license": "MIT",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2019-11-28T20:23:48+01:00"
     },
     {
@@ -21902,7 +21889,7 @@
       ],
       "license": "MIT",
       "image": "others-MMM-Yeelight-screenshot-01.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2018-05-29T14:38:38+07:00"
     },
     {
@@ -21930,7 +21917,7 @@
       "stars": 6,
       "license": "ISC",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2022-01-20T22:39:30-05:00"
     },
     {
@@ -22034,6 +22021,20 @@
       "lastCommit": "2021-11-09T07:36:17-08:00"
     },
     {
+      "name": "MMM-YrMeteogram",
+      "category": "Weather",
+      "url": "https://github.com/andreakn/MMM-YrMeteogram",
+      "id": "andreakn/MMM-YrMeteogram",
+      "maintainer": "andreakn",
+      "maintainerURL": "https://github.com/andreakn",
+      "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. in image form (SVG) Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
+      "issues": true,
+      "stars": 0,
+      "license": "CC0-1.0",
+      "defaultSortWeight": 9,
+      "lastCommit": "2025-10-03T09:16:14+02:00"
+    },
+    {
       "name": "MMM-YrNow",
       "category": "Weather",
       "url": "https://github.com/Yr/MMM-YrNow",
@@ -22093,7 +22094,7 @@
         "ev"
       ],
       "image": "charge.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-10-02T21:17:15+02:00"
     },
     {
@@ -22109,7 +22110,7 @@
       "hasGithubIssues": false,
       "license": "ISC",
       "image": "alternateScreenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2025-08-31T14:34:48-07:00"
     }
   ]
