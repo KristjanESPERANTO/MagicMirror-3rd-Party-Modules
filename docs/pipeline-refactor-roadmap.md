@@ -35,14 +35,15 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 3. Robustness & Performance Safety Nets
 
-| Task | Description                                                                                                                                                                          | Dependencies | Effort |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
-| P3.1 | Add persistent caches for API responses and HEAD validations with expiration metadata                                                                                                | none         | M      |
-| P3.2 | Introduce a central rate limiter + retry strategy for GitHub/GitLab requests                                                                                                         | P3.1         | M      |
-| P3.3 | Capture structured logs (JSON) and aggregate per-stage timing metrics                                                                                                                | P1.2         | M      |
-| P3.4 | Ensure deterministic outputs (sorted keys, hash-based image names) and document the guarantees                                                                                       | P1.2         | S      |
-| P3.5 | Harden repository clone flow to gracefully skip missing/renamed repos and keep the pipeline green ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41)) | none         | M      |
-| P3.6 | Replace hard-coded star fallbacks with authenticated API lookups for non-GitHub hosts ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5))               | P3.1         | M      |
+| Task   | Description                                                                                                                                                                                                                                                                                 | Dependencies | Effort |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P3.1   | Add persistent caches for API responses and HEAD validations with expiration metadata                                                                                                                                                                                                       | none         | M      |
+| P3.1.5 | Implement smart incremental checking: skip modules when (A) module has no new commits since last check AND (B) this repository has no new commits since last check; reuse cached results from modules.magicmirror.builders for unchanged modules to dramatically reduce check stage runtime | P3.1         | M      |
+| P3.2   | Introduce a central rate limiter + retry strategy for GitHub/GitLab requests                                                                                                                                                                                                                | P3.1         | M      |
+| P3.3   | Capture structured logs (JSON) and aggregate per-stage timing metrics                                                                                                                                                                                                                       | P1.2         | M      |
+| P3.4   | Ensure deterministic outputs (sorted keys, hash-based image names) and document the guarantees                                                                                                                                                                                              | P1.2         | S      |
+| P3.5   | Harden repository clone flow to gracefully skip missing/renamed repos and keep the pipeline green ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41))                                                                                                        | none         | M      |
+| P3.6   | Replace hard-coded star fallbacks with authenticated API lookups for non-GitHub hosts ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5))                                                                                                                      | P3.1         | M      |
 
 ### 4. Checks & Developer Experience
 
@@ -99,9 +100,10 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
-2. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
-3. Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments (P4.9).
+1. **P3.1** — Add persistent caches for API responses and HEAD validations with expiration metadata (foundation for incremental checking and rate-limit reduction).
+2. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
+3. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
+4. Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments (P4.9).
 
 ---
 
