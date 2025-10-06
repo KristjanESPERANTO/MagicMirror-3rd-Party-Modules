@@ -475,25 +475,16 @@ function switchDarkMode () {
   const body = document.getElementsByTagName("body")[0];
   const root = document.querySelector(":root");
   const sortButton = document.getElementById("sort-dropdown");
-  if (darkMode.checked) {
-    header.style.backgroundColor = "#222";
-    header.style.color = "#e9e9e9";
-    body.style.backgroundColor = "#222";
-    sortButton.style.color = "#ddd";
-    sortButton.style.backgroundColor = "#555";
-    resetButton.style.color = "#ddd";
-    resetButton.style.backgroundColor = "#555";
-    root.style.setProperty("--color-card-background", "#ddd");
-  } else {
-    header.style.backgroundColor = "#e9e9e9";
-    header.style.color = "#222";
-    body.style.backgroundColor = "#e9e9e9";
-    sortButton.style.color = "#555";
-    sortButton.style.backgroundColor = "#ddd";
-    resetButton.style.color = "#555";
-    resetButton.style.backgroundColor = "#ddd";
-    root.style.setProperty("--color-card-background", "#fff");
-  }
+  const isDark = darkMode.checked;
+
+  header.style.backgroundColor = isDark ? "#222" : "#e9e9e9";
+  header.style.color = isDark ? "#e9e9e9" : "#222";
+  body.style.backgroundColor = isDark ? "#222" : "#e9e9e9";
+  sortButton.style.color = isDark ? "#ddd" : "#555";
+  sortButton.style.backgroundColor = isDark ? "#555" : "#ddd";
+  resetButton.style.color = isDark ? "#ddd" : "#555";
+  resetButton.style.backgroundColor = isDark ? "#555" : "#ddd";
+  root.style.setProperty("--color-card-background", isDark ? "#ddd" : "#fff");
 
   const navMenu = document.getElementById("nav-menu");
   if (navMenu.classList.contains("visible")) {
