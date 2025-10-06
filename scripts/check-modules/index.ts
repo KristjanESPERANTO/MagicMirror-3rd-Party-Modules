@@ -375,6 +375,10 @@ const README_TRAILING_COMMA_FALSE_POSITIVES = new Set([
   "MMM-MealieMenu",
   "MMM-Remote-Control"
 ]);
+const MISSING_DEPENDENCY_EXCEPTIONS = new Set([
+  "electron",
+  "pm2"
+]);
 
 const README_INSTALL_SECTION_TOKENS = Object.freeze([
   "install",
@@ -987,12 +991,16 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
       declaredDependencies: declaredDependencyNames
     });
 
-    if (missingDependencies.length > 0) {
+    const filteredMissingDependencies = missingDependencies.filter(
+      (dep) => !MISSING_DEPENDENCY_EXCEPTIONS.has(dep)
+    );
+
+    if (filteredMissingDependencies.length > 0) {
       const rule = getRuleById(MISSING_DEPENDENCY_RULE_ID);
-      const dependencyList = missingDependencies
+      const dependencyList = filteredMissingDependencies
         .map((name) => `\`${name}\``)
         .join(", ");
-      const plural = missingDependencies.length > 1;
+      const plural = filteredMissingDependencies.length > 1;
       const baseMessage = `The module imports ${dependencyList} but does not list ${plural ? "them" : "it"} in package.json.`;
       const recommendation = `${baseMessage} Add ${plural ? "these dependencies" : "this dependency"} to package.json so they can be installed automatically.`;
       const messagePrefix = rule?.category ?? "Recommendation";
