@@ -146,12 +146,12 @@ function logErrorDetails(error: unknown, { scope }: { scope: string }) {
 function installGlobalErrorHandlers() {
   process.on("unhandledRejection", (reason) => {
     logErrorDetails(reason, { scope: "Unhandled promise rejection" });
-    process.exit(1);
+    process.exitCode = 1;
   });
 
   process.on("uncaughtException", (error) => {
     logErrorDetails(error, { scope: "Uncaught exception" });
-    process.exit(1);
+    process.exitCode = 1;
   });
 }
 
@@ -588,14 +588,12 @@ async function processModules() {
 }
 
 async function main() {
-  try {
-    await rotateModulesDirectory();
-    await processModules();
-  } catch (error) {
-    logger.error("Stage 'get-modules' failed");
-    logErrorDetails(error, { scope: "Fatal error" });
-    process.exit(1);
-  }
+  await rotateModulesDirectory();
+  await processModules();
 }
 
-await main();
+main().catch((error) => {
+  logger.error("Stage 'get-modules' failed");
+  logErrorDetails(error, { scope: "Fatal error" });
+  process.exitCode = 1;
+});
