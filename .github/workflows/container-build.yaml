@@ -43,4 +43,5 @@ jobs:
             --frontend=dockerfile.v0 \
             --local context=. \
             --local dockerfile=container \
+            --opt build-arg:GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
             $PARAMS
