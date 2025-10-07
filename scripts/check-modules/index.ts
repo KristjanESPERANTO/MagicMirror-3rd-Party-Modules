@@ -760,6 +760,7 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
       : null;
   const declaredDependencyNames = extractDeclaredDependencyNames(packageSummary);
   const usedDependencies = new Set();
+  const dependencyUsage = new Map();
 
   const groups = config?.groups ?? {};
   const runFastChecks = groups.fast !== false;
@@ -840,6 +841,10 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
       if (detectedDependencies.size > 0) {
         for (const dependencyName of detectedDependencies) {
           usedDependencies.add(dependencyName);
+          if (!dependencyUsage.has(dependencyName)) {
+            dependencyUsage.set(dependencyName, new Set());
+          }
+          dependencyUsage.get(dependencyName).add(relative);
         }
       }
     }
@@ -998,7 +1003,17 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
     if (filteredMissingDependencies.length > 0) {
       const rule = getRuleById(MISSING_DEPENDENCY_RULE_ID);
       const dependencyList = filteredMissingDependencies
-        .map((name) => `\`${name}\``)
+        .map((name) => {
+          const files = dependencyUsage.get(name);
+          if (!files || files.size === 0) {
+            return `\`${name}\``;
+          }
+          const formattedFiles = Array.from(files)
+            .sort()
+            .map((file) => `\`${file}\``)
+            .join(", ");
+          return `\`${name}\` (used in ${formattedFiles})`;
+        })
         .join(", ");
       const plural = filteredMissingDependencies.length > 1;
       const baseMessage = `The module imports ${dependencyList} but does not list ${plural ? "them" : "it"} in package.json.`;
