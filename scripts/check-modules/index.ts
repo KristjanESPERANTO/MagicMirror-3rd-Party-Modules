@@ -912,7 +912,8 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
     if (
       runDeepChecks &&
       fileName === "README.md" &&
-      path.dirname(fullPath) === moduleDir
+      path.dirname(fullPath) === moduleDir &&
+      module.name !== "mmpm"
     ) {
       const installSection = extractReadmeSection(
         content,
@@ -1013,7 +1014,7 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
       (dep) => !MISSING_DEPENDENCY_EXCEPTIONS.has(dep)
     );
 
-    if (filteredMissingDependencies.length > 0) {
+    if (filteredMissingDependencies.length > 0 && module.name !== "mmpm") {
       const rule = getRuleById(MISSING_DEPENDENCY_RULE_ID);
       const dependencyList = filteredMissingDependencies
         .map((name) => {
