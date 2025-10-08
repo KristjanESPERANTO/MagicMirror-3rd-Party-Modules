@@ -375,6 +375,9 @@ const README_TRAILING_COMMA_FALSE_POSITIVES = new Set([
   "MMM-MealieMenu",
   "MMM-Remote-Control"
 ]);
+const README_INSTALL_BLOCK_FALSE_POSITIVES = new Set([
+  "MMM-Remote-Control"
+]);
 const MISSING_DEPENDENCY_EXCEPTIONS = new Set([
   "electron",
   "pm2"
@@ -933,7 +936,10 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
           issues,
           "Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions))."
         );
-      } else if (!sectionHasCopyableCommandBlock(installSection.content)) {
+      } else if (
+        !sectionHasCopyableCommandBlock(installSection.content) &&
+        !README_INSTALL_BLOCK_FALSE_POSITIVES.has(module.name)
+      ) {
         addIssue(
           issues,
           "Recommendation: The README's install section should include a copyable fenced command block (for example ```bash ...). Please add one so the module can be installed with a single copy/paste ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions))."
