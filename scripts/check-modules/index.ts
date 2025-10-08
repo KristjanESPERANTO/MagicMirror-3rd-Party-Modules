@@ -376,7 +376,11 @@ const README_TRAILING_COMMA_FALSE_POSITIVES = new Set([
   "MMM-Remote-Control"
 ]);
 const README_INSTALL_BLOCK_FALSE_POSITIVES = new Set([
+  "MMM-CalendarExt3",
   "MMM-Remote-Control"
+]);
+const README_UPDATE_BLOCK_FALSE_POSITIVES = new Set([
+  "MMM-CalendarExt3"
 ]);
 const MISSING_DEPENDENCY_EXCEPTIONS = new Set([
   "electron",
@@ -924,7 +928,10 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
           issues,
           "Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions))."
         );
-      } else if (!sectionHasCopyableCommandBlock(updateSection.content)) {
+      } else if (
+        !sectionHasCopyableCommandBlock(updateSection.content) &&
+        !README_UPDATE_BLOCK_FALSE_POSITIVES.has(module.name)
+      ) {
         addIssue(
           issues,
           "Recommendation: The README's update section should provide a copyable fenced command block (for example ```bash ...). Please add one so users can update the module quickly ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions))."
