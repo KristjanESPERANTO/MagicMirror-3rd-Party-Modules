@@ -270,10 +270,11 @@ const RULE_DEFINITIONS = [
     scope: "text",
     patterns: [
       "uses: actions/setup-node@v3",
-      "uses: actions/setup-node@v4"
+      "uses: actions/setup-node@v4",
+      "uses: actions/setup-node@v5"
     ],
     category: "Recommendation",
-    description: "Upgrade workflows to use actions/setup-node@v5."
+    description: "Upgrade workflows to use actions/setup-node@v6."
   },
   {
     id: "text-deprecated-node-version",
