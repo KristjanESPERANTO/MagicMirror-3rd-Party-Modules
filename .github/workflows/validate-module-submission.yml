@@ -1,0 +1,249 @@
+name: Validate Module Submission
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "module-submissions/pending/**"
+
+permissions:
+  pull-requests: write
+  contents: read
+  checks: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            module-submissions/pending/**/*.json
+
+      - name: Validate submission files
+        id: validate
+        run: |
+          node scripts/module-submission/validate.js
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+
+      - name: Check for duplicates
+        id: duplicate-check
+        run: |
+          node scripts/module-submission/check-duplicates.js
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+
+      - name: Validate repository
+        id: repo-check
+        run: |
+          node scripts/module-submission/check-repository.js
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check module quality
+        id: quality-check
+        run: |
+          node scripts/module-submission/quality-check.js
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+
+      - name: Generate validation report
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Read validation results
+            const results = {
+              schema: JSON.parse(fs.readFileSync('validation-results/schema.json', 'utf8')),
+              duplicates: JSON.parse(fs.readFileSync('validation-results/duplicates.json', 'utf8')),
+              repository: JSON.parse(fs.readFileSync('validation-results/repository.json', 'utf8')),
+              quality: JSON.parse(fs.readFileSync('validation-results/quality.json', 'utf8'))
+            };
+
+            // Generate report
+            let report = '## 🤖 Automated Validation Report\n\n';
+
+            // Schema validation
+            report += '### ✅ JSON Schema Validation\n';
+            if (results.schema.valid) {
+              report += '- ✅ All submission files are valid\n\n';
+            } else {
+              report += '- ❌ Schema validation failed:\n';
+              results.schema.errors.forEach(err => {
+                report += `  - ${err}\n`;
+              });
+              report += '\n';
+            }
+
+            // Duplicate check
+            report += '### 🔍 Duplicate Check\n';
+            if (results.duplicates.duplicates.length === 0) {
+              report += '- ✅ No duplicates found\n\n';
+            } else {
+              report += '- ⚠️ Possible duplicates detected:\n';
+              results.duplicates.duplicates.forEach(dup => {
+                report += `  - ${dup.name} (${dup.existingUrl})\n`;
+              });
+              report += '\n';
+            }
+
+            // Repository validation
+            report += '### 📦 Repository Validation\n';
+            const repo = results.repository;
+            report += `- ${repo.accessible ? '✅' : '❌'} Repository is accessible\n`;
+            report += `- ${repo.hasPackageJson ? '✅' : '❌'} Contains \`package.json\`\n`;
+            report += `- ${repo.hasLicense ? '✅' : '❌'} Contains LICENSE file\n`;
+            report += `- ${repo.hasReadme ? '✅' : '❌'} Contains README.md\n`;
+            report += `- ${repo.validLicense ? '✅' : '⚠️'} License is ${repo.license || 'not specified'}\n`;
+            report += '\n';
+
+            // Quality checks
+            report += '### 🎯 Quality Checks\n';
+            const quality = results.quality;
+            report += `- ${quality.hasScreenshot ? '✅' : '⚠️'} Screenshot ${quality.hasScreenshot ? 'found' : 'not found'}\n`;
+            report += `- ${quality.followsNaming ? '✅' : '⚠️'} Module name ${quality.followsNaming ? 'follows' : 'does not follow'} MMM-* convention\n`;
+            report += `- ${quality.hasKeywords ? '✅' : '⚠️'} Package.json ${quality.hasKeywords ? 'contains' : 'missing'} keywords\n`;
+            report += `- ${quality.recentActivity ? '✅' : '⚠️'} Last commit: ${quality.lastCommit}\n`;
+            report += '\n';
+
+            // Overall status
+            const allPassed = results.schema.valid && 
+                             results.duplicates.duplicates.length === 0 &&
+                             repo.accessible && 
+                             repo.hasPackageJson && 
+                             repo.hasLicense && 
+                             repo.hasReadme;
+
+            if (allPassed) {
+              report += '---\n\n';
+              report += '## ✅ **All Required Checks Passed!**\n\n';
+              report += 'This submission meets all requirements and is ready for maintainer review.\n\n';
+              
+              // Check if auto-merge eligible
+              const author = context.payload.pull_request.user.login;
+              const isTrusted = false; // TODO: Implement trusted user check
+              
+              if (isTrusted) {
+                report += '🎉 **Auto-merge eligible** - This user is a trusted contributor.\n';
+              } else {
+                report += '👀 **Awaiting maintainer approval**\n';
+              }
+            } else {
+              report += '---\n\n';
+              report += '## ⚠️ **Action Required**\n\n';
+              report += 'Please address the issues marked with ❌ above before this submission can be approved.\n';
+            }
+
+            // Post comment
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: report
+            });
+
+            // Update check status
+            if (allPassed) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: ['validation-passed', 'ready-for-review']
+              });
+            } else {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: ['validation-failed', 'needs-changes']
+              });
+            }
+
+  check-trusted-user:
+    needs: validate
+    if: contains(github.event.pull_request.labels.*.name, 'validation-passed')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if user is in trusted-contributors team
+        id: check-trusted
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const author = context.payload.pull_request.user.login;
+
+            // Check if user is in trusted-contributors team
+            try {
+              const teamMembership = await github.rest.teams.getMembershipForUserInOrg({
+                org: context.repo.owner,
+                team_slug: 'trusted-contributors',
+                username: author
+              });
+              
+              const isTrusted = teamMembership.data.state === 'active';
+              
+              if (isTrusted) {
+                // Auto-approve the PR
+                await github.rest.pulls.createReview({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: context.issue.number,
+                  event: 'APPROVE',
+                  body: '✅ **Auto-approved**\n\nThis submission passed all validation checks and was submitted by a trusted contributor.'
+                });
+                
+                await github.rest.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  labels: ['auto-approved', 'trusted-contributor']
+                });
+                
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  body: '🎉 This PR has been **auto-approved** and is ready to merge!\n\nThanks for your contribution, @' + author + '!'
+                });
+              } else {
+                // Regular user - request maintainer review
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  body: '✅ All validation checks passed! This PR is ready for maintainer review.\n\n**Note:** Trusted contributors get auto-approval. Keep up the good work to become a trusted contributor!'
+                });
+              }
+              
+              return isTrusted;
+            } catch (error) {
+              // User is not in team - this is fine, just needs manual review
+              console.log('User is not in trusted-contributors team (this is normal for new contributors)');
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: '✅ All validation checks passed! This PR is ready for maintainer review.'
+              });
+              
+              return false;
+            }
