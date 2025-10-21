@@ -525,22 +525,21 @@ async function processModules() {
     `Validating up to ${totalTargets} module URLs (concurrency=${cliOptions.urlConcurrency}, rate-limit=${rateLabel})`
   );
 
-  const validated = await validateModuleUrls({
-    modules,
-    limit: cliOptions.limit,
-    urlConcurrency: cliOptions.urlConcurrency
-  });
-
   const validModules: ModuleEntry[] = [];
   const skippedModules: ReturnType<typeof createSkippedEntry>[] = [];
   let moduleCounter = 0;
   let consecutiveErrors = 0;
   const MAX_CONSECUTIVE_ERRORS = 10;
 
-  await ensureDirectory(MODULES_DIR);
-
   // Use try-finally to ensure output is written even if errors occur
   try {
+    await ensureDirectory(MODULES_DIR);
+
+    const validated = await validateModuleUrls({
+      modules,
+      limit: cliOptions.limit,
+      urlConcurrency: cliOptions.urlConcurrency
+    });
     for (const {
       module,
       ok,
