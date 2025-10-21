@@ -403,6 +403,7 @@ function createSkippedEntry(
     statusText?: string;
     responseSnippet?: string;
     initialStatusCode?: number | null;
+    error?: string;
   } = {}
 ) {
   const owner = extractOwnerFromUrl(module.url);
@@ -442,12 +443,24 @@ async function refreshRepository({
       ? module.branch
       : undefined;
 
-  await ensureRepository({
-    repositoryUrl: module.url,
-    directoryPath: tempPath,
-    branch,
-    depth: 1
-  });
+  try {
+    await ensureRepository({
+      repositoryUrl: module.url,
+      directoryPath: tempPath,
+      branch,
+      depth: 1
+    });
+  } catch (error) {
+    // Add context to the error for better debugging
+    const message = error instanceof Error ? error.message : String(error);
+    const enhancedError = new Error(
+      `Failed to clone repository ${module.url}${branch ? ` (branch: ${branch})` : ""}: ${message}`
+    );
+    if (error instanceof Error && error.stack) {
+      enhancedError.stack = error.stack;
+    }
+    throw enhancedError;
+  }
 
   await ensureDirectory(path.dirname(finalPath));
   if (await fileExists(finalPath)) {
@@ -464,6 +477,9 @@ async function writeOutputs({
   validModules: ModuleEntry[];
   skippedModules: ReturnType<typeof createSkippedEntry>[];
 }) {
+  // Always write the stage 3 file, even if no modules were successfully cloned
+  // This allows the pipeline to continue even if this stage had issues
+  logger.info(`Writing stage 3 output with ${validModules.length} valid modules`);
   await writeJson(
     MODULES_STAGE_3_PATH,
     { modules: validModules },
@@ -471,10 +487,20 @@ async function writeOutputs({
   );
 
   if (skippedModules.length > 0) {
+    logger.info(`Writing ${skippedModules.length} skipped modules to ${SKIPPED_MODULES_PATH}`);
     await writeJson(SKIPPED_MODULES_PATH, skippedModules, { pretty: 2 });
   }
 
-  await validateStageFile("modules.stage.3", MODULES_STAGE_3_PATH);
+  // Validate the output file - this will throw if the file is invalid
+  // but at least the file exists now
+  try {
+    await validateStageFile("modules.stage.3", MODULES_STAGE_3_PATH);
+    logger.info("Stage 3 output file validated successfully");
+  } catch (validationError) {
+    logger.warn("Stage 3 output file validation failed, but file was written");
+    logErrorDetails(validationError, { scope: "Stage 3 validation" });
+    // Don't throw here - we want the file to exist even if validation fails
+  }
 }
 
 async function processModules() {
@@ -508,83 +534,118 @@ async function processModules() {
   const validModules: ModuleEntry[] = [];
   const skippedModules: ReturnType<typeof createSkippedEntry>[] = [];
   let moduleCounter = 0;
+  let consecutiveErrors = 0;
+  const MAX_CONSECUTIVE_ERRORS = 10;
 
   await ensureDirectory(MODULES_DIR);
 
-  for (const {
-    module,
-    ok,
-    statusCode,
-    statusText,
-    responseSnippet,
-    usedFallback,
-    initialStatusCode
-  } of validated) {
-    if (!ok) {
-      skippedModules.push(
-        createSkippedEntry(module, "Invalid repository URL", "invalid_url", {
-          statusCode,
-          statusText,
-          responseSnippet,
-          initialStatusCode
-        })
+  // Use try-finally to ensure output is written even if errors occur
+  try {
+    for (const {
+      module,
+      ok,
+      statusCode,
+      statusText,
+      responseSnippet,
+      usedFallback,
+      initialStatusCode
+    } of validated) {
+      if (!ok) {
+        skippedModules.push(
+          createSkippedEntry(module, "Invalid repository URL", "invalid_url", {
+            statusCode,
+            statusText,
+            responseSnippet,
+            initialStatusCode
+          })
+        );
+        continue;
+      }
+
+      const owner = extractOwnerFromUrl(module.url);
+      const identifier = `${module.name}-----${owner}`;
+      const tempPath = path.join(MODULES_TEMP_DIR, identifier);
+      const finalPath = path.join(MODULES_DIR, identifier);
+
+      const moduleCopy: ModuleEntry = { ...module };
+
+      if (statusCode && REDIRECT_STATUS_CODES.has(statusCode)) {
+        ensureIssueArray(moduleCopy);
+        moduleCopy.issues?.push(
+          statusCode === 301
+            ? "The repository URL returns a 301 status code, indicating it has been moved. Please verify the new location and update the module list if necessary."
+            : `The repository URL returned a ${statusCode} redirect during validation. Please confirm the final destination and update the module list if necessary.`
+        );
+      }
+
+      if (usedFallback) {
+        ensureIssueArray(moduleCopy);
+        moduleCopy.issues?.push(
+          "HEAD requests to this repository failed but a subsequent GET request succeeded. Please verify the repository URL and server configuration."
+        );
+      }
+
+      moduleCounter += 1;
+      logger.info(
+        `+++   ${moduleCounter.toString().padStart(4, " ")}: ${module.name} by ${owner} - ${module.url}`
       );
-      continue;
+
+      try {
+        await refreshRepository({ module: moduleCopy, tempPath, finalPath });
+        validModules.push(moduleCopy);
+        consecutiveErrors = 0; // Reset error counter on success
+      } catch (error) {
+        consecutiveErrors += 1;
+        const message = error instanceof Error ? error.message : String(error);
+        const errorStack = error instanceof Error ? error.stack : undefined;
+        
+        logger.error(
+          `Failed to clone/update module [${moduleCounter}/${validated.length}]: ${module.name} (${module.url})`
+        );
+        logger.error(`Error: ${message}`);
+        
+        if (errorStack && errorStack !== message) {
+          logger.debug(`Stack trace: ${errorStack}`);
+        }
+
+        await rm(tempPath, { recursive: true, force: true }).catch(() => {});
+        skippedModules.push(
+          createSkippedEntry(
+            module,
+            "Repository clone failed - URL might be invalid or repository might be private/deleted",
+            "clone_failure",
+            { error: message }
+          )
+        );
+
+        // If we have too many consecutive errors, something might be systematically wrong
+        if (consecutiveErrors >= MAX_CONSECUTIVE_ERRORS) {
+          logger.warn(
+            `Encountered ${MAX_CONSECUTIVE_ERRORS} consecutive errors. Continuing but this might indicate a systematic issue (e.g., network problems, rate limiting).`
+          );
+          // Reset counter to avoid spamming this warning
+          consecutiveErrors = 0;
+        }
+        
+        continue;
+      }
     }
 
-    const owner = extractOwnerFromUrl(module.url);
-    const identifier = `${module.name}-----${owner}`;
-    const tempPath = path.join(MODULES_TEMP_DIR, identifier);
-    const finalPath = path.join(MODULES_DIR, identifier);
-
-    const moduleCopy: ModuleEntry = { ...module };
-
-    if (statusCode && REDIRECT_STATUS_CODES.has(statusCode)) {
-      ensureIssueArray(moduleCopy);
-      moduleCopy.issues?.push(
-        statusCode === 301
-          ? "The repository URL returns a 301 status code, indicating it has been moved. Please verify the new location and update the module list if necessary."
-          : `The repository URL returned a ${statusCode} redirect during validation. Please confirm the final destination and update the module list if necessary.`
-      );
-    }
-
-    if (usedFallback) {
-      ensureIssueArray(moduleCopy);
-      moduleCopy.issues?.push(
-        "HEAD requests to this repository failed but a subsequent GET request succeeded. Please verify the repository URL and server configuration."
-      );
-    }
-
-    moduleCounter += 1;
-    logger.info(
-      `+++   ${moduleCounter.toString().padStart(4, " ")}: ${module.name} by ${owner} - ${module.url}`
-    );
-
+    logger.info(`Modules cloned: ${validModules.length}`);
+    logger.info(`Modules skipped: ${skippedModules.length}`);
+    logger.info(`Total modules processed: ${validModules.length + skippedModules.length}/${validated.length}`);
+  } finally {
+    // Always write output, even if errors occurred
+    logger.info("Writing output files...");
     try {
-      await refreshRepository({ module: moduleCopy, tempPath, finalPath });
-      validModules.push(moduleCopy);
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      logger.error(
-        `Failed to clone/update module: ${module.name} (${module.url})`
-      );
-      logger.error(message);
-      await rm(tempPath, { recursive: true, force: true }).catch(() => {});
-      skippedModules.push(
-        createSkippedEntry(
-          module,
-          "Repository clone failed - URL might be invalid or repository might be private/deleted",
-          "clone_failure"
-        )
-      );
-      continue;
+      await writeOutputs({ validModules, skippedModules });
+      logger.info("Output files written successfully");
+    } catch (writeError) {
+      logger.error("Failed to write output files");
+      logErrorDetails(writeError, { scope: "writeOutputs" });
+      throw writeError;
     }
   }
-
-  logger.info(`Modules cloned: ${validModules.length}`);
-  logger.info(`Modules skipped: ${skippedModules.length}`);
-
-  await writeOutputs({ validModules, skippedModules });
 }
 
 async function main() {
