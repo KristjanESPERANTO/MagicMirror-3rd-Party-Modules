@@ -263,7 +263,10 @@ async function fetchFallbackPreview(url: string) {
 async function validateModuleUrl(
   module: ModuleEntry
 ): Promise<UrlValidationResult> {
+  logger.info(`=== DIAGNOSTIC: validateModuleUrl called for ${module.name} (${module.url}) ===`);
+  
   try {
+    logger.info(`=== DIAGNOSTIC: Making HEAD request to ${module.url} ===`);
     const headResponse = await httpClient.request(module.url, {
       method: "HEAD",
       redirect: "manual",
@@ -271,11 +274,14 @@ async function validateModuleUrl(
       retryDelayMs: URL_VALIDATION_RETRY_DELAY_MS
     });
 
+    logger.info(`=== DIAGNOSTIC: HEAD response received: ${headResponse.status} ${headResponse.statusText} ===`);
+
     const headSnippet = await readSnippet(headResponse);
     const headStatus = headResponse.status;
     const headStatusText = headResponse.statusText;
 
     if (isSuccessStatus(headStatus) || isAllowedRedirect(headStatus)) {
+      logger.info(`=== DIAGNOSTIC: URL ${module.url} validated successfully ===`);
       return {
         module,
         statusCode: headStatus,
@@ -285,6 +291,7 @@ async function validateModuleUrl(
       };
     }
 
+    logger.info(`=== DIAGNOSTIC: HEAD failed with ${headStatus}, trying fallback GET ===`);
     const fallbackPreview = await fetchFallbackPreview(module.url);
     if (
       fallbackPreview &&
@@ -323,6 +330,10 @@ async function validateModuleUrl(
     };
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
+    logger.error(`=== DIAGNOSTIC: Exception in validateModuleUrl for ${module.url}: ${message} ===`);
+    if (error instanceof Error && error.stack) {
+      logger.error(`Stack: ${error.stack}`);
+    }
     logger.warn(`URL ${module.url}: ${message}`);
     return {
       module,
@@ -343,6 +354,9 @@ async function validateModuleUrls({
   limit?: number;
   urlConcurrency: number;
 }) {
+  logger.info("=== DIAGNOSTIC: validateModuleUrls called ===");
+  logger.info(`Total modules: ${modules.length}, limit: ${limit}, concurrency: ${urlConcurrency}`);
+  
   const total =
     typeof limit === "number"
       ? Math.min(limit, modules.length)
@@ -354,6 +368,8 @@ async function validateModuleUrls({
     return [];
   }
 
+  logger.info(`=== DIAGNOSTIC: About to validate ${targets.length} modules ===`);
+  
   const results: UrlValidationResult[] = new Array(targets.length);
   let nextIndex = 0;
   let completed = 0;
@@ -361,6 +377,7 @@ async function validateModuleUrls({
   const progressInterval = Math.max(10, Math.ceil(total / 10));
 
   async function worker() {
+    logger.info("=== DIAGNOSTIC: Worker started ===");
     for (;;) {
       const currentIndex = nextIndex;
       if (currentIndex >= targets.length) {
@@ -369,21 +386,38 @@ async function validateModuleUrls({
       nextIndex += 1;
 
       const module = targets[currentIndex];
-      const result = await validateModuleUrl(module);
+      logger.info(`=== DIAGNOSTIC: Validating module ${currentIndex + 1}/${targets.length}: ${module.name} - ${module.url} ===`);
+      
+      try {
+        const result = await validateModuleUrl(module);
+        results[currentIndex] = result;
+        completed += 1;
+        
+        logger.info(`=== DIAGNOSTIC: Completed ${completed}/${total} ===`);
 
-      results[currentIndex] = result;
-      completed += 1;
-
-      if (completed % progressInterval === 0 || completed === total) {
-        logger.info(
-          `Progress: ${completed}/${total} URLs validated (concurrency=${urlConcurrency})`
-        );
+        if (completed % progressInterval === 0 || completed === total) {
+          logger.info(
+            `Progress: ${completed}/${total} URLs validated (concurrency=${urlConcurrency})`
+          );
+        }
+      } catch (error) {
+        logger.error(`=== DIAGNOSTIC: Error validating ${module.name}: ${error} ===`);
+        throw error;
       }
     }
+    logger.info("=== DIAGNOSTIC: Worker finished ===");
   }
 
   const workerCount = Math.min(urlConcurrency, targets.length);
-  await Promise.all(Array.from({ length: workerCount }, () => worker()));
+  logger.info(`=== DIAGNOSTIC: Starting ${workerCount} workers ===`);
+  
+  try {
+    await Promise.all(Array.from({ length: workerCount }, () => worker()));
+    logger.info("=== DIAGNOSTIC: All workers completed successfully ===");
+  } catch (error) {
+    logger.error(`=== DIAGNOSTIC: Worker pool error: ${error} ===`);
+    throw error;
+  }
 
   return results;
 }
