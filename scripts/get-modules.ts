@@ -50,7 +50,7 @@ const SKIPPED_MODULES_PATH = path.join(
 const MODULES_DIR = path.join(PROJECT_ROOT, "modules");
 const MODULES_TEMP_DIR = path.join(PROJECT_ROOT, "modules_temp");
 
-const DEFAULT_URL_CONCURRENCY = 10;
+const DEFAULT_URL_CONCURRENCY = 5;
 const DEFAULT_URL_RATE = 15;
 const URL_VALIDATION_RETRY_COUNT = 5;
 const URL_VALIDATION_RETRY_DELAY_MS = 3000;
@@ -123,6 +123,14 @@ function parseCliOptions(argv: string[]): CliOptions {
 
 const cliOptions = parseCliOptions(process.argv.slice(2));
 const logger = createLogger({ name: "get-modules" });
+
+function logMemoryUsage(label: string) {
+  const usage = process.memoryUsage();
+  const heapUsedMb = (usage.heapUsed / 1024 / 1024).toFixed(2);
+  const heapTotalMb = (usage.heapTotal / 1024 / 1024).toFixed(2);
+  const rssMb = (usage.rss / 1024 / 1024).toFixed(2);
+  logger.info(`[Memory] ${label}: RSS=${rssMb}MB, Heap=${heapUsedMb}MB/${heapTotalMb}MB`);
+}
 
 function logErrorDetails(error: unknown, { scope }: { scope: string }) {
   if (error instanceof Error) {
@@ -399,6 +407,7 @@ async function validateModuleUrls({
           logger.info(
             `Progress: ${completed}/${total} URLs validated (concurrency=${urlConcurrency})`
           );
+          logMemoryUsage(`Progress: ${completed}/${total}`);
         }
       } catch (error) {
         logger.error(`=== DIAGNOSTIC: Error validating ${module.name}: ${error} ===`);
@@ -544,6 +553,7 @@ async function processModules() {
     MODULES_STAGE_2_PATH
   );
   const modules = extractModules(stageData);
+  logMemoryUsage("Initial");
 
   logger.info(`Loaded ${modules.length} modules from stage 2`);
 
@@ -669,6 +679,7 @@ async function processModules() {
     logger.info(`Total modules processed: ${validModules.length + skippedModules.length}/${validated.length}`);
   } finally {
     // Always write output, even if errors occurred
+    logMemoryUsage("Pre-write");
     logger.info("Writing output files...");
     try {
       await writeOutputs({ validModules, skippedModules });
@@ -678,6 +689,7 @@ async function processModules() {
       logErrorDetails(writeError, { scope: "writeOutputs" });
       throw writeError;
     }
+    logMemoryUsage("Post-write");
   }
 }
 
