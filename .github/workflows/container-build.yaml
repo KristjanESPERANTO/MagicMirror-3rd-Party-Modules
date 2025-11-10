@@ -58,7 +58,14 @@ jobs:
             --local context=. \
             --local dockerfile=container \
             --opt build-arg:GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-            $PARAMS
+            $PARAMS \
+            --output type=local,dest=build-output
+          if [ -d build-output/data/cache ]; then
+            rm -rf website/data/cache
+            mkdir -p website/data/cache
+            cp -a build-output/data/cache/. website/data/cache/
+          fi
+          rm -rf build-output
       - name: Save repository API cache
         if: always()
         uses: actions/cache/save@v4
