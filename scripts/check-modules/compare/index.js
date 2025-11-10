@@ -283,13 +283,13 @@ async function runCli () {
     .option("--legacy <command>", "Command used to run the legacy pipeline", DEFAULT_LEGACY_COMMAND)
     .option("--ts <command>", "Command used to run the TypeScript pipeline", DEFAULT_TS_COMMAND)
     .option("--output <path>", "Directory to store comparison artifacts", DEFAULT_OUTPUT_DIR)
-    .option("--run-id <id>", "Identifier for this comparison run", () => `run-${Date.now()}`)
+    .option("--run-id <id>", "Identifier for this comparison run")
     .action(async (options) => {
       const fixturesPath = resolvePath(options.fixtures, DEFAULT_FIXTURE_DIR);
       const outputRoot = resolvePath(options.output, DEFAULT_OUTPUT_DIR);
       const legacyCommand = options.legacy ?? DEFAULT_LEGACY_COMMAND;
       const tsCommand = options.ts ?? DEFAULT_TS_COMMAND;
-      const runId = typeof options.runId === "function" ? options.runId() : options.runId ?? `run-${Date.now()}`;
+      const runId = options.runId ?? `run-${Date.now()}`;
 
       await ensurePathExists(fixturesPath);
       await mkdir(outputRoot, {recursive: true});
