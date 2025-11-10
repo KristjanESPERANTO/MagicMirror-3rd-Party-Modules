@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-11-08T11:42:19.847Z",
+  "lastUpdate": "2025-11-10T13:42:49.776Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -140,16 +140,6 @@
       "maintainer": "gertperdZA",
       "maintainerURL": "https://github.com/gertperdZA",
       "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
-      "issues": []
-    },
-    {
-      "name": "MMM-air-raid-monitor-ua",
-      "category": "News / Information",
-      "url": "https://github.com/PavlenkoM/MMM-air-raid-monitor-ua",
-      "id": "PavlenkoM/MMM-air-raid-monitor-ua",
-      "maintainer": "PavlenkoM",
-      "maintainerURL": "https://github.com/PavlenkoM",
-      "description": "Shows the current status of air raid sirens in Ukraine.",
       "issues": []
     },
     {
@@ -1297,10 +1287,10 @@
     {
       "name": "MMM-Caltrain",
       "category": "Transport / Travel",
-      "url": "https://github.com/zzhenney/MMM-Caltrain",
-      "id": "zzhenney/MMM-Caltrain",
-      "maintainer": "zzhenney",
-      "maintainerURL": "https://github.com/zzhenney",
+      "url": "https://github.com/zzflops/MMM-Caltrain",
+      "id": "zzflops/MMM-Caltrain",
+      "maintainer": "zzflops",
+      "maintainerURL": "https://github.com/zzflops",
       "description": "Display departure times or estimated time to departure for the selected Caltrain station.",
       "issues": []
     },
@@ -5112,16 +5102,6 @@
       "issues": []
     },
     {
-      "name": "MMM-IQAir",
-      "category": "Weather",
-      "url": "https://github.com/PavlenkoM/MMM-IQAir",
-      "id": "PavlenkoM/MMM-IQAir",
-      "maintainer": "PavlenkoM",
-      "maintainerURL": "https://github.com/PavlenkoM",
-      "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
-      "issues": []
-    },
-    {
       "name": "MMM-IronManGIF",
       "category": "Entertainment / Misc",
       "url": "https://github.com/2hdlockness/MMM-IronManGIF",
@@ -5487,10 +5467,10 @@
     {
       "name": "MMM-KVV-Trias",
       "category": "Transport / Travel",
-      "url": "https://github.com/ZeroTwoWeeb/MMM-KVV-Trias",
-      "id": "ZeroTwoWeeb/MMM-KVV-Trias",
-      "maintainer": "ZeroTwoWeeb",
-      "maintainerURL": "https://github.com/ZeroTwoWeeb",
+      "url": "https://github.com/jkobber/MMM-KVV-Trias",
+      "id": "jkobber/MMM-KVV-Trias",
+      "maintainer": "jkobber",
+      "maintainerURL": "https://github.com/jkobber",
       "description": "Show Station Data for stations in the Karlsruhe Region pulled from the KVV Trias API.",
       "issues": []
     },
@@ -5774,7 +5754,7 @@
       "id": "schlomm/MMM-LogfileViewer",
       "maintainer": "schlomm",
       "maintainerURL": "https://github.com/schlomm",
-      "description": "Monitor your system logs, application logs, or any text file with live updates and beautiful log-level color coding as a MagicMirror Module.",
+      "description": "Monitor your system logs, application logs, or any text file with live updates and beautiful log-level color coding.",
       "issues": []
     },
     {
@@ -5978,6 +5958,26 @@
       "maintainer": "Lavve",
       "maintainerURL": "https://github.com/Lavve",
       "description": "Shows a clock in cool hexadecimal colors.",
+      "issues": []
+    },
+    {
+      "name": "MagicMirror-air-raid-monitor-ua",
+      "category": "News / Information",
+      "url": "https://github.com/PavlenkoM/MagicMirror-air-raid-monitor-ua",
+      "id": "PavlenkoM/MagicMirror-air-raid-monitor-ua",
+      "maintainer": "PavlenkoM",
+      "maintainerURL": "https://github.com/PavlenkoM",
+      "description": "Shows the current status of air raid sirens in Ukraine.",
+      "issues": []
+    },
+    {
+      "name": "MagicMirror-IQAir",
+      "category": "Weather",
+      "url": "https://github.com/PavlenkoM/MagicMirror-IQAir",
+      "id": "PavlenkoM/MagicMirror-IQAir",
+      "maintainer": "PavlenkoM",
+      "maintainerURL": "https://github.com/PavlenkoM",
+      "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
       "issues": []
     },
     {
@@ -11336,7 +11336,7 @@
       "id": "TAGinside/MMM-Synology-Download_Station",
       "maintainer": "TAGinside",
       "maintainerURL": "https://github.com/TAGinside",
-      "description": "Display Synology Download Station tasks. Auto-hide when no tasks",
+      "description": "Display Synology Download Station tasks. Auto-hide when no tasks.",
       "issues": []
     },
     {
