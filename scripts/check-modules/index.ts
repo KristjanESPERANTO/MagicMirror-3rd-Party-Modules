@@ -44,7 +44,7 @@ const envOverrides = {
   dataDir: process.env.CHECK_MODULES_DATA_DIR,
   modulesDir: process.env.CHECK_MODULES_MODULES_DIR,
   resultPath: process.env.CHECK_MODULES_RESULT_PATH,
-  stage5Path: process.env.CHECK_MODULES_STAGE5_PATH,
+  stage4Path: process.env.CHECK_MODULES_STAGE4_PATH,
   modulesJsonPath: process.env.CHECK_MODULES_MODULES_JSON_PATH,
   modulesMinPath: process.env.CHECK_MODULES_MODULES_MIN_PATH,
   statsPath: process.env.CHECK_MODULES_STATS_PATH,
@@ -68,9 +68,9 @@ const MODULES_DIR = envOverrides.modulesDir
 const RESULT_PATH = envOverrides.resultPath
   ? path.resolve(envOverrides.resultPath)
   : path.join(WEBSITE_DIR, "result.md");
-const STAGE5_PATH = envOverrides.stage5Path
-  ? path.resolve(envOverrides.stage5Path)
-  : path.join(DATA_DIR, "modules.stage.5.json");
+const STAGE4_PATH = envOverrides.stage4Path
+  ? path.resolve(envOverrides.stage4Path)
+  : path.join(DATA_DIR, "modules.stage.4.json");
 const MODULES_JSON_PATH = envOverrides.modulesJsonPath
   ? path.resolve(envOverrides.modulesJsonPath)
   : path.join(DATA_DIR, "modules.json");
@@ -232,7 +232,7 @@ function buildArtifactLinks(runDirectory) {
     { label: "modules.json", path: path.relative(runDirectory, MODULES_JSON_PATH) },
     { label: "modules.min.json", path: path.relative(runDirectory, MODULES_MIN_PATH) },
     { label: "stats.json", path: path.relative(runDirectory, STATS_PATH) },
-    { label: "modules.stage.5.json", path: path.relative(runDirectory, STAGE5_PATH) }
+    { label: "modules.stage.4.json", path: path.relative(runDirectory, STAGE4_PATH) }
   ];
 
   return entries.filter((entry) => typeof entry.path === "string" && entry.path.length > 0);
@@ -1239,7 +1239,7 @@ async function writeOutputs({ data, stats, summaries }) {
 }
 
 async function main() {
-  const stageData = await validateStageFile("modules.stage.5", STAGE5_PATH);
+  const stageData = await validateStageFile("modules.stage.4", STAGE4_PATH);
   const modules = Array.isArray(stageData.modules) ? stageData.modules : [];
   const totalModules = modules.length;
 
@@ -1361,6 +1361,18 @@ async function main() {
           moduleIssues,
           "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
         );
+      }
+
+      // Check if main JS file exists with matching module name
+      if (module.name !== "mmpm") {
+        const mainJsPath = path.join(moduleDir, `${module.name}.js`);
+        const mainJsExists = await pathExists(mainJsPath);
+        if (!mainJsExists) {
+          const rule = getRuleById("legacy-main-js-mismatch");
+          if (rule) {
+            addIssue(moduleIssues, rule.description);
+          }
+        }
       }
 
       await analyzeModule({

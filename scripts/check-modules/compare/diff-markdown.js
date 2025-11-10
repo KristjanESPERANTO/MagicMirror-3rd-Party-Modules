@@ -1,11 +1,11 @@
 export function buildDiffMarkdown (summary) {
   const lines = ["# check-modules comparison diff", ""];
-  const stage5 = summary?.stage5;
+  const stage4 = summary?.stage4;
   const stats = summary?.stats;
   const reports = summary?.reports;
 
-  const hasDifferences = Boolean(stage5?.hasDifferences || stats?.hasDifferences || reports?.hasDifferences);
-  const hasWarnings = Boolean(stage5?.hasWarnings || stats?.hasWarnings || reports?.hasWarnings);
+  const hasDifferences = Boolean(stage4?.hasDifferences || stats?.hasDifferences || reports?.hasDifferences);
+  const hasWarnings = Boolean(stage4?.hasWarnings || stats?.hasWarnings || reports?.hasWarnings);
 
   if (hasDifferences) {
     lines.push("⚠️ Differences detected between legacy and TypeScript outputs.");
@@ -16,7 +16,7 @@ export function buildDiffMarkdown (summary) {
   }
 
   lines.push("");
-  appendStage5Section(lines, stage5);
+  appendStage4Section(lines, stage4);
   appendStatsSection(lines, stats);
   appendReportsSection(lines, reports);
 
@@ -38,38 +38,38 @@ function formatNumericLine (entry, {includeTolerance = false, indent = "-"} = {}
   return includeTolerance ? `${base}, tolerance ±${entry.tolerance ?? 0})` : `${base})`;
 }
 
-function appendStage5Section (lines, stage5) {
-  lines.push("## Stage 5 modules");
+function appendStage4Section (lines, stage4) {
+  lines.push("## Stage 4 modules");
 
-  if (!stage5) {
-    lines.push("Stage 5 comparison unavailable.");
+  if (!stage4) {
+    lines.push("Stage 4 comparison unavailable.");
     return;
   }
 
-  if (!stage5.hasDifferences) {
+  if (!stage4.hasDifferences) {
     lines.push("No module-level differences found.");
     return;
   }
 
-  if (stage5.legacyOnly.length > 0) {
+  if (stage4.legacyOnly.length > 0) {
     lines.push(
       "### Modules only in legacy output",
-      ...stage5.legacyOnly.map((module) => `- ${module.name} (${module.id})`),
+      ...stage4.legacyOnly.map((module) => `- ${module.name} (${module.id})`),
       ""
     );
   }
 
-  if (stage5.tsOnly.length > 0) {
+  if (stage4.tsOnly.length > 0) {
     lines.push(
       "### Modules only in TypeScript output",
-      ...stage5.tsOnly.map((module) => `- ${module.name} (${module.id})`),
+      ...stage4.tsOnly.map((module) => `- ${module.name} (${module.id})`),
       ""
     );
   }
 
-  if (stage5.issueDifferences.length > 0) {
+  if (stage4.issueDifferences.length > 0) {
     lines.push("### Issue differences");
-    for (const diff of stage5.issueDifferences) {
+    for (const diff of stage4.issueDifferences) {
       lines.push(`- ${diff.name} (${diff.id})`);
       if (diff.removedIssues.length > 0) {
         lines.push("  - Removed issues:", ...diff.removedIssues.map((issue) => `    - ${issue}`));
@@ -81,7 +81,7 @@ function appendStage5Section (lines, stage5) {
     lines.push("");
   }
 
-  if (stage5.legacyOnly.length === 0 && stage5.tsOnly.length === 0 && stage5.issueDifferences.length === 0) {
+  if (stage4.legacyOnly.length === 0 && stage4.tsOnly.length === 0 && stage4.issueDifferences.length === 0) {
     lines.push("No module-level differences found after normalization.", "");
   }
 }

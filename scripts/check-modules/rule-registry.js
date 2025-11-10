@@ -440,7 +440,7 @@ const RULE_DEFINITIONS = [
   {
     id: "legacy-main-js-mismatch",
     scope: "module-structure",
-    stages: [PIPELINE_CHECK_STAGE_IDS.LEGACY],
+    stages: [PIPELINE_CHECK_STAGE_IDS.LEGACY, PIPELINE_CHECK_STAGE_IDS.MODERN],
     patterns: ["legacy-main-js-mismatch"],
     category: "Recommendation",
     description: "Repository name and main js file name is not the same."
