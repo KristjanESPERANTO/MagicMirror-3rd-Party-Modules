@@ -64,6 +64,54 @@ flowchart TB
 - The orchestrator CLI runs the declarative stage graph and supports `--only/--skip`, retries, and shared logging.
 - The comparison harness (`scripts/check-modules/compare/`) captures README/HTML alongside JSON outputs and applies warning thresholds before highlighting differences between runs.
 
+### Distribution touchpoints
+
+The diagrams below highlight the ecosystem entrypoints that feed the pipeline today and the target flow we are steering toward. They focus on the data producers/consumers around `https://modules.magicmirror.builders/data/modules.json` rather than the internal stages covered earlier in this document.
+
+#### Current flow
+
+```mermaid
+flowchart LR
+  wiki[(module wiki list<br><i>- unreliable -</i>)]
+  pipeline{{automation pipeline}}
+  api[(API<br>modules.json)]
+  remote[MMM-Remote-Control]
+  modinstall[MMM-ModInstall]
+  config[MMM-Config]
+  mmpm[mmpm]
+  moduleWebsite[website<br>modules.magicmirror.builders]
+
+  wiki --> pipeline --> api
+  api --> remote
+  api --> modinstall
+  api --> config
+  api --> moduleWebsite
+  wiki --> mmpm
+```
+
+#### Target flow
+
+```mermaid
+flowchart LR
+  ui[(Form-based front end<br>for adding, editing, and<br>deleting modules<br><i>- not yet conceptualized -</i>)]
+  pipeline{{automation pipeline}}
+  api[(API<br>modules.json)]
+  remote[MMM-Remote-Control]
+  modinstall[MMM-ModInstall]
+  config[MMM-Config]
+  mmpm[mmpm]
+  moduleWebsite[website<br>modules.magicmirror.builders]
+
+  ui --> pipeline --> api
+  api --> remote
+  api --> modinstall
+  api --> config
+  api --> mmpm
+  api --> moduleWebsite
+```
+
+The target concept replaces the wiki table with a purpose-built, form-based frontend for adding, editing, and deleting modules (still in the conceptual phase) while downstream consumers continue using the unchanged API endpoint independent of the frontend.
+
 ### Legacy workflow snapshot (pre-September 2025)
 
 ```mermaid
