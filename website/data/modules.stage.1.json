@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-11-10T13:42:49.776Z",
+  "lastUpdate": "2025-11-12T19:42:38.536Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3503,14 +3503,13 @@
     },
     {
       "name": "MMM-Fortune",
-      "category": "Outdated Modules",
-      "url": "https://github.com/mykle1/MMM-Fortune",
-      "id": "mykle1/MMM-Fortune",
-      "maintainer": "mykle1",
-      "maintainerURL": "https://github.com/mykle1",
-      "description": "A fortune cookie for your MagicMirror².",
-      "issues": [],
-      "outdated": "Abandoned. And <a href=\"https://github.com/mykle1/MMM-Fortune/issues/4\">API is down</a>."
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/jasonmce/MMM-Fortune",
+      "id": "jasonmce/MMM-Fortune",
+      "maintainer": "jasonmce",
+      "maintainerURL": "https://github.com/jasonmce",
+      "description": "A fortune cookie for your mirror.",
+      "issues": []
     },
     {
       "name": "MMM-Forum",
@@ -4545,6 +4544,16 @@
       "maintainer": "djerik",
       "maintainerURL": "https://github.com/djerik",
       "description": "Shows status such as remaining program time of your Home Connect appliances.",
+      "issues": []
+    },
+    {
+      "name": "MMM-HomeConnect2",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/HeikoGr/MMM-HomeConnect2",
+      "id": "HeikoGr/MMM-HomeConnect2",
+      "maintainer": "HeikoGr",
+      "maintainerURL": "https://github.com/HeikoGr",
+      "description": "Shows status such as remaining program time of your Home Connect appliances. Based on djeriks module MMM-HomeConnect, but with headless auth workflow.",
       "issues": []
     },
     {
@@ -7584,6 +7593,16 @@
       "maintainer": "MartinLoidolt",
       "maintainerURL": "https://github.com/MartinLoidolt",
       "description": "Display your photovoltaic statistics from neoom.",
+      "issues": []
+    },
+    {
+      "name": "MMM-nest",
+      "category": "Weather",
+      "url": "https://github.com/xiujunma/MMM-nest",
+      "id": "xiujunma/MMM-nest",
+      "maintainer": "xiujunma",
+      "maintainerURL": "https://github.com/xiujunma",
+      "description": "Display live data from Google Nest thermostats. It uses the homebridge-nest API client under the hood, giving you quick access to ambient temperature, humidity, operating mode, and HVAC status for every thermostat on your Nest account.",
       "issues": []
     },
     {
@@ -11357,6 +11376,16 @@
       "maintainer": "Tom-Hirschberger",
       "maintainerURL": "https://github.com/Tom-Hirschberger",
       "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
+      "issues": []
+    },
+    {
+      "name": "MMM-SynPhotoSlideshow",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow",
+      "id": "spydersoft-consulting/MMM-SynPhotoSlideshow",
+      "maintainer": "spydersoft-consulting",
+      "maintainerURL": "https://github.com/spydersoft-consulting",
+      "description": "Show full screen slideshow in background using images from Synology Photos.",
       "issues": []
     },
     {

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-11-10T15:03:22+01:00
+Last update: 2025-11-12T21:15:05+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-11-10T15:03:22+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1308   |
-| maintainers          |    749   |
-| modules with issues  |   1306   |
-| issues               |  13059   |
-| modules at github    |   1295   |
+| modules analyzed     |   1311   |
+| maintainers          |    751   |
+| modules with issues  |   1310   |
+| issues               |  13103   |
+| modules at github    |   1298   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -492,7 +492,7 @@ Last update: 2025-11-10T15:03:22+01:00
    - @eslint/json              ^0.13.2  →  ^0.14.0
    - @eslint/markdown           ^7.2.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.5.0
-   - cspell                     ^9.2.0  →   ^9.3.0
+   - cspell                     ^9.2.0  →   ^9.3.1
    - eslint                    ^9.34.0  →  ^9.39.1
    - globals                   ^16.3.0  →  ^16.5.0
    - lint-staged               ^16.1.5  →  ^16.2.6
@@ -1626,7 +1626,7 @@ Last update: 2025-11-10T15:03:22+01:00
    - @eslint/js                ^9.38.0  →  ^9.39.1
    - @eslint/markdown           ^7.4.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.4.0  →   ^5.5.0
-   - cspell                     ^9.2.1  →   ^9.3.0
+   - cspell                     ^9.2.1  →   ^9.3.1
    - eslint                    ^9.38.0  →  ^9.39.1
    - globals                   ^16.4.0  →  ^16.5.0
    - lint-staged               ^16.2.4  →  ^16.2.6
@@ -1666,7 +1666,7 @@ Last update: 2025-11-10T15:03:22+01:00
    - @eslint/js                ^9.34.0  →  ^9.39.1
    - @eslint/markdown           ^7.2.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.5.0
-   - cspell                     ^9.2.1  →   ^9.3.0
+   - cspell                     ^9.2.1  →   ^9.3.1
    - eslint                    ^9.34.0  →  ^9.39.1
    - globals                   ^16.3.0  →  ^16.5.0
    - lint-staged               ^16.1.5  →  ^16.2.6
@@ -3095,7 +3095,7 @@ Last update: 2025-11-10T15:03:22+01:00
    - @eslint/json              ^0.13.2  →  ^0.14.0
    - @eslint/markdown           ^7.2.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.3.1  →   ^5.5.0
-   - cspell                     ^9.2.1  →   ^9.3.0
+   - cspell                     ^9.2.1  →   ^9.3.1
    - eslint                    ^9.34.0  →  ^9.39.1
    - globals                   ^16.3.0  →  ^16.5.0
    - lint-staged               ^16.1.6  →  ^16.2.6
@@ -4080,6 +4080,21 @@ Last update: 2025-11-10T15:03:22+01:00
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-Fortune by jasonmce](https://github.com/jasonmce/MMM-Fortune)
+
+1. `package.json` issue: Normalized value of bugs field is an empty object. Deleted.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Typo: Found `Magic Mirror` in file `MMM-Fortune.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: The README's install section should include a copyable fenced command block (for example ```bash ...). Please add one so the module can be installed with a single copy/paste ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+8. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
 1. Recommendation: Found `uses: actions/setup-node@v5` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v6.
@@ -4089,7 +4104,7 @@ Last update: 2025-11-10T15:03:22+01:00
    - @eslint/json               ^0.13.2  →   ^0.14.0
    - @eslint/markdown            ^7.4.0  →    ^7.5.1
    - @stylistic/eslint-plugin    ^5.4.0  →    ^5.5.0
-   - cspell                      ^9.2.1  →    ^9.3.0
+   - cspell                      ^9.2.1  →    ^9.3.1
    - dayjs                     ^1.11.18  →  ^1.11.19
    - eslint                     ^9.37.0  →   ^9.39.1
    - globals                    ^16.4.0  →   ^16.5.0
@@ -5468,6 +5483,13 @@ Last update: 2025-11-10T15:03:22+01:00
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-HomeConnect2 by HeikoGr](https://github.com/HeikoGr/MMM-HomeConnect2)
+
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+3. Recommendation: The module imports `@eslint/js` (used in `eslint.config.mjs`), `eslint` (used in `eslint.config.mjs`) but does not list them in package.json. Add these dependencies to package.json so they can be installed automatically. Declare every non built-in dependency you import so it can be installed automatically.
+4. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
+
 ### [MMM-Homematic by Sickboy78](https://github.com/Sickboy78/MMM-Homematic)
 
 1. Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.
@@ -6279,7 +6301,7 @@ Last update: 2025-11-10T15:03:22+01:00
    - @eslint/js        ^9.38.0  →  ^9.39.1
    - @eslint/json      ^0.13.2  →  ^0.14.0
    - @eslint/markdown   ^7.5.0  →   ^7.5.1
-   - cspell             ^9.2.2  →   ^9.3.0
+   - cspell             ^9.2.2  →   ^9.3.1
    - eslint            ^9.38.0  →  ^9.39.1
    - globals           ^16.4.0  →  ^16.5.0
 
@@ -6634,7 +6656,7 @@ Last update: 2025-11-10T15:03:22+01:00
    - @eslint/json              ^0.13.2  →  ^0.14.0
    - @eslint/markdown           ^7.2.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.3.1  →   ^5.5.0
-   - cspell                     ^9.2.1  →   ^9.3.0
+   - cspell                     ^9.2.1  →   ^9.3.1
    - eslint                    ^9.34.0  →  ^9.39.1
    - globals                   ^16.3.0  →  ^16.5.0
    - lint-staged               ^16.1.6  →  ^16.2.6
@@ -7484,7 +7506,7 @@ Last update: 2025-11-10T15:03:22+01:00
    - @eslint/css       ^0.13.0  →  ^0.14.1
    - @eslint/js        ^9.37.0  →  ^9.39.1
    - @eslint/markdown   ^7.4.0  →   ^7.5.1
-   - cspell             ^9.2.1  →   ^9.3.0
+   - cspell             ^9.2.1  →   ^9.3.1
    - eslint            ^9.37.0  →  ^9.39.1
    - globals           ^16.4.0  →  ^16.5.0
 
@@ -9384,6 +9406,15 @@ async function searchTitle(title){
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-nest by xiujunma](https://github.com/xiujunma/MMM-nest)
+
+1. Repository name and main js file name is not the same.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+5. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+6. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
+
 ### [MMM-NesteBussAtB by ottopaulsen](https://github.com/ottopaulsen/MMM-NesteBussAtB)
 
 1. `package.json` issue: No repository field.
@@ -10215,6 +10246,11 @@ async function searchTitle(title){
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^9.3.0  →  ^9.3.1
+
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
 
 1. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -10574,7 +10610,7 @@ async function searchTitle(title){
    - @eslint/json              ^0.13.2  →  ^0.14.0
    - @eslint/markdown           ^7.4.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.4.0  →   ^5.5.0
-   - cspell                     ^9.2.1  →   ^9.3.0
+   - cspell                     ^9.2.1  →   ^9.3.1
    - eslint                    ^9.38.0  →  ^9.39.1
    - globals                   ^16.4.0  →  ^16.5.0
    - lint-staged               ^16.2.4  →  ^16.2.6
@@ -10619,16 +10655,6 @@ async function searchTitle(title){
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
-
-### [MMM-pages by edward-shen](https://github.com/edward-shen/MMM-pages)
-
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v6.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^9.34.0  →  ^9.39.1
-   - @eslint/markdown           ^7.2.0  →   ^7.5.1
-   - @stylistic/eslint-plugin   ^5.2.3  →   ^5.5.0
-   - eslint                    ^9.34.0  →  ^9.39.1
-   - globals                   ^16.3.0  →  ^16.5.0
 
 ### [MMM-pages by sdetweil](https://github.com/sdetweil/MMM-pages)
 
@@ -11657,7 +11683,7 @@ async function searchTitle(title){
    - @eslint/js        ^9.39.0  →  ^9.39.1
    - @eslint/json      ^0.13.2  →  ^0.14.0
    - @eslint/markdown   ^7.5.0  →   ^7.5.1
-   - cspell             ^9.2.2  →   ^9.3.0
+   - cspell             ^9.2.2  →   ^9.3.1
    - eslint            ^9.39.0  →  ^9.39.1
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
@@ -11670,11 +11696,11 @@ async function searchTitle(title){
    - @eslint/json                 ^0.13.2  →   ^0.14.0
    - @eslint/markdown              ^7.4.0  →    ^7.5.1
    - @stylistic/eslint-plugin      ^5.4.0  →    ^5.5.0
-   - cspell                        ^9.2.1  →    ^9.3.0
+   - cspell                        ^9.2.1  →    ^9.3.1
    - dayjs                       ^1.11.18  →  ^1.11.19
    - db-vendo-client              ^6.10.0  →   ^6.10.5
    - eslint                       ^9.38.0  →   ^9.39.1
-   - eslint-plugin-package-json   ^0.57.0  →   ^0.65.1
+   - eslint-plugin-package-json   ^0.57.0  →   ^0.69.0
    - globals                      ^16.4.0  →   ^16.5.0
    - hafas-client                  ^6.3.5  →    ^6.3.6
    - lint-staged                  ^16.2.4  →   ^16.2.6
@@ -12205,6 +12231,11 @@ async function searchTitle(title){
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+
+### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
+
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^9.3.0  →  ^9.3.1
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
 
@@ -14195,6 +14226,33 @@ async function searchTitle(title){
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: Replace eslintrc by new flat config.
 
+### [MMM-SynPhotoSlideshow by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow)
+
+1. Repository name and main js file name is not the same.
+2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+5. Deprecated: Found `omxplayer` in file `SlideshowController.ts`: Replace OMXPlayer usage with maintained alternatives such as mplayer or VLC.
+6. Recommendation: Found `axios` in file `SynologyPhotosClient.test.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+7. Recommendation: Found `axios` in file `SynologyPhotosClient.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+8. Recommendation: Found `axios` in file `ARCHITECTURE.md`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+9. Recommendation: Found `npm run` in file `ARCHITECTURE.md`: Prefer `node --run` over invoking npm run directly.
+10. Recommendation: Found `axios` in file `IMPLEMENTATION_NOTES.md`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+11. Recommendation: Found `npm run` in file `IMPLEMENTATION_NOTES.md`: Prefer `node --run` over invoking npm run directly.
+12. Recommendation: Found `npm run` in file `REFACTORING_SUMMARY.md`: Prefer `node --run` over invoking npm run directly.
+13. Recommendation: Found `npm run` in file `workflows.md`: Prefer `node --run` over invoking npm run directly.
+14. Recommendation: Found `uses: actions/checkout@v4` in file `pr-checks.yml`: Upgrade workflows to use actions/checkout@v5.
+15. Recommendation: Found `uses: actions/setup-node@v4` in file `pr-checks.yml`: Upgrade workflows to use actions/setup-node@v6.
+16. Deprecated: Found `node-version: [18` in file `pr-checks.yml`: Update CI workflows to target a supported Node.js LTS release.
+17. Recommendation: Found `npm run` in file `pr-checks.yml`: Prefer `node --run` over invoking npm run directly.
+18. Recommendation: Found `uses: actions/checkout@v4` in file `sonarcloud.yml`: Upgrade workflows to use actions/checkout@v5.
+19. Recommendation: Found `uses: actions/setup-node@v4` in file `sonarcloud.yml`: Upgrade workflows to use actions/setup-node@v6.
+20. Recommendation: Found `npm run` in file `sonarcloud.yml`: Prefer `node --run` over invoking npm run directly.
+21. Recommendation: The module imports `@jest/globals` (used in `src/backend/SlideshowController.test.ts`, `src/frontend/ModuleController.test.ts`), `ts-jest` (used in `jest.config.js`) but does not list them in package.json. Add these dependencies to package.json so they can be installed automatically. Declare every non built-in dependency you import so it can be installed automatically.
+22. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+23. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+24. Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it.
+
 ### [MMM-syslog by marcinomen](https://github.com/marcinomen/MMM-syslog)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -16121,22 +16179,21 @@ async function searchTitle(title){
    - @eslint/json              ^0.13.2  →  ^0.14.0
    - @eslint/markdown           ^7.4.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.4.0  →   ^5.5.0
-   - cspell                     ^9.2.1  →   ^9.3.0
+   - cspell                     ^9.2.1  →   ^9.3.1
    - eslint                    ^9.37.0  →  ^9.39.1
    - globals                   ^16.4.0  →  ^16.5.0
    - lint-staged               ^16.2.3  →  ^16.2.6
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
-1. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
-2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
-3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
-4. Information: There are updates for 7 dependencie(s):
+1. Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).
+2. Recommendation: Found `eslint --fix .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Information: There are updates for 7 dependencie(s):
    - @eslint/css       ^0.14.0  →  ^0.14.1
    - @eslint/js        ^9.38.0  →  ^9.39.1
    - @eslint/json      ^0.13.2  →  ^0.14.0
    - @eslint/markdown   ^7.5.0  →   ^7.5.1
-   - cspell             ^9.2.2  →   ^9.3.0
+   - cspell             ^9.2.2  →   ^9.3.1
    - eslint            ^9.38.0  →  ^9.39.1
    - globals           ^16.4.0  →  ^16.5.0
 

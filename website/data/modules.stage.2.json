@@ -807,7 +807,7 @@
     "maintainerURL": "https://gitlab.com/MajorChris1983",
     "description": "Displays snow reports from bergfex.at. Countries provided by bergfex.at can be configured and set.<br />This is a fork of <a target=\"_blank\" href=\"https://github.com/nebulx29/MMM-bergfex\">the unmaintained module from nebulux</a>.",
     "issues": [],
-    "stars": 6
+    "stars": 2
   },
   {
     "name": "MMM-bernwordclock",
@@ -1619,7 +1619,7 @@
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
     "issues": [],
-    "stars": 51,
+    "stars": 52,
     "license": "MIT"
   },
   {
@@ -1967,7 +1967,7 @@
     "maintainerURL": "https://github.com/sdetweil",
     "description": "Form based (in browser) configuration for MagicMirror and modules.",
     "issues": [],
-    "stars": 49,
+    "stars": 50,
     "license": "MIT"
   },
   {
@@ -2704,7 +2704,7 @@
     "maintainerURL": "https://github.com/Helpi90",
     "description": "Display train arrivals/departures (unofficial frontend for db navigator) with details for Germany.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -3105,7 +3105,7 @@
     "maintainerURL": "https://github.com/scottcl88",
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
     "issues": [],
-    "stars": 34,
+    "stars": 35,
     "license": "MIT"
   },
   {
@@ -4015,7 +4015,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current flights in a defined area with a map containing the plane positions.",
     "issues": [],
-    "stars": 6
+    "stars": 2
   },
   {
     "name": "MMM-FlightsAbove",
@@ -4108,7 +4108,7 @@
     "maintainerURL": "https://github.com/ianperrin",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 42,
+    "stars": 43,
     "license": "MIT"
   },
   {
@@ -4149,15 +4149,14 @@
   },
   {
     "name": "MMM-Fortune",
-    "category": "Outdated Modules",
-    "url": "https://github.com/mykle1/MMM-Fortune",
-    "id": "mykle1/MMM-Fortune",
-    "maintainer": "mykle1",
-    "maintainerURL": "https://github.com/mykle1",
-    "description": "A fortune cookie for your MagicMirror².",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/jasonmce/MMM-Fortune",
+    "id": "jasonmce/MMM-Fortune",
+    "maintainer": "jasonmce",
+    "maintainerURL": "https://github.com/jasonmce",
+    "description": "A fortune cookie for your mirror.",
     "issues": [],
-    "outdated": "Abandoned. And <a href=\"https://github.com/mykle1/MMM-Fortune/issues/4\">API is down</a>.",
-    "stars": 9,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -4348,7 +4347,7 @@
     "maintainerURL": "https://github.com/fewieden",
     "description": "Display gas station prices.",
     "issues": [],
-    "stars": 65,
+    "stars": 66,
     "license": "MIT"
   },
   {
@@ -5317,7 +5316,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
     "issues": [],
-    "stars": 68,
+    "stars": 67,
     "license": "MIT"
   },
   {
@@ -5390,6 +5389,19 @@
     "description": "Shows status such as remaining program time of your Home Connect appliances.",
     "issues": [],
     "stars": 3
+  },
+  {
+    "name": "MMM-HomeConnect2",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/HeikoGr/MMM-HomeConnect2",
+    "id": "HeikoGr/MMM-HomeConnect2",
+    "maintainer": "HeikoGr",
+    "maintainerURL": "https://github.com/HeikoGr",
+    "description": "Shows status such as remaining program time of your Home Connect appliances. Based on djeriks module MMM-HomeConnect, but with headless auth workflow.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT"
   },
   {
     "name": "MMM-Homematic",
@@ -5938,7 +5950,7 @@
     "maintainerURL": "https://gitlab.com/doctorfree",
     "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
     "issues": [],
-    "stars": 3
+    "stars": 1
   },
   {
     "name": "MMM-Insults",
@@ -6118,7 +6130,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current position of the International Space Station on a map.",
     "issues": [],
-    "stars": 3
+    "stars": 1
   },
   {
     "name": "MMM-ISY",
@@ -7797,7 +7809,7 @@
     "maintainerURL": "https://gitlab.com/closingin",
     "description": "Display next passing times and traffic information from the RATP for Metros, RERs, and Tramways of Paris, France. Fully featured.",
     "issues": [],
-    "stars": 6
+    "stars": 2
   },
   {
     "name": "mmm-stocks",
@@ -7869,7 +7881,7 @@
     "maintainerURL": "https://bitbucket.org/rsperezn",
     "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": [],
-    "stars": 1,
+    "stars": 0,
     "hasGithubIssues": false
   },
   {
@@ -7928,7 +7940,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Simplifies module installation in MagicMirror.",
     "issues": [],
-    "stars": 3
+    "stars": 1
   },
   {
     "name": "MMM-Modulebar",
@@ -8941,7 +8953,7 @@
     "maintainerURL": "https://gitlab.com/dnmmrdr1",
     "description": "Displays bus information for the Nottingham bus company, NCT.",
     "issues": [],
-    "stars": 3
+    "stars": 1
   },
   {
     "name": "MMM-NearCompliments",
@@ -8977,6 +8989,18 @@
     "description": "Display your photovoltaic statistics from neoom.",
     "issues": [],
     "stars": 1
+  },
+  {
+    "name": "MMM-nest",
+    "category": "Weather",
+    "url": "https://github.com/xiujunma/MMM-nest",
+    "id": "xiujunma/MMM-nest",
+    "maintainer": "xiujunma",
+    "maintainerURL": "https://github.com/xiujunma",
+    "description": "Display live data from Google Nest thermostats. It uses the homebridge-nest API client under the hood, giving you quick access to ambient temperature, humidity, operating mode, and HVAC status for every thermostat on your Nest account.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-NesteBussAtB",
@@ -9274,7 +9298,7 @@
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": [],
-    "stars": 22,
+    "stars": 23,
     "license": "MIT"
   },
   {
@@ -9889,7 +9913,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": [],
-    "stars": 41,
+    "stars": 42,
     "license": "MIT"
   },
   {
@@ -9995,7 +10019,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": [],
-    "stars": 18,
+    "stars": 19,
     "license": "MIT"
   },
   {
@@ -10091,7 +10115,7 @@
     "maintainerURL": "https://github.com/edward-shen",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
     "issues": [],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT"
   },
   {
@@ -10138,7 +10162,7 @@
     "maintainerURL": "https://github.com/edward-shen",
     "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
     "issues": [],
-    "stars": 133,
+    "stars": 134,
     "license": "MIT"
   },
   {
@@ -10462,7 +10486,7 @@
     "maintainerURL": "https://github.com/sheyabernstein",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 82,
+    "stars": 83,
     "license": "MIT"
   },
   {
@@ -10499,7 +10523,7 @@
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT"
   },
   {
@@ -11408,7 +11432,7 @@
     "maintainerURL": "https://github.com/skuethe",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": [],
-    "stars": 10
+    "stars": 11
   },
   {
     "name": "MMM-RandomQuotes",
@@ -11656,7 +11680,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Shows repository statistics for DockerHub, GitHub and GitLab.",
     "issues": [],
-    "stars": 6
+    "stars": 2
   },
   {
     "name": "MMM-RepRapFirmware",
@@ -12342,7 +12366,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Shows output of commands executed on the host.",
     "issues": [],
-    "stars": 3
+    "stars": 1
   },
   {
     "name": "Shelly-HT",
@@ -12605,7 +12629,7 @@
     "maintainerURL": "https://github.com/ulrichwisser",
     "description": "Display public transport in Stockholm in Sweden. Updated to use latest API (mandatory from April 2024)!",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -13082,7 +13106,7 @@
     "maintainerURL": "https://github.com/skuethe",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": [],
-    "stars": 72,
+    "stars": 73,
     "license": "MIT"
   },
   {
@@ -13456,6 +13480,18 @@
     "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": [],
     "stars": 7,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-SynPhotoSlideshow",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow",
+    "id": "spydersoft-consulting/MMM-SynPhotoSlideshow",
+    "maintainer": "spydersoft-consulting",
+    "maintainerURL": "https://github.com/spydersoft-consulting",
+    "description": "Show full screen slideshow in background using images from Synology Photos.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -14391,7 +14427,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
     "issues": [],
-    "stars": 9
+    "stars": 3
   },
   {
     "name": "unRAID-MMM",
@@ -14955,7 +14991,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Uses the default weather module as data provider with own njk templates and animated weather icons.",
     "issues": [],
-    "stars": 3
+    "stars": 1
   },
   {
     "name": "MMM-WeatherChart",
@@ -15085,8 +15121,8 @@
     "maintainerURL": "https://github.com/HeikoGr",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
     "issues": [],
-    "stars": 4,
-    "license": "MIT"
+    "stars": 6,
+    "license": "NOASSERTION"
   },
   {
     "name": "MMM-WebView",
@@ -15229,7 +15265,7 @@
     "maintainerURL": "https://github.com/TeraTech",
     "description": "Displays WiFi password and QRCode.",
     "issues": [],
-    "stars": 124,
+    "stars": 125,
     "license": "MIT"
   },
   {
@@ -15583,7 +15619,7 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
     "issues": [],
-    "stars": 3
+    "stars": 1
   },
   {
     "name": "MMM-YrMeteogram",
