@@ -84,10 +84,55 @@ jobs:
             mkdir -p website/data/cache
             cp -a build-output/data/cache/. website/data/cache/
           fi
+          # Extract skipped_modules.json for validation
+          if [ -f build-output/data/skipped_modules.json ]; then
+            mkdir -p website/data
+            cp build-output/data/skipped_modules.json website/data/skipped_modules.json
+          fi
           rm -rf build-output
+      - name: Upload pipeline data for validation
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-data
+          path: website/data/skipped_modules.json
+          retention-days: 1
+          if-no-files-found: warn
       - name: Save repository API cache
         if: always()
         uses: actions/cache/save@v4
         with:
           path: website/data/cache
           key: repository-api-cache-${{ github.ref_name }}-${{ github.run_id }}
+
+  validate-skipped-modules:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: always() # Run even if build fails, as long as it completed
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+
+      - name: Use Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+
+      - name: Download pipeline data
+        uses: actions/download-artifact@v4
+        with:
+          name: website-data
+          path: website/data
+
+      - name: Validate no modules were skipped
+        run: node scripts/validate-skipped-modules.js
+
+      - name: Upload skipped modules report (if validation failed)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: skipped-modules-report
+          path: website/data/skipped_modules.json
+          retention-days: 30
