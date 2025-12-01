@@ -5,7 +5,7 @@ import { rename, rm } from "node:fs/promises";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 
-import { ensureRepository, GitErrorCategory } from "./shared/git.js";
+import { ensureRepository, GitErrorCategory, getCommitDate } from "./shared/git.js";
 import { createHttpClient } from "./shared/http-client.js";
 import { createLogger } from "./shared/logger.js";
 import { createRateLimiter } from "./shared/rate-limiter.js";
@@ -660,7 +660,31 @@ async function processModules() {
       );
 
       try {
-        await refreshRepository({ module: moduleCopy, tempPath, finalPath });
+        // Optimization: Check if we can skip cloning based on lastCommit date
+        let shouldSkipClone = false;
+        if (module.lastCommit && await fileExists(finalPath)) {
+          try {
+            const localDateStr = await getCommitDate({ cwd: finalPath });
+            if (localDateStr) {
+              const localDate = new Date(localDateStr);
+              const remoteDate = new Date(module.lastCommit);
+              
+              // If local repo is at least as new as the remote info we have, skip clone
+              // We use a small buffer (e.g. 1 minute) to handle potential clock skew or precision issues
+              if (localDate.getTime() >= remoteDate.getTime() - 60000) {
+                shouldSkipClone = true;
+                logger.info(`Skipping clone for ${module.name}: Local repo is up to date (${localDateStr} >= ${module.lastCommit})`);
+              }
+            }
+          } catch (dateError) {
+            logger.debug(`Could not verify local commit date for ${module.name}, proceeding with clone: ${dateError.message}`);
+          }
+        }
+
+        if (!shouldSkipClone) {
+          await refreshRepository({ module: moduleCopy, tempPath, finalPath });
+        }
+        
         // Write moduleCopy to stream immediately to avoid holding it
         // Use deterministic stringify to ensure sorted keys for reproducible outputs
         const toWrite = `${firstOut ? "" : ","}${stringifyDeterministic(moduleCopy, null)}`;
