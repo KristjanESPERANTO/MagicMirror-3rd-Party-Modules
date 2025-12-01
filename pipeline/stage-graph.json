@@ -5,8 +5,7 @@
       "id": "full-refresh",
       "description": "Full catalogue refresh mirroring the current `node --run all` sequence.",
       "stages": [
-        "create-module-list",
-        "update-repository-data",
+        "collect-metadata",
         "get-modules",
         "expand-module-list",
         "check-modules"
