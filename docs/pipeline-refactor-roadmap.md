@@ -106,7 +106,7 @@ Routine reminders for keeping the written guidance in sync with the code:
 | P6.1 | Create unified metadata collector that combines module list creation + GitHub/npm data fetching in a single streaming pass ✅ Completed Dec 2025 | P2.1         | L      |
 | P6.2 | Implement intelligent metadata caching with TTL-based invalidation                                                                               | P3.1, P6.1   | M      |
 | P6.3 | Add parallel metadata fetching (configurable concurrency for API requests)                                                                       | P6.1         | M      |
-| P6.4 | Remove separate stage 1 & 2 scripts once unified collector is stable                                                                             | P6.1–P6.3    | S      |
+| P6.4 | Remove separate stage 1 & 2 scripts once unified collector is stable ✅ Completed Dec 2025                                                       | P6.1–P6.3    | S      |
 
 #### P7.x: Parallel Analysis Workers (merge stages 3+4+5)
 
