@@ -191,6 +191,14 @@ The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tas
 
 **Goal**: Transform the current 5-stage sequential pipeline into a 3-phase streaming architecture with parallel execution (see [architecture.md](architecture.md) Target State).
 
+#### Phase 1: Data Collection Optimization
+
+1. **P6.2** — Move `lastCommit` collection to Stage 2 (API) ✅ Completed Dec 2025.
+   - **Context**: Currently, `lastCommit` is calculated in Stage 3/4 via `git log` (cloning required) or loaded from previous `modules.json` but discarded due to schema restrictions.
+   - **Goal**: Fetch `lastCommit` (pushedAt/committed_date) directly from GitHub/GitLab APIs in Stage 2.
+   - **Benefit**: Reduces dependency on full git clones for date checks, speeds up processing, and leverages data we already have access to.
+   - **Tasks**: Update `modules.stage.2.schema.json` to allow `lastCommit`, enable the logic in `updateRepositoryApiData/api.js`, and update `check-modules` to prefer this API date over `git log`.
+
 ---
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.
