@@ -14,6 +14,7 @@ import {createLogger} from "../shared/logger.js";
 import {createPersistentCache} from "../shared/persistent-cache.js";
 import {createRateLimiter} from "../shared/rate-limiter.js";
 import fs from "node:fs";
+import {loadPreviousModules} from "../shared/module-list.js";
 import {parseModuleList} from "./parser.js";
 import path from "node:path";
 import process from "node:process";
@@ -57,26 +58,6 @@ async function fetchMarkdown () {
     throw new Error(`Failed to fetch Wiki: ${result.status} ${result.statusText}`);
   }
   return result.data;
-}
-
-/**
- * Load the previous modules data to use as fallback.
- */
-function loadPreviousModules () {
-  const previousPath = path.join("website", "data", "modules.json");
-  if (fs.existsSync(previousPath)) {
-    try {
-      const content = fs.readFileSync(previousPath, "utf8");
-      const data = JSON.parse(content);
-      // Handle both array and object wrapper formats
-      const modules = Array.isArray(data) ? data : data.modules || [];
-      logger.info(`Loaded ${modules.length} modules from previous run for fallback.`);
-      return new Map(modules.map((module) => [module.url, module]));
-    } catch (error) {
-      logger.warn("Failed to load previous modules.json", {error: error.message});
-    }
-  }
-  return new Map();
 }
 
 /**
