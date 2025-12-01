@@ -54,15 +54,29 @@ export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeader
       try {
         const response = await execute();
 
-        if (!response.ok && attempt < retries && shouldRetry(response.status)) {
-          attempt += 1;
-          const delayMs = retryDelayMs * attempt;
-          await delay(delayMs, null, {signal});
-        }
-
         if (response.ok || attempt >= retries || !shouldRetry(response.status)) {
           return response;
         }
+
+        attempt += 1;
+        const retryAfterHeader = response.headers.get("retry-after");
+        let delayMs = retryDelayMs * attempt;
+
+        if (retryAfterHeader) {
+          const seconds = Number(retryAfterHeader);
+          if (Number.isNaN(seconds)) {
+            const date = Date.parse(retryAfterHeader);
+            if (Number.isNaN(date)) {
+              // Invalid date, ignore
+            } else {
+              delayMs = Math.max(0, date - Date.now());
+            }
+          } else {
+            delayMs = seconds * 1000;
+          }
+        }
+
+        await delay(delayMs, null, {signal});
       } catch (error) {
         if (attempt >= retries || (signal?.aborted ?? false)) {
           throw error;
