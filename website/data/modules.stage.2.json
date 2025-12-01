@@ -8,9 +8,11 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "category": "Development / Core MagicMirror²",
     "issues": [],
-    "stars": 230,
+    "stars": 231,
     "license": "MIT",
-    "lastCommit": "2025-10-02T17:20:18-04:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-10-02T21:20:18Z"
   },
   {
     "name": "MMM-Template",
@@ -23,7 +25,9 @@
     "issues": [],
     "stars": 8,
     "license": "MIT",
-    "lastCommit": "2025-07-07T14:43:25+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-07-07T12:43:25Z"
   },
   {
     "name": "MMM-AlertExt",
@@ -36,7 +40,9 @@
     "issues": [],
     "stars": 6,
     "license": "MIT",
-    "lastCommit": "2024-03-06T16:03:02+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2024-03-06T15:03:02Z"
   },
   {
     "name": "MMM-AutoDimmer",
@@ -49,7 +55,9 @@
     "issues": [],
     "stars": 29,
     "license": "MIT",
-    "lastCommit": "2025-11-06T07:52:58-05:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-11-06T12:52:58Z"
   },
   {
     "name": "MMM-Bash",
@@ -62,7 +70,9 @@
     "issues": [],
     "stars": 3,
     "license": "MIT",
-    "lastCommit": "2024-06-19T05:45:35-07:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2024-06-19T12:45:35Z"
   },
   {
     "name": "MMM-BurnIn",
@@ -75,7 +85,9 @@
     "issues": [],
     "stars": 33,
     "license": "MIT",
-    "lastCommit": "2021-06-21T09:30:30+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2021-06-21T07:30:30Z"
   },
   {
     "name": "MMM-Button",
@@ -87,8 +99,9 @@
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "stars": 19,
-    "license": "MIT",
-    "lastCommit": "2019-02-25T09:40:47+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2019-02-25T08:40:47Z"
   },
   {
     "name": "MMM-Buttons",
@@ -101,7 +114,9 @@
     "issues": [],
     "stars": 12,
     "license": "MIT",
-    "lastCommit": "2024-10-22T10:17:52+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2024-10-22T08:17:52Z"
   },
   {
     "name": "MMM-Carousel",
@@ -112,9 +127,11 @@
     "maintainerURL": "https://github.com/shbatm",
     "category": "Development / Core MagicMirror²",
     "issues": [],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT",
-    "lastCommit": "2025-09-01T07:19:03+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-11-17T06:35:37Z"
   },
   {
     "name": "MMM-connection-status",
@@ -127,7 +144,9 @@
     "issues": [],
     "stars": 30,
     "license": "MIT",
-    "lastCommit": "2023-08-23T00:39:14+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2023-08-22T23:39:14Z"
   },
   {
     "name": "cookiecutter-magic-mirror-module",
@@ -139,7 +158,9 @@
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "stars": 4,
-    "lastCommit": "2022-07-25T23:06:15-05:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2022-07-26T04:06:15Z"
   },
   {
     "name": "MMM-CustomElementTime",
@@ -152,7 +173,9 @@
     "issues": [],
     "stars": 3,
     "license": "MIT",
-    "lastCommit": "2024-07-31T15:50:31+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2024-07-31T13:50:31Z"
   },
   {
     "name": "MMM-Dynamic-Modules",
@@ -165,7 +188,8 @@
     "issues": [],
     "stars": 2,
     "hasGithubIssues": false,
-    "lastCommit": "2025-03-13T13:20:19-04:00"
+    "isArchived": false,
+    "lastCommit": "2025-03-13T17:20:19Z"
   },
   {
     "name": "MMM-FF-code-injector",
@@ -178,7 +202,9 @@
     "issues": [],
     "stars": 2,
     "license": "ISC",
-    "lastCommit": "2022-08-01T19:22:30+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2022-08-01T17:22:30Z"
   },
   {
     "name": "MMM-Flick-Gestures",
@@ -191,7 +217,9 @@
     "issues": [],
     "stars": 6,
     "license": "MIT",
-    "lastCommit": "2020-01-17T22:00:03+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2020-01-17T21:00:03Z"
   },
   {
     "name": "MMM-Forum",
@@ -204,7 +232,9 @@
     "issues": [],
     "stars": 3,
     "license": "ISC",
-    "lastCommit": "2025-10-08T22:33:36+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-10-08T20:33:36Z"
   },
   {
     "name": "MMM-Gestures",
@@ -215,9 +245,10 @@
     "maintainerURL": "https://github.com/thobach/MMM-Gestures",
     "category": "Development / Core MagicMirror²",
     "issues": [],
-    "stars": 45,
-    "license": "MIT",
-    "lastCommit": "2022-12-17T16:40:29+01:00"
+    "stars": 46,
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2022-12-17T15:40:29Z"
   },
   {
     "name": "MMM-Gitlab-MergeRequests",
@@ -230,7 +261,9 @@
     "issues": [],
     "stars": 1,
     "license": "MIT",
-    "lastCommit": "2020-12-21T22:33:40-06:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2020-12-22T04:33:40Z"
   },
   {
     "name": "MMM-GitHub-Monitor",
@@ -243,7 +276,9 @@
     "issues": [],
     "stars": 10,
     "license": "MIT",
-    "lastCommit": "2025-01-04T13:09:56+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-01-04T12:09:56Z"
   },
   {
     "name": "MMM-GitHub-Notifications",
@@ -255,7 +290,9 @@
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "stars": 1,
-    "lastCommit": "2023-01-07T00:45:21+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2023-01-06T23:45:21Z"
   },
   {
     "name": "MMM-GPIO-HANDLER",
@@ -268,7 +305,9 @@
     "issues": [],
     "stars": 4,
     "license": "MIT",
-    "lastCommit": "2024-01-16T21:54:37+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2024-01-16T20:54:37Z"
   },
   {
     "name": "MMM-GroveGestures",
@@ -281,7 +320,9 @@
     "issues": [],
     "stars": 41,
     "license": "MIT",
-    "lastCommit": "2025-07-22T22:21:03+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-07-22T20:21:03Z"
   },
   {
     "name": "MMM-HTMLSnippet",
@@ -294,7 +335,9 @@
     "issues": [],
     "stars": 18,
     "license": "GPL-3.0",
-    "lastCommit": "2025-04-25T10:37:20+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-04-25T08:37:20Z"
   },
   {
     "name": "MMM-JokeAPI",
@@ -306,7 +349,9 @@
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "stars": 13,
-    "lastCommit": "2020-09-25T11:29:55+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2020-09-25T09:29:55Z"
   },
   {
     "name": "MMM-LogExt",
@@ -319,7 +364,9 @@
     "issues": [],
     "stars": 3,
     "license": "MIT",
-    "lastCommit": "2025-08-07T03:34:54-07:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-08-07T10:34:54Z"
   },
   {
     "name": "MMM-LogfileViewer",
@@ -332,7 +379,9 @@
     "issues": [],
     "stars": 1,
     "license": "MIT",
-    "lastCommit": "2025-10-27T15:36:13+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-10-27T14:36:13Z"
   },
   {
     "name": "MMM-Logging",
@@ -345,7 +394,9 @@
     "issues": [],
     "stars": 5,
     "license": "MIT",
-    "lastCommit": "2025-08-06T15:17:34-07:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-08-06T22:17:34Z"
   },
   {
     "name": "MMM-MagicMover",
@@ -356,9 +407,11 @@
     "maintainerURL": "https://github.com/Lavve/MMM-MagicMover",
     "category": "Development / Core MagicMirror²",
     "issues": [],
-    "stars": 64,
+    "stars": 65,
     "license": "MIT",
-    "lastCommit": "2024-04-16T13:59:34+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-11-15T10:45:01Z"
   },
   {
     "name": "MMM-Markdown",
