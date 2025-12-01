@@ -18,6 +18,7 @@ import {
 } from "./updateRepositoryApiData/helpers.js";
 import {fetchRepositoryData, normalizeRepositoryData} from "./updateRepositoryApiData/api.js";
 import {createHttpClient} from "./shared/http-client.js";
+import {createLogger} from "./shared/logger.js";
 import {createPersistentCache} from "./shared/persistent-cache.js";
 import {createRateLimiter} from "./shared/rate-limiter.js";
 import fs from "node:fs";
@@ -25,6 +26,8 @@ import {getJson} from "./utils.js";
 import path from "node:path";
 import process from "node:process";
 import {validateStageData} from "./lib/schemaValidator.js";
+
+const logger = createLogger({name: "update-repo-data"});
 
 let queryCount = 0;
 let maxQueryCount = 58;
@@ -117,13 +120,12 @@ async function fetchGitHubBatch (modules, headers) {
     ? new Date(rateLimitResetSeconds * 1000).toISOString()
     : "unknown";
   if (rateLimitCost || rateLimitUsed || rateLimitRemaining) {
-    console.info(
-      "GitHub GraphQL rate limit:",
-      `cost=${rateLimitCost ?? "?"}`,
-      `used=${rateLimitUsed ?? "?"}`,
-      `remaining=${rateLimitRemaining ?? "?"}`,
-      `resetsAt=${rateLimitResetIso}`
-    );
+    logger.info("GitHub GraphQL rate limit:", {
+      cost: rateLimitCost ?? "?",
+      used: rateLimitUsed ?? "?",
+      remaining: rateLimitRemaining ?? "?",
+      resetsAt: rateLimitResetIso
+    });
   }
 
   queryCount += 1;
@@ -134,13 +136,11 @@ async function fetchGitHubBatch (modules, headers) {
       const resetTime = response.headers.get("x-ratelimit-reset");
       const resetDate = resetTime ? new Date(Number.parseInt(resetTime, 10) * 1000).toISOString() : "unknown";
 
-      console.warn([
-        "\n⚠️  GitHub API rate limit exceeded (403).",
-        `Remaining: ${rateLimitInfo ?? "0"}.`,
-        `Resets at: ${resetDate}.`,
-        "💡 Tip: Set GITHUB_TOKEN environment variable with a valid personal access token.",
-        "   Create one at: https://github.com/settings/tokens\n"
-      ].join(" "));
+      logger.warn("GitHub API rate limit exceeded (403).", {
+        remaining: rateLimitInfo ?? "0",
+        resetsAt: resetDate,
+        tip: "Set GITHUB_TOKEN environment variable with a valid personal access token."
+      });
     }
     throw new Error(`GraphQL request failed: ${response.status} ${response.statusText}`);
   }
@@ -148,7 +148,7 @@ async function fetchGitHubBatch (modules, headers) {
   const result = await response.json();
 
   if (result.errors) {
-    console.error("GraphQL errors:", JSON.stringify(result.errors, null, 2));
+    logger.error("GraphQL errors:", result.errors);
   }
 
   const normalized = {};
@@ -173,7 +173,7 @@ async function fetchGitHubBatch (modules, headers) {
 }
 
 async function processGitHubModules (githubModules, headers, previousData, results, {cache, cacheKeys} = {}) {
-  console.log(`Fetching ${githubModules.length} GitHub repos via GraphQL (batches of ${GITHUB_GRAPHQL_BATCH_SIZE})...`);
+  logger.info(`Fetching ${githubModules.length} GitHub repos via GraphQL (batches of ${GITHUB_GRAPHQL_BATCH_SIZE})...`);
   for (let index = 0; index < githubModules.length; index += GITHUB_GRAPHQL_BATCH_SIZE) {
     const batch = githubModules.slice(index, index + GITHUB_GRAPHQL_BATCH_SIZE);
     moduleCount += batch.length;
@@ -205,9 +205,9 @@ async function processGitHubModules (githubModules, headers, previousData, resul
         }
       }
 
-      console.log(`Processed ${Math.min(index + GITHUB_GRAPHQL_BATCH_SIZE, githubModules.length)}/${githubModules.length} GitHub repos`);
+      logger.info(`Processed ${Math.min(index + GITHUB_GRAPHQL_BATCH_SIZE, githubModules.length)}/${githubModules.length} GitHub repos`);
     } catch (error) {
-      console.error("Error fetching GitHub batch:", error.message);
+      logger.error("Error fetching GitHub batch:", error.message);
       for (const module of batch) {
         useHistoricalData(previousData, module.id, module, results);
       }
@@ -259,7 +259,7 @@ async function updateData () {
       const repositoryId = module.id;
       moduleCount += 1;
 
-      console.log(`${moduleCount} / ${moduleListLength} - ${module.name}`);
+      logger.info(`${moduleCount} / ${moduleListLength} - ${module.name}`);
       try {
         const {response, data, branchData, repoType} = await fetchRepositoryData(module, httpClient, process.env);
 
@@ -281,11 +281,11 @@ async function updateData () {
           });
           results.push(repositoryData);
         } else {
-          console.error("\nError fetching API data:", response.status, response.statusText);
+          logger.error("Error fetching API data:", {status: response.status, statusText: response.statusText});
           useHistoricalData(previousData, repositoryId, module, results);
         }
       } catch (error) {
-        console.error(`\nError fetching data for ${module.url}:`, error.message);
+        logger.error(`Error fetching data for ${module.url}:`, error.message);
         useHistoricalData(previousData, repositoryId, module, results);
       }
 
@@ -312,14 +312,19 @@ async function updateData () {
     if (maxQueryCount < queryCount) {
       maxQueryCount = 0;
     }
-    console.info("\nRepository data update completed. queryCount:", queryCount, "maxQueryCount:", maxQueryCount, "results:", results.length, "modules:", moduleListLength);
+    logger.info("Repository data update completed.", {
+      queryCount,
+      maxQueryCount,
+      results: results.length,
+      modules: moduleListLength
+    });
   } catch (error) {
-    console.error("Error fetching repository API data:", error);
+    logger.error("Error fetching repository API data:", error);
   } finally {
     try {
       await repositoryCache.flush();
     } catch (error) {
-      console.error("Error flushing repository cache:", error);
+      logger.error("Error flushing repository cache:", error);
     }
   }
 }

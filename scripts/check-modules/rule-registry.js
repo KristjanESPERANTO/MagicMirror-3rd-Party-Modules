@@ -488,11 +488,9 @@ export {
 export function getRuleById (ruleId) {
   return RULE_INDEX.get(ruleId) ?? null;
 }
-
 export function getCategoryMetadata (category) {
   return RULE_CATEGORY_METADATA[category] ?? null;
 }
-
 export function getRulesForStage (stageId) {
   if (typeof stageId !== "string" || stageId.length === 0) {
     return EMPTY_RULE_LIST;
