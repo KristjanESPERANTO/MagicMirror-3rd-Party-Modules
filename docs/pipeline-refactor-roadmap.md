@@ -191,13 +191,50 @@ The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tas
 
 **Goal**: Transform the current 5-stage sequential pipeline into a 3-phase streaming architecture with parallel execution (see [architecture.md](architecture.md) Target State).
 
-#### Phase 1: Data Collection Optimization
+#### Phase 1: Data Collection Optimization (In Progress)
 
-1. **P6.2** — Move `lastCommit` collection to Stage 2 (API) ✅ Completed Dec 2025.
-   - **Context**: Currently, `lastCommit` is calculated in Stage 3/4 via `git log` (cloning required) or loaded from previous `modules.json` but discarded due to schema restrictions.
-   - **Goal**: Fetch `lastCommit` (pushedAt/committed_date) directly from GitHub/GitLab APIs in Stage 2.
-   - **Benefit**: Reduces dependency on full git clones for date checks, speeds up processing, and leverages data we already have access to.
-   - **Tasks**: Update `modules.stage.2.schema.json` to allow `lastCommit`, enable the logic in `updateRepositoryApiData/api.js`, and update `check-modules` to prefer this API date over `git log`.
+1. **P6.2** — Collect `lastCommit` from API in Stage 2 ✅ Completed Dec 2025.
+   - **Context**: `lastCommit` is now fetched directly from GitHub/GitLab APIs instead of requiring `git log` after cloning.
+   - **Deliverables**:
+     - ✅ Update schemas (Stage 2-5, Final, Min) to allow `lastCommit`
+     - ✅ Enable `lastCommit` extraction in `api.js`
+     - ✅ Preserve `lastCommit` through metadata collector
+2. **P6.2.1** — Optimize Stage 3 to skip cloning when local repo is current ✅ Completed Dec 2025.
+   - **Implementation**: Compare API `lastCommit` with local repo commit date; skip `git clone` if local is up-to-date.
+   - **Benefit**: Dramatically reduces Stage 3 runtime for unchanged modules (most modules in incremental runs).
+   - **Deliverables**:
+     - ✅ Add `getCommitDate` helper to `shared/git.js`
+     - ✅ Implement skip logic in `get-modules.ts`
+     - ✅ Add logging for skip rate visibility
+
+3. **P6.2.2** — Update Stage 4 to prefer API `lastCommit` over `git log` (Next Step).
+   - **Goal**: Eliminate redundant `git log` calls in `check-modules` when we already have the date from Stage 2.
+   - **Benefit**: Faster Stage 4 execution, cleaner separation of concerns.
+   - **Tasks**:
+     - Update `getLastCommitDate()` in `check-modules/index.ts` to check if `module.lastCommit` already exists
+     - Only run `git log` as fallback if API date is missing
+     - Add metrics for how often fallback is used
+
+4. **P6.2.3** — Test and document incremental pipeline behavior (Next Step).
+   - **Goal**: Validate end-to-end behavior of skip logic across Stages 3-5.
+   - **Tasks**:
+     - Run incremental pipeline on real module set
+     - Document skip rate metrics (Stage 3 clones skipped, Stage 4 cache hits)
+     - Update architecture.md with actual performance gains
+
+#### Phase 2: Begin Worker Pool Design (Not Started)
+
+Once Phase 1 is complete and we have validated the incremental behavior, we can start designing the parallel worker architecture:
+
+5. **P7.1** — Design worker pool architecture
+   - Define worker interface and communication protocol
+   - Plan batch distribution strategy
+   - Document resource limits and failure handling
+
+6. **P7.2** — Implement single-worker prototype
+   - Merge Stage 3+4+5 logic into one worker process
+   - Test with small batch (10-20 modules)
+   - Benchmark vs. current 3-stage approach
 
 ---
 

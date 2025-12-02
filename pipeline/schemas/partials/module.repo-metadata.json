@@ -7,13 +7,13 @@
       "minimum": 0
     },
     "license": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "hasGithubIssues": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "isArchived": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "lastCommit": {
       "type": ["string", "null"],
