@@ -1,6 +1,6 @@
 {
-  "issueCounter": 12056,
-  "lastUpdate": "2025-12-13T14:27:56+01:00",
+  "issueCounter": 14635,
+  "lastUpdate": "2025-12-13T15:25:50+01:00",
   "maintainer": {
     "0lek": 1,
     "0m4r": 3,
@@ -704,7 +704,6 @@
     "spelinski": 1,
     "spitzlbergerj": 3,
     "splattner": 1,
-    "spydersoft-consulting": 1,
     "sqall01": 1,
     "st3v0rr": 2,
     "stefanjacobs": 1,
@@ -789,12 +788,12 @@
     "zuo000": 1,
     "zzflops": 1
   },
-  "moduleCounter": 1325,
-  "modulesWithImageCounter": 942,
-  "modulesWithIssuesCounter": 1325,
+  "moduleCounter": 1324,
+  "modulesWithImageCounter": 945,
+  "modulesWithIssuesCounter": 1324,
   "repositoryHoster": {
     "bitbucket": 1,
-    "github": 1312,
+    "github": 1311,
     "gitlab": 12
   }
 }
