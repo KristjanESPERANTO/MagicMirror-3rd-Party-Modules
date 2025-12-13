@@ -101,12 +101,12 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 #### P6.x: Metadata Collection (merge stages 1+2)
 
-| Task | Description                                                                                                                | Dependencies | Effort |
-| ---- | -------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P6.1 | Create unified metadata collector that combines module list creation + GitHub/npm data fetching in a single streaming pass | P2.1         | L      |
-| P6.2 | Implement intelligent metadata caching with TTL-based invalidation                                                         | P3.1, P6.1   | M      |
-| P6.3 | Add parallel metadata fetching (configurable concurrency for API requests)                                                 | P6.1         | M      |
-| P6.4 | Remove separate stage 1 & 2 scripts once unified collector is stable                                                       | P6.1–P6.3    | S      |
+| Task | Description                                                                                                                                      | Dependencies | Effort |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
+| P6.1 | Create unified metadata collector that combines module list creation + GitHub/npm data fetching in a single streaming pass ✅ Completed Dec 2025 | P2.1         | L      |
+| P6.2 | Implement intelligent metadata caching with TTL-based invalidation                                                                               | P3.1, P6.1   | M      |
+| P6.3 | Add parallel metadata fetching (configurable concurrency for API requests)                                                                       | P6.1         | M      |
+| P6.4 | Remove separate stage 1 & 2 scripts once unified collector is stable                                                                             | P6.1–P6.3    | S      |
 
 #### P7.x: Parallel Analysis Workers (merge stages 3+4+5)
 
@@ -181,7 +181,7 @@ The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tas
 
 #### Phase 4: Begin Streaming Architecture
 
-7. **P6.1** — Create unified metadata collector (merge stages 1+2). First major step toward 3-phase architecture.
+7. **P6.1** — Create unified metadata collector (merge stages 1+2). First major step toward 3-phase architecture. ✅ Completed Dec 2025
 
 #### Phase 5: Cleanup & Maintenance (Post-Migration)
 

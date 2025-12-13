@@ -19,10 +19,8 @@ function scheduleFlush (state) {
       clearInterval(state.refillTimer);
       state.refillTimer = null;
     }
-  }, state.intervalMs).unref();
-}
-
-export function createRateLimiter ({tokensPerInterval = DEFAULT_TOKENS_PER_INTERVAL, intervalMs = DEFAULT_INTERVAL_MS, maxTokens = tokensPerInterval} = {}) {
+  }, state.intervalMs);
+} export function createRateLimiter ({tokensPerInterval = DEFAULT_TOKENS_PER_INTERVAL, intervalMs = DEFAULT_INTERVAL_MS, maxTokens = tokensPerInterval} = {}) {
   const state = {
     tokens: tokensPerInterval,
     maxTokens,
