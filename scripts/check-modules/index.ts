@@ -1496,7 +1496,11 @@ async function main() {
     modules: Array.isArray(stageData.modules)
       ? stageData.modules.map((entry) => {
         if (entry && typeof entry === "object") {
-          const { packageJson: _packageJson, ...rest } = entry;
+          const { packageJson: _packageJson, license, ...rest } = entry;
+          // Only include license if it's a non-empty string (final schema requires string, not null)
+          if (typeof license === "string" && license.length > 0) {
+            return { ...rest, license };
+          }
           return rest;
         }
         return entry;
