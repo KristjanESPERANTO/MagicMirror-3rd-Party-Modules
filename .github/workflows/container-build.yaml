@@ -17,9 +17,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    container:
-      image: moby/buildkit:latest
-      options: --privileged
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
@@ -36,12 +33,22 @@ jobs:
         run: mkdir -p website/data/cache
       - name: Build container
         run: |
-          RUN_KIND="${{ github.event_name }}"
+          docker run --rm --privileged \
+            -v "$PWD:/workspace" \
+            -w /workspace \
+            -e GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
+            -e GITHUB_ACTOR="${{ github.actor }}" \
+            -e GITHUB_REPOSITORY="${{ github.repository }}" \
+            -e GITHUB_REF_NAME="${{ github.ref_name }}" \
+            -e GITHUB_EVENT_NAME="${{ github.event_name }}" \
+            moby/buildkit:latest \
+            sh -c '
+          RUN_KIND="$GITHUB_EVENT_NAME"
           case "$RUN_KIND" in
             workflow_dispatch|schedule)
               # full run (manual trigger or cron) – build and push the image with ref-specific tag
-              REPO="$(echo "$GITHUB_REPOSITORY" | tr '[:upper:]' '[:lower:]')"
-              PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
+              REPO="$(echo "$GITHUB_REPOSITORY" | tr [:upper:] [:lower:])"
+              PARAMS="--output type=image,\"name=ghcr.io/${REPO}:$GITHUB_REF_NAME\",push=true"
               ;;
             *)
               # lightweight fallback (e.g. push event) – skip image push and use reduced wiki dataset
@@ -50,14 +57,14 @@ jobs:
           esac
           # registry credentials
           export DOCKER_CONFIG="$(pwd)/container"
-          echo "{\"auths\":{\"ghcr.io\":{\"auth\":\"$(echo -n ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} | base64 -w 0)\"}}}" > $DOCKER_CONFIG/config.json
+          echo "{\"auths\":{\"ghcr.io\":{\"auth\":\"$(echo -n $GITHUB_ACTOR:$GITHUB_TOKEN | base64 -w 0)\"}}}" > $DOCKER_CONFIG/config.json
           # build
           buildctl-daemonless.sh build \
             --progress plain \
             --frontend=dockerfile.v0 \
             --local context=. \
             --local dockerfile=container \
-            --opt build-arg:GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
+            --opt build-arg:GITHUB_TOKEN=$GITHUB_TOKEN \
             $PARAMS \
             --output type=local,dest=build-output
           if [ -d build-output/data/cache ]; then
@@ -66,6 +73,7 @@ jobs:
             cp -a build-output/data/cache/. website/data/cache/
           fi
           rm -rf build-output
+          '
       - name: Save repository API cache
         if: always()
         uses: actions/cache/save@v4
