@@ -107,7 +107,7 @@ export function normalizeRepositoryData (data, branchData, repoType) {
       stars = data.stargazers_count ?? data.stargazerCount ?? 0;
       license = data.license?.spdx_id ?? data.licenseInfo?.spdxId;
       hasGithubIssues = data.has_issues ?? data.hasIssuesEnabled ?? false;
-      lastCommit = branchData?.commit?.author?.date ?? data.pushedAt ?? null;
+      lastCommit = branchData?.commit?.author?.date ?? data.defaultBranchRef?.target?.committedDate ?? data.pushedAt ?? null;
       break;
     case "gitlab":
       stars = data.star_count ?? 0;
