@@ -71,7 +71,7 @@ This document captures the long-term improvements we want to implement in the mo
 | Task | Description                                                                                                                                                                    | Dependencies         | Effort |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ------ |
 | P5.1 | Publish an architecture diagram (current + target) in `docs/` ([architecture.md](architecture.md)) ✅ Completed Sep 2025                                                       | P1.1                 | S      |
-| P5.2 | Expand contributor guide with setup, pipeline tips, troubleshooting                                                                                                            | P5.1                 | M      |
+| P5.2 | Expand contributor guide with setup instructions, pipeline tips, and troubleshooting ✅ Completed Dec 2025                                                                     | P5.1                 | M      |
 | P5.3 | Convert roadmap tasks into GitHub issues and track via project board                                                                                                           | after roadmap review | S      |
 | P5.4 | Schedule periodic checkpoint (e.g. monthly) to review progress & adjust priorities                                                                                             | P5.3                 | S      |
 | P5.5 | Coordinate migration of selected `guides/` content into the official docs repository ([#59](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/59))        | P5.2                 | M      |
@@ -177,7 +177,7 @@ The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tas
 
 #### Phase 3: Documentation & Onboarding
 
-6. **P5.2** — Expand contributor guide with setup instructions, pipeline tips, and troubleshooting. Lowers barrier to entry for new contributors.
+6. **P5.2** — Expand contributor guide with setup instructions, pipeline tips, and troubleshooting. Lowers barrier to entry for new contributors. ✅ Completed Dec 2025
 
 #### Phase 4: Begin Streaming Architecture
 
