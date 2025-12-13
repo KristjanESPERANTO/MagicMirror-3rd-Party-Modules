@@ -164,8 +164,9 @@ function buildPackageSummary (packageData) {
   return summary;
 }
 
-async function loadPackageManifest ({name, maintainer}) {
-  const relativePath = `./modules/${name}-----${maintainer}/package.json`;
+async function loadPackageManifest ({name, id}) {
+  const owner = id.split("/")[0];
+  const relativePath = `./modules/${name}-----${owner}/package.json`;
 
   let raw;
   try {
