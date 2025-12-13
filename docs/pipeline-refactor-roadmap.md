@@ -42,29 +42,29 @@ This document captures the long-term improvements we want to implement in the mo
 | P3.1.5 | Implement smart incremental checking: skip modules when (A) module has no new commits since last check AND (B) this repository has no new commits since last check; reuse cached results from modules.magicmirror.builders for unchanged modules to dramatically reduce check stage runtime ✅ Completed Nov 2025 | P3.1         | M      |
 | P3.2   | Introduce a central rate limiter + retry strategy for GitHub/GitLab requests                                                                                                                                                                                                                                      | P3.1         | M      |
 | P3.3   | Capture structured logs (JSON) and aggregate per-stage timing metrics                                                                                                                                                                                                                                             | P1.2         | M      |
-| P3.4   | Ensure deterministic outputs (sorted keys, hash-based image names) and document the guarantees                                                                                                                                                                                                                    | P1.2         | S      |
+| P3.4   | Ensure deterministic outputs (sorted keys, hash-based image names) and document the guarantees ([deterministic outputs](deterministic-outputs.md)) ✅ Completed Nov 2025                                                                                                                                          | P1.2         | S      |
 | P3.5   | Harden repository clone flow to gracefully skip missing/renamed repos and keep the pipeline green ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41))                                                                                                                              | none         | M      |
 | P3.6   | Replace hard-coded star fallbacks with authenticated API lookups for non-GitHub hosts ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5))                                                                                                                                            | P3.1         | M      |
 | P3.7   | Add batch processing to `get-modules` and `check-modules`: process modules in configurable chunks to bound memory usage ✅ Completed Nov 2025                                                                                                                                                                     | P2.2, P2.3   | M      |
-| P3.8   | Implement module-level result caching: store analysis results per module keyed by git SHA to enable efficient incremental updates                                                                                                                                                                                 | P3.1         | M      |
+| P3.8   | Implement module-level result caching: store analysis results per module keyed by git SHA to enable efficient incremental updates ✅ Completed Nov 2025 (same as P3.1.5)                                                                                                                                          | P3.1         | M      |
 
 ### 4. Checks & Developer Experience
 
-| Task  | Description                                                                                                                                                                                     | Dependencies | Effort |
-| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable) ✅ Completed Oct 2025                                                                                             | P2.3         | M      |
-| P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu`) ✅ Completed Oct 2025                                                                                      | P4.1         | S      |
-| P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible ✅ Completed Oct 2025                                                    | P4.1         | M      |
-| P4.4  | Provide CLI progress UI and Markdown summary per run ✅ Completed Oct 2025                                                                                                                      | P1.2         | S      |
-| P4.5  | Add rule detecting modules that import third-party dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) ✅ Completed Oct 2025 | P4.1         | M      |
-| P4.6  | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54)) ✅ Completed Oct 2025                | P4.1         | S      |
-| P4.7  | Recommend `npm ci --omit=dev` when modules expose devDependencies in instructions ([#53](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/53))                            | P4.1         | S      |
-| P4.8  | Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status                                                                                   | P4.1         | M      |
-| P4.9  | Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments                                                                                      | P4.1         | M      |
-| P4.10 | Evaluate migrating the `ntl` task menu into a `pipeline` subcommand (interactive launcher built on the orchestrator CLI) _(low priority)_                                                       | P1.2         | S      |
-| P4.11 | Extend the rule registry to cover every pipeline check stage (legacy JS script + future additions) ✅ Completed Oct 2025                                                                        | P4.1         | L      |
-| P4.R1 | Audit every rule in the registry for relevance and clarity                                                                                                                                      | P4.11        | S      |
-| P4.R2 | Audit every recommendation in the registry for relevance and consistency                                                                                                                        | P4.11        | S      |
+| Task  | Description                                                                                                                                                                                                                                              | Dependencies | Effort |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable) ✅ Completed Oct 2025                                                                                                                                                      | P2.3         | M      |
+| P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu`) ✅ Completed Oct 2025                                                                                                                                               | P4.1         | S      |
+| P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible ✅ Completed Oct 2025                                                                                                             | P4.1         | M      |
+| P4.4  | Provide CLI progress UI and Markdown summary per run ✅ Completed Oct 2025                                                                                                                                                                               | P1.2         | S      |
+| P4.5  | Add rule detecting modules that import third-party dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) ✅ Completed Oct 2025                                                          | P4.1         | M      |
+| P4.6  | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54)) ✅ Completed Oct 2025                                                                         | P4.1         | S      |
+| P4.7  | ~~Recommend `npm ci --omit=dev` when modules expose devDependencies in instructions ([#53](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/53))~~ _(Misplaced: not a pipeline task, belongs in module guidelines/best practices)_ | P4.1         | S      |
+| P4.8  | ~~Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status~~ _(Misplaced: manual curation task, not pipeline automation)_                                                                           | P4.1         | M      |
+| P4.9  | ~~Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments~~ _(Misplaced: module developer guidance, not pipeline task)_                                                                               | P4.1         | M      |
+| P4.10 | Evaluate migrating the `ntl` task menu into a `pipeline` subcommand (interactive launcher built on the orchestrator CLI) _(low priority)_                                                                                                                | P1.2         | S      |
+| P4.11 | Extend the rule registry to cover every pipeline check stage (legacy JS script + future additions) ✅ Completed Oct 2025                                                                                                                                 | P4.1         | L      |
+| P4.R1 | Audit every rule in the registry for relevance and clarity                                                                                                                                                                                               | P4.11        | S      |
+| P4.R2 | Audit every recommendation in the registry for relevance and consistency                                                                                                                                                                                 | P4.11        | S      |
 
 ### 5. Documentation & Collaboration
 
@@ -99,59 +99,44 @@ Routine reminders for keeping the written guidance in sync with the code:
 - Update `docs/architecture.md` whenever stage runtimes or shared utilities shift (for example, when Node scripts move to TypeScript or shared helpers gain new capabilities).
 - Align updates in `docs/CONTRIBUTING.md` with each orchestrator milestone so local workflows stay in sync.
 
-## Next Concrete Steps
-
-### Milestone 1: Incremental & Parallel Foundations (Current Focus)
-
-Immediate action items to improve performance and prepare for streaming architecture:
-
-1. **P3.8** — Implement module-level result caching: store analysis results keyed by git SHA to enable efficient incremental updates.
-2. **P4.7** — Recommend `npm ci --omit=dev` when modules list devDependencies in instructions.
-3. **P4.8** — Flag modules with multi-year inactivity that are not marked `outdated`.
-4. **P4.9** — Inspect Dependabot configs for schedule scope and suggest adjustments.
-
-### Milestone 2: Toward 3-Phase Streaming Architecture (Future)
-
-**Goal**: Transform the current 5-stage sequential pipeline into a 3-phase streaming architecture with parallel execution (see [architecture.md](architecture.md) Target State).
-
-#### P5.x: Metadata Collection (merge stages 1+2)
+#### P6.x: Metadata Collection (merge stages 1+2)
 
 | Task | Description                                                                                                                | Dependencies | Effort |
 | ---- | -------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P5.1 | Create unified metadata collector that combines module list creation + GitHub/npm data fetching in a single streaming pass | P2.1         | L      |
-| P5.2 | Implement intelligent metadata caching with TTL-based invalidation                                                         | P3.1, P5.1   | M      |
-| P5.3 | Add parallel metadata fetching (configurable concurrency for API requests)                                                 | P5.1         | M      |
-| P5.4 | Remove separate stage 1 & 2 scripts once unified collector is stable                                                       | P5.1–P5.3    | S      |
+| P6.1 | Create unified metadata collector that combines module list creation + GitHub/npm data fetching in a single streaming pass | P2.1         | L      |
+| P6.2 | Implement intelligent metadata caching with TTL-based invalidation                                                         | P3.1, P6.1   | M      |
+| P6.3 | Add parallel metadata fetching (configurable concurrency for API requests)                                                 | P6.1         | M      |
+| P6.4 | Remove separate stage 1 & 2 scripts once unified collector is stable                                                       | P6.1–P6.3    | S      |
 
-#### P6.x: Parallel Analysis Workers (merge stages 3+4+5)
+#### P7.x: Parallel Analysis Workers (merge stages 3+4+5)
 
 | Task | Description                                                                                             | Dependencies | Effort |
 | ---- | ------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P6.1 | Design worker pool architecture: batch distributor + N independent analysis workers                     | P5.1         | M      |
-| P6.2 | Implement single-worker analysis: clone → read package.json → screenshots → checks (all in one process) | P2.2, P2.3   | L      |
-| P6.3 | Add worker pool orchestration with configurable parallelism and graceful failure handling               | P6.1, P6.2   | M      |
-| P6.4 | Integrate incremental mode: workers skip modules with unchanged git SHA (use P3.8 cache)                | P3.8, P6.2   | M      |
-| P6.5 | Add per-module isolation and logging for easier debugging                                               | P6.2         | S      |
-| P6.6 | Remove separate stage 3/4/5 scripts once parallel workers are stable                                    | P6.1–P6.5    | S      |
+| P7.1 | Design worker pool architecture: batch distributor + N independent analysis workers                     | P6.1         | M      |
+| P7.2 | Implement single-worker analysis: clone → read package.json → screenshots → checks (all in one process) | P2.2, P2.3   | L      |
+| P7.3 | Add worker pool orchestration with configurable parallelism and graceful failure handling               | P7.1, P7.2   | M      |
+| P7.4 | Integrate incremental mode: workers skip modules with unchanged git SHA (use P3.8 cache)                | P3.8, P7.2   | M      |
+| P7.5 | Add per-module isolation and logging for easier debugging                                               | P7.2         | S      |
+| P7.6 | Remove separate stage 3/4/5 scripts once parallel workers are stable                                    | P7.1–P7.5    | S      |
 
-#### P7.x: Streaming & Aggregation
+#### P8.x: Streaming & Aggregation
 
 | Task | Description                                                                                        | Dependencies | Effort |
 | ---- | -------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P7.1 | Implement streaming orchestrator: Phase 1 feeds Phase 2 incrementally (no full intermediate files) | P5.1, P6.1   | L      |
-| P7.2 | Create aggregation phase: collect worker results, validate schemas, generate final outputs         | P6.3         | M      |
-| P7.3 | Add diff detection and change reporting to aggregation phase                                       | P7.2         | M      |
-| P7.4 | Optimize memory usage: bounded buffers, backpressure handling between phases                       | P7.1         | M      |
-| P7.5 | Remove intermediate `modules.stage.*.json` files (keep only enriched metadata + final outputs)     | P7.1, P7.2   | S      |
+| P8.1 | Implement streaming orchestrator: Phase 1 feeds Phase 2 incrementally (no full intermediate files) | P6.1, P7.1   | L      |
+| P8.2 | Create aggregation phase: collect worker results, validate schemas, generate final outputs         | P7.3         | M      |
+| P8.3 | Add diff detection and change reporting to aggregation phase                                       | P8.2         | M      |
+| P8.4 | Optimize memory usage: bounded buffers, backpressure handling between phases                       | P8.1         | M      |
+| P8.5 | Remove intermediate `modules.stage.*.json` files (keep only enriched metadata + final outputs)     | P8.1, P8.2   | S      |
 
-#### P8.x: Performance & Observability
+#### P9.x: Performance & Observability
 
 | Task | Description                                                                            | Dependencies | Effort |
 | ---- | -------------------------------------------------------------------------------------- | ------------ | ------ |
-| P8.1 | Add comprehensive benchmarking: compare 5-stage vs 3-phase performance on full dataset | P7.2         | S      |
-| P8.2 | Implement real-time progress tracking across all workers                               | P6.3         | M      |
-| P8.3 | Add resource monitoring: track memory/CPU usage per phase and worker                   | P6.3         | S      |
-| P8.4 | Create performance dashboard: visualize pipeline metrics over time                     | P8.1–P8.3    | M      |
+| P9.1 | Add comprehensive benchmarking: compare 5-stage vs 3-phase performance on full dataset | P8.2         | S      |
+| P9.2 | Implement real-time progress tracking across all workers                               | P7.3         | M      |
+| P9.3 | Add resource monitoring: track memory/CPU usage per phase and worker                   | P7.3         | S      |
+| P9.4 | Create performance dashboard: visualize pipeline metrics over time                     | P9.1–P9.3    | M      |
 
 ### Expected Benefits of 3-Phase Architecture
 
@@ -170,6 +155,38 @@ Items to revisit once the immediate roadmap is complete:
 - **Evaluate comparison harness utility**: Now that there's only one TypeScript implementation, assess whether the comparison harness (`scripts/check-modules/compare/`) still provides value for regression testing or should be simplified/removed in favor of simpler golden file tests.
 - **Consider event-driven architecture**: Replace file-based stage communication with event streams for better composability.
 - **Explore containerization**: Run analysis workers in isolated containers for better security and reproducibility.
+
+## Next Concrete Steps
+
+### Milestone 1: Incremental & Parallel Foundations (Current Focus)
+
+The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tasks were reclassified as module developer guidance rather than pipeline infrastructure work.
+
+**Recommended next steps** to improve robustness and prepare for the streaming architecture migration:
+
+#### Phase 1: Quick Wins (Low Effort, High Impact)
+
+1. **P3.4** — Ensure deterministic outputs (sorted keys, hash-based image names). Makes diffs cleaner and debugging easier.
+2. **P4.R1 & P4.R2** — Audit rule registry for relevance and consistency. Clean foundation before adding more checks.
+3. **P3.5** — Gracefully skip missing/renamed repos ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41)). Prevents pipeline crashes, reduces manual intervention.
+
+#### Phase 2: Robustness & Observability (Medium Effort)
+
+4. **P3.2** — Introduce central rate limiter + retry strategy. Prevents API bans, handles transient failures gracefully.
+5. **P3.6** — Replace hard-coded star fallbacks with authenticated API lookups for GitLab/Bitbucket/Codeberg ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5)). Improves data quality across platforms.
+6. **P3.3** — Capture structured logs (JSON) and per-stage timing metrics. Better observability for performance debugging.
+
+#### Phase 3: Documentation & Onboarding
+
+7. **P5.2** — Expand contributor guide with setup instructions, pipeline tips, and troubleshooting. Lowers barrier to entry for new contributors.
+
+#### Phase 4: Begin Streaming Architecture
+
+8. **P6.1** — Create unified metadata collector (merge stages 1+2). First major step toward 3-phase architecture.
+
+### Milestone 2: Toward 3-Phase Streaming Architecture (Future)
+
+**Goal**: Transform the current 5-stage sequential pipeline into a 3-phase streaming architecture with parallel execution (see [architecture.md](architecture.md) Target State).
 
 ---
 
