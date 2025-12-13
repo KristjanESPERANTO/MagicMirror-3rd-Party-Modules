@@ -40,21 +40,14 @@ export function parseModuleList (markdown) {
           const description = parts[3] || "";
 
           let maintainer = maintainerCell;
-          let maintainerURL = "";
 
           const maintainerMatch = maintainerCell.match(/\[(.*?)\]\((.*?)\)/u);
           if (maintainerMatch) {
             maintainer = maintainerMatch[1].trim();
-            maintainerURL = maintainerMatch[2].trim();
-            // Remove title from URL if present (e.g. "URL "Title"")
-            const titleStart = maintainerURL.indexOf(" ");
-            if (titleStart !== -1) {
-              maintainerURL = maintainerURL.substring(0, titleStart);
-            }
+            // We ignore the wiki maintainerURL and derive it from repo URL instead
           }
 
           /*
-           * ...existing code...
            * Basic validation
            */
           const repoType = getRepositoryType(url);
@@ -62,13 +55,29 @@ export function parseModuleList (markdown) {
             issues.push(`Skipping unknown repository type: ${url}`);
           } else {
             const id = getRepositoryId(url) || name.replace(/\s+/gu, "-");
+
+            /*
+             * Always derive maintainerURL from repo URL
+             * e.g. https://github.com/Bee-Mar/MMM-Podcast -> https://github.com/Bee-Mar
+             */
+            let maintainerURL = "";
+            try {
+              const urlObj = new URL(url);
+              const pathParts = urlObj.pathname.split("/").filter(Boolean);
+              if (pathParts.length >= 1) {
+                maintainerURL = `${urlObj.origin}/${pathParts[0]}`;
+              }
+            } catch {
+              // Invalid URL, leave maintainerURL empty
+            }
+
             modules.push({
               name,
               url,
               id,
               description,
               maintainer,
-              maintainerURL: maintainerURL || url, // Fallback to repo URL if missing
+              maintainerURL,
               category,
               issues: []
             });

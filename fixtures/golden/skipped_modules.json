@@ -1,14 +1,1 @@
-[
-  {
-    "description": "Display live departures from public passenger transport service of the 'Verkehrsverbund Oberelbe' (VVO).",
-    "error": "Invalid repository URL",
-    "errorType": "invalid_url",
-    "initialStatusCode": 404,
-    "maintainer": "ChristianGeie",
-    "name": "MMM-PublicTransportVVO",
-    "responseSnippet": "\n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html\n  lang=\"en\"\n  \n  data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"\n  data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"\n  \n  >\n\n\n\n\n  <head>\n    <meta charset=\"utf-8\">\n  <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\">\n  <link rel=\"dns-prefetch\" href=\"https://avatars.githubusercontent.com\">\n  <link rel=\"dns-prefetch\" href=\"https://github-cloud.s3.amazonaws.com\">\n  <link rel=\"dns-prefetch\" href=\"https://user-images.githubuserc",
-    "statusCode": 404,
-    "statusText": "Not Found",
-    "url": "https://github.com/ChristianGeie/MMM-PublicTransportVVO"
-  }
-]
+[]
