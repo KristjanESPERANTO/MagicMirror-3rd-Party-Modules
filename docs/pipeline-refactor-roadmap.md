@@ -104,8 +104,8 @@ Routine reminders for keeping the written guidance in sync with the code:
 | Task | Description                                                                                                                                      | Dependencies | Effort |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
 | P6.1 | Create unified metadata collector that combines module list creation + GitHub/npm data fetching in a single streaming pass ✅ Completed Dec 2025 | P2.1         | L      |
-| P6.2 | Implement intelligent metadata caching with TTL-based invalidation                                                                               | P3.1, P6.1   | M      |
-| P6.3 | Add parallel metadata fetching (configurable concurrency for API requests)                                                                       | P6.1         | M      |
+| P6.2 | Implement intelligent metadata caching with TTL-based invalidation ✅ Completed Dec 2025                                                         | P3.1, P6.1   | M      |
+| P6.3 | Add parallel metadata fetching (configurable concurrency for API requests) ✅ Completed Dec 2025 (GitHub GraphQL batching)                       | P6.1         | M      |
 | P6.4 | Remove separate stage 1 & 2 scripts once unified collector is stable ✅ Completed Dec 2025                                                       | P6.1–P6.3    | S      |
 
 #### P7.x: Parallel Analysis Workers (merge stages 3+4+5)
@@ -158,11 +158,11 @@ Items to revisit once the immediate roadmap is complete:
 
 ## Next Concrete Steps
 
-### Milestone 1: Incremental & Parallel Foundations (Current Focus)
+### Milestone 1: Incremental & Parallel Foundations (✅ Completed Dec 2025)
 
 The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tasks were reclassified as module developer guidance rather than pipeline infrastructure work.
 
-**Recommended next steps** to improve robustness and prepare for the streaming architecture migration:
+**Completed steps** that improved robustness and prepared for the streaming architecture migration:
 
 #### Phase 1: Quick Wins (Low Effort, High Impact)
 
@@ -187,7 +187,7 @@ The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tas
 
 8. **P4.R1 & P4.R2** — Audit rule registry and recommendations for relevance and consistency. Quality check after migration is complete. ✅ Completed Dec 2025
 
-### Milestone 2: Toward 3-Phase Streaming Architecture (Future)
+### Milestone 2: Toward 3-Phase Streaming Architecture (Current Focus)
 
 **Goal**: Transform the current 5-stage sequential pipeline into a 3-phase streaming architecture with parallel execution (see [architecture.md](architecture.md) Target State).
 
