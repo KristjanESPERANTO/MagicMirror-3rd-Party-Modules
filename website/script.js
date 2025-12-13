@@ -88,7 +88,7 @@ function createCard (moduleData) {
   card.querySelector(".description").innerHTML = moduleData.description;
 
   if (moduleData.image) {
-    const imagePath = `./images/${moduleData.name}---${moduleData.maintainer}---${moduleData.image}`;
+    const imagePath = `./images/${moduleData.image}`;
     const image = card.querySelector(".img-container img");
     image.src = imagePath;
     image.alt = `${moduleData.name} image`;
