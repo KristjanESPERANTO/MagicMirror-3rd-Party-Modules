@@ -25,7 +25,8 @@ let maxQueryCount = 58;
 let moduleCount = 0;
 
 const GITHUB_GRAPHQL_BATCH_SIZE = 100;
-const REPOSITORY_CACHE_TTL_MS = 1000 * 60 * 60 * 12;
+// Keep repository API responses around for ~72 hours so daily pipeline runs reuse prior results.
+const REPOSITORY_CACHE_TTL_MS = 1000 * 60 * 60 * 24 * 3;
 const REPOSITORY_CACHE_PATH = path.join(
   "website",
   "data",
