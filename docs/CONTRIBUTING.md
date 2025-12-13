@@ -184,6 +184,42 @@ Spelling is checked with `cspell`:
 npm run test:spelling
 ```
 
+### Golden artifacts (regression testing)
+
+Golden artifacts are reference outputs stored in `fixtures/golden/` that serve as snapshots for regression testing. They ensure pipeline changes don't accidentally alter outputs.
+
+**Workflow when modifying pipeline code:**
+
+1. **Run tests**: `npm run golden:check`
+   - ✅ **Pass**: Your changes didn't affect outputs
+   - ❌ **Fail**: Outputs changed - review required
+
+2. **Review changes**: `git diff fixtures/golden/`
+   - Are these changes expected and intentional?
+   - Do they match your code changes?
+
+3. **Update golden files** (only if changes are intentional): `npm run golden:update`
+   - Updates reference outputs to match new behavior
+   - Creates new baseline for future tests
+
+4. **Commit**: Include golden files in your commit
+   - Documents expected behavior change
+   - Future tests compare against your new baseline
+
+**When to update golden artifacts:**
+
+- Stage schemas change (added/removed fields)
+- Error handling improvements (e.g., new error categories)
+- Sorting or formatting changes (e.g., deterministic outputs)
+- Bug fixes that alter output structure
+- New pipeline features that affect final artifacts
+
+**What they test:**
+
+- Pipeline produces consistent outputs for the same inputs
+- No accidental regressions in data structure or content
+- Contract changes are explicit and reviewable in PRs
+
 ## Helpful references
 
 - [`docs/pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md) – modernization milestones and upcoming tasks.
