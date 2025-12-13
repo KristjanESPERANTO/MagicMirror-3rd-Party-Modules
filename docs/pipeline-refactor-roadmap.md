@@ -45,6 +45,8 @@ This document captures the long-term improvements we want to implement in the mo
 | P3.4   | Ensure deterministic outputs (sorted keys, hash-based image names) and document the guarantees                                                                                                                                                                                              | P1.2         | S      |
 | P3.5   | Harden repository clone flow to gracefully skip missing/renamed repos and keep the pipeline green ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41))                                                                                                        | none         | M      |
 | P3.6   | Replace hard-coded star fallbacks with authenticated API lookups for non-GitHub hosts ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5))                                                                                                                      | P3.1         | M      |
+| P3.7   | Add batch processing to `get-modules` and `check-modules`: process modules in configurable chunks to bound memory usage                                                                                                                                                                     | P2.2, P2.3   | M      |
+| P3.8   | Implement module-level result caching: store analysis results per module keyed by git SHA to enable efficient incremental updates                                                                                                                                                           | P3.1         | M      |
 
 ### 4. Checks & Developer Experience
 
@@ -99,18 +101,77 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 ## Next Concrete Steps
 
-Immediate action items:
+### Milestone 1: Incremental & Parallel Foundations (Current Focus)
+
+Immediate action items to improve performance and prepare for streaming architecture:
 
 1. **P3.1.5** — Implement smart incremental checking: reuse cached results when modules and their repositories haven't changed since the last run.
-2. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
-3. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
-4. Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments (P4.9).
+2. **P3.7** — Add batch processing to `get-modules`: process modules in configurable chunks instead of loading all into memory.
+3. **P3.8** — Implement module-level result caching: store analysis results keyed by git SHA to enable efficient incremental updates.
+4. **P4.7** — Recommend `npm ci --omit=dev` when modules list devDependencies in instructions.
+5. **P4.8** — Flag modules with multi-year inactivity that are not marked `outdated`.
+6. **P4.9** — Inspect Dependabot configs for schedule scope and suggest adjustments.
+
+### Milestone 2: Toward 3-Phase Streaming Architecture (Future)
+
+**Goal**: Transform the current 5-stage sequential pipeline into a 3-phase streaming architecture with parallel execution (see [architecture.md](architecture.md) Target State).
+
+#### P5.x: Metadata Collection (merge stages 1+2)
+
+| Task | Description                                                                                                                | Dependencies | Effort |
+| ---- | -------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P5.1 | Create unified metadata collector that combines module list creation + GitHub/npm data fetching in a single streaming pass | P2.1         | L      |
+| P5.2 | Implement intelligent metadata caching with TTL-based invalidation                                                         | P3.1, P5.1   | M      |
+| P5.3 | Add parallel metadata fetching (configurable concurrency for API requests)                                                 | P5.1         | M      |
+| P5.4 | Remove separate stage 1 & 2 scripts once unified collector is stable                                                       | P5.1–P5.3    | S      |
+
+#### P6.x: Parallel Analysis Workers (merge stages 3+4+5)
+
+| Task | Description                                                                                             | Dependencies | Effort |
+| ---- | ------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P6.1 | Design worker pool architecture: batch distributor + N independent analysis workers                     | P5.1         | M      |
+| P6.2 | Implement single-worker analysis: clone → read package.json → screenshots → checks (all in one process) | P2.2, P2.3   | L      |
+| P6.3 | Add worker pool orchestration with configurable parallelism and graceful failure handling               | P6.1, P6.2   | M      |
+| P6.4 | Integrate incremental mode: workers skip modules with unchanged git SHA (use P3.8 cache)                | P3.8, P6.2   | M      |
+| P6.5 | Add per-module isolation and logging for easier debugging                                               | P6.2         | S      |
+| P6.6 | Remove separate stage 3/4/5 scripts once parallel workers are stable                                    | P6.1–P6.5    | S      |
+
+#### P7.x: Streaming & Aggregation
+
+| Task | Description                                                                                        | Dependencies | Effort |
+| ---- | -------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P7.1 | Implement streaming orchestrator: Phase 1 feeds Phase 2 incrementally (no full intermediate files) | P5.1, P6.1   | L      |
+| P7.2 | Create aggregation phase: collect worker results, validate schemas, generate final outputs         | P6.3         | M      |
+| P7.3 | Add diff detection and change reporting to aggregation phase                                       | P7.2         | M      |
+| P7.4 | Optimize memory usage: bounded buffers, backpressure handling between phases                       | P7.1         | M      |
+| P7.5 | Remove intermediate `modules.stage.*.json` files (keep only enriched metadata + final outputs)     | P7.1, P7.2   | S      |
+
+#### P8.x: Performance & Observability
+
+| Task | Description                                                                            | Dependencies | Effort |
+| ---- | -------------------------------------------------------------------------------------- | ------------ | ------ |
+| P8.1 | Add comprehensive benchmarking: compare 5-stage vs 3-phase performance on full dataset | P7.2         | S      |
+| P8.2 | Implement real-time progress tracking across all workers                               | P6.3         | M      |
+| P8.3 | Add resource monitoring: track memory/CPU usage per phase and worker                   | P6.3         | S      |
+| P8.4 | Create performance dashboard: visualize pipeline metrics over time                     | P8.1–P8.3    | M      |
+
+### Expected Benefits of 3-Phase Architecture
+
+Once fully implemented, the streaming architecture should deliver:
+
+- **Performance**: ~15-20 min full runs (down from 45-60 min), <5 min incremental updates
+- **Reliability**: Bounded memory usage eliminates OOM crashes
+- **Debuggability**: Per-module isolation makes failures easier to trace
+- **Scalability**: Add more workers to process larger module counts
+- **Simplicity**: 3 phases instead of 5 stages, fewer intermediate files
 
 ## Future Considerations
 
 Items to revisit once the immediate roadmap is complete:
 
 - **Evaluate comparison harness utility**: Now that there's only one TypeScript implementation, assess whether the comparison harness (`scripts/check-modules/compare/`) still provides value for regression testing or should be simplified/removed in favor of simpler golden file tests.
+- **Consider event-driven architecture**: Replace file-based stage communication with event streams for better composability.
+- **Explore containerization**: Run analysis workers in isolated containers for better security and reproducibility.
 
 ---
 
