@@ -83,6 +83,13 @@
           },
           "isArchived": {
             "type": "boolean"
+          },
+          "lastCommit": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
           }
         }
       }
@@ -134,6 +141,13 @@
       },
       "hasGithubIssues": {
         "type": "boolean"
+      },
+      "lastCommit": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date-time"
       },
       "isArchived": {
         "type": "boolean"
