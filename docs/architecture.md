@@ -2,9 +2,9 @@
 
 Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current pipeline, highlights the target architecture we are steering toward, and links each element back to the modernization roadmap.
 
-## Current state (October 2025)
+## Current state (November 2025)
 
-The production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh` (or the shorthand npm scripts) and progresses through six sequential stages. All stages are now implemented in TypeScript/Node.js and reuse the shared utility layer introduced in P2.1. Each stage produces a well-defined artifact that ships with a JSON Schema contract enforced at the boundary.
+The production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh` (or the shorthand npm scripts) and progresses through five sequential stages. All stages are now implemented in TypeScript/Node.js and reuse the shared utility layer introduced in P2.1. Each stage produces a well-defined artifact that ships with a JSON Schema contract enforced at the boundary.
 
 ### Stage overview
 
@@ -14,8 +14,7 @@ The production pipeline is orchestrated via `node scripts/orchestrator/index.js 
 | 2     | `update-repository-data` | Node.js    | `website/data/modules.stage.2.json`, `website/data/gitHubData.json`                                          |
 | 3     | `get-modules`            | TypeScript | `website/data/modules.stage.3.json`, `modules/`, `modules_temp/`                                             |
 | 4     | `expand-module-list`     | Node.js    | `website/data/modules.stage.4.json`, `website/images/`                                                       |
-| 5     | `check-modules-js`       | Node.js    | `website/data/modules.stage.5.json`                                                                          |
-| 6     | `check-modules`          | TypeScript | `website/data/modules.json`, `website/data/modules.min.json`, `website/data/stats.json`, `website/result.md` |
+| 5     | `check-modules`          | TypeScript | `website/data/modules.json`, `website/data/modules.min.json`, `website/data/stats.json`, `website/result.md` |
 
 ### Current workflow diagram
 
@@ -26,7 +25,6 @@ flowchart LR
   orchestrator --> update{{"Update repository metadata<br>Node.js"}}
   orchestrator --> fetch{{"Fetch module repos<br>TypeScript"}}
   orchestrator --> enrich{{"Enrich with package metadata<br>Node.js"}}
-  orchestrator --> checkjs{{"Static checks<br>Node.js"}}
   orchestrator --> checkts{{"Deep analysis<br>TypeScript"}}
 
   create --> stage1["modules.stage.1.json"]
@@ -35,9 +33,8 @@ flowchart LR
   update <-.-> cache[("gitHubData.json")]
   fetch -- "modules.stage.3.json" --> enrich
   fetch --> clones[("modules/, modules_temp/")]
-  enrich -- "modules.stage.4.json" --> checkjs
+  enrich -- "modules.stage.4.json" --> checkts
   enrich --> images[("website/images/")]
-  checkjs -- "modules.stage.5.json" --> checkts
   checkts --> outputs[("modules.json, modules.min.json, stats.json, result.md")]
 ```
 
@@ -46,7 +43,7 @@ flowchart LR
 - Stage contracts are codified via the bundled schemas stored under `dist/schemas/` (sources live in `pipeline/schemas/src/`).
 - Cross-cutting utilities (HTTP, Git, filesystem, rate limiting) now live in `scripts/shared/` and are reused by every TypeScript stage, including the deep-analysis step.
 - The orchestrator CLI runs the declarative stage graph and supports `--only/--skip`, retries, and shared logging.
-- The comparison harness (`scripts/check-modules/compare/`) captures README/HTML alongside JSON outputs and applies warning thresholds before highlighting differences between the legacy and TypeScript runs.
+- The comparison harness (`scripts/check-modules/compare/`) captures README/HTML alongside JSON outputs and applies warning thresholds before highlighting differences between runs.
 
 ### Legacy workflow snapshot (pre-September 2025)
 
@@ -69,7 +66,7 @@ This legacy diagram captures the pre-orchestrator, mixed-runtime pipeline that r
 
 ## Target state
 
-The roadmap contemplates a TypeScript-first pipeline driven by a declarative stage graph. The near-term target introduces a dedicated orchestrator (task **P1.2**) that reads `pipeline/stage-graph.json`, executes stages with structured logging, and exposes `--only`/`--skip` flags. Usage details live in the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md). Subsequent work ports Python stages to TypeScript (tasks **P2.2** and **P2.3**) and centralizes shared utilities (**P2.1**).
+The roadmap contemplates a TypeScript-first pipeline driven by a declarative stage graph. The orchestrator (task **P1.2** ✅) reads `pipeline/stage-graph.json`, executes stages with structured logging, and exposes `--only`/`--skip` flags. Usage details live in the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md). Python stages have been successfully ported to TypeScript (tasks **P2.2** ✅ and **P2.3** ✅), shared utilities centralized (**P2.1** ✅), and the legacy JavaScript check stage removed (**P2.6** ✅).
 
 ### Target workflow diagram
 
