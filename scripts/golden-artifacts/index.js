@@ -3,7 +3,6 @@ import {
   sanitizeFinalModules,
   sanitizeGitHubData,
   sanitizeSkippedModules,
-  sanitizeStage1,
   sanitizeStage2,
   sanitizeStage3,
   sanitizeStage4,
@@ -37,12 +36,6 @@ function readJson (filePath) {
 }
 
 const artifacts = [
-  {
-    name: "modules.stage.1",
-    source: path.join(repoRoot, "website/data/modules.stage.1.json"),
-    target: path.join(repoRoot, "fixtures/golden/modules.stage.1.json"),
-    sanitize: sanitizeStage1
-  },
   {
     name: "modules.stage.2",
     source: path.join(repoRoot, "website/data/modules.stage.2.json"),

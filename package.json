@@ -20,7 +20,7 @@
     "url": "https://github.com/KristjanESPERANTO"
   },
   "type": "module",
-  "main": "scripts/create_module_list.js",
+  "main": "scripts/collect-metadata/index.js",
   "directories": {
     "doc": "docs"
   },
