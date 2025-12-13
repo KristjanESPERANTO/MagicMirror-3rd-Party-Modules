@@ -370,9 +370,10 @@ async function checkLicenseAndHandleScreenshot (packageManifest, module) {
 
   // Use license information to determine if we can use an image
   if (useableLicenses.includes(effectiveLicense)) {
+    const owner = module.id.split("/")[0];
     const {targetImageName, issues} = await findAndResizeImage(
       module.name,
-      module.maintainer
+      owner
     );
     const imagePath = targetImageName;
     if (imagePath) {
