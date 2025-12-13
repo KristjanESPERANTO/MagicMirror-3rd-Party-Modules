@@ -23,6 +23,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
+      - name: Restore repository API cache
+        id: repository-api-cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: website/data/cache
+          key: repository-api-cache-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            repository-api-cache-${{ github.ref_name }}-
+            repository-api-cache-
+      - name: Ensure cache directory exists
+        run: mkdir -p website/data/cache
       - name: Build container
         run: |
           RUN_KIND="${{ github.event_name }}"
@@ -48,3 +59,9 @@ jobs:
             --local dockerfile=container \
             --opt build-arg:GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
             $PARAMS
+      - name: Save repository API cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: website/data/cache
+          key: repository-api-cache-${{ github.ref_name }}-${{ github.run_id }}

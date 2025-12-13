@@ -1,5 +1,22 @@
+/*
+ * This script refreshes the public metadata for every third-party module each day
+ * (stars, recent updates, archived status, …) and writes the results into the website
+ * JSON files. It keeps successful API responses in a small cache so we avoid redundant
+ * requests and stay within GitHub rate limits. If a request fails, the script falls back
+ * to the most recent known values so the published dataset remains complete.
+ */
+import {
+  getRepositoryId,
+  getRepositoryType,
+  loadPreviousData,
+  sortByNameIgnoringPrefix,
+  sortModuleListByLastUpdate,
+  useHistoricalData
+} from "./updateRepositoryApiData/helpers.js";
+import {createPersistentCache} from "./shared/persistent-cache.js";
 import fs from "node:fs";
 import {getJson} from "./utils.js";
+import path from "node:path";
 import process from "node:process";
 import {validateStageData} from "./lib/schemaValidator.js";
 
@@ -8,42 +25,95 @@ let maxQueryCount = 58;
 let moduleCount = 0;
 
 const GITHUB_GRAPHQL_BATCH_SIZE = 100;
+const REPOSITORY_CACHE_TTL_MS = 1000 * 60 * 60 * 12;
+const REPOSITORY_CACHE_PATH = path.join(
+  "website",
+  "data",
+  "cache",
+  "repository-api-cache.json"
+);
+const repositoryCache = createPersistentCache({
+  filePath: REPOSITORY_CACHE_PATH,
+  defaultTtlMs: REPOSITORY_CACHE_TTL_MS,
+  version: "repository-api/v1"
+});
 
-// Function to detect the repository hosting service
-function getRepositoryType (url) {
-  if (url.includes("github.com")) {
-    return "github";
-  }
-  if (url.includes("gitlab.com")) {
-    return "gitlab";
-  }
-  if (url.includes("bitbucket.org")) {
-    return "bitbucket";
-  }
-  if (url.includes("codeberg.org")) {
-    return "codeberg";
-  }
-  return "unknown";
-}
-
-// Function to extract repository ID based on the hosting service
-function getRepositoryId (url) {
-  const urlParts = url.split("/");
-  const hostIndex = urlParts.findIndex((part) =>
-    part.includes("github.com") ||
-    part.includes("gitlab.com") ||
-    part.includes("bitbucket.org") ||
-    part.includes("codeberg.org"));
-
-  if (hostIndex !== -1 && urlParts.length > hostIndex + 2) {
-    return `${urlParts[hostIndex + 1]}/${urlParts[hostIndex + 2]}`;
-  }
-  return null;
-}
 
 function shouldFetch (repository) {
   const repoType = getRepositoryType(repository.url);
   return repoType !== "unknown" && maxQueryCount > 0 && (queryCount < maxQueryCount || process.env.GITHUB_TOKEN);
+}
+
+function getRepositoryCacheKey (module) {
+  const repoType = getRepositoryType(module.url);
+  const repoId = getRepositoryId(module.url);
+  if (!repoId || repoType === "unknown") {
+    return null;
+  }
+  return `${repoType}:${repoId.toLowerCase()}`;
+}
+
+function applyRepositoryData (module, normalizedData) {
+  module.stars = normalizedData.stars;
+  if (normalizedData.has_issues === false) {
+    module.hasGithubIssues = false;
+  }
+  if (normalizedData.archived === true) {
+    module.isArchived = true;
+  }
+  if (normalizedData.license) {
+    module.license = normalizedData.license;
+  }
+}
+
+function createRepositoryDataRecord ({moduleId, normalizedData, timestamp}) {
+  return {
+    id: moduleId,
+    gitHubDataLastUpdate: timestamp,
+    gitHubData: normalizedData
+  };
+}
+
+function partitionModules ({moduleList, previousData, results, cache}) {
+  const githubModules = [];
+  const otherModules = [];
+  const cacheKeys = new Map();
+  let processedCount = 0;
+
+  for (const module of moduleList) {
+    const cacheKey = getRepositoryCacheKey(module);
+    let handledByCache = false;
+
+    if (cacheKey) {
+      cacheKeys.set(module.id, cacheKey);
+      const cacheEntry = cache.get(cacheKey);
+      if (cacheEntry) {
+        applyRepositoryData(module, cacheEntry.value);
+        const record = createRepositoryDataRecord({
+          moduleId: module.id,
+          normalizedData: cacheEntry.value,
+          timestamp: cacheEntry.updatedAt ?? new Date().toISOString()
+        });
+        results.push(record);
+        processedCount += 1;
+        handledByCache = true;
+      }
+    }
+
+    if (!handledByCache) {
+      const shouldFetchData = shouldFetch(module);
+      if (!shouldFetchData) {
+        useHistoricalData(previousData, module.id, module, results);
+        processedCount += 1;
+      } else if (getRepositoryType(module.url) === "github") {
+        githubModules.push(module);
+      } else {
+        otherModules.push(module);
+      }
+    }
+  }
+
+  return {githubModules, otherModules, cacheKeys, processedCount};
 }
 
 /*
@@ -260,51 +330,8 @@ function normalizeRepositoryData (data, branchData, repoType) {
   }
 }
 
-function sortModuleListByLastUpdate (previousData, moduleList) {
-  moduleList.sort((a, b) => {
-    const lastUpdateA = previousData.repositories?.find((repo) => repo.id === a.id)?.gitHubDataLastUpdate;
-    const lastUpdateB = previousData.repositories?.find((repo) => repo.id === b.id)?.gitHubDataLastUpdate;
 
-    if (!lastUpdateA && !lastUpdateB) {
-      return 0;
-    } else if (!lastUpdateA) {
-      return -1;
-    } else if (!lastUpdateB) {
-      return 1;
-    }
-    return new Date(lastUpdateA) - new Date(lastUpdateB);
-  });
-}
-
-function sortByNameIgnoringPrefix (a, b) {
-  const nameA = a.name.replace("MMM-", "");
-  const nameB = b.name.replace("MMM-", "");
-  return nameA.localeCompare(nameB);
-}
-
-async function loadPreviousData (remoteFilePath, localFilePath) {
-  let previousData = {};
-  try {
-    const response = await fetch(remoteFilePath);
-    if (response.ok) {
-      previousData = await response.json();
-    } else if (fs.existsSync(localFilePath)) {
-      previousData = JSON.parse(fs.readFileSync(localFilePath));
-    } else {
-      console.warn(`Local file ${localFilePath} does not exist.`);
-    }
-  } catch (error) {
-    console.error("Error fetching remote data, falling back to local file:", error);
-    try {
-      previousData = JSON.parse(fs.readFileSync(localFilePath));
-    } catch (localError) {
-      console.error("Error reading local data:", localError);
-    }
-  }
-  return previousData;
-}
-
-async function processGitHubModules (githubModules, headers, previousData, results) {
+async function processGitHubModules (githubModules, headers, previousData, results, {cache, cacheKeys} = {}) {
   console.log(`Fetching ${githubModules.length} GitHub repos via GraphQL (batches of ${GITHUB_GRAPHQL_BATCH_SIZE})...`);
   for (let index = 0; index < githubModules.length; index += GITHUB_GRAPHQL_BATCH_SIZE) {
     const batch = githubModules.slice(index, index + GITHUB_GRAPHQL_BATCH_SIZE);
@@ -317,22 +344,20 @@ async function processGitHubModules (githubModules, headers, previousData, resul
         const normalizedRepositoryData = batchResults[module.id];
 
         if (normalizedRepositoryData) {
-          const repositoryData = {
-            id: module.id,
-            gitHubDataLastUpdate: new Date().toISOString(),
-            gitHubData: normalizedRepositoryData
-          };
+          const cacheKey = cacheKeys?.get(module.id);
+          const cacheEntry = cacheKey
+            ? cache?.set(cacheKey, normalizedRepositoryData, {
+              ttlMs: REPOSITORY_CACHE_TTL_MS,
+              metadata: {host: "github", strategy: "graphql"}
+            })
+            : null;
 
-          module.stars = normalizedRepositoryData.stars;
-          if (normalizedRepositoryData.has_issues === false) {
-            module.hasGithubIssues = false;
-          }
-          if (normalizedRepositoryData.archived === true) {
-            module.isArchived = true;
-          }
-          if (normalizedRepositoryData.license) {
-            module.license = normalizedRepositoryData.license;
-          }
+          applyRepositoryData(module, normalizedRepositoryData);
+          const repositoryData = createRepositoryDataRecord({
+            moduleId: module.id,
+            normalizedData: normalizedRepositoryData,
+            timestamp: cacheEntry?.updatedAt ?? new Date().toISOString()
+          });
           results.push(repositoryData);
         } else {
           useHistoricalData(previousData, module.id, module, results);
@@ -351,6 +376,9 @@ async function processGitHubModules (githubModules, headers, previousData, resul
 
 async function updateData () {
   try {
+    await repositoryCache.load();
+    moduleCount = 0;
+
     const remoteFilePath = "https://modules.magicmirror.builders/data/gitHubData.json";
     const localFilePath = "website/data/gitHubData.json";
     const previousData = await loadPreviousData(remoteFilePath, localFilePath);
@@ -369,24 +397,20 @@ async function updateData () {
       headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
     }
 
-    // Group modules by hosting type
-    const githubModules = [];
-    const otherModules = [];
-
-    for (const module of moduleList) {
-      const shouldFetchData = shouldFetch(module);
-      if (!shouldFetchData) {
-        useHistoricalData(previousData, module.id, module, results);
-        moduleCount += 1;
-      } else if (getRepositoryType(module.url) === "github") {
-        githubModules.push(module);
-      } else {
-        otherModules.push(module);
-      }
-    }
+    // Group modules by hosting type, leveraging cache hits where possible
+    const {githubModules, otherModules, cacheKeys, processedCount} = partitionModules({
+      moduleList,
+      previousData,
+      results,
+      cache: repositoryCache
+    });
+    moduleCount += processedCount;
 
     // Process GitHub modules in batches using GraphQL
-    await processGitHubModules(githubModules, headers, previousData, results);
+    await processGitHubModules(githubModules, headers, previousData, results, {
+      cache: repositoryCache,
+      cacheKeys
+    });
 
     // Process non-GitHub modules individually
     for (const module of otherModules) {
@@ -399,23 +423,20 @@ async function updateData () {
 
         if (response.status === 200) {
           const normalizedRepositoryData = normalizeRepositoryData(data, branchData, repoType);
+          const cacheKey = cacheKeys.get(module.id);
+          const cacheEntry = cacheKey
+            ? repositoryCache.set(cacheKey, normalizedRepositoryData, {
+              ttlMs: REPOSITORY_CACHE_TTL_MS,
+              metadata: {host: repoType, strategy: "rest"}
+            })
+            : null;
 
-          const repositoryData = {
-            id: module.id,
-            gitHubDataLastUpdate: new Date().toISOString(),
-            gitHubData: normalizedRepositoryData
-          };
-
-          module.stars = normalizedRepositoryData.stars;
-          if (normalizedRepositoryData.has_issues === false) {
-            module.hasGithubIssues = false;
-          }
-          if (normalizedRepositoryData.archived === true) {
-            module.isArchived = true;
-          }
-          if (normalizedRepositoryData.license) {
-            module.license = normalizedRepositoryData.license;
-          }
+          applyRepositoryData(module, normalizedRepositoryData);
+          const repositoryData = createRepositoryDataRecord({
+            moduleId: module.id,
+            normalizedData: normalizedRepositoryData,
+            timestamp: cacheEntry?.updatedAt ?? new Date().toISOString()
+          });
           results.push(repositoryData);
         } else {
           console.error("\nError fetching API data:", response.status, response.statusText);
@@ -452,58 +473,13 @@ async function updateData () {
     console.info("\nRepository data update completed. queryCount:", queryCount, "maxQueryCount:", maxQueryCount, "results:", results.length, "modules:", moduleListLength);
   } catch (error) {
     console.error("Error fetching repository API data:", error);
-  }
-}
-
-function createDefaultRepositoryData ({repositoryId, module}) {
-  if (typeof module.stars !== "number") {
-    module.stars = 0;
-  }
-  if (typeof module.hasGithubIssues !== "boolean") {
-    module.hasGithubIssues = true;
-  }
-  if (typeof module.isArchived !== "boolean") {
-    module.isArchived = false;
-  }
-
-  return {
-    id: repositoryId,
-    gitHubDataLastUpdate: null,
-    gitHubData: {
-      issues: 0,
-      stars: module.stars,
-      license: module.license ?? null,
-      archived: module.isArchived === true,
-      disabled: false,
-      defaultBranch: null,
-      has_issues: module.hasGithubIssues,
-      lastCommit: null
+  } finally {
+    try {
+      await repositoryCache.flush();
+    } catch (error) {
+      console.error("Error flushing repository cache:", error);
     }
-  };
-}
-
-function useHistoricalData (previousData, repositoryId, module, results) {
-  // Add the existing data without updating it
-  const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
-  if (existingRepository) {
-    module.stars = existingRepository.gitHubData.stars;
-
-    if (existingRepository.gitHubData.has_issues === false) {
-      module.hasGithubIssues = false;
-    }
-
-    if (existingRepository.gitHubData.archived === true) {
-      module.isArchived = true;
-    }
-    if (existingRepository.gitHubData.license) {
-      module.license = existingRepository.gitHubData.license;
-    }
-    results.push(existingRepository);
-    return;
   }
-
-  const fallbackData = createDefaultRepositoryData({repositoryId, module});
-  results.push(fallbackData);
 }
 
 updateData();

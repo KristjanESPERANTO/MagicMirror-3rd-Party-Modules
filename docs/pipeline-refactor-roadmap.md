@@ -37,7 +37,7 @@ This document captures the long-term improvements we want to implement in the mo
 
 | Task   | Description                                                                                                                                                                                                                                                                                 | Dependencies | Effort |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P3.1   | Add persistent caches for API responses and HEAD validations with expiration metadata                                                                                                                                                                                                       | none         | M      |
+| P3.1   | Add persistent caches for API responses and HEAD validations with expiration metadata ✅ Completed Oct 2025                                                                                                                                                                                 | none         | M      |
 | P3.1.5 | Implement smart incremental checking: skip modules when (A) module has no new commits since last check AND (B) this repository has no new commits since last check; reuse cached results from modules.magicmirror.builders for unchanged modules to dramatically reduce check stage runtime | P3.1         | M      |
 | P3.2   | Introduce a central rate limiter + retry strategy for GitHub/GitLab requests                                                                                                                                                                                                                | P3.1         | M      |
 | P3.3   | Capture structured logs (JSON) and aggregate per-stage timing metrics                                                                                                                                                                                                                       | P1.2         | M      |
@@ -100,7 +100,7 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. **P3.1** — Add persistent caches for API responses and HEAD validations with expiration metadata (foundation for incremental checking and rate-limit reduction).
+1. **P3.1.5** — Implement smart incremental checking: reuse cached results when modules and their repositories haven’t changed since the last run.
 2. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
 3. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
 4. Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments (P4.9).
