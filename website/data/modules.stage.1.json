@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-11-12T19:42:38.536Z",
+  "lastUpdate": "2025-12-01T08:34:14.792Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -306,6 +306,16 @@
       "issues": []
     },
     {
+      "name": "MMM-AmbientWeather",
+      "category": "Weather",
+      "url": "https://github.com/hearter20176/MMM-AmbientWeather",
+      "id": "hearter20176/MMM-AmbientWeather",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "description": "A modern, real-time Ambient Weather display module featuring liquid-glass UI, 3D animated weather icons, dynamic AQI and UV gradients, and real-time data streaming via the Ambient Weather Realtime API.",
+      "issues": []
+    },
+    {
       "name": "MMM-AmLich",
       "category": "Entertainment / Misc",
       "url": "https://github.com/diyeverythingvn/MMM-AmLich",
@@ -403,6 +413,16 @@
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "description": "Display pharmacies that are on emergency duty in Germany.",
+      "issues": []
+    },
+    {
+      "name": "MMM-AptUpdateNotifier",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ctd-mh3/MMM-AptUpdateNotifier",
+      "id": "ctd-mh3/MMM-AptUpdateNotifier",
+      "maintainer": "ctd-mh3",
+      "maintainerURL": "https://github.com/ctd-mh3",
+      "description": "Provides notification if any apt package updates are available.",
       "issues": []
     },
     {
@@ -1171,7 +1191,7 @@
       "id": "MMM-CalendarExt2/MMM-CalendarExt2",
       "maintainer": "MMM-CalendarExt2",
       "maintainerURL": "https://github.com/MMM-CalendarExt2",
-      "description": "Extended calendar and event view.",
+      "description": "Extended calendar with 10+ view types (agenda, timeline, upcoming, current events), attendee display, and extensive customization options.",
       "issues": []
     },
     {
@@ -1181,7 +1201,7 @@
       "id": "MMRIZE/MMM-CalendarExt3",
       "maintainer": "MMRIZE",
       "maintainerURL": "https://github.com/MMRIZE",
-      "description": "Extended calendar and event view.",
+      "description": "Lightweight calendar with week/month views, weather integration, and interactive popovers.",
       "issues": []
     },
     {
@@ -1372,7 +1392,7 @@
       "id": "shbatm/MMM-Carousel",
       "maintainer": "shbatm",
       "maintainerURL": "https://github.com/shbatm",
-      "description": "Rotate modules, to save space on screen.",
+      "description": "Create dynamic slideshows of your modules. Switch between different screens automatically or manually, organize modules by position, or build custom slide layouts. Great for small screens or information-rich setups.",
       "issues": []
     },
     {
@@ -1391,7 +1411,7 @@
       "url": "https://github.com/gitgitaway/MMM-Celtic-OnThisDay",
       "id": "gitgitaway/MMM-Celtic-OnThisDay",
       "maintainer": "gitgitaway",
-      "maintainerURL": "https://github.com/gitgitaway",
+      "maintainerURL": "https://.github.com/gitgitaway",
       "description": "Shows a ticker tape banner at the bottom of the mirror detailing historical events in Celtic Fc`s history which occured on this day.",
       "issues": []
     },
@@ -1525,6 +1545,16 @@
       "maintainer": "chicohernando",
       "maintainerURL": "https://github.com/chicohernando",
       "description": "This will show you your upcoming chests to open in ClashRoyale.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ClickToNavigate",
+      "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/Aws505/MMM-ClickToNavigate",
+      "id": "Aws505/MMM-ClickToNavigate",
+      "maintainer": "Aws505",
+      "maintainerURL": "https://github.com/Aws505",
+      "description": "Make clickable text on MagicMirror² to navigate to different pages",
       "issues": []
     },
     {
@@ -3522,6 +3552,16 @@
       "issues": []
     },
     {
+      "name": "MMM-FOSHKplugin-PWS-Observations",
+      "category": "Weather",
+      "url": "https://github.com/git-olicat/MMM-FOSHKplugin-PWS-Observations",
+      "id": "git-olicat/MMM-FOSHKplugin-PWS-Observations",
+      "maintainer": "git-olicat",
+      "maintainerURL": "https://github.com/git-olicat/",
+      "description": "Display local current weather data from your PWS via <a target=\"_blank\" href=\"https://foshkplugin.phantasoft.de/generic\">FOSHKplugin</a> (Ecowitt, Wunderground)",
+      "issues": []
+    },
+    {
       "name": "MMM-FrameLight",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/RaspiManu/MMM-FrameLight",
@@ -5358,7 +5398,7 @@
       "url": "https://github.com/gitgitaway/MMM-JukeBox",
       "id": "gitgitaway/MMM-JukeBox",
       "maintainer": "gitgitaway",
-      "maintainerURL": "https://github.com/gitgitaway",
+      "maintainerURL": "https://.github.com/gitgitaway",
       "description": "JukeBox faceplate that automaticaly populates with buttons that lets you play your music from the SD card, USB or URL, can be set to auto shuffel play and will continue playing even when module hidden.",
       "issues": []
     },
@@ -5513,6 +5553,16 @@
       "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don’t believe it? Neither did I.",
       "issues": [],
       "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
+    },
+    {
+      "name": "MMM-LaunchBrowser",
+      "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/Aws505/MMM-LaunchBrowser",
+      "id": "Aws505/MMM-LaunchBrowser",
+      "maintainer": "Aws505",
+      "maintainerURL": "https://github.com/Aws505",
+      "description": "Let your MagicMirror² launch a browser on top of itself. Contains control bar to return to MagicMirror²",
+      "issues": []
     },
     {
       "name": "MMM-LCDControl",
@@ -6769,6 +6819,16 @@
       "issues": []
     },
     {
+      "name": "MMM-ModuleUpdateNotifier",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ctd-mh3/MMM-ModuleUpdateNotifier",
+      "id": "ctd-mh3/MMM-ModuleUpdateNotifier",
+      "maintainer": "ctd-mh3",
+      "maintainerURL": "https://github.com/ctd-mh3",
+      "description": "Provides notification if any module updates are available. Note: There is already a module (<a target=\"_blank\" href=\"https://docs.magicmirror.builders/modules/updatenotification.html\">https://docs.magicmirror.builders/modules/updatenotification.html</a>) for this functionality, which is included in the MagicMirror core.",
+      "issues": []
+    },
+    {
       "name": "MMM-MonthlyCalendar",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/kolbyjack/MMM-MonthlyCalendar",
@@ -7312,12 +7372,22 @@
       "issues": []
     },
     {
+      "name": "MMM-MyTeams-Adventskalendar",
+      "category": "Sports",
+      "url": "https://github.com/gitgitaway/MMM-MyTeams-Adventskalendar",
+      "id": "gitgitaway/MMM-MyTeams-Adventskalendar",
+      "maintainer": "gitgitaway",
+      "maintainerURL": "https://.github.com/gitgitaway",
+      "description": "Celtic FC themed advent calendar ( forked from the original MMM-Adventskalendar) that takes you on a journey through the clubs 138year history. easily customisable for other clubs/themes.",
+      "issues": []
+    },
+    {
       "name": "MMM-MyTeams-Clock",
       "category": "Sports",
       "url": "https://github.com/gitgitaway/MMM-MyTeams-Clock",
       "id": "gitgitaway/MMM-MyTeams-Clock",
       "maintainer": "gitgitaway",
-      "maintainerURL": "https://github.com/gitgitaway",
+      "maintainerURL": "https://.github.com/gitgitaway",
       "description": "Displays an analogue clock superimposed upon your teams club crest.",
       "issues": []
     },
@@ -7327,7 +7397,7 @@
       "url": "https://github.com/gitgitaway/MMM-MyTeams-DriveToMatch",
       "id": "gitgitaway/MMM-MyTeams-DriveToMatch",
       "maintainer": "gitgitaway",
-      "maintainerURL": "https://github.com/gitgitaway",
+      "maintainerURL": "https://.github.com/gitgitaway",
       "description": "Displays your teams next fixture and a summary of the fastest/shrtest driving route from your Lat/Lon to the match venue. Uses the free Tom Tom API. Works for most Soccer teams.",
       "issues": []
     },
@@ -7337,7 +7407,7 @@
       "url": "https://github.com/gitgitaway/MMM-MyTeams-Fixtures",
       "id": "gitgitaway/MMM-MyTeams-Fixtures",
       "maintainer": "gitgitaway",
-      "maintainerURL": "https://github.com/gitgitaway",
+      "maintainerURL": "https://.github.com/gitgitaway",
       "description": "Displays upcoming fixtures for all leagues that your team is participating in and allows you to have an automated cycling display of \"All\" or \"Home\" or \"Away\" fixtures.",
       "issues": []
     },
@@ -7347,7 +7417,7 @@
       "url": "https://github.com/gitgitaway/MMM-MyTeams-Honours",
       "id": "gitgitaway/MMM-MyTeams-Honours",
       "maintainer": "gitgitaway",
-      "maintainerURL": "https://github.com/gitgitaway",
+      "maintainerURL": "https://.github.com/gitgitaway",
       "description": "Displays a graphical depction of all the major trophys your team has won.",
       "issues": []
     },
@@ -7357,7 +7427,7 @@
       "url": "https://github.com/gitgitaway/MMM-MyTeams-LeagueTable",
       "id": "gitgitaway/MMM-MyTeams-LeagueTable",
       "maintainer": "gitgitaway",
-      "maintainerURL": "https://github.com/gitgitaway",
+      "maintainerURL": "https://.github.com/gitgitaway",
       "description": "Displays League Tables for most Major Soccer Leagues and allows you to have an automated cycling display of te leauges you wish to follow.",
       "issues": []
     },
@@ -8813,6 +8883,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Photoprism2",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/HeikoGr/MMM-Photoprism2",
+      "id": "HeikoGr/MMM-Photoprism2",
+      "maintainer": "HeikoGr",
+      "maintainerURL": "https://github.com/HeikoGr",
+      "description": "Show pictures from Photoprism (local photo gallery). Enhanced version.",
+      "issues": []
+    },
+    {
       "name": "MMM-Photovoltaik",
       "category": "Development / Core MagicMirror²",
       "url": "https://github.com/ASteinsdoerfer/MMM-Photovoltaik",
@@ -9402,10 +9482,10 @@
     {
       "name": "MMM-PublicTransportVVO",
       "category": "Transport / Travel",
-      "url": "https://github.com/ChristianGeie/MMM-PublicTransportVVO",
-      "id": "ChristianGeie/MMM-PublicTransportVVO",
-      "maintainer": "ChristianGeie",
-      "maintainerURL": "https://github.com/ChristianGeie",
+      "url": "https://github.com/ostfilinchen/MMM-PublicTransportVVO",
+      "id": "ostfilinchen/MMM-PublicTransportVVO",
+      "maintainer": "ostfilinchen",
+      "maintainerURL": "https://github.com/ostfilinchen",
       "description": "Display live departures from public passenger transport service of the 'Verkehrsverbund Oberelbe' (VVO).",
       "issues": []
     },
@@ -9896,10 +9976,10 @@
     {
       "name": "MMM-Rest",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/Tuxdiver/MMM-Rest",
-      "id": "Tuxdiver/MMM-Rest",
-      "maintainer": "Tuxdiver",
-      "maintainerURL": "https://github.com/Tuxdiver",
+      "url": "https://github.com/dathbe/MMM-Rest",
+      "id": "dathbe/MMM-Rest",
+      "maintainer": "dathbe",
+      "maintainerURL": "https://github.com/dathbe",
       "description": "Fetching REST data and display them on the mirror.",
       "issues": []
     },
@@ -10920,6 +11000,16 @@
       "maintainer": "grenagit",
       "maintainerURL": "https://github.com/grenagit",
       "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Solarwatt",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/wiiare/MMM-Solarwatt",
+      "id": "wiiare/MMM-Solarwatt",
+      "maintainer": "wiiare",
+      "maintainerURL": "https://github.com/wiiare",
+      "description": "Displays live data, battery status and cumulative daily values for Solarwatt PV systems.",
       "issues": []
     },
     {

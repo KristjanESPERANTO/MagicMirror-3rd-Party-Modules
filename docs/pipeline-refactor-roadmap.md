@@ -41,7 +41,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P3.1   | Add persistent caches for API responses and HEAD validations with expiration metadata ✅ Completed Oct 2025                                                                                                                                                                                                       | none         | M      |
 | P3.1.5 | Implement smart incremental checking: skip modules when (A) module has no new commits since last check AND (B) this repository has no new commits since last check; reuse cached results from modules.magicmirror.builders for unchanged modules to dramatically reduce check stage runtime ✅ Completed Nov 2025 | P3.1         | M      |
 | P3.2   | Introduce a central rate limiter + retry strategy for GitHub/GitLab requests ✅ Completed Dec 2025                                                                                                                                                                                                                | P3.1         | M      |
-| P3.3   | Capture structured logs (JSON) and aggregate per-stage timing metrics                                                                                                                                                                                                                                             | P1.2         | M      |
+| P3.3   | Capture structured logs (JSON) and aggregate per-stage timing metrics ✅ Completed Dec 2025                                                                                                                                                                                                                       | P1.2         | M      |
 | P3.4   | Ensure deterministic outputs (sorted keys, hash-based image names) and document the guarantees ([deterministic outputs](deterministic-outputs.md)) ✅ Completed Nov 2025                                                                                                                                          | P1.2         | S      |
 | P3.5   | Harden repository clone flow to gracefully skip missing/renamed repos and keep the pipeline green ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41))                                                                                                                              | none         | M      |
 | P3.6   | Replace hard-coded star fallbacks with authenticated API lookups for non-GitHub hosts ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5)) ✅ Completed Dec 2025                                                                                                                      | P3.1         | M      |
@@ -172,8 +172,8 @@ The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tas
 #### Phase 2: Robustness & Observability (Medium Effort)
 
 3. **P3.2** — Introduce central rate limiter + retry strategy. Prevents API bans, handles transient failures gracefully. ✅ Completed Dec 2025
-4. **P3.6** — Replace hard-coded star fallbacks with authenticated API lookups for GitLab/Bitbucket/Codeberg ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5)). Improves data quality across platforms.
-5. **P3.3** — Capture structured logs (JSON) and per-stage timing metrics. Better observability for performance debugging.
+4. **P3.6** — Replace hard-coded star fallbacks with authenticated API lookups for GitLab/Bitbucket/Codeberg ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5)). Improves data quality across platforms. ✅ Completed Dec 2025
+5. **P3.3** — Capture structured logs (JSON) and per-stage timing metrics. Better observability for performance debugging. ✅ Completed Dec 2025
 
 #### Phase 3: Documentation & Onboarding
 
