@@ -252,6 +252,11 @@ export async function getCurrentCommit ({cwd, ref = "HEAD"} = {}) {
   return stdout.trim();
 }
 
+export async function getCommitDate ({cwd, ref = "HEAD"} = {}) {
+  const {stdout} = await git(["log", "-1", "--format=%aI", ref], {cwd});
+  return stdout.trim();
+}
+
 export async function listRemoteRefs ({remoteUrl, heads = true, tags = false, pattern} = {}) {
   const args = ["ls-remote", remoteUrl];
 
