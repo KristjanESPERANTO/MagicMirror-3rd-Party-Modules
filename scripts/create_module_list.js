@@ -1,8 +1,11 @@
+import {createHttpClient} from "./shared/http-client.js";
 import fs from "node:fs";
 import {marked} from "marked";
 import process from "node:process";
 import sanitizeHtml from "sanitize-html";
 import {validateStageData} from "./lib/schemaValidator.js";
+
+const httpClient = createHttpClient();
 
 async function fetchMarkdownData () {
   try {
@@ -12,11 +15,11 @@ async function fetchMarkdownData () {
     } else {
       const url =
         "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md";
-      const response = await fetch(url);
-      if (response.status !== 200) {
-        throw new Error(`The fetch() call failed. Status code: ${response.status}`);
+      const result = await httpClient.getText(url);
+      if (!result.ok) {
+        throw new Error(`The fetch() call failed. Status code: ${result.status}`);
       }
-      markdown = await response.text();
+      markdown = result.data;
     }
     return markdown;
   } catch (error) {
