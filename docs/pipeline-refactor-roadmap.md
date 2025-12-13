@@ -45,7 +45,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P3.4   | Ensure deterministic outputs (sorted keys, hash-based image names) and document the guarantees                                                                                                                                                                                                                    | P1.2         | S      |
 | P3.5   | Harden repository clone flow to gracefully skip missing/renamed repos and keep the pipeline green ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41))                                                                                                                              | none         | M      |
 | P3.6   | Replace hard-coded star fallbacks with authenticated API lookups for non-GitHub hosts ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5))                                                                                                                                            | P3.1         | M      |
-| P3.7   | Add batch processing to `get-modules` and `check-modules`: process modules in configurable chunks to bound memory usage                                                                                                                                                                                           | P2.2, P2.3   | M      |
+| P3.7   | Add batch processing to `get-modules` and `check-modules`: process modules in configurable chunks to bound memory usage ✅ Completed Nov 2025                                                                                                                                                                     | P2.2, P2.3   | M      |
 | P3.8   | Implement module-level result caching: store analysis results per module keyed by git SHA to enable efficient incremental updates                                                                                                                                                                                 | P3.1         | M      |
 
 ### 4. Checks & Developer Experience
@@ -105,12 +105,10 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items to improve performance and prepare for streaming architecture:
 
-1. **P3.1.5** — Implement smart incremental checking: reuse cached results when modules and their repositories haven't changed since the last run - ✅ Completed
-2. **P3.7** — Add batch processing to `get-modules`: process modules in configurable chunks instead of loading all into memory.
-3. **P3.8** — Implement module-level result caching: store analysis results keyed by git SHA to enable efficient incremental updates.
-4. **P4.7** — Recommend `npm ci --omit=dev` when modules list devDependencies in instructions.
-5. **P4.8** — Flag modules with multi-year inactivity that are not marked `outdated`.
-6. **P4.9** — Inspect Dependabot configs for schedule scope and suggest adjustments.
+1. **P3.8** — Implement module-level result caching: store analysis results keyed by git SHA to enable efficient incremental updates.
+2. **P4.7** — Recommend `npm ci --omit=dev` when modules list devDependencies in instructions.
+3. **P4.8** — Flag modules with multi-year inactivity that are not marked `outdated`.
+4. **P4.9** — Inspect Dependabot configs for schedule scope and suggest adjustments.
 
 ### Milestone 2: Toward 3-Phase Streaming Architecture (Future)
 
