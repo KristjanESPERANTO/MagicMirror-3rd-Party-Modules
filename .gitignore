@@ -7,3 +7,4 @@
 .idea
 .vscode/*
 ownModuleList.json
+website/data/cache/
