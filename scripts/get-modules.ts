@@ -537,10 +537,8 @@ async function writeOutputs({
     { pretty: 2 }
   );
 
-  if (skippedModules.length > 0) {
-    logger.info(`Writing ${skippedModules.length} skipped modules to ${SKIPPED_MODULES_PATH}`);
-    await writeJson(SKIPPED_MODULES_PATH, skippedModules, { pretty: 2 });
-  }
+  logger.info(`Writing ${skippedModules.length} skipped modules to ${SKIPPED_MODULES_PATH}`);
+  await writeJson(SKIPPED_MODULES_PATH, skippedModules, { pretty: 2 });
 
   // Validate the output file - this will throw if the file is invalid
   // but at least the file exists now
@@ -798,6 +796,10 @@ async function processModules() {
       if (fs.existsSync(tmpPath)) {
         // Atomically move temp file into place
         await rename(tmpPath, MODULES_STAGE_3_PATH);
+
+        // We also need to write skipped modules, as the stream only handled valid modules
+        logger.info(`Writing ${skippedModules.length} skipped modules to ${SKIPPED_MODULES_PATH}`);
+        await writeJson(SKIPPED_MODULES_PATH, skippedModules, { pretty: 2 });
       } else {
         await writeOutputs({ validModules, skippedModules });
       }
