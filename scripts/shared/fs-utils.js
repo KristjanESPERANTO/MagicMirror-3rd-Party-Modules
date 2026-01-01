@@ -1,5 +1,6 @@
 import {access, mkdir, readFile, writeFile} from "node:fs/promises";
 import path from "node:path";
+import {stringifyDeterministic} from "./deterministic-output.js";
 
 export async function ensureDirectory (dirPath) {
   await mkdir(dirPath, {recursive: true});
@@ -25,7 +26,8 @@ export async function writeJson (filePath, data, {pretty = 2, ensureDir = true} 
     await ensureDirectory(dirPath);
   }
 
-  const serialized = `${JSON.stringify(data, null, pretty)}\n`;
+  // Use deterministic stringify to ensure sorted keys for reproducible diffs
+  const serialized = `${stringifyDeterministic(data, pretty)}\n`;
   await writeFile(filePath, serialized, "utf8");
 }
 

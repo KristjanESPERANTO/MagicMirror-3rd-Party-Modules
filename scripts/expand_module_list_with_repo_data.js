@@ -1,3 +1,4 @@
+import {createDeterministicImageName} from "./shared/deterministic-output.js";
 import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import sharp from "sharp";
@@ -38,11 +39,14 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
   const imageToProcess = firstScreenshotImage || firstImage;
 
   if (imageToProcess) {
-    targetImageName = imageToProcess
-      .replaceAll("/", "-")
-      .replace(/bmp|gif|jpeg|jpg|png|webp/giu, "jpg");
+    targetImageName = createDeterministicImageName(moduleName, moduleMaintainer, "jpg");
     const sourcePath = `${sourceFolder}/${imageToProcess}`;
-    const targetPath = `${imagesFolder}/${moduleName}---${moduleMaintainer}---${targetImageName}`;
+
+    /*
+     * Use deterministic filename for reproducible builds.
+     * Same module always gets same screenshot name regardless of source image name.
+     */
+    const targetPath = `${imagesFolder}/${targetImageName}`;
 
     try {
       await sharp(sourcePath)

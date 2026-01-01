@@ -11,6 +11,7 @@ import { createLogger } from "./shared/logger.js";
 import { createRateLimiter } from "./shared/rate-limiter.js";
 import { ensureDirectory, fileExists, writeJson } from "./shared/fs-utils.js";
 import { validateStageFile } from "./lib/schemaValidator.js";
+import { stringifyDeterministic } from "./shared/deterministic-output.js";
 
 type ModuleEntry = {
   name: string;
@@ -663,7 +664,8 @@ async function processModules() {
         try {
           await refreshRepository({ module: moduleCopy, tempPath, finalPath });
           // Write moduleCopy to stream immediately to avoid holding it
-          const toWrite = `${firstOut ? "" : ","}${JSON.stringify(moduleCopy)}`;
+          // Use deterministic stringify to ensure sorted keys for reproducible outputs
+          const toWrite = `${firstOut ? "" : ","}${stringifyDeterministic(moduleCopy, null)}`;
           writeStream.write(toWrite);
           firstOut = false;
           validModules.push(moduleCopy);
