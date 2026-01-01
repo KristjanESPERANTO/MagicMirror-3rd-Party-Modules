@@ -86,7 +86,9 @@ function main () {
     const category = mod.metadata?.category || "UNKNOWN";
     const categoryEmoji = categories.find((cat) => cat.key === category)?.emoji || "❓";
     console.log(`${categoryEmoji} ${mod.name} (${mod.url})`);
-    console.log(`   Reason: ${mod.reason}`);
+    // Support both old format (error) and new format (reason)
+    const reason = mod.reason || mod.error || "Unknown";
+    console.log(`   Reason: ${reason}`);
     if (mod.metadata?.error) {
       console.log(`   Error: ${mod.metadata.error.split("\n")[0]}`);
     }
