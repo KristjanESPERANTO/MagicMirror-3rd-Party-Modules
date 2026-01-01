@@ -1,5 +1,6 @@
 // @ts-nocheck
 import path from "node:path";
+import fs from "node:fs";
 import { rename, rm } from "node:fs/promises";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
@@ -62,6 +63,7 @@ type CliOptions = {
   limit?: number;
   urlConcurrency: number;
   urlRate?: number;
+  batchSize?: number;
 };
 
 function parsePositiveInteger(value?: string): number | undefined {
@@ -113,11 +115,16 @@ function parseCliOptions(argv: string[]): CliOptions {
   }
 
   const normalizedConcurrency = Math.max(1, urlConcurrency);
+  const batchSize =
+    parsePositiveInteger(findFlagValue(argv, "--batch-size")) ??
+    parsePositiveInteger(env.MODULE_BATCH_SIZE) ??
+    200; // sensible default batch size
 
   return {
     limit,
     urlConcurrency: normalizedConcurrency,
-    urlRate: disableRateLimiter ? undefined : (parsedRate ?? DEFAULT_URL_RATE)
+    urlRate: disableRateLimiter ? undefined : (parsedRate ?? DEFAULT_URL_RATE),
+    batchSize
   };
 }
 
@@ -569,6 +576,7 @@ async function processModules() {
     `Validating up to ${totalTargets} module URLs (concurrency=${cliOptions.urlConcurrency}, rate-limit=${rateLabel})`
   );
 
+  // We'll stream-valid outputs in batches to avoid keeping all results in memory.
   const validModules: ModuleEntry[] = [];
   const skippedModules: ReturnType<typeof createSkippedEntry>[] = [];
   let moduleCounter = 0;
@@ -579,20 +587,39 @@ async function processModules() {
   try {
     await ensureDirectory(MODULES_DIR);
 
-    const validated = await validateModuleUrls({
-      modules,
-      limit: cliOptions.limit,
-      urlConcurrency: cliOptions.urlConcurrency
-    });
-    for (const {
-      module,
-      ok,
-      statusCode,
-      statusText,
-      responseSnippet,
-      usedFallback,
-      initialStatusCode
-    } of validated) {
+    // Open a temporary stream for stage 3 output so we can append batches
+    const tmpPath = `${MODULES_STAGE_3_PATH}.tmp`;
+    const writeStream = await (async function createStream() {
+      await ensureDirectory(path.dirname(tmpPath));
+      const ws = fs.createWriteStream(tmpPath, { encoding: "utf8" });
+      ws.write("{\"modules\":[");
+      return ws;
+    })();
+
+    let firstOut = true;
+
+    // Process modules in batches to bound memory and parallelism
+    const batchSize = cliOptions.batchSize ?? 200;
+    for (let start = 0; start < totalTargets; start += batchSize) {
+      const end = Math.min(start + batchSize, totalTargets);
+      const chunk = modules.slice(start, end);
+
+      logger.info(`Processing modules ${start + 1}-${end} / ${totalTargets} (batchSize=${batchSize})`);
+
+      const validated = await validateModuleUrls({
+        modules: chunk,
+        urlConcurrency: cliOptions.urlConcurrency
+      });
+
+      for (const {
+        module,
+        ok,
+        statusCode,
+        statusText,
+        responseSnippet,
+        usedFallback,
+        initialStatusCode
+      } of validated) {
       if (!ok) {
         skippedModules.push(
           createSkippedEntry(module, "Invalid repository URL", "invalid_url", {
@@ -633,11 +660,15 @@ async function processModules() {
         `+++   ${moduleCounter.toString().padStart(4, " ")}: ${module.name} by ${owner} - ${module.url}`
       );
 
-      try {
-        await refreshRepository({ module: moduleCopy, tempPath, finalPath });
-        validModules.push(moduleCopy);
-        consecutiveErrors = 0; // Reset error counter on success
-      } catch (error) {
+        try {
+          await refreshRepository({ module: moduleCopy, tempPath, finalPath });
+          // Write moduleCopy to stream immediately to avoid holding it
+          const toWrite = `${firstOut ? "" : ","}${JSON.stringify(moduleCopy)}`;
+          writeStream.write(toWrite);
+          firstOut = false;
+          validModules.push(moduleCopy);
+          consecutiveErrors = 0; // Reset error counter on success
+        } catch (error) {
         consecutiveErrors += 1;
         const message = error instanceof Error ? error.message : String(error);
         const errorStack = error instanceof Error ? error.stack : undefined;
@@ -652,7 +683,7 @@ async function processModules() {
         }
 
         await rm(tempPath, { recursive: true, force: true }).catch(() => {});
-        skippedModules.push(
+          skippedModules.push(
           createSkippedEntry(
             module,
             "Repository clone failed - URL might be invalid or repository might be private/deleted",
@@ -672,17 +703,33 @@ async function processModules() {
         
         continue;
       }
+      }
+
+      // After processing chunk, log and optionally free memory by trimming arrays
+      logger.info(`Finished batch ${start + 1}-${end}: valid so far=${validModules.length}, skipped so far=${skippedModules.length}`);
+      logMemoryUsage(`After batch ${start + 1}-${end}`);
     }
 
+    // Close stream and finalize JSON
+    await new Promise((resolve) => writeStream.end("]}", "utf8", resolve));
+
     logger.info(`Modules cloned: ${validModules.length}`);
+
     logger.info(`Modules skipped: ${skippedModules.length}`);
-    logger.info(`Total modules processed: ${validModules.length + skippedModules.length}/${validated.length}`);
+
+    logger.info(`Total modules processed: ${validModules.length + skippedModules.length}/${totalTargets}`);
   } finally {
     // Always write output, even if errors occurred
     logMemoryUsage("Pre-write");
     logger.info("Writing output files...");
     try {
-      await writeOutputs({ validModules, skippedModules });
+      const tmpPath = `${MODULES_STAGE_3_PATH}.tmp`;
+      if (fs.existsSync(tmpPath)) {
+        // Atomically move temp file into place
+        await rename(tmpPath, MODULES_STAGE_3_PATH);
+      } else {
+        await writeOutputs({ validModules, skippedModules });
+      }
       logger.info("Output files written successfully");
     } catch (writeError) {
       logger.error("Failed to write output files");

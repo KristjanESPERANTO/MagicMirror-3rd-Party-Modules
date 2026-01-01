@@ -9,3 +9,4 @@
 ownModuleList.json
 website/data/cache/
 website/data/moduleCache.json
+*.tmp
