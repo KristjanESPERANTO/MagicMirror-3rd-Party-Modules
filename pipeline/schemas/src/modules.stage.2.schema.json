@@ -41,6 +41,9 @@
       "hasGithubIssues": {
         "$ref": "../partials/module.repo-metadata.json#/properties/hasGithubIssues"
       },
+      "lastCommit": {
+        "$ref": "../partials/module.repo-metadata.json#/properties/lastCommit"
+      },
       "isArchived": {
         "$ref": "../partials/module.repo-metadata.json#/properties/isArchived"
       }

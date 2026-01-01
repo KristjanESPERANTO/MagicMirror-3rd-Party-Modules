@@ -87,6 +87,13 @@
               },
               "isArchived": {
                 "type": "boolean"
+              },
+              "lastCommit": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date-time"
               }
             }
           },

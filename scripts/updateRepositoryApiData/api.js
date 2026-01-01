@@ -100,31 +100,31 @@ export function normalizeRepositoryData (data, branchData, repoType) {
   let stars = 0;
   let license;
   let hasGithubIssues = false;
-  // Let lastCommit = null; // Not in schema
+  let lastCommit = null;
 
   switch (repoType) {
     case "github":
       stars = data.stargazers_count ?? data.stargazerCount ?? 0;
       license = data.license?.spdx_id ?? data.licenseInfo?.spdxId;
       hasGithubIssues = data.has_issues ?? data.hasIssuesEnabled ?? false;
-      // LastCommit = branchData?.commit?.author?.date ?? data.pushedAt ?? null;
+      lastCommit = branchData?.commit?.author?.date ?? data.pushedAt ?? null;
       break;
     case "gitlab":
       stars = data.star_count ?? 0;
       hasGithubIssues = data.issues_enabled ?? false;
-      // LastCommit = branchData?.committed_date ?? null;
+      lastCommit = branchData?.committed_date ?? null;
       break;
     case "bitbucket":
       stars = data.watchers_count ?? 0;
       license = data.license?.key;
       hasGithubIssues = data.has_issues ?? false;
-      // LastCommit = branchData?.date ?? null;
+      lastCommit = branchData?.date ?? null;
       break;
     case "codeberg":
       stars = data.stars_count ?? 0;
       license = data.licenses?.[0];
       hasGithubIssues = data.has_issues ?? false;
-      // LastCommit = branchData?.commit?.author?.date ?? null;
+      lastCommit = branchData?.commit?.author?.date ?? null;
       break;
   }
 
@@ -132,6 +132,7 @@ export function normalizeRepositoryData (data, branchData, repoType) {
     stars,
     license,
     hasGithubIssues,
-    isArchived
+    isArchived,
+    lastCommit
   };
 }

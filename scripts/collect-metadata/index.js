@@ -139,7 +139,8 @@ function getFallbackOrOriginal (module, previousModulesMap) {
       stars: previousModule.stars,
       license: previousModule.license,
       hasGithubIssues: previousModule.hasGithubIssues,
-      isArchived: previousModule.isArchived
+      isArchived: previousModule.isArchived,
+      lastCommit: previousModule.lastCommit
     };
   }
   return module;
