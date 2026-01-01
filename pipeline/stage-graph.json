@@ -126,12 +126,12 @@
   ],
   "stages": [
     {
-      "id": "create-module-list",
-      "name": "Create module list",
-      "description": "Fetch the MagicMirror wiki table and normalize it into the first-stage JSON output.",
+      "id": "collect-metadata",
+      "name": "Collect Metadata",
+      "description": "Unified stage: Fetch module list from Wiki and enrich with repository metadata.",
       "command": {
         "executable": "node",
-        "args": ["scripts/create_module_list.js"]
+        "args": ["scripts/collect-metadata/index.js"]
       },
       "dependsOn": [],
       "inputs": [
@@ -140,41 +140,6 @@
           "kind": "http",
           "uri": "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md",
           "description": "Authoritative list of community modules maintained in the MagicMirror wiki."
-        }
-      ],
-      "outputs": [
-        {
-          "artifact": "modules-stage-1",
-          "mode": "write"
-        }
-      ],
-      "sideEffects": [
-        {
-          "type": "network",
-          "description": "Performs an unauthenticated fetch against the GitHub wiki."
-        }
-      ]
-    },
-    {
-      "id": "update-repository-data",
-      "name": "Update repository metadata",
-      "description": "Augment the module list with repository API data and persist the rate-limited cache.",
-      "command": {
-        "executable": "node",
-        "args": ["scripts/updateRepositoryApiData.js"]
-      },
-      "dependsOn": ["create-module-list"],
-      "inputs": [
-        {
-          "artifact": "modules-stage-1",
-          "mode": "read"
-        },
-        {
-          "type": "external",
-          "kind": "http",
-          "uri": "https://modules.magicmirror.builders/data/gitHubData.json",
-          "description": "Existing public snapshot reused when fresh API requests are not possible.",
-          "optional": true
         },
         {
           "artifact": "github-api-cache",
@@ -184,25 +149,25 @@
       ],
       "outputs": [
         {
-          "artifact": "github-api-cache",
+          "artifact": "modules-stage-2",
           "mode": "write"
         },
         {
-          "artifact": "modules-stage-2",
+          "artifact": "github-api-cache",
           "mode": "write"
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "network",
+          "description": "Fetches Wiki and makes API calls to GitHub/GitLab/etc."
         }
       ],
       "environment": [
         {
           "name": "GITHUB_TOKEN",
           "required": false,
-          "description": "Personal access token used to increase API rate limits across supported hosts."
-        }
-      ],
-      "sideEffects": [
-        {
-          "type": "network",
-          "description": "Makes REST API calls against GitHub, GitLab, Bitbucket, and Codeberg for repository metadata and commit history."
+          "description": "Personal access token used to increase API rate limits."
         }
       ]
     },
@@ -214,7 +179,7 @@
         "executable": "node",
         "args": ["scripts/get-modules.ts"]
       },
-      "dependsOn": ["update-repository-data"],
+      "dependsOn": ["collect-metadata"],
       "inputs": [
         {
           "artifact": "modules-stage-2",
