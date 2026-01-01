@@ -1,0 +1,212 @@
+name: Module Submission Bot
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+  pull-requests: write
+  contents: write
+
+jobs:
+  process-submission:
+    if: contains(github.event.issue.labels.*.name, 'module-submission')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Parse issue and validate
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issue = context.payload.issue;
+
+            // Parse issue body (GitHub issue forms create a structured format)
+            const body = issue.body;
+
+            // Extract fields using regex
+            const extractField = (label) => {
+              const regex = new RegExp(`### ${label}\\s*([\\s\\S]*?)(?=###|$)`, 'i');
+              const match = body.match(regex);
+              return match ? match[1].trim() : '';
+            };
+
+            const repoUrl = extractField('Repository URL');
+            const moduleName = extractField('Module Name');
+            const description = extractField('Description');
+            const category = extractField('Category');
+            const submissionType = extractField('Submission Type');
+            const additionalInfo = extractField('Additional Information');
+
+            // Validate required fields
+            if (!repoUrl || !moduleName || !description) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: '❌ **Validation Failed**\n\nMissing required fields. Please ensure you filled out:\n- Repository URL\n- Module Name\n- Description'
+              });
+              return { valid: false };
+            }
+
+            // Validate URL format
+            const urlRegex = /^https?:\/\/(github\.com|gitlab\.com)\/[\w-]+\/[\w.-]+\/?$/;
+            if (!urlRegex.test(repoUrl)) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: '❌ **Invalid Repository URL**\n\nPlease provide a valid GitHub or GitLab repository URL.\n\nExample: `https://github.com/username/MMM-ModuleName`'
+              });
+              return { valid: false };
+            }
+
+            // Create module entry
+            const moduleEntry = {
+              url: repoUrl,
+              name: moduleName,
+              description: description,
+              category: category || 'Uncategorized',
+              submissionType: submissionType,
+              additionalInfo: additionalInfo,
+              submittedBy: issue.user.login,
+              submittedAt: new Date().toISOString(),
+              issueNumber: issue.number
+            };
+
+            // Save to file
+            fs.writeFileSync(
+              'module-submission-data.json',
+              JSON.stringify(moduleEntry, null, 2)
+            );
+
+            return {
+              valid: true,
+              moduleEntry: moduleEntry
+            };
+
+      - name: Create Pull Request
+        if: steps.parse.outputs.valid == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const moduleData = JSON.parse(fs.readFileSync('module-submission-data.json', 'utf8'));
+
+            // Create a new branch
+            const branchName = `module-submission/${moduleData.name.toLowerCase()}-${Date.now()}`;
+            const baseSha = context.sha;
+
+            // Get base branch reference
+            const baseRef = await github.rest.git.getRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'heads/develop'
+            });
+
+            // Create new branch
+            await github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/heads/${branchName}`,
+              sha: baseRef.data.object.sha
+            });
+
+            // Create file in submissions directory
+            const filePath = `module-submissions/pending/${moduleData.name}.json`;
+            const fileContent = Buffer.from(JSON.stringify(moduleData, null, 2)).toString('base64');
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: filePath,
+              message: `Add module submission: ${moduleData.name}`,
+              content: fileContent,
+              branch: branchName
+            });
+
+            // Create pull request
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[Module Submission] ${moduleData.name}`,
+              head: branchName,
+              base: 'develop',
+              body: `## Module Submission
+
+            **Module Name:** ${moduleData.name}
+            **Repository:** ${moduleData.url}
+            **Category:** ${moduleData.category}
+            **Submitted by:** @${moduleData.submittedBy}
+
+            ### Description
+            ${moduleData.description}
+
+            ${moduleData.additionalInfo ? `### Additional Information\n${moduleData.additionalInfo}\n` : ''}
+
+            ---
+
+            **Related Issue:** #${moduleData.issueNumber}
+
+            This PR was automatically created from a module submission issue.
+
+            ### Automated Checks
+            - [ ] Repository is accessible
+            - [ ] Contains valid \`package.json\`
+            - [ ] Contains LICENSE file
+            - [ ] Contains README.md
+            - [ ] No duplicate entry
+
+            _Automated validation will run shortly..._`
+            });
+
+            // Add labels to PR
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.data.number,
+              labels: ['module-submission', 'automated-pr']
+            });
+
+            // Comment on original issue
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ **Submission Received!**
+
+            Thank you for your submission! I've created Pull Request #${pr.data.number} for review.
+
+            **Next Steps:**
+            1. Automated validation checks will run on your PR
+            2. A maintainer will review your module
+            3. You may be asked to make changes
+            4. Once approved, your module will be added to the list!
+
+            You can track the progress here: #${pr.data.number}`
+            });
+
+            // Close the issue
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });

@@ -1,0 +1,9 @@
+{
+  "accessible": true,
+  "hasPackageJson": true,
+  "hasLicense": true,
+  "hasReadme": true,
+  "validLicense": true,
+  "license": "MIT",
+  "errors": []
+}

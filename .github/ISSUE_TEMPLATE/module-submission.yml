@@ -1,0 +1,107 @@
+name: 🎨 Submit a MagicMirror² Module
+description: Add your module to the official MagicMirror² module list
+title: "[Module] "
+labels: ["module-submission", "needs-review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit Your MagicMirror² Module
+
+        Thank you for contributing to the MagicMirror² ecosystem! 🎉
+
+        Fill out this form to add your module to the official list at [modules.magicmirror.builders](https://modules.magicmirror.builders).
+
+        **What happens next?**
+        1. Our bot validates your submission automatically
+        2. Maintainers review your module
+        3. Once approved, your module appears on the website (usually within 24 hours)
+
+  - type: input
+    id: repository-url
+    attributes:
+      label: Repository URL
+      description: The full GitHub/GitLab URL to your module repository
+      placeholder: https://github.com/username/MMM-YourModule
+    validations:
+      required: true
+
+  - type: input
+    id: module-name
+    attributes:
+      label: Module Name
+      description: The name of your module (usually matches the repository name)
+      placeholder: MMM-YourModule
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief description of what your module does (will be shown on the website)
+      placeholder: This module displays weather information from OpenWeatherMap with customizable icons and animations.
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Primary category for your module
+      placeholder: Weather
+    validations:
+      required: true
+
+  - type: dropdown
+    id: submission-type
+    attributes:
+      label: Submission Type
+      description: Is this a new module or an update to an existing one?
+      options:
+        - New Module
+        - Update Existing Module
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Module Requirements Checklist
+      description: Please verify that your module meets these requirements
+      options:
+        - label: My repository contains a `package.json` with a valid license field
+          required: true
+        - label: My repository includes a `README.md` with installation instructions
+          required: true
+        - label: My repository contains a `LICENSE` file
+          required: true
+        - label: My module name follows the `MMM-*` naming convention (or I have a good reason not to)
+          required: false
+        - label: My repository includes at least one screenshot or example image
+          required: false
+        - label: I have tested my module with the latest MagicMirror² version
+          required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any additional context about your module (special dependencies, requirements, etc.)
+      placeholder: This module requires an API key from service XYZ. Installation takes about 5 minutes.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this module, you agree to our community guidelines
+      options:
+        - label: I agree to follow the [MagicMirror² Code of Conduct](https://github.com/MagicMirrorOrg/MagicMirror/blob/master/CODE_OF_CONDUCT.md)
+          required: true
+        - label: I confirm that this module is my own work or I have permission to submit it
+          required: true
+        - label: I understand that maintainers may request changes before approval
+          required: true
