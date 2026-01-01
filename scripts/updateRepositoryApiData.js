@@ -142,14 +142,10 @@ async function fetchGitHubBatch (modules, headers) {
           isArchived
           isDisabled
           hasIssuesEnabled
+          pushedAt
           licenseInfo { spdxId }
           defaultBranchRef {
             name
-            target {
-              ... on Commit {
-                committedDate
-              }
-            }
           }
         }
       `);
@@ -168,6 +164,24 @@ async function fetchGitHubBatch (modules, headers) {
     },
     body: JSON.stringify({query})
   });
+
+  const rateLimitRemaining = response.headers.get("x-ratelimit-remaining");
+  const rateLimitCost = response.headers.get("x-ratelimit-cost");
+  const rateLimitUsed = response.headers.get("x-ratelimit-used");
+  const rateLimitReset = response.headers.get("x-ratelimit-reset");
+  const rateLimitResetSeconds = rateLimitReset ? Number.parseInt(rateLimitReset, 10) : Number.NaN;
+  const rateLimitResetIso = Number.isFinite(rateLimitResetSeconds)
+    ? new Date(rateLimitResetSeconds * 1000).toISOString()
+    : "unknown";
+  if (rateLimitCost || rateLimitUsed || rateLimitRemaining) {
+    console.info(
+      "GitHub GraphQL rate limit:",
+      `cost=${rateLimitCost ?? "?"}`,
+      `used=${rateLimitUsed ?? "?"}`,
+      `remaining=${rateLimitRemaining ?? "?"}`,
+      `resetsAt=${rateLimitResetIso}`
+    );
+  }
 
   queryCount += 1;
 
@@ -207,7 +221,7 @@ async function fetchGitHubBatch (modules, headers) {
         disabled: repo.isDisabled ?? false,
         defaultBranch: repo.defaultBranchRef?.name ?? null,
         has_issues: repo.hasIssuesEnabled ?? true,
-        lastCommit: repo.defaultBranchRef?.target?.committedDate ?? null
+        lastCommit: repo.pushedAt ?? null
       };
     }
   }
