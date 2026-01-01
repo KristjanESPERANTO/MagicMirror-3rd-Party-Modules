@@ -103,12 +103,13 @@ async function fetchGitHubBatch (modules) {
   const query = `query { ${repoFragments.join("\n")} }`;
 
   try {
-    const response = await httpClient.postJson("https://api.github.com/graphql", {
-      query
-    }, {
+    const response = await httpClient.requestJson("https://api.github.com/graphql", {
+      method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
-      }
+        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({query})
     });
 
     if (!response.ok) {

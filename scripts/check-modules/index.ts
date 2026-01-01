@@ -348,6 +348,21 @@ function getRepositoryHost(moduleUrl) {
 }
 
 async function getLastCommitDate(module, moduleDir) {
+  // Optimization: If we already have a valid lastCommit from Stage 2/3 (e.g. via API), use it.
+  // This avoids running 'git log' which fails if the repo wasn't cloned (skipped).
+  if (module.lastCommit) {
+    const lastCommitDate = new Date(module.lastCommit);
+    if (!Number.isNaN(lastCommitDate.getTime())) {
+      const now = new Date();
+      const diffDays =
+        (now.getTime() - lastCommitDate.getTime()) / (1000 * 60 * 60 * 24);
+      if (diffDays > 365 * 2) {
+        module.defaultSortWeight += 1;
+      }
+      return;
+    }
+  }
+
   try {
     const { stdout } = await execFileAsync(
       "git",
@@ -368,6 +383,8 @@ async function getLastCommitDate(module, moduleDir) {
       }
     }
   } catch (error) {
+    // If git log fails (e.g. repo not cloned), and we don't have a lastCommit, we just log a warning.
+    // But if we had a lastCommit, we returned early above.
     logger.warn(
       `Unable to read last commit date for ${module.name}: ${error instanceof Error ? error.message : error}`
     );
