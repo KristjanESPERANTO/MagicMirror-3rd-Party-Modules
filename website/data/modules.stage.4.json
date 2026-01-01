@@ -2495,7 +2495,7 @@
       "issues": [
         "There are duplicates in the keywords in your package.json: forecast"
       ],
-      "stars": 6,
+      "stars": 2,
       "packageJson": {
         "path": "./modules/MMM-bergfex-----MajorChris1983/package.json",
         "status": "parsed",
@@ -4768,7 +4768,7 @@
       "maintainerURL": "https://github.com/shbatm",
       "description": "Rotate modules, to save space on screen.",
       "issues": [],
-      "stars": 51,
+      "stars": 52,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-Carousel-----shbatm/package.json",
@@ -5776,7 +5776,7 @@
       "issues": [
         "There are no keywords in 'package.json'. We would use them as tags on the module list page."
       ],
-      "stars": 49,
+      "stars": 50,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-Config-----sdetweil/package.json",
@@ -7677,7 +7677,7 @@
       "issues": [
         "There are no keywords in 'package.json'. We would use them as tags on the module list page."
       ],
-      "stars": 3,
+      "stars": 4,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-DBF-----Helpi90/package.json",
@@ -8872,7 +8872,7 @@
       "maintainerURL": "https://github.com/scottcl88",
       "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
       "issues": [],
-      "stars": 34,
+      "stars": 35,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-DynamicWeather-----scottcl88/package.json",
@@ -11503,7 +11503,7 @@
       "maintainerURL": "https://gitlab.com/karsten13",
       "description": "Displays current flights in a defined area with a map containing the plane positions.",
       "issues": [],
-      "stars": 6,
+      "stars": 2,
       "packageJson": {
         "path": "./modules/MMM-Flights-----khassel/package.json",
         "status": "parsed",
@@ -11759,7 +11759,7 @@
       "maintainerURL": "https://github.com/ianperrin",
       "description": "Display the driver standings from the current Formula 1 season.",
       "issues": [],
-      "stars": 42,
+      "stars": 43,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-Formula1-----ianperrin/package.json",
@@ -11919,21 +11919,20 @@
     },
     {
       "name": "MMM-Fortune",
-      "category": "Outdated Modules",
-      "url": "https://github.com/mykle1/MMM-Fortune",
-      "id": "mykle1/MMM-Fortune",
-      "maintainer": "mykle1",
-      "maintainerURL": "https://github.com/mykle1",
-      "description": "A fortune cookie for your MagicMirror².",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/jasonmce/MMM-Fortune",
+      "id": "jasonmce/MMM-Fortune",
+      "maintainer": "jasonmce",
+      "maintainerURL": "https://github.com/jasonmce",
+      "description": "A fortune cookie for your mirror.",
       "issues": [
         "`package.json` issue: Normalized value of bugs field is an empty object. Deleted.",
         "There are no keywords in 'package.json'. We would use them as tags on the module list page."
       ],
-      "outdated": "Abandoned. And <a href=\"https://github.com/mykle1/MMM-Fortune/issues/4\">API is down</a>.",
-      "stars": 9,
+      "stars": 1,
       "license": "MIT",
       "packageJson": {
-        "path": "./modules/MMM-Fortune-----mykle1/package.json",
+        "path": "./modules/MMM-Fortune-----jasonmce/package.json",
         "status": "parsed",
         "raw": "{\r\n  \"name\": \"mmm-fortune\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"Fortune Cookie Module\",\r\n  \"main\": \"MMM-Fortune.js\",\r\n  \"dependencies\": {\r\n    \"request\": \"^2.79.0\"\r\n  },\r\n  \"devDependencies\": {},\r\n  \"scripts\": {\r\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/mykle1/MMM-Fortune.git\"\r\n  },\r\n  \"author\": \"Mykle1\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"\"\r\n  },\r\n  \"homepage\": \"https://github.com/mykle1/MMM-Fortune#readme\"\r\n}\r\n",
         "summary": {
@@ -11952,7 +11951,7 @@
           "Normalized value of bugs field is an empty object. Deleted."
         ]
       },
-      "image": "Capture2.jpg"
+      "image": "readme-media-Alternate color.jpg"
     },
     {
       "name": "MMM-Forum",
@@ -12593,7 +12592,7 @@
       "maintainerURL": "https://github.com/fewieden",
       "description": "Display gas station prices.",
       "issues": [],
-      "stars": 65,
+      "stars": 66,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-Fuel-----fewieden/package.json",
@@ -15453,7 +15452,7 @@
       "maintainerURL": "https://github.com/Snille",
       "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
       "issues": [],
-      "stars": 68,
+      "stars": 67,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-homeassistant-sensors-----Snille/package.json",
@@ -15683,6 +15682,71 @@
       },
       "license": "ISC",
       "image": "HomeConnectDeveloperApplicationConfiguration.jpg"
+    },
+    {
+      "name": "MMM-HomeConnect2",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/HeikoGr/MMM-HomeConnect2",
+      "id": "HeikoGr/MMM-HomeConnect2",
+      "maintainer": "HeikoGr",
+      "maintainerURL": "https://github.com/HeikoGr",
+      "description": "Shows status such as remaining program time of your Home Connect appliances. Based on djeriks module MMM-HomeConnect, but with headless auth workflow.",
+      "issues": [
+        "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      ],
+      "stars": 0,
+      "hasGithubIssues": false,
+      "license": "MIT",
+      "packageJson": {
+        "path": "./modules/MMM-HomeConnect2-----HeikoGr/package.json",
+        "status": "parsed",
+        "raw": "{\n  \"name\": \"mmm-homeconnect2\",\n  \"version\": \"1.0.1\",\n  \"description\": \"MagicMirror² Module for Home Connect\",\n  \"main\": \"MMM-HomeConnect2.js\",\n  \"author\": \"HeikoGr\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/HeikoGr/MMM-HomeConnect2.git\"\n  },\n  \"scripts\": {\n    \"lint\": \"eslint --ext .js || true && prettier --check .\",\n    \"lint:fix\": \"eslint --fix && prettier --write .\",\n    \"test\": \"node --run lint\",\n    \"test:spelling\": \"cspell .\",\n    \"check\": \"node check.js ../../config/config.js || true\"\n  },\n  \"lint-staged\": {\n    \"*.{js,json,css,html}\": [\n      \"eslint --fix\",\n      \"prettier --write\"\n    ]\n  },\n  \"devDependencies\": {\n    \"prettier-plugin-jinja-template\": \"^2.1.0\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"globals\": \"^16.4.0\"\n  },\n  \"keywords\": [\n    \"MagicMirror²\",\n    \"HomeConnect\",\n    \"Smart Home\",\n    \"Appliances\",\n    \"BSH\",\n    \"Bosch\",\n    \"Siemens\",\n    \"Neff\",\n    \"Gaggenau\"\n  ],\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"eventsource\": \"^4.0.0\",\n    \"qrcode\": \"^1.5.1\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/HeikoGr/MMM-HomeConnect2/issues\"\n  },\n  \"homepage\": \"https://github.com/HeikoGr/MMM-HomeConnect2\"\n}",
+        "summary": {
+          "name": "mmm-homeconnect2",
+          "version": "1.0.1",
+          "description": "MagicMirror² Module for Home Connect",
+          "keywords": [
+            "MagicMirror²",
+            "HomeConnect",
+            "Smart Home",
+            "Appliances",
+            "BSH",
+            "Bosch",
+            "Siemens",
+            "Neff",
+            "Gaggenau"
+          ],
+          "license": "MIT",
+          "scripts": {
+            "lint": "eslint --ext .js || true && prettier --check .",
+            "lint:fix": "eslint --fix && prettier --write .",
+            "test": "node --run lint",
+            "test:spelling": "cspell .",
+            "check": "node check.js ../../config/config.js || true"
+          },
+          "dependencies": {
+            "eventsource": "^4.0.0",
+            "qrcode": "^1.5.1"
+          },
+          "devDependencies": {
+            "prettier-plugin-jinja-template": "^2.1.0",
+            "@stylistic/eslint-plugin": "^5.5.0",
+            "globals": "^16.4.0"
+          }
+        },
+        "warnings": []
+      },
+      "tags": [
+        "homeconnect",
+        "smart home",
+        "appliances",
+        "bsh",
+        "bosch",
+        "siemens",
+        "neff",
+        "gaggenau"
+      ],
+      "image": "screenshots-auth_screen.jpg"
     },
     {
       "name": "MMM-Homematic",
@@ -17355,7 +17419,7 @@
       "maintainerURL": "https://gitlab.com/doctorfree",
       "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
       "issues": [],
-      "stars": 3,
+      "stars": 1,
       "packageJson": {
         "path": "./modules/MMM-InstagramView-----doctorfree/package.json",
         "status": "parsed",
@@ -17921,7 +17985,7 @@
       "maintainerURL": "https://gitlab.com/karsten13",
       "description": "Displays current position of the International Space Station on a map.",
       "issues": [],
-      "stars": 3,
+      "stars": 1,
       "packageJson": {
         "path": "./modules/MMM-ISS-Map-----khassel/package.json",
         "status": "parsed",
@@ -22972,7 +23036,7 @@
         "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
         "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
       ],
-      "stars": 6,
+      "stars": 2,
       "packageJson": {
         "path": "./modules/mmm-ratp-----closingin/package.json",
         "status": "parsed",
@@ -23191,7 +23255,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 1,
+      "stars": 0,
       "hasGithubIssues": false,
       "packageJson": {
         "path": "./modules/mmm-uvindex-----rsperezn/package.json",
@@ -23327,7 +23391,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 3,
+      "stars": 1,
       "packageJson": {
         "path": "./modules/MMM-ModInstall-----khassel/package.json",
         "status": "missing",
@@ -26626,7 +26690,7 @@
       "maintainerURL": "https://gitlab.com/dnmmrdr1",
       "description": "Displays bus information for the Nottingham bus company, NCT.",
       "issues": [],
-      "stars": 3,
+      "stars": 1,
       "packageJson": {
         "path": "./modules/MMM-NCTtimes-----dnmmrdr1/package.json",
         "status": "parsed",
@@ -26741,6 +26805,52 @@
         "status": "missing",
         "warnings": []
       }
+    },
+    {
+      "name": "MMM-nest",
+      "category": "Weather",
+      "url": "https://github.com/xiujunma/MMM-nest",
+      "id": "xiujunma/MMM-nest",
+      "maintainer": "xiujunma",
+      "maintainerURL": "https://github.com/xiujunma",
+      "description": "Display live data from Google Nest thermostats. It uses the homebridge-nest API client under the hood, giving you quick access to ambient temperature, humidity, operating mode, and HVAC status for every thermostat on your Nest account.",
+      "issues": [],
+      "stars": 0,
+      "license": "MIT",
+      "packageJson": {
+        "path": "./modules/MMM-nest-----xiujunma/package.json",
+        "status": "parsed",
+        "raw": "{\n  \"name\": \"MMM-nest\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Nest Module for MagicMirror²\",\n  \"keywords\": [\n    \"magicmirror\",\n    \"magicmirror-module\",\n    \"nest\",\n    \"homebridge\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/xiujunma/MMM-nest.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Xiujun Ma <xiujun.ma@live.com>\",\n  \"scripts\": {\n    \"lint\": \"eslint .\"\n  },\n  \"dependencies\": {\n    \"homebridge-nest\": \"^4.6.10\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.9.0\",\n    \"eslint\": \"^9.9.0\",\n    \"globals\": \"^15.7.0\"\n  }\n}\n",
+        "summary": {
+          "name": "MMM-nest",
+          "version": "1.0.0",
+          "description": "Nest Module for MagicMirror²",
+          "keywords": [
+            "magicmirror",
+            "magicmirror-module",
+            "nest",
+            "homebridge"
+          ],
+          "license": "MIT",
+          "scripts": {
+            "lint": "eslint ."
+          },
+          "dependencies": {
+            "homebridge-nest": "^4.6.10"
+          },
+          "devDependencies": {
+            "@eslint/js": "^9.9.0",
+            "eslint": "^9.9.0",
+            "globals": "^15.7.0"
+          }
+        },
+        "warnings": []
+      },
+      "tags": [
+        "nest",
+        "homebridge"
+      ],
+      "image": "screenshot.jpg"
     },
     {
       "name": "MMM-NesteBussAtB",
@@ -27785,7 +27895,7 @@
       "maintainerURL": "https://github.com/Jalibu",
       "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
       "issues": [],
-      "stars": 22,
+      "stars": 23,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-NINA-----jalibu/package.json",
@@ -29772,7 +29882,7 @@
       "maintainerURL": "https://github.com/nkl-kst",
       "description": "Display historical events from Wikipedia based on the current date.",
       "issues": [],
-      "stars": 41,
+      "stars": 42,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-OnThisDay-----nkl-kst/package.json",
@@ -30034,7 +30144,7 @@
       "maintainerURL": "https://github.com/Tom-Hirschberger",
       "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
       "issues": [],
-      "stars": 18,
+      "stars": 19,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-OpenWeatherForecast-----Tom-Hirschberger/package.json",
@@ -30329,7 +30439,7 @@
       "maintainerURL": "https://github.com/edward-shen",
       "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
       "issues": [],
-      "stars": 52,
+      "stars": 53,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-page-indicator-----edward-shen/package.json",
@@ -30442,15 +30552,15 @@
       "maintainerURL": "https://github.com/edward-shen",
       "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
       "issues": [],
-      "stars": 133,
+      "stars": 134,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-pages-----edward-shen/package.json",
         "status": "parsed",
-        "raw": "{\n  \"name\": \"mmm-pages\",\n  \"version\": \"1.2.1\",\n  \"description\": \"Add pages to your MagicMirror².\",\n  \"main\": \"MMM-pages.js\",\n  \"type\": \"module\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/edward-shen/MMM-pages.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"pages\",\n    \"slides\"\n  ],\n  \"author\": \"Edward Shen\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/edward-shen/MMM-pages/issues\"\n  },\n  \"homepage\": \"https://github.com/edward-shen/MMM-pages#readme\",\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.34.0\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"@stylistic/eslint-plugin\": \"^5.2.3\",\n    \"eslint\": \"^9.34.0\",\n    \"globals\": \"^16.3.0\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-pages\",\n  \"version\": \"1.3.0\",\n  \"description\": \"Add pages to your MagicMirror².\",\n  \"main\": \"MMM-pages.js\",\n  \"type\": \"module\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/edward-shen/MMM-pages.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"pages\",\n    \"slides\"\n  ],\n  \"author\": \"Edward Shen\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/edward-shen/MMM-pages/issues\"\n  },\n  \"homepage\": \"https://github.com/edward-shen/MMM-pages#readme\",\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.39.1\",\n    \"@eslint/markdown\": \"^7.5.1\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"eslint\": \"^9.39.1\",\n    \"globals\": \"^16.5.0\"\n  }\n}\n",
         "summary": {
           "name": "mmm-pages",
-          "version": "1.2.1",
+          "version": "1.3.0",
           "description": "Add pages to your MagicMirror².",
           "keywords": [
             "MagicMirror",
@@ -30464,11 +30574,11 @@
             "test": "node --run lint"
           },
           "devDependencies": {
-            "@eslint/js": "^9.34.0",
-            "@eslint/markdown": "^7.2.0",
-            "@stylistic/eslint-plugin": "^5.2.3",
-            "eslint": "^9.34.0",
-            "globals": "^16.3.0"
+            "@eslint/js": "^9.39.1",
+            "@eslint/markdown": "^7.5.1",
+            "@stylistic/eslint-plugin": "^5.5.0",
+            "eslint": "^9.39.1",
+            "globals": "^16.5.0"
           },
           "type": "module"
         },
@@ -31397,7 +31507,7 @@
       "maintainerURL": "https://github.com/sheyabernstein",
       "description": "Display stats from Pi-Hole DNS ad blocking.",
       "issues": [],
-      "stars": 82,
+      "stars": 83,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-pihole-stats-----sheyabernstein/package.json",
@@ -31499,7 +31609,7 @@
       "maintainerURL": "https://github.com/SalekurPolas",
       "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
       "issues": [],
-      "stars": 20,
+      "stars": 21,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-Pinfo-----SalekurPolas/package.json",
@@ -34067,7 +34177,7 @@
       "maintainerURL": "https://github.com/skuethe",
       "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
       "issues": [],
-      "stars": 10,
+      "stars": 11,
       "packageJson": {
         "path": "./modules/MMM-RandomPhoto-----skuethe/package.json",
         "status": "parsed",
@@ -34775,7 +34885,7 @@
       "maintainerURL": "https://gitlab.com/karsten13",
       "description": "Shows repository statistics for DockerHub, GitHub and GitLab.",
       "issues": [],
-      "stars": 6,
+      "stars": 2,
       "packageJson": {
         "path": "./modules/MMM-RepoStats-----khassel/package.json",
         "status": "parsed",
@@ -36879,7 +36989,7 @@
       "maintainerURL": "https://gitlab.com/karsten13",
       "description": "Shows output of commands executed on the host.",
       "issues": [],
-      "stars": 3,
+      "stars": 1,
       "packageJson": {
         "path": "./modules/MMM-Shell-Output-----khassel/package.json",
         "status": "parsed",
@@ -37608,7 +37718,7 @@
       "maintainerURL": "https://github.com/ulrichwisser",
       "description": "Display public transport in Stockholm in Sweden. Updated to use latest API (mandatory from April 2024)!",
       "issues": [],
-      "stars": 4,
+      "stars": 5,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-SL-PublicTransport-----ulrichwisser/package.json",
@@ -38863,7 +38973,7 @@
       "maintainerURL": "https://github.com/skuethe",
       "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
       "issues": [],
-      "stars": 72,
+      "stars": 73,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-Spotify-----skuethe/package.json",
@@ -39954,6 +40064,108 @@
         "media"
       ],
       "image": "examples-screenshot-horizontal.jpg"
+    },
+    {
+      "name": "MMM-SynPhotoSlideshow",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow",
+      "id": "spydersoft-consulting/MMM-SynPhotoSlideshow",
+      "maintainer": "spydersoft-consulting",
+      "maintainerURL": "https://github.com/spydersoft-consulting",
+      "description": "Show full screen slideshow in background using images from Synology Photos.",
+      "issues": [],
+      "stars": 0,
+      "license": "MIT",
+      "packageJson": {
+        "path": "./modules/MMM-SynPhotoSlideshow-----spydersoft-consulting/package.json",
+        "status": "parsed",
+        "raw": "{\n  \"name\": \"mmm-synphotoslideshow\",\n  \"version\": \"2.0.0\",\n  \"description\": \"Display fullscreen slideshows from Synology Photos on MagicMirror². Perfect for a dynamic photo frame!\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow\"\n  },\n  \"keywords\": [\n    \"magicmirror\",\n    \"slideshow\",\n    \"synology\",\n    \"photos\",\n    \"nas\",\n    \"photo-frame\"\n  ],\n  \"author\": {\n    \"name\": \"Spydersoft Consulting\",\n    \"url\": \"https://github.com/spydersoft-consulting\"\n  },\n  \"main\": \"MMM-SynPhotoSlideshow.js\",\n  \"type\": \"commonjs\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"axios\": \"^1.7.7\",\n    \"dotenv\": \"^16.4.7\",\n    \"exif-js\": \"^2.3.0\",\n    \"node-cache\": \"^5.1.2\",\n    \"sharp\": \"^0.34.5\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.26.0\",\n    \"@babel/preset-env\": \"^7.26.0\",\n    \"@babel/preset-typescript\": \"^7.26.0\",\n    \"@eslint/css\": \"^0.14.1\",\n    \"@eslint/js\": \"^9.39.1\",\n    \"@eslint/markdown\": \"^7.5.1\",\n    \"@rollup/plugin-commonjs\": \"^29.0.0\",\n    \"@rollup/plugin-node-resolve\": \"^15.3.1\",\n    \"@rollup/plugin-typescript\": \"^12.3.0\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"@testing-library/dom\": \"^10.4.1\",\n    \"@testing-library/jest-dom\": \"^6.9.1\",\n    \"@types/jest\": \"^30.0.0\",\n    \"@types/magicmirror-module\": \"^2.16.6\",\n    \"@types/node\": \"^22.5.0\",\n    \"@typescript-eslint/eslint-plugin\": \"^8.46.4\",\n    \"@typescript-eslint/parser\": \"^8.46.4\",\n    \"babel-jest\": \"^29.7.0\",\n    \"eslint\": \"^9.39.1\",\n    \"eslint-config-prettier\": \"^10.1.8\",\n    \"eslint-import-resolver-typescript\": \"^4.4.4\",\n    \"eslint-plugin-import\": \"^2.32.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"eslint-plugin-sonarjs\": \"^3.0.5\",\n    \"globals\": \"^16.5.0\",\n    \"husky\": \"^9.1.6\",\n    \"identity-obj-proxy\": \"^3.0.0\",\n    \"jest\": \"^30.2.0\",\n    \"jest-environment-jsdom\": \"^30.2.0\",\n    \"jest-junit\": \"^16.0.0\",\n    \"lint-staged\": \"^16.2.6\",\n    \"prettier\": \"^3.6.2\",\n    \"rollup\": \"^4.53.2\",\n    \"rollup-plugin-scss\": \"^4.0.1\",\n    \"sass\": \"^1.94.0\",\n    \"typescript\": \"^5.9.3\",\n    \"typescript-eslint\": \"^8.46.4\"\n  },\n  \"scripts\": {\n    \"test\": \"npm run test:unit && npm run test:prettier && npm run lint:js\",\n    \"test:unit\": \"jest\",\n    \"test:prettier\": \"prettier --check **/*.{js,ts,css,json,md,yml}\",\n    \"test:coverage\": \"jest --ci --coverage --coverageDirectory=output/coverage/jest\",\n    \"lint\": \"npm run lint:js && npm run lint:prettier\",\n    \"lint:prettier\": \"prettier --write **/*.{js,ts,css,json,md,yml}\",\n    \"lint:js\": \"eslint --cache --fix --max-warnings 0 .\",\n    \"prepare\": \"husky\",\n    \"postinstall\": \"npm run build\",\n    \"build\": \"rollup -c\",\n    \"dev\": \"rollup -c --sourcemap=inline\",\n    \"watch\": \"npm run dev -- --watch\"\n  },\n  \"lint-staged\": {\n    \"*.{js,mjs,ts,css}\": [\n      \"prettier --write\",\n      \"eslint --fix\"\n    ],\n    \"*.{md,json}\": [\n      \"prettier --write\"\n    ]\n  }\n}\n",
+        "summary": {
+          "name": "mmm-synphotoslideshow",
+          "version": "2.0.0",
+          "description": "Display fullscreen slideshows from Synology Photos on MagicMirror². Perfect for a dynamic photo frame!",
+          "keywords": [
+            "magicmirror",
+            "slideshow",
+            "synology",
+            "photos",
+            "nas",
+            "photo-frame"
+          ],
+          "license": "MIT",
+          "scripts": {
+            "test": "npm run test:unit && npm run test:prettier && npm run lint:js",
+            "test:unit": "jest",
+            "test:prettier": "prettier --check **/*.{js,ts,css,json,md,yml}",
+            "test:coverage": "jest --ci --coverage --coverageDirectory=output/coverage/jest",
+            "lint": "npm run lint:js && npm run lint:prettier",
+            "lint:prettier": "prettier --write **/*.{js,ts,css,json,md,yml}",
+            "lint:js": "eslint --cache --fix --max-warnings 0 .",
+            "prepare": "husky",
+            "postinstall": "npm run build",
+            "build": "rollup -c",
+            "dev": "rollup -c --sourcemap=inline",
+            "watch": "npm run dev -- --watch"
+          },
+          "dependencies": {
+            "axios": "^1.7.7",
+            "dotenv": "^16.4.7",
+            "exif-js": "^2.3.0",
+            "node-cache": "^5.1.2",
+            "sharp": "^0.34.5"
+          },
+          "devDependencies": {
+            "@babel/core": "^7.26.0",
+            "@babel/preset-env": "^7.26.0",
+            "@babel/preset-typescript": "^7.26.0",
+            "@eslint/css": "^0.14.1",
+            "@eslint/js": "^9.39.1",
+            "@eslint/markdown": "^7.5.1",
+            "@rollup/plugin-commonjs": "^29.0.0",
+            "@rollup/plugin-node-resolve": "^15.3.1",
+            "@rollup/plugin-typescript": "^12.3.0",
+            "@stylistic/eslint-plugin": "^5.5.0",
+            "@testing-library/dom": "^10.4.1",
+            "@testing-library/jest-dom": "^6.9.1",
+            "@types/jest": "^30.0.0",
+            "@types/magicmirror-module": "^2.16.6",
+            "@types/node": "^22.5.0",
+            "@typescript-eslint/eslint-plugin": "^8.46.4",
+            "@typescript-eslint/parser": "^8.46.4",
+            "babel-jest": "^29.7.0",
+            "eslint": "^9.39.1",
+            "eslint-config-prettier": "^10.1.8",
+            "eslint-import-resolver-typescript": "^4.4.4",
+            "eslint-plugin-import": "^2.32.0",
+            "eslint-plugin-import-x": "^4.16.1",
+            "eslint-plugin-sonarjs": "^3.0.5",
+            "globals": "^16.5.0",
+            "husky": "^9.1.6",
+            "identity-obj-proxy": "^3.0.0",
+            "jest": "^30.2.0",
+            "jest-environment-jsdom": "^30.2.0",
+            "jest-junit": "^16.0.0",
+            "lint-staged": "^16.2.6",
+            "prettier": "^3.6.2",
+            "rollup": "^4.53.2",
+            "rollup-plugin-scss": "^4.0.1",
+            "sass": "^1.94.0",
+            "typescript": "^5.9.3",
+            "typescript-eslint": "^8.46.4"
+          },
+          "type": "commonjs"
+        },
+        "warnings": []
+      },
+      "tags": [
+        "slideshow",
+        "synology",
+        "photos",
+        "nas",
+        "photo-frame",
+        "media"
+      ],
+      "image": "screenshots-landscape.jpg"
     },
     {
       "name": "MMM-syslog",
@@ -42745,7 +42957,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 9,
+      "stars": 3,
       "packageJson": {
         "path": "./modules/MMM-Universal-Pir-----khassel/package.json",
         "status": "missing",
@@ -44377,7 +44589,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 3,
+      "stars": 1,
       "packageJson": {
         "path": "./modules/MMM-WeatherBridge-----khassel/package.json",
         "status": "missing",
@@ -44693,13 +44905,15 @@
       "maintainer": "HeikoGr",
       "maintainerURL": "https://github.com/HeikoGr",
       "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
-      "issues": [],
-      "stars": 4,
-      "license": "MIT",
+      "issues": [
+        "Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION)."
+      ],
+      "stars": 6,
+      "license": "NOASSERTION",
       "packageJson": {
         "path": "./modules/MMM-Webuntis-----HeikoGr/package.json",
         "status": "parsed",
-        "raw": "{\n  \"name\": \"mmm-webuntis\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/HeikoGr/MMM-Webuntis\"\n  },\n  \"version\": \"0.4.1\",\n  \"description\": \"MagicMirror module to access Webunits school timetables.\",\n  \"main\": \"MMM-Webuntis.js\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"webuntis\",\n    \"school\",\n    \"timetable\"\n  ],\n  \"author\": \"HeikoGr\",\n  \"license\": \"MIT\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint . --ext .js || true && prettier --check .\",\n    \"lint:fix\": \"eslint --fix . && prettier --write .\",\n    \"test\": \"npm run lint\",\n    \"test:spelling\": \"cspell .\",\n    \"check\": \"node check.js ../../config/config.js || true\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"dependencies\": {\n    \"webuntis\": \"^2.2.1\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.14.0\",\n    \"@eslint/js\": \"^9.38.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.5.0\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"cspell\": \"^9.2.2\",\n    \"eslint\": \"^9.38.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.6\",\n    \"otplib\": \"^12.0.1\",\n    \"prettier\": \"^3.6.2\"\n  }\n}",
+        "raw": "{\n  \"name\": \"mmm-webuntis\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/HeikoGr/MMM-Webuntis\"\n  },\n  \"version\": \"0.4.1\",\n  \"description\": \"MagicMirror module to access Webunits school timetables.\",\n  \"main\": \"MMM-Webuntis.js\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"webuntis\",\n    \"school\",\n    \"timetable\"\n  ],\n  \"author\": \"HeikoGr\",\n  \"license\": \"MIT\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint --ext .js || true && prettier --check .\",\n    \"lint:fix\": \"eslint --fix . && prettier --write .\",\n    \"test\": \"node --run lint\",\n    \"test:spelling\": \"cspell .\",\n    \"check\": \"node check.js ../../config/config.js || true\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"dependencies\": {\n    \"webuntis\": \"^2.2.1\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.14.0\",\n    \"@eslint/js\": \"^9.38.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.5.0\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"cspell\": \"^9.2.2\",\n    \"eslint\": \"^9.38.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.6\",\n    \"otplib\": \"^12.0.1\",\n    \"prettier\": \"^3.6.2\"\n  }\n}",
         "summary": {
           "name": "mmm-webuntis",
           "version": "0.4.1",
@@ -44712,9 +44926,9 @@
           ],
           "license": "MIT",
           "scripts": {
-            "lint": "eslint . --ext .js || true && prettier --check .",
+            "lint": "eslint --ext .js || true && prettier --check .",
             "lint:fix": "eslint --fix . && prettier --write .",
-            "test": "npm run lint",
+            "test": "node --run lint",
             "test:spelling": "cspell .",
             "check": "node check.js ../../config/config.js || true"
           },
@@ -44744,8 +44958,7 @@
         "webuntis",
         "school",
         "timetable"
-      ],
-      "image": "screenshot-grid.jpg"
+      ]
     },
     {
       "name": "MMM-WebView",
@@ -45173,7 +45386,7 @@
       "issues": [
         "There is no `package.json`. We need this file to gather information about the module for the module list page."
       ],
-      "stars": 124,
+      "stars": 125,
       "license": "MIT",
       "packageJson": {
         "path": "./modules/MMM-WiFiPassword-----TeraTech/package.json",
@@ -46148,7 +46361,7 @@
       "maintainerURL": "https://github.com/doctorfree",
       "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
       "issues": [],
-      "stars": 3,
+      "stars": 1,
       "packageJson": {
         "path": "./modules/MMM-YouTubeWebView-----doctorfree/package.json",
         "status": "parsed",
