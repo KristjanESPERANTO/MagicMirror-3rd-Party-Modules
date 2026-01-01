@@ -5,10 +5,23 @@
  * Falls back to null if API unavailable (requires local git operations).
  */
 
+import {buildAuthHeadersFromEnv, createHttpClient} from "../shared/http-client.js";
 import {createLogger} from "../shared/logger.js";
-import process from "node:process";
+import {createRateLimiter} from "../shared/rate-limiter.js";
 
 const logger = createLogger("remote-sha");
+
+const rateLimiter = createRateLimiter({
+  tokensPerInterval: 5,
+  intervalMs: 1000
+});
+
+const httpClient = createHttpClient({
+  rateLimiter,
+  defaultHeaders: {
+    "User-Agent": "MagicMirror-Module-Checker"
+  }
+});
 
 /**
  * Parse GitHub repository URL to extract owner and repo
@@ -77,29 +90,23 @@ async function getGitHubCommitSha (url, branch = "master") {
   const apiUrl = `https://api.github.com/repos/${owner}/${repo}/commits/${branch}`;
 
   const headers = {
-    "User-Agent": "MagicMirror-Module-Checker",
-    Accept: "application/vnd.github.v3+json"
+    Accept: "application/vnd.github.v3+json",
+    ...buildAuthHeadersFromEnv()
   };
 
-  // Add GitHub token if available (for higher rate limits)
-  if (process.env.GITHUB_TOKEN) {
-    headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
-  }
-
   try {
-    const response = await fetch(apiUrl, {headers});
+    const result = await httpClient.getJson(apiUrl, {headers});
 
-    if (!response.ok) {
+    if (!result.ok) {
       // Branch might not exist, try default branch
-      if (response.status === 404 && branch !== "main") {
+      if (result.status === 404 && branch !== "main") {
         return getGitHubCommitSha(url, "main");
       }
-      logger.debug(`GitHub API error for ${owner}/${repo}: ${response.status}`);
+      logger.debug(`GitHub API error for ${owner}/${repo}: ${result.status}`);
       return null;
     }
 
-    const data = await response.json();
-    return data.sha || null;
+    return result.data.sha || null;
   } catch (error) {
     logger.debug(`Failed to fetch GitHub SHA for ${owner}/${repo}: ${error instanceof Error ? error.message : String(error)}`);
     return null;

@@ -6,14 +6,19 @@
  * to the most recent known values so the published dataset remains complete.
  */
 import {
+  applyRepositoryData,
+  createRepositoryDataRecord,
   getRepositoryId,
   getRepositoryType,
   loadPreviousData,
+  partitionModules,
   sortByNameIgnoringPrefix,
   sortModuleListByLastUpdate,
   useHistoricalData
 } from "./updateRepositoryApiData/helpers.js";
+import {createHttpClient} from "./shared/http-client.js";
 import {createPersistentCache} from "./shared/persistent-cache.js";
+import {createRateLimiter} from "./shared/rate-limiter.js";
 import fs from "node:fs";
 import {getJson} from "./utils.js";
 import path from "node:path";
@@ -39,82 +44,18 @@ const repositoryCache = createPersistentCache({
   version: "repository-api/v1"
 });
 
+const rateLimiter = createRateLimiter({
+  tokensPerInterval: 2, // Conservative limit
+  intervalMs: 1000
+});
+
+const httpClient = createHttpClient({
+  rateLimiter
+});
 
 function shouldFetch (repository) {
   const repoType = getRepositoryType(repository.url);
   return repoType !== "unknown" && maxQueryCount > 0 && (queryCount < maxQueryCount || process.env.GITHUB_TOKEN);
-}
-
-function getRepositoryCacheKey (module) {
-  const repoType = getRepositoryType(module.url);
-  const repoId = getRepositoryId(module.url);
-  if (!repoId || repoType === "unknown") {
-    return null;
-  }
-  return `${repoType}:${repoId.toLowerCase()}`;
-}
-
-function applyRepositoryData (module, normalizedData) {
-  module.stars = normalizedData.stars;
-  if (normalizedData.has_issues === false) {
-    module.hasGithubIssues = false;
-  }
-  if (normalizedData.archived === true) {
-    module.isArchived = true;
-  }
-  if (normalizedData.license) {
-    module.license = normalizedData.license;
-  }
-}
-
-function createRepositoryDataRecord ({moduleId, normalizedData, timestamp}) {
-  return {
-    id: moduleId,
-    gitHubDataLastUpdate: timestamp,
-    gitHubData: normalizedData
-  };
-}
-
-function partitionModules ({moduleList, previousData, results, cache}) {
-  const githubModules = [];
-  const otherModules = [];
-  const cacheKeys = new Map();
-  let processedCount = 0;
-
-  for (const module of moduleList) {
-    const cacheKey = getRepositoryCacheKey(module);
-    let handledByCache = false;
-
-    if (cacheKey) {
-      cacheKeys.set(module.id, cacheKey);
-      const cacheEntry = cache.get(cacheKey);
-      if (cacheEntry) {
-        applyRepositoryData(module, cacheEntry.value);
-        const record = createRepositoryDataRecord({
-          moduleId: module.id,
-          normalizedData: cacheEntry.value,
-          timestamp: cacheEntry.updatedAt ?? new Date().toISOString()
-        });
-        results.push(record);
-        processedCount += 1;
-        handledByCache = true;
-      }
-    }
-
-    if (!handledByCache) {
-      const shouldFetchData = shouldFetch(module);
-      if (!shouldFetchData) {
-        useHistoricalData(previousData, module.id, module, results);
-        processedCount += 1;
-      } else if (getRepositoryType(module.url) === "github") {
-        githubModules.push(module);
-      } else {
-        otherModules.push(module);
-      }
-    }
-  }
-
-  return {githubModules, otherModules, cacheKeys, processedCount};
 }
 
 /*
@@ -157,7 +98,7 @@ async function fetchGitHubBatch (modules, headers) {
     ${repoFragments.join("\n")}
   }`;
 
-  const response = await fetch("https://api.github.com/graphql", {
+  const response = await httpClient.request("https://api.github.com/graphql", {
     method: "POST",
     headers: {
       ...headers,
@@ -262,13 +203,13 @@ async function fetchRepositoryData (module, headers) {
       throw new Error(`Unsupported repository type: ${repoType}`);
   }
 
-  const response = await fetch(apiUrl, {headers});
-  const data = await response.json();
+  const result = await httpClient.getJson(apiUrl, {headers});
+  const data = result.data;
   queryCount += 1;
 
   // Fetch branch data
   let branchData = null;
-  if (response.status === 200) {
+  if (result.status === 200) {
     switch (repoType) {
       case "github":
         branchUrl = `https://api.github.com/repos/${repoId}/commits/${data.default_branch}`;
@@ -286,13 +227,13 @@ async function fetchRepositoryData (module, headers) {
     }
 
     if (branchUrl) {
-      const branchResponse = await fetch(branchUrl, {headers});
-      branchData = await branchResponse.json();
+      const branchResult = await httpClient.getJson(branchUrl, {headers});
+      branchData = branchResult.data;
       queryCount += 1;
     }
   }
 
-  return {response, data, branchData, repoType};
+  return {response: {status: result.status, ok: result.ok}, data, branchData, repoType};
 }
 
 // Function to normalize API responses from different hosting services
@@ -417,7 +358,8 @@ async function updateData () {
       moduleList,
       previousData,
       results,
-      cache: repositoryCache
+      cache: repositoryCache,
+      shouldFetchCallback: shouldFetch
     });
     moduleCount += processedCount;
 

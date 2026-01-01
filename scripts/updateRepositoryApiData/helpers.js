@@ -106,21 +106,85 @@ export function createDefaultRepositoryData ({repositoryId, module}) {
   };
 }
 
+export function getRepositoryCacheKey (module) {
+  const repoType = getRepositoryType(module.url);
+  const repoId = getRepositoryId(module.url);
+  if (!repoId || repoType === "unknown") {
+    return null;
+  }
+  return `${repoType}:${repoId.toLowerCase()}`;
+}
+
+export function applyRepositoryData (module, normalizedData) {
+  module.stars = normalizedData.stars;
+  if (normalizedData.has_issues === false) {
+    module.hasGithubIssues = false;
+  }
+  if (normalizedData.archived === true) {
+    module.isArchived = true;
+  }
+  if (normalizedData.license) {
+    module.license = normalizedData.license;
+  }
+}
+
+export function createRepositoryDataRecord ({moduleId, normalizedData, timestamp}) {
+  return {
+    id: moduleId,
+    gitHubDataLastUpdate: timestamp,
+    gitHubData: normalizedData
+  };
+}
+
+export function partitionModules ({moduleList, previousData, results, cache, shouldFetchCallback}) {
+  const githubModules = [];
+  const otherModules = [];
+  const cacheKeys = new Map();
+  let processedCount = 0;
+
+  for (const module of moduleList) {
+    const cacheKey = getRepositoryCacheKey(module);
+    let handledByCache = false;
+
+    if (cacheKey) {
+      cacheKeys.set(module.id, cacheKey);
+      const cacheEntry = cache.get(cacheKey);
+      if (cacheEntry) {
+        applyRepositoryData(module, cacheEntry.value);
+        const record = createRepositoryDataRecord({
+          moduleId: module.id,
+          normalizedData: cacheEntry.value,
+          timestamp: cacheEntry.updatedAt ?? new Date().toISOString()
+        });
+        results.push(record);
+        processedCount += 1;
+        handledByCache = true;
+      }
+    }
+
+    if (!handledByCache) {
+      const shouldFetchData = shouldFetchCallback ? shouldFetchCallback(module) : true;
+      if (shouldFetchData) {
+        const repoType = getRepositoryType(module.url);
+        if (repoType === "github") {
+          githubModules.push(module);
+        } else {
+          otherModules.push(module);
+        }
+      } else {
+        useHistoricalData(previousData, module.id, module, results);
+        processedCount += 1;
+      }
+    }
+  }
+
+  return {githubModules, otherModules, cacheKeys, processedCount};
+}
+
 export function useHistoricalData (previousData, repositoryId, module, results) {
   const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
   if (existingRepository) {
-    module.stars = existingRepository.gitHubData.stars;
-
-    if (existingRepository.gitHubData.has_issues === false) {
-      module.hasGithubIssues = false;
-    }
-
-    if (existingRepository.gitHubData.archived === true) {
-      module.isArchived = true;
-    }
-    if (existingRepository.gitHubData.license) {
-      module.license = existingRepository.gitHubData.license;
-    }
+    applyRepositoryData(module, existingRepository.gitHubData);
     results.push(existingRepository);
     return;
   }
