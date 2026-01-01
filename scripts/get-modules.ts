@@ -5,7 +5,7 @@ import { rename, rm } from "node:fs/promises";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 
-import { ensureRepository } from "./shared/git.js";
+import { ensureRepository, GitErrorCategory } from "./shared/git.js";
 import { createHttpClient } from "./shared/http-client.js";
 import { createLogger } from "./shared/logger.js";
 import { createRateLimiter } from "./shared/rate-limiter.js";
@@ -661,23 +661,37 @@ async function processModules() {
         `+++   ${moduleCounter.toString().padStart(4, " ")}: ${module.name} by ${owner} - ${module.url}`
       );
 
-        try {
-          await refreshRepository({ module: moduleCopy, tempPath, finalPath });
-          // Write moduleCopy to stream immediately to avoid holding it
-          // Use deterministic stringify to ensure sorted keys for reproducible outputs
-          const toWrite = `${firstOut ? "" : ","}${stringifyDeterministic(moduleCopy, null)}`;
-          writeStream.write(toWrite);
-          firstOut = false;
-          validModules.push(moduleCopy);
-          consecutiveErrors = 0; // Reset error counter on success
-        } catch (error) {
-        consecutiveErrors += 1;
+      try {
+        await refreshRepository({ module: moduleCopy, tempPath, finalPath });
+        // Write moduleCopy to stream immediately to avoid holding it
+        // Use deterministic stringify to ensure sorted keys for reproducible outputs
+        const toWrite = `${firstOut ? "" : ","}${stringifyDeterministic(moduleCopy, null)}`;
+        writeStream.write(toWrite);
+        firstOut = false;
+        validModules.push(moduleCopy);
+        consecutiveErrors = 0; // Reset error counter on success
+      } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         const errorStack = error instanceof Error ? error.stack : undefined;
         
-        logger.error(
-          `Failed to clone/update module [${moduleCounter}/${validated.length}]: ${module.name} (${module.url})`
-        );
+        // Determine if this is an infrastructure error (should count toward circuit breaker)
+        // or an expected error (404, auth, etc. - should just skip)
+        const errorCategory = error?.category || GitErrorCategory.UNKNOWN;
+        const isInfrastructureError = 
+          errorCategory === GitErrorCategory.NETWORK || 
+          errorCategory === GitErrorCategory.INFRASTRUCTURE;
+
+        if (isInfrastructureError) {
+          consecutiveErrors += 1;
+          logger.error(
+            `Infrastructure error for module [${moduleCounter}/${validated.length}]: ${module.name} (${module.url})`
+          );
+        } else {
+          logger.warn(
+            `Skipping module [${moduleCounter}/${validated.length}]: ${module.name} (${module.url}) - ${errorCategory}`
+          );
+        }
+        
         logger.error(`Error: ${message}`);
         
         if (errorStack && errorStack !== message) {
@@ -685,27 +699,44 @@ async function processModules() {
         }
 
         await rm(tempPath, { recursive: true, force: true }).catch(() => {});
-          skippedModules.push(
+        
+        // Provide more specific skip reason based on error category
+        let skipReason = "Repository clone failed - URL might be invalid or repository might be private/deleted";
+        if (errorCategory === GitErrorCategory.NOT_FOUND) {
+          skipReason = "Repository not found - it may have been deleted, renamed, or made private";
+        } else if (errorCategory === GitErrorCategory.AUTHENTICATION) {
+          skipReason = "Repository access denied - it may be private or require authentication";
+        } else if (errorCategory === GitErrorCategory.NETWORK) {
+          skipReason = "Network error - timeout or connection failure";
+        } else if (errorCategory === GitErrorCategory.INFRASTRUCTURE) {
+          skipReason = "Infrastructure error - rate limit or server error";
+        }
+
+        skippedModules.push(
           createSkippedEntry(
             module,
-            "Repository clone failed - URL might be invalid or repository might be private/deleted",
+            skipReason,
             "clone_failure",
-            { error: message }
+            { error: message, category: errorCategory }
           )
         );
 
-        // If we have too many consecutive errors, something might be systematically wrong
+        // If we have too many consecutive infrastructure errors, something might be systematically wrong
         if (consecutiveErrors >= MAX_CONSECUTIVE_ERRORS) {
-          logger.warn(
-            `Encountered ${MAX_CONSECUTIVE_ERRORS} consecutive errors. Continuing but this might indicate a systematic issue (e.g., network problems, rate limiting).`
+          logger.error(
+            `Encountered ${MAX_CONSECUTIVE_ERRORS} consecutive infrastructure errors. This indicates a systematic issue (network problems, rate limiting, etc.).`
           );
-          // Reset counter to avoid spamming this warning
-          consecutiveErrors = 0;
+          logger.error(
+            `Aborting to prevent further damage. Please check network connectivity and API rate limits.`
+          );
+          throw new Error(
+            `Too many consecutive infrastructure errors (${MAX_CONSECUTIVE_ERRORS}). Aborting pipeline.`
+          );
         }
         
         continue;
       }
-      }
+    }
 
       // After processing chunk, log and optionally free memory by trimming arrays
       logger.info(`Finished batch ${start + 1}-${end}: valid so far=${validModules.length}, skipped so far=${skippedModules.length}`);
@@ -715,11 +746,49 @@ async function processModules() {
     // Close stream and finalize JSON
     await new Promise((resolve) => writeStream.end("]}", "utf8", resolve));
 
-    logger.info(`Modules cloned: ${validModules.length}`);
+    // Generate summary report
+    const categoryCount = skippedModules.reduce((acc, mod) => {
+      const category = mod.metadata?.category || "UNKNOWN";
+      acc[category] = (acc[category] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
 
-    logger.info(`Modules skipped: ${skippedModules.length}`);
-
-    logger.info(`Total modules processed: ${validModules.length + skippedModules.length}/${totalTargets}`);
+    logger.info("");
+    logger.info("=".repeat(60));
+    logger.info("Stage 3 (get-modules) Summary");
+    logger.info("=".repeat(60));
+    logger.info(`✅ Modules cloned successfully: ${validModules.length}`);
+    
+    if (skippedModules.length > 0) {
+      logger.warn(`⚠️  Modules skipped: ${skippedModules.length}`);
+      
+      // Show breakdown by category
+      const categories = [
+        { key: "NOT_FOUND", label: "Repository not found (deleted/renamed)" },
+        { key: "AUTHENTICATION", label: "Access denied (private)" },
+        { key: "NETWORK", label: "Network errors" },
+        { key: "INFRASTRUCTURE", label: "Infrastructure errors" },
+        { key: "UNKNOWN", label: "Unknown errors" }
+      ];
+      
+      for (const { key, label } of categories) {
+        const count = categoryCount[key] || 0;
+        if (count > 0) {
+          logger.warn(`   ├─ ${key}: ${count} (${label})`);
+        }
+      }
+      
+      logger.warn("");
+      logger.warn("⚠️  WARNING: Skipped modules won't appear in the final module list.");
+      logger.warn(`   Check ${SKIPPED_MODULES_PATH} for details.`);
+      logger.warn("   Consider reviewing and updating the wiki if repositories were deleted.");
+    } else {
+      logger.info(`✅ Modules skipped: 0`);
+    }
+    
+    logger.info(`📊 Total processed: ${validModules.length + skippedModules.length}/${totalTargets}`);
+    logger.info("=".repeat(60));
+    logger.info("");
   } finally {
     // Always write output, even if errors occurred
     logMemoryUsage("Pre-write");

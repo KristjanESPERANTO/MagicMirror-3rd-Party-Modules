@@ -166,23 +166,26 @@ The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tas
 
 #### Phase 1: Quick Wins (Low Effort, High Impact)
 
-1. **P3.4** — Ensure deterministic outputs (sorted keys, hash-based image names). Makes diffs cleaner and debugging easier.
-2. **P4.R1 & P4.R2** — Audit rule registry for relevance and consistency. Clean foundation before adding more checks.
-3. **P3.5** — Gracefully skip missing/renamed repos ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41)). Prevents pipeline crashes, reduces manual intervention.
+1. **P3.4** — Ensure deterministic outputs (sorted keys, deterministic image names). Makes diffs cleaner and debugging easier. ✅ Completed Nov 2025
+2. **P3.5** — Gracefully skip missing/renamed repos ([#41](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41)). Prevents pipeline crashes, reduces manual intervention. ✅ Completed Nov 2025
 
 #### Phase 2: Robustness & Observability (Medium Effort)
 
-4. **P3.2** — Introduce central rate limiter + retry strategy. Prevents API bans, handles transient failures gracefully.
-5. **P3.6** — Replace hard-coded star fallbacks with authenticated API lookups for GitLab/Bitbucket/Codeberg ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5)). Improves data quality across platforms.
-6. **P3.3** — Capture structured logs (JSON) and per-stage timing metrics. Better observability for performance debugging.
+3. **P3.2** — Introduce central rate limiter + retry strategy. Prevents API bans, handles transient failures gracefully.
+4. **P3.6** — Replace hard-coded star fallbacks with authenticated API lookups for GitLab/Bitbucket/Codeberg ([#5](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/5)). Improves data quality across platforms.
+5. **P3.3** — Capture structured logs (JSON) and per-stage timing metrics. Better observability for performance debugging.
 
 #### Phase 3: Documentation & Onboarding
 
-7. **P5.2** — Expand contributor guide with setup instructions, pipeline tips, and troubleshooting. Lowers barrier to entry for new contributors.
+6. **P5.2** — Expand contributor guide with setup instructions, pipeline tips, and troubleshooting. Lowers barrier to entry for new contributors.
 
 #### Phase 4: Begin Streaming Architecture
 
-8. **P6.1** — Create unified metadata collector (merge stages 1+2). First major step toward 3-phase architecture.
+7. **P6.1** — Create unified metadata collector (merge stages 1+2). First major step toward 3-phase architecture.
+
+#### Phase 5: Cleanup & Maintenance (Post-Migration)
+
+8. **P4.R1 & P4.R2** — Audit rule registry and recommendations for relevance and consistency. Quality check after migration is complete.
 
 ### Milestone 2: Toward 3-Phase Streaming Architecture (Future)
 

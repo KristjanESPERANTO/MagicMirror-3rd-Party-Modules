@@ -9,8 +9,21 @@ const execFileAsync = promisify(execFile);
 const DEFAULT_TIMEOUT_MS = 5 * 60 * 1000;
 const DEFAULT_MAX_BUFFER = 10 * 1024 * 1024; // 10 MB
 
+/**
+ * Error categories for git operations
+ * @readonly
+ * @enum {string}
+ */
+export const GitErrorCategory = {
+  NOT_FOUND: "NOT_FOUND", // Repository not found (404) or deleted
+  AUTHENTICATION: "AUTHENTICATION", // Authentication failure or private repository
+  NETWORK: "NETWORK", // Network errors (timeout, connection refused)
+  INFRASTRUCTURE: "INFRASTRUCTURE", // Infrastructure issues (rate limit, server errors)
+  UNKNOWN: "UNKNOWN" // Unknown or uncategorized errors
+};
+
 export class GitError extends Error {
-  constructor (message, {args, cwd, exitCode, stderr, stdout, signal, cause} = {}) {
+  constructor (message, {args, cwd, exitCode, stderr, stdout, signal, cause, category = GitErrorCategory.UNKNOWN} = {}) {
     super(message);
     this.name = "GitError";
     this.args = args;
@@ -20,6 +33,7 @@ export class GitError extends Error {
     this.stdout = stdout ?? null;
     this.signal = signal ?? null;
     this.cause = cause ?? null;
+    this.category = category;
   }
 }
 
@@ -52,6 +66,58 @@ function baseOptions (options = {}) {
   };
 }
 
+/**
+ * Categorize git errors based on stderr output and exit code
+ */
+function categorizeGitError (stderr, exitCode) {
+  const stderrLower = (stderr || "").toLowerCase();
+
+  // Repository not found (404, deleted, renamed)
+  if (
+    stderrLower.includes("repository not found") ||
+    stderrLower.includes("not found") ||
+    stderrLower.includes("could not read from remote repository") ||
+    stderrLower.includes("does not exist") ||
+    exitCode === 128
+  ) {
+    return GitErrorCategory.NOT_FOUND;
+  }
+
+  // Authentication failures (403, private repo)
+  if (
+    stderrLower.includes("authentication failed") ||
+    stderrLower.includes("permission denied") ||
+    stderrLower.includes("forbidden") ||
+    stderrLower.includes("could not read username")
+  ) {
+    return GitErrorCategory.AUTHENTICATION;
+  }
+
+  // Network errors (timeout, connection refused)
+  if (
+    stderrLower.includes("timeout") ||
+    stderrLower.includes("timed out") ||
+    stderrLower.includes("connection refused") ||
+    stderrLower.includes("could not resolve host") ||
+    stderrLower.includes("network is unreachable")
+  ) {
+    return GitErrorCategory.NETWORK;
+  }
+
+  // Infrastructure issues (rate limit, server errors)
+  if (
+    stderrLower.includes("rate limit") ||
+    stderrLower.includes("too many requests") ||
+    stderrLower.includes("server error") ||
+    stderrLower.includes("503") ||
+    stderrLower.includes("502")
+  ) {
+    return GitErrorCategory.INFRASTRUCTURE;
+  }
+
+  return GitErrorCategory.UNKNOWN;
+}
+
 function formatErrorMessage (args, error) {
   const command = ["git", ...args].join(" ");
   const stderr = error?.stderr ? `\n${error.stderr.trim()}` : "";
@@ -74,6 +140,7 @@ export async function git (args, options = {}) {
   } catch (error) {
     if (error instanceof Error) {
       const message = formatErrorMessage(normalizedArgs, error);
+      const category = categorizeGitError(error.stderr, error.code);
       throw new GitError(message, {
         args: normalizedArgs,
         cwd: execOptions.cwd,
@@ -81,7 +148,8 @@ export async function git (args, options = {}) {
         signal: error.signal,
         stderr: error.stderr,
         stdout: error.stdout,
-        cause: error
+        cause: error,
+        category
       });
     }
 
