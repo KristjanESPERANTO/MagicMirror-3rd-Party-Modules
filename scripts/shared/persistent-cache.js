@@ -158,6 +158,10 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
     return Object.entries(state.entries).map(([key, entry]) => ({key, entry: cloneCacheEntry(entry)}));
   }
 
+  function getAllKeys () {
+    return Object.keys(state.entries);
+  }
+
   async function flush () {
     if (!loaded || !dirty) {
       return;
@@ -179,6 +183,7 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
     set,
     delete: deleteKey,
     entries,
+    getAllKeys,
     pruneExpired,
     snapshot
   };

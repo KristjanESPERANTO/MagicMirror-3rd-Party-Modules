@@ -447,7 +447,7 @@ function ensureIssueArray(module: ModuleEntry) {
 
 function createSkippedEntry(
   module: ModuleEntry,
-  error: string,
+  reason: string,
   errorType: string,
   details: {
     statusCode?: number | null;
@@ -455,21 +455,40 @@ function createSkippedEntry(
     responseSnippet?: string;
     initialStatusCode?: number | null;
     error?: string;
+    category?: string;
   } = {}
 ) {
   const owner = extractOwnerFromUrl(module.url);
   const normalizedDetails = Object.fromEntries(
     Object.entries(details).filter(([, value]) => value !== undefined)
   );
+  
+  // Build metadata object for categorization
+  const metadata: Record<string, unknown> = {
+    errorType
+  };
+  
+  if (details.error) {
+    metadata.error = details.error;
+  }
+  
+  if (details.category) {
+    metadata.category = details.category;
+  }
+  
   return {
     name: module.name,
     url: module.url,
     maintainer: owner,
     description:
       typeof module.description === "string" ? module.description : "",
-    error,
-    errorType,
-    ...normalizedDetails
+    reason,
+    metadata,
+    ...Object.fromEntries(
+      Object.entries(normalizedDetails).filter(([key]) => 
+        !['error', 'category'].includes(key)
+      )
+    )
   };
 }
 

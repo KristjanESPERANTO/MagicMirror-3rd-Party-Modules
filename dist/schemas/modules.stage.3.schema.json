@@ -82,13 +82,22 @@
                 "minimum": 0
               },
               "license": {
-                "type": "string"
+                "type": [
+                  "string",
+                  "null"
+                ]
               },
               "hasGithubIssues": {
-                "type": "boolean"
+                "type": [
+                  "boolean",
+                  "null"
+                ]
               },
               "isArchived": {
-                "type": "boolean"
+                "type": [
+                  "boolean",
+                  "null"
+                ]
               },
               "lastCommit": {
                 "type": [
@@ -143,10 +152,16 @@
             "minimum": 0
           },
           "license": {
-            "type": "string"
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "hasGithubIssues": {
-            "type": "boolean"
+            "type": [
+              "boolean",
+              "null"
+            ]
           },
           "lastCommit": {
             "type": [
@@ -156,7 +171,10 @@
             "format": "date-time"
           },
           "isArchived": {
-            "type": "boolean"
+            "type": [
+              "boolean",
+              "null"
+            ]
           }
         },
         "additionalProperties": false

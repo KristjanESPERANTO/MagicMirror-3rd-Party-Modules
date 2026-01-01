@@ -89,6 +89,11 @@ async function fetchGitHubBatch (modules) {
           licenseInfo { spdxId }
           defaultBranchRef {
             name
+            target {
+              ... on Commit {
+                committedDate
+              }
+            }
           }
         }
       `);
@@ -136,14 +141,18 @@ function getFallbackOrOriginal (module, previousModulesMap) {
   if (previousModule) {
     return {
       ...module,
-      stars: previousModule.stars,
-      license: previousModule.license,
-      hasGithubIssues: previousModule.hasGithubIssues,
-      isArchived: previousModule.isArchived,
-      lastCommit: previousModule.lastCommit
+      stars: previousModule.stars ?? 0,
+      license: previousModule.license ?? null,
+      hasGithubIssues: previousModule.hasGithubIssues ?? null,
+      isArchived: previousModule.isArchived ?? null,
+      lastCommit: previousModule.lastCommit ?? null
     };
   }
-  return module;
+  return {
+    ...module,
+    hasGithubIssues: module.hasGithubIssues ?? null,
+    isArchived: module.isArchived ?? null
+  };
 }
 
 /**
@@ -306,6 +315,11 @@ async function enrichModules (modules, previousModulesMap) {
         const repoId = getRepositoryId(module.url);
 
         if (repoData) {
+          logger.debug(`GraphQL data for ${module.name}:`, {
+            isArchived: repoData.isArchived,
+            hasIssuesEnabled: repoData.hasIssuesEnabled,
+            stargazerCount: repoData.stargazerCount
+          });
           const normalized = normalizeRepositoryData(repoData, null, "github");
 
           repositoryCache.set(repoId, normalized);
@@ -348,7 +362,30 @@ async function main () {
     logger.info(`Parsed ${modules.length} modules from Wiki.`);
 
     const previousModulesMap = loadPreviousModules();
+
+    // Load cache to enable pruning
+    await repositoryCache.load();
+
     const enrichedModules = await enrichModules(modules, previousModulesMap);
+
+    // Prune orphaned cache entries (modules that are no longer in the Wiki)
+    const currentModuleIds = new Set(enrichedModules.map((module) => getRepositoryId(module.url)).filter(Boolean));
+    const cachedEntries = repositoryCache.getAllKeys();
+    let prunedCount = 0;
+
+    for (const cachedId of cachedEntries) {
+      if (!currentModuleIds.has(cachedId)) {
+        repositoryCache.delete(cachedId);
+        prunedCount += 1;
+      }
+    }
+
+    if (prunedCount > 0) {
+      logger.info(`Pruned ${prunedCount} orphaned cache entries for modules no longer in the Wiki`);
+    }
+
+    // Flush cache after pruning
+    await repositoryCache.flush();
 
     const outputPath = path.join("website", "data", "modules.stage.2.json");
     fs.writeFileSync(outputPath, JSON.stringify(enrichedModules, null, 2));
