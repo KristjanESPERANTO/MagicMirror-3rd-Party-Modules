@@ -23,15 +23,16 @@ This document captures the long-term improvements we want to implement in the mo
 | P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync ✅ Completed Sep 2025                                                         | P1.3         | S      |
 | P1.7 | Introduce orchestrator-wide progress rendering for every stage _(low priority; build on the Stage 5 indicator via shared progress utility + stage lifecycle events)_             | P1.2         | M      |
 
-### 2. Runtime & Codebase Consolidation - ✅ Completed
+### 2. Runtime & Codebase Consolidation
 
-| Task | Description                                                                                                                                                                    | Dependencies | Effort |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
-| P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025                                                           | none         | M      |
-| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)                                                              | P2.1         | L      |
-| P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks) ✅ Completed Oct 2025 (TS stage now fully TypeScript; Python fallback removed) | P2.1         | XL     |
-| P2.4 | Extend ESLint config to cover TypeScript files (via `typescript-eslint` v8+) and add unit tests for shared utilities ✅ Completed Oct 2025                                     | P2.1         | M      |
-| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages ✅ Completed Oct 2025                                                                      | P2.1         | M      |
+| Task | Description                                                                                                                                                                                                                                                              | Dependencies | Effort |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
+| P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025                                                                                                                                                     | none         | M      |
+| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)                                                                                                                                                        | P2.1         | L      |
+| P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks) ✅ Completed Oct 2025 (TS stage now fully TypeScript; Python fallback removed)                                                                                           | P2.1         | XL     |
+| P2.4 | Extend ESLint config to cover TypeScript files (via `typescript-eslint` v8+) and add unit tests for shared utilities ✅ Completed Oct 2025                                                                                                                               | P2.1         | M      |
+| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages ✅ Completed Oct 2025                                                                                                                                                                | P2.1         | M      |
+| P2.6 | Remove legacy `check_modules_js.js` (Stage 5) after verifying all checks are fully implemented in TypeScript stage (Stage 6). This also allows simplifying or removing the comparison harness since there will be only one implementation to test. ✅ Completed Nov 2025 | P2.3, P4.11  | S      |
 
 ### 3. Robustness & Performance Safety Nets
 
@@ -100,10 +101,16 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. **P3.1.5** — Implement smart incremental checking: reuse cached results when modules and their repositories haven’t changed since the last run.
+1. **P3.1.5** — Implement smart incremental checking: reuse cached results when modules and their repositories haven't changed since the last run.
 2. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
 3. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
 4. Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments (P4.9).
+
+## Future Considerations
+
+Items to revisit once the immediate roadmap is complete:
+
+- **Evaluate comparison harness utility**: Now that there's only one TypeScript implementation, assess whether the comparison harness (`scripts/check-modules/compare/`) still provides value for regression testing or should be simplified/removed in favor of simpler golden file tests.
 
 ---
 

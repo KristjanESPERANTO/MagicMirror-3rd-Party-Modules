@@ -378,13 +378,13 @@ export async function performDiff ({runDirectory, results}) {
     return {status: "skipped", reason: "Diff skipped because one or more commands exited non-zero."};
   }
 
-  const stage5Legacy = await loadJsonArtifact(runDirectory, legacyRun, "modules.stage.5.json");
-  const stage5Ts = await loadJsonArtifact(runDirectory, tsRun, "modules.stage.5.json");
+  const stage4Legacy = await loadJsonArtifact(runDirectory, legacyRun, "modules.stage.4.json");
+  const stage4Ts = await loadJsonArtifact(runDirectory, tsRun, "modules.stage.4.json");
 
-  if (stage5Legacy.status !== "ok" || stage5Ts.status !== "ok") {
-    const reasons = [stage5Legacy, stage5Ts]
+  if (stage4Legacy.status !== "ok" || stage4Ts.status !== "ok") {
+    const reasons = [stage4Legacy, stage4Ts]
       .filter((item) => item.status !== "ok")
-      .map((item) => item.reason ?? "Unknown stage 5 artifact error.");
+      .map((item) => item.reason ?? "Unknown stage 4 artifact error.");
     return {status: "error", reason: reasons.join(" ")};
   }
 
@@ -418,7 +418,7 @@ export async function performDiff ({runDirectory, results}) {
     return {status: "error", reason: reasons.join(" ")};
   }
 
-  const stage5Diff = diffStage5Modules(stage5Legacy.data, stage5Ts.data);
+  const stage4Diff = diffStage5Modules(stage4Legacy.data, stage4Ts.data);
   const statsDiff = diffStats(statsLegacy.data, statsTs.data);
   const reportsDiff = diffReports({
     markdownLegacy: markdownLegacy.data,
@@ -428,13 +428,13 @@ export async function performDiff ({runDirectory, results}) {
   });
 
   const summary = {
-    stage5: stage5Diff,
+    stage4: stage4Diff,
     stats: statsDiff,
     reports: reportsDiff
   };
 
-  const hasDifferences = Boolean(stage5Diff.hasDifferences || statsDiff.hasDifferences || reportsDiff.hasDifferences);
-  const hasWarnings = Boolean(stage5Diff.hasWarnings || statsDiff.hasWarnings || reportsDiff.hasWarnings);
+  const hasDifferences = Boolean(stage4Diff.hasDifferences || statsDiff.hasDifferences || reportsDiff.hasDifferences);
+  const hasWarnings = Boolean(stage4Diff.hasWarnings || statsDiff.hasWarnings || reportsDiff.hasWarnings);
 
   const diffJsonPath = path.join(runDirectory, DIFF_OUTPUT_FILES.json);
   const diffMarkdownPath = path.join(runDirectory, DIFF_OUTPUT_FILES.markdown);
