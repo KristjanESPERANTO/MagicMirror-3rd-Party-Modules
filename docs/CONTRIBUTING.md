@@ -4,7 +4,18 @@ Welcome! This document bundles the day-to-day tasks contributors perform when wo
 
 ## Local setup
 
+### Prerequisites
+
+- **Node.js**: Current Node.js version (LTS or later) is required.
+- **Git**: Ensure Git is installed and available in your path.
+
+### Installation
+
+Clone the repository and install dependencies:
+
 ```bash
+git clone https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules.git
+cd MagicMirror-3rd-Party-Modules
 npm install
 ```
 
@@ -31,8 +42,15 @@ The orchestrator CLI (`node --run pipeline` or `node scripts/orchestrator/index.
 - Execute the full pipeline with `node scripts/orchestrator/index.js run full-refresh`.
 - Target subsets of stages (for example, `node scripts/orchestrator/index.js run --only=check-modules`).
 - Inspect the available stages with `list`/`describe` or review artifacts via `logs`.
+- Output machine-readable logs with `--json-logs` for integration with other tools.
 
 Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) for detailed usage examples, command options, and troubleshooting tips.
+
+### Pipeline Tips
+
+- **Skip heavy stages**: When working on metadata parsing (Stage 4) or website generation, use `--skip=get-modules,check-modules` to avoid the time-consuming clone and analysis steps.
+- **Focus on one stage**: Use `--only=<stage-id>` to run a single stage in isolation. For example, `node scripts/orchestrator/index.js run --only=update-repository-data`.
+- **Check logs**: If a run fails, use `node scripts/orchestrator/index.js logs` to list recent runs, and `node scripts/orchestrator/index.js logs <run-file>` to view details.
 
 ### Stage details
 
@@ -227,3 +245,29 @@ Golden artifacts are reference outputs stored in `fixtures/golden/` that serve a
 - [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – command reference for partial runs, diagnostics, and logs.
 - [`fixtures/README.md`](../fixtures/README.md) – curated dataset and validation troubleshooting.
 - [`docs/pipeline/shared-defs-scope.md`](pipeline/shared-defs-scope.md) – plan for consolidating shared JSON Schema `$defs` (task P1.6).
+
+### Troubleshooting
+
+#### Common Issues
+
+**Linting Errors**
+
+The project enforces strict linting rules. If your build fails due to linting:
+
+1.  Run `npm run lint:fix` to automatically fix formatting and simple errors.
+2.  Manually resolve any remaining issues reported by the linter.
+
+**Schema Validation Failures**
+
+If `node --run release:validate` fails:
+
+1.  Check the error message to identify which file violates the schema.
+2.  If you modified the schema, regenerate fixtures: `node --run fixtures:generate`.
+3.  If you modified code that generates data, ensure the output matches the schema definitions in `pipeline/schemas/`.
+
+**Rate Limiting**
+
+The pipeline makes many requests to GitHub/GitLab. If you hit rate limits:
+
+- Ensure you have a valid `GITHUB_TOKEN` in your environment (though the pipeline tries to work without one, a token significantly increases limits).
+- The built-in rate limiter handles backoff automatically, but extreme usage might still trigger temporary bans. Wait a few minutes and try again.
