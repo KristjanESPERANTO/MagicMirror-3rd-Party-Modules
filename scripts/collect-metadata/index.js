@@ -60,6 +60,26 @@ async function fetchMarkdown () {
 }
 
 /**
+ * Load the previous modules data to use as fallback.
+ */
+function loadPreviousModules () {
+  const previousPath = path.join("website", "data", "modules.json");
+  if (fs.existsSync(previousPath)) {
+    try {
+      const content = fs.readFileSync(previousPath, "utf8");
+      const data = JSON.parse(content);
+      // Handle both array and object wrapper formats
+      const modules = Array.isArray(data) ? data : data.modules || [];
+      logger.info(`Loaded ${modules.length} modules from previous run for fallback.`);
+      return new Map(modules.map((module) => [module.url, module]));
+    } catch (error) {
+      logger.warn("Failed to load previous modules.json", {error: error.message});
+    }
+  }
+  return new Map();
+}
+
+/**
  * Fetch metadata for a batch of GitHub repositories using GraphQL.
  */
 async function fetchGitHubBatch (modules) {
@@ -128,14 +148,153 @@ async function fetchGitHubBatch (modules) {
 }
 
 /**
+ * Helper to apply fallback data from previous run if available.
+ */
+function getFallbackOrOriginal (module, previousModulesMap) {
+  const previousModule = previousModulesMap.get(module.url);
+  if (previousModule) {
+    return {
+      ...module,
+      stars: previousModule.stars,
+      license: previousModule.license,
+      hasGithubIssues: previousModule.hasGithubIssues,
+      isArchived: previousModule.isArchived
+    };
+  }
+  return module;
+}
+
+/**
+ * Helper to fetch individual repository data.
+ */
+async function fetchIndividualModule (module, repoType, client) {
+  try {
+    const {response, data, branchData} = await fetchRepositoryData(module, client);
+
+    if (response && !response.ok) {
+      throw new Error(`API Error: ${response.status} ${response.statusText || ""}`);
+    }
+
+    const normalized = normalizeRepositoryData(data, branchData, repoType);
+    return {success: true, data: normalized};
+  } catch (error) {
+    return {success: false, error};
+  }
+}
+
+/**
+ * Process a single module: check cache, queue for batch, or fetch individually.
+ * Returns the enriched module or null if queued for batch processing.
+ */
+async function processModule (module, context) {
+  const {
+    previousModulesMap,
+    circuitBreaker,
+    stats,
+    githubModulesToFetch,
+    client
+  } = context;
+
+  const repoId = getRepositoryId(module.url);
+  const cachedEntry = repositoryCache.get(repoId);
+
+  if (!FORCE_REFRESH && cachedEntry) {
+    stats.hits += 1;
+    if (cachedEntry.value.isFailed) {
+      const fallback = getFallbackOrOriginal(module, previousModulesMap);
+      if (fallback !== module) {
+        stats.fallbacks += 1;
+      }
+      return fallback;
+    }
+    return {
+      ...module,
+      ...cachedEntry.value
+    };
+  }
+
+  stats.misses += 1;
+
+  if (circuitBreaker.stopFetching) {
+    const fallback = getFallbackOrOriginal(module, previousModulesMap);
+    if (fallback !== module) {
+      stats.fallbacks += 1;
+    }
+    return fallback;
+  }
+
+  const repoType = getRepositoryType(module.url);
+  if (repoType === "github" && process.env.GITHUB_TOKEN) {
+    githubModulesToFetch.push(module);
+    return null;
+  }
+
+  // Fetch individual (non-GitHub or no token)
+  const {success, data, error} = await fetchIndividualModule(module, repoType, client);
+
+  if (success) {
+    circuitBreaker.recordSuccess();
+    repositoryCache.set(repoId, data);
+    return {
+      ...module,
+      ...data
+    };
+  }
+
+  logger.warn(`Failed to fetch metadata for ${module.name}`, {url: module.url, error: error.message});
+  circuitBreaker.recordError(error);
+
+  if (!circuitBreaker.stopFetching) {
+    logger.info(`Using fallback data for ${module.name}`);
+  }
+
+  const fallback = getFallbackOrOriginal(module, previousModulesMap);
+  if (fallback !== module) {
+    stats.fallbacks += 1;
+  }
+
+  // Cache negative result
+  repositoryCache.set(repoId, {isFailed: true, error: error.message}, NEGATIVE_CACHE_TTL_MS);
+  stats.errors += 1;
+  return fallback;
+}
+
+/**
  * Enrich the module list with repository metadata.
  */
-async function enrichModules (modules) {
+async function enrichModules (modules, previousModulesMap) {
   const enrichedModules = [];
   const githubModulesToFetch = [];
-  const stats = {hits: 0, misses: 0, errors: 0};
+  const stats = {hits: 0, misses: 0, errors: 0, fallbacks: 0};
   let processedCount = 0;
   const totalModules = modules.length;
+
+  const circuitBreaker = {
+    consecutive403Errors: 0,
+    stopFetching: false,
+    recordError (error) {
+      if (error.message.includes("403")) {
+        this.consecutive403Errors += 1;
+        if (this.consecutive403Errors >= 5) {
+          logger.warn("Rate limit hit (403) multiple times. Stopping further API requests and using fallback data.");
+          this.stopFetching = true;
+        }
+      } else {
+        this.consecutive403Errors = 0;
+      }
+    },
+    recordSuccess () {
+      this.consecutive403Errors = 0;
+    }
+  };
+
+  const context = {
+    previousModulesMap,
+    circuitBreaker,
+    stats,
+    githubModulesToFetch,
+    client: httpClient
+  };
 
   /*
    * 1. Check cache and separate GitHub modules for batching
@@ -146,43 +305,9 @@ async function enrichModules (modules) {
       logger.info(`Processed ${processedCount}/${totalModules} modules (Cache/Pre-sort)...`);
     }
 
-    const repoId = getRepositoryId(module.url);
-    const cachedEntry = repositoryCache.get(repoId);
-
-    if (!FORCE_REFRESH && cachedEntry) {
-      stats.hits += 1;
-      if (cachedEntry.value.isFailed) {
-        enrichedModules.push(module); // Use original without metadata
-      } else {
-        enrichedModules.push({
-          ...module,
-          ...cachedEntry.value
-        });
-      }
-    } else {
-      stats.misses += 1;
-      const repoType = getRepositoryType(module.url);
-      if (repoType === "github" && process.env.GITHUB_TOKEN) {
-        githubModulesToFetch.push(module);
-      } else {
-        // Fetch individual (non-GitHub or no token)
-        try {
-          const {data, branchData} = await fetchRepositoryData(module, httpClient);
-          const normalized = normalizeRepositoryData(data, branchData, repoType);
-
-          repositoryCache.set(repoId, normalized);
-          enrichedModules.push({
-            ...module,
-            ...normalized
-          });
-        } catch (error) {
-          logger.warn(`Failed to fetch metadata for ${module.name}`, {url: module.url, error: error.message});
-          // Cache negative result
-          repositoryCache.set(repoId, {isFailed: true, error: error.message}, NEGATIVE_CACHE_TTL_MS);
-          enrichedModules.push(module); // Keep original without metadata
-          stats.errors += 1;
-        }
-      }
+    const result = await processModule(module, context);
+    if (result) {
+      enrichedModules.push(result);
     }
   }
 
@@ -208,9 +333,16 @@ async function enrichModules (modules) {
           });
         } else {
           logger.warn(`No data returned for ${module.name} in batch`, {url: module.url});
+
+          const fallback = getFallbackOrOriginal(module, previousModulesMap);
+          if (fallback !== module) {
+            logger.info(`Using fallback data for ${module.name} (batch failure)`);
+            stats.fallbacks += 1;
+          }
+          enrichedModules.push(fallback);
+
           // Cache negative result
           repositoryCache.set(repoId, {isFailed: true, error: "Not found in GraphQL batch"}, NEGATIVE_CACHE_TTL_MS);
-          enrichedModules.push(module);
           stats.errors += 1;
         }
       }
@@ -229,27 +361,18 @@ async function main () {
       logger.warn("GITHUB_TOKEN is not set. Rate limits will be strict and processing may be slow.");
     }
 
-    // 1. Fetch & Parse
-    await repositoryCache.load();
     const markdown = await fetchMarkdown();
-    const {modules, issues} = parseModuleList(markdown);
-
+    const {modules} = parseModuleList(markdown);
     logger.info(`Parsed ${modules.length} modules from Wiki.`);
-    if (issues.length > 0) {
-      logger.warn(`Encountered ${issues.length} issues during parsing.`, {issues});
-    }
 
-    // 2. Enrich
-    const enrichedModules = await enrichModules(modules);
+    const previousModulesMap = loadPreviousModules();
+    const enrichedModules = await enrichModules(modules, previousModulesMap);
 
-    // 3. Output
-    const outputPath = path.join("website", "data", "modules.stage.2.json"); // Overwrite Stage 2 output directly
+    const outputPath = path.join("website", "data", "modules.stage.2.json");
     fs.writeFileSync(outputPath, JSON.stringify(enrichedModules, null, 2));
-
-    await repositoryCache.flush();
     logger.info(`Successfully wrote ${enrichedModules.length} modules to ${outputPath}`);
   } catch (error) {
-    logger.error("Metadata collection failed", {error: error.message, stack: error.stack});
+    logger.error("Metadata collection failed", {error: error.message});
     process.exit(1);
   }
 }
