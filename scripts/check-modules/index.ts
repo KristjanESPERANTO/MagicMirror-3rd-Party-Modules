@@ -32,6 +32,13 @@ import {
   findMissingDependencies,
   shouldAnalyzeFileForDependencyUsage
 } from "./dependency-usage.js";
+import {
+  loadModuleCache,
+  saveModuleCache,
+  getCachedResult,
+  setCachedResult,
+  pruneCacheEntries
+} from "./module-cache.js";
 
 const execFileAsync = promisify(execFile);
 
@@ -80,6 +87,7 @@ const MODULES_MIN_PATH = envOverrides.modulesMinPath
 const STATS_PATH = envOverrides.statsPath
   ? path.resolve(envOverrides.statsPath)
   : path.join(DATA_DIR, "stats.json");
+const MODULE_CACHE_PATH = path.join(DATA_DIR, "moduleCache.json");
 const RUNS_ROOT = envOverrides.runsDir
   ? path.resolve(envOverrides.runsDir)
   : path.join(PROJECT_ROOT, ".pipeline-runs", "check-modules");
@@ -1245,6 +1253,14 @@ async function main() {
 
   logger.info(`Starting analysis for ${totalModules} modules...`);
 
+  // Load module result cache for incremental checking
+  const moduleCache = await loadModuleCache(MODULE_CACHE_PATH);
+  const activeModuleIds = modules.map((m) => m.id);
+  pruneCacheEntries(moduleCache, activeModuleIds);
+
+  let cacheHits = 0;
+  let cacheMisses = 0;
+
   const runStartedAt = new Date();
   let runContext = null;
   try {
@@ -1350,37 +1366,77 @@ async function main() {
       module.issues = false;
       handledOutdated = true;
     } else {
-      if (module.isArchived) {
-        module.defaultSortWeight += 800;
-        addIssue(
-          moduleIssues,
-          "Module is archived, but not marked as outdated in the official module list."
-        );
-      } else if (!module.name.startsWith("MMM-") && module.name !== "mmpm") {
-        addIssue(
-          moduleIssues,
-          "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
-        );
-      }
+      // Try to use cached result for incremental checking
+      const cachedResult = await getCachedResult(
+        module, // Pass full module object (with id and url)
+        moduleDir,
+        PROJECT_ROOT,
+        moduleCache
+      );
 
-      // Check if main JS file exists with matching module name
-      if (module.name !== "mmpm") {
-        const mainJsPath = path.join(moduleDir, `${module.name}.js`);
-        const mainJsExists = await pathExists(mainJsPath);
-        if (!mainJsExists) {
-          const rule = getRuleById("legacy-main-js-mismatch");
-          if (rule) {
-            addIssue(moduleIssues, rule.description);
+      if (cachedResult) {
+        // Cache hit! Reuse previous analysis
+        cacheHits += 1;
+        moduleIssues = Array.isArray(cachedResult.issues)
+          ? cachedResult.issues.slice()
+          : [];
+        module.issues = moduleIssues;
+
+        // Restore image flag from cache if available
+        if (typeof cachedResult.hasImage === "boolean") {
+          if (cachedResult.hasImage && !module.image) {
+            stats.modulesWithImageCounter += 1;
           }
         }
-      }
+      } else {
+        // Cache miss - perform full analysis
+        cacheMisses += 1;
 
-      await analyzeModule({
-        module,
-        moduleDir,
-        issues: moduleIssues,
-        config: checkGroupConfig
-      });
+        if (module.isArchived) {
+          module.defaultSortWeight += 800;
+          addIssue(
+            moduleIssues,
+            "Module is archived, but not marked as outdated in the official module list."
+          );
+        } else if (!module.name.startsWith("MMM-") && module.name !== "mmpm") {
+          addIssue(
+            moduleIssues,
+            "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
+          );
+        }
+
+        // Check if main JS file exists with matching module name
+        if (module.name !== "mmpm") {
+          const mainJsPath = path.join(moduleDir, `${module.name}.js`);
+          const mainJsExists = await pathExists(mainJsPath);
+          if (!mainJsExists) {
+            const rule = getRuleById("legacy-main-js-mismatch");
+            if (rule) {
+              addIssue(moduleIssues, rule.description);
+            }
+          }
+        }
+
+        await analyzeModule({
+          module,
+          moduleDir,
+          issues: moduleIssues,
+          config: checkGroupConfig
+        });
+
+        // Cache the result for next run
+        await setCachedResult(
+          module, // Pass full module object (with id and url)
+          moduleDir,
+          PROJECT_ROOT,
+          {
+            issues: moduleIssues.slice(),
+            recommendations: [], // Could be extracted if needed
+            hasImage: Boolean(module.image)
+          },
+          moduleCache
+        );
+      }
     }
 
     if (!handledOutdated) {
@@ -1433,6 +1489,9 @@ async function main() {
 
   await writeOutputs({ data: sanitizedData, stats, summaries: issueSummaries });
 
+  // Save module cache for next run
+  await saveModuleCache(MODULE_CACHE_PATH, moduleCache);
+
   const finishedAt = new Date();
   let summaryPath = null;
   if (runContext && runContext.directory) {
@@ -1452,6 +1511,15 @@ async function main() {
   logger.info(
     `${stats.moduleCounter} modules analyzed. For results see file result.md.`
   );
+
+  // Report cache statistics
+  const cacheTotal = cacheHits + cacheMisses;
+  if (cacheTotal > 0) {
+    const cacheHitRate = ((cacheHits / cacheTotal) * 100).toFixed(1);
+    logger.info(
+      `Incremental checking: ${cacheHits} cached (${cacheHitRate}%), ${cacheMisses} analyzed`
+    );
+  }
 
   if (summaryPath) {
     logger.info(

@@ -30,6 +30,13 @@
       "description": "Cached repository metadata fetched from GitHub/GitLab/Bitbucket/Codeberg APIs."
     },
     {
+      "id": "module-result-cache",
+      "type": "file",
+      "path": "website/data/moduleCache.json",
+      "format": "json",
+      "description": "Cached analysis results per module for incremental checking (P3.1.5)."
+    },
+    {
       "id": "modules-stage-2",
       "type": "file",
       "path": "website/data/modules.stage.2.json",
@@ -307,6 +314,11 @@
         {
           "artifact": "cloned-modules",
           "mode": "read"
+        },
+        {
+          "artifact": "module-result-cache",
+          "mode": "read",
+          "optional": true
         }
       ],
       "outputs": [
@@ -324,6 +336,10 @@
         },
         {
           "artifact": "stats-json",
+          "mode": "write"
+        },
+        {
+          "artifact": "module-result-cache",
           "mode": "write"
         }
       ],
