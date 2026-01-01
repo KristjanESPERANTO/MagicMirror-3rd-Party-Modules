@@ -167,17 +167,6 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-air-raid-monitor-ua",
-    "category": "News / Information",
-    "url": "https://github.com/PavlenkoM/MMM-air-raid-monitor-ua",
-    "id": "PavlenkoM/MMM-air-raid-monitor-ua",
-    "maintainer": "PavlenkoM",
-    "maintainerURL": "https://github.com/PavlenkoM",
-    "description": "Shows the current status of air raid sirens in Ukraine.",
-    "issues": [],
-    "stars": 7
-  },
-  {
     "name": "MMM-AirbarHelper",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/ryanzor/MMM-AirbarHelper",
@@ -1528,10 +1517,10 @@
   {
     "name": "MMM-Caltrain",
     "category": "Transport / Travel",
-    "url": "https://github.com/zzhenney/MMM-Caltrain",
-    "id": "zzhenney/MMM-Caltrain",
-    "maintainer": "zzhenney",
-    "maintainerURL": "https://github.com/zzhenney",
+    "url": "https://github.com/zzflops/MMM-Caltrain",
+    "id": "zzflops/MMM-Caltrain",
+    "maintainer": "zzflops",
+    "maintainerURL": "https://github.com/zzflops",
     "description": "Display departure times or estimated time to departure for the selected Caltrain station.",
     "issues": [],
     "stars": 0
@@ -4595,7 +4584,7 @@
     "maintainerURL": "https://github.com/Eunanibus",
     "description": "Displays a rotating globe constructed of Hexadecimal shapes specifically formatted to look great on a MagicMirror.",
     "issues": [],
-    "stars": 47,
+    "stars": 48,
     "license": "MIT"
   },
   {
@@ -4728,7 +4717,7 @@
     "maintainerURL": "https://github.com/clegallic",
     "description": "Slideshow of photos stored in Google Drive.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "license": "MIT"
   },
   {
@@ -5286,6 +5275,18 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ambarusa/MMM-HomeAssistant",
+    "id": "ambarusa/MMM-HomeAssistant",
+    "maintainer": "ambarusa",
+    "maintainerURL": "https://github.com/ambarusa",
+    "description": "Turn your MagicMirror² into a MQTT device with Home Assistant autodiscovery.",
+    "issues": [],
+    "stars": 29,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -5305,18 +5306,6 @@
     "description": "Display information out of HomeAssistant.",
     "issues": [],
     "stars": 3,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ambarusa/MMM-HomeAssistant",
-    "id": "ambarusa/MMM-HomeAssistant",
-    "maintainer": "ambarusa",
-    "maintainerURL": "https://github.com/ambarusa",
-    "description": "Turn your MagicMirror² into a MQTT device with Home Assistant autodiscovery.",
-    "issues": [],
-    "stars": 29,
     "license": "MIT"
   },
   {
@@ -6060,17 +6049,6 @@
     "stars": 1
   },
   {
-    "name": "MMM-IQAir",
-    "category": "Weather",
-    "url": "https://github.com/PavlenkoM/MMM-IQAir",
-    "id": "PavlenkoM/MMM-IQAir",
-    "maintainer": "PavlenkoM",
-    "maintainerURL": "https://github.com/PavlenkoM",
-    "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
-    "issues": [],
-    "stars": 1
-  },
-  {
     "name": "MMM-IronManGIF",
     "category": "Entertainment / Misc",
     "url": "https://github.com/2hdlockness/MMM-IronManGIF",
@@ -6501,10 +6479,10 @@
   {
     "name": "MMM-KVV-Trias",
     "category": "Transport / Travel",
-    "url": "https://github.com/ZeroTwoWeeb/MMM-KVV-Trias",
-    "id": "ZeroTwoWeeb/MMM-KVV-Trias",
-    "maintainer": "ZeroTwoWeeb",
-    "maintainerURL": "https://github.com/ZeroTwoWeeb",
+    "url": "https://github.com/jkobber/MMM-KVV-Trias",
+    "id": "jkobber/MMM-KVV-Trias",
+    "maintainer": "jkobber",
+    "maintainerURL": "https://github.com/jkobber",
     "description": "Show Station Data for stations in the Karlsruhe Region pulled from the KVV Trias API.",
     "issues": [],
     "stars": 0,
@@ -6839,7 +6817,7 @@
     "id": "schlomm/MMM-LogfileViewer",
     "maintainer": "schlomm",
     "maintainerURL": "https://github.com/schlomm",
-    "description": "Monitor your system logs, application logs, or any text file with live updates and beautiful log-level color coding as a MagicMirror Module.",
+    "description": "Monitor your system logs, application logs, or any text file with live updates and beautiful log-level color coding.",
     "issues": [],
     "stars": 1,
     "license": "MIT"
@@ -7083,6 +7061,28 @@
     "license": "MIT"
   },
   {
+    "name": "MagicMirror-air-raid-monitor-ua",
+    "category": "News / Information",
+    "url": "https://github.com/PavlenkoM/MagicMirror-air-raid-monitor-ua",
+    "id": "PavlenkoM/MagicMirror-air-raid-monitor-ua",
+    "maintainer": "PavlenkoM",
+    "maintainerURL": "https://github.com/PavlenkoM",
+    "description": "Shows the current status of air raid sirens in Ukraine.",
+    "issues": [],
+    "stars": 7
+  },
+  {
+    "name": "MagicMirror-IQAir",
+    "category": "Weather",
+    "url": "https://github.com/PavlenkoM/MagicMirror-IQAir",
+    "id": "PavlenkoM/MagicMirror-IQAir",
+    "maintainer": "PavlenkoM",
+    "maintainerURL": "https://github.com/PavlenkoM",
+    "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
+    "issues": [],
+    "stars": 1
+  },
+  {
     "name": "MagicMirror-Module-Template",
     "category": "Outdated Modules",
     "url": "https://github.com/roramirez/MagicMirror-Module-Template",
@@ -7321,7 +7321,7 @@
     "maintainerURL": "https://github.com/zanix",
     "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT"
   },
   {
@@ -8034,7 +8034,7 @@
     "maintainerURL": "https://github.com/NolanKingdon",
     "description": "Presents the real-time moon phase.",
     "issues": [],
-    "stars": 67,
+    "stars": 68,
     "license": "MIT"
   },
   {
@@ -12970,18 +12970,6 @@
   {
     "name": "MMM-Sonos",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/matskkolstad/MMM-Sonos",
-    "id": "matskkolstad/MMM-Sonos",
-    "maintainer": "matskkolstad",
-    "maintainerURL": "https://github.com/matskkolstad",
-    "description": "Automatically discovers your Sonos groups and shows rich now-playing cards with album art, grouping, and layout controls.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-Sonos",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/CFenner/MMM-Sonos",
     "id": "CFenner/MMM-Sonos",
     "maintainer": "CFenner",
@@ -13002,6 +12990,18 @@
     "issues": [],
     "stars": 18,
     "license": "Apache-2.0"
+  },
+  {
+    "name": "MMM-Sonos",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/matskkolstad/MMM-Sonos",
+    "id": "matskkolstad/MMM-Sonos",
+    "maintainer": "matskkolstad",
+    "maintainerURL": "https://github.com/matskkolstad",
+    "description": "Automatically discovers your Sonos groups and shows rich now-playing cards with album art, grouping, and layout controls.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-SORT",
@@ -13429,7 +13429,7 @@
     "id": "TAGinside/MMM-Synology-Download_Station",
     "maintainer": "TAGinside",
     "maintainerURL": "https://github.com/TAGinside",
-    "description": "Display Synology Download Station tasks. Auto-hide when no tasks",
+    "description": "Display Synology Download Station tasks. Auto-hide when no tasks.",
     "issues": [],
     "stars": 1,
     "license": "NOASSERTION"
@@ -13718,7 +13718,7 @@
     "maintainerURL": "https://github.com/denverquane",
     "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker.",
     "issues": [],
-    "stars": 57,
+    "stars": 58,
     "license": "MIT"
   },
   {
@@ -13944,7 +13944,7 @@
     "maintainerURL": "https://github.com/bendardenne",
     "description": "Show a map of a given area with TomTom traffic information.",
     "issues": [],
-    "stars": 14,
+    "stars": 15,
     "license": "MIT"
   },
   {
