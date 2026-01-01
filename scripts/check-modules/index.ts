@@ -1356,9 +1356,12 @@ async function main() {
 
     module.defaultSortWeight = 0;
 
+    // Extract owner from module.id (format: "owner/repo") for directory lookup
+    // The directory is named using the GitHub username from the id, not the maintainer display name
+    const owner = module.id.split("/")[0];
     const moduleDir = path.join(
       MODULES_DIR,
-      `${module.name}-----${module.maintainer}`
+      `${module.name}-----${owner}`
     );
     await getLastCommitDate(module, moduleDir);
     if (!module.lastCommit) {
