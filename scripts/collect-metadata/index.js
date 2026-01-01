@@ -24,7 +24,9 @@ const logger = createLogger({name: "collect-metadata"});
 const WIKI_URL = "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md";
 const REPOSITORY_CACHE_PATH = path.join("website", "data", "cache", "repository-api-cache.json");
 const REPOSITORY_CACHE_TTL_MS = 1000 * 60 * 60 * 24 * 3; // 3 days
+const NEGATIVE_CACHE_TTL_MS = 1000 * 60 * 60 * 24; // 1 day
 const GITHUB_GRAPHQL_BATCH_SIZE = 100;
+const FORCE_REFRESH = process.env.FORCE_REFRESH === "true";
 
 // Initialize services
 const rateLimiter = createRateLimiter({
@@ -131,20 +133,34 @@ async function fetchGitHubBatch (modules) {
 async function enrichModules (modules) {
   const enrichedModules = [];
   const githubModulesToFetch = [];
+  const stats = {hits: 0, misses: 0, errors: 0};
+  let processedCount = 0;
+  const totalModules = modules.length;
 
   /*
    * 1. Check cache and separate GitHub modules for batching
-   * 1. Check cache and separate GitHub modules for batching
    */
   for (const module of modules) {
+    processedCount += 1;
+    if (processedCount % 50 === 0) {
+      logger.info(`Processed ${processedCount}/${totalModules} modules (Cache/Pre-sort)...`);
+    }
+
     const repoId = getRepositoryId(module.url);
     const cachedEntry = repositoryCache.get(repoId);
-    if (cachedEntry) {
-      enrichedModules.push({
-        ...module,
-        ...cachedEntry.value
-      });
+
+    if (!FORCE_REFRESH && cachedEntry) {
+      stats.hits += 1;
+      if (cachedEntry.value.isFailed) {
+        enrichedModules.push(module); // Use original without metadata
+      } else {
+        enrichedModules.push({
+          ...module,
+          ...cachedEntry.value
+        });
+      }
     } else {
+      stats.misses += 1;
       const repoType = getRepositoryType(module.url);
       if (repoType === "github" && process.env.GITHUB_TOKEN) {
         githubModulesToFetch.push(module);
@@ -161,7 +177,10 @@ async function enrichModules (modules) {
           });
         } catch (error) {
           logger.warn(`Failed to fetch metadata for ${module.name}`, {url: module.url, error: error.message});
+          // Cache negative result
+          repositoryCache.set(repoId, {isFailed: true, error: error.message}, NEGATIVE_CACHE_TTL_MS);
           enrichedModules.push(module); // Keep original without metadata
+          stats.errors += 1;
         }
       }
     }
@@ -177,9 +196,10 @@ async function enrichModules (modules) {
 
       for (const module of chunk) {
         const repoData = batchResults[module.url];
+        const repoId = getRepositoryId(module.url);
+
         if (repoData) {
           const normalized = normalizeRepositoryData(repoData, null, "github");
-          const repoId = getRepositoryId(module.url);
 
           repositoryCache.set(repoId, normalized);
           enrichedModules.push({
@@ -188,18 +208,26 @@ async function enrichModules (modules) {
           });
         } else {
           logger.warn(`No data returned for ${module.name} in batch`, {url: module.url});
+          // Cache negative result
+          repositoryCache.set(repoId, {isFailed: true, error: "Not found in GraphQL batch"}, NEGATIVE_CACHE_TTL_MS);
           enrichedModules.push(module);
+          stats.errors += 1;
         }
       }
     }
   }
 
+  logger.info("Metadata collection stats", stats);
   return enrichedModules;
 }
 
 async function main () {
   try {
     logger.info("Starting unified metadata collection...");
+
+    if (!process.env.GITHUB_TOKEN) {
+      logger.warn("GITHUB_TOKEN is not set. Rate limits will be strict and processing may be slow.");
+    }
 
     // 1. Fetch & Parse
     await repositoryCache.load();

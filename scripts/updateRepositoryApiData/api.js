@@ -90,50 +90,48 @@ export async function fetchRepositoryData (module, httpClient, env = process.env
 
 // Function to normalize API responses from different hosting services
 export function normalizeRepositoryData (data, branchData, repoType) {
-  const common = {
-    archived: data.archived ?? false,
-    disabled: data.disabled ?? false,
-    defaultBranch: data.default_branch ?? data.mainbranch?.name ?? "main"
-  };
+  const isArchived = data.archived ?? data.isArchived ?? false;
+
+  /*
+   * Const isDisabled = data.disabled ?? data.isDisabled ?? false; // Not in schema
+   * const defaultBranch = data.default_branch ?? data.defaultBranchRef?.name ?? data.mainbranch?.name ?? "main"; // Not in schema
+   */
+
+  let stars = 0;
+  let license;
+  let hasGithubIssues = false;
+  // Let lastCommit = null; // Not in schema
 
   switch (repoType) {
     case "github":
-      return {
-        ...common,
-        issues: data.open_issues,
-        stars: data.stargazers_count,
-        license: data.license?.spdx_id ?? null,
-        has_issues: data.has_issues,
-        lastCommit: branchData?.commit?.author?.date ?? null
-      };
+      stars = data.stargazers_count ?? data.stargazerCount ?? 0;
+      license = data.license?.spdx_id ?? data.licenseInfo?.spdxId;
+      hasGithubIssues = data.has_issues ?? data.hasIssuesEnabled ?? false;
+      // LastCommit = branchData?.commit?.author?.date ?? data.pushedAt ?? null;
+      break;
     case "gitlab":
-      return {
-        ...common,
-        issues: data.open_issues_count,
-        stars: data.star_count,
-        license: null,
-        has_issues: data.issues_enabled,
-        lastCommit: branchData?.committed_date ?? null
-      };
+      stars = data.star_count ?? 0;
+      hasGithubIssues = data.issues_enabled ?? false;
+      // LastCommit = branchData?.committed_date ?? null;
+      break;
     case "bitbucket":
-      return {
-        ...common,
-        issues: 0,
-        stars: data.watchers_count ?? 0,
-        license: data.license?.key ?? null,
-        has_issues: data.has_issues,
-        lastCommit: branchData?.date ?? null
-      };
+      stars = data.watchers_count ?? 0;
+      license = data.license?.key;
+      hasGithubIssues = data.has_issues ?? false;
+      // LastCommit = branchData?.date ?? null;
+      break;
     case "codeberg":
-      return {
-        ...common,
-        issues: data.open_issues_count,
-        stars: data.stars_count,
-        license: data.licenses?.[0] ?? null,
-        has_issues: data.has_issues,
-        lastCommit: branchData?.commit?.author?.date ?? null
-      };
-    default:
-      return common;
+      stars = data.stars_count ?? 0;
+      license = data.licenses?.[0];
+      hasGithubIssues = data.has_issues ?? false;
+      // LastCommit = branchData?.commit?.author?.date ?? null;
+      break;
   }
+
+  return {
+    stars,
+    license,
+    hasGithubIssues,
+    isArchived
+  };
 }

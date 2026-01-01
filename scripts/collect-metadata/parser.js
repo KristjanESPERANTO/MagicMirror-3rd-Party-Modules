@@ -1,4 +1,4 @@
-import {getRepositoryType} from "../updateRepositoryApiData/helpers.js";
+import {getRepositoryId, getRepositoryType} from "../updateRepositoryApiData/helpers.js";
 
 /**
  * Parse the Markdown content into a list of module objects.
@@ -28,23 +28,49 @@ export function parseModuleList (markdown) {
         const repoMatch = repoCell.match(/\[(.*?)\]\((.*?)\)/u);
 
         if (repoMatch) {
-          const url = repoMatch[2].trim();
-          const name = repoMatch[1].trim(); // Use the link text as the name initially
-          const description = parts[2] || "";
-          const maintainer = parts[3] || "";
+          let url = repoMatch[2].trim();
+          // Remove title from URL if present
+          const urlTitleStart = url.indexOf(" ");
+          if (urlTitleStart !== -1) {
+            url = url.substring(0, urlTitleStart);
+          }
 
-          // Basic validation
+          const name = repoMatch[1].trim(); // Use the link text as the name initially
+          const maintainerCell = parts[2] || "";
+          const description = parts[3] || "";
+
+          let maintainer = maintainerCell;
+          let maintainerURL = "";
+
+          const maintainerMatch = maintainerCell.match(/\[(.*?)\]\((.*?)\)/u);
+          if (maintainerMatch) {
+            maintainer = maintainerMatch[1].trim();
+            maintainerURL = maintainerMatch[2].trim();
+            // Remove title from URL if present (e.g. "URL "Title"")
+            const titleStart = maintainerURL.indexOf(" ");
+            if (titleStart !== -1) {
+              maintainerURL = maintainerURL.substring(0, titleStart);
+            }
+          }
+
+          /*
+           * ...existing code...
+           * Basic validation
+           */
           const repoType = getRepositoryType(url);
           if (repoType === "unknown") {
             issues.push(`Skipping unknown repository type: ${url}`);
           } else {
+            const id = getRepositoryId(url) || name.replace(/\s+/gu, "-");
             modules.push({
               name,
               url,
+              id,
               description,
               maintainer,
+              maintainerURL: maintainerURL || url, // Fallback to repo URL if missing
               category,
-              source: "wiki"
+              issues: []
             });
           }
         }
