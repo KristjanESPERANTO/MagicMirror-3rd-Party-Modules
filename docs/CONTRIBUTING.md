@@ -23,15 +23,14 @@ npm install
 
 You can run each stage individually or rely on the helper commands registered in `package.json`:
 
-| Stage | Command                           | Purpose                                                                         |
-| ----- | --------------------------------- | ------------------------------------------------------------------------------- |
-| 1     | `node --run createModuleList`     | Derive the baseline list from the wiki.                                         |
-| 2     | `node --run updateRepositoryData` | Enrich the list with repository metadata (stars, topics, etc.).                 |
-| 3     | `node --run getModules`           | Clone the repositories locally for deeper inspection.                           |
-| 4     | `node --run expandModuleList`     | Parse `package.json`, pick screenshots, and compute derived metadata.           |
-| 5     | `node --run checkModulesJs`       | Run the JavaScript-based checks against the cloned repositories.                |
-| 6     | `node --run checkModules`         | Run the deep TypeScript analysis that emits README/package insights and stats.  |
-| —     | `node --run all`                  | Convenience wrapper that executes the full chain in order via the orchestrator. |
+| Stage | Command                       | Purpose                                                                         |
+| ----- | ----------------------------- | ------------------------------------------------------------------------------- |
+| 1+2   | `node --run collectMetadata`  | Derive the baseline list from the wiki and enrich it with repository metadata.  |
+| 3     | `node --run getModules`       | Clone the repositories locally for deeper inspection.                           |
+| 4     | `node --run expandModuleList` | Parse `package.json`, pick screenshots, and compute derived metadata.           |
+| 5     | `node --run checkModulesJs`   | Run the JavaScript-based checks against the cloned repositories.                |
+| 6     | `node --run checkModules`     | Run the deep TypeScript analysis that emits README/package insights and stats.  |
+| —     | `node --run all`              | Convenience wrapper that executes the full chain in order via the orchestrator. |
 
 Heavy stages (`getModules`, `checkModules`) download hundreds of repositories and can take more than 10 minutes. When iterating on faster tasks (Stages 1–2 or 4), feel free to skip the expensive steps or rely on `--only` to target specific stages.
 
@@ -49,18 +48,14 @@ Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) f
 ### Pipeline Tips
 
 - **Skip heavy stages**: When working on metadata parsing (Stage 4) or website generation, use `--skip=get-modules,check-modules` to avoid the time-consuming clone and analysis steps.
-- **Focus on one stage**: Use `--only=<stage-id>` to run a single stage in isolation. For example, `node scripts/orchestrator/index.js run --only=update-repository-data`.
+- **Focus on one stage**: Use `--only=<stage-id>` to run a single stage in isolation. For example, `node scripts/orchestrator/index.js run --only=collect-metadata`.
 - **Check logs**: If a run fails, use `node scripts/orchestrator/index.js logs` to list recent runs, and `node scripts/orchestrator/index.js logs <run-file>` to view details.
 
 ### Stage details
 
-#### Stage 1 – `create_module_list.js`
+#### Stage 1+2 – `collect-metadata/index.js`
 
-Reads the official wiki list of third-party modules and converts it into the Stage 1 JSON snapshot. This is the authoritative source for module names, categories, and Git URLs.
-
-#### Stage 2 – `updateRepositoryApiData.js`
-
-Fetches metadata (stars, topics, default branch, etc.) from the hosting service (GitHub/GitLab). The output augments the Stage 1 snapshot with repository insights that downstream stages reuse.
+Reads the official wiki list of third-party modules and fetches metadata (stars, topics, default branch, etc.) from the hosting service (GitHub/GitLab). The output is the enriched Stage 2 snapshot that downstream stages reuse.
 
 #### Stage 3 – `get-modules.ts`
 

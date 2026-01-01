@@ -8,13 +8,12 @@ The production pipeline is orchestrated via `node scripts/orchestrator/index.js 
 
 ### Stage overview
 
-| Order | Stage ID                 | Runtime    | Key outputs                                                                                                  |
-| ----- | ------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------ |
-| 1     | `create-module-list`     | Node.js    | `website/data/modules.stage.1.json`                                                                          |
-| 2     | `update-repository-data` | Node.js    | `website/data/modules.stage.2.json`, `website/data/gitHubData.json`                                          |
-| 3     | `get-modules`            | TypeScript | `website/data/modules.stage.3.json`, `modules/`, `modules_temp/`                                             |
-| 4     | `expand-module-list`     | Node.js    | `website/data/modules.stage.4.json`, `website/images/`                                                       |
-| 5     | `check-modules`          | TypeScript | `website/data/modules.json`, `website/data/modules.min.json`, `website/data/stats.json`, `website/result.md` |
+| Order | Stage ID             | Runtime    | Key outputs                                                                                                  |
+| ----- | -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------ |
+| 1+2   | `collect-metadata`   | Node.js    | `website/data/modules.stage.2.json`, `website/data/gitHubData.json`                                          |
+| 3     | `get-modules`        | TypeScript | `website/data/modules.stage.3.json`, `modules/`, `modules_temp/`                                             |
+| 4     | `expand-module-list` | Node.js    | `website/data/modules.stage.4.json`, `website/images/`                                                       |
+| 5     | `check-modules`      | TypeScript | `website/data/modules.json`, `website/data/modules.min.json`, `website/data/stats.json`, `website/result.md` |
 
 ### Current workflow diagram
 
@@ -22,15 +21,10 @@ The production pipeline is orchestrated via `node scripts/orchestrator/index.js 
 flowchart TB
   orchestrator[[Orchestrator<br>Sequential execution]]
 
-  subgraph Stage 1: Create Module List
-    seed[("Module seed list")] --> create{{Create module list}}
-    create --> stage1["modules.stage.1.json"]
-  end
-
-  subgraph Stage 2: Update Repository Data
-    stage1 --> update{{Update repository data}}
-    update --> cache[("gitHubData.json cache")]
-    update --> stage2["modules.stage.2.json"]
+  subgraph Stage 1+2: Metadata Collection
+    seed[("Module seed list")] --> collect{{Collect metadata}}
+    collect --> cache[("gitHubData.json cache")]
+    collect --> stage2["modules.stage.2.json"]
   end
 
   subgraph Stage 3: Get Modules
@@ -50,8 +44,7 @@ flowchart TB
     analyze --> outputs[("modules.json<br>modules.min.json<br>stats.json<br>result.md")]
   end
 
-  orchestrator -.controls.-> create
-  orchestrator -.controls.-> update
+  orchestrator -.controls.-> collect
   orchestrator -.controls.-> fetch
   orchestrator -.controls.-> enrich
   orchestrator -.controls.-> analyze
