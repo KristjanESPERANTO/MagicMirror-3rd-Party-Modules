@@ -260,10 +260,11 @@ const RULE_DEFINITIONS = [
     patterns: [
       "uses: actions/checkout@v2",
       "uses: actions/checkout@v3",
-      "uses: actions/checkout@v4"
+      "uses: actions/checkout@v4",
+      "uses: actions/checkout@v5"
     ],
     category: "Recommendation",
-    description: "Upgrade workflows to use actions/checkout@v5."
+    description: "Upgrade workflows to use actions/checkout@v6."
   },
   {
     id: "text-recommend-actions-setup-node",

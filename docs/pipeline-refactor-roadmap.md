@@ -63,8 +63,8 @@ This document captures the long-term improvements we want to implement in the mo
 | P4.9  | ~~Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments~~ _(Misplaced: module developer guidance, not pipeline task)_                                                                               | P4.1         | M      |
 | P4.10 | Evaluate migrating the `ntl` task menu into a `pipeline` subcommand (interactive launcher built on the orchestrator CLI) _(low priority)_                                                                                                                | P1.2         | S      |
 | P4.11 | Extend the rule registry to cover every pipeline check stage (legacy JS script + future additions) ✅ Completed Oct 2025                                                                                                                                 | P4.1         | L      |
-| P4.R1 | Audit every rule in the registry for relevance and clarity                                                                                                                                                                                               | P4.11        | S      |
-| P4.R2 | Audit every recommendation in the registry for relevance and consistency                                                                                                                                                                                 | P4.11        | S      |
+| P4.R1 | Audit every rule in the registry for relevance and clarity ✅ Completed Dec 2025                                                                                                                                                                         | P4.11        | S      |
+| P4.R2 | Audit every recommendation in the registry for relevance and consistency ✅ Completed Dec 2025                                                                                                                                                           | P4.11        | S      |
 
 ### 5. Documentation & Collaboration
 
@@ -185,7 +185,7 @@ The core performance optimizations (P3.1.5, P3.7) are complete. Several P4.x tas
 
 #### Phase 5: Cleanup & Maintenance (Post-Migration)
 
-8. **P4.R1 & P4.R2** — Audit rule registry and recommendations for relevance and consistency. Quality check after migration is complete.
+8. **P4.R1 & P4.R2** — Audit rule registry and recommendations for relevance and consistency. Quality check after migration is complete. ✅ Completed Dec 2025
 
 ### Milestone 2: Toward 3-Phase Streaming Architecture (Future)
 
