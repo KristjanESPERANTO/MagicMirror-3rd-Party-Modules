@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 /* eslint-disable no-continue */
 
+import {basename, dirname, join, relative, resolve} from "node:path";
 import {buildExecutionPlan, loadStageGraph} from "./stage-graph.js";
+import {createLogger, createStageProgressLogger} from "../shared/logger.js";
+
 import {mkdir, writeFile} from "node:fs/promises";
 import {Command} from "commander";
-import {createStageProgressLogger} from "../shared/logger.js";
 import {execFile} from "node:child_process";
 import {fileURLToPath} from "node:url";
-import path from "node:path";
 import process from "node:process";
 import {promisify} from "node:util";
 import {registerAdditionalCommands} from "./cli-commands.js";
@@ -15,15 +16,15 @@ import {runStagesSequentially} from "./stage-executor.js";
 import {validateStageFile} from "../lib/schemaValidator.js";
 
 const currentFile = fileURLToPath(import.meta.url);
-const currentDir = path.dirname(currentFile);
-const PROJECT_ROOT = path.resolve(currentDir, "..", "..");
-const DEFAULT_GRAPH_PATH = path.join(PROJECT_ROOT, "pipeline", "stage-graph.json");
-const RUNS_DIRECTORY = path.join(PROJECT_ROOT, ".pipeline-runs");
+const currentDir = dirname(currentFile);
+const PROJECT_ROOT = resolve(currentDir, "..", "..");
+const DEFAULT_GRAPH_PATH = join(PROJECT_ROOT, "pipeline", "stage-graph.json");
+const RUNS_DIRECTORY = join(PROJECT_ROOT, ".pipeline-runs");
 const MIN_NODE_MAJOR_VERSION = 18;
 const execFileAsync = promisify(execFile);
 
 function getSchemaIdFromPath (schemaPath) {
-  const filename = path.basename(schemaPath);
+  const filename = basename(schemaPath);
   if (!filename.endsWith(".schema.json")) {
     return null;
   }
@@ -33,7 +34,7 @@ function getSchemaIdFromPath (schemaPath) {
 }
 
 function createArtifactValidator () {
-  return async (stage) => {
+  return async (stage, {logger} = {}) => {
     const outputs = stage.resolvedOutputs ?? [];
 
     for (const output of outputs) {
@@ -46,17 +47,33 @@ function createArtifactValidator () {
         const schemaId = getSchemaIdFromPath(artifact.schema);
 
         if (schemaId) {
-          const artifactPath = path.resolve(PROJECT_ROOT, artifact.path);
+          const artifactPath = resolve(PROJECT_ROOT, artifact.path);
 
           try {
             await validateStageFile(schemaId, artifactPath);
-            console.log(`   ↳ validated ${artifact.id} against ${schemaId}`);
+            if (logger && logger.format === "json") {
+              logger.info(`Validated ${artifact.id}`, {
+                event: "artifact_validated",
+                artifactId: artifact.id,
+                schemaId,
+                path: artifact.path
+              });
+            } else {
+              console.log(`   ↳ validated ${artifact.id} against ${schemaId}`);
+            }
           } catch (error) {
             if (error instanceof Error) {
               error.message = `Stage "${stage.id}" produced invalid artifact "${artifact.id}" (${artifact.path}):\n${error.message}`;
             }
             throw error;
           }
+        } else if (logger && logger.format === "json") {
+          logger.warn(`Skipping validation for artifact "${artifact.id}"`, {
+            event: "artifact_validation_skipped",
+            artifactId: artifact.id,
+            reason: "unsupported schema reference",
+            schema: artifact.schema
+          });
         } else {
           console.warn(`Skipping validation for artifact "${artifact.id}" — unsupported schema reference "${artifact.schema}".`);
         }
@@ -151,7 +168,7 @@ function buildRunRecordFilePath (startedAt, pipelineId) {
   const safePipelineId = sanitizePipelineIdForFilename(pipelineId);
   const filename = `${timestamp}_${safePipelineId}.json`;
 
-  return path.join(RUNS_DIRECTORY, filename);
+  return join(RUNS_DIRECTORY, filename);
 }
 
 function extractFailureDetails (failure) {
@@ -246,7 +263,7 @@ async function writePipelineRunRecord ({
   const durationMs = finishedAt - startedAt;
   const record = {
     pipelineId,
-    graphPath: path.relative(PROJECT_ROOT, graphPath),
+    graphPath: relative(PROJECT_ROOT, graphPath),
     filters,
     status,
     startedAt: new Date(startedAt).toISOString(),
@@ -277,28 +294,34 @@ async function writePipelineRunRecord ({
   }
 }
 
-async function runPipeline (pipelineId, {graphPath, filters} = {}) {
+async function runPipeline (pipelineId, {graphPath, filters, jsonLogs} = {}) {
   const graph = await loadStageGraph(graphPath);
   const {pipeline, stages} = buildExecutionPlan(graph, pipelineId);
-  const stageLogger = createStageProgressLogger();
+  const logFormat = jsonLogs ? "json" : process.env.LOG_FORMAT ?? "text";
+  const baseLogger = createLogger({name: "pipeline", format: logFormat});
+  const stageLogger = createStageProgressLogger(baseLogger);
   const validateArtifacts = createArtifactValidator();
   const normalizedFilters = normalizeStageFilters(filters);
   const {selectedStages, skippedStages} = applyStageFilters(stages, normalizedFilters);
 
-  console.log(`Running pipeline "${pipeline.id}" using graph ${path.relative(PROJECT_ROOT, graphPath)}\n`);
+  if (logFormat !== "json") {
+    console.log(`Running pipeline "${pipeline.id}" using graph ${relative(PROJECT_ROOT, graphPath)}\n`);
+  }
 
   if (normalizedFilters.only.length > 0 || normalizedFilters.skip.length > 0) {
-    console.log(`Filters applied — running ${selectedStages.length} of ${stages.length} stages.`);
+    if (logFormat !== "json") {
+      console.log(`Filters applied — running ${selectedStages.length} of ${stages.length} stages.`);
 
-    if (normalizedFilters.only.length > 0) {
-      console.log(`   --only: ${normalizedFilters.only.join(", ")}`);
+      if (normalizedFilters.only.length > 0) {
+        console.log(`   --only: ${normalizedFilters.only.join(", ")}`);
+      }
+
+      if (normalizedFilters.skip.length > 0) {
+        console.log(`   --skip: ${normalizedFilters.skip.join(", ")}`);
+      }
+
+      console.log("");
     }
-
-    if (normalizedFilters.skip.length > 0) {
-      console.log(`   --skip: ${normalizedFilters.skip.join(", ")}`);
-    }
-
-    console.log("");
   }
 
   const startedAt = Date.now();
@@ -306,7 +329,7 @@ async function runPipeline (pipelineId, {graphPath, filters} = {}) {
   try {
     const completedStages = await runStagesSequentially(selectedStages, {
       cwd: PROJECT_ROOT,
-      env: process.env,
+      env: {...process.env, LOG_FORMAT: logFormat},
       logger: stageLogger,
       validateArtifacts
     });
@@ -325,10 +348,19 @@ async function runPipeline (pipelineId, {graphPath, filters} = {}) {
       status: "success"
     });
 
-    console.log(`\nPipeline "${pipeline.id}" completed successfully.`);
+    if (logFormat === "json") {
+      baseLogger.info(`Pipeline "${pipeline.id}" completed successfully.`, {
+        event: "pipeline_succeed",
+        pipelineId: pipeline.id,
+        durationMs: finishedAt - startedAt,
+        runRecordPath: recordPath ? relative(PROJECT_ROOT, recordPath) : null
+      });
+    } else {
+      console.log(`\nPipeline "${pipeline.id}" completed successfully.`);
 
-    if (recordPath) {
-      console.log(`Run metadata saved to ${path.relative(PROJECT_ROOT, recordPath)}`);
+      if (recordPath) {
+        console.log(`Run metadata saved to ${relative(PROJECT_ROOT, recordPath)}`);
+      }
     }
   } catch (error) {
     const finishedAt = Date.now();
@@ -350,8 +382,16 @@ async function runPipeline (pipelineId, {graphPath, filters} = {}) {
       failure: error
     });
 
-    if (recordPath) {
-      console.log(`Run metadata saved to ${path.relative(PROJECT_ROOT, recordPath)}`);
+    if (logFormat === "json") {
+      baseLogger.error(`Pipeline execution failed: ${error instanceof Error ? error.message : error}`, {
+        event: "pipeline_fail",
+        pipelineId: pipeline.id,
+        durationMs: finishedAt - startedAt,
+        runRecordPath: recordPath ? relative(PROJECT_ROOT, recordPath) : null,
+        error: error instanceof Error ? error.message : String(error)
+      });
+    } else if (recordPath) {
+      console.log(`Run metadata saved to ${relative(PROJECT_ROOT, recordPath)}`);
     }
 
     throw error;
@@ -379,19 +419,23 @@ export async function main (argv = process.argv) {
     .option("-g, --graph <path>", "Path to the stage graph", DEFAULT_GRAPH_PATH)
     .option("--only <stageIds>", "Comma-separated list of stage ids to run exclusively", parseCommaSeparatedList, [])
     .option("--skip <stageIds>", "Comma-separated list of stage ids to skip", parseCommaSeparatedList, [])
+    .option("--json-logs", "Output logs in JSON format")
     .action(async (pipelineId, options) => {
-      const graphPath = path.resolve(options.graph);
+      const graphPath = resolve(options.graph);
       const selectedPipeline = pipelineId ?? "full-refresh";
       const filters = {
         only: options.only,
         skip: options.skip
       };
+      const jsonLogs = options.jsonLogs;
 
       try {
-        await runPipeline(selectedPipeline, {graphPath, filters});
+        await runPipeline(selectedPipeline, {graphPath, filters, jsonLogs});
       } catch (error) {
-        const message = error instanceof Error ? error.message : error;
-        console.error(`\nPipeline execution failed: ${message}`);
+        if (!jsonLogs) {
+          const message = error instanceof Error ? error.message : error;
+          console.error(`\nPipeline execution failed: ${message}`);
+        }
         process.exitCode = 1;
       }
     });

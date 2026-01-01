@@ -48,7 +48,7 @@ export async function runStagesSequentially (stages, {logger, cwd = process.cwd(
       await runStageProcess(stage.command, {cwd, env});
 
       if (validateArtifacts) {
-        await validateArtifacts(stage, {cwd});
+        await validateArtifacts(stage, {cwd, logger});
       }
     } catch (error) {
       logger?.fail?.(stage, {stepNumber, total, message, error});
