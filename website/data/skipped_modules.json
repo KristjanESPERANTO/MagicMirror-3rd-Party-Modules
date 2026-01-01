@@ -12,5 +12,17 @@
     "statusCode": 404,
     "statusText": "Not Found",
     "url": "https://github.com/alexBeuth/MMM-germanwordclock"
+  },
+  {
+    "description": "Show full screen slideshow in background using images from Synology Photos.",
+    "maintainer": "spydersoft-consulting",
+    "metadata": {
+      "category": "UNKNOWN",
+      "error": "Failed to clone repository https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow: git command failed (signal SIGTERM): git fetch origin --depth 1 --prune\nfatal: unable to access 'https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow/': Connection timed out after 300038 milliseconds",
+      "errorType": "clone_failure"
+    },
+    "name": "MMM-SynPhotoSlideshow",
+    "reason": "Repository clone failed - URL might be invalid or repository might be private/deleted",
+    "url": "https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow"
   }
 ]
