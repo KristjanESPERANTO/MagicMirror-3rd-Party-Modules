@@ -5501,7 +5501,7 @@
       "name": "MMM-EnvCanada",
       "packageJson": {
         "path": "./modules/MMM-EnvCanada-----CharlesMorris78/package.json",
-        "raw": "{\r\n  \"name\": \"mmm-envcanada\",\r\n  \"version\": \"2.0.1\",\r\n  \"type\": \"module\",\r\n  \"displayName\": \"MMM-EnvCanada\",\r\n  \"description\": \"MagicMirror² Module to display weather forecast information from Environment Canada. \",\r\n  \"main\": \"MMM-EnvCanada.js\",\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/CharlesMorris78/MMM-EnvCanada.git\"\r\n  },\r\n  \"keywords\": [\r\n    \"MagicMirror\",\r\n    \"Canada\",\r\n    \"Weather\",\r\n    \"Forecast\"\r\n  ],\r\n  \"author\": \"Charles Morris\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/CharlesMorris78/MMM-EnvCanada/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/CharlesMorris78/MMM-EnvCanada#readme\"\r\n}\r\n",
+        "raw": "{\r\n  \"name\": \"mmm-envcanada\",\r\n  \"version\": \"2.0.3\",\r\n  \"type\": \"module\",\r\n  \"displayName\": \"MMM-EnvCanada\",\r\n  \"description\": \"MagicMirror² Module to display weather forecast information from Environment Canada. \",\r\n  \"main\": \"MMM-EnvCanada.js\",\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/CharlesMorris78/MMM-EnvCanada.git\"\r\n  },\r\n  \"keywords\": [\r\n    \"MagicMirror\",\r\n    \"Canada\",\r\n    \"Weather\",\r\n    \"Forecast\"\r\n  ],\r\n  \"author\": \"Charles Morris\",\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/CharlesMorris78/MMM-EnvCanada/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/CharlesMorris78/MMM-EnvCanada#readme\"\r\n}\r\n",
         "status": "parsed",
         "summary": {
           "description": "MagicMirror² Module to display weather forecast information from Environment Canada. ",
@@ -5514,7 +5514,7 @@
           "license": "MIT",
           "name": "mmm-envcanada",
           "type": "module",
-          "version": "2.0.1"
+          "version": "2.0.3"
         },
         "warnings": []
       },
@@ -6238,43 +6238,6 @@
         "weather"
       ],
       "url": "https://github.com/ChrisF1976/MMM-Temp2IOT"
-    },
-    {
-      "category": "Transport / Travel",
-      "description": "Display live departures from public passenger transport service of the 'Verkehrsverbund Oberelbe' (VVO).",
-      "id": "ChristianGeie/MMM-PublicTransportVVO",
-      "image": "img-MMM-PublicTransportVVO_screenshot.jpg",
-      "license": "MIT",
-      "maintainer": "ChristianGeie",
-      "maintainerURL": "https://github.com/ChristianGeie",
-      "name": "MMM-PublicTransportVVO",
-      "packageJson": {
-        "path": "./modules/MMM-PublicTransportVVO-----ChristianGeie/package.json",
-        "raw": "{\n  \"name\": \"MMM-PublicTransportVVO\",\n  \"version\": \"1.0.0\",\n  \"description\": \"VVO Public transport module for MagicMirror 2.\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/ChristianGeie/MMM-PublicTransportVVO\"\n  },\n  \"keywords\": [\n    \"magic mirror\",\n    \"magic mirror 2\",\n    \"smart mirror\",\n    \"public transport\",\n    \"public transport vvo\",\n    \"public transport dresden\",\n    \"module\"\n  ],\n  \"author\": \"ChristianGeie\",\n  \"license\": \"MIT\",\n  \"homepage\": \"https://github.com/ChristianGeie/MMM-PublicTransportVVO#readme\"\n}\n",
-        "status": "parsed",
-        "summary": {
-          "description": "VVO Public transport module for MagicMirror 2.",
-          "keywords": [
-            "magic mirror",
-            "magic mirror 2",
-            "smart mirror",
-            "public transport",
-            "public transport vvo",
-            "public transport dresden",
-            "module"
-          ],
-          "license": "MIT",
-          "name": "MMM-PublicTransportVVO",
-          "version": "1.0.0"
-        },
-        "warnings": []
-      },
-      "tags": [
-        "public transport",
-        "public transport vvo",
-        "public transport dresden"
-      ],
-      "url": "https://github.com/ChristianGeie/MMM-PublicTransportVVO"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -7917,15 +7880,15 @@
       "name": "MMM-MyStandings",
       "packageJson": {
         "path": "./modules/MMM-MyStandings-----dathbe/package.json",
-        "raw": "{\n  \"name\": \"mmm-mystandings\",\n  \"version\": \"2.8.0\",\n  \"type\": \"commonjs\",\n  \"description\": \"A MagicMirror² module to display standings and rankings for your favorite leagues and divisions from many major sports, including Olympics.\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/dathbe/MMM-MyStandings.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Sports\",\n    \"Standings\",\n    \"Rankings\",\n    \"Medal Count\",\n    \"Olympics\",\n    \"NBA\",\n    \"WNBA\",\n    \"NCAA\",\n    \"NCAAM\",\n    \"NCAAW\",\n    \"Basketball\",\n    \"MLB\",\n    \"Baseball\",\n    \"NFL\",\n    \"NCAAF\",\n    \"CFL\",\n    \"Football\",\n    \"NHL\",\n    \"Hockey\",\n    \"MLS\",\n    \"NWSL\",\n    \"Soccer\",\n    \"Lacrosse\",\n    \"Rugby\"\n  ],\n  \"author\": \"vincep5\",\n  \"contributors\": [\n    \"vincep5\",\n    \"dathbe\",\n    \"KristjanESPERANTO\"\n  ],\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.31.0\",\n    \"@stylistic/eslint-plugin\": \"^5.2.0\",\n    \"eslint\": \"^9.31.0\",\n    \"globals\": \"^16.3.0\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-mystandings\",\n  \"version\": \"2.8.0\",\n  \"type\": \"commonjs\",\n  \"description\": \"A MagicMirror² module to display standings and rankings for your favorite leagues and divisions from many major sports, including Olympics.\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/dathbe/MMM-MyStandings.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Sports\",\n    \"Standings\",\n    \"Rankings\",\n    \"Medal Count\",\n    \"Olympics\",\n    \"NBA\",\n    \"WNBA\",\n    \"NCAA\",\n    \"NCAAM\",\n    \"NCAAW\",\n    \"Basketball\",\n    \"MLB\",\n    \"Baseball\",\n    \"NFL\",\n    \"NCAAF\",\n    \"CFL\",\n    \"Football\",\n    \"NHL\",\n    \"Hockey\",\n    \"MLS\",\n    \"NWSL\",\n    \"Soccer\",\n    \"Lacrosse\",\n    \"Rugby\"\n  ],\n  \"author\": \"vincep5\",\n  \"contributors\": [\n    \"vincep5\",\n    \"dathbe\",\n    \"KristjanESPERANTO\"\n  ],\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.37.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"eslint\": \"^9.37.0\",\n    \"globals\": \"^16.4.0\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "description": "A MagicMirror² module to display standings and rankings for your favorite leagues and divisions from many major sports, including Olympics.",
           "devDependencies": {
-            "@eslint/js": "^9.31.0",
-            "@stylistic/eslint-plugin": "^5.2.0",
-            "eslint": "^9.31.0",
-            "globals": "^16.3.0"
+            "@eslint/js": "^9.37.0",
+            "@stylistic/eslint-plugin": "^5.4.0",
+            "eslint": "^9.37.0",
+            "globals": "^16.4.0"
           },
           "keywords": [
             "MagicMirror",
@@ -8006,7 +7969,7 @@
       "name": "MMM-PGA",
       "packageJson": {
         "path": "./modules/MMM-PGA-----dathbe/package.json",
-        "raw": "{\n  \"name\": \"mmm-pga\",\n  \"version\": \"2.3.0\",\n  \"type\": \"commonjs\",\n  \"description\": \"A MagicMirror² module to display PGA leaderboards, tournaments, and rankings\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/dathbe/MMM-PGA.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Sports\",\n    \"PGA\",\n    \"Golf\"\n  ],\n  \"author\": \"mcl8on\",\n  \"contributors\": [\n    \"mcl8on\",\n    \"mumblebaj\",\n    \"dathbe\",\n    \"mattpclayton\"\n  ],\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"moment-timezone\": \"^0.6.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.36.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"eslint\": \"^9.36.0\",\n    \"globals\": \"^16.4.0\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-pga\",\n  \"version\": \"2.3.0\",\n  \"type\": \"commonjs\",\n  \"description\": \"A MagicMirror² module to display PGA leaderboards, tournaments, and rankings\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/dathbe/MMM-PGA.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Sports\",\n    \"PGA\",\n    \"Golf\"\n  ],\n  \"author\": \"mcl8on\",\n  \"contributors\": [\n    \"mcl8on\",\n    \"mumblebaj\",\n    \"dathbe\",\n    \"mattpclayton\"\n  ],\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"moment-timezone\": \"^0.6.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.37.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"eslint\": \"^9.37.0\",\n    \"globals\": \"^16.4.0\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -8014,9 +7977,9 @@
           },
           "description": "A MagicMirror² module to display PGA leaderboards, tournaments, and rankings",
           "devDependencies": {
-            "@eslint/js": "^9.36.0",
+            "@eslint/js": "^9.37.0",
             "@stylistic/eslint-plugin": "^5.4.0",
-            "eslint": "^9.36.0",
+            "eslint": "^9.37.0",
             "globals": "^16.4.0"
           },
           "keywords": [
@@ -8384,28 +8347,28 @@
       "name": "MMM-PublicTransportBerlin",
       "packageJson": {
         "path": "./modules/MMM-PublicTransportBerlin-----deg0nz/package.json",
-        "raw": "{\n  \"name\": \"mmm-publictransportberlin\",\n  \"version\": \"2.1.11\",\n  \"description\": \"Public transport module for MagicMirror² driven by BVG-Hafas data.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"module\",\n    \"public transport\",\n    \"Berlin\",\n    \"Brandenburg\"\n  ],\n  \"homepage\": \"https://github.com/deg0nz/MMM-PublicTransportBerlin\",\n  \"bugs\": {\n    \"url\": \"https://github.com/deg0nz/MMM-PublicTransportBerlin/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/deg0nz/MMM-PublicTransportBerlin\"\n  },\n  \"license\": \"MIT\",\n  \"author\": {\n    \"name\": \"deg0nz\",\n    \"email\": \"magicmirror@kayuk.de\",\n    \"url\": \"https://kayuk.de\"\n  },\n  \"contributors\": [\n    \"https://github.com/deg0nz/MMM-PublicTransportBerlin/graphs/contributors\"\n  ],\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo info for developers: husky is not installed.\",\n    \"query\": \"node ./convenience/query_stations.mjs bvg\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"dependencies\": {\n    \"dayjs\": \"^1.11.18\",\n    \"hafas-client\": \"^6.3.5\",\n    \"vbb-line-colors\": \"^1.0.5\",\n    \"vbb-short-station-name\": \"^1.0.1\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.11.1\",\n    \"@eslint/js\": \"^9.36.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.3.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.36.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\"\n  },\n  \"engines\": {\n    \"node\": \">=16\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-publictransportberlin\",\n  \"version\": \"2.1.11\",\n  \"description\": \"Public transport module for MagicMirror² driven by BVG-Hafas data.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"module\",\n    \"public transport\",\n    \"Berlin\",\n    \"Brandenburg\"\n  ],\n  \"homepage\": \"https://github.com/deg0nz/MMM-PublicTransportBerlin\",\n  \"bugs\": {\n    \"url\": \"https://github.com/deg0nz/MMM-PublicTransportBerlin/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/deg0nz/MMM-PublicTransportBerlin\"\n  },\n  \"license\": \"MIT\",\n  \"author\": {\n    \"name\": \"deg0nz\",\n    \"email\": \"magicmirror@kayuk.de\",\n    \"url\": \"https://kayuk.de\"\n  },\n  \"contributors\": [\n    \"https://github.com/deg0nz/MMM-PublicTransportBerlin/graphs/contributors\"\n  ],\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo info for developers: husky is not installed.\",\n    \"query\": \"node ./convenience/query_stations.mjs bvg\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"dependencies\": {\n    \"dayjs\": \"^1.11.19\",\n    \"hafas-client\": \"^6.3.6\",\n    \"vbb-line-colors\": \"^1.0.5\",\n    \"vbb-short-station-name\": \"^1.0.1\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.14.0\",\n    \"@eslint/js\": \"^9.39.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.5.0\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"cspell\": \"^9.2.2\",\n    \"eslint\": \"^9.39.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.5.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.6\",\n    \"prettier\": \"^3.6.2\"\n  },\n  \"engines\": {\n    \"node\": \">=16\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
-            "dayjs": "^1.11.18",
-            "hafas-client": "^6.3.5",
+            "dayjs": "^1.11.19",
+            "hafas-client": "^6.3.6",
             "vbb-line-colors": "^1.0.5",
             "vbb-short-station-name": "^1.0.1"
           },
           "description": "Public transport module for MagicMirror² driven by BVG-Hafas data.",
           "devDependencies": {
-            "@eslint/css": "^0.11.1",
-            "@eslint/js": "^9.36.0",
+            "@eslint/css": "^0.14.0",
+            "@eslint/js": "^9.39.0",
             "@eslint/json": "^0.13.2",
-            "@eslint/markdown": "^7.3.0",
-            "@stylistic/eslint-plugin": "^5.4.0",
-            "cspell": "^9.2.1",
-            "eslint": "^9.36.0",
+            "@eslint/markdown": "^7.5.0",
+            "@stylistic/eslint-plugin": "^5.5.0",
+            "cspell": "^9.2.2",
+            "eslint": "^9.39.0",
             "eslint-plugin-import-x": "^4.16.1",
-            "globals": "^16.4.0",
+            "globals": "^16.5.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.2.3",
+            "lint-staged": "^16.2.6",
             "prettier": "^3.6.2"
           },
           "engines": {
@@ -8524,7 +8487,7 @@
       "name": "MMM-Soliscloud",
       "packageJson": {
         "path": "./modules/MMM-Soliscloud-----dekinet/package.json",
-        "raw": "{\n  \"name\": \"mmm-soliscloud\",\n  \"version\": \"1.0.0\",\n  \"description\": \"MM module for Soliscloud API\",\n  \"main\": \"node_helper.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"postinstall\": \"./postinstall\"\n  },\n  \"author\": \"Matthew Lee\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"base-64\": \"^1.0.0\",\n    \"crypto\": \"^1.0.1\",\n    \"onoff\": \"latest\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Soliscloud\",\n    \"Solis\",\n    \"solar\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/dekinet/MMM-Soliscloud.git\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-soliscloud\",\n  \"version\": \"1.0.0\",\n  \"description\": \"MM module for Soliscloud API\",\n  \"main\": \"node_helper.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"postinstall\": \"./postinstall\"\n  },\n  \"author\": \"Matthew Lee\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"base-64\": \"^1.0.0\",\n    \"crypto\": \"^1.0.1\"\n  },\n  \"optionalDependencies\": {\n    \"onoff\": \"latest\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Soliscloud\",\n    \"Solis\",\n    \"solar\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/dekinet/MMM-Soliscloud.git\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -8541,6 +8504,9 @@
           ],
           "license": "MIT",
           "name": "mmm-soliscloud",
+          "optionalDependencies": {
+            "onoff": "latest"
+          },
           "scripts": {
             "postinstall": "./postinstall",
             "test": "echo \"Error: no test specified\" && exit 1"
@@ -10446,22 +10412,22 @@
       "name": "MMM-page-indicator",
       "packageJson": {
         "path": "./modules/MMM-page-indicator-----edward-shen/package.json",
-        "raw": "{\n  \"name\": \"mmm-page-indicator\",\n  \"version\": \"0.3.4\",\n  \"description\": \"A helper module for MagicMirror² to display what page you're on.\",\n  \"main\": \"MMM-page-indicator.js\",\n  \"type\": \"module\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/edward-shen/MMM-page-indicator.git\"\n  },\n  \"keywords\": [\n    \"Pages\",\n    \"Slides\"\n  ],\n  \"author\": \"Edward Shen\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/edward-shen/MMM-page-indicator/issues\"\n  },\n  \"homepage\": \"https://github.com/edward-shen/MMM-page-indicator#readme\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.11.1\",\n    \"@eslint/js\": \"^9.36.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.3.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.36.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-page-indicator\",\n  \"version\": \"0.3.5\",\n  \"description\": \"A helper module for MagicMirror² to display what page you're on.\",\n  \"main\": \"MMM-page-indicator.js\",\n  \"type\": \"module\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/edward-shen/MMM-page-indicator.git\"\n  },\n  \"keywords\": [\n    \"Pages\",\n    \"Slides\"\n  ],\n  \"author\": \"Edward Shen\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/edward-shen/MMM-page-indicator/issues\"\n  },\n  \"homepage\": \"https://github.com/edward-shen/MMM-page-indicator#readme\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.13.0\",\n    \"@eslint/js\": \"^9.38.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.4.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.38.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.4\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "description": "A helper module for MagicMirror² to display what page you're on.",
           "devDependencies": {
-            "@eslint/css": "^0.11.1",
-            "@eslint/js": "^9.36.0",
+            "@eslint/css": "^0.13.0",
+            "@eslint/js": "^9.38.0",
             "@eslint/json": "^0.13.2",
-            "@eslint/markdown": "^7.3.0",
+            "@eslint/markdown": "^7.4.0",
             "@stylistic/eslint-plugin": "^5.4.0",
             "cspell": "^9.2.1",
-            "eslint": "^9.36.0",
+            "eslint": "^9.38.0",
             "eslint-plugin-import-x": "^4.16.1",
             "globals": "^16.4.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.2.3",
+            "lint-staged": "^16.2.4",
             "prettier": "^3.6.2"
           },
           "keywords": [
@@ -10478,7 +10444,7 @@
             "test:spelling": "cspell ."
           },
           "type": "module",
-          "version": "0.3.4"
+          "version": "0.3.5"
         },
         "warnings": []
       },
@@ -12315,6 +12281,34 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays daily artwork from The Metropolitan Museum of Art's public collection. Transform your mirror into a digital art gallery that showcases masterpieces from one of the world's most prestigious museums.",
+      "id": "flightlesstux/MMM-DailyMetArt",
+      "image": "screenshot.jpg",
+      "license": "MIT",
+      "maintainer": "flightlesstux",
+      "maintainerURL": "https://github.com/flightlesstux",
+      "name": "MMM-DailyMetArt",
+      "packageJson": {
+        "path": "./modules/MMM-DailyMetArt-----flightlesstux/package.json",
+        "raw": "{\n  \"name\": \"MMM-DailyMetArt\",\n  \"version\": \"1.0.1\",\n  \"description\": \"Daily artwork from The Met Collection API for MagicMirror²\",\n  \"author\": \"Ercan\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"node-fetch\": \"^2.6.9\"\n  }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "node-fetch": "^2.6.9"
+          },
+          "description": "Daily artwork from The Met Collection API for MagicMirror²",
+          "license": "MIT",
+          "name": "MMM-DailyMetArt",
+          "version": "1.0.1"
+        },
+        "warnings": [
+          "No repository field."
+        ]
+      },
+      "url": "https://github.com/flightlesstux/MMM-DailyMetArt"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Directly cast from the MagicMirror² server to a chromecast.",
       "id": "flo80/MMM-chromecast",
       "license": "MIT",
@@ -13055,6 +13049,58 @@
     },
     {
       "category": "Sports",
+      "description": "Displays your teams next fixture and a summary of the fastest/shrtest driving route from your Lat/Lon to the match venue. Uses the free Tom Tom API. Works for most Soccer teams.",
+      "id": "gitgitaway/MMM-MyTeams-DriveToMatch",
+      "image": "screenshots-CelticMM-Screenshot.jpg",
+      "license": "MIT",
+      "maintainer": "gitgitaway",
+      "maintainerURL": "https://github.com/gitgitaway",
+      "name": "MMM-MyTeams-DriveToMatch",
+      "packageJson": {
+        "path": "./modules/MMM-MyTeams-DriveToMatch-----gitgitaway/package.json",
+        "raw": "{\r\n  \"name\": \"mmm-myteams-drivetomatch\",\r\n  \"version\": \"1.4.3\",\r\n  \"description\": \"MagicMirror² module showing driving routes to your team's next fixture with real-time traffic via TomTom API\",\r\n  \"main\": \"MMM-MyTeams-DriveToMatch.js\",\r\n  \"scripts\": {\r\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\r\n  },\r\n  \"keywords\": [\r\n    \"football\",\r\n    \"soccer\",\r\n    \"traffic\",\r\n    \"TomTom\",\r\n    \"fixtures\",\r\n    \"European football\",\r\n    \"driving routes\",\r\n    \"MyTeams\",\r\n    \"Celtic FC\"\r\n  ],\r\n  \"author\": \"gitgitaway\",\r\n  \"license\": \"MIT\",\r\n  \"dependencies\": {\r\n    \"cheerio\": \"^1.1.2\",\r\n    \"node-fetch\": \"^2.7.0\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/gitgitaway/MMM-MyTeams-DriveToMatch.git\"\r\n  },\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/gitgitaway/MMM-MyTeams-DriveToMatch/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/gitgitaway/MMM-MyTeams-DriveToMatch#readme\"\r\n}\r\n\r\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "cheerio": "^1.1.2",
+            "node-fetch": "^2.7.0"
+          },
+          "description": "MagicMirror² module showing driving routes to your team's next fixture with real-time traffic via TomTom API",
+          "keywords": [
+            "football",
+            "soccer",
+            "traffic",
+            "TomTom",
+            "fixtures",
+            "European football",
+            "driving routes",
+            "MyTeams",
+            "Celtic FC"
+          ],
+          "license": "MIT",
+          "name": "mmm-myteams-drivetomatch",
+          "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+          },
+          "version": "1.4.3"
+        },
+        "warnings": []
+      },
+      "tags": [
+        "football",
+        "soccer",
+        "traffic",
+        "tomtom",
+        "fixtures",
+        "european football",
+        "driving routes",
+        "myteams",
+        "celtic fc"
+      ],
+      "url": "https://github.com/gitgitaway/MMM-MyTeams-DriveToMatch"
+    },
+    {
+      "category": "Sports",
       "description": "Displays upcoming fixtures for all leagues that your team is participating in and allows you to have an automated cycling display of \"All\" or \"Home\" or \"Away\" fixtures.",
       "id": "gitgitaway/MMM-MyTeams-Fixtures",
       "image": "screenshots-AllFixtures.jpg",
@@ -13140,16 +13186,19 @@
       "category": "Sports",
       "description": "Displays League Tables for most Major Soccer Leagues and allows you to have an automated cycling display of te leauges you wish to follow.",
       "id": "gitgitaway/MMM-MyTeams-LeagueTable",
-      "image": "screenshots-celticmm-screenshot.jpg",
+      "image": "screenshots-screenshot-1.jpg",
       "license": "MIT",
       "maintainer": "gitgitaway",
       "maintainerURL": "https://github.com/gitgitaway",
       "name": "MMM-MyTeams-LeagueTable",
       "packageJson": {
         "path": "./modules/MMM-MyTeams-LeagueTable-----gitgitaway/package.json",
-        "raw": "{\r\n  \"name\": \"MMM-MyTeams-LeagueTable\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"A MagicMirror² module to display the current SPFL (Scottish Professional Football League) standings\",\r\n  \"main\": \"MMM-MyTeams-LeagueTable.js\",\r\n  \"keywords\": [\r\n    \"European Leagues\",\r\n    \"module\",\r\n    \"SPFL\",\r\n    \"EPL\",\r\n    \"football\",\r\n    \"soccer\",\r\n    \"league table\",\r\n    \"standings\",\r\n    \"sports\"\r\n  ],\r\n  \"author\": {\r\n    \"name\": \"Assistant\",\r\n    \"email\": \"assistant@example.com\"\r\n  },\r\n  \"license\": \"MIT\",\r\n  \"homepage\": \"https://github.com/gitgitaway/MMM-MyTeams-LeagueTable\",\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/gitgitaway/MMM-MyTeams-LeagueTable.git\"\r\n  },\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/gitgitaway/MMM-MyTeams-LeagueTable/issues\"\r\n  },\r\n  \"engines\": {\r\n    \"node\": \">=14.0.0\"\r\n  },\r\n  \"dependencies\": {},\r\n  \"devDependencies\": {\r\n    \"eslint\": \"^8.0.0\",\r\n    \"prettier\": \"^2.0.0\"\r\n  },\r\n  \"scripts\": {\r\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\r\n    \"lint\": \"eslint *.js\",\r\n    \"format\": \"prettier --write *.js *.json *.md\"\r\n  },\r\n  \"magicmirror\": {\r\n    \"moduleName\": \"MMM-MyTeams-LeagueTable\",\r\n    \"moduleVersion\": \"1.0.0\",\r\n    \"requiredVersion\": \"2.1.0\"\r\n  }\r\n\r\n}\r\n",
+        "raw": "{\r\n  \"name\": \"MMM-MyTeams-LeagueTable\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"A MagicMirror² module to display the current SPFL (Scottish Professional Football League) standings\",\r\n  \"main\": \"MMM-MyTeams-LeagueTable.js\",\r\n  \"keywords\": [\r\n    \"MagicMirror\",\r\n    \"module\",\r\n    \"SPFL\",\r\n    \"Scottish Premier League\",\r\n    \"football\",\r\n    \"soccer\",\r\n    \"league table\",\r\n    \"standings\",\r\n    \"sports\",\r\n    \"Celtic\"\r\n  ],\r\n  \"author\": {\r\n    \"name\": \"gitgitaway\",\r\n    \"email\": \" \"\r\n  },\r\n  \"license\": \"MIT\",\r\n  \"homepage\": \"https://github.com/gitgitaway/MMM-MyTeams-LeagueTable\",\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/gitgitaway/MMM-MyTeams-LeagueTable.git\"\r\n  },\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/gitgitaway/MMM-MyTeams-LeagueTable/issues\"\r\n  },\r\n  \"engines\": {\r\n    \"node\": \">=14.0.0\"\r\n  },\r\n  \"dependencies\": {\r\n    \"node-fetch\": \"^2.7.0\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"eslint\": \"^8.0.0\",\r\n    \"prettier\": \"^2.0.0\"\r\n  },\r\n  \"scripts\": {\r\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\r\n    \"lint\": \"eslint *.js\",\r\n    \"format\": \"prettier --write *.js *.json *.md\"\r\n  },\r\n  \"magicmirror\": {\r\n    \"moduleName\": \"MMM-MyTeams-LeagueTable\",\r\n    \"moduleVersion\": \"1.0.0\",\r\n    \"requiredVersion\": \"2.1.0\"\r\n  }\r\n}\r\n",
         "status": "parsed",
         "summary": {
+          "dependencies": {
+            "node-fetch": "^2.7.0"
+          },
           "description": "A MagicMirror² module to display the current SPFL (Scottish Professional Football League) standings",
           "devDependencies": {
             "eslint": "^8.0.0",
@@ -13159,15 +13208,16 @@
             "node": ">=14.0.0"
           },
           "keywords": [
-            "European Leagues",
+            "MagicMirror",
             "module",
             "SPFL",
-            "EPL",
+            "Scottish Premier League",
             "football",
             "soccer",
             "league table",
             "standings",
-            "sports"
+            "sports",
+            "Celtic"
           ],
           "license": "MIT",
           "name": "MMM-MyTeams-LeagueTable",
@@ -13181,14 +13231,14 @@
         "warnings": []
       },
       "tags": [
-        "european leagues",
         "spfl",
-        "epl",
+        "scottish premier league",
         "football",
         "soccer",
         "league table",
         "standings",
-        "sports"
+        "sports",
+        "celtic"
       ],
       "url": "https://github.com/gitgitaway/MMM-MyTeams-LeagueTable"
     },
@@ -14037,14 +14087,14 @@
       "category": "Education",
       "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
       "id": "HeikoGr/MMM-Webuntis",
-      "image": "screenshot.jpg",
+      "image": "screenshot-grid.jpg",
       "license": "MIT",
       "maintainer": "HeikoGr",
       "maintainerURL": "https://github.com/HeikoGr",
       "name": "MMM-Webuntis",
       "packageJson": {
         "path": "./modules/MMM-Webuntis-----HeikoGr/package.json",
-        "raw": "{\n  \"name\": \"mmm-webuntis\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/HeikoGr/MMM-Webuntis\"\n  },\n  \"version\": \"0.2.2\",\n  \"description\": \"MagicMirror module to access Webunits school timetables.\",\n  \"main\": \"MMM-Webuntis.js\",\n  \"keywords\": [\n    \"magicmirror\",\n    \"webuntis\"\n  ],\n  \"author\": \"Thomas Schneider. HeikoGr\",\n  \"license\": \"MIT\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\",\n    \"check\": \"node check.js ../../config/config.js\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"dependencies\": {\n    \"webuntis\": \"^2.2.1\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.11.0\",\n    \"@eslint/js\": \"^9.34.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"@stylistic/eslint-plugin\": \"^5.2.3\",\n    \"cspell\": \"^9.2.0\",\n    \"eslint\": \"^9.34.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.1.5\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-webuntis\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/HeikoGr/MMM-Webuntis\"\n  },\n  \"version\": \"0.4.0\",\n  \"description\": \"MagicMirror module to access Webunits school timetables.\",\n  \"main\": \"MMM-Webuntis.js\",\n  \"keywords\": [\n    \"magicmirror\",\n    \"webuntis\"\n  ],\n  \"author\": \"Thomas Schneider. HeikoGr\",\n  \"license\": \"MIT\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\",\n    \"check\": \"node check.js ../../config/config.js\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"dependencies\": {\n    \"webuntis\": \"^2.2.1\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.14.0\",\n    \"@eslint/js\": \"^9.38.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.5.0\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"cspell\": \"^9.2.2\",\n    \"eslint\": \"^9.38.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.6\",\n    \"otplib\": \"^12.0.1\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -14052,17 +14102,18 @@
           },
           "description": "MagicMirror module to access Webunits school timetables.",
           "devDependencies": {
-            "@eslint/css": "^0.11.0",
-            "@eslint/js": "^9.34.0",
+            "@eslint/css": "^0.14.0",
+            "@eslint/js": "^9.38.0",
             "@eslint/json": "^0.13.2",
-            "@eslint/markdown": "^7.2.0",
-            "@stylistic/eslint-plugin": "^5.2.3",
-            "cspell": "^9.2.0",
-            "eslint": "^9.34.0",
+            "@eslint/markdown": "^7.5.0",
+            "@stylistic/eslint-plugin": "^5.5.0",
+            "cspell": "^9.2.2",
+            "eslint": "^9.38.0",
             "eslint-plugin-import-x": "^4.16.1",
-            "globals": "^16.3.0",
+            "globals": "^16.4.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.1.5",
+            "lint-staged": "^16.2.6",
+            "otplib": "^12.0.1",
             "prettier": "^3.6.2"
           },
           "keywords": [
@@ -14079,7 +14130,7 @@
             "test:spelling": "cspell ."
           },
           "type": "commonjs",
-          "version": "0.2.2"
+          "version": "0.4.0"
         },
         "warnings": []
       },
@@ -14950,6 +15001,44 @@
       "url": "https://github.com/Iketaki/MMM-WebView"
     },
     {
+      "category": "Transport / Travel",
+      "description": "Displays some of your Hyundai's data on your mirror.",
+      "id": "ilenhart/MMM-Bluelinky2",
+      "image": "preview.jpg",
+      "license": "MIT",
+      "maintainer": "ilenhart",
+      "maintainerURL": "https://github.com/ilenhart",
+      "name": "MMM-Bluelinky2",
+      "packageJson": {
+        "path": "./modules/MMM-Bluelinky2-----ilenhart/package.json",
+        "raw": "{\n  \"name\": \"mmm-bluelinky2\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A simple MagicMirror module for bluelink Hyundai cars, adapted from MMM-Bluelinky\",\n  \"main\": \"MMM-Bluelinky2.js\",\n  \"scripts\": {\n    \"test\": \"jest\",\n    \"test:watch\": \"jest --watch\"\n  },\n  \"author\": \"Isaac Lenhart\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {\n    \"jest\": \"^29.7.0\",\n    \"@babel/core\": \"^7.23.9\",\n    \"@babel/preset-env\": \"^7.23.9\",\n    \"babel-jest\": \"^29.7.0\"\n  },\n  \"dependencies\": {\n    \"bluelinky\": \"^9.1.0\"\n  }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "bluelinky": "^9.1.0"
+          },
+          "description": "A simple MagicMirror module for bluelink Hyundai cars, adapted from MMM-Bluelinky",
+          "devDependencies": {
+            "@babel/core": "^7.23.9",
+            "@babel/preset-env": "^7.23.9",
+            "babel-jest": "^29.7.0",
+            "jest": "^29.7.0"
+          },
+          "license": "ISC",
+          "name": "mmm-bluelinky2",
+          "scripts": {
+            "test": "jest",
+            "test:watch": "jest --watch"
+          },
+          "version": "1.0.0"
+        },
+        "warnings": [
+          "No repository field."
+        ]
+      },
+      "url": "https://github.com/ilenhart/MMM-Bluelinky2"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Displays upcoming trash collection dates for Vestfold kommune.",
       "id": "ilsegs/MMM-VESAR",
@@ -15435,7 +15524,7 @@
       "name": "MMM-MagicReplicator",
       "packageJson": {
         "path": "./modules/MMM-MagicReplicator-----ivlovric/package.json",
-        "raw": "{\n  \"name\": \"MMM-MagicReplicator\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Display Recipes collection as cards from local file or Paprika recipe app\",\n  \"keywords\": [\n    \"Recipes\",\n    \"Paprika app\",\n    \"Kitchen\",\n    \"Cooking\"\n  ],\n  \"main\": \"MMM-MagicReplicator.js\",\n  \"author\": \"\",\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"grunt\": \"latest\",\n    \"grunt-eslint\": \"latest\",\n    \"grunt-jsonlint\": \"latest\",\n    \"grunt-markdownlint\": \"^1.0.13\",\n    \"grunt-stylelint\": \"latest\",\n    \"grunt-yamllint\": \"latest\",\n    \"stylelint-config-standard\": \"latest\",\n    \"time-grunt\": \"latest\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/ivlovric/MMM-MagicReplicator\"\n  },\n  \"dependencies\": {\n    \"async\": \"^3.2.5\",\n    \"paprika-api\": \"^1.0.3\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"MMM-MagicReplicator\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Display Recipes collection as cards from local file or Paprika recipe app\",\n  \"keywords\": [\n    \"Recipes\",\n    \"Paprika app\",\n    \"Kitchen\",\n    \"Cooking\"\n  ],\n  \"main\": \"MMM-MagicReplicator.js\",\n  \"author\": \"Ivica Lovric\",\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"grunt\": \"latest\",\n    \"grunt-eslint\": \"latest\",\n    \"grunt-jsonlint\": \"latest\",\n    \"grunt-markdownlint\": \"^1.0.13\",\n    \"grunt-stylelint\": \"latest\",\n    \"grunt-yamllint\": \"latest\",\n    \"stylelint-config-standard\": \"latest\",\n    \"time-grunt\": \"latest\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/ivlovric/MMM-MagicReplicator\"\n  },\n  \"dependencies\": {\n    \"async\": \"^3.2.5\",\n    \"paprika-api\": \"^1.0.3\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -16281,7 +16370,7 @@
       "name": "MMM-FTP-image",
       "packageJson": {
         "path": "./modules/MMM-FTP-image-----jboucly/package.json",
-        "raw": "{\n\t\"name\": \"mmm-ftp-image\",\n\t\"version\": \"1.0.4\",\n\t\"description\": \"Shows images from FTP server\",\n\t\"main\": \"MMM-FTP-image.js\",\n\t\"author\": \"jboucly\",\n\t\"license\": \"ISC\",\n\t\"dependencies\": {\n\t\t\"base64-stream\": \"^1.0.0\",\n\t\t\"concat-stream\": \"^2.0.0\",\n\t\t\"ftp\": \"^0.3.10\"\n\t}\n}\n",
+        "raw": "{\n\t\"name\": \"mmm-ftp-image\",\n\t\"version\": \"1.0.4\",\n\t\"description\": \"Shows images from FTP server\",\n\t\"main\": \"MMM-FTP-image.js\",\n\t\"author\": \"jboucly\",\n\t\"license\": \"ISC\",\n\t\"keywords\": [\n\t\t\"ftp\",\n\t\t\"media\",\n\t\t\"smart-home\",\n\t\t\"mirror\",\n\t\t\"magic-mirror\"\n\t],\n\t\"dependencies\": {\n\t\t\"base64-stream\": \"^1.0.0\",\n\t\t\"concat-stream\": \"^2.0.0\",\n\t\t\"ftp\": \"^0.3.10\"\n\t}\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -16290,6 +16379,13 @@
             "ftp": "^0.3.10"
           },
           "description": "Shows images from FTP server",
+          "keywords": [
+            "ftp",
+            "media",
+            "smart-home",
+            "mirror",
+            "magic-mirror"
+          ],
           "license": "ISC",
           "name": "mmm-ftp-image",
           "version": "1.0.4"
@@ -16298,6 +16394,11 @@
           "No repository field."
         ]
       },
+      "tags": [
+        "ftp",
+        "media",
+        "smart-home"
+      ],
       "url": "https://github.com/jboucly/MMM-FTP-image"
     },
     {
@@ -16311,20 +16412,85 @@
       "name": "MMM-Hue-Controller-2",
       "packageJson": {
         "path": "./modules/MMM-Hue-Controller-2-----jboucly/package.json",
-        "raw": "{\n\t\"name\": \"mmm-hue-controller-2\",\n\t\"version\": \"1.0.2\",\n\t\"description\": \"Module for MagicMiror - Control your Philips Hue lamps with your touchscreen\",\n\t\"main\": \"MMM-Hue-Controller.js\",\n\t\"repository\": \"git@github.com:jboucly/MMM-Hue-Controller.git\",\n\t\"author\": \"jboucly <julien.boucly@outlook.com>\",\n\t\"license\": \"MIT\",\n\t\"dependencies\": {\n\t\t\"node-fetch\": \"^2.7.0\"\n\t}\n}\n",
+        "raw": "{\n\t\"name\": \"mmm-hue-controller-2\",\n\t\"version\": \"1.0.2\",\n\t\"description\": \"Module for MagicMiror - Control your Philips Hue lamps with your touchscreen\",\n\t\"main\": \"MMM-Hue-Controller.js\",\n\t\"repository\": \"git@github.com:jboucly/MMM-Hue-Controller.git\",\n\t\"author\": \"jboucly <julien.boucly@outlook.com>\",\n\t\"license\": \"MIT\",\n\t\"keywords\": [\n\t\t\"philips-hue\",\n\t\t\"media\",\n\t\t\"smart-home\",\n\t\t\"mirror\",\n\t\t\"magic-mirror\"\n\t],\n\t\"dependencies\": {\n\t\t\"node-fetch\": \"^2.7.0\"\n\t}\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
             "node-fetch": "^2.7.0"
           },
           "description": "Module for MagicMiror - Control your Philips Hue lamps with your touchscreen",
+          "keywords": [
+            "philips-hue",
+            "media",
+            "smart-home",
+            "mirror",
+            "magic-mirror"
+          ],
           "license": "MIT",
           "name": "mmm-hue-controller-2",
           "version": "1.0.2"
         },
         "warnings": []
       },
+      "tags": [
+        "philips-hue",
+        "media",
+        "smart-home"
+      ],
       "url": "https://github.com/jboucly/MMM-Hue-Controller-2"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays the status of your Husqvarna Automower with animations and information from your mower.",
+      "id": "jboucly/MMM-Husqvarna-status",
+      "image": "screenshots-example.jpg",
+      "license": "MIT",
+      "maintainer": "jboucly",
+      "maintainerURL": "https://github.com/jboucly",
+      "name": "MMM-Husqvarna-status",
+      "packageJson": {
+        "path": "./modules/MMM-Husqvarna-status-----jboucly/package.json",
+        "raw": "{\n    \"name\": \"mmm-husqvarna-status\",\n    \"version\": \"1.0.0\",\n    \"description\": \"Magic Mirror Module for get status of your Husqvarna mower\",\n    \"main\": \"MMM-Husqvarna-Status.js\",\n    \"scripts\": {\n        \"lint\": \"eslint\",\n        \"lint:fix\": \"eslint --fix\",\n        \"test\": \"tsx tests/test-api.ts\"\n    },\n    \"repository\": {\n        \"type\": \"git\",\n        \"url\": \"git+https://github.com/jboucly/MMM-Husqvarna-status.git\"\n    },\n    \"keywords\": [\n        \"Husqvarna\",\n        \"Automower\",\n        \"Smart Home\",\n        \"MagicMirror\"\n    ],\n    \"author\": \"Jboucly\",\n    \"license\": \"MIT\",\n    \"bugs\": {\n        \"url\": \"https://github.com/jboucly/MMM-Husqvarna-status/issues\"\n    },\n    \"homepage\": \"https://github.com/jboucly/MMM-Husqvarna-status#readme\",\n    \"devDependencies\": {\n        \"@eslint/css\": \"^0.9.0\",\n        \"@eslint/js\": \"^9.30.1\",\n        \"@eslint/markdown\": \"^6.6.0\",\n        \"@stylistic/eslint-plugin\": \"^5.1.0\",\n        \"eslint\": \"^9.30.1\",\n        \"globals\": \"^16.3.0\",\n        \"tsx\": \"^4.20.6\",\n        \"typescript\": \"^5.9.3\"\n    },\n    \"dependencies\": {\n        \"automower-connect-sdk\": \"^1.1.0\",\n        \"husqvarna-authentication-sdk\": \"^1.1.0\"\n    }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "automower-connect-sdk": "^1.1.0",
+            "husqvarna-authentication-sdk": "^1.1.0"
+          },
+          "description": "Magic Mirror Module for get status of your Husqvarna mower",
+          "devDependencies": {
+            "@eslint/css": "^0.9.0",
+            "@eslint/js": "^9.30.1",
+            "@eslint/markdown": "^6.6.0",
+            "@stylistic/eslint-plugin": "^5.1.0",
+            "eslint": "^9.30.1",
+            "globals": "^16.3.0",
+            "tsx": "^4.20.6",
+            "typescript": "^5.9.3"
+          },
+          "keywords": [
+            "Husqvarna",
+            "Automower",
+            "Smart Home",
+            "MagicMirror"
+          ],
+          "license": "MIT",
+          "name": "mmm-husqvarna-status",
+          "scripts": {
+            "lint": "eslint",
+            "lint:fix": "eslint --fix",
+            "test": "tsx tests/test-api.ts"
+          },
+          "version": "1.0.0"
+        },
+        "warnings": []
+      },
+      "tags": [
+        "husqvarna",
+        "automower",
+        "smart home"
+      ],
+      "url": "https://github.com/jboucly/MMM-Husqvarna-status"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -16854,15 +17020,15 @@
       "name": "mmm-cta",
       "packageJson": {
         "path": "./modules/mmm-cta-----jhwelch/package.json",
-        "raw": "{\n  \"name\": \"mmm-cta\",\n  \"version\": \"2.0.0\",\n  \"description\": \"Magic Mirror Module for displaying CTA Train and Bus arrival times\",\n  \"main\": \"MMM-CTA.js\",\n  \"scripts\": {\n    \"test\": \"jest\",\n    \"test:watch\": \"jest --watchAll\",\n    \"lint\": \"eslint .\",\n    \"fix\": \"eslint . --fix\"\n  },\n  \"author\": \"Jordan Welch\",\n  \"license\": \"MIT\",\n  \"engines\": {\n    \"node\": \">=20.0.0\"\n  },\n  \"devDependencies\": {\n    \"@fetch-mock/jest\": \"^0.2.17\",\n    \"@jhwelch/mmm-eslint-config\": \"^1.0.0\",\n    \"eslint\": \"^9.34.0\",\n    \"jest\": \"^30.1.2\",\n    \"nunjucks\": \"^3.2.4\"\n  },\n  \"keywords\": [\n    \"magicmirror\",\n    \"cta\",\n    \"train\",\n    \"bus\",\n    \"tracker\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/JHWelch/MMM-CTA.git\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-cta\",\n  \"version\": \"2.0.0\",\n  \"description\": \"Magic Mirror Module for displaying CTA Train and Bus arrival times\",\n  \"main\": \"MMM-CTA.js\",\n  \"scripts\": {\n    \"test\": \"jest\",\n    \"test:watch\": \"jest --watchAll\",\n    \"lint\": \"eslint .\",\n    \"fix\": \"eslint . --fix\"\n  },\n  \"author\": \"Jordan Welch\",\n  \"license\": \"MIT\",\n  \"engines\": {\n    \"node\": \">=20.0.0\"\n  },\n  \"devDependencies\": {\n    \"@fetch-mock/jest\": \"^0.2.20\",\n    \"@jhwelch/mmm-eslint-config\": \"^3.0.0\",\n    \"eslint\": \"^9.39.0\",\n    \"jest\": \"^30.2.0\",\n    \"nunjucks\": \"^3.2.4\"\n  },\n  \"keywords\": [\n    \"magicmirror\",\n    \"cta\",\n    \"train\",\n    \"bus\",\n    \"tracker\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/JHWelch/MMM-CTA.git\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "description": "Magic Mirror Module for displaying CTA Train and Bus arrival times",
           "devDependencies": {
-            "@fetch-mock/jest": "^0.2.17",
-            "@jhwelch/mmm-eslint-config": "^1.0.0",
-            "eslint": "^9.34.0",
-            "jest": "^30.1.2",
+            "@fetch-mock/jest": "^0.2.20",
+            "@jhwelch/mmm-eslint-config": "^3.0.0",
+            "eslint": "^9.39.0",
+            "jest": "^30.2.0",
             "nunjucks": "^3.2.4"
           },
           "engines": {
@@ -17467,25 +17633,25 @@
       "name": "MMM-Remote-Control",
       "packageJson": {
         "path": "./modules/MMM-Remote-Control-----Jopyth/package.json",
-        "raw": "{\n  \"name\": \"mmm-remote-control\",\n  \"version\": \"3.2.6\",\n  \"description\": \"This module for the MagicMirror² allows you to shutdown and configure your mirror through a web browser.\",\n  \"keywords\": [\n    \"magic mirror\",\n    \"smart mirror\",\n    \"module\",\n    \"remote control\",\n    \"control\"\n  ],\n  \"homepage\": \"https://github.com/jopyth/MMM-Remote-Control#readme\",\n  \"bugs\": {\n    \"url\": \"git+https://github.com/jopyth/MMM-Remote-Control/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/jopyth/MMM-Remote-Control\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Joseph Bethge\",\n  \"contributors\": [\n    \"https://github.com/jopyth/MMM-Remote-Control/graphs/contributors\"\n  ],\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"download_modules\": \"node ./scripts/download_modules_manually.mjs\",\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"simple-git-hooks || echo 'No problem. Skipping git hooks installation.'\",\n    \"postinstall\": \"cp modules.json.template modules.json\",\n    \"test\": \"node --run lint && node --run test:spelling && node --run test:unit\",\n    \"test:coverage\": \"c8 --all node --test tests/unit/**/*.test.js\",\n    \"test:spelling\": \"cspell .\",\n    \"test:unit\": \"node --test tests/unit/**/*.test.js\"\n  },\n  \"dependencies\": {\n    \"showdown\": \"^2.1.0\",\n    \"simple-git\": \"^3.28.0\",\n    \"swagger-ui-dist\": \"^5.29.1\",\n    \"uuid\": \"^13.0.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.11.1\",\n    \"@eslint/js\": \"^9.36.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.3.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"c8\": \"^10.1.3\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.36.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\",\n    \"simple-git-hooks\": \"^2.13.1\"\n  },\n  \"simple-git-hooks\": {\n    \"pre-commit\": \"npx lint-staged\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"c8\": {\n    \"reporter\": [\n      \"text-summary\",\n      \"lcov\"\n    ],\n    \"include\": [\n      \"lib/**/*.js\",\n      \"node_helper.js\",\n      \"MMM-Remote-Control.js\"\n    ],\n    \"exclude\": [\n      \"tests/**\",\n      \"translations/**\",\n      \"docs/**\",\n      \"img/**\",\n      \"remote.html\",\n      \"remote.js\",\n      \"remote.css\",\n      \"**/*.md\"\n    ],\n    \"check-coverage\": true,\n    \"branches\": 5,\n    \"lines\": 4,\n    \"functions\": 4,\n    \"statements\": 4\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-remote-control\",\n  \"version\": \"3.2.7\",\n  \"description\": \"This module for the MagicMirror² allows you to shutdown and configure your mirror through a web browser.\",\n  \"keywords\": [\n    \"magic mirror\",\n    \"smart mirror\",\n    \"module\",\n    \"remote control\",\n    \"control\"\n  ],\n  \"homepage\": \"https://github.com/jopyth/MMM-Remote-Control#readme\",\n  \"bugs\": {\n    \"url\": \"git+https://github.com/jopyth/MMM-Remote-Control/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/jopyth/MMM-Remote-Control\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Joseph Bethge\",\n  \"contributors\": [\n    \"https://github.com/jopyth/MMM-Remote-Control/graphs/contributors\"\n  ],\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"download_modules\": \"node ./scripts/download_modules_manually.mjs\",\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"simple-git-hooks || echo 'No problem. Skipping git hooks installation.'\",\n    \"postinstall\": \"cp modules.json.template modules.json\",\n    \"test\": \"node --run lint && node --run test:spelling && node --run test:unit\",\n    \"test:coverage\": \"c8 --all node --test tests/unit/**/*.test.js\",\n    \"test:spelling\": \"cspell .\",\n    \"test:unit\": \"node --test tests/unit/**/*.test.js\"\n  },\n  \"dependencies\": {\n    \"showdown\": \"^2.1.0\",\n    \"simple-git\": \"^3.28.0\",\n    \"swagger-ui-dist\": \"^5.29.3\",\n    \"uuid\": \"^13.0.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.12.0\",\n    \"@eslint/js\": \"^9.37.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.4.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"c8\": \"^10.1.3\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.37.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\",\n    \"simple-git-hooks\": \"^2.13.1\"\n  },\n  \"simple-git-hooks\": {\n    \"pre-commit\": \"npx lint-staged\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"c8\": {\n    \"reporter\": [\n      \"text-summary\",\n      \"lcov\"\n    ],\n    \"include\": [\n      \"lib/**/*.js\",\n      \"API/**/*.js\",\n      \"node_helper.js\",\n      \"MMM-Remote-Control.js\"\n    ],\n    \"exclude\": [\n      \"tests/**\",\n      \"translations/**\",\n      \"docs/**\",\n      \"img/**\",\n      \"remote.html\",\n      \"remote.js\",\n      \"remote.css\",\n      \"**/*.md\"\n    ],\n    \"check-coverage\": true,\n    \"branches\": 5,\n    \"lines\": 5,\n    \"functions\": 4,\n    \"statements\": 5\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
             "showdown": "^2.1.0",
             "simple-git": "^3.28.0",
-            "swagger-ui-dist": "^5.29.1",
+            "swagger-ui-dist": "^5.29.3",
             "uuid": "^13.0.0"
           },
           "description": "This module for the MagicMirror² allows you to shutdown and configure your mirror through a web browser.",
           "devDependencies": {
-            "@eslint/css": "^0.11.1",
-            "@eslint/js": "^9.36.0",
+            "@eslint/css": "^0.12.0",
+            "@eslint/js": "^9.37.0",
             "@eslint/json": "^0.13.2",
-            "@eslint/markdown": "^7.3.0",
+            "@eslint/markdown": "^7.4.0",
             "@stylistic/eslint-plugin": "^5.4.0",
             "c8": "^10.1.3",
             "cspell": "^9.2.1",
-            "eslint": "^9.36.0",
+            "eslint": "^9.37.0",
             "eslint-plugin-import-x": "^4.16.1",
             "globals": "^16.4.0",
             "lint-staged": "^16.2.3",
@@ -17513,7 +17679,7 @@
             "test:unit": "node --test tests/unit/**/*.test.js"
           },
           "type": "commonjs",
-          "version": "3.2.6"
+          "version": "3.2.7"
         },
         "warnings": []
       },
@@ -17888,18 +18054,24 @@
       "name": "MMM-F1",
       "packageJson": {
         "path": "./modules/MMM-F1-----jupadin/package.json",
-        "raw": "{\n  \"dependencies\": {\n    \"request\": \"^2.88.2\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-f1\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A MagicMirror² module to display F1 information.\",\n  \"main\": \"MMM-F1.js\",\n  \"scripts\": {\n    \"test\": \"mocha test\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/jupadin/MMM-F1.git\"\n  },\n  \"author\": \"jupadin\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/jupadin/MMM-F1/issues\"\n  },\n  \"homepage\": \"https://github.com/jupadin/MMM-F1#readme\",\n  \"dependencies\": {\n    \"request\": \"^2.88.2\"\n  },\n  \"devDependencies\": {\n    \"mocha\": \"^11.7.4\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
             "request": "^2.88.2"
-          }
+          },
+          "description": "A MagicMirror² module to display F1 information.",
+          "devDependencies": {
+            "mocha": "^11.7.4"
+          },
+          "license": "MIT",
+          "name": "mmm-f1",
+          "scripts": {
+            "test": "mocha test"
+          },
+          "version": "1.0.0"
         },
-        "warnings": [
-          "No description",
-          "No repository field.",
-          "No license field."
-        ]
+        "warnings": []
       },
       "url": "https://github.com/jupadin/MMM-F1"
     },
@@ -17980,7 +18152,7 @@
       "name": "MMM-RNV",
       "packageJson": {
         "path": "./modules/MMM-RNV-----jupadin/package.json",
-        "raw": "{\n  \"name\": \"mmm-rnv\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"MMM-RNV.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Public Transport\",\n    \"RNV\"\n  ],\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"apollo-cache-inmemory\": \"^1.6.6\",\n    \"apollo-client\": \"^2.6.10\",\n    \"apollo-link-context\": \"^1.0.20\",\n    \"apollo-link-http\": \"^1.5.17\",\n    \"graphql\": \"^15.4.0\",\n    \"graphql-tag\": \"^2.11.0\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-rnv\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"MMM-RNV.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Public Transport\",\n    \"RNV\"\n  ],\n  \"author\": \"jupadin\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"apollo-cache-inmemory\": \"^1.6.6\",\n    \"apollo-client\": \"^2.6.10\",\n    \"apollo-link-context\": \"^1.0.20\",\n    \"apollo-link-http\": \"^1.5.17\",\n    \"graphql\": \"^15.4.0\",\n    \"graphql-tag\": \"^2.11.0\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -17996,7 +18168,7 @@
             "Public Transport",
             "RNV"
           ],
-          "license": "ISC",
+          "license": "MIT",
           "name": "mmm-rnv",
           "scripts": {
             "test": "echo \"Error: no test specified\" && exit 1"
@@ -19207,22 +19379,22 @@
       "name": "MMM-Canteen",
       "packageJson": {
         "path": "./modules/MMM-Canteen-----KristjanESPERANTO/package.json",
-        "raw": "{\n  \"name\": \"mmm-canteen\",\n  \"version\": \"2.6.2\",\n  \"description\": \"A module for MagicMirror² to display menus from openmensa.org.\",\n  \"keywords\": [\n    \"magicmirror\",\n    \"canteen\",\n    \"openmensa\"\n  ],\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-Canteen#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-Canteen/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/KristjanESPERANTO/MMM-Canteen.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Kevin (https://github.com/k-0/)\",\n  \"contributors\": [\n    \"https://github.com/KristjanESPERANTO/MMM-Canteen/graphs/contributors\"\n  ],\n  \"main\": \"MMM-Canteen.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier --check .\",\n    \"lint:fix\": \"eslint --fix && prettier --write .\",\n    \"prepare\": \"husky\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.10.0\",\n    \"@eslint/js\": \"^9.33.0\",\n    \"@eslint/markdown\": \"^7.1.0\",\n    \"@stylistic/eslint-plugin\": \"^5.2.3\",\n    \"cspell\": \"^9.2.0\",\n    \"eslint\": \"^9.33.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.1.5\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-canteen\",\n  \"version\": \"2.6.3\",\n  \"description\": \"A module for MagicMirror² to display menus from openmensa.org.\",\n  \"keywords\": [\n    \"magicmirror\",\n    \"canteen\",\n    \"openmensa\"\n  ],\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-Canteen#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-Canteen/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/KristjanESPERANTO/MMM-Canteen.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Kevin (https://github.com/k-0/)\",\n  \"contributors\": [\n    \"https://github.com/KristjanESPERANTO/MMM-Canteen/graphs/contributors\"\n  ],\n  \"main\": \"MMM-Canteen.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier --check .\",\n    \"lint:fix\": \"eslint --fix && prettier --write .\",\n    \"prepare\": \"simple-git-hooks\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.13.0\",\n    \"@eslint/js\": \"^9.38.0\",\n    \"@eslint/markdown\": \"^7.4.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.38.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"lint-staged\": \"^16.2.4\",\n    \"prettier\": \"^3.6.2\",\n    \"simple-git-hooks\": \"^2.13.1\"\n  },\n  \"simple-git-hooks\": {\n    \"pre-commit\": \"npx lint-staged\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "description": "A module for MagicMirror² to display menus from openmensa.org.",
           "devDependencies": {
-            "@eslint/css": "^0.10.0",
-            "@eslint/js": "^9.33.0",
-            "@eslint/markdown": "^7.1.0",
-            "@stylistic/eslint-plugin": "^5.2.3",
-            "cspell": "^9.2.0",
-            "eslint": "^9.33.0",
+            "@eslint/css": "^0.13.0",
+            "@eslint/js": "^9.38.0",
+            "@eslint/markdown": "^7.4.0",
+            "@stylistic/eslint-plugin": "^5.4.0",
+            "cspell": "^9.2.1",
+            "eslint": "^9.38.0",
             "eslint-plugin-import-x": "^4.16.1",
-            "globals": "^16.3.0",
-            "husky": "^9.1.7",
-            "lint-staged": "^16.1.5",
-            "prettier": "^3.6.2"
+            "globals": "^16.4.0",
+            "lint-staged": "^16.2.4",
+            "prettier": "^3.6.2",
+            "simple-git-hooks": "^2.13.1"
           },
           "keywords": [
             "magicmirror",
@@ -19234,12 +19406,12 @@
           "scripts": {
             "lint": "eslint && prettier --check .",
             "lint:fix": "eslint --fix && prettier --write .",
-            "prepare": "husky",
+            "prepare": "simple-git-hooks",
             "test": "node --run lint && node --run test:spelling",
             "test:spelling": "cspell ."
           },
           "type": "commonjs",
-          "version": "2.6.2"
+          "version": "2.6.3"
         },
         "warnings": []
       },
@@ -19317,26 +19489,26 @@
       "name": "MMM-Forum",
       "packageJson": {
         "path": "./modules/MMM-Forum-----KristjanESPERANTO/package.json",
-        "raw": "{\n  \"name\": \"mmm-forum\",\n  \"version\": \"1.0.10\",\n  \"description\": \"A MagicMirror² module to display information from the MagicMirror² forum.\",\n  \"type\": \"commonjs\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"forum\",\n    \"NodeBB\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/KristjanESPERANTO/MMM-Forum.git\"\n  },\n  \"license\": \"ISC\",\n  \"author\": \"Kristjan ESPERANTO (https://github.com/KristjanESPERANTO)\",\n  \"main\": \"MMM-Forum.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.\",\n    \"release\": \"npx commit-and-tag-version\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"dependencies\": {\n    \"cheerio\": \"^1.1.2\",\n    \"dayjs\": \"^1.11.13\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.10.0\",\n    \"@eslint/js\": \"^9.33.0\",\n    \"@eslint/json\": \"^0.13.1\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"@stylistic/eslint-plugin\": \"^5.2.3\",\n    \"cspell\": \"^9.2.0\",\n    \"eslint\": \"^9.33.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.1.5\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-forum\",\n  \"version\": \"1.0.11\",\n  \"description\": \"A MagicMirror² module to display information from the MagicMirror² forum.\",\n  \"type\": \"commonjs\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"forum\",\n    \"NodeBB\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/KristjanESPERANTO/MMM-Forum.git\"\n  },\n  \"license\": \"ISC\",\n  \"author\": \"Kristjan ESPERANTO (https://github.com/KristjanESPERANTO)\",\n  \"main\": \"MMM-Forum.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.\",\n    \"release\": \"npx commit-and-tag-version\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"dependencies\": {\n    \"cheerio\": \"^1.1.2\",\n    \"dayjs\": \"^1.11.18\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.12.0\",\n    \"@eslint/js\": \"^9.37.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.4.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.37.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
             "cheerio": "^1.1.2",
-            "dayjs": "^1.11.13"
+            "dayjs": "^1.11.18"
           },
           "description": "A MagicMirror² module to display information from the MagicMirror² forum.",
           "devDependencies": {
-            "@eslint/css": "^0.10.0",
-            "@eslint/js": "^9.33.0",
-            "@eslint/json": "^0.13.1",
-            "@eslint/markdown": "^7.2.0",
-            "@stylistic/eslint-plugin": "^5.2.3",
-            "cspell": "^9.2.0",
-            "eslint": "^9.33.0",
+            "@eslint/css": "^0.12.0",
+            "@eslint/js": "^9.37.0",
+            "@eslint/json": "^0.13.2",
+            "@eslint/markdown": "^7.4.0",
+            "@stylistic/eslint-plugin": "^5.4.0",
+            "cspell": "^9.2.1",
+            "eslint": "^9.37.0",
             "eslint-plugin-import-x": "^4.16.1",
-            "globals": "^16.3.0",
+            "globals": "^16.4.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.1.5",
+            "lint-staged": "^16.2.3",
             "prettier": "^3.6.2"
           },
           "keywords": [
@@ -19355,7 +19527,7 @@
             "test:spelling": "cspell ."
           },
           "type": "commonjs",
-          "version": "1.0.10"
+          "version": "1.0.11"
         },
         "warnings": []
       },
@@ -19376,21 +19548,21 @@
       "name": "MMM-ISS-Live",
       "packageJson": {
         "path": "./modules/MMM-ISS-Live-----KristjanESPERANTO/package.json",
-        "raw": "{\n  \"name\": \"mmm-iss-live\",\n  \"version\": \"2.1.0\",\n  \"description\": \"Displays live video from the International Space Station on your MagicMirror².\",\n  \"type\": \"module\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"ISS\",\n    \"livestream\"\n  ],\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"mykle1 (https://github.com/mykle1/MMM-ISS-Live)\",\n  \"main\": \"MMM-ISS-Live.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"husky\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.37.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.3.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.37.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-iss-live\",\n  \"version\": \"2.2.0\",\n  \"description\": \"Displays live video from the International Space Station on your MagicMirror².\",\n  \"type\": \"module\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"ISS\",\n    \"livestream\"\n  ],\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-ISS-Live\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"mykle1 (https://github.com/mykle1/MMM-ISS-Live)\",\n  \"main\": \"MMM-ISS-Live.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"husky\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.38.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.5.0\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"cspell\": \"^9.2.2\",\n    \"eslint\": \"^9.38.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.6\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "description": "Displays live video from the International Space Station on your MagicMirror².",
           "devDependencies": {
-            "@eslint/js": "^9.37.0",
+            "@eslint/js": "^9.38.0",
             "@eslint/json": "^0.13.2",
-            "@eslint/markdown": "^7.3.0",
-            "@stylistic/eslint-plugin": "^5.4.0",
-            "cspell": "^9.2.1",
-            "eslint": "^9.37.0",
+            "@eslint/markdown": "^7.5.0",
+            "@stylistic/eslint-plugin": "^5.5.0",
+            "cspell": "^9.2.2",
+            "eslint": "^9.38.0",
             "eslint-plugin-import-x": "^4.16.1",
             "globals": "^16.4.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.2.3",
+            "lint-staged": "^16.2.6",
             "prettier": "^3.6.2"
           },
           "keywords": [
@@ -19408,7 +19580,7 @@
             "test:spelling": "cspell ."
           },
           "type": "module",
-          "version": "2.1.0"
+          "version": "2.2.0"
         },
         "warnings": []
       },
@@ -19418,6 +19590,62 @@
         "media"
       ],
       "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live"
+    },
+    {
+      "category": "News / Information",
+      "description": "Bring the thrill of <a target=\"_blank\" href=\"https://mastodon.social\">Mastodon</a> – a decentralized social network where you can toot, connect, and build vibrant communities across the open fediverse – to your mirror: Display timelines, hashtags, and profiles with media thumbnails, QR codes, and rotating posts.",
+      "id": "KristjanESPERANTO/MMM-Mastodon",
+      "image": "screenshot.jpg",
+      "license": "MIT",
+      "maintainer": "KristjanESPERANTO",
+      "maintainerURL": "https://github.com/KristjanESPERANTO",
+      "name": "MMM-Mastodon",
+      "packageJson": {
+        "path": "./modules/MMM-Mastodon-----KristjanESPERANTO/package.json",
+        "raw": "{\n  \"name\": \"mmm-mastodon\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Bring Mastodon to your MagicMirror²: Display timelines, hashtags, and profiles with media thumbnails, QR codes, and rotating posts.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"MagicMirror²\",\n    \"Mastodon\",\n    \"Fediverse\",\n    \"Social Media\",\n    \"News\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-Mastodon\"\n  },\n  \"license\": \"MIT\",\n  \"author\": {\n    \"name\": \"Kristjan ESPERANTO\",\n    \"url\": \"https://github.com/KristjanESPERANTO\"\n  },\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"main\": \"MMM-Mastodon.js\",\n  \"dependencies\": {\n    \"qrcode\": \"^1.5.4\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.13.0\",\n    \"@eslint/js\": \"^9.37.0\",\n    \"@eslint/markdown\": \"^7.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.37.0\",\n    \"globals\": \"^16.4.0\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "qrcode": "^1.5.4"
+          },
+          "description": "Bring Mastodon to your MagicMirror²: Display timelines, hashtags, and profiles with media thumbnails, QR codes, and rotating posts.",
+          "devDependencies": {
+            "@eslint/css": "^0.13.0",
+            "@eslint/js": "^9.37.0",
+            "@eslint/markdown": "^7.4.0",
+            "cspell": "^9.2.1",
+            "eslint": "^9.37.0",
+            "globals": "^16.4.0",
+            "prettier": "^3.6.2"
+          },
+          "keywords": [
+            "MagicMirror",
+            "MagicMirror²",
+            "Mastodon",
+            "Fediverse",
+            "Social Media",
+            "News"
+          ],
+          "license": "MIT",
+          "name": "mmm-mastodon",
+          "scripts": {
+            "lint": "eslint && prettier . --check",
+            "lint:fix": "eslint --fix && prettier . --write",
+            "test": "node --run lint && node --run test:spelling",
+            "test:spelling": "cspell ."
+          },
+          "type": "commonjs",
+          "version": "0.1.0"
+        },
+        "warnings": []
+      },
+      "tags": [
+        "mastodon",
+        "fediverse",
+        "social media",
+        "news"
+      ],
+      "url": "https://github.com/KristjanESPERANTO/MMM-Mastodon"
     },
     {
       "category": "Weather",
@@ -19484,29 +19712,29 @@
       "name": "MMM-PublicTransportHafas",
       "packageJson": {
         "path": "./modules/MMM-PublicTransportHafas-----KristjanESPERANTO/package.json",
-        "raw": "{\n  \"name\": \"mmm-publictransporthafas\",\n  \"version\": \"3.2.1\",\n  \"description\": \"A public transport module for MagicMirror² powered by db-vendo-client and hafas-client data.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"public transport\",\n    \"hafas\",\n    \"vendo\"\n  ],\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Kristjan ESPERANTO (https://github.com/KristjanESPERANTO)\",\n  \"contributors\": [\n    \"https://github.com/raywo/MMM-PublicTransportHafas/graphs/contributors\",\n    \"https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/graphs/contributors\"\n  ],\n  \"main\": \"MMM-PublicTransportHafas.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || true\",\n    \"query\": \"node ./convenience/query_stations.mjs\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"dependencies\": {\n    \"dayjs\": \"^1.11.13\",\n    \"db-vendo-client\": \"^6.10.0\",\n    \"hafas-client\": \"^6.3.5\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.10.0\",\n    \"@eslint/js\": \"^9.34.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"@stylistic/eslint-plugin\": \"^5.2.3\",\n    \"cspell\": \"^9.2.0\",\n    \"eslint\": \"^9.34.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"eslint-plugin-package-json\": \"^0.56.0\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.1.5\",\n    \"prettier\": \"^3.6.2\"\n  },\n  \"engines\": {\n    \"node\": \">=20\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-publictransporthafas\",\n  \"version\": \"3.5.0\",\n  \"description\": \"A public transport module for MagicMirror² powered by db-vendo-client and hafas-client data.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"public transport\",\n    \"hafas\",\n    \"vendo\"\n  ],\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Kristjan ESPERANTO (https://github.com/KristjanESPERANTO)\",\n  \"contributors\": [\n    \"https://github.com/raywo/MMM-PublicTransportHafas/graphs/contributors\",\n    \"https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/graphs/contributors\"\n  ],\n  \"main\": \"MMM-PublicTransportHafas.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"postinstall\": \"simple-git-hooks\",\n    \"query\": \"node ./convenience/query_stations.mjs\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"simple-git-hooks\": {\n    \"pre-commit\": \"npx lint-staged\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"dependencies\": {\n    \"dayjs\": \"^1.11.18\",\n    \"db-vendo-client\": \"^6.10.0\",\n    \"hafas-client\": \"^6.3.5\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.13.0\",\n    \"@eslint/js\": \"^9.38.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.4.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.38.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"eslint-plugin-package-json\": \"^0.57.0\",\n    \"globals\": \"^16.4.0\",\n    \"lint-staged\": \"^16.2.4\",\n    \"prettier\": \"^3.6.2\",\n    \"simple-git-hooks\": \"^2.13.1\"\n  },\n  \"engines\": {\n    \"node\": \">=20\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
-            "dayjs": "^1.11.13",
+            "dayjs": "^1.11.18",
             "db-vendo-client": "^6.10.0",
             "hafas-client": "^6.3.5"
           },
           "description": "A public transport module for MagicMirror² powered by db-vendo-client and hafas-client data.",
           "devDependencies": {
-            "@eslint/css": "^0.10.0",
-            "@eslint/js": "^9.34.0",
+            "@eslint/css": "^0.13.0",
+            "@eslint/js": "^9.38.0",
             "@eslint/json": "^0.13.2",
-            "@eslint/markdown": "^7.2.0",
-            "@stylistic/eslint-plugin": "^5.2.3",
-            "cspell": "^9.2.0",
-            "eslint": "^9.34.0",
+            "@eslint/markdown": "^7.4.0",
+            "@stylistic/eslint-plugin": "^5.4.0",
+            "cspell": "^9.2.1",
+            "eslint": "^9.38.0",
             "eslint-plugin-import-x": "^4.16.1",
-            "eslint-plugin-package-json": "^0.56.0",
-            "globals": "^16.3.0",
-            "husky": "^9.1.7",
-            "lint-staged": "^16.1.5",
-            "prettier": "^3.6.2"
+            "eslint-plugin-package-json": "^0.57.0",
+            "globals": "^16.4.0",
+            "lint-staged": "^16.2.4",
+            "prettier": "^3.6.2",
+            "simple-git-hooks": "^2.13.1"
           },
           "engines": {
             "node": ">=20"
@@ -19522,13 +19750,13 @@
           "scripts": {
             "lint": "eslint && prettier . --check",
             "lint:fix": "eslint --fix && prettier . --write",
-            "prepare": "[ -f node_modules/.bin/husky ] && husky || true",
+            "postinstall": "simple-git-hooks",
             "query": "node ./convenience/query_stations.mjs",
             "test": "node --run lint && node --run test:spelling",
             "test:spelling": "cspell ."
           },
           "type": "commonjs",
-          "version": "3.2.1"
+          "version": "3.5.0"
         },
         "warnings": []
       },
@@ -19590,7 +19818,7 @@
     },
     {
       "category": "Voice Control",
-      "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
+      "description": "A text-to-speech module that uses the browser's Web Speech API.<br /><br />Let a voice greet you when your MagicMirror starts up — have the time read aloud at the touch of a button — etc.<br />Other modules can send notifications to this module so that they will be read aloud.",
       "id": "KristjanESPERANTO/MMM-WebSpeechTTS",
       "image": ".github-TTS.jpg",
       "license": "MIT",
@@ -19599,21 +19827,21 @@
       "name": "MMM-WebSpeechTTS",
       "packageJson": {
         "path": "./modules/MMM-WebSpeechTTS-----KristjanESPERANTO/package.json",
-        "raw": "{\n  \"name\": \"mmm-webspeechtts\",\n  \"version\": \"0.0.10\",\n  \"description\": \"Text-To-Speech module for MagicMirror².\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"text-to-speech\",\n    \"TTS\",\n    \"WebSpeech\"\n  ],\n  \"type\": \"commonjs\",\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Kristjan ESPERANTO\",\n  \"main\": \"MMM-WebSpeechTTS.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier --check .\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"husky\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.33.0\",\n    \"@eslint/json\": \"^0.13.1\",\n    \"@eslint/markdown\": \"^7.1.0\",\n    \"@stylistic/eslint-plugin\": \"^5.2.3\",\n    \"cspell\": \"^9.2.0\",\n    \"eslint\": \"^9.33.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.1.5\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-webspeechtts\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Text-To-Speech module for MagicMirror².\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"text-to-speech\",\n    \"TTS\",\n    \"WebSpeech\"\n  ],\n  \"type\": \"commonjs\",\n  \"homepage\": \"https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"Kristjan ESPERANTO\",\n  \"main\": \"MMM-WebSpeechTTS.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && prettier --check .\",\n    \"lint:fix\": \"eslint --fix && prettier . --write\",\n    \"prepare\": \"husky\",\n    \"test\": \"node --run lint && node --run test:spelling\",\n    \"test:spelling\": \"cspell .\"\n  },\n  \"lint-staged\": {\n    \"*\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.37.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.4.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"cspell\": \"^9.2.1\",\n    \"eslint\": \"^9.37.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"prettier\": \"^3.6.2\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "description": "Text-To-Speech module for MagicMirror².",
           "devDependencies": {
-            "@eslint/js": "^9.33.0",
-            "@eslint/json": "^0.13.1",
-            "@eslint/markdown": "^7.1.0",
-            "@stylistic/eslint-plugin": "^5.2.3",
-            "cspell": "^9.2.0",
-            "eslint": "^9.33.0",
+            "@eslint/js": "^9.37.0",
+            "@eslint/json": "^0.13.2",
+            "@eslint/markdown": "^7.4.0",
+            "@stylistic/eslint-plugin": "^5.4.0",
+            "cspell": "^9.2.1",
+            "eslint": "^9.37.0",
             "eslint-plugin-import-x": "^4.16.1",
-            "globals": "^16.3.0",
+            "globals": "^16.4.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.1.5",
+            "lint-staged": "^16.2.3",
             "prettier": "^3.6.2"
           },
           "keywords": [
@@ -19632,7 +19860,7 @@
             "test:spelling": "cspell ."
           },
           "type": "commonjs",
-          "version": "0.0.10"
+          "version": "0.1.0"
         },
         "warnings": []
       },
@@ -19642,37 +19870,6 @@
         "webspeech"
       ],
       "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS"
-    },
-    {
-      "category": "Transport / Travel",
-      "description": "Displays some of your Hyundai's data on your Mirror, the code is based on <a target=\"_blank\" href=\"https://github.com/martinburheimtingstad/MMM-Tesla2\">MMM-Tesla2</a>.",
-      "id": "kstolk/MMM-Bluelinky",
-      "image": "preview.jpg",
-      "license": "MIT",
-      "maintainer": "kstolk",
-      "maintainerURL": "https://github.com/kstolk",
-      "name": "MMM-Bluelinky",
-      "packageJson": {
-        "path": "./modules/MMM-Bluelinky-----kstolk/package.json",
-        "raw": "{\n  \"name\": \"mmm-bluelinky\",\n  \"version\": \"1.0.2\",\n  \"description\": \"A simple MagicMirror module for bluelink Hyundai cars\",\n  \"main\": \"MMM-Bluelinky.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"author\": \"Kevin Stolk\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {},\n  \"dependencies\": {\n    \"bluelinky\": \"^6.0.1\"\n  }\n}\n",
-        "status": "parsed",
-        "summary": {
-          "dependencies": {
-            "bluelinky": "^6.0.1"
-          },
-          "description": "A simple MagicMirror module for bluelink Hyundai cars",
-          "license": "ISC",
-          "name": "mmm-bluelinky",
-          "scripts": {
-            "test": "echo \"Error: no test specified\" && exit 1"
-          },
-          "version": "1.0.2"
-        },
-        "warnings": [
-          "No repository field."
-        ]
-      },
-      "url": "https://github.com/kstolk/MMM-Bluelinky"
     },
     {
       "category": "Transport / Travel",
@@ -19937,28 +20134,108 @@
       "category": "Finance",
       "description": "Display EU electricity prices from Nord Pool.",
       "id": "late4marshmellow/MMM-EUElectricityPrice",
-      "image": "barchart.jpg",
+      "image": "bar-with-price.jpg",
       "license": "MIT",
       "maintainer": "late4marshmellow",
       "maintainerURL": "https://github.com/late4marshmellow",
       "name": "MMM-EUElectricityPrice",
       "packageJson": {
         "path": "./modules/MMM-EUElectricityPrice-----late4marshmellow/package.json",
-        "raw": "{\n  \"name\": \"mmm-euelectricityprice\",\n  \"version\": \"1.0.0\",\n  \"description\": \"EU Electricity price chart\",\n  \"main\": \"MMM-EUElectricityPrice.js\",\n  \"author\": \"Janne Kalliola, late4marshmellow\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"chart.js\": \"^4\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-euelectricityprice\",\n  \"version\": \"1.0.0\",\n  \"description\": \"EU Electricity price chart\",\n\"keywords\": [\n  \"MagicMirror\",\n  \"MagicMirror Module\",\n  \"electricity price\",\n  \"Nord Pool\",\n  \"EU electricity\",\n  \"energy prices\",\n  \"spot prices\",\n  \"electricity chart\",\n  \"energy\",\n  \"smart home\",\n  \"dashboard\",\n  \"home automation\",\n  \"NOK\",\n  \"SEK\",\n  \"EUR\",\n  \"DKK\",\n  \"PLN\",\n  \"RO\",\n  \"BGN\",\n  \"NO1\",\n  \"NO2\",\n  \"NO3\",\n  \"NO4\",\n  \"NO5\",\n  \"SE1\",\n  \"SE2\",\n  \"SE3\",\n  \"FI\",\n  \"DE\",\n  \"AT\",\n  \"DK1\",\n  \"DK2\",\n  \"PL\",\n  \"RO\",\n  \"BG\",\n  \"electricity consumption\",\n  \"electricity price visualization\",\n  \"energy monitoring\"\n],\n  \t\"repository\": {\n\t\t\"type\": \"git\",\n\t\t\"url\": \"https://github.com/late4marshmellow/MMM-EUElectricityPrice\"\n\t},\n \n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\"\n  },\n  \n  \"main\": \"MMM-EUElectricityPrice.js\",\n  \"author\": \"Janne Kalliola, late4marshmellow\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"chart.js\": \"^4\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
             "chart.js": "^4"
           },
           "description": "EU Electricity price chart",
+          "keywords": [
+            "MagicMirror",
+            "MagicMirror Module",
+            "electricity price",
+            "Nord Pool",
+            "EU electricity",
+            "energy prices",
+            "spot prices",
+            "electricity chart",
+            "energy",
+            "smart home",
+            "dashboard",
+            "home automation",
+            "NOK",
+            "SEK",
+            "EUR",
+            "DKK",
+            "PLN",
+            "RO",
+            "BGN",
+            "NO1",
+            "NO2",
+            "NO3",
+            "NO4",
+            "NO5",
+            "SE1",
+            "SE2",
+            "SE3",
+            "FI",
+            "DE",
+            "AT",
+            "DK1",
+            "DK2",
+            "PL",
+            "RO",
+            "BG",
+            "electricity consumption",
+            "electricity price visualization",
+            "energy monitoring"
+          ],
           "license": "MIT",
           "name": "mmm-euelectricityprice",
+          "scripts": {
+            "lint": "eslint",
+            "lint:fix": "eslint --fix"
+          },
           "version": "1.0.0"
         },
-        "warnings": [
-          "No repository field."
-        ]
+        "warnings": []
       },
+      "tags": [
+        "magicmirror module",
+        "electricity price",
+        "nord pool",
+        "eu electricity",
+        "energy prices",
+        "spot prices",
+        "electricity chart",
+        "energy",
+        "smart home",
+        "dashboard",
+        "home automation",
+        "nok",
+        "sek",
+        "eur",
+        "dkk",
+        "pln",
+        "ro",
+        "bgn",
+        "no1",
+        "no2",
+        "no3",
+        "no4",
+        "no5",
+        "se1",
+        "se2",
+        "se3",
+        "fi",
+        "de",
+        "at",
+        "dk1",
+        "dk2",
+        "pl",
+        "bg",
+        "electricity consumption",
+        "electricity price visualization",
+        "energy monitoring"
+      ],
       "url": "https://github.com/late4marshmellow/MMM-EUElectricityPrice"
     },
     {
@@ -20374,6 +20651,97 @@
         "toulouse"
       ],
       "url": "https://github.com/LoneWanderer-GH/MMM-Toulouse-Transports"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Display real-time departures for public transport in Prague region - Czech Republic. Fetching data from <a target=\"_blank\" href=\"https://pid.cz/\">PID</a>.",
+      "id": "lucasbotka/MMM-PID",
+      "image": "pid_module_screenshot.jpg",
+      "license": "MIT",
+      "maintainer": "lucasbotka",
+      "maintainerURL": "https://github.com/lucasbotka",
+      "name": "MMM-PID",
+      "packageJson": {
+        "path": "./modules/MMM-PID-----lucasbotka/package.json",
+        "raw": "{\n  \"name\": \"mmm-pid\",\n  \"version\": \"1.0.0\",\n  \"description\": \"MagicMirror² module to display real-time departures for public transport in Prague region - Czech Republic. Fetching data from PID.\",\n  \"main\": \"MMM-PID.js\",\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/lucasbotka/MMM-PID.git\"\n  },\n  \"keywords\": [\n    \"public transport\",\n    \"prague\",\n    \"czech republic\",\n    \"PID\",\n    \"magicmirror\",\n    \"departure boards\"\n  ],\n  \"author\": \"Lukas Botka\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/lucasbotka/MMM-PID/issues\"\n  },\n  \"homepage\": \"https://github.com/lucasbotka/MMM-PID/#readme\",\n  \"dependencies\": {\n    \"node-fetch\": \"^2.7.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.14.1\",\n    \"@eslint/js\": \"^9.39.1\",\n    \"@eslint/markdown\": \"^7.5.1\",\n    \"@stylistic/eslint-plugin\": \"^5.5.0\",\n    \"eslint\": \"^9.39.1\",\n    \"globals\": \"^16.5.0\"\n  }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "node-fetch": "^2.7.0"
+          },
+          "description": "MagicMirror² module to display real-time departures for public transport in Prague region - Czech Republic. Fetching data from PID.",
+          "devDependencies": {
+            "@eslint/css": "^0.14.1",
+            "@eslint/js": "^9.39.1",
+            "@eslint/markdown": "^7.5.1",
+            "@stylistic/eslint-plugin": "^5.5.0",
+            "eslint": "^9.39.1",
+            "globals": "^16.5.0"
+          },
+          "keywords": [
+            "public transport",
+            "prague",
+            "czech republic",
+            "PID",
+            "magicmirror",
+            "departure boards"
+          ],
+          "license": "MIT",
+          "name": "mmm-pid",
+          "scripts": {
+            "lint": "eslint",
+            "lint:fix": "eslint --fix",
+            "test": "node --run lint"
+          },
+          "version": "1.0.0"
+        },
+        "warnings": []
+      },
+      "tags": [
+        "public transport",
+        "prague",
+        "czech republic",
+        "pid",
+        "departure boards"
+      ],
+      "url": "https://github.com/lucasbotka/MMM-PID"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Provides real-time notifications and status updates from your Bambu Lab printer.",
+      "id": "LuckyDuckTx/MMM-BambuLabNotify",
+      "image": "screenshot.jpg",
+      "license": "MIT",
+      "maintainer": "LuckyDuckTx",
+      "maintainerURL": "https://github.com/LuckyDuckTx",
+      "name": "MMM-BambuLabNotify",
+      "packageJson": {
+        "path": "./modules/MMM-BambuLabNotify-----LuckyDuckTx/package.json",
+        "raw": "{\n  \"name\": \"mmm-bambulabnotify\",\n  \"version\": \"1.0.0\",\n  \"main\": \"MMM-BambuLabNotify.js\",\n  \"description\": \"A MagicMirror² module that provides real-time notifications and status updates from your Bambu Lab printer (tested with A1, should also work with A1 Mini, X1 and P1 series).\",\n  \"keywords\": [\n    \"magic mirror\",\n    \"smart mirror\",\n    \"module\",\n    \"3D Printer\",\n    \"Bambulab\"\n  ],\n  \"homepage\": \"https://github.com/LuckyDuckTx/MMM-BambuLabNotify\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/LuckyDuckTx/MMM-BambuLabNotify\"\n  },\n  \"license\": \"MIT\",\n  \"dependencies\": { \"mqtt\": \"^5.10.0\" }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "mqtt": "^5.10.0"
+          },
+          "description": "A MagicMirror² module that provides real-time notifications and status updates from your Bambu Lab printer (tested with A1, should also work with A1 Mini, X1 and P1 series).",
+          "keywords": [
+            "magic mirror",
+            "smart mirror",
+            "module",
+            "3D Printer",
+            "Bambulab"
+          ],
+          "license": "MIT",
+          "name": "mmm-bambulabnotify",
+          "version": "1.0.0"
+        },
+        "warnings": []
+      },
+      "tags": [
+        "3d printer",
+        "bambulab"
+      ],
+      "url": "https://github.com/LuckyDuckTx/MMM-BambuLabNotify"
     },
     {
       "category": "Sports",
@@ -21380,22 +21748,26 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Automatically discovers your Sonos groups and shows rich now-playing cards with album art, grouping, and layout controls.",
-      "hasGithubIssues": true,
       "id": "matskkolstad/MMM-Sonos",
-      "isArchived": false,
+      "image": "docs-screenshot.jpg",
       "license": "MIT",
       "maintainer": "matskkolstad",
       "maintainerURL": "https://github.com/matskkolstad",
       "name": "MMM-Sonos",
       "packageJson": {
         "path": "./modules/MMM-Sonos-----matskkolstad/package.json",
-        "raw": "{\n  \"name\": \"mmm-sonos\",\n  \"version\": \"1.0.0\",\n  \"description\": \"MagicMirror² module that shows what is playing on your Sonos speakers.\",\n  \"main\": \"MMM-Sonos.js\",\n  \"scripts\": {\n    \"start\": \"node node_helper.js\",\n    \"test\": \"echo \\\"Ingen tester er definert\\\"\"\n  },\n  \"keywords\": [\n    \"magicmirror\",\n    \"sonos\",\n    \"smart-home\",\n    \"music\"\n  ],\n  \"author\": \"Mats Kjoshagen Kolstad <matskko@uio.no>\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/matskkolstad/MMM-Sonos.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/matskkolstad/MMM-Sonos/issues\"\n  },\n  \"homepage\": \"https://github.com/matskkolstad/MMM-Sonos#readme\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"sonos\": \"^1.14.1\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-sonos\",\n  \"version\": \"1.0.0\",\n  \"description\": \"MagicMirror² module that shows what is playing on your Sonos speakers.\",\n  \"main\": \"MMM-Sonos.js\",\n  \"scripts\": {\n    \"start\": \"node node_helper.js\",\n    \"test\": \"echo \\\"No tests are defined\\\"\",\n    \"lint\": \"eslint *.js\",\n    \"audit\": \"npm audit\"\n  },\n  \"keywords\": [\n    \"magicmirror\",\n    \"sonos\",\n    \"smart-home\",\n    \"music\"\n  ],\n  \"author\": \"Mats Kjoshagen Kolstad <matskko@uio.no>\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/matskkolstad/MMM-Sonos.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/matskkolstad/MMM-Sonos/issues\"\n  },\n  \"homepage\": \"https://github.com/matskkolstad/MMM-Sonos#readme\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"sonos\": \"^1.14.1\"\n  },\n  \"overrides\": {\n    \"axios\": \"^1.13.1\",\n    \"ip\": \"^2.0.1\",\n    \"xml2js\": \"^0.6.2\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.38.0\",\n    \"eslint\": \"^9.38.0\",\n    \"globals\": \"^16.4.0\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
             "sonos": "^1.14.1"
           },
           "description": "MagicMirror² module that shows what is playing on your Sonos speakers.",
+          "devDependencies": {
+            "@eslint/js": "^9.38.0",
+            "eslint": "^9.38.0",
+            "globals": "^16.4.0"
+          },
           "keywords": [
             "magicmirror",
             "sonos",
@@ -21405,8 +21777,10 @@
           "license": "MIT",
           "name": "mmm-sonos",
           "scripts": {
+            "audit": "npm audit",
+            "lint": "eslint *.js",
             "start": "node node_helper.js",
-            "test": "echo \"Ingen tester er definert\""
+            "test": "echo \"No tests are defined\""
           },
           "version": "1.0.0"
         },
@@ -22734,7 +23108,7 @@
       "name": "MMM-CalendarExt2",
       "packageJson": {
         "path": "./modules/MMM-CalendarExt2-----MMM-CalendarExt2/package.json",
-        "raw": "{\n  \"name\": \"mmm-calendarext2\",\n  \"version\": \"1.4.20\",\n  \"description\": \"Alternative calendar module of MagicMirror².\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"calendar\"\n  ],\n  \"homepage\": \"https://github.com/MMM-CalendarExt2/MMM-CalendarExt2#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/MMM-CalendarExt2/MMM-CalendarExt2/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/MMM-CalendarExt2/MMM-CalendarExt2.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"eouia <eouia0819@gmail.com>\",\n  \"main\": \"MMM-CalendarExt2.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"eslint\": \"eslint\",\n    \"eslint:fix\": \"eslint --fix\",\n    \"lint\": \"node --run eslint && node --run stylelint && node --run markdownlint\",\n    \"lint:fix\": \"node --run eslint:fix && node --run stylelint:fix && node --run markdownlint:fix\",\n    \"markdownlint\": \"markdownlint-cli2 **/*.md\",\n    \"markdownlint:fix\": \"markdownlint-cli2 **/*.md --fix\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || true\",\n    \"prettier\": \"prettier . --check\",\n    \"prettier:fix\": \"prettier . --write\",\n    \"stylelint\": \"stylelint **/*.css\",\n    \"stylelint:fix\": \"stylelint **/*.css --fix\",\n    \"test\": \"node --run lint && node --run prettier\"\n  },\n  \"lint-staged\": {\n    \"!(*.css|*.md)\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ],\n    \"*.css\": [\n      \"stylelint --fix\",\n      \"prettier --write\"\n    ],\n    \"*.md\": [\n      \"markdownlint-cli2 --fix\",\n      \"prettier --write\"\n    ]\n  },\n  \"dependencies\": {\n    \"ical.js\": \"^2.2.1\",\n    \"moment\": \"^2.30.1\",\n    \"moment-timezone\": \"^0.6.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.35.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@stylistic/eslint-plugin\": \"^5.3.1\",\n    \"eslint\": \"^9.35.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.1.6\",\n    \"markdownlint-cli2\": \"^0.18.1\",\n    \"prettier\": \"^3.6.2\",\n    \"stylelint\": \"^16.24.0\",\n    \"stylelint-config-standard\": \"^39.0.0\",\n    \"stylelint-prettier\": \"^5.0.3\"\n  },\n  \"engines\": {\n    \"node\": \">=18\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-calendarext2\",\n  \"version\": \"1.4.21\",\n  \"description\": \"Alternative calendar module of MagicMirror².\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"calendar\"\n  ],\n  \"homepage\": \"https://github.com/MMM-CalendarExt2/MMM-CalendarExt2#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/MMM-CalendarExt2/MMM-CalendarExt2/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/MMM-CalendarExt2/MMM-CalendarExt2.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"eouia <eouia0819@gmail.com>\",\n  \"main\": \"MMM-CalendarExt2.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"eslint\": \"eslint\",\n    \"eslint:fix\": \"eslint --fix\",\n    \"lint\": \"node --run eslint && node --run stylelint && node --run markdownlint\",\n    \"lint:fix\": \"node --run eslint:fix && node --run stylelint:fix && node --run markdownlint:fix\",\n    \"markdownlint\": \"markdownlint-cli2 **/*.md\",\n    \"markdownlint:fix\": \"markdownlint-cli2 **/*.md --fix\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || true\",\n    \"prettier\": \"prettier . --check\",\n    \"prettier:fix\": \"prettier . --write\",\n    \"stylelint\": \"stylelint **/*.css\",\n    \"stylelint:fix\": \"stylelint **/*.css --fix\",\n    \"test\": \"node --run lint && node --run prettier\"\n  },\n  \"lint-staged\": {\n    \"!(*.css|*.md)\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ],\n    \"*.css\": [\n      \"stylelint --fix\",\n      \"prettier --write\"\n    ],\n    \"*.md\": [\n      \"markdownlint-cli2 --fix\",\n      \"prettier --write\"\n    ]\n  },\n  \"dependencies\": {\n    \"ical.js\": \"^2.2.1\",\n    \"moment\": \"^2.30.1\",\n    \"moment-timezone\": \"^0.6.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.37.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"eslint\": \"^9.37.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"globals\": \"^16.4.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"markdownlint-cli2\": \"^0.18.1\",\n    \"prettier\": \"^3.6.2\",\n    \"stylelint\": \"^16.25.0\",\n    \"stylelint-config-standard\": \"^39.0.1\",\n    \"stylelint-prettier\": \"^5.0.3\"\n  },\n  \"engines\": {\n    \"node\": \">=18\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -22744,18 +23118,18 @@
           },
           "description": "Alternative calendar module of MagicMirror².",
           "devDependencies": {
-            "@eslint/js": "^9.35.0",
+            "@eslint/js": "^9.37.0",
             "@eslint/json": "^0.13.2",
-            "@stylistic/eslint-plugin": "^5.3.1",
-            "eslint": "^9.35.0",
+            "@stylistic/eslint-plugin": "^5.4.0",
+            "eslint": "^9.37.0",
             "eslint-plugin-import-x": "^4.16.1",
-            "globals": "^16.3.0",
+            "globals": "^16.4.0",
             "husky": "^9.1.7",
-            "lint-staged": "^16.1.6",
+            "lint-staged": "^16.2.3",
             "markdownlint-cli2": "^0.18.1",
             "prettier": "^3.6.2",
-            "stylelint": "^16.24.0",
-            "stylelint-config-standard": "^39.0.0",
+            "stylelint": "^16.25.0",
+            "stylelint-config-standard": "^39.0.1",
             "stylelint-prettier": "^5.0.3"
           },
           "engines": {
@@ -22782,7 +23156,7 @@
             "test": "node --run lint && node --run prettier"
           },
           "type": "commonjs",
-          "version": "1.4.20"
+          "version": "1.4.21"
         },
         "warnings": []
       },
@@ -22915,20 +23289,21 @@
       "name": "MMM-anotherNewsFeed",
       "packageJson": {
         "path": "./modules/MMM-anotherNewsFeed-----MMRIZE/package.json",
-        "raw": "{\n  \"name\": \"mmm-anothernewsfeed\",\n  \"version\": \"1.0.2\",\n  \"description\": \"A module for MagicMirror² to show news feeds from various sources with images.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"newsfeed\",\n    \"images\"\n  ],\n  \"main\": \"MMM-anotherNewsFeed.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/MMRIZE/MMM-anotherNewsFeed.git\"\n  },\n  \"author\": \"Seongnoh Yi <eouia0819@gmail.com>\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/MMRIZE/MMM-anotherNewsFeed/issues\"\n  },\n  \"homepage\": \"https://github.com/MMRIZE/MMM-anotherNewsFeed#readme\",\n  \"dependencies\": {\n    \"feedme\": \"^2.0.2\",\n    \"iconv-lite\": \"^0.7.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.11.0\",\n    \"@eslint/js\": \"^9.34.0\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"eslint\": \"^9.34.0\",\n    \"globals\": \"^16.3.0\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-anothernewsfeed\",\n  \"version\": \"1.1.0\",\n  \"description\": \"A module for MagicMirror² to show news feeds from various sources with images.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"newsfeed\",\n    \"images\"\n  ],\n  \"main\": \"MMM-anotherNewsFeed.js\",\n  \"type\": \"commonjs\",\n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/MMRIZE/MMM-anotherNewsFeed.git\"\n  },\n  \"author\": \"Seongnoh Yi <eouia0819@gmail.com>\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/MMRIZE/MMM-anotherNewsFeed/issues\"\n  },\n  \"homepage\": \"https://github.com/MMRIZE/MMM-anotherNewsFeed#readme\",\n  \"dependencies\": {\n    \"feedme\": \"^2.0.2\",\n    \"html-to-text\": \"^9.0.5\",\n    \"iconv-lite\": \"^0.7.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/css\": \"^0.13.0\",\n    \"@eslint/js\": \"^9.38.0\",\n    \"@eslint/markdown\": \"^7.4.0\",\n    \"eslint\": \"^9.38.0\",\n    \"globals\": \"^16.4.0\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
             "feedme": "^2.0.2",
+            "html-to-text": "^9.0.5",
             "iconv-lite": "^0.7.0"
           },
           "description": "A module for MagicMirror² to show news feeds from various sources with images.",
           "devDependencies": {
-            "@eslint/css": "^0.11.0",
-            "@eslint/js": "^9.34.0",
-            "@eslint/markdown": "^7.2.0",
-            "eslint": "^9.34.0",
-            "globals": "^16.3.0"
+            "@eslint/css": "^0.13.0",
+            "@eslint/js": "^9.38.0",
+            "@eslint/markdown": "^7.4.0",
+            "eslint": "^9.38.0",
+            "globals": "^16.4.0"
           },
           "keywords": [
             "MagicMirror",
@@ -22943,7 +23318,7 @@
             "test": "node --run lint"
           },
           "type": "commonjs",
-          "version": "1.0.2"
+          "version": "1.1.0"
         },
         "warnings": []
       },
@@ -27947,6 +28322,8 @@
       "category": "Entertainment / Misc",
       "description": "Displays upcoming movies using TMDB API.",
       "id": "PakshalGada/MMM-UpcomingMovies",
+      "image": "screenshot.jpg",
+      "license": "MIT",
       "maintainer": "PakshalGada",
       "maintainerURL": "https://github.com/PakshalGada",
       "name": "MMM-UpcomingMovies",
@@ -31726,17 +32103,63 @@
       "url": "https://github.com/SBrendan/MMM-LittleBockFermentationLog"
     },
     {
+      "category": "Development / Core MagicMirror²",
+      "description": "Monitor your system logs, application logs, or any text file with live updates and beautiful log-level color coding as a MagicMirror Module.",
+      "id": "schlomm/MMM-LogfileViewer",
+      "image": "screenshots-screenshot.jpg",
+      "license": "MIT",
+      "maintainer": "schlomm",
+      "maintainerURL": "https://github.com/schlomm",
+      "name": "MMM-LogfileViewer",
+      "packageJson": {
+        "path": "./modules/MMM-LogfileViewer-----schlomm/package.json",
+        "raw": "{\n  \"name\": \"mmm-logfileviewer\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A MagicMirror² module that displays real-time log file content.\",\n  \"main\": \"MMM-LogfileViewer.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"install\": \"npm install chokidar\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/schlomm/MMM-LogfileViewer.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Log\",\n    \"Monitoring\"\n  ],\n  \"author\": \"Dominik Schlarmann\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/schlomm/MMM-LogfileViewer/issues\"\n  },\n  \"homepage\": \"https://github.com/schlomm/MMM-LogfileViewer#readme\",\n  \"dependencies\": {\n    \"chokidar\": \"^4.0.3\"\n  },\n  \"devDependencies\": {\n    \"eslint\": \"^9.11.1\",\n    \"prettier\": \"^3.3.3\"\n  },\n  \"engines\": {\n    \"node\": \">=14.0.0\"\n  },\n  \"files\": [\n    \"MMM-LogfileViewer.js\",\n    \"node_helper.js\",\n    \"MMM-LogfileViewer.css\",\n    \"README.md\",\n    \"LICENSE\"\n  ]\n}",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "chokidar": "^4.0.3"
+          },
+          "description": "A MagicMirror² module that displays real-time log file content.",
+          "devDependencies": {
+            "eslint": "^9.11.1",
+            "prettier": "^3.3.3"
+          },
+          "engines": {
+            "node": ">=14.0.0"
+          },
+          "keywords": [
+            "MagicMirror",
+            "Module",
+            "Log",
+            "Monitoring"
+          ],
+          "license": "MIT",
+          "name": "mmm-logfileviewer",
+          "scripts": {
+            "install": "npm install chokidar",
+            "test": "echo \"Error: no test specified\" && exit 1"
+          },
+          "version": "1.0.0"
+        },
+        "warnings": []
+      },
+      "tags": [
+        "log",
+        "monitoring"
+      ],
+      "url": "https://github.com/schlomm/MMM-LogfileViewer"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Displayg random photos from your Nextcloud instance.",
       "id": "schlomm/MMM-Nextcloud",
-      "image": "screenshots-fullscreen_with_tag.jpg",
-      "license": "MIT",
+      "license": "NOASSERTION",
       "maintainer": "schlomm",
       "maintainerURL": "https://github.com/schlomm",
       "name": "MMM-Nextcloud",
       "packageJson": {
         "path": "./modules/MMM-Nextcloud-----schlomm/package.json",
-        "raw": "{\n  \"name\": \"mmm-nextcloud\",\n  \"version\": \"1.0.0\",\n  \"description\": \"MagicMirror module for displaying random photos from Nextcloud with EXIF data support\",\n  \"main\": \"MMM-Nextcloud.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"lint\": \"eslint *.js\",\n    \"format\": \"prettier --write *.js *.css\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/schlomm/MMM-Nextcloud.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Photo\",\n    \"Image\",\n    \"Nextcloud\"\n  ],\n  \"author\": \"Dominik Schlomm\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/schlomm/MMM-Nextcloud/issues\"\n  },\n  \"homepage\": \"https://github.com/schlomm/MMM-Nextcloud#readme\",\n  \"dependencies\": {\n    \"exif-parser\": \"^0.1.12\"\n  },\n  \"devDependencies\": {\n    \"eslint\": \"^9.11.1\",\n    \"prettier\": \"^3.3.3\"\n  },\n  \"engines\": {\n    \"node\": \">=14.0.0\"\n  },\n  \"magicmirror\": {\n    \"moduleName\": \"MMM-Nextcloud\",\n    \"moduleType\": \"media\",\n    \"description\": \"Display random photos from Nextcloud and turn EXIF data to a photo tag\",\n    \"features\": [\n      \"Nextcloud WebDAV integration\",\n      \"EXIF data extraction and display\",\n      \"Automatic photo list refresh\",\n      \"Configurable date formatting\",\n      \"Blur background effects\",\n      \"Status icons with animations\",\n      \"Error handling and logging\",\n      \"No jQuery dependency\",\n      \"Modern vanilla JavaScript\"\n    ],\n    \"requirements\": [\n      \"Nextcloud server with WebDAV access\",\n      \"Valid Nextcloud credentials\",\n      \"Node.js 14 or higher\"\n    ]\n  }\n}",
+        "raw": "{\n  \"name\": \"mmm-nextcloud\",\n  \"version\": \"1.0.0\",\n  \"description\": \"MagicMirror module for displaying random photos from Nextcloud with EXIF data support\",\n  \"main\": \"MMM-Nextcloud.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"lint\": \"eslint *.js\",\n    \"format\": \"prettier --write *.js *.css\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/schlomm/MMM-Nextcloud.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Photo\",\n    \"Image\",\n    \"Nextcloud\"\n  ],\n  \"author\": \"Dominik Schlarmann\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/schlomm/MMM-Nextcloud/issues\"\n  },\n  \"homepage\": \"https://github.com/schlomm/MMM-Nextcloud#readme\",\n  \"dependencies\": {\n    \"exif-parser\": \"^0.1.12\"\n  },\n  \"devDependencies\": {\n    \"eslint\": \"^9.11.1\",\n    \"prettier\": \"^3.3.3\"\n  },\n  \"engines\": {\n    \"node\": \">=14.0.0\"\n  },\n  \"magicmirror\": {\n    \"moduleName\": \"MMM-Nextcloud\",\n    \"moduleType\": \"media\",\n    \"description\": \"Display random photos from Nextcloud and turn EXIF data to a photo tag\",\n    \"features\": [\n      \"Nextcloud WebDAV integration\",\n      \"EXIF data extraction and display\",\n      \"Automatic photo list refresh\",\n      \"Configurable date formatting\",\n      \"Blur background effects\",\n      \"Status icons with animations\",\n      \"Error handling and logging\",\n      \"No jQuery dependency\",\n      \"Modern vanilla JavaScript\"\n    ],\n    \"requirements\": [\n      \"Nextcloud server with WebDAV access\",\n      \"Valid Nextcloud credentials\",\n      \"Node.js 14 or higher\"\n    ]\n  }\n}",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -35261,6 +35684,33 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display Synology Download Station tasks. Auto-hide when no tasks",
+      "id": "TAGinside/MMM-Synology-Download_Station",
+      "license": "NOASSERTION",
+      "maintainer": "TAGinside",
+      "maintainerURL": "https://github.com/TAGinside",
+      "name": "MMM-Synology-Download_Station",
+      "packageJson": {
+        "path": "./modules/MMM-Synology-Download_Station-----TAGinside/package.json",
+        "raw": "{\n  \"name\": \"MMM-Synology-Download_Station\",\n  \"version\": \"1.0.1\",\n  \"description\": \"MagicMirror module pour afficher les tâches Download Station Synology\",\n  \"main\": \"MMM-Synology-Download_Station.js\",\n  \"dependencies\": {\n    \"axios\": \"^1.8.1\"\n  },\n  \"author\": \"TAGinside & Perplexity\",\n  \"license\": \"MIT\"\n}",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "axios": "^1.8.1"
+          },
+          "description": "MagicMirror module pour afficher les tâches Download Station Synology",
+          "license": "MIT",
+          "name": "MMM-Synology-Download_Station",
+          "version": "1.0.1"
+        },
+        "warnings": [
+          "No repository field."
+        ]
+      },
+      "url": "https://github.com/TAGinside/MMM-Synology-Download_Station"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display data from your FreeBox v6 server (Revolution) from the french ISP free.",
       "id": "tataille/MMM-FreeBox-Monitor",
       "image": "2016-06-30_14-34-46.jpg",
@@ -38030,7 +38480,20 @@
       "name": "MMM-Strava-Last-Activity-Map",
       "packageJson": {
         "path": "./modules/MMM-Strava-Last-Activity-Map-----tylerstambaugh/package.json",
-        "status": "missing",
+        "raw": "{\n  \"name\": \"mmm-strava-last-activity-map\",\n  \"version\": \"1.0.0\",\n  \"description\": \"---\",\n  \"main\": \"MMM-Strava-Last-Activity-Map.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/tylerstambaugh/MMM-Strava-Last-Activity-Map.git\"\n  },\n  \"keywords\": [],\n  \"author\": \"Tyler Stambaugh\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/tylerstambaugh/MMM-Strava-Last-Activity-Map/issues\"\n  },\n  \"homepage\": \"https://github.com/tylerstambaugh/MMM-Strava-Last-Activity-Map#readme\",\n  \"dependencies\": {\n    \"axios\": \"^1.12.2\"\n  }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "axios": "^1.12.2"
+          },
+          "description": "---",
+          "license": "MIT",
+          "name": "mmm-strava-last-activity-map",
+          "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+          },
+          "version": "1.0.0"
+        },
         "warnings": []
       },
       "url": "https://github.com/tylerstambaugh/MMM-Strava-Last-Activity-Map"
@@ -38046,7 +38509,20 @@
       "name": "MMM-StravaWeekInBike",
       "packageJson": {
         "path": "./modules/MMM-StravaWeekInBike-----tylerstambaugh/package.json",
-        "status": "missing",
+        "raw": "{\n  \"name\": \"mmm-stravaweekinbike\",\n  \"version\": \"1.0.0\",\n  \"description\": \"---\",\n  \"main\": \"MMM-StravaWeekInBike.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/tylerstambaugh/MMM-StravaWeekInBike.git\"\n  },\n  \"keywords\": [],\n  \"author\": \"\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/tylerstambaugh/MMM-StravaWeekInBike/issues\"\n  },\n  \"homepage\": \"https://github.com/tylerstambaugh/MMM-StravaWeekInBike#readme\",\n  \"dependencies\": {\n    \"axios\": \"^1.12.2\"\n  }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "axios": "^1.12.2"
+          },
+          "description": "---",
+          "license": "MIT",
+          "name": "mmm-stravaweekinbike",
+          "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+          },
+          "version": "1.0.0"
+        },
         "warnings": []
       },
       "url": "https://github.com/tylerstambaugh/MMM-StravaWeekInBike"
@@ -40800,7 +41276,7 @@
       "name": "MMM-MealieMenu",
       "packageJson": {
         "path": "./modules/MMM-MealieMenu-----zanix/package.json",
-        "raw": "{\n  \"name\": \"mmm-mealiemenu\",\n  \"version\": \"1.7.0\",\n  \"description\": \"A MagicMirror² module that displays your Mealie meal plan for the week.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"mealie\",\n    \"recipie\"\n  ],\n  \"homepage\": \"https://github.com/zanix/MMM-MealieMenu#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/zanix/MMM-MealieMenu/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/zanix/MMM-MealieMenu.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": {\n    \"name\": \"Joshua Clark\",\n    \"url\": \"https://github.com/zanix\"\n  },\n  \"contributors\": [\n    \"https://github.com/zanix/MMM-MealieMenu/graphs/contributors\"\n  ],\n  \"main\": \"MMM-MealieMenu.js\",\n  \"scripts\": {\n    \"lint\": \"eslint --ignore-pattern 'CHANGELOG.md' && stylelint **/*.css && markdownlint . --ignore node_modules && prettier . --check\",\n    \"lint:fix\": \"eslint --ignore-pattern 'CHANGELOG.md' --fix && stylelint **/*.css --fix && markdownlint . --ignore node_modules --fix && prettier . --write\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.\",\n    \"test\": \"npm run lint\"\n  },\n  \"lint-staged\": {\n    \"!(*.css|*.md)\": [\n      \"eslint --ignore-pattern 'CHANGELOG.md' --fix\",\n      \"prettier --write --ignore-unknown\"\n    ],\n    \"*.md\": [\n      \"markdownlint --ignore node_modules --fix\",\n      \"prettier --write\"\n    ],\n    \"*.css\": [\n      \"stylelint --fix\",\n      \"prettier --write\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^19.3.0\",\n    \"@commitlint/config-conventional\": \"^19.8.0\",\n    \"@eslint/js\": \"^9.24.0\",\n    \"@eslint/json\": \"^0.12.0\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"@semantic-release/changelog\": \"^6.0.3\",\n    \"@semantic-release/git\": \"^10.0.1\",\n    \"@stylistic/eslint-plugin\": \"^5.3.1\",\n    \"eslint\": \"^9.24.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"eslint-plugin-package-json\": \"^0.29.1\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^15.5.1\",\n    \"markdownlint-cli\": \"^0.44.0\",\n    \"prettier\": \"^3.6.2\",\n    \"semantic-release\": \"^24.2.7\",\n    \"stylelint\": \"^16.21.0\",\n    \"stylelint-config-standard\": \"^39.0.0\",\n    \"stylelint-prettier\": \"^5.0.3\"\n  },\n  \"engines\": {\n    \"node\": \">=18\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-mealiemenu\",\n  \"version\": \"1.7.0\",\n  \"description\": \"A MagicMirror² module that displays your Mealie meal plan for the week.\",\n  \"keywords\": [\n    \"MagicMirror\",\n    \"mealie\",\n    \"recipie\"\n  ],\n  \"homepage\": \"https://github.com/zanix/MMM-MealieMenu#readme\",\n  \"bugs\": {\n    \"url\": \"https://github.com/zanix/MMM-MealieMenu/issues\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/zanix/MMM-MealieMenu.git\"\n  },\n  \"license\": \"MIT\",\n  \"author\": {\n    \"name\": \"Joshua Clark\",\n    \"url\": \"https://github.com/zanix\"\n  },\n  \"contributors\": [\n    \"https://github.com/zanix/MMM-MealieMenu/graphs/contributors\"\n  ],\n  \"main\": \"MMM-MealieMenu.js\",\n  \"scripts\": {\n    \"lint\": \"eslint && stylelint **/*.css && markdownlint . --ignore node_modules && prettier . --check\",\n    \"lint:fix\": \"eslint --fix && stylelint **/*.css --fix && markdownlint . --ignore node_modules --fix && prettier . --write\",\n    \"markdownlint\": \"markdownlint . --ignore node_modules\",\n    \"prepare\": \"[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.\",\n    \"prettier\": \"prettier . --check\",\n    \"prettier:fix\": \"prettier . --write\",\n    \"test\": \"npm run lint\"\n  },\n  \"lint-staged\": {\n    \"!(*.css|*.md)\": [\n      \"eslint --fix\",\n      \"prettier --write --ignore-unknown\"\n    ],\n    \"*.md\": [\n      \"markdownlint --ignore node_modules --fix\",\n      \"prettier --write\"\n    ],\n    \"*.css\": [\n      \"stylelint --fix\",\n      \"prettier --write\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^19.3.0\",\n    \"@commitlint/config-conventional\": \"^19.8.0\",\n    \"@eslint/js\": \"^9.24.0\",\n    \"@eslint/json\": \"^0.13.2\",\n    \"@eslint/markdown\": \"^7.2.0\",\n    \"@semantic-release/changelog\": \"^6.0.3\",\n    \"@semantic-release/git\": \"^10.0.1\",\n    \"@stylistic/eslint-plugin\": \"^5.3.1\",\n    \"eslint\": \"^9.24.0\",\n    \"eslint-plugin-import-x\": \"^4.16.1\",\n    \"eslint-plugin-package-json\": \"^0.29.1\",\n    \"globals\": \"^16.3.0\",\n    \"husky\": \"^9.1.7\",\n    \"lint-staged\": \"^16.2.3\",\n    \"markdownlint-cli\": \"^0.44.0\",\n    \"prettier\": \"^3.6.2\",\n    \"semantic-release\": \"^24.2.7\",\n    \"stylelint\": \"^16.24.0\",\n    \"stylelint-config-standard\": \"^39.0.0\",\n    \"stylelint-prettier\": \"^5.0.3\"\n  },\n  \"engines\": {\n    \"node\": \">=22.14.0\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "description": "A MagicMirror² module that displays your Mealie meal plan for the week.",
@@ -40808,7 +41284,7 @@
             "@commitlint/cli": "^19.3.0",
             "@commitlint/config-conventional": "^19.8.0",
             "@eslint/js": "^9.24.0",
-            "@eslint/json": "^0.12.0",
+            "@eslint/json": "^0.13.2",
             "@eslint/markdown": "^7.2.0",
             "@semantic-release/changelog": "^6.0.3",
             "@semantic-release/git": "^10.0.1",
@@ -40818,16 +41294,16 @@
             "eslint-plugin-package-json": "^0.29.1",
             "globals": "^16.3.0",
             "husky": "^9.1.7",
-            "lint-staged": "^15.5.1",
+            "lint-staged": "^16.2.3",
             "markdownlint-cli": "^0.44.0",
             "prettier": "^3.6.2",
             "semantic-release": "^24.2.7",
-            "stylelint": "^16.21.0",
+            "stylelint": "^16.24.0",
             "stylelint-config-standard": "^39.0.0",
             "stylelint-prettier": "^5.0.3"
           },
           "engines": {
-            "node": ">=18"
+            "node": ">=22.14.0"
           },
           "keywords": [
             "MagicMirror",
@@ -40837,9 +41313,12 @@
           "license": "MIT",
           "name": "mmm-mealiemenu",
           "scripts": {
-            "lint": "eslint --ignore-pattern 'CHANGELOG.md' && stylelint **/*.css && markdownlint . --ignore node_modules && prettier . --check",
-            "lint:fix": "eslint --ignore-pattern 'CHANGELOG.md' --fix && stylelint **/*.css --fix && markdownlint . --ignore node_modules --fix && prettier . --write",
+            "lint": "eslint && stylelint **/*.css && markdownlint . --ignore node_modules && prettier . --check",
+            "lint:fix": "eslint --fix && stylelint **/*.css --fix && markdownlint . --ignore node_modules --fix && prettier . --write",
+            "markdownlint": "markdownlint . --ignore node_modules",
             "prepare": "[ -f node_modules/.bin/husky ] && husky || echo husky is not installed.",
+            "prettier": "prettier . --check",
+            "prettier:fix": "prettier . --write",
             "test": "npm run lint"
           },
           "version": "1.7.0"

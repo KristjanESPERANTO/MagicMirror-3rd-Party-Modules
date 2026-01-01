@@ -3413,6 +3413,15 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays daily artwork from The Metropolitan Museum of Art's public collection. Transform your mirror into a digital art gallery that showcases masterpieces from one of the world's most prestigious museums.",
+      "id": "flightlesstux/MMM-DailyMetArt",
+      "maintainer": "flightlesstux",
+      "maintainerURL": "https://github.com/flightlesstux",
+      "name": "MMM-DailyMetArt",
+      "url": "https://github.com/flightlesstux/MMM-DailyMetArt"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Directly cast from the MagicMirror² server to a chromecast.",
       "id": "flo80/MMM-chromecast",
       "maintainer": "flo80",
@@ -3638,6 +3647,15 @@
       "maintainerURL": "https://github.com/gitgitaway",
       "name": "MMM-MyTeams-Clock",
       "url": "https://github.com/gitgitaway/MMM-MyTeams-Clock"
+    },
+    {
+      "category": "Sports",
+      "description": "Displays your teams next fixture and a summary of the fastest/shrtest driving route from your Lat/Lon to the match venue. Uses the free Tom Tom API. Works for most Soccer teams.",
+      "id": "gitgitaway/MMM-MyTeams-DriveToMatch",
+      "maintainer": "gitgitaway",
+      "maintainerURL": "https://github.com/gitgitaway",
+      "name": "MMM-MyTeams-DriveToMatch",
+      "url": "https://github.com/gitgitaway/MMM-MyTeams-DriveToMatch"
     },
     {
       "category": "Sports",
@@ -3948,6 +3966,15 @@
       "url": "https://github.com/hdurdle/MMM-WestBerksBinDay"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Shows status such as remaining program time of your Home Connect appliances. Based on djeriks module MMM-HomeConnect, but with headless auth workflow.",
+      "id": "HeikoGr/MMM-HomeConnect2",
+      "maintainer": "HeikoGr",
+      "maintainerURL": "https://github.com/HeikoGr",
+      "name": "MMM-HomeConnect2",
+      "url": "https://github.com/HeikoGr/MMM-HomeConnect2"
+    },
+    {
       "category": "Education",
       "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
       "id": "HeikoGr/MMM-Webuntis",
@@ -4180,6 +4207,15 @@
       "maintainerURL": "https://github.com/Iketaki",
       "name": "MMM-WebView",
       "url": "https://github.com/Iketaki/MMM-WebView"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Displays some of your Hyundai's data on your mirror.",
+      "id": "ilenhart/MMM-Bluelinky2",
+      "maintainer": "ilenhart",
+      "maintainerURL": "https://github.com/ilenhart",
+      "name": "MMM-Bluelinky2",
+      "url": "https://github.com/ilenhart/MMM-Bluelinky2"
     },
     {
       "category": "Entertainment / Misc",
@@ -4484,6 +4520,15 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "A fortune cookie for your mirror.",
+      "id": "jasonmce/MMM-Fortune",
+      "maintainer": "jasonmce",
+      "maintainerURL": "https://github.com/jasonmce",
+      "name": "MMM-Fortune",
+      "url": "https://github.com/jasonmce/MMM-Fortune"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display a QR code with a link to a local module.",
       "id": "JasonVonKrueger/MMM-QR-Remote-Link",
       "maintainer": "JasonVonKrueger",
@@ -4535,6 +4580,15 @@
       "maintainerURL": "https://github.com/jboucly",
       "name": "MMM-Hue-Controller-2",
       "url": "https://github.com/jboucly/MMM-Hue-Controller-2"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays the status of your Husqvarna Automower with animations and information from your mower.",
+      "id": "jboucly/MMM-Husqvarna-status",
+      "maintainer": "jboucly",
+      "maintainerURL": "https://github.com/jboucly",
+      "name": "MMM-Husqvarna-status",
+      "url": "https://github.com/jboucly/MMM-Husqvarna-status"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -4757,6 +4811,15 @@
       "maintainerURL": "https://github.com/jirsis",
       "name": "JIR-tarifa-luz",
       "url": "https://github.com/jirsis/JIR-tarifa-luz"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Show Station Data for stations in the Karlsruhe Region pulled from the KVV Trias API.",
+      "id": "jkobber/MMM-KVV-Trias",
+      "maintainer": "jkobber",
+      "maintainerURL": "https://github.com/jkobber",
+      "name": "MMM-KVV-Trias",
+      "url": "https://github.com/jkobber/MMM-KVV-Trias"
     },
     {
       "category": "Development / Core MagicMirror²",
@@ -5484,6 +5547,15 @@
       "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live"
     },
     {
+      "category": "News / Information",
+      "description": "Bring the thrill of <a target=\"_blank\" href=\"https://mastodon.social\">Mastodon</a> – a decentralized social network where you can toot, connect, and build vibrant communities across the open fediverse – to your mirror: Display timelines, hashtags, and profiles with media thumbnails, QR codes, and rotating posts.",
+      "id": "KristjanESPERANTO/MMM-Mastodon",
+      "maintainer": "KristjanESPERANTO",
+      "maintainerURL": "https://github.com/KristjanESPERANTO",
+      "name": "MMM-Mastodon",
+      "url": "https://github.com/KristjanESPERANTO/MMM-Mastodon"
+    },
+    {
       "category": "Weather",
       "description": "Display current and forecast weather based on Openweathermap OneCall API data with alternative formatting. With various icon sets, including an animated one.",
       "id": "KristjanESPERANTO/MMM-OneCallWeather",
@@ -5512,21 +5584,12 @@
     },
     {
       "category": "Voice Control",
-      "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
+      "description": "A text-to-speech module that uses the browser's Web Speech API.<br /><br />Let a voice greet you when your MagicMirror starts up — have the time read aloud at the touch of a button — etc.<br />Other modules can send notifications to this module so that they will be read aloud.",
       "id": "KristjanESPERANTO/MMM-WebSpeechTTS",
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "name": "MMM-WebSpeechTTS",
       "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS"
-    },
-    {
-      "category": "Transport / Travel",
-      "description": "Displays some of your Hyundai's data on your Mirror, the code is based on <a target=\"_blank\" href=\"https://github.com/martinburheimtingstad/MMM-Tesla2\">MMM-Tesla2</a>.",
-      "id": "kstolk/MMM-Bluelinky",
-      "maintainer": "kstolk",
-      "maintainerURL": "https://github.com/kstolk",
-      "name": "MMM-Bluelinky",
-      "url": "https://github.com/kstolk/MMM-Bluelinky"
     },
     {
       "category": "Transport / Travel",
@@ -5771,6 +5834,24 @@
       "maintainerURL": "https://github.com/LoneWanderer-GH",
       "name": "MMM-Toulouse-Transports",
       "url": "https://github.com/LoneWanderer-GH/MMM-Toulouse-Transports"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Display real-time departures for public transport in Prague region - Czech Republic. Fetching data from <a target=\"_blank\" href=\"https://pid.cz/\">PID</a>.",
+      "id": "lucasbotka/MMM-PID",
+      "maintainer": "lucasbotka",
+      "maintainerURL": "https://github.com/lucasbotka",
+      "name": "MMM-PID",
+      "url": "https://github.com/lucasbotka/MMM-PID"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Provides real-time notifications and status updates from your Bambu Lab printer.",
+      "id": "LuckyDuckTx/MMM-BambuLabNotify",
+      "maintainer": "LuckyDuckTx",
+      "maintainerURL": "https://github.com/LuckyDuckTx",
+      "name": "MMM-BambuLabNotify",
+      "url": "https://github.com/LuckyDuckTx/MMM-BambuLabNotify"
     },
     {
       "category": "Sports",
@@ -7264,16 +7345,6 @@
       "url": "https://github.com/mykle1/MMM-FMI"
     },
     {
-      "category": "Outdated Modules",
-      "description": "A fortune cookie for your MagicMirror².",
-      "id": "mykle1/MMM-Fortune",
-      "maintainer": "mykle1",
-      "maintainerURL": "https://github.com/mykle1",
-      "name": "MMM-Fortune",
-      "outdated": "Abandoned. And <a href=\"https://github.com/mykle1/MMM-Fortune/issues/4\">API is down</a>.",
-      "url": "https://github.com/mykle1/MMM-Fortune"
-    },
-    {
       "category": "Entertainment / Misc",
       "description": "A different kind of calendar.",
       "id": "mykle1/MMM-HumanCalendar",
@@ -8176,20 +8247,20 @@
     {
       "category": "News / Information",
       "description": "Shows the current status of air raid sirens in Ukraine.",
-      "id": "PavlenkoM/MMM-air-raid-monitor-ua",
+      "id": "PavlenkoM/MagicMirror-air-raid-monitor-ua",
       "maintainer": "PavlenkoM",
       "maintainerURL": "https://github.com/PavlenkoM",
-      "name": "MMM-air-raid-monitor-ua",
-      "url": "https://github.com/PavlenkoM/MMM-air-raid-monitor-ua"
+      "name": "MagicMirror-air-raid-monitor-ua",
+      "url": "https://github.com/PavlenkoM/MagicMirror-air-raid-monitor-ua"
     },
     {
       "category": "Weather",
       "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
-      "id": "PavlenkoM/MMM-IQAir",
+      "id": "PavlenkoM/MagicMirror-IQAir",
       "maintainer": "PavlenkoM",
       "maintainerURL": "https://github.com/PavlenkoM",
-      "name": "MMM-IQAir",
-      "url": "https://github.com/PavlenkoM/MMM-IQAir"
+      "name": "MagicMirror-IQAir",
+      "url": "https://github.com/PavlenkoM/MagicMirror-IQAir"
     },
     {
       "category": "Transport / Travel",
@@ -9189,6 +9260,15 @@
       "url": "https://github.com/SBrendan/MMM-LittleBockFermentationLog"
     },
     {
+      "category": "Development / Core MagicMirror²",
+      "description": "Monitor your system logs, application logs, or any text file with live updates and beautiful log-level color coding.",
+      "id": "schlomm/MMM-LogfileViewer",
+      "maintainer": "schlomm",
+      "maintainerURL": "https://github.com/schlomm",
+      "name": "MMM-LogfileViewer",
+      "url": "https://github.com/schlomm/MMM-LogfileViewer"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Displayg random photos from your Nextcloud instance.",
       "id": "schlomm/MMM-Nextcloud",
@@ -9967,6 +10047,15 @@
       "url": "https://github.com/spydersoft-consulting/MMM-StatusPageIo"
     },
     {
+      "category": "Entertainment / Misc",
+      "description": "Show full screen slideshow in background using images from Synology Photos.",
+      "id": "spydersoft-consulting/MMM-SynPhotoSlideshow",
+      "maintainer": "spydersoft-consulting",
+      "maintainerURL": "https://github.com/spydersoft-consulting",
+      "name": "MMM-SynPhotoSlideshow",
+      "url": "https://github.com/spydersoft-consulting/MMM-SynPhotoSlideshow"
+    },
+    {
       "category": "Outdated Modules",
       "description": "Displays alertR sensor alerts on the mirror.",
       "id": "sqall01/MMM-alertRsensoralerts",
@@ -10165,6 +10254,15 @@
       "maintainerURL": "https://github.com/tabsl",
       "name": "MMM-MySQLData",
       "url": "https://github.com/tabsl/MMM-MySQLData"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display Synology Download Station tasks. Auto-hide when no tasks.",
+      "id": "TAGinside/MMM-Synology-Download_Station",
+      "maintainer": "TAGinside",
+      "maintainerURL": "https://github.com/TAGinside",
+      "name": "MMM-Synology-Download_Station",
+      "url": "https://github.com/TAGinside/MMM-Synology-Download_Station"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -11540,6 +11638,15 @@
       "url": "https://github.com/Xioner19/MMM-MPKLodz"
     },
     {
+      "category": "Weather",
+      "description": "Display live data from Google Nest thermostats. It uses the homebridge-nest API client under the hood, giving you quick access to ambient temperature, humidity, operating mode, and HVAC status for every thermostat on your Nest account.",
+      "id": "xiujunma/MMM-nest",
+      "maintainer": "xiujunma",
+      "maintainerURL": "https://github.com/xiujunma",
+      "name": "MMM-nest",
+      "url": "https://github.com/xiujunma/MMM-nest"
+    },
+    {
       "category": "Transport / Travel",
       "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. This version is updated to support multi-filtering and Vasttrafik's API version 4.",
       "id": "Xkhi/MMM-Vasttrafik-PublicTransport",
@@ -11801,15 +11908,6 @@
       "url": "https://github.com/zerosamski/MMM-Page-Pusher"
     },
     {
-      "category": "Transport / Travel",
-      "description": "Show Station Data for stations in the Karlsruhe Region pulled from the KVV Trias API.",
-      "id": "ZeroTwoWeeb/MMM-KVV-Trias",
-      "maintainer": "ZeroTwoWeeb",
-      "maintainerURL": "https://github.com/ZeroTwoWeeb",
-      "name": "MMM-KVV-Trias",
-      "url": "https://github.com/ZeroTwoWeeb/MMM-KVV-Trias"
-    },
-    {
       "category": "Outdated Modules",
       "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
       "id": "zhouxichun/MMM-TiHimawari8Earth",
@@ -11831,11 +11929,11 @@
     {
       "category": "Transport / Travel",
       "description": "Display departure times or estimated time to departure for the selected Caltrain station.",
-      "id": "zzhenney/MMM-Caltrain",
-      "maintainer": "zzhenney",
-      "maintainerURL": "https://github.com/zzhenney",
+      "id": "zzflops/MMM-Caltrain",
+      "maintainer": "zzflops",
+      "maintainerURL": "https://github.com/zzflops",
       "name": "MMM-Caltrain",
-      "url": "https://github.com/zzhenney/MMM-Caltrain"
+      "url": "https://github.com/zzflops/MMM-Caltrain"
     }
   ]
 }
