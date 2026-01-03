@@ -9,4 +9,5 @@
 ownModuleList.json
 website/data/cache/
 website/data/moduleCache.json
+website/data/skipped_modules.json
 *.tmp

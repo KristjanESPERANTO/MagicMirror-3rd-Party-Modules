@@ -2,7 +2,6 @@
 import {
   sanitizeFinalModules,
   sanitizeGitHubData,
-  sanitizeSkippedModules,
   sanitizeStage2,
   sanitizeStage3,
   sanitizeStage4,
@@ -77,13 +76,12 @@ const artifacts = [
     source: path.join(repoRoot, "website/data/gitHubData.json"),
     target: path.join(repoRoot, "fixtures/golden/gitHubData.json"),
     sanitize: sanitizeGitHubData
-  },
-  {
-    name: "skipped_modules",
-    source: path.join(repoRoot, "website/data/skipped_modules.json"),
-    target: path.join(repoRoot, "fixtures/golden/skipped_modules.json"),
-    sanitize: sanitizeSkippedModules
   }
+
+  /*
+   * Note: skipped_modules.json is intentionally excluded from golden artifacts
+   * as it's non-deterministic and depends on current repository availability
+   */
 ];
 
 function processArtifact (artifact) {
