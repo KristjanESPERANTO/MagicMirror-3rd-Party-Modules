@@ -88,6 +88,10 @@ jobs:
           if [ -f build-output/data/skipped_modules.json ]; then
             mkdir -p website/data
             cp build-output/data/skipped_modules.json website/data/skipped_modules.json
+          else
+            # Create empty skipped_modules.json if pipeline didn't create it
+            mkdir -p website/data
+            echo '[]' > website/data/skipped_modules.json
           fi
           rm -rf build-output
       - name: Upload pipeline data for validation
