@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import {mkdir, readFile, writeFile} from "node:fs/promises";
-import RefParser from "@apidevtools/json-schema-ref-parser";
+import {dereference} from "@apidevtools/json-schema-ref-parser";
 import {fileURLToPath} from "node:url";
 import path from "node:path";
 import process from "node:process";
@@ -33,7 +33,7 @@ async function ensureDistDir () {
 
 async function bundleSchema (filename) {
   const sourcePath = path.join(SRC_DIR, filename);
-  const bundledSchema = await RefParser.dereference(sourcePath, {
+  const bundledSchema = await dereference(sourcePath, {
     dereference: {circular: false}
   });
   const output = `${JSON.stringify(bundledSchema, null, 2)}\n`;
