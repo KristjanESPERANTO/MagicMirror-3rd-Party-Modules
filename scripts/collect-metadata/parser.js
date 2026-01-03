@@ -1,6 +1,26 @@
 import {getRepositoryId, getRepositoryType} from "../updateRepositoryApiData/helpers.js";
 
 /**
+ * Extract the maintainer URL from a repository URL.
+ *
+ * @param {string} url - The repository URL.
+ * @returns {string} The maintainer URL or empty string if invalid.
+ */
+function getMaintainerURL (url) {
+  try {
+    const urlObj = new URL(url);
+    const pathParts = urlObj.pathname.split("/").filter(Boolean);
+    if (pathParts.length >= 1) {
+      return `${urlObj.origin}/${pathParts[0]}`;
+    }
+  } catch {
+    // Invalid URL, return empty string
+  }
+
+  return "";
+}
+
+/**
  * Parse the Markdown content into a list of module objects.
  *
  * @param {string} markdown - The raw Markdown content from the Wiki.
@@ -55,21 +75,7 @@ export function parseModuleList (markdown) {
             issues.push(`Skipping unknown repository type: ${url}`);
           } else {
             const id = getRepositoryId(url) || name.replace(/\s+/gu, "-");
-
-            /*
-             * Always derive maintainerURL from repo URL
-             * e.g. https://github.com/Bee-Mar/MMM-Podcast -> https://github.com/Bee-Mar
-             */
-            let maintainerURL = "";
-            try {
-              const urlObj = new URL(url);
-              const pathParts = urlObj.pathname.split("/").filter(Boolean);
-              if (pathParts.length >= 1) {
-                maintainerURL = `${urlObj.origin}/${pathParts[0]}`;
-              }
-            } catch {
-              // Invalid URL, leave maintainerURL empty
-            }
+            const maintainerURL = getMaintainerURL(url);
 
             modules.push({
               name,
