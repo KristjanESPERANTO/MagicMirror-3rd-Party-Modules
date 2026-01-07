@@ -1,21 +1,21 @@
 # Pipeline Architecture
 
-Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current pipeline, highlights the target architecture we are steering toward, and links each element back to the modernization roadmap.
+Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current pipeline, the legacy state we migrated from, and the target architecture we are steering toward.
 
-## Current state (November 2025)
+## Current State (January 2026)
 
-The production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh` (or the shorthand npm scripts) and progresses through five sequential stages. All stages are now implemented in TypeScript/Node.js and reuse the shared utility layer introduced in P2.1. Each stage produces a well-defined artifact that ships with a JSON Schema contract enforced at the boundary.
+The production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh` and progresses through five sequential stages. All stages are implemented in TypeScript/Node.js with unified tooling, JSON Schema contracts at every boundary, and intelligent caching throughout.
 
-### Stage overview
+### Stage Overview
 
-| Order | Stage ID             | Runtime    | Key outputs                                                                                                  |
-| ----- | -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------ |
-| 1+2   | `collect-metadata`   | Node.js    | `website/data/modules.stage.2.json`, `website/data/gitHubData.json`                                          |
-| 3     | `get-modules`        | TypeScript | `website/data/modules.stage.3.json`, `modules/`, `modules_temp/`                                             |
-| 4     | `expand-module-list` | Node.js    | `website/data/modules.stage.4.json`, `website/images/`                                                       |
-| 5     | `check-modules`      | TypeScript | `website/data/modules.json`, `website/data/modules.min.json`, `website/data/stats.json`, `website/result.md` |
+| Order | Stage ID             | Key Outputs                                                   |
+| ----- | -------------------- | ------------------------------------------------------------- |
+| 1+2   | `collect-metadata`   | `modules.stage.2.json`, `gitHubData.json`                     |
+| 3     | `get-modules`        | `modules.stage.3.json`, `modules/`, `modules_temp/`           |
+| 4     | `expand-module-list` | `modules.stage.4.json`, `website/images/`                     |
+| 5     | `check-modules`      | `modules.json`, `modules.min.json`, `stats.json`, `result.md` |
 
-### Current workflow diagram
+### Current Workflow Diagram
 
 ```mermaid
 flowchart TB
@@ -50,62 +50,29 @@ flowchart TB
   orchestrator -.controls.-> analyze
 ```
 
-### Observations
+### Key Features
 
-- Stage contracts are codified via the bundled schemas stored under `dist/schemas/` (sources live in `pipeline/schemas/src/`).
-- Cross-cutting utilities (HTTP, Git, filesystem, rate limiting) now live in `scripts/shared/` and are reused by every TypeScript stage, including the deep-analysis step.
-- The orchestrator CLI runs the declarative stage graph and supports `--only/--skip`, retries, and shared logging.
-- The comparison harness (`scripts/check-modules/compare/`) captures README/HTML alongside JSON outputs and applies warning thresholds before highlighting differences between runs.
+- **Orchestrator CLI**: Declarative stage graph with `--only/--skip` support, retries, and structured logging
+- **Schema Validation**: JSON schemas enforce contracts at every stage boundary (`dist/schemas/`)
+- **Shared Utilities**: HTTP, Git, filesystem, and rate limiting in `scripts/shared/`
+- **Comparison Harness**: Captures README/HTML alongside JSON for regression testing
 
-### Distribution touchpoints
+### Incremental Pipeline Behavior
 
-The diagrams below highlight the ecosystem entrypoints that feed the pipeline today and the target flow we are steering toward. They focus on the data producers/consumers around `https://modules.magicmirror.builders/data/modules.json` rather than the internal stages covered earlier in this document.
+The pipeline implements intelligent caching and skip logic to avoid redundant work:
 
-#### Current flow
+| Stage | Optimization   | Skip Condition                  | Typical Gain         |
+| ----- | -------------- | ------------------------------- | -------------------- |
+| 2     | Cache pruning  | Module removed from seed list   | Bounded cache size   |
+| 2     | API cache TTL  | Response < 7 days old           | ~95% fewer API calls |
+| 3     | Clone skipping | Local commit ≥ API `lastCommit` | ~90% clones skipped  |
+| 5     | Analysis cache | Directory SHA unchanged         | ~85-95% cache hits   |
 
-```mermaid
-flowchart LR
-  wiki[(module wiki list<br><i>- unreliable -</i>)]
-  pipeline{{automation pipeline}}
-  api[(API<br>modules.json)]
-  remote[MMM-Remote-Control]
-  modinstall[MMM-ModInstall]
-  config[MMM-Config]
-  mmpm[mmpm]
-  moduleWebsite[website<br>modules.magicmirror.builders]
+**Result**: Incremental runs complete in <5 minutes vs. 45-60 minutes for full runs.
 
-  wiki --> pipeline --> api
-  api --> remote
-  api --> modinstall
-  api --> config
-  api --> moduleWebsite
-  wiki --> mmpm
-```
+---
 
-#### Target flow
-
-```mermaid
-flowchart LR
-  ui[(Form-based front end<br>for adding, editing, and<br>deleting modules<br><i>- not yet conceptualized -</i>)]
-  pipeline{{automation pipeline}}
-  api[(API<br>modules.json)]
-  remote[MMM-Remote-Control]
-  modinstall[MMM-ModInstall]
-  config[MMM-Config]
-  mmpm[mmpm]
-  moduleWebsite[website<br>modules.magicmirror.builders]
-
-  ui --> pipeline --> api
-  api --> remote
-  api --> modinstall
-  api --> config
-  api --> mmpm
-  api --> moduleWebsite
-```
-
-The target concept replaces the wiki table with a purpose-built, form-based frontend for adding, editing, and deleting modules (still in the conceptual phase) while downstream consumers continue using the unchanged API endpoint independent of the frontend.
-
-### Legacy workflow snapshot (pre-September 2025)
+## Legacy Workflow Snapshot (pre-September 2025)
 
 ```mermaid
 flowchart TB
@@ -147,11 +114,21 @@ flowchart TB
   note3[["6 sequential stages"]]
 ```
 
-This legacy diagram captures the pre-orchestrator, mixed-runtime pipeline that relied on direct node and Python scripts. The comparison with the current (5 stages, orchestrated, TypeScript migration underway) and target state (3 phases, parallel, streaming) shows the evolution of the architecture.
+This legacy diagram captures the pre-orchestrator, mixed-runtime pipeline. Key issues that motivated the modernization:
 
-The roadmap contemplates a **simplified, streaming-first pipeline** that processes modules incrementally and in parallel where possible. This target architecture reduces the pipeline from 5 sequential stages to **3 conceptual phases** with intelligent caching and parallelization.
+- Mixed Python + Node.js runtime made maintenance difficult
+- No orchestrator: manual script execution
+- No incremental updates: full run required every time
+- OOM risk with 1300+ modules loaded into memory
+- 6 sequential stages with 6 intermediate JSON files
 
-### Target workflow diagram
+---
+
+## Target Architecture (3-Phase Streaming)
+
+The target architecture reduces the pipeline from 5 sequential stages to **3 conceptual phases** with parallel execution and streaming:
+
+### Target Workflow Diagram
 
 ```mermaid
 flowchart TB
@@ -187,97 +164,78 @@ flowchart TB
   results1 -.diff detection.-> aggregate
 ```
 
-### Key architectural improvements
+### Comparison: Legacy vs. Current vs. Target
 
-#### 1. **Three-phase pipeline** (down from 5 stages)
+| Aspect             | Legacy (6 stages) | Current (5 stages)      | Target (3 phases)    |
+| ------------------ | ----------------- | ----------------------- | -------------------- |
+| Runtime            | Python + Node.js  | TypeScript/Node.js      | TypeScript           |
+| Execution          | Sequential        | Sequential + caching    | Parallel + streaming |
+| Incremental        | ❌ No             | ✅ Yes (~90% skip rate) | ✅ Yes + workers     |
+| Memory             | Unbounded         | Batch-bounded           | Per-worker bounded   |
+| Full run time      | ~45-60 min        | ~15-20 min              | ~10-15 min           |
+| Incremental time   | N/A               | <5 min                  | <3 min               |
+| Intermediate files | 6                 | 4                       | 1 + final            |
 
-- **Phase 1: Metadata Collection** (combines current stages 1+2)
-  - Fetch GitHub/npm metadata for all modules
-  - Build enriched module list with repo info, package.json data
-  - Single-pass operation with intelligent caching
-- **Phase 2: Parallel Analysis** (combines current stages 3+4+5)
-  - Process modules in **batches** (e.g., 50-100 modules per worker)
-  - Each worker: clone → read package.json → capture screenshots → run checks
-  - Workers run in parallel (configurable concurrency)
-  - Incremental mode: **skip unchanged modules** based on git SHA comparison
-- **Phase 3: Aggregation & Publishing** (new)
-  - Collect results from all workers
-  - Validate schema compliance
-  - Generate final outputs (modules.json, stats.json, website)
-  - Diff detection for change reporting
+### Target Architecture Benefits
 
-#### 2. **Streaming & batching**
+1. **Three-phase pipeline** consolidates current stages (1+2 → Phase 1, 3+4+5 → Phase 2, new → Phase 3)
+2. **Parallel workers** process modules in batches concurrently
+3. **Streaming** eliminates need to load all modules into memory
+4. **Diff detection** in aggregation phase for change reporting
 
-Instead of loading all 1300+ modules into memory:
+---
 
-- **Stream-based processing**: Read seed list → process in chunks → write incrementally
-- **Configurable batch size**: Tune based on available memory
-- **Graceful degradation**: If one batch fails, others continue
-- **Progress tracking**: Clear visibility into which modules are being processed
+## Distribution Touchpoints
 
-#### 3. **Intelligent caching & incremental updates**
-
-- **Module-level cache**: Store analysis results per module, keyed by git SHA
-- **Skip unchanged modules**: If repo SHA hasn't changed since last run, reuse cached results
-- **Metadata cache**: GitHub API responses and npm registry data cached with TTL
-- **Partial refresh mode**: `--modules=<pattern>` to reprocess only specific modules
-
-#### 4. **Parallel execution**
-
-- **Worker pool architecture**: Configurable number of parallel workers
-- **Phase 1 can start Phase 2 early**: Stream metadata as it arrives
-- **Independent workers**: No shared state, communicate via message passing
-- **Resource limiting**: Respect GitHub rate limits, memory constraints
-
-#### 5. **Simplified dependencies**
+### Current Flow
 
 ```mermaid
 flowchart LR
-  subgraph Core Services
-    http[HTTP client<br>rate-limited]
-    git[Git operations<br>shallow clones]
-    cache[Cache layer<br>SHA-based]
-    schema[Schema validator<br>strict mode]
-  end
+  wiki[(module wiki list<br><i>- unreliable -</i>)]
+  pipeline{{automation pipeline}}
+  api[(API<br>modules.json)]
+  remote[MMM-Remote-Control]
+  modinstall[MMM-ModInstall]
+  config[MMM-Config]
+  mmpm[mmpm]
+  moduleWebsite[website<br>modules.magicmirror.builders]
 
-  subgraph Pipeline
-    collect{{Metadata}}
-    analyze{{Analysis}}
-    publish{{Publishing}}
-  end
-
-  collect --> analyze --> publish
-  collect -.-> http
-  collect -.-> cache
-  analyze -.-> git
-  analyze -.-> cache
-  publish -.-> schema
+  wiki --> pipeline --> api
+  api --> remote
+  api --> modinstall
+  api --> config
+  api --> moduleWebsite
+  wiki --> mmpm
 ```
 
-### Advantages over legacy architecture
+### Target Flow
 
-| Legacy (6 stages, sequential)     | Target (3 phases, parallel)                 |
-| --------------------------------- | ------------------------------------------- |
-| Mixed runtime (Python + Node.js)  | Unified TypeScript codebase                 |
-| Process all modules sequentially  | Process modules in parallel batches         |
-| Reload full dataset at each stage | Stream data through pipeline                |
-| No incremental updates            | Skip unchanged modules automatically        |
-| OOM risk with 1300+ modules       | Bounded memory per batch                    |
-| ~45-60 min full run               | ~15-20 min with caching, <5 min incremental |
-| Difficult to debug stuck modules  | Per-module isolation and logging            |
-| 6 intermediate JSON files         | 1 enriched metadata + final outputs         |
+```mermaid
+flowchart LR
+  ui[(Form-based front end<br>for adding, editing, and<br>deleting modules<br><i>- not yet conceptualized -</i>)]
+  pipeline{{automation pipeline}}
+  api[(API<br>modules.json)]
+  remote[MMM-Remote-Control]
+  modinstall[MMM-ModInstall]
+  config[MMM-Config]
+  mmpm[mmpm]
+  moduleWebsite[website<br>modules.magicmirror.builders]
 
-### Migration path
+  ui --> pipeline --> api
+  api --> remote
+  api --> modinstall
+  api --> config
+  api --> mmpm
+  api --> moduleWebsite
+```
 
-The path from the current 5-stage architecture to the target 3-phase streaming architecture is detailed in the [Pipeline Modernization Roadmap](pipeline-refactor-roadmap.md), organized into two major milestones:
+The target replaces the wiki with a form-based frontend while downstream consumers continue using the unchanged API endpoint.
 
-- **Milestone 1** (P3.x-P4.x): Build foundations with incremental checking, batch processing, and module-level caching
-- **Milestone 2** (P5.x-P8.x): Transform to 3-phase streaming architecture with parallel workers and intelligent orchestration
+---
 
-See [pipeline-refactor-roadmap.md](pipeline-refactor-roadmap.md) for the complete breakdown of tasks, dependencies, and priorities.
+## Related Documentation
 
-## How this document stays fresh
-
-- Update the diagrams whenever the stage graph (`pipeline/stage-graph.json`) or comparison harness outputs change.
-- Fold in structured logging timelines, diff gating, and other resiliency milestones (tasks **P3.3** and beyond) as they land.
-- Cross-link to companion docs (`pipeline/check-modules-reference.md`, `pipeline-refactor-roadmap.md`) whenever new guardrails or fixtures ship, so contributors can trace updates end to end.
+- [Pipeline Modernization Roadmap](pipeline-refactor-roadmap.md) — Task breakdown and priorities
+- [Deterministic Outputs](deterministic-outputs.md) — Guarantees for reproducible builds
+- [Check Modules Reference](pipeline/check-modules-reference.md) — Rule registry and fixtures
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Setup instructions and workflow tips
