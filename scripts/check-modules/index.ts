@@ -722,6 +722,76 @@ async function runEslintCheck(moduleDir) {
   }
 }
 
+async function checkWorkflowOptimization({ moduleDir, issues, config }) {
+  if (!config?.groups?.deep) {
+    return;
+  }
+
+  const integrationToggles = config.integrations ?? {};
+  const shouldRunSlimify = integrationToggles.ghSlimify !== false;
+
+  if (!shouldRunSlimify) {
+    return;
+  }
+
+  const workflowDir = path.join(moduleDir, ".github", "workflows");
+  if (!(await pathExists(workflowDir))) {
+    return;
+  }
+
+  try {
+    const { stdout } = await execFileAsync(
+      "gh",
+      ["slimify", "--skip-duration", "--all"],
+      { cwd: moduleDir, timeout: 10000 }
+    );
+
+    // Parse output to check if there are any eligible jobs
+    const lines = stdout.split("\n");
+    
+    // Count safe and attention jobs separately
+    const safeMatch = lines.find((line) => line.includes("✅") && line.includes("can be safely migrated"));
+    const attentionMatch = lines.find((line) => line.includes("⚠️") && line.includes("can be migrated but require attention"));
+    
+    let safeCount = 0;
+    let attentionCount = 0;
+    
+    if (safeMatch) {
+      const match = safeMatch.match(/(\d+)\s+job\(s\)\s+can be safely migrated/);
+      if (match) safeCount = parseInt(match[1], 10);
+    }
+    
+    if (attentionMatch) {
+      const match = attentionMatch.match(/(\d+)\s+job\(s\)\s+can be migrated but require attention/);
+      if (match) attentionCount = parseInt(match[1], 10);
+    }
+    
+    const totalEligible = safeCount + attentionCount;
+    
+    if (totalEligible > 0) {
+      let message = "Recommendation: ";
+      
+      if (safeCount > 0 && attentionCount > 0) {
+        const safePlural = safeCount > 1 ? "s" : "";
+        const attentionPlural = attentionCount > 1 ? "s" : "";
+        message += `${safeCount} GitHub Actions job${safePlural} can safely migrate to \`ubuntu-slim\`, and ${attentionCount} job${attentionPlural} may require additional setup.`;
+      } else if (safeCount > 0) {
+        const plural = safeCount > 1 ? "s" : "";
+        message += `${safeCount} GitHub Actions job${plural} can safely migrate to \`ubuntu-slim\`.`;
+      } else if (attentionCount > 0) {
+        const plural = attentionCount > 1 ? "s" : "";
+        message += `${attentionCount} GitHub Actions job${plural} could potentially use \`ubuntu-slim\` but may require additional setup.`;
+      }
+      
+      message += " Run \`gh slimify --all\` in the repository for details.";
+      addIssue(issues, message);
+    }
+  } catch (error) {
+    // Silently skip if gh slimify is not installed or fails
+    // This is an optional optimization check
+  }
+}
+
 async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson, config }) {
   if (!config?.groups?.deep) {
     return;
@@ -1168,6 +1238,8 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
     if (!branchListing.includes("master")) {
       module.defaultSortWeight -= 1;
     }
+
+    await checkWorkflowOptimization({ moduleDir, issues, config });
 
     await applyDependencyHelpers({
       moduleDir,

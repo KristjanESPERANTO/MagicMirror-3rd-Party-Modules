@@ -10,7 +10,8 @@ export const DEFAULT_CHECK_GROUP_CONFIG = Object.freeze({
   integrations: Object.freeze({
     npmCheckUpdates: true,
     npmDeprecatedCheck: true,
-    eslint: true
+    eslint: true,
+    ghSlimify: true
   })
 });
 
@@ -23,7 +24,8 @@ function createMutableConfig () {
     integrations: {
       npmCheckUpdates: DEFAULT_CHECK_GROUP_CONFIG.integrations.npmCheckUpdates,
       npmDeprecatedCheck: DEFAULT_CHECK_GROUP_CONFIG.integrations.npmDeprecatedCheck,
-      eslint: DEFAULT_CHECK_GROUP_CONFIG.integrations.eslint
+      eslint: DEFAULT_CHECK_GROUP_CONFIG.integrations.eslint,
+      ghSlimify: DEFAULT_CHECK_GROUP_CONFIG.integrations.ghSlimify
     }
   };
 }
@@ -61,6 +63,9 @@ function normalizePartial (input) {
     if (typeof rawIntegrations.eslint === "boolean") {
       normalized.integrations.eslint = rawIntegrations.eslint;
     }
+    if (typeof rawIntegrations.ghSlimify === "boolean") {
+      normalized.integrations.ghSlimify = rawIntegrations.ghSlimify;
+    }
   }
 
   return normalized;
@@ -84,6 +89,9 @@ function applyPartialConfig (target, partial) {
   if (Object.hasOwn(partial.integrations, "eslint")) {
     target.integrations.eslint = partial.integrations.eslint;
   }
+  if (Object.hasOwn(partial.integrations, "ghSlimify")) {
+    target.integrations.ghSlimify = partial.integrations.ghSlimify;
+  }
 
   return target;
 }
@@ -97,7 +105,8 @@ function freezeConfig (config) {
     integrations: Object.freeze({
       npmCheckUpdates: config.integrations.npmCheckUpdates,
       npmDeprecatedCheck: config.integrations.npmDeprecatedCheck,
-      eslint: config.integrations.eslint
+      eslint: config.integrations.eslint,
+      ghSlimify: config.integrations.ghSlimify
     })
   });
 }

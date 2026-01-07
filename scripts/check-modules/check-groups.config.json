@@ -6,6 +6,7 @@
   "integrations": {
     "npmCheckUpdates": true,
     "npmDeprecatedCheck": true,
-    "eslint": true
+    "eslint": true,
+    "ghSlimify": true
   }
 }
