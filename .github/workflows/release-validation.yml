@@ -15,7 +15,7 @@ permissions:
 jobs:
   validate-release-artifacts:
     name: Validate release artifacts
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
 
     steps:
       - name: Check out repository

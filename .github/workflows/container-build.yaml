@@ -111,7 +111,7 @@ jobs:
 
   validate-skipped-modules:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     timeout-minutes: 5
     if: always() # Run even if build fails, as long as it completed
 

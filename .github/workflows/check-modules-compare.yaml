@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   compare:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     timeout-minutes: 60
     steps:
       - name: Check out repository code
