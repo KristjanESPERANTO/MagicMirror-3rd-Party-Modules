@@ -96,16 +96,104 @@ function toPackageName (specifier) {
   return withoutNodePrefix.slice(0, slashIndex);
 }
 
+/**
+ * Strip JavaScript comments from source code to avoid false positives
+ * when detecting imports/requires in comments.
+ *
+ * Handles:
+ * - Single-line comments (//)
+ * - Multi-line comments (/* *\/)
+ * - Strings (preserves them)
+ * - Template literals (preserves them)
+ *
+ * @param {string} content - The source code content
+ * @returns {string} Content with comments removed
+ */
+function stripComments (content) {
+  if (typeof content !== "string" || content.length === 0) {
+    return content;
+  }
+
+  let result = "";
+  let state = "code"; // States: 'code', 'singleLineComment', 'multiLineComment', 'string', 'template'
+  let stringDelimiter = "";
+  let escaped = false;
+
+  for (let index = 0; index < content.length; index += 1) {
+    const char = content[index];
+    const nextChar = content[index + 1] || "";
+
+    if (state === "code") {
+      // Check for string start
+      if (char === "\"" || char === "'") {
+        state = "string";
+        stringDelimiter = char;
+        result += char;
+      } else if (char === "`") {
+        // Template literal start
+        state = "template";
+        result += char;
+      } else if (char === "/" && nextChar === "/") {
+        // Single-line comment start
+        state = "singleLineComment";
+        index += 1; // Skip '/'
+      } else if (char === "/" && nextChar === "*") {
+        // Multi-line comment start
+        state = "multiLineComment";
+        index += 1; // Skip '*'
+      } else {
+        result += char;
+      }
+    } else if (state === "string") {
+      result += char;
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === stringDelimiter) {
+        state = "code";
+        stringDelimiter = "";
+      }
+    } else if (state === "template") {
+      result += char;
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === "`") {
+        state = "code";
+      }
+    } else if (state === "singleLineComment") {
+      if (char === "\n" || char === "\r") {
+        state = "code";
+        result += char; // Preserve newline
+      }
+      // Otherwise skip comment content
+    } else if (state === "multiLineComment") {
+      if (char === "*" && nextChar === "/") {
+        state = "code";
+        index += 1; // Skip '/'
+      }
+      // Otherwise skip comment content
+    }
+  }
+
+  return result;
+}
+
 function extractImportedModuleSpecifiers (content) {
   const modules = new Set();
   if (typeof content !== "string" || content.length === 0) {
     return modules;
   }
 
+  // Strip comments to avoid false positives from commented-out code
+  const contentWithoutComments = stripComments(content);
+
   for (const pattern of DEPENDENCY_CAPTURE_PATTERNS) {
     pattern.lastIndex = 0;
     let match;
-    while ((match = pattern.exec(content)) !== null) {
+    while ((match = pattern.exec(contentWithoutComments)) !== null) {
       const [, specifier] = match;
       if (typeof specifier === "string" && specifier.length > 0) {
         modules.add(specifier);

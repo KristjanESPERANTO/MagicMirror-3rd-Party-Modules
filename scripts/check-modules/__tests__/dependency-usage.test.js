@@ -90,3 +90,74 @@ test("finds missing dependencies", () => {
 
   assert.deepEqual(missing, ["moment-timezone"]);
 });
+
+test("ignores dependencies in single-line comments", () => {
+  const sample = [
+    "import dayjs from 'dayjs';",
+    "// import fake from 'fake-package';",
+    "const real = require('real-package');",
+    "// const commented = require('commented-package');"
+  ].join("\n");
+
+  const detected = detectUsedDependencies(sample);
+  assert.deepEqual(toSortedArray(detected), ["dayjs", "real-package"]);
+});
+
+test("ignores dependencies in multi-line comments", () => {
+  const sample = [
+    "import dayjs from 'dayjs';",
+    "/*",
+    " * import fake from 'fake-package';",
+    " * const another = require('another-fake');",
+    " */",
+    "const real = require('real-package');"
+  ].join("\n");
+
+  const detected = detectUsedDependencies(sample);
+  assert.deepEqual(toSortedArray(detected), ["dayjs", "real-package"]);
+});
+
+test("ignores dependencies in inline comments", () => {
+  const sample = [
+    "import dayjs from 'dayjs';",
+    "const obj = { cookieString: value }; // Changed from 'cookies' to 'cookieString'",
+    "const real = require('real-package'); // using real-package here"
+  ].join("\n");
+
+  const detected = detectUsedDependencies(sample);
+  assert.deepEqual(toSortedArray(detected), ["dayjs", "real-package"]);
+});
+
+test("handles comments with 'from' keyword - real world case", () => {
+  const sample = [
+    "import something from 'real-import';",
+    "// Match from defaults:  from \"{\" to the closing \"}\" before getStyles()",
+    "const value = 42;"
+  ].join("\n");
+
+  const detected = detectUsedDependencies(sample);
+  assert.deepEqual(toSortedArray(detected), ["real-import"]);
+});
+
+test("preserves imports in strings", () => {
+  const sample = [
+    "import dayjs from 'dayjs';",
+    "const docString = 'Use require to load';",
+    "const message = `Import from packages is shown here`;"
+  ].join("\n");
+
+  const detected = detectUsedDependencies(sample);
+  assert.deepEqual(toSortedArray(detected), ["dayjs"]);
+});
+
+test("handles escaped quotes in strings", () => {
+  const sample = [
+    "import real from 'real-package';",
+    "const str1 = 'It\\'s a test';",
+    "const str2 = \"She said \\\"hello\\\"\";",
+    "const str3 = `Template with \\`backticks\\``;"
+  ].join("\n");
+
+  const detected = detectUsedDependencies(sample);
+  assert.deepEqual(toSortedArray(detected), ["real-package"]);
+});
