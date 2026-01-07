@@ -1188,12 +1188,13 @@ function applySortAdjustments(module, issuesCount) {
     module.defaultSortWeight = Math.max(module.defaultSortWeight, 1);
   }
 
+  // Add small extra weight to Kristjan's modules to avoid dominating top positions
   if (
     module.maintainer === "KristjanESPERANTO" &&
     module.name !== "MMM-EasyPix" &&
     module.name !== "MMM-Forum"
   ) {
-    module.defaultSortWeight = Math.max(module.defaultSortWeight, 1);
+    module.defaultSortWeight += 1;
   }
 }
 
