@@ -20,7 +20,8 @@ export default defineConfig([
         Log: "readonly",
         MM: "readonly",
         Module: "readonly",
-        moment: "readonly"
+        moment: "readonly",
+        Temporal: "readonly"
       }
     },
     linterOptions: {
@@ -40,7 +41,9 @@ export default defineConfig([
     languageOptions: {
       ecmaVersion: "latest",
       globals: {
-        ...globals.node
+        ...globals.browser,
+        ...globals.node,
+        Temporal: "readonly"
       },
       sourceType: "module"
     },
