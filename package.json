@@ -25,7 +25,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test automated",
+    "start": "ntl --size 50",
     "all": "node scripts/orchestrator/index.js run full-refresh",
     "collectMetadata": "node scripts/orchestrator/index.js run --only=collect-metadata",
     "getModules": "node scripts/orchestrator/index.js run --only=get-modules",
