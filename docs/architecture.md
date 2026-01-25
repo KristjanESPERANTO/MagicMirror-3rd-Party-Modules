@@ -201,11 +201,11 @@ flowchart LR
   moduleWebsite[website<br>modules.magicmirror.builders]
 
   wiki --> pipeline --> api
+  api --> mmpm
   api --> remote
   api --> modinstall
   api --> config
   api --> moduleWebsite
-  wiki --> mmpm
 ```
 
 ### Target Flow
