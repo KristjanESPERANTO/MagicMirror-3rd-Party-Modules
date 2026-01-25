@@ -7,19 +7,19 @@
  * Roadmap: P6.1
  */
 
-import {fetchRepositoryData, normalizeRepositoryData} from "../updateRepositoryApiData/api.js";
-import {getRepositoryId, getRepositoryType} from "../updateRepositoryApiData/helpers.js";
-import {createHttpClient} from "../shared/http-client.js";
-import {createLogger} from "../shared/logger.js";
-import {createPersistentCache} from "../shared/persistent-cache.js";
-import {createRateLimiter} from "../shared/rate-limiter.js";
+import { fetchRepositoryData, normalizeRepositoryData } from "../updateRepositoryApiData/api.js";
+import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.js";
+import { createHttpClient } from "../shared/http-client.js";
+import { createLogger } from "../shared/logger.js";
+import { createPersistentCache } from "../shared/persistent-cache.js";
+import { createRateLimiter } from "../shared/rate-limiter.js";
 import fs from "node:fs";
-import {loadPreviousModules} from "../shared/module-list.js";
-import {parseModuleList} from "./parser.js";
+import { loadPreviousModules } from "../shared/module-list.js";
+import { parseModuleList } from "./parser.js";
 import path from "node:path";
 import process from "node:process";
 
-const logger = createLogger({name: "collect-metadata"});
+const logger = createLogger({ name: "collect-metadata" });
 
 // Configuration
 const WIKI_URL = "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md";
@@ -35,7 +35,7 @@ const rateLimiter = createRateLimiter({
   intervalMs: 1000
 });
 
-const httpClient = createHttpClient({rateLimiter});
+const httpClient = createHttpClient({ rateLimiter });
 
 const repositoryCache = createPersistentCache({
   filePath: REPOSITORY_CACHE_PATH,
@@ -46,7 +46,7 @@ const repositoryCache = createPersistentCache({
 /**
  * Fetch the raw Markdown content from the Wiki or a local file.
  */
-async function fetchMarkdown () {
+async function fetchMarkdown() {
   if (process.env.WIKI_FILE) {
     logger.info(`Reading module list from local file: ${process.env.WIKI_FILE}`);
     return fs.readFileSync(process.env.WIKI_FILE, "utf8");
@@ -63,7 +63,7 @@ async function fetchMarkdown () {
 /**
  * Fetch metadata for a batch of GitHub repositories using GraphQL.
  */
-async function fetchGitHubBatch (modules) {
+async function fetchGitHubBatch(modules) {
   if (modules.length === 0) {
     return {};
   }
@@ -109,7 +109,7 @@ async function fetchGitHubBatch (modules) {
         Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({query})
+      body: JSON.stringify({ query })
     });
 
     if (!response.ok) {
@@ -128,8 +128,9 @@ async function fetchGitHubBatch (modules) {
     }
 
     return results;
-  } catch (error) {
-    logger.error("GitHub GraphQL batch error", {error: error.message});
+  }
+  catch (error) {
+    logger.error("GitHub GraphQL batch error", { error: error.message });
     return {};
   }
 }
@@ -137,7 +138,7 @@ async function fetchGitHubBatch (modules) {
 /**
  * Helper to apply fallback data from previous run if available.
  */
-function getFallbackOrOriginal (module, previousModulesMap) {
+function getFallbackOrOriginal(module, previousModulesMap) {
   const previousModule = previousModulesMap.get(module.url);
   if (previousModule) {
     return {
@@ -159,18 +160,19 @@ function getFallbackOrOriginal (module, previousModulesMap) {
 /**
  * Helper to fetch individual repository data.
  */
-async function fetchIndividualModule (module, repoType, client) {
+async function fetchIndividualModule(module, repoType, client) {
   try {
-    const {response, data, branchData} = await fetchRepositoryData(module, client);
+    const { response, data, branchData } = await fetchRepositoryData(module, client);
 
     if (response && !response.ok) {
       throw new Error(`API Error: ${response.status} ${response.statusText || ""}`);
     }
 
     const normalized = normalizeRepositoryData(data, branchData, repoType);
-    return {success: true, data: normalized};
-  } catch (error) {
-    return {success: false, error};
+    return { success: true, data: normalized };
+  }
+  catch (error) {
+    return { success: false, error };
   }
 }
 
@@ -178,7 +180,7 @@ async function fetchIndividualModule (module, repoType, client) {
  * Process a single module: check cache, queue for batch, or fetch individually.
  * Returns the enriched module or null if queued for batch processing.
  */
-async function processModule (module, context) {
+async function processModule(module, context) {
   const {
     previousModulesMap,
     circuitBreaker,
@@ -222,7 +224,7 @@ async function processModule (module, context) {
   }
 
   // Fetch individual (non-GitHub or no token)
-  const {success, data, error} = await fetchIndividualModule(module, repoType, client);
+  const { success, data, error } = await fetchIndividualModule(module, repoType, client);
 
   if (success) {
     circuitBreaker.recordSuccess();
@@ -233,7 +235,7 @@ async function processModule (module, context) {
     };
   }
 
-  logger.warn(`Failed to fetch metadata for ${module.name}`, {url: module.url, error: error.message});
+  logger.warn(`Failed to fetch metadata for ${module.name}`, { url: module.url, error: error.message });
   circuitBreaker.recordError(error);
 
   if (!circuitBreaker.stopFetching) {
@@ -246,7 +248,7 @@ async function processModule (module, context) {
   }
 
   // Cache negative result
-  repositoryCache.set(repoId, {isFailed: true, error: error.message}, NEGATIVE_CACHE_TTL_MS);
+  repositoryCache.set(repoId, { isFailed: true, error: error.message }, NEGATIVE_CACHE_TTL_MS);
   stats.errors += 1;
   return fallback;
 }
@@ -254,28 +256,29 @@ async function processModule (module, context) {
 /**
  * Enrich the module list with repository metadata.
  */
-async function enrichModules (modules, previousModulesMap) {
+async function enrichModules(modules, previousModulesMap) {
   const enrichedModules = [];
   const githubModulesToFetch = [];
-  const stats = {hits: 0, misses: 0, errors: 0, fallbacks: 0};
+  const stats = { hits: 0, misses: 0, errors: 0, fallbacks: 0 };
   let processedCount = 0;
   const totalModules = modules.length;
 
   const circuitBreaker = {
     consecutive403Errors: 0,
     stopFetching: false,
-    recordError (error) {
+    recordError(error) {
       if (error.message.includes("403")) {
         this.consecutive403Errors += 1;
         if (this.consecutive403Errors >= 5) {
           logger.warn("Rate limit hit (403) multiple times. Stopping further API requests and using fallback data.");
           this.stopFetching = true;
         }
-      } else {
+      }
+      else {
         this.consecutive403Errors = 0;
       }
     },
-    recordSuccess () {
+    recordSuccess() {
       this.consecutive403Errors = 0;
     }
   };
@@ -328,8 +331,9 @@ async function enrichModules (modules, previousModulesMap) {
             ...module,
             ...normalized
           });
-        } else {
-          logger.warn(`No data returned for ${module.name} in batch`, {url: module.url});
+        }
+        else {
+          logger.warn(`No data returned for ${module.name} in batch`, { url: module.url });
 
           const fallback = getFallbackOrOriginal(module, previousModulesMap);
           if (fallback !== module) {
@@ -339,7 +343,7 @@ async function enrichModules (modules, previousModulesMap) {
           enrichedModules.push(fallback);
 
           // Cache negative result
-          repositoryCache.set(repoId, {isFailed: true, error: "Not found in GraphQL batch"}, NEGATIVE_CACHE_TTL_MS);
+          repositoryCache.set(repoId, { isFailed: true, error: "Not found in GraphQL batch" }, NEGATIVE_CACHE_TTL_MS);
           stats.errors += 1;
         }
       }
@@ -350,7 +354,7 @@ async function enrichModules (modules, previousModulesMap) {
   return enrichedModules;
 }
 
-async function main () {
+async function main() {
   try {
     logger.info("Starting unified metadata collection...");
 
@@ -359,7 +363,7 @@ async function main () {
     }
 
     const markdown = await fetchMarkdown();
-    const {modules} = parseModuleList(markdown);
+    const { modules } = parseModuleList(markdown);
     logger.info(`Parsed ${modules.length} modules from Wiki.`);
 
     const previousModulesMap = loadPreviousModules();
@@ -370,7 +374,7 @@ async function main () {
     const enrichedModules = await enrichModules(modules, previousModulesMap);
 
     // Prune orphaned cache entries (modules that are no longer in the Wiki)
-    const currentModuleIds = new Set(enrichedModules.map((module) => getRepositoryId(module.url)).filter(Boolean));
+    const currentModuleIds = new Set(enrichedModules.map(module => getRepositoryId(module.url)).filter(Boolean));
     const cachedEntries = repositoryCache.getAllKeys();
     let prunedCount = 0;
 
@@ -391,8 +395,9 @@ async function main () {
     const outputPath = path.join("website", "data", "modules.stage.2.json");
     fs.writeFileSync(outputPath, JSON.stringify(enrichedModules, null, 2));
     logger.info(`Successfully wrote ${enrichedModules.length} modules to ${outputPath}`);
-  } catch (error) {
-    logger.error("Metadata collection failed", {error: error.message});
+  }
+  catch (error) {
+    logger.error("Metadata collection failed", { error: error.message });
     process.exit(1);
   }
 }

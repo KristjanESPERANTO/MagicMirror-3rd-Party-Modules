@@ -9,17 +9,17 @@
  * which will be used by worker processes in P7.3.
  */
 
-import {ensureDirectory, fileExists} from "../../scripts/shared/fs-utils.js";
-import {ensureRepository, getCommitDate} from "../../scripts/shared/git.js";
-import {rename, rm} from "node:fs/promises";
-import {createDeterministicImageName} from "../../scripts/shared/deterministic-output.js";
-import {createLogger} from "../../scripts/shared/logger.js";
+import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.js";
+import { ensureRepository, getCommitDate } from "../../scripts/shared/git.js";
+import { rename, rm } from "node:fs/promises";
+import { createDeterministicImageName } from "../../scripts/shared/deterministic-output.js";
+import { createLogger } from "../../scripts/shared/logger.js";
 import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import path from "node:path";
 import sharp from "sharp";
 
-const logger = createLogger({name: "worker"});
+const logger = createLogger({ name: "worker" });
 
 /*
  * ============================================================================
@@ -110,13 +110,13 @@ const logger = createLogger({name: "worker"});
  * @param {ProcessModuleConfig} config
  * @returns {Promise<{success: boolean, error?: string}>}
  */
-async function cloneModule (module, config) {
+async function cloneModule(module, config) {
   const identifier = `${module.name}-----${module.maintainer}`;
   const tempPath = path.join(config.modulesTempDir, identifier);
   const finalPath = path.join(config.modulesDir, identifier);
 
-  const branch =
-    typeof module.branch === "string" && module.branch.length > 0
+  const branch
+    = typeof module.branch === "string" && module.branch.length > 0
       ? module.branch
       : null;
 
@@ -124,7 +124,7 @@ async function cloneModule (module, config) {
     // Optimization: Check if we can skip cloning based on lastCommit date
     if (module.lastCommit && await fileExists(finalPath)) {
       try {
-        const localDateStr = await getCommitDate({cwd: finalPath});
+        const localDateStr = await getCommitDate({ cwd: finalPath });
         if (localDateStr) {
           const localDate = new Date(localDateStr);
           const remoteDate = new Date(module.lastCommit);
@@ -132,10 +132,11 @@ async function cloneModule (module, config) {
           // If local repo is at least as new as the remote info we have, skip clone
           if (localDate.getTime() >= remoteDate.getTime() - 60000) {
             logger.debug(`Skipping clone for ${module.name}: Local repo is up to date`);
-            return {success: true};
+            return { success: true };
           }
         }
-      } catch (dateError) {
+      }
+      catch (dateError) {
         logger.debug(`Could not verify local commit date for ${module.name}, proceeding with clone: ${dateError.message || String(dateError)}`);
       }
     }
@@ -151,21 +152,22 @@ async function cloneModule (module, config) {
     // Move from temp to final location
     await ensureDirectory(path.dirname(finalPath));
     if (await fileExists(finalPath)) {
-      await rm(finalPath, {recursive: true, force: true});
+      await rm(finalPath, { recursive: true, force: true });
     }
     await rename(tempPath, finalPath);
 
-    return {success: true};
-  } catch (error) {
+    return { success: true };
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     logger.error(`Clone failed for ${module.name}: ${message}`);
 
     // Clean up temp directory
-    await rm(tempPath, {recursive: true, force: true}).catch(() => {
+    await rm(tempPath, { recursive: true, force: true }).catch(() => {
       // Ignore cleanup errors
     });
 
-    return {success: false, error: message};
+    return { success: false, error: message };
   }
 }
 
@@ -179,7 +181,7 @@ async function cloneModule (module, config) {
  * @param {string} filename
  * @returns {boolean}
  */
-function isImageFile (filename) {
+function isImageFile(filename) {
   return (/\.(bmp|gif|jpg|jpeg|png|webp)$/iu).test(filename);
 }
 
@@ -189,14 +191,14 @@ function isImageFile (filename) {
  * @param {ProcessModuleConfig} config
  * @returns {Promise<{targetImageName: string | null, issues: string[]}>}
  */
-async function findAndResizeImage (moduleName, moduleMaintainer, config) {
+async function findAndResizeImage(moduleName, moduleMaintainer, config) {
   const sourceFolder = path.join(
     config.modulesDir,
     `${moduleName}-----${moduleMaintainer}`
   );
 
   try {
-    const files = await fs.promises.readdir(sourceFolder, {recursive: true});
+    const files = await fs.promises.readdir(sourceFolder, { recursive: true });
     files.sort();
 
     const issues = [];
@@ -207,14 +209,15 @@ async function findAndResizeImage (moduleName, moduleMaintainer, config) {
       if (isImageFile(file)) {
         const lowerFile = file.toLowerCase();
         if (
-          lowerFile.includes("screenshot") ||
-          lowerFile.includes("example") ||
-          lowerFile.includes("sample") ||
-          lowerFile.includes("preview")
+          lowerFile.includes("screenshot")
+          || lowerFile.includes("example")
+          || lowerFile.includes("sample")
+          || lowerFile.includes("preview")
         ) {
           firstScreenshotImage = file;
           break;
-        } else if (!firstImage) {
+        }
+        else if (!firstImage) {
           firstImage = file;
         }
       }
@@ -239,17 +242,20 @@ async function findAndResizeImage (moduleName, moduleMaintainer, config) {
           })
           .toFile(targetPath);
 
-        return {targetImageName, issues};
-      } catch (error) {
+        return { targetImageName, issues };
+      }
+      catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         issues.push(`Error processing image "${imageToProcess}": ${message}`);
-        return {targetImageName: null, issues};
+        return { targetImageName: null, issues };
       }
-    } else {
-      issues.push("No image found.");
-      return {targetImageName: null, issues};
     }
-  } catch (error) {
+    else {
+      issues.push("No image found.");
+      return { targetImageName: null, issues };
+    }
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     return {
       targetImageName: null,
@@ -262,7 +268,7 @@ async function findAndResizeImage (moduleName, moduleMaintainer, config) {
  * @param {unknown} value
  * @returns {Record<string, string> | null}
  */
-function sanitizeStringRecord (value) {
+function sanitizeStringRecord(value) {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     return null;
   }
@@ -278,7 +284,7 @@ function sanitizeStringRecord (value) {
  * @param {unknown} value
  * @returns {string[] | null}
  */
-function sanitizeKeywordArray (value) {
+function sanitizeKeywordArray(value) {
   if (!Array.isArray(value)) {
     return null;
   }
@@ -290,12 +296,12 @@ function sanitizeKeywordArray (value) {
       }
       return "";
     })
-    .filter((entry) => entry.length > 0);
+    .filter(entry => entry.length > 0);
 
   return keywords.length > 0 ? keywords : null;
 }
 
-function buildPackageSummary (packageData) {
+function buildPackageSummary(packageData) {
   const summary = {};
 
   if (typeof packageData.name === "string" && packageData.name.length > 0) {
@@ -303,15 +309,15 @@ function buildPackageSummary (packageData) {
   }
 
   if (
-    typeof packageData.version === "string" &&
-    packageData.version.length > 0
+    typeof packageData.version === "string"
+    && packageData.version.length > 0
   ) {
     summary.version = packageData.version;
   }
 
   if (
-    typeof packageData.description === "string" &&
-    packageData.description.length > 0
+    typeof packageData.description === "string"
+    && packageData.description.length > 0
   ) {
     summary.description = packageData.description;
   }
@@ -322,8 +328,8 @@ function buildPackageSummary (packageData) {
   }
 
   if (
-    typeof packageData.license === "string" &&
-    packageData.license.length > 0
+    typeof packageData.license === "string"
+    && packageData.license.length > 0
   ) {
     summary.license = packageData.license;
   }
@@ -370,7 +376,7 @@ function buildPackageSummary (packageData) {
  * @param {ProcessModuleConfig} config
  * @returns {Promise<PackageJsonInfo>}
  */
-async function loadPackageManifest (module, config) {
+async function loadPackageManifest(module, config) {
   const relativePath = path.join(
     config.modulesDir,
     `${module.name}-----${module.maintainer}`,
@@ -380,7 +386,8 @@ async function loadPackageManifest (module, config) {
   let raw;
   try {
     raw = await fs.promises.readFile(relativePath, "utf8");
-  } catch (error) {
+  }
+  catch (error) {
     if (error?.code === "ENOENT") {
       return {
         path: relativePath,
@@ -400,7 +407,8 @@ async function loadPackageManifest (module, config) {
   let parsed;
   try {
     parsed = JSON.parse(raw);
-  } catch (error) {
+  }
+  catch (error) {
     return {
       path: relativePath,
       status: "error",
@@ -418,7 +426,8 @@ async function loadPackageManifest (module, config) {
 
   try {
     normalizeData(parsed, warnFn);
-  } catch (error) {
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     if (!warnings.includes(message)) {
       warnings.push(message);
@@ -438,7 +447,7 @@ async function loadPackageManifest (module, config) {
  * @param {string[]} issues
  * @returns {string[] | null}
  */
-function deriveTagsFromKeywords (keywords, issues) {
+function deriveTagsFromKeywords(keywords, issues) {
   const tagsToRemove = [
     "2",
     "mm",
@@ -477,10 +486,10 @@ function deriveTagsFromKeywords (keywords, issues) {
       }
       return lowered;
     })
-    .filter((tag) => !tagsToRemove.includes(tag));
+    .filter(tag => !tagsToRemove.includes(tag));
 
   if (
-    processed.some((tag) =>
+    processed.some(tag =>
       ["image", "images", "pictures", "livestream", "photos", "video"].includes(tag))
   ) {
     processed.push("media");
@@ -501,7 +510,7 @@ function deriveTagsFromKeywords (keywords, issues) {
  * @param {ProcessModuleConfig} config
  * @returns {Promise<{packageJson: PackageJsonInfo, tags?: string[], image?: string, license?: string, enrichIssues: string[]}>}
  */
-async function enrichModule (module, config) {
+async function enrichModule(module, config) {
   const enrichIssues = [];
 
   // Load package.json
@@ -525,7 +534,8 @@ async function enrichModule (module, config) {
       if (derivedTags && derivedTags.length > 0) {
         tags = derivedTags;
       }
-    } else {
+    }
+    else {
       enrichIssues.push("There are no keywords in 'package.json'. We would use them as tags on the module list page.");
     }
 
@@ -534,19 +544,23 @@ async function enrichModule (module, config) {
     if (packageLicense && packageLicense !== "NOASSERTION") {
       if (!module.license) {
         effectiveLicense = packageLicense;
-      } else if (!packageLicense.includes(module.license)) {
+      }
+      else if (!packageLicense.includes(module.license)) {
         enrichIssues.push(`Issue: The license in the package.json (${packageLicense}) doesn't match the license file (${module.license}).`);
       }
     }
-  } else if (packageJson.status === "missing") {
+  }
+  else if (packageJson.status === "missing") {
     // Special case for mmpm
     if (module.name === "mmpm") {
       // Mmpm doesn't have a package.json, but we add some keywords manually
       tags = ["package manager", "module installer"];
-    } else {
+    }
+    else {
       enrichIssues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
     }
-  } else if (packageJson.status === "error") {
+  }
+  else if (packageJson.status === "error") {
     enrichIssues.push(`An error occurred while getting information from 'package.json': ${packageJson.error}`);
   }
 
@@ -576,7 +590,7 @@ async function enrichModule (module, config) {
   ];
 
   if (effectiveLicense && useableLicenses.includes(effectiveLicense)) {
-    const {targetImageName, issues: imageIssues} = await findAndResizeImage(
+    const { targetImageName, issues: imageIssues } = await findAndResizeImage(
       module.name,
       module.maintainer,
       config
@@ -585,7 +599,8 @@ async function enrichModule (module, config) {
       imageName = targetImageName;
     }
     enrichIssues.push(...imageIssues);
-  } else if (effectiveLicense) {
+  }
+  else if (effectiveLicense) {
     enrichIssues.push("No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.");
   }
 
@@ -610,7 +625,7 @@ async function enrichModule (module, config) {
  *
  * @returns {{analysisIssues: string[], recommendations: string[]}}
  */
-function analyzeModule () {
+function analyzeModule() {
   return {
     analysisIssues: [],
     recommendations: []
@@ -633,7 +648,7 @@ function analyzeModule () {
  * @param {ProcessModuleConfig} config
  * @returns {Promise<ModuleResult>}
  */
-export async function processModule (module, config) {
+export async function processModule(module, config) {
   const startTime = Date.now();
   const allIssues = [...module.issues || []];
 
@@ -669,7 +684,8 @@ export async function processModule (module, config) {
   try {
     enrichResult = await enrichModule(module, config);
     allIssues.push(...enrichResult.enrichIssues);
-  } catch (error) {
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     const processingTime = Date.now() - startTime;
     return {
@@ -694,7 +710,8 @@ export async function processModule (module, config) {
   try {
     analysisResult = await analyzeModule(module, config);
     allIssues.push(...analysisResult.analysisIssues);
-  } catch (error) {
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     return {
       name: module.name,

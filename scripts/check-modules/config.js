@@ -1,6 +1,6 @@
 import path from "node:path";
 import process from "node:process";
-import {readFile} from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 
 export const DEFAULT_CHECK_GROUP_CONFIG = Object.freeze({
   groups: Object.freeze({
@@ -15,7 +15,7 @@ export const DEFAULT_CHECK_GROUP_CONFIG = Object.freeze({
   })
 });
 
-function createMutableConfig () {
+function createMutableConfig() {
   return {
     groups: {
       fast: DEFAULT_CHECK_GROUP_CONFIG.groups.fast,
@@ -30,7 +30,7 @@ function createMutableConfig () {
   };
 }
 
-function normalizePartial (input) {
+function normalizePartial(input) {
   const normalized = {
     groups: {},
     integrations: {}
@@ -53,12 +53,12 @@ function normalizePartial (input) {
   const rawIntegrations = input.integrations;
   if (rawIntegrations && typeof rawIntegrations === "object") {
     if (typeof rawIntegrations.npmCheckUpdates === "boolean") {
-      normalized.integrations.npmCheckUpdates =
-        rawIntegrations.npmCheckUpdates;
+      normalized.integrations.npmCheckUpdates
+        = rawIntegrations.npmCheckUpdates;
     }
     if (typeof rawIntegrations.npmDeprecatedCheck === "boolean") {
-      normalized.integrations.npmDeprecatedCheck =
-        rawIntegrations.npmDeprecatedCheck;
+      normalized.integrations.npmDeprecatedCheck
+        = rawIntegrations.npmDeprecatedCheck;
     }
     if (typeof rawIntegrations.eslint === "boolean") {
       normalized.integrations.eslint = rawIntegrations.eslint;
@@ -71,7 +71,7 @@ function normalizePartial (input) {
   return normalized;
 }
 
-function applyPartialConfig (target, partial) {
+function applyPartialConfig(target, partial) {
   if (Object.hasOwn(partial.groups, "fast")) {
     target.groups.fast = partial.groups.fast;
   }
@@ -83,8 +83,8 @@ function applyPartialConfig (target, partial) {
     target.integrations.npmCheckUpdates = partial.integrations.npmCheckUpdates;
   }
   if (Object.hasOwn(partial.integrations, "npmDeprecatedCheck")) {
-    target.integrations.npmDeprecatedCheck =
-      partial.integrations.npmDeprecatedCheck;
+    target.integrations.npmDeprecatedCheck
+      = partial.integrations.npmDeprecatedCheck;
   }
   if (Object.hasOwn(partial.integrations, "eslint")) {
     target.integrations.eslint = partial.integrations.eslint;
@@ -96,7 +96,7 @@ function applyPartialConfig (target, partial) {
   return target;
 }
 
-function freezeConfig (config) {
+function freezeConfig(config) {
   return Object.freeze({
     groups: Object.freeze({
       fast: config.groups.fast,
@@ -111,14 +111,16 @@ function freezeConfig (config) {
   });
 }
 
-export async function loadCheckGroupConfig ({projectRoot} = {}) {
+export async function loadCheckGroupConfig({ projectRoot } = {}) {
   const overrideRoot = process.env.CHECK_MODULES_CONFIG_ROOT;
   let root;
   if (overrideRoot) {
     root = path.resolve(overrideRoot);
-  } else if (projectRoot) {
+  }
+  else if (projectRoot) {
     root = path.resolve(projectRoot);
-  } else {
+  }
+  else {
     root = process.cwd();
   }
   const configDir = path.join(root, "scripts", "check-modules");
@@ -130,8 +132,8 @@ export async function loadCheckGroupConfig ({projectRoot} = {}) {
   const errors = [];
 
   const candidates = [
-    {path: basePath, kind: "default"},
-    {path: localPath, kind: "local"}
+    { path: basePath, kind: "default" },
+    { path: localPath, kind: "local" }
   ];
 
   for (const candidate of candidates) {
@@ -140,14 +142,16 @@ export async function loadCheckGroupConfig ({projectRoot} = {}) {
       const parsed = JSON.parse(contents);
       const partial = normalizePartial(parsed);
       applyPartialConfig(mutableConfig, partial);
-      sources.push({...candidate, applied: true});
-    } catch (error) {
+      sources.push({ ...candidate, applied: true });
+    }
+    catch (error) {
       if (error && error.code === "ENOENT") {
-        sources.push({...candidate, applied: false, missing: true});
-      } else {
-        const normalizedError =
-          error instanceof Error ? error : new Error(String(error));
-        errors.push({...candidate, error: normalizedError});
+        sources.push({ ...candidate, applied: false, missing: true });
+      }
+      else {
+        const normalizedError
+          = error instanceof Error ? error : new Error(String(error));
+        errors.push({ ...candidate, error: normalizedError });
       }
     }
   }

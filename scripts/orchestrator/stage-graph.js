@@ -1,7 +1,7 @@
 import path from "node:path";
-import {readFile} from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 
-export async function loadStageGraph (graphPath) {
+export async function loadStageGraph(graphPath) {
   const absolutePath = path.resolve(graphPath);
   const contents = await readFile(absolutePath, "utf8");
   const graph = JSON.parse(contents);
@@ -17,7 +17,7 @@ export async function loadStageGraph (graphPath) {
   return graph;
 }
 
-export function buildArtifactMap (graph) {
+export function buildArtifactMap(graph) {
   const artifacts = graph.artifacts ?? [];
   const artifactMap = new Map();
 
@@ -40,10 +40,10 @@ export function buildArtifactMap (graph) {
   return artifactMap;
 }
 
-export function getPipeline (graph, pipelineId) {
-  const pipeline = graph.pipelines.find((entry) => entry.id === pipelineId);
+export function getPipeline(graph, pipelineId) {
+  const pipeline = graph.pipelines.find(entry => entry.id === pipelineId);
   if (!pipeline) {
-    const available = graph.pipelines.map((entry) => entry.id).join(", ");
+    const available = graph.pipelines.map(entry => entry.id).join(", ");
     throw new Error(`Unknown pipeline "${pipelineId}". Available pipelines: ${available}`);
   }
 
@@ -54,7 +54,7 @@ export function getPipeline (graph, pipelineId) {
   return pipeline;
 }
 
-export function buildStageMap (graph) {
+export function buildStageMap(graph) {
   const stageMap = new Map();
   for (const stage of graph.stages) {
     if (!stage.id) {
@@ -71,7 +71,7 @@ export function buildStageMap (graph) {
   return stageMap;
 }
 
-export function buildExecutionPlan (graph, pipelineId) {
+export function buildExecutionPlan(graph, pipelineId) {
   const pipeline = getPipeline(graph, pipelineId);
   const artifactMap = buildArtifactMap(graph);
   const stageMap = buildStageMap(graph);
@@ -104,5 +104,5 @@ export function buildExecutionPlan (graph, pipelineId) {
     };
   });
 
-  return {pipeline, stages, artifactMap};
+  return { pipeline, stages, artifactMap };
 }

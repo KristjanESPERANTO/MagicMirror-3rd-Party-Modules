@@ -5,13 +5,13 @@
  * @param {unknown} obj - The value to sort (object, array, or primitive)
  * @returns {unknown} The same value with sorted object keys
  */
-export function sortObjectKeys (obj) {
+export function sortObjectKeys(obj) {
   if (obj === null || typeof obj !== "object") {
     return obj;
   }
 
   if (Array.isArray(obj)) {
-    return obj.map((item) => sortObjectKeys(item));
+    return obj.map(item => sortObjectKeys(item));
   }
 
   const sorted = {};
@@ -31,7 +31,7 @@ export function sortObjectKeys (obj) {
  * @param {number|null} space - Number of spaces for indentation (null for compact)
  * @returns {string} JSON string with sorted keys
  */
-export function stringifyDeterministic (data, space = 2) {
+export function stringifyDeterministic(data, space = 2) {
   const sorted = sortObjectKeys(data);
   return JSON.stringify(sorted, null, space);
 }
@@ -49,6 +49,6 @@ export function stringifyDeterministic (data, space = 2) {
  * @param {string} extension - The file extension (e.g., 'jpg', 'png')
  * @returns {string} Deterministic filename (e.g., 'MMM-Weather---example.jpg')
  */
-export function createDeterministicImageName (moduleName, maintainer, extension = "jpg") {
+export function createDeterministicImageName(moduleName, maintainer, extension = "jpg") {
   return `${moduleName}---${maintainer}.${extension}`;
 }

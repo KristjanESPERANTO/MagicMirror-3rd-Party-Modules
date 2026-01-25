@@ -1,16 +1,16 @@
-import {ensureDirectory, fileExists, readJson, writeJson} from "./fs-utils.js";
+import { ensureDirectory, fileExists, readJson, writeJson } from "./fs-utils.js";
 import path from "node:path";
 
 const DEFAULT_VERSION = 1;
 
-function normalizeKey (key) {
+function normalizeKey(key) {
   if (typeof key !== "string" || key.length === 0) {
     throw new TypeError("Persistent cache keys must be non-empty strings");
   }
   return key;
 }
 
-function cloneCacheEntry (entry) {
+function cloneCacheEntry(entry) {
   const cloned = {
     value: structuredClone(entry.value),
     updatedAt: entry.updatedAt,
@@ -23,7 +23,7 @@ function cloneCacheEntry (entry) {
   return cloned;
 }
 
-function buildStoredEntry ({value, metadata, expiresAt, timestamp, ttlMs}) {
+function buildStoredEntry({ value, metadata, expiresAt, timestamp, ttlMs }) {
   const stored = {
     value: structuredClone(value),
     updatedAt: timestamp,
@@ -36,11 +36,11 @@ function buildStoredEntry ({value, metadata, expiresAt, timestamp, ttlMs}) {
   return stored;
 }
 
-function toIsoString (timestamp) {
+function toIsoString(timestamp) {
   return new Date(timestamp).toISOString();
 }
 
-function isExpired ({expiresAt}, now) {
+function isExpired({ expiresAt }, now) {
   if (!expiresAt) {
     return false;
   }
@@ -48,7 +48,7 @@ function isExpired ({expiresAt}, now) {
   return new Date(expiresAt).getTime() <= now;
 }
 
-function createEmptyState ({version}) {
+function createEmptyState({ version }) {
   return {
     version,
     generatedAt: toIsoString(Date.now()),
@@ -56,17 +56,17 @@ function createEmptyState ({version}) {
   };
 }
 
-export function createPersistentCache ({filePath, version = DEFAULT_VERSION, defaultTtlMs = 0, now = () => Date.now()} = {}) {
+export function createPersistentCache({ filePath, version = DEFAULT_VERSION, defaultTtlMs = 0, now = () => Date.now() } = {}) {
   if (typeof filePath !== "string" || filePath.length === 0) {
     throw new TypeError("createPersistentCache requires a non-empty filePath");
   }
 
   const resolvedPath = path.resolve(filePath);
-  const state = createEmptyState({version});
+  const state = createEmptyState({ version });
   let loaded = false;
   let dirty = false;
 
-  async function load () {
+  async function load() {
     if (loaded) {
       return;
     }
@@ -79,9 +79,10 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
           state.generatedAt = stored.generatedAt ?? toIsoString(now());
           state.entries = stored.entries ?? {};
         }
-      } catch (error) {
+      }
+      catch (error) {
         const message = error instanceof Error ? error.message : String(error);
-        throw new Error(`Failed to load persistent cache at ${resolvedPath}: ${message}`, {cause: error});
+        throw new Error(`Failed to load persistent cache at ${resolvedPath}: ${message}`, { cause: error });
       }
     }
 
@@ -89,7 +90,7 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
     await pruneExpired();
   }
 
-  function snapshot () {
+  function snapshot() {
     return {
       version: state.version,
       generatedAt: state.generatedAt,
@@ -97,7 +98,7 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
     };
   }
 
-  function pruneExpired () {
+  function pruneExpired() {
     const current = now();
     let removed = false;
 
@@ -113,7 +114,7 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
     }
   }
 
-  function get (key) {
+  function get(key) {
     const normalizedKey = normalizeKey(key);
     const entry = state.entries[normalizedKey];
 
@@ -130,7 +131,7 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
     return cloneCacheEntry(entry);
   }
 
-  function set (key, value, {ttlMs = defaultTtlMs, metadata} = {}) {
+  function set(key, value, { ttlMs = defaultTtlMs, metadata } = {}) {
     const normalizedKey = normalizeKey(key);
     const current = now();
     const expiresAt = ttlMs && ttlMs > 0 ? toIsoString(current + ttlMs) : null;
@@ -146,7 +147,7 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
     return cloneCacheEntry(state.entries[normalizedKey]);
   }
 
-  function deleteKey (key) {
+  function deleteKey(key) {
     const normalizedKey = normalizeKey(key);
     if (Object.hasOwn(state.entries, normalizedKey)) {
       delete state.entries[normalizedKey];
@@ -154,15 +155,15 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
     }
   }
 
-  function entries () {
-    return Object.entries(state.entries).map(([key, entry]) => ({key, entry: cloneCacheEntry(entry)}));
+  function entries() {
+    return Object.entries(state.entries).map(([key, entry]) => ({ key, entry: cloneCacheEntry(entry) }));
   }
 
-  function getAllKeys () {
+  function getAllKeys() {
     return Object.keys(state.entries);
   }
 
-  async function flush () {
+  async function flush() {
     if (!loaded || !dirty) {
       return;
     }
@@ -172,7 +173,7 @@ export function createPersistentCache ({filePath, version = DEFAULT_VERSION, def
 
     const snapshotData = snapshot();
     snapshotData.generatedAt = toIsoString(now());
-    await writeJson(resolvedPath, snapshotData, {pretty: 2, ensureDir: true});
+    await writeJson(resolvedPath, snapshotData, { pretty: 2, ensureDir: true });
     dirty = false;
   }
 

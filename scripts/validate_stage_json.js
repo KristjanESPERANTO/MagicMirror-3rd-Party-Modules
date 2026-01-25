@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-import {cliValidateStage} from "./lib/schemaValidator.js";
+import { cliValidateStage } from "./lib/schemaValidator.js";
 import process from "node:process";
 
-async function main () {
+async function main() {
   const [stageId, filePath] = process.argv.slice(2);
 
   if (!stageId || !filePath) {

@@ -1,10 +1,10 @@
 import Ajv from "ajv";
 import addFormats from "ajv-formats";
-import {fileURLToPath} from "node:url";
+import { fileURLToPath } from "node:url";
 import path from "node:path";
 import process from "node:process";
-import {readFile} from "node:fs/promises";
-import {readFileSync} from "node:fs";
+import { readFile } from "node:fs/promises";
+import { readFileSync } from "node:fs";
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const schemaDirectory = path.resolve(currentDir, "../../dist/schemas");
@@ -20,12 +20,12 @@ const STAGE_SCHEMAS = {
   stats: "stats.schema.json"
 };
 
-const ajv = new Ajv({allErrors: true, strict: false});
+const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 
 const compiledValidators = new Map();
 
-function getValidator (stageId) {
+function getValidator(stageId) {
   if (!STAGE_SCHEMAS[stageId]) {
     throw new Error(`No schema registered for stage "${stageId}".`);
   }
@@ -40,7 +40,7 @@ function getValidator (stageId) {
   return compiledValidators.get(stageId);
 }
 
-function formatErrors (errors) {
+function formatErrors(errors) {
   return errors
     .map((error) => {
       const dataPath = error.instancePath || error.schemaPath;
@@ -49,7 +49,7 @@ function formatErrors (errors) {
     .join("\n");
 }
 
-export function validateStageData (stageId, data) {
+export function validateStageData(stageId, data) {
   const validate = getValidator(stageId);
   const valid = validate(data);
 
@@ -63,18 +63,19 @@ export function validateStageData (stageId, data) {
   return true;
 }
 
-export async function validateStageFile (stageId, filePath) {
+export async function validateStageFile(stageId, filePath) {
   const raw = await readFile(filePath, "utf8");
   const data = JSON.parse(raw);
   validateStageData(stageId, data);
   return data;
 }
 
-export async function cliValidateStage (stageId, filePath) {
+export async function cliValidateStage(stageId, filePath) {
   try {
     await validateStageFile(stageId, filePath);
     return 0;
-  } catch (error) {
+  }
+  catch (error) {
     const lines = [
       `Schema validation failed for ${stageId} at ${filePath}.`,
       error.message
@@ -90,7 +91,7 @@ export async function cliValidateStage (stageId, filePath) {
   }
 }
 
-export function assertStageOrExit (stageId, filePath) {
+export function assertStageOrExit(stageId, filePath) {
   cliValidateStage(stageId, filePath).then((code) => {
     if (code !== 0) {
       process.exit(code);

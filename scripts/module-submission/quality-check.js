@@ -5,9 +5,9 @@
  * Usage: node scripts/module-submission/quality-check.js
  */
 
-import {readFileSync, writeFileSync} from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import process from "node:process";
-import {resolve} from "node:path";
+import { resolve } from "node:path";
 
 // Get files to check from environment variable
 const changedFiles = process.env.CHANGED_FILES?.split(" ") || [];

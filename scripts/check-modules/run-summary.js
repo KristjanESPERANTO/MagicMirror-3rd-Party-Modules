@@ -1,4 +1,4 @@
-function resolveTimestamp (value) {
+function resolveTimestamp(value) {
   if (value instanceof Date) {
     return value.getTime();
   }
@@ -17,7 +17,7 @@ function resolveTimestamp (value) {
   return Number.NaN;
 }
 
-function formatTimestamp (value) {
+function formatTimestamp(value) {
   const timestamp = resolveTimestamp(value);
   if (Number.isNaN(timestamp)) {
     return "unknown";
@@ -25,11 +25,11 @@ function formatTimestamp (value) {
   return new Date(timestamp).toISOString();
 }
 
-function isFiniteNumber (value) {
+function isFiniteNumber(value) {
   return typeof value === "number" && Number.isFinite(value);
 }
 
-export function formatRunDuration (milliseconds) {
+export function formatRunDuration(milliseconds) {
   if (!isFiniteNumber(milliseconds) || milliseconds < 0) {
     return "unknown";
   }
@@ -57,15 +57,15 @@ export function formatRunDuration (milliseconds) {
   return parts.join(" ");
 }
 
-function formatBoolean (value) {
+function formatBoolean(value) {
   return value ? "✅" : "❌";
 }
 
-function formatTableRow (label, value) {
+function formatTableRow(label, value) {
   return `| ${label} | ${value} |`;
 }
 
-function toPosixPathString (inputPath) {
+function toPosixPathString(inputPath) {
   if (typeof inputPath !== "string" || inputPath.length === 0) {
     return inputPath;
   }
@@ -73,7 +73,7 @@ function toPosixPathString (inputPath) {
   return inputPath.replace(/\\/gu, "/");
 }
 
-function getTopEntries (record = {}, limit = 5) {
+function getTopEntries(record = {}, limit = 5) {
   if (!record || typeof record !== "object") {
     return [];
   }
@@ -83,7 +83,7 @@ function getTopEntries (record = {}, limit = 5) {
     .slice(0, Math.max(0, limit));
 }
 
-function describeConfigSource (source) {
+function describeConfigSource(source) {
   if (!source || typeof source !== "object") {
     return null;
   }
@@ -91,7 +91,8 @@ function describeConfigSource (source) {
   let status = "skipped";
   if (source.applied) {
     status = "applied";
-  } else if (source.missing) {
+  }
+  else if (source.missing) {
     status = "missing";
   }
 
@@ -104,7 +105,7 @@ function describeConfigSource (source) {
   return `- ${label}: ${status}`;
 }
 
-function appendCheckGroupSection (lines, config) {
+function appendCheckGroupSection(lines, config) {
   lines.push("## Check group configuration", "");
 
   lines.push("| Toggle | Enabled |", "|:-------|:-------:|");
@@ -126,14 +127,15 @@ function appendCheckGroupSection (lines, config) {
     );
 
     lines.push(fastRow, deepRow, ncuRow, deprecatedRow, eslintRow);
-  } else {
+  }
+  else {
     lines.push(formatTableRow("(unknown)", "❓"));
   }
 
   lines.push("");
 }
 
-function appendConfigSourcesSection (lines, configSources) {
+function appendConfigSourcesSection(lines, configSources) {
   if (!Array.isArray(configSources) || configSources.length === 0) {
     return;
   }
@@ -141,8 +143,8 @@ function appendConfigSourcesSection (lines, configSources) {
   lines.push("### Config sources", "");
 
   const descriptions = configSources
-    .map((source) => describeConfigSource(source))
-    .filter((entry) => typeof entry === "string" && entry.length > 0);
+    .map(source => describeConfigSource(source))
+    .filter(entry => typeof entry === "string" && entry.length > 0);
 
   if (descriptions.length === 0) {
     lines.push("- (none)", "");
@@ -156,12 +158,12 @@ function appendConfigSourcesSection (lines, configSources) {
   lines.push("");
 }
 
-function appendArtifactsSection (lines, artifactLinks) {
+function appendArtifactsSection(lines, artifactLinks) {
   if (!Array.isArray(artifactLinks) || artifactLinks.length === 0) {
     return;
   }
 
-  const entries = artifactLinks.filter((artifact) => artifact && (artifact.label || artifact.path));
+  const entries = artifactLinks.filter(artifact => artifact && (artifact.label || artifact.path));
   if (entries.length === 0) {
     return;
   }
@@ -173,7 +175,8 @@ function appendArtifactsSection (lines, artifactLinks) {
     if (typeof artifact.path === "string" && artifact.path.length > 0) {
       const normalized = toPosixPathString(artifact.path);
       lines.push(`- [${label}](${normalized})`);
-    } else {
+    }
+    else {
       lines.push(`- ${label}`);
     }
   }
@@ -181,7 +184,7 @@ function appendArtifactsSection (lines, artifactLinks) {
   lines.push("");
 }
 
-function appendTopMaintainersSection (lines, stats) {
+function appendTopMaintainersSection(lines, stats) {
   const topMaintainers = getTopEntries(stats?.maintainer, 5);
   if (topMaintainers.length === 0) {
     return;
@@ -197,7 +200,7 @@ function appendTopMaintainersSection (lines, stats) {
   lines.push("");
 }
 
-function appendRepositoryHostsSection (lines, stats) {
+function appendRepositoryHostsSection(lines, stats) {
   const topHosts = getTopEntries(stats?.repositoryHoster, 5);
   if (topHosts.length === 0) {
     return;
@@ -213,7 +216,7 @@ function appendRepositoryHostsSection (lines, stats) {
   lines.push("");
 }
 
-function appendIssuesSection (lines, issueSummaries, limit) {
+function appendIssuesSection(lines, issueSummaries, limit) {
   const normalizedLimit = Math.max(0, limit ?? 10);
   const entries = Array.isArray(issueSummaries)
     ? issueSummaries.filter(Boolean).slice(0, normalizedLimit)
@@ -246,7 +249,7 @@ function appendIssuesSection (lines, issueSummaries, limit) {
   lines.push("");
 }
 
-function computeDurationMs (startedAt, finishedAt) {
+function computeDurationMs(startedAt, finishedAt) {
   const start = resolveTimestamp(startedAt);
   const end = resolveTimestamp(finishedAt);
   if (Number.isNaN(start) || Number.isNaN(end)) {
@@ -255,7 +258,7 @@ function computeDurationMs (startedAt, finishedAt) {
   return Math.max(0, end - start);
 }
 
-export function buildRunSummaryMarkdown ({
+export function buildRunSummaryMarkdown({
   runId,
   startedAt,
   finishedAt,

@@ -1,12 +1,12 @@
 import fs from "node:fs";
 
-function getJson (filePath) {
+function getJson(filePath) {
   const data = fs.readFileSync(filePath, "utf8");
   const json = JSON.parse(data);
   return json;
 }
 
-function isMinified (filePath) {
+function isMinified(filePath) {
   const fileContent = fs.readFileSync(filePath, "utf8");
   const whitespacePercentage = 0.05;
   const minWhitespace = fileContent.length * whitespacePercentage;
@@ -16,4 +16,4 @@ function isMinified (filePath) {
   return hasShortVariableNames && isBelowWhitespaceThreshold;
 }
 
-export {getJson, isMinified};
+export { getJson, isMinified };

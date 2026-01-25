@@ -1,7 +1,7 @@
-import {builtinModules} from "node:module";
+import { builtinModules } from "node:module";
 import path from "node:path";
 
-export {MISSING_DEPENDENCY_RULE_ID} from "./missing-dependency-rule.js";
+export { MISSING_DEPENDENCY_RULE_ID } from "./missing-dependency-rule.js";
 
 const SOURCE_FILE_EXTENSIONS = new Set([
   ".cjs",
@@ -29,7 +29,7 @@ const IGNORED_PATH_SEGMENTS = new Set([
 
 const BUILTIN_DEPENDENCIES = new Set([
   ...builtinModules,
-  ...builtinModules.map((name) => `node:${name}`)
+  ...builtinModules.map(name => `node:${name}`)
 ]);
 
 const DEFAULT_IGNORED_DEPENDENCIES = new Set(["express", "node_helper", "logger"]);
@@ -41,7 +41,7 @@ const DEPENDENCY_CAPTURE_PATTERNS = Object.freeze([
   /\bimport\s*\(\s*["']([^"']+)["']\s*\)/gu
 ]);
 
-function isRelativeModule (specifier) {
+function isRelativeModule(specifier) {
   if (typeof specifier !== "string") {
     return false;
   }
@@ -49,7 +49,7 @@ function isRelativeModule (specifier) {
   return trimmed.startsWith(".") || trimmed.startsWith("/");
 }
 
-function isBuiltinModule (specifier) {
+function isBuiltinModule(specifier) {
   if (typeof specifier !== "string" || specifier.length === 0) {
     return false;
   }
@@ -68,7 +68,7 @@ function isBuiltinModule (specifier) {
   return BUILTIN_DEPENDENCIES.has(firstSegment) || BUILTIN_DEPENDENCIES.has(`node:${firstSegment}`);
 }
 
-function toPackageName (specifier) {
+function toPackageName(specifier) {
   if (typeof specifier !== "string") {
     return null;
   }
@@ -109,7 +109,7 @@ function toPackageName (specifier) {
  * @param {string} content - The source code content
  * @returns {string} Content with comments removed
  */
-function stripComments (content) {
+function stripComments(content) {
   if (typeof content !== "string" || content.length === 0) {
     return content;
   }
@@ -129,47 +129,59 @@ function stripComments (content) {
         state = "string";
         stringDelimiter = char;
         result += char;
-      } else if (char === "`") {
+      }
+      else if (char === "`") {
         // Template literal start
         state = "template";
         result += char;
-      } else if (char === "/" && nextChar === "/") {
+      }
+      else if (char === "/" && nextChar === "/") {
         // Single-line comment start
         state = "singleLineComment";
         index += 1; // Skip '/'
-      } else if (char === "/" && nextChar === "*") {
+      }
+      else if (char === "/" && nextChar === "*") {
         // Multi-line comment start
         state = "multiLineComment";
         index += 1; // Skip '*'
-      } else {
+      }
+      else {
         result += char;
       }
-    } else if (state === "string") {
+    }
+    else if (state === "string") {
       result += char;
       if (escaped) {
         escaped = false;
-      } else if (char === "\\") {
+      }
+      else if (char === "\\") {
         escaped = true;
-      } else if (char === stringDelimiter) {
+      }
+      else if (char === stringDelimiter) {
         state = "code";
         stringDelimiter = "";
       }
-    } else if (state === "template") {
+    }
+    else if (state === "template") {
       result += char;
       if (escaped) {
         escaped = false;
-      } else if (char === "\\") {
+      }
+      else if (char === "\\") {
         escaped = true;
-      } else if (char === "`") {
+      }
+      else if (char === "`") {
         state = "code";
       }
-    } else if (state === "singleLineComment") {
+    }
+    else if (state === "singleLineComment") {
       if (char === "\n" || char === "\r") {
         state = "code";
         result += char; // Preserve newline
       }
       // Otherwise skip comment content
-    } else if (state === "multiLineComment") {
+    }
+    else if (state === "multiLineComment") {
       if (char === "*" && nextChar === "/") {
         state = "code";
         index += 1; // Skip '/'
@@ -181,7 +193,7 @@ function stripComments (content) {
   return result;
 }
 
-function extractImportedModuleSpecifiers (content) {
+function extractImportedModuleSpecifiers(content) {
   const modules = new Set();
   if (typeof content !== "string" || content.length === 0) {
     return modules;
@@ -204,7 +216,7 @@ function extractImportedModuleSpecifiers (content) {
   return modules;
 }
 
-function buildIgnoreSet (maybeIgnore) {
+function buildIgnoreSet(maybeIgnore) {
   const ignore = new Set(DEFAULT_IGNORED_DEPENDENCIES);
   if (!maybeIgnore) {
     return ignore;
@@ -213,9 +225,11 @@ function buildIgnoreSet (maybeIgnore) {
   const values = [];
   if (Array.isArray(maybeIgnore)) {
     values.push(...maybeIgnore);
-  } else if (maybeIgnore instanceof Set) {
+  }
+  else if (maybeIgnore instanceof Set) {
     values.push(...maybeIgnore);
-  } else {
+  }
+  else {
     values.push(maybeIgnore);
   }
 
@@ -228,20 +242,20 @@ function buildIgnoreSet (maybeIgnore) {
   return ignore;
 }
 
-function normalizePathSegments (relativePath) {
+function normalizePathSegments(relativePath) {
   return relativePath
     .split(path.sep)
-    .map((segment) => segment.trim().toLowerCase())
-    .filter((segment) => segment.length > 0);
+    .map(segment => segment.trim().toLowerCase())
+    .filter(segment => segment.length > 0);
 }
 
-export function shouldAnalyzeFileForDependencyUsage (relativePath) {
+export function shouldAnalyzeFileForDependencyUsage(relativePath) {
   if (typeof relativePath !== "string" || relativePath.length === 0) {
     return false;
   }
 
   const segments = normalizePathSegments(relativePath);
-  if (segments.some((segment) => IGNORED_PATH_SEGMENTS.has(segment))) {
+  if (segments.some(segment => IGNORED_PATH_SEGMENTS.has(segment))) {
     return false;
   }
 
@@ -249,7 +263,7 @@ export function shouldAnalyzeFileForDependencyUsage (relativePath) {
   return SOURCE_FILE_EXTENSIONS.has(extension);
 }
 
-export function detectUsedDependencies (content, options = {}) {
+export function detectUsedDependencies(content, options = {}) {
   const detected = new Set();
   const ignore = buildIgnoreSet(options.ignore);
 
@@ -267,7 +281,7 @@ export function detectUsedDependencies (content, options = {}) {
   return detected;
 }
 
-export function extractDeclaredDependencyNames (packageSummary) {
+export function extractDeclaredDependencyNames(packageSummary) {
   const declared = new Set();
   if (!packageSummary || typeof packageSummary !== "object") {
     return declared;
@@ -293,7 +307,7 @@ export function extractDeclaredDependencyNames (packageSummary) {
   return declared;
 }
 
-export function findMissingDependencies ({usedDependencies, declaredDependencies}) {
+export function findMissingDependencies({ usedDependencies, declaredDependencies }) {
   const declared = declaredDependencies ?? new Set();
   const used = usedDependencies ?? new Set();
   const missing = new Set();

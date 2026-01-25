@@ -1,12 +1,12 @@
 import process from "node:process";
-import {spawn} from "node:child_process";
+import { spawn } from "node:child_process";
 
-function formatDuration (durationMs) {
+function formatDuration(durationMs) {
   const seconds = durationMs / 1000;
   return seconds >= 1 ? `${seconds.toFixed(1)}s` : `${durationMs}ms`;
 }
 
-function runStageProcess ({executable, args = []}, options) {
+function runStageProcess({ executable, args = [] }, options) {
   return new Promise((resolve, reject) => {
     const child = spawn(executable, args, {
       cwd: options.cwd,
@@ -31,7 +31,7 @@ function runStageProcess ({executable, args = []}, options) {
   });
 }
 
-export async function runStagesSequentially (stages, {logger, cwd = process.cwd(), env = process.env, validateArtifacts} = {}) {
+export async function runStagesSequentially(stages, { logger, cwd = process.cwd(), env = process.env, validateArtifacts } = {}) {
   const results = [];
 
   for (let index = 0; index < stages.length; index += 1) {
@@ -40,18 +40,19 @@ export async function runStagesSequentially (stages, {logger, cwd = process.cwd(
     const total = stages.length;
 
     const message = `${stage.id}${stage.name ? ` (${stage.name})` : ""}`;
-    logger?.start?.(stage, {stepNumber, total, message});
+    logger?.start?.(stage, { stepNumber, total, message });
 
     const startedAt = Date.now();
 
     try {
-      await runStageProcess(stage.command, {cwd, env});
+      await runStageProcess(stage.command, { cwd, env });
 
       if (validateArtifacts) {
-        await validateArtifacts(stage, {cwd, logger});
+        await validateArtifacts(stage, { cwd, logger });
       }
-    } catch (error) {
-      logger?.fail?.(stage, {stepNumber, total, message, error});
+    }
+    catch (error) {
+      logger?.fail?.(stage, { stepNumber, total, message, error });
 
       if (error instanceof Error) {
         error.stage = stage;
@@ -66,9 +67,9 @@ export async function runStagesSequentially (stages, {logger, cwd = process.cwd(
 
     const durationMs = Date.now() - startedAt;
     const formattedDuration = formatDuration(durationMs);
-    logger?.succeed?.(stage, {stepNumber, total, message, durationMs, formattedDuration});
+    logger?.succeed?.(stage, { stepNumber, total, message, durationMs, formattedDuration });
 
-    results.push({stage, durationMs});
+    results.push({ stage, durationMs });
   }
 
   return results;

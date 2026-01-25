@@ -1,7 +1,7 @@
 import css from "@eslint/css";
-import {defineConfig} from "eslint/config";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
-import {importX} from "eslint-plugin-import-x";
+import { flatConfigs as importX } from "eslint-plugin-import-x";
 import js from "@eslint/js";
 import json from "@eslint/json";
 import markdown from "@eslint/markdown";
@@ -24,14 +24,14 @@ export default defineConfig([
   },
   {
     files: ["**/*.css"],
-    languageOptions: {tolerant: true},
-    plugins: {css},
+    languageOptions: { tolerant: true },
+    plugins: { css },
     language: "css/css",
     extends: ["css/recommended"],
     rules: {
       "css/no-important": "off",
       "css/no-invalid-properties": "off",
-      "css/use-baseline": ["error", {available: "newly"}]
+      "css/use-baseline": ["error", { available: "newly" }]
     }
   },
   {
@@ -42,8 +42,8 @@ export default defineConfig([
         ...globals.browser
       }
     },
-    plugins: {js, stylistic},
-    extends: [importX.flatConfigs.recommended, "js/all", "stylistic/all"],
+    plugins: { js, stylistic },
+    extends: [importX.recommended, "js/all", stylistic.configs.customize({ indent: "tab", quotes: "double", semi: true, commaDangle: "never" })],
     rules: {
       "@stylistic/array-element-newline": ["error", "consistent"],
       "@stylistic/dot-location": ["error", "property"],
@@ -51,15 +51,15 @@ export default defineConfig([
       "@stylistic/implicit-arrow-linebreak": "off",
       "@stylistic/indent": ["error", 2],
       "@stylistic/multiline-ternary": "off",
-      "@stylistic/object-property-newline": ["error", {allowAllPropertiesOnSameLine: true}],
+      "@stylistic/object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],
       "@stylistic/padded-blocks": ["error", "never"],
       "@stylistic/quote-props": ["error", "as-needed"],
       camelcase: "off",
       complexity: "off",
       "default-case": "off",
       "func-style": "off",
-      "id-length": ["error", {exceptions: ["a", "b"]}],
-      "import-x/no-unresolved": ["error", {ignore: ["eslint/config", "logger"]}],
+      "id-length": ["error", { exceptions: ["a", "b"] }],
+      "import-x/no-unresolved": ["error", { ignore: ["eslint/config", "logger"] }],
       "init-declarations": "off",
       "max-depth": ["warn", 5],
       "max-lines": ["warn", 500],
@@ -102,7 +102,7 @@ export default defineConfig([
       "@typescript-eslint/no-explicit-any": "warn"
     }
   },
-  {files: ["**/*.json"], ignores: ["package.json", "package-lock.json"], plugins: {json}, extends: ["json/recommended"], language: "json/json"},
-  {files: ["package.json"], plugins: {packageJson}, extends: ["packageJson/recommended"], rules: {"package-json/sort-collections": "off"}},
-  {files: ["**/*.md"], plugins: {markdown}, language: "markdown/gfm", extends: ["markdown/recommended"]}
+  { files: ["**/*.json"], ignores: ["package.json", "package-lock.json"], plugins: { json }, extends: ["json/recommended"], language: "json/json" },
+  { files: ["package.json"], plugins: { packageJson }, extends: ["packageJson/recommended"], rules: { "package-json/sort-collections": "off" } },
+  { files: ["**/*.md"], plugins: { markdown }, language: "markdown/gfm", extends: ["markdown/recommended"] }
 ]);

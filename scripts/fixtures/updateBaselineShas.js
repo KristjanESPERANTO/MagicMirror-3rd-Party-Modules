@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import {execSync} from "node:child_process";
-import {fileURLToPath} from "node:url";
+import { execSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
@@ -27,11 +27,11 @@ const FIXTURES = [
   }
 ];
 
-function info (message) {
+function info(message) {
   process.stderr.write(`${message}\n`);
 }
 
-function fetchRemoteHead (repo) {
+function fetchRemoteHead(repo) {
   const remote = `https://github.com/${repo}.git`;
   info(`Fetching HEAD for ${repo}…`);
   const output = execSync(`git ls-remote ${remote} HEAD`, {
@@ -49,7 +49,7 @@ function fetchRemoteHead (repo) {
   return sha;
 }
 
-function updateFixtureFile ({slug, repo, lastCommit}, sha) {
+function updateFixtureFile({ slug, repo, lastCommit }, sha) {
   const fixturePath = path.join(ROOT_DIR, "fixtures", "modules", slug, "FIXTURE.md");
   if (!fs.existsSync(fixturePath)) {
     throw new Error(`Missing fixture file for ${slug}`);
@@ -65,14 +65,15 @@ function updateFixtureFile ({slug, repo, lastCommit}, sha) {
   info(`Updated ${slug} -> ${sha}`);
 }
 
-function main () {
+function main() {
   let failures = 0;
 
   for (const fixture of FIXTURES) {
     try {
       const sha = fetchRemoteHead(fixture.repo);
       updateFixtureFile(fixture, sha);
-    } catch (error) {
+    }
+    catch (error) {
       failures += 1;
       info(`Failed to update ${fixture.slug}: ${error.message}`);
     }
@@ -81,7 +82,8 @@ function main () {
   if (failures > 0) {
     process.exitCode = 1;
     info(`Completed with ${failures} failure(s).`);
-  } else {
+  }
+  else {
     info("All fixtures updated successfully.");
   }
 }

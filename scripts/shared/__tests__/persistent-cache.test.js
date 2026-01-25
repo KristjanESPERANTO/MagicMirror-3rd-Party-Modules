@@ -1,22 +1,22 @@
-import {equal, ok} from "node:assert/strict";
-import {mkdtemp, readFile} from "node:fs/promises";
-import {createPersistentCache} from "../../shared/persistent-cache.js";
-import {join} from "node:path";
-import {test} from "node:test";
-import {tmpdir} from "node:os";
+import { equal, ok } from "node:assert/strict";
+import { mkdtemp, readFile } from "node:fs/promises";
+import { createPersistentCache } from "../../shared/persistent-cache.js";
+import { join } from "node:path";
+import { test } from "node:test";
+import { tmpdir } from "node:os";
 
-async function createTempFilePath (prefix = "cache-test-") {
+async function createTempFilePath(prefix = "cache-test-") {
   const dir = await mkdtemp(join(tmpdir(), prefix));
   return join(dir, "cache.json");
 }
 
-function createClock () {
+function createClock() {
   let now = Date.now();
   return {
-    now () {
+    now() {
       return now;
     },
-    advance (ms) {
+    advance(ms) {
       now += ms;
       return now;
     }
@@ -26,10 +26,10 @@ function createClock () {
 test("persistent cache stores and retrieves values with ttl", async () => {
   const clock = createClock();
   const filePath = await createTempFilePath();
-  const cache = createPersistentCache({filePath, now: () => clock.now(), defaultTtlMs: 1000});
+  const cache = createPersistentCache({ filePath, now: () => clock.now(), defaultTtlMs: 1000 });
 
   await cache.load();
-  const inserted = cache.set("foo", {answer: 42});
+  const inserted = cache.set("foo", { answer: 42 });
   equal(inserted.value.answer, 42);
 
   const hit = cache.get("foo");
@@ -45,16 +45,16 @@ test("persistent cache stores and retrieves values with ttl", async () => {
 test("persistent cache persists entries to disk", async () => {
   const clock = createClock();
   const filePath = await createTempFilePath();
-  const cache = createPersistentCache({filePath, now: () => clock.now(), defaultTtlMs: 0});
+  const cache = createPersistentCache({ filePath, now: () => clock.now(), defaultTtlMs: 0 });
 
   await cache.load();
-  cache.set("alpha", {value: "one"});
+  cache.set("alpha", { value: "one" });
   await cache.flush();
 
   const contents = await readFile(filePath, "utf8");
   ok(contents.includes("alpha"));
 
-  const second = createPersistentCache({filePath, now: () => clock.now(), defaultTtlMs: 0});
+  const second = createPersistentCache({ filePath, now: () => clock.now(), defaultTtlMs: 0 });
   await second.load();
   const hit = second.get("alpha");
   ok(hit, "expected persisted hit");
@@ -64,11 +64,11 @@ test("persistent cache persists entries to disk", async () => {
 test("persistent cache supports per-entry ttl overrides", async () => {
   const clock = createClock();
   const filePath = await createTempFilePath();
-  const cache = createPersistentCache({filePath, now: () => clock.now(), defaultTtlMs: 5000});
+  const cache = createPersistentCache({ filePath, now: () => clock.now(), defaultTtlMs: 5000 });
 
   await cache.load();
-  cache.set("short", {value: 1}, {ttlMs: 1000});
-  cache.set("long", {value: 2});
+  cache.set("short", { value: 1 }, { ttlMs: 1000 });
+  cache.set("long", { value: 2 });
 
   clock.advance(1500);
 

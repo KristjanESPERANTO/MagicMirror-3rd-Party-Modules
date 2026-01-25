@@ -1,5 +1,5 @@
-import {createLogger, createStageProgressLogger} from "../logger.js";
-import {describe, it, mock} from "node:test";
+import { createLogger, createStageProgressLogger } from "../logger.js";
+import { describe, it, mock } from "node:test";
 import assert from "node:assert";
 
 describe("Logger", () => {
@@ -10,12 +10,12 @@ describe("Logger", () => {
     });
 
     it("should create a logger with custom level", () => {
-      const logger = createLogger({level: "debug"});
+      const logger = createLogger({ level: "debug" });
       assert.strictEqual(logger.level, "debug");
     });
 
     it("should allow changing the log level", () => {
-      const logger = createLogger({level: "warn"});
+      const logger = createLogger({ level: "warn" });
       assert.strictEqual(logger.level, "warn");
       logger.level = "debug";
       assert.strictEqual(logger.level, "debug");
@@ -23,7 +23,7 @@ describe("Logger", () => {
 
     it("should throw error for invalid log level", () => {
       assert.throws(
-        () => createLogger({level: "invalid"}),
+        () => createLogger({ level: "invalid" }),
         /Unknown log level/u
       );
     });
@@ -37,7 +37,7 @@ describe("Logger", () => {
         log: mock.fn()
       };
 
-      const logger = createLogger({level: "info", writer: mockWriter});
+      const logger = createLogger({ level: "info", writer: mockWriter });
 
       logger.info("test info");
       logger.debug("test debug");
@@ -60,7 +60,7 @@ describe("Logger", () => {
         info: mock.fn()
       };
 
-      const parent = createLogger({name: "parent", writer: mockWriter});
+      const parent = createLogger({ name: "parent", writer: mockWriter });
       const child = parent.child("child");
 
       child.info("test");
@@ -74,7 +74,7 @@ describe("Logger", () => {
         info: mock.fn()
       };
 
-      const logger = createLogger({writer: mockWriter});
+      const logger = createLogger({ writer: mockWriter });
       logger.info("test");
 
       assert.strictEqual(mockWriter.info.mock.calls.length, 1);
@@ -87,13 +87,13 @@ describe("Logger", () => {
         info: mock.fn()
       };
 
-      const logger = createLogger({writer: mockWriter});
-      logger.info("test", {key: "value"}, ["array"]);
+      const logger = createLogger({ writer: mockWriter });
+      logger.info("test", { key: "value" }, ["array"]);
 
       assert.strictEqual(mockWriter.info.mock.calls.length, 1);
       assert.strictEqual(mockWriter.info.mock.calls[0].arguments.length, 3);
       assert.match(mockWriter.info.mock.calls[0].arguments[0], /test/u);
-      assert.deepStrictEqual(mockWriter.info.mock.calls[0].arguments[1], {key: "value"});
+      assert.deepStrictEqual(mockWriter.info.mock.calls[0].arguments[1], { key: "value" });
       assert.deepStrictEqual(mockWriter.info.mock.calls[0].arguments[2], ["array"]);
     });
   });
@@ -103,10 +103,10 @@ describe("Logger", () => {
       const mockWriter = {
         info: mock.fn()
       };
-      const baseLogger = createLogger({writer: mockWriter});
+      const baseLogger = createLogger({ writer: mockWriter });
       const progressLogger = createStageProgressLogger(baseLogger);
 
-      progressLogger.start({id: "test-stage", name: "Test Stage"}, {stepNumber: 1, total: 3});
+      progressLogger.start({ id: "test-stage", name: "Test Stage" }, { stepNumber: 1, total: 3 });
 
       assert.strictEqual(mockWriter.info.mock.calls.length, 1);
       assert.match(mockWriter.info.mock.calls[0].arguments[0], /▶︎.*\[1\/3\].*test-stage.*Test Stage/u);
@@ -116,12 +116,12 @@ describe("Logger", () => {
       const mockWriter = {
         info: mock.fn()
       };
-      const baseLogger = createLogger({writer: mockWriter});
+      const baseLogger = createLogger({ writer: mockWriter });
       const progressLogger = createStageProgressLogger(baseLogger);
 
       progressLogger.succeed(
-        {id: "test-stage", name: "Test Stage"},
-        {stepNumber: 1, total: 3, formattedDuration: "1.5s"}
+        { id: "test-stage", name: "Test Stage" },
+        { stepNumber: 1, total: 3, formattedDuration: "1.5s" }
       );
 
       assert.strictEqual(mockWriter.info.mock.calls.length, 1);
@@ -132,13 +132,13 @@ describe("Logger", () => {
       const mockWriter = {
         error: mock.fn()
       };
-      const baseLogger = createLogger({writer: mockWriter});
+      const baseLogger = createLogger({ writer: mockWriter });
       const progressLogger = createStageProgressLogger(baseLogger);
 
       const error = new Error("Test error");
       progressLogger.fail(
-        {id: "test-stage", name: "Test Stage"},
-        {stepNumber: 1, total: 3, error}
+        { id: "test-stage", name: "Test Stage" },
+        { stepNumber: 1, total: 3, error }
       );
 
       assert.strictEqual(mockWriter.error.mock.calls.length, 2);

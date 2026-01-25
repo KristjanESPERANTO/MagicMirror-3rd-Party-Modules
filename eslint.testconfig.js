@@ -1,7 +1,7 @@
-import {defineConfig} from "eslint/config";
+import { defineConfig } from "eslint/config";
 import depend from "eslint-plugin-depend";
 import globals from "globals";
-import {flatConfigs as importX} from "eslint-plugin-import-x";
+import { flatConfigs as importX } from "eslint-plugin-import-x";
 import js from "@eslint/js";
 import packageJson from "eslint-plugin-package-json";
 
@@ -27,7 +27,7 @@ export default defineConfig([
     linterOptions: {
       reportUnusedDisableDirectives: "off"
     },
-    plugins: {js},
+    plugins: { js },
     extends: [importX.recommended, "js/recommended"],
     rules: {
       "import-x/no-unresolved": "off",
@@ -50,7 +50,7 @@ export default defineConfig([
     linterOptions: {
       reportUnusedDisableDirectives: "off"
     },
-    plugins: {js},
+    plugins: { js },
     extends: [importX.recommended, "js/recommended"],
     rules: {
       "import-x/no-unresolved": "off"
@@ -58,10 +58,10 @@ export default defineConfig([
   },
   {
     files: ["**/package.json"],
-    plugins: {depend, packageJson},
+    plugins: { depend, packageJson },
     extends: ["packageJson/recommended"],
     rules: {
-      "depend/ban-dependencies": ["error", {allowed: ["lint-staged", "moment"]}],
+      "depend/ban-dependencies": ["error", { allowed: ["lint-staged", "moment"] }],
       "package-json/order-properties": "off",
       "package-json/sort-collections": [
         "error",
@@ -79,4 +79,3 @@ export default defineConfig([
     }
   }
 ]);
-

@@ -1,8 +1,8 @@
-import {buildDiffMarkdown} from "./diff-markdown.js";
+import { buildDiffMarkdown } from "./diff-markdown.js";
 import fsPromises from "node:fs/promises";
 import path from "node:path";
 
-const {readFile, writeFile} = fsPromises;
+const { readFile, writeFile } = fsPromises;
 
 export const DIFF_OUTPUT_FILES = {
   json: "diff.json",
@@ -25,15 +25,15 @@ const STATS_MAP_WARNING_TOLERANCE = {
 const MAX_TEXT_DIFF_PREVIEW = 20;
 const LAST_UPDATE_REGEX = /^last update:/iu;
 
-function findArtifact (runResult, artifactId) {
+function findArtifact(runResult, artifactId) {
   const artifacts = runResult?.capturedArtifacts ?? [];
-  return artifacts.find((artifact) => artifact.id === artifactId) ?? null;
+  return artifacts.find(artifact => artifact.id === artifactId) ?? null;
 }
 
-async function loadJsonArtifact (runDirectory, runResult, artifactId) {
+async function loadJsonArtifact(runDirectory, runResult, artifactId) {
   const artifact = findArtifact(runResult, artifactId);
   if (!artifact) {
-    return {status: "missing", reason: `Artifact '${artifactId}' was not captured for ${runResult?.label ?? "unknown"}.`};
+    return { status: "missing", reason: `Artifact '${artifactId}' was not captured for ${runResult?.label ?? "unknown"}.` };
   }
 
   const stepDir = path.join(runDirectory, runResult.label ?? "");
@@ -42,17 +42,18 @@ async function loadJsonArtifact (runDirectory, runResult, artifactId) {
   try {
     const file = await readFile(absolutePath, "utf8");
     const parsed = JSON.parse(file);
-    return {status: "ok", path: absolutePath, data: parsed};
-  } catch (error) {
+    return { status: "ok", path: absolutePath, data: parsed };
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    return {status: "error", reason: `Failed to read '${artifactId}' for ${runResult.label}: ${message}`};
+    return { status: "error", reason: `Failed to read '${artifactId}' for ${runResult.label}: ${message}` };
   }
 }
 
-async function loadTextArtifact (runDirectory, runResult, artifactId) {
+async function loadTextArtifact(runDirectory, runResult, artifactId) {
   const artifact = findArtifact(runResult, artifactId);
   if (!artifact) {
-    return {status: "missing", reason: `Artifact '${artifactId}' was not captured for ${runResult?.label ?? "unknown"}.`};
+    return { status: "missing", reason: `Artifact '${artifactId}' was not captured for ${runResult?.label ?? "unknown"}.` };
   }
 
   const stepDir = path.join(runDirectory, runResult.label ?? "");
@@ -60,14 +61,15 @@ async function loadTextArtifact (runDirectory, runResult, artifactId) {
 
   try {
     const file = await readFile(absolutePath, "utf8");
-    return {status: "ok", path: absolutePath, data: file};
-  } catch (error) {
+    return { status: "ok", path: absolutePath, data: file };
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    return {status: "error", reason: `Failed to read '${artifactId}' for ${runResult.label}: ${message}`};
+    return { status: "error", reason: `Failed to read '${artifactId}' for ${runResult.label}: ${message}` };
   }
 }
 
-function asModuleIndex (modules) {
+function asModuleIndex(modules) {
   const index = new Map();
   if (!Array.isArray(modules)) {
     return index;
@@ -85,7 +87,7 @@ function asModuleIndex (modules) {
   return index;
 }
 
-function normalizedIssueList (issues) {
+function normalizedIssueList(issues) {
   if (!Array.isArray(issues)) {
     return [];
   }
@@ -102,7 +104,7 @@ function normalizedIssueList (issues) {
   return [...unique].sort();
 }
 
-function diffStage5Modules (legacyData, tsData) {
+function diffStage5Modules(legacyData, tsData) {
   const legacyModules = asModuleIndex(legacyData?.modules ?? []);
   const tsModules = asModuleIndex(tsData?.modules ?? []);
 
@@ -120,8 +122,8 @@ function diffStage5Modules (legacyData, tsData) {
       const legacyIssues = normalizedIssueList(legacyModule.issues ?? []);
       const tsIssues = normalizedIssueList(tsModule.issues ?? []);
 
-      const removedIssues = legacyIssues.filter((issue) => !tsIssues.includes(issue));
-      const addedIssues = tsIssues.filter((issue) => !legacyIssues.includes(issue));
+      const removedIssues = legacyIssues.filter(issue => !tsIssues.includes(issue));
+      const addedIssues = tsIssues.filter(issue => !legacyIssues.includes(issue));
 
       if (removedIssues.length > 0 || addedIssues.length > 0) {
         issueDifferences.push({
@@ -131,10 +133,12 @@ function diffStage5Modules (legacyData, tsData) {
           addedIssues
         });
       }
-    } else if (legacyModule) {
-      legacyOnly.push({id, name: legacyModule.name ?? id});
-    } else if (tsModule) {
-      tsOnly.push({id, name: tsModule.name ?? id});
+    }
+    else if (legacyModule) {
+      legacyOnly.push({ id, name: legacyModule.name ?? id });
+    }
+    else if (tsModule) {
+      tsOnly.push({ id, name: tsModule.name ?? id });
     }
   }
 
@@ -147,7 +151,7 @@ function diffStage5Modules (legacyData, tsData) {
   };
 }
 
-function diffCountMap (legacyMap, tsMap, tolerance = 0) {
+function diffCountMap(legacyMap, tsMap, tolerance = 0) {
   const legacyEntries = legacyMap && typeof legacyMap === "object" ? legacyMap : {};
   const tsEntries = tsMap && typeof tsMap === "object" ? tsMap : {};
 
@@ -166,14 +170,16 @@ function diffCountMap (legacyMap, tsMap, tolerance = 0) {
 
     if (!valuesAreNumeric) {
       if (legacyRaw !== tsRaw) {
-        differences.push({key, legacyValue: legacyRaw, tsValue: tsRaw, delta: null, tolerance});
+        differences.push({ key, legacyValue: legacyRaw, tsValue: tsRaw, delta: null, tolerance });
       }
-    } else if (legacyValue !== tsValue) {
+    }
+    else if (legacyValue !== tsValue) {
       const delta = tsValue - legacyValue;
-      const entry = {key, legacyValue, tsValue, delta, tolerance};
+      const entry = { key, legacyValue, tsValue, delta, tolerance };
       if (Math.abs(delta) <= tolerance) {
         warnings.push(entry);
-      } else {
+      }
+      else {
         differences.push(entry);
       }
     }
@@ -187,13 +193,13 @@ function diffCountMap (legacyMap, tsMap, tolerance = 0) {
   };
 }
 
-function classifyNumericDifference (key, legacyValueRaw, tsValueRaw) {
+function classifyNumericDifference(key, legacyValueRaw, tsValueRaw) {
   const legacyValue = typeof legacyValueRaw === "number" ? legacyValueRaw : Number(legacyValueRaw ?? 0);
   const tsValue = typeof tsValueRaw === "number" ? tsValueRaw : Number(tsValueRaw ?? 0);
 
   if (!Number.isFinite(legacyValue) || !Number.isFinite(tsValue)) {
     if (legacyValueRaw === tsValueRaw) {
-      return {severity: null};
+      return { severity: null };
     }
 
     return {
@@ -209,27 +215,27 @@ function classifyNumericDifference (key, legacyValueRaw, tsValueRaw) {
   }
 
   if (legacyValue === tsValue) {
-    return {severity: null};
+    return { severity: null };
   }
 
   const tolerance = STATS_NUMERIC_WARNING_TOLERANCE[key] ?? DEFAULT_NUMERIC_WARNING_TOLERANCE;
   const delta = tsValue - legacyValue;
-  const entry = {key, legacyValue, tsValue, delta, tolerance};
+  const entry = { key, legacyValue, tsValue, delta, tolerance };
 
   if (Math.abs(delta) <= tolerance) {
-    return {severity: "warning", entry};
+    return { severity: "warning", entry };
   }
 
-  return {severity: "difference", entry};
+  return { severity: "difference", entry };
 }
 
-function isPlainObject (value) {
+function isPlainObject(value) {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
 }
 
-function diffStats (legacyStats, tsStats) {
+function diffStats(legacyStats, tsStats) {
   if (!legacyStats || !tsStats) {
-    return {hasDifferences: true, hasWarnings: false, numeric: {differences: [], warnings: []}, maps: {differences: [], warnings: []}, missing: true};
+    return { hasDifferences: true, hasWarnings: false, numeric: { differences: [], warnings: [] }, maps: { differences: [], warnings: [] }, missing: true };
   }
 
   const ignoredKeys = new Set(["lastUpdate"]);
@@ -252,16 +258,18 @@ function diffStats (legacyStats, tsStats) {
         const tolerance = STATS_MAP_WARNING_TOLERANCE[key] ?? DEFAULT_MAP_WARNING_TOLERANCE;
         const diff = diffCountMap(legacyValue ?? {}, tsValue ?? {}, tolerance);
         if (diff.hasDifferences) {
-          mapDifferences.push({key, differences: diff.differences});
+          mapDifferences.push({ key, differences: diff.differences });
         }
         if (diff.hasWarnings) {
-          mapWarnings.push({key, warnings: diff.warnings});
+          mapWarnings.push({ key, warnings: diff.warnings });
         }
-      } else {
+      }
+      else {
         const classification = classifyNumericDifference(key, legacyValue, tsValue);
         if (classification.severity === "difference" && classification.entry) {
           numericDifferences.push(classification.entry);
-        } else if (classification.severity === "warning" && classification.entry) {
+        }
+        else if (classification.severity === "warning" && classification.entry) {
           numericWarnings.push(classification.entry);
         }
       }
@@ -283,25 +291,25 @@ function diffStats (legacyStats, tsStats) {
   };
 }
 
-function normalizeNewlines (content) {
+function normalizeNewlines(content) {
   return (content ?? "").replace(/\r\n/gu, "\n").replace(/\r/gu, "\n");
 }
 
-function normalizeMarkdownReport (content) {
+function normalizeMarkdownReport(content) {
   const normalized = normalizeNewlines(content);
   const lines = normalized
     .split("\n")
-    .map((line) => line.trimEnd())
-    .filter((line) => !LAST_UPDATE_REGEX.test(line.trim()));
+    .map(line => line.trimEnd())
+    .filter(line => !LAST_UPDATE_REGEX.test(line.trim()));
 
   return lines.join("\n").trim();
 }
 
-function normalizeHtmlReport (content) {
+function normalizeHtmlReport(content) {
   return normalizeNewlines(content).trim();
 }
 
-function summarizeLineDifferences (legacyText, tsText, limit = MAX_TEXT_DIFF_PREVIEW) {
+function summarizeLineDifferences(legacyText, tsText, limit = MAX_TEXT_DIFF_PREVIEW) {
   const legacyLines = legacyText.split("\n");
   const tsLines = tsText.split("\n");
   const maxLines = Math.max(legacyLines.length, tsLines.length);
@@ -327,7 +335,7 @@ function summarizeLineDifferences (legacyText, tsText, limit = MAX_TEXT_DIFF_PRE
   return differences;
 }
 
-function diffTextReport (legacyText, tsText, normalizer) {
+function diffTextReport(legacyText, tsText, normalizer) {
   const legacyNormalized = normalizer(legacyText ?? "");
   const tsNormalized = normalizer(tsText ?? "");
 
@@ -348,7 +356,7 @@ function diffTextReport (legacyText, tsText, normalizer) {
   };
 }
 
-function diffReports ({markdownLegacy, markdownTs, htmlLegacy, htmlTs}) {
+function diffReports({ markdownLegacy, markdownTs, htmlLegacy, htmlTs }) {
   const markdown = diffTextReport(markdownLegacy, markdownTs, normalizeMarkdownReport);
   const html = diffTextReport(htmlLegacy, htmlTs, normalizeHtmlReport);
 
@@ -360,22 +368,22 @@ function diffReports ({markdownLegacy, markdownTs, htmlLegacy, htmlTs}) {
   };
 }
 
-export async function performDiff ({runDirectory, results}) {
-  const legacyRun = results.find((run) => run.label === "legacy");
-  const tsRun = results.find((run) => run.label === "ts");
+export async function performDiff({ runDirectory, results }) {
+  const legacyRun = results.find(run => run.label === "legacy");
+  const tsRun = results.find(run => run.label === "ts");
 
   if (!legacyRun || !tsRun) {
-    return {status: "error", reason: "Missing legacy or TypeScript run results."};
+    return { status: "error", reason: "Missing legacy or TypeScript run results." };
   }
 
   if (legacyRun.skipped || tsRun.skipped) {
-    return {status: "skipped", reason: "One or more commands were skipped."};
+    return { status: "skipped", reason: "One or more commands were skipped." };
   }
 
   const legacyExitCode = legacyRun.exitCode ?? 0;
   const tsExitCode = tsRun.exitCode ?? 0;
   if (legacyExitCode !== 0 || tsExitCode !== 0) {
-    return {status: "skipped", reason: "Diff skipped because one or more commands exited non-zero."};
+    return { status: "skipped", reason: "Diff skipped because one or more commands exited non-zero." };
   }
 
   const stage4Legacy = await loadJsonArtifact(runDirectory, legacyRun, "modules.stage.4.json");
@@ -383,9 +391,9 @@ export async function performDiff ({runDirectory, results}) {
 
   if (stage4Legacy.status !== "ok" || stage4Ts.status !== "ok") {
     const reasons = [stage4Legacy, stage4Ts]
-      .filter((item) => item.status !== "ok")
-      .map((item) => item.reason ?? "Unknown stage 4 artifact error.");
-    return {status: "error", reason: reasons.join(" ")};
+      .filter(item => item.status !== "ok")
+      .map(item => item.reason ?? "Unknown stage 4 artifact error.");
+    return { status: "error", reason: reasons.join(" ") };
   }
 
   const statsLegacy = await loadJsonArtifact(runDirectory, legacyRun, "stats.json");
@@ -393,9 +401,9 @@ export async function performDiff ({runDirectory, results}) {
 
   if (statsLegacy.status !== "ok" || statsTs.status !== "ok") {
     const reasons = [statsLegacy, statsTs]
-      .filter((item) => item.status !== "ok")
-      .map((item) => item.reason ?? "Unknown stats artifact error.");
-    return {status: "error", reason: reasons.join(" ")};
+      .filter(item => item.status !== "ok")
+      .map(item => item.reason ?? "Unknown stats artifact error.");
+    return { status: "error", reason: reasons.join(" ") };
   }
 
   const markdownLegacy = await loadTextArtifact(runDirectory, legacyRun, "result.md");
@@ -403,9 +411,9 @@ export async function performDiff ({runDirectory, results}) {
 
   if (markdownLegacy.status !== "ok" || markdownTs.status !== "ok") {
     const reasons = [markdownLegacy, markdownTs]
-      .filter((item) => item.status !== "ok")
-      .map((item) => item.reason ?? "Unknown report artifact error.");
-    return {status: "error", reason: reasons.join(" ")};
+      .filter(item => item.status !== "ok")
+      .map(item => item.reason ?? "Unknown report artifact error.");
+    return { status: "error", reason: reasons.join(" ") };
   }
 
   const htmlLegacy = await loadTextArtifact(runDirectory, legacyRun, "result.html");
@@ -413,9 +421,9 @@ export async function performDiff ({runDirectory, results}) {
 
   if (htmlLegacy.status !== "ok" || htmlTs.status !== "ok") {
     const reasons = [htmlLegacy, htmlTs]
-      .filter((item) => item.status !== "ok")
-      .map((item) => item.reason ?? "Unknown report artifact error.");
-    return {status: "error", reason: reasons.join(" ")};
+      .filter(item => item.status !== "ok")
+      .map(item => item.reason ?? "Unknown report artifact error.");
+    return { status: "error", reason: reasons.join(" ") };
   }
 
   const stage4Diff = diffStage5Modules(stage4Legacy.data, stage4Ts.data);
@@ -444,16 +452,19 @@ export async function performDiff ({runDirectory, results}) {
 
   if (hasDifferences) {
     console.warn("[compare] Differences detected between legacy and TypeScript outputs.");
-  } else if (hasWarnings) {
+  }
+  else if (hasWarnings) {
     console.warn("[compare] Outputs match within configured thresholds; review warnings for context.");
-  } else {
+  }
+  else {
     console.log("[compare] No differences detected between legacy and TypeScript outputs.");
   }
 
   let status = "matched";
   if (hasDifferences) {
     status = "differences";
-  } else if (hasWarnings) {
+  }
+  else if (hasWarnings) {
     status = "warnings";
   }
 

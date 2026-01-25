@@ -1,4 +1,4 @@
-import {MISSING_DEPENDENCY_RULE_DEFINITION} from "./missing-dependency-rule.js";
+import { MISSING_DEPENDENCY_RULE_DEFINITION } from "./missing-dependency-rule.js";
 const RULE_SEVERITIES = Object.freeze(["info", "warning", "error"]);
 const RULE_CATEGORY_METADATA = Object.freeze({
   Deprecated: Object.freeze({
@@ -31,11 +31,11 @@ const PIPELINE_CHECK_STAGE_IDS = Object.freeze({
 });
 
 const DEFAULT_STAGE_ID = PIPELINE_CHECK_STAGE_IDS.MODERN;
-function normalizePatterns (rawPatterns, id) {
+function normalizePatterns(rawPatterns, id) {
   if (Array.isArray(rawPatterns)) {
     const normalized = rawPatterns
-      .filter((pattern) => typeof pattern === "string" && pattern.length > 0)
-      .map((pattern) => pattern);
+      .filter(pattern => typeof pattern === "string" && pattern.length > 0)
+      .map(pattern => pattern);
     if (normalized.length > 0) {
       return Object.freeze(normalized);
     }
@@ -48,7 +48,7 @@ function normalizePatterns (rawPatterns, id) {
   throw new Error(`Rule ${id} must declare at least one pattern.`);
 }
 
-function resolveSeverity (definition) {
+function resolveSeverity(definition) {
   if (typeof definition.severity === "string") {
     if (!RULE_SEVERITIES.includes(definition.severity)) {
       throw new Error(`Rule ${definition.id} references unknown severity '${definition.severity}'.`);
@@ -60,9 +60,9 @@ function resolveSeverity (definition) {
   return categoryMetadata?.defaultSeverity ?? "info";
 }
 
-function normalizeStages (rawStages, id) {
+function normalizeStages(rawStages, id) {
   if (Array.isArray(rawStages)) {
-    const normalized = Array.from(new Set(rawStages.filter((stage) => typeof stage === "string" && stage.length > 0)));
+    const normalized = Array.from(new Set(rawStages.filter(stage => typeof stage === "string" && stage.length > 0)));
     if (normalized.length > 0) {
       return Object.freeze(normalized);
     }
@@ -75,7 +75,7 @@ function normalizeStages (rawStages, id) {
   throw new Error(`Rule ${id} must declare at least one stage.`);
 }
 
-function createRule (definition) {
+function createRule(definition) {
   if (!definition?.id) {
     throw new Error("Rule definition missing id.");
   }
@@ -469,12 +469,12 @@ const RULES_BY_STAGE = (() => {
 
 const EMPTY_RULE_LIST = Object.freeze([]);
 
-const TEXT_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "text" && rule.stages.includes(DEFAULT_STAGE_ID)));
+const TEXT_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "text" && rule.stages.includes(DEFAULT_STAGE_ID)));
 
-const PACKAGE_JSON_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "package-json" && rule.stages.includes(DEFAULT_STAGE_ID)));
+const PACKAGE_JSON_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "package-json" && rule.stages.includes(DEFAULT_STAGE_ID)));
 
-const PACKAGE_LOCK_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "package-lock" && rule.stages.includes(DEFAULT_STAGE_ID)));
-const RULE_INDEX = new Map(RULE_REGISTRY.map((rule) => [rule.id, rule]));
+const PACKAGE_LOCK_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "package-lock" && rule.stages.includes(DEFAULT_STAGE_ID)));
+const RULE_INDEX = new Map(RULE_REGISTRY.map(rule => [rule.id, rule]));
 
 export {
   RULE_CATEGORY_METADATA,
@@ -486,13 +486,13 @@ export {
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES
 };
-export function getRuleById (ruleId) {
+export function getRuleById(ruleId) {
   return RULE_INDEX.get(ruleId) ?? null;
 }
-export function getCategoryMetadata (category) {
+export function getCategoryMetadata(category) {
   return RULE_CATEGORY_METADATA[category] ?? null;
 }
-export function getRulesForStage (stageId) {
+export function getRulesForStage(stageId) {
   if (typeof stageId !== "string" || stageId.length === 0) {
     return EMPTY_RULE_LIST;
   }

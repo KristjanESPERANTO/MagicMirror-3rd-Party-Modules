@@ -1,11 +1,11 @@
-import {describe, it} from "node:test";
+import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import {createRateLimiter} from "../rate-limiter.js";
+import { createRateLimiter } from "../rate-limiter.js";
 
 describe("RateLimiter", () => {
   it("should allow immediate execution when tokens are available", async () => {
-    const limiter = createRateLimiter({tokensPerInterval: 5, intervalMs: 100});
+    const limiter = createRateLimiter({ tokensPerInterval: 5, intervalMs: 100 });
 
     const results = [];
     results.push(await limiter.schedule(() => "task1"));
@@ -15,7 +15,7 @@ describe("RateLimiter", () => {
   });
 
   it("should queue tasks when tokens are exhausted", async () => {
-    const limiter = createRateLimiter({tokensPerInterval: 2, intervalMs: 100});
+    const limiter = createRateLimiter({ tokensPerInterval: 2, intervalMs: 100 });
 
     const startTime = Date.now();
     const results = [];
@@ -35,7 +35,7 @@ describe("RateLimiter", () => {
   });
 
   it("should return pending count correctly", async () => {
-    const limiter = createRateLimiter({tokensPerInterval: 1, intervalMs: 100});
+    const limiter = createRateLimiter({ tokensPerInterval: 1, intervalMs: 100 });
 
     // Use up the token
     await limiter.schedule(() => "task1");
@@ -55,7 +55,7 @@ describe("RateLimiter", () => {
   });
 
   it("should handle tasks that throw errors", async () => {
-    const limiter = createRateLimiter({tokensPerInterval: 5, intervalMs: 100});
+    const limiter = createRateLimiter({ tokensPerInterval: 5, intervalMs: 100 });
 
     const error = new Error("Task failed");
 
@@ -65,7 +65,7 @@ describe("RateLimiter", () => {
           throw error;
         });
       },
-      (err) => err === error
+      err => err === error
     );
 
     // Should still work after error
@@ -74,7 +74,7 @@ describe("RateLimiter", () => {
   });
 
   it("should refill tokens at specified interval", async () => {
-    const limiter = createRateLimiter({tokensPerInterval: 2, intervalMs: 100});
+    const limiter = createRateLimiter({ tokensPerInterval: 2, intervalMs: 100 });
 
     // Consume all tokens
     await limiter.schedule(() => "task1");

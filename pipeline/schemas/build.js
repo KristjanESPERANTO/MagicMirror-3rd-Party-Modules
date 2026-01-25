@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import {mkdir, readFile, writeFile} from "node:fs/promises";
-import {dereference} from "@apidevtools/json-schema-ref-parser";
-import {fileURLToPath} from "node:url";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { dereference } from "@apidevtools/json-schema-ref-parser";
+import { fileURLToPath } from "node:url";
 import path from "node:path";
 import process from "node:process";
 
@@ -23,28 +23,29 @@ const SCHEMA_FILES = [
 
 const CHECK_MODE = process.argv.includes("--check");
 
-async function ensureDistDir () {
+async function ensureDistDir() {
   if (CHECK_MODE) {
     return;
   }
 
-  await mkdir(DIST_DIR, {recursive: true});
+  await mkdir(DIST_DIR, { recursive: true });
 }
 
-async function bundleSchema (filename) {
+async function bundleSchema(filename) {
   const sourcePath = path.join(SRC_DIR, filename);
   const bundledSchema = await dereference(sourcePath, {
-    dereference: {circular: false}
+    dereference: { circular: false }
   });
   const output = `${JSON.stringify(bundledSchema, null, 2)}\n`;
-  return {sourcePath, output};
+  return { sourcePath, output };
 }
 
-async function fileExists (filePath) {
+async function fileExists(filePath) {
   try {
     await readFile(filePath);
     return true;
-  } catch (error) {
+  }
+  catch (error) {
     if (error.code === "ENOENT") {
       return false;
     }
@@ -53,36 +54,37 @@ async function fileExists (filePath) {
   }
 }
 
-async function writeBundledSchema (filename, output) {
+async function writeBundledSchema(filename, output) {
   const targetPath = path.join(DIST_DIR, filename);
 
   if (CHECK_MODE) {
     const exists = await fileExists(targetPath);
 
     if (!exists) {
-      return {filename, matches: false};
+      return { filename, matches: false };
     }
 
     const current = await readFile(targetPath, "utf8");
-    return {filename, matches: current === output};
+    return { filename, matches: current === output };
   }
 
   await writeFile(targetPath, output, "utf8");
-  return {filename, matches: true};
+  return { filename, matches: true };
 }
 
-async function main () {
+async function main() {
   await ensureDistDir();
 
   const mismatches = [];
 
   for (const filename of SCHEMA_FILES) {
-    const {output} = await bundleSchema(filename);
+    const { output } = await bundleSchema(filename);
     const result = await writeBundledSchema(filename, output);
 
     if (!CHECK_MODE) {
       console.log(`Bundled ${filename}`);
-    } else if (!result.matches) {
+    }
+    else if (!result.matches) {
       mismatches.push(filename);
     }
   }
@@ -90,12 +92,13 @@ async function main () {
   if (CHECK_MODE) {
     if (mismatches.length > 0) {
       console.error("Schema bundle check failed. Run `npm run schemas:build` to regenerate:");
-      mismatches.forEach((filename) => console.error(` - ${filename}`));
+      mismatches.forEach(filename => console.error(` - ${filename}`));
       process.exit(1);
     }
 
     console.log("Schema bundle check passed.");
-  } else {
+  }
+  else {
     console.log(`Schemas written to ${path.relative(process.cwd(), DIST_DIR)}`);
   }
 }

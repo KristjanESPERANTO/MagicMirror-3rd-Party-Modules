@@ -9,7 +9,7 @@ import {
 import assert from "node:assert/strict";
 import test from "node:test";
 
-function toSortedArray (iterable) {
+function toSortedArray(iterable) {
   return Array.from(iterable).sort((a, b) => a.localeCompare(b));
 }
 

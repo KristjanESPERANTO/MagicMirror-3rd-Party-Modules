@@ -1,7 +1,7 @@
 const DEFAULT_INTERVAL_MS = 1000;
 const DEFAULT_TOKENS_PER_INTERVAL = 5;
 
-function scheduleFlush (state) {
+function scheduleFlush(state) {
   if (state.refillTimer) {
     return;
   }
@@ -20,7 +20,9 @@ function scheduleFlush (state) {
       state.refillTimer = null;
     }
   }, state.intervalMs);
-} export function createRateLimiter ({tokensPerInterval = DEFAULT_TOKENS_PER_INTERVAL, intervalMs = DEFAULT_INTERVAL_MS, maxTokens = tokensPerInterval} = {}) {
+}
+
+export function createRateLimiter({ tokensPerInterval = DEFAULT_TOKENS_PER_INTERVAL, intervalMs = DEFAULT_INTERVAL_MS, maxTokens = tokensPerInterval } = {}) {
   const state = {
     tokens: tokensPerInterval,
     maxTokens,
@@ -30,7 +32,7 @@ function scheduleFlush (state) {
     refillTimer: null
   };
 
-  function tryConsume () {
+  function tryConsume() {
     if (state.tokens > 0) {
       state.tokens -= 1;
       scheduleFlush(state);
@@ -40,7 +42,7 @@ function scheduleFlush (state) {
     return false;
   }
 
-  async function acquire () {
+  async function acquire() {
     if (tryConsume()) {
       return;
     }
@@ -52,17 +54,18 @@ function scheduleFlush (state) {
 
   return {
     acquire,
-    async schedule (task) {
+    async schedule(task) {
       await acquire();
 
       try {
         const result = await task();
         return result;
-      } finally {
+      }
+      finally {
         scheduleFlush(state);
       }
     },
-    getPendingCount () {
+    getPendingCount() {
       return state.queue.length;
     }
   };

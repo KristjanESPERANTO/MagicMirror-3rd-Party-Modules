@@ -1,6 +1,6 @@
 import fs from "node:fs";
 
-export function getRepositoryType (url) {
+export function getRepositoryType(url) {
   if (url.includes("github.com")) {
     return "github";
   }
@@ -16,13 +16,13 @@ export function getRepositoryType (url) {
   return "unknown";
 }
 
-export function getRepositoryId (url) {
+export function getRepositoryId(url) {
   const urlParts = url.split("/");
-  const hostIndex = urlParts.findIndex((part) =>
-    part.includes("github.com") ||
-    part.includes("gitlab.com") ||
-    part.includes("bitbucket.org") ||
-    part.includes("codeberg.org"));
+  const hostIndex = urlParts.findIndex(part =>
+    part.includes("github.com")
+    || part.includes("gitlab.com")
+    || part.includes("bitbucket.org")
+    || part.includes("codeberg.org"));
 
   if (hostIndex !== -1 && urlParts.length > hostIndex + 2) {
     return `${urlParts[hostIndex + 1]}/${urlParts[hostIndex + 2]}`;
@@ -30,10 +30,10 @@ export function getRepositoryId (url) {
   return null;
 }
 
-export function sortModuleListByLastUpdate (previousData, moduleList) {
+export function sortModuleListByLastUpdate(previousData, moduleList) {
   moduleList.sort((a, b) => {
-    const lastUpdateA = previousData.repositories?.find((repo) => repo.id === a.id)?.gitHubDataLastUpdate;
-    const lastUpdateB = previousData.repositories?.find((repo) => repo.id === b.id)?.gitHubDataLastUpdate;
+    const lastUpdateA = previousData.repositories?.find(repo => repo.id === a.id)?.gitHubDataLastUpdate;
+    const lastUpdateB = previousData.repositories?.find(repo => repo.id === b.id)?.gitHubDataLastUpdate;
 
     if (!lastUpdateA && !lastUpdateB) {
       return 0;
@@ -51,35 +51,39 @@ export function sortModuleListByLastUpdate (previousData, moduleList) {
   });
 }
 
-export function sortByNameIgnoringPrefix (a, b) {
+export function sortByNameIgnoringPrefix(a, b) {
   const nameA = a.name.replace("MMM-", "");
   const nameB = b.name.replace("MMM-", "");
   return nameA.localeCompare(nameB);
 }
 
-export async function loadPreviousData (remoteFilePath, localFilePath) {
+export async function loadPreviousData(remoteFilePath, localFilePath) {
   let previousData = {};
   try {
     const response = await fetch(remoteFilePath);
     if (response.ok) {
       previousData = await response.json();
-    } else if (fs.existsSync(localFilePath)) {
+    }
+    else if (fs.existsSync(localFilePath)) {
       previousData = JSON.parse(fs.readFileSync(localFilePath));
-    } else {
+    }
+    else {
       console.warn(`Local file ${localFilePath} does not exist.`);
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error("Error fetching remote data, falling back to local file:", error);
     try {
       previousData = JSON.parse(fs.readFileSync(localFilePath));
-    } catch (localError) {
+    }
+    catch (localError) {
       console.error("Error reading local data:", localError);
     }
   }
   return previousData;
 }
 
-export function createDefaultRepositoryData ({repositoryId, module}) {
+export function createDefaultRepositoryData({ repositoryId, module }) {
   if (typeof module.stars !== "number") {
     module.stars = 0;
   }
@@ -106,7 +110,7 @@ export function createDefaultRepositoryData ({repositoryId, module}) {
   };
 }
 
-export function getRepositoryCacheKey (module) {
+export function getRepositoryCacheKey(module) {
   const repoType = getRepositoryType(module.url);
   const repoId = getRepositoryId(module.url);
   if (!repoId || repoType === "unknown") {
@@ -115,7 +119,7 @@ export function getRepositoryCacheKey (module) {
   return `${repoType}:${repoId.toLowerCase()}`;
 }
 
-export function applyRepositoryData (module, normalizedData) {
+export function applyRepositoryData(module, normalizedData) {
   module.stars = normalizedData.stars;
   if (normalizedData.has_issues === false) {
     module.hasGithubIssues = false;
@@ -128,7 +132,7 @@ export function applyRepositoryData (module, normalizedData) {
   }
 }
 
-export function createRepositoryDataRecord ({moduleId, normalizedData, timestamp}) {
+export function createRepositoryDataRecord({ moduleId, normalizedData, timestamp }) {
   return {
     id: moduleId,
     gitHubDataLastUpdate: timestamp,
@@ -136,7 +140,7 @@ export function createRepositoryDataRecord ({moduleId, normalizedData, timestamp
   };
 }
 
-export function partitionModules ({moduleList, previousData, results, cache, shouldFetchCallback}) {
+export function partitionModules({ moduleList, previousData, results, cache, shouldFetchCallback }) {
   const githubModules = [];
   const otherModules = [];
   const cacheKeys = new Map();
@@ -168,27 +172,29 @@ export function partitionModules ({moduleList, previousData, results, cache, sho
         const repoType = getRepositoryType(module.url);
         if (repoType === "github") {
           githubModules.push(module);
-        } else {
+        }
+        else {
           otherModules.push(module);
         }
-      } else {
+      }
+      else {
         useHistoricalData(previousData, module.id, module, results);
         processedCount += 1;
       }
     }
   }
 
-  return {githubModules, otherModules, cacheKeys, processedCount};
+  return { githubModules, otherModules, cacheKeys, processedCount };
 }
 
-export function useHistoricalData (previousData, repositoryId, module, results) {
-  const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
+export function useHistoricalData(previousData, repositoryId, module, results) {
+  const existingRepository = previousData.repositories?.find(repo => repo.id === repositoryId);
   if (existingRepository) {
     applyRepositoryData(module, existingRepository.gitHubData);
     results.push(existingRepository);
     return;
   }
 
-  const fallbackData = createDefaultRepositoryData({repositoryId, module});
+  const fallbackData = createDefaultRepositoryData({ repositoryId, module });
   results.push(fallbackData);
 }

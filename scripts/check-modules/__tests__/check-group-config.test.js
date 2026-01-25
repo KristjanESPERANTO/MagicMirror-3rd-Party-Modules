@@ -1,30 +1,30 @@
-import {DEFAULT_CHECK_GROUP_CONFIG, loadCheckGroupConfig} from "../config.js";
+import { DEFAULT_CHECK_GROUP_CONFIG, loadCheckGroupConfig } from "../config.js";
 
-import {mkdir, mkdtemp, writeFile} from "node:fs/promises";
+import { mkdir, mkdtemp, writeFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-async function createTempProjectRoot () {
+async function createTempProjectRoot() {
   const dir = await mkdtemp(path.join(os.tmpdir(), "mm-check-config-"));
   return dir;
 }
 
-async function ensureConfigDir (root) {
+async function ensureConfigDir(root) {
   const dir = path.join(root, "scripts", "check-modules");
-  await mkdir(dir, {recursive: true});
+  await mkdir(dir, { recursive: true });
   return dir;
 }
 
 test("falls back to default configuration when files are missing", async () => {
   const root = await createTempProjectRoot();
-  const result = await loadCheckGroupConfig({projectRoot: root});
+  const result = await loadCheckGroupConfig({ projectRoot: root });
 
   assert.deepEqual(result.config, DEFAULT_CHECK_GROUP_CONFIG);
   assert.equal(result.errors.length, 0);
   assert.equal(result.sources.length, 2);
-  assert.ok(result.sources.every((entry) => entry.missing === true));
+  assert.ok(result.sources.every(entry => entry.missing === true));
 });
 
 test("applies base configuration overrides", async () => {
@@ -44,7 +44,7 @@ test("applies base configuration overrides", async () => {
     })
   );
 
-  const result = await loadCheckGroupConfig({projectRoot: root});
+  const result = await loadCheckGroupConfig({ projectRoot: root });
 
   assert.equal(result.config.groups.fast, false);
   assert.equal(result.config.groups.deep, true);
@@ -83,12 +83,12 @@ test("local overrides take precedence over base configuration", async () => {
     })
   );
 
-  const result = await loadCheckGroupConfig({projectRoot: root});
+  const result = await loadCheckGroupConfig({ projectRoot: root });
   assert.equal(result.config.groups.fast, false);
   assert.equal(result.config.groups.deep, false);
   assert.equal(result.config.integrations.npmDeprecatedCheck, false);
   assert.equal(result.config.integrations.eslint, false);
-  const localEntry = result.sources.find((entry) => entry.kind === "local");
+  const localEntry = result.sources.find(entry => entry.kind === "local");
   assert.ok(localEntry?.applied);
 });
 
@@ -108,7 +108,7 @@ test("reports parse errors while continuing with defaults", async () => {
     })
   );
 
-  const result = await loadCheckGroupConfig({projectRoot: root});
+  const result = await loadCheckGroupConfig({ projectRoot: root });
   assert.equal(result.config.integrations.npmCheckUpdates, false);
   assert.equal(result.errors.length, 1);
   const message = result.errors[0]?.error?.message ?? "";

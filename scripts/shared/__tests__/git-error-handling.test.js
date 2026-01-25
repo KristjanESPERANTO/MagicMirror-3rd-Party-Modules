@@ -2,7 +2,7 @@ import {
   GitError,
   GitErrorCategory
 } from "../git.js";
-import {describe, it} from "node:test";
+import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 
 describe("GitError categorization", () => {

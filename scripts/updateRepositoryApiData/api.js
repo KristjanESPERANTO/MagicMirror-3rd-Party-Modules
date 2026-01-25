@@ -1,9 +1,9 @@
-import {getRepositoryId, getRepositoryType} from "./helpers.js";
-import {Buffer} from "node:buffer";
+import { getRepositoryId, getRepositoryType } from "./helpers.js";
+import { Buffer } from "node:buffer";
 import process from "node:process";
 
 // Function to fetch repository data based on the hosting service (non-GitHub)
-export async function fetchRepositoryData (module, httpClient, env = process.env) {
+export async function fetchRepositoryData(module, httpClient, env = process.env) {
   const repoType = getRepositoryType(module.url);
   const repoId = getRepositoryId(module.url, repoType);
 
@@ -48,7 +48,7 @@ export async function fetchRepositoryData (module, httpClient, env = process.env
       throw new Error(`Unsupported repository type: ${repoType}`);
   }
 
-  const result = await httpClient.getJson(apiUrl, {headers});
+  const result = await httpClient.getJson(apiUrl, { headers });
   const data = result.data;
 
   // Fetch branch data
@@ -71,25 +71,25 @@ export async function fetchRepositoryData (module, httpClient, env = process.env
     }
 
     if (branchUrl) {
-      const branchResult = await httpClient.getJson(branchUrl, {headers});
+      const branchResult = await httpClient.getJson(branchUrl, { headers });
       branchData = branchResult.data;
     }
 
     // Fetch watchers for Bitbucket (as a proxy for stars)
     if (repoType === "bitbucket") {
       const watchersUrl = `https://api.bitbucket.org/2.0/repositories/${repoId}/watchers?pagelen=1`;
-      const watchersResult = await httpClient.getJson(watchersUrl, {headers});
+      const watchersResult = await httpClient.getJson(watchersUrl, { headers });
       if (watchersResult.status === 200) {
         data.watchers_count = watchersResult.data.size;
       }
     }
   }
 
-  return {response: {status: result.status, ok: result.ok}, data, branchData, repoType};
+  return { response: { status: result.status, ok: result.ok }, data, branchData, repoType };
 }
 
 // Function to normalize API responses from different hosting services
-export function normalizeRepositoryData (data, branchData, repoType) {
+export function normalizeRepositoryData(data, branchData, repoType) {
   const isArchived = data.archived ?? data.isArchived ?? false;
 
   /*

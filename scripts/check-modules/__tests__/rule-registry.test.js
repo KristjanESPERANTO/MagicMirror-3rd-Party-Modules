@@ -28,8 +28,8 @@ test("stage subsets expose rules by stage id", () => {
 
   assert.ok(Array.isArray(defaultRules));
   assert.ok(Array.isArray(legacyRules));
-  assert.ok(defaultRules.every((rule) => rule.stages.includes(DEFAULT_STAGE)), "Default stage rules should reference modern stage id");
-  assert.ok(legacyRules.every((rule) => rule.stages.includes(LEGACY_STAGE)), "Legacy stage rules should reference legacy stage id");
+  assert.ok(defaultRules.every(rule => rule.stages.includes(DEFAULT_STAGE)), "Default stage rules should reference modern stage id");
+  assert.ok(legacyRules.every(rule => rule.stages.includes(LEGACY_STAGE)), "Legacy stage rules should reference legacy stage id");
 });
 
 test("stage map includes exported subsets", () => {

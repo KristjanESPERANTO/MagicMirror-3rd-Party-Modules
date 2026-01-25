@@ -1,18 +1,18 @@
-import {createDeterministicImageName} from "./shared/deterministic-output.js";
+import { createDeterministicImageName } from "./shared/deterministic-output.js";
 import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import sharp from "sharp";
-import {validateStageData} from "./lib/schemaValidator.js";
+import { validateStageData } from "./lib/schemaValidator.js";
 
 const imagesFolder = "./website/images";
 
-function isImageFile (filename) {
+function isImageFile(filename) {
   return (/\.(bmp|gif|jpg|jpeg|png|webp)$/iu).test(filename);
 }
 
-async function findAndResizeImage (moduleName, moduleMaintainer) {
+async function findAndResizeImage(moduleName, moduleMaintainer) {
   const sourceFolder = `./modules/${moduleName}-----${moduleMaintainer}/`;
-  const files = await fs.promises.readdir(sourceFolder, {recursive: true});
+  const files = await fs.promises.readdir(sourceFolder, { recursive: true });
   files.sort();
   let targetImageName = null;
   const issues = [];
@@ -23,14 +23,15 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
   for (const file of files) {
     if (isImageFile(file)) {
       if (
-        file.toLowerCase().includes("screenshot") ||
-        file.toLowerCase().includes("example") ||
-        file.toLowerCase().includes("sample") ||
-        file.toLowerCase().includes("preview")
+        file.toLowerCase().includes("screenshot")
+        || file.toLowerCase().includes("example")
+        || file.toLowerCase().includes("sample")
+        || file.toLowerCase().includes("preview")
       ) {
         firstScreenshotImage = file;
         break;
-      } else if (!firstImage) {
+      }
+      else if (!firstImage) {
         firstImage = file;
       }
     }
@@ -59,13 +60,15 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
           }
         )
         .toFile(targetPath);
-    } catch (error) {
+    }
+    catch (error) {
       issues.push(`Error processing image "${imageToProcess}": ${error.message}`);
     }
-  } else {
+  }
+  else {
     issues.push("No image found.");
   }
-  return {targetImageName, issues};
+  return { targetImageName, issues };
 }
 
 const PACKAGE_JSON_STATUSES = {
@@ -74,7 +77,7 @@ const PACKAGE_JSON_STATUSES = {
   error: "error"
 };
 
-function sanitizeStringRecord (value) {
+function sanitizeStringRecord(value) {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     return null;
   }
@@ -86,7 +89,7 @@ function sanitizeStringRecord (value) {
   return Object.fromEntries(entries);
 }
 
-function sanitizeKeywordArray (value) {
+function sanitizeKeywordArray(value) {
   if (!Array.isArray(value)) {
     return null;
   }
@@ -98,12 +101,12 @@ function sanitizeKeywordArray (value) {
       }
       return "";
     })
-    .filter((entry) => entry.length > 0);
+    .filter(entry => entry.length > 0);
 
   return keywords.length > 0 ? keywords : null;
 }
 
-function buildPackageSummary (packageData) {
+function buildPackageSummary(packageData) {
   const summary = {};
 
   if (typeof packageData.name === "string" && packageData.name.length > 0) {
@@ -164,14 +167,15 @@ function buildPackageSummary (packageData) {
   return summary;
 }
 
-async function loadPackageManifest ({name, id}) {
+async function loadPackageManifest({ name, id }) {
   const owner = id.split("/")[0];
   const relativePath = `./modules/${name}-----${owner}/package.json`;
 
   let raw;
   try {
     raw = await fs.promises.readFile(relativePath, "utf8");
-  } catch (error) {
+  }
+  catch (error) {
     if (error && error.code === "ENOENT") {
       return {
         path: relativePath,
@@ -191,7 +195,8 @@ async function loadPackageManifest ({name, id}) {
   let parsed;
   try {
     parsed = JSON.parse(raw);
-  } catch (error) {
+  }
+  catch (error) {
     return {
       path: relativePath,
       status: PACKAGE_JSON_STATUSES.error,
@@ -209,7 +214,8 @@ async function loadPackageManifest ({name, id}) {
 
   try {
     normalizeData(parsed, warnFn);
-  } catch (error) {
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     if (!warnings.includes(message)) {
       warnings.push(message);
@@ -225,7 +231,7 @@ async function loadPackageManifest ({name, id}) {
   };
 }
 
-function deriveTagsFromKeywords ({module, keywords}) {
+function deriveTagsFromKeywords({ module, keywords }) {
   const tagsToRemove = [
     "2",
     "mm",
@@ -264,9 +270,9 @@ function deriveTagsFromKeywords ({module, keywords}) {
       }
       return lowered;
     })
-    .filter((tag) => !tagsToRemove.includes(tag));
+    .filter(tag => !tagsToRemove.includes(tag));
 
-  if (processed.some((tag) => ["image", "images", "pictures", "livestream", "photos", "video"].includes(tag))) {
+  if (processed.some(tag => ["image", "images", "pictures", "livestream", "photos", "video"].includes(tag))) {
     processed.push("media");
   }
 
@@ -281,7 +287,7 @@ function deriveTagsFromKeywords ({module, keywords}) {
 }
 
 // Gather information from package.json
-async function addInformationFromPackageJson (moduleList) {
+async function addInformationFromPackageJson(moduleList) {
   for (const module of moduleList) {
     console.log(`+++ ${module.name} by ${module.maintainer}`);
 
@@ -298,24 +304,29 @@ async function addInformationFromPackageJson (moduleList) {
         : [];
 
       if (summaryKeywords.length > 0) {
-        const tags = deriveTagsFromKeywords({module, keywords: summaryKeywords});
+        const tags = deriveTagsFromKeywords({ module, keywords: summaryKeywords });
         if (tags && tags.length > 0) {
           module.tags = tags;
-        } else {
+        }
+        else {
           delete module.tags;
         }
-      } else {
+      }
+      else {
         module.issues.push("There are no keywords in 'package.json'. We would use them as tags on the module list page.");
         delete module.tags;
       }
-    } else if (manifest.status === PACKAGE_JSON_STATUSES.missing) {
+    }
+    else if (manifest.status === PACKAGE_JSON_STATUSES.missing) {
       if (module.name === "mmpm") {
         module.keywords = ["package manager", "module installer"];
-      } else {
+      }
+      else {
         module.issues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
       }
       delete module.tags;
-    } else if (manifest.status === PACKAGE_JSON_STATUSES.error) {
+    }
+    else if (manifest.status === PACKAGE_JSON_STATUSES.error) {
       module.issues.push(`An error occurred while getting information from 'package.json': ${manifest.error}`);
       delete module.tags;
     }
@@ -329,7 +340,7 @@ async function addInformationFromPackageJson (moduleList) {
   return moduleList;
 }
 
-async function checkLicenseAndHandleScreenshot (packageManifest, module) {
+async function checkLicenseAndHandleScreenshot(packageManifest, module) {
   const packageLicenseRaw = packageManifest?.summary?.license;
   const packageLicense = typeof packageLicenseRaw === "string" && packageLicenseRaw.length > 0
     ? packageLicenseRaw
@@ -338,7 +349,8 @@ async function checkLicenseAndHandleScreenshot (packageManifest, module) {
   if (packageLicense && packageLicense !== "NOASSERTION") {
     if (!module.license) {
       module.license = packageLicense;
-    } else if (!packageLicense.includes(module.license)) {
+    }
+    else if (!packageLicense.includes(module.license)) {
       const issueText = `Issue: The license in the package.json (${packageLicense}) doesn't match the license file (${module.license}).`;
       module.issues.push(issueText);
     }
@@ -372,7 +384,7 @@ async function checkLicenseAndHandleScreenshot (packageManifest, module) {
   // Use license information to determine if we can use an image
   if (useableLicenses.includes(effectiveLicense)) {
     const owner = module.id.split("/")[0];
-    const {targetImageName, issues} = await findAndResizeImage(
+    const { targetImageName, issues } = await findAndResizeImage(
       module.name,
       owner
     );
@@ -383,17 +395,18 @@ async function checkLicenseAndHandleScreenshot (packageManifest, module) {
     if (issues) {
       module.issues = [...module.issues, ...issues];
     }
-  } else {
+  }
+  else {
     module.issues.push("No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.");
   }
 }
 
-async function readJson (filePath) {
+async function readJson(filePath) {
   const raw = await fs.promises.readFile(filePath, "utf8");
   return JSON.parse(raw);
 }
 
-async function expandModuleList () {
+async function expandModuleList() {
   const moduleList = await readJson("./website/data/modules.stage.3.json");
   validateStageData("modules.stage.3", moduleList);
 
@@ -411,8 +424,8 @@ async function expandModuleList () {
 /*
  * Remove old images before creating new ones
  */
-async function purgeImageFolder () {
-  await fs.promises.rm(imagesFolder, {recursive: true});
+async function purgeImageFolder() {
+  await fs.promises.rm(imagesFolder, { recursive: true });
   await fs.promises.mkdir(imagesFolder);
 }
 

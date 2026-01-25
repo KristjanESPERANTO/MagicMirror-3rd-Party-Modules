@@ -1,9 +1,9 @@
-import {constants, promises as fsPromises} from "node:fs";
-import {dirname} from "node:path";
-import {ensureDirectory} from "./fs-utils.js";
-import {execFile} from "node:child_process";
+import { constants, promises as fsPromises } from "node:fs";
+import { dirname } from "node:path";
+import { ensureDirectory } from "./fs-utils.js";
+import { execFile } from "node:child_process";
 import process from "node:process";
-import {promisify} from "node:util";
+import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFile);
 const DEFAULT_TIMEOUT_MS = 5 * 60 * 1000;
@@ -23,7 +23,7 @@ export const GitErrorCategory = {
 };
 
 export class GitError extends Error {
-  constructor (message, {args, cwd, exitCode, stderr, stdout, signal, cause, category = GitErrorCategory.UNKNOWN} = {}) {
+  constructor(message, { args, cwd, exitCode, stderr, stdout, signal, cause, category = GitErrorCategory.UNKNOWN } = {}) {
     super(message);
     this.name = "GitError";
     this.args = args;
@@ -37,15 +37,15 @@ export class GitError extends Error {
   }
 }
 
-function normalizeArgs (args) {
+function normalizeArgs(args) {
   if (!Array.isArray(args) || args.length === 0) {
     throw new Error("git command requires a non-empty array of arguments");
   }
 
-  return args.map((entry) => String(entry));
+  return args.map(entry => String(entry));
 }
 
-function baseOptions (options = {}) {
+function baseOptions(options = {}) {
   const {
     cwd,
     env = process.env,
@@ -69,48 +69,48 @@ function baseOptions (options = {}) {
 /**
  * Categorize git errors based on stderr output and exit code
  */
-function categorizeGitError (stderr, exitCode) {
+function categorizeGitError(stderr, exitCode) {
   const stderrLower = (stderr || "").toLowerCase();
 
   // Repository not found (404, deleted, renamed)
   if (
-    stderrLower.includes("repository not found") ||
-    stderrLower.includes("not found") ||
-    stderrLower.includes("could not read from remote repository") ||
-    stderrLower.includes("does not exist") ||
-    exitCode === 128
+    stderrLower.includes("repository not found")
+    || stderrLower.includes("not found")
+    || stderrLower.includes("could not read from remote repository")
+    || stderrLower.includes("does not exist")
+    || exitCode === 128
   ) {
     return GitErrorCategory.NOT_FOUND;
   }
 
   // Authentication failures (403, private repo)
   if (
-    stderrLower.includes("authentication failed") ||
-    stderrLower.includes("permission denied") ||
-    stderrLower.includes("forbidden") ||
-    stderrLower.includes("could not read username")
+    stderrLower.includes("authentication failed")
+    || stderrLower.includes("permission denied")
+    || stderrLower.includes("forbidden")
+    || stderrLower.includes("could not read username")
   ) {
     return GitErrorCategory.AUTHENTICATION;
   }
 
   // Network errors (timeout, connection refused)
   if (
-    stderrLower.includes("timeout") ||
-    stderrLower.includes("timed out") ||
-    stderrLower.includes("connection refused") ||
-    stderrLower.includes("could not resolve host") ||
-    stderrLower.includes("network is unreachable")
+    stderrLower.includes("timeout")
+    || stderrLower.includes("timed out")
+    || stderrLower.includes("connection refused")
+    || stderrLower.includes("could not resolve host")
+    || stderrLower.includes("network is unreachable")
   ) {
     return GitErrorCategory.NETWORK;
   }
 
   // Infrastructure issues (rate limit, server errors)
   if (
-    stderrLower.includes("rate limit") ||
-    stderrLower.includes("too many requests") ||
-    stderrLower.includes("server error") ||
-    stderrLower.includes("503") ||
-    stderrLower.includes("502")
+    stderrLower.includes("rate limit")
+    || stderrLower.includes("too many requests")
+    || stderrLower.includes("server error")
+    || stderrLower.includes("503")
+    || stderrLower.includes("502")
   ) {
     return GitErrorCategory.INFRASTRUCTURE;
   }
@@ -118,7 +118,7 @@ function categorizeGitError (stderr, exitCode) {
   return GitErrorCategory.UNKNOWN;
 }
 
-function formatErrorMessage (args, error) {
+function formatErrorMessage(args, error) {
   const command = ["git", ...args].join(" ");
   const stderr = error?.stderr ? `\n${error.stderr.trim()}` : "";
   const suffix = error?.code ? ` (exit code ${error.code})` : "";
@@ -127,17 +127,18 @@ function formatErrorMessage (args, error) {
   return `git command failed${suffix}${signalInfo}: ${command}${stderr}`;
 }
 
-export async function git (args, options = {}) {
+export async function git(args, options = {}) {
   const normalizedArgs = normalizeArgs(args);
   const execOptions = baseOptions(options);
 
   try {
-    const {stdout, stderr} = await execFileAsync("git", normalizedArgs, execOptions);
+    const { stdout, stderr } = await execFileAsync("git", normalizedArgs, execOptions);
     return {
       stdout: stdout.trimEnd(),
       stderr: stderr.trimEnd()
     };
-  } catch (error) {
+  }
+  catch (error) {
     if (error instanceof Error) {
       const message = formatErrorMessage(normalizedArgs, error);
       const category = categorizeGitError(error.stderr, error.code);
@@ -157,25 +158,27 @@ export async function git (args, options = {}) {
   }
 }
 
-async function pathExists (targetPath) {
+async function pathExists(targetPath) {
   try {
     await fsPromises.access(targetPath, constants.F_OK);
     return true;
-  } catch {
+  }
+  catch {
     return false;
   }
 }
 
-export async function isGitRepository (directoryPath) {
+export async function isGitRepository(directoryPath) {
   try {
-    const {stdout} = await git(["rev-parse", "--is-inside-work-tree"], {cwd: directoryPath});
+    const { stdout } = await git(["rev-parse", "--is-inside-work-tree"], { cwd: directoryPath });
     return stdout.trim() === "true";
-  } catch {
+  }
+  catch {
     return false;
   }
 }
 
-export async function cloneRepository (repositoryUrl, destinationPath, {
+export async function cloneRepository(repositoryUrl, destinationPath, {
   branch,
   depth = 0,
   singleBranch = Boolean(branch),
@@ -202,14 +205,14 @@ export async function cloneRepository (repositoryUrl, destinationPath, {
   }
 
   if (Array.isArray(extraArgs) && extraArgs.length > 0) {
-    args.push(...extraArgs.map((value) => String(value)));
+    args.push(...extraArgs.map(value => String(value)));
   }
 
   await git(args);
   return destinationPath;
 }
 
-export async function fetchRepository ({cwd, remote = "origin", refspecs = [], depth = 0, prune = true} = {}) {
+export async function fetchRepository({ cwd, remote = "origin", refspecs = [], depth = 0, prune = true } = {}) {
   const args = ["fetch", remote];
 
   if (depth > 0) {
@@ -224,10 +227,10 @@ export async function fetchRepository ({cwd, remote = "origin", refspecs = [], d
     args.push(...refspecs);
   }
 
-  await git(args, {cwd});
+  await git(args, { cwd });
 }
 
-export async function checkoutRef ({cwd, ref, create = false, force = false} = {}) {
+export async function checkoutRef({ cwd, ref, create = false, force = false } = {}) {
   if (!ref) {
     throw new Error("checkoutRef requires a ref argument");
   }
@@ -244,20 +247,20 @@ export async function checkoutRef ({cwd, ref, create = false, force = false} = {
 
   args.push(ref);
 
-  await git(args, {cwd});
+  await git(args, { cwd });
 }
 
-export async function getCurrentCommit ({cwd, ref = "HEAD"} = {}) {
-  const {stdout} = await git(["rev-parse", ref], {cwd});
+export async function getCurrentCommit({ cwd, ref = "HEAD" } = {}) {
+  const { stdout } = await git(["rev-parse", ref], { cwd });
   return stdout.trim();
 }
 
-export async function getCommitDate ({cwd, ref = "HEAD"} = {}) {
-  const {stdout} = await git(["log", "-1", "--format=%aI", ref], {cwd});
+export async function getCommitDate({ cwd, ref = "HEAD" } = {}) {
+  const { stdout } = await git(["log", "-1", "--format=%aI", ref], { cwd });
   return stdout.trim();
 }
 
-export async function listRemoteRefs ({remoteUrl, heads = true, tags = false, pattern} = {}) {
+export async function listRemoteRefs({ remoteUrl, heads = true, tags = false, pattern } = {}) {
   const args = ["ls-remote", remoteUrl];
 
   if (heads) {
@@ -272,27 +275,27 @@ export async function listRemoteRefs ({remoteUrl, heads = true, tags = false, pa
     args.push(pattern);
   }
 
-  const {stdout} = await git(args);
+  const { stdout } = await git(args);
   const lines = stdout
     .split("\n")
-    .map((line) => line.trim())
+    .map(line => line.trim())
     .filter(Boolean);
 
   return lines.map((line) => {
     const [hash, ref] = line.split(/\s+/u);
-    return {hash, ref};
+    return { hash, ref };
   });
 }
 
-export async function ensureRepository ({repositoryUrl, directoryPath, branch = "origin/HEAD", depth = 0} = {}) {
+export async function ensureRepository({ repositoryUrl, directoryPath, branch = "origin/HEAD", depth = 0 } = {}) {
   const exists = await pathExists(directoryPath);
 
   if (!exists) {
-    await cloneRepository(repositoryUrl, directoryPath, {depth});
+    await cloneRepository(repositoryUrl, directoryPath, { depth });
     return {
       cloned: true,
       updated: false,
-      commit: await getCurrentCommit({cwd: directoryPath})
+      commit: await getCurrentCommit({ cwd: directoryPath })
     };
   }
 
@@ -300,9 +303,9 @@ export async function ensureRepository ({repositoryUrl, directoryPath, branch = 
     throw new Error(`Existing path is not a git repository: ${directoryPath}`);
   }
 
-  await fetchRepository({cwd: directoryPath, depth});
-  await checkoutRef({cwd: directoryPath, ref: branch, force: true});
-  const commit = await getCurrentCommit({cwd: directoryPath});
+  await fetchRepository({ cwd: directoryPath, depth });
+  await checkoutRef({ cwd: directoryPath, ref: branch, force: true });
+  const commit = await getCurrentCommit({ cwd: directoryPath });
 
   return {
     cloned: false,

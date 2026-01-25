@@ -25,13 +25,12 @@ const tagsList = [
   "weather"
 ];
 
-
-function toggleMenu () {
+function toggleMenu() {
   const navMenu = document.getElementById("nav-menu");
   navMenu.classList.toggle("visible");
 }
 
-function createCard (moduleData) {
+function createCard(moduleData) {
   const card = document.importNode(cardTemplate.content, true);
 
   // Skipped module special handling
@@ -63,7 +62,8 @@ function createCard (moduleData) {
 
   if (typeof moduleData.stars === "undefined") {
     card.querySelector(".stars").remove();
-  } else {
+  }
+  else {
     card.querySelector(".stars").textContent = `${moduleData.stars} stars`;
   }
 
@@ -80,7 +80,8 @@ function createCard (moduleData) {
 
       card.querySelector(".tags").appendChild(tagElement);
     });
-  } else {
+  }
+  else {
     card.querySelector(".tags").remove();
   }
 
@@ -102,7 +103,8 @@ function createCard (moduleData) {
     overlay.onclick = () => {
       overlay.style.display = "none";
     };
-  } else {
+  }
+  else {
     card.querySelector(".img-container").remove();
   }
 
@@ -110,7 +112,8 @@ function createCard (moduleData) {
   license.href = `${moduleData.url}`;
   if (moduleData.license) {
     license.textContent = `©${moduleData.license}`;
-  } else {
+  }
+  else {
     license.style.color = "red";
     license.textContent = "unknown";
   }
@@ -120,15 +123,16 @@ function createCard (moduleData) {
     const commit = card.querySelector(".info .container.commit .text");
     commit.href = `${moduleData.url}/commits/`;
     commit.textContent = `${moduleData.lastCommit.split("T")[0]}`;
-  } else {
+  }
+  else {
     card.querySelector(".info .container.commit").remove();
   }
-
 
   if (moduleData.issues) {
     const url = `result.html#${moduleData.name}-by-${moduleData.maintainer}`;
     card.querySelector(".info .container.issues .text").href = url;
-  } else {
+  }
+  else {
     card.querySelector(".info .container.issues").remove();
   }
 
@@ -136,14 +140,15 @@ function createCard (moduleData) {
   if (moduleData.outdated) {
     card.querySelector(".card").classList.add("outdated");
     card.querySelector(".outdated-note").innerHTML = moduleData.outdated;
-  } else {
+  }
+  else {
     card.querySelector(".outdated-note").remove();
   }
 
   return card;
 }
 
-function updateModuleCardContainer () {
+function updateModuleCardContainer() {
   moduleCardContainer.innerHTML = "";
   const fragment = document.createDocumentFragment();
 
@@ -156,10 +161,12 @@ function updateModuleCardContainer () {
         if (cardNode) {
           fragment.appendChild(cardNode);
         }
-      } catch (error) {
+      }
+      catch (error) {
         console.error("Error creating module", moduleData, error);
       }
-    } else {
+    }
+    else {
       moduleCounter -= 1;
     }
   });
@@ -173,7 +180,8 @@ function updateModuleCardContainer () {
 
   if (moduleCounter === totalModules) {
     resetButton.style.display = "none";
-  } else {
+  }
+  else {
     resetButton.style.display = "block";
   }
 
@@ -183,7 +191,7 @@ function updateModuleCardContainer () {
   }
 }
 
-function sortData (sortOption) {
+function sortData(sortOption) {
   switch (sortOption) {
     case "lastcommit":
       filteredModuleList.sort((a, b) =>
@@ -206,13 +214,13 @@ function sortData (sortOption) {
     default:
       filteredModuleList.sort((a, b) =>
         // Sort by defaultSortWeight (outdated at the end, rest by issue count)
-        a.defaultSortWeight - b.defaultSortWeight ||
+        a.defaultSortWeight - b.defaultSortWeight
         // Sort by last commit date
-        b.lastCommit.localeCompare(a.lastCommit));
+        || b.lastCommit.localeCompare(a.lastCommit));
   }
 }
 
-function displayTagButtonContainer () {
+function displayTagButtonContainer() {
   tagButtonContainer.innerHTML = "";
 
   tagsList.forEach((tag) => {
@@ -229,24 +237,24 @@ function displayTagButtonContainer () {
   });
 }
 
-function resetCategoryFilter () {
+function resetCategoryFilter() {
   const categoryFilter = document.getElementById("category-filter");
   categoryFilter.value = "all";
 }
 
-function removeSelectedMarkingFromTagsAndCards () {
+function removeSelectedMarkingFromTagsAndCards() {
   // Remove the "selected" class from all tag buttons and cards
   const allURLs = document.querySelectorAll(".tag-button, .card");
-  allURLs.forEach((url) => url.classList.remove("selected"));
+  allURLs.forEach(url => url.classList.remove("selected"));
 }
 
-function displayStatistics (data) {
+function displayStatistics(data) {
   const lastUpdateDate = new Date(data.lastUpdate).toLocaleString();
   const lastUpdateDiv = document.getElementById("last-update");
   lastUpdateDiv.innerHTML = `Last Update: ${lastUpdateDate}`;
 }
 
-function filterBySearchText (searchText) {
+function filterBySearchText(searchText) {
   const searchLower = searchText.toLowerCase();
   const allModulesList = allModules.concat(skippedModules);
   filteredModuleList = allModulesList.filter((card) => {
@@ -267,11 +275,11 @@ function filterBySearchText (searchText) {
       : [];
 
     return (
-      cardText.includes(searchLower) ||
-      cardDescription.includes(searchLower) ||
-      cardName.includes(searchLower) ||
-      cardMaintainer.includes(searchLower) ||
-      cardTags.some((tag) => tag.toLowerCase().includes(searchLower))
+      cardText.includes(searchLower)
+      || cardDescription.includes(searchLower)
+      || cardName.includes(searchLower)
+      || cardMaintainer.includes(searchLower)
+      || cardTags.some(tag => tag.toLowerCase().includes(searchLower))
     );
   });
 
@@ -281,8 +289,8 @@ function filterBySearchText (searchText) {
   updateModuleCardContainer();
 }
 
-function filterByMaintainer (maintainer) {
-  filteredModuleList = allModules.filter((card) => card.maintainer === maintainer);
+function filterByMaintainer(maintainer) {
+  filteredModuleList = allModules.filter(card => card.maintainer === maintainer);
 
   searchInput.value = "";
 
@@ -292,7 +300,7 @@ function filterByMaintainer (maintainer) {
   updateModuleCardContainer();
 }
 
-function filterByTag (tag) {
+function filterByTag(tag) {
   filteredModuleList = allModules.filter((card) => {
     const tags = card.tags;
     if (tags) {
@@ -315,9 +323,9 @@ function filterByTag (tag) {
   });
 }
 
-function addCategoryFilter () {
+function addCategoryFilter() {
   const categoryFilter = document.getElementById("category-filter");
-  const categories = [...new Set(allModules.map((module) => module.category))];
+  const categories = [...new Set(allModules.map(module => module.category))];
   categories.sort();
   categories.push("Problematic Modules");
 
@@ -332,10 +340,12 @@ function addCategoryFilter () {
     const selectedCategory = categoryFilter.value;
     if (selectedCategory === "all") {
       filteredModuleList = allModules.concat(skippedModules);
-    } else if (selectedCategory === "Problematic Modules") {
+    }
+    else if (selectedCategory === "Problematic Modules") {
       filteredModuleList = skippedModules;
-    } else {
-      filteredModuleList = allModules.filter((module) => module.category === selectedCategory);
+    }
+    else {
+      filteredModuleList = allModules.filter(module => module.category === selectedCategory);
     }
 
     searchInput.value = "";
@@ -352,7 +362,7 @@ moduleCardContainer.addEventListener("click", (event) => {
   if (clickedCard) {
     // Remove the "selected" class from all cards
     const allCards = document.querySelectorAll(".card");
-    allCards.forEach((card) => card.classList.remove("selected"));
+    allCards.forEach(card => card.classList.remove("selected"));
 
     // Mark the selected card
     clickedCard.classList.add("selected");
@@ -383,7 +393,8 @@ searchInput.addEventListener("input", () => {
   searchDebounceTimer = setTimeout(() => {
     if (searchInput.value) {
       filterBySearchText(searchInput.value);
-    } else {
+    }
+    else {
       filteredModuleList = allModules.concat(skippedModules);
       sortData(sortDropdown.value);
       updateModuleCardContainer();
@@ -426,7 +437,7 @@ navLinks.forEach((link) => {
   });
 });
 
-async function initiate () {
+async function initiate() {
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has("showOutdated")) {
     const showOutdatedParam = urlParams.get("showOutdated");
@@ -438,7 +449,8 @@ async function initiate () {
     const response = await fetch(modulesFile);
     const data = await response.json();
     allModules = data.modules;
-  } catch (error) {
+  }
+  catch (error) {
     allModules = [];
     console.error("Error fetching modules:", error);
   }
@@ -447,8 +459,9 @@ async function initiate () {
   try {
     const skippedRes = await fetch("data/skipped_modules.json");
     const skippedRaw = await skippedRes.json();
-    skippedModules = skippedRaw.map((moduleObj) => ({...moduleObj, skipped: true, defaultSortWeight: 1000, lastCommit: ""}));
-  } catch {
+    skippedModules = skippedRaw.map(moduleObj => ({ ...moduleObj, skipped: true, defaultSortWeight: 1000, lastCommit: "" }));
+  }
+  catch {
     skippedModules = [];
   }
 
@@ -464,13 +477,14 @@ async function initiate () {
     const response = await fetch(statisticsFile);
     const data = await response.json();
     displayStatistics(data);
-  } catch (error) {
+  }
+  catch (error) {
     console.error("Error fetching data:", error);
   }
 }
 
 // eslint-disable-next-line no-unused-vars
-function switchDarkMode () {
+function switchDarkMode() {
   const header = document.getElementsByTagName("header")[0];
   const body = document.getElementsByTagName("body")[0];
   const root = document.querySelector(":root");

@@ -4,23 +4,23 @@ import {
   sortObjectKeys,
   stringifyDeterministic
 } from "../deterministic-output.js";
-import {describe, it} from "node:test";
-import {strict as assert} from "node:assert";
+import { describe, it } from "node:test";
+import { strict as assert } from "node:assert";
 
 describe("deterministic-output", () => {
   describe("sortObjectKeys", () => {
     it("should sort object keys alphabetically", () => {
-      const input = {z: 1, a: 2, m: 3};
+      const input = { z: 1, a: 2, m: 3 };
       const result = sortObjectKeys(input);
 
       assert.deepStrictEqual(Object.keys(result), ["a", "m", "z"]);
-      assert.deepStrictEqual(result, {a: 2, m: 3, z: 1});
+      assert.deepStrictEqual(result, { a: 2, m: 3, z: 1 });
     });
 
     it("should recursively sort nested objects", () => {
       const input = {
-        z: {y: 1, a: 2},
-        a: {c: 3, b: 4}
+        z: { y: 1, a: 2 },
+        a: { c: 3, b: 4 }
       };
       const result = sortObjectKeys(input);
 
@@ -30,10 +30,10 @@ describe("deterministic-output", () => {
     });
 
     it("should handle arrays without changing order", () => {
-      const input = {z: [3, 1, 2], a: [6, 5, 4]};
+      const input = { z: [3, 1, 2], a: [6, 5, 4] };
       const result = sortObjectKeys(input);
 
-      assert.deepStrictEqual(result, {a: [6, 5, 4], z: [3, 1, 2]});
+      assert.deepStrictEqual(result, { a: [6, 5, 4], z: [3, 1, 2] });
     });
 
     it("should handle primitives", () => {
@@ -44,7 +44,7 @@ describe("deterministic-output", () => {
     });
 
     it("should handle arrays of objects", () => {
-      const input = [{z: 1, a: 2}, {y: 3, b: 4}];
+      const input = [{ z: 1, a: 2 }, { y: 3, b: 4 }];
       const result = sortObjectKeys(input);
 
       assert.deepStrictEqual(Object.keys(result[0]), ["a", "z"]);
@@ -54,14 +54,14 @@ describe("deterministic-output", () => {
 
   describe("stringifyDeterministic", () => {
     it("should produce sorted JSON output", () => {
-      const input = {z: 1, a: 2, m: 3};
+      const input = { z: 1, a: 2, m: 3 };
       const result = stringifyDeterministic(input, 0);
 
       assert.strictEqual(result, "{\"a\":2,\"m\":3,\"z\":1}");
     });
 
     it("should support pretty printing", () => {
-      const input = {z: 1, a: 2};
+      const input = { z: 1, a: 2 };
       const result = stringifyDeterministic(input, 2);
 
       assert.strictEqual(result, "{\n  \"a\": 2,\n  \"z\": 1\n}");
@@ -70,7 +70,7 @@ describe("deterministic-output", () => {
     it("should produce deterministic output for complex objects", () => {
       const input = {
         name: "MMM-Test",
-        metadata: {version: "1.0", author: "test"},
+        metadata: { version: "1.0", author: "test" },
         tags: ["weather", "calendar"]
       };
 

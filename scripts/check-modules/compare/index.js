@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-import {Command} from "commander";
-import {exec} from "node:child_process";
-import {fileURLToPath} from "node:url";
+import { Command } from "commander";
+import { exec } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import fsPromises from "node:fs/promises";
 import path from "node:path";
-import {performDiff} from "./diff.js";
+import { performDiff } from "./diff.js";
 import process from "node:process";
-import {promisify} from "node:util";
+import { promisify } from "node:util";
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = path.dirname(currentFile);
@@ -17,7 +17,7 @@ const DEFAULT_OUTPUT_DIR = path.join(PROJECT_ROOT, ".pipeline-runs", "compare");
 const DEFAULT_LEGACY_COMMAND = "skip";
 const DEFAULT_TS_COMMAND = "node scripts/orchestrator/index.js run --only=check-modules";
 const MAX_BUFFER_BYTES = 20 * 1024 * 1024;
-const {access, copyFile, mkdir, writeFile} = fsPromises;
+const { access, copyFile, mkdir, writeFile } = fsPromises;
 const execAsync = promisify(exec);
 const PIPELINE_ARTIFACTS = [
   {
@@ -57,7 +57,7 @@ const PIPELINE_ARTIFACTS = [
   }
 ];
 
-function resolvePath (candidate, fallback) {
+function resolvePath(candidate, fallback) {
   if (!candidate) {
     return fallback;
   }
@@ -69,22 +69,23 @@ function resolvePath (candidate, fallback) {
   return path.resolve(PROJECT_ROOT, candidate);
 }
 
-async function ensurePathExists (targetPath) {
+async function ensurePathExists(targetPath) {
   try {
     await access(targetPath);
-  } catch (error) {
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    throw new Error(`Required path not found: ${targetPath}\n${message}`, {cause: error});
+    throw new Error(`Required path not found: ${targetPath}\n${message}`, { cause: error });
   }
 }
 
-async function ensureOutputDirectory (outputRoot, runId) {
+async function ensureOutputDirectory(outputRoot, runId) {
   const target = path.join(outputRoot, runId);
-  await mkdir(target, {recursive: true});
+  await mkdir(target, { recursive: true });
   return target;
 }
 
-function createInitialPlan ({fixturesPath, legacyCommand, tsCommand, runId, runDirectory}) {
+function createInitialPlan({ fixturesPath, legacyCommand, tsCommand, runId, runDirectory }) {
   return {
     status: "pending-execution",
     createdAt: new Date().toISOString(),
@@ -103,13 +104,13 @@ function createInitialPlan ({fixturesPath, legacyCommand, tsCommand, runId, runD
   };
 }
 
-async function writePlanJson (directory, plan) {
+async function writePlanJson(directory, plan) {
   const summaryPath = path.join(directory, "plan.json");
   await writeFile(summaryPath, `${JSON.stringify(plan, null, 2)}\n`, "utf8");
   return summaryPath;
 }
 
-async function writePlanReadme (directory) {
+async function writePlanReadme(directory) {
   const readmePath = path.join(directory, "README.md");
   const readmeContents = [
     "# check-modules comparison harness",
@@ -136,14 +137,14 @@ async function writePlanReadme (directory) {
   return readmePath;
 }
 
-function isSkippedCommand (command) {
+function isSkippedCommand(command) {
   const normalized = typeof command === "string" ? command.trim().toLowerCase() : "";
   return normalized.length === 0 || normalized === "skip";
 }
 
-async function copyPipelineArtifacts (stepDir, artifacts) {
+async function copyPipelineArtifacts(stepDir, artifacts) {
   const artifactDir = path.join(stepDir, "artifacts");
-  await mkdir(artifactDir, {recursive: true});
+  await mkdir(artifactDir, { recursive: true });
 
   const captured = [];
   const missing = [];
@@ -151,7 +152,7 @@ async function copyPipelineArtifacts (stepDir, artifacts) {
   for (const artifact of artifacts) {
     const candidatePaths = (Array.isArray(artifact.paths)
       ? artifact.paths
-      : [artifact.path]).filter((entry) => typeof entry === "string" && entry.length > 0);
+      : [artifact.path]).filter(entry => typeof entry === "string" && entry.length > 0);
     const target = path.join(artifactDir, artifact.id);
 
     let copied = false;
@@ -171,7 +172,8 @@ async function copyPipelineArtifacts (stepDir, artifacts) {
         copied = true;
         selectedSource = candidate;
         break;
-      } catch (error) {
+      }
+      catch (error) {
         lastError = error;
       }
     }
@@ -183,18 +185,19 @@ async function copyPipelineArtifacts (stepDir, artifacts) {
         sources: candidatePaths,
         error: message
       });
-    } else if (candidatePaths.length > 1 && selectedSource) {
+    }
+    else if (candidatePaths.length > 1 && selectedSource) {
       // When multiple candidates were provided, note the resolved origin in stdout for traceability.
       console.log(`[compare] Captured ${artifact.id} from ${selectedSource}`);
     }
   }
 
-  return {captured, missing, artifactDir};
+  return { captured, missing, artifactDir };
 }
 
-async function executePipeline (label, command, runDirectory) {
+async function executePipeline(label, command, runDirectory) {
   const stepDir = path.join(runDirectory, label);
-  await mkdir(stepDir, {recursive: true});
+  await mkdir(stepDir, { recursive: true });
 
   if (isSkippedCommand(command)) {
     console.log(`[compare] ${label} command skipped.`);
@@ -227,7 +230,8 @@ async function executePipeline (label, command, runDirectory) {
     });
     stdout = result.stdout ?? "";
     stderr = result.stderr ?? "";
-  } catch (error) {
+  }
+  catch (error) {
     exitCode = typeof error?.code === "number" ? error.code : 1;
     stdout = error.stdout ?? "";
     stderr = error.stderr ?? "";
@@ -239,11 +243,12 @@ async function executePipeline (label, command, runDirectory) {
   await writeFile(stdoutPath, stdout ?? "", "utf8");
   await writeFile(stderrPath, stderr ?? "", "utf8");
 
-  const {captured, missing, artifactDir} = await copyPipelineArtifacts(stepDir, PIPELINE_ARTIFACTS);
+  const { captured, missing, artifactDir } = await copyPipelineArtifacts(stepDir, PIPELINE_ARTIFACTS);
 
   if (exitCode === 0) {
     console.log(`[compare] ${label} command completed (exit 0).`);
-  } else {
+  }
+  else {
     console.error(`[compare] ${label} command exited with code ${exitCode}`);
     if (errorMessage) {
       console.error(`[compare] ${label} error: ${errorMessage}`);
@@ -251,7 +256,7 @@ async function executePipeline (label, command, runDirectory) {
   }
 
   if (missing.length > 0) {
-    const missingList = missing.map((item) => item.id).join(", ");
+    const missingList = missing.map(item => item.id).join(", ");
     console.warn(`[compare] ${label} missing artifacts: ${missingList}`);
   }
 
@@ -273,7 +278,7 @@ async function executePipeline (label, command, runDirectory) {
   };
 }
 
-async function runCli () {
+async function runCli() {
   const program = new Command();
 
   program
@@ -292,7 +297,7 @@ async function runCli () {
       const runId = options.runId ?? `run-${Date.now()}`;
 
       await ensurePathExists(fixturesPath);
-      await mkdir(outputRoot, {recursive: true});
+      await mkdir(outputRoot, { recursive: true });
       const runDirectory = await ensureOutputDirectory(outputRoot, runId);
 
       const plan = createInitialPlan({
@@ -309,8 +314,8 @@ async function runCli () {
       console.log(`[compare] Summary written to: ${summaryPath}`);
 
       const pipelines = [
-        {label: "legacy", command: legacyCommand},
-        {label: "ts", command: tsCommand}
+        { label: "legacy", command: legacyCommand },
+        { label: "ts", command: tsCommand }
       ];
 
       const results = [];
@@ -321,10 +326,10 @@ async function runCli () {
         results.push(result);
       }
 
-      const hasFailure = results.some((run) => run.skipped === false && typeof run.exitCode === "number" && run.exitCode !== 0);
-      const hasMissingArtifacts = results.some((run) => (run.missingArtifacts ?? []).length > 0);
-      const hasSkipped = results.some((run) => run.skipped);
-      const executedRuns = results.filter((run) => run.skipped === false);
+      const hasFailure = results.some(run => run.skipped === false && typeof run.exitCode === "number" && run.exitCode !== 0);
+      const hasMissingArtifacts = results.some(run => (run.missingArtifacts ?? []).length > 0);
+      const hasSkipped = results.some(run => run.skipped);
+      const executedRuns = results.filter(run => run.skipped === false);
       const allSkipped = executedRuns.length === 0;
 
       const notes = [];
@@ -333,17 +338,20 @@ async function runCli () {
         plan.status = "execution-failed";
         notes.push("One or more commands exited with a non-zero code. Inspect stdout/stderr logs for details.");
         process.exitCode = 1;
-        plan.diff = {status: "not-run"};
-      } else if (allSkipped) {
+        plan.diff = { status: "not-run" };
+      }
+      else if (allSkipped) {
         plan.status = "not-run";
         notes.push("All commands were skipped. Provide at least one command to execute before diffing.");
-        plan.diff = {status: "not-run"};
-      } else if (hasSkipped) {
+        plan.diff = { status: "not-run" };
+      }
+      else if (hasSkipped) {
         plan.status = "ts-only";
         notes.push("Some commands were skipped (e.g. the legacy implementation), so no diff was generated. Pass --legacy <command> to compare against another run.");
-        plan.diff = {status: "not-run"};
-      } else {
-        const diffOutcome = await performDiff({runDirectory, results});
+        plan.diff = { status: "not-run" };
+      }
+      else {
+        const diffOutcome = await performDiff({ runDirectory, results });
         const diffInfo = {
           status: diffOutcome.status,
           summaryPath: diffOutcome.summaryPath ? path.relative(runDirectory, diffOutcome.summaryPath) : null,
@@ -358,15 +366,18 @@ async function runCli () {
         if (diffOutcome.status === "matched") {
           plan.status = "diff-matched";
           notes.push("Legacy and TypeScript outputs match for evaluated artifacts.");
-        } else if (diffOutcome.status === "differences") {
+        }
+        else if (diffOutcome.status === "differences") {
           plan.status = "diff-differences";
           notes.push("Differences detected between legacy and TypeScript outputs. Review diff.md for details.");
           process.exitCode = 1;
-        } else if (diffOutcome.status === "error") {
+        }
+        else if (diffOutcome.status === "error") {
           plan.status = "diff-error";
           notes.push(diffOutcome.reason ?? "Diff failed due to missing artifacts.");
           process.exitCode = 1;
-        } else {
+        }
+        else {
           plan.status = "pending-diff";
           notes.push(diffOutcome.reason ?? "Diff was skipped. Rerun once both commands succeed.");
         }
@@ -379,7 +390,7 @@ async function runCli () {
       plan.notes = notes;
 
       if (!plan.diff) {
-        plan.diff = {status: "not-run"};
+        plan.diff = { status: "not-run" };
       }
 
       const updatedSummaryPath = await writePlanJson(runDirectory, plan);
@@ -390,7 +401,8 @@ async function runCli () {
 
   try {
     await program.parseAsync(process.argv);
-  } catch (error) {
+  }
+  catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`[compare] Error: ${message}`);
     process.exitCode = 1;

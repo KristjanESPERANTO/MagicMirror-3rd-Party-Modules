@@ -10,10 +10,10 @@
  * - 2: Invalid input or script error
  */
 
-import {fileURLToPath} from "node:url";
+import { fileURLToPath } from "node:url";
 import path from "node:path";
 import process from "node:process";
-import {readFileSync} from "node:fs";
+import { readFileSync } from "node:fs";
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = path.dirname(currentFile);
@@ -24,13 +24,14 @@ const SKIPPED_MODULES_PATH = path.join(
   "website/data/skipped_modules.json"
 );
 
-function main () {
+function main() {
   let skippedModules;
 
   try {
     const content = readFileSync(SKIPPED_MODULES_PATH, "utf8");
     skippedModules = JSON.parse(content);
-  } catch (error) {
+  }
+  catch (error) {
     console.error("❌ Failed to read skipped_modules.json");
     console.error(error.message);
     process.exit(2);
@@ -63,14 +64,14 @@ function main () {
 
   // Breakdown by category
   const categories = [
-    {key: "NOT_FOUND", label: "Repository not found (deleted/renamed)", emoji: "🔍"},
-    {key: "AUTHENTICATION", label: "Access denied (private)", emoji: "🔒"},
-    {key: "NETWORK", label: "Network errors", emoji: "🌐"},
-    {key: "INFRASTRUCTURE", label: "Infrastructure errors", emoji: "🏗️"},
-    {key: "UNKNOWN", label: "Unknown errors", emoji: "❓"}
+    { key: "NOT_FOUND", label: "Repository not found (deleted/renamed)", emoji: "🔍" },
+    { key: "AUTHENTICATION", label: "Access denied (private)", emoji: "🔒" },
+    { key: "NETWORK", label: "Network errors", emoji: "🌐" },
+    { key: "INFRASTRUCTURE", label: "Infrastructure errors", emoji: "🏗️" },
+    { key: "UNKNOWN", label: "Unknown errors", emoji: "❓" }
   ];
 
-  for (const {key, label, emoji} of categories) {
+  for (const { key, label, emoji } of categories) {
     const count = categoryCount[key] || 0;
     if (count > 0) {
       console.log(`${emoji} ${key}: ${count} module(s) - ${label}`);
@@ -84,7 +85,7 @@ function main () {
   // List all skipped modules
   for (const mod of skippedModules) {
     const category = mod.metadata?.category || "UNKNOWN";
-    const categoryEmoji = categories.find((cat) => cat.key === category)?.emoji || "❓";
+    const categoryEmoji = categories.find(cat => cat.key === category)?.emoji || "❓";
     console.log(`${categoryEmoji} ${mod.name} (${mod.url})`);
     // Support both old format (error) and new format (reason)
     const reason = mod.reason || mod.error || "Unknown";

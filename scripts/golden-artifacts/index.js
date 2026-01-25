@@ -9,7 +9,7 @@ import {
   sanitizeStats,
   stableStringify
 } from "./sanitizers.js";
-import {fileURLToPath} from "node:url";
+import { fileURLToPath } from "node:url";
 
 import fs from "node:fs";
 import path from "node:path";
@@ -25,12 +25,13 @@ if (!["check", "update"].includes(mode)) {
   process.exit(1);
 }
 
-function readJson (filePath) {
+function readJson(filePath) {
   try {
     const raw = fs.readFileSync(filePath, "utf8");
     return JSON.parse(raw);
-  } catch (error) {
-    throw new Error(`Unable to read JSON from ${filePath}: ${error.message}`, {cause: error});
+  }
+  catch (error) {
+    throw new Error(`Unable to read JSON from ${filePath}: ${error.message}`, { cause: error });
   }
 }
 
@@ -84,8 +85,8 @@ const artifacts = [
    */
 ];
 
-function processArtifact (artifact) {
-  const {name, source, target, sanitize} = artifact;
+function processArtifact(artifact) {
+  const { name, source, target, sanitize } = artifact;
 
   if (!fs.existsSync(source)) {
     return `Source artifact missing: ${source}`;
@@ -96,7 +97,7 @@ function processArtifact (artifact) {
   const serialized = stableStringify(sanitized);
 
   if (mode === "update") {
-    fs.mkdirSync(path.dirname(target), {recursive: true});
+    fs.mkdirSync(path.dirname(target), { recursive: true });
     fs.writeFileSync(target, serialized, "utf8");
     console.log(`Updated golden artifact for ${name}`);
     return null;
@@ -115,8 +116,8 @@ function processArtifact (artifact) {
 }
 
 const discrepancies = artifacts
-  .map((artifact) => processArtifact(artifact))
-  .filter((message) => Boolean(message));
+  .map(artifact => processArtifact(artifact))
+  .filter(message => Boolean(message));
 
 if (mode === "check") {
   if (discrepancies.length > 0) {

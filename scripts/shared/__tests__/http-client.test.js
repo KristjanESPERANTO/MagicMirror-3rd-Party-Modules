@@ -1,6 +1,6 @@
-import {afterEach, beforeEach, describe, it, mock} from "node:test";
+import { afterEach, beforeEach, describe, it, mock } from "node:test";
 import assert from "node:assert";
-import {createHttpClient} from "../http-client.js";
+import { createHttpClient } from "../http-client.js";
 
 describe("HttpClient", () => {
   let originalFetch;
@@ -35,7 +35,7 @@ describe("HttpClient", () => {
       });
     });
 
-    const client = createHttpClient({retryBackoffMs: 10});
+    const client = createHttpClient({ retryBackoffMs: 10 });
     const response = await client.request("https://example.com");
 
     assert.strictEqual(response.status, 200);
@@ -63,7 +63,7 @@ describe("HttpClient", () => {
       });
     });
 
-    const client = createHttpClient({retryBackoffMs: 10});
+    const client = createHttpClient({ retryBackoffMs: 10 });
     const response = await client.request("https://example.com");
 
     const duration = Date.now() - start;
@@ -97,7 +97,7 @@ describe("HttpClient", () => {
       });
     });
 
-    const client = createHttpClient({retryBackoffMs: 10});
+    const client = createHttpClient({ retryBackoffMs: 10 });
     const response = await client.request("https://example.com");
 
     const duration = Date.now() - start;
@@ -119,7 +119,7 @@ describe("HttpClient", () => {
       });
     });
 
-    const client = createHttpClient({maxRetries: 2, retryBackoffMs: 10});
+    const client = createHttpClient({ maxRetries: 2, retryBackoffMs: 10 });
     const response = await client.request("https://example.com");
 
     assert.strictEqual(response.status, 503);

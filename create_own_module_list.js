@@ -7,14 +7,13 @@ if (!fs.existsSync(ownModuleListPath)) {
 }
 const ownModuleList = JSON.parse(fs.readFileSync(ownModuleListPath));
 
-// eslint-disable-next-line @stylistic/space-before-function-paren
 function sortByNameIgnoringPrefix(a, b) {
   const nameA = a.name.replace("MMM-", "");
   const nameB = b.name.replace("MMM-", "");
   return nameA.localeCompare(nameB);
 }
 
-function createModuleList () {
+function createModuleList() {
   const moduleList = [];
   ownModuleList.forEach((module) => {
     module.issues = [];

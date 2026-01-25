@@ -5,8 +5,8 @@
  * Usage: node scripts/module-submission/check-duplicates.js
  */
 
-import {join, resolve} from "node:path";
-import {readFileSync, writeFileSync} from "node:fs";
+import { join, resolve } from "node:path";
+import { readFileSync, writeFileSync } from "node:fs";
 import process from "node:process";
 
 // Get files to check from environment variable
@@ -28,7 +28,8 @@ try {
     existingModules.set(module.url.toLowerCase(), module);
     existingModules.set(module.name.toLowerCase(), module);
   }
-} catch {
+}
+catch {
   // Registry doesn't exist yet - this is fine for initial setup
   console.log("ℹ️  No existing registry found - assuming this is a new setup");
 }
@@ -65,7 +66,8 @@ for (const file of changedFiles) {
         existingName: nameDuplicate.name
       });
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error(`Error checking ${file}:`, error.message);
   }
 }
@@ -79,7 +81,8 @@ if (results.duplicates.length > 0) {
   results.duplicates.forEach((dup) => {
     console.log(`  - ${dup.name} (${dup.field}): matches existing ${dup.existingName}`);
   });
-} else {
+}
+else {
   console.log("✅ No duplicates found");
 }
 

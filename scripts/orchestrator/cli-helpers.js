@@ -1,12 +1,12 @@
-import {buildArtifactMap, buildStageMap, loadStageGraph} from "./stage-graph.js";
-import {readFile, readdir, stat} from "node:fs/promises";
+import { buildArtifactMap, buildStageMap, loadStageGraph } from "./stage-graph.js";
+import { readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
 
-export async function loadGraphMetadata (graphPath) {
+export async function loadGraphMetadata(graphPath) {
   const graph = await loadStageGraph(graphPath);
   const stageMap = buildStageMap(graph);
   const artifactMap = buildArtifactMap(graph);
-  const pipelineMap = new Map(graph.pipelines.map((pipeline) => [pipeline.id, pipeline]));
+  const pipelineMap = new Map(graph.pipelines.map(pipeline => [pipeline.id, pipeline]));
 
   return {
     graph,
@@ -16,7 +16,7 @@ export async function loadGraphMetadata (graphPath) {
   };
 }
 
-export function formatDuration (milliseconds) {
+export function formatDuration(milliseconds) {
   if (typeof milliseconds !== "number" || Number.isNaN(milliseconds)) {
     return "unknown";
   }
@@ -33,7 +33,7 @@ export function formatDuration (milliseconds) {
   return `${minutes}m ${remainingSeconds.toFixed(0)}s`;
 }
 
-export function formatFiltersSummary (filters) {
+export function formatFiltersSummary(filters) {
   if (!filters) {
     return "(none)";
   }
@@ -51,9 +51,9 @@ export function formatFiltersSummary (filters) {
   return parts.length > 0 ? parts.join(" ") : "(none)";
 }
 
-export async function listRunRecordFiles (runsDirectory) {
+export async function listRunRecordFiles(runsDirectory) {
   try {
-    const entries = await readdir(runsDirectory, {withFileTypes: true});
+    const entries = await readdir(runsDirectory, { withFileTypes: true });
     const files = [];
 
     for (const entry of entries) {
@@ -71,7 +71,8 @@ export async function listRunRecordFiles (runsDirectory) {
 
     files.sort((a, b) => b.mtimeMs - a.mtimeMs);
     return files;
-  } catch (error) {
+  }
+  catch (error) {
     if (error && typeof error === "object" && "code" in error && error.code === "ENOENT") {
       return [];
     }
@@ -80,12 +81,12 @@ export async function listRunRecordFiles (runsDirectory) {
   }
 }
 
-export async function readRunRecord (filePath) {
+export async function readRunRecord(filePath) {
   const contents = await readFile(filePath, "utf8");
   return JSON.parse(contents);
 }
 
-function buildStageUsageMap (pipelines) {
+function buildStageUsageMap(pipelines) {
   const usage = new Map();
 
   for (const pipeline of pipelines) {
@@ -101,7 +102,7 @@ function buildStageUsageMap (pipelines) {
   return usage;
 }
 
-export function printPipelineSummaries (pipelines, stageMap) {
+export function printPipelineSummaries(pipelines, stageMap) {
   console.log("Available pipelines:\n");
 
   for (const pipeline of pipelines) {
@@ -123,7 +124,7 @@ export function printPipelineSummaries (pipelines, stageMap) {
   }
 }
 
-export function printStageSummaries (stageMap, pipelines) {
+export function printStageSummaries(stageMap, pipelines) {
   const usageMap = buildStageUsageMap(pipelines);
   const stages = [...stageMap.values()].sort((a, b) => a.id.localeCompare(b.id));
 
@@ -146,7 +147,7 @@ export function printStageSummaries (stageMap, pipelines) {
   }
 }
 
-export function describePipeline (pipeline, stageMap) {
+export function describePipeline(pipeline, stageMap) {
   console.log(`Pipeline: ${pipeline.id}`);
   if (pipeline.description) {
     console.log(pipeline.description);
@@ -161,7 +162,7 @@ export function describePipeline (pipeline, stageMap) {
   });
 }
 
-export function describeStage (stage, artifactMap, pipelines) {
+export function describeStage(stage, artifactMap, pipelines) {
   const heading = stage.name ? `${stage.id} — ${stage.name}` : stage.id;
   console.log(`Stage: ${heading}`);
 
@@ -188,7 +189,8 @@ export function describeStage (stage, artifactMap, pipelines) {
         const optional = input.optional ? " (optional)" : "";
         const pathHint = artifact?.path ? ` — ${artifact.path}` : "";
         console.log(`  • [${mode}] ${input.artifact}${pathHint}${optional}`);
-      } else if (input.type === "external") {
+      }
+      else if (input.type === "external") {
         const optional = input.optional ? " (optional)" : "";
         console.log(`  • [external ${input.kind ?? "unknown"}] ${input.uri ?? ""}${optional}`);
       }
@@ -221,15 +223,15 @@ export function describeStage (stage, artifactMap, pipelines) {
   }
 
   const pipelinesIncludingStage = pipelines
-    .filter((pipeline) => pipeline.stages.includes(stage.id))
-    .map((pipeline) => pipeline.id);
+    .filter(pipeline => pipeline.stages.includes(stage.id))
+    .map(pipeline => pipeline.id);
 
   if (pipelinesIncludingStage.length > 0) {
     console.log(`\nUsed in pipelines: ${pipelinesIncludingStage.join(", ")}`);
   }
 }
 
-export function printRunRecordDetails (record, sourcePath) {
+export function printRunRecordDetails(record, sourcePath) {
   console.log(`Run file: ${path.basename(sourcePath)}`);
   console.log(`Pipeline: ${record.pipelineId}`);
   console.log(`Status: ${record.status}`);
@@ -252,7 +254,8 @@ export function printRunRecordDetails (record, sourcePath) {
       let symbol = "•";
       if (stageResult.status === "succeeded") {
         symbol = "✔";
-      } else if (stageResult.status === "failed") {
+      }
+      else if (stageResult.status === "failed") {
         symbol = "✖";
       }
 

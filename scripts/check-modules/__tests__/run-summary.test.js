@@ -50,12 +50,12 @@ test("buildRunSummaryMarkdown includes key sections", () => {
       }
     },
     configSources: [
-      {kind: "default", path: "/tmp/check-groups.config.json", applied: true},
-      {kind: "local", path: "/tmp/check-groups.config.local.json", missing: true}
+      { kind: "default", path: "/tmp/check-groups.config.json", applied: true },
+      { kind: "local", path: "/tmp/check-groups.config.local.json", missing: true }
     ],
     artifactLinks: [
-      {label: "result.md", path: "../../website/result.md"},
-      {label: "stats.json", path: "../../website/data/stats.json"}
+      { label: "result.md", path: "../../website/result.md" },
+      { label: "stats.json", path: "../../website/data/stats.json" }
     ],
     issueSummaries: [
       {

@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 /* eslint-disable no-continue */
 
-import {basename, dirname, join, relative, resolve} from "node:path";
-import {buildExecutionPlan, loadStageGraph} from "./stage-graph.js";
-import {createLogger, createStageProgressLogger} from "../shared/logger.js";
+import { basename, dirname, join, relative, resolve } from "node:path";
+import { buildExecutionPlan, loadStageGraph } from "./stage-graph.js";
+import { createLogger, createStageProgressLogger } from "../shared/logger.js";
 
-import {mkdir, writeFile} from "node:fs/promises";
-import {Command} from "commander";
-import {execFile} from "node:child_process";
-import {fileURLToPath} from "node:url";
+import { mkdir, writeFile } from "node:fs/promises";
+import { Command } from "commander";
+import { execFile } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import process from "node:process";
-import {promisify} from "node:util";
-import {registerAdditionalCommands} from "./cli-commands.js";
-import {runStagesSequentially} from "./stage-executor.js";
-import {validateStageFile} from "../lib/schemaValidator.js";
+import { promisify } from "node:util";
+import { registerAdditionalCommands } from "./cli-commands.js";
+import { runStagesSequentially } from "./stage-executor.js";
+import { validateStageFile } from "../lib/schemaValidator.js";
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFile);
@@ -23,7 +23,7 @@ const RUNS_DIRECTORY = join(PROJECT_ROOT, ".pipeline-runs");
 const MIN_NODE_MAJOR_VERSION = 18;
 const execFileAsync = promisify(execFile);
 
-function getSchemaIdFromPath (schemaPath) {
+function getSchemaIdFromPath(schemaPath) {
   const filename = basename(schemaPath);
   if (!filename.endsWith(".schema.json")) {
     return null;
@@ -33,8 +33,8 @@ function getSchemaIdFromPath (schemaPath) {
   return filename.slice(0, filename.length - suffixLength);
 }
 
-function createArtifactValidator () {
-  return async (stage, {logger} = {}) => {
+function createArtifactValidator() {
+  return async (stage, { logger } = {}) => {
     const outputs = stage.resolvedOutputs ?? [];
 
     for (const output of outputs) {
@@ -58,23 +58,27 @@ function createArtifactValidator () {
                 schemaId,
                 path: artifact.path
               });
-            } else {
+            }
+            else {
               console.log(`   ↳ validated ${artifact.id} against ${schemaId}`);
             }
-          } catch (error) {
+          }
+          catch (error) {
             if (error instanceof Error) {
               error.message = `Stage "${stage.id}" produced invalid artifact "${artifact.id}" (${artifact.path}):\n${error.message}`;
             }
             throw error;
           }
-        } else if (logger && logger.format === "json") {
+        }
+        else if (logger && logger.format === "json") {
           logger.warn(`Skipping validation for artifact "${artifact.id}"`, {
             event: "artifact_validation_skipped",
             artifactId: artifact.id,
             reason: "unsupported schema reference",
             schema: artifact.schema
           });
-        } else {
+        }
+        else {
           console.warn(`Skipping validation for artifact "${artifact.id}" — unsupported schema reference "${artifact.schema}".`);
         }
       }
@@ -82,22 +86,22 @@ function createArtifactValidator () {
   };
 }
 
-function parseCommaSeparatedList (value, previous = []) {
+function parseCommaSeparatedList(value, previous = []) {
   if (!value) {
     return previous;
   }
 
   const parsed = value
     .split(",")
-    .map((entry) => entry.trim())
+    .map(entry => entry.trim())
     .filter(Boolean);
 
   return [...previous, ...parsed];
 }
 
-function normalizeStageFilters ({only = [], skip = []} = {}) {
-  const normalize = (values) => Array.from(new Set(values
-    .map((value) => value.trim())
+function normalizeStageFilters({ only = [], skip = [] } = {}) {
+  const normalize = values => Array.from(new Set(values
+    .map(value => value.trim())
     .filter(Boolean)));
 
   return {
@@ -106,15 +110,15 @@ function normalizeStageFilters ({only = [], skip = []} = {}) {
   };
 }
 
-function applyStageFilters (stages, filters) {
-  const stageIdSet = new Set(stages.map((stage) => stage.id));
+function applyStageFilters(stages, filters) {
+  const stageIdSet = new Set(stages.map(stage => stage.id));
 
-  const unknownOnly = filters.only.filter((stageId) => !stageIdSet.has(stageId));
+  const unknownOnly = filters.only.filter(stageId => !stageIdSet.has(stageId));
   if (unknownOnly.length > 0) {
     throw new Error(`Unknown stage id${unknownOnly.length > 1 ? "s" : ""} in --only: ${unknownOnly.join(", ")}`);
   }
 
-  const unknownSkip = filters.skip.filter((stageId) => !stageIdSet.has(stageId));
+  const unknownSkip = filters.skip.filter(stageId => !stageIdSet.has(stageId));
   if (unknownSkip.length > 0) {
     throw new Error(`Unknown stage id${unknownSkip.length > 1 ? "s" : ""} in --skip: ${unknownSkip.join(", ")}`);
   }
@@ -123,7 +127,7 @@ function applyStageFilters (stages, filters) {
 
   if (filters.only.length > 0) {
     const onlySet = new Set(filters.only);
-    selectedStages = stages.filter((stage) => onlySet.has(stage.id));
+    selectedStages = stages.filter(stage => onlySet.has(stage.id));
 
     if (selectedStages.length === 0) {
       throw new Error("No stages matched the provided --only filters.");
@@ -132,15 +136,15 @@ function applyStageFilters (stages, filters) {
 
   if (filters.skip.length > 0) {
     const skipSet = new Set(filters.skip);
-    selectedStages = selectedStages.filter((stage) => !skipSet.has(stage.id));
+    selectedStages = selectedStages.filter(stage => !skipSet.has(stage.id));
   }
 
   if (selectedStages.length === 0) {
     throw new Error("All stages were filtered out. Nothing to run.");
   }
 
-  const selectedStageIds = new Set(selectedStages.map((stage) => stage.id));
-  const skippedStages = stages.filter((stage) => !selectedStageIds.has(stage.id));
+  const selectedStageIds = new Set(selectedStages.map(stage => stage.id));
+  const skippedStages = stages.filter(stage => !selectedStageIds.has(stage.id));
 
   return {
     selectedStages,
@@ -148,11 +152,11 @@ function applyStageFilters (stages, filters) {
   };
 }
 
-async function ensureRunsDirectoryExists () {
-  await mkdir(RUNS_DIRECTORY, {recursive: true});
+async function ensureRunsDirectoryExists() {
+  await mkdir(RUNS_DIRECTORY, { recursive: true });
 }
 
-function sanitizePipelineIdForFilename (pipelineId) {
+function sanitizePipelineIdForFilename(pipelineId) {
   const fallback = pipelineId && pipelineId.length > 0 ? pipelineId : "pipeline";
   const normalized = fallback
     .toLowerCase()
@@ -162,7 +166,7 @@ function sanitizePipelineIdForFilename (pipelineId) {
   return normalized || "pipeline";
 }
 
-function buildRunRecordFilePath (startedAt, pipelineId) {
+function buildRunRecordFilePath(startedAt, pipelineId) {
   const timestamp = new Date(startedAt).toISOString()
     .replace(/[:.]/gu, "-");
   const safePipelineId = sanitizePipelineIdForFilename(pipelineId);
@@ -171,7 +175,7 @@ function buildRunRecordFilePath (startedAt, pipelineId) {
   return join(RUNS_DIRECTORY, filename);
 }
 
-function extractFailureDetails (failure) {
+function extractFailureDetails(failure) {
   if (!(failure instanceof Error)) {
     return {
       message: String(failure)
@@ -189,19 +193,20 @@ function extractFailureDetails (failure) {
   };
 }
 
-function mapStageResults ({orderedStages, completedStages, skippedStages, failure}) {
+function mapStageResults({ orderedStages, completedStages, skippedStages, failure }) {
   const results = [];
   const completedMap = new Map();
   for (const entry of completedStages) {
     completedMap.set(entry.stage.id, entry);
   }
 
-  const skippedSet = new Set(skippedStages.map((stage) => stage.id));
+  const skippedSet = new Set(skippedStages.map(stage => stage.id));
   const failureStageId = failure instanceof Error && failure.stage ? failure.stage.id : null;
   let failureMessage = null;
   if (failure instanceof Error) {
     failureMessage = failure.message;
-  } else if (failure) {
+  }
+  else if (failure) {
     failureMessage = String(failure);
   }
 
@@ -220,7 +225,7 @@ function mapStageResults ({orderedStages, completedStages, skippedStages, failur
     }
 
     if (completedMap.has(stage.id)) {
-      const {durationMs} = completedMap.get(stage.id);
+      const { durationMs } = completedMap.get(stage.id);
       results.push({
         ...base,
         status: "succeeded",
@@ -247,7 +252,7 @@ function mapStageResults ({orderedStages, completedStages, skippedStages, failur
   return results;
 }
 
-async function writePipelineRunRecord ({
+async function writePipelineRunRecord({
   pipelineId,
   graphPath,
   filters,
@@ -269,8 +274,8 @@ async function writePipelineRunRecord ({
     startedAt: new Date(startedAt).toISOString(),
     finishedAt: new Date(finishedAt).toISOString(),
     durationMs,
-    plannedStageIds: plannedStages.map((stage) => stage.id),
-    skippedStageIds: skippedStages.map((stage) => stage.id),
+    plannedStageIds: plannedStages.map(stage => stage.id),
+    skippedStageIds: skippedStages.map(stage => stage.id),
     stageResults: mapStageResults({
       orderedStages,
       completedStages,
@@ -288,21 +293,22 @@ async function writePipelineRunRecord ({
     const outputPath = buildRunRecordFilePath(startedAt, pipelineId);
     await writeFile(outputPath, `${JSON.stringify(record, null, 2)}\n`, "utf8");
     return outputPath;
-  } catch (error) {
+  }
+  catch (error) {
     console.warn(`Unable to persist pipeline run metadata: ${error instanceof Error ? error.message : error}`);
     return null;
   }
 }
 
-async function runPipeline (pipelineId, {graphPath, filters, jsonLogs} = {}) {
+async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
   const graph = await loadStageGraph(graphPath);
-  const {pipeline, stages} = buildExecutionPlan(graph, pipelineId);
+  const { pipeline, stages } = buildExecutionPlan(graph, pipelineId);
   const logFormat = jsonLogs ? "json" : process.env.LOG_FORMAT ?? "text";
-  const baseLogger = createLogger({name: "pipeline", format: logFormat});
+  const baseLogger = createLogger({ name: "pipeline", format: logFormat });
   const stageLogger = createStageProgressLogger(baseLogger);
   const validateArtifacts = createArtifactValidator();
   const normalizedFilters = normalizeStageFilters(filters);
-  const {selectedStages, skippedStages} = applyStageFilters(stages, normalizedFilters);
+  const { selectedStages, skippedStages } = applyStageFilters(stages, normalizedFilters);
 
   if (logFormat !== "json") {
     console.log(`Running pipeline "${pipeline.id}" using graph ${relative(PROJECT_ROOT, graphPath)}\n`);
@@ -329,7 +335,7 @@ async function runPipeline (pipelineId, {graphPath, filters, jsonLogs} = {}) {
   try {
     const completedStages = await runStagesSequentially(selectedStages, {
       cwd: PROJECT_ROOT,
-      env: {...process.env, LOG_FORMAT: logFormat},
+      env: { ...process.env, LOG_FORMAT: logFormat },
       logger: stageLogger,
       validateArtifacts
     });
@@ -355,14 +361,16 @@ async function runPipeline (pipelineId, {graphPath, filters, jsonLogs} = {}) {
         durationMs: finishedAt - startedAt,
         runRecordPath: recordPath ? relative(PROJECT_ROOT, recordPath) : null
       });
-    } else {
+    }
+    else {
       console.log(`\nPipeline "${pipeline.id}" completed successfully.`);
 
       if (recordPath) {
         console.log(`Run metadata saved to ${relative(PROJECT_ROOT, recordPath)}`);
       }
     }
-  } catch (error) {
+  }
+  catch (error) {
     const finishedAt = Date.now();
     const completedStages = error instanceof Error && Array.isArray(error.completedStages)
       ? error.completedStages
@@ -390,7 +398,8 @@ async function runPipeline (pipelineId, {graphPath, filters, jsonLogs} = {}) {
         runRecordPath: recordPath ? relative(PROJECT_ROOT, recordPath) : null,
         error: error instanceof Error ? error.message : String(error)
       });
-    } else if (recordPath) {
+    }
+    else if (recordPath) {
       console.log(`Run metadata saved to ${relative(PROJECT_ROOT, recordPath)}`);
     }
 
@@ -398,7 +407,7 @@ async function runPipeline (pipelineId, {graphPath, filters, jsonLogs} = {}) {
   }
 }
 
-export async function main (argv = process.argv) {
+export async function main(argv = process.argv) {
   const program = new Command();
 
   program
@@ -430,8 +439,9 @@ export async function main (argv = process.argv) {
       const jsonLogs = options.jsonLogs;
 
       try {
-        await runPipeline(selectedPipeline, {graphPath, filters, jsonLogs});
-      } catch (error) {
+        await runPipeline(selectedPipeline, { graphPath, filters, jsonLogs });
+      }
+      catch (error) {
         if (!jsonLogs) {
           const message = error instanceof Error ? error.message : error;
           console.error(`\nPipeline execution failed: ${message}`);

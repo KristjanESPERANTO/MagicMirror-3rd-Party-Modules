@@ -1,4 +1,4 @@
-import {getRepositoryId, getRepositoryType} from "../updateRepositoryApiData/helpers.js";
+import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.js";
 
 /**
  * Extract the maintainer URL from a repository URL.
@@ -6,14 +6,15 @@ import {getRepositoryId, getRepositoryType} from "../updateRepositoryApiData/hel
  * @param {string} url - The repository URL.
  * @returns {string} The maintainer URL or empty string if invalid.
  */
-function getMaintainerURL (url) {
+function getMaintainerURL(url) {
   try {
     const urlObj = new URL(url);
     const pathParts = urlObj.pathname.split("/").filter(Boolean);
     if (pathParts.length >= 1) {
       return `${urlObj.origin}/${pathParts[0]}`;
     }
-  } catch {
+  }
+  catch {
     // Invalid URL, return empty string
   }
 
@@ -26,7 +27,7 @@ function getMaintainerURL (url) {
  * @param {string} markdown - The raw Markdown content from the Wiki.
  * @returns {{modules: Array<object>, issues: Array<string>}} The parsed modules and any issues encountered.
  */
-export function parseModuleList (markdown) {
+export function parseModuleList(markdown) {
   const modules = [];
   const issues = [];
   let category = "Unknown";
@@ -35,12 +36,13 @@ export function parseModuleList (markdown) {
   for (const line of lines) {
     if (line.startsWith("### ")) {
       category = line.replace("### ", "").trim();
-    } else if (
-      line.includes("](https://github.com/") ||
-      line.includes("](https://gitlab.com/") ||
-      line.includes("](https://bitbucket.org/")
+    }
+    else if (
+      line.includes("](https://github.com/")
+      || line.includes("](https://gitlab.com/")
+      || line.includes("](https://bitbucket.org/")
     ) {
-      const parts = line.split("|").map((part) => part.trim());
+      const parts = line.split("|").map(part => part.trim());
 
       // Expected format: | Name | Repo Link | Description | Author | ...
       if (parts.length >= 3) {
@@ -73,7 +75,8 @@ export function parseModuleList (markdown) {
           const repoType = getRepositoryType(url);
           if (repoType === "unknown") {
             issues.push(`Skipping unknown repository type: ${url}`);
-          } else {
+          }
+          else {
             const id = getRepositoryId(url) || name.replace(/\s+/gu, "-");
             const maintainerURL = getMaintainerURL(url);
 
@@ -93,5 +96,5 @@ export function parseModuleList (markdown) {
     }
   }
 
-  return {modules, issues};
+  return { modules, issues };
 }

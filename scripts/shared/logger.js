@@ -20,7 +20,7 @@ const METHOD_BY_LEVEL = new Map([
 const DEFAULT_LOG_LEVEL = process.env.LOG_LEVEL ?? "info";
 const DEFAULT_LOG_FORMAT = process.env.LOG_FORMAT ?? "text";
 
-function normalizeLogLevel (level = DEFAULT_LOG_LEVEL) {
+function normalizeLogLevel(level = DEFAULT_LOG_LEVEL) {
   if (typeof level === "number" && Number.isFinite(level)) {
     return level;
   }
@@ -33,7 +33,7 @@ function normalizeLogLevel (level = DEFAULT_LOG_LEVEL) {
   return LOG_LEVEL_PRIORITIES.get(normalized);
 }
 
-function levelNameFromPriority (priority) {
+function levelNameFromPriority(priority) {
   for (const [levelName, value] of LOG_LEVEL_PRIORITIES.entries()) {
     if (value === priority) {
       return levelName;
@@ -43,15 +43,15 @@ function levelNameFromPriority (priority) {
   return "info";
 }
 
-function safeJoinParts (parts) {
+function safeJoinParts(parts) {
   return parts.filter(Boolean).join(" ");
 }
 
-function formatTimestamp (date = new Date()) {
+function formatTimestamp(date = new Date()) {
   return date.toISOString();
 }
 
-function createEmitter ({writer, getLevelPriority, name, format}) {
+function createEmitter({ writer, getLevelPriority, name, format }) {
   const resolveWriter = (method) => {
     const resolved = method in writer ? writer[method] : writer.log;
     return typeof resolved === "function" ? resolved.bind(writer) : console.log;
@@ -81,7 +81,8 @@ function createEmitter ({writer, getLevelPriority, name, format}) {
       if (details.length > 0) {
         if (details.length === 1 && typeof details[0] === "object" && details[0] !== null) {
           Object.assign(logEntry, details[0]);
-        } else {
+        }
+        else {
           logEntry.data = details;
         }
       }
@@ -112,29 +113,30 @@ function createEmitter ({writer, getLevelPriority, name, format}) {
   return emit;
 }
 
-export function createLogger ({name, level = DEFAULT_LOG_LEVEL, writer = console, format = DEFAULT_LOG_FORMAT} = {}) {
+export function createLogger({ name, level = DEFAULT_LOG_LEVEL, writer = console, format = DEFAULT_LOG_FORMAT } = {}) {
   let currentLevelPriority = normalizeLogLevel(level);
 
   const getLevelPriority = () => currentLevelPriority;
-  const emitter = createEmitter({writer, getLevelPriority, name, format});
+  const emitter = createEmitter({ writer, getLevelPriority, name, format });
 
   const logger = {
-    get format () {
+    get format() {
       return format;
     },
-    get level () {
+    get level() {
       return levelNameFromPriority(currentLevelPriority);
     },
-    set level (newLevel) {
+    set level(newLevel) {
       currentLevelPriority = normalizeLogLevel(newLevel);
     },
-    child (childName) {
+    child(childName) {
       const suffix = childName ? `${childName}` : null;
       let combinedName = name;
 
       if (suffix && name) {
         combinedName = `${name}:${suffix}`;
-      } else if (suffix) {
+      }
+      else if (suffix) {
         combinedName = suffix;
       }
 
@@ -145,22 +147,22 @@ export function createLogger ({name, level = DEFAULT_LOG_LEVEL, writer = console
         format
       });
     },
-    error (message, ...details) {
+    error(message, ...details) {
       emitter("error", message, details);
     },
-    warn (message, ...details) {
+    warn(message, ...details) {
       emitter("warn", message, details);
     },
-    info (message, ...details) {
+    info(message, ...details) {
       emitter("info", message, details);
     },
-    debug (message, ...details) {
+    debug(message, ...details) {
       emitter("debug", message, details);
     },
-    trace (message, ...details) {
+    trace(message, ...details) {
       emitter("trace", message, details);
     },
-    log (message, ...details) {
+    log(message, ...details) {
       emitter("info", message, details);
     }
   };
@@ -168,7 +170,7 @@ export function createLogger ({name, level = DEFAULT_LOG_LEVEL, writer = console
   return logger;
 }
 
-function formatStageDetails (stage) {
+function formatStageDetails(stage) {
   if (!stage) {
     return "";
   }
@@ -180,24 +182,24 @@ function formatStageDetails (stage) {
   return stage.id;
 }
 
-export function createStageProgressLogger (baseLogger) {
-  const logger = baseLogger ?? createLogger({name: "pipeline"});
+export function createStageProgressLogger(baseLogger) {
+  const logger = baseLogger ?? createLogger({ name: "pipeline" });
   const isJson = logger.format === "json";
 
   return {
-    get format () {
+    get format() {
       return logger.format;
     },
-    info (message, details) {
+    info(message, details) {
       logger.info(message, details);
     },
-    warn (message, details) {
+    warn(message, details) {
       logger.warn(message, details);
     },
-    error (message, details) {
+    error(message, details) {
       logger.error(message, details);
     },
-    start (stage, {stepNumber, total}) {
+    start(stage, { stepNumber, total }) {
       const details = formatStageDetails(stage);
       const message = `▶︎  [${stepNumber}/${total}] ${details}`;
       if (isJson) {
@@ -208,11 +210,12 @@ export function createStageProgressLogger (baseLogger) {
           stepNumber,
           totalSteps: total
         });
-      } else {
+      }
+      else {
         logger.info(message);
       }
     },
-    succeed (stage, {stepNumber, total, formattedDuration, durationMs}) {
+    succeed(stage, { stepNumber, total, formattedDuration, durationMs }) {
       const details = formatStageDetails(stage);
       const message = `✔︎  [${stepNumber}/${total}] ${details} — completed in ${formattedDuration}`;
       if (isJson) {
@@ -225,11 +228,12 @@ export function createStageProgressLogger (baseLogger) {
           durationMs,
           formattedDuration
         });
-      } else {
+      }
+      else {
         logger.info(message);
       }
     },
-    fail (stage, {stepNumber, total, error}) {
+    fail(stage, { stepNumber, total, error }) {
       const details = formatStageDetails(stage);
       const message = `✖︎  [${stepNumber}/${total}] ${details} — failed`;
       if (isJson) {
@@ -242,7 +246,8 @@ export function createStageProgressLogger (baseLogger) {
           error: error instanceof Error ? error.message : String(error),
           stack: error instanceof Error ? error.stack : null
         });
-      } else {
+      }
+      else {
         logger.error(message);
         if (error) {
           logger.error(error instanceof Error ? error.message : String(error));

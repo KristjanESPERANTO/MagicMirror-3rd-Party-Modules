@@ -1,15 +1,15 @@
-import {setTimeout as delay} from "node:timers/promises";
+import { setTimeout as delay } from "node:timers/promises";
 import process from "node:process";
 
 const DEFAULT_USER_AGENT = "MagicMirror-Pipeline/0.1 (+https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules)";
 const DEFAULT_RETRY_COUNT = 2;
 const DEFAULT_RETRY_BACKOFF_MS = 1500;
 
-function buildHeaders (baseHeaders = {}, overrides = {}) {
-  const normalizedBase = {...baseHeaders};
-  const merged = {...normalizedBase, ...overrides};
+function buildHeaders(baseHeaders = {}, overrides = {}) {
+  const normalizedBase = { ...baseHeaders };
+  const merged = { ...normalizedBase, ...overrides };
   const pairs = Object.entries(merged)
-    .filter((entry) => typeof entry[1] !== "undefined" && entry[1] !== null)
+    .filter(entry => typeof entry[1] !== "undefined" && entry[1] !== null)
     .map((entry) => {
       const [key, value] = entry;
       return [key.toLowerCase() === "user-agent" ? "user-agent" : key, value];
@@ -18,10 +18,10 @@ function buildHeaders (baseHeaders = {}, overrides = {}) {
   return Object.fromEntries(pairs);
 }
 
-export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeaders = {}, rateLimiter, maxRetries = DEFAULT_RETRY_COUNT, retryBackoffMs = DEFAULT_RETRY_BACKOFF_MS} = {}) {
-  const mergedDefaults = buildHeaders({"user-agent": userAgent}, defaultHeaders);
+export function createHttpClient({ userAgent = DEFAULT_USER_AGENT, defaultHeaders = {}, rateLimiter, maxRetries = DEFAULT_RETRY_COUNT, retryBackoffMs = DEFAULT_RETRY_BACKOFF_MS } = {}) {
+  const mergedDefaults = buildHeaders({ "user-agent": userAgent }, defaultHeaders);
 
-  async function performRequest (url, options = {}) {
+  async function performRequest(url, options = {}) {
     const {
       method = "GET",
       headers = {},
@@ -68,27 +68,30 @@ export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeader
             const date = Date.parse(retryAfterHeader);
             if (Number.isNaN(date)) {
               // Invalid date, ignore
-            } else {
+            }
+            else {
               delayMs = Math.max(0, date - Date.now());
             }
-          } else {
+          }
+          else {
             delayMs = seconds * 1000;
           }
         }
 
-        await delay(delayMs, null, {signal});
-      } catch (error) {
+        await delay(delayMs, null, { signal });
+      }
+      catch (error) {
         if (attempt >= retries || (signal?.aborted ?? false)) {
           throw error;
         }
         attempt += 1;
         const delayMs = retryDelayMs * attempt;
-        await delay(delayMs, null, {signal});
+        await delay(delayMs, null, { signal });
       }
     }
   }
 
-  async function requestJson (url, options = {}) {
+  async function requestJson(url, options = {}) {
     const response = await performRequest(url, options);
     const text = await response.text();
     try {
@@ -99,7 +102,8 @@ export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeader
         data: parsed,
         headers: response.headers
       };
-    } catch (error) {
+    }
+    catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       const err = new Error(`Failed to parse JSON from ${url}: ${message}`);
       err.cause = error;
@@ -108,7 +112,7 @@ export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeader
     }
   }
 
-  async function requestText (url, options = {}) {
+  async function requestText(url, options = {}) {
     const response = await performRequest(url, options);
     const text = await response.text();
     return {
@@ -123,7 +127,7 @@ export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeader
     request: performRequest,
     getJson: requestJson,
     getText: requestText,
-    withDefaults (overrides) {
+    withDefaults(overrides) {
       return createHttpClient({
         userAgent,
         defaultHeaders: buildHeaders(mergedDefaults, overrides.defaultHeaders ?? {}),
@@ -135,7 +139,7 @@ export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeader
   };
 }
 
-function shouldRetry (status) {
+function shouldRetry(status) {
   if (status >= 500) {
     return true;
   }
@@ -147,7 +151,7 @@ function shouldRetry (status) {
   return false;
 }
 
-export function buildAuthHeadersFromEnv (env = process.env) {
+export function buildAuthHeadersFromEnv(env = process.env) {
   if (env.GITHUB_TOKEN) {
     return {
       Authorization: `Bearer ${env.GITHUB_TOKEN}`
