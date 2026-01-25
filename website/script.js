@@ -96,12 +96,16 @@ function createCard(moduleData) {
 
     const overlay = image.nextElementSibling;
     image.onclick = () => {
-      overlay.style.display = "block";
+      // Move overlay to body to escape card's overflow/containment
+      document.body.appendChild(overlay);
+      overlay.style.display = "flex";
       overlay.getElementsByTagName("img")[0].src = image.src;
     };
 
     overlay.onclick = () => {
       overlay.style.display = "none";
+      // Move overlay back to its original position
+      image.parentElement.appendChild(overlay);
     };
   }
   else {
