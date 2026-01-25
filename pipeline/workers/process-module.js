@@ -229,7 +229,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer, config) {
       const targetImageName = createDeterministicImageName(
         moduleName,
         moduleMaintainer,
-        "jpg"
+        "webp"
       );
       const sourcePath = path.join(sourceFolder, imageToProcess);
       const targetPath = path.join(config.imagesDir, targetImageName);
@@ -240,6 +240,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer, config) {
             fit: sharp.fit.inside,
             withoutEnlargement: true
           })
+          .webp({ quality: 85 })
           .toFile(targetPath);
 
         return { targetImageName, issues };

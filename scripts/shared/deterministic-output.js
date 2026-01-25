@@ -46,9 +46,9 @@ export function stringifyDeterministic(data, space = 2) {
  *
  * @param {string} moduleName - The module name
  * @param {string} maintainer - The module maintainer
- * @param {string} extension - The file extension (e.g., 'jpg', 'png')
- * @returns {string} Deterministic filename (e.g., 'MMM-Weather---example.jpg')
+ * @param {string} extension - The file extension (e.g., 'webp', 'jpg', 'png')
+ * @returns {string} Deterministic filename (e.g., 'MMM-Weather---example.webp')
  */
-export function createDeterministicImageName(moduleName, maintainer, extension = "jpg") {
+export function createDeterministicImageName(moduleName, maintainer, extension = "webp") {
   return `${moduleName}---${maintainer}.${extension}`;
 }

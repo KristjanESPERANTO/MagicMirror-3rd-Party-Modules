@@ -40,7 +40,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
   const imageToProcess = firstScreenshotImage || firstImage;
 
   if (imageToProcess) {
-    targetImageName = createDeterministicImageName(moduleName, moduleMaintainer, "jpg");
+    targetImageName = createDeterministicImageName(moduleName, moduleMaintainer, "webp");
     const sourcePath = `${sourceFolder}/${imageToProcess}`;
 
     /*
@@ -59,6 +59,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
             withoutEnlargement: true
           }
         )
+        .webp({ quality: 85 })
         .toFile(targetPath);
     }
     catch (error) {
