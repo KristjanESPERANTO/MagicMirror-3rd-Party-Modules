@@ -188,6 +188,9 @@ main {
   min-width: 250px;
   padding: 0.92em 0.92em 0;
   outline: transparent solid 3px !important;
+  /* Performance optimization: Skip rendering off-screen cards */
+  content-visibility: auto;
+  contain-intrinsic-size: 0 420px;
 }
 
 .card:hover {
