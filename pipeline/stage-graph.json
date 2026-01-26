@@ -10,6 +10,11 @@
         "expand-module-list",
         "check-modules"
       ]
+    },
+    {
+      "id": "full-refresh-parallel",
+      "description": "Full catalogue refresh using parallel worker pool (P7.3).",
+      "stages": ["collect-metadata", "parallel-processing"]
     }
   ],
   "artifacts": [
@@ -315,6 +320,66 @@
         {
           "type": "network",
           "description": "Commands like `npm-check-updates` may query the npm registry for latest package metadata."
+        }
+      ]
+    },
+    {
+      "id": "parallel-processing",
+      "name": "Parallel module processing",
+      "description": "Clone, enrich, and analyze modules in parallel using worker pool (stages 3+4+5 combined).",
+      "command": {
+        "executable": "node",
+        "args": ["scripts/parallel-processing.js"]
+      },
+      "dependsOn": ["collect-metadata"],
+      "inputs": [
+        {
+          "artifact": "modules-stage-2",
+          "mode": "read"
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "modules-stage-5",
+          "mode": "write"
+        },
+        {
+          "artifact": "cloned-modules",
+          "mode": "write"
+        },
+        {
+          "artifact": "images-catalogue",
+          "mode": "write"
+        },
+        {
+          "artifact": "modules-json",
+          "mode": "write"
+        },
+        {
+          "artifact": "modules-json-min",
+          "mode": "write"
+        },
+        {
+          "artifact": "stats-json",
+          "mode": "write"
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "filesystem",
+          "description": "Creates/updates module clones in modules/ and modules_temp/."
+        },
+        {
+          "type": "filesystem",
+          "description": "Generates resized module screenshots in website/images/."
+        },
+        {
+          "type": "process",
+          "description": "Spawns worker processes for parallel module processing."
+        },
+        {
+          "type": "network",
+          "description": "Git operations and npm commands may access external resources."
         }
       ]
     }
