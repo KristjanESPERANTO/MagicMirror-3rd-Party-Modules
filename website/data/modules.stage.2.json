@@ -10,9 +10,9 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-10-02T21:20:18Z",
+    "lastCommit": "2026-01-25T03:18:36Z",
     "license": "MIT",
-    "stars": 231
+    "stars": 236
   },
   {
     "name": "MMM-Template",
@@ -27,7 +27,7 @@
     "isArchived": false,
     "lastCommit": "2025-07-07T12:43:25Z",
     "license": "MIT",
-    "stars": 10
+    "stars": 12
   },
   {
     "name": "MMM-AlertExt",
@@ -105,33 +105,33 @@
   },
   {
     "name": "MMM-Buttons",
-    "url": "https://github.com/MarcLandis/MMM-Buttons",
-    "id": "MarcLandis/MMM-Buttons",
+    "url": "https://github.com/KristjanESPERANTO/MMM-Buttons",
+    "id": "KristjanESPERANTO/MMM-Buttons",
     "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror².",
-    "maintainer": "MarcLandis",
-    "maintainerURL": "https://github.com/MarcLandis",
+    "maintainer": "KristjanESPERANTO",
+    "maintainerURL": "https://github.com/KristjanESPERANTO",
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2024-10-22T08:17:52Z",
+    "lastCommit": "2025-12-15T15:50:20Z",
     "license": "MIT",
-    "stars": 12
+    "stars": 4
   },
   {
     "name": "MMM-Carousel",
     "url": "https://github.com/shbatm/MMM-Carousel",
     "id": "shbatm/MMM-Carousel",
     "description": "Create dynamic slideshows of your modules. Switch between different screens automatically or manually, organize modules by position, or build custom slide layouts. Great for small screens or information-rich setups.",
-    "maintainer": "shbatm",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/shbatm",
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-11-17T06:35:37Z",
+    "lastCommit": "2026-01-01T23:37:10Z",
     "license": "MIT",
-    "stars": 53
+    "stars": 54
   },
   {
     "name": "MMM-ClickToNavigate",
@@ -146,7 +146,7 @@
     "isArchived": false,
     "lastCommit": "2025-11-29T19:28:10Z",
     "license": "MIT",
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-connection-status",
@@ -337,7 +337,7 @@
     "isArchived": false,
     "lastCommit": "2025-07-22T20:21:03Z",
     "license": "MIT",
-    "stars": 41
+    "stars": 44
   },
   {
     "name": "MMM-HTMLSnippet",
@@ -352,7 +352,7 @@
     "isArchived": false,
     "lastCommit": "2025-04-25T08:37:20Z",
     "license": "GPL-3.0",
-    "stars": 18
+    "stars": 19
   },
   {
     "name": "MMM-JokeAPI",
@@ -424,7 +424,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-08-06T22:17:34Z",
     "license": "MIT",
     "stars": 5
   },
@@ -439,9 +439,9 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-11-15T10:45:01Z",
     "license": "MIT",
-    "stars": 65
+    "stars": 66
   },
   {
     "name": "MMM-Markdown",
@@ -452,11 +452,11 @@
     "maintainerURL": "https://github.com/wilfullyapt",
     "category": "Development / Core MagicMirror²",
     "issues": [],
+    "stars": 6,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 6
+    "lastCommit": "2023-09-28T06:31:09+02:00"
   },
   {
     "name": "MMM-ModuleMonkeyPatch",
@@ -467,11 +467,11 @@
     "maintainerURL": "https://github.com/MMRIZE",
     "category": "Development / Core MagicMirror²",
     "issues": [],
+    "stars": 3,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 3
+    "lastCommit": "2023-08-04T10:42:07+02:00"
   },
   {
     "name": "MMM-ModuleScheduler",
@@ -482,11 +482,11 @@
     "maintainerURL": "https://github.com/ianperrin",
     "category": "Development / Core MagicMirror²",
     "issues": [],
+    "stars": 113,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 113
+    "lastCommit": "2025-04-28T05:50:43+01:00"
   },
   {
     "name": "MMM-ModuleToggleButton",
@@ -497,11 +497,23 @@
     "maintainerURL": "https://github.com/balassy",
     "category": "Development / Core MagicMirror²",
     "issues": [],
+    "stars": 7,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 7
+    "lastCommit": "2024-03-11T04:14:54+01:00"
+  },
+  {
+    "name": "MMM-ModuleZoom",
+    "url": "https://github.com/st3v0rr/MMM-ModuleZoom",
+    "id": "st3v0rr/MMM-ModuleZoom",
+    "description": "Unhappy with your overall module alignment? Scale the MagicMirror UI globally or by screen position.",
+    "maintainer": "st3v0rr",
+    "maintainerURL": "https://github.com/st3v0rr",
+    "category": "Development / Core MagicMirror²",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-Navigate",
@@ -512,11 +524,11 @@
     "maintainerURL": "https://github.com/Ax-LED",
     "category": "Development / Core MagicMirror²",
     "issues": [],
+    "stars": 11,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 11
+    "lastCommit": "2023-05-02T21:02:39+02:00"
   },
   {
     "name": "MMM-NetworkConnection",
@@ -527,10 +539,11 @@
     "maintainerURL": "https://github.com/slametps",
     "category": "Development / Core MagicMirror²",
     "issues": [],
+    "stars": 35,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "stars": 35
+    "lastCommit": "2018-05-12T17:14:36+07:00"
   },
   {
     "name": "MMM-network-signal",
@@ -541,11 +554,23 @@
     "maintainerURL": "https://github.com/PoOwAa",
     "category": "Development / Core MagicMirror²",
     "issues": [],
+    "stars": 42,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 42
+    "lastCommit": "2022-04-25T11:18:00+02:00"
+  },
+  {
+    "name": "MMM-NotificationSender",
+    "url": "https://github.com/ChrisF1976/MMM-NotificationSender",
+    "id": "ChrisF1976/MMM-NotificationSender",
+    "description": "Provides a simple UI with buttons to send customizable notifications to other modules.",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "https://github.com/ChrisF1976",
+    "category": "Development / Core MagicMirror²",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-NotificationTrigger",
@@ -556,11 +581,11 @@
     "maintainerURL": "https://github.com/MMRIZE",
     "category": "Development / Core MagicMirror²",
     "issues": [],
+    "stars": 19,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 19
+    "lastCommit": "2025-07-22T21:45:33+02:00"
   },
   {
     "name": "MMM-OnScreenMenu",
@@ -573,24 +598,24 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2018-10-12T01:38:21Z",
     "license": "MIT",
-    "stars": 72
+    "stars": 74
   },
   {
     "name": "MMM-pages",
     "url": "https://github.com/edward-shen/MMM-pages",
     "id": "edward-shen/MMM-pages",
     "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
-    "maintainer": "edward-shen",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/edward-shen",
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-11-11T07:22:15Z",
     "license": "MIT",
-    "stars": 136
+    "stars": 142
   },
   {
     "name": "MMM-pages",
@@ -603,7 +628,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-10-05T15:53:44Z",
     "license": "MIT",
     "stars": 14
   },
@@ -618,24 +643,24 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2022-05-28T21:29:38Z",
     "license": "MIT",
-    "stars": 7
+    "stars": 8
   },
   {
     "name": "MMM-page-indicator",
     "url": "https://github.com/edward-shen/MMM-page-indicator",
     "id": "edward-shen/MMM-page-indicator",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
-    "maintainer": "edward-shen",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/edward-shen",
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-10-17T21:43:04Z",
     "license": "MIT",
-    "stars": 54
+    "stars": 58
   },
   {
     "name": "MMM-Page-Pusher",
@@ -648,7 +673,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2021-06-15T08:32:43Z",
     "stars": 6
   },
   {
@@ -662,7 +687,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-07-13T22:10:11Z",
     "license": "MIT",
     "stars": 37
   },
@@ -677,7 +702,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2024-01-04T15:31:32Z",
     "license": "MIT",
     "stars": 7
   },
@@ -692,9 +717,9 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2024-04-28T19:30:50Z",
     "license": "MIT",
-    "stars": 15
+    "stars": 16
   },
   {
     "name": "MMM-Phototvoltaik",
@@ -707,7 +732,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-10-13T19:44:40Z",
     "license": "MIT",
     "stars": 1
   },
@@ -722,9 +747,9 @@
     "issues": [],
     "hasGithubIssues": false,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-07-18T18:13:29Z",
     "license": "MIT",
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-ProfileControl",
@@ -737,7 +762,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2024-06-01T10:52:26Z",
     "license": "MIT",
     "stars": 4
   },
@@ -752,7 +777,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2021-06-17T19:32:26Z",
     "license": "GPL-3.0",
     "stars": 1
   },
@@ -767,7 +792,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2021-05-31T16:56:51Z",
     "stars": 3
   },
   {
@@ -781,7 +806,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2023-11-16T20:46:40Z",
     "license": "MIT",
     "stars": 1
   },
@@ -790,15 +815,15 @@
     "url": "https://github.com/Jopyth/MMM-Remote-Control",
     "id": "Jopyth/MMM-Remote-Control",
     "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
-    "maintainer": "Jopyth",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/Jopyth",
     "category": "Development / Core MagicMirror²",
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2026-01-06T20:44:27Z",
     "license": "MIT",
-    "stars": 567
+    "stars": 572
   },
   {
     "name": "MM-Remote",
@@ -811,7 +836,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2021-05-27T14:42:41Z",
     "license": "MIT",
     "stars": 67
   },
@@ -826,7 +851,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2024-09-19T08:42:12Z",
     "license": "MIT",
     "stars": 11
   },
@@ -841,7 +866,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2019-10-18T12:57:46Z",
     "license": "MIT",
     "stars": 6
   },
@@ -856,9 +881,9 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2021-03-29T13:21:39Z",
     "license": "MIT",
-    "stars": 101
+    "stars": 102
   },
   {
     "name": "MMM-SocketClientController",
@@ -871,7 +896,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-08-09T23:55:35Z",
     "license": "MIT",
     "stars": 0
   },
@@ -886,7 +911,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2018-03-05T07:37:57Z",
     "license": "MIT",
     "stars": 10
   },
@@ -901,9 +926,9 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2021-12-29T04:20:17Z",
     "license": "MIT",
-    "stars": 8
+    "stars": 9
   },
   {
     "name": "MMM-bitcoin",
@@ -916,7 +941,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2017-07-11T15:49:06Z",
     "license": "MIT",
     "stars": 13
   },
@@ -931,7 +956,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2020-07-03T16:50:23Z",
     "license": "MIT",
     "stars": 2
   },
@@ -946,7 +971,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2022-11-05T17:46:22Z",
     "stars": 3
   },
   {
@@ -960,7 +985,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2025-11-24T23:52:20Z",
     "license": "MIT",
     "stars": 6
   },
@@ -975,7 +1000,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2022-02-02T05:21:20Z",
     "license": "MIT",
     "stars": 39
   },
@@ -990,7 +1015,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2022-01-05T23:03:28Z",
     "stars": 0
   },
   {
@@ -1004,7 +1029,7 @@
     "issues": [],
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
+    "lastCommit": "2022-05-04T09:10:42Z",
     "license": "MIT",
     "stars": 95
   },
@@ -1017,11 +1042,11 @@
     "maintainerURL": "https://github.com/DzMassi",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 1,
+    "license": "NOASSERTION",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "NOASSERTION",
-    "stars": 1
+    "lastCommit": "2024-12-29T19:03:35+01:00"
   },
   {
     "name": "MMM-ethereum",
@@ -1032,11 +1057,11 @@
     "maintainerURL": "https://github.com/hansman84",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "hasGithubIssues": false,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 0
+    "lastCommit": "2017-09-01T12:30:27+02:00"
   },
   {
     "name": "MMM-Ethermine",
@@ -1047,11 +1072,11 @@
     "maintainerURL": "https://github.com/alex-grindrod",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 0
+    "lastCommit": "2021-08-19T14:31:57-07:00"
   },
   {
     "name": "MMM-LilNounsTreasury",
@@ -1062,11 +1087,11 @@
     "maintainerURL": "https://github.com/XppaiCyberr",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 17,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 17
+    "lastCommit": "2025-03-26T23:39:33+07:00"
   },
   {
     "name": "MMM-NouncilVotes",
@@ -1077,11 +1102,11 @@
     "maintainerURL": "https://github.com/XppaiCyberr",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 17,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 17
+    "lastCommit": "2025-03-17T13:47:25+07:00"
   },
   {
     "name": "MMM-NounsAuction",
@@ -1092,11 +1117,11 @@
     "maintainerURL": "https://github.com/XppaiCyberr",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 17,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 17
+    "lastCommit": "2025-03-19T16:28:40Z"
   },
   {
     "name": "MMM-NounsTreasury",
@@ -1107,11 +1132,11 @@
     "maintainerURL": "https://github.com/XppaiCyberr",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 17,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 17
+    "lastCommit": "2025-03-22T09:17:22Z"
   },
   {
     "name": "MMM-NounsProposal",
@@ -1122,11 +1147,11 @@
     "maintainerURL": "https://github.com/XppaiCyberr",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 17,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 17
+    "lastCommit": "2025-03-24T17:50:48Z"
   },
   {
     "name": "MMM-NounsTimeline",
@@ -1137,11 +1162,11 @@
     "maintainerURL": "https://github.com/XppaiCyberr",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 17,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 17
+    "lastCommit": "2025-03-28T19:54:57Z"
   },
   {
     "name": "MMM-NounsStream",
@@ -1152,11 +1177,11 @@
     "maintainerURL": "https://github.com/XppaiCyberr",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 0
+    "lastCommit": "2025-04-05T20:30:53Z"
   },
   {
     "name": "MMM-NounishReminder",
@@ -1167,11 +1192,11 @@
     "maintainerURL": "https://github.com/xppaicyberr",
     "category": "Cryptocurrency",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 0
+    "lastCommit": "2025-04-20T20:28:49Z"
   },
   {
     "name": "MMM-Actual",
@@ -1182,11 +1207,11 @@
     "maintainerURL": "https://github.com/trumpetx",
     "category": "Finance",
     "issues": [],
+    "stars": 1,
+    "license": "AGPL-3.0",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "AGPL-3.0",
-    "stars": 1
+    "lastCommit": "2025-05-01T12:33:34Z"
   },
   {
     "name": "MMM-AVStock",
@@ -1197,11 +1222,11 @@
     "maintainerURL": "https://github.com/lavolp3",
     "category": "Finance",
     "issues": [],
+    "stars": 44,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 43
+    "lastCommit": "2024-08-07T10:33:25Z"
   },
   {
     "name": "MMM-bunq",
@@ -1212,11 +1237,11 @@
     "maintainerURL": "https://github.com/choffmann",
     "category": "Finance",
     "issues": [],
+    "stars": 6,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 5
+    "lastCommit": "2023-03-02T12:34:40Z"
   },
   {
     "name": "MMM-CurrencyArg",
@@ -1227,10 +1252,10 @@
     "maintainerURL": "https://github.com/consus2903",
     "category": "Finance",
     "issues": [],
+    "stars": 2,
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "stars": 2
+    "lastCommit": "2020-10-18T17:19:08Z"
   },
   {
     "name": "MMM-EUElectricityPrice",
@@ -1241,11 +1266,11 @@
     "maintainerURL": "https://github.com/late4marshmellow",
     "category": "Finance",
     "issues": [],
+    "stars": 4,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 4
+    "lastCommit": "2025-10-21T20:52:06Z"
   },
   {
     "name": "MMM-FamZoo",
@@ -1256,11 +1281,11 @@
     "maintainerURL": "https://github.com/trumpetx",
     "category": "Finance",
     "issues": [],
+    "stars": 3,
+    "license": "AGPL-3.0",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "AGPL-3.0",
-    "stars": 3
+    "lastCommit": "2025-03-30T18:21:29Z"
   },
   {
     "name": "MMM-FearAndGreedIndex",
@@ -1271,10 +1296,10 @@
     "maintainerURL": "https://github.com/Pip1405",
     "category": "Finance",
     "issues": [],
+    "stars": 2,
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "stars": 2
+    "lastCommit": "2023-12-02T12:21:30Z"
   },
   {
     "name": "MMM-Helium-Wallet",
@@ -1285,26 +1310,26 @@
     "maintainerURL": "https://github.com/hayseedbyte",
     "category": "Finance",
     "issues": [],
+    "stars": 1,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 1
+    "lastCommit": "2023-04-26T19:03:46Z"
   },
   {
     "name": "MMM-Jast",
     "url": "https://github.com/jalibu/MMM-Jast",
     "id": "jalibu/MMM-Jast",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
-    "maintainer": "Jalibu",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/jalibu",
     "category": "Finance",
     "issues": [],
+    "stars": 72,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 71
+    "lastCommit": "2026-01-11T13:20:15Z"
   },
   {
     "name": "MMM-MktIndex",
@@ -1315,11 +1340,11 @@
     "maintainerURL": "https://github.com/thess",
     "category": "Finance",
     "issues": [],
+    "stars": 8,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": null,
-    "license": "MIT",
-    "stars": 8
+    "lastCommit": "2026-01-04T19:31:57Z"
   },
   {
     "name": "MMM-NFTcollections",
@@ -1332,9 +1357,9 @@
     "issues": [],
     "stars": 2,
     "license": "MIT",
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2023-02-06T18:07:18+02:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2023-02-06T16:07:18Z"
   },
   {
     "name": "MMM-Nordic-Electrical-Spot-Prices",
@@ -1346,10 +1371,9 @@
     "category": "Finance",
     "issues": [],
     "stars": 4,
-    "license": "MIT",
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2024-11-12T18:22:57+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-12-21T16:16:59Z"
   },
   {
     "name": "MMM-PreciousMetals",
@@ -1362,9 +1386,9 @@
     "issues": [],
     "stars": 2,
     "license": "MIT",
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2025-09-17T08:21:07-04:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2025-09-17T12:21:07Z"
   },
   {
     "name": "MMM-Questrade",
@@ -1376,10 +1400,9 @@
     "category": "Finance",
     "issues": [],
     "stars": 1,
-    "license": null,
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2020-12-26T19:25:51-08:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2020-12-27T03:25:51Z"
   },
   {
     "name": "MMM-Sbanken",
@@ -1392,9 +1415,9 @@
     "issues": [],
     "stars": 1,
     "license": "MIT",
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2024-02-01T21:53:19+01:00"
+    "hasGithubIssues": true,
+    "isArchived": false,
+    "lastCommit": "2024-02-01T20:53:19Z"
   },
   {
     "name": "MMM-SingleStock",
@@ -1405,11 +1428,11 @@
     "maintainerURL": "https://github.com/balassy",
     "category": "Finance",
     "issues": [],
+    "stars": 8,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2024-03-11T03:53:34Z",
-    "license": "MIT",
-    "stars": 8
+    "lastCommit": "2024-03-11T03:53:34Z"
   },
   {
     "name": "MMM-Stock",
@@ -1420,11 +1443,11 @@
     "maintainerURL": "https://github.com/hakanmhmd",
     "category": "Finance",
     "issues": [],
+    "stars": 17,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2018-04-13T20:33:47Z",
-    "license": "MIT",
-    "stars": 17
+    "lastCommit": "2018-04-13T20:33:47Z"
   },
   {
     "name": "MMM-stocks",
@@ -1435,10 +1458,10 @@
     "maintainerURL": "https://github.com/elaniobro",
     "category": "Finance",
     "issues": [],
+    "stars": 6,
     "hasGithubIssues": false,
     "isArchived": false,
-    "lastCommit": "2019-07-23T02:37:45Z",
-    "stars": 6
+    "lastCommit": "2019-07-23T02:37:45Z"
   },
   {
     "name": "mmm-uah-currency",
@@ -1449,11 +1472,11 @@
     "maintainerURL": "https://github.com/wzooff",
     "category": "Finance",
     "issues": [],
+    "stars": 4,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2021-03-03T13:10:22Z",
-    "license": "MIT",
-    "stars": 4
+    "lastCommit": "2021-03-03T13:10:22Z"
   },
   {
     "name": "MMM-YNAB",
@@ -1464,10 +1487,10 @@
     "maintainerURL": "https://github.com/thesoftwarejedi",
     "category": "Finance",
     "issues": [],
+    "stars": 6,
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2022-01-21T03:39:30Z",
-    "stars": 6
+    "lastCommit": "2022-01-21T03:39:30Z"
   },
   {
     "name": "MMM-AddressBook",
@@ -1478,11 +1501,11 @@
     "maintainerURL": "https://github.com/Unclearogre",
     "category": "News / Information",
     "issues": [],
+    "stars": 0,
+    "license": "GPL-3.0",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-08-07T16:26:17Z",
-    "license": "GPL-3.0",
-    "stars": 0
+    "lastCommit": "2025-08-07T16:26:17Z"
   },
   {
     "name": "MMM-affluences",
@@ -1493,11 +1516,11 @@
     "maintainerURL": "https://github.com/kahllenny",
     "category": "News / Information",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-05-18T10:40:33Z",
-    "license": "MIT",
-    "stars": 0
+    "lastCommit": "2025-05-18T10:40:33Z"
   },
   {
     "name": "MMM-air-raid-monitor-ua",
@@ -1508,10 +1531,10 @@
     "maintainerURL": "https://github.com/PavlenkoM",
     "category": "News / Information",
     "issues": [],
+    "stars": 7,
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2022-10-11T16:29:43Z",
-    "stars": 7
+    "lastCommit": "2022-10-11T16:29:43Z"
   },
   {
     "name": "MMM-anotherNewsFeed",
@@ -1522,11 +1545,11 @@
     "maintainerURL": "https://github.com/MMRIZE",
     "category": "News / Information",
     "issues": [],
+    "stars": 2,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-10-18T23:57:13Z",
-    "license": "MIT",
-    "stars": 2
+    "lastCommit": "2025-10-18T23:57:13Z"
   },
   {
     "name": "MMM-Blitzer",
@@ -1537,11 +1560,11 @@
     "maintainerURL": "https://github.com/yourdawi",
     "category": "News / Information",
     "issues": [],
+    "stars": 3,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-01-26T21:36:23Z",
-    "license": "MIT",
-    "stars": 3
+    "lastCommit": "2025-01-26T21:36:23Z"
   },
   {
     "name": "MMM-CalendarTodayTomorrow",
@@ -1552,10 +1575,11 @@
     "maintainerURL": "https://github.com/qunu",
     "category": "News / Information",
     "issues": [],
+    "stars": 1,
+    "license": null,
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2022-07-23T21:22:57Z",
-    "stars": 1
+    "lastCommit": "2022-07-23T21:22:57Z"
   },
   {
     "name": "MMM-CrisisInformationSweden",
@@ -1566,11 +1590,11 @@
     "maintainerURL": "https://github.com/Pejjo",
     "category": "News / Information",
     "issues": [],
+    "stars": 1,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2024-10-16T18:27:33Z",
-    "license": "MIT",
-    "stars": 1
+    "lastCommit": "2024-10-16T18:27:33Z"
   },
   {
     "name": "MMM-CustomTable",
@@ -1581,11 +1605,11 @@
     "maintainerURL": "https://github.com/Unclearogre",
     "category": "News / Information",
     "issues": [],
+    "stars": 0,
+    "license": "GPL-3.0",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-08-06T21:38:46Z",
-    "license": "GPL-3.0",
-    "stars": 0
+    "lastCommit": "2025-08-06T21:38:46Z"
   },
   {
     "name": "MMM-CyberSecurityNews",
@@ -1596,11 +1620,11 @@
     "maintainerURL": "https://github.com/gueguet",
     "category": "News / Information",
     "issues": [],
+    "stars": 10,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2021-02-23T19:07:38Z",
-    "license": "MIT",
-    "stars": 10
+    "lastCommit": "2021-02-23T19:07:38Z"
   },
   {
     "name": "MMM-DailyStoic",
@@ -1611,11 +1635,11 @@
     "maintainerURL": "https://github.com/SmolinskiP",
     "category": "News / Information",
     "issues": [],
+    "stars": 1,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-05-15T12:20:46Z",
-    "license": "MIT",
-    "stars": 1
+    "lastCommit": "2025-05-15T12:20:46Z"
   },
   {
     "name": "MMM-DogBrew",
@@ -1626,10 +1650,11 @@
     "maintainerURL": "https://github.com/phpwun",
     "category": "News / Information",
     "issues": [],
+    "stars": 0,
+    "license": null,
     "hasGithubIssues": false,
     "isArchived": false,
-    "lastCommit": "2024-07-01T17:21:21Z",
-    "stars": 0
+    "lastCommit": "2024-07-01T17:21:21Z"
   },
   {
     "name": "MMM-EarthquakeAlerts",
@@ -1640,11 +1665,11 @@
     "maintainerURL": "https://github.com/dathbe",
     "category": "News / Information",
     "issues": [],
+    "stars": 1,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-07-31T17:41:24Z",
-    "license": "MIT",
-    "stars": 1
+    "lastCommit": "2025-07-31T17:41:24Z"
   },
   {
     "name": "MMM-EarthquakeMonitor",
@@ -1655,11 +1680,11 @@
     "maintainerURL": "https://github.com/rcollie",
     "category": "News / Information",
     "issues": [],
+    "stars": 1,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2023-12-15T06:16:26Z",
-    "license": "MIT",
-    "stars": 1
+    "lastCommit": "2023-12-15T06:16:26Z"
   },
   {
     "name": "MMM-Ecosia-Tree-Counter",
@@ -1670,11 +1695,11 @@
     "maintainerURL": "https://github.com/rehne",
     "category": "News / Information",
     "issues": [],
+    "stars": 2,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2020-02-05T21:55:53Z",
-    "license": "MIT",
-    "stars": 2
+    "lastCommit": "2020-02-05T21:55:53Z"
   },
   {
     "name": "MMM-Ecowatt",
@@ -1685,11 +1710,11 @@
     "maintainerURL": "https://github.com/tttooommm56",
     "category": "News / Information",
     "issues": [],
+    "stars": 2,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2024-01-02T17:38:42Z",
-    "license": "MIT",
-    "stars": 2
+    "lastCommit": "2024-01-02T17:38:42Z"
   },
   {
     "name": "MMM-Ethos",
@@ -1700,11 +1725,11 @@
     "maintainerURL": "https://github.com/Helpi90",
     "category": "News / Information",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2020-09-10T11:37:41Z",
-    "license": "MIT",
-    "stars": 0
+    "lastCommit": "2020-09-10T11:37:41Z"
   },
   {
     "name": "MMM-Flatastic",
@@ -1715,11 +1740,11 @@
     "maintainerURL": "https://github.com/joschi27",
     "category": "News / Information",
     "issues": [],
+    "stars": 7,
+    "license": "MIT",
     "hasGithubIssues": true,
     "isArchived": false,
-    "lastCommit": "2025-08-02T09:55:05Z",
-    "license": "MIT",
-    "stars": 7
+    "lastCommit": "2025-08-02T09:55:05Z"
   },
   {
     "name": "MMM-FrenchHoroscope",
@@ -1735,6 +1760,18 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2023-05-29T17:51:24+02:00"
+  },
+  {
+    "name": "MMM-FoodTrucks",
+    "url": "https://github.com/st3v0rr/MMM-FoodTrucks",
+    "id": "st3v0rr/MMM-FoodTrucks",
+    "description": "Integrates the [Craftplaces API](https://api.craftplaces.com) to show Foodtrucks in a surrounding area.",
+    "maintainer": "st3v0rr",
+    "maintainerURL": "https://github.com/st3v0rr",
+    "category": "News / Information",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-GoogleCalendar",
@@ -1810,6 +1847,18 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2023-05-17T09:56:18+02:00"
+  },
+  {
+    "name": "MMM-Kermis",
+    "url": "https://github.com/htilburgs/MMM-Kermis",
+    "id": "htilburgs/MMM-Kermis",
+    "description": "Displays upcoming Carnivals (Kermissen), adding through a Webinterface (only Dutch version).",
+    "maintainer": "HTilburgs",
+    "maintainerURL": "https://github.com/htilburgs",
+    "category": "News / Information",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-LeagueOfLegends",
@@ -1906,7 +1955,7 @@
     "url": "https://github.com/jalibu/MMM-NINA",
     "id": "jalibu/MMM-NINA",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
-    "maintainer": "Jalibu",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/jalibu",
     "category": "News / Information",
     "issues": [],
@@ -2052,6 +2101,18 @@
     "lastCommit": "2023-01-07T20:37:02+01:00"
   },
   {
+    "name": "MMM-vcf-Birthdays",
+    "url": "https://github.com/Falconnetz/MMM-vcf-Birthdays",
+    "id": "Falconnetz/MMM-vcf-Birthdays",
+    "description": "Displays a birthday list generated from a .vcf contact file.",
+    "maintainer": "Falconnetz",
+    "maintainerURL": "https://github.com/Falconnetz",
+    "category": "News / Information",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
+  },
+  {
     "name": "MMM-WeeklySchedule",
     "url": "https://github.com/pinsdorf/MMM-WeeklySchedule",
     "id": "pinsdorf/MMM-WeeklySchedule",
@@ -2110,21 +2171,6 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2025-09-08T08:37:57+02:00"
-  },
-  {
-    "name": "MMM-AC-aseag",
-    "url": "https://github.com/j-hiller/MMM-AC-aseag",
-    "id": "j-hiller/MMM-AC-aseag",
-    "description": "Displays departures for ASEAG busses in Aachen, Germany.",
-    "maintainer": "j-hiller",
-    "maintainerURL": "https://github.com/j-hiller",
-    "category": "Transport / Travel",
-    "issues": [],
-    "stars": 2,
-    "license": "MIT",
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2022-07-14T23:06:51+02:00"
   },
   {
     "name": "MMM-AtbSanntid",
@@ -2757,6 +2803,18 @@
     "lastCommit": "2024-03-10T12:37:44+01:00"
   },
   {
+    "name": "MMM-Fuel-NSW",
+    "url": "https://github.com/bughaver/MMM-Fuel-NSW",
+    "id": "bughaver/MMM-Fuel-NSW",
+    "description": "Get real-time fuel prices from over 800 NSW service stations.",
+    "maintainer": "bughaver",
+    "maintainerURL": "https://github.com/bughaver",
+    "category": "Transport / Travel",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
+  },
+  {
     "name": "MMM-Futar",
     "url": "https://github.com/balassy/MMM-Futar",
     "id": "balassy/MMM-Futar",
@@ -3175,21 +3233,6 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2025-09-14T01:17:46-04:00"
-  },
-  {
-    "name": "MMM-MercedesMe",
-    "url": "https://github.com/ashishtank/MMM-MercedesMe",
-    "id": "ashishtank/MMM-MercedesMe",
-    "description": "Displays EV/Fuel status and Range of Mercedes cars.",
-    "maintainer": "ashishtank",
-    "maintainerURL": "https://github.com/ashishtank",
-    "category": "Transport / Travel",
-    "issues": [],
-    "stars": 3,
-    "license": "MIT",
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2022-12-06T18:19:05+05:30"
   },
   {
     "name": "mmm-miami-transit",
@@ -3811,7 +3854,7 @@
     "url": "https://github.com/jalibu/MMM-RNV",
     "id": "jalibu/MMM-RNV",
     "description": "A departure monitor for stations within the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
-    "maintainer": "jalibu",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/jalibu",
     "category": "Transport / Travel",
     "issues": [],
@@ -4632,6 +4675,18 @@
     "lastCommit": "2019-09-22T20:44:11-05:00"
   },
   {
+    "name": "MMM-Assistant",
+    "url": "https://github.com/rahil234/MMM-Assistant",
+    "id": "rahil234/MMM-Assistant",
+    "description": "Modular, offline-first voice assistant for MagicMirror² processes the user input using AI running locally or cloud.",
+    "maintainer": "rahil234",
+    "maintainerURL": "https://github.com/rahil234",
+    "category": "Voice Control",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
+  },
+  {
     "name": "MMM-GoogleTTS",
     "url": "https://github.com/MMRIZE/MMM-GoogleTTS",
     "id": "MMRIZE/MMM-GoogleTTS",
@@ -5346,7 +5401,7 @@
     "category": "Weather",
     "issues": [],
     "stars": 0,
-    "license": null,
+    "license": "ISC",
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2025-12-13T14:27:56+01:00"
@@ -5971,7 +6026,7 @@
     "url": "https://github.com/jalibu/MMM-RAIN-MAP",
     "id": "jalibu/MMM-RAIN-MAP",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
-    "maintainer": "Jalibu",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/jalibu",
     "category": "Weather",
     "issues": [],
@@ -6072,6 +6127,18 @@
     "lastCommit": "2025-08-31T14:43:40-07:00"
   },
   {
+    "name": "MMM-SevereWeatherAlerts",
+    "url": "https://github.com/syntosys-101/MMM-SevereWeatherAlerts",
+    "id": "syntosys-101/MMM-SevereWeatherAlerts",
+    "description": "Displays forecast for today and 3 days with added severe weather warnings.",
+    "maintainer": "syntosys-101",
+    "maintainerURL": "https://github.com/syntosys-101",
+    "category": "Weather",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
+  },
+  {
     "name": "MMM-SnowDay",
     "url": "https://github.com/matthew-burley/MMM-SnowDay",
     "id": "matthew-burley/MMM-SnowDay",
@@ -6081,7 +6148,7 @@
     "category": "Weather",
     "issues": [],
     "stars": 0,
-    "license": null,
+    "license": "MIT",
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2025-12-13T14:27:56+01:00"
@@ -6160,6 +6227,18 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2024-08-21T13:31:17+02:00"
+  },
+  {
+    "name": "MMM-TemperatureRadar",
+    "url": "https://github.com/sanghviharshit/MMM-TemperatureRadar",
+    "id": "sanghviharshit/MMM-TemperatureRadar",
+    "description": "Displays temperature readings from multiple rooms in a radar chart. Integrates with Home Assistant to show real-time temperature data.",
+    "maintainer": "sanghviharshit",
+    "maintainerURL": "https://github.com/sanghviharshit",
+    "category": "Weather",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-UKMOWeatherWarnings",
@@ -6955,6 +7034,18 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2024-09-06T23:57:40+02:00"
+  },
+  {
+    "name": "MMM-Cricket-Live-Score",
+    "url": "https://github.com/souravj96/MMM-Cricket-Live-Score",
+    "id": "souravj96/MMM-Cricket-Live-Score",
+    "description": "Display live cricket scores with team logos in a beautiful scoreboard format using Cricbuzz RapidAPI.",
+    "maintainer": "souravj96",
+    "maintainerURL": "https://github.com/souravj96",
+    "category": "Sports",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-euro2024",
@@ -7846,7 +7937,7 @@
     "url": "https://github.com/jalibu/MMM-BoschSmartHome",
     "id": "jalibu/MMM-BoschSmartHome",
     "description": "A client interface for the Bosch Smart Home System. Supports rooms, Window/Door contacts, Room Climate Controls, Thermostats, Twinguards, Visualization of Temperature, Humidity and Purity, Bosch Home Connect Dishwashers, Philips Hue Bridge.",
-    "maintainer": "Jalibu",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/jalibu",
     "category": "Utility / IoT / 3rd Party / Integration",
     "issues": [],
@@ -7981,7 +8072,7 @@
     "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExt2",
     "id": "MMM-CalendarExt2/MMM-CalendarExt2",
     "description": "Extended calendar with 10+ view types (agenda, timeline, upcoming, current events), attendee display, and extensive customization options.",
-    "maintainer": "klaernie",
+    "maintainer": "klaernie & KristjanESPERANTO",
     "maintainerURL": "https://github.com/MMM-CalendarExt2",
     "category": "Utility / IoT / 3rd Party / Integration",
     "issues": [],
@@ -8965,6 +9056,18 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2018-03-04T20:26:11+01:00"
+  },
+  {
+    "name": "MMM-GeminiWallpaper",
+    "url": "https://github.com/vigc0/MMM-GeminiWallpaper",
+    "id": "vigc0/MMM-GeminiWallpaper",
+    "description": "Automatically generates unique, photorealistic sports-themed wallpapers using Google Gemini AI (Model 2.5 Flash Image).",
+    "maintainer": "vigc0",
+    "maintainerURL": "https://github.com/vigc0",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-GetShellScript",
@@ -10066,7 +10169,7 @@
     "url": "https://github.com/shbatm/MMM-KeyBindings",
     "id": "shbatm/MMM-KeyBindings",
     "description": "Getting Bluetooth remote control and keyboard inputs.",
-    "maintainer": "shbatm",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/shbatm",
     "category": "Utility / IoT / 3rd Party / Integration",
     "issues": [],
@@ -10921,7 +11024,7 @@
     "url": "https://github.com/htilburgs/MMM-MyMonthlyCalendar",
     "id": "htilburgs/MMM-MyMonthlyCalendar",
     "description": "Display a compact monthly calendar view.",
-    "maintainer": "htilburgs",
+    "maintainer": "HTilburgs",
     "maintainerURL": "https://github.com/htilburgs",
     "category": "Utility / IoT / 3rd Party / Integration",
     "issues": [],
@@ -10930,6 +11033,18 @@
     "hasGithubIssues": false,
     "isArchived": null,
     "lastCommit": "2023-06-21T14:15:00+02:00"
+  },
+  {
+    "name": "MMM-MyTasklist",
+    "url": "https://github.com/htilburgs/MMM-MyTasklist",
+    "id": "htilburgs/MMM-MyTasklist",
+    "description": "Simple task list, adding tasks through webpage.",
+    "maintainer": "HTilburgs",
+    "maintainerURL": "https://github.com/htilburgs",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-MySenseHat",
@@ -10945,6 +11060,18 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2024-03-29T13:42:56+03:00"
+  },
+  {
+    "name": "MMM-myStrom",
+    "url": "https://github.com/ch1ledbe/MMM-myStrom",
+    "id": "ch1ledbe/MMM-myStrom",
+    "description": "Monitoring [myStrom](https://mystrom.ch/) smart home devices (Switch, Bulb, PIR).",
+    "maintainer": "Bernie",
+    "maintainerURL": "https://github.com/ch1ledbe",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-MysqlData",
@@ -12001,7 +12128,7 @@
     "url": "https://github.com/shbatm/MMM-RTSPStream",
     "id": "shbatm/MMM-RTSPStream",
     "description": "Show RTSP video stream(s) from one or more security cameras.",
-    "maintainer": "shbatm",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "https://github.com/shbatm",
     "category": "Utility / IoT / 3rd Party / Integration",
     "issues": [],
@@ -14938,11 +15065,11 @@
   },
   {
     "name": "MMM-germanwordclock",
-    "url": "https://github.com/alexBeuth/MMM-germanwordclock",
-    "id": "alexBeuth/MMM-germanwordclock",
+    "url": "https://github.com/princemaxwell/MMM-germanwordclock",
+    "id": "princemaxwell/MMM-germanwordclock",
     "description": "Displays a Word Clock written in German.",
-    "maintainer": "alexBeuth",
-    "maintainerURL": "https://github.com/alexBeuth",
+    "maintainer": "princemaxwell",
+    "maintainerURL": "https://github.com/princemaxwell",
     "category": "Entertainment / Misc",
     "issues": [],
     "hasGithubIssues": null,
@@ -15573,7 +15700,7 @@
     "category": "Entertainment / Misc",
     "issues": [],
     "stars": 0,
-    "license": null,
+    "license": "MIT",
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2025-12-13T14:27:56+01:00"
@@ -15607,6 +15734,18 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2025-07-16T20:57:58-04:00"
+  },
+  {
+    "name": "MMM-MatrixRain",
+    "url": "https://github.com/syntosys-101/MMM-MatrixRain",
+    "id": "syntosys-101/MMM-MatrixRain",
+    "description": "Displays a fullscreen Matrix-style digital rain animation as a background layer behind all your other modules.",
+    "maintainer": "syntosys-101",
+    "maintainerURL": "https://github.com/syntosys-101",
+    "category": "Entertainment / Misc",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-MD",
@@ -16299,21 +16438,6 @@
     "lastCommit": "2022-09-05T13:39:22+01:00"
   },
   {
-    "name": "MMM-Podcast",
-    "url": "https://github.com/ptrbld/MMM-Podcast",
-    "id": "ptrbld/MMM-Podcast",
-    "description": "This module can show/hide a video downloaded from a Podcast or a private server (needs static file path). At the moment you can only display the video by clicking a button (use the MMM-Button module).",
-    "maintainer": "PtrBld",
-    "maintainerURL": "https://github.com/ptrbld",
-    "category": "Entertainment / Misc",
-    "issues": [],
-    "stars": 6,
-    "license": "MIT",
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2019-12-19T16:25:20+01:00"
-  },
-  {
     "name": "MMM-PopulationClock",
     "url": "https://github.com/mykle1/MMM-PopulationClock",
     "id": "mykle1/MMM-PopulationClock",
@@ -16907,11 +17031,8 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "category": "Entertainment / Misc",
     "issues": [],
-    "stars": 0,
-    "license": "MIT",
     "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2025-11-12T12:27:44-05:00"
+    "isArchived": null
   },
   {
     "name": "MMM-TautulliActivity",
@@ -16989,21 +17110,6 @@
     "lastCommit": "2022-10-27T17:07:29+09:00"
   },
   {
-    "name": "MMM-tns",
-    "url": "https://github.com/JulienPeloton/MMM-tns",
-    "id": "JulienPeloton/MMM-tns",
-    "description": "Display latest new astronomical transients from [TNS](https://wis-tns.weizmann.ac.il) such as supernova candidates.",
-    "maintainer": "JulienPeloton",
-    "maintainerURL": "https://github.com/JulienPeloton",
-    "category": "Entertainment / Misc",
-    "issues": [],
-    "stars": 1,
-    "license": "MIT",
-    "hasGithubIssues": null,
-    "isArchived": null,
-    "lastCommit": "2019-12-31T15:43:29+01:00"
-  },
-  {
     "name": "MMM-Trakt",
     "url": "https://github.com/Kiina/MMM-trakt",
     "id": "Kiina/MMM-trakt",
@@ -17062,6 +17168,18 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2023-01-11T12:46:29-05:00"
+  },
+  {
+    "name": "MMM-TwitchStats",
+    "url": "https://github.com/Didi-Tools/MMM-TwitchStats",
+    "id": "Didi-Tools/MMM-TwitchStats",
+    "description": "Get real-time Follower, Subscriber and Viewers for your own Twitch Channel.",
+    "maintainer": "DidiLaRaye",
+    "maintainerURL": "https://github.com/Didi-Tools",
+    "category": "Entertainment / Misc",
+    "issues": [],
+    "hasGithubIssues": null,
+    "isArchived": null
   },
   {
     "name": "MMM-TwitterTrendsByPlace",
@@ -17992,6 +18110,21 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2018-07-08T01:07:24+03:00"
+  },
+  {
+    "name": "MMM-AC-aseag",
+    "url": "https://github.com/j-hiller/MMM-AC-aseag",
+    "id": "j-hiller/MMM-AC-aseag",
+    "description": "Displays departures for ASEAG busses in Aachen, Germany.",
+    "maintainer": "j-hiller",
+    "maintainerURL": "https://github.com/j-hiller",
+    "category": "Outdated Modules",
+    "issues": [],
+    "stars": 2,
+    "license": "MIT",
+    "hasGithubIssues": null,
+    "isArchived": null,
+    "lastCommit": "2022-07-14T23:06:51+02:00"
   },
   {
     "name": "MMM-alertRsensoralerts",
@@ -19029,6 +19162,21 @@
     "lastCommit": "2019-01-10T19:33:27-05:00"
   },
   {
+    "name": "MMM-MercedesMe",
+    "url": "https://github.com/ashishtank/MMM-MercedesMe",
+    "id": "ashishtank/MMM-MercedesMe",
+    "description": "Displays EV/Fuel status and Range of Mercedes cars.",
+    "maintainer": "ashishtank",
+    "maintainerURL": "https://github.com/ashishtank",
+    "category": "Outdated Modules",
+    "issues": [],
+    "stars": 3,
+    "license": "MIT",
+    "hasGithubIssues": null,
+    "isArchived": null,
+    "lastCommit": "2022-12-06T18:19:05+05:30"
+  },
+  {
     "name": "mmm-moon-phases",
     "url": "https://github.com/spectroman/mmm-moon-phases",
     "id": "spectroman/mmm-moon-phases",
@@ -19312,6 +19460,21 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2020-01-30T21:06:10-05:00"
+  },
+  {
+    "name": "MMM-Podcast",
+    "url": "https://github.com/ptrbld/MMM-Podcast",
+    "id": "ptrbld/MMM-Podcast",
+    "description": "This module can show/hide a video downloaded from a Podcast or a private server (needs static file path). At the moment you can only display the video by clicking a button (use the MMM-Button module).",
+    "maintainer": "PtrBld",
+    "maintainerURL": "https://github.com/ptrbld",
+    "category": "Outdated Modules",
+    "issues": [],
+    "stars": 6,
+    "license": "MIT",
+    "hasGithubIssues": null,
+    "isArchived": null,
+    "lastCommit": "2019-12-19T16:25:20+01:00"
   },
   {
     "name": "MMM-Podcast2",
@@ -19702,6 +19865,21 @@
     "hasGithubIssues": null,
     "isArchived": null,
     "lastCommit": "2023-09-21T19:43:32+08:00"
+  },
+  {
+    "name": "MMM-tns",
+    "url": "https://github.com/JulienPeloton/MMM-tns",
+    "id": "JulienPeloton/MMM-tns",
+    "description": "Display latest new astronomical transients from [TNS](https://wis-tns.weizmann.ac.il) such as supernova candidates.",
+    "maintainer": "JulienPeloton",
+    "maintainerURL": "https://github.com/JulienPeloton",
+    "category": "Outdated Modules",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT",
+    "hasGithubIssues": null,
+    "isArchived": null,
+    "lastCommit": "2019-12-31T15:43:29+01:00"
   },
   {
     "name": "magic-mirror-voice",
