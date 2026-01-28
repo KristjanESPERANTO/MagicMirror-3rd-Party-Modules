@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2026-01-26T07:59:04+01:00
+Last update: 2026-01-27T20:57:31+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2026-01-26T07:59:04+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1340   |
+| modules analyzed     |   1341   |
 | maintainers          |    793   |
-| modules with issues  |   1340   |
-| issues               |  14708   |
-| modules at github    |   1327   |
+| modules with issues  |   1341   |
+| issues               |  14710   |
+| modules at github    |   1328   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -108,7 +108,7 @@ Last update: 2026-01-26T07:59:04+01:00
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin   ^5.6.1  →   ^5.7.1
-   - cspell                     ^9.4.0  →   ^9.6.1
+   - cspell                     ^9.4.0  →   ^9.6.2
    - globals                   ^16.5.0  →  ^17.1.0
 
 ### [MMM-Carousel by KristjanESPERANTO](https://github.com/shbatm/MMM-Carousel)
@@ -116,7 +116,7 @@ Last update: 2026-01-26T07:59:04+01:00
 1. Recommendation: 1 GitHub Actions job could potentially use `ubuntu-slim` but may require additional setup. Run `gh slimify --all` in the repository for details.
 2. Information: There are updates for 5 dependencie(s):
    - @stylistic/eslint-plugin   ^5.6.1  →   ^5.7.1
-   - cspell                     ^9.4.0  →   ^9.6.1
+   - cspell                     ^9.4.0  →   ^9.6.2
    - eslint-plugin-jsdoc       ^61.5.0  →  ^62.4.1
    - globals                   ^16.5.0  →  ^17.1.0
    - prettier                   ^3.7.4  →   ^3.8.1
@@ -225,7 +225,7 @@ Last update: 2026-01-26T07:59:04+01:00
    - @eslint/markdown            ^7.4.0  →    ^7.5.1
    - @stylistic/eslint-plugin    ^5.4.0  →    ^5.7.1
    - cheerio                     ^1.1.2  →    ^1.2.0
-   - cspell                      ^9.2.1  →    ^9.6.1
+   - cspell                      ^9.2.1  →    ^9.6.2
    - dayjs                     ^1.11.18  →  ^1.11.19
    - eslint                     ^9.37.0  →   ^9.39.2
    - globals                    ^16.4.0  →   ^17.1.0
@@ -577,7 +577,7 @@ Last update: 2026-01-26T07:59:04+01:00
    - @eslint/json              ^0.13.2  →  ^0.14.0
    - @eslint/markdown           ^7.4.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.4.0  →   ^5.7.1
-   - cspell                     ^9.2.1  →   ^9.6.1
+   - cspell                     ^9.2.1  →   ^9.6.2
    - eslint                    ^9.38.0  →  ^9.39.2
    - globals                   ^16.4.0  →  ^17.1.0
    - lint-staged               ^16.2.4  →  ^16.2.7
@@ -649,21 +649,6 @@ Last update: 2026-01-26T07:59:04+01:00
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
-### [MMM-ProfileSwitcher by toasti007/BigMac1999](https://github.com/BigMac1999/MMM-ProfileSwitcher)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-ProfileSwitcher.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
-
 ### [MMM-ProfileControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-ProfileControl)
 
 1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -721,7 +706,7 @@ Last update: 2026-01-26T07:59:04+01:00
 2. Recommendation: 2 GitHub Actions jobs could potentially use `ubuntu-slim` but may require additional setup. Run `gh slimify --all` in the repository for details.
 3. Information: There are updates for 6 dependencie(s):
    - @stylistic/eslint-plugin    ^5.6.1  →   ^5.7.1
-   - cspell                      ^9.4.0  →   ^9.6.1
+   - cspell                      ^9.4.0  →   ^9.6.2
    - eslint-plugin-jsdoc        ^61.5.0  →  ^62.4.1
    - globals                    ^17.0.0  →  ^17.1.0
    - happy-dom                 ^20.0.11  →  ^20.3.9
@@ -1163,7 +1148,7 @@ Last update: 2026-01-26T07:59:04+01:00
    - eslint-plugin-jsdoc  ^62.0.0  →  ^62.4.1
    - prettier              ^3.7.4  →   ^3.8.1
    - rollup               ^4.55.1  →  ^4.56.0
-   - typescript-eslint    ^8.52.0  →  ^8.53.1
+   - typescript-eslint    ^8.52.0  →  ^8.54.0
    - vitest               ^4.0.16  →  ^4.0.18
    - yahoo-finance2       ^3.11.2  →  ^3.13.0
 2. ESLint issues:
@@ -1733,7 +1718,7 @@ Last update: 2026-01-26T07:59:04+01:00
    - @eslint/css       ^0.13.0  →  ^0.14.1
    - @eslint/js        ^9.37.0  →  ^9.39.2
    - @eslint/markdown   ^7.4.0  →   ^7.5.1
-   - cspell             ^9.2.1  →   ^9.6.1
+   - cspell             ^9.2.1  →   ^9.6.2
    - eslint            ^9.37.0  →  ^9.39.2
    - globals           ^16.4.0  →  ^17.1.0
    - prettier           ^3.6.2  →   ^3.8.1
@@ -1774,7 +1759,7 @@ Last update: 2026-01-26T07:59:04+01:00
    - eslint-plugin-jsdoc  ^61.5.0  →  ^62.4.1
    - prettier              ^3.7.4  →   ^3.8.1
    - rollup               ^4.53.5  →  ^4.56.0
-   - typescript-eslint    ^8.50.0  →  ^8.53.1
+   - typescript-eslint    ^8.50.0  →  ^8.54.0
 
 ### [MMM-NOKElectricityForecast by Andreas Hagman](https://github.com/AndreasHagman/MMM-NOKElectricityForecast)
 
@@ -3468,19 +3453,20 @@ Last update: 2026-01-26T07:59:04+01:00
 
 ### [MMM-PublicTransit by thariq-shanavas](https://github.com/thariq-shanavas/MMM-PublicTransit)
 
-1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
-2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
-3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-6. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+1. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
 1. Recommendation: 1 GitHub Actions job could potentially use `ubuntu-slim` but may require additional setup. Run `gh slimify --all` in the repository for details.
 2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin   ^5.7.0  →   ^5.7.1
-   - cspell                     ^9.6.0  →   ^9.6.1
+   - cspell                     ^9.6.0  →   ^9.6.2
    - globals                   ^17.0.0  →  ^17.1.0
 3. ESLint issues:
    - package.json: Line 27, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
@@ -3489,7 +3475,7 @@ Last update: 2026-01-26T07:59:04+01:00
 
 1. Information: There are updates for 5 dependencie(s):
    - @stylistic/eslint-plugin     ^5.7.0  →   ^5.7.1
-   - cspell                       ^9.6.0  →   ^9.6.1
+   - cspell                       ^9.6.0  →   ^9.6.2
    - eslint-plugin-package-json  ^0.88.1  →  ^0.88.2
    - globals                     ^17.0.0  →  ^17.1.0
    - prettier                     ^3.7.4  →   ^3.8.1
@@ -4622,7 +4608,7 @@ Last update: 2026-01-26T07:59:04+01:00
 
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin   ^5.7.0  →   ^5.7.1
-   - cspell                     ^9.6.0  →   ^9.6.1
+   - cspell                     ^9.6.0  →   ^9.6.2
    - globals                   ^17.0.0  →  ^17.1.0
    - prettier                   ^3.8.0  →   ^3.8.1
 2. ESLint issues:
@@ -5328,6 +5314,15 @@ Last update: 2026-01-26T07:59:04+01:00
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-MyWeatherForecast by HTilburgs](https://github.com/htilburgs/MMM-MyWeatherForecast)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+
 ### [MMM-MyWeather by Martin Kooij](https://github.com/martinkooij/MMM-MyWeather)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
@@ -5462,7 +5457,7 @@ Last update: 2026-01-26T07:59:04+01:00
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
 1. Information: There are updates for 1 dependencie(s):
-   - cspell  ^9.6.0  →  ^9.6.1
+   - cspell  ^9.6.0  →  ^9.6.2
 2. ESLint issues:
    - package.json: Line 22, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
    - package.json: Line 23, Column 5: Invalid contributors: item 1 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
@@ -5678,7 +5673,7 @@ Last update: 2026-01-26T07:59:04+01:00
 1. Information: There are updates for 3 dependencie(s):
    - prettier            ^3.7.4  →   ^3.8.1
    - rollup             ^4.55.1  →  ^4.56.0
-   - typescript-eslint  ^8.52.0  →  ^8.53.1
+   - typescript-eslint  ^8.52.0  →  ^8.54.0
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 13, Column 16870: Expected to return a value in method 'get'. (rule: getter-return)
    - MMM-RAIN-MAP.js: Line 13, Column 17012: 't' is defined but never used. (rule: no-unused-vars)
@@ -6710,25 +6705,20 @@ Last update: 2026-01-26T07:59:04+01:00
 
 ### [MMM-GConnect by td](https://github.com/tderflinger/MMM-GConnect)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `README-es.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README-tr.md`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-8. Deprecated: Found `new Buffer(` in file `tcx-ls`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
-9. Deprecated: Found `fs.F_OK` in file `tcx-ls`: Replace it with `fs.constants.F_OK`.
-10. Deprecated: Found `fs.X_OK` in file `tcx-ls`: Replace it with `fs.constants.X_OK`.
-11. Recommendation: Found `require('http')` in file `tcx-ls`: Replace `http` with the scoped import `node:http`.
-12. Deprecated: Found `new Buffer(` in file `tcx-ls-arm`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
-13. Deprecated: Found `fs.F_OK` in file `tcx-ls-arm`: Replace it with `fs.constants.F_OK`.
-14. Deprecated: Found `fs.X_OK` in file `tcx-ls-arm`: Replace it with `fs.constants.X_OK`.
-15. Recommendation: Found `require('http')` in file `tcx-ls-arm`: Replace `http` with the scoped import `node:http`.
-16. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-18. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-19. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+2. Typo: Found `Magic Mirror` in file `README-es.md`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `README-tr.md`: Replace it with `MagicMirror²`.
+4. Deprecated: Found `new Buffer(` in file `tcx-ls`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
+5. Deprecated: Found `fs.F_OK` in file `tcx-ls`: Replace it with `fs.constants.F_OK`.
+6. Deprecated: Found `fs.X_OK` in file `tcx-ls`: Replace it with `fs.constants.X_OK`.
+7. Recommendation: Found `require('http')` in file `tcx-ls`: Replace `http` with the scoped import `node:http`.
+8. Deprecated: Found `new Buffer(` in file `tcx-ls-arm`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
+9. Deprecated: Found `fs.F_OK` in file `tcx-ls-arm`: Replace it with `fs.constants.F_OK`.
+10. Deprecated: Found `fs.X_OK` in file `tcx-ls-arm`: Replace it with `fs.constants.X_OK`.
+11. Recommendation: Found `require('http')` in file `tcx-ls-arm`: Replace `http` with the scoped import `node:http`.
+12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-GHIN by C-Deck](https://github.com/C-Deck/MMM-GHIN)
 
@@ -6767,6 +6757,21 @@ Last update: 2026-01-26T07:59:04+01:00
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-IMSA by skylinrcr01](https://github.com/skylinrcr01/MMM-IMSA)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: The README's install section should include a copyable fenced command block (for example ```bash ...). Please add one so the module can be installed with a single copy/paste ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+7. Recommendation: The README seems not to have clone instructions.
+8. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
@@ -7616,9 +7621,8 @@ Last update: 2026-01-26T07:59:04+01:00
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
-1. Information: There are updates for 2 dependencie(s):
-   - @stylistic/eslint-plugin   ^5.6.1  →   ^5.7.1
-   - globals                   ^17.0.0  →  ^17.1.0
+1. Information: There are updates for 1 dependencie(s):
+   - globals  ^17.1.0  →  ^17.2.0
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
 
@@ -9531,7 +9535,7 @@ fs.readdirSync(fp).forEach((file) => {
 1. Recommendation: 1 GitHub Actions job could potentially use `ubuntu-slim` but may require additional setup. Run `gh slimify --all` in the repository for details.
 2. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin   ^5.6.1  →   ^5.7.1
-   - cspell                     ^9.4.0  →   ^9.6.1
+   - cspell                     ^9.4.0  →   ^9.6.2
    - globals                   ^17.0.0  →  ^17.1.0
    - prettier                   ^3.7.4  →   ^3.8.1
 
@@ -13439,7 +13443,7 @@ async function searchTitle(title){
 1. Recommendation: 1 GitHub Actions job could potentially use `ubuntu-slim` but may require additional setup. Run `gh slimify --all` in the repository for details.
 2. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin   ^5.6.1  →   ^5.7.1
-   - cspell                     ^9.4.0  →   ^9.6.1
+   - cspell                     ^9.4.0  →   ^9.6.2
    - globals                   ^16.5.0  →  ^17.1.0
    - prettier                   ^3.7.4  →   ^3.8.1
 3. ESLint issues:
@@ -13831,7 +13835,7 @@ async function searchTitle(title){
    - @eslint/json              ^0.13.2  →  ^0.14.0
    - @eslint/markdown           ^7.2.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.3.1  →   ^5.7.1
-   - cspell                     ^9.2.1  →   ^9.6.1
+   - cspell                     ^9.2.1  →   ^9.6.2
    - eslint                    ^9.34.0  →  ^9.39.2
    - globals                   ^16.3.0  →  ^17.1.0
    - lint-staged               ^16.1.6  →  ^16.2.7
@@ -14370,7 +14374,7 @@ async function searchTitle(title){
    - @eslint/json              ^0.13.2  →  ^0.14.0
    - @eslint/markdown           ^7.5.0  →   ^7.5.1
    - @stylistic/eslint-plugin   ^5.5.0  →   ^5.7.1
-   - cspell                     ^9.2.2  →   ^9.6.1
+   - cspell                     ^9.2.2  →   ^9.6.2
    - eslint                    ^9.38.0  →  ^9.39.2
    - globals                   ^16.4.0  →  ^17.1.0
    - lint-staged               ^16.2.6  →  ^16.2.7
@@ -15353,7 +15357,7 @@ async function searchTitle(title){
 ### [MMM-Photoprism2 by HeikoGr](https://github.com/HeikoGr/MMM-Photoprism2)
 
 1. Information: There are updates for 4 dependencie(s):
-   - cspell     ^9.6.0  →   ^9.6.1
+   - cspell     ^9.6.0  →   ^9.6.2
    - globals   ^17.0.0  →  ^17.1.0
    - prettier   ^3.8.0  →   ^3.8.1
    - undici    ^7.18.2  →  ^7.19.1
@@ -16595,7 +16599,7 @@ async function searchTitle(title){
 
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin   ^5.7.0  →   ^5.7.1
-   - cspell                     ^9.6.0  →   ^9.6.1
+   - cspell                     ^9.6.0  →   ^9.6.2
    - globals                   ^17.0.0  →  ^17.1.0
    - prettier                   ^3.8.0  →   ^3.8.1
 
@@ -16972,9 +16976,8 @@ async function searchTitle(title){
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
 1. Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).
-2. Information: There are updates for 2 dependencie(s):
-   - cspell   ^9.6.0  →   ^9.6.1
-   - otplib  ^13.1.1  →  ^13.2.1
+2. Information: There are updates for 1 dependencie(s):
+   - cspell  ^9.6.1  →  ^9.6.2
 
 ### [MMM-WordGenius by drventure](https://github.com/drventure/MMM-WordGenius)
 

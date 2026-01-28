@@ -1,6 +1,6 @@
 {
-  "issueCounter": 14708,
-  "lastUpdate": "2026-01-26T07:59:04+01:00",
+  "issueCounter": 14710,
+  "lastUpdate": "2026-01-27T20:57:31+01:00",
   "maintainer": {
     "0lek": 1,
     "0m4r": 3,
@@ -98,7 +98,7 @@
     "GaryLChew": 1,
     "Gismo150": 1,
     "Grena": 8,
-    "HTilburgs": 8,
+    "HTilburgs": 9,
     "Hacker Home MTV": 1,
     "Harish": 1,
     "Hcreak": 1,
@@ -699,6 +699,7 @@
     "skastenholz": 1,
     "skruglov2023": 1,
     "skuethe": 3,
+    "skylinrcr01": 1,
     "slugmuffin": 1,
     "smiche": 1,
     "souravj96": 1,
@@ -742,7 +743,6 @@
     "timophey": 1,
     "tjmnmk": 1,
     "tkrywit": 1,
-    "toasti007/BigMac1999": 1,
     "tomgroenwoldt": 1,
     "tomoki13": 1,
     "tonymorris-MM": 1,
@@ -796,12 +796,12 @@
     "zuo000": 1,
     "zzflops": 1
   },
-  "moduleCounter": 1340,
-  "modulesWithImageCounter": 954,
-  "modulesWithIssuesCounter": 1340,
+  "moduleCounter": 1341,
+  "modulesWithImageCounter": 958,
+  "modulesWithIssuesCounter": 1341,
   "repositoryHoster": {
     "bitbucket": 1,
-    "github": 1327,
+    "github": 1328,
     "gitlab": 12
   }
 }
