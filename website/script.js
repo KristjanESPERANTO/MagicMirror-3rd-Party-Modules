@@ -133,7 +133,7 @@ function createCard(moduleData) {
   }
 
   if (moduleData.issues) {
-    const url = `result.html#${moduleData.name}-by-${moduleData.maintainer}`;
+    const url = `result.html#${moduleData.name}-by-${moduleData.maintainer.replaceAll(" ", "-").replaceAll("&", "").replaceAll("/", "")}`;
     card.querySelector(".info .container.issues .text").href = url;
   }
   else {

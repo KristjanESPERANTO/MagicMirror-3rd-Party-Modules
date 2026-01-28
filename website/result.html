@@ -33,7 +33,10 @@
       function addHeadingAnchors() {
         const headings = document.querySelectorAll("h1, h2, h3, h4");
         headings.forEach((heading) => {
-          const anchorId = heading.textContent.replaceAll(" ", "-");
+          const anchorId = heading.textContent
+            .replaceAll(" ", "-")
+            .replaceAll("&", "")
+            .replaceAll("/", "");
           const anchor = document.createElement("a");
           anchor.id = anchorId;
           anchor.href = "#" + anchorId;
