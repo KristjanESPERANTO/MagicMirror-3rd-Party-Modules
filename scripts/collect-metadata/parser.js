@@ -60,6 +60,8 @@ export function parseModuleList(markdown) {
           const name = repoMatch[1].trim(); // Use the link text as the name initially
           const maintainerCell = parts[2] || "";
           const description = parts[3] || "";
+          // Optional 5th column for outdated information (for "Outdated Modules" category)
+          const outdatedInfo = parts[4] ? parts[4].trim() : "";
 
           let maintainer = maintainerCell;
 
@@ -80,7 +82,7 @@ export function parseModuleList(markdown) {
             const id = getRepositoryId(url) || name.replace(/\s+/gu, "-");
             const maintainerURL = getMaintainerURL(url);
 
-            modules.push({
+            const moduleEntry = {
               name,
               url,
               id,
@@ -89,7 +91,14 @@ export function parseModuleList(markdown) {
               maintainerURL,
               category,
               issues: []
-            });
+            };
+
+            // Add outdated field if present and non-empty
+            if (outdatedInfo && outdatedInfo.length > 0) {
+              moduleEntry.outdated = outdatedInfo;
+            }
+
+            modules.push(moduleEntry);
           }
         }
       }

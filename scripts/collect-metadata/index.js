@@ -366,6 +366,14 @@ async function main() {
     const { modules } = parseModuleList(markdown);
     logger.info(`Parsed ${modules.length} modules from Wiki.`);
 
+    // Ensure modules in "Outdated Modules" category have an outdated field
+    for (const module of modules) {
+      if (module.category === "Outdated Modules" && !module.outdated) {
+        // If no specific reason is provided, add a generic message
+        module.outdated = "This module is marked as outdated in the official module list.";
+      }
+    }
+
     const previousModulesMap = loadPreviousModules();
 
     // Load cache to enable pruning

@@ -748,29 +748,29 @@ async function checkWorkflowOptimization({ moduleDir, issues, config }) {
 
     // Parse output to check if there are any eligible jobs
     const lines = stdout.split("\n");
-    
+
     // Count safe and attention jobs separately
     const safeMatch = lines.find((line) => line.includes("✅") && line.includes("can be safely migrated"));
     const attentionMatch = lines.find((line) => line.includes("⚠️") && line.includes("can be migrated but require attention"));
-    
+
     let safeCount = 0;
     let attentionCount = 0;
-    
+
     if (safeMatch) {
       const match = safeMatch.match(/(\d+)\s+job\(s\)\s+can be safely migrated/);
       if (match) safeCount = parseInt(match[1], 10);
     }
-    
+
     if (attentionMatch) {
       const match = attentionMatch.match(/(\d+)\s+job\(s\)\s+can be migrated but require attention/);
       if (match) attentionCount = parseInt(match[1], 10);
     }
-    
+
     const totalEligible = safeCount + attentionCount;
-    
+
     if (totalEligible > 0) {
       let message = "Recommendation: ";
-      
+
       if (safeCount > 0 && attentionCount > 0) {
         const safePlural = safeCount > 1 ? "s" : "";
         const attentionPlural = attentionCount > 1 ? "s" : "";
@@ -782,7 +782,7 @@ async function checkWorkflowOptimization({ moduleDir, issues, config }) {
         const plural = attentionCount > 1 ? "s" : "";
         message += `${attentionCount} GitHub Actions job${plural} could potentially use \`ubuntu-slim\` but may require additional setup.`;
       }
-      
+
       message += " Run \`gh slimify --all\` in the repository for details.";
       addIssue(issues, message);
     }
@@ -1446,17 +1446,19 @@ async function main() {
 
     const repoExists = await pathExists(moduleDir);
     let handledOutdated = false;
+    const isOutdated = module.outdated || module.category === "Outdated Modules";
 
     if (!repoExists) {
       moduleIssues = [
         "Error: It appears that the repository could not be cloned. Check the URL."
       ];
       module.issues = moduleIssues;
-    } else if (module.outdated) {
+    } else if (isOutdated) {
+      // Outdated modules: add heavy weight, skip all checks
       module.defaultSortWeight += 900;
       stats.modulesWithIssuesCounter += 1;
       stats.issueCounter += 1;
-      module.issues = false;
+      module.issues = true;
       handledOutdated = true;
     } else {
       // Try to use cached result for incremental checking
