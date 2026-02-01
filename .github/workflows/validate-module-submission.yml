@@ -30,7 +30,7 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v46
+        uses: tj-actions/changed-files@v47
         with:
           files: |
             module-submissions/pending/**/*.json
@@ -65,7 +65,7 @@ jobs:
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
 
       - name: Generate validation report
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const fs = require('fs');
@@ -125,22 +125,22 @@ jobs:
             report += '\n';
 
             // Overall status
-            const allPassed = results.schema.valid && 
+            const allPassed = results.schema.valid &&
                              results.duplicates.duplicates.length === 0 &&
-                             repo.accessible && 
-                             repo.hasPackageJson && 
-                             repo.hasLicense && 
+                             repo.accessible &&
+                             repo.hasPackageJson &&
+                             repo.hasLicense &&
                              repo.hasReadme;
 
             if (allPassed) {
               report += '---\n\n';
               report += '## ✅ **All Required Checks Passed!**\n\n';
               report += 'This submission meets all requirements and is ready for maintainer review.\n\n';
-              
+
               // Check if auto-merge eligible
               const author = context.payload.pull_request.user.login;
               const isTrusted = false; // TODO: Implement trusted user check
-              
+
               if (isTrusted) {
                 report += '🎉 **Auto-merge eligible** - This user is a trusted contributor.\n';
               } else {
@@ -185,7 +185,7 @@ jobs:
     steps:
       - name: Check if user is in trusted-contributors team
         id: check-trusted
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const author = context.payload.pull_request.user.login;
@@ -197,9 +197,9 @@ jobs:
                 team_slug: 'trusted-contributors',
                 username: author
               });
-              
+
               const isTrusted = teamMembership.data.state === 'active';
-              
+
               if (isTrusted) {
                 // Auto-approve the PR
                 await github.rest.pulls.createReview({
@@ -209,14 +209,14 @@ jobs:
                   event: 'APPROVE',
                   body: '✅ **Auto-approved**\n\nThis submission passed all validation checks and was submitted by a trusted contributor.'
                 });
-                
+
                 await github.rest.issues.addLabels({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: context.issue.number,
                   labels: ['auto-approved', 'trusted-contributor']
                 });
-                
+
                 await github.rest.issues.createComment({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
@@ -232,18 +232,18 @@ jobs:
                   body: '✅ All validation checks passed! This PR is ready for maintainer review.\n\n**Note:** Trusted contributors get auto-approval. Keep up the good work to become a trusted contributor!'
                 });
               }
-              
+
               return isTrusted;
             } catch (error) {
               // User is not in team - this is fine, just needs manual review
               console.log('User is not in trusted-contributors team (this is normal for new contributors)');
-              
+
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
                 body: '✅ All validation checks passed! This PR is ready for maintainer review.'
               });
-              
+
               return false;
             }
