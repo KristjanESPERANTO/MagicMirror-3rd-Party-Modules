@@ -47,7 +47,8 @@
 
         const hash = window.location.hash;
         if (hash) {
-          const target = document.querySelector(hash);
+          const decodedHash = decodeURIComponent(hash);
+          const target = document.querySelector(decodedHash);
           if (target) {
             target.scrollIntoView();
           }
