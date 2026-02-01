@@ -4,6 +4,7 @@
 /modules_temp/*
 /node_modules/*
 .eslintcache
+.husky/*
 .idea
 .vscode/*
 ownModuleList.json
