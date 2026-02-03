@@ -72,9 +72,11 @@ Merge stages 3+4+5 into parallel worker processes. See [worker-pool-design.md](p
 | P7.1 | ✅ Design complete           |
 | P7.2 | ✅ Single-worker prototype   |
 | P7.3 | ✅ Worker pool orchestration |
-| P7.4 | Incremental mode integration |
-| P7.5 | Per-module logging           |
-| P7.6 | Cleanup old stage scripts    |
+| P7.4 | Per-module logging           |
+| P7.5 | Cleanup old stage scripts    |
+| P7.6 | Incremental mode integration |
+
+**Note:** P7.6 (Incremental mode) deferred until after P7.5 (Cleanup). The existing cache logic in `scripts/check-modules/index.ts` continues to work; integrating it into the new worker architecture makes more sense once the old pipeline is removed.
 
 **P7.3 Implementation (Jan 2026):**
 
@@ -150,6 +152,7 @@ Once the 3-phase architecture is complete:
 
 Items to revisit after the streaming architecture is complete:
 
+- **TypeScript migration**: Convert remaining `.js` files to `.ts` with proper type checking (~56 files in `scripts/`). Remove `@ts-nocheck` from existing `.ts` files. Add `tsc --noEmit` to CI pipeline. ([#140](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/pull/140))
 - **Comparison harness utility**: With single TS implementation, consider simplifying to golden file tests
 - **Event-driven architecture**: Replace file-based stage communication with event streams
 - **Containerization**: Run workers in isolated containers for security/reproducibility
