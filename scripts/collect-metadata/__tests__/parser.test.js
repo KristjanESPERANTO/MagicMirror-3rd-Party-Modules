@@ -6,9 +6,7 @@ describe("collect-metadata/parser", () => {
   it("should parse a valid wiki markdown table", () => {
     const markdown = `
 ### Finance
-| Name | Description | Author |
-| --- | --- | --- |
-| [MMM-Finance](https://github.com/user/MMM-Finance) | Stock ticker | [User](https://github.com/user) |
+| [MMM-Finance](https://github.com/user/MMM-Finance) | [User](https://github.com/user) | Stock ticker |
 `;
     const { modules, issues } = parseModuleList(markdown);
 
@@ -17,19 +15,21 @@ describe("collect-metadata/parser", () => {
     assert.deepStrictEqual(modules[0], {
       name: "MMM-Finance",
       url: "https://github.com/user/MMM-Finance",
+      id: "user/MMM-Finance",
       description: "Stock ticker",
-      maintainer: "[User](https://github.com/user)",
+      maintainer: "User",
+      maintainerURL: "https://github.com/user",
       category: "Finance",
-      source: "wiki"
+      issues: []
     });
   });
 
   it("should handle multiple categories", () => {
     const markdown = `
 ### Category A
-| [ModA](https://github.com/u/ModA) | Desc A |
+| [ModA](https://github.com/u/ModA) | MaintA | Desc A |
 ### Category B
-| [ModB](https://github.com/u/ModB) | Desc B |
+| [ModB](https://github.com/u/ModB) | MaintB | Desc B |
 `;
     const { modules } = parseModuleList(markdown);
     assert.strictEqual(modules.length, 2);
@@ -40,11 +40,10 @@ describe("collect-metadata/parser", () => {
   it("should skip lines without valid repo links", () => {
     const markdown = `
 ### Test
-| Name | Desc |
-| [Invalid](https://google.com) | Not a repo |
+| [Invalid](https://google.com) | Maint | Not a repo |
 `;
     const { modules, issues } = parseModuleList(markdown);
     assert.strictEqual(modules.length, 0);
-    assert.strictEqual(issues.length, 0); // Just skipped, not an error unless it looks like a repo
+    assert.strictEqual(issues.length, 0); // Google.com doesn't match repo patterns, so line is ignored
   });
 });
