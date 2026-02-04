@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  code-style-check:
+  ci:
     runs-on: ubuntu-slim
     timeout-minutes: 10
     steps:
@@ -30,4 +30,6 @@ jobs:
         run: node --run test:spelling
       - name: Check linting
         run: node --run lint
+      - name: Run Unit Tests
+        run: npm run test:unit
       - run: echo "🍏 This job's status is ${{ job.status }}."
