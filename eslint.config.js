@@ -102,6 +102,14 @@ export default defineConfig([
       "@typescript-eslint/no-explicit-any": "warn"
     }
   },
+  {
+    files: ["pipeline/workers/**/*.js"],
+    rules: {
+      "max-lines": ["warn", 900],
+      "max-lines-per-function": ["warn", 200],
+      "max-depth": ["warn", 6]
+    }
+  },
   { files: ["**/*.json"], ignores: ["package.json", "package-lock.json"], plugins: { json }, extends: ["json/recommended"], language: "json/json" },
   { files: ["package.json"], plugins: { packageJson }, extends: ["packageJson/recommended"], rules: { "package-json/sort-collections": "off" } },
   { files: ["**/*.md"], plugins: { markdown }, language: "markdown/gfm", extends: ["markdown/recommended"] }

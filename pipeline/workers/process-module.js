@@ -56,6 +56,7 @@ const logger = createLogger({ name: "worker" });
  * @property {boolean} [checkGroups.eslint]
  * @property {boolean} [checkGroups.ncu]
  * @property {number} [timeoutMs]
+ * @property {Object} [moduleLogger] - Per-module logger instance
  */
 
 /**
@@ -121,6 +122,13 @@ async function cloneModule(module, config) {
       : null;
 
   try {
+    if (config.moduleLogger) {
+      await config.moduleLogger.info("clone", "Starting clone stage", {
+        url: module.url,
+        branch: branch || "default"
+      });
+    }
+
     // Optimization: Check if we can skip cloning based on lastCommit date
     if (module.lastCommit && await fileExists(finalPath)) {
       try {
@@ -132,12 +140,23 @@ async function cloneModule(module, config) {
           // If local repo is at least as new as the remote info we have, skip clone
           if (localDate.getTime() >= remoteDate.getTime() - 60000) {
             logger.debug(`Skipping clone for ${module.name}: Local repo is up to date`);
+            if (config.moduleLogger) {
+              await config.moduleLogger.info("clone", "Skipped - local repo is up to date", {
+                localCommit: localDateStr,
+                remoteCommit: module.lastCommit
+              });
+            }
             return { success: true };
           }
         }
       }
       catch (dateError) {
         logger.debug(`Could not verify local commit date for ${module.name}, proceeding with clone: ${dateError.message || String(dateError)}`);
+        if (config.moduleLogger) {
+          await config.moduleLogger.debug("clone", "Could not verify local commit date, proceeding with clone", {
+            error: dateError.message || String(dateError)
+          });
+        }
       }
     }
 
@@ -149,6 +168,10 @@ async function cloneModule(module, config) {
       depth: 1
     });
 
+    if (config.moduleLogger) {
+      await config.moduleLogger.info("clone", "Repository cloned successfully");
+    }
+
     // Move from temp to final location
     await ensureDirectory(path.dirname(finalPath));
     if (await fileExists(finalPath)) {
@@ -156,11 +179,24 @@ async function cloneModule(module, config) {
     }
     await rename(tempPath, finalPath);
 
+    if (config.moduleLogger) {
+      await config.moduleLogger.info("clone", "Moved to final location", {
+        path: finalPath
+      });
+    }
+
     return { success: true };
   }
   catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     logger.error(`Clone failed for ${module.name}: ${message}`);
+
+    if (config.moduleLogger) {
+      await config.moduleLogger.error("clone", `Clone failed: ${message}`, {
+        error: message,
+        stack: error instanceof Error ? error.stack : null
+      });
+    }
 
     // Clean up temp directory
     await rm(tempPath, { recursive: true, force: true }).catch(() => {
@@ -514,8 +550,19 @@ function deriveTagsFromKeywords(keywords, issues) {
 async function enrichModule(module, config) {
   const enrichIssues = [];
 
+  if (config.moduleLogger) {
+    await config.moduleLogger.info("enrich", "Starting enrichment stage");
+  }
+
   // Load package.json
   const packageJson = await loadPackageManifest(module, config);
+
+  if (config.moduleLogger) {
+    await config.moduleLogger.info("enrich", "Loaded package.json", {
+      status: packageJson.status,
+      hasKeywords: packageJson.summary?.keywords?.length > 0
+    });
+  }
 
   let tags;
   let imageName;
@@ -534,6 +581,11 @@ async function enrichModule(module, config) {
       const derivedTags = deriveTagsFromKeywords(summaryKeywords, enrichIssues);
       if (derivedTags && derivedTags.length > 0) {
         tags = derivedTags;
+        if (config.moduleLogger) {
+          await config.moduleLogger.info("enrich", "Derived tags from keywords", {
+            tags: derivedTags
+          });
+        }
       }
     }
     else {
@@ -591,6 +643,12 @@ async function enrichModule(module, config) {
   ];
 
   if (effectiveLicense && useableLicenses.includes(effectiveLicense)) {
+    if (config.moduleLogger) {
+      await config.moduleLogger.info("enrich", "Processing image", {
+        license: effectiveLicense
+      });
+    }
+
     const { targetImageName, issues: imageIssues } = await findAndResizeImage(
       module.name,
       module.maintainer,
@@ -598,11 +656,29 @@ async function enrichModule(module, config) {
     );
     if (targetImageName) {
       imageName = targetImageName;
+      if (config.moduleLogger) {
+        await config.moduleLogger.info("enrich", "Image processed successfully", {
+          imageName: targetImageName
+        });
+      }
     }
     enrichIssues.push(...imageIssues);
   }
   else if (effectiveLicense) {
     enrichIssues.push("No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.");
+    if (config.moduleLogger) {
+      await config.moduleLogger.warn("enrich", "Incompatible license - skipping image", {
+        license: effectiveLicense
+      });
+    }
+  }
+
+  if (config.moduleLogger) {
+    await config.moduleLogger.info("enrich", "Enrichment complete", {
+      tagsCount: tags?.length || 0,
+      hasImage: Boolean(imageName),
+      issuesCount: enrichIssues.length
+    });
   }
 
   return {
@@ -655,10 +731,27 @@ export async function processModule(module, config) {
 
   logger.info(`Processing ${module.name} by ${module.maintainer}`);
 
+  if (config.moduleLogger) {
+    await config.moduleLogger.info("start", "Module processing started", {
+      name: module.name,
+      maintainer: module.maintainer,
+      url: module.url
+    });
+  }
+
   // Stage 3: Clone
   const cloneResult = await cloneModule(module, config);
   if (!cloneResult.success) {
     const processingTime = Date.now() - startTime;
+
+    if (config.moduleLogger) {
+      await config.moduleLogger.error("end", "Module processing failed at clone stage", {
+        processingTimeMs: processingTime,
+        error: cloneResult.error
+      });
+      await config.moduleLogger.close();
+    }
+
     return {
       name: module.name,
       maintainer: module.maintainer,
@@ -689,6 +782,16 @@ export async function processModule(module, config) {
   catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     const processingTime = Date.now() - startTime;
+
+    if (config.moduleLogger) {
+      await config.moduleLogger.error("end", "Module processing failed at enrich stage", {
+        processingTimeMs: processingTime,
+        error: message,
+        stack: error instanceof Error ? error.stack : null
+      });
+      await config.moduleLogger.close();
+    }
+
     return {
       name: module.name,
       maintainer: module.maintainer,
@@ -709,11 +812,32 @@ export async function processModule(module, config) {
   // Stage 5: Analyze (placeholder)
   let analysisResult;
   try {
+    if (config.moduleLogger) {
+      await config.moduleLogger.info("analyze", "Starting analysis stage");
+    }
+
     analysisResult = await analyzeModule(module, config);
     allIssues.push(...analysisResult.analysisIssues);
+
+    if (config.moduleLogger) {
+      await config.moduleLogger.info("analyze", "Analysis complete", {
+        issuesCount: analysisResult.analysisIssues.length,
+        recommendationsCount: analysisResult.recommendations.length
+      });
+    }
   }
   catch (error) {
     const message = error instanceof Error ? error.message : String(error);
+
+    if (config.moduleLogger) {
+      await config.moduleLogger.error("end", "Module processing failed at analyze stage", {
+        processingTimeMs: Date.now() - startTime,
+        error: message,
+        stack: error instanceof Error ? error.stack : null
+      });
+      await config.moduleLogger.close();
+    }
+
     return {
       name: module.name,
       maintainer: module.maintainer,
@@ -736,6 +860,15 @@ export async function processModule(module, config) {
   }
 
   const processingTime = Date.now() - startTime;
+
+  if (config.moduleLogger) {
+    await config.moduleLogger.info("end", "Module processing completed successfully", {
+      processingTimeMs: processingTime,
+      totalIssues: allIssues.length,
+      status: "success"
+    });
+    await config.moduleLogger.close();
+  }
 
   return {
     name: module.name,

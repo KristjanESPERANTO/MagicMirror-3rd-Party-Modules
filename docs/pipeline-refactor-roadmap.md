@@ -72,11 +72,19 @@ Merge stages 3+4+5 into parallel worker processes. See [worker-pool-design.md](p
 | P7.1 | ✅ Design complete           |
 | P7.2 | ✅ Single-worker prototype   |
 | P7.3 | ✅ Worker pool orchestration |
-| P7.4 | Per-module logging           |
+| P7.4 | ✅ Per-module logging        |
 | P7.5 | Cleanup old stage scripts    |
 | P7.6 | Incremental mode integration |
 
 **Note:** P7.6 (Incremental mode) deferred until after P7.5 (Cleanup). The existing cache logic in `scripts/check-modules/index.ts` continues to work; integrating it into the new worker architecture makes more sense once the old pipeline is removed.
+
+**P7.4 Implementation (Feb 2026):**
+
+- Created module-specific logger utility (`module-logger.js`)
+- Per-module log files organized by run timestamp: `logs/{runId}/modules/{moduleId}.log`
+- Detailed logging across all processing phases (clone, enrich, analyze)
+- Automatic buffer flushing on errors and completion
+- Integrated with existing worker pool architecture
 
 **P7.3 Implementation (Jan 2026):**
 

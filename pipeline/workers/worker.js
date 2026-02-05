@@ -7,6 +7,7 @@
  */
 
 import { createLogger } from "../../scripts/shared/logger.js";
+import { createModuleLogger } from "./module-logger.js";
 import process from "node:process";
 import { processModule } from "./process-module.js";
 
@@ -51,30 +52,63 @@ async function processBatch(batch) {
 
   logger.info(`Worker processing batch ${batchId} with ${modules.length} modules`);
 
+  // Get runId from config or generate one
+  const runId = config.runId || new Date().toISOString().replace(/:/gu, "-").replace(/\..+/u, "");
+
   for (const module of modules) {
+    let moduleLogger = null;
+
     try {
+      // Create per-module logger
+      const moduleId = `${module.name}-----${module.maintainer}`;
+      try {
+        moduleLogger = await createModuleLogger({
+          projectRoot: config.projectRoot,
+          runId,
+          moduleId,
+          workerId: process.pid
+        });
+      }
+      catch (loggerError) {
+        logger.warn(`Failed to create module logger for ${module.name}:`, loggerError);
+        // Continue without module logger
+      }
+
       // Send progress event
       sendMessage({
         type: "progress",
         payload: {
           batchId,
-          moduleId: `${module.name}-----${module.maintainer}`,
+          moduleId,
           status: "started"
         }
       });
 
-      // Process the module
+      // Process the module with logger
       let result;
       try {
-        result = await processModule(module, config);
+        result = await processModule(module, {
+          ...config,
+          moduleLogger
+        });
       }
       catch (processError) {
         logger.error(`processModule failed for ${module.name}:`, processError);
+
+        // Log error if logger is available
+        if (moduleLogger) {
+          await moduleLogger.error("process", `Processing failed: ${processError.message}`, {
+            error: processError.message,
+            stack: processError.stack
+          });
+          await moduleLogger.close();
+        }
+
         // Create a failed result instead of crashing
         result = {
           name: module.name,
           maintainer: module.maintainer,
-          id: module.id || `${module.name}-----${module.maintainer}`,
+          id: module.id || moduleId,
           url: module.url,
           status: "failed",
           error: processError.message,
@@ -91,21 +125,36 @@ async function processBatch(batch) {
         type: "progress",
         payload: {
           batchId,
-          moduleId: `${module.name}-----${module.maintainer}`,
+          moduleId,
           status: result.status,
           fromCache: result.fromCache
         }
       });
     }
     catch (error) {
+      const moduleId = `${module.name}-----${module.maintainer}`;
       const errorInfo = {
-        moduleId: `${module.name}-----${module.maintainer}`,
+        moduleId,
         phase: "unknown",
         error: error.message,
         stack: error.stack
       };
       errors.push(errorInfo);
       logger.error(`Failed to process ${module.name}:`, error);
+
+      // Log to module logger if available
+      if (moduleLogger) {
+        try {
+          await moduleLogger.error("error", `Unexpected error: ${error.message}`, {
+            error: error.message,
+            stack: error.stack
+          });
+          await moduleLogger.close();
+        }
+        catch {
+          // Ignore logger errors at this point
+        }
+      }
 
       // Add failed result
       results.push({

@@ -83,9 +83,9 @@ Successfully tested with multiple module sets:
 
 ### Next Steps (P7.4+)
 
-- [ ] P7.4: Integrate incremental mode with module cache
-- [ ] P7.5: Add per-module logging to files
-- [ ] P7.6: Remove old stage scripts after migration complete
+- [x] P7.4: Per-module logging to files ✅
+- [ ] P7.5: Remove old stage scripts after migration complete
+- [ ] P7.6: Integrate incremental mode with module cache
 - [ ] P7.7: Performance benchmarking and optimization
 
 ### Configuration Options
@@ -147,6 +147,41 @@ See [../docs/pipeline/worker-pool-design.md](../../docs/pipeline/worker-pool-des
 ```
 
 ## Design Decisions
+
+### Per-Module Logging (P7.4) ✅
+
+Each module gets its own log file with detailed processing information:
+
+**Log Structure:**
+
+```text
+logs/
+  {runId}/              # e.g., 2026-02-04T10-30-45
+    modules/
+      MMM-Module-----Author.worker-12345.log
+      MMM-OtherModule-----Dev.worker-12346.log
+```
+
+**Features:**
+
+- Organized by run timestamp for historical tracking
+- Includes worker PID in filename for debugging
+- Structured log entries with phase, level, message, and optional data
+- Auto-flush on errors and when buffer reaches 100 entries
+- Closed automatically when module processing completes
+
+**Log Format:**
+
+```text
+[2026-02-04T10:30:45.123Z] [INFO] [clone] Starting clone stage {"url":"...","branch":"master"}
+[2026-02-04T10:30:47.456Z] [INFO] [clone] Repository cloned successfully
+[2026-02-04T10:30:47.500Z] [INFO] [enrich] Starting enrichment stage
+[2026-02-04T10:30:48.100Z] [INFO] [end] Module processing completed successfully {"processingTimeMs":2977}
+```
+
+**Usage:**
+
+The logger is automatically created for each module and passed via config. No manual setup required in module processing code.
 
 ### Single Module Processing Function
 
