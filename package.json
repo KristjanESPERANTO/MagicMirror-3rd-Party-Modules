@@ -28,11 +28,11 @@
   },
   "scripts": {
     "start": "ntl --size 50",
-    "all": "node scripts/orchestrator/index.js run full-refresh",
-    "collectMetadata": "node scripts/orchestrator/index.js run --only=collect-metadata",
-    "getModules": "node scripts/orchestrator/index.js run --only=get-modules",
-    "expandModuleList": "node scripts/orchestrator/index.js run --only=expand-module-list",
-    "checkModules": "node scripts/orchestrator/index.js run --only=check-modules",
+    "all": "node scripts/orchestrator/index.js run full-refresh-parallel",
+    "collectMetadata": "node scripts/orchestrator/index.js run full-refresh --only=collect-metadata",
+    "getModules": "node scripts/orchestrator/index.js run full-refresh --only=get-modules",
+    "expandModuleList": "node scripts/orchestrator/index.js run full-refresh --only=expand-module-list",
+    "checkModules": "node scripts/orchestrator/index.js run full-refresh --only=check-modules",
     "pipeline": "node scripts/orchestrator/index.js",
     "golden:check": "node scripts/golden-artifacts/index.js check",
     "golden:update": "node scripts/golden-artifacts/index.js update",
@@ -96,7 +96,7 @@
   },
   "ntl": {
     "descriptions": {
-      "all": "Run all scripts (1 till 6) on all modules. Requires a lot of time and storage space!",
+      "all": "Run the canonical full refresh pipeline (`full-refresh-parallel`) on all modules. Requires a lot of time and storage space!",
       "collectMetadata": "Script 1+2: Convert the official module list from the wiki into a json file and update the JSON file that collects the GitHub information of the modules.",
       "getModules": "Script 3: Get all modules with `git clone`. Requires a lot of time and storage space!",
       "expandModuleList": "Script 4: Extend the module list with information from the package.json. And get an image if one is available and the license is okay.",

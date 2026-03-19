@@ -517,16 +517,20 @@ PIPELINE_CACHE_ENABLED=true
 
 ---
 
-## Open Questions
+## Architecture Decisions (Mar 2026)
 
-1. **Cache location**: Single shared cache file or per-worker cache files?
-   - Recommendation: Single shared cache, locked during writes
+1. **Cache location**: Keep a single shared cache file at `website/data/moduleCache.json`.
 
-2. **Git operations**: Shared `modules/` directory or per-worker clone dirs?
-   - Recommendation: Shared `modules/` with file locking per module
+- Decision details: Workers return cache updates to orchestrator, and orchestrator performs deterministic cache writeback.
 
-3. **Image processing**: Run in worker or separate phase?
-   - Recommendation: In worker (already part of Stage 4)
+2. **Git operations**: Keep shared `modules/` and `modules_temp/` directories.
 
-4. **ESLint/ncu**: Include in worker or optional post-processing?
-   - Recommendation: Optional in worker, controlled by config
+- Decision details: Use per-module isolation/locking to avoid conflicts while preserving clone reuse.
+
+3. **Image processing**: Keep image extraction/resizing inside worker flow.
+
+- Decision details: Image handling remains part of the enrich phase to keep per-module processing self-contained.
+
+4. **ESLint/ncu**: Keep optional in worker, controlled by check-group configuration.
+
+- Decision details: Pipeline mode defaults are explicit and may differ between full-refresh and incremental-oriented runs.

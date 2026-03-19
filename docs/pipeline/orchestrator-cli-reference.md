@@ -6,7 +6,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 
 ## Key capabilities
 
-- Provide a single entry point (e.g. `node --run pipeline -- pipeline run full-refresh`) that replaces the existing ad-hoc shell scripts.
+- Provide a single entry point (e.g. `node --run pipeline -- pipeline run full-refresh-parallel`) that replaces the existing ad-hoc shell scripts.
 - Interpret `pipeline/stage-graph.json` at runtime to determine stage ordering, inputs/outputs, and side-effects.
 - Emit structured logs and progress indicators so maintainers can trace stage execution locally and in CI.
 - Persist run metadata (planned, skipped, succeeded, failed) to `.pipeline-runs/` so partial runs stay auditable.
@@ -31,7 +31,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 1. **Command Surface** — Implemented with `commander`, exposing the `pipeline` root command and subcommands:
    - `pipeline list` — enumerate available pipelines/stages from the graph.
    - `pipeline describe <stage|pipeline>` — print detailed metadata for inspection.
-   - `pipeline run <pipelineId>` — execute stages sequentially (default: `full-refresh`).
+   - `pipeline run <pipelineId>` — execute stages sequentially (default: `full-refresh-parallel`).
    - `pipeline logs [runId|--latest]` — inspect structured run metadata saved to `.pipeline-runs/`.
      - `pipeline doctor` — check external prerequisites (Node.js version, Git availability, required env vars).
 

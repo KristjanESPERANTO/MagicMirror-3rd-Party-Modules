@@ -122,23 +122,22 @@ Measure and visualize pipeline performance.
 
 ## Next Concrete Steps
 
-See [worker-pool-design.md](pipeline/worker-pool-design.md) for detailed implementation plan.
+See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details and
+[p7-cleanup-incremental-checklist.md](pipeline/p7-cleanup-incremental-checklist.md) for execution tracking.
 
-**Current focus: P7.3** — Implement worker pool orchestration
+**Current focus: P7.5** — Cleanup old stage scripts
 
-- Create child process spawning for parallel workers
-- Implement batch distribution and work stealing algorithm
-- Add progress tracking and health monitoring
-- Test with 4 workers on full module set
+- Inventory legacy stage entry points and consumers (`full-refresh`, npm scripts, docs references)
+- Switch canonical full refresh execution to `full-refresh-parallel`
+- Remove/retire obsolete stage wrappers and stale intermediate artifact dependencies
+- Run regression checks (`lint`, fixtures, schema checks, golden checks) after cleanup
 
-**Completed: P7.2** ✅
+**Next: P7.6** — Incremental mode integration in worker architecture
 
-Successfully implemented and tested the single-worker prototype:
-
-- Merged Stage 3+4+5 logic into `processModule()` function
-- Tested with 20 modules (100% success rate)
-- Average processing time: ~400ms per module (when cached)
-- Code location: `pipeline/workers/`
+- Integrate module-cache hit/miss/prune logic into parallel worker flow
+- Use deterministic cache merge/write strategy to avoid worker write contention
+- Add tests for cache behavior and validate skip rates on repeated runs
+- Capture before/after timing and cache-hit metrics for readiness to start P8
 
 ---
 

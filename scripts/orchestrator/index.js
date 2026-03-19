@@ -431,7 +431,7 @@ export async function main(argv = process.argv) {
     .option("--json-logs", "Output logs in JSON format")
     .action(async (pipelineId, options) => {
       const graphPath = resolve(options.graph);
-      const selectedPipeline = pipelineId ?? "full-refresh";
+      const selectedPipeline = pipelineId ?? "full-refresh-parallel";
       const filters = {
         only: options.only,
         skip: options.skip
