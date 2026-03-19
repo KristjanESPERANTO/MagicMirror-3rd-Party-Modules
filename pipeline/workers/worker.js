@@ -238,6 +238,8 @@ function workerMain() {
     logger.info("Worker received SIGINT");
     process.exit(0);
   });
+
+  return Promise.resolve();
 }
 
 // Start worker if run as child process
