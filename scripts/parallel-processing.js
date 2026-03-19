@@ -6,10 +6,10 @@
  * Reads modules.stage.2.json and outputs modules.stage.5.json
  */
 
-import { createLogger, createStageProgressLogger } from "../scripts/shared/logger.js";
 import { readFile, writeFile } from "node:fs/promises";
 import { WorkerPool } from "../pipeline/workers/worker-pool.js";
 import { cpus } from "node:os";
+import { createLogger } from "../scripts/shared/logger.js";
 import process from "node:process";
 import { resolve } from "node:path";
 import { stringifyDeterministic } from "../scripts/shared/deterministic-output.js";
@@ -47,6 +47,43 @@ function getBatchSize() {
   return 50; // Default batch size
 }
 
+const STAGE5_ALLOWED_KEYS = [
+  "name",
+  "category",
+  "url",
+  "id",
+  "maintainer",
+  "maintainerURL",
+  "description",
+  "outdated",
+  "issues",
+  "stars",
+  "license",
+  "hasGithubIssues",
+  "isArchived",
+  "lastCommit",
+  "keywords",
+  "tags",
+  "image",
+  "packageJson"
+];
+
+function toStage5Module(module) {
+  const entry = {};
+
+  for (const key of STAGE5_ALLOWED_KEYS) {
+    if (Object.hasOwn(module, key) && typeof module[key] !== "undefined") {
+      entry[key] = module[key];
+    }
+  }
+
+  if (!Array.isArray(entry.issues)) {
+    entry.issues = [];
+  }
+
+  return entry;
+}
+
 async function main() {
   const startTime = Date.now();
 
@@ -72,7 +109,6 @@ async function main() {
     });
 
     // Set up progress tracking
-    const progressLogger = createStageProgressLogger("parallel-processing", modules.length);
     let processedCount = 0;
 
     pool.onProgress((event) => {
@@ -87,9 +123,7 @@ async function main() {
         }
         const cacheInfo = event.fromCache ? " (cached)" : "";
 
-        progressLogger.update(processedCount, {
-          current: `${status} ${event.moduleId}${cacheInfo}`
-        });
+        logger.info(`[${processedCount}/${modules.length}] ${status} ${event.moduleId}${cacheInfo}`);
       }
     });
 
@@ -112,11 +146,33 @@ async function main() {
     // Process all modules
     const results = await pool.processModules(modules, moduleConfig);
 
-    progressLogger.complete();
+    // Stage 5 schema expects an object with a `modules` array.
+    // Merge worker results back into stage-2 module entries to preserve
+    // Required base fields like category and maintainerURL.
+    const resultsById = new Map(results.map(result => [result.id, result]));
+    const mergedModules = modules.map((module) => {
+      const result = resultsById.get(module.id);
+      if (!result) {
+        return {
+          ...module,
+          issues: [...module.issues || []],
+          status: "failed",
+          failurePhase: "pipeline",
+          error: "No worker result available for module"
+        };
+      }
+
+      return {
+        ...module,
+        ...result,
+        issues: [...result.issues || module.issues || []]
+      };
+    });
+    const stage5Modules = mergedModules.map(toStage5Module);
 
     // Write results to stage 5 output
     const stage5Path = resolve(PROJECT_ROOT, "website/data/modules.stage.5.json");
-    const stage5Data = stringifyDeterministic(results);
+    const stage5Data = stringifyDeterministic({ modules: stage5Modules });
     await writeFile(stage5Path, stage5Data, "utf-8");
 
     const duration = Date.now() - startTime;
