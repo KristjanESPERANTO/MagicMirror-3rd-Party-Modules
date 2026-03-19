@@ -6,6 +6,7 @@
     "airquality",
     "anniversarymodule",
     "apidevtools",
+    "artefacts",
     "aseag",
     "axios",
     "bergfex",
@@ -65,7 +66,8 @@
     "weathericons",
     "workstream",
     "workstreams",
-    "Workstreams"
+    "Workstreams",
+    "writeback"
   ],
   "ignorePaths": [
     "fixtures/**/*.json",
