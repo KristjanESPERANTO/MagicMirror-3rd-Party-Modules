@@ -170,7 +170,8 @@ npm run lint        # Check all files
 npm run lint:fix    # Auto-fix issues
 ```
 
-TypeScript files are now included in ESLint checks via `typescript-eslint` v8+. The configuration is in `eslint.config.js` using the modern flat config format.
+TypeScript files are included in ESLint checks via `typescript-eslint` v8+. Production scripts
+are `.ts` format with type safety enforced via `npm run test:types`.
 
 ### Spelling
 
