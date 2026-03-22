@@ -2,7 +2,7 @@ import {
   buildModuleAnalysisCacheKey,
   createModuleAnalysisCache,
   normalizeModuleAnalysisCheckGroups
-} from "../../shared/module-analysis-cache.js";
+} from "../../shared/module-analysis-cache.ts";
 import { deepEqual, equal, ok } from "node:assert/strict";
 import {
   partitionModulesByCache,

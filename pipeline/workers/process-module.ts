@@ -3,8 +3,7 @@ import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureRepository, getCommitDate } from "../../scripts/shared/git.js";
 import { rename, rm } from "node:fs/promises";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysis-cache.js";
+import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysis-cache.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createDeterministicImageName } from "../../scripts/shared/deterministic-output.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice

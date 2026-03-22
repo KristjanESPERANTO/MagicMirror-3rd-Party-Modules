@@ -1,4 +1,5 @@
 import { createPersistentCache } from "./persistent-cache.ts";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { getCurrentCommit } from "./git.js";
 import { resolve } from "node:path";
 import { stringifyDeterministic } from "./deterministic-output.ts";
@@ -6,7 +7,55 @@ import { stringifyDeterministic } from "./deterministic-output.ts";
 export const MODULE_ANALYSIS_CACHE_SCHEMA_VERSION = 2;
 export const MODULE_ANALYSIS_CACHE_RELATIVE_PATH = "website/data/moduleCache.json";
 
-function normalizeOptionalString(value) {
+interface ModuleAnalysisCheckGroupsInput {
+  deep?: unknown;
+  eslint?: unknown;
+  fast?: unknown;
+  ncu?: unknown;
+}
+
+export interface NormalizedModuleAnalysisCheckGroups {
+  deep: boolean;
+  eslint: boolean;
+  fast: boolean;
+  ncu: boolean;
+}
+
+interface ModuleAnalysisModuleInput {
+  branch?: unknown;
+  id?: unknown;
+  lastCommit?: unknown;
+  url?: unknown;
+}
+
+interface BuildModuleAnalysisCacheContractInput {
+  catalogueRevision?: unknown;
+  checkGroups?: ModuleAnalysisCheckGroupsInput;
+  module?: ModuleAnalysisModuleInput;
+  moduleRevision?: unknown;
+}
+
+interface ModuleAnalysisCacheContract {
+  analysisConfig: NormalizedModuleAnalysisCheckGroups;
+  module: {
+    branch: string | null;
+    id: string;
+    url: string;
+  };
+  repoFreshness: {
+    catalogueRevision: string;
+    moduleRevision: string;
+  };
+  schemaVersion: number;
+}
+
+interface CreateModuleAnalysisCacheOptions {
+  defaultTtlMs?: number;
+  filePath?: string;
+  now?: () => number;
+}
+
+function normalizeOptionalString(value: unknown): string | null {
   if (typeof value !== "string") {
     return null;
   }
@@ -15,7 +64,9 @@ function normalizeOptionalString(value) {
   return normalized.length > 0 ? normalized : null;
 }
 
-export function normalizeModuleAnalysisCheckGroups(checkGroups = {}) {
+export function normalizeModuleAnalysisCheckGroups(
+  checkGroups: ModuleAnalysisCheckGroupsInput = {}
+): NormalizedModuleAnalysisCheckGroups {
   return {
     fast: Boolean(checkGroups.fast),
     deep: Boolean(checkGroups.deep),
@@ -24,7 +75,7 @@ export function normalizeModuleAnalysisCheckGroups(checkGroups = {}) {
   };
 }
 
-export function resolveModuleAnalysisCachePath(projectRoot) {
+export function resolveModuleAnalysisCachePath(projectRoot: string): string {
   if (typeof projectRoot !== "string" || projectRoot.trim().length === 0) {
     throw new TypeError("resolveModuleAnalysisCachePath requires a non-empty projectRoot");
   }
@@ -32,7 +83,7 @@ export function resolveModuleAnalysisCachePath(projectRoot) {
   return resolve(projectRoot, MODULE_ANALYSIS_CACHE_RELATIVE_PATH);
 }
 
-export async function getProjectRevision(projectRoot) {
+export async function getProjectRevision(projectRoot: string): Promise<string | null> {
   try {
     return await getCurrentCommit({ cwd: projectRoot });
   }
@@ -41,7 +92,12 @@ export async function getProjectRevision(projectRoot) {
   }
 }
 
-export function buildModuleAnalysisCacheContract({ module, moduleRevision, catalogueRevision, checkGroups } = {}) {
+export function buildModuleAnalysisCacheContract({
+  module,
+  moduleRevision,
+  catalogueRevision,
+  checkGroups
+}: BuildModuleAnalysisCacheContractInput = {}): ModuleAnalysisCacheContract | null {
   const moduleId = normalizeOptionalString(module?.id);
   const moduleUrl = normalizeOptionalString(module?.url);
   const moduleBranch = normalizeOptionalString(module?.branch);
@@ -67,7 +123,7 @@ export function buildModuleAnalysisCacheContract({ module, moduleRevision, catal
   };
 }
 
-export function buildModuleAnalysisCacheKey(options = {}) {
+export function buildModuleAnalysisCacheKey(options: BuildModuleAnalysisCacheContractInput = {}): string | null {
   const contract = buildModuleAnalysisCacheContract(options);
   if (!contract) {
     return null;
@@ -76,7 +132,11 @@ export function buildModuleAnalysisCacheKey(options = {}) {
   return stringifyDeterministic(contract, 0);
 }
 
-export function createModuleAnalysisCache({ filePath, defaultTtlMs = 0, now } = {}) {
+export function createModuleAnalysisCache({
+  filePath,
+  defaultTtlMs = 0,
+  now
+}: CreateModuleAnalysisCacheOptions = {}) {
   return createPersistentCache({
     filePath,
     version: MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,

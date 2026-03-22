@@ -3,7 +3,7 @@ import {
   buildModuleAnalysisCacheContract,
   buildModuleAnalysisCacheKey,
   createModuleAnalysisCache
-} from "../../shared/module-analysis-cache.js";
+} from "../../shared/module-analysis-cache.ts";
 import { equal, ok } from "node:assert/strict";
 import { mkdtemp, readFile } from "node:fs/promises";
 import { join } from "node:path";
