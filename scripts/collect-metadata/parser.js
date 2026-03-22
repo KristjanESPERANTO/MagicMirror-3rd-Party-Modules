@@ -21,6 +21,77 @@ function getMaintainerURL(url) {
   return "";
 }
 
+function isRepositoryRow(line) {
+  return (
+    line.includes("](https://github.com/")
+    || line.includes("](https://gitlab.com/")
+    || line.includes("](https://bitbucket.org/")
+  );
+}
+
+function stripUrlTitle(url) {
+  const urlTitleStart = url.indexOf(" ");
+  if (urlTitleStart === -1) {
+    return url;
+  }
+
+  return url.substring(0, urlTitleStart);
+}
+
+function parseModuleRow(line, category, issues) {
+  if (!isRepositoryRow(line)) {
+    return null;
+  }
+
+  const parts = line.split("|").map(part => part.trim());
+  if (parts.length < 3) {
+    return null;
+  }
+
+  const repoCell = parts[1];
+  const repoMatch = repoCell.match(/\[(.*?)\]\((.*?)\)/u);
+  if (!repoMatch) {
+    return null;
+  }
+
+  const name = repoMatch[1].trim();
+  const url = stripUrlTitle(repoMatch[2].trim());
+  const maintainerCell = parts[2] || "";
+  const description = parts[3] || "";
+  const outdatedInfo = parts[4] ? parts[4].trim() : "";
+
+  let maintainer = maintainerCell;
+  const maintainerMatch = maintainerCell.match(/\[(.*?)\]\((.*?)\)/u);
+  if (maintainerMatch) {
+    maintainer = maintainerMatch[1].trim();
+  }
+
+  const repoType = getRepositoryType(url);
+  if (repoType === "unknown") {
+    issues.push(`Skipping unknown repository type: ${url}`);
+    return null;
+  }
+
+  const id = getRepositoryId(url) || name.replace(/\s+/gu, "-");
+  const maintainerURL = getMaintainerURL(url);
+  const moduleEntry = {
+    name,
+    url,
+    id,
+    description,
+    maintainer,
+    maintainerURL,
+    category,
+    issues: []
+  };
+
+  if (outdatedInfo.length > 0) {
+    moduleEntry.outdated = outdatedInfo;
+  }
+
+  return moduleEntry;
+}
+
 /**
  * Parse the Markdown content into a list of module objects.
  *
@@ -37,70 +108,10 @@ export function parseModuleList(markdown) {
     if (line.startsWith("### ")) {
       category = line.replace("### ", "").trim();
     }
-    else if (
-      line.includes("](https://github.com/")
-      || line.includes("](https://gitlab.com/")
-      || line.includes("](https://bitbucket.org/")
-    ) {
-      const parts = line.split("|").map(part => part.trim());
-
-      // Expected format: | Name | Repo Link | Description | Author | ...
-      if (parts.length >= 3) {
-        const repoCell = parts[1];
-        const repoMatch = repoCell.match(/\[(.*?)\]\((.*?)\)/u);
-
-        if (repoMatch) {
-          let url = repoMatch[2].trim();
-          // Remove title from URL if present
-          const urlTitleStart = url.indexOf(" ");
-          if (urlTitleStart !== -1) {
-            url = url.substring(0, urlTitleStart);
-          }
-
-          const name = repoMatch[1].trim(); // Use the link text as the name initially
-          const maintainerCell = parts[2] || "";
-          const description = parts[3] || "";
-          // Optional 5th column for outdated information (for "Outdated Modules" category)
-          const outdatedInfo = parts[4] ? parts[4].trim() : "";
-
-          let maintainer = maintainerCell;
-
-          const maintainerMatch = maintainerCell.match(/\[(.*?)\]\((.*?)\)/u);
-          if (maintainerMatch) {
-            maintainer = maintainerMatch[1].trim();
-            // We ignore the wiki maintainerURL and derive it from repo URL instead
-          }
-
-          /*
-           * Basic validation
-           */
-          const repoType = getRepositoryType(url);
-          if (repoType === "unknown") {
-            issues.push(`Skipping unknown repository type: ${url}`);
-          }
-          else {
-            const id = getRepositoryId(url) || name.replace(/\s+/gu, "-");
-            const maintainerURL = getMaintainerURL(url);
-
-            const moduleEntry = {
-              name,
-              url,
-              id,
-              description,
-              maintainer,
-              maintainerURL,
-              category,
-              issues: []
-            };
-
-            // Add outdated field if present and non-empty
-            if (outdatedInfo && outdatedInfo.length > 0) {
-              moduleEntry.outdated = outdatedInfo;
-            }
-
-            modules.push(moduleEntry);
-          }
-        }
+    else {
+      const moduleEntry = parseModuleRow(line, category, issues);
+      if (moduleEntry) {
+        modules.push(moduleEntry);
       }
     }
   }

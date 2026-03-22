@@ -1,13 +1,4 @@
 // @ts-nocheck
-/**
- * Single Worker Prototype (P7.2)
- *
- * Merges Stage 3 (clone) + Stage 4 (enrich) + Stage 5 (analyze) logic
- * into a single `processModule()` function.
- *
- * This module contains the core logic for processing a single module,
- * which will be used by worker processes in P7.3.
- */
 
 import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.js";
 import { ensureRepository, getCommitDate } from "../../scripts/shared/git.js";
@@ -21,12 +12,6 @@ import path from "node:path";
 import sharp from "sharp";
 
 const logger = createLogger({ name: "worker" });
-
-/*
- * ============================================================================
- * Type Definitions (JSDoc)
- * ============================================================================
- */
 
 /**
  * @typedef {Object} ModuleInput
@@ -104,16 +89,6 @@ const logger = createLogger({ name: "worker" });
  * @property {Object} [summary]
  * @property {string[]} [warnings]
  * @property {string} [error]
- */
-
-/*
- * Removed old interface declarations
- */
-
-/*
- * ============================================================================
- * Stage 3: Clone Repository
- * ============================================================================
  */
 
 /**
@@ -216,12 +191,6 @@ async function cloneModule(module, config) {
     return { success: false, error: message };
   }
 }
-
-/*
- * ============================================================================
- * Stage 4: Enrich with Package.json and Images
- * ============================================================================
- */
 
 /**
  * @param {string} filename
@@ -700,12 +669,6 @@ async function enrichModule(module, config) {
   };
 }
 
-/*
- * ============================================================================
- * Stage 5: Analyze (Placeholder)
- * ============================================================================
- */
-
 /**
  * Placeholder for future Stage 5 analysis integration
  * Will include checks like ESLint, npm-check-updates, dependency detection, etc.
@@ -718,12 +681,6 @@ function analyzeModule() {
     recommendations: []
   };
 }
-
-/*
- * ============================================================================
- * Main: Process Single Module
- * ============================================================================
- */
 
 /**
  * Process a single module through all stages:

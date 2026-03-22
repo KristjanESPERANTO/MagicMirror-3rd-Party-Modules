@@ -1,11 +1,4 @@
-/**
- * Unified Metadata Collector (Stage 1+2)
- *
- * This script combines the logic of creating the module list from the Wiki (Stage 1)
- * and enriching it with repository metadata (Stage 2) into a single pass.
- *
- * Roadmap: P6.1
- */
+/* Unified metadata collector for stage 1+2 */
 
 import { fetchRepositoryData, normalizeRepositoryData } from "../updateRepositoryApiData/api.js";
 import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.js";
@@ -22,7 +15,6 @@ import process from "node:process";
 
 const logger = createLogger({ name: "collect-metadata" });
 
-// Configuration
 const WIKI_URL = "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md";
 const REPOSITORY_CACHE_PATH = path.join("website", "data", "cache", "repository-api-cache.json");
 const REPOSITORY_CACHE_TTL_MS = 1000 * 60 * 60 * 24 * 3; // 3 days
@@ -30,7 +22,6 @@ const NEGATIVE_CACHE_TTL_MS = 1000 * 60 * 60 * 24; // 1 day
 const GITHUB_GRAPHQL_BATCH_SIZE = 100;
 const FORCE_REFRESH = process.env.FORCE_REFRESH === "true";
 
-// Initialize services
 const rateLimiter = createRateLimiter({
   tokensPerInterval: 2,
   intervalMs: 1000
@@ -209,6 +200,56 @@ async function fetchIndividualModule(module, repoType, client) {
   }
 }
 
+async function appendGitHubBatchResult({ module, batchResults, batchFailed, previousModulesMap, stats, enrichedModules }) {
+  const repoData = batchResults[module.url];
+  const repoId = getRepositoryId(module.url);
+
+  if (repoData) {
+    logger.debug(`GraphQL data for ${module.name}:`, {
+      isArchived: repoData.isArchived,
+      hasIssuesEnabled: repoData.hasIssuesEnabled,
+      stargazerCount: repoData.stargazerCount
+    });
+    const normalized = normalizeRepositoryData(repoData, null, "github");
+    repositoryCache.set(repoId, normalized);
+    enrichedModules.push({ ...module, ...normalized });
+    return;
+  }
+
+  if (!batchFailed) {
+    logger.warn(`No data returned for ${module.name} in batch`, { url: module.url });
+  }
+
+  const recovery = await fetchIndividualModule(module, "github", httpClient);
+  if (recovery.success) {
+    const normalized = recovery.data;
+    if (batchFailed) {
+      logger.info(`Recovered ${module.name} via individual GitHub fetch after batch failure`);
+    }
+    repositoryCache.set(repoId, normalized);
+    enrichedModules.push({ ...module, ...normalized });
+    return;
+  }
+
+  logger.warn(`Failed to recover metadata for ${module.name}`, {
+    url: module.url,
+    error: recovery.error.message
+  });
+
+  const fallback = getFallbackOrOriginal(module, previousModulesMap);
+  if (fallback !== module) {
+    logger.info(`Using fallback data for ${module.name} (batch failure)`);
+    stats.fallbacks += 1;
+  }
+  enrichedModules.push(fallback);
+
+  repositoryCache.set(repoId, {
+    isFailed: true,
+    error: recovery.error.message
+  }, NEGATIVE_CACHE_TTL_MS);
+  stats.errors += 1;
+}
+
 /**
  * Process a single module: check cache, queue for batch, or fetch individually.
  * Returns the enriched module or null if queued for batch processing.
@@ -324,9 +365,6 @@ async function enrichModules(modules, previousModulesMap) {
     client: httpClient
   };
 
-  /*
-   * 1. Check cache and separate GitHub modules for batching
-   */
   for (const module of modules) {
     processedCount += 1;
     if (processedCount % 50 === 0) {
@@ -339,10 +377,8 @@ async function enrichModules(modules, previousModulesMap) {
     }
   }
 
-  // 2. Batch fetch GitHub modules
   if (githubModulesToFetch.length > 0) {
     logger.info(`Batch fetching ${githubModulesToFetch.length} GitHub repositories...`);
-    // Split into chunks
     for (let index = 0; index < githubModulesToFetch.length; index += GITHUB_GRAPHQL_BATCH_SIZE) {
       const chunk = githubModulesToFetch.slice(index, index + GITHUB_GRAPHQL_BATCH_SIZE);
       const { results: batchResults, failed: batchFailed, error: batchError } = await fetchGitHubBatch(chunk);
@@ -356,63 +392,14 @@ async function enrichModules(modules, previousModulesMap) {
       }
 
       for (const module of chunk) {
-        const repoData = batchResults[module.url];
-        const repoId = getRepositoryId(module.url);
-
-        if (repoData) {
-          logger.debug(`GraphQL data for ${module.name}:`, {
-            isArchived: repoData.isArchived,
-            hasIssuesEnabled: repoData.hasIssuesEnabled,
-            stargazerCount: repoData.stargazerCount
-          });
-          const normalized = normalizeRepositoryData(repoData, null, "github");
-
-          repositoryCache.set(repoId, normalized);
-          enrichedModules.push({
-            ...module,
-            ...normalized
-          });
-        }
-        else {
-          if (!batchFailed) {
-            logger.warn(`No data returned for ${module.name} in batch`, { url: module.url });
-          }
-
-          const recovery = await fetchIndividualModule(module, "github", httpClient);
-          if (recovery.success) {
-            const normalized = recovery.data;
-
-            if (batchFailed) {
-              logger.info(`Recovered ${module.name} via individual GitHub fetch after batch failure`);
-            }
-
-            repositoryCache.set(repoId, normalized);
-            enrichedModules.push({
-              ...module,
-              ...normalized
-            });
-          }
-          else {
-            logger.warn(`Failed to recover metadata for ${module.name}`, {
-              url: module.url,
-              error: recovery.error.message
-            });
-
-            const fallback = getFallbackOrOriginal(module, previousModulesMap);
-            if (fallback !== module) {
-              logger.info(`Using fallback data for ${module.name} (batch failure)`);
-              stats.fallbacks += 1;
-            }
-            enrichedModules.push(fallback);
-
-            // Cache negative result only if both GraphQL and individual recovery failed.
-            repositoryCache.set(repoId, {
-              isFailed: true,
-              error: recovery.error.message
-            }, NEGATIVE_CACHE_TTL_MS);
-            stats.errors += 1;
-          }
-        }
+        await appendGitHubBatchResult({
+          module,
+          batchResults,
+          batchFailed,
+          previousModulesMap,
+          stats,
+          enrichedModules
+        });
       }
     }
   }

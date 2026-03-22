@@ -33,13 +33,11 @@ function toggleMenu() {
 function createCard(moduleData) {
   const card = document.importNode(cardTemplate.content, true);
 
-  // Skipped module special handling
   if (moduleData.skipped) {
     card.querySelector(".card").classList.add("skipped");
     card.querySelector(".name").textContent = moduleData.name || "Unknown Module";
     card.querySelector(".name").href = moduleData.url || "#";
     card.querySelector(".description").innerHTML = `<span style='color:red;font-weight:bold'>Error: Module could not be loaded.</span><br>${moduleData.error || "Unknown Error"}`;
-    // Remove other info sections
     card.querySelector(".maintainer").textContent = moduleData.maintainer || "?";
     [".stars", ".tags", ".img-container", ".info", ".outdated-note"].forEach((selector) => {
       const element = card.querySelector(selector);
@@ -50,7 +48,6 @@ function createCard(moduleData) {
     return card;
   }
 
-  /* Set the header data */
   card.querySelector(".name").href = moduleData.url;
   card.querySelector(".name").textContent = moduleData.name;
 
@@ -67,7 +64,6 @@ function createCard(moduleData) {
     card.querySelector(".stars").textContent = `${moduleData.stars} stars`;
   }
 
-  /* Generate the tags, add color asignation */
   if (moduleData.tags) {
     moduleData.tags.forEach((tag) => {
       const tagElement = document.createElement("div");
@@ -85,7 +81,6 @@ function createCard(moduleData) {
     card.querySelector(".tags").remove();
   }
 
-  /* Set the card body */
   card.querySelector(".description").innerHTML = moduleData.description;
 
   if (moduleData.image) {
@@ -122,7 +117,6 @@ function createCard(moduleData) {
     license.textContent = "unknown";
   }
 
-  /* Set the card footer */
   if (moduleData.lastCommit) {
     const commit = card.querySelector(".info .container.commit .text");
     commit.href = `${moduleData.url}/commits/`;
@@ -140,7 +134,6 @@ function createCard(moduleData) {
     card.querySelector(".info .container.issues").remove();
   }
 
-  /* Add a notice/change styling if the module is outdated */
   if (moduleData.outdated) {
     card.querySelector(".card").classList.add("outdated");
     card.querySelector(".outdated-note").innerHTML = moduleData.outdated;
@@ -175,7 +168,6 @@ function updateModuleCardContainer() {
     }
   });
 
-  // Single DOM insertion to minimize reflows/layout thrash
   moduleCardContainer.appendChild(fragment);
 
   const moduleCountElement = document.getElementById("module-count-value");
@@ -320,7 +312,6 @@ function filterByTag(tag) {
   sortData(sortDropdown.value);
   updateModuleCardContainer();
 
-  // Mark the selected tag container
   const selectedTagContainers = document.querySelectorAll(`[data-tag="${tag}"]`);
   selectedTagContainers.forEach((container) => {
     container.classList.add("selected");
@@ -359,16 +350,12 @@ function addCategoryFilter() {
   });
 }
 
-// Add an event listener for clicks on the cards
 moduleCardContainer.addEventListener("click", (event) => {
-  // Check if the clicked element is a card
   const clickedCard = event.target.closest(".card");
   if (clickedCard) {
-    // Remove the "selected" class from all cards
     const allCards = document.querySelectorAll(".card");
     allCards.forEach(card => card.classList.remove("selected"));
 
-    // Mark the selected card
     clickedCard.classList.add("selected");
   }
 });
@@ -388,7 +375,6 @@ resetButton.addEventListener("click", () => {
   updateModuleCardContainer();
 });
 
-// Debounce search input to avoid excessive filtering on each keystroke
 let searchDebounceTimer = null;
 searchInput.addEventListener("input", () => {
   if (searchDebounceTimer) {
@@ -406,7 +392,6 @@ searchInput.addEventListener("input", () => {
   }, 180);
 });
 
-// Add a change event listener to the dropdown menu
 sortDropdown.addEventListener("change", () => {
   sortData(sortDropdown.value);
   updateModuleCardContainer();
@@ -419,7 +404,6 @@ showOutdated.addEventListener("change", () => {
   updateModuleCardContainer();
 });
 
-// Add Event-Listener to close the navMenu when clicking outside of it
 document.addEventListener("click", (event) => {
   const navMenu = document.getElementById("nav-menu");
   const navToggler = document.getElementById("nav-toggler");
@@ -430,7 +414,6 @@ document.addEventListener("click", (event) => {
   }
 });
 
-// Add Event-Listener to close the navMenu when clicking on a link
 const navLinks = document.querySelectorAll("#nav-menu a");
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
@@ -459,7 +442,6 @@ async function initiate() {
     console.error("Error fetching modules:", error);
   }
 
-  // Load skipped modules
   try {
     const skippedRes = await fetch("data/skipped_modules.json");
     const skippedRaw = await skippedRes.json();
@@ -475,7 +457,6 @@ async function initiate() {
   displayTagButtonContainer();
   addCategoryFilter();
 
-  // Load statistics
   const statisticsFile = "data/stats.json";
   try {
     const response = await fetch(statisticsFile);
