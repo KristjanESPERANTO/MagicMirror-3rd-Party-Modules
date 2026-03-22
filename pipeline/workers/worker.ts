@@ -6,7 +6,6 @@
  * Communicates with parent orchestrator via IPC messages.
  */
 
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../../scripts/shared/logger.ts";
 import { createModuleLogger } from "./module-logger.ts";
 import process from "node:process";
