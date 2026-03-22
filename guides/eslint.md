@@ -80,12 +80,12 @@ Add the following scripts to your `package.json` file:
 
 #### A - Run it automatically before committing (recommended)
 
-If you want to run ESLint automatically before committing any changes, you can use a tool like [Husky](https://typicode.github.io/husky/) to set up a pre-commit hook and [lint-staged](https://www.npmjs.com/package/lint-staged) to only lint staged files. This will help ensure that your code is always linted before it is committed.
+If you want to run ESLint automatically before committing any changes, you can use [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) to set up a pre-commit hook and [lint-staged](https://www.npmjs.com/package/lint-staged) to only lint staged files. This will help ensure that your code is always linted before it is committed.
 
-To set this up, first install `Husky` and `lint-staged` as development dependencies:
+To set this up, first install `simple-git-hooks` and `lint-staged` as development dependencies:
 
 ```bash
-npm install --save-dev husky lint-staged
+npm install --save-dev simple-git-hooks lint-staged
 ```
 
 Then, add the following configuration to your `package.json` file:
@@ -93,6 +93,9 @@ Then, add the following configuration to your `package.json` file:
 ```json
   "lint-staged": {
     "*.{js,mjs}": "eslint --fix"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   }
 ```
 
@@ -100,18 +103,17 @@ And also in the `package.json` file, add the following lines to the `scripts` se
 
 ```json
   "scripts": {
-    "prepare": "husky",
+    "prepare": "simple-git-hooks"
   }
 ```
 
-Create a pre-commit hook by running the following command in your terminal:
+Apply the hook configuration by running the following command in your terminal:
 
 ```bash
-npx husky init
-echo "npx lint-staged" > .husky/pre-commit
+npm run prepare
 ```
 
-This will set up `Husky` to run the `lint-staged` command before committing any changes. The `lint-staged` command will only lint the files that are staged for commit, which can save time and resources.
+This will set up `simple-git-hooks` to run the `lint-staged` command before committing any changes. The `lint-staged` command will only lint the files that are staged for commit, which can save time and resources. If you change the `simple-git-hooks` configuration later, run `npm run prepare` again to update the hooks.
 
 #### B - Run it manually before committing (optional)
 
