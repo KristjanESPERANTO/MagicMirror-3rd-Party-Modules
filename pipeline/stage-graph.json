@@ -3,7 +3,7 @@
   "pipelines": [
     {
       "id": "full-refresh",
-      "description": "Full catalogue refresh mirroring the current `node --run all` sequence.",
+      "description": "Legacy compatibility pipeline kept for parity/comparison harness runs.",
       "stages": [
         "collect-metadata",
         "get-modules",

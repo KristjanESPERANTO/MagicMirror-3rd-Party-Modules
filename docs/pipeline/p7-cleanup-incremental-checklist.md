@@ -30,7 +30,7 @@ Related docs:
   - Tests and harness references:
     - Check-group config unit test points to `scripts/check-modules` in [scripts/check-modules/**tests**/check-group-config.test.js](../../scripts/check-modules/__tests__/check-group-config.test.js).
     - Compare harness workflow uses `checkModules:compare` in [.github/workflows/check-modules-compare.yaml](../../.github/workflows/check-modules-compare.yaml).
-    - Follow-up: keep harness/tests for parity validation during P7.6; reassess after worker analysis parity is complete.
+    - Follow-up: keep the unit/integration regression tests, but retire the comparison harness in C4 in favor of canonical fixture/golden validation.
   - CI hooks snapshot:
     - No workflow currently invokes legacy stage chain (`full-refresh` or `--only=get-modules|expand-module-list|check-modules`).
     - Git hook only runs lint-staged in [.husky/\_/pre-commit](../../.husky/_/pre-commit).
@@ -38,14 +38,22 @@ Related docs:
   - Completed on 2026-03-19.
   - `npm run all` now targets `full-refresh-parallel` in [package.json](../../package.json).
   - `pipeline run` without explicit pipeline id now defaults to `full-refresh-parallel` in [scripts/orchestrator/index.js](../../scripts/orchestrator/index.js).
-  - Legacy stage-specific shortcuts (`collectMetadata`, `getModules`, `expandModuleList`, `checkModules`) are pinned to `full-refresh` as a temporary compatibility path in [package.json](../../package.json).
+  - Legacy stage-specific shortcuts (`collectMetadata`, `getModules`, `expandModuleList`, `checkModules`) were pinned to `full-refresh` as a temporary compatibility path in [package.json](../../package.json) and retired in C3.
   - Legacy `full-refresh` pipeline remains available as compatibility path in [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
-- [ ] C3: Legacy script retirement
-  - Remove or clearly deprecate obsolete wrappers and code paths that are no longer part of canonical flow.
-  - Ensure no dead stage artifact dependencies remain in orchestrator execution path.
+- [x] C3: Legacy script retirement
+  - Completed on 2026-03-19.
+  - Removed obsolete npm wrappers from public command surface: `getModules`, `expandModuleList`, `checkModules`, `ownList` in [package.json](../../package.json).
+  - Kept `collectMetadata` as a canonical stage helper and pointed it at `full-refresh-parallel` in [package.json](../../package.json).
+  - Updated comparison harness default command to explicitly use `full-refresh --only=check-modules` so parity runs keep working without depending on canonical default in [scripts/check-modules/compare/index.js](../../scripts/check-modules/compare/index.js).
+  - Marked `full-refresh` as legacy compatibility pipeline in [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
 - [ ] C4: Artifact contract cleanup
   - Confirm expected outputs for parallel path and remove stale assumptions about intermediate stage files.
   - Validate schema references for the artifacts that remain part of supported flows.
+  - Decision: retire the comparison harness and use canonical fixture/golden validation (`fixtures:generate`, `test:fixtures`, `golden:check`) as the supported regression path.
+  - Remove [scripts/check-modules/compare/index.js](../../scripts/check-modules/compare/index.js), `checkModules:compare` from [package.json](../../package.json), and [.github/workflows/check-modules-compare.yaml](../../.github/workflows/check-modules-compare.yaml).
+  - Remove Stage-4-specific capture/diff assumptions and harness documentation once fixture/golden validation is the only supported regression path.
+  - After the harness is gone, remove the `full-refresh` compatibility pipeline and legacy stages from [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
+  - Delete legacy-only artifact declarations that are no longer produced by supported flows.
 - [ ] C5: Docs and command surface cleanup
   - Update README/docs/npm script descriptions to match canonical flow.
   - Ensure contributor instructions do not point to retired stage sequence.

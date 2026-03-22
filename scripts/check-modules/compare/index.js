@@ -15,7 +15,7 @@ const PROJECT_ROOT = path.resolve(currentDir, "..", "..", "..");
 const DEFAULT_FIXTURE_DIR = path.join(PROJECT_ROOT, "fixtures", "modules");
 const DEFAULT_OUTPUT_DIR = path.join(PROJECT_ROOT, ".pipeline-runs", "compare");
 const DEFAULT_LEGACY_COMMAND = "skip";
-const DEFAULT_TS_COMMAND = "node scripts/orchestrator/index.js run --only=check-modules";
+const DEFAULT_TS_COMMAND = "node scripts/orchestrator/index.js run full-refresh --only=check-modules";
 const MAX_BUFFER_BYTES = 20 * 1024 * 1024;
 const { access, copyFile, mkdir, writeFile } = fsPromises;
 const execAsync = promisify(exec);

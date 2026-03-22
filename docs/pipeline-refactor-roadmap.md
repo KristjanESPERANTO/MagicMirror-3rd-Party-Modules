@@ -130,6 +130,8 @@ See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture det
 - Inventory legacy stage entry points and consumers (`full-refresh`, npm scripts, docs references)
 - Switch canonical full refresh execution to `full-refresh-parallel`
 - Remove/retire obsolete stage wrappers and stale intermediate artifact dependencies
+- Retire the comparison harness in favor of canonical fixture/golden checks
+- Then delete the legacy compatibility pipeline and its stage/artifact definitions
 - Run regression checks (`lint`, fixtures, schema checks, golden checks) after cleanup
 
 **Next: P7.6** — Incremental mode integration in worker architecture
@@ -160,7 +162,6 @@ Once the 3-phase architecture is complete:
 Items to revisit after the streaming architecture is complete:
 
 - **TypeScript migration**: Convert remaining `.js` files to `.ts` with proper type checking (~56 files in `scripts/`). Remove `@ts-nocheck` from existing `.ts` files. Add `tsc --noEmit` to CI pipeline. ([#140](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/pull/140))
-- **Comparison harness utility**: With single TS implementation, consider simplifying to golden file tests
 - **Event-driven architecture**: Replace file-based stage communication with event streams
 - **Containerization**: Run workers in isolated containers for security/reproducibility
 - **Progressive API delivery**: Chunked delivery of `modules.json` for large datasets ([#8](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/8))
