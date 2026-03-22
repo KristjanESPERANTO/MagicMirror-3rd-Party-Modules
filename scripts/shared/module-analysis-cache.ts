@@ -1,6 +1,5 @@
 import { createPersistentCache } from "./persistent-cache.ts";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { getCurrentCommit } from "./git.js";
+import { getCurrentCommit } from "./git.ts";
 import { resolve } from "node:path";
 import { stringifyDeterministic } from "./deterministic-output.ts";
 

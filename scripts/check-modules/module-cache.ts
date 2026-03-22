@@ -9,7 +9,6 @@
  * the cached analysis result instead of re-running all checks.
  */
 
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../shared/logger.ts";
 import { execFile } from "node:child_process";
 import fs from "node:fs";

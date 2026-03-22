@@ -1,10 +1,10 @@
 /* Unified metadata collector for stage 1+2 */
 
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { fetchRepositoryData, normalizeRepositoryData } from "../updateRepositoryApiData/api.js";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.js";
+import { fetchRepositoryData, normalizeRepositoryData } from "../updateRepositoryApiData/api.ts";
+import type { NormalizedRepositoryMetadata } from "../updateRepositoryApiData/api.ts";
+import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.ts";
 import { createHttpClient } from "../shared/http-client.ts";
+import type { HttpClient } from "../shared/http-client.ts";
 import { createLogger } from "../shared/logger.ts";
 import { createPersistentCache } from "../shared/persistent-cache.ts";
 import { createRateLimiter } from "../shared/rate-limiter.ts";
@@ -25,11 +25,10 @@ interface EnrichedModule extends ParsedModuleEntry {
   [key: string]: unknown;
 }
 
-interface CachedRepositoryValue {
+type CachedRepositoryValue = Partial<NormalizedRepositoryMetadata> & {
   error?: string;
   isFailed?: boolean;
-  [key: string]: unknown;
-}
+};
 
 interface CachedRepositoryEntry {
   value: CachedRepositoryValue;
@@ -77,7 +76,7 @@ interface CircuitBreaker {
 
 interface ProcessModuleContext {
   circuitBreaker: CircuitBreaker;
-  client: unknown;
+  client: HttpClient;
   githubModulesToFetch: EnrichedModule[];
   previousModulesMap: Map<string, EnrichedModule>;
   stats: ModuleStats;
@@ -293,7 +292,7 @@ function getFallbackOrOriginal(module: EnrichedModule, previousModulesMap: Map<s
 /**
  * Helper to fetch individual repository data.
  */
-async function fetchIndividualModule(module: EnrichedModule, repoType: string, client: unknown): Promise<IndividualFetchResult> {
+async function fetchIndividualModule(module: EnrichedModule, repoType: string, client: HttpClient): Promise<IndividualFetchResult> {
   try {
     const { response, data, branchData } = await fetchRepositoryData(module, client);
 
@@ -320,13 +319,19 @@ async function appendGitHubBatchResult({
   const repoData = batchResults[module.url];
   const repoId = getRepositoryId(module.url);
 
+  if (!repoId) {
+    enrichedModules.push(getFallbackOrOriginal(module, previousModulesMap));
+    stats.errors += 1;
+    return;
+  }
+
   if (repoData) {
     logger.debug(`GraphQL data for ${module.name}:`, {
       isArchived: repoData.isArchived,
       hasIssuesEnabled: repoData.hasIssuesEnabled,
       stargazerCount: repoData.stargazerCount
     });
-    const normalized = normalizeRepositoryData(repoData, null, "github") as CachedRepositoryValue;
+    const normalized: CachedRepositoryValue = normalizeRepositoryData(repoData, null, "github");
     repositoryCache.set(repoId, normalized);
     enrichedModules.push({ ...module, ...normalized });
     return;
@@ -380,6 +385,15 @@ async function processModule(module: EnrichedModule, context: ProcessModuleConte
   } = context;
 
   const repoId = getRepositoryId(module.url);
+  if (!repoId) {
+    const fallback = getFallbackOrOriginal(module, previousModulesMap);
+    if (fallback !== module) {
+      stats.fallbacks += 1;
+    }
+    stats.errors += 1;
+    return fallback;
+  }
+
   const cachedEntry = repositoryCache.get(repoId) as CachedRepositoryEntry | null;
 
   if (!FORCE_REFRESH && cachedEntry) {

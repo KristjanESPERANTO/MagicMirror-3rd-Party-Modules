@@ -1,5 +1,4 @@
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.js";
+import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.ts";
 
 export interface ParsedModuleEntry {
   category: string;

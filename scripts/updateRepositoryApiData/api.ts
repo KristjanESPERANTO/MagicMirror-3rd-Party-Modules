@@ -1,18 +1,87 @@
-import { getRepositoryId, getRepositoryType } from "./helpers.js";
 import { Buffer } from "node:buffer";
 import process from "node:process";
 
-// Function to fetch repository data based on the hosting service (non-GitHub)
-export async function fetchRepositoryData(module, httpClient, env = process.env) {
+import { getRepositoryId, getRepositoryType } from "./helpers.ts";
+import type { RepositoryType } from "./helpers.ts";
+
+interface RepositoryModuleRef {
+  url: string;
+}
+
+interface RequestHeaders {
+  [key: string]: string | undefined;
+  Authorization?: string;
+}
+
+interface HttpResponse<TData> {
+  data: TData;
+  ok: boolean;
+  status: number;
+  statusText?: string;
+}
+
+interface HttpClientLike {
+  getJson: <TData = unknown>(url: string, options?: { headers?: RequestHeaders }) => Promise<HttpResponse<TData>>;
+}
+
+interface RepositoryApiData {
+  archived?: boolean;
+  default_branch?: string;
+  defaultBranchRef?: { name?: string; target?: { committedDate?: string | null } };
+  hasIssuesEnabled?: boolean;
+  has_issues?: boolean;
+  isArchived?: boolean;
+  issues_enabled?: boolean;
+  license?: { key?: string; spdx_id?: string } | null;
+  licenseInfo?: { spdxId?: string | null } | null;
+  licenses?: Array<string | null>;
+  mainbranch?: { name?: string | null } | null;
+  pushedAt?: string | null;
+  star_count?: number;
+  stargazerCount?: number;
+  stargazers_count?: number;
+  stars_count?: number;
+  watchers_count?: number;
+  [key: string]: unknown;
+}
+
+interface RepositoryBranchData {
+  commit?: { author?: { date?: string | null } };
+  committed_date?: string | null;
+  date?: string | null;
+  [key: string]: unknown;
+}
+
+interface FetchRepositoryDataResult {
+  branchData: RepositoryBranchData | null;
+  data: RepositoryApiData;
+  repoType: RepositoryType;
+  response: {
+    ok: boolean;
+    status: number;
+    statusText?: string;
+  };
+}
+
+export interface NormalizedRepositoryMetadata {
+  hasGithubIssues: boolean;
+  isArchived: boolean;
+  lastCommit: string | null;
+  license: string | null;
+  stars: number;
+}
+
+export async function fetchRepositoryData(module: RepositoryModuleRef, httpClient: HttpClientLike, env: NodeJS.ProcessEnv = process.env): Promise<FetchRepositoryDataResult> {
   const repoType = getRepositoryType(module.url);
-  const repoId = getRepositoryId(module.url, repoType);
+  const repoId = getRepositoryId(module.url);
 
   if (!repoId) {
     throw new Error(`Could not extract repository ID from URL: ${module.url}`);
   }
 
-  let apiUrl, branchUrl;
-  const headers = {};
+  let apiUrl = "";
+  let branchUrl: string | null = null;
+  const headers: RequestHeaders = {};
 
   switch (repoType) {
     case "github":
@@ -22,7 +91,6 @@ export async function fetchRepositoryData(module, httpClient, env = process.env)
       }
       break;
     case "gitlab": {
-      // GitLab API uses URL-encoded project IDs
       const encodedId = encodeURIComponent(repoId);
       apiUrl = `https://gitlab.com/api/v4/projects/${encodedId}`;
       if (env.GITLAB_TOKEN) {
@@ -38,7 +106,6 @@ export async function fetchRepositoryData(module, httpClient, env = process.env)
       }
       break;
     case "codeberg":
-      // Codeberg uses Gitea API
       apiUrl = `https://codeberg.org/api/v1/repos/${repoId}`;
       if (env.CODEBERG_TOKEN) {
         headers.Authorization = `token ${env.CODEBERG_TOKEN}`;
@@ -48,64 +115,67 @@ export async function fetchRepositoryData(module, httpClient, env = process.env)
       throw new Error(`Unsupported repository type: ${repoType}`);
   }
 
-  const result = await httpClient.getJson(apiUrl, { headers });
+  const result = await httpClient.getJson<RepositoryApiData>(apiUrl, { headers });
   const data = result.data;
 
-  // Fetch branch data
-  let branchData = null;
+  let branchData: RepositoryBranchData | null = null;
   if (result.status === 200) {
     switch (repoType) {
       case "github":
         branchUrl = `https://api.github.com/repos/${repoId}/commits/${data.default_branch}`;
         break;
-      case "gitlab":
-      { const encodedIdForBranch = encodeURIComponent(repoId);
+      case "gitlab": {
+        const encodedIdForBranch = encodeURIComponent(repoId);
         branchUrl = `https://gitlab.com/api/v4/projects/${encodedIdForBranch}/repository/commits/${data.default_branch}`;
-        break; }
+        break;
+      }
       case "bitbucket":
         branchUrl = `https://api.bitbucket.org/2.0/repositories/${repoId}/commits/${data.mainbranch?.name || "main"}`;
         break;
       case "codeberg":
         branchUrl = `https://codeberg.org/api/v1/repos/${repoId}/commits/${data.default_branch}`;
         break;
+      default:
+        break;
     }
 
     if (branchUrl) {
-      const branchResult = await httpClient.getJson(branchUrl, { headers });
+      const branchResult = await httpClient.getJson<RepositoryBranchData>(branchUrl, { headers });
       branchData = branchResult.data;
     }
 
-    // Fetch watchers for Bitbucket (as a proxy for stars)
     if (repoType === "bitbucket") {
       const watchersUrl = `https://api.bitbucket.org/2.0/repositories/${repoId}/watchers?pagelen=1`;
-      const watchersResult = await httpClient.getJson(watchersUrl, { headers });
+      const watchersResult = await httpClient.getJson<{ size?: number }>(watchersUrl, { headers });
       if (watchersResult.status === 200) {
-        data.watchers_count = watchersResult.data.size;
+        data.watchers_count = watchersResult.data.size ?? 0;
       }
     }
   }
 
-  return { response: { status: result.status, ok: result.ok }, data, branchData, repoType };
+  return {
+    response: {
+      status: result.status,
+      ok: result.ok,
+      statusText: result.statusText
+    },
+    data,
+    branchData,
+    repoType
+  };
 }
 
-// Function to normalize API responses from different hosting services
-export function normalizeRepositoryData(data, branchData, repoType) {
+export function normalizeRepositoryData(data: RepositoryApiData, branchData: RepositoryBranchData | null, repoType: RepositoryType | string): NormalizedRepositoryMetadata {
   const isArchived = data.archived ?? data.isArchived ?? false;
-
-  /*
-   * Const isDisabled = data.disabled ?? data.isDisabled ?? false; // Not in schema
-   * const defaultBranch = data.default_branch ?? data.defaultBranchRef?.name ?? data.mainbranch?.name ?? "main"; // Not in schema
-   */
-
   let stars = 0;
-  let license;
+  let license: string | null = null;
   let hasGithubIssues = false;
-  let lastCommit = null;
+  let lastCommit: string | null = null;
 
   switch (repoType) {
     case "github":
       stars = data.stargazers_count ?? data.stargazerCount ?? 0;
-      license = data.license?.spdx_id ?? data.licenseInfo?.spdxId;
+      license = data.license?.spdx_id ?? data.licenseInfo?.spdxId ?? null;
       hasGithubIssues = data.has_issues ?? data.hasIssuesEnabled ?? false;
       lastCommit = branchData?.commit?.author?.date ?? data.defaultBranchRef?.target?.committedDate ?? data.pushedAt ?? null;
       break;
@@ -116,15 +186,17 @@ export function normalizeRepositoryData(data, branchData, repoType) {
       break;
     case "bitbucket":
       stars = data.watchers_count ?? 0;
-      license = data.license?.key;
+      license = data.license?.key ?? null;
       hasGithubIssues = data.has_issues ?? false;
       lastCommit = branchData?.date ?? null;
       break;
     case "codeberg":
       stars = data.stars_count ?? 0;
-      license = data.licenses?.[0];
+      license = data.licenses?.[0] ?? null;
       hasGithubIssues = data.has_issues ?? false;
       lastCommit = branchData?.commit?.author?.date ?? null;
+      break;
+    default:
       break;
   }
 

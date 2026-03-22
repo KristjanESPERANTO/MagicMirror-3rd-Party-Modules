@@ -1,6 +1,65 @@
 import fs from "node:fs";
 
-export function getRepositoryType(url) {
+export type RepositoryType = "github" | "gitlab" | "bitbucket" | "codeberg" | "unknown";
+
+export interface RepositoryModuleLike {
+  hasGithubIssues?: boolean;
+  id: string;
+  isArchived?: boolean;
+  license?: string | null;
+  name: string;
+  stars?: number;
+  url: string;
+  [key: string]: unknown;
+}
+
+export interface NormalizedRepositoryData {
+  archived: boolean;
+  disabled?: boolean;
+  has_issues: boolean;
+  issues?: number;
+  lastCommit: string | null;
+  license: string | null;
+  stars: number;
+  defaultBranch?: string | null;
+}
+
+export interface RepositoryDataRecord {
+  gitHubData: NormalizedRepositoryData;
+  gitHubDataLastUpdate: string | null;
+  id: string;
+}
+
+export interface PreviousRepositoryData {
+  repositories?: RepositoryDataRecord[];
+  [key: string]: unknown;
+}
+
+export interface RepositoryCacheEntry {
+  updatedAt?: string;
+  value: NormalizedRepositoryData;
+}
+
+export interface RepositoryCacheLike {
+  get: (key: string) => RepositoryCacheEntry | undefined;
+}
+
+export interface PartitionModulesOptions<TModule extends RepositoryModuleLike> {
+  cache: RepositoryCacheLike;
+  moduleList: TModule[];
+  previousData: PreviousRepositoryData;
+  results: RepositoryDataRecord[];
+  shouldFetchCallback?: (module: TModule) => boolean;
+}
+
+export interface PartitionModulesResult<TModule extends RepositoryModuleLike> {
+  cacheKeys: Map<string, string>;
+  githubModules: TModule[];
+  otherModules: TModule[];
+  processedCount: number;
+}
+
+export function getRepositoryType(url: string): RepositoryType {
   if (url.includes("github.com")) {
     return "github";
   }
@@ -16,7 +75,7 @@ export function getRepositoryType(url) {
   return "unknown";
 }
 
-export function getRepositoryId(url) {
+export function getRepositoryId(url: string): string | null {
   const urlParts = url.split("/");
   const hostIndex = urlParts.findIndex(part =>
     part.includes("github.com")
@@ -30,7 +89,7 @@ export function getRepositoryId(url) {
   return null;
 }
 
-export function sortModuleListByLastUpdate(previousData, moduleList) {
+export function sortModuleListByLastUpdate<TModule extends RepositoryModuleLike>(previousData: PreviousRepositoryData, moduleList: TModule[]): void {
   moduleList.sort((a, b) => {
     const lastUpdateA = previousData.repositories?.find(repo => repo.id === a.id)?.gitHubDataLastUpdate;
     const lastUpdateB = previousData.repositories?.find(repo => repo.id === b.id)?.gitHubDataLastUpdate;
@@ -47,25 +106,25 @@ export function sortModuleListByLastUpdate(previousData, moduleList) {
       return 1;
     }
 
-    return new Date(lastUpdateA) - new Date(lastUpdateB);
+    return new Date(lastUpdateA).getTime() - new Date(lastUpdateB).getTime();
   });
 }
 
-export function sortByNameIgnoringPrefix(a, b) {
+export function sortByNameIgnoringPrefix<TModule extends Pick<RepositoryModuleLike, "name">>(a: TModule, b: TModule): number {
   const nameA = a.name.replace("MMM-", "");
   const nameB = b.name.replace("MMM-", "");
   return nameA.localeCompare(nameB);
 }
 
-export async function loadPreviousData(remoteFilePath, localFilePath) {
-  let previousData = {};
+export async function loadPreviousData(remoteFilePath: string, localFilePath: string): Promise<PreviousRepositoryData> {
+  let previousData: PreviousRepositoryData = {};
   try {
     const response = await fetch(remoteFilePath);
     if (response.ok) {
-      previousData = await response.json();
+      previousData = await response.json() as PreviousRepositoryData;
     }
     else if (fs.existsSync(localFilePath)) {
-      previousData = JSON.parse(fs.readFileSync(localFilePath));
+      previousData = JSON.parse(fs.readFileSync(localFilePath, "utf8")) as PreviousRepositoryData;
     }
     else {
       console.warn(`Local file ${localFilePath} does not exist.`);
@@ -74,7 +133,7 @@ export async function loadPreviousData(remoteFilePath, localFilePath) {
   catch (error) {
     console.error("Error fetching remote data, falling back to local file:", error);
     try {
-      previousData = JSON.parse(fs.readFileSync(localFilePath));
+      previousData = JSON.parse(fs.readFileSync(localFilePath, "utf8")) as PreviousRepositoryData;
     }
     catch (localError) {
       console.error("Error reading local data:", localError);
@@ -83,7 +142,7 @@ export async function loadPreviousData(remoteFilePath, localFilePath) {
   return previousData;
 }
 
-export function createDefaultRepositoryData({ repositoryId, module }) {
+export function createDefaultRepositoryData<TModule extends RepositoryModuleLike>({ repositoryId, module }: { module: TModule; repositoryId: string }): RepositoryDataRecord {
   if (typeof module.stars !== "number") {
     module.stars = 0;
   }
@@ -110,7 +169,7 @@ export function createDefaultRepositoryData({ repositoryId, module }) {
   };
 }
 
-export function getRepositoryCacheKey(module) {
+export function getRepositoryCacheKey(module: Pick<RepositoryModuleLike, "url">): string | null {
   const repoType = getRepositoryType(module.url);
   const repoId = getRepositoryId(module.url);
   if (!repoId || repoType === "unknown") {
@@ -119,7 +178,7 @@ export function getRepositoryCacheKey(module) {
   return `${repoType}:${repoId.toLowerCase()}`;
 }
 
-export function applyRepositoryData(module, normalizedData) {
+export function applyRepositoryData<TModule extends RepositoryModuleLike>(module: TModule, normalizedData: NormalizedRepositoryData): void {
   module.stars = normalizedData.stars;
   if (normalizedData.has_issues === false) {
     module.hasGithubIssues = false;
@@ -132,7 +191,7 @@ export function applyRepositoryData(module, normalizedData) {
   }
 }
 
-export function createRepositoryDataRecord({ moduleId, normalizedData, timestamp }) {
+export function createRepositoryDataRecord({ moduleId, normalizedData, timestamp }: { moduleId: string; normalizedData: NormalizedRepositoryData; timestamp: string }): RepositoryDataRecord {
   return {
     id: moduleId,
     gitHubDataLastUpdate: timestamp,
@@ -140,10 +199,10 @@ export function createRepositoryDataRecord({ moduleId, normalizedData, timestamp
   };
 }
 
-export function partitionModules({ moduleList, previousData, results, cache, shouldFetchCallback }) {
-  const githubModules = [];
-  const otherModules = [];
-  const cacheKeys = new Map();
+export function partitionModules<TModule extends RepositoryModuleLike>({ moduleList, previousData, results, cache, shouldFetchCallback }: PartitionModulesOptions<TModule>): PartitionModulesResult<TModule> {
+  const githubModules: TModule[] = [];
+  const otherModules: TModule[] = [];
+  const cacheKeys = new Map<string, string>();
   let processedCount = 0;
 
   for (const module of moduleList) {
@@ -187,7 +246,7 @@ export function partitionModules({ moduleList, previousData, results, cache, sho
   return { githubModules, otherModules, cacheKeys, processedCount };
 }
 
-export function useHistoricalData(previousData, repositoryId, module, results) {
+export function useHistoricalData<TModule extends RepositoryModuleLike>(previousData: PreviousRepositoryData, repositoryId: string, module: TModule, results: RepositoryDataRecord[]): void {
   const existingRepository = previousData.repositories?.find(repo => repo.id === repositoryId);
   if (existingRepository) {
     applyRepositoryData(module, existingRepository.gitHubData);
