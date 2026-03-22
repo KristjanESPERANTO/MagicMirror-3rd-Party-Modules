@@ -57,6 +57,17 @@ function getBatchSize() {
 }
 
 /**
+ * Check whether the module analysis cache is disabled for this run.
+ * Disable via --no-cache CLI flag or PIPELINE_CACHE_DISABLED=1 env var.
+ */
+function isCacheDisabled() {
+  if (process.env.PIPELINE_CACHE_DISABLED === "1") {
+    return true;
+  }
+  return process.argv.includes("--no-cache");
+}
+
+/**
  * Prune cache entries that are stale for the current run (I5).
  * Stale means "key is no longer expected" due to removed modules
  * or key-input changes (module revision/check config/catalogue revision).
@@ -358,7 +369,11 @@ async function main() {
     logger.info(`Loaded ${modules.length} modules`);
     const workerCount = getWorkerCount();
     const batchSize = getBatchSize();
+    const cacheDisabled = isCacheDisabled();
     logger.info(`Starting parallel processing with ${workerCount} workers, batch size ${batchSize}`);
+    if (cacheDisabled) {
+      logger.warn("Cache disabled (--no-cache / PIPELINE_CACHE_DISABLED): all modules will be processed fresh");
+    }
     const pool = new WorkerPool({
       workerCount,
       batchSize,
@@ -391,31 +406,38 @@ async function main() {
       logger.warn("Could not resolve current catalogue revision; module cache keys will be unavailable for this run");
     }
     const cachePath = resolveModuleAnalysisCachePath(PROJECT_ROOT);
-    const cache = createModuleAnalysisCache({ filePath: cachePath });
-    await cache.load();
-    const prunedCount = pruneStaleCacheEntries(cache, modules, {
-      catalogueRevision,
-      analysisConfig
-    });
-    const { cachedResults, uncachedModules } = partitionModulesByCache(modules, {
-      cache,
-      catalogueRevision,
-      analysisConfig
-    });
+    let cache = null;
+    let prunedCount = 0;
+    let cachedResults = [];
+    let uncachedModules = modules;
 
-    if (cachedResults.length > 0) {
-      for (const result of cachedResults) {
-        processedCount += 1;
-        logger.info(`[${processedCount}/${modules.length}] ⊙ ${result.id} (cached)`);
+    if (!cacheDisabled) {
+      cache = createModuleAnalysisCache({ filePath: cachePath });
+      await cache.load();
+      prunedCount = pruneStaleCacheEntries(cache, modules, {
+        catalogueRevision,
+        analysisConfig
+      });
+      ({ cachedResults, uncachedModules } = partitionModulesByCache(modules, {
+        cache,
+        catalogueRevision,
+        analysisConfig
+      }));
+
+      if (cachedResults.length > 0) {
+        for (const result of cachedResults) {
+          processedCount += 1;
+          logger.info(`[${processedCount}/${modules.length}] ⊙ ${result.id} (cached)`);
+        }
+        logger.info(`Cache: ${cachedResults.length} hit(s), ${uncachedModules.length} to process`);
       }
-      logger.info(`Cache: ${cachedResults.length} hit(s), ${uncachedModules.length} to process`);
     }
     const moduleConfig = {
       projectRoot: PROJECT_ROOT,
       modulesDir: resolve(PROJECT_ROOT, "modules"),
       modulesTempDir: resolve(PROJECT_ROOT, "modules_temp"),
       imagesDir: resolve(PROJECT_ROOT, "website/images"),
-      cacheEnabled: true,
+      cacheEnabled: !cacheDisabled,
       cachePath,
       cacheSchemaVersion: MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,
       catalogueRevision,
@@ -427,7 +449,7 @@ async function main() {
       ? await pool.processModules(uncachedModules, moduleConfig)
       : [];
     const results = [...cachedResults, ...workerResults];
-    const writtenCount = writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision);
+    const writtenCount = cache ? writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision) : 0;
     if (prunedCount > 0 || writtenCount > 0) {
       await cache.flush();
       logger.info(`Cache: ${prunedCount} pruned, ${writtenCount} written`);

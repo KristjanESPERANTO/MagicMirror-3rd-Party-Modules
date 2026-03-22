@@ -99,12 +99,15 @@ Related docs:
   - This covers both removed modules (orphan entries) and key-input changes (module revision, check-group config, catalogue revision) because changed inputs produce different expected keys.
   - Cache persistence is centralized: after pruning and write-path updates, orchestrator flushes once when there are mutations (`Cache: X pruned, Y written`).
   - Schema-version invalidation remains enforced by [scripts/shared/persistent-cache.js](../../scripts/shared/persistent-cache.js) via version mismatch reset from I1.
-- [ ] I6: Test coverage
-  - Add unit tests for cache hit/miss/invalidation paths.
-  - Add integration test showing improved second-run skip rate.
-- [ ] I7: Runtime controls
-  - Support toggles for cache enable/disable in parallel mode (`--no-cache` and/or env var).
-  - Document default behavior for full vs incremental runs.
+- [x] I6: Test coverage
+  - Completed on 2026-03-19.
+  - Exported `pruneStaleCacheEntries`, `partitionModulesByCache`, `writeSuccessfulResultsToCache` from [scripts/parallel-processing.js](../../scripts/parallel-processing.js) and added CLI guard (`isMainEntry`) so the file can be safely imported in tests.
+  - New test file: [scripts/shared/\_\_tests\_\_/parallel-processing-cache-runtime.test.js](../../scripts/shared/__tests__/parallel-processing-cache-runtime.test.js) with 3 tests covering cache hit/miss semantics, orphaned/stale key pruning, and second-run skip-rate improvement.
+- [x] I7: Runtime controls
+  - Completed on 2026-03-19.
+  - Added `isCacheDisabled()` in [scripts/parallel-processing.js](../../scripts/parallel-processing.js): returns `true` if `--no-cache` CLI flag is present or `PIPELINE_CACHE_DISABLED=1` env var is set.
+  - When disabled: all modules are passed to workers, cache load/prune/partition/write/flush are skipped, `cacheEnabled: false` is passed to `moduleConfig`.
+  - Default behavior: cache is enabled; modules with valid cached results are skipped (status=skipped), new results are written back after processing.
 - [ ] I8: Evidence and acceptance
   - Record before/after performance and cache-hit metrics.
   - Confirm output parity for representative module subsets.
