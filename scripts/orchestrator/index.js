@@ -4,9 +4,9 @@
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { buildExecutionPlan, loadStageGraph } from "./stage-graph.js";
 import { createLogger, createStageProgressLogger } from "../shared/logger.js";
-
 import { mkdir, writeFile } from "node:fs/promises";
 import { Command } from "commander";
+import { createInProcessStageRunner } from "./in-process-stage-runner.js";
 import { execFile } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
@@ -306,6 +306,7 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
   const logFormat = jsonLogs ? "json" : process.env.LOG_FORMAT ?? "text";
   const baseLogger = createLogger({ name: "pipeline", format: logFormat });
   const stageLogger = createStageProgressLogger(baseLogger);
+  const stageRunner = createInProcessStageRunner({ projectRoot: PROJECT_ROOT });
   const validateArtifacts = createArtifactValidator();
   const normalizedFilters = normalizeStageFilters(filters);
   const { selectedStages, skippedStages } = applyStageFilters(stages, normalizedFilters);
@@ -337,6 +338,7 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
       cwd: PROJECT_ROOT,
       env: { ...process.env, LOG_FORMAT: logFormat },
       logger: stageLogger,
+      stageRunner,
       validateArtifacts
     });
 

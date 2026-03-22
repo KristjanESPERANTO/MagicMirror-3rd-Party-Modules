@@ -31,7 +31,17 @@ function runStageProcess({ executable, args = [] }, options) {
   });
 }
 
-export async function runStagesSequentially(stages, { logger, cwd = process.cwd(), env = process.env, validateArtifacts } = {}) {
+async function executeStage(stage, options) {
+  const handled = options.stageRunner
+    ? await options.stageRunner(stage, { cwd: options.cwd, env: options.env })
+    : false;
+
+  if (!handled) {
+    await runStageProcess(stage.command, options);
+  }
+}
+
+export async function runStagesSequentially(stages, { logger, cwd = process.cwd(), env = process.env, stageRunner, validateArtifacts } = {}) {
   const results = [];
 
   for (let index = 0; index < stages.length; index += 1) {
@@ -45,7 +55,7 @@ export async function runStagesSequentially(stages, { logger, cwd = process.cwd(
     const startedAt = Date.now();
 
     try {
-      await runStageProcess(stage.command, { cwd, env });
+      await executeStage(stage, { cwd, env, stageRunner });
 
       if (validateArtifacts) {
         await validateArtifacts(stage, { cwd, logger });

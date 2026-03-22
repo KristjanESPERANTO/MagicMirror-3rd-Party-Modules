@@ -13,6 +13,7 @@ import { createHttpClient } from "../shared/http-client.js";
 import { createLogger } from "../shared/logger.js";
 import { createPersistentCache } from "../shared/persistent-cache.js";
 import { createRateLimiter } from "../shared/rate-limiter.js";
+import { fileURLToPath } from "node:url";
 import fs from "node:fs";
 import { loadPreviousModules } from "../shared/module-list.js";
 import { parseModuleList } from "./parser.js";
@@ -422,53 +423,7 @@ async function enrichModules(modules, previousModulesMap) {
 
 async function main() {
   try {
-    logger.info("Starting unified metadata collection...");
-
-    if (!process.env.GITHUB_TOKEN) {
-      logger.warn("GITHUB_TOKEN is not set. Rate limits will be strict and processing may be slow.");
-    }
-
-    const markdown = await fetchMarkdown();
-    const { modules } = parseModuleList(markdown);
-    logger.info(`Parsed ${modules.length} modules from Wiki.`);
-
-    // Ensure modules in "Outdated Modules" category have an outdated field
-    for (const module of modules) {
-      if (module.category === "Outdated Modules" && !module.outdated) {
-        // If no specific reason is provided, add a generic message
-        module.outdated = "This module is marked as outdated in the official module list.";
-      }
-    }
-
-    const previousModulesMap = loadPreviousModules();
-
-    // Load cache to enable pruning
-    await repositoryCache.load();
-
-    const enrichedModules = await enrichModules(modules, previousModulesMap);
-
-    // Prune orphaned cache entries (modules that are no longer in the Wiki)
-    const currentModuleIds = new Set(enrichedModules.map(module => getRepositoryId(module.url)).filter(Boolean));
-    const cachedEntries = repositoryCache.getAllKeys();
-    let prunedCount = 0;
-
-    for (const cachedId of cachedEntries) {
-      if (!currentModuleIds.has(cachedId)) {
-        repositoryCache.delete(cachedId);
-        prunedCount += 1;
-      }
-    }
-
-    if (prunedCount > 0) {
-      logger.info(`Pruned ${prunedCount} orphaned cache entries for modules no longer in the Wiki`);
-    }
-
-    // Flush cache after pruning
-    await repositoryCache.flush();
-
-    const outputPath = path.join("website", "data", "modules.stage.2.json");
-    fs.writeFileSync(outputPath, JSON.stringify(enrichedModules, null, 2));
-    logger.info(`Successfully wrote ${enrichedModules.length} modules to ${outputPath}`);
+    await runCollectMetadata();
   }
   catch (error) {
     logger.error("Metadata collection failed", { error: error.message });
@@ -476,4 +431,58 @@ async function main() {
   }
 }
 
-main();
+export async function runCollectMetadata({
+  markdown,
+  outputPath = path.join("website", "data", "modules.stage.2.json"),
+  previousModulesMap = loadPreviousModules()
+} = {}) {
+  logger.info("Starting unified metadata collection...");
+
+  if (!process.env.GITHUB_TOKEN) {
+    logger.warn("GITHUB_TOKEN is not set. Rate limits will be strict and processing may be slow.");
+  }
+
+  const markdownSource = typeof markdown === "string" ? markdown : await fetchMarkdown();
+  const { modules } = parseModuleList(markdownSource);
+  logger.info(`Parsed ${modules.length} modules from Wiki.`);
+
+  for (const module of modules) {
+    if (module.category === "Outdated Modules" && !module.outdated) {
+      module.outdated = "This module is marked as outdated in the official module list.";
+    }
+  }
+
+  await repositoryCache.load();
+
+  const enrichedModules = await enrichModules(modules, previousModulesMap);
+  const currentModuleIds = new Set(enrichedModules.map(module => getRepositoryId(module.url)).filter(Boolean));
+  const cachedEntries = repositoryCache.getAllKeys();
+  let prunedCount = 0;
+
+  for (const cachedId of cachedEntries) {
+    if (!currentModuleIds.has(cachedId)) {
+      repositoryCache.delete(cachedId);
+      prunedCount += 1;
+    }
+  }
+
+  if (prunedCount > 0) {
+    logger.info(`Pruned ${prunedCount} orphaned cache entries for modules no longer in the Wiki`);
+  }
+
+  await repositoryCache.flush();
+  fs.writeFileSync(outputPath, JSON.stringify(enrichedModules, null, 2));
+  logger.info(`Successfully wrote ${enrichedModules.length} modules to ${outputPath}`);
+
+  return {
+    modules: enrichedModules,
+    outputPath
+  };
+}
+
+const currentFile = fileURLToPath(import.meta.url);
+const isMainEntry = Boolean(process.argv[1]) && path.resolve(process.argv[1]) === currentFile;
+
+if (isMainEntry) {
+  main();
+}
