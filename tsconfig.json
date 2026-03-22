@@ -17,6 +17,6 @@
     "verbatimModuleSyntax": true,
     "noEmit": true
   },
-  "include": ["scripts/**/*.ts", "pipeline/**/*.ts"],
+  "include": ["scripts/**/*.ts", "pipeline/**/*.ts", "create_own_module_list.ts"],
   "exclude": ["node_modules", "dist", "modules", "modules_temp", "fixtures"]
 }
