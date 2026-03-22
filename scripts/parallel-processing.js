@@ -56,6 +56,46 @@ function getBatchSize() {
 }
 
 /**
+ * Prune cache entries that are stale for the current run (I5).
+ * Stale means "key is no longer expected" due to removed modules
+ * or key-input changes (module revision/check config/catalogue revision).
+ *
+ * @param {Object} cache Cache instance
+ * @param {Array} modules Current module list
+ * @param {{ catalogueRevision: string|null, analysisConfig: object }} options
+ * @returns {number} Number of entries pruned
+ */
+function pruneStaleCacheEntries(cache, modules, { catalogueRevision, analysisConfig }) {
+  if (!catalogueRevision) {
+    return 0;
+  }
+
+  const expectedKeys = new Set();
+  for (const module of modules) {
+    const cacheKey = buildModuleAnalysisCacheKey({
+      module,
+      moduleRevision: module.lastCommit,
+      catalogueRevision,
+      checkGroups: analysisConfig
+    });
+
+    if (cacheKey) {
+      expectedKeys.add(cacheKey);
+    }
+  }
+
+  let prunedCount = 0;
+  for (const key of cache.getAllKeys()) {
+    if (!expectedKeys.has(key)) {
+      cache.delete(key);
+      prunedCount += 1;
+    }
+  }
+
+  return prunedCount;
+}
+
+/**
  * Partition modules into cache hits and misses.
  * Returns results for hits immediately; misses must be processed by workers.
  *
@@ -79,7 +119,13 @@ function partitionModulesByCache(modules, { cache, catalogueRevision, analysisCo
     const entry = cacheKey ? cache.get(cacheKey) : null;
 
     if (entry) {
-      cachedResults.push({ ...entry.value, cacheKey, fromCache: true });
+      cachedResults.push({
+        ...entry.value,
+        cacheKey,
+        fromCache: true,
+        status: "skipped",
+        skippedReason: "cached"
+      });
     }
     else {
       uncachedModules.push(module);
@@ -115,28 +161,23 @@ async function writePipelineOutputs(stage5Modules, projectRoot) {
 }
 
 /**
- * Write successfully processed modules to cache (I3).
- * Only caches successful results with valid cache keys.
- * Flushes cache to disk when done.
+ * Write successful worker results to cache (I3).
  *
  * @param {Array} workerResults Worker results from pool.processModules
  * @param {Object} cache Cache instance
- * @param {string|null} catalogueRevision For logging
- * @returns {Promise<void>}
+ * @param {string|null} catalogueRevision Current catalogue revision
+ * @returns {number} Number of cache entries written
  */
-async function writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision) {
+function writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision) {
   if (!catalogueRevision || workerResults.length === 0) {
-    return;
+    return 0;
   }
 
-  // Meta-fields that should not be cached
   const metaKeys = new Set(["cacheKey", "fromCache", "processingTimeMs", "cloneDir", "moduleLogger"]);
   let writtenCount = 0;
 
   for (const result of workerResults) {
-    // Only cache successful results
     if (result.status === "success" && result.cacheKey) {
-      // Prepare analysis data: copy all fields except meta and stage-2-input-only fields
       const cachedData = {};
       for (const [key, value] of Object.entries(result)) {
         if (!metaKeys.has(key)) {
@@ -149,10 +190,7 @@ async function writeSuccessfulResultsToCache(workerResults, cache, catalogueRevi
     }
   }
 
-  if (writtenCount > 0) {
-    logger.info(`Caching ${writtenCount} successful module result(s)`);
-    await cache.flush();
-  }
+  return writtenCount;
 }
 
 const STAGE5_ALLOWED_KEYS = [
@@ -312,31 +350,21 @@ function buildStats(stage5Modules, finalModules, timestamp) {
 
 async function main() {
   const startTime = Date.now();
-
   try {
-    // Read input modules from stage 2
     const stage2Path = resolve(PROJECT_ROOT, "website/data/modules.stage.2.json");
     logger.info(`Reading modules from ${stage2Path}...`);
     const modules = JSON.parse(await readFile(stage2Path, "utf-8"));
-
     logger.info(`Loaded ${modules.length} modules`);
-
-    // Configure worker pool
     const workerCount = getWorkerCount();
     const batchSize = getBatchSize();
-
     logger.info(`Starting parallel processing with ${workerCount} workers, batch size ${batchSize}`);
-
     const pool = new WorkerPool({
       workerCount,
       batchSize,
       moduleTimeoutMs: 60000,
       batchTimeoutMs: 1800000
     });
-
-    // Set up progress tracking
     let processedCount = 0;
-
     pool.onProgress((event) => {
       if (event.type === "module" && event.status !== "started") {
         processedCount += 1;
@@ -348,11 +376,9 @@ async function main() {
           status = "✗";
         }
         const cacheInfo = event.fromCache ? " (cached)" : "";
-
         logger.info(`[${processedCount}/${modules.length}] ${status} ${event.moduleId}${cacheInfo}`);
       }
     });
-
     const analysisConfig = normalizeModuleAnalysisCheckGroups({
       fast: true,
       deep: true,
@@ -360,16 +386,16 @@ async function main() {
       ncu: true
     });
     const catalogueRevision = await getProjectRevision(PROJECT_ROOT);
-
     if (!catalogueRevision) {
       logger.warn("Could not resolve current catalogue revision; module cache keys will be unavailable for this run");
     }
-
-    // Load module analysis cache and partition modules into hits/misses (I2)
     const cachePath = resolveModuleAnalysisCachePath(PROJECT_ROOT);
     const cache = createModuleAnalysisCache({ filePath: cachePath });
     await cache.load();
-
+    const prunedCount = pruneStaleCacheEntries(cache, modules, {
+      catalogueRevision,
+      analysisConfig
+    });
     const { cachedResults, uncachedModules } = partitionModulesByCache(modules, {
       cache,
       catalogueRevision,
@@ -383,8 +409,6 @@ async function main() {
       }
       logger.info(`Cache: ${cachedResults.length} hit(s), ${uncachedModules.length} to process`);
     }
-
-    // Module processing config
     const moduleConfig = {
       projectRoot: PROJECT_ROOT,
       modulesDir: resolve(PROJECT_ROOT, "modules"),
@@ -398,19 +422,15 @@ async function main() {
       checkGroups: analysisConfig,
       timeoutMs: 60000
     };
-
-    // Process cache-miss modules; skip pool entirely if all were cached
     const workerResults = uncachedModules.length > 0
       ? await pool.processModules(uncachedModules, moduleConfig)
       : [];
     const results = [...cachedResults, ...workerResults];
-
-    // Write successfully processed worker results to cache (I3)
-    await writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision);
-
-    // Stage 5 schema expects an object with a `modules` array.
-    // Merge worker results back into stage-2 module entries to preserve
-    // Required base fields like category and maintainerURL.
+    const writtenCount = writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision);
+    if (prunedCount > 0 || writtenCount > 0) {
+      await cache.flush();
+      logger.info(`Cache: ${prunedCount} pruned, ${writtenCount} written`);
+    }
     const resultsById = new Map(results.map(result => [result.id, result]));
     const mergedModules = modules.map((module) => {
       const result = resultsById.get(module.id);
@@ -431,14 +451,9 @@ async function main() {
       };
     });
     const stage5Modules = mergedModules.map(toStage5Module);
-
-    // Write stage 5 output and final public artefacts.
     const stage5Path = await writePipelineOutputs(stage5Modules, PROJECT_ROOT);
-
     const duration = Date.now() - startTime;
     const avgTime = Math.round(duration / results.length);
-
-    // Summary
     const successCount = results.filter(result => result.status === "success").length;
     const failedCount = results.filter(result => result.status === "failed").length;
     const skippedCount = results.filter(result => result.status === "skipped").length;

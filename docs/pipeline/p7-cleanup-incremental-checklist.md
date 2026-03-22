@@ -87,12 +87,18 @@ Related docs:
   - Integrated into orchestrator flow: after `pool.processModules()` returns, successful results are written to cache and flushed before output writing. No race conditions: all cache writes happen in parent process (single-threaded).
   - Caching only happens when `catalogueRevision` is available (cache keys are invalid otherwise).
   - Second-run module hits (from I2) still bypass the pool; now successful results from both first-run misses and second-run refreshes populate the cache for future runs.
-- [ ] I4: Skip semantics and reporting
-  - Standardize `status=skipped` and `skippedReason=cached` handling.
-  - Ensure progress output and final summary report skipped/cached totals clearly.
-- [ ] I5: Invalidation and pruning
-  - Prune cache entries for removed modules.
-  - Invalidate entries when key inputs change (checks config/schema version).
+- [x] I4: Skip semantics and reporting
+  - Completed on 2026-03-19.
+  - Cache-hit modules from I2 now marked as `status=skipped` and `skippedReason=cached` in [scripts/parallel-processing.js](../../scripts/parallel-processing.js) `partitionModulesByCache()`.
+  - Final summary in `main()` already counts `success`, `failed`, and `skipped` separately; skipped modules now include cached hits.
+  - Progress output correctly labels cached modules with `⊙` symbol and "(cached)" note per result.
+  - Semantics are now consistent: skipped results appear in the same data structures as processed results; skipped totals reflect actual cache-bypass behavior.
+- [x] I5: Invalidation and pruning
+  - Completed on 2026-03-19.
+  - Added `pruneStaleCacheEntries()` in [scripts/parallel-processing.js](../../scripts/parallel-processing.js), which computes the expected key set for the current run and removes cache entries not in that set.
+  - This covers both removed modules (orphan entries) and key-input changes (module revision, check-group config, catalogue revision) because changed inputs produce different expected keys.
+  - Cache persistence is centralized: after pruning and write-path updates, orchestrator flushes once when there are mutations (`Cache: X pruned, Y written`).
+  - Schema-version invalidation remains enforced by [scripts/shared/persistent-cache.js](../../scripts/shared/persistent-cache.js) via version mismatch reset from I1.
 - [ ] I6: Test coverage
   - Add unit tests for cache hit/miss/invalidation paths.
   - Add integration test showing improved second-run skip rate.
