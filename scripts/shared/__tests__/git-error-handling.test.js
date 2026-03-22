@@ -1,7 +1,7 @@
 import {
   GitError,
   GitErrorCategory
-} from "../git.js";
+} from "../git.ts";
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 
