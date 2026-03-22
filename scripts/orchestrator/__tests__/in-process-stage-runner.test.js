@@ -26,7 +26,6 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
     }
   ];
   let capturedModules = null;
-  let capturedCollectOutputWriter = "unset";
   let capturedParallelOutputWriter = "unset";
   let capturedStage5Modules = null;
 
@@ -44,13 +43,7 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
           stage5ModulesCount: options.stage5Modules.length
         });
       },
-      collectMetadata: (options) => {
-        capturedCollectOutputWriter = options.outputWriter;
-        return Promise.resolve({
-          modules,
-          outputPath: "/virtual/project/website/data/modules.stage.2.json"
-        });
-      },
+      collectMetadata: () => Promise.resolve({ modules }),
       parallelProcessing: (options) => {
         capturedModules = options.modules;
         capturedParallelOutputWriter = options.outputWriter;
@@ -89,7 +82,6 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
   });
 
   assert.deepStrictEqual(capturedModules, modules);
-  assert.strictEqual(capturedCollectOutputWriter, null);
   assert.strictEqual(capturedParallelOutputWriter, null);
   assert.deepStrictEqual(capturedStage5Modules, modules);
   assert.strictEqual(completedStages.length, 3);
@@ -111,19 +103,12 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
     }
   ];
 
-  let capturedCollectOutputWriter = "unset";
   let capturedParallelOutputWriter = "unset";
 
   const stageRunner = createInProcessStageRunner({
     projectRoot: "/virtual/project",
     stageRuntimes: {
-      collectMetadata: (options) => {
-        capturedCollectOutputWriter = options.outputWriter;
-        return Promise.resolve({
-          modules,
-          outputPath: "/virtual/project/website/data/modules.stage.2.json"
-        });
-      },
+      collectMetadata: () => Promise.resolve({ modules }),
       parallelProcessing: (options) => {
         capturedParallelOutputWriter = options.outputWriter;
         return Promise.resolve({
@@ -156,7 +141,6 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
   });
 
   assert.strictEqual(completedStages.length, 2);
-  assert.strictEqual(capturedCollectOutputWriter, null);
   assert.strictEqual(capturedParallelOutputWriter, null);
   assert.deepStrictEqual(stageRunner.getBufferedArtifactIds(), []);
 });
@@ -197,10 +181,7 @@ test("runStagesSequentially passes aggregate stats in memory to result markdown 
         stats,
         wroteOutputs: true
       }),
-      collectMetadata: () => Promise.resolve({
-        modules,
-        outputPath: "/virtual/project/website/data/modules.stage.2.json"
-      }),
+      collectMetadata: () => Promise.resolve({ modules }),
       generateResultMarkdown: (options) => {
         capturedMarkdownOptions = options;
         return Promise.resolve({

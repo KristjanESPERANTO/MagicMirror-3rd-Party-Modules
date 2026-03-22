@@ -158,47 +158,6 @@ function sortModulesById<TModule extends { id: string }>(modules: TModule[]): TM
   return [...modules].sort((a, b) => a.id.localeCompare(b.id));
 }
 
-function buildStage2Entry(seedModule: StagePipelineModule, info: ModuleMetadataEntry): StagePipelineModule {
-  const base = clone(seedModule);
-  if (typeof info.stars === "number") {
-    base.stars = info.stars;
-  }
-  if (info.license) {
-    base.license = info.license;
-  }
-  return base;
-}
-
-function buildStage4Entry(stage2Module: StagePipelineModule, info: ModuleMetadataEntry): StagePipelineModule {
-  const entry = clone(stage2Module);
-  entry.issues = Array.isArray(info.issuesStage4)
-    ? clone(info.issuesStage4)
-    : clone(stage2Module.issues ?? []);
-
-  if (info.packageJson) {
-    entry.packageJson = clone(info.packageJson);
-  }
-  else {
-    entry.packageJson = { status: "missing", warnings: [] };
-  }
-
-  if (Array.isArray(info.tags) && info.tags.length > 0) {
-    entry.tags = clone(info.tags);
-  }
-  else {
-    delete entry.tags;
-  }
-
-  if (info.image) {
-    entry.image = info.image;
-  }
-  else {
-    delete entry.image;
-  }
-
-  return entry;
-}
-
 function buildFinalEntry(stage1Module: StagePipelineModule, info: ModuleMetadataEntry): FinalModuleEntry {
   const entry: FinalModuleEntry = {
     name: stage1Module.name,
@@ -283,12 +242,6 @@ function main() {
     lastUpdate: seed.lastUpdate,
     modules: normalizedStage1Modules
   };
-  const stage2Modules = normalizedStage1Modules.map((module) => {
-    const info = ensureMetadata(module.id, metadata);
-    return buildStage2Entry(module, info);
-  });
-  writeJson(path.join("fixtures", "data", "modules.stage.2.json"), stage2Modules);
-
   const finalModules = normalizedStage1Modules.map((module) => {
     const info = ensureMetadata(module.id, metadata);
     return buildFinalEntry(module, info);

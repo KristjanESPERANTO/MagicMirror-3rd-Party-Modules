@@ -2,7 +2,7 @@
 import { cliValidateStage } from "./lib/schemaValidator.ts";
 import process from "node:process";
 
-type StageValidationId = "modules.stage.2" | "modules.final" | "modules.min" | "stats";
+type StageValidationId = "modules.final" | "modules.min" | "stats";
 
 async function main() {
   const [stageId, filePath] = process.argv.slice(2);

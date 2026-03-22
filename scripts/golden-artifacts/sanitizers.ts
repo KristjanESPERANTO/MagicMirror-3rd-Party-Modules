@@ -100,18 +100,6 @@ export function sanitizeStage1(data: ModulesContainer | null | undefined): { las
   };
 }
 
-export function sanitizeStage2(modules: unknown[] | null | undefined): unknown[] {
-  return sanitizeModulesArray(modules ?? []);
-}
-
-export function sanitizeStage3(data: ModulesContainer | null | undefined): Record<string, unknown> {
-  return sanitizeModulesContainer(data);
-}
-
-export function sanitizeStage4(data: ModulesContainer | null | undefined): Record<string, unknown> {
-  return sanitizeModulesContainer(data);
-}
-
 export function sanitizeFinalModules(data: ModulesContainer | null | undefined): Record<string, unknown> {
   return sanitizeModulesContainer(data);
 }

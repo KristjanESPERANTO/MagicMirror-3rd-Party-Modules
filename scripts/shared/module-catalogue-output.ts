@@ -12,7 +12,7 @@ export interface Stage5Module extends ModuleRecord {
   isArchived?: boolean;
   issues?: unknown[];
   keywords?: string[];
-  lastCommit?: string;
+  lastCommit?: string | null;
   license?: string;
   maintainer?: string;
   name?: string;

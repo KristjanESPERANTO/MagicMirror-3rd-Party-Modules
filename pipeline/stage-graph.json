@@ -21,14 +21,6 @@
       "description": "Cached repository metadata fetched from GitHub/GitLab/Bitbucket/Codeberg APIs."
     },
     {
-      "id": "modules-stage-2",
-      "type": "file",
-      "path": "website/data/modules.stage.2.json",
-      "format": "json",
-      "description": "Module list enriched with repository metadata.",
-      "schema": "dist/schemas/modules.stage.2.schema.json"
-    },
-    {
       "id": "cloned-modules",
       "type": "directory",
       "path": "modules/",

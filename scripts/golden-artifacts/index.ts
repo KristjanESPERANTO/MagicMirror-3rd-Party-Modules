@@ -2,7 +2,6 @@
 import {
   sanitizeFinalModules,
   sanitizeGitHubData,
-  sanitizeStage2,
   sanitizeStats,
   stableStringify
 } from "./sanitizers.ts";
@@ -12,7 +11,7 @@ import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
 
-type GoldenArtifactName = "modules.stage.2" | "modules.final" | "stats" | "gitHubData";
+type GoldenArtifactName = "modules.final" | "stats" | "gitHubData";
 
 type GoldenSanitizer = (input: unknown) => unknown;
 
@@ -70,12 +69,6 @@ function readJson(filePath: string): unknown {
 }
 
 const artifacts: GoldenArtifact[] = [
-  {
-    name: "modules.stage.2",
-    source: path.join(repoRoot, "website/data/modules.stage.2.json"),
-    target: path.join(repoRoot, "fixtures/golden/modules.stage.2.json"),
-    sanitize: input => sanitizeStage2(sanitizeUnknownArray(input))
-  },
   {
     name: "modules.final",
     source: path.join(repoRoot, "website/data/modules.json"),

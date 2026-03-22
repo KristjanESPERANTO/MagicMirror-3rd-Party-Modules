@@ -103,18 +103,13 @@ interface AppendGitHubBatchResultOptions {
   stats: ModuleStats;
 }
 
-type Stage2OutputWriter = (modules: EnrichedModule[], outputPath: string) => string | Promise<string>;
-
 interface RunCollectMetadataOptions {
   markdown?: string;
-  outputPath?: string;
-  outputWriter?: Stage2OutputWriter | null;
   previousModulesMap?: Map<string, EnrichedModule>;
 }
 
 interface RunCollectMetadataResult {
   modules: EnrichedModule[];
-  outputPath: string | null;
 }
 
 function getErrorMessage(error: unknown): string {
@@ -548,15 +543,8 @@ async function main(): Promise<void> {
   }
 }
 
-function writeStage2Output(modules: EnrichedModule[], outputPath: string): string {
-  fs.writeFileSync(outputPath, JSON.stringify(modules, null, 2));
-  return outputPath;
-}
-
 export async function runCollectMetadata({
   markdown,
-  outputPath = path.join("website", "data", "modules.stage.2.json"),
-  outputWriter = writeStage2Output,
   previousModulesMap = loadPreviousModules<EnrichedModule>()
 }: RunCollectMetadataOptions = {}): Promise<RunCollectMetadataResult> {
   logger.info("Starting unified metadata collection...");
@@ -594,20 +582,10 @@ export async function runCollectMetadata({
   }
 
   await repositoryCache.flush();
-  const resolvedOutputPath = outputWriter
-    ? await outputWriter(enrichedModules, outputPath)
-    : null;
-
-  if (resolvedOutputPath) {
-    logger.info(`Successfully wrote ${enrichedModules.length} modules to ${resolvedOutputPath}`);
-  }
-  else {
-    logger.info(`Collected ${enrichedModules.length} modules without writing stage-2 output file`);
-  }
+  logger.info(`Collected ${enrichedModules.length} modules.`);
 
   return {
-    modules: enrichedModules,
-    outputPath: resolvedOutputPath
+    modules: enrichedModules
   };
 }
 

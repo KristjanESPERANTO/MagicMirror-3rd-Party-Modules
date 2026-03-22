@@ -7,7 +7,7 @@ import { validateStageFile } from "./lib/schemaValidator.ts";
 
 const PROJECT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-type ReleaseStageId = "modules.stage.2" | "modules.final" | "modules.min" | "stats";
+type ReleaseStageId = "modules.final" | "modules.min" | "stats";
 
 interface ReleaseArtifactDefinition {
   relativePath: string;
@@ -15,7 +15,6 @@ interface ReleaseArtifactDefinition {
 }
 
 const RELEASE_ARTIFACTS: ReleaseArtifactDefinition[] = [
-  { stageId: "modules.stage.2", relativePath: "website/data/modules.stage.2.json" },
   { stageId: "modules.final", relativePath: "website/data/modules.json" },
   { stageId: "modules.min", relativePath: "website/data/modules.min.json" },
   { stageId: "stats", relativePath: "website/data/stats.json" }

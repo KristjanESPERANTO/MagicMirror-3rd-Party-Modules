@@ -38,10 +38,7 @@ export function createInProcessStageRunner({
     const runRoot = resolve(projectRoot ?? cwd);
 
     if (stage.id === "collect-metadata") {
-      const result = await collectMetadata({
-        outputPath: resolve(runRoot, "website/data/modules.stage.2.json"),
-        outputWriter: null as never
-      });
+      const result = await collectMetadata({});
       artifactStore.set("modules-stage-2", result.modules);
       return true;
     }

@@ -7,7 +7,7 @@ import { validateStageFile } from "../lib/schemaValidator.ts";
 
 const FIXTURE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 
-type FixtureStageId = "modules.stage.2" | "modules.final" | "modules.min" | "stats";
+type FixtureStageId = "modules.final" | "modules.min" | "stats";
 
 interface FixtureDefinition {
   relativePath: string;
@@ -15,7 +15,6 @@ interface FixtureDefinition {
 }
 
 const FIXTURES: FixtureDefinition[] = [
-  { stageId: "modules.stage.2", relativePath: "fixtures/data/modules.stage.2.json" },
   { stageId: "modules.final", relativePath: "fixtures/data/modules.json" },
   { stageId: "modules.min", relativePath: "fixtures/data/modules.min.json" },
   { stageId: "stats", relativePath: "fixtures/data/stats.json" }

@@ -4,12 +4,11 @@ This note captures the scope for Task P1.6 ("Consolidate shared schema definitio
 
 ## Current schema inventory
 
-| Artifact                      | Top-level shape         | Module props (beyond the core 8)                                                                                                                                          |
-| ----------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `modules.stage.2.schema.json` | Array of modules        | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`                                                                                                           |
-| `modules.final.schema.json`   | Object with `modules[]` | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`, `tags`, `image`, `keywords`, `defaultSortWeight`, `lastCommit` (and `issues` flips from array → boolean) |
-| `modules.min.schema.json`     | Object with `modules[]` | Delegates to `modules.final.schema.json` via `$ref`                                                                                                                       |
-| `stats.schema.json`           | Object with counters    | unrelated, no shared module defs                                                                                                                                          |
+| Artifact                    | Top-level shape         | Module props (beyond the core 8)                                                                                                                                          |
+| --------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `modules.final.schema.json` | Object with `modules[]` | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`, `tags`, `image`, `keywords`, `defaultSortWeight`, `lastCommit` (and `issues` flips from array → boolean) |
+| `modules.min.schema.json`   | Object with `modules[]` | Delegates to `modules.final.schema.json` via `$ref`                                                                                                                       |
+| `stats.schema.json`         | Object with counters    | unrelated, no shared module defs                                                                                                                                          |
 
 Every stage schema repeats the same "core module" contract:
 

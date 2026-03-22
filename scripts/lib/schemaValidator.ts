@@ -13,7 +13,6 @@ const Ajv = require("ajv") as typeof import("ajv").default;
 const addFormats = require("ajv-formats") as typeof import("ajv-formats").default;
 
 const STAGE_SCHEMAS = {
-  "modules.stage.2": "modules.stage.2.schema.json",
   "modules.final": "modules.final.schema.json",
   "modules.min": "modules.min.schema.json",
   stats: "stats.schema.json"

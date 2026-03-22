@@ -14,7 +14,7 @@ import { cpus } from "node:os";
 import { createLogger } from "../scripts/shared/logger.ts";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
-import { readFile } from "node:fs/promises";
+import { runCollectMetadata } from "../scripts/collect-metadata/index.ts";
 import { resolve } from "node:path";
 
 interface AnalysisConfig {
@@ -27,7 +27,7 @@ interface AnalysisConfig {
 interface Stage2Module {
   id: string;
   issues: string[];
-  lastCommit?: string;
+  lastCommit?: string | null;
   maintainer: string;
   name: string;
   url: string;
@@ -479,11 +479,8 @@ export async function runParallelProcessing({
 }
 
 async function main(): Promise<void> {
-  const stage2Path = resolve(PROJECT_ROOT, "website/data/modules.stage.2.json");
-
   try {
-    logger.info(`Reading modules from ${stage2Path}...`);
-    const modules = JSON.parse(await readFile(stage2Path, "utf-8"));
+    const { modules } = await runCollectMetadata();
     await runParallelProcessing({ modules, projectRoot: PROJECT_ROOT });
   }
   catch (error) {
