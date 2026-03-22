@@ -65,7 +65,7 @@ async function fetchMarkdown() {
  */
 async function fetchGitHubBatch(modules) {
   if (modules.length === 0) {
-    return {};
+    return { results: {}, failed: false, error: null };
   }
 
   const repoFragments = [];
@@ -114,10 +114,38 @@ async function fetchGitHubBatch(modules) {
 
     if (!response.ok) {
       logger.error(`GitHub GraphQL batch failed: ${response.status}`);
-      return {};
+      return {
+        results: {},
+        failed: true,
+        error: `HTTP ${response.status}`
+      };
     }
 
-    const data = response.data.data;
+    const payload = response.data;
+    if (!payload || typeof payload !== "object") {
+      return {
+        results: {},
+        failed: true,
+        error: "Invalid GraphQL payload"
+      };
+    }
+
+    if (Array.isArray(payload.errors) && payload.errors.length > 0) {
+      logger.warn("GitHub GraphQL batch returned errors", {
+        errorCount: payload.errors.length,
+        sample: payload.errors[0]?.message ?? "unknown"
+      });
+    }
+
+    const data = payload.data;
+    if (!data || typeof data !== "object") {
+      return {
+        results: {},
+        failed: true,
+        error: "GraphQL payload did not contain data"
+      };
+    }
+
     const results = {};
 
     for (const [alias, repoData] of Object.entries(data)) {
@@ -127,11 +155,15 @@ async function fetchGitHubBatch(modules) {
       }
     }
 
-    return results;
+    return { results, failed: false, error: null };
   }
   catch (error) {
     logger.error("GitHub GraphQL batch error", { error: error.message });
-    return {};
+    return {
+      results: {},
+      failed: true,
+      error: error.message
+    };
   }
 }
 
@@ -312,7 +344,15 @@ async function enrichModules(modules, previousModulesMap) {
     // Split into chunks
     for (let index = 0; index < githubModulesToFetch.length; index += GITHUB_GRAPHQL_BATCH_SIZE) {
       const chunk = githubModulesToFetch.slice(index, index + GITHUB_GRAPHQL_BATCH_SIZE);
-      const batchResults = await fetchGitHubBatch(chunk);
+      const { results: batchResults, failed: batchFailed, error: batchError } = await fetchGitHubBatch(chunk);
+
+      if (batchFailed) {
+        logger.warn("GitHub GraphQL chunk failed, retrying repositories individually", {
+          chunkStart: index,
+          chunkSize: chunk.length,
+          error: batchError
+        });
+      }
 
       for (const module of chunk) {
         const repoData = batchResults[module.url];
@@ -333,18 +373,44 @@ async function enrichModules(modules, previousModulesMap) {
           });
         }
         else {
-          logger.warn(`No data returned for ${module.name} in batch`, { url: module.url });
-
-          const fallback = getFallbackOrOriginal(module, previousModulesMap);
-          if (fallback !== module) {
-            logger.info(`Using fallback data for ${module.name} (batch failure)`);
-            stats.fallbacks += 1;
+          if (!batchFailed) {
+            logger.warn(`No data returned for ${module.name} in batch`, { url: module.url });
           }
-          enrichedModules.push(fallback);
 
-          // Cache negative result
-          repositoryCache.set(repoId, { isFailed: true, error: "Not found in GraphQL batch" }, NEGATIVE_CACHE_TTL_MS);
-          stats.errors += 1;
+          const recovery = await fetchIndividualModule(module, "github", httpClient);
+          if (recovery.success) {
+            const normalized = recovery.data;
+
+            if (batchFailed) {
+              logger.info(`Recovered ${module.name} via individual GitHub fetch after batch failure`);
+            }
+
+            repositoryCache.set(repoId, normalized);
+            enrichedModules.push({
+              ...module,
+              ...normalized
+            });
+          }
+          else {
+            logger.warn(`Failed to recover metadata for ${module.name}`, {
+              url: module.url,
+              error: recovery.error.message
+            });
+
+            const fallback = getFallbackOrOriginal(module, previousModulesMap);
+            if (fallback !== module) {
+              logger.info(`Using fallback data for ${module.name} (batch failure)`);
+              stats.fallbacks += 1;
+            }
+            enrichedModules.push(fallback);
+
+            // Cache negative result only if both GraphQL and individual recovery failed.
+            repositoryCache.set(repoId, {
+              isFailed: true,
+              error: recovery.error.message
+            }, NEGATIVE_CACHE_TTL_MS);
+            stats.errors += 1;
+          }
         }
       }
     }
