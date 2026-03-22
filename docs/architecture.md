@@ -118,57 +118,15 @@ This legacy diagram captures the pre-orchestrator, mixed-runtime pipeline. Key i
 - OOM risk with 1300+ modules loaded into memory
 - 6 sequential stages with 6 intermediate JSON files
 
----
+### Comparison: Legacy vs. Current Flow
 
-## Canonical 3-Phase Model
-
-The current canonical pipeline already follows this three-phase shape; the remaining roadmap work in P7.6 is about completing worker-aware incremental caching and measuring repeated-run improvements.
-
-### Canonical Workflow Diagram
-
-```mermaid
-flowchart TB
-  orchestrator[[Orchestrator<br>Parallel execution engine]]
-
-  subgraph Phase 1: Metadata Collection
-    seed[("Module seed list")] --> collect{{Collect metadata}}
-    collect --> cache1[("Metadata cache<br>GitHub API, npm registry")]
-    collect --> metadata["Enriched metadata"]
-  end
-
-  subgraph Phase 2: Analysis - Parallel Streams
-    metadata --> stream{{Stream processor}}
-    stream --> |Batch 1| analyze1{{Clone + Analyze}}
-    stream --> |Batch 2| analyze2{{Clone + Analyze}}
-    stream --> |Batch N| analyze3{{Clone + Analyze}}
-    analyze1 --> results1[("Results")]
-    analyze2 --> results1
-    analyze3 --> results1
-  end
-
-  subgraph Phase 3: Publishing
-    results1 --> aggregate{{Aggregate + Validate}}
-    aggregate --> publish{{Generate outputs}}
-    publish --> artifacts[("modules.json<br>stats.json<br>website/")]
-  end
-
-  orchestrator -.controls.-> collect
-  orchestrator -.controls.-> stream
-  orchestrator -.controls.-> aggregate
-
-  cache1 -.incremental updates.-> collect
-  results1 -.diff detection.-> aggregate
-```
-
-### Comparison: Legacy vs. Canonical Flow
-
-| Aspect             | Legacy (6 stages)         | Canonical flow (Mar 2026)                                                                                |
+| Aspect             | Legacy (6 stages)         | Current flow (Mar 2026)                                                                                  |
 | ------------------ | ------------------------- | -------------------------------------------------------------------------------------------------------- |
 | Runtime            | Python + Node.js          | Node.js with TypeScript-based deep checks                                                                |
 | Execution          | Sequential manual scripts | Orchestrated 4-stage pipeline with in-process handoff                                                    |
 | Incremental        | ❌ No                     | Partial: metadata cache + clone reuse                                                                    |
 | Memory             | Unbounded                 | Batch-/worker-bounded                                                                                    |
-| Intermediate files | 0                         | none; only published outputs are written (`modules.json`, `modules.min.json`, `stats.json`, `result.md`) |
+| Intermediate files | 6                         | none; only published outputs are written (`modules.json`, `modules.min.json`, `stats.json`, `result.md`) |
 
 ### Remaining Gaps
 
@@ -176,7 +134,7 @@ flowchart TB
 2. Record before/after repeated-run performance metrics once cache writes are back in place.
 3. Keep the published contract (`modules.json`, `modules.min.json`, `stats.json`, `result.md`) stable while worker caching evolves.
 
-No persisted intermediate stage boundary remains in the canonical run. Stage handoffs are fully in-memory.
+No persisted intermediate stage boundary remains. Stage handoffs are fully in-memory.
 
 ---
 
