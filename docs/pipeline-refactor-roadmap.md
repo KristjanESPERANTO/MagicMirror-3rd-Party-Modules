@@ -107,7 +107,7 @@ The goal of this milestone is to reduce or eliminate the remaining intermediate 
 | P8.2 | ✅ Aggregation phase      |
 | P8.3 | ✅ Diff detection         |
 | P8.4 | ✅ Memory optimization    |
-| P8.5 | In progress               |
+| P8.5 | ✅ Optional boundaries    |
 
 ### P9.x: Performance & Observability
 
@@ -116,8 +116,8 @@ Measure and visualize pipeline performance.
 | Task | Status                |
 | ---- | --------------------- |
 | P9.1 | ✅ Benchmarking       |
-| P9.2 | In progress           |
-| P9.3 | Resource monitoring   |
+| P9.2 | ✅ Progress tracking  |
+| P9.3 | In progress           |
 | P9.4 | Performance dashboard |
 
 ---
@@ -126,18 +126,18 @@ Measure and visualize pipeline performance.
 
 See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details.
 
-**Current focus: P9.2** — Progress tracking
+**Current focus: P9.3** — Resource monitoring
 
-- Keep release-artifact parity and existing fixture/golden validation intact through the transition
-- Keep the in-process execution path bounded when running filtered stage selections
-- Keep `modules.stage.2.json` / `modules.stage.5.json` as optional fallback boundaries while in-memory handoff is preferred
-
-**Next: P9.3** — Resource monitoring
-
-- Evaluate whether `modules.stage.2.json` and `modules.stage.5.json` can remain optional fallback boundaries
-- Preserve schema validation and release artifact parity while reducing file-based handoffs
-- Measure runtime and output parity impact after reducing intermediate file writes
 - Track run success-rate and stage reliability trends across persisted orchestrator runs
+- Capture CPU and memory peaks per run to spot regressions over time
+- Compare recent runs against baseline medians to surface potential regressions earlier
+- Validate telemetry consistency across full runs and filtered `--only`/`--skip` executions
+
+**Next: P9.4** — Performance dashboard
+
+- Define a concise dashboard metric set shared by benchmark, progress, and logs views
+- Surface overall and per-stage duration/resource trends from persisted run history
+- Add a lightweight summary view suitable for contributor triage and release checks
 
 ---
 

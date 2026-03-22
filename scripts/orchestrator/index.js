@@ -7,6 +7,7 @@ import { createLogger, createStageProgressLogger } from "../shared/logger.js";
 import { mkdir, writeFile } from "node:fs/promises";
 import { Command } from "commander";
 import { createInProcessStageRunner } from "./in-process-stage-runner.js";
+import { createResourceMonitor } from "./resource-monitor.js";
 import { execFile } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
@@ -302,6 +303,7 @@ async function writePipelineRunRecord({
   startedAt,
   finishedAt,
   status,
+  resourceUsage,
   failure
 }) {
   const durationMs = finishedAt - startedAt;
@@ -325,6 +327,10 @@ async function writePipelineRunRecord({
 
   if (status === "failed" && failure) {
     record.failure = extractFailureDetails(failure);
+  }
+
+  if (resourceUsage) {
+    record.resourceUsage = resourceUsage;
   }
 
   try {
@@ -370,6 +376,8 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
     }
   }
 
+  const resourceMonitor = createResourceMonitor();
+  resourceMonitor.start();
   const startedAt = Date.now();
 
   try {
@@ -382,6 +390,7 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
     });
 
     const finishedAt = Date.now();
+    const resourceUsage = resourceMonitor.stop();
     const recordPath = await writePipelineRunRecord({
       pipelineId: pipeline.id,
       graphPath,
@@ -392,6 +401,7 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
       completedStages,
       startedAt,
       finishedAt,
+      resourceUsage,
       status: "success"
     });
 
@@ -400,6 +410,7 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
         event: "pipeline_succeed",
         pipelineId: pipeline.id,
         durationMs: finishedAt - startedAt,
+        resourceUsage,
         runRecordPath: recordPath ? relative(PROJECT_ROOT, recordPath) : null
       });
     }
@@ -413,6 +424,7 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
   }
   catch (error) {
     const finishedAt = Date.now();
+    const resourceUsage = resourceMonitor.stop();
     const completedStages = error instanceof Error && Array.isArray(error.completedStages)
       ? error.completedStages
       : [];
@@ -427,6 +439,7 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
       completedStages,
       startedAt,
       finishedAt,
+      resourceUsage,
       status: "failed",
       failure: error
     });
@@ -436,6 +449,7 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
         event: "pipeline_fail",
         pipelineId: pipeline.id,
         durationMs: finishedAt - startedAt,
+        resourceUsage,
         runRecordPath: recordPath ? relative(PROJECT_ROOT, recordPath) : null,
         error: error instanceof Error ? error.message : String(error)
       });

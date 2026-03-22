@@ -47,6 +47,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
    - All supported stages run via `node <script>`. The current stage graph executes `collect-metadata`, `parallel-processing`, and `aggregate-catalogue`, with publication output generation separated from worker analysis.
 
 4. **State & Artifacts** — Maintains an execution ledger (`.pipeline-runs/<timestamp>_<pipeline>.json`) with start/end timestamps, per-stage status (`succeeded`, `skipped`, `failed`, `pending`), durations, filters, and failure metadata, enabling future resume functionality and local auditing even when stages are filtered out.
+   - Run records also capture resource usage snapshots (CPU usage and RSS/heap memory peak+average) for each orchestrator execution.
 
 5. **Hooks & Validation** — After each stage, hooks:
    - Validate declared artifacts against schemas using `validateStageFile` (Ajv-based).
@@ -81,6 +82,7 @@ The original exploration surfaced a few ideas that remain on the backlog:
 - Emit human-readable console output with stage numbering and duration markers, e.g. `▶︎ [1/2] collect-metadata … done in 12.4s`.
 - Persist a structured JSON summary to `.pipeline-runs/<timestamp>_<pipeline>.json` capturing stage outcomes (including explicitly skipped stages), durations, applied filters, and failure metadata.
 - Provide `pipeline logs [runId|--latest]` to inspect a stored run summary without digging into the filesystem.
+- `pipeline logs` also prints captured resource usage when present in the selected run record.
 
 ## Error Handling & Retry
 

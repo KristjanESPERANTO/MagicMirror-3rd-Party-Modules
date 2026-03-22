@@ -33,6 +33,14 @@ export function formatDuration(milliseconds) {
   return `${minutes}m ${remainingSeconds.toFixed(0)}s`;
 }
 
+export function formatBytesToMiB(bytes) {
+  if (typeof bytes !== "number" || Number.isNaN(bytes)) {
+    return "unknown";
+  }
+
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MiB`;
+}
+
 export function formatFiltersSummary(filters) {
   if (!filters) {
     return "(none)";
@@ -247,6 +255,23 @@ export function printRunRecordDetails(record, sourcePath) {
     if (record.failure.stageId) {
       console.log(`  Stage: ${record.failure.stageId}${record.failure.stageName ? ` (${record.failure.stageName})` : ""}`);
     }
+  }
+
+  if (record.resourceUsage && typeof record.resourceUsage === "object") {
+    const cpu = record.resourceUsage.cpu ?? {};
+    const memory = record.resourceUsage.memory ?? {};
+    const rss = memory.rss ?? {};
+    const heapUsed = memory.heapUsed ?? {};
+    const cpuTotalMs = typeof cpu.totalMicros === "number" ? `${(cpu.totalMicros / 1000).toFixed(1)}ms` : "unknown";
+
+    console.log("\nResource usage:");
+    console.log(`  CPU total: ${cpuTotalMs}`);
+    console.log(
+      `  RSS: peak ${formatBytesToMiB(rss.peakBytes)} | avg ${formatBytesToMiB(rss.averageBytes)} | last ${formatBytesToMiB(rss.lastBytes)}`
+    );
+    console.log(
+      `  Heap used: peak ${formatBytesToMiB(heapUsed.peakBytes)} | avg ${formatBytesToMiB(heapUsed.averageBytes)} | last ${formatBytesToMiB(heapUsed.lastBytes)}`
+    );
   }
 
   if (Array.isArray(record.stageResults) && record.stageResults.length > 0) {
