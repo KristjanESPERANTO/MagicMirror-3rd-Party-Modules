@@ -15,7 +15,6 @@ const SCHEMA_FILES = [
   "modules.stage.2.schema.json",
   "modules.stage.3.schema.json",
   "modules.stage.4.schema.json",
-  "modules.stage.5.schema.json",
   "modules.final.schema.json",
   "modules.min.schema.json",
   "stats.schema.json"

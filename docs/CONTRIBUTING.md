@@ -58,7 +58,7 @@ Reads the official wiki list of third-party modules and fetches metadata (stars,
 
 #### Stage 3+4+5 – `parallel-processing.js`
 
-Combines repository cloning, `package.json` enrichment, screenshot extraction, and deep analysis inside the worker pool. The stage emits the stage-5 payload in memory; writing `modules.stage.5.json` is now compatibility-only.
+Combines repository cloning, `package.json` enrichment, screenshot extraction, and deep analysis inside the worker pool. The stage emits the analysis payload in memory.
 
 #### Stage 6 – `aggregate-catalogue.js`
 
@@ -86,7 +86,7 @@ As of September 2025, schema validation is part of the release gate. After you r
 node --run release:validate
 ```
 
-The command checks the supported stage snapshot (`modules.stage.2.json`) plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`). `modules.stage.5.json` is treated as optional compatibility input; if present it is validated, but missing files do not fail the command.
+The command checks the supported stage snapshot (`modules.stage.2.json`) plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`).
 
 > ℹ️ **CI gate:** The same validation now runs automatically in GitHub Actions (`release-validation.yml`) on every push and pull request targeting `main`. Keep the command in your local workflow to catch schema regressions before CI fails.
 

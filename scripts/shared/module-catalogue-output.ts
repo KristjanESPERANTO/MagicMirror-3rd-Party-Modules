@@ -53,6 +53,23 @@ interface CatalogueStats {
   repositoryHoster: Record<string, number>;
 }
 
+function isCatalogueStats(value: unknown): value is CatalogueStats {
+  if (!value || typeof value !== "object") {
+    return false;
+  }
+
+  const candidate = value as Partial<CatalogueStats>;
+  return typeof candidate.issueCounter === "number"
+    && typeof candidate.lastUpdate === "string"
+    && typeof candidate.moduleCounter === "number"
+    && typeof candidate.modulesWithImageCounter === "number"
+    && typeof candidate.modulesWithIssuesCounter === "number"
+    && typeof candidate.maintainer === "object"
+    && candidate.maintainer !== null
+    && typeof candidate.repositoryHoster === "object"
+    && candidate.repositoryHoster !== null;
+}
+
 interface PreviousModulesPayload {
   modules?: unknown[];
   [key: string]: unknown;
@@ -385,6 +402,7 @@ export async function writePublishedCatalogueOutputs(
         modulesMinPath,
         statsPath
       },
+      stats: isCatalogueStats(previousStats) ? previousStats : undefined,
       statsPath,
       wroteOutputs: false
     };

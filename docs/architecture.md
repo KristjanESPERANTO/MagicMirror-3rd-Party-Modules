@@ -52,7 +52,7 @@ flowchart TB
 - **Orchestrator CLI**: Declarative stage graph with `--only/--skip` support, retries, and structured logging
 - **Worker Pool Stage**: `parallel-processing` encapsulates clone, enrich, image, and analysis work behind a single supported stage
 - **Aggregation Stage**: `aggregate-catalogue` builds published JSON artifacts from the in-memory stage-5 payload (disk fallback retained for compatibility)
-- **Schema Validation**: JSON schemas enforce contracts at the supported boundaries (`modules.stage.2.json` and final published outputs); `modules.stage.5.json` remains a compatibility artifact only
+- **Schema Validation**: JSON schemas enforce contracts at the supported boundaries (`modules.stage.2.json` and final published outputs)
 - **Shared Utilities**: HTTP, Git, filesystem, and rate limiting in `scripts/shared/`
 
 ### Incremental Pipeline Behavior
@@ -97,7 +97,7 @@ flowchart TB
 
   subgraph Stage 5: Check Modules JS
     stage4Legacy --> checkjsLegacy{{Static checks<br>Node.js}}
-    checkjsLegacy --> stage5Legacy["modules.stage.5.json"]
+    checkjsLegacy --> stage5Legacy["legacy Stage-5 snapshot"]
   end
 
   subgraph Stage 6: Check Modules

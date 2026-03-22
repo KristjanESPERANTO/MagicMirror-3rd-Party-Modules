@@ -300,9 +300,6 @@ function main() {
   });
   writeJson(path.join("fixtures", "data", "modules.stage.4.json"), { modules: stage4Modules });
 
-  const stage5 = { modules: clone(stage4Modules) };
-  writeJson(path.join("fixtures", "data", "modules.stage.5.json"), stage5);
-
   const finalModules = normalizedStage1Modules.map((module) => {
     const info = ensureMetadata(module.id, metadata);
     return buildFinalEntry(module, info);

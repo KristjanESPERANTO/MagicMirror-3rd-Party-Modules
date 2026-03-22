@@ -56,8 +56,7 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
         capturedParallelOutputWriter = options.outputWriter;
         return Promise.resolve({
           results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
-          stage5Modules: options.modules,
-          stage5Path: "/virtual/project/website/data/modules.stage.5.json"
+          stage5Modules: options.modules
         });
       }
     }
@@ -129,8 +128,7 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
         capturedParallelOutputWriter = options.outputWriter;
         return Promise.resolve({
           results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
-          stage5Modules: options.modules,
-          stage5Path: "/virtual/project/website/data/modules.stage.5.json"
+          stage5Modules: options.modules
         });
       }
     }
@@ -160,73 +158,6 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
   assert.strictEqual(completedStages.length, 2);
   assert.strictEqual(capturedCollectOutputWriter, null);
   assert.strictEqual(capturedParallelOutputWriter, null);
-  assert.deepStrictEqual(stageRunner.getBufferedArtifactIds(), []);
-});
-
-test("in-process aggregate stage runs without buffered stage5 modules", async () => {
-  let aggregateOptions = null;
-
-  const stageRunner = createInProcessStageRunner({
-    projectRoot: "/virtual/project",
-    stageRuntimes: {
-      aggregateCatalogue: (options) => {
-        aggregateOptions = options;
-        return Promise.resolve({
-          outputPaths: {
-            modulesJsonPath: "/virtual/project/website/data/modules.json",
-            modulesMinPath: "/virtual/project/website/data/modules.min.json",
-            statsPath: "/virtual/project/website/data/stats.json"
-          },
-          stage5ModulesCount: 0
-        });
-      }
-    }
-  });
-
-  const handled = await stageRunner({
-    command: { args: ["scripts/aggregate-catalogue.ts"], executable: "node" },
-    id: "aggregate-catalogue",
-    name: "Aggregate catalogue outputs"
-  }, {
-    cwd: "/virtual/project",
-    env: {}
-  });
-
-  assert.strictEqual(handled, true);
-  assert.deepStrictEqual(aggregateOptions, {
-    projectRoot: "/virtual/project"
-  });
-});
-
-test("in-process result markdown stage runs without buffered stage5 modules", async () => {
-  let markdownOptions = null;
-
-  const stageRunner = createInProcessStageRunner({
-    projectRoot: "/virtual/project",
-    stageRuntimes: {
-      generateResultMarkdown: (options) => {
-        markdownOptions = options;
-        return Promise.resolve({
-          issueCount: 0,
-          outputPath: "/virtual/project/website/result.md"
-        });
-      }
-    }
-  });
-
-  const handled = await stageRunner({
-    command: { args: ["scripts/generate-result-markdown.ts"], executable: "node" },
-    id: "generate-result-markdown",
-    name: "Generate result markdown"
-  }, {
-    cwd: "/virtual/project",
-    env: {}
-  });
-
-  assert.strictEqual(handled, true);
-  assert.deepStrictEqual(markdownOptions, {
-    projectRoot: "/virtual/project"
-  });
   assert.deepStrictEqual(stageRunner.getBufferedArtifactIds(), []);
 });
 
@@ -279,8 +210,7 @@ test("runStagesSequentially passes aggregate stats in memory to result markdown 
       },
       parallelProcessing: () => Promise.resolve({
         results: modules.map(module => ({ ...module, fromCache: false, status: "success" })),
-        stage5Modules: modules,
-        stage5Path: "/virtual/project/website/data/modules.stage.5.json"
+        stage5Modules: modules
       })
     }
   });

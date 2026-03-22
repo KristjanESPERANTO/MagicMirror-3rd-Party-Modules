@@ -730,6 +730,7 @@
       "description": "Norwegian electricity prices forecast.",
       "hasGithubIssues": true,
       "id": "AndreasHagman/MMM-NOKElectricityForecast",
+      "image": "MMM-NOKElectricityForecast---Andreas Hagman.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Andreas Hagman",
@@ -1594,11 +1595,6 @@
       "maintainer": "bccmba",
       "maintainerURL": "https://github.com/bccmba",
       "name": "MMM-DailyLDSVerse",
-      "tags": [
-        "lds",
-        "scripture",
-        "verse"
-      ],
       "url": "https://github.com/bccmba/MMM-DailyLDSVerse"
     },
     {
@@ -2271,15 +2267,11 @@
       "description": "Shows system stats similar to MMM-SystemStats.",
       "hasGithubIssues": true,
       "id": "btastic/MMM-SystemMonitor",
-      "image": "MMM-SystemMonitor---btastic.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "btastic",
       "maintainerURL": "https://github.com/btastic",
       "name": "MMM-SystemMonitor",
-      "tags": [
-        "systemmonitor"
-      ],
       "url": "https://github.com/btastic/MMM-SystemMonitor"
     },
     {
@@ -2617,11 +2609,15 @@
       "description": "Displays your todos from Todoist.",
       "hasGithubIssues": true,
       "id": "cbrooker/MMM-Todoist",
+      "image": "MMM-Todoist---CBrooker.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "CBrooker",
       "maintainerURL": "https://github.com/cbrooker",
       "name": "MMM-Todoist",
+      "tags": [
+        "wunderlist"
+      ],
       "url": "https://github.com/cbrooker/MMM-Todoist"
     },
     {
@@ -4916,11 +4912,17 @@
       "description": "A Demo module for using [Tabulator](https://tabulator.info) to directly parse JSON/XML into MM DHTML tables.",
       "hasGithubIssues": true,
       "id": "E3V3A/MMM-Tabulator",
+      "image": "MMM-Tabulator---E:V:A.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "E:V:A",
       "maintainerURL": "https://github.com/E3V3A",
       "name": "MMM-Tabulator",
+      "tags": [
+        "tables",
+        "json",
+        "tabulator"
+      ],
       "url": "https://github.com/E3V3A/MMM-Tabulator"
     },
     {
@@ -5052,11 +5054,16 @@
       "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
       "hasGithubIssues": true,
       "id": "edward-shen/MMM-page-indicator",
+      "image": "MMM-page-indicator---edward-shen & KristjanESPERANTO.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "edward-shen & KristjanESPERANTO",
       "maintainerURL": "https://github.com/edward-shen",
       "name": "MMM-page-indicator",
+      "tags": [
+        "pages",
+        "slides"
+      ],
       "url": "https://github.com/edward-shen/MMM-page-indicator"
     },
     {
@@ -5443,10 +5450,17 @@
       "description": "Displays NRL (National Rugby League) match scores and information.",
       "hasGithubIssues": null,
       "id": "EwwYumYuck/MMM-NRL",
+      "image": "MMM-NRL---ewwyumyuck.webp",
       "isArchived": null,
+      "license": "MIT",
       "maintainer": "ewwyumyuck",
       "maintainerURL": "https://github.com/EwwYumYuck",
       "name": "MMM-NRL",
+      "tags": [
+        "nrl",
+        "rugby",
+        "sports"
+      ],
       "url": "https://github.com/EwwYumYuck/MMM-NRL"
     },
     {
@@ -5454,11 +5468,16 @@
       "description": "Display Age of Empire stats by player ID.",
       "hasGithubIssues": true,
       "id": "FabianNiehaus89/MMM-AOE2-STATS",
+      "image": "MMM-AOE2-STATS---Fabian Niehaus.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Fabian Niehaus",
       "maintainerURL": "https://github.com/FabianNiehaus89",
       "name": "MMM-AOE2-STATS",
+      "tags": [
+        "aoe2",
+        "age of empire 2"
+      ],
       "url": "https://github.com/FabianNiehaus89/MMM-AOE2-STATS"
     },
     {
@@ -5485,17 +5504,11 @@
       "description": "Displays Valorant Esports matches in a continuous scrolling ticker with live scores and schedules.",
       "hasGithubIssues": null,
       "id": "FabienBounoir/MMM-VALORANT-BANNER",
-      "image": "MMM-VALORANTE-BANNER---fabienbounoir.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "fabienbounoir",
       "maintainerURL": "https://github.com/FabienBounoir",
       "name": "MMM-VALORANTE-BANNER",
-      "tags": [
-        "esports",
-        "valorant",
-        "banner"
-      ],
       "url": "https://github.com/FabienBounoir/MMM-VALORANT-BANNER"
     },
     {
@@ -5863,11 +5876,16 @@
       "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
       "hasGithubIssues": false,
       "id": "fhinder/MMM-vvsDeparture",
+      "image": "MMM-vvsDeparture---Fabian Hinder.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Fabian Hinder",
       "maintainerURL": "https://github.com/fhinder",
       "name": "MMM-vvsDeparture",
+      "tags": [
+        "vvs",
+        "public transport"
+      ],
       "url": "https://github.com/fhinder/MMM-vvsDeparture"
     },
     {
@@ -7229,11 +7247,17 @@
       "description": "Displays HomeWizard P1 Meter and/or Water Meter information.",
       "hasGithubIssues": true,
       "id": "htilburgs/MMM-MyHomeWizard",
+      "image": "MMM-MyHomeWizard---HTilburgs.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "HTilburgs",
       "maintainerURL": "https://github.com/htilburgs",
       "name": "MMM-MyHomeWizard",
+      "tags": [
+        "home wizard",
+        "p1 meter",
+        "water meter"
+      ],
       "url": "https://github.com/htilburgs/MMM-MyHomeWizard"
     },
     {
@@ -7265,7 +7289,6 @@
       "description": "Advanced Tado Thermostat module.",
       "hasGithubIssues": null,
       "id": "htilburgs/MMM-MyTado",
-      "image": "MMM-MyTado---HTilburgs.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "HTilburgs",
@@ -7278,6 +7301,7 @@
       "description": "Simple task list, adding tasks through webpage.",
       "hasGithubIssues": true,
       "id": "htilburgs/MMM-MyTasklist",
+      "image": "MMM-MyTasklist---HTilburgs.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "HTilburgs",
@@ -7513,6 +7537,11 @@
       "maintainer": "Bluefox",
       "maintainerURL": "https://github.com/ioBroker",
       "name": "MMM-ioBroker",
+      "tags": [
+        "iobroker",
+        "iot",
+        "home automation"
+      ],
       "url": "https://github.com/ioBroker/MMM-ioBroker"
     },
     {
@@ -7707,11 +7736,15 @@
       "description": "Drawing board for MagicMirror with touch interactive UI interface.",
       "hasGithubIssues": true,
       "id": "ivlovric/MMM-MagicDraw",
+      "image": "MMM-MagicDraw---Ivica Lovric.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Ivica Lovric",
       "maintainerURL": "https://github.com/ivlovric",
       "name": "MMM-MagicDraw",
+      "tags": [
+        "draw"
+      ],
       "url": "https://github.com/ivlovric/MMM-MagicDraw"
     },
     {
@@ -8407,18 +8440,11 @@
       "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
       "hasGithubIssues": null,
       "id": "JHWelch/MMM-CTA",
-      "image": "MMM-CTA---JHWelch.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "JHWelch",
       "maintainerURL": "https://github.com/JHWelch",
       "name": "MMM-CTA",
-      "tags": [
-        "cta",
-        "train",
-        "bus",
-        "tracker"
-      ],
       "url": "https://github.com/JHWelch/MMM-CTA"
     },
     {
@@ -8639,7 +8665,6 @@
       "description": "Displays notifications sent with a simple HTTP POST request.",
       "hasGithubIssues": true,
       "id": "john3300/MMM-HomeAutomationNotifications",
-      "image": "MMM-HomeAutomationNotifications---john3300.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "john3300",
@@ -8747,11 +8772,16 @@
       "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
       "hasGithubIssues": true,
       "id": "Jopyth/MMM-Remote-Control",
+      "image": "MMM-Remote-Control---Jopyth & KristjanESPERANTO.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Jopyth & KristjanESPERANTO",
       "maintainerURL": "https://github.com/Jopyth",
       "name": "MMM-Remote-Control",
+      "tags": [
+        "remote control",
+        "control"
+      ],
       "url": "https://github.com/Jopyth/MMM-Remote-Control"
     },
     {
@@ -9254,10 +9284,17 @@
       "description": "Display French agricultural weather from lameteoagricole.net. No API key required — data is scraped directly. Shows current conditions, hourly and 10-day forecast, rain by the minute.",
       "hasGithubIssues": null,
       "id": "Kamasoutra/MMM-LaMeteoAgricole",
+      "image": "MMM-LaMeteoAgricole---Kamasoutra.webp",
       "isArchived": null,
+      "license": "MIT",
       "maintainer": "Kamasoutra",
       "maintainerURL": "https://github.com/Kamasoutra",
       "name": "MMM-LaMeteoAgricole",
+      "tags": [
+        "weather",
+        "meteo",
+        "france"
+      ],
       "url": "https://github.com/Kamasoutra/MMM-LaMeteoAgricole"
     },
     {
@@ -9661,10 +9698,19 @@
       "description": "Displays an animated atom in a Bohr-style model.",
       "hasGithubIssues": null,
       "id": "KristjanESPERANTO/MMM-AtomVisualizer",
+      "image": "MMM-AtomVisualizer---KristjanESPERANTO.webp",
       "isArchived": null,
+      "license": "MIT",
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "name": "MMM-AtomVisualizer",
+      "tags": [
+        "atom",
+        "chemistry",
+        "visualization",
+        "periodic table",
+        "bohr model"
+      ],
       "url": "https://github.com/KristjanESPERANTO/MMM-AtomVisualizer"
     },
     {
@@ -9672,11 +9718,17 @@
       "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror².",
       "hasGithubIssues": true,
       "id": "KristjanESPERANTO/MMM-Buttons",
+      "image": "MMM-Buttons---KristjanESPERANTO.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "name": "MMM-Buttons",
+      "tags": [
+        "buttons",
+        "gpio",
+        "notifications"
+      ],
       "url": "https://github.com/KristjanESPERANTO/MMM-Buttons"
     },
     {
@@ -9809,7 +9861,9 @@
       "description": "Displays public transport departures on your mirror, with broad international coverage.",
       "hasGithubIssues": null,
       "id": "KristjanESPERANTO/MMM-PublicTransportHub",
+      "image": "MMM-PublicTransportHub---KristjanESPERANTO.webp",
       "isArchived": null,
+      "license": "MIT",
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "name": "MMM-PublicTransportHub",
@@ -10896,11 +10950,17 @@
       "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror² platform.",
       "hasGithubIssues": true,
       "id": "mattileh/MMM-SensorGateway",
+      "image": "MMM-SensorGateway---Mattileh.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Mattileh",
       "maintainerURL": "https://github.com/mattileh",
       "name": "MMM-SensorGateway",
+      "tags": [
+        "movesense",
+        "ruuvitag",
+        "iot"
+      ],
       "url": "https://github.com/mattileh/MMM-SensorGateway"
     },
     {
@@ -12090,11 +12150,17 @@
       "description": "Show the interface throughput of an Ubiquity EdgeRouter.",
       "hasGithubIssues": true,
       "id": "mscharl/MMM-edgerouter-throughput",
+      "image": "MMM-edgerouter-throughput---Michael Scharl.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Michael Scharl",
       "maintainerURL": "https://github.com/mscharl",
       "name": "MMM-edgerouter-throughput",
+      "tags": [
+        "edgerouter",
+        "throughput",
+        "bandwith"
+      ],
       "url": "https://github.com/mscharl/MMM-edgerouter-throughput"
     },
     {
@@ -12689,6 +12755,7 @@
       "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-EyeCandy",
+      "image": "MMM-EyeCandy---Mykle1.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Mykle1",
@@ -13685,17 +13752,11 @@
       "description": "Visualize data as heatmaps, charts, and more. A lightweight wrapper over Heat.js with live file updates.",
       "hasGithubIssues": null,
       "id": "nonguyen1/MMM-HeatMaps",
-      "image": "MMM-HeatMaps---nonguyen1.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "nonguyen1",
       "maintainerURL": "https://github.com/nonguyen1",
       "name": "MMM-HeatMaps",
-      "tags": [
-        "heatmap",
-        "habit-tracker",
-        "heat.js"
-      ],
       "url": "https://github.com/nonguyen1/MMM-HeatMaps"
     },
     {
@@ -14120,6 +14181,7 @@
       "description": "Read data from a Pentair ScreenLogic pool system.",
       "hasGithubIssues": true,
       "id": "parnic/MMM-ScreenLogic",
+      "image": "MMM-ScreenLogic---Parnic.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Parnic",
@@ -16357,11 +16419,15 @@
       "description": "Display stats from Pi-Hole DNS ad blocking.",
       "hasGithubIssues": true,
       "id": "sheyabernstein/MMM-pihole-stats",
+      "image": "MMM-pihole-stats---SheyaBernstein.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "SheyaBernstein",
       "maintainerURL": "https://github.com/sheyabernstein",
       "name": "MMM-pihole-stats",
+      "tags": [
+        "pi-hole"
+      ],
       "url": "https://github.com/sheyabernstein/MMM-pihole-stats"
     },
     {
@@ -16780,11 +16846,18 @@
       "description": "Displays moslem praying time with Adhan recital.",
       "hasGithubIssues": true,
       "id": "slametps/MMM-PrayerTime",
+      "image": "MMM-PrayerTime---Slamet PS.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Slamet PS",
       "maintainerURL": "https://github.com/slametps",
       "name": "MMM-PrayerTime",
+      "tags": [
+        "moslem",
+        "islam",
+        "prayertime",
+        "adzan"
+      ],
       "url": "https://github.com/slametps/MMM-PrayerTime"
     },
     {
@@ -18843,6 +18916,7 @@
       "description": "Display FamZoo balances.",
       "hasGithubIssues": true,
       "id": "trumpetx/MMM-FamZoo",
+      "image": "MMM-FamZoo---trumpetx.webp",
       "isArchived": false,
       "license": "AGPL-3.0",
       "maintainer": "trumpetx",
@@ -19689,10 +19763,18 @@
       "description": "Module to display public transport from Nürnberg in Germany.",
       "hasGithubIssues": null,
       "id": "wiesty/MMM-VAG",
+      "image": "MMM-VAG---Wiesty.webp",
       "isArchived": null,
+      "license": "MIT",
       "maintainer": "Wiesty",
       "maintainerURL": "https://github.com/wiesty",
       "name": "MMM-VAG",
+      "tags": [
+        "public transport",
+        "vag",
+        "nürnberg",
+        "nuremberg"
+      ],
       "url": "https://github.com/wiesty/MMM-VAG"
     },
     {
@@ -19788,11 +19870,15 @@
       "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
       "hasGithubIssues": true,
       "id": "wonderslug/MMM-HomeAssistantDisplay",
+      "image": "MMM-HomeAssistantDisplay---WonderSlug.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "WonderSlug",
       "maintainerURL": "https://github.com/wonderslug",
       "name": "MMM-HomeAssistantDisplay",
+      "tags": [
+        "home assistant"
+      ],
       "url": "https://github.com/wonderslug/MMM-HomeAssistantDisplay"
     },
     {

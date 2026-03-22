@@ -3,7 +3,6 @@
 import { createLogger } from "./shared/logger.ts";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
-import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { writePublishedCatalogueOutputs } from "./shared/module-catalogue-output.ts";
 
@@ -55,7 +54,7 @@ interface RunAggregateCatalogueOptions {
   outputWriter?: OutputWriter | null;
   projectRoot?: string;
   runLogger?: AggregateLogger;
-  stage5Modules?: Stage5Module[];
+  stage5Modules: Stage5Module[];
 }
 
 export interface AggregateCatalogueResult {
@@ -106,12 +105,12 @@ export async function runAggregateCatalogue({
   outputWriter = writePublishedCatalogueOutputs,
   runLogger = logger
 }: RunAggregateCatalogueOptions): Promise<AggregateCatalogueResult> {
-  const resolvedStage5Modules = Array.isArray(stage5Modules)
-    ? stage5Modules
-    : await readStage5ModulesFromDisk(projectRoot);
+  if (!Array.isArray(stage5Modules)) {
+    throw new TypeError("runAggregateCatalogue requires stage5Modules from the in-memory pipeline handoff");
+  }
 
   const outputResult = outputWriter
-    ? await outputWriter(resolvedStage5Modules, projectRoot)
+    ? await outputWriter(stage5Modules, projectRoot)
     : null;
 
   const outputDetails = normalizeOutputDetails(outputResult);
@@ -134,36 +133,19 @@ export async function runAggregateCatalogue({
     }
   }
 
-  runLogger.info(`Aggregated ${resolvedStage5Modules.length} module(s) into published catalogue outputs`);
+  runLogger.info(`Aggregated ${stage5Modules.length} module(s) into published catalogue outputs`);
   return {
     changeSummary: outputDetails.changeSummary,
     outputPaths: outputDetails.outputPaths,
-    stage5ModulesCount: resolvedStage5Modules.length,
+    stage5ModulesCount: stage5Modules.length,
     stats: outputDetails.stats,
     wroteOutputs: outputDetails.wroteOutputs
   };
 }
 
-function parseStage5Modules(payload: unknown): Stage5Module[] {
-  if (Array.isArray(payload)) {
-    return payload as Stage5Module[];
-  }
-
-  if (payload && typeof payload === "object" && Array.isArray((payload as { modules?: unknown[] }).modules)) {
-    return (payload as { modules: Stage5Module[] }).modules;
-  }
-
-  throw new TypeError("modules.stage.5.json must contain either an array or an object with a modules array");
-}
-
 async function main(): Promise<void> {
   try {
-    const stage5Modules = await readStage5ModulesFromDisk(PROJECT_ROOT);
-
-    await runAggregateCatalogue({
-      projectRoot: PROJECT_ROOT,
-      stage5Modules
-    });
+    throw new Error("aggregate-catalogue must be executed via the orchestrator; direct stage-5 file input is no longer supported");
   }
   catch (error) {
     logger.error("Fatal error:", getErrorMessage(error));
@@ -176,11 +158,4 @@ const isMainEntry = Boolean(process.argv[1]) && resolve(process.argv[1]) === cur
 
 if (isMainEntry) {
   main();
-}
-
-async function readStage5ModulesFromDisk(projectRoot: string): Promise<Stage5Module[]> {
-  const stage5Path = resolve(projectRoot, "website/data/modules.stage.5.json");
-  logger.info(`Reading stage-5 modules from ${stage5Path}...`);
-  const payload = JSON.parse(await readFile(stage5Path, "utf-8"));
-  return parseStage5Modules(payload);
 }

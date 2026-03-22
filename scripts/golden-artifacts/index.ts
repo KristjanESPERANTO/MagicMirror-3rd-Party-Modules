@@ -3,7 +3,6 @@ import {
   sanitizeFinalModules,
   sanitizeGitHubData,
   sanitizeStage2,
-  sanitizeStage5,
   sanitizeStats,
   stableStringify
 } from "./sanitizers.ts";
@@ -13,13 +12,12 @@ import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
 
-type GoldenArtifactName = "modules.stage.2" | "modules.stage.5" | "modules.final" | "stats" | "gitHubData";
+type GoldenArtifactName = "modules.stage.2" | "modules.final" | "stats" | "gitHubData";
 
 type GoldenSanitizer = (input: unknown) => unknown;
 
 interface GoldenArtifact {
   name: GoldenArtifactName;
-  optional?: boolean;
   sanitize: GoldenSanitizer;
   source: string;
   target: string;
@@ -27,12 +25,6 @@ interface GoldenArtifact {
 
 function sanitizeUnknownArray(input: unknown): unknown[] {
   return Array.isArray(input) ? input : [];
-}
-
-function sanitizeUnknownModulesContainer(input: unknown): { [key: string]: unknown } {
-  return input !== null && typeof input === "object"
-    ? sanitizeStage5(input as never)
-    : sanitizeStage5(undefined);
 }
 
 function sanitizeUnknownFinalModules(input: unknown): { [key: string]: unknown } {
@@ -85,13 +77,6 @@ const artifacts: GoldenArtifact[] = [
     sanitize: input => sanitizeStage2(sanitizeUnknownArray(input))
   },
   {
-    name: "modules.stage.5",
-    optional: true,
-    source: path.join(repoRoot, "website/data/modules.stage.5.json"),
-    target: path.join(repoRoot, "fixtures/golden/modules.stage.5.json"),
-    sanitize: sanitizeUnknownModulesContainer
-  },
-  {
     name: "modules.final",
     source: path.join(repoRoot, "website/data/modules.json"),
     target: path.join(repoRoot, "fixtures/golden/modules.json"),
@@ -117,14 +102,9 @@ const artifacts: GoldenArtifact[] = [
 ];
 
 function processArtifact(artifact: GoldenArtifact): string | null {
-  const { name, optional = false, source, target, sanitize } = artifact;
+  const { name, source, target, sanitize } = artifact;
 
   if (!fs.existsSync(source)) {
-    if (optional) {
-      console.warn(`Skipping optional artifact ${name}: missing source ${source}`);
-      return null;
-    }
-
     return `Source artifact missing: ${source}`;
   }
 

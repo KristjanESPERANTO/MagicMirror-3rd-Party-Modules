@@ -73,15 +73,12 @@ export function createInProcessStageRunner({
       return true;
     }
 
-    if (stage.id === "aggregate-catalogue") {
-      const stage5Modules = artifactStore.get("modules-stage-5");
-      const aggregateOptions: Record<string, unknown> = {
-        projectRoot: runRoot
+    if (stage.id === "aggregate-catalogue" && artifactStore.has("modules-stage-5")) {
+      const stage5Modules = artifactStore.get("modules-stage-5") as unknown[];
+      const aggregateOptions = {
+        projectRoot: runRoot,
+        stage5Modules: stage5Modules as never
       };
-
-      if (stage5Modules !== undefined) {
-        aggregateOptions.stage5Modules = stage5Modules;
-      }
 
       const aggregateResult = await aggregateCatalogue(aggregateOptions);
 
@@ -96,20 +93,14 @@ export function createInProcessStageRunner({
       return true;
     }
 
-    if (stage.id === "generate-result-markdown") {
+    if (stage.id === "generate-result-markdown" && artifactStore.has("modules-stage-5") && artifactStore.has("stats-json")) {
       const stage5Modules = artifactStore.get("modules-stage-5");
       const stats = artifactStore.get("stats-json");
       const markdownOptions: Record<string, unknown> = {
-        projectRoot: runRoot
+        projectRoot: runRoot,
+        stage5Modules,
+        stats
       };
-
-      if (stage5Modules !== undefined) {
-        markdownOptions.stage5Modules = stage5Modules;
-      }
-
-      if (stats !== undefined) {
-        markdownOptions.stats = stats;
-      }
 
       try {
         await generateResultMarkdown(markdownOptions);

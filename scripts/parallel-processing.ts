@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /**
- * Parallel Module Processing Stage (P7.3)
+ * Parallel module analysis stage.
  *
- * Replaces stages 3+4+5 with parallel worker pool processing.
- * CLI wrapper reads modules.stage.2.json and keeps stage-5 data in memory.
+ * Consolidates the legacy stages 3-5 responsibilities into a worker-pool run.
+ * The CLI wrapper reads modules.stage.2.json and produces the in-memory
+ * analysis payload for downstream pipeline stages.
  */
 
 import { MODULE_ANALYSIS_CACHE_SCHEMA_VERSION, buildModuleAnalysisCacheKey, createModuleAnalysisCache, getProjectRevision, normalizeModuleAnalysisCheckGroups, resolveModuleAnalysisCachePath } from "../scripts/shared/module-analysis-cache.ts";
@@ -76,15 +77,12 @@ interface WorkerPoolLike {
   processModules: (modules: Stage2Module[], moduleConfig: Record<string, unknown>) => Promise<ModuleResult[]> | ModuleResult[];
 }
 
-type Stage5OutputWriter = (stage5Modules: unknown[], projectRoot: string) => Promise<string | null> | string | null;
-
 interface RunParallelProcessingOptions {
   analysisConfig?: AnalysisConfig;
   batchSize?: number;
   cacheDisabled?: boolean;
   catalogueRevision?: string | null;
   modules: Stage2Module[];
-  outputWriter?: Stage5OutputWriter | null;
   projectRoot?: string;
   runLogger?: ParallelLogger;
   workerCount?: number;
@@ -100,7 +98,6 @@ export interface ParallelProcessingResult {
   results: ModuleResult[];
   skippedCount: number;
   stage5Modules: unknown[];
-  stage5Path: string | null;
   successCount: number;
 }
 
@@ -314,7 +311,7 @@ function buildMergedModules(modules: Stage2Module[], results: ModuleResult[]): M
   });
 }
 
-function summarizeResults(results: ModuleResult[], durationMs: number): Omit<ParallelProcessingResult, "durationMs" | "results" | "stage5Modules" | "stage5Path"> {
+function summarizeResults(results: ModuleResult[], durationMs: number): Omit<ParallelProcessingResult, "durationMs" | "results" | "stage5Modules"> {
   const successCount = results.filter(result => result.status === "success").length;
   const failedCount = results.filter(result => result.status === "failed").length;
   const skippedCount = results.filter(result => result.status === "skipped").length;
@@ -330,7 +327,7 @@ function summarizeResults(results: ModuleResult[], durationMs: number): Omit<Par
   };
 }
 
-function logProcessingSummary(results: ModuleResult[], durationMs: number, stage5Path: string | null, runLogger: ParallelLogger): Omit<ParallelProcessingResult, "durationMs" | "results" | "stage5Modules" | "stage5Path"> {
+function logProcessingSummary(results: ModuleResult[], durationMs: number, runLogger: ParallelLogger): Omit<ParallelProcessingResult, "durationMs" | "results" | "stage5Modules"> {
   const summary = summarizeResults(results, durationMs);
 
   runLogger.info("\n========== Processing Complete ==========");
@@ -339,10 +336,6 @@ function logProcessingSummary(results: ModuleResult[], durationMs: number, stage
   runLogger.info(`Cached: ${summary.cachedCount} (${summary.cachedPercentage}%)`);
   runLogger.info(`Total time: ${(durationMs / 1000).toFixed(1)}s`);
   runLogger.info(`Average: ${summary.averageProcessingTimeMs}ms per module`);
-
-  if (stage5Path) {
-    runLogger.info(`Output: ${stage5Path}`);
-  }
 
   if (summary.failedCount > 0) {
     runLogger.warn(`\n${summary.failedCount} modules failed - check logs for details`);
@@ -363,7 +356,6 @@ function logProcessingSummary(results: ModuleResult[], durationMs: number, stage
  * @param {object} [options.analysisConfig] Check-group configuration
  * @param {string|null} [options.catalogueRevision] Catalogue revision override
  * @param {object|null} [options.workerPool] Injected worker pool for tests/future orchestrator wiring
- * @param {Function|null} [options.outputWriter] Output writer override; use null to skip writes
  * @param {object} [options.runLogger] Logger implementation
  * @returns {Promise<object>} Summary, results, and generated stage5 modules
  */
@@ -376,7 +368,6 @@ export async function runParallelProcessing({
   analysisConfig = DEFAULT_ANALYSIS_CONFIG,
   catalogueRevision,
   workerPool = null,
-  outputWriter = null,
   runLogger = logger
 }: RunParallelProcessingOptions): Promise<ParallelProcessingResult> {
   if (!Array.isArray(modules)) {
@@ -476,16 +467,14 @@ export async function runParallelProcessing({
 
   const mergedModules = buildMergedModules(modules, results);
   const stage5Modules = mergedModules.map(module => toStage5Module(module));
-  const stage5Path = outputWriter ? await outputWriter(stage5Modules, projectRoot) : null;
   const durationMs = Date.now() - startTime;
-  const summary = logProcessingSummary(results, durationMs, stage5Path, runLogger);
+  const summary = logProcessingSummary(results, durationMs, runLogger);
 
   return {
     ...summary,
     durationMs,
     results,
-    stage5Modules,
-    stage5Path
+    stage5Modules
   };
 }
 
@@ -495,7 +484,7 @@ async function main(): Promise<void> {
   try {
     logger.info(`Reading modules from ${stage2Path}...`);
     const modules = JSON.parse(await readFile(stage2Path, "utf-8"));
-    await runParallelProcessing({ modules, outputWriter: null, projectRoot: PROJECT_ROOT });
+    await runParallelProcessing({ modules, projectRoot: PROJECT_ROOT });
   }
   catch (error) {
     logger.error("Fatal error:", getErrorMessage(error));

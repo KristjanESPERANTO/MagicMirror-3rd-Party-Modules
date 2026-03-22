@@ -112,10 +112,6 @@ export function sanitizeStage4(data: ModulesContainer | null | undefined): Recor
   return sanitizeModulesContainer(data);
 }
 
-export function sanitizeStage5(data: ModulesContainer | null | undefined): Record<string, unknown> {
-  return sanitizeModulesContainer(data);
-}
-
 export function sanitizeFinalModules(data: ModulesContainer | null | undefined): Record<string, unknown> {
   return sanitizeModulesContainer(data);
 }

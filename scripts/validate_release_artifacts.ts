@@ -7,10 +7,9 @@ import { validateStageFile } from "./lib/schemaValidator.ts";
 
 const PROJECT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-type ReleaseStageId = "modules.stage.2" | "modules.stage.5" | "modules.final" | "modules.min" | "stats";
+type ReleaseStageId = "modules.stage.2" | "modules.final" | "modules.min" | "stats";
 
 interface ReleaseArtifactDefinition {
-  optional?: boolean;
   relativePath: string;
   stageId: ReleaseStageId;
 }
@@ -18,7 +17,6 @@ interface ReleaseArtifactDefinition {
 const RELEASE_ARTIFACTS: ReleaseArtifactDefinition[] = [
   // Note: modules.stage.1.json no longer exists - Stage 1+2 were unified into collect-metadata
   { stageId: "modules.stage.2", relativePath: "website/data/modules.stage.2.json" },
-  { stageId: "modules.stage.5", relativePath: "website/data/modules.stage.5.json", optional: true },
   { stageId: "modules.final", relativePath: "website/data/modules.json" },
   { stageId: "modules.min", relativePath: "website/data/modules.min.json" },
   { stageId: "stats", relativePath: "website/data/stats.json" }
@@ -34,14 +32,6 @@ async function validateArtifact({ stageId, relativePath }: ReleaseArtifactDefini
   return absolutePath;
 }
 
-function isMissingFileError(error: unknown): boolean {
-  if (!error || typeof error !== "object") {
-    return false;
-  }
-
-  return "code" in error && (error as NodeJS.ErrnoException).code === "ENOENT";
-}
-
 async function main() {
   const failures: Array<{ artifact: ReleaseArtifactDefinition; error: unknown }> = [];
 
@@ -51,11 +41,6 @@ async function main() {
       console.log(`✔ ${artifact.stageId} → ${path.relative(PROJECT_ROOT, absolutePath)}`);
     }
     catch (error) {
-      if (artifact.optional && isMissingFileError(error)) {
-        console.warn(`⚠ ${artifact.stageId} skipped: ${artifact.relativePath} is missing (optional artifact)`);
-        continue;
-      }
-
       failures.push({ artifact, error });
       const message = error instanceof Error ? error.message : String(error);
       console.error(`✖ ${artifact.stageId} failed: ${message}`);

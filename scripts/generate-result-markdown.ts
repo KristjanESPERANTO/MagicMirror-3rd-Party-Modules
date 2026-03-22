@@ -3,13 +3,10 @@
 import { buildResultMarkdown, collectIssueSummaries } from "./check-modules/result-markdown.ts";
 import { createLogger } from "./shared/logger.ts";
 import { ensureDirectory, readJson } from "./shared/fs-utils.ts";
+import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 import { writeFile } from "node:fs/promises";
 import process from "node:process";
-
-interface Stage5ModuleCollection {
-  modules?: unknown[];
-}
 
 interface ResultMarkdownStats {
   issueCounter: number;
@@ -35,68 +32,6 @@ interface GenerateResultMarkdownOptions {
 const logger = createLogger({ name: "generate-result-markdown" });
 const PROJECT_ROOT = resolve(process.cwd());
 
-function normalizeStage5Modules(payload: unknown): unknown[] {
-  if (Array.isArray(payload)) {
-    return payload;
-  }
-
-  if (payload && typeof payload === "object" && Array.isArray((payload as Stage5ModuleCollection).modules)) {
-    return (payload as Stage5ModuleCollection).modules ?? [];
-  }
-
-  throw new TypeError("modules.stage.5.json must contain either an array or an object with a modules array");
-}
-
-async function readStage5ModulesOrEmpty(projectRoot: string): Promise<unknown[]> {
-  const stage5Path = resolve(projectRoot, "website", "data", "modules.stage.5.json");
-
-  try {
-    const payload = await readJson(stage5Path);
-    return normalizeStage5Modules(payload);
-  }
-  catch (error) {
-    const isMissingFile =
-      error && typeof error === "object" && "code" in error && (error as NodeJS.ErrnoException).code === "ENOENT";
-
-    if (isMissingFile) {
-      logger.warn(`Stage-5 file missing at ${stage5Path}; generating result.md with empty issue details.`);
-      return [];
-    }
-
-    throw error;
-  }
-}
-
-function createFallbackStats(): ResultMarkdownStats {
-  return {
-    issueCounter: 0,
-    lastUpdate: new Date().toISOString(),
-    maintainer: {},
-    moduleCounter: 0,
-    modulesWithIssuesCounter: 0,
-    repositoryHoster: {}
-  };
-}
-
-async function readStatsOrFallback(projectRoot: string): Promise<ResultMarkdownStats> {
-  const statsPath = resolve(projectRoot, "website", "data", "stats.json");
-
-  try {
-    return await readJson<ResultMarkdownStats>(statsPath);
-  }
-  catch (error) {
-    const isMissingFile =
-      error && typeof error === "object" && "code" in error && (error as NodeJS.ErrnoException).code === "ENOENT";
-
-    if (isMissingFile) {
-      logger.warn(`Stats file missing at ${statsPath}; generating result.md with fallback stats.`);
-      return createFallbackStats();
-    }
-
-    throw error;
-  }
-}
-
 export async function runGenerateResultMarkdown({
   projectRoot = PROJECT_ROOT,
   resultPath,
@@ -104,12 +39,14 @@ export async function runGenerateResultMarkdown({
   stage5Modules,
   stats
 }: GenerateResultMarkdownOptions = {}): Promise<{ issueCount: number; outputPath: string }> {
+  if (!Array.isArray(stage5Modules)) {
+    throw new TypeError("runGenerateResultMarkdown requires stage5Modules from the in-memory pipeline handoff");
+  }
+
   const outputPath = resultPath ?? resolve(projectRoot, "website", "result.md");
-  const resolvedStage5Modules = stage5Modules
-    ?? await readStage5ModulesOrEmpty(projectRoot);
   const resolvedStats = stats
-    ?? await readStatsOrFallback(projectRoot);
-  const summaries = collectIssueSummaries(resolvedStage5Modules);
+    ?? await readJson<ResultMarkdownStats>(resolve(projectRoot, "website", "data", "stats.json"));
+  const summaries = collectIssueSummaries(stage5Modules);
   const markdown = buildResultMarkdown(resolvedStats, summaries);
 
   await ensureDirectory(dirname(outputPath));
@@ -123,11 +60,16 @@ export async function runGenerateResultMarkdown({
 }
 
 async function main(): Promise<void> {
-  await runGenerateResultMarkdown();
+  throw new Error("generate-result-markdown must be executed via the orchestrator; direct stage-5 file input is no longer supported");
 }
 
-main().catch((error: unknown) => {
-  const message = error instanceof Error ? error.message : String(error);
-  logger.error(message);
-  process.exit(1);
-});
+const currentFile = fileURLToPath(import.meta.url);
+const isMainEntry = Boolean(process.argv[1]) && resolve(process.argv[1]) === currentFile;
+
+if (isMainEntry) {
+  main().catch((error: unknown) => {
+    const message = error instanceof Error ? error.message : String(error);
+    logger.error(message);
+    process.exit(1);
+  });
+}

@@ -55,14 +55,6 @@
       "description": "Resized module screenshots exported for the public catalogue."
     },
     {
-      "id": "modules-stage-5",
-      "type": "file",
-      "path": "website/data/modules.stage.5.json",
-      "format": "json",
-      "description": "Compatibility artifact for stage-5 data when persisted to disk; canonical handoff is in-memory.",
-      "schema": "dist/schemas/modules.stage.5.schema.json"
-    },
-    {
       "id": "modules-json",
       "type": "file",
       "path": "website/data/modules.json",
@@ -91,7 +83,7 @@
       "type": "file",
       "path": "website/result.md",
       "format": "markdown",
-      "description": "Human-readable issue breakdown generated from the latest stage-5 analysis and published stats."
+      "description": "Human-readable issue breakdown generated from the latest in-memory analysis payload and published stats."
     }
   ],
   "stages": [
@@ -145,7 +137,7 @@
     {
       "id": "parallel-processing",
       "name": "Parallel module processing",
-      "description": "Clone, enrich, and analyze modules in parallel using worker pool (stages 3+4+5 combined).",
+      "description": "Clone, enrich, and analyze modules in parallel using the worker pool.",
       "command": {
         "executable": "node",
         "args": ["scripts/parallel-processing.ts"]
@@ -189,19 +181,13 @@
     {
       "id": "aggregate-catalogue",
       "name": "Aggregate catalogue outputs",
-      "description": "Build final published catalogue outputs from Stage 5 results.",
+      "description": "Build final published catalogue outputs from the in-memory analysis payload.",
       "command": {
         "executable": "node",
         "args": ["scripts/aggregate-catalogue.ts"]
       },
       "dependsOn": ["parallel-processing"],
-      "inputs": [
-        {
-          "artifact": "modules-stage-5",
-          "mode": "read",
-          "optional": true
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
           "artifact": "modules-json",
@@ -226,18 +212,13 @@
     {
       "id": "generate-result-markdown",
       "name": "Generate result markdown",
-      "description": "Render website/result.md from the latest stage-5 analysis and published stats.",
+      "description": "Render website/result.md from the in-memory analysis payload and published stats.",
       "command": {
         "executable": "node",
         "args": ["scripts/generate-result-markdown.ts"]
       },
       "dependsOn": ["aggregate-catalogue"],
       "inputs": [
-        {
-          "artifact": "modules-stage-5",
-          "mode": "read",
-          "optional": true
-        },
         {
           "artifact": "stats-json",
           "mode": "read"

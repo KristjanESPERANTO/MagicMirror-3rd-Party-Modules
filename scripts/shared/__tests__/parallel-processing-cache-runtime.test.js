@@ -199,8 +199,6 @@ test("runParallelProcessing processes in-memory modules independently of CLI fil
 
   let capturedModules = null;
   let capturedModuleConfig = null;
-  let capturedStage5Modules = null;
-  let capturedProjectRoot = null;
   let progressHandler = null;
 
   const workerPool = {
@@ -229,7 +227,6 @@ test("runParallelProcessing processes in-memory modules independently of CLI fil
     }
   };
 
-  const outputPath = "/virtual/project/website/data/modules.stage.5.json";
   const result = await runParallelProcessing({
     modules,
     projectRoot: "/virtual/project",
@@ -238,11 +235,6 @@ test("runParallelProcessing processes in-memory modules independently of CLI fil
     cacheDisabled: true,
     catalogueRevision: "catalogue-rev-runtime-test",
     workerPool,
-    outputWriter: (stage5Modules, projectRoot) => {
-      capturedStage5Modules = stage5Modules;
-      capturedProjectRoot = projectRoot;
-      return outputPath;
-    },
     runLogger: createSilentLogger()
   });
 
@@ -250,11 +242,8 @@ test("runParallelProcessing processes in-memory modules independently of CLI fil
   equal(capturedModuleConfig.projectRoot, "/virtual/project");
   equal(capturedModuleConfig.cacheEnabled, false);
   equal(capturedModuleConfig.catalogueRevision, "catalogue-rev-runtime-test");
-  equal(capturedProjectRoot, "/virtual/project");
-  equal(capturedStage5Modules.length, modules.length);
   equal(result.results.length, modules.length);
   equal(result.stage5Modules.length, modules.length);
-  equal(result.stage5Path, outputPath);
   equal(result.successCount, modules.length);
   equal(result.failedCount, 0);
   equal(result.skippedCount, 0);
