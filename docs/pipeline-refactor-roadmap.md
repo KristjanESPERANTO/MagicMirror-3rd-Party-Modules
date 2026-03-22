@@ -67,16 +67,16 @@ The incremental pipeline foundations are complete. The next major milestone tran
 
 Merge stages 3+4+5 into parallel worker processes. See [worker-pool-design.md](pipeline/worker-pool-design.md) for detailed architecture and migration plan.
 
-| Task | Status                       |
-| ---- | ---------------------------- |
-| P7.1 | ✅ Design complete           |
-| P7.2 | ✅ Single-worker prototype   |
-| P7.3 | ✅ Worker pool orchestration |
-| P7.4 | ✅ Per-module logging        |
-| P7.5 | Cleanup old stage scripts    |
-| P7.6 | Incremental mode integration |
+| Task | Status                              |
+| ---- | ----------------------------------- |
+| P7.1 | ✅ Design complete                  |
+| P7.2 | ✅ Single-worker prototype          |
+| P7.3 | ✅ Worker pool orchestration        |
+| P7.4 | ✅ Per-module logging               |
+| P7.5 | ✅ Cleanup complete                 |
+| P7.6 | ✅ Incremental integration complete |
 
-**Note:** P7.6 (Incremental mode) deferred until after P7.5 (Cleanup). The existing cache logic in `scripts/check-modules/index.ts` continues to work; integrating it into the new worker architecture makes more sense once the old pipeline is removed.
+**Update (Mar 2026):** P7.5 and P7.6 are complete. The canonical path is `full-refresh-parallel`; legacy stage wrappers and compatibility pipeline definitions are retired; incremental cache behavior is integrated into `scripts/parallel-processing.js` with read/write/prune/skip semantics, runtime controls (`--no-cache`, `PIPELINE_CACHE_DISABLED=1`), test coverage, and measured warm-cache skip-rate benefit.
 
 **P7.4 Implementation (Feb 2026):**
 
@@ -97,7 +97,7 @@ Merge stages 3+4+5 into parallel worker processes. See [worker-pool-design.md](p
 
 ### P8.x: Streaming & Aggregation
 
-Enable streaming between phases and create aggregation layer. Details TBD after P7.x complete.
+Enable streaming between phases and create aggregation layer. The worker architecture is now stable enough to refine this milestone against the canonical `full-refresh-parallel` flow.
 
 The goal of this milestone is to reduce or eliminate the remaining intermediate stage-boundary files by replacing file-based handoffs with streaming/aggregation where it is safe to do so. It is not a separate effort to rename `modules.stage.*.json` files while they remain supported contract boundaries.
 
@@ -124,24 +124,20 @@ Measure and visualize pipeline performance.
 
 ## Next Concrete Steps
 
-See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details and
-[p7-cleanup-incremental-checklist.md](pipeline/p7-cleanup-incremental-checklist.md) for execution tracking.
+See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details.
 
-**Current focus: P7.5** — Cleanup old stage scripts
+**Current focus: P8.x** — Streaming & Aggregation
 
-- Inventory legacy stage entry points and consumers (`full-refresh`, npm scripts, docs references)
-- Switch canonical full refresh execution to `full-refresh-parallel`
-- Remove/retire obsolete stage wrappers and stale intermediate artifact dependencies
-- Retire the comparison harness in favor of canonical fixture/golden checks
-- Then delete the legacy compatibility pipeline and its stage/artifact definitions
-- Run regression checks (`lint`, fixtures, schema checks, golden checks) after cleanup
+- Define which stage boundaries can move from file handoff to streaming without breaking supported artifact contracts
+- Design the aggregation phase responsibilities for final output assembly and stats generation
+- Identify how diff detection should consume worker results without reintroducing stale intermediate stages
+- Validate memory/performance tradeoffs before removing remaining intermediate files
+- Keep release-artifact parity and existing fixture/golden validation intact through the transition
 
-**Next: P7.6** — Incremental mode integration in worker architecture
+**Next: P8.1** — Streaming orchestrator
 
-- Integrate module-cache hit/miss/prune logic into parallel worker flow
-- Use deterministic cache merge/write strategy to avoid worker write contention
-- Add tests for cache behavior and validate skip rates on repeated runs
-- Capture before/after timing and cache-hit metrics for readiness to start P8
+- Define the orchestrator-side streaming contract between collection, worker processing, and aggregation
+- Decide which stage artifacts remain persisted as compatibility boundaries during the transition
 
 ---
 
