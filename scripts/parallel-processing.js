@@ -18,6 +18,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { WorkerPool } from "../pipeline/workers/worker-pool.js";
 import { cpus } from "node:os";
 import { createLogger } from "../scripts/shared/logger.js";
+import { fileURLToPath } from "node:url";
 import process from "node:process";
 import { resolve } from "node:path";
 import { stringifyDeterministic } from "../scripts/shared/deterministic-output.js";
@@ -65,7 +66,7 @@ function getBatchSize() {
  * @param {{ catalogueRevision: string|null, analysisConfig: object }} options
  * @returns {number} Number of entries pruned
  */
-function pruneStaleCacheEntries(cache, modules, { catalogueRevision, analysisConfig }) {
+export function pruneStaleCacheEntries(cache, modules, { catalogueRevision, analysisConfig }) {
   if (!catalogueRevision) {
     return 0;
   }
@@ -103,7 +104,7 @@ function pruneStaleCacheEntries(cache, modules, { catalogueRevision, analysisCon
  * @param {{ cache: object, catalogueRevision: string|null, analysisConfig: object }} options
  * @returns {{ cachedResults: Array, uncachedModules: Array }}
  */
-function partitionModulesByCache(modules, { cache, catalogueRevision, analysisConfig }) {
+export function partitionModulesByCache(modules, { cache, catalogueRevision, analysisConfig }) {
   const cachedResults = [];
   const uncachedModules = [];
 
@@ -168,7 +169,7 @@ async function writePipelineOutputs(stage5Modules, projectRoot) {
  * @param {string|null} catalogueRevision Current catalogue revision
  * @returns {number} Number of cache entries written
  */
-function writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision) {
+export function writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision) {
   if (!catalogueRevision || workerResults.length === 0) {
     return 0;
   }
@@ -477,4 +478,9 @@ async function main() {
   }
 }
 
-main();
+const currentFile = fileURLToPath(import.meta.url);
+const isMainEntry = Boolean(process.argv[1]) && resolve(process.argv[1]) === currentFile;
+
+if (isMainEntry) {
+  main();
+}
