@@ -1,5 +1,6 @@
 import type { LogFormat } from "../shared/logger.ts";
 import { createLogger } from "../shared/logger.ts";
+import { runGenerateResultMarkdown } from "../generate-result-markdown.ts";
 import process from "node:process";
 import { resolve } from "node:path";
 import { runAggregateCatalogue } from "../aggregate-catalogue.ts";
@@ -11,6 +12,7 @@ import type { StageExecutionContext } from "./stage-executor.ts";
 interface StageRuntimeOverrides {
   aggregateCatalogue?: (options: Record<string, unknown>) => Promise<unknown>;
   collectMetadata?: (options: Record<string, unknown>) => Promise<{ modules: unknown[] }>;
+  generateResultMarkdown?: (options: Record<string, unknown>) => Promise<unknown>;
   parallelProcessing?: (options: Record<string, unknown>) => Promise<{ stage5Modules: unknown[] }>;
 }
 
@@ -26,6 +28,7 @@ export function createInProcessStageRunner({
   const artifactStore = new Map<string, unknown>();
   const aggregateCatalogue = stageRuntimes.aggregateCatalogue ?? runAggregateCatalogue;
   const collectMetadata = stageRuntimes.collectMetadata ?? runCollectMetadata;
+  const generateResultMarkdown = stageRuntimes.generateResultMarkdown ?? runGenerateResultMarkdown;
   const parallelProcessing = stageRuntimes.parallelProcessing ?? runParallelProcessing;
 
   const runStageInProcess = async (
@@ -73,14 +76,24 @@ export function createInProcessStageRunner({
     if (stage.id === "aggregate-catalogue" && artifactStore.has("modules-stage-5")) {
       const stage5Modules = artifactStore.get("modules-stage-5");
 
+      await aggregateCatalogue({
+        projectRoot: runRoot,
+        stage5Modules: stage5Modules as never
+      });
+
+      return true;
+    }
+
+    if (stage.id === "generate-result-markdown" && artifactStore.has("modules-stage-5")) {
+      const stage5Modules = artifactStore.get("modules-stage-5");
+
       try {
-        await aggregateCatalogue({
+        await generateResultMarkdown({
           projectRoot: runRoot,
           stage5Modules: stage5Modules as never
         });
       }
       finally {
-        // Stage 5 modules are no longer needed after aggregation.
         artifactStore.delete("modules-stage-5");
       }
 

@@ -7,7 +7,8 @@
       "stages": [
         "collect-metadata",
         "parallel-processing",
-        "aggregate-catalogue"
+        "aggregate-catalogue",
+        "generate-result-markdown"
       ]
     }
   ],
@@ -84,6 +85,13 @@
       "format": "json",
       "description": "Aggregated metrics collected during analysis.",
       "schema": "dist/schemas/stats.schema.json"
+    },
+    {
+      "id": "result-markdown",
+      "type": "file",
+      "path": "website/result.md",
+      "format": "markdown",
+      "description": "Human-readable issue breakdown generated from the latest stage-5 analysis and published stats."
     }
   ],
   "stages": [
@@ -216,6 +224,38 @@
         {
           "type": "filesystem",
           "description": "Writes final published catalogue and stats JSON artifacts."
+        }
+      ]
+    },
+    {
+      "id": "generate-result-markdown",
+      "name": "Generate result markdown",
+      "description": "Render website/result.md from the latest stage-5 analysis and published stats.",
+      "command": {
+        "executable": "node",
+        "args": ["scripts/generate-result-markdown.ts"]
+      },
+      "dependsOn": ["aggregate-catalogue"],
+      "inputs": [
+        {
+          "artifact": "modules-stage-5",
+          "mode": "read"
+        },
+        {
+          "artifact": "stats-json",
+          "mode": "read"
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "result-markdown",
+          "mode": "write"
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "filesystem",
+          "description": "Writes the published result markdown page for module issue review."
         }
       ]
     }

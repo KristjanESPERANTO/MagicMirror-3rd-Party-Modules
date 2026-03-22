@@ -19,6 +19,8 @@ import {
   TEXT_RULES,
   getRuleById
 } from "./rule-registry.ts";
+import { buildResultMarkdown, normalizeIssuesInput } from "./result-markdown.ts";
+import type { IssueSummary } from "./result-markdown.ts";
 import { loadCheckGroupConfig } from "./config.ts";
 import { buildRunSummaryMarkdown } from "./run-summary.ts";
 import {
@@ -87,13 +89,6 @@ interface RunStats {
   modulesWithImageCounter: number;
   modulesWithIssuesCounter: number;
   repositoryHoster: Record<string, number>;
-}
-
-interface IssueSummary {
-  issues: string[];
-  maintainer: string;
-  name: string;
-  url?: string;
 }
 
 interface ArtifactLink {
@@ -405,16 +400,6 @@ function findMatchingPattern(rule: RuleLike, content: string): string | null {
     return null;
   }
   return rule.patterns.find((pattern: string) => content.includes(pattern)) ?? null;
-}
-
-function normalizeIssuesInput(issues: string[] | string | boolean | null | undefined): string[] {
-  if (Array.isArray(issues)) {
-    return issues.slice();
-  }
-  if (typeof issues === "string" && issues.length > 0) {
-    return [issues];
-  }
-  return [];
 }
 
 function getRepositoryHost(moduleUrl: string | undefined): string {
@@ -1385,56 +1370,6 @@ function applySortAdjustments(module: StageModule, issuesCount: number): void {
   }
 }
 
-function buildMarkdown(stats: RunStats, summaries: IssueSummary[]): string {
-  const lines: string[] = [];
-  lines.push("# Result of the module analysis", "");
-  lines.push(`Last update: ${stats.lastUpdate}`, "");
-  lines.push("## General notes", "");
-  lines.push(
-    "* This is an automated analysis of the modules. It is not perfect and can contain errors. If you have any questions or suggestions, please open an issue on GitHub."
-  );
-  lines.push(
-    "* Some issues are opinionated recommendations. Please feel free to ignore them.",
-    ""
-  );
-  lines.push("## Statistics", "");
-  lines.push("|                      | number   |");
-  lines.push("|:---------------------|:--------:|");
-  lines.push(
-    `| modules analyzed     | ${String(stats.moduleCounter).padStart(6, " ")}   |`
-  );
-  lines.push(
-    `| maintainers          | ${String(Object.keys(stats.maintainer).length).padStart(6, " ")}   |`
-  );
-  lines.push(
-    `| modules with issues  | ${String(stats.modulesWithIssuesCounter).padStart(6, " ")}   |`
-  );
-  lines.push(
-    `| issues               | ${String(stats.issueCounter).padStart(6, " ")}   |`
-  );
-
-  for (const [hoster, count] of Object.entries(stats.repositoryHoster)) {
-    lines.push(
-      `| modules at ${hoster.padEnd(9, " ")} | ${String(count).padStart(6, " ")}   |`
-    );
-  }
-
-  lines.push("", "## Modules with issues");
-
-  for (const summary of summaries) {
-    lines.push(
-      "",
-      `### [${summary.name} by ${summary.maintainer}](${summary.url})`,
-      ""
-    );
-    summary.issues.forEach((issue: string, index: number) => {
-      lines.push(`${index + 1}. ${issue}`);
-    });
-  }
-
-  return `${lines.join("\n")}\n`;
-}
-
 async function writeOutputs({
   data,
   stats,
@@ -1447,7 +1382,7 @@ async function writeOutputs({
   await ensureDirectory(DATA_DIR);
   await ensureDirectory(path.dirname(RESULT_PATH));
 
-  const markdown = buildMarkdown(stats, summaries);
+  const markdown = buildResultMarkdown(stats, summaries);
   await writeFile(RESULT_PATH, markdown, "utf8");
 
   await writeJson(MODULES_JSON_PATH, data, { pretty: 2 });
