@@ -81,9 +81,12 @@ Related docs:
   - Modules with a cache hit bypass the worker pool entirely and are returned immediately with `fromCache: true`; only cache-miss modules are dispatched to workers.
   - Extracted `writePipelineOutputs()` to keep `main()` within lint line/statement limits.
   - Cache misses preserve all existing behavior; no behavior change when the cache file is absent.
-- [ ] I3: Write path integration
-  - Aggregate worker cache updates in orchestrator and write once, deterministically.
-  - Prevent write races from child processes.
+- [x] I3: Write path integration
+  - Completed on 2026-03-19.
+  - Added `writeSuccessfulResultsToCache()` helper in [scripts/parallel-processing.js](../../scripts/parallel-processing.js): filters worker results for status=success, extracts analysis data (excluding meta-fields), and writes each to the cache with its cacheKey.
+  - Integrated into orchestrator flow: after `pool.processModules()` returns, successful results are written to cache and flushed before output writing. No race conditions: all cache writes happen in parent process (single-threaded).
+  - Caching only happens when `catalogueRevision` is available (cache keys are invalid otherwise).
+  - Second-run module hits (from I2) still bypass the pool; now successful results from both first-run misses and second-run refreshes populate the cache for future runs.
 - [ ] I4: Skip semantics and reporting
   - Standardize `status=skipped` and `skippedReason=cached` handling.
   - Ensure progress output and final summary report skipped/cached totals clearly.

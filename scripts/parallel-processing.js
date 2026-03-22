@@ -114,6 +114,47 @@ async function writePipelineOutputs(stage5Modules, projectRoot) {
   return stage5Path;
 }
 
+/**
+ * Write successfully processed modules to cache (I3).
+ * Only caches successful results with valid cache keys.
+ * Flushes cache to disk when done.
+ *
+ * @param {Array} workerResults Worker results from pool.processModules
+ * @param {Object} cache Cache instance
+ * @param {string|null} catalogueRevision For logging
+ * @returns {Promise<void>}
+ */
+async function writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision) {
+  if (!catalogueRevision || workerResults.length === 0) {
+    return;
+  }
+
+  // Meta-fields that should not be cached
+  const metaKeys = new Set(["cacheKey", "fromCache", "processingTimeMs", "cloneDir", "moduleLogger"]);
+  let writtenCount = 0;
+
+  for (const result of workerResults) {
+    // Only cache successful results
+    if (result.status === "success" && result.cacheKey) {
+      // Prepare analysis data: copy all fields except meta and stage-2-input-only fields
+      const cachedData = {};
+      for (const [key, value] of Object.entries(result)) {
+        if (!metaKeys.has(key)) {
+          cachedData[key] = value;
+        }
+      }
+
+      cache.set(result.cacheKey, cachedData);
+      writtenCount += 1;
+    }
+  }
+
+  if (writtenCount > 0) {
+    logger.info(`Caching ${writtenCount} successful module result(s)`);
+    await cache.flush();
+  }
+}
+
 const STAGE5_ALLOWED_KEYS = [
   "name",
   "category",
@@ -363,6 +404,9 @@ async function main() {
       ? await pool.processModules(uncachedModules, moduleConfig)
       : [];
     const results = [...cachedResults, ...workerResults];
+
+    // Write successfully processed worker results to cache (I3)
+    await writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision);
 
     // Stage 5 schema expects an object with a `modules` array.
     // Merge worker results back into stage-2 module entries to preserve
