@@ -10,25 +10,25 @@ The supported production pipeline is orchestrated via `node scripts/orchestrator
 
 | Order | Stage ID                   | Key Outputs                                                               |
 | ----- | -------------------------- | ------------------------------------------------------------------------- |
-| 1+2   | `collect-metadata`         | `modules.stage.2.json`, `gitHubData.json`                                 |
-| 3+4+5 | `parallel-processing`      | in-memory stage-5 payload, `modules/`, `modules_temp/`, `website/images/` |
-| 6     | `aggregate-catalogue`      | `modules.json`, `modules.min.json`, `stats.json`                          |
-| 7     | `generate-result-markdown` | `result.md`                                                               |
+| 1     | `collect-metadata`         | in-memory metadata payload, `gitHubData.json`                             |
+| 2     | `parallel-processing`      | in-memory stage-5 payload, `modules/`, `modules_temp/`, `website/images/` |
+| 3     | `aggregate-catalogue`      | `modules.json`, `modules.min.json`, `stats.json`                          |
+| 4     | `generate-result-markdown` | `result.md`                                                               |
 
 ### Current Workflow Diagram
 
 ```mermaid
 flowchart TB
-  orchestrator[[Orchestrator<br>3-stage execution]]
+  orchestrator[[Orchestrator<br>4-stage execution]]
 
   subgraph Phase 1: Metadata Collection
     seed[("Module seed list")] --> collect{{Collect metadata}}
     collect --> cache[("gitHubData.json cache")]
-    collect --> stage2["modules.stage.2.json"]
+    collect --> metadata["metadata payload (in-memory)"]
   end
 
   subgraph Phase 2: Parallel Module Processing
-    stage2 --> parallel{{Parallel processing}}
+    metadata --> parallel{{Parallel processing}}
     parallel --> clones[("modules/<br>modules_temp/")]
     parallel --> images[("website/images/")]
     parallel --> stage5["stage-5 payload (in-memory)"]
@@ -51,8 +51,8 @@ flowchart TB
 
 - **Orchestrator CLI**: Declarative stage graph with `--only/--skip` support, retries, and structured logging
 - **Worker Pool Stage**: `parallel-processing` encapsulates clone, enrich, image, and analysis work behind a single supported stage
-- **Aggregation Stage**: `aggregate-catalogue` builds published JSON artifacts from the in-memory stage-5 payload (disk fallback retained for compatibility)
-- **Schema Validation**: JSON schemas enforce contracts at the supported boundaries (`modules.stage.2.json` and final published outputs)
+- **Aggregation Stage**: `aggregate-catalogue` builds published JSON artifacts from the in-memory stage-5 payload
+- **Schema Validation**: JSON schemas enforce contracts at the published boundaries (`modules.json`, `modules.min.json`, `stats.json`)
 - **Shared Utilities**: HTTP, Git, filesystem, and rate limiting in `scripts/shared/`
 
 ### Incremental Pipeline Behavior
@@ -74,25 +74,25 @@ The pipeline implements intelligent caching and skip logic to avoid redundant wo
 flowchart TB
   subgraph Stage 1: Create Module List
     wiki[("MagicMirror wiki table")] --> createLegacy{{Create module list<br>Node.js}}
-    createLegacy --> stage1Legacy["modules.stage.1.json"]
+    createLegacy --> stage1Legacy["legacy stage-1 snapshot"]
   end
 
   subgraph Stage 2: Update Repository Data
     stage1Legacy --> updateLegacy{{Update repository data<br>Node.js}}
     updateLegacy --> cacheLegacy[("gitHubData.json cache")]
-    updateLegacy --> stage2Legacy["modules.stage.2.json"]
+    updateLegacy --> stage2Legacy["legacy stage-2 snapshot"]
   end
 
   subgraph Stage 3: Get Modules
     stage2Legacy --> getLegacy{{Fetch repos<br>Python}}
     getLegacy --> clonesLegacy[("modules/<br>modules_temp/")]
-    getLegacy --> stage3Legacy["modules.stage.3.json"]
+    getLegacy --> stage3Legacy["legacy stage-3 snapshot"]
   end
 
   subgraph Stage 4: Expand Module List
     stage3Legacy --> expandLegacy{{Enrich metadata<br>Node.js}}
     expandLegacy --> imagesLegacy[("website/images/")]
-    expandLegacy --> stage4Legacy["modules.stage.4.json"]
+    expandLegacy --> stage4Legacy["legacy stage-4 snapshot"]
   end
 
   subgraph Stage 5: Check Modules JS
@@ -162,13 +162,13 @@ flowchart TB
 
 ### Comparison: Legacy vs. Canonical Flow
 
-| Aspect             | Legacy (6 stages)         | Canonical flow (Mar 2026)                                                                        |
-| ------------------ | ------------------------- | ------------------------------------------------------------------------------------------------ |
-| Runtime            | Python + Node.js          | Node.js with TypeScript-based deep checks                                                        |
-| Execution          | Sequential manual scripts | Orchestrated 4-stage pipeline with in-process handoff                                            |
-| Incremental        | ❌ No                     | Partial: metadata cache + clone reuse                                                            |
-| Memory             | Unbounded                 | Batch-/worker-bounded                                                                            |
-| Intermediate files | 6                         | `modules.stage.2.json` plus published outputs (`modules.json`, `modules.min.json`, `stats.json`) |
+| Aspect             | Legacy (6 stages)         | Canonical flow (Mar 2026)                                                                                |
+| ------------------ | ------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Runtime            | Python + Node.js          | Node.js with TypeScript-based deep checks                                                                |
+| Execution          | Sequential manual scripts | Orchestrated 4-stage pipeline with in-process handoff                                                    |
+| Incremental        | ❌ No                     | Partial: metadata cache + clone reuse                                                                    |
+| Memory             | Unbounded                 | Batch-/worker-bounded                                                                                    |
+| Intermediate files | 0                         | none; only published outputs are written (`modules.json`, `modules.min.json`, `stats.json`, `result.md`) |
 
 ### Remaining Gaps
 
@@ -176,7 +176,7 @@ flowchart TB
 2. Record before/after repeated-run performance metrics once cache writes are back in place.
 3. Keep the published contract (`modules.json`, `modules.min.json`, `stats.json`, `result.md`) stable while worker caching evolves.
 
-The remaining persisted intermediate boundary is `modules.stage.2.json`. The stage-5 payload is handed off in memory by default, with optional disk compatibility retained for tooling during the migration window.
+No persisted intermediate stage boundary remains in the canonical run. Stage handoffs are fully in-memory.
 
 ---
 

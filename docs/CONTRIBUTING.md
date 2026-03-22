@@ -23,12 +23,12 @@ npm install
 
 Use the canonical helper scripts from `package.json` or call the orchestrator directly:
 
-| Scope                     | Command                                                                                                       | Purpose                                                                                          |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Metadata only             | `node --run collectMetadata`                                                                                  | Fetch the upstream wiki list and enrich it with repository metadata into `modules.stage.2.json`. |
-| Full canonical run        | `node --run all`                                                                                              | Execute `full-refresh-parallel` end-to-end.                                                      |
-| Inspect the pipeline      | `node --run pipeline -- list` / `describe` / `logs`                                                           | Inspect the registered stages, pipelines, and recent run records.                                |
-| Re-run processing+publish | `node scripts/orchestrator/index.ts run full-refresh-parallel --only=parallel-processing,aggregate-catalogue` | Re-run worker analysis and publication against an existing Stage 2 input.                        |
+| Scope                     | Command                                                                                                       | Purpose                                                                                               |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Metadata only             | `node --run collectMetadata`                                                                                  | Fetch the upstream wiki list and refresh repository metadata cache plus in-memory enrichment payload. |
+| Full canonical run        | `node --run all`                                                                                              | Execute `full-refresh-parallel` end-to-end.                                                           |
+| Inspect the pipeline      | `node --run pipeline -- list` / `describe` / `logs`                                                           | Inspect the registered stages, pipelines, and recent run records.                                     |
+| Re-run processing+publish | `node scripts/orchestrator/index.ts run full-refresh-parallel --only=parallel-processing,aggregate-catalogue` | Re-run worker analysis and publication without re-running markdown parsing manually.                  |
 
 The `parallel-processing` stage is the expensive part of the run: it clones repositories, extracts metadata and screenshots, and performs the deeper checks that produce the stage-5 payload in memory. The follow-up `aggregate-catalogue` stage turns that payload into `modules.json`, `modules.min.json`, and `stats.json`.
 
@@ -45,7 +45,7 @@ Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) f
 
 ### Pipeline Tips
 
-- **Refresh metadata only**: Use `node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata` when you only need a fresh `modules.stage.2.json`.
+- **Refresh metadata only**: Use `node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata` when you only need to refresh source parsing and repository metadata cache.
 - **Focus on one stage**: Use `--only=<stage-id>` to run a single stage in isolation. For example, `node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata`.
 - **Debug a small source list**: Set `WIKI_FILE=path/to/3rd-Party-Modules.md` and run `node --run all` to use a local wiki-formatted module list instead of the upstream page.
 - **Check logs**: If a run fails, use `node scripts/orchestrator/index.ts logs` to list recent runs, and `node scripts/orchestrator/index.ts logs <run-file>` to view details.
@@ -54,7 +54,7 @@ Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) f
 
 #### Stage 1+2 – `collect-metadata/index.js`
 
-Reads the official wiki list of third-party modules and fetches metadata (stars, topics, default branch, etc.) from the hosting service (GitHub/GitLab). The output is the enriched Stage 2 snapshot that downstream stages reuse.
+Reads the official wiki list of third-party modules and fetches metadata (stars, topics, default branch, etc.) from the hosting service (GitHub/GitLab). The stage returns an in-memory enriched payload for downstream stages and updates the API cache on disk.
 
 #### Stage 3+4+5 – `parallel-processing.js`
 
@@ -66,7 +66,7 @@ Consumes the stage-5 payload and writes the published catalogue outputs (`module
 
 #### `validate_release_artifacts.ts`
 
-Validates every stage snapshot and the published catalogue (`modules.json`, `modules.min.json`, `stats.json`) against the JSON Schemas. The command is wired into release packaging and must pass before publishing.
+Validates the published catalogue (`modules.json`, `modules.min.json`, `stats.json`) against the JSON Schemas. The command is wired into release packaging and must pass before publishing.
 
 ### Testing specific modules
 
@@ -86,7 +86,7 @@ As of September 2025, schema validation is part of the release gate. After you r
 node --run release:validate
 ```
 
-The command checks the supported stage snapshot (`modules.stage.2.json`) plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`).
+The command checks the published artifacts (`modules.json`, `modules.min.json`, `stats.json`).
 
 > ℹ️ **CI gate:** The same validation now runs automatically in GitHub Actions (`release-validation.yml`) on every push and pull request targeting `main`. Keep the command in your local workflow to catch schema regressions before CI fails.
 

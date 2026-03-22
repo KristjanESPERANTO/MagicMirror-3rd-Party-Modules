@@ -3,7 +3,7 @@
   "pipelines": [
     {
       "id": "full-refresh-parallel",
-      "description": "Full catalogue refresh using parallel worker pool (P7.3).",
+      "description": "Full catalogue refresh using the parallel worker pool.",
       "stages": [
         "collect-metadata",
         "parallel-processing",
@@ -95,11 +95,6 @@
       ],
       "outputs": [
         {
-          "artifact": "modules-stage-2",
-          "mode": "write",
-          "optional": true
-        },
-        {
           "artifact": "github-api-cache",
           "mode": "write"
         }
@@ -127,12 +122,7 @@
         "args": ["scripts/parallel-processing.ts"]
       },
       "dependsOn": ["collect-metadata"],
-      "inputs": [
-        {
-          "artifact": "modules-stage-2",
-          "mode": "read"
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
           "artifact": "cloned-modules",

@@ -3,7 +3,7 @@
  * Parallel module analysis stage.
  *
  * Consolidates the legacy stages 3-5 responsibilities into a worker-pool run.
- * The CLI wrapper reads modules.stage.2.json and produces the in-memory
+ * The CLI wrapper refreshes metadata and then produces the in-memory
  * analysis payload for downstream pipeline stages.
  */
 

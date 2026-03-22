@@ -14,7 +14,7 @@ This directory contains a curated subset of modules that we will use to exercise
 
 - `modules.seed.json` – snapshot of the wiki-derived module list (stage 1 input).
 - `modules.metadata.json` – supplemental details pulled from later pipeline stages; the fixture generator uses this to emulate enrichment.
-- `data/` – committed stage snapshots and published artifacts. The canonical persisted outputs are `modules.stage.2.json` plus `modules.json`, `modules.min.json`, and `stats.json`.
+- `data/` - committed fixture outputs for published artifacts (`modules.json`, `modules.min.json`, and `stats.json`).
 
 ## Regenerating the fixtures
 

@@ -8,19 +8,16 @@
 import { WorkerPool } from "./worker-pool.ts";
 import { createLogger } from "../../scripts/shared/logger.ts";
 import process from "node:process";
-import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { runCollectMetadata } from "../../scripts/collect-metadata/index.ts";
 
 const logger = createLogger({ name: "test-pool" });
 
 async function testWorkerPool() {
   try {
-    // Load a small subset of modules from stage 2
-    const stage2Path = resolve(process.cwd(), "website/data/modules.stage.2.json");
-    const stage2Data = JSON.parse(await readFile(stage2Path, "utf-8"));
-
-    // Stage 2 is an array of modules
-    const testModules = stage2Data.slice(0, 10);
+    // Collect metadata and test with a small in-memory subset.
+    const { modules } = await runCollectMetadata();
+    const testModules = modules.slice(0, 10);
 
     logger.info(`Testing worker pool with ${testModules.length} modules`);
 

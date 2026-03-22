@@ -17,7 +17,7 @@ This document describes the worker pool architecture for merging stages 3+4+5 in
 ```text
 ┌─────────────────────────────────────────────────────────────────┐
 │                        Orchestrator                              │
-│  - Reads modules.stage.2.json (enriched metadata)               │
+│  - Receives enriched metadata payload in memory                 │
 │  - Distributes batches to workers                               │
 │  - Collects results and aggregates                              │
 └────────────────────────┬────────────────────────────────────────┘
