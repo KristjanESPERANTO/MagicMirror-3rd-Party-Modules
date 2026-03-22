@@ -12,8 +12,7 @@ import { createPersistentCache } from "../shared/persistent-cache.ts";
 import { createRateLimiter } from "../shared/rate-limiter.js";
 import { fileURLToPath } from "node:url";
 import fs from "node:fs";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { loadPreviousModules } from "../shared/module-list.js";
+import { loadPreviousModules } from "../shared/module-list.ts";
 import { parseModuleList } from "./parser.ts";
 import type { ParsedModuleEntry } from "./parser.ts";
 import path from "node:path";
@@ -546,7 +545,7 @@ export async function runCollectMetadata({
   markdown,
   outputPath = path.join("website", "data", "modules.stage.2.json"),
   outputWriter = writeStage2Output,
-  previousModulesMap = loadPreviousModules()
+  previousModulesMap = loadPreviousModules<EnrichedModule>()
 }: RunCollectMetadataOptions = {}): Promise<RunCollectMetadataResult> {
   logger.info("Starting unified metadata collection...");
 
