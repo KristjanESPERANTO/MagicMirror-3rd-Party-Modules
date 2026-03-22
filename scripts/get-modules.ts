@@ -1,16 +1,22 @@
-// @ts-nocheck
 import path from "node:path";
 import fs from "node:fs";
 import { rename, rm } from "node:fs/promises";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureRepository, GitErrorCategory, getCommitDate } from "./shared/git.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createHttpClient } from "./shared/http-client.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "./shared/logger.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createRateLimiter } from "./shared/rate-limiter.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureDirectory, fileExists, writeJson } from "./shared/fs-utils.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { validateStageFile } from "./lib/schemaValidator.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { stringifyDeterministic } from "./shared/deterministic-output.js";
 
 type ModuleEntry = {
@@ -18,6 +24,7 @@ type ModuleEntry = {
   url: string;
   description?: string;
   branch?: string;
+  lastCommit?: string;
   issues?: string[];
   [key: string]: unknown;
 };
@@ -32,6 +39,31 @@ type UrlValidationResult = {
   responseSnippet?: string;
   error?: string;
 };
+
+type KnownGitErrorCategory =
+  | "NOT_FOUND"
+  | "AUTHENTICATION"
+  | "NETWORK"
+  | "INFRASTRUCTURE"
+  | "UNKNOWN";
+
+interface CategorizedError {
+  category?: KnownGitErrorCategory;
+}
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
+function getErrorCategory(error: unknown): KnownGitErrorCategory {
+  if (error && typeof error === "object" && "category" in error) {
+    const category = (error as CategorizedError).category;
+    if (typeof category === "string") {
+      return category;
+    }
+  }
+  return "UNKNOWN";
+}
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = path.dirname(currentFile);
@@ -280,7 +312,7 @@ async function validateModuleUrl(
   module: ModuleEntry
 ): Promise<UrlValidationResult> {
   logger.info(`=== DIAGNOSTIC: validateModuleUrl called for ${module.name} (${module.url}) ===`);
-  
+
   try {
     logger.info(`=== DIAGNOSTIC: Making HEAD request to ${module.url} ===`);
     const headResponse = await httpClient.request(module.url, {
@@ -369,10 +401,10 @@ async function validateModuleUrls({
   modules: ModuleEntry[];
   limit?: number;
   urlConcurrency: number;
-}) {
+}): Promise<UrlValidationResult[]> {
   logger.info("=== DIAGNOSTIC: validateModuleUrls called ===");
   logger.info(`Total modules: ${modules.length}, limit: ${limit}, concurrency: ${urlConcurrency}`);
-  
+
   const total =
     typeof limit === "number"
       ? Math.min(limit, modules.length)
@@ -385,7 +417,7 @@ async function validateModuleUrls({
   }
 
   logger.info(`=== DIAGNOSTIC: About to validate ${targets.length} modules ===`);
-  
+
   const results: UrlValidationResult[] = new Array(targets.length);
   let nextIndex = 0;
   let completed = 0;
@@ -403,12 +435,12 @@ async function validateModuleUrls({
 
       const module = targets[currentIndex];
       logger.info(`=== DIAGNOSTIC: Validating module ${currentIndex + 1}/${targets.length}: ${module.name} - ${module.url} ===`);
-      
+
       try {
         const result = await validateModuleUrl(module);
         results[currentIndex] = result;
         completed += 1;
-        
+
         logger.info(`=== DIAGNOSTIC: Completed ${completed}/${total} ===`);
 
         if (completed % progressInterval === 0 || completed === total) {
@@ -427,7 +459,7 @@ async function validateModuleUrls({
 
   const workerCount = Math.min(urlConcurrency, targets.length);
   logger.info(`=== DIAGNOSTIC: Starting ${workerCount} workers ===`);
-  
+
   try {
     await Promise.all(Array.from({ length: workerCount }, () => worker()));
     logger.info("=== DIAGNOSTIC: All workers completed successfully ===");
@@ -462,20 +494,20 @@ function createSkippedEntry(
   const normalizedDetails = Object.fromEntries(
     Object.entries(details).filter(([, value]) => value !== undefined)
   );
-  
+
   // Build metadata object for categorization
   const metadata: Record<string, unknown> = {
     errorType
   };
-  
+
   if (details.error) {
     metadata.error = details.error;
   }
-  
+
   if (details.category) {
     metadata.category = details.category;
   }
-  
+
   return {
     name: module.name,
     url: module.url,
@@ -485,7 +517,7 @@ function createSkippedEntry(
     reason,
     metadata,
     ...Object.fromEntries(
-      Object.entries(normalizedDetails).filter(([key]) => 
+      Object.entries(normalizedDetails).filter(([key]) =>
         !['error', 'category'].includes(key)
       )
     )
@@ -507,7 +539,7 @@ async function refreshRepository({
   module: ModuleEntry;
   tempPath: string;
   finalPath: string;
-}) {
+}): Promise<void> {
   const branch =
     typeof module.branch === "string" && module.branch.length > 0
       ? module.branch
@@ -687,7 +719,7 @@ async function processModules() {
             if (localDateStr) {
               const localDate = new Date(localDateStr);
               const remoteDate = new Date(module.lastCommit);
-              
+
               // If local repo is at least as new as the remote info we have, skip clone
               // We use a small buffer (e.g. 1 minute) to handle potential clock skew or precision issues
               if (localDate.getTime() >= remoteDate.getTime() - 60000) {
@@ -696,14 +728,14 @@ async function processModules() {
               }
             }
           } catch (dateError) {
-            logger.debug(`Could not verify local commit date for ${module.name}, proceeding with clone: ${dateError.message}`);
+            logger.debug(`Could not verify local commit date for ${module.name}, proceeding with clone: ${getErrorMessage(dateError)}`);
           }
         }
 
         if (!shouldSkipClone) {
           await refreshRepository({ module: moduleCopy, tempPath, finalPath });
         }
-        
+
         // Write moduleCopy to stream immediately to avoid holding it
         // Use deterministic stringify to ensure sorted keys for reproducible outputs
         const toWrite = `${firstOut ? "" : ","}${stringifyDeterministic(moduleCopy, null)}`;
@@ -712,15 +744,15 @@ async function processModules() {
         validModules.push(moduleCopy);
         consecutiveErrors = 0; // Reset error counter on success
       } catch (error) {
-        const message = error instanceof Error ? error.message : String(error);
+        const message = getErrorMessage(error);
         const errorStack = error instanceof Error ? error.stack : undefined;
-        
+
         // Determine if this is an infrastructure error (should count toward circuit breaker)
         // or an expected error (404, auth, etc. - should just skip)
-        const errorCategory = error?.category || GitErrorCategory.UNKNOWN;
-        const isInfrastructureError = 
-          errorCategory === GitErrorCategory.NETWORK || 
-          errorCategory === GitErrorCategory.INFRASTRUCTURE;
+        const errorCategory = getErrorCategory(error);
+        const isInfrastructureError =
+          errorCategory === "NETWORK" ||
+          errorCategory === "INFRASTRUCTURE";
 
         if (isInfrastructureError) {
           consecutiveErrors += 1;
@@ -732,15 +764,15 @@ async function processModules() {
             `Skipping module [${moduleCounter}/${validated.length}]: ${module.name} (${module.url}) - ${errorCategory}`
           );
         }
-        
+
         logger.error(`Error: ${message}`);
-        
+
         if (errorStack && errorStack !== message) {
           logger.debug(`Stack trace: ${errorStack}`);
         }
 
         await rm(tempPath, { recursive: true, force: true }).catch(() => {});
-        
+
         // Provide more specific skip reason based on error category
         let skipReason = "Repository clone failed - URL might be invalid or repository might be private/deleted";
         if (errorCategory === GitErrorCategory.NOT_FOUND) {
@@ -774,7 +806,7 @@ async function processModules() {
             `Too many consecutive infrastructure errors (${MAX_CONSECUTIVE_ERRORS}). Aborting pipeline.`
           );
         }
-        
+
         continue;
       }
     }
@@ -785,11 +817,14 @@ async function processModules() {
     }
 
     // Close stream and finalize JSON
-    await new Promise((resolve) => writeStream.end("]}", "utf8", resolve));
+    await new Promise<void>((resolve) => writeStream.end("]}", "utf8", resolve));
 
     // Generate summary report
     const categoryCount = skippedModules.reduce((acc, mod) => {
-      const category = mod.metadata?.category || "UNKNOWN";
+      const category =
+        typeof mod.metadata?.category === "string"
+          ? mod.metadata.category
+          : "UNKNOWN";
       acc[category] = (acc[category] || 0) + 1;
       return acc;
     }, {} as Record<string, number>);
@@ -799,10 +834,10 @@ async function processModules() {
     logger.info("Stage 3 (get-modules) Summary");
     logger.info("=".repeat(60));
     logger.info(`✅ Modules cloned successfully: ${validModules.length}`);
-    
+
     if (skippedModules.length > 0) {
       logger.warn(`⚠️  Modules skipped: ${skippedModules.length}`);
-      
+
       // Show breakdown by category
       const categories = [
         { key: "NOT_FOUND", label: "Repository not found (deleted/renamed)" },
@@ -811,14 +846,14 @@ async function processModules() {
         { key: "INFRASTRUCTURE", label: "Infrastructure errors" },
         { key: "UNKNOWN", label: "Unknown errors" }
       ];
-      
+
       for (const { key, label } of categories) {
         const count = categoryCount[key] || 0;
         if (count > 0) {
           logger.warn(`   ├─ ${key}: ${count} (${label})`);
         }
       }
-      
+
       logger.warn("");
       logger.warn("⚠️  WARNING: Skipped modules won't appear in the final module list.");
       logger.warn(`   Check ${SKIPPED_MODULES_PATH} for details.`);
@@ -826,7 +861,7 @@ async function processModules() {
     } else {
       logger.info(`✅ Modules skipped: 0`);
     }
-    
+
     logger.info(`📊 Total processed: ${validModules.length + skippedModules.length}/${totalTargets}`);
     logger.info("=".repeat(60));
     logger.info("");
