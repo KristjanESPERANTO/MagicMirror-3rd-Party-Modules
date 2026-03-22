@@ -6,8 +6,7 @@ import { fileURLToPath } from "node:url";
 import process from "node:process";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { writePublishedCatalogueOutputs } from "./shared/module-catalogue-output.js";
+import { writePublishedCatalogueOutputs } from "./shared/module-catalogue-output.ts";
 
 interface Stage5Module {
   id: string;

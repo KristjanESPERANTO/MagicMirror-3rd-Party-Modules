@@ -3,7 +3,7 @@ import { mkdir, mkdtemp, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { test } from "node:test";
 import { tmpdir } from "node:os";
-import { writePublishedCatalogueOutputs } from "../module-catalogue-output.js";
+import { writePublishedCatalogueOutputs } from "../module-catalogue-output.ts";
 
 async function createProjectRoot(prefix = "module-catalogue-output-test-") {
   const root = await mkdtemp(join(tmpdir(), prefix));

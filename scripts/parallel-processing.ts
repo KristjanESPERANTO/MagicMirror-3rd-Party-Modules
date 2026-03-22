@@ -7,8 +7,7 @@
  */
 
 import { MODULE_ANALYSIS_CACHE_SCHEMA_VERSION, buildModuleAnalysisCacheKey, createModuleAnalysisCache, getProjectRevision, normalizeModuleAnalysisCheckGroups, resolveModuleAnalysisCachePath } from "../scripts/shared/module-analysis-cache.ts";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { toStage5Module, writePipelineOutputs, writeStage5Output } from "../scripts/shared/module-catalogue-output.js";
+import { toStage5Module, writePipelineOutputs, writeStage5Output } from "../scripts/shared/module-catalogue-output.ts";
 import { WorkerPool } from "../pipeline/workers/worker-pool.ts";
 import { cpus } from "node:os";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice

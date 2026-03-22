@@ -2,7 +2,81 @@ import { access, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { stringifyDeterministic } from "./deterministic-output.ts";
 
-const STAGE5_ALLOWED_KEYS = [
+type ModuleRecord = Record<string, unknown>;
+
+export interface Stage5Module extends ModuleRecord {
+  category?: string;
+  description?: string;
+  id?: string;
+  image?: string;
+  isArchived?: boolean;
+  issues?: unknown[];
+  keywords?: string[];
+  lastCommit?: string;
+  license?: string;
+  maintainer?: string;
+  name?: string;
+  outdated?: boolean;
+  stars?: number;
+  tags?: string[];
+  url?: string;
+}
+
+interface FinalModule extends ModuleRecord {
+  defaultSortWeight: number;
+  description: string;
+  id?: string;
+  image?: string;
+  issues: boolean;
+  keywords?: string[];
+  lastCommit: string;
+  maintainer?: string;
+  tags?: string[];
+  url?: string;
+}
+
+export interface ChangeSummary {
+  addedCount: number;
+  changedCount: number;
+  hasChanges: boolean;
+  removedCount: number;
+  unchangedCount: number;
+}
+
+interface CatalogueStats {
+  issueCounter: number;
+  lastUpdate: string;
+  maintainer: Record<string, number>;
+  moduleCounter: number;
+  modulesWithImageCounter: number;
+  modulesWithIssuesCounter: number;
+  repositoryHoster: Record<string, number>;
+}
+
+interface PreviousModulesPayload {
+  modules?: unknown[];
+  [key: string]: unknown;
+}
+
+interface PreviousStatsPayload {
+  lastUpdate?: unknown;
+  [key: string]: unknown;
+}
+
+export interface PublishedOutputResult {
+  changeSummary: ChangeSummary;
+  modulesJsonPath: string;
+  modulesMinPath: string;
+  outputPaths: {
+    modulesJsonPath: string;
+    modulesMinPath: string;
+    statsPath: string;
+  };
+  statsPath: string;
+  wroteOutputs: boolean;
+}
+
+const STAGE5_ALLOWED_KEYS: string[] = [
   "name",
   "category",
   "url",
@@ -23,7 +97,7 @@ const STAGE5_ALLOWED_KEYS = [
   "packageJson"
 ];
 
-const FINAL_ALLOWED_KEYS = [
+const FINAL_ALLOWED_KEYS: string[] = [
   "name",
   "category",
   "url",
@@ -44,12 +118,13 @@ const FINAL_ALLOWED_KEYS = [
   "keywords"
 ];
 
-export function toStage5Module(module) {
-  const entry = {};
+export function toStage5Module(module: Stage5Module): Stage5Module {
+  const sourceModule = module as Stage5Module;
+  const entry: Stage5Module = {};
 
   for (const key of STAGE5_ALLOWED_KEYS) {
-    if (Object.hasOwn(module, key) && typeof module[key] !== "undefined") {
-      entry[key] = module[key];
+    if (Object.hasOwn(sourceModule, key) && typeof sourceModule[key] !== "undefined") {
+      entry[key] = sourceModule[key];
     }
   }
 
@@ -60,11 +135,11 @@ export function toStage5Module(module) {
   return entry;
 }
 
-function isValidDateTime(value) {
+function isValidDateTime(value: unknown): value is string {
   return typeof value === "string" && value.length > 0 && !Number.isNaN(Date.parse(value));
 }
 
-function getRepositoryHost(moduleUrl) {
+function getRepositoryHost(moduleUrl: unknown): string {
   if (typeof moduleUrl !== "string") {
     return "unknown";
   }
@@ -79,7 +154,7 @@ function getRepositoryHost(moduleUrl) {
   }
 }
 
-function toFinalModule(module, fallbackTimestamp) {
+function toFinalModule(module: Stage5Module, fallbackTimestamp: string): FinalModule {
   const issueList = Array.isArray(module.issues) ? module.issues : [];
   const stars = typeof module.stars === "number" ? module.stars : 0;
 
@@ -92,7 +167,7 @@ function toFinalModule(module, fallbackTimestamp) {
     defaultSortWeight += 900;
   }
 
-  const candidate = {
+  const candidate: FinalModule = {
     ...module,
     description:
       typeof module.description === "string" && module.description.length > 0
@@ -117,7 +192,12 @@ function toFinalModule(module, fallbackTimestamp) {
     delete candidate.keywords;
   }
 
-  const entry = {};
+  const entry: FinalModule = {
+    defaultSortWeight: candidate.defaultSortWeight,
+    description: candidate.description,
+    issues: candidate.issues,
+    lastCommit: candidate.lastCommit
+  };
   for (const key of FINAL_ALLOWED_KEYS) {
     if (Object.hasOwn(candidate, key) && typeof candidate[key] !== "undefined") {
       entry[key] = candidate[key];
@@ -127,14 +207,17 @@ function toFinalModule(module, fallbackTimestamp) {
   return entry;
 }
 
-function buildStats(stage5Modules, finalModules, timestamp) {
-  const repositoryHoster = {};
-  const maintainer = {};
+function buildStats(stage5Modules: Stage5Module[], finalModules: FinalModule[], timestamp: string): CatalogueStats {
+  const repositoryHoster: Record<string, number> = {};
+  const maintainer: Record<string, number> = {};
 
   for (const module of finalModules) {
     const hoster = getRepositoryHost(module.url);
     repositoryHoster[hoster] = (repositoryHoster[hoster] ?? 0) + 1;
-    maintainer[module.maintainer] = (maintainer[module.maintainer] ?? 0) + 1;
+    const maintainerName = typeof module.maintainer === "string" && module.maintainer.length > 0
+      ? module.maintainer
+      : "unknown";
+    maintainer[maintainerName] = (maintainer[maintainerName] ?? 0) + 1;
   }
 
   const issueCounter = stage5Modules.reduce((count, module) => {
@@ -157,27 +240,32 @@ function buildStats(stage5Modules, finalModules, timestamp) {
   };
 }
 
-function normalizeModuleCollection(payload) {
+function normalizeModuleCollection(payload: unknown): FinalModule[] | null {
   if (Array.isArray(payload)) {
     return payload;
   }
 
-  if (payload && Array.isArray(payload.modules)) {
-    return payload.modules;
+  if (
+    payload
+    && typeof payload === "object"
+    && "modules" in payload
+    && Array.isArray((payload as PreviousModulesPayload).modules)
+  ) {
+    return (payload as PreviousModulesPayload).modules as FinalModule[];
   }
 
   return null;
 }
 
-function isValidIsoDateTime(value) {
+function isValidIsoDateTime(value: unknown): value is string {
   return typeof value === "string" && value.length > 0 && !Number.isNaN(Date.parse(value));
 }
 
-function areModulesEqual(left, right) {
+function areModulesEqual(left: FinalModule, right: FinalModule): boolean {
   return stringifyDeterministic(left, 0) === stringifyDeterministic(right, 0);
 }
 
-function buildModuleDiffSummary(previousModules, nextModules) {
+function buildModuleDiffSummary(previousModules: FinalModule[] | null, nextModules: FinalModule[]): ChangeSummary {
   if (!Array.isArray(previousModules)) {
     return {
       addedCount: nextModules.length,
@@ -188,14 +276,14 @@ function buildModuleDiffSummary(previousModules, nextModules) {
     };
   }
 
-  const previousById = new Map();
+  const previousById = new Map<string, FinalModule>();
   for (const module of previousModules) {
     if (module && typeof module.id === "string") {
       previousById.set(module.id, module);
     }
   }
 
-  const nextById = new Map();
+  const nextById = new Map<string, FinalModule>();
   for (const module of nextModules) {
     if (module && typeof module.id === "string") {
       nextById.set(module.id, module);
@@ -236,7 +324,7 @@ function buildModuleDiffSummary(previousModules, nextModules) {
   };
 }
 
-async function readJsonIfExists(filePath) {
+async function readJsonIfExists(filePath: string): Promise<unknown | null> {
   try {
     const content = await readFile(filePath, "utf-8");
     return JSON.parse(content);
@@ -250,7 +338,7 @@ async function readJsonIfExists(filePath) {
   }
 }
 
-async function allFilesExist(paths) {
+async function allFilesExist(paths: string[]): Promise<boolean> {
   for (const path of paths) {
     try {
       await access(path);
@@ -263,27 +351,31 @@ async function allFilesExist(paths) {
   return true;
 }
 
-export async function writeStage5Output(stage5Modules, projectRoot) {
+export async function writeStage5Output(stage5Modules: unknown[], projectRoot: string): Promise<string> {
   const stage5Path = resolve(projectRoot, "website/data/modules.stage.5.json");
 
   await writeFile(stage5Path, stringifyDeterministic({ modules: stage5Modules }), "utf-8");
   return stage5Path;
 }
 
-export async function writePublishedCatalogueOutputs(stage5Modules, projectRoot) {
+export async function writePublishedCatalogueOutputs(
+  stage5Modules: unknown[],
+  projectRoot: string
+): Promise<PublishedOutputResult> {
+  const normalizedStage5Modules = stage5Modules as Stage5Module[];
   const modulesJsonPath = resolve(projectRoot, "website/data/modules.json");
   const modulesMinPath = resolve(projectRoot, "website/data/modules.min.json");
   const statsPath = resolve(projectRoot, "website/data/stats.json");
 
   const previousModulesPayload = await readJsonIfExists(modulesJsonPath);
   const previousModules = normalizeModuleCollection(previousModulesPayload);
-  const previousStats = await readJsonIfExists(statsPath);
+  const previousStats = await readJsonIfExists(statsPath) as PreviousStatsPayload | null;
   const previousLastUpdate = isValidIsoDateTime(previousStats?.lastUpdate)
     ? previousStats.lastUpdate
     : null;
   const nowTimestamp = new Date().toISOString();
   const comparisonTimestamp = previousLastUpdate ?? nowTimestamp;
-  const comparableFinalModules = stage5Modules.map(module => toFinalModule(module, comparisonTimestamp));
+  const comparableFinalModules = normalizedStage5Modules.map(module => toFinalModule(module, comparisonTimestamp));
   const changeSummary = buildModuleDiffSummary(previousModules, comparableFinalModules);
 
   const outputsAlreadyPresent = await allFilesExist([modulesJsonPath, modulesMinPath, statsPath]);
@@ -306,9 +398,9 @@ export async function writePublishedCatalogueOutputs(stage5Modules, projectRoot)
 
   const lastUpdate = changeSummary.hasChanges ? nowTimestamp : comparisonTimestamp;
   const finalModules = changeSummary.hasChanges && lastUpdate !== comparisonTimestamp
-    ? stage5Modules.map(module => toFinalModule(module, lastUpdate))
+    ? normalizedStage5Modules.map(module => toFinalModule(module, lastUpdate))
     : comparableFinalModules;
-  const stats = buildStats(stage5Modules, finalModules, lastUpdate);
+  const stats = buildStats(normalizedStage5Modules, finalModules, lastUpdate);
 
   await writeFile(modulesJsonPath, stringifyDeterministic({ modules: finalModules }), "utf-8");
   await writeFile(modulesMinPath, stringifyDeterministic({ modules: finalModules }, 0), "utf-8");
@@ -328,7 +420,7 @@ export async function writePublishedCatalogueOutputs(stage5Modules, projectRoot)
   };
 }
 
-export async function writePipelineOutputs(stage5Modules, projectRoot) {
+export async function writePipelineOutputs(stage5Modules: unknown[], projectRoot: string): Promise<string> {
   const stage5Path = await writeStage5Output(stage5Modules, projectRoot);
   await writePublishedCatalogueOutputs(stage5Modules, projectRoot);
   return stage5Path;
