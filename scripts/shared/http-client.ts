@@ -1,11 +1,54 @@
 import { setTimeout as delay } from "node:timers/promises";
 import process from "node:process";
 
+import type { RateLimiter } from "./rate-limiter.ts";
+
+export interface HttpHeaders {
+  [key: string]: string | undefined;
+}
+
+export interface HttpResponse<TData = unknown> {
+  data: TData;
+  headers: Headers;
+  ok: boolean;
+  status: number;
+}
+
+export interface CreateHttpClientOptions {
+  defaultHeaders?: HttpHeaders;
+  maxRetries?: number;
+  rateLimiter?: RateLimiter | null;
+  retryBackoffMs?: number;
+  userAgent?: string;
+}
+
+interface PerformRequestOptions {
+  body?: string | ArrayBuffer | URLSearchParams | null;
+  headers?: HttpHeaders;
+  method?: string;
+  retryDelayMs?: number;
+  retries?: number;
+  signal?: AbortSignal;
+  [key: string]: unknown;
+}
+
+export interface HttpClient {
+  getJson: <TData = unknown>(url: string, options?: PerformRequestOptions) => Promise<HttpResponse<TData>>;
+  getText: (url: string, options?: PerformRequestOptions) => Promise<HttpResponse<string>>;
+  request: (url: string, options?: PerformRequestOptions) => Promise<Response>;
+  withDefaults: (overrides: CreateHttpClientOptions) => HttpClient;
+}
+
+export interface AuthHeaders {
+  Authorization?: string;
+  [key: string]: string | undefined;
+}
+
 const DEFAULT_USER_AGENT = "MagicMirror-Pipeline/0.1 (+https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules)";
 const DEFAULT_RETRY_COUNT = 2;
 const DEFAULT_RETRY_BACKOFF_MS = 1500;
 
-function buildHeaders(baseHeaders = {}, overrides = {}) {
+function buildHeaders(baseHeaders: HttpHeaders = {}, overrides: HttpHeaders = {}): HttpHeaders {
   const normalizedBase = { ...baseHeaders };
   const merged = { ...normalizedBase, ...overrides };
   const pairs = Object.entries(merged)
@@ -18,10 +61,17 @@ function buildHeaders(baseHeaders = {}, overrides = {}) {
   return Object.fromEntries(pairs);
 }
 
-export function createHttpClient({ userAgent = DEFAULT_USER_AGENT, defaultHeaders = {}, rateLimiter, maxRetries = DEFAULT_RETRY_COUNT, retryBackoffMs = DEFAULT_RETRY_BACKOFF_MS } = {}) {
+export function createHttpClient(config: CreateHttpClientOptions = {}): HttpClient {
+  const {
+    userAgent = DEFAULT_USER_AGENT,
+    defaultHeaders = {},
+    rateLimiter,
+    maxRetries = DEFAULT_RETRY_COUNT,
+    retryBackoffMs = DEFAULT_RETRY_BACKOFF_MS
+  } = config;
   const mergedDefaults = buildHeaders({ "user-agent": userAgent }, defaultHeaders);
 
-  async function performRequest(url, options = {}) {
+  async function performRequest(url: string, options: PerformRequestOptions = {}): Promise<Response> {
     const {
       method = "GET",
       headers = {},
@@ -91,11 +141,11 @@ export function createHttpClient({ userAgent = DEFAULT_USER_AGENT, defaultHeader
     }
   }
 
-  async function requestJson(url, options = {}) {
+  async function requestJson<TData = unknown>(url: string, options: PerformRequestOptions = {}): Promise<HttpResponse<TData>> {
     const response = await performRequest(url, options);
     const text = await response.text();
     try {
-      const parsed = text.length > 0 ? JSON.parse(text) : null;
+      const parsed: TData = text.length > 0 ? JSON.parse(text) : null;
       return {
         status: response.status,
         ok: response.ok,
@@ -107,12 +157,13 @@ export function createHttpClient({ userAgent = DEFAULT_USER_AGENT, defaultHeader
       const message = error instanceof Error ? error.message : String(error);
       const err = new Error(`Failed to parse JSON from ${url}: ${message}`);
       err.cause = error;
-      err.responseText = text;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (err as any).responseText = text;
       throw err;
     }
   }
 
-  async function requestText(url, options = {}) {
+  async function requestText(url: string, options: PerformRequestOptions = {}): Promise<HttpResponse<string>> {
     const response = await performRequest(url, options);
     const text = await response.text();
     return {
@@ -139,7 +190,7 @@ export function createHttpClient({ userAgent = DEFAULT_USER_AGENT, defaultHeader
   };
 }
 
-function shouldRetry(status) {
+function shouldRetry(status: number): boolean {
   if (status >= 500) {
     return true;
   }
@@ -151,7 +202,7 @@ function shouldRetry(status) {
   return false;
 }
 
-export function buildAuthHeadersFromEnv(env = process.env) {
+export function buildAuthHeadersFromEnv(env: NodeJS.ProcessEnv = process.env): AuthHeaders {
   if (env.GITHUB_TOKEN) {
     return {
       Authorization: `Bearer ${env.GITHUB_TOKEN}`

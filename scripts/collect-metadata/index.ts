@@ -4,8 +4,7 @@
 import { fetchRepositoryData, normalizeRepositoryData } from "../updateRepositoryApiData/api.js";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.js";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createHttpClient } from "../shared/http-client.js";
+import { createHttpClient } from "../shared/http-client.ts";
 import { createLogger } from "../shared/logger.ts";
 import { createPersistentCache } from "../shared/persistent-cache.ts";
 import { createRateLimiter } from "../shared/rate-limiter.ts";

@@ -6,7 +6,7 @@
  */
 
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { buildAuthHeadersFromEnv, createHttpClient } from "../shared/http-client.js";
+import { buildAuthHeadersFromEnv, createHttpClient } from "../shared/http-client.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../shared/logger.ts";
 import { createRateLimiter } from "../shared/rate-limiter.ts";

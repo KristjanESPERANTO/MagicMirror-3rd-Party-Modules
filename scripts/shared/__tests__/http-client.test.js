@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, it, mock } from "node:test";
 import assert from "node:assert";
-import { createHttpClient } from "../http-client.js";
+import { createHttpClient } from "../http-client.ts";
 
 describe("HttpClient", () => {
   let originalFetch;

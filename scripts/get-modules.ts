@@ -6,8 +6,7 @@ import { fileURLToPath } from "node:url";
 
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureRepository, GitErrorCategory, getCommitDate } from "./shared/git.js";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createHttpClient } from "./shared/http-client.js";
+import { createHttpClient } from "./shared/http-client.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "./shared/logger.ts";
 import { createRateLimiter } from "./shared/rate-limiter.ts";
