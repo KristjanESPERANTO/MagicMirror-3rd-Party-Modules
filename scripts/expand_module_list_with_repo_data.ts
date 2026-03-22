@@ -6,13 +6,67 @@ import { validateStageData } from "./lib/schemaValidator.ts";
 
 const imagesFolder = "./website/images";
 
-function isImageFile(filename) {
+type PackageJsonStatus = "parsed" | "missing" | "error";
+
+interface StringRecord {
+  [key: string]: string;
+}
+
+interface PackageSummary {
+  dependencies?: StringRecord;
+  description?: string;
+  devDependencies?: StringRecord;
+  engines?: StringRecord;
+  keywords?: string[];
+  license?: string;
+  name?: string;
+  optionalDependencies?: StringRecord;
+  peerDependencies?: StringRecord;
+  scripts?: StringRecord;
+  type?: string;
+  version?: string;
+}
+
+interface PackageManifest {
+  error?: string;
+  path: string;
+  raw?: string;
+  status: PackageJsonStatus;
+  summary?: PackageSummary;
+  warnings: string[];
+}
+
+interface ModuleEntry {
+  hasGithubIssues?: boolean;
+  id: string;
+  image?: string;
+  issues: string[];
+  keywords?: string[];
+  license?: string | null;
+  maintainer: string;
+  name: string;
+  packageJson?: PackageManifest;
+  tags?: string[];
+  url: string;
+  [key: string]: unknown;
+}
+
+interface Stage3Data {
+  modules: ModuleEntry[];
+  [key: string]: unknown;
+}
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
+function isImageFile(filename: string): boolean {
   return (/\.(bmp|gif|jpg|jpeg|png|webp)$/iu).test(filename);
 }
 
-async function findAndResizeImage(moduleName, moduleMaintainer) {
+async function findAndResizeImage(moduleName: string, moduleMaintainer: string): Promise<{ issues: string[]; targetImageName: string | null }> {
   const sourceFolder = `./modules/${moduleName}-----${moduleMaintainer}/`;
-  const files = await fs.promises.readdir(sourceFolder, { recursive: true });
+  const files = await fs.promises.readdir(sourceFolder, { recursive: true }) as string[];
   files.sort();
   let targetImageName = null;
   const issues = [];
@@ -63,7 +117,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
         .toFile(targetPath);
     }
     catch (error) {
-      issues.push(`Error processing image "${imageToProcess}": ${error.message}`);
+      issues.push(`Error processing image "${imageToProcess}": ${getErrorMessage(error)}`);
     }
   }
   else {
@@ -78,7 +132,7 @@ const PACKAGE_JSON_STATUSES = {
   error: "error"
 };
 
-function sanitizeStringRecord(value) {
+function sanitizeStringRecord(value: unknown): StringRecord | null {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     return null;
   }
@@ -90,7 +144,7 @@ function sanitizeStringRecord(value) {
   return Object.fromEntries(entries);
 }
 
-function sanitizeKeywordArray(value) {
+function sanitizeKeywordArray(value: unknown): string[] | null {
   if (!Array.isArray(value)) {
     return null;
   }
@@ -107,8 +161,8 @@ function sanitizeKeywordArray(value) {
   return keywords.length > 0 ? keywords : null;
 }
 
-function buildPackageSummary(packageData) {
-  const summary = {};
+function buildPackageSummary(packageData: Record<string, unknown>): PackageSummary {
+  const summary: PackageSummary = {};
 
   if (typeof packageData.name === "string" && packageData.name.length > 0) {
     summary.name = packageData.name;
@@ -168,7 +222,7 @@ function buildPackageSummary(packageData) {
   return summary;
 }
 
-async function loadPackageManifest({ name, id }) {
+async function loadPackageManifest({ name, id }: Pick<ModuleEntry, "id" | "name">): Promise<PackageManifest> {
   const owner = id.split("/")[0];
   const relativePath = `./modules/${name}-----${owner}/package.json`;
 
@@ -177,37 +231,37 @@ async function loadPackageManifest({ name, id }) {
     raw = await fs.promises.readFile(relativePath, "utf8");
   }
   catch (error) {
-    if (error && error.code === "ENOENT") {
+    if ((error as NodeJS.ErrnoException)?.code === "ENOENT") {
       return {
         path: relativePath,
-        status: PACKAGE_JSON_STATUSES.missing,
+        status: PACKAGE_JSON_STATUSES.missing as PackageJsonStatus,
         warnings: []
       };
     }
 
     return {
       path: relativePath,
-      status: PACKAGE_JSON_STATUSES.error,
+      status: PACKAGE_JSON_STATUSES.error as PackageJsonStatus,
       warnings: [],
-      error: error instanceof Error ? error.message : String(error)
+      error: getErrorMessage(error)
     };
   }
 
   let parsed;
   try {
-    parsed = JSON.parse(raw);
+    parsed = JSON.parse(raw) as Record<string, unknown>;
   }
   catch (error) {
     return {
       path: relativePath,
-      status: PACKAGE_JSON_STATUSES.error,
+      status: PACKAGE_JSON_STATUSES.error as PackageJsonStatus,
       warnings: [],
-      error: error instanceof Error ? error.message : String(error)
+      error: getErrorMessage(error)
     };
   }
 
-  const warnings = [];
-  const warnFn = (msg) => {
+  const warnings: string[] = [];
+  const warnFn = (msg: string) => {
     if (!msg.includes("No README data")) {
       warnings.push(msg);
     }
@@ -225,14 +279,14 @@ async function loadPackageManifest({ name, id }) {
 
   return {
     path: relativePath,
-    status: PACKAGE_JSON_STATUSES.parsed,
+    status: PACKAGE_JSON_STATUSES.parsed as PackageJsonStatus,
     raw,
     summary: buildPackageSummary(parsed),
     warnings
   };
 }
 
-function deriveTagsFromKeywords({ module, keywords }) {
+function deriveTagsFromKeywords({ module, keywords }: { keywords: string[]; module: ModuleEntry }): string[] | null {
   const tagsToRemove = [
     "2",
     "mm",
@@ -288,7 +342,7 @@ function deriveTagsFromKeywords({ module, keywords }) {
 }
 
 // Gather information from package.json
-async function addInformationFromPackageJson(moduleList) {
+async function addInformationFromPackageJson(moduleList: ModuleEntry[]): Promise<ModuleEntry[]> {
   for (const module of moduleList) {
     console.log(`+++ ${module.name} by ${module.maintainer}`);
 
@@ -301,7 +355,7 @@ async function addInformationFromPackageJson(moduleList) {
       }
 
       const summaryKeywords = Array.isArray(manifest.summary?.keywords)
-        ? [...manifest.summary.keywords]
+        ? [...(manifest.summary.keywords as string[])]
         : [];
 
       if (summaryKeywords.length > 0) {
@@ -341,7 +395,7 @@ async function addInformationFromPackageJson(moduleList) {
   return moduleList;
 }
 
-async function checkLicenseAndHandleScreenshot(packageManifest, module) {
+async function checkLicenseAndHandleScreenshot(packageManifest: PackageManifest | undefined, module: ModuleEntry): Promise<void> {
   const packageLicenseRaw = packageManifest?.summary?.license;
   const packageLicense = typeof packageLicenseRaw === "string" && packageLicenseRaw.length > 0
     ? packageLicenseRaw
@@ -402,13 +456,13 @@ async function checkLicenseAndHandleScreenshot(packageManifest, module) {
   }
 }
 
-async function readJson(filePath) {
+async function readJson<T = unknown>(filePath: string): Promise<T> {
   const raw = await fs.promises.readFile(filePath, "utf8");
-  return JSON.parse(raw);
+  return JSON.parse(raw) as T;
 }
 
 async function expandModuleList() {
-  const moduleList = await readJson("./website/data/modules.stage.3.json");
+  const moduleList = await readJson<Stage3Data>("./website/data/modules.stage.3.json");
   validateStageData("modules.stage.3", moduleList);
 
   await addInformationFromPackageJson(moduleList.modules);
