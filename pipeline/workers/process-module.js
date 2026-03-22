@@ -12,6 +12,7 @@
 import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.js";
 import { ensureRepository, getCommitDate } from "../../scripts/shared/git.js";
 import { rename, rm } from "node:fs/promises";
+import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysis-cache.js";
 import { createDeterministicImageName } from "../../scripts/shared/deterministic-output.js";
 import { createLogger } from "../../scripts/shared/logger.js";
 import fs from "node:fs";
@@ -50,6 +51,14 @@ const logger = createLogger({ name: "worker" });
  * @property {string} modulesTempDir
  * @property {string} imagesDir
  * @property {boolean} cacheEnabled
+ * @property {string} [cachePath]
+ * @property {number} [cacheSchemaVersion]
+ * @property {string | null} [catalogueRevision]
+ * @property {Object} [analysisConfig]
+ * @property {boolean} [analysisConfig.fast]
+ * @property {boolean} [analysisConfig.deep]
+ * @property {boolean} [analysisConfig.eslint]
+ * @property {boolean} [analysisConfig.ncu]
  * @property {Object} [checkGroups]
  * @property {boolean} [checkGroups.fast]
  * @property {boolean} [checkGroups.deep]
@@ -84,6 +93,7 @@ const logger = createLogger({ name: "worker" });
  * @property {boolean} [isArchived]
  * @property {boolean} [hasGithubIssues]
  * @property {number} processingTimeMs
+ * @property {string} [cacheKey]
  * @property {boolean} fromCache
  */
 
@@ -728,6 +738,15 @@ function analyzeModule() {
 export async function processModule(module, config) {
   const startTime = Date.now();
   const allIssues = [...module.issues || []];
+  const cacheKey = config.cacheEnabled
+    ? buildModuleAnalysisCacheKey({
+      module,
+      moduleRevision: module.lastCommit,
+      catalogueRevision: config.catalogueRevision,
+      checkGroups: config.analysisConfig ?? config.checkGroups
+    })
+    : null;
+  const cacheMetadata = cacheKey ? { cacheKey } : {};
 
   logger.info(`Processing ${module.name} by ${module.maintainer}`);
 
@@ -764,6 +783,7 @@ export async function processModule(module, config) {
       cloned: false,
       issues: allIssues,
       processingTimeMs: processingTime,
+      ...cacheMetadata,
       fromCache: false
     };
   }
@@ -805,6 +825,7 @@ export async function processModule(module, config) {
       cloneDir,
       issues: allIssues,
       processingTimeMs: processingTime,
+      ...cacheMetadata,
       fromCache: false
     };
   }
@@ -855,6 +876,7 @@ export async function processModule(module, config) {
       license: enrichResult.license,
       issues: allIssues,
       processingTimeMs: Date.now() - startTime,
+      ...cacheMetadata,
       fromCache: false
     };
   }
@@ -891,6 +913,7 @@ export async function processModule(module, config) {
     isArchived: module.isArchived,
     hasGithubIssues: module.hasGithubIssues,
     processingTimeMs: processingTime,
+    ...cacheMetadata,
     fromCache: false
   };
 }

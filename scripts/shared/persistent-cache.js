@@ -75,9 +75,19 @@ export function createPersistentCache({ filePath, version = DEFAULT_VERSION, def
       try {
         const stored = await readJson(resolvedPath);
         if (stored && typeof stored === "object" && stored.entries) {
-          state.version = stored.version ?? version;
-          state.generatedAt = stored.generatedAt ?? toIsoString(now());
-          state.entries = stored.entries ?? {};
+          const versionMatches = stored.version === version;
+
+          if (versionMatches) {
+            state.version = stored.version ?? version;
+            state.generatedAt = stored.generatedAt ?? toIsoString(now());
+            state.entries = stored.entries ?? {};
+          }
+          else {
+            state.version = version;
+            state.generatedAt = toIsoString(now());
+            state.entries = {};
+            dirty = true;
+          }
         }
       }
       catch (error) {

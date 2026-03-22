@@ -79,3 +79,19 @@ test("persistent cache supports per-entry ttl overrides", async () => {
   ok(longer, "long ttl should persist");
   equal(longer.value.value, 2);
 });
+
+test("persistent cache resets stale entries when the schema version changes", async () => {
+  const clock = createClock();
+  const filePath = await createTempFilePath();
+  const first = createPersistentCache({ filePath, version: 1, now: () => clock.now() });
+
+  await first.load();
+  first.set("legacy", { value: "stale" });
+  await first.flush();
+
+  const second = createPersistentCache({ filePath, version: 2, now: () => clock.now() });
+  await second.load();
+
+  equal(second.get("legacy"), null, "old-version entries should be discarded");
+  equal(second.snapshot().version, 2, "cache should adopt the requested schema version");
+});

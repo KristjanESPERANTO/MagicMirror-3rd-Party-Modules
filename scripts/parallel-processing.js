@@ -6,6 +6,12 @@
  * Reads modules.stage.2.json and outputs modules.stage.5.json
  */
 
+import {
+  MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,
+  getProjectRevision,
+  normalizeModuleAnalysisCheckGroups,
+  resolveModuleAnalysisCachePath
+} from "../scripts/shared/module-analysis-cache.js";
 import { readFile, writeFile } from "node:fs/promises";
 import { WorkerPool } from "../pipeline/workers/worker-pool.js";
 import { cpus } from "node:os";
@@ -245,6 +251,18 @@ async function main() {
       }
     });
 
+    const analysisConfig = normalizeModuleAnalysisCheckGroups({
+      fast: true,
+      deep: true,
+      eslint: true,
+      ncu: true
+    });
+    const catalogueRevision = await getProjectRevision(PROJECT_ROOT);
+
+    if (!catalogueRevision) {
+      logger.warn("Could not resolve current catalogue revision; module cache keys will be unavailable for this run");
+    }
+
     // Module processing config
     const moduleConfig = {
       projectRoot: PROJECT_ROOT,
@@ -252,12 +270,11 @@ async function main() {
       modulesTempDir: resolve(PROJECT_ROOT, "modules_temp"),
       imagesDir: resolve(PROJECT_ROOT, "website/images"),
       cacheEnabled: true,
-      checkGroups: {
-        fast: true,
-        deep: true,
-        eslint: true,
-        ncu: true
-      },
+      cachePath: resolveModuleAnalysisCachePath(PROJECT_ROOT),
+      cacheSchemaVersion: MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,
+      catalogueRevision,
+      analysisConfig,
+      checkGroups: analysisConfig,
       timeoutMs: 60000
     };
 

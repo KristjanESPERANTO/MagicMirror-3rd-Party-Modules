@@ -83,6 +83,8 @@ interface WorkerConfig {
   // Incremental mode
   cacheEnabled: boolean;
   cachePath?: string;
+  cacheSchemaVersion?: number;
+  catalogueRevision?: string;
 
   // Check configuration
   checkGroups: {
@@ -167,6 +169,13 @@ for each module in batch:
   5. Store result in cache
   6. Return result
 ```
+
+The cache key contract is deterministic JSON with these fields:
+
+- `schemaVersion`: cache format version for invalidation on structural changes
+- `module`: `id`, `url`, `branch`
+- `repoFreshness`: `moduleRevision`, `catalogueRevision`
+- `analysisConfig`: normalized `fast` / `deep` / `eslint` / `ncu` flags
 
 ### Worker Process Model
 
@@ -477,7 +486,8 @@ PIPELINE_CACHE_ENABLED=true
   },
   "cache": {
     "enabled": true,
-    "path": "website/data/moduleCache.json"
+    "path": "website/data/moduleCache.json",
+    "schemaVersion": 2
   },
   "checkGroups": {
     "fast": true,
@@ -522,6 +532,7 @@ PIPELINE_CACHE_ENABLED=true
 1. **Cache location**: Keep a single shared cache file at `website/data/moduleCache.json`.
 
 - Decision details: Workers return cache updates to orchestrator, and orchestrator performs deterministic cache writeback.
+- Decision details: Cache keys are built from module identity, repo freshness (`moduleRevision` + current catalogue revision), normalized check-group flags, and a schema version.
 
 2. **Git operations**: Keep shared `modules/` and `modules_temp/` directories.
 

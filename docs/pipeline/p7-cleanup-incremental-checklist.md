@@ -54,21 +54,27 @@ Related docs:
   - Removed legacy-only artifact declarations (`modules-stage-3`, `modules-stage-4`, `skipped-modules`, `analysis-report`, `module-result-cache`) from [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
   - Removed stage 3/4 entries from [scripts/golden-artifacts/index.js](../../scripts/golden-artifacts/index.js) and deleted orphaned golden reference files `fixtures/golden/modules.stage.3.json` and `fixtures/golden/modules.stage.4.json`.
   - Removed harness section from [docs/pipeline/check-modules-reference.md](check-modules-reference.md) and [docs/CONTRIBUTING.md](../CONTRIBUTING.md).
-- [ ] C5: Docs and command surface cleanup
-  - Update README/docs/npm script descriptions to match canonical flow.
-  - Ensure contributor instructions do not point to retired stage sequence.
-- [ ] C6: Validation pass
-  - Run: `npm run lint`
-  - Run: `npm run test:fixtures`
-  - Run: `npm run golden:check`
-  - Run: `npm run schemas:check`
-  - Run one full `full-refresh-parallel` execution and archive summary logs.
+- [x] C5: Docs and command surface cleanup
+  - Completed on 2026-03-19.
+  - Updated [docs/CONTRIBUTING.md](../CONTRIBUTING.md), [docs/architecture.md](../architecture.md), [docs/pipeline/orchestrator-cli-reference.md](orchestrator-cli-reference.md), and [docs/pipeline/worker-pool-design.md](worker-pool-design.md) to describe the canonical `full-refresh-parallel` flow.
+  - Removed obsolete harness guidance from [docs/pipeline/check-modules-reference.md](check-modules-reference.md) and clarified legacy-only context in [docs/git-error-handling.md](../git-error-handling.md).
+  - Aligned [scripts/validate_release_artifacts.js](../../scripts/validate_release_artifacts.js) with the supported artifact contract (`modules.stage.2.json`, `modules.stage.5.json`, and final outputs).
+- [x] C6: Validation pass
+  - Completed on 2026-03-19.
+  - Ran `npm run lint` successfully with 0 errors and 4 pre-existing warnings.
+  - Ran `npm run test:fixtures` successfully.
+  - Ran `npm run golden:check` successfully.
+  - Ran `npm run schemas:check` successfully.
+  - Ran `WIKI_FILE=website/test/3rd-Party-Modules.md node --run all` successfully against the canonical `full-refresh-parallel` pipeline.
+  - Archived run metadata in `.pipeline-runs/2026-03-19T13-16-31-327Z_full-refresh-parallel.json`.
 
 ## P7.6 Incremental Mode Integration
 
-- [ ] I1: Cache key contract
-  - Define worker-compatible cache key (module identity + repo freshness signal + analysis config).
-  - Include a cache schema/version field for safe future migrations.
+- [x] I1: Cache key contract
+  - Completed on 2026-03-19.
+  - Added a shared worker-cache contract in [scripts/shared/module-analysis-cache.js](../../scripts/shared/module-analysis-cache.js) covering module identity, repo freshness signal, normalized analysis config, and schema version.
+  - Wired the parallel worker path to compute and carry `cacheKey` in module results, without enabling read/write behavior before I2/I3.
+  - Hardened [scripts/shared/persistent-cache.js](../../scripts/shared/persistent-cache.js) so schema-version mismatches reset stale entries instead of silently reusing incompatible cache data.
 - [ ] I2: Read path integration
   - Load cache at orchestrator start and provide cache context to workers.
   - Preserve current behavior for cache miss and partial cache entries.
@@ -93,6 +99,6 @@ Related docs:
 
 ## Definition of Done
 
-- [ ] P7.5 done: Legacy stage flow is removed or explicitly legacy-only, and all docs/scripts reference the canonical flow.
+- [x] P7.5 done: Legacy stage flow is removed or explicitly legacy-only, and all docs/scripts reference the canonical flow.
 - [ ] P7.6 done: Incremental cache behavior is integrated into worker architecture with tests and measurable skip-rate benefit.
 - [ ] Ready for P8: No open P7 blockers remain in roadmap or worker design decision list.
