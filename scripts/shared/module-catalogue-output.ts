@@ -72,6 +72,7 @@ export interface PublishedOutputResult {
     modulesMinPath: string;
     statsPath: string;
   };
+  stats?: CatalogueStats;
   statsPath: string;
   wroteOutputs: boolean;
 }
@@ -415,6 +416,7 @@ export async function writePublishedCatalogueOutputs(
       modulesMinPath,
       statsPath
     },
+    stats,
     statsPath,
     wroteOutputs: true
   };

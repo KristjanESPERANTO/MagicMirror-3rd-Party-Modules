@@ -229,3 +229,98 @@ test("in-process result markdown stage runs without buffered stage5 modules", as
   });
   assert.deepStrictEqual(stageRunner.getBufferedArtifactIds(), []);
 });
+
+test("runStagesSequentially passes aggregate stats in memory to result markdown stage", async () => {
+  const modules = [
+    {
+      category: "Test",
+      id: "owner/module-a",
+      issues: ["demo issue"],
+      maintainer: "Owner",
+      name: "module-a",
+      url: "https://github.com/owner/module-a"
+    }
+  ];
+
+  const stats = {
+    issueCounter: 1,
+    lastUpdate: "2026-03-22T12:00:00.000Z",
+    maintainer: { Owner: 1 },
+    moduleCounter: 1,
+    modulesWithIssuesCounter: 1,
+    repositoryHoster: { github: 1 }
+  };
+
+  let capturedMarkdownOptions = null;
+
+  const stageRunner = createInProcessStageRunner({
+    projectRoot: "/virtual/project",
+    stageRuntimes: {
+      aggregateCatalogue: () => Promise.resolve({
+        outputPaths: {
+          modulesJsonPath: "/virtual/project/website/data/modules.json",
+          modulesMinPath: "/virtual/project/website/data/modules.min.json",
+          statsPath: "/virtual/project/website/data/stats.json"
+        },
+        stage5ModulesCount: 1,
+        stats,
+        wroteOutputs: true
+      }),
+      collectMetadata: () => Promise.resolve({
+        modules,
+        outputPath: "/virtual/project/website/data/modules.stage.2.json"
+      }),
+      generateResultMarkdown: (options) => {
+        capturedMarkdownOptions = options;
+        return Promise.resolve({
+          issueCount: 1,
+          outputPath: "/virtual/project/website/result.md"
+        });
+      },
+      parallelProcessing: () => Promise.resolve({
+        results: modules.map(module => ({ ...module, fromCache: false, status: "success" })),
+        stage5Modules: modules,
+        stage5Path: "/virtual/project/website/data/modules.stage.5.json"
+      })
+    }
+  });
+
+  const stages = [
+    {
+      command: { args: ["scripts/collect-metadata/index.ts"], executable: "node" },
+      id: "collect-metadata",
+      name: "Collect Metadata"
+    },
+    {
+      command: { args: ["scripts/parallel-processing.ts"], executable: "node" },
+      id: "parallel-processing",
+      name: "Parallel module processing"
+    },
+    {
+      command: { args: ["scripts/aggregate-catalogue.ts"], executable: "node" },
+      id: "aggregate-catalogue",
+      name: "Aggregate catalogue outputs"
+    },
+    {
+      command: { args: ["scripts/generate-result-markdown.ts"], executable: "node" },
+      id: "generate-result-markdown",
+      name: "Generate result markdown"
+    }
+  ];
+
+  const completedStages = await runStagesSequentially(stages, {
+    cwd: "/virtual/project",
+    env: { LOG_FORMAT: "text" },
+    logger: createSilentStageLogger(),
+    stageRunner,
+    validateArtifacts: () => null
+  });
+
+  assert.strictEqual(completedStages.length, 4);
+  assert.deepStrictEqual(capturedMarkdownOptions, {
+    projectRoot: "/virtual/project",
+    stage5Modules: modules,
+    stats
+  });
+  assert.deepStrictEqual(stageRunner.getBufferedArtifactIds(), []);
+});

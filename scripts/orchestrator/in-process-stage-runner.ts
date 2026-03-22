@@ -83,13 +83,22 @@ export function createInProcessStageRunner({
         aggregateOptions.stage5Modules = stage5Modules;
       }
 
-      await aggregateCatalogue(aggregateOptions);
+      const aggregateResult = await aggregateCatalogue(aggregateOptions);
+
+      if (aggregateResult && typeof aggregateResult === "object" && "stats" in aggregateResult) {
+        const stats = (aggregateResult as { stats?: unknown }).stats;
+
+        if (stats && typeof stats === "object") {
+          artifactStore.set("stats-json", stats);
+        }
+      }
 
       return true;
     }
 
     if (stage.id === "generate-result-markdown") {
       const stage5Modules = artifactStore.get("modules-stage-5");
+      const stats = artifactStore.get("stats-json");
       const markdownOptions: Record<string, unknown> = {
         projectRoot: runRoot
       };
@@ -98,11 +107,16 @@ export function createInProcessStageRunner({
         markdownOptions.stage5Modules = stage5Modules;
       }
 
+      if (stats !== undefined) {
+        markdownOptions.stats = stats;
+      }
+
       try {
         await generateResultMarkdown(markdownOptions);
       }
       finally {
         artifactStore.delete("modules-stage-5");
+        artifactStore.delete("stats-json");
       }
 
       return true;

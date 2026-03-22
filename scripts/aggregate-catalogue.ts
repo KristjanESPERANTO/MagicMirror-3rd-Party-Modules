@@ -31,6 +31,7 @@ interface OutputResult {
   modulesJsonPath?: string;
   modulesMinPath?: string;
   outputPaths?: OutputPaths | null;
+  stats?: unknown;
   statsPath?: string;
   wroteOutputs?: boolean;
 }
@@ -38,6 +39,7 @@ interface OutputResult {
 interface NormalizedOutputDetails {
   changeSummary: ChangeSummary | null;
   outputPaths: OutputPaths | null;
+  stats?: unknown;
   wroteOutputs: boolean;
 }
 
@@ -60,6 +62,7 @@ export interface AggregateCatalogueResult {
   changeSummary: ChangeSummary | null;
   outputPaths: OutputPaths | null;
   stage5ModulesCount: number;
+  stats?: unknown;
   wroteOutputs: boolean;
 }
 
@@ -92,6 +95,7 @@ function normalizeOutputDetails(outputResult: OutputResult | OutputPaths | null)
   return {
     changeSummary: result.changeSummary ?? null,
     outputPaths,
+    stats: result.stats,
     wroteOutputs: typeof result.wroteOutputs === "boolean" ? result.wroteOutputs : true
   };
 }
@@ -135,6 +139,7 @@ export async function runAggregateCatalogue({
     changeSummary: outputDetails.changeSummary,
     outputPaths: outputDetails.outputPaths,
     stage5ModulesCount: resolvedStage5Modules.length,
+    stats: outputDetails.stats,
     wroteOutputs: outputDetails.wroteOutputs
   };
 }
