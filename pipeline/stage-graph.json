@@ -112,7 +112,8 @@
       "outputs": [
         {
           "artifact": "modules-stage-2",
-          "mode": "write"
+          "mode": "write",
+          "optional": true
         },
         {
           "artifact": "github-api-cache",
@@ -151,7 +152,8 @@
       "outputs": [
         {
           "artifact": "modules-stage-5",
-          "mode": "write"
+          "mode": "write",
+          "optional": true
         },
         {
           "artifact": "cloned-modules",

@@ -106,8 +106,8 @@ The goal of this milestone is to reduce or eliminate the remaining intermediate 
 | P8.1 | ✅ Streaming orchestrator |
 | P8.2 | ✅ Aggregation phase      |
 | P8.3 | ✅ Diff detection         |
-| P8.4 | In progress               |
-| P8.5 | Remove intermediate files |
+| P8.4 | ✅ Memory optimization    |
+| P8.5 | In progress               |
 
 ### P9.x: Performance & Observability
 
@@ -126,16 +126,17 @@ Measure and visualize pipeline performance.
 
 See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details.
 
-**Current focus: P8.4** — Memory optimization
+**Current focus: P8.5** — Remove intermediate files
 
-- Validate memory/performance tradeoffs before removing remaining intermediate files
 - Keep release-artifact parity and existing fixture/golden validation intact through the transition
 - Keep the in-process execution path bounded when running filtered stage selections
+- Keep `modules.stage.2.json` / `modules.stage.5.json` as optional fallback boundaries while in-memory handoff is preferred
 
-**Next: P8.5** — Remove intermediate files
+**Next: P9.1** — Benchmarking
 
 - Evaluate whether `modules.stage.2.json` and `modules.stage.5.json` can remain optional fallback boundaries
 - Preserve schema validation and release artifact parity while reducing file-based handoffs
+- Measure runtime and output parity impact after reducing intermediate file writes
 
 ---
 

@@ -202,8 +202,9 @@ export function describeStage(stage, artifactMap, pipelines) {
     for (const output of stage.outputs) {
       const artifact = output.artifact ? artifactMap.get(output.artifact) : null;
       const mode = output.mode ?? "write";
+      const optional = output.optional ? " (optional)" : "";
       const pathHint = artifact?.path ? ` — ${artifact.path}` : "";
-      console.log(`  • [${mode}] ${output.artifact ?? "(unspecified)"}${pathHint}`);
+      console.log(`  • [${mode}] ${output.artifact ?? "(unspecified)"}${pathHint}${optional}`);
     }
   }
 

@@ -431,9 +431,15 @@ async function main() {
   }
 }
 
+function writeStage2Output(modules, outputPath) {
+  fs.writeFileSync(outputPath, JSON.stringify(modules, null, 2));
+  return outputPath;
+}
+
 export async function runCollectMetadata({
   markdown,
   outputPath = path.join("website", "data", "modules.stage.2.json"),
+  outputWriter = writeStage2Output,
   previousModulesMap = loadPreviousModules()
 } = {}) {
   logger.info("Starting unified metadata collection...");
@@ -471,12 +477,20 @@ export async function runCollectMetadata({
   }
 
   await repositoryCache.flush();
-  fs.writeFileSync(outputPath, JSON.stringify(enrichedModules, null, 2));
-  logger.info(`Successfully wrote ${enrichedModules.length} modules to ${outputPath}`);
+  const resolvedOutputPath = outputWriter
+    ? await outputWriter(enrichedModules, outputPath)
+    : null;
+
+  if (resolvedOutputPath) {
+    logger.info(`Successfully wrote ${enrichedModules.length} modules to ${resolvedOutputPath}`);
+  }
+  else {
+    logger.info(`Collected ${enrichedModules.length} modules without writing stage-2 output file`);
+  }
 
   return {
     modules: enrichedModules,
-    outputPath
+    outputPath: resolvedOutputPath
   };
 }
 

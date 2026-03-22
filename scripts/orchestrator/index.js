@@ -23,6 +23,14 @@ const RUNS_DIRECTORY = join(PROJECT_ROOT, ".pipeline-runs");
 const MIN_NODE_MAJOR_VERSION = 18;
 const execFileAsync = promisify(execFile);
 
+function isMissingFileError(error) {
+  if (!error || typeof error !== "object") {
+    return false;
+  }
+
+  return "code" in error && error.code === "ENOENT";
+}
+
 function getSchemaIdFromPath(schemaPath) {
   const filename = basename(schemaPath);
   if (!filename.endsWith(".schema.json")) {
@@ -64,6 +72,22 @@ function createArtifactValidator() {
             }
           }
           catch (error) {
+            if (output.optional && isMissingFileError(error)) {
+              if (logger && logger.format === "json") {
+                logger.info(`Optional artifact not present: ${artifact.id}`, {
+                  artifactId: artifact.id,
+                  event: "artifact_optional_missing",
+                  path: artifact.path,
+                  schemaId
+                });
+              }
+              else {
+                console.log(`   ↳ optional artifact ${artifact.id} not written (in-memory handoff)`);
+              }
+
+              continue;
+            }
+
             if (error instanceof Error) {
               error.message = `Stage "${stage.id}" produced invalid artifact "${artifact.id}" (${artifact.path}):\n${error.message}`;
             }

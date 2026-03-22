@@ -16,7 +16,8 @@ export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } =
 
     if (stage.id === "collect-metadata") {
       const result = await collectMetadata({
-        outputPath: resolve(runRoot, "website/data/modules.stage.2.json")
+        outputPath: resolve(runRoot, "website/data/modules.stage.2.json"),
+        outputWriter: null
       });
       artifactStore.set("modules-stage-2", result.modules);
       return true;
@@ -34,6 +35,7 @@ export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } =
       try {
         result = await parallelProcessing({
           modules: stage2Modules,
+          outputWriter: null,
           projectRoot: runRoot,
           runLogger
         });

@@ -26,6 +26,8 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
     }
   ];
   let capturedModules = null;
+  let capturedCollectOutputWriter = "unset";
+  let capturedParallelOutputWriter = "unset";
   let capturedStage5Modules = null;
 
   const stageRunner = createInProcessStageRunner({
@@ -42,12 +44,16 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
           stage5ModulesCount: options.stage5Modules.length
         });
       },
-      collectMetadata: () => Promise.resolve({
-        modules,
-        outputPath: "/virtual/project/website/data/modules.stage.2.json"
-      }),
+      collectMetadata: (options) => {
+        capturedCollectOutputWriter = options.outputWriter;
+        return Promise.resolve({
+          modules,
+          outputPath: "/virtual/project/website/data/modules.stage.2.json"
+        });
+      },
       parallelProcessing: (options) => {
         capturedModules = options.modules;
+        capturedParallelOutputWriter = options.outputWriter;
         return Promise.resolve({
           results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
           stage5Modules: options.modules,
@@ -84,6 +90,8 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
   });
 
   assert.deepStrictEqual(capturedModules, modules);
+  assert.strictEqual(capturedCollectOutputWriter, null);
+  assert.strictEqual(capturedParallelOutputWriter, null);
   assert.deepStrictEqual(capturedStage5Modules, modules);
   assert.strictEqual(completedStages.length, 3);
   assert.strictEqual(completedStages[0].stage.id, "collect-metadata");
@@ -104,18 +112,27 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
     }
   ];
 
+  let capturedCollectOutputWriter = "unset";
+  let capturedParallelOutputWriter = "unset";
+
   const stageRunner = createInProcessStageRunner({
     projectRoot: "/virtual/project",
     stageRuntimes: {
-      collectMetadata: () => Promise.resolve({
-        modules,
-        outputPath: "/virtual/project/website/data/modules.stage.2.json"
-      }),
-      parallelProcessing: options => Promise.resolve({
-        results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
-        stage5Modules: options.modules,
-        stage5Path: "/virtual/project/website/data/modules.stage.5.json"
-      })
+      collectMetadata: (options) => {
+        capturedCollectOutputWriter = options.outputWriter;
+        return Promise.resolve({
+          modules,
+          outputPath: "/virtual/project/website/data/modules.stage.2.json"
+        });
+      },
+      parallelProcessing: (options) => {
+        capturedParallelOutputWriter = options.outputWriter;
+        return Promise.resolve({
+          results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
+          stage5Modules: options.modules,
+          stage5Path: "/virtual/project/website/data/modules.stage.5.json"
+        });
+      }
     }
   });
 
@@ -141,5 +158,7 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
   });
 
   assert.strictEqual(completedStages.length, 2);
+  assert.strictEqual(capturedCollectOutputWriter, null);
+  assert.strictEqual(capturedParallelOutputWriter, null);
   assert.deepStrictEqual(stageRunner.getBufferedArtifactIds(), []);
 });
