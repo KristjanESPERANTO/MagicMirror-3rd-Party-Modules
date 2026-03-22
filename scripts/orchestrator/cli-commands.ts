@@ -1,4 +1,3 @@
-// @ts-nocheck
 import {
   buildBenchmarkSummary,
   printBenchmarkSummary,
@@ -24,11 +23,42 @@ import {
   printStageSummaries,
   readRunRecord
 } from "./cli-helpers.ts";
+import type { PipelineRunRecord, RunRecordFileInfo } from "./cli-helpers.ts";
+import type { Command } from "commander";
 import path from "node:path";
 import process from "node:process";
 
-function parsePositiveInteger(value, fallback) {
-  const parsed = Number.parseInt(value, 10);
+interface MinimumNodeVersion {
+  major: number;
+  minor?: number;
+  patch?: number;
+}
+
+interface CheckResult {
+  details: string;
+  status: "fail" | "pass" | "warn";
+}
+
+interface LoadedPipelineRunRecord extends PipelineRunRecord {
+  mtimeMs: number;
+}
+
+type ExecFileAsync = (
+  command: string,
+  args: string[],
+  options: { timeout: number }
+) => Promise<{ stdout: string; stderr: string }>;
+
+interface OrchestratorContext {
+  defaultGraphPath: string;
+  execFileAsync: ExecFileAsync;
+  minNodeVersion: MinimumNodeVersion;
+  projectRoot: string;
+  runsDirectory: string;
+}
+
+function parsePositiveInteger(value: string | undefined, fallback: number): number {
+  const parsed = Number.parseInt(value ?? "", 10);
 
   if (Number.isNaN(parsed) || parsed <= 0) {
     return fallback;
@@ -37,14 +67,17 @@ function parsePositiveInteger(value, fallback) {
   return parsed;
 }
 
-async function loadRunRecords(runsDirectory) {
+async function loadRunRecords(runsDirectory: string): Promise<{
+  loadedRecords: LoadedPipelineRunRecord[];
+  runRecordFiles: RunRecordFileInfo[];
+}> {
   const runRecordFiles = await listRunRecordFiles(runsDirectory);
 
   if (runRecordFiles.length === 0) {
     return { loadedRecords: [], runRecordFiles };
   }
 
-  const loadedRecords = [];
+  const loadedRecords: LoadedPipelineRunRecord[] = [];
   for (const recordInfo of runRecordFiles) {
     const record = await readRunRecord(recordInfo.path);
     loadedRecords.push({
@@ -57,14 +90,14 @@ async function loadRunRecords(runsDirectory) {
   return { loadedRecords, runRecordFiles };
 }
 
-function formatMinimumNodeVersion(minimumVersion) {
+function formatMinimumNodeVersion(minimumVersion: MinimumNodeVersion): string {
   const minor = minimumVersion.minor ?? 0;
   const patch = minimumVersion.patch ?? 0;
 
   return `${minimumVersion.major}.${minor}.${patch}`;
 }
 
-function checkNodeVersion(minimumVersion) {
+function checkNodeVersion(minimumVersion: MinimumNodeVersion): CheckResult {
   const raw = process.versions.node;
   const [majorPart, minorPart] = raw.split(".");
   const major = Number.parseInt(majorPart, 10);
@@ -93,7 +126,7 @@ function checkNodeVersion(minimumVersion) {
   };
 }
 
-function printCheckResult({ label, status, details }) {
+function printCheckResult({ label, status, details }: { details?: string; label: string; status: "fail" | "pass" | "warn" }): void {
   const symbols = {
     pass: "✔",
     warn: "⚠",
@@ -104,7 +137,7 @@ function printCheckResult({ label, status, details }) {
   console.log(`${prefix} ${label}${details ? ` — ${details}` : ""}`);
 }
 
-async function checkCommandAvailability(execFileAsync, command, args = ["--version"]) {
+async function checkCommandAvailability(execFileAsync: ExecFileAsync, command: string, args = ["--version"]): Promise<CheckResult> {
   try {
     const { stdout, stderr } = await execFileAsync(command, args, { timeout: 10_000 });
     const output = stdout?.trim() || stderr?.trim() || "";
@@ -121,8 +154,8 @@ async function checkCommandAvailability(execFileAsync, command, args = ["--versi
   }
 }
 
-function buildListCommandHandler({ defaultGraphPath, projectRoot }) {
-  return async function listCommand(options) {
+function buildListCommandHandler({ defaultGraphPath, projectRoot }: Pick<OrchestratorContext, "defaultGraphPath" | "projectRoot">) {
+  return async function listCommand(options: { graph?: string; pipelines?: boolean; stages?: boolean }): Promise<void> {
     const graphPath = path.resolve(options.graph ?? defaultGraphPath);
     const { graph, stageMap } = await loadGraphMetadata(graphPath);
     const pipelinesOnly = Boolean(options.pipelines);
@@ -142,8 +175,8 @@ function buildListCommandHandler({ defaultGraphPath, projectRoot }) {
   };
 }
 
-function buildDescribeCommandHandler({ defaultGraphPath }) {
-  return async function describeCommand(identifier, options) {
+function buildDescribeCommandHandler({ defaultGraphPath }: Pick<OrchestratorContext, "defaultGraphPath">) {
+  return async function describeCommand(identifier: string, options: { graph?: string }): Promise<void> {
     const graphPath = path.resolve(options.graph ?? defaultGraphPath);
     const { graph, stageMap, artifactMap, pipelineMap } = await loadGraphMetadata(graphPath);
 
@@ -152,12 +185,12 @@ function buildDescribeCommandHandler({ defaultGraphPath }) {
     }
 
     if (pipelineMap.has(identifier)) {
-      describePipeline(pipelineMap.get(identifier), stageMap);
+      describePipeline(pipelineMap.get(identifier)!, stageMap);
       return;
     }
 
     if (stageMap.has(identifier)) {
-      describeStage(stageMap.get(identifier), artifactMap, graph.pipelines);
+      describeStage(stageMap.get(identifier)!, artifactMap, graph.pipelines);
       return;
     }
 
@@ -171,7 +204,7 @@ function buildDescribeCommandHandler({ defaultGraphPath }) {
   };
 }
 
-function buildDoctorCommandHandler({ minNodeVersion, execFileAsync }) {
+function buildDoctorCommandHandler({ minNodeVersion, execFileAsync }: Pick<OrchestratorContext, "execFileAsync" | "minNodeVersion">) {
   return async function doctorCommand() {
     console.log("Running environment diagnostics...\n");
 
@@ -201,8 +234,8 @@ function buildDoctorCommandHandler({ minNodeVersion, execFileAsync }) {
   };
 }
 
-function buildLogsCommandHandler({ runsDirectory }) {
-  return async function logsCommand(runFile, options = {}) {
+function buildLogsCommandHandler({ runsDirectory }: Pick<OrchestratorContext, "runsDirectory">) {
+  return async function logsCommand(runFile: string | undefined, options: { latest?: boolean } = {}): Promise<void> {
     const records = await listRunRecordFiles(runsDirectory);
 
     if (records.length === 0) {
@@ -210,7 +243,7 @@ function buildLogsCommandHandler({ runsDirectory }) {
       return;
     }
 
-    let targetRecord = null;
+    let targetRecord: RunRecordFileInfo | null = null;
 
     if (options.latest) {
       [targetRecord] = records;
@@ -252,8 +285,14 @@ function buildLogsCommandHandler({ runsDirectory }) {
   };
 }
 
-function buildBenchmarkCommandHandler({ runsDirectory }) {
-  return async function benchmarkCommand(options = {}) {
+function buildBenchmarkCommandHandler({ runsDirectory }: Pick<OrchestratorContext, "runsDirectory">) {
+  return async function benchmarkCommand(options: {
+    includeFailed?: boolean;
+    includeFiltered?: boolean;
+    json?: boolean;
+    limit?: string;
+    pipeline?: string;
+  } = {}): Promise<void> {
     const limit = parsePositiveInteger(options.limit, 20);
     const pipelineId = options.pipeline ?? "full-refresh-parallel";
     const includeFailed = Boolean(options.includeFailed);
@@ -298,8 +337,13 @@ function buildBenchmarkCommandHandler({ runsDirectory }) {
   };
 }
 
-function buildProgressCommandHandler({ runsDirectory }) {
-  return async function progressCommand(options = {}) {
+function buildProgressCommandHandler({ runsDirectory }: Pick<OrchestratorContext, "runsDirectory">) {
+  return async function progressCommand(options: {
+    includeFiltered?: boolean;
+    json?: boolean;
+    limit?: string;
+    pipeline?: string;
+  } = {}): Promise<void> {
     const limit = parsePositiveInteger(options.limit, 20);
     const pipelineId = options.pipeline ?? "full-refresh-parallel";
     const includeFiltered = Boolean(options.includeFiltered);
@@ -340,8 +384,13 @@ function buildProgressCommandHandler({ runsDirectory }) {
   };
 }
 
-function buildDashboardCommandHandler({ runsDirectory }) {
-  return async function dashboardCommand(options = {}) {
+function buildDashboardCommandHandler({ runsDirectory }: Pick<OrchestratorContext, "runsDirectory">) {
+  return async function dashboardCommand(options: {
+    includeFiltered?: boolean;
+    json?: boolean;
+    limit?: string;
+    pipeline?: string;
+  } = {}): Promise<void> {
     const limit = parsePositiveInteger(options.limit, 20);
     const pipelineId = options.pipeline ?? "full-refresh-parallel";
     const includeFiltered = Boolean(options.includeFiltered);
@@ -382,7 +431,7 @@ function buildDashboardCommandHandler({ runsDirectory }) {
   };
 }
 
-export function registerAdditionalCommands(program, context) {
+export function registerAdditionalCommands(program: Command, context: OrchestratorContext): void {
   const benchmarkHandler = buildBenchmarkCommandHandler(context);
   const dashboardHandler = buildDashboardCommandHandler(context);
   const progressHandler = buildProgressCommandHandler(context);

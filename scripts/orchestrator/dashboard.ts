@@ -1,19 +1,69 @@
-// @ts-nocheck
 import { formatBytesToMiB, formatDuration } from "./cli-helpers.ts";
+import type { PipelineRunRecord } from "./cli-helpers.ts";
 import { buildBenchmarkSummary } from "./benchmark.ts";
+import type { BenchmarkSummary, StageDurationStats } from "./benchmark.ts";
 import { buildProgressSummary } from "./progress.ts";
+import type { ProgressSummary, ResourceComparison, StageProgressEntry } from "./progress.ts";
 
-function hasFilterValues(filters) {
+interface DurationHotspot {
+  averageMs: number;
+  p95Ms: number;
+  stageId: string;
+  stageName: string | null;
+}
+
+interface ReliabilityAlert {
+  failedCount: number;
+  stageId: string;
+  stageName: string | null;
+  successRate: number;
+}
+
+interface ResourceSignalSummary {
+  improvementCount: number;
+  insufficientDataCount: number;
+  regressionCount: number;
+  stableCount: number;
+}
+
+export interface DashboardSummary {
+  benchmark: BenchmarkSummary;
+  durationHotspots: DurationHotspot[];
+  progress: ProgressSummary;
+  reliabilityAlerts: ReliabilityAlert[];
+  resourceSignals: ResourceSignalSummary;
+  runCount: number;
+  window: { newestStartedAt: string | null; oldestStartedAt: string | null };
+}
+
+interface SelectDashboardRecordsOptions {
+  includeFiltered?: boolean;
+  limit?: number;
+  pipelineId?: string;
+}
+
+interface BuildDashboardSummaryOptions {
+  durationHotspotLimit?: number;
+  reliabilityLimit?: number;
+}
+
+interface PrintDashboardSummaryOptions {
+  includeFiltered?: boolean;
+  pipelineId?: string;
+}
+
+function hasFilterValues(filters: unknown): boolean {
   if (!filters || typeof filters !== "object") {
     return false;
   }
 
-  const only = Array.isArray(filters.only) ? filters.only : [];
-  const skip = Array.isArray(filters.skip) ? filters.skip : [];
+  const obj = filters as Record<string, unknown>;
+  const only = Array.isArray(obj.only) ? obj.only : [];
+  const skip = Array.isArray(obj.skip) ? obj.skip : [];
   return only.length > 0 || skip.length > 0;
 }
 
-function formatPercent(value) {
+function formatPercent(value: number | null | undefined): string {
   if (typeof value !== "number" || Number.isNaN(value)) {
     return "unknown";
   }
@@ -21,7 +71,7 @@ function formatPercent(value) {
   return `${(value * 100).toFixed(1)}%`;
 }
 
-function formatSignedPercent(value) {
+function formatSignedPercent(value: number | null | undefined): string {
   if (typeof value !== "number" || Number.isNaN(value)) {
     return "unknown";
   }
@@ -31,7 +81,7 @@ function formatSignedPercent(value) {
   return `${sign}${percent.toFixed(1)}%`;
 }
 
-function formatResourceValue(value, unit) {
+function formatResourceValue(value: number | null, unit: "bytes" | "cpu"): string {
   if (typeof value !== "number") {
     return "unknown";
   }
@@ -43,7 +93,7 @@ function formatResourceValue(value, unit) {
   return formatBytesToMiB(value);
 }
 
-function buildDurationHotspots(stageDurations, limit = 3) {
+function buildDurationHotspots(stageDurations: StageDurationStats[], limit = 3): DurationHotspot[] {
   return stageDurations
     .filter(stage => typeof stage.p95Ms === "number")
     .sort((left, right) => right.p95Ms - left.p95Ms)
@@ -56,14 +106,13 @@ function buildDurationHotspots(stageDurations, limit = 3) {
     }));
 }
 
-function buildReliabilityAlerts(stageProgress, limit = 3) {
+function buildReliabilityAlerts(stageProgress: StageProgressEntry[], limit = 3): ReliabilityAlert[] {
   return stageProgress
-    .filter(stage => stage && typeof stage === "object")
     .filter(stage => typeof stage.successRate === "number")
-    .filter(stage => stage.failedCount > 0 || stage.successRate < 1)
+    .filter(stage => stage.failedCount > 0 || stage.successRate! < 1)
     .sort((left, right) => {
       if (left.successRate !== right.successRate) {
-        return left.successRate - right.successRate;
+        return left.successRate! - right.successRate!;
       }
 
       return right.failedCount - left.failedCount;
@@ -73,11 +122,11 @@ function buildReliabilityAlerts(stageProgress, limit = 3) {
       failedCount: stage.failedCount,
       stageId: stage.stageId,
       stageName: stage.stageName,
-      successRate: stage.successRate
+      successRate: stage.successRate!
     }));
 }
 
-function summarizeResourceSignals(resourceComparisons) {
+function summarizeResourceSignals(resourceComparisons: ResourceComparison[] | null | undefined): ResourceSignalSummary {
   const summary = {
     improvementCount: 0,
     insufficientDataCount: 0,
@@ -103,16 +152,15 @@ function summarizeResourceSignals(resourceComparisons) {
   return summary;
 }
 
-export function selectDashboardRecords(records, {
+export function selectDashboardRecords(records: PipelineRunRecord[], {
   includeFiltered = false,
   limit = 20,
   pipelineId = "full-refresh-parallel"
-} = {}) {
-  const selected = [];
+}: SelectDashboardRecordsOptions = {}): PipelineRunRecord[] {
+  const selected: PipelineRunRecord[] = [];
 
   for (const record of records) {
-    const isObjectRecord = record && typeof record === "object";
-    const isPipelineMatch = isObjectRecord && record.pipelineId === pipelineId;
+    const isPipelineMatch = record.pipelineId === pipelineId;
     const isFilterIncluded = includeFiltered || !hasFilterValues(record.filters);
 
     if (isPipelineMatch && isFilterIncluded) {
@@ -127,10 +175,10 @@ export function selectDashboardRecords(records, {
   return selected;
 }
 
-export function buildDashboardSummary(records, {
+export function buildDashboardSummary(records: PipelineRunRecord[], {
   durationHotspotLimit = 3,
   reliabilityLimit = 3
-} = {}) {
+}: BuildDashboardSummaryOptions = {}): DashboardSummary {
   const benchmarkSummary = buildBenchmarkSummary(records);
   const progressSummary = buildProgressSummary(records);
 
@@ -145,10 +193,10 @@ export function buildDashboardSummary(records, {
   };
 }
 
-export function printDashboardSummary(summary, {
+export function printDashboardSummary(summary: DashboardSummary, {
   includeFiltered = false,
   pipelineId = "full-refresh-parallel"
-} = {}) {
+}: PrintDashboardSummaryOptions = {}): void {
   console.log(`Dashboard summary for pipeline: ${pipelineId}`);
   console.log(`Sample count: ${summary.runCount}`);
   console.log(`Include filtered runs: ${includeFiltered ? "yes" : "no"}`);

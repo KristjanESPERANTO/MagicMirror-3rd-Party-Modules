@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-// @ts-nocheck
-
 import { applyStageFilters, normalizeStageFilters, parseCommaSeparatedList } from "./stage-filters.ts";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { buildExecutionPlan, loadStageGraph } from "./stage-graph.ts";
+// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
 import { createLogger, createStageProgressLogger } from "../shared/logger.js";
 import { mkdir, writeFile } from "node:fs/promises";
 import { Command } from "commander";
@@ -16,7 +15,19 @@ import process from "node:process";
 import { promisify } from "node:util";
 import { registerAdditionalCommands } from "./cli-commands.ts";
 import { runStagesSequentially } from "./stage-executor.ts";
+// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
 import { validateStageFile } from "../lib/schemaValidator.js";
+import type { ArtifactDefinition, ResolvedStageDefinition } from "./stage-graph.ts";
+import type { StageFilters } from "./stage-filters.ts";
+import type { ProcessResourceUsage } from "./resource-monitor.ts";
+import type { StageExecutionResult } from "./stage-executor.ts";
+
+type PipelineExecutionError = Error & {
+  completedStages?: StageExecutionResult<ResolvedStageDefinition>[];
+  stage?: ResolvedStageDefinition;
+  stepNumber?: number;
+  totalStages?: number;
+};
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFile);
@@ -26,7 +37,7 @@ const RUNS_DIRECTORY = join(PROJECT_ROOT, ".pipeline-runs");
 const MIN_NODE_VERSION = { major: 22, minor: 6, patch: 0 };
 const execFileAsync = promisify(execFile);
 
-function isMissingFileError(error) {
+function isMissingFileError(error: unknown): error is NodeJS.ErrnoException {
   if (!error || typeof error !== "object") {
     return false;
   }
@@ -34,7 +45,7 @@ function isMissingFileError(error) {
   return "code" in error && error.code === "ENOENT";
 }
 
-function getSchemaIdFromPath(schemaPath) {
+function getSchemaIdFromPath(schemaPath: string): string | null {
   const filename = basename(schemaPath);
   if (!filename.endsWith(".schema.json")) {
     return null;
@@ -44,9 +55,11 @@ function getSchemaIdFromPath(schemaPath) {
   return filename.slice(0, filename.length - suffixLength);
 }
 
-function logOptionalArtifactMissing(artifact, schemaId, logger) {
-  if (logger && logger.format === "json") {
-    logger.info(`Optional artifact not present: ${artifact.id}`, {
+function logOptionalArtifactMissing(artifact: ArtifactDefinition, schemaId: string | null, logger: unknown): void {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const log = logger as any;
+  if (log && log.format === "json") {
+    log.info(`Optional artifact not present: ${artifact.id}`, {
       artifactId: artifact.id,
       event: "artifact_optional_missing",
       path: artifact.path,
@@ -59,16 +72,20 @@ function logOptionalArtifactMissing(artifact, schemaId, logger) {
 }
 
 function createArtifactValidator() {
-  return async (stage, { logger } = {}) => {
+  return async (
+    stage: ResolvedStageDefinition,
+    { logger }: { cwd?: string; logger?: unknown } = {}
+  ): Promise<void> => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const log = logger as any;
     const outputs = stage.resolvedOutputs ?? [];
 
     for (const output of outputs) {
       const artifact = output.artifact;
 
       const isWriteMode = !output.mode || output.mode === "write";
-      const hasSchema = Boolean(artifact?.schema);
 
-      if (isWriteMode && hasSchema) {
+      if (isWriteMode && artifact.schema) {
         const schemaId = getSchemaIdFromPath(artifact.schema);
 
         if (schemaId) {
@@ -76,8 +93,8 @@ function createArtifactValidator() {
 
           try {
             await validateStageFile(schemaId, artifactPath);
-            if (logger && logger.format === "json") {
-              logger.info(`Validated ${artifact.id}`, {
+            if (log && log.format === "json") {
+              log.info(`Validated ${artifact.id}`, {
                 event: "artifact_validated",
                 artifactId: artifact.id,
                 schemaId,
@@ -90,7 +107,7 @@ function createArtifactValidator() {
           }
           catch (error) {
             if (output.optional && isMissingFileError(error)) {
-              logOptionalArtifactMissing(artifact, schemaId, logger);
+              logOptionalArtifactMissing(artifact, schemaId, log);
 
               continue;
             }
@@ -101,8 +118,8 @@ function createArtifactValidator() {
             throw error;
           }
         }
-        else if (logger && logger.format === "json") {
-          logger.warn(`Skipping validation for artifact "${artifact.id}"`, {
+        else if (log && log.format === "json") {
+          log.warn(`Skipping validation for artifact "${artifact.id}"`, {
             event: "artifact_validation_skipped",
             artifactId: artifact.id,
             reason: "unsupported schema reference",
@@ -121,7 +138,7 @@ async function ensureRunsDirectoryExists() {
   await mkdir(RUNS_DIRECTORY, { recursive: true });
 }
 
-function sanitizePipelineIdForFilename(pipelineId) {
+function sanitizePipelineIdForFilename(pipelineId: string): string {
   const fallback = pipelineId && pipelineId.length > 0 ? pipelineId : "pipeline";
   const normalized = fallback
     .toLowerCase()
@@ -131,7 +148,7 @@ function sanitizePipelineIdForFilename(pipelineId) {
   return normalized || "pipeline";
 }
 
-function buildRunRecordFilePath(startedAt, pipelineId) {
+function buildRunRecordFilePath(startedAt: number, pipelineId: string): string {
   const timestamp = new Date(startedAt).toISOString()
     .replace(/[:.]/gu, "-");
   const safePipelineId = sanitizePipelineIdForFilename(pipelineId);
@@ -140,33 +157,51 @@ function buildRunRecordFilePath(startedAt, pipelineId) {
   return join(RUNS_DIRECTORY, filename);
 }
 
-function extractFailureDetails(failure) {
+function extractFailureDetails(failure: unknown) {
   if (!(failure instanceof Error)) {
     return {
       message: String(failure)
     };
   }
 
-  const stage = failure.stage;
+  const pipelineError = failure as PipelineExecutionError;
+  const stage = pipelineError.stage;
 
   return {
     message: failure.message,
     stageId: stage?.id ?? null,
     stageName: stage?.name ?? null,
-    stepNumber: failure.stepNumber ?? null,
-    totalStages: failure.totalStages ?? null
+    stepNumber: pipelineError.stepNumber ?? null,
+    totalStages: pipelineError.totalStages ?? null
   };
 }
 
-function mapStageResults({ orderedStages, completedStages, skippedStages, failure }) {
-  const results = [];
-  const completedMap = new Map();
+function mapStageResults({
+  orderedStages,
+  completedStages,
+  skippedStages,
+  failure
+}: {
+  orderedStages: ResolvedStageDefinition[];
+  completedStages: StageExecutionResult<ResolvedStageDefinition>[];
+  skippedStages: ResolvedStageDefinition[];
+  failure: unknown;
+}) {
+  const results: Array<{
+    id: string;
+    name: string | null;
+    status: string;
+    durationMs?: number;
+    error?: string | null;
+  }> = [];
+  const completedMap = new Map<string, StageExecutionResult<ResolvedStageDefinition>>();
   for (const entry of completedStages) {
     completedMap.set(entry.stage.id, entry);
   }
 
   const skippedSet = new Set(skippedStages.map(stage => stage.id));
-  const failureStageId = failure instanceof Error && failure.stage ? failure.stage.id : null;
+  const pipelineError = failure instanceof Error ? failure as PipelineExecutionError : null;
+  const failureStageId = pipelineError?.stage?.id ?? null;
   let failureMessage = null;
   if (failure instanceof Error) {
     failureMessage = failure.message;
@@ -190,7 +225,7 @@ function mapStageResults({ orderedStages, completedStages, skippedStages, failur
     }
 
     if (completedMap.has(stage.id)) {
-      const { durationMs } = completedMap.get(stage.id);
+      const { durationMs } = completedMap.get(stage.id)!;
       results.push({
         ...base,
         status: "succeeded",
@@ -230,6 +265,19 @@ async function writePipelineRunRecord({
   status,
   resourceUsage,
   failure
+}: {
+  completedStages: StageExecutionResult<ResolvedStageDefinition>[];
+  failure?: unknown;
+  filters: StageFilters;
+  finishedAt: number;
+  graphPath: string;
+  orderedStages: ResolvedStageDefinition[];
+  pipelineId: string;
+  plannedStages: ResolvedStageDefinition[];
+  resourceUsage?: ProcessResourceUsage | null;
+  skippedStages: ResolvedStageDefinition[];
+  startedAt: number;
+  status: string;
 }) {
   const durationMs = finishedAt - startedAt;
   const record = {
@@ -247,7 +295,9 @@ async function writePipelineRunRecord({
       completedStages,
       skippedStages,
       failure
-    })
+    }),
+    failure: undefined as ReturnType<typeof extractFailureDetails> | undefined,
+    resourceUsage: undefined as ProcessResourceUsage | undefined
   };
 
   if (status === "failed" && failure) {
@@ -270,7 +320,14 @@ async function writePipelineRunRecord({
   }
 }
 
-async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
+async function runPipeline(
+  pipelineId: string,
+  { graphPath = DEFAULT_GRAPH_PATH, filters, jsonLogs }: {
+    filters?: Partial<StageFilters>;
+    graphPath?: string;
+    jsonLogs?: boolean;
+  } = {}
+): Promise<void> {
   const graph = await loadStageGraph(graphPath);
   const { pipeline, stages } = buildExecutionPlan(graph, pipelineId);
   const logFormat = jsonLogs ? "json" : process.env.LOG_FORMAT ?? "text";
@@ -350,9 +407,11 @@ async function runPipeline(pipelineId, { graphPath, filters, jsonLogs } = {}) {
   catch (error) {
     const finishedAt = Date.now();
     const resourceUsage = resourceMonitor.stop();
-    const completedStages = error instanceof Error && Array.isArray(error.completedStages)
-      ? error.completedStages
-      : [];
+    const pipelineError = error as PipelineExecutionError;
+    const completedStages: StageExecutionResult<ResolvedStageDefinition>[] =
+      error instanceof Error && Array.isArray(pipelineError.completedStages)
+        ? pipelineError.completedStages
+        : [];
 
     const recordPath = await writePipelineRunRecord({
       pipelineId: pipeline.id,

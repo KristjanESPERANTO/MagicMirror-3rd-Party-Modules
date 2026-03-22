@@ -33,6 +33,7 @@ export interface PipelineRunRecord {
   graphPath: string;
   pipelineId: string;
   resourceUsage?: ProcessResourceUsage;
+  runFile?: string;
   stageResults?: PipelineRunStageResult[];
   startedAt: string;
   status: string;

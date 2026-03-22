@@ -1,9 +1,100 @@
-// @ts-nocheck
 import { formatBytesToMiB, formatDuration } from "./cli-helpers.ts";
+import type { PipelineRunRecord, PipelineRunStageResult } from "./cli-helpers.ts";
+
+interface ResourceMetric {
+  id: string;
+  label: string;
+  path: string[];
+  regressionThreshold: number;
+  unit: "bytes" | "cpu";
+}
+
+interface RunSummary {
+  durationMs: number | null;
+  runFile: string | null;
+  startedAt: string | null;
+  status: string;
+}
+
+interface TelemetryBucket {
+  coverageRate: number | null;
+  missingResourceUsageCount: number;
+  runCount: number;
+  withResourceUsageCount: number;
+}
+
+interface TelemetryCoverage {
+  consistency: "consistent" | "insufficient-data" | "mismatch";
+  filtered: TelemetryBucket;
+  full: TelemetryBucket;
+}
+
+type BaselineSignal = "improvement" | "insufficient-data" | "regression" | "stable";
+
+interface BaselineComparison {
+  baselineMedianValue: number | null;
+  baselineSampleCount: number;
+  deltaPercent: number | null;
+  deltaValue: number | null;
+  latestValue: number | null;
+  signal: BaselineSignal;
+}
+
+export interface ResourceComparison extends BaselineComparison {
+  id: string;
+  label: string;
+  unit: "bytes" | "cpu";
+}
+
+interface StageProgressBucket {
+  durationSamples: number[];
+  failedCount: number;
+  pendingCount: number;
+  skippedCount: number;
+  stageName: string | null;
+  succeededCount: number;
+}
+
+export interface StageProgressEntry {
+  averageDurationMs: number | null;
+  failedCount: number;
+  pendingCount: number;
+  skippedCount: number;
+  stageId: string;
+  stageName: string | null;
+  successRate: number | null;
+  succeededCount: number;
+}
+
+export interface ProgressSummary {
+  durationDeltaFromPreviousMs: number | null;
+  durationTrend: "faster" | "slower" | "unchanged" | null;
+  durationVsBaseline: BaselineComparison;
+  latestRun: RunSummary | null;
+  previousRun: RunSummary | null;
+  resourceVsBaseline: ResourceComparison[];
+  runCount: number;
+  stageProgress: StageProgressEntry[];
+  statusCounts: { failed: number; other: number; success: number };
+  successRate: number | null;
+  telemetryCoverage: TelemetryCoverage;
+  window: { newestStartedAt: string | null; oldestStartedAt: string | null };
+}
+
+interface SelectProgressRecordsOptions {
+  includeFiltered?: boolean;
+  limit?: number;
+  pipelineId?: string;
+}
+
+interface PrintProgressSummaryOptions {
+  includeFiltered?: boolean;
+  pipelineId?: string;
+}
 
 const DEFAULT_REGRESSION_THRESHOLD = 0.1;
 
-const RESOURCE_METRICS = [
+const RESOURCE_METRICS: ResourceMetric[] = [
   { id: "cpuTotalMicros", label: "CPU total", path: ["cpu", "totalMicros"], regressionThreshold: 0.15, unit: "cpu" },
   {
     id: "rssPeakBytes",
@@ -21,17 +112,18 @@ const RESOURCE_METRICS = [
   }
 ];
 
-function hasFilterValues(filters) {
+function hasFilterValues(filters: unknown): boolean {
   if (!filters || typeof filters !== "object") {
     return false;
   }
 
-  const only = Array.isArray(filters.only) ? filters.only : [];
-  const skip = Array.isArray(filters.skip) ? filters.skip : [];
+  const obj = filters as Record<string, unknown>;
+  const only = Array.isArray(obj.only) ? obj.only : [];
+  const skip = Array.isArray(obj.skip) ? obj.skip : [];
   return only.length > 0 || skip.length > 0;
 }
 
-function toRunSummary(record) {
+function toRunSummary(record: PipelineRunRecord): RunSummary {
   return {
     durationMs: typeof record.durationMs === "number" ? record.durationMs : null,
     runFile: record.runFile ?? null,
@@ -40,7 +132,7 @@ function toRunSummary(record) {
   };
 }
 
-function toFiniteNumber(value) {
+function toFiniteNumber(value: unknown): number | null {
   if (typeof value !== "number" || Number.isNaN(value)) {
     return null;
   }
@@ -48,8 +140,8 @@ function toFiniteNumber(value) {
   return value;
 }
 
-function percentile(values, percent) {
-  if (!Array.isArray(values) || values.length === 0) {
+function percentile(values: number[], percent: number): number | null {
+  if (values.length === 0) {
     return null;
   }
 
@@ -69,7 +161,7 @@ function percentile(values, percent) {
   return lowerValue + (upperValue - lowerValue) * weight;
 }
 
-function buildWindow(records) {
+function buildWindow(records: PipelineRunRecord[]): { newestStartedAt: string | null; oldestStartedAt: string | null } {
   const startedAtValues = records
     .map(record => record.startedAt)
     .filter(value => typeof value === "string" && value.length > 0)
@@ -88,7 +180,7 @@ function buildWindow(records) {
   };
 }
 
-function classifyTrend(deltaMs) {
+function classifyTrend(deltaMs: number | null): "faster" | "slower" | "unchanged" | null {
   if (typeof deltaMs !== "number") {
     return null;
   }
@@ -104,7 +196,7 @@ function classifyTrend(deltaMs) {
   return "unchanged";
 }
 
-function classifyRegression(deltaRatio, threshold = DEFAULT_REGRESSION_THRESHOLD) {
+function classifyRegression(deltaRatio: number | null, threshold = DEFAULT_REGRESSION_THRESHOLD): BaselineSignal {
   if (typeof deltaRatio !== "number") {
     return "insufficient-data";
   }
@@ -120,7 +212,7 @@ function classifyRegression(deltaRatio, threshold = DEFAULT_REGRESSION_THRESHOLD
   return "stable";
 }
 
-function formatPercent(value) {
+function formatPercent(value: number | null | undefined): string {
   if (typeof value !== "number" || Number.isNaN(value)) {
     return "unknown";
   }
@@ -128,7 +220,7 @@ function formatPercent(value) {
   return `${(value * 100).toFixed(1)}%`;
 }
 
-function formatSignedPercent(value) {
+function formatSignedPercent(value: number | null | undefined): string {
   if (typeof value !== "number" || Number.isNaN(value)) {
     return "unknown";
   }
@@ -138,7 +230,7 @@ function formatSignedPercent(value) {
   return `${sign}${percent.toFixed(1)}%`;
 }
 
-function formatDelta(deltaMs) {
+function formatDelta(deltaMs: number | null): string {
   if (typeof deltaMs !== "number") {
     return "unknown";
   }
@@ -147,7 +239,7 @@ function formatDelta(deltaMs) {
   return `${sign}${formatDuration(deltaMs)}`;
 }
 
-function readNumberAtPath(value, pathSegments) {
+function readNumberAtPath(value: unknown, pathSegments: string[]): number | null {
   let current = value;
 
   for (const segment of pathSegments) {
@@ -155,17 +247,21 @@ function readNumberAtPath(value, pathSegments) {
       return null;
     }
 
-    current = current[segment];
+    current = (current as Record<string, unknown>)[segment];
   }
 
   return toFiniteNumber(current);
 }
 
-function buildBaselineComparison(latestValue, baselineValues, regressionThreshold = DEFAULT_REGRESSION_THRESHOLD) {
-  const normalizedLatestValue = toFiniteNumber(latestValue);
+function buildBaselineComparison(
+  latestValue: number | null | undefined,
+  baselineValues: number[],
+  regressionThreshold = DEFAULT_REGRESSION_THRESHOLD
+): BaselineComparison {
+  const normalizedLatestValue = toFiniteNumber(latestValue ?? null);
   const normalizedBaselineValues = baselineValues
     .map(value => toFiniteNumber(value))
-    .filter(value => value !== null);
+    .filter((value): value is number => value !== null);
   const baselineMedian = percentile(normalizedBaselineValues, 0.5);
 
   if (normalizedLatestValue === null || baselineMedian === null) {
@@ -192,7 +288,7 @@ function buildBaselineComparison(latestValue, baselineValues, regressionThreshol
   };
 }
 
-function hasResourceUsage(resourceUsage) {
+function hasResourceUsage(resourceUsage: unknown): boolean {
   if (!resourceUsage || typeof resourceUsage !== "object") {
     return false;
   }
@@ -204,11 +300,11 @@ function hasResourceUsage(resourceUsage) {
   return cpuTotalMicros !== null && rssPeakBytes !== null && heapUsedPeakBytes !== null;
 }
 
-function getExecutionType(record) {
+function getExecutionType(record: PipelineRunRecord): "filtered" | "full" {
   return hasFilterValues(record?.filters) ? "filtered" : "full";
 }
 
-function createTelemetryBucket() {
+function createTelemetryBucket(): TelemetryBucket {
   return {
     coverageRate: null,
     missingResourceUsageCount: 0,
@@ -217,7 +313,7 @@ function createTelemetryBucket() {
   };
 }
 
-function finalizeTelemetryBucket(bucket) {
+function finalizeTelemetryBucket(bucket: TelemetryBucket): TelemetryBucket {
   if (bucket.runCount > 0) {
     bucket.coverageRate = bucket.withResourceUsageCount / bucket.runCount;
   }
@@ -225,7 +321,7 @@ function finalizeTelemetryBucket(bucket) {
   return bucket;
 }
 
-function buildTelemetryCoverage(records) {
+function buildTelemetryCoverage(records: PipelineRunRecord[]): TelemetryCoverage {
   const buckets = {
     filtered: createTelemetryBucket(),
     full: createTelemetryBucket()
@@ -247,7 +343,7 @@ function buildTelemetryCoverage(records) {
   const full = finalizeTelemetryBucket(buckets.full);
   const filtered = finalizeTelemetryBucket(buckets.filtered);
 
-  let consistency = "insufficient-data";
+  let consistency: "consistent" | "insufficient-data" | "mismatch" = "insufficient-data";
   if (full.runCount > 0 && filtered.runCount > 0) {
     consistency = full.missingResourceUsageCount === 0 && filtered.missingResourceUsageCount === 0
       ? "consistent"
@@ -261,7 +357,7 @@ function buildTelemetryCoverage(records) {
   };
 }
 
-function buildResourceRegression(records) {
+function buildResourceRegression(records: PipelineRunRecord[]): ResourceComparison[] {
   const latestRecord = records[0] ?? null;
 
   return RESOURCE_METRICS.map((metric) => {
@@ -269,7 +365,7 @@ function buildResourceRegression(records) {
     const baselineValues = records
       .slice(1)
       .map(record => readNumberAtPath(record.resourceUsage, metric.path))
-      .filter(value => value !== null);
+      .filter((value): value is number => value !== null);
     const comparison = buildBaselineComparison(latestValue, baselineValues, metric.regressionThreshold);
 
     return {
@@ -281,7 +377,7 @@ function buildResourceRegression(records) {
   });
 }
 
-function formatMetricValue(value, unit) {
+function formatMetricValue(value: number | null, unit: "bytes" | "cpu"): string {
   if (typeof value !== "number") {
     return "unknown";
   }
@@ -293,16 +389,15 @@ function formatMetricValue(value, unit) {
   return formatBytesToMiB(value);
 }
 
-export function selectProgressRecords(records, {
+export function selectProgressRecords(records: PipelineRunRecord[], {
   includeFiltered = false,
   limit = 20,
   pipelineId = "full-refresh-parallel"
-} = {}) {
-  const selected = [];
+}: SelectProgressRecordsOptions = {}): PipelineRunRecord[] {
+  const selected: PipelineRunRecord[] = [];
 
   for (const record of records) {
-    const isObjectRecord = record && typeof record === "object";
-    const isPipelineMatch = isObjectRecord && record.pipelineId === pipelineId;
+    const isPipelineMatch = record.pipelineId === pipelineId;
     const isFilterIncluded = includeFiltered || !hasFilterValues(record.filters);
 
     if (isPipelineMatch && isFilterIncluded) {
@@ -317,13 +412,13 @@ export function selectProgressRecords(records, {
   return selected;
 }
 
-export function buildProgressSummary(records) {
+export function buildProgressSummary(records: PipelineRunRecord[]): ProgressSummary {
   const statusCounts = {
     failed: 0,
     other: 0,
     success: 0
   };
-  const stageBuckets = new Map();
+  const stageBuckets = new Map<string, StageProgressBucket>();
 
   for (const record of records) {
     if (record.status === "success") {
@@ -336,44 +431,40 @@ export function buildProgressSummary(records) {
       statusCounts.other += 1;
     }
 
-    const stageResults = Array.isArray(record.stageResults) ? record.stageResults : [];
+    const stageResults: PipelineRunStageResult[] = Array.isArray(record.stageResults) ? record.stageResults : [];
     for (const stageResult of stageResults) {
-      const isValidStageResult = stageResult && typeof stageResult === "object";
+      const stageId = stageResult.id ?? "unknown";
+      if (!stageBuckets.has(stageId)) {
+        stageBuckets.set(stageId, {
+          durationSamples: [],
+          failedCount: 0,
+          pendingCount: 0,
+          skippedCount: 0,
+          stageName: stageResult.name ?? null,
+          succeededCount: 0
+        });
+      }
 
-      if (isValidStageResult) {
-        const stageId = stageResult.id ?? "unknown";
-        if (!stageBuckets.has(stageId)) {
-          stageBuckets.set(stageId, {
-            durationSamples: [],
-            failedCount: 0,
-            pendingCount: 0,
-            skippedCount: 0,
-            stageName: stageResult.name ?? null,
-            succeededCount: 0
-          });
+      const bucket = stageBuckets.get(stageId)!;
+      if (stageResult.status === "succeeded") {
+        bucket.succeededCount += 1;
+        if (typeof stageResult.durationMs === "number") {
+          bucket.durationSamples.push(stageResult.durationMs);
         }
-
-        const bucket = stageBuckets.get(stageId);
-        if (stageResult.status === "succeeded") {
-          bucket.succeededCount += 1;
-          if (typeof stageResult.durationMs === "number") {
-            bucket.durationSamples.push(stageResult.durationMs);
-          }
-        }
-        else if (stageResult.status === "failed") {
-          bucket.failedCount += 1;
-        }
-        else if (stageResult.status === "skipped") {
-          bucket.skippedCount += 1;
-        }
-        else {
-          bucket.pendingCount += 1;
-        }
+      }
+      else if (stageResult.status === "failed") {
+        bucket.failedCount += 1;
+      }
+      else if (stageResult.status === "skipped") {
+        bucket.skippedCount += 1;
+      }
+      else {
+        bucket.pendingCount += 1;
       }
     }
   }
 
-  const stageProgress = [...stageBuckets.entries()]
+  const stageProgress: StageProgressEntry[] = [...stageBuckets.entries()]
     .map(([stageId, bucket]) => {
       const settledCount = bucket.succeededCount + bucket.failedCount;
       const averageDurationMs = bucket.durationSamples.length > 0
@@ -422,10 +513,10 @@ export function buildProgressSummary(records) {
   };
 }
 
-export function printProgressSummary(summary, {
+export function printProgressSummary(summary: ProgressSummary, {
   includeFiltered = false,
   pipelineId = "full-refresh-parallel"
-} = {}) {
+}: PrintProgressSummaryOptions = {}): void {
   console.log(`Progress summary for pipeline: ${pipelineId}`);
   console.log(`Sample count: ${summary.runCount}`);
   console.log(`Include filtered runs: ${includeFiltered ? "yes" : "no"}`);

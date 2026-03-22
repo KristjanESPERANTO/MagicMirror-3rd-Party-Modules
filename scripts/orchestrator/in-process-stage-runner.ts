@@ -1,18 +1,40 @@
-// @ts-nocheck
+// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
 import { createLogger } from "../shared/logger.js";
 import process from "node:process";
 import { resolve } from "node:path";
+// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
 import { runAggregateCatalogue } from "../aggregate-catalogue.js";
+// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
 import { runCollectMetadata } from "../collect-metadata/index.js";
+// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
 import { runParallelProcessing } from "../parallel-processing.js";
+import type { ResolvedStageDefinition } from "./stage-graph.ts";
+import type { StageExecutionContext } from "./stage-executor.ts";
 
-export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } = {}) {
-  const artifactStore = new Map();
+interface StageRuntimeOverrides {
+  aggregateCatalogue?: (options: Record<string, unknown>) => Promise<unknown>;
+  collectMetadata?: (options: Record<string, unknown>) => Promise<{ modules: unknown[] }>;
+  parallelProcessing?: (options: Record<string, unknown>) => Promise<{ stage5Modules: unknown[] }>;
+}
+
+interface CreateInProcessStageRunnerOptions {
+  projectRoot?: string;
+  stageRuntimes?: StageRuntimeOverrides;
+}
+
+export function createInProcessStageRunner({
+  projectRoot,
+  stageRuntimes = {}
+}: CreateInProcessStageRunnerOptions = {}) {
+  const artifactStore = new Map<string, unknown>();
   const aggregateCatalogue = stageRuntimes.aggregateCatalogue ?? runAggregateCatalogue;
   const collectMetadata = stageRuntimes.collectMetadata ?? runCollectMetadata;
   const parallelProcessing = stageRuntimes.parallelProcessing ?? runParallelProcessing;
 
-  const runStageInProcess = async (stage, { cwd = process.cwd(), env = process.env } = {}) => {
+  const runStageInProcess = async (
+    stage: ResolvedStageDefinition,
+    { cwd = process.cwd(), env = process.env }: Partial<StageExecutionContext> = {}
+  ): Promise<boolean> => {
     const runRoot = resolve(projectRoot ?? cwd);
 
     if (stage.id === "collect-metadata") {
@@ -31,7 +53,8 @@ export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } =
       });
 
       const stage2Modules = artifactStore.get("modules-stage-2");
-      let result;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      let result: any;
 
       try {
         result = await parallelProcessing({
@@ -70,10 +93,10 @@ export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } =
     return false;
   };
 
-  runStageInProcess.getBufferedArtifactIds = () => [...artifactStore.keys()];
-  runStageInProcess.reset = () => {
-    artifactStore.clear();
-  };
-
-  return runStageInProcess;
+  return Object.assign(runStageInProcess, {
+    getBufferedArtifactIds: (): string[] => [...artifactStore.keys()],
+    reset: (): void => {
+      artifactStore.clear();
+    }
+  });
 }

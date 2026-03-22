@@ -1,18 +1,66 @@
-// @ts-nocheck
 import { formatDuration } from "./cli-helpers.ts";
+import type { PipelineRunRecord, PipelineRunStageResult } from "./cli-helpers.ts";
 
-function hasFilterValues(filters) {
+interface DurationStats {
+  averageMs: number;
+  count: number;
+  maxMs: number;
+  medianMs: number;
+  minMs: number;
+  p95Ms: number;
+}
+
+interface TimeWindow {
+  newestStartedAt: string | null;
+  oldestStartedAt: string | null;
+}
+
+interface BenchmarkRunEntry {
+  durationMs: number;
+  runFile: string | null;
+  startedAt: string | null;
+  status: string;
+}
+
+export interface StageDurationStats extends DurationStats {
+  stageId: string;
+  stageName: string | null;
+}
+
+export interface BenchmarkSummary {
+  duration: DurationStats | null;
+  runCount: number;
+  runs: BenchmarkRunEntry[];
+  stageDurations: StageDurationStats[];
+  window: TimeWindow;
+}
+
+interface SelectBenchmarkRecordsOptions {
+  includeFailed?: boolean;
+  includeFiltered?: boolean;
+  limit?: number;
+  pipelineId?: string;
+}
+
+interface PrintBenchmarkSummaryOptions {
+  includeFailed?: boolean;
+  includeFiltered?: boolean;
+  pipelineId?: string;
+}
+
+function hasFilterValues(filters: unknown): boolean {
   if (!filters || typeof filters !== "object") {
     return false;
   }
 
-  const only = Array.isArray(filters.only) ? filters.only : [];
-  const skip = Array.isArray(filters.skip) ? filters.skip : [];
+  const obj = filters as Record<string, unknown>;
+  const only = Array.isArray(obj.only) ? obj.only : [];
+  const skip = Array.isArray(obj.skip) ? obj.skip : [];
   return only.length > 0 || skip.length > 0;
 }
 
-function percentile(values, percent) {
-  if (!Array.isArray(values) || values.length === 0) {
+function percentile(values: number[], percent: number): number | null {
+  if (values.length === 0) {
     return null;
   }
 
@@ -32,8 +80,8 @@ function percentile(values, percent) {
   return lowerValue + (upperValue - lowerValue) * weight;
 }
 
-function computeDurationStats(values) {
-  if (!Array.isArray(values) || values.length === 0) {
+function computeDurationStats(values: number[]): DurationStats | null {
+  if (values.length === 0) {
     return null;
   }
 
@@ -44,13 +92,13 @@ function computeDurationStats(values) {
     averageMs: Math.round(total / sorted.length),
     count: sorted.length,
     maxMs: sorted[sorted.length - 1],
-    medianMs: Math.round(percentile(sorted, 0.5)),
+    medianMs: Math.round(percentile(sorted, 0.5)!),
     minMs: sorted[0],
-    p95Ms: Math.round(percentile(sorted, 0.95))
+    p95Ms: Math.round(percentile(sorted, 0.95)!)
   };
 }
 
-function buildTimeWindow(records) {
+function buildTimeWindow(records: PipelineRunRecord[]): TimeWindow {
   const startedAtValues = records
     .map(record => record.startedAt)
     .filter(value => typeof value === "string" && value.length > 0)
@@ -69,17 +117,16 @@ function buildTimeWindow(records) {
   };
 }
 
-export function selectBenchmarkRecords(records, {
+export function selectBenchmarkRecords(records: PipelineRunRecord[], {
   includeFailed = false,
   includeFiltered = false,
   limit = 20,
   pipelineId = "full-refresh-parallel"
-} = {}) {
-  const selected = [];
+}: SelectBenchmarkRecordsOptions = {}): PipelineRunRecord[] {
+  const selected: PipelineRunRecord[] = [];
 
   for (const record of records) {
-    const isObjectRecord = record && typeof record === "object";
-    const isPipelineMatch = isObjectRecord && record.pipelineId === pipelineId;
+    const isPipelineMatch = record.pipelineId === pipelineId;
     const isStatusIncluded = includeFailed || record.status === "success";
     const isFilterIncluded = includeFiltered || !hasFilterValues(record.filters);
 
@@ -95,21 +142,18 @@ export function selectBenchmarkRecords(records, {
   return selected;
 }
 
-export function buildBenchmarkSummary(records) {
-  const durationSamples = [];
-  const stageBuckets = new Map();
+export function buildBenchmarkSummary(records: PipelineRunRecord[]): BenchmarkSummary {
+  const durationSamples: number[] = [];
+  const stageBuckets = new Map<string, { durations: number[]; name: string | null }>();
 
   for (const record of records) {
     if (typeof record.durationMs === "number") {
       durationSamples.push(record.durationMs);
     }
 
-    const stageResults = Array.isArray(record.stageResults) ? record.stageResults : [];
+    const stageResults: PipelineRunStageResult[] = record.stageResults ?? [];
     for (const stageResult of stageResults) {
-      const isSucceededStageResult
-        = stageResult && stageResult.status === "succeeded" && typeof stageResult.durationMs === "number";
-
-      if (isSucceededStageResult) {
+      if (stageResult.status === "succeeded" && typeof stageResult.durationMs === "number") {
         const stageId = stageResult.id ?? "unknown";
         if (!stageBuckets.has(stageId)) {
           stageBuckets.set(stageId, {
@@ -118,7 +162,7 @@ export function buildBenchmarkSummary(records) {
           });
         }
 
-        stageBuckets.get(stageId).durations.push(stageResult.durationMs);
+        stageBuckets.get(stageId)!.durations.push(stageResult.durationMs);
       }
     }
   }
@@ -134,7 +178,7 @@ export function buildBenchmarkSummary(records) {
         }
         : null;
     })
-    .filter(Boolean)
+    .filter((item): item is StageDurationStats => item !== null)
     .sort((left, right) => left.stageId.localeCompare(right.stageId));
 
   return {
@@ -151,7 +195,7 @@ export function buildBenchmarkSummary(records) {
   };
 }
 
-function formatStatsLine(stats) {
+function formatStatsLine(stats: DurationStats | null): string {
   if (!stats) {
     return "no duration data";
   }
@@ -166,11 +210,11 @@ function formatStatsLine(stats) {
   ].join(" | ");
 }
 
-export function printBenchmarkSummary(summary, {
+export function printBenchmarkSummary(summary: BenchmarkSummary, {
   includeFailed = false,
   includeFiltered = false,
   pipelineId = "full-refresh-parallel"
-} = {}) {
+}: PrintBenchmarkSummaryOptions = {}): void {
   console.log(`Benchmark summary for pipeline: ${pipelineId}`);
   console.log(`Sample count: ${summary.runCount}`);
   console.log(`Include failed runs: ${includeFailed ? "yes" : "no"}`);
