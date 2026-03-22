@@ -113,12 +113,12 @@ The goal of this milestone is to reduce or eliminate the remaining intermediate 
 
 Measure and visualize pipeline performance.
 
-| Task | Status                |
-| ---- | --------------------- |
-| P9.1 | ✅ Benchmarking       |
-| P9.2 | ✅ Progress tracking  |
-| P9.3 | ✅ Resource monitoring |
-| P9.4 | In progress           |
+| Task | Status                   |
+| ---- | ------------------------ |
+| P9.1 | ✅ Benchmarking          |
+| P9.2 | ✅ Progress tracking     |
+| P9.3 | ✅ Resource monitoring   |
+| P9.4 | ✅ Performance dashboard |
 
 ---
 
@@ -126,11 +126,11 @@ Measure and visualize pipeline performance.
 
 See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details.
 
-**Current focus: P9.4** — Performance dashboard
+**Current focus: Post-P9 validation** — Stabilize and adopt performance tooling
 
-- Define a concise dashboard metric set shared by benchmark, progress, and logs views
-- Surface overall and per-stage duration/resource trends from persisted run history
-- Add a lightweight summary view suitable for contributor triage and release checks
+- Verify dashboard output readability against real run-history volume in local and CI contexts
+- Keep benchmark/progress/dashboard metric definitions aligned as new run metadata fields are added
+- Use dashboard output in release-check flows and contributor triage guidance
 
 ---
 

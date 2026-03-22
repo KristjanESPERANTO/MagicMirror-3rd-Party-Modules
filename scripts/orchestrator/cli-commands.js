@@ -4,6 +4,11 @@ import {
   selectBenchmarkRecords
 } from "./benchmark.js";
 import {
+  buildDashboardSummary,
+  printDashboardSummary,
+  selectDashboardRecords
+} from "./dashboard.js";
+import {
   buildProgressSummary,
   printProgressSummary,
   selectProgressRecords
@@ -29,6 +34,26 @@ function parsePositiveInteger(value, fallback) {
   }
 
   return parsed;
+}
+
+async function loadRunRecords(runsDirectory) {
+  const runRecordFiles = await listRunRecordFiles(runsDirectory);
+
+  if (runRecordFiles.length === 0) {
+    return { loadedRecords: [], runRecordFiles };
+  }
+
+  const loadedRecords = [];
+  for (const recordInfo of runRecordFiles) {
+    const record = await readRunRecord(recordInfo.path);
+    loadedRecords.push({
+      ...record,
+      mtimeMs: recordInfo.mtimeMs,
+      runFile: recordInfo.name
+    });
+  }
+
+  return { loadedRecords, runRecordFiles };
 }
 
 function checkNodeVersion(minimumMajor) {
@@ -220,21 +245,11 @@ function buildBenchmarkCommandHandler({ runsDirectory }) {
     const pipelineId = options.pipeline ?? "full-refresh-parallel";
     const includeFailed = Boolean(options.includeFailed);
     const includeFiltered = Boolean(options.includeFiltered);
-    const records = await listRunRecordFiles(runsDirectory);
+    const { loadedRecords, runRecordFiles } = await loadRunRecords(runsDirectory);
 
-    if (records.length === 0) {
+    if (runRecordFiles.length === 0) {
       console.log("No pipeline run records found. Execute `pipeline run` to generate benchmark data.");
       return;
-    }
-
-    const loadedRecords = [];
-    for (const recordInfo of records) {
-      const record = await readRunRecord(recordInfo.path);
-      loadedRecords.push({
-        ...record,
-        mtimeMs: recordInfo.mtimeMs,
-        runFile: recordInfo.name
-      });
     }
 
     const selectedRecords = selectBenchmarkRecords(loadedRecords, {
@@ -275,21 +290,11 @@ function buildProgressCommandHandler({ runsDirectory }) {
     const limit = parsePositiveInteger(options.limit, 20);
     const pipelineId = options.pipeline ?? "full-refresh-parallel";
     const includeFiltered = Boolean(options.includeFiltered);
-    const records = await listRunRecordFiles(runsDirectory);
+    const { loadedRecords, runRecordFiles } = await loadRunRecords(runsDirectory);
 
-    if (records.length === 0) {
+    if (runRecordFiles.length === 0) {
       console.log("No pipeline run records found. Execute `pipeline run` to generate progress data.");
       return;
-    }
-
-    const loadedRecords = [];
-    for (const recordInfo of records) {
-      const record = await readRunRecord(recordInfo.path);
-      loadedRecords.push({
-        ...record,
-        mtimeMs: recordInfo.mtimeMs,
-        runFile: recordInfo.name
-      });
     }
 
     const selectedRecords = selectProgressRecords(loadedRecords, {
@@ -322,8 +327,51 @@ function buildProgressCommandHandler({ runsDirectory }) {
   };
 }
 
+function buildDashboardCommandHandler({ runsDirectory }) {
+  return async function dashboardCommand(options = {}) {
+    const limit = parsePositiveInteger(options.limit, 20);
+    const pipelineId = options.pipeline ?? "full-refresh-parallel";
+    const includeFiltered = Boolean(options.includeFiltered);
+    const { loadedRecords, runRecordFiles } = await loadRunRecords(runsDirectory);
+
+    if (runRecordFiles.length === 0) {
+      console.log("No pipeline run records found. Execute `pipeline run` to generate dashboard data.");
+      return;
+    }
+
+    const selectedRecords = selectDashboardRecords(loadedRecords, {
+      includeFiltered,
+      limit,
+      pipelineId
+    });
+
+    if (selectedRecords.length === 0) {
+      console.log("No matching run records found for the current dashboard filters.");
+      return;
+    }
+
+    const summary = buildDashboardSummary(selectedRecords);
+
+    if (options.json) {
+      console.log(JSON.stringify({
+        includeFiltered,
+        limit,
+        pipelineId,
+        summary
+      }, null, 2));
+      return;
+    }
+
+    printDashboardSummary(summary, {
+      includeFiltered,
+      pipelineId
+    });
+  };
+}
+
 export function registerAdditionalCommands(program, context) {
   const benchmarkHandler = buildBenchmarkCommandHandler(context);
+  const dashboardHandler = buildDashboardCommandHandler(context);
   const progressHandler = buildProgressCommandHandler(context);
   const listHandler = buildListCommandHandler(context);
   const describeHandler = buildDescribeCommandHandler(context);
@@ -425,6 +473,24 @@ export function registerAdditionalCommands(program, context) {
       catch (error) {
         const message = error instanceof Error ? error.message : error;
         console.error(`Error running progress summary: ${message}`);
+        process.exitCode = 1;
+      }
+    });
+
+  program
+    .command("dashboard")
+    .description("Show a compact performance and reliability dashboard from persisted run records")
+    .option("--pipeline <pipelineId>", "Pipeline id to inspect", "full-refresh-parallel")
+    .option("--limit <count>", "Maximum matching run records to include", "20")
+    .option("--include-filtered", "Include runs executed with --only/--skip filters")
+    .option("--json", "Print machine-readable dashboard summary")
+    .action(async (options) => {
+      try {
+        await dashboardHandler(options ?? {});
+      }
+      catch (error) {
+        const message = error instanceof Error ? error.message : error;
+        console.error(`Error running dashboard summary: ${message}`);
         process.exitCode = 1;
       }
     });
