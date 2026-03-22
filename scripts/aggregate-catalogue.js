@@ -10,6 +10,28 @@ import { writePublishedCatalogueOutputs } from "./shared/module-catalogue-output
 const logger = createLogger({ name: "aggregate-catalogue" });
 const PROJECT_ROOT = resolve(process.cwd());
 
+function normalizeOutputDetails(outputResult) {
+  if (!outputResult || typeof outputResult !== "object") {
+    return {
+      changeSummary: null,
+      outputPaths: null,
+      wroteOutputs: true
+    };
+  }
+
+  const outputPaths = outputResult.outputPaths ?? {
+    modulesJsonPath: outputResult.modulesJsonPath,
+    modulesMinPath: outputResult.modulesMinPath,
+    statsPath: outputResult.statsPath
+  };
+
+  return {
+    changeSummary: outputResult.changeSummary ?? null,
+    outputPaths,
+    wroteOutputs: typeof outputResult.wroteOutputs === "boolean" ? outputResult.wroteOutputs : true
+  };
+}
+
 export async function runAggregateCatalogue({
   stage5Modules,
   projectRoot = PROJECT_ROOT,
@@ -20,14 +42,36 @@ export async function runAggregateCatalogue({
     throw new TypeError("runAggregateCatalogue requires a stage5Modules array");
   }
 
-  const outputPaths = outputWriter
+  const outputResult = outputWriter
     ? await outputWriter(stage5Modules, projectRoot)
     : null;
 
+  const outputDetails = normalizeOutputDetails(outputResult);
+
+  if (outputDetails.changeSummary) {
+    const {
+      addedCount,
+      changedCount,
+      hasChanges,
+      removedCount,
+      unchangedCount
+    } = outputDetails.changeSummary;
+
+    runLogger.info(
+      `Diff summary: +${addedCount} ~${changedCount} -${removedCount} =${unchangedCount}`
+    );
+
+    if (!hasChanges && !outputDetails.wroteOutputs) {
+      runLogger.info("No module-level changes detected; reusing existing published outputs");
+    }
+  }
+
   runLogger.info(`Aggregated ${stage5Modules.length} module(s) into published catalogue outputs`);
   return {
-    outputPaths,
-    stage5ModulesCount: stage5Modules.length
+    changeSummary: outputDetails.changeSummary,
+    outputPaths: outputDetails.outputPaths,
+    stage5ModulesCount: stage5Modules.length,
+    wroteOutputs: outputDetails.wroteOutputs
   };
 }
 

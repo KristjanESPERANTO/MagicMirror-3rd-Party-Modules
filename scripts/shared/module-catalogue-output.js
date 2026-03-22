@@ -1,6 +1,6 @@
+import { access, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { stringifyDeterministic } from "./deterministic-output.js";
-import { writeFile } from "node:fs/promises";
 
 const STAGE5_ALLOWED_KEYS = [
   "name",
@@ -157,6 +157,112 @@ function buildStats(stage5Modules, finalModules, timestamp) {
   };
 }
 
+function normalizeModuleCollection(payload) {
+  if (Array.isArray(payload)) {
+    return payload;
+  }
+
+  if (payload && Array.isArray(payload.modules)) {
+    return payload.modules;
+  }
+
+  return null;
+}
+
+function isValidIsoDateTime(value) {
+  return typeof value === "string" && value.length > 0 && !Number.isNaN(Date.parse(value));
+}
+
+function areModulesEqual(left, right) {
+  return stringifyDeterministic(left, 0) === stringifyDeterministic(right, 0);
+}
+
+function buildModuleDiffSummary(previousModules, nextModules) {
+  if (!Array.isArray(previousModules)) {
+    return {
+      addedCount: nextModules.length,
+      changedCount: 0,
+      hasChanges: nextModules.length > 0,
+      removedCount: 0,
+      unchangedCount: 0
+    };
+  }
+
+  const previousById = new Map();
+  for (const module of previousModules) {
+    if (module && typeof module.id === "string") {
+      previousById.set(module.id, module);
+    }
+  }
+
+  const nextById = new Map();
+  for (const module of nextModules) {
+    if (module && typeof module.id === "string") {
+      nextById.set(module.id, module);
+    }
+  }
+
+  let addedCount = 0;
+  let changedCount = 0;
+  let unchangedCount = 0;
+
+  for (const [moduleId, nextModule] of nextById) {
+    const previousModule = previousById.get(moduleId);
+
+    if (!previousModule) {
+      addedCount += 1;
+    }
+    else if (areModulesEqual(previousModule, nextModule)) {
+      unchangedCount += 1;
+    }
+    else {
+      changedCount += 1;
+    }
+  }
+
+  let removedCount = 0;
+  for (const moduleId of previousById.keys()) {
+    if (!nextById.has(moduleId)) {
+      removedCount += 1;
+    }
+  }
+
+  return {
+    addedCount,
+    changedCount,
+    hasChanges: addedCount > 0 || changedCount > 0 || removedCount > 0,
+    removedCount,
+    unchangedCount
+  };
+}
+
+async function readJsonIfExists(filePath) {
+  try {
+    const content = await readFile(filePath, "utf-8");
+    return JSON.parse(content);
+  }
+  catch (error) {
+    if (error && typeof error === "object" && "code" in error && error.code === "ENOENT") {
+      return null;
+    }
+
+    throw error;
+  }
+}
+
+async function allFilesExist(paths) {
+  for (const path of paths) {
+    try {
+      await access(path);
+    }
+    catch {
+      return false;
+    }
+  }
+
+  return true;
+}
+
 export async function writeStage5Output(stage5Modules, projectRoot) {
   const stage5Path = resolve(projectRoot, "website/data/modules.stage.5.json");
 
@@ -169,8 +275,39 @@ export async function writePublishedCatalogueOutputs(stage5Modules, projectRoot)
   const modulesMinPath = resolve(projectRoot, "website/data/modules.min.json");
   const statsPath = resolve(projectRoot, "website/data/stats.json");
 
-  const lastUpdate = new Date().toISOString();
-  const finalModules = stage5Modules.map(module => toFinalModule(module, lastUpdate));
+  const previousModulesPayload = await readJsonIfExists(modulesJsonPath);
+  const previousModules = normalizeModuleCollection(previousModulesPayload);
+  const previousStats = await readJsonIfExists(statsPath);
+  const previousLastUpdate = isValidIsoDateTime(previousStats?.lastUpdate)
+    ? previousStats.lastUpdate
+    : null;
+  const nowTimestamp = new Date().toISOString();
+  const comparisonTimestamp = previousLastUpdate ?? nowTimestamp;
+  const comparableFinalModules = stage5Modules.map(module => toFinalModule(module, comparisonTimestamp));
+  const changeSummary = buildModuleDiffSummary(previousModules, comparableFinalModules);
+
+  const outputsAlreadyPresent = await allFilesExist([modulesJsonPath, modulesMinPath, statsPath]);
+  const shouldSkipWrites = !changeSummary.hasChanges && outputsAlreadyPresent;
+
+  if (shouldSkipWrites) {
+    return {
+      changeSummary,
+      modulesJsonPath,
+      modulesMinPath,
+      outputPaths: {
+        modulesJsonPath,
+        modulesMinPath,
+        statsPath
+      },
+      statsPath,
+      wroteOutputs: false
+    };
+  }
+
+  const lastUpdate = changeSummary.hasChanges ? nowTimestamp : comparisonTimestamp;
+  const finalModules = changeSummary.hasChanges && lastUpdate !== comparisonTimestamp
+    ? stage5Modules.map(module => toFinalModule(module, lastUpdate))
+    : comparableFinalModules;
   const stats = buildStats(stage5Modules, finalModules, lastUpdate);
 
   await writeFile(modulesJsonPath, stringifyDeterministic({ modules: finalModules }), "utf-8");
@@ -178,9 +315,16 @@ export async function writePublishedCatalogueOutputs(stage5Modules, projectRoot)
   await writeFile(statsPath, stringifyDeterministic(stats), "utf-8");
 
   return {
+    changeSummary,
     modulesJsonPath,
     modulesMinPath,
-    statsPath
+    outputPaths: {
+      modulesJsonPath,
+      modulesMinPath,
+      statsPath
+    },
+    statsPath,
+    wroteOutputs: true
   };
 }
 

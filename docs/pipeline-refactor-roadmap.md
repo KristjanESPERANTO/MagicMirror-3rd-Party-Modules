@@ -103,9 +103,9 @@ The goal of this milestone is to reduce or eliminate the remaining intermediate 
 
 | Task | Status                    |
 | ---- | ------------------------- |
-| P8.1 | Streaming orchestrator    |
-| P8.2 | Aggregation phase         |
-| P8.3 | Diff detection            |
+| P8.1 | ✅ Streaming orchestrator |
+| P8.2 | ✅ Aggregation phase      |
+| P8.3 | In progress               |
 | P8.4 | Memory optimization       |
 | P8.5 | Remove intermediate files |
 
@@ -126,18 +126,17 @@ Measure and visualize pipeline performance.
 
 See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details.
 
-**Current focus: P8.x** — Streaming & Aggregation
+**Current focus: P8.3** — Diff detection
 
-- Define which stage boundaries can move from file handoff to streaming without breaking supported artifact contracts
-- Design the aggregation phase responsibilities for final output assembly and stats generation
 - Identify how diff detection should consume worker results without reintroducing stale intermediate stages
+- Keep no-op publish runs from rewriting unchanged outputs while preserving artifact contracts
 - Validate memory/performance tradeoffs before removing remaining intermediate files
 - Keep release-artifact parity and existing fixture/golden validation intact through the transition
 
-**Next: P8.1** — Streaming orchestrator
+**Next: P8.4** — Memory optimization
 
-- Define the orchestrator-side streaming contract between collection, worker processing, and aggregation
-- Decide which stage artifacts remain persisted as compatibility boundaries during the transition
+- Reduce peak memory in stage handoffs without regressing worker throughput
+- Keep the in-process execution path bounded when running large module sets
 
 ---
 

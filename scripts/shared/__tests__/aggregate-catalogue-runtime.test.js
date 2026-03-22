@@ -45,5 +45,7 @@ test("runAggregateCatalogue consumes in-memory stage-5 modules and delegates pub
   assert.deepStrictEqual(capturedModules, stage5Modules);
   assert.strictEqual(capturedProjectRoot, "/virtual/project");
   assert.deepStrictEqual(result.outputPaths, outputPaths);
+  assert.strictEqual(result.wroteOutputs, true);
+  assert.strictEqual(result.changeSummary, null);
   assert.strictEqual(result.stage5ModulesCount, stage5Modules.length);
 });
