@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { createRateLimiter } from "../rate-limiter.js";
+import { createRateLimiter } from "../rate-limiter.ts";
 
 describe("RateLimiter", () => {
   it("should allow immediate execution when tokens are available", async () => {

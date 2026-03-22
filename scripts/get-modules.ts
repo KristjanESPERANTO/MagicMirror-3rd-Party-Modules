@@ -10,8 +10,7 @@ import { ensureRepository, GitErrorCategory, getCommitDate } from "./shared/git.
 import { createHttpClient } from "./shared/http-client.js";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "./shared/logger.ts";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createRateLimiter } from "./shared/rate-limiter.js";
+import { createRateLimiter } from "./shared/rate-limiter.ts";
 import { ensureDirectory, fileExists, writeJson } from "./shared/fs-utils.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { validateStageFile } from "./lib/schemaValidator.js";
