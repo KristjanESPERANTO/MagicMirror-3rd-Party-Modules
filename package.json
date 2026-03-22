@@ -42,7 +42,7 @@
     "fixtures:generate": "node scripts/fixtures/generateFixturePipeline.js",
     "fixtures:update-baseline-shas": "node scripts/fixtures/updateBaselineShas.js",
     "test:fixtures": "node scripts/fixtures/validateFixtures.ts",
-    "release:validate": "node scripts/validate_release_artifacts.js",
+    "release:validate": "node scripts/validate_release_artifacts.ts",
     "schemas:build": "node pipeline/schemas/build.js",
     "schemas:check": "node pipeline/schemas/build.js --check",
     "lint": "eslint && prettier --check .",

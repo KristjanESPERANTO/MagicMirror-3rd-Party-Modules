@@ -195,7 +195,7 @@ This separation ensures:
 Run validation manually:
 
 ```bash
-node scripts/validate-skipped-modules.js
+node scripts/validate-skipped-modules.ts
 ```
 
 ## Error Messages

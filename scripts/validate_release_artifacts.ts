@@ -7,7 +7,14 @@ import { validateStageFile } from "./lib/schemaValidator.ts";
 
 const PROJECT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-const RELEASE_ARTIFACTS = [
+type ReleaseStageId = "modules.stage.2" | "modules.stage.5" | "modules.final" | "modules.min" | "stats";
+
+interface ReleaseArtifactDefinition {
+  relativePath: string;
+  stageId: ReleaseStageId;
+}
+
+const RELEASE_ARTIFACTS: ReleaseArtifactDefinition[] = [
   // Note: modules.stage.1.json no longer exists - Stage 1+2 were unified into collect-metadata
   { stageId: "modules.stage.2", relativePath: "website/data/modules.stage.2.json" },
   { stageId: "modules.stage.5", relativePath: "website/data/modules.stage.5.json" },
@@ -16,18 +23,18 @@ const RELEASE_ARTIFACTS = [
   { stageId: "stats", relativePath: "website/data/stats.json" }
 ];
 
-function resolvePath(relativePath) {
+function resolvePath(relativePath: string): string {
   return path.join(PROJECT_ROOT, relativePath);
 }
 
-async function validateArtifact({ stageId, relativePath }) {
+async function validateArtifact({ stageId, relativePath }: ReleaseArtifactDefinition): Promise<string> {
   const absolutePath = resolvePath(relativePath);
   await validateStageFile(stageId, absolutePath);
   return absolutePath;
 }
 
 async function main() {
-  const failures = [];
+  const failures: Array<{ artifact: ReleaseArtifactDefinition; error: unknown }> = [];
 
   for (const artifact of RELEASE_ARTIFACTS) {
     try {
@@ -36,7 +43,8 @@ async function main() {
     }
     catch (error) {
       failures.push({ artifact, error });
-      console.error(`✖ ${artifact.stageId} failed: ${error.message}`);
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`✖ ${artifact.stageId} failed: ${message}`);
     }
   }
 

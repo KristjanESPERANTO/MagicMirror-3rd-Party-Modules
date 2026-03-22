@@ -64,7 +64,7 @@ Combines repository cloning, `package.json` enrichment, screenshot extraction, a
 
 Consumes `modules.stage.5.json` and writes the published catalogue outputs (`modules.json`, `modules.min.json`, `stats.json`).
 
-#### `validate_release_artifacts.js`
+#### `validate_release_artifacts.ts`
 
 Validates every stage snapshot and the published catalogue (`modules.json`, `modules.min.json`, `stats.json`) against the JSON Schemas. The command is wired into release packaging and must pass before publishing.
 
@@ -90,7 +90,7 @@ The command checks the supported stage snapshots (`modules.stage.2.json`, `modul
 
 > ℹ️ **CI gate:** The same validation now runs automatically in GitHub Actions (`release-validation.yml`) on every push and pull request targeting `main`. Keep the command in your local workflow to catch schema regressions before CI fails.
 
-### validate_release_artifacts.js
+### validate_release_artifacts.ts
 
 This script powers the validation command above. Keep it in your release checklist—CI will block merges once the GitHub Action lands, and the CLI already fails the automated packaging run if validation breaks.
 

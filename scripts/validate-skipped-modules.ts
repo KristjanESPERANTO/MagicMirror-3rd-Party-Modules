@@ -24,8 +24,29 @@ const SKIPPED_MODULES_PATH = path.join(
   "website/data/skipped_modules.json"
 );
 
+type SkipCategory = "NOT_FOUND" | "AUTHENTICATION" | "NETWORK" | "INFRASTRUCTURE" | "UNKNOWN";
+
+interface SkippedModuleMetadata {
+  category?: SkipCategory;
+  error?: string;
+}
+
+interface SkippedModuleEntry {
+  error?: string;
+  metadata?: SkippedModuleMetadata;
+  name?: string;
+  reason?: string;
+  url?: string;
+}
+
+interface CategoryDescriptor {
+  emoji: string;
+  key: SkipCategory;
+  label: string;
+}
+
 function main() {
-  let skippedModules;
+  let skippedModules: SkippedModuleEntry[];
 
   try {
     const content = readFileSync(SKIPPED_MODULES_PATH, "utf8");
@@ -33,7 +54,8 @@ function main() {
   }
   catch (error) {
     console.error("❌ Failed to read skipped_modules.json");
-    console.error(error.message);
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(message);
     process.exit(2);
   }
 
@@ -48,7 +70,7 @@ function main() {
   }
 
   // Count by category
-  const categoryCount = skippedModules.reduce((acc, mod) => {
+  const categoryCount = skippedModules.reduce<Record<string, number>>((acc, mod) => {
     const category = mod.metadata?.category || "UNKNOWN";
     acc[category] = (acc[category] || 0) + 1;
     return acc;
@@ -63,7 +85,7 @@ function main() {
   console.log("");
 
   // Breakdown by category
-  const categories = [
+  const categories: CategoryDescriptor[] = [
     { key: "NOT_FOUND", label: "Repository not found (deleted/renamed)", emoji: "🔍" },
     { key: "AUTHENTICATION", label: "Access denied (private)", emoji: "🔒" },
     { key: "NETWORK", label: "Network errors", emoji: "🌐" },
@@ -86,7 +108,9 @@ function main() {
   for (const mod of skippedModules) {
     const category = mod.metadata?.category || "UNKNOWN";
     const categoryEmoji = categories.find(cat => cat.key === category)?.emoji || "❓";
-    console.log(`${categoryEmoji} ${mod.name} (${mod.url})`);
+    const name = mod.name ?? "Unknown module";
+    const url = mod.url ?? "Unknown URL";
+    console.log(`${categoryEmoji} ${name} (${url})`);
     // Support both old format (error) and new format (reason)
     const reason = mod.reason || mod.error || "Unknown";
     console.log(`   Reason: ${reason}`);
