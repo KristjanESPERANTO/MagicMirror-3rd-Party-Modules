@@ -46,14 +46,14 @@ Related docs:
   - Kept `collectMetadata` as a canonical stage helper and pointed it at `full-refresh-parallel` in [package.json](../../package.json).
   - Updated comparison harness default command to explicitly use `full-refresh --only=check-modules` so parity runs keep working without depending on canonical default in [scripts/check-modules/compare/index.js](../../scripts/check-modules/compare/index.js).
   - Marked `full-refresh` as legacy compatibility pipeline in [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
-- [ ] C4: Artifact contract cleanup
-  - Confirm expected outputs for parallel path and remove stale assumptions about intermediate stage files.
-  - Validate schema references for the artifacts that remain part of supported flows.
-  - Decision: retire the comparison harness and use canonical fixture/golden validation (`fixtures:generate`, `test:fixtures`, `golden:check`) as the supported regression path.
-  - Remove [scripts/check-modules/compare/index.js](../../scripts/check-modules/compare/index.js), `checkModules:compare` from [package.json](../../package.json), and [.github/workflows/check-modules-compare.yaml](../../.github/workflows/check-modules-compare.yaml).
-  - Remove Stage-4-specific capture/diff assumptions and harness documentation once fixture/golden validation is the only supported regression path.
-  - After the harness is gone, remove the `full-refresh` compatibility pipeline and legacy stages from [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
-  - Delete legacy-only artifact declarations that are no longer produced by supported flows.
+- [x] C4: Artifact contract cleanup
+  - Completed on 2026-03-19.
+  - Decided to retire the comparison harness and use canonical fixture/golden validation (`fixtures:generate`, `test:fixtures`, `golden:check`) as the supported regression path.
+  - Removed `scripts/check-modules/compare/` (harness code), `checkModules:compare` from [package.json](../../package.json), and [.github/workflows/check-modules-compare.yaml](../../.github/workflows/check-modules-compare.yaml).
+  - Removed the `full-refresh` compatibility pipeline and all legacy stage declarations (`get-modules`, `expand-module-list`, `check-modules`) from [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
+  - Removed legacy-only artifact declarations (`modules-stage-3`, `modules-stage-4`, `skipped-modules`, `analysis-report`, `module-result-cache`) from [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
+  - Removed stage 3/4 entries from [scripts/golden-artifacts/index.js](../../scripts/golden-artifacts/index.js) and deleted orphaned golden reference files `fixtures/golden/modules.stage.3.json` and `fixtures/golden/modules.stage.4.json`.
+  - Removed harness section from [docs/pipeline/check-modules-reference.md](check-modules-reference.md) and [docs/CONTRIBUTING.md](../CONTRIBUTING.md).
 - [ ] C5: Docs and command surface cleanup
   - Update README/docs/npm script descriptions to match canonical flow.
   - Ensure contributor instructions do not point to retired stage sequence.

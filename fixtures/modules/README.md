@@ -38,5 +38,4 @@ Each fixture directory contains:
 
 ## Next steps
 
-- Extend the harness CLI (`npm run checkModules:compare`) to produce JSON/Markdown diffs and failure thresholds on top of the captured logs/artifacts.
 - Ensure contributors rerun `node scripts/fixtures/updateBaselineShas.js` whenever we refresh the curated dataset so recorded commits stay accurate.

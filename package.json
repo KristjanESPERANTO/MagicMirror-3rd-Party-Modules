@@ -36,7 +36,6 @@
     "fixtures:generate": "node scripts/fixtures/generateFixturePipeline.js",
     "fixtures:update-baseline-shas": "node scripts/fixtures/updateBaselineShas.js",
     "test:fixtures": "node scripts/fixtures/validateFixtures.js",
-    "checkModules:compare": "node scripts/check-modules/compare/index.js",
     "release:validate": "node scripts/validate_release_artifacts.js",
     "schemas:build": "node pipeline/schemas/build.js",
     "schemas:check": "node pipeline/schemas/build.js --check",

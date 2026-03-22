@@ -3,8 +3,6 @@ import {
   sanitizeFinalModules,
   sanitizeGitHubData,
   sanitizeStage2,
-  sanitizeStage3,
-  sanitizeStage4,
   sanitizeStage5,
   sanitizeStats,
   stableStringify
@@ -41,18 +39,6 @@ const artifacts = [
     source: path.join(repoRoot, "website/data/modules.stage.2.json"),
     target: path.join(repoRoot, "fixtures/golden/modules.stage.2.json"),
     sanitize: sanitizeStage2
-  },
-  {
-    name: "modules.stage.3",
-    source: path.join(repoRoot, "website/data/modules.stage.3.json"),
-    target: path.join(repoRoot, "fixtures/golden/modules.stage.3.json"),
-    sanitize: sanitizeStage3
-  },
-  {
-    name: "modules.stage.4",
-    source: path.join(repoRoot, "website/data/modules.stage.4.json"),
-    target: path.join(repoRoot, "fixtures/golden/modules.stage.4.json"),
-    sanitize: sanitizeStage4
   },
   {
     name: "modules.stage.5",

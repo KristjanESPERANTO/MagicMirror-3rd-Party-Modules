@@ -2,16 +2,14 @@
 
 _Last updated: October 4, 2025_
 
-This page consolidates the material that previously lived in the P2.3 rollout documents. It should stay up to date as we evolve Stage 5 (`scripts/check-modules/index.ts`), the comparison harness, and the curated fixture set.
+This page consolidates the material that previously lived in the P2.3 rollout documents. It should stay up to date as we evolve Stage 5 (`scripts/check-modules/index.ts`) and the curated fixture set.
 
 ## Status snapshot
 
 - ✅ TypeScript implementation is the default Stage 5 runner.
-- ✅ Comparison harness (`npm run checkModules:compare`) can execute multiple commands, capture artifacts, and (when two runs complete) produce diffs for analysis.
 - ✅ CLI progress indicator renders live module throughput and emits a per-run Markdown summary under `.pipeline-runs/check-modules/`.
 - ✅ Stage 5 flags modules that import any non built-in dependency without declaring it in their own `package.json` (Node built-ins and the allowlist `express`, `node_helper`, `logger` are ignored).
 - ✅ README install and update sections now require a copy-pasteable fenced command block so users can run the instructions without manual reformatting.
-- 🔄 Follow-ups tracked here: extend harness diff coverage (README/HTML artifacts) and define warning/failure thresholds ahead of diff gating in CI.
 
 ## Check group configuration
 
@@ -32,7 +30,6 @@ The Stage 5 runner reads `scripts/check-modules/check-groups.config.json` to de
 - When the stage runs interactively (TTY), it now renders a single-line progress gauge on `stderr`. Disable it with `CHECK_MODULES_DISABLE_PROGRESS=1` or `CHECK_MODULES_PROGRESS=off` if you prefer the legacy log spam.
 - Every execution writes a Markdown + JSON summary to `.pipeline-runs/check-modules/<run-id>/`. The Markdown combines toggle state, aggregate stats, and the top modules with issues; the JSON mirrors the key metrics for tooling.
 - Artifact links inside the summary resolve relative to the run directory, making it easy to inspect `website/result.md`, `modules.json`, and `stats.json` produced by the run.
-- The harness (`npm run checkModules:compare`) preserves these summaries as well, so comparison batches keep a human-readable trail.
 
 ## Rule inventory
 

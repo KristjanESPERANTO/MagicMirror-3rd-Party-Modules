@@ -168,16 +168,6 @@ npm run test:unit
 
 These tests verify core functionality like logging, rate limiting, and HTTP client behavior. When adding new utilities or modifying existing ones, update the tests in `scripts/shared/__tests__/`.
 
-### Comparison harness
-
-Run the comparison harness when you need to diff the curated fixtures across two implementations:
-
-```bash
-npm run checkModules:compare
-```
-
-By default the command executes the TypeScript pipeline once; pass `--legacy "<command>"` to compare an alternate runner. The harness captures JSON, Markdown, and HTML artifacts, applies warning thresholds for small stat deltas, and writes the reports to `.pipeline-runs/compare/<run-id>/`.
-
 ### Linting and formatting
 
 The project enforces code quality through ESLint and Prettier:
