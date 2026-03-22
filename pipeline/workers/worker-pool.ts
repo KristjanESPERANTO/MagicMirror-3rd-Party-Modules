@@ -6,14 +6,59 @@
 
 import { dirname, join } from "node:path";
 import { cpus } from "node:os";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../../scripts/shared/logger.js";
 import { fileURLToPath } from "node:url";
 import { fork } from "node:child_process";
+import type { ChildProcess } from "node:child_process";
+
+interface WorkerPoolConfig {
+  batchSize?: number;
+  batchTimeoutMs?: number;
+  moduleTimeoutMs?: number;
+  workerCount?: number;
+}
+
+interface WorkerModule {
+  [key: string]: unknown;
+}
+
+interface WorkerBatch {
+  batchId: number;
+  config?: Record<string, unknown>;
+  modules: WorkerModule[];
+}
+
+interface WorkerMessage {
+  payload?: Record<string, unknown>;
+  type: string;
+}
+
+interface WorkerInfo {
+  currentBatchId: number | null;
+  id: number;
+  lastHeartbeat: Date;
+  modulesProcessed: number;
+  process: ChildProcess;
+  status: "busy" | "crashed" | "idle";
+}
+
+interface BatchResult {
+  batchId: number;
+  durationMs: number;
+  results: WorkerModule[];
+}
+
+interface ProgressEvent {
+  [key: string]: unknown;
+  type: string;
+  workerId?: number;
+}
 
 const logger = createLogger({ name: "orchestrator" });
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFile);
-const WORKER_SCRIPT = join(currentDir, "worker.js");
+const WORKER_SCRIPT = join(currentDir, "worker.ts");
 
 /**
  * @typedef {Object} WorkerPoolConfig
@@ -39,8 +84,8 @@ const WORKER_SCRIPT = join(currentDir, "worker.js");
  * @param {number} batchSize
  * @returns {Array<{batchId: number, modules: Array}>}
  */
-function distributeBatches(modules, batchSize) {
-  const batches = [];
+function distributeBatches(modules: WorkerModule[], batchSize: number): WorkerBatch[] {
+  const batches: WorkerBatch[] = [];
 
   for (let index = 0; index < modules.length; index += batchSize) {
     batches.push({
@@ -56,10 +101,18 @@ function distributeBatches(modules, batchSize) {
  * Worker Pool Manager
  */
 export class WorkerPool {
+  private batchQueue: WorkerBatch[];
+  private completedBatches: number;
+  private config: Required<WorkerPoolConfig>;
+  private progressCallback: ((event: ProgressEvent) => void) | null;
+  private results: BatchResult[];
+  private totalBatches: number;
+  private workers: Map<number, WorkerInfo>;
+
   /**
    * @param {WorkerPoolConfig} config
    */
-  constructor(config = {}) {
+  constructor(config: WorkerPoolConfig = {}) {
     this.config = {
       workerCount: config.workerCount || Math.max(1, cpus().length - 1),
       batchSize: config.batchSize || 50,
@@ -79,7 +132,7 @@ export class WorkerPool {
    * Set progress callback for UI updates
    * @param {Function} callback
    */
-  onProgress(callback) {
+  onProgress(callback: (event: ProgressEvent) => void): void {
     this.progressCallback = callback;
   }
 
@@ -88,13 +141,13 @@ export class WorkerPool {
    * @param {number} workerId
    * @returns {Promise<WorkerInfo>}
    */
-  spawnWorker(workerId) {
+  spawnWorker(workerId: number): Promise<WorkerInfo> {
     return new Promise((resolve, reject) => {
       const workerProcess = fork(WORKER_SCRIPT, [], {
         stdio: ["inherit", "inherit", "inherit", "ipc"]
       });
 
-      const workerInfo = {
+      const workerInfo: WorkerInfo = {
         id: workerId,
         process: workerProcess,
         status: "idle",
@@ -105,7 +158,7 @@ export class WorkerPool {
 
       // Handle worker messages
       workerProcess.on("message", (message) => {
-        this.handleWorkerMessage(workerId, message);
+        this.handleWorkerMessage(workerId, message as WorkerMessage);
       });
 
       // Handle worker errors
@@ -133,11 +186,11 @@ export class WorkerPool {
       });
 
       // Wait for ready signal
-      const readyHandler = (message) => {
+      const readyHandler = (message: WorkerMessage) => {
         if (message.type === "ready") {
           workerProcess.off("message", readyHandler);
           this.workers.set(workerId, workerInfo);
-          logger.info(`Worker ${workerId} ready (PID: ${message.payload.pid})`);
+          logger.info(`Worker ${workerId} ready (PID: ${message.payload?.pid})`);
           resolve(workerInfo);
         }
       };
@@ -157,7 +210,7 @@ export class WorkerPool {
    * @param {number} workerId
    * @param {Object} message
    */
-  handleWorkerMessage(workerId, message) {
+  handleWorkerMessage(workerId: number, message: WorkerMessage): void {
     const worker = this.workers.get(workerId);
     if (!worker) {
       return;
@@ -171,13 +224,13 @@ export class WorkerPool {
           this.progressCallback({
             type: "module",
             workerId,
-            ...message.payload
+            ...(message.payload ?? {})
           });
         }
         break;
 
       case "complete":
-        this.handleBatchComplete(workerId, message.payload);
+        this.handleBatchComplete(workerId, message.payload as unknown as BatchResult);
         break;
 
       case "error":
@@ -191,7 +244,7 @@ export class WorkerPool {
    * @param {number} workerId
    * @param {Object} result
    */
-  handleBatchComplete(workerId, result) {
+  handleBatchComplete(workerId: number, result: BatchResult): void {
     const worker = this.workers.get(workerId);
     if (!worker) {
       return;
@@ -225,12 +278,15 @@ export class WorkerPool {
    * Assign next batch to worker
    * @param {WorkerInfo} worker
    */
-  assignBatch(worker) {
+  assignBatch(worker: WorkerInfo): void {
     if (this.batchQueue.length === 0) {
       return;
     }
 
     const batch = this.batchQueue.shift();
+    if (!batch) {
+      return;
+    }
     worker.status = "busy";
     worker.currentBatchId = batch.batchId;
 
@@ -247,7 +303,7 @@ export class WorkerPool {
    * @param {number} batchId
    * @returns {Object|null}
    */
-  findBatch(batchId) {
+  findBatch(batchId: number): WorkerBatch | null {
     return this.batchQueue.find(b => b.batchId === batchId) || null;
   }
 
@@ -257,7 +313,7 @@ export class WorkerPool {
    * @param {Object} moduleConfig
    * @returns {Promise<Array>}
    */
-  async processModules(modules, moduleConfig) {
+  async processModules(modules: WorkerModule[], moduleConfig: Record<string, unknown>): Promise<WorkerModule[]> {
     // Create batches
     const batches = distributeBatches(modules, this.config.batchSize);
     this.totalBatches = batches.length;
@@ -295,8 +351,8 @@ export class WorkerPool {
    * Wait for all batches to complete
    * @returns {Promise<void>}
    */
-  waitForCompletion() {
-    return new Promise((resolve) => {
+  waitForCompletion(): Promise<void> {
+    return new Promise<void>((resolve) => {
       const checkInterval = setInterval(() => {
         if (this.completedBatches >= this.totalBatches) {
           clearInterval(checkInterval);
@@ -315,7 +371,7 @@ export class WorkerPool {
 
     const shutdownPromises = [];
     for (const worker of this.workers.values()) {
-      const promise = new Promise((resolve) => {
+      const promise = new Promise<void>((resolve) => {
         worker.process.once("exit", resolve);
         worker.process.send({ type: "shutdown" });
 
@@ -336,8 +392,8 @@ export class WorkerPool {
    * Aggregate results from all batches
    * @returns {Array}
    */
-  aggregateResults() {
-    const allResults = [];
+  aggregateResults(): WorkerModule[] {
+    const allResults: WorkerModule[] = [];
 
     for (const batchResult of this.results) {
       allResults.push(...batchResult.results);

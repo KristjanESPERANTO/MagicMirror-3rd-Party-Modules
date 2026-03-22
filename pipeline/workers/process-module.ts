@@ -1,17 +1,138 @@
-// @ts-nocheck
-
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureRepository, getCommitDate } from "../../scripts/shared/git.js";
 import { rename, rm } from "node:fs/promises";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysis-cache.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createDeterministicImageName } from "../../scripts/shared/deterministic-output.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../../scripts/shared/logger.js";
 import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import path from "node:path";
 import sharp from "sharp";
+import type { ModuleLogger } from "./module-logger.ts";
 
 const logger = createLogger({ name: "worker" });
+
+interface ModuleInput {
+  branch?: string;
+  description?: string;
+  hasGithubIssues?: boolean;
+  id: string;
+  isArchived?: boolean;
+  issues?: string[];
+  lastCommit?: string;
+  license?: string;
+  maintainer: string;
+  name: string;
+  stars?: number;
+  url: string;
+  [key: string]: unknown;
+}
+
+interface AnalysisConfig {
+  deep?: boolean;
+  eslint?: boolean;
+  fast?: boolean;
+  ncu?: boolean;
+  [key: string]: unknown;
+}
+
+interface ProcessModuleConfig {
+  analysisConfig?: AnalysisConfig;
+  cacheEnabled: boolean;
+  cachePath?: string;
+  cacheSchemaVersion?: number;
+  catalogueRevision?: string | null;
+  checkGroups?: AnalysisConfig;
+  imagesDir: string;
+  moduleLogger?: ModuleLogger | null;
+  modulesDir: string;
+  modulesTempDir: string;
+  projectRoot: string;
+  timeoutMs?: number;
+}
+
+interface PackageSummary {
+  dependencies?: Record<string, string>;
+  description?: string;
+  devDependencies?: Record<string, string>;
+  engines?: Record<string, string>;
+  keywords?: string[];
+  license?: string;
+  name?: string;
+  optionalDependencies?: Record<string, string>;
+  peerDependencies?: Record<string, string>;
+  scripts?: Record<string, string>;
+  type?: string;
+  version?: string;
+}
+
+interface PackageJsonInfo {
+  error?: string;
+  path: string;
+  status: "error" | "missing" | "parsed";
+  summary?: PackageSummary;
+  warnings?: string[];
+}
+
+interface ModuleResult {
+  branch?: string;
+  cacheKey?: string;
+  cloneDir?: string;
+  cloned: boolean;
+  description?: string;
+  error?: string;
+  failurePhase?: string;
+  fromCache: boolean;
+  hasGithubIssues?: boolean;
+  id: string;
+  image?: string;
+  isArchived?: boolean;
+  issues: string[];
+  lastCommit?: string;
+  license?: string;
+  maintainer: string;
+  name: string;
+  packageJson?: PackageJsonInfo;
+  processingTimeMs: number;
+  recommendations?: string[];
+  skippedReason?: string;
+  stars?: number;
+  status: "failed" | "skipped" | "success";
+  tags?: string[];
+  url: string;
+}
+
+interface CloneResult {
+  error?: string;
+  success: boolean;
+}
+
+interface FindImageResult {
+  issues: string[];
+  targetImageName: string | null;
+}
+
+interface EnrichResult {
+  enrichIssues: string[];
+  image?: string;
+  license?: string;
+  packageJson: PackageJsonInfo;
+  tags?: string[];
+}
+
+interface AnalysisResult {
+  analysisIssues: string[];
+  recommendations: string[];
+}
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
 
 /**
  * @typedef {Object} ModuleInput
@@ -96,7 +217,7 @@ const logger = createLogger({ name: "worker" });
  * @param {ProcessModuleConfig} config
  * @returns {Promise<{success: boolean, error?: string}>}
  */
-async function cloneModule(module, config) {
+async function cloneModule(module: ModuleInput, config: ProcessModuleConfig): Promise<CloneResult> {
   const identifier = `${module.name}-----${module.maintainer}`;
   const tempPath = path.join(config.modulesTempDir, identifier);
   const finalPath = path.join(config.modulesDir, identifier);
@@ -136,10 +257,10 @@ async function cloneModule(module, config) {
         }
       }
       catch (dateError) {
-        logger.debug(`Could not verify local commit date for ${module.name}, proceeding with clone: ${dateError.message || String(dateError)}`);
+        logger.debug(`Could not verify local commit date for ${module.name}, proceeding with clone: ${getErrorMessage(dateError)}`);
         if (config.moduleLogger) {
           await config.moduleLogger.debug("clone", "Could not verify local commit date, proceeding with clone", {
-            error: dateError.message || String(dateError)
+            error: getErrorMessage(dateError)
           });
         }
       }
@@ -196,7 +317,7 @@ async function cloneModule(module, config) {
  * @param {string} filename
  * @returns {boolean}
  */
-function isImageFile(filename) {
+function isImageFile(filename: string): boolean {
   return (/\.(bmp|gif|jpg|jpeg|png|webp)$/iu).test(filename);
 }
 
@@ -206,7 +327,7 @@ function isImageFile(filename) {
  * @param {ProcessModuleConfig} config
  * @returns {Promise<{targetImageName: string | null, issues: string[]}>}
  */
-async function findAndResizeImage(moduleName, moduleMaintainer, config) {
+async function findAndResizeImage(moduleName: string, moduleMaintainer: string, config: ProcessModuleConfig): Promise<FindImageResult> {
   const sourceFolder = path.join(
     config.modulesDir,
     `${moduleName}-----${moduleMaintainer}`
@@ -216,7 +337,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer, config) {
     const files = await fs.promises.readdir(sourceFolder, { recursive: true });
     files.sort();
 
-    const issues = [];
+    const issues: string[] = [];
     let firstScreenshotImage = null;
     let firstImage = null;
 
@@ -284,7 +405,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer, config) {
  * @param {unknown} value
  * @returns {Record<string, string> | null}
  */
-function sanitizeStringRecord(value) {
+function sanitizeStringRecord(value: unknown): Record<string, string> | null {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     return null;
   }
@@ -300,7 +421,7 @@ function sanitizeStringRecord(value) {
  * @param {unknown} value
  * @returns {string[] | null}
  */
-function sanitizeKeywordArray(value) {
+function sanitizeKeywordArray(value: unknown): string[] | null {
   if (!Array.isArray(value)) {
     return null;
   }
@@ -317,8 +438,8 @@ function sanitizeKeywordArray(value) {
   return keywords.length > 0 ? keywords : null;
 }
 
-function buildPackageSummary(packageData) {
-  const summary = {};
+function buildPackageSummary(packageData: Record<string, unknown>): PackageSummary {
+  const summary: PackageSummary = {};
 
   if (typeof packageData.name === "string" && packageData.name.length > 0) {
     summary.name = packageData.name;
@@ -392,7 +513,7 @@ function buildPackageSummary(packageData) {
  * @param {ProcessModuleConfig} config
  * @returns {Promise<PackageJsonInfo>}
  */
-async function loadPackageManifest(module, config) {
+async function loadPackageManifest(module: ModuleInput, config: ProcessModuleConfig): Promise<PackageJsonInfo> {
   const relativePath = path.join(
     config.modulesDir,
     `${module.name}-----${module.maintainer}`,
@@ -404,7 +525,7 @@ async function loadPackageManifest(module, config) {
     raw = await fs.promises.readFile(relativePath, "utf8");
   }
   catch (error) {
-    if (error?.code === "ENOENT") {
+    if (error && typeof error === "object" && "code" in error && error.code === "ENOENT") {
       return {
         path: relativePath,
         status: "missing",
@@ -420,7 +541,7 @@ async function loadPackageManifest(module, config) {
     };
   }
 
-  let parsed;
+  let parsed: Record<string, unknown>;
   try {
     parsed = JSON.parse(raw);
   }
@@ -433,8 +554,8 @@ async function loadPackageManifest(module, config) {
     };
   }
 
-  const warnings = [];
-  const warnFn = (msg) => {
+  const warnings: string[] = [];
+  const warnFn = (msg: string) => {
     if (!msg.includes("No README data")) {
       warnings.push(msg);
     }
@@ -463,7 +584,7 @@ async function loadPackageManifest(module, config) {
  * @param {string[]} issues
  * @returns {string[] | null}
  */
-function deriveTagsFromKeywords(keywords, issues) {
+function deriveTagsFromKeywords(keywords: string[], issues: string[]): string[] | null {
   const tagsToRemove = [
     "2",
     "mm",
@@ -526,8 +647,8 @@ function deriveTagsFromKeywords(keywords, issues) {
  * @param {ProcessModuleConfig} config
  * @returns {Promise<{packageJson: PackageJsonInfo, tags?: string[], image?: string, license?: string, enrichIssues: string[]}>}
  */
-async function enrichModule(module, config) {
-  const enrichIssues = [];
+async function enrichModule(module: ModuleInput, config: ProcessModuleConfig): Promise<EnrichResult> {
+  const enrichIssues: string[] = [];
 
   if (config.moduleLogger) {
     await config.moduleLogger.info("enrich", "Starting enrichment stage");
@@ -539,12 +660,12 @@ async function enrichModule(module, config) {
   if (config.moduleLogger) {
     await config.moduleLogger.info("enrich", "Loaded package.json", {
       status: packageJson.status,
-      hasKeywords: packageJson.summary?.keywords?.length > 0
+      hasKeywords: (packageJson.summary?.keywords?.length ?? 0) > 0
     });
   }
 
-  let tags;
-  let imageName;
+  let tags: string[] | undefined;
+  let imageName: string | undefined;
   let effectiveLicense = module.license;
 
   // Process package.json if parsed successfully
@@ -675,7 +796,7 @@ async function enrichModule(module, config) {
  *
  * @returns {{analysisIssues: string[], recommendations: string[]}}
  */
-function analyzeModule() {
+function analyzeModule(_module?: ModuleInput, _config?: ProcessModuleConfig): AnalysisResult {
   return {
     analysisIssues: [],
     recommendations: []
@@ -692,9 +813,9 @@ function analyzeModule() {
  * @param {ProcessModuleConfig} config
  * @returns {Promise<ModuleResult>}
  */
-export async function processModule(module, config) {
+export async function processModule(module: ModuleInput, config: ProcessModuleConfig): Promise<ModuleResult> {
   const startTime = Date.now();
-  const allIssues = [...module.issues || []];
+  const allIssues = [...(module.issues || [])];
   const cacheKey = config.cacheEnabled
     ? buildModuleAnalysisCacheKey({
       module,

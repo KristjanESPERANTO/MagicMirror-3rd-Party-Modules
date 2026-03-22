@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { runAggregateCatalogue } from "../../aggregate-catalogue.js";
+import { runAggregateCatalogue } from "../../aggregate-catalogue.ts";
 import { test } from "node:test";
 
 function createSilentLogger() {

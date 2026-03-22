@@ -6,7 +6,7 @@
  * Simple test to verify the module logger works correctly.
  */
 
-import { createModuleLogger } from "./module-logger.js";
+import { createModuleLogger } from "./module-logger.ts";
 import { fileURLToPath } from "node:url";
 import fs from "node:fs/promises";
 import path from "node:path";

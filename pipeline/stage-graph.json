@@ -93,7 +93,7 @@
       "description": "Unified stage: Fetch module list from Wiki and enrich with repository metadata.",
       "command": {
         "executable": "node",
-        "args": ["scripts/collect-metadata/index.js"]
+        "args": ["scripts/collect-metadata/index.ts"]
       },
       "dependsOn": [],
       "inputs": [
@@ -140,7 +140,7 @@
       "description": "Clone, enrich, and analyze modules in parallel using worker pool (stages 3+4+5 combined).",
       "command": {
         "executable": "node",
-        "args": ["scripts/parallel-processing.js"]
+        "args": ["scripts/parallel-processing.ts"]
       },
       "dependsOn": ["collect-metadata"],
       "inputs": [
@@ -189,7 +189,7 @@
       "description": "Build final published catalogue outputs from Stage 5 results.",
       "command": {
         "executable": "node",
-        "args": ["scripts/aggregate-catalogue.js"]
+        "args": ["scripts/aggregate-catalogue.ts"]
       },
       "dependsOn": ["parallel-processing"],
       "inputs": [

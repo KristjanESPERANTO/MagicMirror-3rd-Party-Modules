@@ -1,17 +1,131 @@
 /* Unified metadata collector for stage 1+2 */
 
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { fetchRepositoryData, normalizeRepositoryData } from "../updateRepositoryApiData/api.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createHttpClient } from "../shared/http-client.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../shared/logger.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createPersistentCache } from "../shared/persistent-cache.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createRateLimiter } from "../shared/rate-limiter.js";
 import { fileURLToPath } from "node:url";
 import fs from "node:fs";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { loadPreviousModules } from "../shared/module-list.js";
-import { parseModuleList } from "./parser.js";
+import { parseModuleList } from "./parser.ts";
+import type { ParsedModuleEntry } from "./parser.ts";
 import path from "node:path";
 import process from "node:process";
+
+interface EnrichedModule extends ParsedModuleEntry {
+  hasGithubIssues?: boolean | null;
+  isArchived?: boolean | null;
+  lastCommit?: string | null;
+  license?: string | null;
+  stars?: number;
+  [key: string]: unknown;
+}
+
+interface CachedRepositoryValue {
+  error?: string;
+  isFailed?: boolean;
+  [key: string]: unknown;
+}
+
+interface CachedRepositoryEntry {
+  value: CachedRepositoryValue;
+}
+
+interface FetchTextResult {
+  data: string;
+  ok: boolean;
+  status: number;
+  statusText?: string;
+}
+
+interface FetchJsonResult {
+  data: unknown;
+  ok: boolean;
+  status: number;
+}
+
+interface GraphQlRepoData {
+  hasIssuesEnabled?: boolean;
+  isArchived?: boolean;
+  stargazerCount?: number;
+  [key: string]: unknown;
+}
+
+interface GitHubBatchResult {
+  error: string | null;
+  failed: boolean;
+  results: Record<string, GraphQlRepoData>;
+}
+
+interface ModuleStats {
+  errors: number;
+  fallbacks: number;
+  hits: number;
+  misses: number;
+}
+
+interface CircuitBreaker {
+  consecutive403Errors: number;
+  stopFetching: boolean;
+  recordError: (error: Error) => void;
+  recordSuccess: () => void;
+}
+
+interface ProcessModuleContext {
+  circuitBreaker: CircuitBreaker;
+  client: unknown;
+  githubModulesToFetch: EnrichedModule[];
+  previousModulesMap: Map<string, EnrichedModule>;
+  stats: ModuleStats;
+}
+
+interface IndividualFetchSuccess {
+  data: CachedRepositoryValue;
+  success: true;
+}
+
+interface IndividualFetchFailure {
+  error: Error;
+  success: false;
+}
+
+type IndividualFetchResult = IndividualFetchSuccess | IndividualFetchFailure;
+
+interface AppendGitHubBatchResultOptions {
+  batchFailed: boolean;
+  batchResults: Record<string, GraphQlRepoData>;
+  enrichedModules: EnrichedModule[];
+  module: EnrichedModule;
+  previousModulesMap: Map<string, EnrichedModule>;
+  stats: ModuleStats;
+}
+
+type Stage2OutputWriter = (modules: EnrichedModule[], outputPath: string) => string | Promise<string>;
+
+interface RunCollectMetadataOptions {
+  markdown?: string;
+  outputPath?: string;
+  outputWriter?: Stage2OutputWriter | null;
+  previousModulesMap?: Map<string, EnrichedModule>;
+}
+
+interface RunCollectMetadataResult {
+  modules: EnrichedModule[];
+  outputPath: string | null;
+}
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
 
 const logger = createLogger({ name: "collect-metadata" });
 
@@ -38,14 +152,14 @@ const repositoryCache = createPersistentCache({
 /**
  * Fetch the raw Markdown content from the Wiki or a local file.
  */
-async function fetchMarkdown() {
+async function fetchMarkdown(): Promise<string> {
   if (process.env.WIKI_FILE) {
     logger.info(`Reading module list from local file: ${process.env.WIKI_FILE}`);
     return fs.readFileSync(process.env.WIKI_FILE, "utf8");
   }
 
   logger.info(`Fetching module list from Wiki: ${WIKI_URL}`);
-  const result = await httpClient.getText(WIKI_URL);
+  const result = await httpClient.getText(WIKI_URL) as FetchTextResult;
   if (!result.ok) {
     throw new Error(`Failed to fetch Wiki: ${result.status} ${result.statusText}`);
   }
@@ -55,13 +169,13 @@ async function fetchMarkdown() {
 /**
  * Fetch metadata for a batch of GitHub repositories using GraphQL.
  */
-async function fetchGitHubBatch(modules) {
+async function fetchGitHubBatch(modules: EnrichedModule[]): Promise<GitHubBatchResult> {
   if (modules.length === 0) {
     return { results: {}, failed: false, error: null };
   }
 
-  const repoFragments = [];
-  const aliasMap = {};
+  const repoFragments: string[] = [];
+  const aliasMap: Record<string, string> = {};
 
   for (const [index, module] of modules.entries()) {
     const repoId = getRepositoryId(module.url);
@@ -102,7 +216,7 @@ async function fetchGitHubBatch(modules) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({ query })
-    });
+    }) as FetchJsonResult;
 
     if (!response.ok) {
       logger.error(`GitHub GraphQL batch failed: ${response.status}`);
@@ -113,7 +227,7 @@ async function fetchGitHubBatch(modules) {
       };
     }
 
-    const payload = response.data;
+    const payload = response.data as { data?: Record<string, unknown>; errors?: Array<{ message?: string }> } | null;
     if (!payload || typeof payload !== "object") {
       return {
         results: {},
@@ -138,23 +252,23 @@ async function fetchGitHubBatch(modules) {
       };
     }
 
-    const results = {};
+    const results: Record<string, GraphQlRepoData> = {};
 
     for (const [alias, repoData] of Object.entries(data)) {
       if (repoData) {
         const url = aliasMap[alias];
-        results[url] = repoData;
+        results[url] = repoData as GraphQlRepoData;
       }
     }
 
     return { results, failed: false, error: null };
   }
   catch (error) {
-    logger.error("GitHub GraphQL batch error", { error: error.message });
+    logger.error("GitHub GraphQL batch error", { error: getErrorMessage(error) });
     return {
       results: {},
       failed: true,
-      error: error.message
+      error: getErrorMessage(error)
     };
   }
 }
@@ -162,7 +276,7 @@ async function fetchGitHubBatch(modules) {
 /**
  * Helper to apply fallback data from previous run if available.
  */
-function getFallbackOrOriginal(module, previousModulesMap) {
+function getFallbackOrOriginal(module: EnrichedModule, previousModulesMap: Map<string, EnrichedModule>): EnrichedModule {
   const previousModule = previousModulesMap.get(module.url);
   if (previousModule) {
     return {
@@ -184,7 +298,7 @@ function getFallbackOrOriginal(module, previousModulesMap) {
 /**
  * Helper to fetch individual repository data.
  */
-async function fetchIndividualModule(module, repoType, client) {
+async function fetchIndividualModule(module: EnrichedModule, repoType: string, client: unknown): Promise<IndividualFetchResult> {
   try {
     const { response, data, branchData } = await fetchRepositoryData(module, client);
 
@@ -196,11 +310,18 @@ async function fetchIndividualModule(module, repoType, client) {
     return { success: true, data: normalized };
   }
   catch (error) {
-    return { success: false, error };
+    return { success: false, error: error instanceof Error ? error : new Error(String(error)) };
   }
 }
 
-async function appendGitHubBatchResult({ module, batchResults, batchFailed, previousModulesMap, stats, enrichedModules }) {
+async function appendGitHubBatchResult({
+  module,
+  batchResults,
+  batchFailed,
+  previousModulesMap,
+  stats,
+  enrichedModules
+}: AppendGitHubBatchResultOptions): Promise<void> {
   const repoData = batchResults[module.url];
   const repoId = getRepositoryId(module.url);
 
@@ -210,7 +331,7 @@ async function appendGitHubBatchResult({ module, batchResults, batchFailed, prev
       hasIssuesEnabled: repoData.hasIssuesEnabled,
       stargazerCount: repoData.stargazerCount
     });
-    const normalized = normalizeRepositoryData(repoData, null, "github");
+    const normalized = normalizeRepositoryData(repoData, null, "github") as CachedRepositoryValue;
     repositoryCache.set(repoId, normalized);
     enrichedModules.push({ ...module, ...normalized });
     return;
@@ -254,7 +375,7 @@ async function appendGitHubBatchResult({ module, batchResults, batchFailed, prev
  * Process a single module: check cache, queue for batch, or fetch individually.
  * Returns the enriched module or null if queued for batch processing.
  */
-async function processModule(module, context) {
+async function processModule(module: EnrichedModule, context: ProcessModuleContext): Promise<EnrichedModule | null> {
   const {
     previousModulesMap,
     circuitBreaker,
@@ -264,7 +385,7 @@ async function processModule(module, context) {
   } = context;
 
   const repoId = getRepositoryId(module.url);
-  const cachedEntry = repositoryCache.get(repoId);
+  const cachedEntry = repositoryCache.get(repoId) as CachedRepositoryEntry | null;
 
   if (!FORCE_REFRESH && cachedEntry) {
     stats.hits += 1;
@@ -298,19 +419,19 @@ async function processModule(module, context) {
   }
 
   // Fetch individual (non-GitHub or no token)
-  const { success, data, error } = await fetchIndividualModule(module, repoType, client);
+  const recovery = await fetchIndividualModule(module, repoType, client);
 
-  if (success) {
+  if (recovery.success) {
     circuitBreaker.recordSuccess();
-    repositoryCache.set(repoId, data);
+    repositoryCache.set(repoId, recovery.data);
     return {
       ...module,
-      ...data
+      ...recovery.data
     };
   }
 
-  logger.warn(`Failed to fetch metadata for ${module.name}`, { url: module.url, error: error.message });
-  circuitBreaker.recordError(error);
+  logger.warn(`Failed to fetch metadata for ${module.name}`, { url: module.url, error: recovery.error.message });
+  circuitBreaker.recordError(recovery.error);
 
   if (!circuitBreaker.stopFetching) {
     logger.info(`Using fallback data for ${module.name}`);
@@ -322,7 +443,7 @@ async function processModule(module, context) {
   }
 
   // Cache negative result
-  repositoryCache.set(repoId, { isFailed: true, error: error.message }, NEGATIVE_CACHE_TTL_MS);
+  repositoryCache.set(repoId, { isFailed: true, error: recovery.error.message }, NEGATIVE_CACHE_TTL_MS);
   stats.errors += 1;
   return fallback;
 }
@@ -330,17 +451,17 @@ async function processModule(module, context) {
 /**
  * Enrich the module list with repository metadata.
  */
-async function enrichModules(modules, previousModulesMap) {
-  const enrichedModules = [];
-  const githubModulesToFetch = [];
-  const stats = { hits: 0, misses: 0, errors: 0, fallbacks: 0 };
+async function enrichModules(modules: ParsedModuleEntry[], previousModulesMap: Map<string, EnrichedModule>): Promise<EnrichedModule[]> {
+  const enrichedModules: EnrichedModule[] = [];
+  const githubModulesToFetch: EnrichedModule[] = [];
+  const stats: ModuleStats = { hits: 0, misses: 0, errors: 0, fallbacks: 0 };
   let processedCount = 0;
   const totalModules = modules.length;
 
   const circuitBreaker = {
     consecutive403Errors: 0,
     stopFetching: false,
-    recordError(error) {
+    recordError(error: Error) {
       if (error.message.includes("403")) {
         this.consecutive403Errors += 1;
         if (this.consecutive403Errors >= 5) {
@@ -357,7 +478,7 @@ async function enrichModules(modules, previousModulesMap) {
     }
   };
 
-  const context = {
+  const context: ProcessModuleContext = {
     previousModulesMap,
     circuitBreaker,
     stats,
@@ -371,7 +492,7 @@ async function enrichModules(modules, previousModulesMap) {
       logger.info(`Processed ${processedCount}/${totalModules} modules (Cache/Pre-sort)...`);
     }
 
-    const result = await processModule(module, context);
+    const result = await processModule({ ...module }, context);
     if (result) {
       enrichedModules.push(result);
     }
@@ -408,17 +529,17 @@ async function enrichModules(modules, previousModulesMap) {
   return enrichedModules;
 }
 
-async function main() {
+async function main(): Promise<void> {
   try {
     await runCollectMetadata();
   }
   catch (error) {
-    logger.error("Metadata collection failed", { error: error.message });
+    logger.error("Metadata collection failed", { error: getErrorMessage(error) });
     process.exit(1);
   }
 }
 
-function writeStage2Output(modules, outputPath) {
+function writeStage2Output(modules: EnrichedModule[], outputPath: string): string {
   fs.writeFileSync(outputPath, JSON.stringify(modules, null, 2));
   return outputPath;
 }
@@ -428,7 +549,7 @@ export async function runCollectMetadata({
   outputPath = path.join("website", "data", "modules.stage.2.json"),
   outputWriter = writeStage2Output,
   previousModulesMap = loadPreviousModules()
-} = {}) {
+}: RunCollectMetadataOptions = {}): Promise<RunCollectMetadataResult> {
   logger.info("Starting unified metadata collection...");
 
   if (!process.env.GITHUB_TOKEN) {

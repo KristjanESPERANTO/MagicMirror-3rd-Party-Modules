@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { parseModuleList } from "../parser.js";
+import { parseModuleList } from "../parser.ts";
 
 describe("collect-metadata/parser", () => {
   it("should parse a valid wiki markdown table", () => {

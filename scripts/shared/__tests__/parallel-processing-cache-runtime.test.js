@@ -9,7 +9,7 @@ import {
   pruneStaleCacheEntries,
   runParallelProcessing,
   writeSuccessfulResultsToCache
-} from "../../parallel-processing.js";
+} from "../../parallel-processing.ts";
 import { join } from "node:path";
 import { mkdtemp } from "node:fs/promises";
 import { test } from "node:test";

@@ -5,9 +5,35 @@
  * Logs are written to files organized by run timestamp and module ID.
  */
 
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureDirectory } from "../../scripts/shared/fs-utils.js";
 import fs from "node:fs/promises";
 import path from "node:path";
+
+interface ModuleLoggerOptions {
+  moduleId: string;
+  projectRoot: string;
+  runId: string;
+  workerId?: number;
+}
+
+interface LogEntry {
+  data?: Record<string, unknown>;
+  level: string;
+  message: string;
+  phase: string;
+  timestamp: string;
+}
+
+export interface ModuleLogger {
+  close: () => Promise<void>;
+  debug: (phase: string, message: string, data?: Record<string, unknown>) => Promise<void>;
+  error: (phase: string, message: string, data?: Record<string, unknown>) => Promise<void>;
+  flush: () => Promise<void>;
+  getLogFilePath: () => string;
+  info: (phase: string, message: string, data?: Record<string, unknown>) => Promise<void>;
+  warn: (phase: string, message: string, data?: Record<string, unknown>) => Promise<void>;
+}
 
 /**
  * @typedef {Object} ModuleLoggerOptions
@@ -32,7 +58,7 @@ import path from "node:path";
  * @param {ModuleLoggerOptions} options
  * @returns {Promise<ModuleLogger>}
  */
-export async function createModuleLogger(options) {
+export async function createModuleLogger(options: ModuleLoggerOptions): Promise<ModuleLogger> {
   const { projectRoot, runId, moduleId, workerId } = options;
 
   // Create logs directory structure: logs/{runId}/modules/
@@ -48,13 +74,13 @@ export async function createModuleLogger(options) {
   const logFilePath = path.join(logsDir, logFileName);
 
   // Log buffer (written periodically and on close)
-  const logBuffer = [];
+  const logBuffer: string[] = [];
   let closed = false;
 
   /**
    * Write buffered logs to file
    */
-  async function flush() {
+  async function flush(): Promise<void> {
     if (logBuffer.length === 0 || closed) {
       return;
     }
@@ -69,7 +95,7 @@ export async function createModuleLogger(options) {
    * @param {LogEntry} entry
    * @returns {string}
    */
-  function formatLogEntry(entry) {
+  function formatLogEntry(entry: LogEntry): string {
     const { timestamp, level, phase, message, data } = entry;
     const parts = [`[${timestamp}]`, `[${level.toUpperCase()}]`, `[${phase}]`, message];
 
@@ -87,7 +113,7 @@ export async function createModuleLogger(options) {
    * @param {string} message
    * @param {Object} [data]
    */
-  async function log(level, phase, message, data) {
+  async function log(level: string, phase: string, message: string, data?: Record<string, unknown>): Promise<void> {
     if (closed) {
       return;
     }
@@ -111,7 +137,7 @@ export async function createModuleLogger(options) {
   /**
    * Close logger and flush remaining logs
    */
-  async function close() {
+  async function close(): Promise<void> {
     if (closed) {
       return;
     }
@@ -169,14 +195,3 @@ export async function createModuleLogger(options) {
     getLogFilePath: () => logFilePath
   };
 }
-
-/**
- * @typedef {Object} ModuleLogger
- * @property {(phase: string, message: string, data?: Object) => Promise<void>} info
- * @property {(phase: string, message: string, data?: Object) => Promise<void>} warn
- * @property {(phase: string, message: string, data?: Object) => Promise<void>} error
- * @property {(phase: string, message: string, data?: Object) => Promise<void>} debug
- * @property {() => Promise<void>} flush
- * @property {() => Promise<void>} close
- * @property {() => string} getLogFilePath
- */

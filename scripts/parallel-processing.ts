@@ -6,22 +6,111 @@
  * CLI wrapper reads modules.stage.2.json and writes modules.stage.5.json.
  */
 
-import {
-  MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,
-  buildModuleAnalysisCacheKey,
-  createModuleAnalysisCache,
-  getProjectRevision,
-  normalizeModuleAnalysisCheckGroups,
-  resolveModuleAnalysisCachePath
-} from "../scripts/shared/module-analysis-cache.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
+import { MODULE_ANALYSIS_CACHE_SCHEMA_VERSION, buildModuleAnalysisCacheKey, createModuleAnalysisCache, getProjectRevision, normalizeModuleAnalysisCheckGroups, resolveModuleAnalysisCachePath } from "../scripts/shared/module-analysis-cache.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { toStage5Module, writePipelineOutputs, writeStage5Output } from "../scripts/shared/module-catalogue-output.js";
-import { WorkerPool } from "../pipeline/workers/worker-pool.js";
+import { WorkerPool } from "../pipeline/workers/worker-pool.ts";
 import { cpus } from "node:os";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../scripts/shared/logger.js";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
+
+interface AnalysisConfig {
+  deep?: boolean;
+  eslint?: boolean;
+  fast?: boolean;
+  ncu?: boolean;
+  [key: string]: unknown;
+}
+
+interface Stage2Module {
+  id: string;
+  issues: string[];
+  lastCommit?: string;
+  maintainer: string;
+  name: string;
+  url: string;
+  [key: string]: unknown;
+}
+
+interface ModuleResult extends Stage2Module {
+  cacheKey?: string | null;
+  cloneDir?: string;
+  error?: string;
+  failurePhase?: string;
+  fromCache?: boolean;
+  moduleLogger?: unknown;
+  processingTimeMs?: number;
+  skippedReason?: string;
+  status: "failed" | "skipped" | "success";
+}
+
+interface CacheEntry {
+  value: Record<string, unknown>;
+}
+
+interface ModuleAnalysisCache {
+  delete: (key: string) => void;
+  flush: () => Promise<void>;
+  get: (key: string) => CacheEntry | null;
+  getAllKeys: () => string[];
+  load: () => Promise<void>;
+  set: (key: string, value: Record<string, unknown>) => void;
+}
+
+interface ParallelLogger {
+  error: (message: string, data?: unknown) => void;
+  info: (message: string, data?: unknown) => void;
+  warn: (message: string, data?: unknown) => void;
+}
+
+interface ProgressEvent {
+  fromCache?: boolean;
+  moduleId?: string;
+  status?: string;
+  type: string;
+}
+
+interface WorkerPoolLike {
+  onProgress?: (handler: (event: ProgressEvent) => void) => void;
+  processModules: (modules: Stage2Module[], moduleConfig: Record<string, unknown>) => Promise<ModuleResult[]> | ModuleResult[];
+}
+
+type Stage5OutputWriter = (stage5Modules: unknown[], projectRoot: string) => Promise<string | null> | string | null;
+
+interface RunParallelProcessingOptions {
+  analysisConfig?: AnalysisConfig;
+  batchSize?: number;
+  cacheDisabled?: boolean;
+  catalogueRevision?: string | null;
+  modules: Stage2Module[];
+  outputWriter?: Stage5OutputWriter | null;
+  projectRoot?: string;
+  runLogger?: ParallelLogger;
+  workerCount?: number;
+  workerPool?: WorkerPoolLike | null;
+}
+
+export interface ParallelProcessingResult {
+  averageProcessingTimeMs: number;
+  cachedCount: number;
+  cachedPercentage: number;
+  durationMs: number;
+  failedCount: number;
+  results: ModuleResult[];
+  skippedCount: number;
+  stage5Modules: unknown[];
+  stage5Path: string | null;
+  successCount: number;
+}
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
 
 const logger = createLogger({ name: "parallel-processing" });
 const PROJECT_ROOT = resolve(process.cwd());
@@ -35,7 +124,7 @@ const DEFAULT_ANALYSIS_CONFIG = normalizeModuleAnalysisCheckGroups({
 /**
  * Get worker count from environment or CLI
  */
-function getWorkerCount() {
+function getWorkerCount(): number {
   const envWorkers = process.env.PIPELINE_WORKER_COUNT;
   if (envWorkers) {
     return parseInt(envWorkers, 10);
@@ -54,7 +143,7 @@ function getWorkerCount() {
 /**
  * Get batch size from CLI
  */
-function getBatchSize() {
+function getBatchSize(): number {
   const batchArg = process.argv.find(arg => arg.startsWith("--batch-size="));
   if (batchArg) {
     return parseInt(batchArg.split("=")[1], 10);
@@ -66,7 +155,7 @@ function getBatchSize() {
  * Check whether the module analysis cache is disabled for this run.
  * Disable via --no-cache CLI flag or PIPELINE_CACHE_DISABLED=1 env var.
  */
-function isCacheDisabled() {
+function isCacheDisabled(): boolean {
   if (process.env.PIPELINE_CACHE_DISABLED === "1") {
     return true;
   }
@@ -83,7 +172,11 @@ function isCacheDisabled() {
  * @param {{ catalogueRevision: string|null, analysisConfig: object }} options
  * @returns {number} Number of entries pruned
  */
-export function pruneStaleCacheEntries(cache, modules, { catalogueRevision, analysisConfig }) {
+export function pruneStaleCacheEntries(
+  cache: ModuleAnalysisCache,
+  modules: Stage2Module[],
+  { catalogueRevision, analysisConfig }: { analysisConfig: AnalysisConfig; catalogueRevision: string | null }
+): number {
   if (!catalogueRevision) {
     return 0;
   }
@@ -121,9 +214,12 @@ export function pruneStaleCacheEntries(cache, modules, { catalogueRevision, anal
  * @param {{ cache: object, catalogueRevision: string|null, analysisConfig: object }} options
  * @returns {{ cachedResults: Array, uncachedModules: Array }}
  */
-export function partitionModulesByCache(modules, { cache, catalogueRevision, analysisConfig }) {
-  const cachedResults = [];
-  const uncachedModules = [];
+export function partitionModulesByCache(
+  modules: Stage2Module[],
+  { cache, catalogueRevision, analysisConfig }: { analysisConfig: AnalysisConfig; cache: ModuleAnalysisCache; catalogueRevision: string | null }
+): { cachedResults: ModuleResult[]; uncachedModules: Stage2Module[] } {
+  const cachedResults: ModuleResult[] = [];
+  const uncachedModules: Stage2Module[] = [];
 
   for (const module of modules) {
     const cacheKey = catalogueRevision
@@ -143,7 +239,7 @@ export function partitionModulesByCache(modules, { cache, catalogueRevision, ana
         fromCache: true,
         status: "skipped",
         skippedReason: "cached"
-      });
+      } as ModuleResult);
     }
     else {
       uncachedModules.push(module);
@@ -161,7 +257,11 @@ export function partitionModulesByCache(modules, { cache, catalogueRevision, ana
  * @param {string|null} catalogueRevision Current catalogue revision
  * @returns {number} Number of cache entries written
  */
-export function writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision) {
+export function writeSuccessfulResultsToCache(
+  workerResults: ModuleResult[],
+  cache: ModuleAnalysisCache,
+  catalogueRevision: string | null
+): number {
   if (!catalogueRevision || workerResults.length === 0) {
     return 0;
   }
@@ -171,7 +271,7 @@ export function writeSuccessfulResultsToCache(workerResults, cache, catalogueRev
 
   for (const result of workerResults) {
     if (result.status === "success" && result.cacheKey) {
-      const cachedData = {};
+      const cachedData: Record<string, unknown> = {};
       for (const [key, value] of Object.entries(result)) {
         if (!metaKeys.has(key)) {
           cachedData[key] = value;
@@ -186,16 +286,16 @@ export function writeSuccessfulResultsToCache(workerResults, cache, catalogueRev
   return writtenCount;
 }
 
-function createWorkerPool(workerCount, batchSize) {
+function createWorkerPool(workerCount: number, batchSize: number): WorkerPoolLike {
   return new WorkerPool({
     workerCount,
     batchSize,
     moduleTimeoutMs: 60000,
     batchTimeoutMs: 1800000
-  });
+  }) as unknown as WorkerPoolLike;
 }
 
-function buildMergedModules(modules, results) {
+function buildMergedModules(modules: Stage2Module[], results: ModuleResult[]): ModuleResult[] {
   const resultsById = new Map(results.map(result => [result.id, result]));
 
   return modules.map((module) => {
@@ -218,7 +318,7 @@ function buildMergedModules(modules, results) {
   });
 }
 
-function summarizeResults(results, durationMs) {
+function summarizeResults(results: ModuleResult[], durationMs: number): Omit<ParallelProcessingResult, "durationMs" | "results" | "stage5Modules" | "stage5Path"> {
   const successCount = results.filter(result => result.status === "success").length;
   const failedCount = results.filter(result => result.status === "failed").length;
   const skippedCount = results.filter(result => result.status === "skipped").length;
@@ -234,7 +334,7 @@ function summarizeResults(results, durationMs) {
   };
 }
 
-function logProcessingSummary(results, durationMs, stage5Path, runLogger) {
+function logProcessingSummary(results: ModuleResult[], durationMs: number, stage5Path: string | null, runLogger: ParallelLogger): Omit<ParallelProcessingResult, "durationMs" | "results" | "stage5Modules" | "stage5Path"> {
   const summary = summarizeResults(results, durationMs);
 
   runLogger.info("\n========== Processing Complete ==========");
@@ -282,14 +382,14 @@ export async function runParallelProcessing({
   workerPool = null,
   outputWriter = writeStage5Output,
   runLogger = logger
-} = {}) {
+}: RunParallelProcessingOptions): Promise<ParallelProcessingResult> {
   if (!Array.isArray(modules)) {
     throw new TypeError("runParallelProcessing requires a modules array");
   }
 
   const startTime = Date.now();
   const pool = workerPool ?? createWorkerPool(workerCount, batchSize);
-  const normalizedAnalysisConfig = normalizeModuleAnalysisCheckGroups(analysisConfig);
+  const normalizedAnalysisConfig = normalizeModuleAnalysisCheckGroups(analysisConfig) as AnalysisConfig;
 
   runLogger.info(`Loaded ${modules.length} modules`);
   runLogger.info(`Starting parallel processing with ${workerCount} workers, batch size ${batchSize}`);
@@ -325,13 +425,13 @@ export async function runParallelProcessing({
   }
 
   const cachePath = resolveModuleAnalysisCachePath(projectRoot);
-  let cache = null;
+  let cache: ModuleAnalysisCache | null = null;
   let prunedCount = 0;
-  let cachedResults = [];
+  let cachedResults: ModuleResult[] = [];
   let uncachedModules = modules;
 
   if (!cacheDisabled) {
-    cache = createModuleAnalysisCache({ filePath: cachePath });
+    cache = createModuleAnalysisCache({ filePath: cachePath }) as ModuleAnalysisCache;
     await cache.load();
     prunedCount = pruneStaleCacheEntries(cache, modules, {
       catalogueRevision: resolvedCatalogueRevision,
@@ -373,13 +473,13 @@ export async function runParallelProcessing({
     ? writeSuccessfulResultsToCache(workerResults, cache, resolvedCatalogueRevision)
     : 0;
 
-  if (prunedCount > 0 || writtenCount > 0) {
+  if (cache && (prunedCount > 0 || writtenCount > 0)) {
     await cache.flush();
     runLogger.info(`Cache: ${prunedCount} pruned, ${writtenCount} written`);
   }
 
   const mergedModules = buildMergedModules(modules, results);
-  const stage5Modules = mergedModules.map(toStage5Module);
+  const stage5Modules = mergedModules.map(module => toStage5Module(module));
   const stage5Path = outputWriter ? await outputWriter(stage5Modules, projectRoot) : null;
   const durationMs = Date.now() - startTime;
   const summary = logProcessingSummary(results, durationMs, stage5Path, runLogger);
@@ -393,7 +493,7 @@ export async function runParallelProcessing({
   };
 }
 
-async function main() {
+async function main(): Promise<void> {
   const stage2Path = resolve(PROJECT_ROOT, "website/data/modules.stage.2.json");
 
   try {
@@ -402,7 +502,7 @@ async function main() {
     await runParallelProcessing({ modules, outputWriter: writePipelineOutputs, projectRoot: PROJECT_ROOT });
   }
   catch (error) {
-    logger.error("Fatal error:", error);
+    logger.error("Fatal error:", getErrorMessage(error));
     process.exit(1);
   }
 }

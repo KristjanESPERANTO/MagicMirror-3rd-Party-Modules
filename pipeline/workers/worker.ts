@@ -6,10 +6,74 @@
  * Communicates with parent orchestrator via IPC messages.
  */
 
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../../scripts/shared/logger.js";
-import { createModuleLogger } from "./module-logger.js";
+import { createModuleLogger } from "./module-logger.ts";
 import process from "node:process";
-import { processModule } from "./process-module.js";
+import { processModule } from "./process-module.ts";
+
+interface WorkerModule {
+  id: string;
+  maintainer: string;
+  name: string;
+  url: string;
+  [key: string]: unknown;
+}
+
+interface WorkerConfig {
+  projectRoot: string;
+  runId?: string;
+  [key: string]: unknown;
+}
+
+interface ModuleBatch {
+  batchId: number;
+  config: WorkerConfig;
+  modules: WorkerModule[];
+}
+
+interface WorkerProgressPayload {
+  batchId: number;
+  fromCache?: boolean;
+  moduleId: string;
+  status: string;
+}
+
+interface BatchResultItem extends WorkerModule {
+  cloned: boolean;
+  error?: string;
+  fromCache: boolean;
+  issues: string[];
+  processingTimeMs: number;
+  status: string;
+}
+
+interface BatchErrorInfo {
+  error: string;
+  moduleId: string;
+  phase: string;
+  stack?: string;
+}
+
+interface BatchCompletePayload {
+  batchId: number;
+  durationMs: number;
+  errors: BatchErrorInfo[];
+  processedAt: string;
+  results: BatchResultItem[];
+}
+
+type WorkerMessage =
+  | { payload: ModuleBatch; type: "batch" }
+  | { payload: { pid: number }; type: "ready" }
+  | { payload: WorkerProgressPayload; type: "progress" }
+  | { payload: BatchCompletePayload; type: "complete" }
+  | { payload: { error: string; stack?: string }; type: "error" }
+  | { payload?: undefined; type: "shutdown" };
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
 
 const logger = createLogger({ name: "worker" });
 
@@ -30,7 +94,7 @@ const logger = createLogger({ name: "worker" });
  * Send message to parent process
  * @param {Object} message
  */
-function sendMessage(message) {
+function sendMessage(message: WorkerMessage): void {
   if (process.send) {
     process.send(message);
   }
@@ -44,11 +108,11 @@ function sendMessage(message) {
  * @param {ModuleBatch} batch
  * @returns {Promise<Object>}
  */
-async function processBatch(batch) {
+async function processBatch(batch: ModuleBatch): Promise<BatchCompletePayload> {
   const { batchId, modules, config } = batch;
   const startTime = Date.now();
-  const results = [];
-  const errors = [];
+  const results: BatchResultItem[] = [];
+  const errors: BatchErrorInfo[] = [];
 
   logger.info(`Worker processing batch ${batchId} with ${modules.length} modules`);
 
@@ -56,7 +120,7 @@ async function processBatch(batch) {
   const runId = config.runId || new Date().toISOString().replace(/:/gu, "-").replace(/\..+/u, "");
 
   for (const module of modules) {
-    let moduleLogger = null;
+    let moduleLogger: Awaited<ReturnType<typeof createModuleLogger>> | null = null;
 
     try {
       // Create per-module logger
@@ -85,21 +149,21 @@ async function processBatch(batch) {
       });
 
       // Process the module with logger
-      let result;
+      let result: BatchResultItem;
       try {
         result = await processModule(module, {
           ...config,
           moduleLogger
-        });
+        } as Parameters<typeof processModule>[1]) as BatchResultItem;
       }
       catch (processError) {
         logger.error(`processModule failed for ${module.name}:`, processError);
 
         // Log error if logger is available
         if (moduleLogger) {
-          await moduleLogger.error("process", `Processing failed: ${processError.message}`, {
-            error: processError.message,
-            stack: processError.stack
+          await moduleLogger.error("process", `Processing failed: ${getErrorMessage(processError)}`, {
+            error: getErrorMessage(processError),
+            stack: processError instanceof Error ? processError.stack : undefined
           });
           await moduleLogger.close();
         }
@@ -111,7 +175,7 @@ async function processBatch(batch) {
           id: module.id || moduleId,
           url: module.url,
           status: "failed",
-          error: processError.message,
+          error: getErrorMessage(processError),
           cloned: false,
           issues: [],
           processingTimeMs: 0,
@@ -133,11 +197,11 @@ async function processBatch(batch) {
     }
     catch (error) {
       const moduleId = `${module.name}-----${module.maintainer}`;
-      const errorInfo = {
+      const errorInfo: BatchErrorInfo = {
         moduleId,
         phase: "unknown",
-        error: error.message,
-        stack: error.stack
+        error: getErrorMessage(error),
+        stack: error instanceof Error ? error.stack : undefined
       };
       errors.push(errorInfo);
       logger.error(`Failed to process ${module.name}:`, error);
@@ -145,9 +209,9 @@ async function processBatch(batch) {
       // Log to module logger if available
       if (moduleLogger) {
         try {
-          await moduleLogger.error("error", `Unexpected error: ${error.message}`, {
-            error: error.message,
-            stack: error.stack
+          await moduleLogger.error("error", `Unexpected error: ${getErrorMessage(error)}`, {
+            error: getErrorMessage(error),
+            stack: error instanceof Error ? error.stack : undefined
           });
           await moduleLogger.close();
         }
@@ -163,7 +227,7 @@ async function processBatch(batch) {
         id: module.id,
         url: module.url,
         status: "failed",
-        error: error.message,
+        error: getErrorMessage(error),
         cloned: false,
         issues: [],
         processingTimeMs: 0,
@@ -186,11 +250,11 @@ async function processBatch(batch) {
 /**
  * Main worker loop
  */
-function workerMain() {
+function workerMain(): Promise<void> {
   logger.info(`Worker started (PID: ${process.pid})`);
 
   // Listen for messages from parent
-  process.on("message", async (message) => {
+  process.on("message", async (message: WorkerMessage) => {
     const { type, payload } = message;
 
     try {
@@ -218,8 +282,8 @@ function workerMain() {
       sendMessage({
         type: "error",
         payload: {
-          error: error.message,
-          stack: error.stack
+          error: getErrorMessage(error),
+          stack: error instanceof Error ? error.stack : undefined
         }
       });
     }

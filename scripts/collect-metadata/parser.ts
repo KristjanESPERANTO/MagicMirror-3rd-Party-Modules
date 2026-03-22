@@ -1,4 +1,22 @@
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.js";
+
+export interface ParsedModuleEntry {
+  category: string;
+  description: string;
+  id: string;
+  issues: string[];
+  maintainer: string;
+  maintainerURL: string;
+  name: string;
+  outdated?: string;
+  url: string;
+}
+
+export interface ParseModuleListResult {
+  issues: string[];
+  modules: ParsedModuleEntry[];
+}
 
 /**
  * Extract the maintainer URL from a repository URL.
@@ -6,7 +24,7 @@ import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/h
  * @param {string} url - The repository URL.
  * @returns {string} The maintainer URL or empty string if invalid.
  */
-function getMaintainerURL(url) {
+function getMaintainerURL(url: string): string {
   try {
     const urlObj = new URL(url);
     const pathParts = urlObj.pathname.split("/").filter(Boolean);
@@ -21,7 +39,7 @@ function getMaintainerURL(url) {
   return "";
 }
 
-function isRepositoryRow(line) {
+function isRepositoryRow(line: string): boolean {
   return (
     line.includes("](https://github.com/")
     || line.includes("](https://gitlab.com/")
@@ -29,7 +47,7 @@ function isRepositoryRow(line) {
   );
 }
 
-function stripUrlTitle(url) {
+function stripUrlTitle(url: string): string {
   const urlTitleStart = url.indexOf(" ");
   if (urlTitleStart === -1) {
     return url;
@@ -38,7 +56,7 @@ function stripUrlTitle(url) {
   return url.substring(0, urlTitleStart);
 }
 
-function parseModuleRow(line, category, issues) {
+function parseModuleRow(line: string, category: string, issues: string[]): ParsedModuleEntry | null {
   if (!isRepositoryRow(line)) {
     return null;
   }
@@ -74,7 +92,7 @@ function parseModuleRow(line, category, issues) {
 
   const id = getRepositoryId(url) || name.replace(/\s+/gu, "-");
   const maintainerURL = getMaintainerURL(url);
-  const moduleEntry = {
+  const moduleEntry: ParsedModuleEntry = {
     name,
     url,
     id,
@@ -98,9 +116,9 @@ function parseModuleRow(line, category, issues) {
  * @param {string} markdown - The raw Markdown content from the Wiki.
  * @returns {{modules: Array<object>, issues: Array<string>}} The parsed modules and any issues encountered.
  */
-export function parseModuleList(markdown) {
-  const modules = [];
-  const issues = [];
+export function parseModuleList(markdown: string): ParseModuleListResult {
+  const modules: ParsedModuleEntry[] = [];
+  const issues: string[] = [];
   let category = "Unknown";
 
   const lines = markdown.split("\n");

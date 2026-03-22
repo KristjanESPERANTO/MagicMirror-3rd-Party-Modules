@@ -65,17 +65,17 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
 
   const stages = [
     {
-      command: { args: ["scripts/collect-metadata/index.js"], executable: "node" },
+      command: { args: ["scripts/collect-metadata/index.ts"], executable: "node" },
       id: "collect-metadata",
       name: "Collect Metadata"
     },
     {
-      command: { args: ["scripts/parallel-processing.js"], executable: "node" },
+      command: { args: ["scripts/parallel-processing.ts"], executable: "node" },
       id: "parallel-processing",
       name: "Parallel module processing"
     },
     {
-      command: { args: ["scripts/aggregate-catalogue.js"], executable: "node" },
+      command: { args: ["scripts/aggregate-catalogue.ts"], executable: "node" },
       id: "aggregate-catalogue",
       name: "Aggregate catalogue outputs"
     }
@@ -138,12 +138,12 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
 
   const stages = [
     {
-      command: { args: ["scripts/collect-metadata/index.js"], executable: "node" },
+      command: { args: ["scripts/collect-metadata/index.ts"], executable: "node" },
       id: "collect-metadata",
       name: "Collect Metadata"
     },
     {
-      command: { args: ["scripts/parallel-processing.js"], executable: "node" },
+      command: { args: ["scripts/parallel-processing.ts"], executable: "node" },
       id: "parallel-processing",
       name: "Parallel module processing"
     }

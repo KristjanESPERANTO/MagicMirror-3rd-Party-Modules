@@ -2,12 +2,9 @@
 import { createLogger } from "../shared/logger.js";
 import process from "node:process";
 import { resolve } from "node:path";
-// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
-import { runAggregateCatalogue } from "../aggregate-catalogue.js";
-// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
-import { runCollectMetadata } from "../collect-metadata/index.js";
-// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
-import { runParallelProcessing } from "../parallel-processing.js";
+import { runAggregateCatalogue } from "../aggregate-catalogue.ts";
+import { runCollectMetadata } from "../collect-metadata/index.ts";
+import { runParallelProcessing } from "../parallel-processing.ts";
 import type { ResolvedStageDefinition } from "./stage-graph.ts";
 import type { StageExecutionContext } from "./stage-executor.ts";
 
@@ -40,7 +37,7 @@ export function createInProcessStageRunner({
     if (stage.id === "collect-metadata") {
       const result = await collectMetadata({
         outputPath: resolve(runRoot, "website/data/modules.stage.2.json"),
-        outputWriter: null
+        outputWriter: null as never
       });
       artifactStore.set("modules-stage-2", result.modules);
       return true;
@@ -58,8 +55,8 @@ export function createInProcessStageRunner({
 
       try {
         result = await parallelProcessing({
-          modules: stage2Modules,
-          outputWriter: null,
+          modules: stage2Modules as never,
+          outputWriter: null as never,
           projectRoot: runRoot,
           runLogger
         });
@@ -79,7 +76,7 @@ export function createInProcessStageRunner({
       try {
         await aggregateCatalogue({
           projectRoot: runRoot,
-          stage5Modules
+          stage5Modules: stage5Modules as never
         });
       }
       finally {

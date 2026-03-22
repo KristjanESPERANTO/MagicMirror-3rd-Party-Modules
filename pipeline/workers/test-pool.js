@@ -5,7 +5,7 @@
  * Tests the worker pool with a small subset of modules.
  */
 
-import { WorkerPool } from "./worker-pool.js";
+import { WorkerPool } from "./worker-pool.ts";
 import { createLogger } from "../../scripts/shared/logger.js";
 import process from "node:process";
 import { readFile } from "node:fs/promises";
