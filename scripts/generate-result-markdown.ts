@@ -67,6 +67,36 @@ async function readStage5ModulesOrEmpty(projectRoot: string): Promise<unknown[]>
   }
 }
 
+function createFallbackStats(): ResultMarkdownStats {
+  return {
+    issueCounter: 0,
+    lastUpdate: new Date().toISOString(),
+    maintainer: {},
+    moduleCounter: 0,
+    modulesWithIssuesCounter: 0,
+    repositoryHoster: {}
+  };
+}
+
+async function readStatsOrFallback(projectRoot: string): Promise<ResultMarkdownStats> {
+  const statsPath = resolve(projectRoot, "website", "data", "stats.json");
+
+  try {
+    return await readJson<ResultMarkdownStats>(statsPath);
+  }
+  catch (error) {
+    const isMissingFile =
+      error && typeof error === "object" && "code" in error && (error as NodeJS.ErrnoException).code === "ENOENT";
+
+    if (isMissingFile) {
+      logger.warn(`Stats file missing at ${statsPath}; generating result.md with fallback stats.`);
+      return createFallbackStats();
+    }
+
+    throw error;
+  }
+}
+
 export async function runGenerateResultMarkdown({
   projectRoot = PROJECT_ROOT,
   resultPath,
@@ -78,7 +108,7 @@ export async function runGenerateResultMarkdown({
   const resolvedStage5Modules = stage5Modules
     ?? await readStage5ModulesOrEmpty(projectRoot);
   const resolvedStats = stats
-    ?? await readJson<ResultMarkdownStats>(resolve(projectRoot, "website", "data", "stats.json"));
+    ?? await readStatsOrFallback(projectRoot);
   const summaries = collectIssueSummaries(resolvedStage5Modules);
   const markdown = buildResultMarkdown(resolvedStats, summaries);
 
