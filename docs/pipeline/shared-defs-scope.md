@@ -39,7 +39,7 @@ These definitions can live under `pipeline/schemas/partials/`. Stage schemas imp
 
 ## Build & publishing approach
 
-1. Introduce `pipeline/schemas/build.js` that uses `json-schema-ref-parser` to bundle the partials/source schemas into distributable files under `dist/schemas/`.
+1. Introduce `pipeline/schemas/build.ts` that uses `json-schema-ref-parser` to bundle the partials/source schemas into distributable files under `dist/schemas/`.
 2. Add `npm` scripts:
    - `schemas:build` – run the bundler and overwrite `dist/schemas/*.schema.json`.
    - `schemas:check` – verify that bundling is idempotent (run build and ensure no diff).

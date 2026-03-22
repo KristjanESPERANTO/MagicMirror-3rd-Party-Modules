@@ -23,7 +23,12 @@ const SCHEMA_FILES = [
 
 const CHECK_MODE = process.argv.includes("--check");
 
-async function ensureDistDir() {
+interface BundleResult {
+  filename: string;
+  matches: boolean;
+}
+
+async function ensureDistDir(): Promise<void> {
   if (CHECK_MODE) {
     return;
   }
@@ -31,22 +36,22 @@ async function ensureDistDir() {
   await mkdir(DIST_DIR, { recursive: true });
 }
 
-async function bundleSchema(filename) {
+async function bundleSchema(filename: string): Promise<{ sourcePath: string; output: string }> {
   const sourcePath = path.join(SRC_DIR, filename);
-  const bundledSchema = await dereference(sourcePath, {
+  const bundledSchema = (await dereference(sourcePath, {
     dereference: { circular: false }
-  });
+  })) as Record<string, unknown>;
   const output = `${JSON.stringify(bundledSchema, null, 2)}\n`;
   return { sourcePath, output };
 }
 
-async function fileExists(filePath) {
+async function fileExists(filePath: string): Promise<boolean> {
   try {
     await readFile(filePath);
     return true;
   }
   catch (error) {
-    if (error.code === "ENOENT") {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
       return false;
     }
 
@@ -54,7 +59,7 @@ async function fileExists(filePath) {
   }
 }
 
-async function writeBundledSchema(filename, output) {
+async function writeBundledSchema(filename: string, output: string): Promise<BundleResult> {
   const targetPath = path.join(DIST_DIR, filename);
 
   if (CHECK_MODE) {
@@ -72,10 +77,10 @@ async function writeBundledSchema(filename, output) {
   return { filename, matches: true };
 }
 
-async function main() {
+async function main(): Promise<void> {
   await ensureDistDir();
 
-  const mismatches = [];
+  const mismatches: string[] = [];
 
   for (const filename of SCHEMA_FILES) {
     const { output } = await bundleSchema(filename);
@@ -103,7 +108,7 @@ async function main() {
   }
 }
 
-main().catch((error) => {
+main().catch((error: unknown) => {
   console.error(error);
   process.exit(1);
 });
