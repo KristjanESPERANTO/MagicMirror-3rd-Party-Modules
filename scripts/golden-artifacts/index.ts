@@ -6,12 +6,55 @@ import {
   sanitizeStage5,
   sanitizeStats,
   stableStringify
-} from "./sanitizers.js";
+} from "./sanitizers.ts";
 import { fileURLToPath } from "node:url";
 
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
+
+type GoldenArtifactName = "modules.stage.2" | "modules.stage.5" | "modules.final" | "stats" | "gitHubData";
+
+type GoldenSanitizer = (input: unknown) => unknown;
+
+interface GoldenArtifact {
+  name: GoldenArtifactName;
+  sanitize: GoldenSanitizer;
+  source: string;
+  target: string;
+}
+
+function sanitizeUnknownArray(input: unknown): unknown[] {
+  return Array.isArray(input) ? input : [];
+}
+
+function sanitizeUnknownModulesContainer(input: unknown): { [key: string]: unknown } {
+  return input !== null && typeof input === "object"
+    ? sanitizeStage5(input as never)
+    : sanitizeStage5(undefined);
+}
+
+function sanitizeUnknownFinalModules(input: unknown): { [key: string]: unknown } {
+  return input !== null && typeof input === "object"
+    ? sanitizeFinalModules(input as never)
+    : sanitizeFinalModules(undefined);
+}
+
+function sanitizeUnknownStats(input: unknown): { [key: string]: unknown } {
+  return input !== null && typeof input === "object"
+    ? sanitizeStats(input as never)
+    : sanitizeStats(undefined);
+}
+
+function sanitizeUnknownGitHubData(input: unknown): { lastUpdate: string; repositories: unknown[] } {
+  return input !== null && typeof input === "object"
+    ? sanitizeGitHubData(input as never)
+    : sanitizeGitHubData(undefined);
+}
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
 
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirPath = path.dirname(currentFilePath);
@@ -23,46 +66,46 @@ if (!["check", "update"].includes(mode)) {
   process.exit(1);
 }
 
-function readJson(filePath) {
+function readJson(filePath: string): unknown {
   try {
     const raw = fs.readFileSync(filePath, "utf8");
     return JSON.parse(raw);
   }
   catch (error) {
-    throw new Error(`Unable to read JSON from ${filePath}: ${error.message}`, { cause: error });
+    throw new Error(`Unable to read JSON from ${filePath}: ${getErrorMessage(error)}`, { cause: error });
   }
 }
 
-const artifacts = [
+const artifacts: GoldenArtifact[] = [
   {
     name: "modules.stage.2",
     source: path.join(repoRoot, "website/data/modules.stage.2.json"),
     target: path.join(repoRoot, "fixtures/golden/modules.stage.2.json"),
-    sanitize: sanitizeStage2
+    sanitize: input => sanitizeStage2(sanitizeUnknownArray(input))
   },
   {
     name: "modules.stage.5",
     source: path.join(repoRoot, "website/data/modules.stage.5.json"),
     target: path.join(repoRoot, "fixtures/golden/modules.stage.5.json"),
-    sanitize: sanitizeStage5
+    sanitize: sanitizeUnknownModulesContainer
   },
   {
     name: "modules.final",
     source: path.join(repoRoot, "website/data/modules.json"),
     target: path.join(repoRoot, "fixtures/golden/modules.json"),
-    sanitize: sanitizeFinalModules
+    sanitize: sanitizeUnknownFinalModules
   },
   {
     name: "stats",
     source: path.join(repoRoot, "website/data/stats.json"),
     target: path.join(repoRoot, "fixtures/golden/stats.json"),
-    sanitize: sanitizeStats
+    sanitize: sanitizeUnknownStats
   },
   {
     name: "gitHubData",
     source: path.join(repoRoot, "website/data/gitHubData.json"),
     target: path.join(repoRoot, "fixtures/golden/gitHubData.json"),
-    sanitize: sanitizeGitHubData
+    sanitize: sanitizeUnknownGitHubData
   }
 
   /*
@@ -71,7 +114,7 @@ const artifacts = [
    */
 ];
 
-function processArtifact(artifact) {
+function processArtifact(artifact: GoldenArtifact): string | null {
   const { name, source, target, sanitize } = artifact;
 
   if (!fs.existsSync(source)) {
@@ -103,7 +146,7 @@ function processArtifact(artifact) {
 
 const discrepancies = artifacts
   .map(artifact => processArtifact(artifact))
-  .filter(message => Boolean(message));
+  .filter((message): message is string => Boolean(message));
 
 if (mode === "check") {
   if (discrepancies.length > 0) {
