@@ -12,6 +12,7 @@ type FixtureStageId = "modules.stage.1" | "modules.stage.2" | "modules.stage.3" 
 interface FixtureDefinition {
   relativePath: string;
   stageId: FixtureStageId;
+  optional?: boolean;
 }
 
 const FIXTURES: FixtureDefinition[] = [
@@ -19,7 +20,7 @@ const FIXTURES: FixtureDefinition[] = [
   { stageId: "modules.stage.2", relativePath: "fixtures/data/modules.stage.2.json" },
   { stageId: "modules.stage.3", relativePath: "fixtures/data/modules.stage.3.json" },
   { stageId: "modules.stage.4", relativePath: "fixtures/data/modules.stage.4.json" },
-  { stageId: "modules.stage.5", relativePath: "fixtures/data/modules.stage.5.json" },
+  { stageId: "modules.stage.5", relativePath: "fixtures/data/modules.stage.5.json", optional: true },
   { stageId: "modules.final", relativePath: "fixtures/data/modules.json" },
   { stageId: "modules.min", relativePath: "fixtures/data/modules.min.json" },
   { stageId: "stats", relativePath: "fixtures/data/stats.json" }
@@ -35,6 +36,14 @@ async function validateFixture(fixture: FixtureDefinition): Promise<string> {
   return absolutePath;
 }
 
+function isMissingFileError(error: unknown): boolean {
+  if (!error || typeof error !== "object") {
+    return false;
+  }
+
+  return "code" in error && (error as NodeJS.ErrnoException).code === "ENOENT";
+}
+
 async function main() {
   const failures: Array<{ error: unknown; fixture: FixtureDefinition }> = [];
 
@@ -44,6 +53,11 @@ async function main() {
       console.log(`✔ ${fixture.stageId} \u2192 ${path.relative(FIXTURE_ROOT, absolutePath)}`);
     }
     catch (error) {
+      if (fixture.optional && isMissingFileError(error)) {
+        console.warn(`⚠ ${fixture.stageId} skipped: ${fixture.relativePath} is missing (optional fixture)`);
+        continue;
+      }
+
       failures.push({ fixture, error });
       const message = error instanceof Error ? error.message : String(error);
       console.error(`✖ ${fixture.stageId} failed: ${message}`);

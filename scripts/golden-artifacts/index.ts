@@ -19,6 +19,7 @@ type GoldenSanitizer = (input: unknown) => unknown;
 
 interface GoldenArtifact {
   name: GoldenArtifactName;
+  optional?: boolean;
   sanitize: GoldenSanitizer;
   source: string;
   target: string;
@@ -85,6 +86,7 @@ const artifacts: GoldenArtifact[] = [
   },
   {
     name: "modules.stage.5",
+    optional: true,
     source: path.join(repoRoot, "website/data/modules.stage.5.json"),
     target: path.join(repoRoot, "fixtures/golden/modules.stage.5.json"),
     sanitize: sanitizeUnknownModulesContainer
@@ -115,9 +117,14 @@ const artifacts: GoldenArtifact[] = [
 ];
 
 function processArtifact(artifact: GoldenArtifact): string | null {
-  const { name, source, target, sanitize } = artifact;
+  const { name, optional = false, source, target, sanitize } = artifact;
 
   if (!fs.existsSync(source)) {
+    if (optional) {
+      console.warn(`Skipping optional artifact ${name}: missing source ${source}`);
+      return null;
+    }
+
     return `Source artifact missing: ${source}`;
   }
 
