@@ -7,6 +7,7 @@ import { deepEqual, equal, ok } from "node:assert/strict";
 import {
   partitionModulesByCache,
   pruneStaleCacheEntries,
+  runParallelProcessing,
   writeSuccessfulResultsToCache
 } from "../../parallel-processing.js";
 import { join } from "node:path";
@@ -34,6 +35,14 @@ function createModule({ id, url, lastCommit }) {
     name: id,
     maintainer: "maintainer",
     issues: []
+  };
+}
+
+function createSilentLogger() {
+  return {
+    error: () => null,
+    info: () => null,
+    warn: () => null
   };
 }
 
@@ -180,4 +189,74 @@ test("integration: second run has higher cache skip-rate", async () => {
   equal(secondRun.uncachedModules.length, 0);
   equal(secondRunSkipRate, 1);
   ok(secondRunSkipRate > firstRunSkipRate);
+});
+
+test("runParallelProcessing processes in-memory modules independently of CLI file loading", async () => {
+  const modules = [
+    createModule({ id: "owner/module-a", url: "https://github.com/owner/module-a", lastCommit: "sha-a" }),
+    createModule({ id: "owner/module-b", url: "https://github.com/owner/module-b", lastCommit: "sha-b" })
+  ];
+
+  let capturedModules = null;
+  let capturedModuleConfig = null;
+  let capturedStage5Modules = null;
+  let capturedProjectRoot = null;
+  let progressHandler = null;
+
+  const workerPool = {
+    onProgress(handler) {
+      progressHandler = handler;
+    },
+    processModules(uncachedModules, moduleConfig) {
+      capturedModules = uncachedModules;
+      capturedModuleConfig = moduleConfig;
+
+      for (const module of uncachedModules) {
+        progressHandler?.({
+          type: "module",
+          status: "success",
+          moduleId: module.id,
+          fromCache: false
+        });
+      }
+
+      return uncachedModules.map(module => ({
+        ...module,
+        status: "success",
+        fromCache: false,
+        issues: [...module.issues]
+      }));
+    }
+  };
+
+  const outputPath = "/virtual/project/website/data/modules.stage.5.json";
+  const result = await runParallelProcessing({
+    modules,
+    projectRoot: "/virtual/project",
+    workerCount: 1,
+    batchSize: modules.length,
+    cacheDisabled: true,
+    catalogueRevision: "catalogue-rev-runtime-test",
+    workerPool,
+    outputWriter: (stage5Modules, projectRoot) => {
+      capturedStage5Modules = stage5Modules;
+      capturedProjectRoot = projectRoot;
+      return outputPath;
+    },
+    runLogger: createSilentLogger()
+  });
+
+  deepEqual(capturedModules, modules);
+  equal(capturedModuleConfig.projectRoot, "/virtual/project");
+  equal(capturedModuleConfig.cacheEnabled, false);
+  equal(capturedModuleConfig.catalogueRevision, "catalogue-rev-runtime-test");
+  equal(capturedProjectRoot, "/virtual/project");
+  equal(capturedStage5Modules.length, modules.length);
+  equal(result.results.length, modules.length);
+  equal(result.stage5Modules.length, modules.length);
+  equal(result.stage5Path, outputPath);
+  equal(result.successCount, modules.length);
+  equal(result.failedCount, 0);
+  equal(result.skippedCount, 0);
+  equal(result.cachedCount, 0);
 });

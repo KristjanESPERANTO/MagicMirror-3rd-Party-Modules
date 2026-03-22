@@ -3,7 +3,7 @@
  * Parallel Module Processing Stage (P7.3)
  *
  * Replaces stages 3+4+5 with parallel worker pool processing.
- * Reads modules.stage.2.json and outputs modules.stage.5.json
+ * CLI wrapper reads modules.stage.2.json and writes modules.stage.5.json.
  */
 
 import {
@@ -14,17 +14,23 @@ import {
   normalizeModuleAnalysisCheckGroups,
   resolveModuleAnalysisCachePath
 } from "../scripts/shared/module-analysis-cache.js";
-import { readFile, writeFile } from "node:fs/promises";
+import { toStage5Module, writePipelineOutputs } from "../scripts/shared/module-catalogue-output.js";
 import { WorkerPool } from "../pipeline/workers/worker-pool.js";
 import { cpus } from "node:os";
 import { createLogger } from "../scripts/shared/logger.js";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
+import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { stringifyDeterministic } from "../scripts/shared/deterministic-output.js";
 
 const logger = createLogger({ name: "parallel-processing" });
 const PROJECT_ROOT = resolve(process.cwd());
+const DEFAULT_ANALYSIS_CONFIG = normalizeModuleAnalysisCheckGroups({
+  fast: true,
+  deep: true,
+  eslint: true,
+  ncu: true
+});
 
 /**
  * Get worker count from environment or CLI
@@ -148,31 +154,6 @@ export function partitionModulesByCache(modules, { cache, catalogueRevision, ana
 }
 
 /**
- * Build and write all stage output artifacts.
- *
- * @param {Array} stage5Modules
- * @param {string} projectRoot
- * @returns {Promise<string>} Resolves to the stage5 output path
- */
-async function writePipelineOutputs(stage5Modules, projectRoot) {
-  const stage5Path = resolve(projectRoot, "website/data/modules.stage.5.json");
-  const modulesJsonPath = resolve(projectRoot, "website/data/modules.json");
-  const modulesMinPath = resolve(projectRoot, "website/data/modules.min.json");
-  const statsPath = resolve(projectRoot, "website/data/stats.json");
-
-  const lastUpdate = new Date().toISOString();
-  const finalModules = stage5Modules.map(module => toFinalModule(module, lastUpdate));
-  const stats = buildStats(stage5Modules, finalModules, lastUpdate);
-
-  await writeFile(stage5Path, stringifyDeterministic({ modules: stage5Modules }), "utf-8");
-  await writeFile(modulesJsonPath, stringifyDeterministic({ modules: finalModules }), "utf-8");
-  await writeFile(modulesMinPath, stringifyDeterministic({ modules: finalModules }, 0), "utf-8");
-  await writeFile(statsPath, stringifyDeterministic(stats), "utf-8");
-
-  return stage5Path;
-}
-
-/**
  * Write successful worker results to cache (I3).
  *
  * @param {Array} workerResults Worker results from pool.processModules
@@ -205,182 +186,120 @@ export function writeSuccessfulResultsToCache(workerResults, cache, catalogueRev
   return writtenCount;
 }
 
-const STAGE5_ALLOWED_KEYS = [
-  "name",
-  "category",
-  "url",
-  "id",
-  "maintainer",
-  "maintainerURL",
-  "description",
-  "outdated",
-  "issues",
-  "stars",
-  "license",
-  "hasGithubIssues",
-  "isArchived",
-  "lastCommit",
-  "keywords",
-  "tags",
-  "image",
-  "packageJson"
-];
+function createWorkerPool(workerCount, batchSize) {
+  return new WorkerPool({
+    workerCount,
+    batchSize,
+    moduleTimeoutMs: 60000,
+    batchTimeoutMs: 1800000
+  });
+}
 
-const FINAL_ALLOWED_KEYS = [
-  "name",
-  "category",
-  "url",
-  "id",
-  "maintainer",
-  "maintainerURL",
-  "description",
-  "outdated",
-  "issues",
-  "stars",
-  "license",
-  "hasGithubIssues",
-  "isArchived",
-  "tags",
-  "image",
-  "defaultSortWeight",
-  "lastCommit",
-  "keywords"
-];
+function buildMergedModules(modules, results) {
+  const resultsById = new Map(results.map(result => [result.id, result]));
 
-function toStage5Module(module) {
-  const entry = {};
-
-  for (const key of STAGE5_ALLOWED_KEYS) {
-    if (Object.hasOwn(module, key) && typeof module[key] !== "undefined") {
-      entry[key] = module[key];
+  return modules.map((module) => {
+    const result = resultsById.get(module.id);
+    if (!result) {
+      return {
+        ...module,
+        issues: [...module.issues || []],
+        status: "failed",
+        failurePhase: "pipeline",
+        error: "No worker result available for module"
+      };
     }
-  }
 
-  if (!Array.isArray(entry.issues)) {
-    entry.issues = [];
-  }
-
-  return entry;
+    return {
+      ...module,
+      ...result,
+      issues: [...result.issues || module.issues || []]
+    };
+  });
 }
 
-function isValidDateTime(value) {
-  return typeof value === "string" && value.length > 0 && !Number.isNaN(Date.parse(value));
-}
-
-function getRepositoryHost(moduleUrl) {
-  if (typeof moduleUrl !== "string") {
-    return "unknown";
-  }
-
-  try {
-    const firstSegment = moduleUrl.split(".")[0];
-    const segments = firstSegment.split("/");
-    return segments[2] ?? "unknown";
-  }
-  catch {
-    return "unknown";
-  }
-}
-
-function toFinalModule(module, fallbackTimestamp) {
-  const issueList = Array.isArray(module.issues) ? module.issues : [];
-  const stars = typeof module.stars === "number" ? module.stars : 0;
-
-  let defaultSortWeight = issueList.length - Math.floor(stars / 20);
-  if (stars < 3) {
-    defaultSortWeight = Math.max(defaultSortWeight, 1);
-  }
-
-  if (module.outdated || module.category === "Outdated Modules") {
-    defaultSortWeight += 900;
-  }
-
-  const candidate = {
-    ...module,
-    description:
-      typeof module.description === "string" && module.description.length > 0
-        ? module.description
-        : "No description provided.",
-    issues: issueList.length > 0,
-    defaultSortWeight,
-    lastCommit: isValidDateTime(module.lastCommit)
-      ? module.lastCommit
-      : fallbackTimestamp
-  };
-
-  if (typeof candidate.license !== "string" || candidate.license.length === 0) {
-    delete candidate.license;
-  }
-
-  if (!Array.isArray(candidate.tags) || candidate.tags.length === 0) {
-    delete candidate.tags;
-  }
-
-  if (!Array.isArray(candidate.keywords) || candidate.keywords.length === 0) {
-    delete candidate.keywords;
-  }
-
-  const entry = {};
-  for (const key of FINAL_ALLOWED_KEYS) {
-    if (Object.hasOwn(candidate, key) && typeof candidate[key] !== "undefined") {
-      entry[key] = candidate[key];
-    }
-  }
-
-  return entry;
-}
-
-function buildStats(stage5Modules, finalModules, timestamp) {
-  const repositoryHoster = {};
-  const maintainer = {};
-
-  for (const module of finalModules) {
-    const hoster = getRepositoryHost(module.url);
-    repositoryHoster[hoster] = (repositoryHoster[hoster] ?? 0) + 1;
-    maintainer[module.maintainer] = (maintainer[module.maintainer] ?? 0) + 1;
-  }
-
-  const issueCounter = stage5Modules.reduce((count, module) => {
-    if (Array.isArray(module.issues)) {
-      return count + module.issues.length;
-    }
-    return count;
-  }, 0);
+function summarizeResults(results, durationMs) {
+  const successCount = results.filter(result => result.status === "success").length;
+  const failedCount = results.filter(result => result.status === "failed").length;
+  const skippedCount = results.filter(result => result.status === "skipped").length;
+  const cachedCount = results.filter(result => result.fromCache).length;
 
   return {
-    moduleCounter: finalModules.length,
-    modulesWithImageCounter: finalModules.filter(module => typeof module.image === "string" && module.image.length > 0).length,
-    modulesWithIssuesCounter: finalModules.filter(module => module.issues === true).length,
-    issueCounter,
-    lastUpdate: timestamp,
-    repositoryHoster,
-    maintainer: Object.fromEntries(
-      Object.entries(maintainer).sort(([, left], [, right]) => right - left)
-    )
+    averageProcessingTimeMs: results.length > 0 ? Math.round(durationMs / results.length) : 0,
+    cachedCount,
+    cachedPercentage: results.length > 0 ? Math.round(cachedCount / results.length * 100) : 0,
+    failedCount,
+    skippedCount,
+    successCount
   };
 }
 
-async function main() {
+function logProcessingSummary(results, durationMs, stage5Path, runLogger) {
+  const summary = summarizeResults(results, durationMs);
+
+  runLogger.info("\n========== Processing Complete ==========");
+  runLogger.info(`Total modules: ${results.length}`);
+  runLogger.info(`Success: ${summary.successCount} | Failed: ${summary.failedCount} | Skipped: ${summary.skippedCount}`);
+  runLogger.info(`Cached: ${summary.cachedCount} (${summary.cachedPercentage}%)`);
+  runLogger.info(`Total time: ${(durationMs / 1000).toFixed(1)}s`);
+  runLogger.info(`Average: ${summary.averageProcessingTimeMs}ms per module`);
+
+  if (stage5Path) {
+    runLogger.info(`Output: ${stage5Path}`);
+  }
+
+  if (summary.failedCount > 0) {
+    runLogger.warn(`\n${summary.failedCount} modules failed - check logs for details`);
+  }
+
+  return summary;
+}
+
+/**
+ * Run the parallel-processing stage against an in-memory Stage 2 module list.
+ *
+ * @param {object} options
+ * @param {Array} options.modules Stage 2 modules to process
+ * @param {string} [options.projectRoot] Project root for path resolution
+ * @param {number} [options.workerCount] Worker count override
+ * @param {number} [options.batchSize] Batch size override
+ * @param {boolean} [options.cacheDisabled] Disable cache read/write behavior
+ * @param {object} [options.analysisConfig] Check-group configuration
+ * @param {string|null} [options.catalogueRevision] Catalogue revision override
+ * @param {object|null} [options.workerPool] Injected worker pool for tests/future orchestrator wiring
+ * @param {Function|null} [options.outputWriter] Output writer override; use null to skip writes
+ * @param {object} [options.runLogger] Logger implementation
+ * @returns {Promise<object>} Summary, results, and generated stage5 modules
+ */
+export async function runParallelProcessing({
+  modules,
+  projectRoot = PROJECT_ROOT,
+  workerCount = getWorkerCount(),
+  batchSize = getBatchSize(),
+  cacheDisabled = isCacheDisabled(),
+  analysisConfig = DEFAULT_ANALYSIS_CONFIG,
+  catalogueRevision,
+  workerPool = null,
+  outputWriter = writePipelineOutputs,
+  runLogger = logger
+} = {}) {
+  if (!Array.isArray(modules)) {
+    throw new TypeError("runParallelProcessing requires a modules array");
+  }
+
   const startTime = Date.now();
-  try {
-    const stage2Path = resolve(PROJECT_ROOT, "website/data/modules.stage.2.json");
-    logger.info(`Reading modules from ${stage2Path}...`);
-    const modules = JSON.parse(await readFile(stage2Path, "utf-8"));
-    logger.info(`Loaded ${modules.length} modules`);
-    const workerCount = getWorkerCount();
-    const batchSize = getBatchSize();
-    const cacheDisabled = isCacheDisabled();
-    logger.info(`Starting parallel processing with ${workerCount} workers, batch size ${batchSize}`);
-    if (cacheDisabled) {
-      logger.warn("Cache disabled (--no-cache / PIPELINE_CACHE_DISABLED): all modules will be processed fresh");
-    }
-    const pool = new WorkerPool({
-      workerCount,
-      batchSize,
-      moduleTimeoutMs: 60000,
-      batchTimeoutMs: 1800000
-    });
-    let processedCount = 0;
+  const pool = workerPool ?? createWorkerPool(workerCount, batchSize);
+  const normalizedAnalysisConfig = normalizeModuleAnalysisCheckGroups(analysisConfig);
+
+  runLogger.info(`Loaded ${modules.length} modules`);
+  runLogger.info(`Starting parallel processing with ${workerCount} workers, batch size ${batchSize}`);
+
+  if (cacheDisabled) {
+    runLogger.warn("Cache disabled (--no-cache / PIPELINE_CACHE_DISABLED): all modules will be processed fresh");
+  }
+
+  let processedCount = 0;
+  if (typeof pool.onProgress === "function") {
     pool.onProgress((event) => {
       if (event.type === "module" && event.status !== "started") {
         processedCount += 1;
@@ -392,107 +311,95 @@ async function main() {
           status = "✗";
         }
         const cacheInfo = event.fromCache ? " (cached)" : "";
-        logger.info(`[${processedCount}/${modules.length}] ${status} ${event.moduleId}${cacheInfo}`);
+        runLogger.info(`[${processedCount}/${modules.length}] ${status} ${event.moduleId}${cacheInfo}`);
       }
     });
-    const analysisConfig = normalizeModuleAnalysisCheckGroups({
-      fast: true,
-      deep: true,
-      eslint: true,
-      ncu: true
+  }
+
+  const resolvedCatalogueRevision = typeof catalogueRevision === "undefined"
+    ? await getProjectRevision(projectRoot)
+    : catalogueRevision;
+
+  if (!resolvedCatalogueRevision) {
+    runLogger.warn("Could not resolve current catalogue revision; module cache keys will be unavailable for this run");
+  }
+
+  const cachePath = resolveModuleAnalysisCachePath(projectRoot);
+  let cache = null;
+  let prunedCount = 0;
+  let cachedResults = [];
+  let uncachedModules = modules;
+
+  if (!cacheDisabled) {
+    cache = createModuleAnalysisCache({ filePath: cachePath });
+    await cache.load();
+    prunedCount = pruneStaleCacheEntries(cache, modules, {
+      catalogueRevision: resolvedCatalogueRevision,
+      analysisConfig: normalizedAnalysisConfig
     });
-    const catalogueRevision = await getProjectRevision(PROJECT_ROOT);
-    if (!catalogueRevision) {
-      logger.warn("Could not resolve current catalogue revision; module cache keys will be unavailable for this run");
-    }
-    const cachePath = resolveModuleAnalysisCachePath(PROJECT_ROOT);
-    let cache = null;
-    let prunedCount = 0;
-    let cachedResults = [];
-    let uncachedModules = modules;
+    ({ cachedResults, uncachedModules } = partitionModulesByCache(modules, {
+      cache,
+      catalogueRevision: resolvedCatalogueRevision,
+      analysisConfig: normalizedAnalysisConfig
+    }));
 
-    if (!cacheDisabled) {
-      cache = createModuleAnalysisCache({ filePath: cachePath });
-      await cache.load();
-      prunedCount = pruneStaleCacheEntries(cache, modules, {
-        catalogueRevision,
-        analysisConfig
-      });
-      ({ cachedResults, uncachedModules } = partitionModulesByCache(modules, {
-        cache,
-        catalogueRevision,
-        analysisConfig
-      }));
-
-      if (cachedResults.length > 0) {
-        for (const result of cachedResults) {
-          processedCount += 1;
-          logger.info(`[${processedCount}/${modules.length}] ⊙ ${result.id} (cached)`);
-        }
-        logger.info(`Cache: ${cachedResults.length} hit(s), ${uncachedModules.length} to process`);
+    if (cachedResults.length > 0) {
+      for (const result of cachedResults) {
+        processedCount += 1;
+        runLogger.info(`[${processedCount}/${modules.length}] ⊙ ${result.id} (cached)`);
       }
+      runLogger.info(`Cache: ${cachedResults.length} hit(s), ${uncachedModules.length} to process`);
     }
-    const moduleConfig = {
-      projectRoot: PROJECT_ROOT,
-      modulesDir: resolve(PROJECT_ROOT, "modules"),
-      modulesTempDir: resolve(PROJECT_ROOT, "modules_temp"),
-      imagesDir: resolve(PROJECT_ROOT, "website/images"),
-      cacheEnabled: !cacheDisabled,
-      cachePath,
-      cacheSchemaVersion: MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,
-      catalogueRevision,
-      analysisConfig,
-      checkGroups: analysisConfig,
-      timeoutMs: 60000
-    };
-    const workerResults = uncachedModules.length > 0
-      ? await pool.processModules(uncachedModules, moduleConfig)
-      : [];
-    const results = [...cachedResults, ...workerResults];
-    const writtenCount = cache ? writeSuccessfulResultsToCache(workerResults, cache, catalogueRevision) : 0;
-    if (prunedCount > 0 || writtenCount > 0) {
-      await cache.flush();
-      logger.info(`Cache: ${prunedCount} pruned, ${writtenCount} written`);
-    }
-    const resultsById = new Map(results.map(result => [result.id, result]));
-    const mergedModules = modules.map((module) => {
-      const result = resultsById.get(module.id);
-      if (!result) {
-        return {
-          ...module,
-          issues: [...module.issues || []],
-          status: "failed",
-          failurePhase: "pipeline",
-          error: "No worker result available for module"
-        };
-      }
+  }
 
-      return {
-        ...module,
-        ...result,
-        issues: [...result.issues || module.issues || []]
-      };
-    });
-    const stage5Modules = mergedModules.map(toStage5Module);
-    const stage5Path = await writePipelineOutputs(stage5Modules, PROJECT_ROOT);
-    const duration = Date.now() - startTime;
-    const avgTime = Math.round(duration / results.length);
-    const successCount = results.filter(result => result.status === "success").length;
-    const failedCount = results.filter(result => result.status === "failed").length;
-    const skippedCount = results.filter(result => result.status === "skipped").length;
-    const cachedCount = results.filter(result => result.fromCache).length;
+  const moduleConfig = {
+    projectRoot,
+    modulesDir: resolve(projectRoot, "modules"),
+    modulesTempDir: resolve(projectRoot, "modules_temp"),
+    imagesDir: resolve(projectRoot, "website/images"),
+    cacheEnabled: !cacheDisabled,
+    cachePath,
+    cacheSchemaVersion: MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,
+    catalogueRevision: resolvedCatalogueRevision,
+    analysisConfig: normalizedAnalysisConfig,
+    checkGroups: normalizedAnalysisConfig,
+    timeoutMs: 60000
+  };
+  const workerResults = uncachedModules.length > 0
+    ? await pool.processModules(uncachedModules, moduleConfig)
+    : [];
+  const results = [...cachedResults, ...workerResults];
+  const writtenCount = cache
+    ? writeSuccessfulResultsToCache(workerResults, cache, resolvedCatalogueRevision)
+    : 0;
 
-    logger.info("\n========== Processing Complete ==========");
-    logger.info(`Total modules: ${results.length}`);
-    logger.info(`Success: ${successCount} | Failed: ${failedCount} | Skipped: ${skippedCount}`);
-    logger.info(`Cached: ${cachedCount} (${Math.round(cachedCount / results.length * 100)}%)`);
-    logger.info(`Total time: ${(duration / 1000).toFixed(1)}s`);
-    logger.info(`Average: ${avgTime}ms per module`);
-    logger.info(`Output: ${stage5Path}`);
+  if (prunedCount > 0 || writtenCount > 0) {
+    await cache.flush();
+    runLogger.info(`Cache: ${prunedCount} pruned, ${writtenCount} written`);
+  }
 
-    if (failedCount > 0) {
-      logger.warn(`\n${failedCount} modules failed - check logs for details`);
-    }
+  const mergedModules = buildMergedModules(modules, results);
+  const stage5Modules = mergedModules.map(toStage5Module);
+  const stage5Path = outputWriter ? await outputWriter(stage5Modules, projectRoot) : null;
+  const durationMs = Date.now() - startTime;
+  const summary = logProcessingSummary(results, durationMs, stage5Path, runLogger);
+
+  return {
+    ...summary,
+    durationMs,
+    results,
+    stage5Modules,
+    stage5Path
+  };
+}
+
+async function main() {
+  const stage2Path = resolve(PROJECT_ROOT, "website/data/modules.stage.2.json");
+
+  try {
+    logger.info(`Reading modules from ${stage2Path}...`);
+    const modules = JSON.parse(await readFile(stage2Path, "utf-8"));
+    await runParallelProcessing({ modules, projectRoot: PROJECT_ROOT });
   }
   catch (error) {
     logger.error("Fatal error:", error);
