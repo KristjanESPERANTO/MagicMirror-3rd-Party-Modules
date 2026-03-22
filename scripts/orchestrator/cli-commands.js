@@ -4,6 +4,11 @@ import {
   selectBenchmarkRecords
 } from "./benchmark.js";
 import {
+  buildProgressSummary,
+  printProgressSummary,
+  selectProgressRecords
+} from "./progress.js";
+import {
   describePipeline,
   describeStage,
   listRunRecordFiles,
@@ -265,8 +270,61 @@ function buildBenchmarkCommandHandler({ runsDirectory }) {
   };
 }
 
+function buildProgressCommandHandler({ runsDirectory }) {
+  return async function progressCommand(options = {}) {
+    const limit = parsePositiveInteger(options.limit, 20);
+    const pipelineId = options.pipeline ?? "full-refresh-parallel";
+    const includeFiltered = Boolean(options.includeFiltered);
+    const records = await listRunRecordFiles(runsDirectory);
+
+    if (records.length === 0) {
+      console.log("No pipeline run records found. Execute `pipeline run` to generate progress data.");
+      return;
+    }
+
+    const loadedRecords = [];
+    for (const recordInfo of records) {
+      const record = await readRunRecord(recordInfo.path);
+      loadedRecords.push({
+        ...record,
+        mtimeMs: recordInfo.mtimeMs,
+        runFile: recordInfo.name
+      });
+    }
+
+    const selectedRecords = selectProgressRecords(loadedRecords, {
+      includeFiltered,
+      limit,
+      pipelineId
+    });
+
+    if (selectedRecords.length === 0) {
+      console.log("No matching run records found for the current progress filters.");
+      return;
+    }
+
+    const summary = buildProgressSummary(selectedRecords);
+
+    if (options.json) {
+      console.log(JSON.stringify({
+        includeFiltered,
+        limit,
+        pipelineId,
+        summary
+      }, null, 2));
+      return;
+    }
+
+    printProgressSummary(summary, {
+      includeFiltered,
+      pipelineId
+    });
+  };
+}
+
 export function registerAdditionalCommands(program, context) {
   const benchmarkHandler = buildBenchmarkCommandHandler(context);
+  const progressHandler = buildProgressCommandHandler(context);
   const listHandler = buildListCommandHandler(context);
   const describeHandler = buildDescribeCommandHandler(context);
   const doctorHandler = buildDoctorCommandHandler(context);
@@ -349,6 +407,24 @@ export function registerAdditionalCommands(program, context) {
       catch (error) {
         const message = error instanceof Error ? error.message : error;
         console.error(`Error running benchmark summary: ${message}`);
+        process.exitCode = 1;
+      }
+    });
+
+  program
+    .command("progress")
+    .description("Summarize run outcomes and stage reliability for progress tracking")
+    .option("--pipeline <pipelineId>", "Pipeline id to inspect", "full-refresh-parallel")
+    .option("--limit <count>", "Maximum matching run records to include", "20")
+    .option("--include-filtered", "Include runs executed with --only/--skip filters")
+    .option("--json", "Print machine-readable progress summary")
+    .action(async (options) => {
+      try {
+        await progressHandler(options ?? {});
+      }
+      catch (error) {
+        const message = error instanceof Error ? error.message : error;
+        console.error(`Error running progress summary: ${message}`);
         process.exitCode = 1;
       }
     });
