@@ -75,9 +75,12 @@ Related docs:
   - Added a shared worker-cache contract in [scripts/shared/module-analysis-cache.js](../../scripts/shared/module-analysis-cache.js) covering module identity, repo freshness signal, normalized analysis config, and schema version.
   - Wired the parallel worker path to compute and carry `cacheKey` in module results, without enabling read/write behavior before I2/I3.
   - Hardened [scripts/shared/persistent-cache.js](../../scripts/shared/persistent-cache.js) so schema-version mismatches reset stale entries instead of silently reusing incompatible cache data.
-- [ ] I2: Read path integration
-  - Load cache at orchestrator start and provide cache context to workers.
-  - Preserve current behavior for cache miss and partial cache entries.
+- [x] I2: Read path integration
+  - Completed on 2026-03-19.
+  - Added `partitionModulesByCache()` helper in [scripts/parallel-processing.js](../../scripts/parallel-processing.js): loads the module analysis cache once at orchestrator start via `createModuleAnalysisCache`, and for each module computes its cache key and checks for a valid entry.
+  - Modules with a cache hit bypass the worker pool entirely and are returned immediately with `fromCache: true`; only cache-miss modules are dispatched to workers.
+  - Extracted `writePipelineOutputs()` to keep `main()` within lint line/statement limits.
+  - Cache misses preserve all existing behavior; no behavior change when the cache file is absent.
 - [ ] I3: Write path integration
   - Aggregate worker cache updates in orchestrator and write once, deterministically.
   - Prevent write races from child processes.

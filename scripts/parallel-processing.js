@@ -8,6 +8,8 @@
 
 import {
   MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,
+  buildModuleAnalysisCacheKey,
+  createModuleAnalysisCache,
   getProjectRevision,
   normalizeModuleAnalysisCheckGroups,
   resolveModuleAnalysisCachePath
@@ -51,6 +53,65 @@ function getBatchSize() {
     return parseInt(batchArg.split("=")[1], 10);
   }
   return 50; // Default batch size
+}
+
+/**
+ * Partition modules into cache hits and misses.
+ * Returns results for hits immediately; misses must be processed by workers.
+ *
+ * @param {Array} modules
+ * @param {{ cache: object, catalogueRevision: string|null, analysisConfig: object }} options
+ * @returns {{ cachedResults: Array, uncachedModules: Array }}
+ */
+function partitionModulesByCache(modules, { cache, catalogueRevision, analysisConfig }) {
+  const cachedResults = [];
+  const uncachedModules = [];
+
+  for (const module of modules) {
+    const cacheKey = catalogueRevision
+      ? buildModuleAnalysisCacheKey({
+        module,
+        moduleRevision: module.lastCommit,
+        catalogueRevision,
+        checkGroups: analysisConfig
+      })
+      : null;
+    const entry = cacheKey ? cache.get(cacheKey) : null;
+
+    if (entry) {
+      cachedResults.push({ ...entry.value, cacheKey, fromCache: true });
+    }
+    else {
+      uncachedModules.push(module);
+    }
+  }
+
+  return { cachedResults, uncachedModules };
+}
+
+/**
+ * Build and write all stage output artifacts.
+ *
+ * @param {Array} stage5Modules
+ * @param {string} projectRoot
+ * @returns {Promise<string>} Resolves to the stage5 output path
+ */
+async function writePipelineOutputs(stage5Modules, projectRoot) {
+  const stage5Path = resolve(projectRoot, "website/data/modules.stage.5.json");
+  const modulesJsonPath = resolve(projectRoot, "website/data/modules.json");
+  const modulesMinPath = resolve(projectRoot, "website/data/modules.min.json");
+  const statsPath = resolve(projectRoot, "website/data/stats.json");
+
+  const lastUpdate = new Date().toISOString();
+  const finalModules = stage5Modules.map(module => toFinalModule(module, lastUpdate));
+  const stats = buildStats(stage5Modules, finalModules, lastUpdate);
+
+  await writeFile(stage5Path, stringifyDeterministic({ modules: stage5Modules }), "utf-8");
+  await writeFile(modulesJsonPath, stringifyDeterministic({ modules: finalModules }), "utf-8");
+  await writeFile(modulesMinPath, stringifyDeterministic({ modules: finalModules }, 0), "utf-8");
+  await writeFile(statsPath, stringifyDeterministic(stats), "utf-8");
+
+  return stage5Path;
 }
 
 const STAGE5_ALLOWED_KEYS = [
@@ -263,6 +324,25 @@ async function main() {
       logger.warn("Could not resolve current catalogue revision; module cache keys will be unavailable for this run");
     }
 
+    // Load module analysis cache and partition modules into hits/misses (I2)
+    const cachePath = resolveModuleAnalysisCachePath(PROJECT_ROOT);
+    const cache = createModuleAnalysisCache({ filePath: cachePath });
+    await cache.load();
+
+    const { cachedResults, uncachedModules } = partitionModulesByCache(modules, {
+      cache,
+      catalogueRevision,
+      analysisConfig
+    });
+
+    if (cachedResults.length > 0) {
+      for (const result of cachedResults) {
+        processedCount += 1;
+        logger.info(`[${processedCount}/${modules.length}] ⊙ ${result.id} (cached)`);
+      }
+      logger.info(`Cache: ${cachedResults.length} hit(s), ${uncachedModules.length} to process`);
+    }
+
     // Module processing config
     const moduleConfig = {
       projectRoot: PROJECT_ROOT,
@@ -270,7 +350,7 @@ async function main() {
       modulesTempDir: resolve(PROJECT_ROOT, "modules_temp"),
       imagesDir: resolve(PROJECT_ROOT, "website/images"),
       cacheEnabled: true,
-      cachePath: resolveModuleAnalysisCachePath(PROJECT_ROOT),
+      cachePath,
       cacheSchemaVersion: MODULE_ANALYSIS_CACHE_SCHEMA_VERSION,
       catalogueRevision,
       analysisConfig,
@@ -278,8 +358,11 @@ async function main() {
       timeoutMs: 60000
     };
 
-    // Process all modules
-    const results = await pool.processModules(modules, moduleConfig);
+    // Process cache-miss modules; skip pool entirely if all were cached
+    const workerResults = uncachedModules.length > 0
+      ? await pool.processModules(uncachedModules, moduleConfig)
+      : [];
+    const results = [...cachedResults, ...workerResults];
 
     // Stage 5 schema expects an object with a `modules` array.
     // Merge worker results back into stage-2 module entries to preserve
@@ -306,24 +389,7 @@ async function main() {
     const stage5Modules = mergedModules.map(toStage5Module);
 
     // Write stage 5 output and final public artefacts.
-    const stage5Path = resolve(PROJECT_ROOT, "website/data/modules.stage.5.json");
-    const modulesJsonPath = resolve(PROJECT_ROOT, "website/data/modules.json");
-    const modulesMinPath = resolve(PROJECT_ROOT, "website/data/modules.min.json");
-    const statsPath = resolve(PROJECT_ROOT, "website/data/stats.json");
-
-    const lastUpdate = new Date().toISOString();
-    const finalModules = stage5Modules.map(module => toFinalModule(module, lastUpdate));
-    const stats = buildStats(stage5Modules, finalModules, lastUpdate);
-
-    const stage5Data = stringifyDeterministic({ modules: stage5Modules });
-    const modulesData = stringifyDeterministic({ modules: finalModules });
-    const modulesMinData = stringifyDeterministic({ modules: finalModules }, 0);
-    const statsData = stringifyDeterministic(stats);
-
-    await writeFile(stage5Path, stage5Data, "utf-8");
-    await writeFile(modulesJsonPath, modulesData, "utf-8");
-    await writeFile(modulesMinPath, modulesMinData, "utf-8");
-    await writeFile(statsPath, statsData, "utf-8");
+    const stage5Path = await writePipelineOutputs(stage5Modules, PROJECT_ROOT);
 
     const duration = Date.now() - startTime;
     const avgTime = Math.round(duration / results.length);
