@@ -44,42 +44,49 @@ async function executeStage(stage, options) {
 export async function runStagesSequentially(stages, { logger, cwd = process.cwd(), env = process.env, stageRunner, validateArtifacts } = {}) {
   const results = [];
 
-  for (let index = 0; index < stages.length; index += 1) {
-    const stage = stages[index];
-    const stepNumber = index + 1;
-    const total = stages.length;
+  try {
+    for (let index = 0; index < stages.length; index += 1) {
+      const stage = stages[index];
+      const stepNumber = index + 1;
+      const total = stages.length;
 
-    const message = `${stage.id}${stage.name ? ` (${stage.name})` : ""}`;
-    logger?.start?.(stage, { stepNumber, total, message });
+      const message = `${stage.id}${stage.name ? ` (${stage.name})` : ""}`;
+      logger?.start?.(stage, { stepNumber, total, message });
 
-    const startedAt = Date.now();
+      const startedAt = Date.now();
 
-    try {
-      await executeStage(stage, { cwd, env, stageRunner });
+      try {
+        await executeStage(stage, { cwd, env, stageRunner });
 
-      if (validateArtifacts) {
-        await validateArtifacts(stage, { cwd, logger });
+        if (validateArtifacts) {
+          await validateArtifacts(stage, { cwd, logger });
+        }
       }
-    }
-    catch (error) {
-      logger?.fail?.(stage, { stepNumber, total, message, error });
+      catch (error) {
+        logger?.fail?.(stage, { stepNumber, total, message, error });
 
-      if (error instanceof Error) {
-        error.stage = stage;
-        error.stageIndex = index;
-        error.stepNumber = stepNumber;
-        error.totalStages = total;
-        error.completedStages = results.slice();
+        if (error instanceof Error) {
+          error.stage = stage;
+          error.stageIndex = index;
+          error.stepNumber = stepNumber;
+          error.totalStages = total;
+          error.completedStages = results.slice();
+        }
+
+        throw error;
       }
 
-      throw error;
+      const durationMs = Date.now() - startedAt;
+      const formattedDuration = formatDuration(durationMs);
+      logger?.succeed?.(stage, { stepNumber, total, message, durationMs, formattedDuration });
+
+      results.push({ stage, durationMs });
     }
-
-    const durationMs = Date.now() - startedAt;
-    const formattedDuration = formatDuration(durationMs);
-    logger?.succeed?.(stage, { stepNumber, total, message, durationMs, formattedDuration });
-
-    results.push({ stage, durationMs });
+  }
+  finally {
+    if (stageRunner && typeof stageRunner.reset === "function") {
+      stageRunner.reset();
+    }
   }
 
   return results;

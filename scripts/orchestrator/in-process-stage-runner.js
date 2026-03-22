@@ -11,7 +11,7 @@ export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } =
   const collectMetadata = stageRuntimes.collectMetadata ?? runCollectMetadata;
   const parallelProcessing = stageRuntimes.parallelProcessing ?? runParallelProcessing;
 
-  return async (stage, { cwd = process.cwd(), env = process.env } = {}) => {
+  const runStageInProcess = async (stage, { cwd = process.cwd(), env = process.env } = {}) => {
     const runRoot = resolve(projectRoot ?? cwd);
 
     if (stage.id === "collect-metadata") {
@@ -28,24 +28,49 @@ export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } =
         format: env.LOG_FORMAT ?? process.env.LOG_FORMAT ?? "text"
       });
 
-      const result = await parallelProcessing({
-        modules: artifactStore.get("modules-stage-2"),
-        projectRoot: runRoot,
-        runLogger
-      });
+      const stage2Modules = artifactStore.get("modules-stage-2");
+      let result;
+
+      try {
+        result = await parallelProcessing({
+          modules: stage2Modules,
+          projectRoot: runRoot,
+          runLogger
+        });
+      }
+      finally {
+        // Stage 2 modules are no longer needed once processing starts.
+        artifactStore.delete("modules-stage-2");
+      }
 
       artifactStore.set("modules-stage-5", result.stage5Modules);
       return true;
     }
 
     if (stage.id === "aggregate-catalogue" && artifactStore.has("modules-stage-5")) {
-      await aggregateCatalogue({
-        projectRoot: runRoot,
-        stage5Modules: artifactStore.get("modules-stage-5")
-      });
+      const stage5Modules = artifactStore.get("modules-stage-5");
+
+      try {
+        await aggregateCatalogue({
+          projectRoot: runRoot,
+          stage5Modules
+        });
+      }
+      finally {
+        // Stage 5 modules are no longer needed after aggregation.
+        artifactStore.delete("modules-stage-5");
+      }
+
       return true;
     }
 
     return false;
   };
+
+  runStageInProcess.getBufferedArtifactIds = () => [...artifactStore.keys()];
+  runStageInProcess.reset = () => {
+    artifactStore.clear();
+  };
+
+  return runStageInProcess;
 }
