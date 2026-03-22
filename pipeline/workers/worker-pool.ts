@@ -7,7 +7,7 @@
 import { dirname, join } from "node:path";
 import { cpus } from "node:os";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createLogger } from "../../scripts/shared/logger.js";
+import { createLogger } from "../../scripts/shared/logger.ts";
 import { fileURLToPath } from "node:url";
 import { fork } from "node:child_process";
 import type { ChildProcess } from "node:child_process";

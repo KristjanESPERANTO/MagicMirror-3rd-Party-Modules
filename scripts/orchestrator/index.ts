@@ -3,8 +3,8 @@
 import { applyStageFilters, normalizeStageFilters, parseCommaSeparatedList } from "./stage-filters.ts";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { buildExecutionPlan, loadStageGraph } from "./stage-graph.ts";
-// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
-import { createLogger, createStageProgressLogger } from "../shared/logger.js";
+import { createLogger, createStageProgressLogger } from "../shared/logger.ts";
+import type { LogFormat } from "../shared/logger.ts";
 import { mkdir, writeFile } from "node:fs/promises";
 import { Command } from "commander";
 import { createInProcessStageRunner } from "./in-process-stage-runner.ts";
@@ -331,7 +331,7 @@ async function runPipeline(
   const graph = await loadStageGraph(graphPath);
   const { pipeline, stages } = buildExecutionPlan(graph, pipelineId);
   const logFormat = jsonLogs ? "json" : process.env.LOG_FORMAT ?? "text";
-  const baseLogger = createLogger({ name: "pipeline", format: logFormat });
+  const baseLogger = createLogger({ name: "pipeline", format: logFormat as LogFormat });
   const stageLogger = createStageProgressLogger(baseLogger);
   const stageRunner = createInProcessStageRunner({ projectRoot: PROJECT_ROOT });
   const validateArtifacts = createArtifactValidator();

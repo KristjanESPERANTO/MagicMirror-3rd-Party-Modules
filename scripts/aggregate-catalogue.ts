@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createLogger } from "./shared/logger.js";
+import { createLogger } from "./shared/logger.ts";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
 import { readFile } from "node:fs/promises";

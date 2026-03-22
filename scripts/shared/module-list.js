@@ -1,4 +1,4 @@
-import { createLogger } from "./logger.js";
+import { createLogger } from "./logger.ts";
 import fs from "node:fs";
 import path from "node:path";
 

@@ -7,7 +7,7 @@
  */
 
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createLogger } from "../../scripts/shared/logger.js";
+import { createLogger } from "../../scripts/shared/logger.ts";
 import { createModuleLogger } from "./module-logger.ts";
 import process from "node:process";
 import { processModule } from "./process-module.ts";

@@ -1,6 +1,55 @@
 import process from "node:process";
 
-const LOG_LEVEL_PRIORITIES = new Map([
+export type LogLevel = "silent" | "error" | "warn" | "info" | "debug" | "trace";
+export type LogFormat = "text" | "json";
+
+export interface LogWriter {
+  error?: (...args: unknown[]) => void;
+  warn?: (...args: unknown[]) => void;
+  info?: (...args: unknown[]) => void;
+  debug?: (...args: unknown[]) => void;
+  log?: (...args: unknown[]) => void;
+  [key: string]: unknown;
+}
+
+export interface CreateLoggerOptions {
+  name?: string;
+  level?: LogLevel | number;
+  writer?: LogWriter;
+  format?: LogFormat;
+}
+
+export interface Logger {
+  readonly format: string;
+  level: string;
+  child(childName?: string): Logger;
+  error(message: unknown, ...details: unknown[]): void;
+  warn(message: unknown, ...details: unknown[]): void;
+  info(message: unknown, ...details: unknown[]): void;
+  debug(message: unknown, ...details: unknown[]): void;
+  trace(message: unknown, ...details: unknown[]): void;
+  log(message: unknown, ...details: unknown[]): void;
+}
+
+interface StageDetails {
+  id: string;
+  name?: string;
+}
+
+export interface StageProgressLogger {
+  readonly format: string;
+  info(message: string, details?: unknown): void;
+  warn(message: string, details?: unknown): void;
+  error(message: string, details?: unknown): void;
+  start(stage: StageDetails, step: { stepNumber: number; total: number }): void;
+  succeed(
+    stage: StageDetails,
+     step: { stepNumber: number; total: number; formattedDuration?: string; durationMs?: number }
+  ): void;
+  fail(stage: StageDetails, step: { stepNumber: number; total: number; error?: unknown }): void;
+}
+
+const LOG_LEVEL_PRIORITIES = new Map<string, number>([
   ["silent", -1],
   ["error", 0],
   ["warn", 1],
@@ -9,7 +58,7 @@ const LOG_LEVEL_PRIORITIES = new Map([
   ["trace", 4]
 ]);
 
-const METHOD_BY_LEVEL = new Map([
+const METHOD_BY_LEVEL = new Map<string, string>([
   ["error", "error"],
   ["warn", "warn"],
   ["info", "info"],
@@ -17,10 +66,10 @@ const METHOD_BY_LEVEL = new Map([
   ["trace", "debug"]
 ]);
 
-const DEFAULT_LOG_LEVEL = process.env.LOG_LEVEL ?? "info";
-const DEFAULT_LOG_FORMAT = process.env.LOG_FORMAT ?? "text";
+const DEFAULT_LOG_LEVEL = (process.env.LOG_LEVEL ?? "info") as LogLevel;
+const DEFAULT_LOG_FORMAT = (process.env.LOG_FORMAT ?? "text") as LogFormat;
 
-function normalizeLogLevel(level = DEFAULT_LOG_LEVEL) {
+function normalizeLogLevel(level: LogLevel | number | string = DEFAULT_LOG_LEVEL): number {
   if (typeof level === "number" && Number.isFinite(level)) {
     return level;
   }
@@ -30,10 +79,10 @@ function normalizeLogLevel(level = DEFAULT_LOG_LEVEL) {
     throw new Error(`Unknown log level "${level}". Expected one of: ${[...LOG_LEVEL_PRIORITIES.keys()].join(", ")}`);
   }
 
-  return LOG_LEVEL_PRIORITIES.get(normalized);
+  return LOG_LEVEL_PRIORITIES.get(normalized)!;
 }
 
-function levelNameFromPriority(priority) {
+function levelNameFromPriority(priority: number): string {
   for (const [levelName, value] of LOG_LEVEL_PRIORITIES.entries()) {
     if (value === priority) {
       return levelName;
@@ -43,22 +92,33 @@ function levelNameFromPriority(priority) {
   return "info";
 }
 
-function safeJoinParts(parts) {
+function safeJoinParts(parts: Array<string | null | undefined>): string {
   return parts.filter(Boolean).join(" ");
 }
 
-function formatTimestamp(date = new Date()) {
+function formatTimestamp(date: Date = new Date()): string {
   return date.toISOString();
 }
 
-function createEmitter({ writer, getLevelPriority, name, format }) {
-  const resolveWriter = (method) => {
+interface EmitterParams {
+  writer: LogWriter;
+  getLevelPriority: () => number;
+  name?: string;
+  format: string;
+}
+
+type EmitFn = (levelName: string, message: unknown, details: unknown[]) => void;
+
+function createEmitter({ writer, getLevelPriority, name, format }: EmitterParams): EmitFn {
+  const resolveWriter = (method: string): (...args: unknown[]) => void => {
     const resolved = method in writer ? writer[method] : writer.log;
-    return typeof resolved === "function" ? resolved.bind(writer) : console.log;
+    return typeof resolved === "function"
+      ? (resolved as (...args: unknown[]) => void).bind(writer)
+      : console.log;
   };
 
-  const emit = (levelName, message, details) => {
-    const priority = LOG_LEVEL_PRIORITIES.get(levelName) ?? LOG_LEVEL_PRIORITIES.get("info");
+  const emit: EmitFn = (levelName, message, details) => {
+    const priority = LOG_LEVEL_PRIORITIES.get(levelName) ?? LOG_LEVEL_PRIORITIES.get("info")!;
     if (priority > getLevelPriority()) {
       return;
     }
@@ -67,7 +127,7 @@ function createEmitter({ writer, getLevelPriority, name, format }) {
     const output = resolveWriter(method);
 
     if (format === "json") {
-      const logEntry = {
+      const logEntry: Record<string, unknown> = {
         timestamp: new Date().toISOString(),
         level: levelName,
         name,
@@ -113,23 +173,29 @@ function createEmitter({ writer, getLevelPriority, name, format }) {
   return emit;
 }
 
-export function createLogger({ name, level = DEFAULT_LOG_LEVEL, writer = console, format = DEFAULT_LOG_FORMAT } = {}) {
+export function createLogger({
+  name,
+  level = DEFAULT_LOG_LEVEL,
+  writer,
+  format = DEFAULT_LOG_FORMAT
+}: CreateLoggerOptions = {}): Logger {
+  const effectiveWriter: LogWriter = writer ?? (console as unknown as LogWriter);
   let currentLevelPriority = normalizeLogLevel(level);
 
   const getLevelPriority = () => currentLevelPriority;
-  const emitter = createEmitter({ writer, getLevelPriority, name, format });
+  const emitter = createEmitter({ writer: effectiveWriter, getLevelPriority, name, format });
 
-  const logger = {
+  const logger: Logger = {
     get format() {
       return format;
     },
     get level() {
       return levelNameFromPriority(currentLevelPriority);
     },
-    set level(newLevel) {
+    set level(newLevel: string) {
       currentLevelPriority = normalizeLogLevel(newLevel);
     },
-    child(childName) {
+    child(childName?: string): Logger {
       const suffix = childName ? `${childName}` : null;
       let combinedName = name;
 
@@ -143,7 +209,7 @@ export function createLogger({ name, level = DEFAULT_LOG_LEVEL, writer = console
       return createLogger({
         name: combinedName,
         level: currentLevelPriority,
-        writer,
+        writer: effectiveWriter,
         format
       });
     },
@@ -170,7 +236,7 @@ export function createLogger({ name, level = DEFAULT_LOG_LEVEL, writer = console
   return logger;
 }
 
-function formatStageDetails(stage) {
+function formatStageDetails(stage: StageDetails): string {
   if (!stage) {
     return "";
   }
@@ -182,7 +248,7 @@ function formatStageDetails(stage) {
   return stage.id;
 }
 
-export function createStageProgressLogger(baseLogger) {
+export function createStageProgressLogger(baseLogger?: Logger): StageProgressLogger {
   const logger = baseLogger ?? createLogger({ name: "pipeline" });
   const isJson = logger.format === "json";
 

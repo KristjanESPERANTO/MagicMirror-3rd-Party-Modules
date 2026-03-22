@@ -7,7 +7,7 @@ import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysi
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createDeterministicImageName } from "../../scripts/shared/deterministic-output.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createLogger } from "../../scripts/shared/logger.js";
+import { createLogger } from "../../scripts/shared/logger.ts";
 import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import path from "node:path";

@@ -6,7 +6,7 @@
  */
 
 import { WorkerPool } from "./worker-pool.ts";
-import { createLogger } from "../../scripts/shared/logger.js";
+import { createLogger } from "../../scripts/shared/logger.ts";
 import process from "node:process";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";

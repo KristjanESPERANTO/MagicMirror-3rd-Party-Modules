@@ -9,7 +9,7 @@ import { ensureRepository, GitErrorCategory, getCommitDate } from "./shared/git.
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createHttpClient } from "./shared/http-client.js";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createLogger } from "./shared/logger.js";
+import { createLogger } from "./shared/logger.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createRateLimiter } from "./shared/rate-limiter.js";
 import { ensureDirectory, fileExists, writeJson } from "./shared/fs-utils.ts";

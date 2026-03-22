@@ -8,7 +8,7 @@
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { buildAuthHeadersFromEnv, createHttpClient } from "../shared/http-client.js";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createLogger } from "../shared/logger.js";
+import { createLogger } from "../shared/logger.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createRateLimiter } from "../shared/rate-limiter.js";
 
@@ -27,7 +27,7 @@ function getErrorMessage(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
 }
 
-const logger = createLogger("remote-sha");
+const logger = createLogger({ name: "remote-sha" });
 
 const rateLimiter = createRateLimiter({
   tokensPerInterval: 5,

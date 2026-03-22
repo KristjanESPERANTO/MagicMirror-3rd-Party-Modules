@@ -1,5 +1,5 @@
-// @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
-import { createLogger } from "../shared/logger.js";
+import type { LogFormat } from "../shared/logger.ts";
+import { createLogger } from "../shared/logger.ts";
 import process from "node:process";
 import { resolve } from "node:path";
 import { runAggregateCatalogue } from "../aggregate-catalogue.ts";
@@ -46,7 +46,7 @@ export function createInProcessStageRunner({
     if (stage.id === "parallel-processing" && artifactStore.has("modules-stage-2")) {
       const runLogger = createLogger({
         name: "parallel-processing",
-        format: env.LOG_FORMAT ?? process.env.LOG_FORMAT ?? "text"
+        format: (env.LOG_FORMAT ?? process.env.LOG_FORMAT ?? "text") as LogFormat
       });
 
       const stage2Modules = artifactStore.get("modules-stage-2");

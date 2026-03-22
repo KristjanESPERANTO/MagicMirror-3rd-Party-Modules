@@ -12,7 +12,7 @@ import { toStage5Module, writePipelineOutputs, writeStage5Output } from "../scri
 import { WorkerPool } from "../pipeline/workers/worker-pool.ts";
 import { cpus } from "node:os";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createLogger } from "../scripts/shared/logger.js";
+import { createLogger } from "../scripts/shared/logger.ts";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
 import { readFile } from "node:fs/promises";

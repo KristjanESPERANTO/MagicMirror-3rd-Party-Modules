@@ -1,4 +1,4 @@
-import { createLogger, createStageProgressLogger } from "../logger.js";
+import { createLogger, createStageProgressLogger } from "../logger.ts";
 import { describe, it, mock } from "node:test";
 import assert from "node:assert";
 
