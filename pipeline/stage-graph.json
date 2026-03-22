@@ -59,7 +59,7 @@
       "type": "file",
       "path": "website/data/modules.stage.5.json",
       "format": "json",
-      "description": "Module list annotated with JavaScript-level checks.",
+      "description": "Compatibility artifact for stage-5 data when persisted to disk; canonical handoff is in-memory.",
       "schema": "dist/schemas/modules.stage.5.schema.json"
     },
     {
@@ -159,11 +159,6 @@
       ],
       "outputs": [
         {
-          "artifact": "modules-stage-5",
-          "mode": "write",
-          "optional": true
-        },
-        {
           "artifact": "cloned-modules",
           "mode": "write"
         },
@@ -203,7 +198,8 @@
       "inputs": [
         {
           "artifact": "modules-stage-5",
-          "mode": "read"
+          "mode": "read",
+          "optional": true
         }
       ],
       "outputs": [
@@ -239,7 +235,8 @@
       "inputs": [
         {
           "artifact": "modules-stage-5",
-          "mode": "read"
+          "mode": "read",
+          "optional": true
         },
         {
           "artifact": "stats-json",

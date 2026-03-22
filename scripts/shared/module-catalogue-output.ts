@@ -352,13 +352,6 @@ async function allFilesExist(paths: string[]): Promise<boolean> {
   return true;
 }
 
-export async function writeStage5Output(stage5Modules: unknown[], projectRoot: string): Promise<string> {
-  const stage5Path = resolve(projectRoot, "website/data/modules.stage.5.json");
-
-  await writeFile(stage5Path, stringifyDeterministic({ modules: stage5Modules }), "utf-8");
-  return stage5Path;
-}
-
 export async function writePublishedCatalogueOutputs(
   stage5Modules: unknown[],
   projectRoot: string
@@ -420,10 +413,4 @@ export async function writePublishedCatalogueOutputs(
     statsPath,
     wroteOutputs: true
   };
-}
-
-export async function writePipelineOutputs(stage5Modules: unknown[], projectRoot: string): Promise<string> {
-  const stage5Path = await writeStage5Output(stage5Modules, projectRoot);
-  await writePublishedCatalogueOutputs(stage5Modules, projectRoot);
-  return stage5Path;
 }

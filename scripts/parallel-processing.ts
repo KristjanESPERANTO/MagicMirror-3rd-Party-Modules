@@ -3,11 +3,11 @@
  * Parallel Module Processing Stage (P7.3)
  *
  * Replaces stages 3+4+5 with parallel worker pool processing.
- * CLI wrapper reads modules.stage.2.json and writes modules.stage.5.json.
+ * CLI wrapper reads modules.stage.2.json and keeps stage-5 data in memory.
  */
 
 import { MODULE_ANALYSIS_CACHE_SCHEMA_VERSION, buildModuleAnalysisCacheKey, createModuleAnalysisCache, getProjectRevision, normalizeModuleAnalysisCheckGroups, resolveModuleAnalysisCachePath } from "../scripts/shared/module-analysis-cache.ts";
-import { toStage5Module, writePipelineOutputs, writeStage5Output } from "../scripts/shared/module-catalogue-output.ts";
+import { toStage5Module } from "../scripts/shared/module-catalogue-output.ts";
 import { WorkerPool } from "../pipeline/workers/worker-pool.ts";
 import { cpus } from "node:os";
 import { createLogger } from "../scripts/shared/logger.ts";
@@ -376,7 +376,7 @@ export async function runParallelProcessing({
   analysisConfig = DEFAULT_ANALYSIS_CONFIG,
   catalogueRevision,
   workerPool = null,
-  outputWriter = writeStage5Output,
+  outputWriter = null,
   runLogger = logger
 }: RunParallelProcessingOptions): Promise<ParallelProcessingResult> {
   if (!Array.isArray(modules)) {
@@ -495,7 +495,7 @@ async function main(): Promise<void> {
   try {
     logger.info(`Reading modules from ${stage2Path}...`);
     const modules = JSON.parse(await readFile(stage2Path, "utf-8"));
-    await runParallelProcessing({ modules, outputWriter: writePipelineOutputs, projectRoot: PROJECT_ROOT });
+    await runParallelProcessing({ modules, outputWriter: null, projectRoot: PROJECT_ROOT });
   }
   catch (error) {
     logger.error("Fatal error:", getErrorMessage(error));
