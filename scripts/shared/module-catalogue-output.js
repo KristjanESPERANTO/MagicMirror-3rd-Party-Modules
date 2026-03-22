@@ -157,8 +157,14 @@ function buildStats(stage5Modules, finalModules, timestamp) {
   };
 }
 
-export async function writePipelineOutputs(stage5Modules, projectRoot) {
+export async function writeStage5Output(stage5Modules, projectRoot) {
   const stage5Path = resolve(projectRoot, "website/data/modules.stage.5.json");
+
+  await writeFile(stage5Path, stringifyDeterministic({ modules: stage5Modules }), "utf-8");
+  return stage5Path;
+}
+
+export async function writePublishedCatalogueOutputs(stage5Modules, projectRoot) {
   const modulesJsonPath = resolve(projectRoot, "website/data/modules.json");
   const modulesMinPath = resolve(projectRoot, "website/data/modules.min.json");
   const statsPath = resolve(projectRoot, "website/data/stats.json");
@@ -167,10 +173,19 @@ export async function writePipelineOutputs(stage5Modules, projectRoot) {
   const finalModules = stage5Modules.map(module => toFinalModule(module, lastUpdate));
   const stats = buildStats(stage5Modules, finalModules, lastUpdate);
 
-  await writeFile(stage5Path, stringifyDeterministic({ modules: stage5Modules }), "utf-8");
   await writeFile(modulesJsonPath, stringifyDeterministic({ modules: finalModules }), "utf-8");
   await writeFile(modulesMinPath, stringifyDeterministic({ modules: finalModules }, 0), "utf-8");
   await writeFile(statsPath, stringifyDeterministic(stats), "utf-8");
 
+  return {
+    modulesJsonPath,
+    modulesMinPath,
+    statsPath
+  };
+}
+
+export async function writePipelineOutputs(stage5Modules, projectRoot) {
+  const stage5Path = await writeStage5Output(stage5Modules, projectRoot);
+  await writePublishedCatalogueOutputs(stage5Modules, projectRoot);
   return stage5Path;
 }

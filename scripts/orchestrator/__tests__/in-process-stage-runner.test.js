@@ -14,7 +14,7 @@ function createSilentStageLogger() {
   };
 }
 
-test("runStagesSequentially passes modules-stage-2 in memory from collect-metadata to parallel-processing", async () => {
+test("runStagesSequentially passes modules in memory across collect, parallel, and aggregate stages", async () => {
   const modules = [
     {
       category: "Test",
@@ -26,10 +26,22 @@ test("runStagesSequentially passes modules-stage-2 in memory from collect-metada
     }
   ];
   let capturedModules = null;
+  let capturedStage5Modules = null;
 
   const stageRunner = createInProcessStageRunner({
     projectRoot: "/virtual/project",
     stageRuntimes: {
+      aggregateCatalogue: (options) => {
+        capturedStage5Modules = options.stage5Modules;
+        return Promise.resolve({
+          outputPaths: {
+            modulesJsonPath: "/virtual/project/website/data/modules.json",
+            modulesMinPath: "/virtual/project/website/data/modules.min.json",
+            statsPath: "/virtual/project/website/data/stats.json"
+          },
+          stage5ModulesCount: options.stage5Modules.length
+        });
+      },
       collectMetadata: () => Promise.resolve({
         modules,
         outputPath: "/virtual/project/website/data/modules.stage.2.json"
@@ -55,6 +67,11 @@ test("runStagesSequentially passes modules-stage-2 in memory from collect-metada
       command: { args: ["scripts/parallel-processing.js"], executable: "node" },
       id: "parallel-processing",
       name: "Parallel module processing"
+    },
+    {
+      command: { args: ["scripts/aggregate-catalogue.js"], executable: "node" },
+      id: "aggregate-catalogue",
+      name: "Aggregate catalogue outputs"
     }
   ];
 
@@ -67,7 +84,9 @@ test("runStagesSequentially passes modules-stage-2 in memory from collect-metada
   });
 
   assert.deepStrictEqual(capturedModules, modules);
-  assert.strictEqual(completedStages.length, 2);
+  assert.deepStrictEqual(capturedStage5Modules, modules);
+  assert.strictEqual(completedStages.length, 3);
   assert.strictEqual(completedStages[0].stage.id, "collect-metadata");
   assert.strictEqual(completedStages[1].stage.id, "parallel-processing");
+  assert.strictEqual(completedStages[2].stage.id, "aggregate-catalogue");
 });

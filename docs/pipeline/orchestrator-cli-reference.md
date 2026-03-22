@@ -12,7 +12,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 - Persist run metadata (planned, skipped, succeeded, failed) to `.pipeline-runs/` so partial runs stay auditable.
 - Offer composable filters (`--only`, `--skip`, future `--from`/`--to`) that unlock partial runs without duplicating scripts (supports P1.4).
 - Surface consistent pre/post hooks (e.g. schema validation, cleanup) and failure handling across all stages.
-- Run the supported pipeline through the Node.js toolchain, with `parallel-processing` encapsulating clone/enrich/analyze work behind one stage definition.
+- Run the supported pipeline through the Node.js toolchain, with `parallel-processing` handling clone/enrich/analyze work and `aggregate-catalogue` handling publication outputs.
 
 ## Stakeholders
 
@@ -42,7 +42,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
    - Captures exit codes, stdout/stderr, and wraps failures with actionable messages before persisting result metadata.
 
 3. **Stage Runner Abstraction** — Normalizes execution for the Node runtime:
-   - All supported stages run via `node <script>`. The current stage graph executes `collect-metadata` and `parallel-processing`, with the latter coordinating the deeper analysis work internally.
+   - All supported stages run via `node <script>`. The current stage graph executes `collect-metadata`, `parallel-processing`, and `aggregate-catalogue`, with publication output generation separated from worker analysis.
 
 4. **State & Artifacts** — Maintains an execution ledger (`.pipeline-runs/<timestamp>_<pipeline>.json`) with start/end timestamps, per-stage status (`succeeded`, `skipped`, `failed`, `pending`), durations, filters, and failure metadata, enabling future resume functionality and local auditing even when stages are filtered out.
 

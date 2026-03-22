@@ -1,11 +1,13 @@
 import { createLogger } from "../shared/logger.js";
 import process from "node:process";
 import { resolve } from "node:path";
+import { runAggregateCatalogue } from "../aggregate-catalogue.js";
 import { runCollectMetadata } from "../collect-metadata/index.js";
 import { runParallelProcessing } from "../parallel-processing.js";
 
 export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } = {}) {
   const artifactStore = new Map();
+  const aggregateCatalogue = stageRuntimes.aggregateCatalogue ?? runAggregateCatalogue;
   const collectMetadata = stageRuntimes.collectMetadata ?? runCollectMetadata;
   const parallelProcessing = stageRuntimes.parallelProcessing ?? runParallelProcessing;
 
@@ -33,6 +35,14 @@ export function createInProcessStageRunner({ projectRoot, stageRuntimes = {} } =
       });
 
       artifactStore.set("modules-stage-5", result.stage5Modules);
+      return true;
+    }
+
+    if (stage.id === "aggregate-catalogue" && artifactStore.has("modules-stage-5")) {
+      await aggregateCatalogue({
+        projectRoot: runRoot,
+        stage5Modules: artifactStore.get("modules-stage-5")
+      });
       return true;
     }
 

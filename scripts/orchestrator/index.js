@@ -144,6 +144,21 @@ function applyStageFilters(stages, filters) {
   }
 
   const selectedStageIds = new Set(selectedStages.map(stage => stage.id));
+  const unmetDependencies = [];
+
+  for (const stage of selectedStages) {
+    const dependencies = Array.isArray(stage.dependsOn) ? stage.dependsOn : [];
+    const missingDependencies = dependencies.filter(stageId => !selectedStageIds.has(stageId));
+
+    if (missingDependencies.length > 0) {
+      unmetDependencies.push(`${stage.id} requires ${missingDependencies.join(", ")}`);
+    }
+  }
+
+  if (unmetDependencies.length > 0) {
+    throw new Error(`Selected stages have unmet dependencies: ${unmetDependencies.join("; ")}`);
+  }
+
   const skippedStages = stages.filter(stage => !selectedStageIds.has(stage.id));
 
   return {

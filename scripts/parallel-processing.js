@@ -14,7 +14,7 @@ import {
   normalizeModuleAnalysisCheckGroups,
   resolveModuleAnalysisCachePath
 } from "../scripts/shared/module-analysis-cache.js";
-import { toStage5Module, writePipelineOutputs } from "../scripts/shared/module-catalogue-output.js";
+import { toStage5Module, writePipelineOutputs, writeStage5Output } from "../scripts/shared/module-catalogue-output.js";
 import { WorkerPool } from "../pipeline/workers/worker-pool.js";
 import { cpus } from "node:os";
 import { createLogger } from "../scripts/shared/logger.js";
@@ -280,7 +280,7 @@ export async function runParallelProcessing({
   analysisConfig = DEFAULT_ANALYSIS_CONFIG,
   catalogueRevision,
   workerPool = null,
-  outputWriter = writePipelineOutputs,
+  outputWriter = writeStage5Output,
   runLogger = logger
 } = {}) {
   if (!Array.isArray(modules)) {
@@ -399,7 +399,7 @@ async function main() {
   try {
     logger.info(`Reading modules from ${stage2Path}...`);
     const modules = JSON.parse(await readFile(stage2Path, "utf-8"));
-    await runParallelProcessing({ modules, projectRoot: PROJECT_ROOT });
+    await runParallelProcessing({ modules, outputWriter: writePipelineOutputs, projectRoot: PROJECT_ROOT });
   }
   catch (error) {
     logger.error("Fatal error:", error);

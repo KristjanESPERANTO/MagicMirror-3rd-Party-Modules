@@ -4,20 +4,21 @@ Visibility into the automation that builds and publishes the third-party module 
 
 ## Current State (March 2026)
 
-The supported production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh-parallel` (also exposed as `node --run all`). The orchestrator now drives two registered stages across three conceptual phases: metadata collection, parallel module processing, and publication. The remaining architectural gap tracked under P7.6 is reintegrating worker-aware incremental cache writes.
+The supported production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh-parallel` (also exposed as `node --run all`). The orchestrator now drives three registered stages across three operational phases: metadata collection, parallel module processing, and catalogue aggregation.
 
 ### Stage Overview
 
-| Order | Stage ID              | Key Outputs                                                                                                              |
-| ----- | --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| 1+2   | `collect-metadata`    | `modules.stage.2.json`, `gitHubData.json`                                                                                |
-| 3+4+5 | `parallel-processing` | `modules.stage.5.json`, `modules/`, `modules_temp/`, `website/images/`, `modules.json`, `modules.min.json`, `stats.json` |
+| Order | Stage ID              | Key Outputs                                                            |
+| ----- | --------------------- | ---------------------------------------------------------------------- |
+| 1+2   | `collect-metadata`    | `modules.stage.2.json`, `gitHubData.json`                              |
+| 3+4+5 | `parallel-processing` | `modules.stage.5.json`, `modules/`, `modules_temp/`, `website/images/` |
+| 6     | `aggregate-catalogue` | `modules.json`, `modules.min.json`, `stats.json`                       |
 
 ### Current Workflow Diagram
 
 ```mermaid
 flowchart TB
-  orchestrator[[Orchestrator<br>2-stage execution]]
+  orchestrator[[Orchestrator<br>3-stage execution]]
 
   subgraph Phase 1: Metadata Collection
     seed[("Module seed list")] --> collect{{Collect metadata}}
@@ -30,17 +31,23 @@ flowchart TB
     parallel --> clones[("modules/<br>modules_temp/")]
     parallel --> images[("website/images/")]
     parallel --> stage5["modules.stage.5.json"]
-    parallel --> outputs[("modules.json<br>modules.min.json<br>stats.json")]
+  end
+
+  subgraph Phase 3: Catalogue Aggregation
+    stage5 --> aggregate{{Aggregate catalogue}}
+    aggregate --> outputs[("modules.json<br>modules.min.json<br>stats.json")]
   end
 
   orchestrator -.controls.-> collect
   orchestrator -.controls.-> parallel
+  orchestrator -.controls.-> aggregate
 ```
 
 ### Key Features
 
 - **Orchestrator CLI**: Declarative stage graph with `--only/--skip` support, retries, and structured logging
 - **Worker Pool Stage**: `parallel-processing` encapsulates clone, enrich, image, and analysis work behind a single supported stage
+- **Aggregation Stage**: `aggregate-catalogue` builds published JSON artifacts from `modules.stage.5.json`
 - **Schema Validation**: JSON schemas enforce contracts at the supported boundaries (`modules.stage.2.json`, `modules.stage.5.json`, final outputs)
 - **Shared Utilities**: HTTP, Git, filesystem, and rate limiting in `scripts/shared/`
 
@@ -48,12 +55,12 @@ flowchart TB
 
 The pipeline implements intelligent caching and skip logic to avoid redundant work:
 
-| Scope             | Optimization    | Current Behavior                                                      | Why It Helps                                                           |
-| ----------------- | --------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Metadata          | API cache TTL   | Reuses recent host API responses during `collect-metadata`            | Reduces external API traffic                                           |
-| Module processing | Clone reuse     | Recycles `modules_temp/` when repositories can be refreshed in place  | Avoids unnecessary full re-clones                                      |
-| Module processing | Worker batching | Processes modules in bounded child-process batches                    | Keeps memory bounded and throughput predictable                        |
-| Analysis cache    | Pending         | Worker-compatible `moduleCache.json` reintegration is tracked in P7.6 | Restores second-run skip behavior without reviving the old stage chain |
+| Scope             | Optimization     | Current Behavior                                                                           | Why It Helps                                                         |
+| ----------------- | ---------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| Metadata          | API cache TTL    | Reuses recent host API responses during `collect-metadata`                                 | Reduces external API traffic                                         |
+| Module processing | Clone reuse      | Recycles `modules_temp/` when repositories can be refreshed in place                       | Avoids unnecessary full re-clones                                    |
+| Module processing | Worker batching  | Processes modules in bounded child-process batches                                         | Keeps memory bounded and throughput predictable                      |
+| Analysis cache    | Cache read/write | Worker-compatible `moduleCache.json` drives skip/read/write/prune in `parallel-processing` | Restores second-run skip behavior while preserving worker throughput |
 
 ---
 

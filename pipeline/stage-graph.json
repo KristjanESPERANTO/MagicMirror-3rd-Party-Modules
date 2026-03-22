@@ -4,7 +4,11 @@
     {
       "id": "full-refresh-parallel",
       "description": "Full catalogue refresh using parallel worker pool (P7.3).",
-      "stages": ["collect-metadata", "parallel-processing"]
+      "stages": [
+        "collect-metadata",
+        "parallel-processing",
+        "aggregate-catalogue"
+      ]
     }
   ],
   "artifacts": [
@@ -156,18 +160,6 @@
         {
           "artifact": "images-catalogue",
           "mode": "write"
-        },
-        {
-          "artifact": "modules-json",
-          "mode": "write"
-        },
-        {
-          "artifact": "modules-json-min",
-          "mode": "write"
-        },
-        {
-          "artifact": "stats-json",
-          "mode": "write"
         }
       ],
       "sideEffects": [
@@ -186,6 +178,42 @@
         {
           "type": "network",
           "description": "Git operations and npm commands may access external resources."
+        }
+      ]
+    },
+    {
+      "id": "aggregate-catalogue",
+      "name": "Aggregate catalogue outputs",
+      "description": "Build final published catalogue outputs from Stage 5 results.",
+      "command": {
+        "executable": "node",
+        "args": ["scripts/aggregate-catalogue.js"]
+      },
+      "dependsOn": ["parallel-processing"],
+      "inputs": [
+        {
+          "artifact": "modules-stage-5",
+          "mode": "read"
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "modules-json",
+          "mode": "write"
+        },
+        {
+          "artifact": "modules-json-min",
+          "mode": "write"
+        },
+        {
+          "artifact": "stats-json",
+          "mode": "write"
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "filesystem",
+          "description": "Writes final published catalogue and stats JSON artifacts."
         }
       ]
     }
