@@ -1,5 +1,5 @@
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.js";
+import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureRepository, getCommitDate } from "../../scripts/shared/git.js";
 import { rename, rm } from "node:fs/promises";

@@ -6,7 +6,7 @@
  */
 
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { ensureDirectory } from "../../scripts/shared/fs-utils.js";
+import { ensureDirectory } from "../../scripts/shared/fs-utils.ts";
 import fs from "node:fs/promises";
 import path from "node:path";
 

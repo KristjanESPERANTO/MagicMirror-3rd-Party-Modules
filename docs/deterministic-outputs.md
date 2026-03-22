@@ -79,7 +79,7 @@ Benefits of simple deterministic approach:
 ### Writing JSON with Sorted Keys
 
 ```javascript
-import { writeJson } from "./shared/fs-utils.js";
+import { writeJson } from "./shared/fs-utils.ts";
 
 // Automatically uses sorted keys
 await writeJson("output.json", { b: 2, a: 1, c: 3 });

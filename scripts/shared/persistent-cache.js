@@ -1,4 +1,4 @@
-import { ensureDirectory, fileExists, readJson, writeJson } from "./fs-utils.js";
+import { ensureDirectory, fileExists, readJson, writeJson } from "./fs-utils.ts";
 import path from "node:path";
 
 const DEFAULT_VERSION = 1;

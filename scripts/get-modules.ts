@@ -12,8 +12,7 @@ import { createHttpClient } from "./shared/http-client.js";
 import { createLogger } from "./shared/logger.js";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createRateLimiter } from "./shared/rate-limiter.js";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { ensureDirectory, fileExists, writeJson } from "./shared/fs-utils.js";
+import { ensureDirectory, fileExists, writeJson } from "./shared/fs-utils.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { validateStageFile } from "./lib/schemaValidator.js";
 import { stringifyDeterministic } from "./shared/deterministic-output.ts";

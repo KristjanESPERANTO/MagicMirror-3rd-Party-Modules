@@ -10,8 +10,7 @@ import { execFile } from "node:child_process";
 import { setMaxListeners } from "node:events";
 import { promisify } from "node:util";
 
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { ensureDirectory, writeJson } from "../shared/fs-utils.js";
+import { ensureDirectory, writeJson } from "../shared/fs-utils.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../shared/logger.js";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice

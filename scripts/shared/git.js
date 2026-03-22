@@ -1,6 +1,6 @@
 import { constants, promises as fsPromises } from "node:fs";
 import { dirname } from "node:path";
-import { ensureDirectory } from "./fs-utils.js";
+import { ensureDirectory } from "./fs-utils.ts";
 import { execFile } from "node:child_process";
 import process from "node:process";
 import { promisify } from "node:util";
