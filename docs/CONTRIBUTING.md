@@ -78,7 +78,7 @@ For focused manual runs, point the pipeline at a small local wiki snapshot inste
 
 For regression testing, prefer the curated fixtures (`node --run fixtures:generate`, `node --run test:fixtures`, `node --run golden:check`) over ad-hoc subsets.
 
-## Release validation (Phase 4 rollout)
+## Release validation
 
 As of September 2025, schema validation is part of the release gate. After you regenerate the website data, run:
 
@@ -222,7 +222,8 @@ Golden artifacts are reference outputs stored in `fixtures/golden/` that serve a
 - [`docs/architecture.md`](architecture.md) – current vs. target pipeline topology.
 - [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – command reference for partial runs, diagnostics, and logs.
 - [`fixtures/README.md`](../fixtures/README.md) – curated dataset and validation troubleshooting.
-- [`docs/pipeline/shared-defs-scope.md`](pipeline/shared-defs-scope.md) – plan for consolidating shared JSON Schema `$defs` (task P1.6).
+- [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – current CLI and schema validation flow.
+- [`docs/open-items.md`](open-items.md) – central list of active cross-doc follow-up work.
 
 ### Troubleshooting
 

@@ -1,5 +1,5 @@
 /**
- * Per-Module Logging Utility (P7.4)
+ * Per-module logging utility
  *
  * Provides structured logging for individual module processing.
  * Logs are written to files organized by run timestamp and module ID.

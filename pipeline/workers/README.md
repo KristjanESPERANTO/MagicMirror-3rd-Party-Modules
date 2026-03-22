@@ -1,8 +1,8 @@
-# Worker Pool Implementation (P7.x)
+# Worker Pool Implementation
 
 This directory contains the worker pool implementation for parallel module processing.
 
-## Current Status: P7.3 - Worker Pool Orchestration ✅
+## Current Status: Worker Pool Orchestration ✅
 
 The worker pool orchestration is complete and functional. Modules can now be processed in parallel using multiple worker processes.
 
@@ -59,7 +59,7 @@ Run with:
 npm run pipeline -- run full-refresh-parallel --workers=4 --batch-size=50
 ```
 
-### Test Results (P7.3 Validation)
+### Test Results
 
 Successfully tested with multiple module sets:
 
@@ -81,12 +81,9 @@ Successfully tested with multiple module sets:
 - Estimated time: ~3-5 minutes (vs 10-15 minutes sequential)
 - 3-4x speedup depending on I/O and CPU availability
 
-### Next Steps (P7.4+)
+### Follow-Up Tracking
 
-- [x] P7.4: Per-module logging to files ✅
-- [ ] P7.5: Remove old stage scripts after migration complete
-- [ ] P7.6: Integrate incremental mode with module cache
-- [ ] P7.7: Performance benchmarking and optimization
+Open follow-up work is tracked centrally in [Open Items](../../docs/open-items.md).
 
 ### Configuration Options
 
@@ -105,7 +102,7 @@ PIPELINE_WORKER_COUNT=4  # Override default worker count
 
 ### Architecture
 
-See [../docs/pipeline/worker-pool-design.md](../../docs/pipeline/worker-pool-design.md) for the complete design.
+See [../docs/architecture.md](../../docs/architecture.md) for the canonical pipeline architecture.
 
 ### Module Processing Flow
 
@@ -113,7 +110,7 @@ See [../docs/pipeline/worker-pool-design.md](../../docs/pipeline/worker-pool-des
 ┌─────────────────────────────────────────────────────────────┐
 │                   processModule()                            │
 │                                                              │
-│  Input: ModuleInput (from Stage 2)                          │
+│  Input: ModuleInput (from in-memory metadata payload)        │
 │                                                              │
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │ Stage 3: Clone Repository                            │   │
@@ -133,11 +130,10 @@ See [../docs/pipeline/worker-pool-design.md](../../docs/pipeline/worker-pool-des
 │                          │                                   │
 │                          ▼                                   │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │ Stage 5: Analyze (Placeholder)                       │   │
-│  │  - TODO: ESLint checks                               │   │
-│  │  - TODO: npm-check-updates                           │   │
-│  │  - TODO: Dependency detection                        │   │
-│  │  - TODO: README checks                               │   │
+│  │ Stage 5: Analyze                                     │   │
+│  │  - Fast checks + deep heuristics                     │   │
+│  │  - Optional ESLint / npm-check-updates integrations  │   │
+│  │  - Dependency and README rule evaluation             │   │
 │  └──────────────────────────────────────────────────────┘   │
 │                          │                                   │
 │                          ▼                                   │
@@ -148,7 +144,7 @@ See [../docs/pipeline/worker-pool-design.md](../../docs/pipeline/worker-pool-des
 
 ## Design Decisions
 
-### Per-Module Logging (P7.4) ✅
+### Per-Module Logging ✅
 
 Each module gets its own log file with detailed processing information:
 
@@ -235,7 +231,7 @@ Current single-worker performance (based on testing):
 - **Enrich:** ~0.5-1 second per module
 - **Total:** ~3-6 seconds per module
 
-Expected multi-worker performance (P7.3):
+Expected multi-worker performance:
 
 - With 4 workers: 4x throughput
 - Estimated full run: ~10-15 minutes for ~800 modules

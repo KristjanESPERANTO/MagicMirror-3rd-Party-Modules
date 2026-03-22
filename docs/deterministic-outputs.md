@@ -153,41 +153,16 @@ No hashing required - the module identifier itself is already unique and determi
 - **Filename Generation**: Instant string concatenation
 - **Overall**: No measurable impact on pipeline runtime
 
-## Migration Notes
+## Compatibility Note
 
-### Existing Screenshots
+Some older snapshots in the repository may still contain pre-standardized screenshot filenames (for example, names derived from source paths). The current canonical output uses the deterministic `<moduleName>---<maintainer>.<extension>` format.
 
-When this feature was introduced, existing screenshots had filenames like:
+Downstream consumers should always read screenshot paths from `modules.json` rather than hard-coding file names.
 
-```text
-MMM-Weather---example---screenshot.jpg
-```
+## Status
 
-After the change, new screenshots use:
+Deterministic output safeguards (sorted keys and deterministic image naming) are part of the current pipeline behavior.
 
-```text
-MMM-Weather---example.jpg
-```
+## Follow-Up Tracking
 
-**Migration Strategy**:
-
-1. Old screenshots remain in place (not deleted)
-2. New pipeline runs generate hash-based filenames
-3. Gradual cleanup of old files as modules are re-processed
-
-**Breaking Change**: Modules linking directly to screenshot URLs will need updates. This is considered acceptable because:
-
-- Screenshot URLs should come from `modules.json`, not hard-coded
-- The migration improves long-term maintainability
-- Old files persist during transition
-
-## Related Tasks
-
-- **P3.4**: Ensure deterministic outputs (sorted keys, simple deterministic image names) ✅ Completed Nov 2025
-
-## Future Improvements
-
-Potential enhancements (not currently planned):
-
-1. **Canonical JSON**: Use RFC 8785 canonical JSON for cryptographic verification
-2. **Reproducible Timestamps**: Strip or normalize timestamps in metadata
+Potential deterministic-output enhancements are tracked centrally in [Open Items](open-items.md) under "Backlog (Optional)".

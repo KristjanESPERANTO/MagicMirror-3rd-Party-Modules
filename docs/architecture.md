@@ -1,6 +1,6 @@
 # Pipeline Architecture
 
-Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current canonical pipeline, the legacy state we migrated from, and the parts of the broader architecture that are still future-facing.
+Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current canonical pipeline and the parts of the broader architecture that are still future-facing.
 
 ## Current State (March 2026)
 
@@ -68,71 +68,9 @@ The pipeline implements intelligent caching and skip logic to avoid redundant wo
 
 ---
 
-## Legacy Workflow Snapshot (pre-September 2025)
+### Follow-Up Tracking
 
-```mermaid
-flowchart TB
-  subgraph Stage 1: Create Module List
-    wiki[("MagicMirror wiki table")] --> createLegacy{{Create module list<br>Node.js}}
-    createLegacy --> stage1Legacy["legacy stage-1 snapshot"]
-  end
-
-  subgraph Stage 2: Update Repository Data
-    stage1Legacy --> updateLegacy{{Update repository data<br>Node.js}}
-    updateLegacy --> cacheLegacy[("gitHubData.json cache")]
-    updateLegacy --> stage2Legacy["legacy stage-2 snapshot"]
-  end
-
-  subgraph Stage 3: Get Modules
-    stage2Legacy --> getLegacy{{Fetch repos<br>Python}}
-    getLegacy --> clonesLegacy[("modules/<br>modules_temp/")]
-    getLegacy --> stage3Legacy["legacy stage-3 snapshot"]
-  end
-
-  subgraph Stage 4: Expand Module List
-    stage3Legacy --> expandLegacy{{Enrich metadata<br>Node.js}}
-    expandLegacy --> imagesLegacy[("website/images/")]
-    expandLegacy --> stage4Legacy["legacy stage-4 snapshot"]
-  end
-
-  subgraph Stage 5: Check Modules JS
-    stage4Legacy --> checkjsLegacy{{Static checks<br>Node.js}}
-    checkjsLegacy --> stage5Legacy["legacy Stage-5 snapshot"]
-  end
-
-  subgraph Stage 6: Check Modules
-    stage5Legacy --> checkLegacy{{Deep analysis<br>Python}}
-    checkLegacy --> outputsLegacy[("modules.json<br>modules.min.json<br>stats.json<br>result.md")]
-  end
-
-  note1[["Mixed runtime: Python + Node.js"]]
-  note2[["No orchestrator: manual script execution"]]
-  note3[["6 sequential stages"]]
-```
-
-This legacy diagram captures the pre-orchestrator, mixed-runtime pipeline. Key issues that motivated the modernization:
-
-- Mixed Python + Node.js runtime made maintenance difficult
-- No orchestrator: manual script execution
-- No incremental updates: full run required every time
-- OOM risk with 1300+ modules loaded into memory
-- 6 sequential stages with 6 intermediate JSON files
-
-### Comparison: Legacy vs. Current Flow
-
-| Aspect             | Legacy (6 stages)         | Current flow (Mar 2026)                                                                                  |
-| ------------------ | ------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Runtime            | Python + Node.js          | Node.js with TypeScript-based deep checks                                                                |
-| Execution          | Sequential manual scripts | Orchestrated 4-stage pipeline with in-process handoff                                                    |
-| Incremental        | ❌ No                     | Partial: metadata cache + clone reuse                                                                    |
-| Memory             | Unbounded                 | Batch-/worker-bounded                                                                                    |
-| Intermediate files | 6                         | none; only published outputs are written (`modules.json`, `modules.min.json`, `stats.json`, `result.md`) |
-
-### Remaining Gaps
-
-1. Reintegrate worker-compatible `moduleCache.json` handling under P7.6.
-2. Record before/after repeated-run performance metrics once cache writes are back in place.
-3. Keep the published contract (`modules.json`, `modules.min.json`, `stats.json`, `result.md`) stable while worker caching evolves.
+Open follow-up work is tracked centrally in [Open Items](open-items.md).
 
 No persisted intermediate stage boundary remains. Stage handoffs are fully in-memory.
 

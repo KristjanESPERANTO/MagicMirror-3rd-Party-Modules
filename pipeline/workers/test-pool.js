@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Test script for worker pool (P7.3)
+ * Test script for worker pool
  *
  * Tests the worker pool with a small subset of modules.
  */

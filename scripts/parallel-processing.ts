@@ -156,7 +156,7 @@ function isCacheDisabled(): boolean {
 }
 
 /**
- * Prune cache entries that are stale for the current run (I5).
+ * Prune cache entries that are stale for the current run.
  * Stale means "key is no longer expected" due to removed modules
  * or key-input changes (module revision/check config/catalogue revision).
  *
@@ -243,7 +243,7 @@ export function partitionModulesByCache(
 }
 
 /**
- * Write successful worker results to cache (I3).
+ * Write successful worker results to cache.
  *
  * @param {Array} workerResults Worker results from pool.processModules
  * @param {Object} cache Cache instance

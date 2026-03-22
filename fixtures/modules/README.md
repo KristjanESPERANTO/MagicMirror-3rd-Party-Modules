@@ -1,6 +1,6 @@
 # Check Modules Fixture Repositories
 
-This directory will host the curated repositories used by the P2.3 comparison harness. Each fixture is stored as a miniature Git repository (with history squashed into a single commit) so that the harness can clone or copy them without reaching out to GitHub.
+This directory hosts the curated repositories used by the comparison harness. Each fixture is stored as a miniature Git repository (with history squashed into a single commit) so that the harness can clone or copy them without reaching out to GitHub.
 
 ## Layout
 

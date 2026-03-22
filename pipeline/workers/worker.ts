@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Worker Process Entry Point (P7.3)
+ * Worker process entry point
  *
  * This script runs in a child process and processes batches of modules.
  * Communicates with parent orchestrator via IPC messages.

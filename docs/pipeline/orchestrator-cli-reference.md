@@ -2,7 +2,7 @@
 
 _Last updated: 2025-09-30_
 
-Task **P1.2** delivered a lightweight Node.js command-line interface that reads the declarative stage graph, executes the pipeline end-to-end, and provides structured feedback to contributors. This document now serves as the reference for the shipped implementation.
+A lightweight Node.js command-line interface reads the declarative stage graph, executes the pipeline end-to-end, and provides structured feedback to contributors. This document now serves as the reference for the shipped implementation.
 
 ## Key capabilities
 
@@ -10,7 +10,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 - Interpret `pipeline/stage-graph.json` at runtime to determine stage ordering, inputs/outputs, and side-effects.
 - Emit structured logs and progress indicators so maintainers can trace stage execution locally and in CI.
 - Persist run metadata (planned, skipped, succeeded, failed) to `.pipeline-runs/` so partial runs stay auditable.
-- Offer composable filters (`--only`, `--skip`, future `--from`/`--to`) that unlock partial runs without duplicating scripts (supports P1.4).
+- Offer composable filters (`--only`, `--skip`, future `--from`/`--to`) that unlock partial runs without duplicating scripts.
 - Surface consistent pre/post hooks (e.g. schema validation, cleanup) and failure handling across all stages.
 - Run the supported pipeline through the Node.js toolchain, with `parallel-processing` handling clone/enrich/analyze work and `aggregate-catalogue` handling publication outputs.
 
@@ -22,8 +22,8 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 
 ## Context & Inputs
 
-- Stage metadata lives in [`pipeline/stage-graph.json`](../../pipeline/stage-graph.json) and was finalized under P1.1.
-- Schemas for stage artifacts are bundled in `dist/schemas/*.schema.json` (P1.3–P1.6) and are enforced after each stage.
+- Stage metadata lives in [`pipeline/stage-graph.json`](../../pipeline/stage-graph.json).
+- Schemas for stage artifacts are bundled in `dist/schemas/*.schema.json` and are enforced after each stage.
 - The CLI lives under `scripts/orchestrator/` (primary entrypoint `index.ts`, helper modules `cli-helpers.ts` and `cli-commands.ts`) with shared utilities documented in [`docs/architecture.md`](../architecture.md).
 
 ## Architecture Overview

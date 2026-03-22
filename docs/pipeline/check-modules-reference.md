@@ -2,7 +2,7 @@
 
 _Last updated: March 19, 2026_
 
-This page consolidates the material that previously lived in the P2.3 rollout documents. It should stay up to date as we evolve Stage 5 (`scripts/check-modules/index.ts`) and the curated fixture set.
+This page consolidates the material that previously lived in early planning documents. It should stay up to date as we evolve Stage 5 (`scripts/check-modules/index.ts`) and the curated fixture set.
 
 ## Status snapshot
 
@@ -27,7 +27,7 @@ The Stage 5 runner reads `scripts/check-modules/check-groups.config.json` to de
 
 ## CLI progress & run summaries
 
-- When the stage runs interactively (TTY), it now renders a single-line progress gauge on `stderr`. Disable it with `CHECK_MODULES_DISABLE_PROGRESS=1` or `CHECK_MODULES_PROGRESS=off` if you prefer the legacy log spam.
+- When the stage runs interactively (TTY), it renders a single-line progress gauge on `stderr`. Disable it with `CHECK_MODULES_DISABLE_PROGRESS=1` or `CHECK_MODULES_PROGRESS=off` if you prefer verbose line-by-line logging.
 - Every execution writes a Markdown + JSON summary to `.pipeline-runs/check-modules/<run-id>/`. The Markdown combines toggle state, aggregate stats, and the top modules with issues; the JSON mirrors the key metrics for tooling.
 - Artifact links inside the summary resolve relative to the run directory, making it easy to inspect `website/result.md`, `modules.json`, and `stats.json` produced by the run.
 

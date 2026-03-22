@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable no-underscore-dangle */
 /**
- * Test Per-Module Logging (P7.4)
+ * Test per-module logging
  *
  * Simple test to verify the module logger works correctly.
  */
@@ -17,7 +17,7 @@ const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "../..");
 
 async function testModuleLogger() {
-  console.log("Testing Per-Module Logging (P7.4)...\n");
+  console.log("Testing per-module logging...\n");
 
   const runId = `test-${Date.now()}`;
   const moduleId = "MMM-TestModule-----TestAuthor";

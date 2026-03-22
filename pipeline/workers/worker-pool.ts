@@ -1,5 +1,5 @@
 /**
- * Worker Pool Orchestrator (P7.3)
+ * Worker pool orchestrator
  *
  * Manages a pool of worker processes for parallel module processing.
  */
