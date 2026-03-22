@@ -1,6 +1,48 @@
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { MISSING_DEPENDENCY_RULE_DEFINITION } from "./missing-dependency-rule.js";
-const RULE_SEVERITIES = Object.freeze(["info", "warning", "error"]);
-const RULE_CATEGORY_METADATA = Object.freeze({
+
+type RuleSeverity = "info" | "warning" | "error";
+type RuleCategory = "Deprecated" | "Outdated" | "Typo" | "Recommendation";
+type RuleScope = "text" | "package-json" | "package-lock" | "module-structure";
+
+interface RuleCategoryInfo {
+  defaultSeverity: RuleSeverity;
+  description: string;
+  title: string;
+}
+
+interface RuleDefinition {
+  autoFixable?: boolean;
+  category: RuleCategory;
+  description?: string;
+  documentation?: string | null;
+  examples?: string[];
+  id: string;
+  pattern?: string;
+  patterns?: string[];
+  scope: RuleScope;
+  severity?: RuleSeverity;
+  stages?: string | string[];
+}
+
+interface RuleRecord {
+  autoFixable: boolean;
+  category: RuleCategory;
+  description: string;
+  id: string;
+  patterns: readonly string[];
+  primaryPattern: string;
+  references: Readonly<{
+    documentation: string | null;
+    examples: readonly string[];
+  }>;
+  scope: RuleScope;
+  severity: RuleSeverity;
+  stages: readonly string[];
+}
+
+const RULE_SEVERITIES = Object.freeze(["info", "warning", "error"] as const);
+const RULE_CATEGORY_METADATA: Readonly<Record<RuleCategory, RuleCategoryInfo>> = Object.freeze({
   Deprecated: Object.freeze({
     title: "Deprecated usage",
     description:
@@ -31,7 +73,8 @@ const PIPELINE_CHECK_STAGE_IDS = Object.freeze({
 });
 
 const DEFAULT_STAGE_ID = PIPELINE_CHECK_STAGE_IDS.MODERN;
-function normalizePatterns(rawPatterns, id) {
+
+function normalizePatterns(rawPatterns: string | string[] | undefined, id: string): readonly string[] {
   if (Array.isArray(rawPatterns)) {
     const normalized = rawPatterns
       .filter(pattern => typeof pattern === "string" && pattern.length > 0)
@@ -48,7 +91,7 @@ function normalizePatterns(rawPatterns, id) {
   throw new Error(`Rule ${id} must declare at least one pattern.`);
 }
 
-function resolveSeverity(definition) {
+function resolveSeverity(definition: RuleDefinition): RuleSeverity {
   if (typeof definition.severity === "string") {
     if (!RULE_SEVERITIES.includes(definition.severity)) {
       throw new Error(`Rule ${definition.id} references unknown severity '${definition.severity}'.`);
@@ -60,7 +103,7 @@ function resolveSeverity(definition) {
   return categoryMetadata?.defaultSeverity ?? "info";
 }
 
-function normalizeStages(rawStages, id) {
+function normalizeStages(rawStages: string | string[] | undefined, id: string): readonly string[] {
   if (Array.isArray(rawStages)) {
     const normalized = Array.from(new Set(rawStages.filter(stage => typeof stage === "string" && stage.length > 0)));
     if (normalized.length > 0) {
@@ -75,7 +118,7 @@ function normalizeStages(rawStages, id) {
   throw new Error(`Rule ${id} must declare at least one stage.`);
 }
 
-function createRule(definition) {
+function createRule(definition: RuleDefinition): Readonly<RuleRecord> {
   if (!definition?.id) {
     throw new Error("Rule definition missing id.");
   }
@@ -115,7 +158,7 @@ function createRule(definition) {
   });
 }
 
-const RULE_DEFINITIONS = [
+const RULE_DEFINITIONS: RuleDefinition[] = [
   {
     id: "text-deprecated-new-buffer",
     scope: "text",
@@ -448,18 +491,18 @@ const RULE_DEFINITIONS = [
   }
 ];
 
-RULE_DEFINITIONS.push(MISSING_DEPENDENCY_RULE_DEFINITION);
+RULE_DEFINITIONS.push(MISSING_DEPENDENCY_RULE_DEFINITION as RuleDefinition);
 
-const RULE_REGISTRY = Object.freeze(RULE_DEFINITIONS.map(createRule));
+const RULE_REGISTRY = Object.freeze(RULE_DEFINITIONS.map(createRule)) as readonly Readonly<RuleRecord>[];
 
-const RULES_BY_STAGE = (() => {
-  const stageEntries = new Map();
+const RULES_BY_STAGE: Readonly<Record<string, readonly Readonly<RuleRecord>[]>> = (() => {
+  const stageEntries = new Map<string, RuleRecord[]>();
   for (const rule of RULE_REGISTRY) {
     for (const stageId of rule.stages) {
       if (!stageEntries.has(stageId)) {
         stageEntries.set(stageId, []);
       }
-      stageEntries.get(stageId).push(rule);
+      stageEntries.get(stageId)?.push(rule);
     }
   }
 
@@ -467,14 +510,14 @@ const RULES_BY_STAGE = (() => {
   return Object.freeze(Object.fromEntries(frozenEntries));
 })();
 
-const EMPTY_RULE_LIST = Object.freeze([]);
+const EMPTY_RULE_LIST = Object.freeze([]) as readonly Readonly<RuleRecord>[];
 
 const TEXT_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "text" && rule.stages.includes(DEFAULT_STAGE_ID)));
 
 const PACKAGE_JSON_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "package-json" && rule.stages.includes(DEFAULT_STAGE_ID)));
 
 const PACKAGE_LOCK_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "package-lock" && rule.stages.includes(DEFAULT_STAGE_ID)));
-const RULE_INDEX = new Map(RULE_REGISTRY.map(rule => [rule.id, rule]));
+const RULE_INDEX = new Map<string, Readonly<RuleRecord>>(RULE_REGISTRY.map(rule => [rule.id, rule]));
 
 export {
   RULE_CATEGORY_METADATA,
@@ -486,13 +529,15 @@ export {
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES
 };
-export function getRuleById(ruleId) {
+export function getRuleById(ruleId: string): Readonly<RuleRecord> | null {
   return RULE_INDEX.get(ruleId) ?? null;
 }
-export function getCategoryMetadata(category) {
-  return RULE_CATEGORY_METADATA[category] ?? null;
+export function getCategoryMetadata(category: string): RuleCategoryInfo | null {
+  return category in RULE_CATEGORY_METADATA
+    ? RULE_CATEGORY_METADATA[category as RuleCategory]
+    : null;
 }
-export function getRulesForStage(stageId) {
+export function getRulesForStage(stageId: string): readonly Readonly<RuleRecord>[] {
   if (typeof stageId !== "string" || stageId.length === 0) {
     return EMPTY_RULE_LIST;
   }

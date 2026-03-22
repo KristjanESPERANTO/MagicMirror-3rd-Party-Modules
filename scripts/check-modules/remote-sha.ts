@@ -5,9 +5,27 @@
  * Falls back to null if API unavailable (requires local git operations).
  */
 
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { buildAuthHeadersFromEnv, createHttpClient } from "../shared/http-client.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../shared/logger.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createRateLimiter } from "../shared/rate-limiter.js";
+
+interface RepoCoordinates {
+  owner: string;
+  repo: string;
+}
+
+interface HttpJsonResult<TData = unknown> {
+  data: TData;
+  ok: boolean;
+  status: number;
+}
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
 
 const logger = createLogger("remote-sha");
 
@@ -28,7 +46,7 @@ const httpClient = createHttpClient({
  * @param {string} url - Repository URL
  * @returns {{owner: string, repo: string} | null}
  */
-function parseGitHubUrl(url) {
+function parseGitHubUrl(url: string): RepoCoordinates | null {
   const patterns = [
     /github\.com\/([^/]+)\/([^/]+?)(?:\.git)?$/u,
     /github\.com\/([^/]+)\/([^/]+)/u
@@ -49,7 +67,7 @@ function parseGitHubUrl(url) {
  * @param {string} url - Repository URL
  * @returns {string | null}
  */
-function parseGitLabUrl(url) {
+function parseGitLabUrl(url: string): string | null {
   const match = url.match(/gitlab\.com\/(.+?)(?:\.git)?$/u);
   return match ? match[1] : null;
 }
@@ -59,7 +77,7 @@ function parseGitLabUrl(url) {
  * @param {string} url - Repository URL
  * @returns {string | null}
  */
-function parseBitbucketUrl(url) {
+function parseBitbucketUrl(url: string): string | null {
   const match = url.match(/bitbucket\.org\/(.+?)(?:\.git)?$/u);
   return match ? match[1] : null;
 }
@@ -69,7 +87,7 @@ function parseBitbucketUrl(url) {
  * @param {string} url - Repository URL
  * @returns {string | null}
  */
-function parseCodebergUrl(url) {
+function parseCodebergUrl(url: string): string | null {
   const match = url.match(/codeberg\.org\/(.+?)(?:\.git)?$/u);
   return match ? match[1] : null;
 }
@@ -80,7 +98,7 @@ function parseCodebergUrl(url) {
  * @param {string} branch - Branch name (defaults to 'master')
  * @returns {Promise<string | null>}
  */
-async function getGitHubCommitSha(url, branch = "master") {
+async function getGitHubCommitSha(url: string, branch = "master"): Promise<string | null> {
   const parsed = parseGitHubUrl(url);
   if (!parsed) {
     return null;
@@ -95,7 +113,7 @@ async function getGitHubCommitSha(url, branch = "master") {
   };
 
   try {
-    const result = await httpClient.getJson(apiUrl, { headers });
+    const result = await httpClient.getJson(apiUrl, { headers }) as HttpJsonResult<{ sha?: string }>;
 
     if (!result.ok) {
       // Branch might not exist, try default branch
@@ -106,10 +124,10 @@ async function getGitHubCommitSha(url, branch = "master") {
       return null;
     }
 
-    return result.data.sha || null;
+    return result.data?.sha || null;
   }
   catch (error) {
-    logger.debug(`Failed to fetch GitHub SHA for ${owner}/${repo}: ${error instanceof Error ? error.message : String(error)}`);
+    logger.debug(`Failed to fetch GitHub SHA for ${owner}/${repo}: ${getErrorMessage(error)}`);
     return null;
   }
 }
@@ -120,7 +138,7 @@ async function getGitHubCommitSha(url, branch = "master") {
  * @param {string} branch - Branch name (defaults to 'master')
  * @returns {Promise<string | null>}
  */
-async function getGitLabCommitSha(url, branch = "master") {
+async function getGitLabCommitSha(url: string, branch = "master"): Promise<string | null> {
   const projectPath = parseGitLabUrl(url);
   if (!projectPath) {
     return null;
@@ -143,13 +161,11 @@ async function getGitLabCommitSha(url, branch = "master") {
       return null;
     }
 
-    const data = await response.json();
+    const data = await response.json() as { id?: string };
     return data.id || null;
   }
   catch (error) {
-    logger.debug(`Failed to fetch GitLab SHA for ${projectPath}: ${
-      error instanceof Error ? error.message : String(error)
-    }`);
+    logger.debug(`Failed to fetch GitLab SHA for ${projectPath}: ${getErrorMessage(error)}`);
     return null;
   }
 }
@@ -160,7 +176,7 @@ async function getGitLabCommitSha(url, branch = "master") {
  * @param {string} branch - Branch name (defaults to 'master')
  * @returns {Promise<string | null>}
  */
-async function getBitbucketCommitSha(url, branch = "master") {
+async function getBitbucketCommitSha(url: string, branch = "master"): Promise<string | null> {
   const repoPath = parseBitbucketUrl(url);
   if (!repoPath) {
     return null;
@@ -182,15 +198,13 @@ async function getBitbucketCommitSha(url, branch = "master") {
       return null;
     }
 
-    const data = await response.json();
+    const data = await response.json() as { values?: Array<{ hash?: string }> };
     // Bitbucket returns array of commits, take first
     const commits = data.values || [];
-    return commits.length > 0 ? commits[0].hash : null;
+    return commits[0]?.hash ?? null;
   }
   catch (error) {
-    logger.debug(`Failed to fetch Bitbucket SHA for ${repoPath}: ${
-      error instanceof Error ? error.message : String(error)
-    }`);
+    logger.debug(`Failed to fetch Bitbucket SHA for ${repoPath}: ${getErrorMessage(error)}`);
     return null;
   }
 }
@@ -201,7 +215,7 @@ async function getBitbucketCommitSha(url, branch = "master") {
  * @param {string} branch - Branch name (defaults to 'master')
  * @returns {Promise<string | null>}
  */
-async function getCodebergCommitSha(url, branch = "master") {
+async function getCodebergCommitSha(url: string, branch = "master"): Promise<string | null> {
   const repoPath = parseCodebergUrl(url);
   if (!repoPath) {
     return null;
@@ -223,13 +237,11 @@ async function getCodebergCommitSha(url, branch = "master") {
       return null;
     }
 
-    const data = await response.json();
+    const data = await response.json() as { sha?: string };
     return data.sha || null;
   }
   catch (error) {
-    logger.debug(`Failed to fetch Codeberg SHA for ${repoPath}: ${
-      error instanceof Error ? error.message : String(error)
-    }`);
+    logger.debug(`Failed to fetch Codeberg SHA for ${repoPath}: ${getErrorMessage(error)}`);
     return null;
   }
 }
@@ -249,7 +261,7 @@ async function getCodebergCommitSha(url, branch = "master") {
  * @param {string} [branch="master"] - Branch name
  * @returns {Promise<string | null>} Commit SHA or null if unavailable
  */
-export async function getRemoteCommitSha(url, branch = "master") {
+export async function getRemoteCommitSha(url: string, branch = "master"): Promise<string | null> {
   if (!url) {
     return null;
   }

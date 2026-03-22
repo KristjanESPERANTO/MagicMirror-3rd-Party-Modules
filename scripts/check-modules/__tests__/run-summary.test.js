@@ -1,7 +1,7 @@
 import {
   buildRunSummaryMarkdown,
   formatRunDuration
-} from "../run-summary.js";
+} from "../run-summary.ts";
 
 import assert from "node:assert/strict";
 import test from "node:test";

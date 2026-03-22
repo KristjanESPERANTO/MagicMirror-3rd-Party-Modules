@@ -1,4 +1,4 @@
-import { DEFAULT_CHECK_GROUP_CONFIG, loadCheckGroupConfig } from "../config.js";
+import { DEFAULT_CHECK_GROUP_CONFIG, loadCheckGroupConfig } from "../config.ts";
 
 import { mkdir, mkdtemp, writeFile } from "node:fs/promises";
 import assert from "node:assert/strict";

@@ -2,6 +2,57 @@ import path from "node:path";
 import process from "node:process";
 import { readFile } from "node:fs/promises";
 
+export interface CheckGroupToggles {
+  deep: boolean;
+  fast: boolean;
+}
+
+export interface CheckIntegrationToggles {
+  eslint: boolean;
+  ghSlimify: boolean;
+  npmCheckUpdates: boolean;
+  npmDeprecatedCheck: boolean;
+}
+
+export interface CheckGroupConfig {
+  groups: CheckGroupToggles;
+  integrations: CheckIntegrationToggles;
+}
+
+interface PartialCheckGroupConfig {
+  groups: Partial<CheckGroupToggles>;
+  integrations: Partial<CheckIntegrationToggles>;
+}
+
+interface PartialGroupsShape {
+  deep?: unknown;
+  fast?: unknown;
+}
+
+interface PartialIntegrationsShape {
+  eslint?: unknown;
+  ghSlimify?: unknown;
+  npmCheckUpdates?: unknown;
+  npmDeprecatedCheck?: unknown;
+}
+
+interface ConfigSourceRecord {
+  applied?: boolean;
+  kind: "default" | "local";
+  missing?: boolean;
+  path: string;
+}
+
+interface ConfigErrorRecord extends ConfigSourceRecord {
+  error: Error;
+}
+
+export interface LoadedCheckGroupConfig {
+  config: Readonly<CheckGroupConfig>;
+  errors: ConfigErrorRecord[];
+  sources: ConfigSourceRecord[];
+}
+
 export const DEFAULT_CHECK_GROUP_CONFIG = Object.freeze({
   groups: Object.freeze({
     fast: true,
@@ -15,7 +66,7 @@ export const DEFAULT_CHECK_GROUP_CONFIG = Object.freeze({
   })
 });
 
-function createMutableConfig() {
+function createMutableConfig(): CheckGroupConfig {
   return {
     groups: {
       fast: DEFAULT_CHECK_GROUP_CONFIG.groups.fast,
@@ -30,8 +81,8 @@ function createMutableConfig() {
   };
 }
 
-function normalizePartial(input) {
-  const normalized = {
+function normalizePartial(input: unknown): PartialCheckGroupConfig {
+  const normalized: PartialCheckGroupConfig = {
     groups: {},
     integrations: {}
   };
@@ -40,63 +91,65 @@ function normalizePartial(input) {
     return normalized;
   }
 
-  const rawGroups = input.groups;
+  const rawGroups = (input as { groups?: unknown }).groups;
   if (rawGroups && typeof rawGroups === "object") {
-    if (typeof rawGroups.fast === "boolean") {
-      normalized.groups.fast = rawGroups.fast;
+    const groups = rawGroups as PartialGroupsShape;
+    if (typeof groups.fast === "boolean") {
+      normalized.groups.fast = groups.fast;
     }
-    if (typeof rawGroups.deep === "boolean") {
-      normalized.groups.deep = rawGroups.deep;
+    if (typeof groups.deep === "boolean") {
+      normalized.groups.deep = groups.deep;
     }
   }
 
-  const rawIntegrations = input.integrations;
+  const rawIntegrations = (input as { integrations?: unknown }).integrations;
   if (rawIntegrations && typeof rawIntegrations === "object") {
-    if (typeof rawIntegrations.npmCheckUpdates === "boolean") {
+    const integrations = rawIntegrations as PartialIntegrationsShape;
+    if (typeof integrations.npmCheckUpdates === "boolean") {
       normalized.integrations.npmCheckUpdates
-        = rawIntegrations.npmCheckUpdates;
+        = integrations.npmCheckUpdates;
     }
-    if (typeof rawIntegrations.npmDeprecatedCheck === "boolean") {
+    if (typeof integrations.npmDeprecatedCheck === "boolean") {
       normalized.integrations.npmDeprecatedCheck
-        = rawIntegrations.npmDeprecatedCheck;
+        = integrations.npmDeprecatedCheck;
     }
-    if (typeof rawIntegrations.eslint === "boolean") {
-      normalized.integrations.eslint = rawIntegrations.eslint;
+    if (typeof integrations.eslint === "boolean") {
+      normalized.integrations.eslint = integrations.eslint;
     }
-    if (typeof rawIntegrations.ghSlimify === "boolean") {
-      normalized.integrations.ghSlimify = rawIntegrations.ghSlimify;
+    if (typeof integrations.ghSlimify === "boolean") {
+      normalized.integrations.ghSlimify = integrations.ghSlimify;
     }
   }
 
   return normalized;
 }
 
-function applyPartialConfig(target, partial) {
-  if (Object.hasOwn(partial.groups, "fast")) {
+function applyPartialConfig(target: CheckGroupConfig, partial: PartialCheckGroupConfig): CheckGroupConfig {
+  if (partial.groups.fast !== undefined) {
     target.groups.fast = partial.groups.fast;
   }
-  if (Object.hasOwn(partial.groups, "deep")) {
+  if (partial.groups.deep !== undefined) {
     target.groups.deep = partial.groups.deep;
   }
 
-  if (Object.hasOwn(partial.integrations, "npmCheckUpdates")) {
+  if (partial.integrations.npmCheckUpdates !== undefined) {
     target.integrations.npmCheckUpdates = partial.integrations.npmCheckUpdates;
   }
-  if (Object.hasOwn(partial.integrations, "npmDeprecatedCheck")) {
+  if (partial.integrations.npmDeprecatedCheck !== undefined) {
     target.integrations.npmDeprecatedCheck
       = partial.integrations.npmDeprecatedCheck;
   }
-  if (Object.hasOwn(partial.integrations, "eslint")) {
+  if (partial.integrations.eslint !== undefined) {
     target.integrations.eslint = partial.integrations.eslint;
   }
-  if (Object.hasOwn(partial.integrations, "ghSlimify")) {
+  if (partial.integrations.ghSlimify !== undefined) {
     target.integrations.ghSlimify = partial.integrations.ghSlimify;
   }
 
   return target;
 }
 
-function freezeConfig(config) {
+function freezeConfig(config: CheckGroupConfig): Readonly<CheckGroupConfig> {
   return Object.freeze({
     groups: Object.freeze({
       fast: config.groups.fast,
@@ -111,7 +164,7 @@ function freezeConfig(config) {
   });
 }
 
-export async function loadCheckGroupConfig({ projectRoot } = {}) {
+export async function loadCheckGroupConfig({ projectRoot }: { projectRoot?: string } = {}): Promise<LoadedCheckGroupConfig> {
   const overrideRoot = process.env.CHECK_MODULES_CONFIG_ROOT;
   let root;
   if (overrideRoot) {
@@ -128,10 +181,10 @@ export async function loadCheckGroupConfig({ projectRoot } = {}) {
   const localPath = path.join(configDir, "check-groups.config.local.json");
 
   const mutableConfig = createMutableConfig();
-  const sources = [];
-  const errors = [];
+  const sources: ConfigSourceRecord[] = [];
+  const errors: ConfigErrorRecord[] = [];
 
-  const candidates = [
+  const candidates: ConfigSourceRecord[] = [
     { path: basePath, kind: "default" },
     { path: localPath, kind: "local" }
   ];
@@ -145,7 +198,7 @@ export async function loadCheckGroupConfig({ projectRoot } = {}) {
       sources.push({ ...candidate, applied: true });
     }
     catch (error) {
-      if (error && error.code === "ENOENT") {
+      if (error && typeof error === "object" && "code" in error && error.code === "ENOENT") {
         sources.push({ ...candidate, applied: false, missing: true });
       }
       else {

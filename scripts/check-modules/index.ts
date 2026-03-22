@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// @ts-nocheck
 
 import { fileURLToPath } from "node:url";
 import fs from "node:fs";
@@ -11,34 +10,122 @@ import { execFile } from "node:child_process";
 import { setMaxListeners } from "node:events";
 import { promisify } from "node:util";
 
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { ensureDirectory, writeJson } from "../shared/fs-utils.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../shared/logger.js";
-import {
-  validateStageData,
-  validateStageFile
-} from "../lib/schemaValidator.js";
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
+import { validateStageData, validateStageFile } from "../lib/schemaValidator.js";
 import {
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES,
   TEXT_RULES,
   getRuleById
-} from "./rule-registry.js";
-import { loadCheckGroupConfig } from "./config.js";
-import { buildRunSummaryMarkdown } from "./run-summary.js";
+} from "./rule-registry.ts";
+import { loadCheckGroupConfig } from "./config.ts";
+import { buildRunSummaryMarkdown } from "./run-summary.ts";
 import {
   MISSING_DEPENDENCY_RULE_ID,
   detectUsedDependencies,
   extractDeclaredDependencyNames,
   findMissingDependencies,
   shouldAnalyzeFileForDependencyUsage
-} from "./dependency-usage.js";
+} from "./dependency-usage.ts";
 import {
   loadModuleCache,
   saveModuleCache,
   getCachedResult,
   setCachedResult,
   pruneCacheEntries
-} from "./module-cache.js";
+} from "./module-cache.ts";
+
+type CheckConfig = Awaited<ReturnType<typeof loadCheckGroupConfig>>["config"];
+type ConfigSources = Awaited<ReturnType<typeof loadCheckGroupConfig>>["sources"];
+
+interface StageData {
+  modules?: StageModule[];
+  [key: string]: unknown;
+}
+
+interface StageModule {
+  category?: string;
+  defaultSortWeight: number;
+  id: string;
+  image?: boolean;
+  isArchived?: boolean;
+  issues?: boolean | string[];
+  lastCommit?: string;
+  maintainer: string;
+  name: string;
+  outdated?: boolean;
+  packageJson?: {
+    raw?: string;
+    status?: string;
+    summary?: Record<string, unknown>;
+  } | null;
+  stars?: number;
+  url?: string;
+  [key: string]: unknown;
+}
+
+interface RuleLike {
+  category?: string;
+  description?: string;
+  pattern?: string;
+  patterns?: readonly string[];
+  primaryPattern?: string;
+}
+
+interface PackageSummaryLike {
+  dependencies?: Record<string, string>;
+  devDependencies?: Record<string, string>;
+  scripts?: Record<string, string>;
+}
+
+interface RunStats {
+  issueCounter: number;
+  lastUpdate: string;
+  maintainer: Record<string, number>;
+  moduleCounter: number;
+  modulesWithImageCounter: number;
+  modulesWithIssuesCounter: number;
+  repositoryHoster: Record<string, number>;
+}
+
+interface IssueSummary {
+  issues: string[];
+  maintainer: string;
+  name: string;
+  url?: string;
+}
+
+interface ArtifactLink {
+  label: string;
+  path: string;
+}
+
+interface ProgressIndicator {
+  complete: () => void;
+  isInteractive: boolean;
+  tick: (processed: number) => void;
+}
+
+interface RunDirectoryContext {
+  directory: string;
+  runId: string;
+}
+
+interface RunSummaryFileInput {
+  config: CheckConfig;
+  configSources: ConfigSources;
+  disabledToggles: string[];
+  finishedAt: Date;
+  issueSummaries: IssueSummary[];
+  runDirectory: string;
+  runId: string;
+  startedAt: Date;
+  stats: RunStats;
+}
 
 const execFileAsync = promisify(execFile);
 
@@ -104,8 +191,8 @@ if (typeof process.setMaxListeners === "function") {
   process.setMaxListeners(0);
 }
 
-function formatLocalIsoTimestamp(date = new Date()) {
-  const pad = (value) => String(value).padStart(2, "0");
+function formatLocalIsoTimestamp(date: Date = new Date()): string {
+  const pad = (value: number) => String(value).padStart(2, "0");
   const year = date.getFullYear();
   const month = pad(date.getMonth() + 1);
   const day = pad(date.getDate());
@@ -120,7 +207,7 @@ function formatLocalIsoTimestamp(date = new Date()) {
   return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}${sign}${offsetHours}:${offsetRest}`;
 }
 
-async function pathExists(targetPath) {
+async function pathExists(targetPath: string): Promise<boolean> {
   try {
     await access(targetPath, fs.constants.F_OK);
     return true;
@@ -131,7 +218,7 @@ async function pathExists(targetPath) {
 
 const PROGRESS_BAR_WIDTH = 24;
 
-function shouldUseInteractiveProgress(total) {
+function shouldUseInteractiveProgress(total: number): boolean {
   if (total <= 0) {
     return false;
   }
@@ -154,12 +241,12 @@ function shouldUseInteractiveProgress(total) {
   return true;
 }
 
-function createProgressIndicator(total) {
+function createProgressIndicator(total: number): ProgressIndicator {
   const interactive = shouldUseInteractiveProgress(total);
   const stream = process.stderr;
   let lastRendered = "";
 
-  function render(processed) {
+  function render(processed: number): void {
     if (!interactive) {
       return;
     }
@@ -182,7 +269,7 @@ function createProgressIndicator(total) {
   }
 
   return {
-    tick(processed) {
+    tick(processed: number) {
       render(processed);
     },
     complete() {
@@ -197,8 +284,8 @@ function createProgressIndicator(total) {
   };
 }
 
-function formatRunDirectoryId(date) {
-  const pad = (value, size = 2) => String(value).padStart(size, "0");
+function formatRunDirectoryId(date: Date): string {
+  const pad = (value: number, size = 2) => String(value).padStart(size, "0");
   const year = date.getFullYear();
   const month = pad(date.getMonth() + 1);
   const day = pad(date.getDate());
@@ -209,7 +296,7 @@ function formatRunDirectoryId(date) {
   return `check-modules_${year}${month}${day}_${hours}${minutes}${seconds}${milliseconds}`;
 }
 
-async function prepareRunDirectory(startedAt) {
+async function prepareRunDirectory(startedAt: Date): Promise<RunDirectoryContext> {
   const runDate = startedAt instanceof Date ? startedAt : new Date();
   await ensureDirectory(RUNS_ROOT);
 
@@ -230,7 +317,7 @@ async function prepareRunDirectory(startedAt) {
   return { runId, directory: runDirectory };
 }
 
-function buildArtifactLinks(runDirectory) {
+function buildArtifactLinks(runDirectory: string | null): ArtifactLink[] {
   if (!runDirectory) {
     return [];
   }
@@ -243,7 +330,7 @@ function buildArtifactLinks(runDirectory) {
     { label: "modules.stage.4.json", path: path.relative(runDirectory, STAGE4_PATH) }
   ];
 
-  return entries.filter((entry) => typeof entry.path === "string" && entry.path.length > 0);
+  return entries.filter((entry): entry is ArtifactLink => typeof entry.path === "string" && entry.path.length > 0);
 }
 
 async function writeRunSummaryFile({
@@ -256,7 +343,7 @@ async function writeRunSummaryFile({
   configSources,
   disabledToggles,
   issueSummaries
-}) {
+}: RunSummaryFileInput): Promise<string | null> {
   try {
     const artifactLinks = buildArtifactLinks(runDirectory);
     const markdown = buildRunSummaryMarkdown({
@@ -300,13 +387,13 @@ async function writeRunSummaryFile({
   }
 }
 
-function addIssue(issues, message) {
+function addIssue(issues: string[], message: string): void {
   if (!issues.includes(message)) {
     issues.push(message);
   }
 }
 
-function formatRuleIssue(rule, fileName, matchedPattern) {
+function formatRuleIssue(rule: RuleLike, fileName: string, matchedPattern: string | null | undefined): string {
   const pattern =
     matchedPattern ??
     rule?.primaryPattern ??
@@ -316,14 +403,14 @@ function formatRuleIssue(rule, fileName, matchedPattern) {
   return `${rule.category}: Found \`${pattern}\` in file \`${fileName}\`: ${rule.description}`;
 }
 
-function findMatchingPattern(rule, content) {
+function findMatchingPattern(rule: RuleLike, content: string): string | null {
   if (!rule || !Array.isArray(rule.patterns)) {
     return null;
   }
-  return rule.patterns.find((pattern) => content.includes(pattern)) ?? null;
+  return rule.patterns.find((pattern: string) => content.includes(pattern)) ?? null;
 }
 
-function normalizeIssuesInput(issues) {
+function normalizeIssuesInput(issues: string[] | string | boolean | null | undefined): string[] {
   if (Array.isArray(issues)) {
     return issues.slice();
   }
@@ -333,7 +420,7 @@ function normalizeIssuesInput(issues) {
   return [];
 }
 
-function getRepositoryHost(moduleUrl) {
+function getRepositoryHost(moduleUrl: string | undefined): string {
   if (typeof moduleUrl !== "string") {
     return "unknown";
   }
@@ -347,7 +434,7 @@ function getRepositoryHost(moduleUrl) {
   }
 }
 
-async function getLastCommitDate(module, moduleDir) {
+async function getLastCommitDate(module: StageModule, moduleDir: string): Promise<void> {
   // Optimization: If we already have a valid lastCommit from Stage 2/3 (e.g. via API), use it.
   // This avoids running 'git log' which fails if the repo wasn't cloned (skipped).
   if (module.lastCommit) {
@@ -429,7 +516,7 @@ const README_COMMAND_LANG_ALIASES = new Set([
 ]);
 const README_COMMAND_LINE_PATTERN = /^(?:\s*(?:#|<!--).*)|(?:\s*(?:\$\s*)?(?:bash|cd|chmod|cp|curl|docker|docker-compose|git|ln|make|mv|node|npm|npx|pnpm|pip|pip3|pm2|python|python3|rm|sudo|tar|unzip|wget|yarn)\b)/u;
 
-function normalizeReadmeHeading(heading) {
+function normalizeReadmeHeading(heading: string): string {
   return heading
     .trim()
     .toLowerCase()
@@ -438,13 +525,13 @@ function normalizeReadmeHeading(heading) {
     .trim();
 }
 
-function extractReadmeSection(content, tokens) {
+function extractReadmeSection(content: string, tokens: readonly string[]): { content: string; found: boolean } {
   if (typeof content !== "string" || content.length === 0) {
     return { found: false, content: "" };
   }
 
   const lines = content.split(/\r?\n/u);
-  const normalizedTokens = tokens.map((token) => normalizeReadmeHeading(token)).filter((token) => token.length > 0);
+  const normalizedTokens = tokens.map((token: string) => normalizeReadmeHeading(token)).filter((token: string) => token.length > 0);
   let collecting = false;
   let found = false;
   const sectionLines = [];
@@ -459,7 +546,7 @@ function extractReadmeSection(content, tokens) {
       const normalizedHeading = normalizeReadmeHeading(headingMatch[1]);
       if (
         normalizedTokens.some(
-          (token) => normalizedHeading === token || normalizedHeading.includes(token)
+          (token: string) => normalizedHeading === token || normalizedHeading.includes(token)
         )
       ) {
         collecting = true;
@@ -476,7 +563,7 @@ function extractReadmeSection(content, tokens) {
   return { found, content: sectionLines.join("\n").trim() };
 }
 
-function sectionHasCopyableCommandBlock(sectionContent) {
+function sectionHasCopyableCommandBlock(sectionContent: string): boolean {
   if (typeof sectionContent !== "string" || sectionContent.length === 0) {
     return false;
   }
@@ -513,13 +600,16 @@ function sectionHasCopyableCommandBlock(sectionContent) {
   return false;
 }
 
-async function collectEntries(rootDir) {
-  const results = [];
+async function collectEntries(rootDir: string): Promise<Array<{ entry: fs.Dirent; fullPath: string }>> {
+  const results: Array<{ entry: fs.Dirent; fullPath: string }> = [];
   const stack = [rootDir];
 
   while (stack.length > 0) {
     const dir = stack.pop();
-    let dirEntries = [];
+    if (!dir) {
+      continue;
+    }
+    let dirEntries: fs.Dirent[] = [];
     try {
       dirEntries = await readdir(dir, { withFileTypes: true });
     } catch (error) {
@@ -551,17 +641,17 @@ async function collectEntries(rootDir) {
   return results;
 }
 
-function pathHasNodeModules(relativePath) {
+function pathHasNodeModules(relativePath: string): boolean {
   return relativePath.split(path.sep).includes("node_modules");
 }
 
-function countNodeModulesSegments(relativePath) {
+function countNodeModulesSegments(relativePath: string): number {
   return relativePath
     .split(path.sep)
-    .filter((segment) => segment === "node_modules").length;
+    .filter((segment: string) => segment === "node_modules").length;
 }
 
-async function readTextSafely(filePath) {
+  async function readTextSafely(filePath: string): Promise<string | null> {
   try {
     return await readFile(filePath, "utf8");
   } catch (error) {
@@ -572,7 +662,7 @@ async function readTextSafely(filePath) {
   }
 }
 
-async function getBranchListing(moduleDir) {
+async function getBranchListing(moduleDir: string): Promise<string> {
   try {
     const { stdout } = await execFileAsync("git", ["branch"], {
       cwd: moduleDir
@@ -586,7 +676,7 @@ async function getBranchListing(moduleDir) {
   }
 }
 
-async function runNpmCheckUpdates(moduleDir) {
+async function runNpmCheckUpdates(moduleDir: string): Promise<string[]> {
   try {
     const { stdout } = await execFileAsync("npx", ["npm-check-updates"], {
       cwd: moduleDir
@@ -595,8 +685,8 @@ async function runNpmCheckUpdates(moduleDir) {
     // Parse the formatted output lines that contain "→"
     const lines = stdout
       .split(/\r?\n/u)
-      .filter((line) => line.includes("→"))
-      .map((line) => line.trim());
+      .filter((line: string) => line.includes("→"))
+      .map((line: string) => line.trim());
 
     return lines;
   } catch (error) {
@@ -607,7 +697,7 @@ async function runNpmCheckUpdates(moduleDir) {
   }
 }
 
-async function runDeprecatedCheck(moduleDir) {
+async function runDeprecatedCheck(moduleDir: string): Promise<string | null> {
   try {
     const { stdout, stderr } = await execFileAsync("npx", ["ndc", "current"], {
       cwd: moduleDir,
@@ -621,8 +711,8 @@ async function runDeprecatedCheck(moduleDir) {
 
     const lines = output
       .split(/\r?\n/u)
-      .map((line) => line.trim())
-      .filter((line) => line.includes(":"));
+      .map((line: string) => line.trim())
+      .filter((line: string) => line.includes(":"));
     if (lines.length === 0) {
       return null;
     }
@@ -635,7 +725,7 @@ async function runDeprecatedCheck(moduleDir) {
   }
 }
 
-async function runEslintCheck(moduleDir) {
+async function runEslintCheck(moduleDir: string): Promise<string[]> {
   try {
     const result = await execFileAsync(
       "npx",
@@ -653,13 +743,13 @@ async function runEslintCheck(moduleDir) {
       }
     );
 
-    const stdout = result.stdout;
+    const stdout = String(result.stdout ?? "");
     if (!stdout) {
       return [];
     }
 
-    const parsed = JSON.parse(stdout);
-    const issues = [];
+    const parsed = JSON.parse(stdout) as Array<{ filePath?: string; messages?: Array<{ column?: number; line?: number; message?: string; ruleId?: string }> }>;
+    const issues: string[] = [];
     for (const entry of parsed) {
       const relPath = entry.filePath
         ?.split(moduleDir)?.[1]
@@ -682,13 +772,13 @@ async function runEslintCheck(moduleDir) {
     // ESLint returns non-zero exit code when it finds errors, but we still want the output
     if (error && typeof error === "object" && "stdout" in error) {
       try {
-        const stdout = error.stdout;
+        const stdout = String(error.stdout ?? "");
         if (!stdout) {
           return [];
         }
 
-        const parsed = JSON.parse(stdout);
-        const issues = [];
+        const parsed = JSON.parse(stdout) as Array<{ filePath?: string; messages?: Array<{ column?: number; line?: number; message?: string; ruleId?: string }> }>;
+        const issues: string[] = [];
         for (const entry of parsed) {
           const relPath = entry.filePath
             ?.split(moduleDir)?.[1]
@@ -722,7 +812,15 @@ async function runEslintCheck(moduleDir) {
   }
 }
 
-async function checkWorkflowOptimization({ moduleDir, issues, config }) {
+async function checkWorkflowOptimization({
+  moduleDir,
+  issues,
+  config
+}: {
+  config: CheckConfig;
+  issues: string[];
+  moduleDir: string;
+}): Promise<void> {
   if (!config?.groups?.deep) {
     return;
   }
@@ -747,11 +845,11 @@ async function checkWorkflowOptimization({ moduleDir, issues, config }) {
     );
 
     // Parse output to check if there are any eligible jobs
-    const lines = stdout.split("\n");
+    const lines = String(stdout).split("\n");
 
     // Count safe and attention jobs separately
-    const safeMatch = lines.find((line) => line.includes("✅") && line.includes("can be safely migrated"));
-    const attentionMatch = lines.find((line) => line.includes("⚠️") && line.includes("can be migrated but require attention"));
+    const safeMatch = lines.find((line: string) => line.includes("✅") && line.includes("can be safely migrated"));
+    const attentionMatch = lines.find((line: string) => line.includes("⚠️") && line.includes("can be migrated but require attention"));
 
     let safeCount = 0;
     let attentionCount = 0;
@@ -792,7 +890,17 @@ async function checkWorkflowOptimization({ moduleDir, issues, config }) {
   }
 }
 
-async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson, config }) {
+async function applyDependencyHelpers({
+  moduleDir,
+  issues,
+  hasPackageJson,
+  config
+}: {
+  config: CheckConfig;
+  hasPackageJson: boolean;
+  issues: string[];
+  moduleDir: string;
+}): Promise<void> {
   if (!config?.groups?.deep) {
     return;
   }
@@ -820,7 +928,7 @@ async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson, confi
     const upgrades = await runNpmCheckUpdates(moduleDir);
     if (upgrades.length > 0) {
       const header = `Information: There are updates for ${upgrades.length} dependencie(s):`;
-      const details = upgrades.map((entry) => `   - ${entry}`).join("\n");
+      const details = upgrades.map((entry: string) => `   - ${entry}`).join("\n");
       addIssue(issues, `${header}\n${details}`);
     }
   }
@@ -843,17 +951,27 @@ async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson, confi
   if (shouldRunEslint) {
     const eslintIssues = await runEslintCheck(moduleDir);
     if (eslintIssues.length > 0) {
-      const body = eslintIssues.map((item) => `   - ${item}`).join("\n");
+      const body = eslintIssues.map((item: string) => `   - ${item}`).join("\n");
       addIssue(issues, `ESLint issues:\n${body}`);
     }
   }
 }
 
-async function analyzeModule({ module, moduleDir, issues, config }) {
+async function analyzeModule({
+  module,
+  moduleDir,
+  issues,
+  config
+}: {
+  config: CheckConfig;
+  issues: string[];
+  module: StageModule;
+  moduleDir: string;
+}): Promise<void> {
   const packageInfo = module.packageJson ?? null;
   const packageSummary =
     packageInfo && packageInfo.status === "parsed"
-      ? packageInfo.summary ?? {}
+      ? packageInfo.summary as PackageSummaryLike | null
       : null;
   const hasParsedPackageJson = packageSummary != null;
   const packageRawContent =
@@ -861,8 +979,8 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
       ? packageInfo.raw
       : null;
   const declaredDependencyNames = extractDeclaredDependencyNames(packageSummary);
-  const usedDependencies = new Set();
-  const dependencyUsage = new Map();
+  const usedDependencies = new Set<string>();
+  const dependencyUsage = new Map<string, Set<string>>();
 
   const groups = config?.groups ?? {};
   const runFastChecks = groups.fast !== false;
@@ -946,7 +1064,7 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
           if (!dependencyUsage.has(dependencyName)) {
             dependencyUsage.set(dependencyName, new Set());
           }
-          dependencyUsage.get(dependencyName).add(relative);
+          dependencyUsage.get(dependencyName)?.add(relative);
         }
       }
     }
@@ -1174,12 +1292,12 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
       );
     } else {
       if (packageSummary) {
-        const packageDependencies =
+        const packageDependencies: Record<string, string> =
           typeof packageSummary.dependencies === "object" &&
           packageSummary.dependencies
             ? packageSummary.dependencies
             : {};
-        const packageDevDependencies =
+        const packageDevDependencies: Record<string, string> =
           typeof packageSummary.devDependencies === "object" &&
           packageSummary.devDependencies
             ? packageSummary.devDependencies
@@ -1200,8 +1318,8 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
         }
 
         const lintScript =
-          typeof packageSummary.scripts?.lint === "string" &&
-          packageSummary.scripts.lint.length > 0
+          typeof packageSummary.scripts?.lint === "string"
+            && packageSummary.scripts.lint.length > 0
             ? packageSummary.scripts.lint
             : null;
 
@@ -1250,7 +1368,7 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
   }
 }
 
-function applySortAdjustments(module, issuesCount) {
+function applySortAdjustments(module: StageModule, issuesCount: number): void {
   module.defaultSortWeight += issuesCount;
 
   const stars = typeof module.stars === "number" ? module.stars : 0;
@@ -1270,8 +1388,8 @@ function applySortAdjustments(module, issuesCount) {
   }
 }
 
-function buildMarkdown(stats, summaries) {
-  const lines = [];
+function buildMarkdown(stats: RunStats, summaries: IssueSummary[]): string {
+  const lines: string[] = [];
   lines.push("# Result of the module analysis", "");
   lines.push(`Last update: ${stats.lastUpdate}`, "");
   lines.push("## General notes", "");
@@ -1312,7 +1430,7 @@ function buildMarkdown(stats, summaries) {
       `### [${summary.name} by ${summary.maintainer}](${summary.url})`,
       ""
     );
-    summary.issues.forEach((issue, index) => {
+    summary.issues.forEach((issue: string, index: number) => {
       lines.push(`${index + 1}. ${issue}`);
     });
   }
@@ -1320,7 +1438,15 @@ function buildMarkdown(stats, summaries) {
   return `${lines.join("\n")}\n`;
 }
 
-async function writeOutputs({ data, stats, summaries }) {
+async function writeOutputs({
+  data,
+  stats,
+  summaries
+}: {
+  data: StageData;
+  stats: RunStats;
+  summaries: IssueSummary[];
+}): Promise<void> {
   await ensureDirectory(DATA_DIR);
   await ensureDirectory(path.dirname(RESULT_PATH));
 
@@ -1337,22 +1463,22 @@ async function writeOutputs({ data, stats, summaries }) {
 }
 
 async function main() {
-  const stageData = await validateStageFile("modules.stage.4", STAGE4_PATH);
-  const modules = Array.isArray(stageData.modules) ? stageData.modules : [];
+  const stageData = await validateStageFile("modules.stage.4", STAGE4_PATH) as StageData;
+  const modules = Array.isArray(stageData.modules) ? stageData.modules as StageModule[] : [];
   const totalModules = modules.length;
 
   logger.info(`Starting analysis for ${totalModules} modules...`);
 
   // Load module result cache for incremental checking
   const moduleCache = await loadModuleCache(MODULE_CACHE_PATH);
-  const activeModuleIds = modules.map((m) => m.id);
+  const activeModuleIds = modules.map((module: StageModule) => module.id);
   pruneCacheEntries(moduleCache, activeModuleIds);
 
   let cacheHits = 0;
   let cacheMisses = 0;
 
   const runStartedAt = new Date();
-  let runContext = null;
+  let runContext: RunDirectoryContext | null = null;
   try {
     runContext = await prepareRunDirectory(runStartedAt);
   } catch (error) {
@@ -1379,7 +1505,7 @@ async function main() {
     }
   }
 
-  const disabledToggles = [];
+  const disabledToggles: string[] = [];
   if (!checkGroupConfig.groups.fast) {
     disabledToggles.push("fast");
   }
@@ -1407,7 +1533,7 @@ async function main() {
     logger.info("Applying overrides from check-groups.config.local.json");
   }
 
-  const stats = {
+  const stats: RunStats = {
     moduleCounter: 0,
     modulesWithImageCounter: 0,
     modulesWithIssuesCounter: 0,
@@ -1417,7 +1543,7 @@ async function main() {
     maintainer: {}
   };
 
-  const issueSummaries = [];
+  const issueSummaries: IssueSummary[] = [];
 
   for (let index = 0; index < modules.length; index += 1) {
     const module = modules[index];
@@ -1473,7 +1599,7 @@ async function main() {
         // Cache hit! Reuse previous analysis
         cacheHits += 1;
         moduleIssues = Array.isArray(cachedResult.issues)
-          ? cachedResult.issues.slice()
+          ? cachedResult.issues.filter((issue): issue is string => typeof issue === "string")
           : [];
         module.issues = moduleIssues;
 
@@ -1566,22 +1692,22 @@ async function main() {
   progress.complete();
 
   stats.maintainer = Object.fromEntries(
-    Object.entries(stats.maintainer).sort(([, a], [, b]) => b - a)
+    Object.entries(stats.maintainer).sort(([, a], [, b]) => a === b ? 0 : b - a)
   );
 
-  const sanitizedData = {
+  const sanitizedData: StageData = {
     ...stageData,
     modules: Array.isArray(stageData.modules)
-      ? stageData.modules.map((entry) => {
+      ? stageData.modules.map((entry: unknown) => {
         if (entry && typeof entry === "object") {
-          const { packageJson: _packageJson, license, ...rest } = entry;
+          const { packageJson: _packageJson, license, ...rest } = entry as Record<string, unknown>;
           // Only include license if it's a non-empty string (final schema requires string, not null)
           if (typeof license === "string" && license.length > 0) {
-            return { ...rest, license };
+            return { ...rest, license } as unknown as StageModule;
           }
-          return rest;
+          return rest as StageModule;
         }
-        return entry;
+        return entry as StageModule;
       })
       : stageData.modules
   };

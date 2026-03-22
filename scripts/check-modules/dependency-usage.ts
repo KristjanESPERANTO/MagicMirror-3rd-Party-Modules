@@ -1,7 +1,30 @@
 import { builtinModules } from "node:module";
 import path from "node:path";
 
+// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 export { MISSING_DEPENDENCY_RULE_ID } from "./missing-dependency-rule.js";
+
+type DependencyIgnoreInput = string | string[] | Set<string> | undefined;
+
+interface DetectDependencyOptions {
+  ignore?: DependencyIgnoreInput;
+}
+
+type DependencySection = Record<string, string> | null | undefined;
+
+interface PackageSummaryLike {
+  dependencies?: DependencySection;
+  devDependencies?: DependencySection;
+  peerDependencies?: DependencySection;
+  optionalDependencies?: DependencySection;
+}
+
+interface MissingDependencyCheckInput {
+  usedDependencies?: Set<string>;
+  declaredDependencies?: Set<string>;
+}
+
+type StripState = "code" | "singleLineComment" | "multiLineComment" | "string" | "template";
 
 const SOURCE_FILE_EXTENSIONS = new Set([
   ".cjs",
@@ -41,7 +64,7 @@ const DEPENDENCY_CAPTURE_PATTERNS = Object.freeze([
   /\bimport\s*\(\s*["']([^"']+)["']\s*\)/gu
 ]);
 
-function isRelativeModule(specifier) {
+function isRelativeModule(specifier: unknown): boolean {
   if (typeof specifier !== "string") {
     return false;
   }
@@ -49,7 +72,7 @@ function isRelativeModule(specifier) {
   return trimmed.startsWith(".") || trimmed.startsWith("/");
 }
 
-function isBuiltinModule(specifier) {
+function isBuiltinModule(specifier: unknown): boolean {
   if (typeof specifier !== "string" || specifier.length === 0) {
     return false;
   }
@@ -68,7 +91,7 @@ function isBuiltinModule(specifier) {
   return BUILTIN_DEPENDENCIES.has(firstSegment) || BUILTIN_DEPENDENCIES.has(`node:${firstSegment}`);
 }
 
-function toPackageName(specifier) {
+function toPackageName(specifier: unknown): string | null {
   if (typeof specifier !== "string") {
     return null;
   }
@@ -109,13 +132,13 @@ function toPackageName(specifier) {
  * @param {string} content - The source code content
  * @returns {string} Content with comments removed
  */
-function stripComments(content) {
+function stripComments(content: string): string {
   if (typeof content !== "string" || content.length === 0) {
     return content;
   }
 
   let result = "";
-  let state = "code"; // States: 'code', 'singleLineComment', 'multiLineComment', 'string', 'template'
+  let state: StripState = "code";
   let stringDelimiter = "";
   let escaped = false;
 
@@ -193,8 +216,8 @@ function stripComments(content) {
   return result;
 }
 
-function extractImportedModuleSpecifiers(content) {
-  const modules = new Set();
+function extractImportedModuleSpecifiers(content: string): Set<string> {
+  const modules = new Set<string>();
   if (typeof content !== "string" || content.length === 0) {
     return modules;
   }
@@ -204,7 +227,7 @@ function extractImportedModuleSpecifiers(content) {
 
   for (const pattern of DEPENDENCY_CAPTURE_PATTERNS) {
     pattern.lastIndex = 0;
-    let match;
+    let match: RegExpExecArray | null;
     while ((match = pattern.exec(contentWithoutComments)) !== null) {
       const [, specifier] = match;
       if (typeof specifier === "string" && specifier.length > 0) {
@@ -216,13 +239,13 @@ function extractImportedModuleSpecifiers(content) {
   return modules;
 }
 
-function buildIgnoreSet(maybeIgnore) {
-  const ignore = new Set(DEFAULT_IGNORED_DEPENDENCIES);
+function buildIgnoreSet(maybeIgnore: DependencyIgnoreInput): Set<string> {
+  const ignore = new Set<string>(DEFAULT_IGNORED_DEPENDENCIES);
   if (!maybeIgnore) {
     return ignore;
   }
 
-  const values = [];
+  const values: string[] = [];
   if (Array.isArray(maybeIgnore)) {
     values.push(...maybeIgnore);
   }
@@ -242,14 +265,14 @@ function buildIgnoreSet(maybeIgnore) {
   return ignore;
 }
 
-function normalizePathSegments(relativePath) {
+function normalizePathSegments(relativePath: string): string[] {
   return relativePath
     .split(path.sep)
     .map(segment => segment.trim().toLowerCase())
     .filter(segment => segment.length > 0);
 }
 
-export function shouldAnalyzeFileForDependencyUsage(relativePath) {
+export function shouldAnalyzeFileForDependencyUsage(relativePath: string): boolean {
   if (typeof relativePath !== "string" || relativePath.length === 0) {
     return false;
   }
@@ -263,8 +286,8 @@ export function shouldAnalyzeFileForDependencyUsage(relativePath) {
   return SOURCE_FILE_EXTENSIONS.has(extension);
 }
 
-export function detectUsedDependencies(content, options = {}) {
-  const detected = new Set();
+export function detectUsedDependencies(content: string, options: DetectDependencyOptions = {}): Set<string> {
+  const detected = new Set<string>();
   const ignore = buildIgnoreSet(options.ignore);
 
   const specifiers = extractImportedModuleSpecifiers(content);
@@ -281,8 +304,8 @@ export function detectUsedDependencies(content, options = {}) {
   return detected;
 }
 
-export function extractDeclaredDependencyNames(packageSummary) {
-  const declared = new Set();
+export function extractDeclaredDependencyNames(packageSummary: PackageSummaryLike | null | undefined): Set<string> {
+  const declared = new Set<string>();
   if (!packageSummary || typeof packageSummary !== "object") {
     return declared;
   }
@@ -307,10 +330,13 @@ export function extractDeclaredDependencyNames(packageSummary) {
   return declared;
 }
 
-export function findMissingDependencies({ usedDependencies, declaredDependencies }) {
+export function findMissingDependencies({
+  usedDependencies,
+  declaredDependencies
+}: MissingDependencyCheckInput): string[] {
   const declared = declaredDependencies ?? new Set();
   const used = usedDependencies ?? new Set();
-  const missing = new Set();
+  const missing = new Set<string>();
 
   for (const name of used) {
     const normalized = typeof name === "string" ? name.toLowerCase() : null;

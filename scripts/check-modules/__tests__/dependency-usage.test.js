@@ -4,7 +4,7 @@ import {
   extractDeclaredDependencyNames,
   findMissingDependencies,
   shouldAnalyzeFileForDependencyUsage
-} from "../dependency-usage.js";
+} from "../dependency-usage.ts";
 
 import assert from "node:assert/strict";
 import test from "node:test";
