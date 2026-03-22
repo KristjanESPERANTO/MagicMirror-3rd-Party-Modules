@@ -1,6 +1,6 @@
 import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { stringifyDeterministic } from "./deterministic-output.js";
+import { stringifyDeterministic } from "./deterministic-output.ts";
 
 export async function ensureDirectory(dirPath) {
   await mkdir(dirPath, { recursive: true });

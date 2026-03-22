@@ -1,4 +1,4 @@
-import { createDeterministicImageName } from "./shared/deterministic-output.js";
+import { createDeterministicImageName } from "./shared/deterministic-output.ts";
 import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import sharp from "sharp";

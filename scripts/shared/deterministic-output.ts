@@ -5,7 +5,7 @@
  * @param {unknown} obj - The value to sort (object, array, or primitive)
  * @returns {unknown} The same value with sorted object keys
  */
-export function sortObjectKeys(obj) {
+export function sortObjectKeys(obj: unknown): unknown {
   if (obj === null || typeof obj !== "object") {
     return obj;
   }
@@ -14,11 +14,12 @@ export function sortObjectKeys(obj) {
     return obj.map(item => sortObjectKeys(item));
   }
 
-  const sorted = {};
+  const sorted: Record<string, unknown> = {};
   const keys = Object.keys(obj).sort();
+  const source = obj as Record<string, unknown>;
 
   for (const key of keys) {
-    sorted[key] = sortObjectKeys(obj[key]);
+    sorted[key] = sortObjectKeys(source[key]);
   }
 
   return sorted;
@@ -31,7 +32,7 @@ export function sortObjectKeys(obj) {
  * @param {number|null} space - Number of spaces for indentation (null for compact)
  * @returns {string} JSON string with sorted keys
  */
-export function stringifyDeterministic(data, space = 2) {
+export function stringifyDeterministic(data: unknown, space: number | undefined = 2): string {
   const sorted = sortObjectKeys(data);
   return JSON.stringify(sorted, null, space);
 }
@@ -49,6 +50,6 @@ export function stringifyDeterministic(data, space = 2) {
  * @param {string} extension - The file extension (e.g., 'webp', 'jpg', 'png')
  * @returns {string} Deterministic filename (e.g., 'MMM-Weather---example.webp')
  */
-export function createDeterministicImageName(moduleName, maintainer, extension = "webp") {
+export function createDeterministicImageName(moduleName: string, maintainer: string, extension = "webp"): string {
   return `${moduleName}---${maintainer}.${extension}`;
 }

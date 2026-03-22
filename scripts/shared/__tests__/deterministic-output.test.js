@@ -3,7 +3,7 @@ import {
   createDeterministicImageName,
   sortObjectKeys,
   stringifyDeterministic
-} from "../deterministic-output.js";
+} from "../deterministic-output.ts";
 import { describe, it } from "node:test";
 import { strict as assert } from "node:assert";
 

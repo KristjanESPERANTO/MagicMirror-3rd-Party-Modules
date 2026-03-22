@@ -16,8 +16,7 @@ import { createRateLimiter } from "./shared/rate-limiter.js";
 import { ensureDirectory, fileExists, writeJson } from "./shared/fs-utils.js";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { validateStageFile } from "./lib/schemaValidator.js";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { stringifyDeterministic } from "./shared/deterministic-output.js";
+import { stringifyDeterministic } from "./shared/deterministic-output.ts";
 
 type ModuleEntry = {
   name: string;
@@ -738,7 +737,7 @@ async function processModules() {
 
         // Write moduleCopy to stream immediately to avoid holding it
         // Use deterministic stringify to ensure sorted keys for reproducible outputs
-        const toWrite = `${firstOut ? "" : ","}${stringifyDeterministic(moduleCopy, null)}`;
+        const toWrite = `${firstOut ? "" : ","}${stringifyDeterministic(moduleCopy, undefined)}`;
         writeStream.write(toWrite);
         firstOut = false;
         validModules.push(moduleCopy);

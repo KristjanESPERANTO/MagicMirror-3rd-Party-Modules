@@ -1,7 +1,7 @@
 import { createPersistentCache } from "./persistent-cache.js";
 import { getCurrentCommit } from "./git.js";
 import { resolve } from "node:path";
-import { stringifyDeterministic } from "./deterministic-output.js";
+import { stringifyDeterministic } from "./deterministic-output.ts";
 
 export const MODULE_ANALYSIS_CACHE_SCHEMA_VERSION = 2;
 export const MODULE_ANALYSIS_CACHE_RELATIVE_PATH = "website/data/moduleCache.json";

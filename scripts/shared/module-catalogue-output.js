@@ -1,6 +1,6 @@
 import { access, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { stringifyDeterministic } from "./deterministic-output.js";
+import { stringifyDeterministic } from "./deterministic-output.ts";
 
 const STAGE5_ALLOWED_KEYS = [
   "name",
