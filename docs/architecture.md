@@ -1,74 +1,59 @@
 # Pipeline Architecture
 
-Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current pipeline, the legacy state we migrated from, and the target architecture we are steering toward.
+Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current canonical pipeline, the legacy state we migrated from, and the parts of the broader architecture that are still future-facing.
 
-## Current State (January 2026)
+## Current State (March 2026)
 
-The production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh` and progresses through five sequential stages. All stages are implemented in TypeScript/Node.js with unified tooling, JSON Schema contracts at every boundary, and intelligent caching throughout.
+The supported production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh-parallel` (also exposed as `node --run all`). The orchestrator now drives two registered stages across three conceptual phases: metadata collection, parallel module processing, and publication. The remaining architectural gap tracked under P7.6 is reintegrating worker-aware incremental cache writes.
 
 ### Stage Overview
 
-| Order | Stage ID             | Key Outputs                                                   |
-| ----- | -------------------- | ------------------------------------------------------------- |
-| 1+2   | `collect-metadata`   | `modules.stage.2.json`, `gitHubData.json`                     |
-| 3     | `get-modules`        | `modules.stage.3.json`, `modules/`, `modules_temp/`           |
-| 4     | `expand-module-list` | `modules.stage.4.json`, `website/images/`                     |
-| 5     | `check-modules`      | `modules.json`, `modules.min.json`, `stats.json`, `result.md` |
+| Order | Stage ID              | Key Outputs                                                                                                              |
+| ----- | --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| 1+2   | `collect-metadata`    | `modules.stage.2.json`, `gitHubData.json`                                                                                |
+| 3+4+5 | `parallel-processing` | `modules.stage.5.json`, `modules/`, `modules_temp/`, `website/images/`, `modules.json`, `modules.min.json`, `stats.json` |
 
 ### Current Workflow Diagram
 
 ```mermaid
 flowchart TB
-  orchestrator[[Orchestrator<br>Sequential execution]]
+  orchestrator[[Orchestrator<br>2-stage execution]]
 
-  subgraph Stage 1+2: Metadata Collection
+  subgraph Phase 1: Metadata Collection
     seed[("Module seed list")] --> collect{{Collect metadata}}
     collect --> cache[("gitHubData.json cache")]
     collect --> stage2["modules.stage.2.json"]
   end
 
-  subgraph Stage 3: Get Modules
-    stage2 --> fetch{{Fetch & validate repos}}
-    fetch --> clones[("modules/<br>modules_temp/")]
-    fetch --> stage3["modules.stage.3.json"]
-  end
-
-  subgraph Stage 4: Expand Module List
-    stage3 --> enrich{{Enrich metadata}}
-    enrich --> images[("website/images/")]
-    enrich --> stage4["modules.stage.4.json"]
-  end
-
-  subgraph Stage 5: Check Modules
-    stage4 --> analyze{{Deep analysis}}
-    analyze --> outputs[("modules.json<br>modules.min.json<br>stats.json<br>result.md")]
+  subgraph Phase 2: Parallel Module Processing
+    stage2 --> parallel{{Parallel processing}}
+    parallel --> clones[("modules/<br>modules_temp/")]
+    parallel --> images[("website/images/")]
+    parallel --> stage5["modules.stage.5.json"]
+    parallel --> outputs[("modules.json<br>modules.min.json<br>stats.json")]
   end
 
   orchestrator -.controls.-> collect
-  orchestrator -.controls.-> fetch
-  orchestrator -.controls.-> enrich
-  orchestrator -.controls.-> analyze
+  orchestrator -.controls.-> parallel
 ```
 
 ### Key Features
 
 - **Orchestrator CLI**: Declarative stage graph with `--only/--skip` support, retries, and structured logging
-- **Schema Validation**: JSON schemas enforce contracts at every stage boundary (`dist/schemas/`)
+- **Worker Pool Stage**: `parallel-processing` encapsulates clone, enrich, image, and analysis work behind a single supported stage
+- **Schema Validation**: JSON schemas enforce contracts at the supported boundaries (`modules.stage.2.json`, `modules.stage.5.json`, final outputs)
 - **Shared Utilities**: HTTP, Git, filesystem, and rate limiting in `scripts/shared/`
-- **Comparison Harness**: Captures README/HTML alongside JSON for regression testing
 
 ### Incremental Pipeline Behavior
 
 The pipeline implements intelligent caching and skip logic to avoid redundant work:
 
-| Stage | Optimization   | Skip Condition                  | Typical Gain         |
-| ----- | -------------- | ------------------------------- | -------------------- |
-| 2     | Cache pruning  | Module removed from seed list   | Bounded cache size   |
-| 2     | API cache TTL  | Response < 7 days old           | ~95% fewer API calls |
-| 3     | Clone skipping | Local commit ≥ API `lastCommit` | ~90% clones skipped  |
-| 5     | Analysis cache | Directory SHA unchanged         | ~85-95% cache hits   |
-
-**Result**: Incremental runs complete in <5 minutes vs. 45-60 minutes for full runs.
+| Scope             | Optimization    | Current Behavior                                                      | Why It Helps                                                           |
+| ----------------- | --------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Metadata          | API cache TTL   | Reuses recent host API responses during `collect-metadata`            | Reduces external API traffic                                           |
+| Module processing | Clone reuse     | Recycles `modules_temp/` when repositories can be refreshed in place  | Avoids unnecessary full re-clones                                      |
+| Module processing | Worker batching | Processes modules in bounded child-process batches                    | Keeps memory bounded and throughput predictable                        |
+| Analysis cache    | Pending         | Worker-compatible `moduleCache.json` reintegration is tracked in P7.6 | Restores second-run skip behavior without reviving the old stage chain |
 
 ---
 
@@ -124,11 +109,11 @@ This legacy diagram captures the pre-orchestrator, mixed-runtime pipeline. Key i
 
 ---
 
-## Target Architecture (3-Phase Streaming)
+## Canonical 3-Phase Model
 
-The target architecture reduces the pipeline from 5 sequential stages to **3 conceptual phases** with parallel execution and streaming:
+The current canonical pipeline already follows this three-phase shape; the remaining roadmap work in P7.6 is about completing worker-aware incremental caching and measuring repeated-run improvements.
 
-### Target Workflow Diagram
+### Canonical Workflow Diagram
 
 ```mermaid
 flowchart TB
@@ -164,30 +149,31 @@ flowchart TB
   results1 -.diff detection.-> aggregate
 ```
 
-### Comparison: Legacy vs. Current vs. Target
+### Comparison: Legacy vs. Canonical Flow
 
-| Aspect             | Legacy (6 stages) | Current (5 stages)      | Target (3 phases)    |
-| ------------------ | ----------------- | ----------------------- | -------------------- |
-| Runtime            | Python + Node.js  | TypeScript/Node.js      | TypeScript           |
-| Execution          | Sequential        | Sequential + caching    | Parallel + streaming |
-| Incremental        | ❌ No             | ✅ Yes (~90% skip rate) | ✅ Yes + workers     |
-| Memory             | Unbounded         | Batch-bounded           | Per-worker bounded   |
-| Full run time      | ~45-60 min        | ~15-20 min              | ~10-15 min           |
-| Incremental time   | N/A               | <5 min                  | <3 min               |
-| Intermediate files | 6                 | 4                       | 1 + final            |
+| Aspect             | Legacy (6 stages)         | Canonical flow (Mar 2026)                                     |
+| ------------------ | ------------------------- | ------------------------------------------------------------- |
+| Runtime            | Python + Node.js          | Node.js with TypeScript-based deep checks                     |
+| Execution          | Sequential manual scripts | Orchestrated 2-stage pipeline with worker pool                |
+| Incremental        | ❌ No                     | Partial: metadata cache + clone reuse                         |
+| Memory             | Unbounded                 | Batch-/worker-bounded                                         |
+| Intermediate files | 6                         | `modules.stage.2.json`, `modules.stage.5.json`, final outputs |
 
-### Target Architecture Benefits
+### Remaining Gaps
 
-1. **Three-phase pipeline** consolidates current stages (1+2 → Phase 1, 3+4+5 → Phase 2, new → Phase 3)
-2. **Parallel workers** process modules in batches concurrently
-3. **Streaming** eliminates need to load all modules into memory
-4. **Diff detection** in aggregation phase for change reporting
+1. Reintegrate worker-compatible `moduleCache.json` handling under P7.6.
+2. Record before/after repeated-run performance metrics once cache writes are back in place.
+3. Keep the published contract (`modules.json`, `modules.min.json`, `stats.json`) stable while worker caching evolves.
+
+The remaining intermediate files (`modules.stage.2.json`, `modules.stage.5.json`) are still intentional schema boundaries. The roadmap direction is to reduce or remove such boundary files once streaming/aggregation can replace them cleanly, not to rename them for cosmetic reasons.
 
 ---
 
 ## Distribution Touchpoints
 
-### Current Flow
+This section is about how module data enters the system and reaches downstream consumers. Unlike the canonical pipeline above, part of this flow is still conceptual.
+
+### Current Intake Flow
 
 ```mermaid
 flowchart LR
@@ -208,7 +194,7 @@ flowchart LR
   api --> moduleWebsite
 ```
 
-### Target Flow
+### Potential Future Intake Flow
 
 ```mermaid
 flowchart LR
@@ -229,7 +215,7 @@ flowchart LR
   api --> moduleWebsite
 ```
 
-The target replaces the wiki with a form-based frontend while downstream consumers continue using the unchanged API endpoint.
+If this direction is pursued, the wiki would be replaced with a form-based frontend while downstream consumers continue using the unchanged API endpoint.
 
 ---
 

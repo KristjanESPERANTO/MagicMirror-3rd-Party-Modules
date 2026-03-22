@@ -6,13 +6,13 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 
 ## Key capabilities
 
-- Provide a single entry point (e.g. `node --run pipeline -- pipeline run full-refresh-parallel`) that replaces the existing ad-hoc shell scripts.
+- Provide a single entry point (e.g. `npm run pipeline -- run full-refresh-parallel`) that replaces the existing ad-hoc shell scripts.
 - Interpret `pipeline/stage-graph.json` at runtime to determine stage ordering, inputs/outputs, and side-effects.
 - Emit structured logs and progress indicators so maintainers can trace stage execution locally and in CI.
 - Persist run metadata (planned, skipped, succeeded, failed) to `.pipeline-runs/` so partial runs stay auditable.
 - Offer composable filters (`--only`, `--skip`, future `--from`/`--to`) that unlock partial runs without duplicating scripts (supports P1.4).
 - Surface consistent pre/post hooks (e.g. schema validation, cleanup) and failure handling across all stages.
-- Run every pipeline stage through the Node.js toolchain, including the TypeScript implementation of Stage 5.
+- Run the supported pipeline through the Node.js toolchain, with `parallel-processing` encapsulating clone/enrich/analyze work behind one stage definition.
 
 ## Stakeholders
 
@@ -42,7 +42,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
    - Captures exit codes, stdout/stderr, and wraps failures with actionable messages before persisting result metadata.
 
 3. **Stage Runner Abstraction** — Normalizes execution for the Node runtime:
-   - All stages run via `node <script>`. The TypeScript implementation of Stage 5 (`scripts/check-modules/index.ts`) executes directly on Node.js 24+ without a separate build step, reusing the shared utility toolkit.
+   - All supported stages run via `node <script>`. The current stage graph executes `collect-metadata` and `parallel-processing`, with the latter coordinating the deeper analysis work internally.
 
 4. **State & Artifacts** — Maintains an execution ledger (`.pipeline-runs/<timestamp>_<pipeline>.json`) with start/end timestamps, per-stage status (`succeeded`, `skipped`, `failed`, `pending`), durations, filters, and failure metadata, enabling future resume functionality and local auditing even when stages are filtered out.
 
@@ -72,7 +72,7 @@ The original exploration surfaced a few ideas that remain on the backlog:
 
 ## Structured Logging
 
-- Emit human-readable console output with stage numbering and duration markers, e.g. `▶︎ [1/6] create-module-list … done in 12.4s`.
+- Emit human-readable console output with stage numbering and duration markers, e.g. `▶︎ [1/2] collect-metadata … done in 12.4s`.
 - Persist a structured JSON summary to `.pipeline-runs/<timestamp>_<pipeline>.json` capturing stage outcomes (including explicitly skipped stages), durations, applied filters, and failure metadata.
 - Provide `pipeline logs [runId|--latest]` to inspect a stored run summary without digging into the filesystem.
 

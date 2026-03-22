@@ -29,7 +29,7 @@ Related docs:
     - Follow-up: normalize docs/commands in C5 to reflect the new canonical default.
   - Tests and harness references:
     - Check-group config unit test points to `scripts/check-modules` in [scripts/check-modules/**tests**/check-group-config.test.js](../../scripts/check-modules/__tests__/check-group-config.test.js).
-    - Compare harness workflow uses `checkModules:compare` in [.github/workflows/check-modules-compare.yaml](../../.github/workflows/check-modules-compare.yaml).
+    - A comparison-harness workflow existed at the start of C1 and was retired in C4.
     - Follow-up: keep the unit/integration regression tests, but retire the comparison harness in C4 in favor of canonical fixture/golden validation.
   - CI hooks snapshot:
     - No workflow currently invokes legacy stage chain (`full-refresh` or `--only=get-modules|expand-module-list|check-modules`).
@@ -39,17 +39,17 @@ Related docs:
   - `npm run all` now targets `full-refresh-parallel` in [package.json](../../package.json).
   - `pipeline run` without explicit pipeline id now defaults to `full-refresh-parallel` in [scripts/orchestrator/index.js](../../scripts/orchestrator/index.js).
   - Legacy stage-specific shortcuts (`collectMetadata`, `getModules`, `expandModuleList`, `checkModules`) were pinned to `full-refresh` as a temporary compatibility path in [package.json](../../package.json) and retired in C3.
-  - Legacy `full-refresh` pipeline remains available as compatibility path in [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
+  - Legacy `full-refresh` remained available as a temporary compatibility path at that point and was removed in C4.
 - [x] C3: Legacy script retirement
   - Completed on 2026-03-19.
   - Removed obsolete npm wrappers from public command surface: `getModules`, `expandModuleList`, `checkModules`, `ownList` in [package.json](../../package.json).
   - Kept `collectMetadata` as a canonical stage helper and pointed it at `full-refresh-parallel` in [package.json](../../package.json).
-  - Updated comparison harness default command to explicitly use `full-refresh --only=check-modules` so parity runs keep working without depending on canonical default in [scripts/check-modules/compare/index.js](../../scripts/check-modules/compare/index.js).
-  - Marked `full-refresh` as legacy compatibility pipeline in [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
+  - Temporarily pinned the comparison harness to `full-refresh --only=check-modules` so parity runs kept working until the harness was retired in C4.
+  - Marked `full-refresh` as a legacy compatibility pipeline before removing it in C4.
 - [x] C4: Artifact contract cleanup
   - Completed on 2026-03-19.
   - Decided to retire the comparison harness and use canonical fixture/golden validation (`fixtures:generate`, `test:fixtures`, `golden:check`) as the supported regression path.
-  - Removed `scripts/check-modules/compare/` (harness code), `checkModules:compare` from [package.json](../../package.json), and [.github/workflows/check-modules-compare.yaml](../../.github/workflows/check-modules-compare.yaml).
+  - Removed the comparison-harness code, the `checkModules:compare` npm script from [package.json](../../package.json), and the dedicated compare workflow.
   - Removed the `full-refresh` compatibility pipeline and all legacy stage declarations (`get-modules`, `expand-module-list`, `check-modules`) from [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
   - Removed legacy-only artifact declarations (`modules-stage-3`, `modules-stage-4`, `skipped-modules`, `analysis-report`, `module-result-cache`) from [pipeline/stage-graph.json](../../pipeline/stage-graph.json).
   - Removed stage 3/4 entries from [scripts/golden-artifacts/index.js](../../scripts/golden-artifacts/index.js) and deleted orphaned golden reference files `fixtures/golden/modules.stage.3.json` and `fixtures/golden/modules.stage.4.json`.

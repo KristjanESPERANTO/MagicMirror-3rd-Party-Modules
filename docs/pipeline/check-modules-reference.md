@@ -1,6 +1,6 @@
 # Check Modules Reference
 
-_Last updated: October 4, 2025_
+_Last updated: March 19, 2026_
 
 This page consolidates the material that previously lived in the P2.3 rollout documents. It should stay up to date as we evolve Stage 5 (`scripts/check-modules/index.ts`) and the curated fixture set.
 
@@ -155,40 +155,6 @@ The curated fixture repositories live in `fixtures/modules/`. Keep this table in
 - When adding a fixture, update the table above and regenerate `fixtures/data/` via `npm run fixtures:generate`.
 - Trim binaries and large assets before committing fixture snapshots.
 
-## Comparison harness
-
-The comparison harness lives under `scripts/check-modules/compare/` and is exercised via `npm run checkModules:compare`.
-
-### Goals
-
-- Execute one or two configured commands against the curated dataset.
-- Normalize and diff Stage 5 outputs, surfacing rule-level differences and aggregate stats when two runs are available.
-- Emit machine-readable (`diff.json`) and Markdown (`diff.md`) reports for CI artifacts.
-
-### Flow
-
-1. Prepare a temporary workspace with the curated fixtures.
-2. Run the first configured command (labelled `legacy` by default) and capture Stage 5 outputs.
-3. Run the second command (`ts` by default) if provided.
-4. Normalize artifacts (sorted keys, trimmed timestamps).
-5. Run diff logic to produce JSON + Markdown summaries when two runs succeed.
-6. Exit non-zero when differences are detected or an execution step fails.
-
-### Implementation notes
-
-- CLI entry point: `node scripts/check-modules/compare/index.js`.
-- Supports overrides via `--fixtures`, `--legacy`, `--ts`, and `--output` flags (the `--legacy` command defaults to `skip`).
-- Uses shared logging utilities; artifacts are collated under the run directory with a `plan.json` descriptor.
-- Snapshot-based tests guard the harness itself.
-
-### Recent updates & open follow-ups
-
-- ✅ README/HTML artifact comparisons now surface alongside the JSON diffs (Oct 2025).
-- ✅ Warning thresholds downgrade small stat deltas to non-blocking warnings (Oct 2025).
-- Consider partial rule subsets to speed up ad-hoc debugging runs.
-- Explore storing golden artifacts now that the Python fallback has been retired.
-
 ## Housekeeping
 
-- Update this page whenever you add or modify Stage 5 rules, fixtures, or harness capabilities.
-- `docs/pipeline-refactor-roadmap.md` links here for the ongoing maintenance narrative—keep the roadmap entry aligned with the follow-ups listed above.
+- Update this page whenever you add or modify Stage 5 rules or fixtures.

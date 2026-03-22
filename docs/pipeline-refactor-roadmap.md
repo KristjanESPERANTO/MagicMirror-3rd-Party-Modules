@@ -99,6 +99,8 @@ Merge stages 3+4+5 into parallel worker processes. See [worker-pool-design.md](p
 
 Enable streaming between phases and create aggregation layer. Details TBD after P7.x complete.
 
+The goal of this milestone is to reduce or eliminate the remaining intermediate stage-boundary files by replacing file-based handoffs with streaming/aggregation where it is safe to do so. It is not a separate effort to rename `modules.stage.*.json` files while they remain supported contract boundaries.
+
 | Task | Status                    |
 | ---- | ------------------------- |
 | P8.1 | Streaming orchestrator    |

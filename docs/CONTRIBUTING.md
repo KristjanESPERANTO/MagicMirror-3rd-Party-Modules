@@ -21,25 +21,23 @@ npm install
 
 ## Running the pipeline
 
-You can run each stage individually or rely on the helper commands registered in `package.json`:
+Use the canonical helper scripts from `package.json` or call the orchestrator directly:
 
-| Stage | Command                       | Purpose                                                                         |
-| ----- | ----------------------------- | ------------------------------------------------------------------------------- |
-| 1+2   | `node --run collectMetadata`  | Derive the baseline list from the wiki and enrich it with repository metadata.  |
-| 3     | `node --run getModules`       | Clone the repositories locally for deeper inspection.                           |
-| 4     | `node --run expandModuleList` | Parse `package.json`, pick screenshots, and compute derived metadata.           |
-| 5     | `node --run checkModulesJs`   | Run the JavaScript-based checks against the cloned repositories.                |
-| 6     | `node --run checkModules`     | Run the deep TypeScript analysis that emits README/package insights and stats.  |
-| —     | `node --run all`              | Convenience wrapper that executes the full chain in order via the orchestrator. |
+| Scope                   | Command                                                                                   | Purpose                                                                                          |
+| ----------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Metadata only           | `node --run collectMetadata`                                                              | Fetch the upstream wiki list and enrich it with repository metadata into `modules.stage.2.json`. |
+| Full canonical run      | `node --run all`                                                                          | Execute `full-refresh-parallel` end-to-end.                                                      |
+| Inspect the pipeline    | `node --run pipeline -- list` / `describe` / `logs`                                       | Inspect the registered stages, pipelines, and recent run records.                                |
+| Re-run the worker stage | `node scripts/orchestrator/index.js run full-refresh-parallel --only=parallel-processing` | Re-run clone, enrichment, image export, and deep analysis against an existing Stage 2 input.     |
 
-Heavy stages (`getModules`, `checkModules`) download hundreds of repositories and can take more than 10 minutes. When iterating on faster tasks (Stages 1–2 or 4), feel free to skip the expensive steps or rely on `--only` to target specific stages.
+The `parallel-processing` stage is the expensive part of the run: it clones repositories, extracts metadata and screenshots, performs the deeper checks, and writes both `modules.stage.5.json` and the published catalogue outputs.
 
 ### Orchestrator CLI for partial runs
 
 The orchestrator CLI (`node --run pipeline` or `node scripts/orchestrator/index.js`) bundles the stage graph, structured logging, and DX helpers like `list`, `describe`, `logs`, and `doctor`. Use it to:
 
-- Execute the full pipeline with `node scripts/orchestrator/index.js run full-refresh`.
-- Target subsets of stages (for example, `node scripts/orchestrator/index.js run --only=check-modules`).
+- Execute the full pipeline with `node scripts/orchestrator/index.js run full-refresh-parallel`.
+- Target supported stages with `node scripts/orchestrator/index.js run full-refresh-parallel --only=collect-metadata` or `--only=parallel-processing`.
 - Inspect the available stages with `list`/`describe` or review artifacts via `logs`.
 - Output machine-readable logs with `--json-logs` for integration with other tools.
 
@@ -47,8 +45,9 @@ Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) f
 
 ### Pipeline Tips
 
-- **Skip heavy stages**: When working on metadata parsing (Stage 4) or website generation, use `--skip=get-modules,check-modules` to avoid the time-consuming clone and analysis steps.
-- **Focus on one stage**: Use `--only=<stage-id>` to run a single stage in isolation. For example, `node scripts/orchestrator/index.js run --only=collect-metadata`.
+- **Refresh metadata only**: Use `node scripts/orchestrator/index.js run full-refresh-parallel --skip=parallel-processing` when you only need a fresh `modules.stage.2.json`.
+- **Focus on one stage**: Use `--only=<stage-id>` to run a single stage in isolation. For example, `node scripts/orchestrator/index.js run full-refresh-parallel --only=collect-metadata`.
+- **Debug a small source list**: Set `WIKI_FILE=path/to/3rd-Party-Modules.md` and run `node --run all` to use a local wiki-formatted module list instead of the upstream page.
 - **Check logs**: If a run fails, use `node scripts/orchestrator/index.js logs` to list recent runs, and `node scripts/orchestrator/index.js logs <run-file>` to view details.
 
 ### Stage details
@@ -57,21 +56,9 @@ Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) f
 
 Reads the official wiki list of third-party modules and fetches metadata (stars, topics, default branch, etc.) from the hosting service (GitHub/GitLab). The output is the enriched Stage 2 snapshot that downstream stages reuse.
 
-#### Stage 3 – `get-modules.ts`
+#### Stage 3+4+5 – `parallel-processing.js`
 
-Clones every repository locally. Expect long runtimes (>10 minutes) and significant disk usage (>2 GB) when running the full catalogue.
-
-#### Stage 4 – `expand_module_list_with_repo_data.js`
-
-Scans each cloned repository to extract data from `package.json`, collect screenshots, and compute derived metadata. Images only appear in the website if the module declares a compatible license.
-
-#### Stage 5 – `check_modules_js.js`
-
-Runs JavaScript-based checks (naming conventions, minified files, etc.) against the cloned repositories to surface quick wins for maintainers.
-
-#### Stage 6 – `check-modules/index.ts`
-
-Runs the deep repository analysis in TypeScript, parsing README files, inspecting packaging hygiene, shelling out to ESLint/`npm-check-updates`, and producing the markdown summary alongside `modules.json`, `modules.min.json`, and `stats.json`.
+Combines repository cloning, `package.json` enrichment, screenshot extraction, and deep analysis inside the worker pool. The stage emits `modules.stage.5.json` for the supported intermediate contract and writes the published catalogue outputs (`modules.json`, `modules.min.json`, `stats.json`) in the same run.
 
 #### `validate_release_artifacts.js`
 
@@ -79,11 +66,13 @@ Validates every stage snapshot and the published catalogue (`modules.json`, `mod
 
 ### Testing specific modules
 
-Use the opt-in workflow when you only need to verify a subset of modules:
+For focused manual runs, point the pipeline at a small local wiki snapshot instead of the full upstream page:
 
-1. Create an `ownModuleList.json` based on [`ownModuleList_sample.json`](../ownModuleList_sample.json); only the `url` field is required, but you may also specify a `branch`.
-2. Run `node --run ownList` to execute the tailored pipeline.
-3. Inspect the output in [`website/result.html`](../website/result.html) just like the full run.
+1. Copy [`website/test/3rd-Party-Modules.md`](../website/test/3rd-Party-Modules.md) or prepare your own markdown file in the same table format as the upstream MagicMirror wiki page.
+2. Run `WIKI_FILE=path/to/3rd-Party-Modules.md node --run all`.
+3. Inspect the generated files under [`website/data/`](../website/data/) just like a full run.
+
+For regression testing, prefer the curated fixtures (`node --run fixtures:generate`, `node --run test:fixtures`, `node --run golden:check`) over ad-hoc subsets.
 
 ## Release validation (Phase 4 rollout)
 
@@ -93,7 +82,7 @@ As of September 2025, schema validation is part of the release gate. After you r
 node --run release:validate
 ```
 
-The command checks every stage snapshot (`modules.stage.1.json` … `modules.stage.5.json`) plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`). If any contract breaks, the command exits with a non-zero status and prints a list of offenders.
+The command checks the supported stage snapshots (`modules.stage.2.json`, `modules.stage.5.json`) plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`). If any contract breaks, the command exits with a non-zero status and prints a list of offenders.
 
 > ℹ️ **CI gate:** The same validation now runs automatically in GitHub Actions (`release-validation.yml`) on every push and pull request targeting `main`. Keep the command in your local workflow to catch schema regressions before CI fails.
 

@@ -444,7 +444,7 @@ Recent:
 ### CLI Options
 
 ```bash
-npm run pipeline -- run full-refresh \
+npm run pipeline -- run full-refresh-parallel \
   --workers=4 \
   --batch-size=50 \
   --module-timeout=60000 \
@@ -511,9 +511,9 @@ PIPELINE_CACHE_ENABLED=true
 
 ### Phase 4: Cleanup (P7.5-P7.6)
 
-- Add per-module logging
-- Remove separate stage scripts
-- Update orchestrator to use workers
+- Remove legacy stage scripts from the supported flow
+- Clean up docs and command surface to match the canonical pipeline
+- Integrate worker-aware cache behavior
 
 ---
 
@@ -533,4 +533,4 @@ PIPELINE_CACHE_ENABLED=true
 
 4. **ESLint/ncu**: Keep optional in worker, controlled by check-group configuration.
 
-- Decision details: Pipeline mode defaults are explicit and may differ between full-refresh and incremental-oriented runs.
+- Decision details: Pipeline mode defaults are explicit and may differ between canonical full runs and incremental-oriented runs.

@@ -2,6 +2,8 @@
 
 This document describes how the pipeline handles git repository failures gracefully to keep the pipeline green even when individual repositories are unavailable.
 
+> Note: this page documents the legacy `scripts/get-modules.ts` implementation that is no longer part of the supported canonical pipeline. The current `full-refresh-parallel` flow performs clone handling inside `scripts/parallel-processing.js`. Keep this guide as implementation reference while the legacy script still exists in the repository.
+
 ## Problem
 
 Before this implementation, the pipeline would crash completely if:
