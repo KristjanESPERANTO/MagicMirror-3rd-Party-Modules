@@ -19,6 +19,9 @@
     "name": "Kristjan ESPERANTO",
     "url": "https://github.com/KristjanESPERANTO"
   },
+  "engines": {
+    "node": ">=22.6.0"
+  },
   "type": "module",
   "exports": {
     ".": "./scripts/collect-metadata/index.js"
@@ -28,12 +31,12 @@
   },
   "scripts": {
     "start": "ntl --size 50",
-    "all": "node scripts/orchestrator/index.js run full-refresh-parallel",
-    "collectMetadata": "node scripts/orchestrator/index.js run full-refresh-parallel --only=collect-metadata",
-    "pipeline": "node scripts/orchestrator/index.js",
-    "pipeline:benchmark": "node scripts/orchestrator/index.js benchmark --pipeline=full-refresh-parallel --limit=20",
-    "pipeline:dashboard": "node scripts/orchestrator/index.js dashboard --pipeline=full-refresh-parallel --limit=20",
-    "pipeline:progress": "node scripts/orchestrator/index.js progress --pipeline=full-refresh-parallel --limit=20",
+    "all": "node scripts/orchestrator/index.ts run full-refresh-parallel",
+    "collectMetadata": "node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata",
+    "pipeline": "node scripts/orchestrator/index.ts",
+    "pipeline:benchmark": "node scripts/orchestrator/index.ts benchmark --pipeline=full-refresh-parallel --limit=20",
+    "pipeline:dashboard": "node scripts/orchestrator/index.ts dashboard --pipeline=full-refresh-parallel --limit=20",
+    "pipeline:progress": "node scripts/orchestrator/index.ts progress --pipeline=full-refresh-parallel --limit=20",
     "golden:check": "node scripts/golden-artifacts/index.js check",
     "golden:update": "node scripts/golden-artifacts/index.js update",
     "fixtures:generate": "node scripts/fixtures/generateFixturePipeline.js",

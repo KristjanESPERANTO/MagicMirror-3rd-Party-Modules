@@ -1,20 +1,21 @@
 #!/usr/bin/env node
-/* eslint-disable no-continue */
 
-import { applyStageFilters, normalizeStageFilters, parseCommaSeparatedList } from "./stage-filters.js";
+// @ts-nocheck
+
+import { applyStageFilters, normalizeStageFilters, parseCommaSeparatedList } from "./stage-filters.ts";
 import { basename, dirname, join, relative, resolve } from "node:path";
-import { buildExecutionPlan, loadStageGraph } from "./stage-graph.js";
+import { buildExecutionPlan, loadStageGraph } from "./stage-graph.ts";
 import { createLogger, createStageProgressLogger } from "../shared/logger.js";
 import { mkdir, writeFile } from "node:fs/promises";
 import { Command } from "commander";
-import { createInProcessStageRunner } from "./in-process-stage-runner.js";
-import { createResourceMonitor } from "./resource-monitor.js";
+import { createInProcessStageRunner } from "./in-process-stage-runner.ts";
+import { createResourceMonitor } from "./resource-monitor.ts";
 import { execFile } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
 import { promisify } from "node:util";
-import { registerAdditionalCommands } from "./cli-commands.js";
-import { runStagesSequentially } from "./stage-executor.js";
+import { registerAdditionalCommands } from "./cli-commands.ts";
+import { runStagesSequentially } from "./stage-executor.ts";
 import { validateStageFile } from "../lib/schemaValidator.js";
 
 const currentFile = fileURLToPath(import.meta.url);
@@ -22,7 +23,7 @@ const currentDir = dirname(currentFile);
 const PROJECT_ROOT = resolve(currentDir, "..", "..");
 const DEFAULT_GRAPH_PATH = join(PROJECT_ROOT, "pipeline", "stage-graph.json");
 const RUNS_DIRECTORY = join(PROJECT_ROOT, ".pipeline-runs");
-const MIN_NODE_MAJOR_VERSION = 18;
+const MIN_NODE_VERSION = { major: 22, minor: 6, patch: 0 };
 const execFileAsync = promisify(execFile);
 
 function isMissingFileError(error) {
@@ -397,7 +398,7 @@ export async function main(argv = process.argv) {
     defaultGraphPath: DEFAULT_GRAPH_PATH,
     projectRoot: PROJECT_ROOT,
     runsDirectory: RUNS_DIRECTORY,
-    minNodeMajorVersion: MIN_NODE_MAJOR_VERSION,
+    minNodeVersion: MIN_NODE_VERSION,
     execFileAsync
   });
 

@@ -1,6 +1,7 @@
-import { formatBytesToMiB, formatDuration } from "./cli-helpers.js";
-import { buildBenchmarkSummary } from "./benchmark.js";
-import { buildProgressSummary } from "./progress.js";
+// @ts-nocheck
+import { formatBytesToMiB, formatDuration } from "./cli-helpers.ts";
+import { buildBenchmarkSummary } from "./benchmark.ts";
+import { buildProgressSummary } from "./progress.ts";
 
 function hasFilterValues(filters) {
   if (!filters || typeof filters !== "object") {

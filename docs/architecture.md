@@ -4,7 +4,7 @@ Visibility into the automation that builds and publishes the third-party module 
 
 ## Current State (March 2026)
 
-The supported production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh-parallel` (also exposed as `node --run all`). The orchestrator now drives three registered stages across three operational phases: metadata collection, parallel module processing, and catalogue aggregation.
+The supported production pipeline is orchestrated via `node scripts/orchestrator/index.ts run full-refresh-parallel` (also exposed as `node --run all`). The orchestrator now drives three registered stages across three operational phases: metadata collection, parallel module processing, and catalogue aggregation.
 
 ### Stage Overview
 

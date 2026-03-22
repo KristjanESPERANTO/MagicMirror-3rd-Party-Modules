@@ -1,4 +1,5 @@
-import { formatDuration } from "./cli-helpers.js";
+// @ts-nocheck
+import { formatDuration } from "./cli-helpers.ts";
 
 function hasFilterValues(filters) {
   if (!filters || typeof filters !== "object") {

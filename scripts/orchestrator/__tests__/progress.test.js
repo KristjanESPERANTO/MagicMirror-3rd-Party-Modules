@@ -1,4 +1,4 @@
-import { buildProgressSummary, selectProgressRecords } from "../progress.js";
+import { buildProgressSummary, selectProgressRecords } from "../progress.ts";
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
 

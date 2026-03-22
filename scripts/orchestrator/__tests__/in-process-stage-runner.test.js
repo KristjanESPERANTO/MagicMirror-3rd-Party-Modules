@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
-import { createInProcessStageRunner } from "../in-process-stage-runner.js";
-import { runStagesSequentially } from "../stage-executor.js";
+import { createInProcessStageRunner } from "../in-process-stage-runner.ts";
+import { runStagesSequentially } from "../stage-executor.ts";
 import { test } from "node:test";
 
 function createSilentStageLogger() {

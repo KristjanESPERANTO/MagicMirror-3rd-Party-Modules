@@ -1,5 +1,5 @@
 import { strict as assert } from "node:assert";
-import { createResourceMonitor } from "../resource-monitor.js";
+import { createResourceMonitor } from "../resource-monitor.ts";
 import { test } from "node:test";
 
 test("createResourceMonitor captures cpu and memory summary", () => {

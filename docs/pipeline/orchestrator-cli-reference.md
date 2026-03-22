@@ -24,7 +24,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 
 - Stage metadata lives in [`pipeline/stage-graph.json`](../../pipeline/stage-graph.json) and was finalized under P1.1.
 - Schemas for stage artifacts are bundled in `dist/schemas/*.schema.json` (P1.3–P1.6) and are enforced after each stage.
-- The CLI lives under `scripts/orchestrator/` (primary entrypoint `index.js`, helper modules `cli-helpers.js` and `cli-commands.js`) with shared utilities documented in [`docs/architecture.md`](../architecture.md).
+- The CLI lives under `scripts/orchestrator/` (primary entrypoint `index.ts`, helper modules `cli-helpers.ts` and `cli-commands.ts`) with shared utilities documented in [`docs/architecture.md`](../architecture.md).
 
 ## Architecture Overview
 

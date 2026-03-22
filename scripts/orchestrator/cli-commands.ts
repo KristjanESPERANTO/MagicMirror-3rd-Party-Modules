@@ -1,18 +1,19 @@
+// @ts-nocheck
 import {
   buildBenchmarkSummary,
   printBenchmarkSummary,
   selectBenchmarkRecords
-} from "./benchmark.js";
+} from "./benchmark.ts";
 import {
   buildDashboardSummary,
   printDashboardSummary,
   selectDashboardRecords
-} from "./dashboard.js";
+} from "./dashboard.ts";
 import {
   buildProgressSummary,
   printProgressSummary,
   selectProgressRecords
-} from "./progress.js";
+} from "./progress.ts";
 import {
   describePipeline,
   describeStage,
@@ -22,7 +23,7 @@ import {
   printRunRecordDetails,
   printStageSummaries,
   readRunRecord
-} from "./cli-helpers.js";
+} from "./cli-helpers.ts";
 import path from "node:path";
 import process from "node:process";
 
@@ -56,21 +57,33 @@ async function loadRunRecords(runsDirectory) {
   return { loadedRecords, runRecordFiles };
 }
 
-function checkNodeVersion(minimumMajor) {
-  const raw = process.versions.node;
-  const major = Number.parseInt(raw.split(".")[0], 10);
+function formatMinimumNodeVersion(minimumVersion) {
+  const minor = minimumVersion.minor ?? 0;
+  const patch = minimumVersion.patch ?? 0;
 
-  if (Number.isNaN(major)) {
+  return `${minimumVersion.major}.${minor}.${patch}`;
+}
+
+function checkNodeVersion(minimumVersion) {
+  const raw = process.versions.node;
+  const [majorPart, minorPart] = raw.split(".");
+  const major = Number.parseInt(majorPart, 10);
+  const minor = Number.parseInt(minorPart ?? "0", 10);
+
+  if (Number.isNaN(major) || Number.isNaN(minor)) {
     return {
       status: "warn",
       details: `Unable to parse Node.js version (${raw}).`
     };
   }
 
-  if (major < minimumMajor) {
+  const belowMajor = major < minimumVersion.major;
+  const belowMinor = major === minimumVersion.major && minor < (minimumVersion.minor ?? 0);
+
+  if (belowMajor || belowMinor) {
     return {
       status: "fail",
-      details: `Detected Node.js ${raw}. Requires >= ${minimumMajor}.`
+      details: `Detected Node.js ${raw}. Requires >= ${formatMinimumNodeVersion(minimumVersion)}.`
     };
   }
 
@@ -158,13 +171,13 @@ function buildDescribeCommandHandler({ defaultGraphPath }) {
   };
 }
 
-function buildDoctorCommandHandler({ minNodeMajorVersion, execFileAsync }) {
+function buildDoctorCommandHandler({ minNodeVersion, execFileAsync }) {
   return async function doctorCommand() {
     console.log("Running environment diagnostics...\n");
 
-    const nodeResult = checkNodeVersion(minNodeMajorVersion);
+    const nodeResult = checkNodeVersion(minNodeVersion);
     printCheckResult({
-      label: `Node.js >= ${minNodeMajorVersion}`,
+      label: `Node.js >= ${formatMinimumNodeVersion(minNodeVersion)}`,
       status: nodeResult.status,
       details: nodeResult.details
     });

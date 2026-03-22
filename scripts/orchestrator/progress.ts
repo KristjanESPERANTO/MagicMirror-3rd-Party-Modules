@@ -1,4 +1,5 @@
-import { formatBytesToMiB, formatDuration } from "./cli-helpers.js";
+// @ts-nocheck
+import { formatBytesToMiB, formatDuration } from "./cli-helpers.ts";
 
 const DEFAULT_REGRESSION_THRESHOLD = 0.1;
 

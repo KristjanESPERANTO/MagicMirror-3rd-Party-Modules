@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createLogger } from "../shared/logger.js";
 import process from "node:process";
 import { resolve } from "node:path";

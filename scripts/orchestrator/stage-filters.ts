@@ -1,3 +1,4 @@
+// @ts-nocheck
 export function parseCommaSeparatedList(value, previous = []) {
   if (!value) {
     return previous;

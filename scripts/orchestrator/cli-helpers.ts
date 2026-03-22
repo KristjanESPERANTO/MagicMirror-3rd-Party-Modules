@@ -1,4 +1,5 @@
-import { buildArtifactMap, buildStageMap, loadStageGraph } from "./stage-graph.js";
+// @ts-nocheck
+import { buildArtifactMap, buildStageMap, loadStageGraph } from "./stage-graph.ts";
 import { readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
 

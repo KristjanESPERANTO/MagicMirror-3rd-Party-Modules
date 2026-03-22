@@ -1,4 +1,4 @@
-import { buildBenchmarkSummary, selectBenchmarkRecords } from "../benchmark.js";
+import { buildBenchmarkSummary, selectBenchmarkRecords } from "../benchmark.ts";
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
 

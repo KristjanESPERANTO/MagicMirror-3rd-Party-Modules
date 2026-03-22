@@ -28,16 +28,16 @@ Use the canonical helper scripts from `package.json` or call the orchestrator di
 | Metadata only             | `node --run collectMetadata`                                                                                  | Fetch the upstream wiki list and enrich it with repository metadata into `modules.stage.2.json`. |
 | Full canonical run        | `node --run all`                                                                                              | Execute `full-refresh-parallel` end-to-end.                                                      |
 | Inspect the pipeline      | `node --run pipeline -- list` / `describe` / `logs`                                                           | Inspect the registered stages, pipelines, and recent run records.                                |
-| Re-run processing+publish | `node scripts/orchestrator/index.js run full-refresh-parallel --only=parallel-processing,aggregate-catalogue` | Re-run worker analysis and publication against an existing Stage 2 input.                        |
+| Re-run processing+publish | `node scripts/orchestrator/index.ts run full-refresh-parallel --only=parallel-processing,aggregate-catalogue` | Re-run worker analysis and publication against an existing Stage 2 input.                        |
 
 The `parallel-processing` stage is the expensive part of the run: it clones repositories, extracts metadata and screenshots, and performs the deeper checks that produce `modules.stage.5.json`. The follow-up `aggregate-catalogue` stage turns that Stage 5 snapshot into `modules.json`, `modules.min.json`, and `stats.json`.
 
 ### Orchestrator CLI for partial runs
 
-The orchestrator CLI (`node --run pipeline` or `node scripts/orchestrator/index.js`) bundles the stage graph, structured logging, and DX helpers like `list`, `describe`, `logs`, and `doctor`. Use it to:
+The orchestrator CLI (`node --run pipeline` or `node scripts/orchestrator/index.ts`) bundles the stage graph, structured logging, and DX helpers like `list`, `describe`, `logs`, and `doctor`. Use it to:
 
-- Execute the full pipeline with `node scripts/orchestrator/index.js run full-refresh-parallel`.
-- Target supported stages with `node scripts/orchestrator/index.js run full-refresh-parallel --only=collect-metadata`, `--only=parallel-processing`, or `--only=aggregate-catalogue`.
+- Execute the full pipeline with `node scripts/orchestrator/index.ts run full-refresh-parallel`.
+- Target supported stages with `node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata`, `--only=parallel-processing`, or `--only=aggregate-catalogue`.
 - Inspect the available stages with `list`/`describe` or review artifacts via `logs`.
 - Output machine-readable logs with `--json-logs` for integration with other tools.
 
@@ -45,10 +45,10 @@ Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) f
 
 ### Pipeline Tips
 
-- **Refresh metadata only**: Use `node scripts/orchestrator/index.js run full-refresh-parallel --only=collect-metadata` when you only need a fresh `modules.stage.2.json`.
-- **Focus on one stage**: Use `--only=<stage-id>` to run a single stage in isolation. For example, `node scripts/orchestrator/index.js run full-refresh-parallel --only=collect-metadata`.
+- **Refresh metadata only**: Use `node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata` when you only need a fresh `modules.stage.2.json`.
+- **Focus on one stage**: Use `--only=<stage-id>` to run a single stage in isolation. For example, `node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata`.
 - **Debug a small source list**: Set `WIKI_FILE=path/to/3rd-Party-Modules.md` and run `node --run all` to use a local wiki-formatted module list instead of the upstream page.
-- **Check logs**: If a run fails, use `node scripts/orchestrator/index.js logs` to list recent runs, and `node scripts/orchestrator/index.js logs <run-file>` to view details.
+- **Check logs**: If a run fails, use `node scripts/orchestrator/index.ts logs` to list recent runs, and `node scripts/orchestrator/index.ts logs <run-file>` to view details.
 
 ### Stage details
 
