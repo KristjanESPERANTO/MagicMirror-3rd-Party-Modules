@@ -38,21 +38,21 @@ jobs:
       - name: Validate submission files
         id: validate
         run: |
-          node scripts/module-submission/validate.js
+          node scripts/module-submission/validate.ts
         env:
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
 
       - name: Check for duplicates
         id: duplicate-check
         run: |
-          node scripts/module-submission/check-duplicates.js
+          node scripts/module-submission/check-duplicates.ts
         env:
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
 
       - name: Validate repository
         id: repo-check
         run: |
-          node scripts/module-submission/check-repository.js
+          node scripts/module-submission/check-repository.ts
         env:
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -60,7 +60,7 @@ jobs:
       - name: Check module quality
         id: quality-check
         run: |
-          node scripts/module-submission/quality-check.js
+          node scripts/module-submission/quality-check.ts
         env:
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
 

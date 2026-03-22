@@ -2,18 +2,40 @@
 
 /**
  * Checks repository validity and requirements
- * Usage: node scripts/module-submission/check-repository.js
+ * Usage: node scripts/module-submission/check-repository.ts
  */
 
 import { readFileSync, writeFileSync } from "node:fs";
 import process from "node:process";
 import { resolve } from "node:path";
 
+interface SubmissionEntry {
+  url: string;
+}
+
+interface RepositoryMetadata {
+  license?: {
+    key?: string;
+    spdx_id?: string;
+  } | null;
+  [key: string]: unknown;
+}
+
+interface RepositoryValidationResults {
+  accessible: boolean;
+  errors: string[];
+  hasLicense: boolean;
+  hasPackageJson: boolean;
+  hasReadme: boolean;
+  license: string | null;
+  validLicense: boolean;
+}
+
 // Get files to check from environment variable
 const changedFiles = process.env.CHANGED_FILES?.split(" ") || [];
 const githubToken = process.env.GITHUB_TOKEN;
 
-const results = {
+const results: RepositoryValidationResults = {
   accessible: false,
   hasPackageJson: false,
   hasLicense: false,
@@ -28,13 +50,13 @@ const results = {
  * @param {string} repoUrl - Repository URL
  * @returns {Promise<object>} Repository metadata
  */
-async function fetchRepoMetadata(repoUrl) {
+async function fetchRepoMetadata(repoUrl: string): Promise<RepositoryMetadata> {
   const url = new URL(repoUrl);
   const [, owner, repo] = url.pathname.split("/");
 
   if (url.hostname === "github.com") {
     const apiUrl = `https://api.github.com/repos/${owner}/${repo.replace(/\.git$/u, "")}`;
-    const headers = { "User-Agent": "MagicMirror-Module-Submission-Bot" };
+    const headers: Record<string, string> = { "User-Agent": "MagicMirror-Module-Submission-Bot" };
     if (githubToken) {
       headers.Authorization = `token ${githubToken}`;
     }
@@ -44,7 +66,7 @@ async function fetchRepoMetadata(repoUrl) {
       throw new Error(`GitHub API error: ${response.status}`);
     }
 
-    return response.json();
+    return response.json() as Promise<RepositoryMetadata>;
   }
   else if (url.hostname === "gitlab.com") {
     const apiUrl = `https://gitlab.com/api/v4/projects/${encodeURIComponent(`${owner}/${repo}`)}`;
@@ -53,7 +75,7 @@ async function fetchRepoMetadata(repoUrl) {
       throw new Error(`GitLab API error: ${response.status}`);
     }
 
-    return response.json();
+    return response.json() as Promise<RepositoryMetadata>;
   }
 
   throw new Error("Unsupported repository host");
@@ -65,13 +87,13 @@ async function fetchRepoMetadata(repoUrl) {
  * @param {string} fileName - File name to check
  * @returns {Promise<boolean>} Whether file exists
  */
-async function checkFileExists(repoUrl, fileName) {
+async function checkFileExists(repoUrl: string, fileName: string): Promise<boolean> {
   const url = new URL(repoUrl);
   const [, owner, repo] = url.pathname.split("/");
 
   if (url.hostname === "github.com") {
     const apiUrl = `https://api.github.com/repos/${owner}/${repo.replace(/\.git$/u, "")}/contents/${fileName}`;
-    const headers = { "User-Agent": "MagicMirror-Module-Submission-Bot" };
+    const headers: Record<string, string> = { "User-Agent": "MagicMirror-Module-Submission-Bot" };
     if (githubToken) {
       headers.Authorization = `token ${githubToken}`;
     }
@@ -105,20 +127,19 @@ const validLicenses = [
 async function validateRepositories() {
   for (const file of changedFiles) {
     if (!file.endsWith(".json")) {
-      // eslint-disable-next-line no-continue
       continue;
     }
 
     try {
       const filePath = resolve(process.cwd(), file);
-      const submission = JSON.parse(readFileSync(filePath, "utf8"));
+      const submission = JSON.parse(readFileSync(filePath, "utf8")) as SubmissionEntry;
 
       // Check if repository is accessible
       try {
         const metadata = await fetchRepoMetadata(submission.url);
         results.accessible = true;
         results.license = metadata.license?.spdx_id || metadata.license?.key || null;
-        results.validLicense = validLicenses.includes(results.license);
+        results.validLicense = results.license ? validLicenses.includes(results.license) : false;
       }
       catch {
         results.errors.push("Repository is not accessible or does not exist");
@@ -135,7 +156,8 @@ async function validateRepositories() {
       break;
     }
     catch (error) {
-      results.errors.push(`Error checking repository: ${error.message}`);
+      const message = error instanceof Error ? error.message : String(error);
+      results.errors.push(`Error checking repository: ${message}`);
     }
   }
 
@@ -160,6 +182,7 @@ async function validateRepositories() {
 
 // Run validation
 validateRepositories().catch((error) => {
-  console.error("Fatal error:", error);
+  const message = error instanceof Error ? error.message : String(error);
+  console.error("Fatal error:", message);
   process.exit(1);
 });

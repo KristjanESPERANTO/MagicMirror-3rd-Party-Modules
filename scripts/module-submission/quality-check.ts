@@ -2,17 +2,30 @@
 
 /**
  * Performs quality checks on submitted modules
- * Usage: node scripts/module-submission/quality-check.js
+ * Usage: node scripts/module-submission/quality-check.ts
  */
 
 import { readFileSync, writeFileSync } from "node:fs";
 import process from "node:process";
 import { resolve } from "node:path";
 
+interface SubmissionEntry {
+  name: string;
+}
+
+interface QualityResults {
+  followsNaming: boolean;
+  hasKeywords: boolean;
+  hasScreenshot: boolean;
+  lastCommit: string | null;
+  recentActivity: boolean;
+  warnings: string[];
+}
+
 // Get files to check from environment variable
 const changedFiles = process.env.CHANGED_FILES?.split(" ") || [];
 
-const results = {
+const results: QualityResults = {
   hasScreenshot: false,
   followsNaming: false,
   hasKeywords: false,
@@ -29,7 +42,7 @@ console.log("🎯 Quality checks: Basic validation complete");
 for (const file of changedFiles) {
   if (file.endsWith(".json")) {
     const filePath = resolve(process.cwd(), file);
-    const submission = JSON.parse(readFileSync(filePath, "utf8"));
+    const submission = JSON.parse(readFileSync(filePath, "utf8")) as SubmissionEntry;
 
     // Check naming convention
     results.followsNaming = submission.name.startsWith("MMM-");

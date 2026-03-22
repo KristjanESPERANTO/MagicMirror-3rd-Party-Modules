@@ -147,10 +147,10 @@ To test the submission system locally:
 
    ```bash
    export CHANGED_FILES="module-submissions/pending/MMM-TestModule.json"
-   node scripts/module-submission/validate.js
-   node scripts/module-submission/check-duplicates.js
-   node scripts/module-submission/check-repository.js
-   node scripts/module-submission/quality-check.js
+   node scripts/module-submission/validate.ts
+   node scripts/module-submission/check-duplicates.ts
+   node scripts/module-submission/check-repository.ts
+   node scripts/module-submission/quality-check.ts
    ```
 
 3. **Check results:**

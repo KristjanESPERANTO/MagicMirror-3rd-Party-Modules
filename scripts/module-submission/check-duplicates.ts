@@ -2,27 +2,47 @@
 
 /**
  * Checks for duplicate module submissions
- * Usage: node scripts/module-submission/check-duplicates.js
+ * Usage: node scripts/module-submission/check-duplicates.ts
  */
 
 import { join, resolve } from "node:path";
 import { readFileSync, writeFileSync } from "node:fs";
 import process from "node:process";
 
+interface SubmissionEntry {
+  name: string;
+  url: string;
+}
+
+interface RegistryData {
+  modules?: SubmissionEntry[];
+}
+
+interface DuplicateRecord {
+  existingName: string;
+  existingUrl: string;
+  field: "name" | "url";
+  name: string;
+}
+
+interface DuplicateCheckResults {
+  duplicates: DuplicateRecord[];
+}
+
 // Get files to check from environment variable
 const changedFiles = process.env.CHANGED_FILES?.split(" ") || [];
 
-const results = {
+const results: DuplicateCheckResults = {
   duplicates: []
 };
 
 // Load existing approved modules
 const approvedDir = resolve(process.cwd(), "module-submissions/approved");
-const existingModules = new Map();
+const existingModules = new Map<string, SubmissionEntry>();
 
 try {
   const registryPath = join(approvedDir, "modules-registry.json");
-  const registry = JSON.parse(readFileSync(registryPath, "utf8"));
+  const registry = JSON.parse(readFileSync(registryPath, "utf8")) as RegistryData;
 
   for (const module of registry.modules || []) {
     existingModules.set(module.url.toLowerCase(), module);
@@ -37,13 +57,12 @@ catch {
 // Check each new submission
 for (const file of changedFiles) {
   if (!file.endsWith(".json")) {
-    // eslint-disable-next-line no-continue
     continue;
   }
 
   try {
     const filePath = resolve(process.cwd(), file);
-    const submission = JSON.parse(readFileSync(filePath, "utf8"));
+    const submission = JSON.parse(readFileSync(filePath, "utf8")) as SubmissionEntry;
 
     // Check for URL duplicate
     const urlDuplicate = existingModules.get(submission.url.toLowerCase());
@@ -68,7 +87,8 @@ for (const file of changedFiles) {
     }
   }
   catch (error) {
-    console.error(`Error checking ${file}:`, error.message);
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`Error checking ${file}:`, message);
   }
 }
 
