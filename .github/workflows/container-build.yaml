@@ -131,7 +131,7 @@ jobs:
           path: website/data
 
       - name: Validate no modules were skipped
-        run: node scripts/validate-skipped-modules.js
+        run: node scripts/validate-skipped-modules.ts
 
       - name: Upload skipped modules report (if validation failed)
         if: failure()
