@@ -9,7 +9,13 @@ import process from "node:process";
 const FILE_URL = fileURLToPath(import.meta.url);
 const ROOT_DIR = path.resolve(path.dirname(FILE_URL), "..", "..");
 
-const FIXTURES = [
+interface BaselineFixture {
+  lastCommit: string;
+  repo: string;
+  slug: string;
+}
+
+const FIXTURES: BaselineFixture[] = [
   {
     slug: "baseline-mmm-airquality",
     repo: "CFenner/MMM-AirQuality",
@@ -27,13 +33,13 @@ const FIXTURES = [
   }
 ];
 
-function info(message) {
+function info(message: string): void {
   process.stderr.write(`${message}\n`);
 }
 
-function fetchRemoteHead(repo) {
+function fetchRemoteHead(repo: string): string {
   const remote = `https://github.com/${repo}.git`;
-  info(`Fetching HEAD for ${repo}…`);
+  info(`Fetching HEAD for ${repo}...`);
   const output = execSync(`git ls-remote ${remote} HEAD`, {
     cwd: ROOT_DIR,
     encoding: "utf8"
@@ -49,7 +55,7 @@ function fetchRemoteHead(repo) {
   return sha;
 }
 
-function updateFixtureFile({ slug, repo, lastCommit }, sha) {
+function updateFixtureFile({ slug, repo, lastCommit }: BaselineFixture, sha: string): void {
   const fixturePath = path.join(ROOT_DIR, "fixtures", "modules", slug, "FIXTURE.md");
   if (!fs.existsSync(fixturePath)) {
     throw new Error(`Missing fixture file for ${slug}`);
@@ -75,7 +81,8 @@ function main() {
     }
     catch (error) {
       failures += 1;
-      info(`Failed to update ${fixture.slug}: ${error.message}`);
+      const message = error instanceof Error ? error.message : String(error);
+      info(`Failed to update ${fixture.slug}: ${message}`);
     }
   }
 

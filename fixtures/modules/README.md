@@ -38,4 +38,4 @@ Each fixture directory contains:
 
 ## Next steps
 
-- Ensure contributors rerun `node scripts/fixtures/updateBaselineShas.js` whenever we refresh the curated dataset so recorded commits stay accurate.
+- Ensure contributors rerun `node scripts/fixtures/updateBaselineShas.ts` whenever we refresh the curated dataset so recorded commits stay accurate.

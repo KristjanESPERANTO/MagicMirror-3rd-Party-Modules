@@ -7,13 +7,88 @@ import path from "node:path";
 const FILE_URL = fileURLToPath(import.meta.url);
 const ROOT_DIR = path.resolve(path.dirname(FILE_URL), "..", "..");
 
-function readJson(relativePath) {
-  const filePath = path.join(ROOT_DIR, relativePath);
-  const raw = fs.readFileSync(filePath, "utf8");
-  return JSON.parse(raw);
+interface SeedModule {
+  category: string;
+  description: string;
+  id: string;
+  issues?: unknown;
+  maintainer: string;
+  maintainerURL?: string;
+  name: string;
+  outdated?: string;
+  url: string;
+  [key: string]: unknown;
 }
 
-function writeJson(relativePath, data, options = {}) {
+interface SeedData {
+  lastUpdate: string;
+  modules: SeedModule[];
+}
+
+interface ModuleMetadataEntry {
+  defaultSortWeight: number;
+  image?: string;
+  issuesFinal?: boolean;
+  issuesStage4?: string[];
+  lastCommit: string;
+  license?: string | null;
+  outdated?: string;
+  packageJson?: Record<string, unknown>;
+  stars: number;
+  tags?: string[];
+}
+
+interface ModulesMetadata {
+  modules: Record<string, ModuleMetadataEntry>;
+}
+
+interface StagePipelineModule extends SeedModule {
+  defaultSortWeight?: number;
+  image?: string;
+  issues: string[];
+  lastCommit?: string;
+  license?: string | null;
+  packageJson?: Record<string, unknown>;
+  stars?: number;
+  tags?: string[];
+  maintainerURL: string;
+}
+
+interface FinalModuleEntry {
+  category: string;
+  defaultSortWeight: number;
+  description: string;
+  id: string;
+  image?: string;
+  issues: boolean;
+  lastCommit: string;
+  license: string | null;
+  maintainer: string;
+  maintainerURL: string;
+  name: string;
+  outdated?: string;
+  stars: number;
+  tags?: string[];
+  url: string;
+}
+
+interface StatsData {
+  issueCounter: number;
+  lastUpdate: string;
+  maintainer: Record<string, number>;
+  moduleCounter: number;
+  modulesWithImageCounter: number;
+  modulesWithIssuesCounter: number;
+  repositoryHoster: Record<string, number>;
+}
+
+function readJson<T>(relativePath: string): T {
+  const filePath = path.join(ROOT_DIR, relativePath);
+  const raw = fs.readFileSync(filePath, "utf8");
+  return JSON.parse(raw) as T;
+}
+
+function writeJson(relativePath: string, data: unknown, options: { minified?: boolean } = {}): void {
   const { minified = false } = options;
   const filePath = path.join(ROOT_DIR, relativePath);
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
@@ -23,11 +98,11 @@ function writeJson(relativePath, data, options = {}) {
   fs.writeFileSync(filePath, `${serialized}\n`, "utf8");
 }
 
-function clone(value) {
-  return JSON.parse(JSON.stringify(value));
+function clone<T>(value: T): T {
+  return JSON.parse(JSON.stringify(value)) as T;
 }
 
-function ensureMetadata(id, metadata) {
+function ensureMetadata(id: string, metadata: ModulesMetadata): ModuleMetadataEntry {
   const info = metadata.modules[id];
   if (!info) {
     throw new Error(`Missing metadata entry for module id ${id}`);
@@ -35,7 +110,7 @@ function ensureMetadata(id, metadata) {
   return info;
 }
 
-function deriveMaintainerUrl(module) {
+function deriveMaintainerUrl(module: SeedModule): string {
   const raw = (module.maintainerURL ?? "").trim();
   if (raw.length > 0) {
     return raw;
@@ -65,8 +140,8 @@ function deriveMaintainerUrl(module) {
   throw new Error(`Unable to derive maintainer URL for module ${module.id ?? module.name ?? "<unknown>"}`);
 }
 
-function normalizeStage1Module(module) {
-  const entry = clone(module);
+function normalizeStage1Module(module: SeedModule): StagePipelineModule {
+  const entry = clone(module) as StagePipelineModule;
   entry.maintainerURL = deriveMaintainerUrl(entry);
 
   if (Array.isArray(entry.issues)) {
@@ -79,11 +154,11 @@ function normalizeStage1Module(module) {
   return entry;
 }
 
-function sortModulesById(modules) {
+function sortModulesById<TModule extends { id: string }>(modules: TModule[]): TModule[] {
   return [...modules].sort((a, b) => a.id.localeCompare(b.id));
 }
 
-function buildStage2Entry(seedModule, info) {
+function buildStage2Entry(seedModule: StagePipelineModule, info: ModuleMetadataEntry): StagePipelineModule {
   const base = clone(seedModule);
   if (typeof info.stars === "number") {
     base.stars = info.stars;
@@ -94,7 +169,7 @@ function buildStage2Entry(seedModule, info) {
   return base;
 }
 
-function buildStage4Entry(stage2Module, info) {
+function buildStage4Entry(stage2Module: StagePipelineModule, info: ModuleMetadataEntry): StagePipelineModule {
   const entry = clone(stage2Module);
   entry.issues = Array.isArray(info.issuesStage4)
     ? clone(info.issuesStage4)
@@ -124,8 +199,8 @@ function buildStage4Entry(stage2Module, info) {
   return entry;
 }
 
-function buildFinalEntry(stage1Module, info) {
-  const entry = {
+function buildFinalEntry(stage1Module: StagePipelineModule, info: ModuleMetadataEntry): FinalModuleEntry {
+  const entry: FinalModuleEntry = {
     name: stage1Module.name,
     category: stage1Module.category,
     url: stage1Module.url,
@@ -135,7 +210,7 @@ function buildFinalEntry(stage1Module, info) {
     description: stage1Module.description,
     issues: Boolean(info.issuesFinal),
     stars: info.stars,
-    license: info.license,
+    license: info.license ?? null,
     defaultSortWeight: info.defaultSortWeight,
     lastCommit: info.lastCommit
   };
@@ -155,7 +230,7 @@ function buildFinalEntry(stage1Module, info) {
   return entry;
 }
 
-function hostKeyFromUrl(url) {
+function hostKeyFromUrl(url: string): string {
   try {
     const { hostname } = new URL(url);
     const cleaned = hostname.toLowerCase().replace(/^www\./u, "");
@@ -167,7 +242,7 @@ function hostKeyFromUrl(url) {
   }
 }
 
-function buildStats(seed, metadata, finalModules) {
+function buildStats(seed: SeedData, metadata: ModulesMetadata, finalModules: FinalModuleEntry[]): StatsData {
   const moduleCounter = finalModules.length;
   const modulesWithImageCounter = finalModules.filter(module => typeof module.image === "string" && module.image.length > 0).length;
   const modulesWithIssuesCounter = finalModules.filter(module => module.issues === true).length;
@@ -177,13 +252,13 @@ function buildStats(seed, metadata, finalModules) {
     return sum + issues;
   }, 0);
 
-  const repositoryHoster = finalModules.reduce((accumulator, module) => {
+  const repositoryHoster = finalModules.reduce<Record<string, number>>((accumulator, module) => {
     const key = hostKeyFromUrl(module.url);
     accumulator[key] = (accumulator[key] ?? 0) + 1;
     return accumulator;
   }, {});
 
-  const maintainer = finalModules.reduce((accumulator, module) => {
+  const maintainer = finalModules.reduce<Record<string, number>>((accumulator, module) => {
     accumulator[module.maintainer] = (accumulator[module.maintainer] ?? 0) + 1;
     return accumulator;
   }, {});
@@ -200,8 +275,8 @@ function buildStats(seed, metadata, finalModules) {
 }
 
 function main() {
-  const seed = readJson("fixtures/modules.seed.json");
-  const metadata = readJson("fixtures/modules.metadata.json");
+  const seed = readJson<SeedData>("fixtures/modules.seed.json");
+  const metadata = readJson<ModulesMetadata>("fixtures/modules.metadata.json");
 
   const normalizedStage1Modules = sortModulesById(seed.modules.map(normalizeStage1Module));
   const stage1 = {
