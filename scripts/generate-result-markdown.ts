@@ -47,6 +47,26 @@ function normalizeStage5Modules(payload: unknown): unknown[] {
   throw new TypeError("modules.stage.5.json must contain either an array or an object with a modules array");
 }
 
+async function readStage5ModulesOrEmpty(projectRoot: string): Promise<unknown[]> {
+  const stage5Path = resolve(projectRoot, "website", "data", "modules.stage.5.json");
+
+  try {
+    const payload = await readJson(stage5Path);
+    return normalizeStage5Modules(payload);
+  }
+  catch (error) {
+    const isMissingFile =
+      error && typeof error === "object" && "code" in error && (error as NodeJS.ErrnoException).code === "ENOENT";
+
+    if (isMissingFile) {
+      logger.warn(`Stage-5 file missing at ${stage5Path}; generating result.md with empty issue details.`);
+      return [];
+    }
+
+    throw error;
+  }
+}
+
 export async function runGenerateResultMarkdown({
   projectRoot = PROJECT_ROOT,
   resultPath,
@@ -56,7 +76,7 @@ export async function runGenerateResultMarkdown({
 }: GenerateResultMarkdownOptions = {}): Promise<{ issueCount: number; outputPath: string }> {
   const outputPath = resultPath ?? resolve(projectRoot, "website", "result.md");
   const resolvedStage5Modules = stage5Modules
-    ?? normalizeStage5Modules(await readJson(resolve(projectRoot, "website", "data", "modules.stage.5.json")));
+    ?? await readStage5ModulesOrEmpty(projectRoot);
   const resolvedStats = stats
     ?? await readJson<ResultMarkdownStats>(resolve(projectRoot, "website", "data", "stats.json"));
   const summaries = collectIssueSummaries(resolvedStage5Modules);
