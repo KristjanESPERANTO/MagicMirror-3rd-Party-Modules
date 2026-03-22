@@ -255,4 +255,3 @@ Potential improvements for consideration:
 
 - [Issue #41: Build should not fail if repos don't exist](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/41)
 - [Architecture Documentation](architecture.md)
-- [Pipeline Roadmap](pipeline-refactor-roadmap.md)

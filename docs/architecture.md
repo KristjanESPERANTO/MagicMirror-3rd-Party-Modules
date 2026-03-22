@@ -228,7 +228,6 @@ If this direction is pursued, the wiki would be replaced with a form-based front
 
 ## Related Documentation
 
-- [Pipeline Modernization Roadmap](pipeline-refactor-roadmap.md) — Task breakdown and priorities
 - [Deterministic Outputs](deterministic-outputs.md) — Guarantees for reproducible builds
 - [Check Modules Reference](pipeline/check-modules-reference.md) — Rule registry and fixtures
 - [CONTRIBUTING.md](CONTRIBUTING.md) — Setup instructions and workflow tips

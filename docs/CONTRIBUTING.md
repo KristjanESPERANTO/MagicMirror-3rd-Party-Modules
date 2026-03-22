@@ -104,7 +104,7 @@ This script powers the validation command above. Keep it in your release checkli
 2. Re-run the affected pipeline stages (or `node --run all`) to rebuild the real datasets.
 3. Execute `node --run release:validate` again. Keep iterating until the exit code is zero.
 
-Document regressions or schema updates in [`docs/pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md). For tricky cases, open an Issue so downstream consumers are aware of the contract change.
+Document regressions or schema updates in [`docs/architecture.md`](architecture.md) and [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md). For tricky cases, open an Issue so downstream consumers are aware of the contract change.
 
 ## Maintaining schemas
 
@@ -218,7 +218,6 @@ Golden artifacts are reference outputs stored in `fixtures/golden/` that serve a
 
 ## Helpful references
 
-- [`docs/pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md) – modernization milestones and upcoming tasks.
 - [`docs/architecture.md`](architecture.md) – current vs. target pipeline topology.
 - [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – command reference for partial runs, diagnostics, and logs.
 - [`fixtures/README.md`](../fixtures/README.md) – curated dataset and validation troubleshooting.
