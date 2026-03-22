@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { cliValidateStage } from "./lib/schemaValidator.js";
+import { cliValidateStage } from "./lib/schemaValidator.ts";
 import process from "node:process";
 
 async function main() {

@@ -3,7 +3,7 @@
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import process from "node:process";
-import { validateStageFile } from "./lib/schemaValidator.js";
+import { validateStageFile } from "./lib/schemaValidator.ts";
 
 const PROJECT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 

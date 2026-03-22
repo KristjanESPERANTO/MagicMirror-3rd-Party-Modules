@@ -2,7 +2,7 @@ import { createDeterministicImageName } from "./shared/deterministic-output.ts";
 import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import sharp from "sharp";
-import { validateStageData } from "./lib/schemaValidator.js";
+import { validateStageData } from "./lib/schemaValidator.ts";
 
 const imagesFolder = "./website/images";
 

@@ -16,7 +16,7 @@ import { promisify } from "node:util";
 import { registerAdditionalCommands } from "./cli-commands.ts";
 import { runStagesSequentially } from "./stage-executor.ts";
 // @ts-ignore -- JS pipeline module, not yet migrated to TypeScript
-import { validateStageFile } from "../lib/schemaValidator.js";
+import { validateStageFile } from "../lib/schemaValidator.ts";
 import type { ArtifactDefinition, ResolvedStageDefinition } from "./stage-graph.ts";
 import type { StageFilters } from "./stage-filters.ts";
 import type { ProcessResourceUsage } from "./resource-monitor.ts";
