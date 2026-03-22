@@ -7,7 +7,14 @@ import { validateStageFile } from "../lib/schemaValidator.ts";
 
 const FIXTURE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 
-const FIXTURES = [
+type FixtureStageId = "modules.stage.1" | "modules.stage.2" | "modules.stage.3" | "modules.stage.4" | "modules.stage.5" | "modules.final" | "modules.min" | "stats";
+
+interface FixtureDefinition {
+  relativePath: string;
+  stageId: FixtureStageId;
+}
+
+const FIXTURES: FixtureDefinition[] = [
   { stageId: "modules.stage.1", relativePath: "fixtures/data/modules.stage.1.json" },
   { stageId: "modules.stage.2", relativePath: "fixtures/data/modules.stage.2.json" },
   { stageId: "modules.stage.3", relativePath: "fixtures/data/modules.stage.3.json" },
@@ -18,18 +25,18 @@ const FIXTURES = [
   { stageId: "stats", relativePath: "fixtures/data/stats.json" }
 ];
 
-function resolvePath(relativePath) {
+function resolvePath(relativePath: string): string {
   return path.join(FIXTURE_ROOT, relativePath);
 }
 
-async function validateFixture(fixture) {
+async function validateFixture(fixture: FixtureDefinition): Promise<string> {
   const absolutePath = resolvePath(fixture.relativePath);
   await validateStageFile(fixture.stageId, absolutePath);
   return absolutePath;
 }
 
 async function main() {
-  const failures = [];
+  const failures: Array<{ error: unknown; fixture: FixtureDefinition }> = [];
 
   for (const fixture of FIXTURES) {
     try {
@@ -38,7 +45,8 @@ async function main() {
     }
     catch (error) {
       failures.push({ fixture, error });
-      console.error(`✖ ${fixture.stageId} failed: ${error.message}`);
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`✖ ${fixture.stageId} failed: ${message}`);
     }
   }
 
