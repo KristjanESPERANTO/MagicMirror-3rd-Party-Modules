@@ -14,14 +14,6 @@
   ],
   "artifacts": [
     {
-      "id": "modules-stage-1",
-      "type": "file",
-      "path": "website/data/modules.stage.1.json",
-      "format": "json",
-      "description": "Normalized module list generated from the MagicMirror wiki.",
-      "schema": "dist/schemas/modules.stage.1.schema.json"
-    },
-    {
       "id": "github-api-cache",
       "type": "file",
       "path": "website/data/gitHubData.json",

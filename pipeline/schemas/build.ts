@@ -11,10 +11,7 @@ const SRC_DIR = path.join(currentDir, "src");
 const DIST_DIR = path.resolve(currentDir, "../../dist/schemas");
 
 const SCHEMA_FILES = [
-  "modules.stage.1.schema.json",
   "modules.stage.2.schema.json",
-  "modules.stage.3.schema.json",
-  "modules.stage.4.schema.json",
   "modules.final.schema.json",
   "modules.min.schema.json",
   "stats.schema.json"

@@ -15,7 +15,6 @@ interface ReleaseArtifactDefinition {
 }
 
 const RELEASE_ARTIFACTS: ReleaseArtifactDefinition[] = [
-  // Note: modules.stage.1.json no longer exists - Stage 1+2 were unified into collect-metadata
   { stageId: "modules.stage.2", relativePath: "website/data/modules.stage.2.json" },
   { stageId: "modules.final", relativePath: "website/data/modules.json" },
   { stageId: "modules.min", relativePath: "website/data/modules.min.json" },

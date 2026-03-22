@@ -4,15 +4,12 @@ This note captures the scope for Task P1.6 ("Consolidate shared schema definitio
 
 ## Current schema inventory
 
-| Artifact                      | Top-level shape                          | Module props (beyond the core 8)                                                                                                                                          |
-| ----------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `modules.stage.1.schema.json` | Object with `lastUpdate` and `modules[]` | `outdated`                                                                                                                                                                |
-| `modules.stage.2.schema.json` | Array of modules                         | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`                                                                                                           |
-| `modules.stage.3.schema.json` | Object with `modules[]`                  | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`                                                                                                           |
-| `modules.stage.4.schema.json` | Object with `modules[]`                  | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`, `tags`, `image`, `packageJson`                                                                           |
-| `modules.final.schema.json`   | Object with `modules[]`                  | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`, `tags`, `image`, `keywords`, `defaultSortWeight`, `lastCommit` (and `issues` flips from array → boolean) |
-| `modules.min.schema.json`     | Object with `modules[]`                  | Delegates to `modules.final.schema.json` via `$ref`                                                                                                                       |
-| `stats.schema.json`           | Object with counters                     | unrelated, no shared module defs                                                                                                                                          |
+| Artifact                      | Top-level shape         | Module props (beyond the core 8)                                                                                                                                          |
+| ----------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `modules.stage.2.schema.json` | Array of modules        | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`                                                                                                           |
+| `modules.final.schema.json`   | Object with `modules[]` | `outdated`, `stars`, `license`, `hasGithubIssues`, `isArchived`, `tags`, `image`, `keywords`, `defaultSortWeight`, `lastCommit` (and `issues` flips from array → boolean) |
+| `modules.min.schema.json`     | Object with `modules[]` | Delegates to `modules.final.schema.json` via `$ref`                                                                                                                       |
+| `stats.schema.json`           | Object with counters    | unrelated, no shared module defs                                                                                                                                          |
 
 Every stage schema repeats the same "core module" contract:
 
@@ -28,11 +25,11 @@ Create reusable `$defs` that each stage schema can assemble:
 
 1. **`module.core.json`** – required core properties (the 8 fields above) plus the shared `outdated` optional string. Used everywhere.
 2. **`module.repo-metadata.json`** – `stars`, `license`, `hasGithubIssues`, `isArchived`. Used from Stage 2 onward.
-3. **`module.media.json`** – `tags` array and `image` string. Used Stage 4+, final.
-4. **`module.package-json.json`** – shared manifest snapshot (`status`, `summary`, `warnings`). Used Stage 4+ where package metadata is bundled.
+3. **`module.media.json`** – `tags` array and `image` string. Used in final artifacts.
+4. **`module.package-json.json`** – shared manifest snapshot (`status`, `summary`, `warnings`). Used where package metadata is bundled.
 5. **`module.sorting.json`** – `defaultSortWeight`, `lastCommit`, `keywords`. Only final artifacts.
-6. **`module.issues-array.json`** and **`module.issues-boolean.json`** – small snippets so Stage 1–4 reference the array variant while final schemas reference the boolean version without duplicating the other properties.
-7. **`collection.wrapper.json`** – reusable top-level definitions for `modules[]` arrays, allowing Stage 2 (array) vs Stage 1/3/4/final (object with array) to share the item schema.
+6. **`module.issues-array.json`** and **`module.issues-boolean.json`** – small snippets so Stage 1-2 reference the array variant while final schemas reference the boolean version without duplicating the other properties.
+7. **`collection.wrapper.json`** – reusable top-level definitions for `modules[]` arrays, allowing Stage 2 (array) vs Stage 1/final (object with array) to share the item schema.
 
 These definitions can live under `pipeline/schemas/partials/`. Stage schemas import them with local `$ref`s (`"$ref": "./partials/module.core.json"`) and use `allOf` to compose stage-specific variants. A script can bundle them into the current single-file schemas for distribution (see below).
 

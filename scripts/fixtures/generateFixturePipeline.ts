@@ -283,22 +283,11 @@ function main() {
     lastUpdate: seed.lastUpdate,
     modules: normalizedStage1Modules
   };
-  writeJson(path.join("fixtures", "data", "modules.stage.1.json"), stage1);
-
   const stage2Modules = normalizedStage1Modules.map((module) => {
     const info = ensureMetadata(module.id, metadata);
     return buildStage2Entry(module, info);
   });
   writeJson(path.join("fixtures", "data", "modules.stage.2.json"), stage2Modules);
-
-  const stage3 = { modules: clone(stage2Modules) };
-  writeJson(path.join("fixtures", "data", "modules.stage.3.json"), stage3);
-
-  const stage4Modules = stage2Modules.map((module) => {
-    const info = ensureMetadata(module.id, metadata);
-    return buildStage4Entry(module, info);
-  });
-  writeJson(path.join("fixtures", "data", "modules.stage.4.json"), { modules: stage4Modules });
 
   const finalModules = normalizedStage1Modules.map((module) => {
     const info = ensureMetadata(module.id, metadata);
