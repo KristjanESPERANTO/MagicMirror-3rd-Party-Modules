@@ -30,7 +30,7 @@ Use the canonical helper scripts from `package.json` or call the orchestrator di
 | Inspect the pipeline      | `node --run pipeline -- list` / `describe` / `logs`                                                           | Inspect the registered stages, pipelines, and recent run records.                                |
 | Re-run processing+publish | `node scripts/orchestrator/index.ts run full-refresh-parallel --only=parallel-processing,aggregate-catalogue` | Re-run worker analysis and publication against an existing Stage 2 input.                        |
 
-The `parallel-processing` stage is the expensive part of the run: it clones repositories, extracts metadata and screenshots, and performs the deeper checks that produce `modules.stage.5.json`. The follow-up `aggregate-catalogue` stage turns that Stage 5 snapshot into `modules.json`, `modules.min.json`, and `stats.json`.
+The `parallel-processing` stage is the expensive part of the run: it clones repositories, extracts metadata and screenshots, and performs the deeper checks that produce the stage-5 payload in memory. The follow-up `aggregate-catalogue` stage turns that payload into `modules.json`, `modules.min.json`, and `stats.json`.
 
 ### Orchestrator CLI for partial runs
 
@@ -58,11 +58,11 @@ Reads the official wiki list of third-party modules and fetches metadata (stars,
 
 #### Stage 3+4+5 – `parallel-processing.js`
 
-Combines repository cloning, `package.json` enrichment, screenshot extraction, and deep analysis inside the worker pool. The stage emits `modules.stage.5.json` for the supported intermediate contract.
+Combines repository cloning, `package.json` enrichment, screenshot extraction, and deep analysis inside the worker pool. The stage emits the stage-5 payload in memory; writing `modules.stage.5.json` is now compatibility-only.
 
 #### Stage 6 – `aggregate-catalogue.js`
 
-Consumes `modules.stage.5.json` and writes the published catalogue outputs (`modules.json`, `modules.min.json`, `stats.json`).
+Consumes the stage-5 payload and writes the published catalogue outputs (`modules.json`, `modules.min.json`, `stats.json`).
 
 #### `validate_release_artifacts.ts`
 
@@ -86,7 +86,7 @@ As of September 2025, schema validation is part of the release gate. After you r
 node --run release:validate
 ```
 
-The command checks the supported stage snapshots (`modules.stage.2.json`, `modules.stage.5.json`) plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`). If any contract breaks, the command exits with a non-zero status and prints a list of offenders.
+The command checks the supported stage snapshot (`modules.stage.2.json`) plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`). `modules.stage.5.json` is treated as optional compatibility input; if present it is validated, but missing files do not fail the command.
 
 > ℹ️ **CI gate:** The same validation now runs automatically in GitHub Actions (`release-validation.yml`) on every push and pull request targeting `main`. Keep the command in your local workflow to catch schema regressions before CI fails.
 

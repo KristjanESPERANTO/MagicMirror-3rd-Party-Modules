@@ -14,7 +14,7 @@ This directory contains a curated subset of modules that we will use to exercise
 
 - `modules.seed.json` – snapshot of the wiki-derived module list (stage 1 input).
 - `modules.metadata.json` – supplemental details pulled from later pipeline stages; the fixture generator uses this to emulate enrichment.
-- `data/` – committed outputs for every stage (`modules.stage.1.json` … `modules.stage.5.json`) and the published artifacts (`modules.json`, `modules.min.json`, `stats.json`).
+- `data/` – committed stage snapshots and published artifacts. The canonical persisted outputs are `modules.stage.2.json` plus `modules.json`, `modules.min.json`, and `stats.json`; `modules.stage.5.json` remains as a compatibility fixture during the stage-5 handoff migration.
 
 ## Regenerating the fixtures
 
@@ -38,7 +38,7 @@ After regenerating, validate the fixtures:
 node --run test:fixtures
 ```
 
-This command is also part of `node --run lint`, so CI will fail if the fixtures drift from the registered schemas.
+This command is also part of `node --run lint`, so CI will fail if required fixtures drift from the registered schemas.
 
 ## When to refresh
 

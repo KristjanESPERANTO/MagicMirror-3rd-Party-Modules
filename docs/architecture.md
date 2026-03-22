@@ -4,15 +4,16 @@ Visibility into the automation that builds and publishes the third-party module 
 
 ## Current State (March 2026)
 
-The supported production pipeline is orchestrated via `node scripts/orchestrator/index.ts run full-refresh-parallel` (also exposed as `node --run all`). The orchestrator now drives three registered stages across three operational phases: metadata collection, parallel module processing, and catalogue aggregation.
+The supported production pipeline is orchestrated via `node scripts/orchestrator/index.ts run full-refresh-parallel` (also exposed as `node --run all`). The orchestrator now drives four registered stages across three operational phases: metadata collection, parallel module processing, and publication.
 
 ### Stage Overview
 
-| Order | Stage ID              | Key Outputs                                                            |
-| ----- | --------------------- | ---------------------------------------------------------------------- |
-| 1+2   | `collect-metadata`    | `modules.stage.2.json`, `gitHubData.json`                              |
-| 3+4+5 | `parallel-processing` | `modules.stage.5.json`, `modules/`, `modules_temp/`, `website/images/` |
-| 6     | `aggregate-catalogue` | `modules.json`, `modules.min.json`, `stats.json`                       |
+| Order | Stage ID                   | Key Outputs                                                               |
+| ----- | -------------------------- | ------------------------------------------------------------------------- |
+| 1+2   | `collect-metadata`         | `modules.stage.2.json`, `gitHubData.json`                                 |
+| 3+4+5 | `parallel-processing`      | in-memory stage-5 payload, `modules/`, `modules_temp/`, `website/images/` |
+| 6     | `aggregate-catalogue`      | `modules.json`, `modules.min.json`, `stats.json`                          |
+| 7     | `generate-result-markdown` | `result.md`                                                               |
 
 ### Current Workflow Diagram
 
@@ -30,12 +31,15 @@ flowchart TB
     stage2 --> parallel{{Parallel processing}}
     parallel --> clones[("modules/<br>modules_temp/")]
     parallel --> images[("website/images/")]
-    parallel --> stage5["modules.stage.5.json"]
+    parallel --> stage5["stage-5 payload (in-memory)"]
   end
 
   subgraph Phase 3: Catalogue Aggregation
     stage5 --> aggregate{{Aggregate catalogue}}
     aggregate --> outputs[("modules.json<br>modules.min.json<br>stats.json")]
+    stage5 --> result{{Generate result markdown}}
+    outputs --> result
+    result --> resultMd[("result.md")]
   end
 
   orchestrator -.controls.-> collect
@@ -47,8 +51,8 @@ flowchart TB
 
 - **Orchestrator CLI**: Declarative stage graph with `--only/--skip` support, retries, and structured logging
 - **Worker Pool Stage**: `parallel-processing` encapsulates clone, enrich, image, and analysis work behind a single supported stage
-- **Aggregation Stage**: `aggregate-catalogue` builds published JSON artifacts from `modules.stage.5.json`
-- **Schema Validation**: JSON schemas enforce contracts at the supported boundaries (`modules.stage.2.json`, `modules.stage.5.json`, final outputs)
+- **Aggregation Stage**: `aggregate-catalogue` builds published JSON artifacts from the in-memory stage-5 payload (disk fallback retained for compatibility)
+- **Schema Validation**: JSON schemas enforce contracts at the supported boundaries (`modules.stage.2.json` and final published outputs); `modules.stage.5.json` remains a compatibility artifact only
 - **Shared Utilities**: HTTP, Git, filesystem, and rate limiting in `scripts/shared/`
 
 ### Incremental Pipeline Behavior
@@ -158,21 +162,21 @@ flowchart TB
 
 ### Comparison: Legacy vs. Canonical Flow
 
-| Aspect             | Legacy (6 stages)         | Canonical flow (Mar 2026)                                     |
-| ------------------ | ------------------------- | ------------------------------------------------------------- |
-| Runtime            | Python + Node.js          | Node.js with TypeScript-based deep checks                     |
-| Execution          | Sequential manual scripts | Orchestrated 2-stage pipeline with worker pool                |
-| Incremental        | ❌ No                     | Partial: metadata cache + clone reuse                         |
-| Memory             | Unbounded                 | Batch-/worker-bounded                                         |
-| Intermediate files | 6                         | `modules.stage.2.json`, `modules.stage.5.json`, final outputs |
+| Aspect             | Legacy (6 stages)         | Canonical flow (Mar 2026)                                                                        |
+| ------------------ | ------------------------- | ------------------------------------------------------------------------------------------------ |
+| Runtime            | Python + Node.js          | Node.js with TypeScript-based deep checks                                                        |
+| Execution          | Sequential manual scripts | Orchestrated 4-stage pipeline with in-process handoff                                            |
+| Incremental        | ❌ No                     | Partial: metadata cache + clone reuse                                                            |
+| Memory             | Unbounded                 | Batch-/worker-bounded                                                                            |
+| Intermediate files | 6                         | `modules.stage.2.json` plus published outputs (`modules.json`, `modules.min.json`, `stats.json`) |
 
 ### Remaining Gaps
 
 1. Reintegrate worker-compatible `moduleCache.json` handling under P7.6.
 2. Record before/after repeated-run performance metrics once cache writes are back in place.
-3. Keep the published contract (`modules.json`, `modules.min.json`, `stats.json`) stable while worker caching evolves.
+3. Keep the published contract (`modules.json`, `modules.min.json`, `stats.json`, `result.md`) stable while worker caching evolves.
 
-The remaining intermediate files (`modules.stage.2.json`, `modules.stage.5.json`) are still intentional schema boundaries. The roadmap direction is to reduce or remove such boundary files once streaming/aggregation can replace them cleanly, not to rename them for cosmetic reasons.
+The remaining persisted intermediate boundary is `modules.stage.2.json`. The stage-5 payload is handed off in memory by default, with optional disk compatibility retained for tooling during the migration window.
 
 ---
 
