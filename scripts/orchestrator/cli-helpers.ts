@@ -1,9 +1,55 @@
-// @ts-nocheck
 import { buildArtifactMap, buildStageMap, loadStageGraph } from "./stage-graph.ts";
 import { readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
+import type { ArtifactDefinition, PipelineDefinition, StageDefinition, StageGraph } from "./stage-graph.ts";
+import type { ProcessResourceUsage } from "./resource-monitor.ts";
+import type { StageFilters } from "./stage-filters.ts";
 
-export async function loadGraphMetadata(graphPath) {
+export interface RunRecordFileInfo {
+  mtimeMs: number;
+  name: string;
+  path: string;
+}
+
+export interface PipelineRunFailure {
+  message: string;
+  stageId?: string | null;
+  stageName?: string | null;
+}
+
+export interface PipelineRunStageResult {
+  durationMs?: number;
+  error?: string;
+  id?: string;
+  name?: string | null;
+  status: "failed" | "pending" | "skipped" | "succeeded";
+}
+
+export interface PipelineRunRecord {
+  durationMs: number;
+  failure?: PipelineRunFailure;
+  filters?: StageFilters;
+  finishedAt: string;
+  graphPath: string;
+  pipelineId: string;
+  resourceUsage?: ProcessResourceUsage;
+  stageResults?: PipelineRunStageResult[];
+  startedAt: string;
+  status: string;
+}
+
+export interface GraphMetadata {
+  artifactMap: Map<string, ArtifactDefinition>;
+  graph: StageGraph;
+  pipelineMap: Map<string, PipelineDefinition>;
+  stageMap: Map<string, StageDefinition>;
+}
+
+function isEnoentError(error: unknown): error is NodeJS.ErrnoException {
+  return Boolean(error && typeof error === "object" && "code" in error && error.code === "ENOENT");
+}
+
+export async function loadGraphMetadata(graphPath: string): Promise<GraphMetadata> {
   const graph = await loadStageGraph(graphPath);
   const stageMap = buildStageMap(graph);
   const artifactMap = buildArtifactMap(graph);
@@ -17,7 +63,7 @@ export async function loadGraphMetadata(graphPath) {
   };
 }
 
-export function formatDuration(milliseconds) {
+export function formatDuration(milliseconds: number | null | undefined): string {
   if (typeof milliseconds !== "number" || Number.isNaN(milliseconds)) {
     return "unknown";
   }
@@ -34,7 +80,7 @@ export function formatDuration(milliseconds) {
   return `${minutes}m ${remainingSeconds.toFixed(0)}s`;
 }
 
-export function formatBytesToMiB(bytes) {
+export function formatBytesToMiB(bytes: number | null | undefined): string {
   if (typeof bytes !== "number" || Number.isNaN(bytes)) {
     return "unknown";
   }
@@ -42,7 +88,7 @@ export function formatBytesToMiB(bytes) {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MiB`;
 }
 
-export function formatFiltersSummary(filters) {
+export function formatFiltersSummary(filters?: StageFilters): string {
   if (!filters) {
     return "(none)";
   }
@@ -60,10 +106,10 @@ export function formatFiltersSummary(filters) {
   return parts.length > 0 ? parts.join(" ") : "(none)";
 }
 
-export async function listRunRecordFiles(runsDirectory) {
+export async function listRunRecordFiles(runsDirectory: string): Promise<RunRecordFileInfo[]> {
   try {
     const entries = await readdir(runsDirectory, { withFileTypes: true });
-    const files = [];
+    const files: RunRecordFileInfo[] = [];
 
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith(".json")) {
@@ -82,7 +128,7 @@ export async function listRunRecordFiles(runsDirectory) {
     return files;
   }
   catch (error) {
-    if (error && typeof error === "object" && "code" in error && error.code === "ENOENT") {
+    if (isEnoentError(error)) {
       return [];
     }
 
@@ -90,28 +136,30 @@ export async function listRunRecordFiles(runsDirectory) {
   }
 }
 
-export async function readRunRecord(filePath) {
+export async function readRunRecord(filePath: string): Promise<PipelineRunRecord> {
   const contents = await readFile(filePath, "utf8");
-  return JSON.parse(contents);
+  return JSON.parse(contents) as PipelineRunRecord;
 }
 
-function buildStageUsageMap(pipelines) {
-  const usage = new Map();
+function buildStageUsageMap(pipelines: PipelineDefinition[]): Map<string, string[]> {
+  const usage = new Map<string, string[]>();
 
   for (const pipeline of pipelines) {
     for (const stageId of pipeline.stages) {
-      if (!usage.has(stageId)) {
-        usage.set(stageId, []);
+      const stageUsage = usage.get(stageId);
+      if (stageUsage) {
+        stageUsage.push(pipeline.id);
+        continue;
       }
 
-      usage.get(stageId).push(pipeline.id);
+      usage.set(stageId, [pipeline.id]);
     }
   }
 
   return usage;
 }
 
-export function printPipelineSummaries(pipelines, stageMap) {
+export function printPipelineSummaries(pipelines: PipelineDefinition[], stageMap: Map<string, StageDefinition>): void {
   console.log("Available pipelines:\n");
 
   for (const pipeline of pipelines) {
@@ -133,7 +181,7 @@ export function printPipelineSummaries(pipelines, stageMap) {
   }
 }
 
-export function printStageSummaries(stageMap, pipelines) {
+export function printStageSummaries(stageMap: Map<string, StageDefinition>, pipelines: PipelineDefinition[]): void {
   const usageMap = buildStageUsageMap(pipelines);
   const stages = [...stageMap.values()].sort((a, b) => a.id.localeCompare(b.id));
 
@@ -156,7 +204,7 @@ export function printStageSummaries(stageMap, pipelines) {
   }
 }
 
-export function describePipeline(pipeline, stageMap) {
+export function describePipeline(pipeline: PipelineDefinition, stageMap: Map<string, StageDefinition>): void {
   console.log(`Pipeline: ${pipeline.id}`);
   if (pipeline.description) {
     console.log(pipeline.description);
@@ -171,7 +219,11 @@ export function describePipeline(pipeline, stageMap) {
   });
 }
 
-export function describeStage(stage, artifactMap, pipelines) {
+export function describeStage(
+  stage: StageDefinition,
+  artifactMap: Map<string, ArtifactDefinition>,
+  pipelines: PipelineDefinition[]
+): void {
   const heading = stage.name ? `${stage.id} — ${stage.name}` : stage.id;
   console.log(`Stage: ${heading}`);
 
@@ -192,7 +244,7 @@ export function describeStage(stage, artifactMap, pipelines) {
   if (stage.inputs?.length) {
     console.log("\nInputs:");
     for (const input of stage.inputs) {
-      if (input.artifact) {
+      if ("artifact" in input) {
         const artifact = artifactMap.get(input.artifact);
         const mode = input.mode ?? "read";
         const optional = input.optional ? " (optional)" : "";
@@ -241,7 +293,7 @@ export function describeStage(stage, artifactMap, pipelines) {
   }
 }
 
-export function printRunRecordDetails(record, sourcePath) {
+export function printRunRecordDetails(record: PipelineRunRecord, sourcePath: string): void {
   console.log(`Run file: ${path.basename(sourcePath)}`);
   console.log(`Pipeline: ${record.pipelineId}`);
   console.log(`Status: ${record.status}`);

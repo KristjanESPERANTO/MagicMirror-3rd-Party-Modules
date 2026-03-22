@@ -1,5 +1,13 @@
-// @ts-nocheck
-export function parseCommaSeparatedList(value, previous = []) {
+import type { StageDefinition } from "./stage-graph.ts";
+
+export interface StageFilters {
+  only: string[];
+  skip: string[];
+}
+
+type FilterableStage = Pick<StageDefinition, "id" | "dependsOn">;
+
+export function parseCommaSeparatedList(value?: string, previous: string[] = []): string[] {
   if (!value) {
     return previous;
   }
@@ -12,8 +20,8 @@ export function parseCommaSeparatedList(value, previous = []) {
   return [...previous, ...parsed];
 }
 
-export function normalizeStageFilters({ only = [], skip = [] } = {}) {
-  const normalize = values => Array.from(new Set(values
+export function normalizeStageFilters({ only = [], skip = [] }: Partial<StageFilters> = {}): StageFilters {
+  const normalize = (values: string[]): string[] => Array.from(new Set(values
     .map(value => value.trim())
     .filter(Boolean)));
 
@@ -23,7 +31,10 @@ export function normalizeStageFilters({ only = [], skip = [] } = {}) {
   };
 }
 
-export function applyStageFilters(stages, filters) {
+export function applyStageFilters<TStage extends FilterableStage>(
+  stages: TStage[],
+  filters: StageFilters
+): { selectedStages: TStage[]; skippedStages: TStage[] } {
   const stageIdSet = new Set(stages.map(stage => stage.id));
 
   const unknownOnly = filters.only.filter(stageId => !stageIdSet.has(stageId));

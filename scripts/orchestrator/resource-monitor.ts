@@ -1,8 +1,47 @@
-// @ts-nocheck
 import process from "node:process";
 
-function average(values) {
-  if (!Array.isArray(values) || values.length === 0) {
+export interface ResourceMetricSummary {
+  averageBytes: number | null;
+  lastBytes: number | null;
+  peakBytes: number | null;
+}
+
+export interface ProcessResourceUsage {
+  cpu: {
+    systemMicros: number;
+    totalMicros: number;
+    userMicros: number;
+  };
+  memory: {
+    heapUsed: ResourceMetricSummary;
+    rss: ResourceMetricSummary;
+  };
+  monitoringDurationMs: number;
+  sampleCount: number;
+  sampleIntervalMs: number;
+}
+
+interface MemorySample {
+  heapUsedBytes: number;
+  rssBytes: number;
+}
+
+interface CreateResourceMonitorOptions {
+  clearIntervalFn?: (timerId: ReturnType<typeof setInterval>) => void;
+  getCpuUsage?: (previousValue?: NodeJS.CpuUsage) => NodeJS.CpuUsage;
+  getMemoryUsage?: () => NodeJS.MemoryUsage;
+  now?: () => number;
+  sampleIntervalMs?: number;
+  setIntervalFn?: (callback: () => void, delay: number) => ReturnType<typeof setInterval>;
+}
+
+export interface ResourceMonitor {
+  start(): void;
+  stop(): ProcessResourceUsage | null;
+}
+
+function average(values: number[]): number | null {
+  if (values.length === 0) {
     return null;
   }
 
@@ -10,23 +49,23 @@ function average(values) {
   return Math.round(total / values.length);
 }
 
-function peak(values) {
-  if (!Array.isArray(values) || values.length === 0) {
+function peak(values: number[]): number | null {
+  if (values.length === 0) {
     return null;
   }
 
   return Math.max(...values);
 }
 
-function last(values) {
-  if (!Array.isArray(values) || values.length === 0) {
+function last(values: number[]): number | null {
+  if (values.length === 0) {
     return null;
   }
 
   return values[values.length - 1];
 }
 
-function summarizeMetric(values) {
+function summarizeMetric(values: number[]): ResourceMetricSummary {
   return {
     averageBytes: average(values),
     lastBytes: last(values),
@@ -36,20 +75,20 @@ function summarizeMetric(values) {
 
 export function createResourceMonitor({
   clearIntervalFn = clearInterval,
-  getCpuUsage = (...args) => process.cpuUsage(...args),
+  getCpuUsage = (previousValue?: NodeJS.CpuUsage) => process.cpuUsage(previousValue),
   getMemoryUsage = () => process.memoryUsage(),
   now = () => Date.now(),
   sampleIntervalMs = 500,
   setIntervalFn = setInterval
-} = {}) {
-  const samples = [];
-  let cachedSummary = null;
-  let cpuStart = null;
+}: CreateResourceMonitorOptions = {}): ResourceMonitor {
+  const samples: MemorySample[] = [];
+  let cachedSummary: ProcessResourceUsage | null = null;
+  let cpuStart: NodeJS.CpuUsage | null = null;
   let started = false;
-  let startedAtMs = null;
-  let timerId = null;
+  let startedAtMs: number | null = null;
+  let timerId: ReturnType<typeof setInterval> | null = null;
 
-  const recordSample = () => {
+  const recordSample = (): void => {
     const usage = getMemoryUsage();
     samples.push({
       heapUsedBytes: typeof usage.heapUsed === "number" ? usage.heapUsed : 0,
@@ -58,7 +97,7 @@ export function createResourceMonitor({
   };
 
   return {
-    start() {
+    start(): void {
       if (started) {
         return;
       }
@@ -70,7 +109,7 @@ export function createResourceMonitor({
       timerId = setIntervalFn(recordSample, sampleIntervalMs);
     },
 
-    stop() {
+    stop(): ProcessResourceUsage | null {
       if (cachedSummary) {
         return cachedSummary;
       }
@@ -85,8 +124,9 @@ export function createResourceMonitor({
 
       recordSample();
 
-      const elapsedMs = Math.max(0, now() - startedAtMs);
-      const cpuUsage = getCpuUsage(cpuStart);
+  const currentTime = now();
+  const elapsedMs = Math.max(0, currentTime - (startedAtMs ?? currentTime));
+  const cpuUsage = getCpuUsage(cpuStart ?? undefined);
       const rssValues = samples.map(sample => sample.rssBytes);
       const heapValues = samples.map(sample => sample.heapUsedBytes);
 
