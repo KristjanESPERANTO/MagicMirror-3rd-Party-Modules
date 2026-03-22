@@ -115,7 +115,7 @@ Measure and visualize pipeline performance.
 
 | Task | Status                |
 | ---- | --------------------- |
-| P9.1 | Benchmarking          |
+| P9.1 | In progress           |
 | P9.2 | Progress tracking     |
 | P9.3 | Resource monitoring   |
 | P9.4 | Performance dashboard |
@@ -126,13 +126,13 @@ Measure and visualize pipeline performance.
 
 See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details.
 
-**Current focus: P8.5** — Remove intermediate files
+**Current focus: P9.1** — Benchmarking
 
 - Keep release-artifact parity and existing fixture/golden validation intact through the transition
 - Keep the in-process execution path bounded when running filtered stage selections
 - Keep `modules.stage.2.json` / `modules.stage.5.json` as optional fallback boundaries while in-memory handoff is preferred
 
-**Next: P9.1** — Benchmarking
+**Next: P9.2** — Progress tracking
 
 - Evaluate whether `modules.stage.2.json` and `modules.stage.5.json` can remain optional fallback boundaries
 - Preserve schema validation and release artifact parity while reducing file-based handoffs

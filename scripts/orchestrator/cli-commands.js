@@ -1,4 +1,9 @@
 import {
+  buildBenchmarkSummary,
+  printBenchmarkSummary,
+  selectBenchmarkRecords
+} from "./benchmark.js";
+import {
   describePipeline,
   describeStage,
   listRunRecordFiles,
@@ -10,6 +15,16 @@ import {
 } from "./cli-helpers.js";
 import path from "node:path";
 import process from "node:process";
+
+function parsePositiveInteger(value, fallback) {
+  const parsed = Number.parseInt(value, 10);
+
+  if (Number.isNaN(parsed) || parsed <= 0) {
+    return fallback;
+  }
+
+  return parsed;
+}
 
 function checkNodeVersion(minimumMajor) {
   const raw = process.versions.node;
@@ -194,7 +209,64 @@ function buildLogsCommandHandler({ runsDirectory }) {
   };
 }
 
+function buildBenchmarkCommandHandler({ runsDirectory }) {
+  return async function benchmarkCommand(options = {}) {
+    const limit = parsePositiveInteger(options.limit, 20);
+    const pipelineId = options.pipeline ?? "full-refresh-parallel";
+    const includeFailed = Boolean(options.includeFailed);
+    const includeFiltered = Boolean(options.includeFiltered);
+    const records = await listRunRecordFiles(runsDirectory);
+
+    if (records.length === 0) {
+      console.log("No pipeline run records found. Execute `pipeline run` to generate benchmark data.");
+      return;
+    }
+
+    const loadedRecords = [];
+    for (const recordInfo of records) {
+      const record = await readRunRecord(recordInfo.path);
+      loadedRecords.push({
+        ...record,
+        mtimeMs: recordInfo.mtimeMs,
+        runFile: recordInfo.name
+      });
+    }
+
+    const selectedRecords = selectBenchmarkRecords(loadedRecords, {
+      includeFailed,
+      includeFiltered,
+      limit,
+      pipelineId
+    });
+
+    if (selectedRecords.length === 0) {
+      console.log("No matching run records found for the current benchmark filters.");
+      return;
+    }
+
+    const summary = buildBenchmarkSummary(selectedRecords);
+
+    if (options.json) {
+      console.log(JSON.stringify({
+        includeFailed,
+        includeFiltered,
+        limit,
+        pipelineId,
+        summary
+      }, null, 2));
+      return;
+    }
+
+    printBenchmarkSummary(summary, {
+      includeFailed,
+      includeFiltered,
+      pipelineId
+    });
+  };
+}
+
 export function registerAdditionalCommands(program, context) {
+  const benchmarkHandler = buildBenchmarkCommandHandler(context);
   const listHandler = buildListCommandHandler(context);
   const describeHandler = buildDescribeCommandHandler(context);
   const doctorHandler = buildDoctorCommandHandler(context);
@@ -258,6 +330,25 @@ export function registerAdditionalCommands(program, context) {
       catch (error) {
         const message = error instanceof Error ? error.message : error;
         console.error(`Error reading run records: ${message}`);
+        process.exitCode = 1;
+      }
+    });
+
+  program
+    .command("benchmark")
+    .description("Summarize persisted pipeline run durations for benchmarking")
+    .option("--pipeline <pipelineId>", "Pipeline id to benchmark", "full-refresh-parallel")
+    .option("--limit <count>", "Maximum matching run records to include", "20")
+    .option("--include-failed", "Include failed runs in benchmark samples")
+    .option("--include-filtered", "Include runs executed with --only/--skip filters")
+    .option("--json", "Print machine-readable benchmark summary")
+    .action(async (options) => {
+      try {
+        await benchmarkHandler(options ?? {});
+      }
+      catch (error) {
+        const message = error instanceof Error ? error.message : error;
+        console.error(`Error running benchmark summary: ${message}`);
         process.exitCode = 1;
       }
     });
