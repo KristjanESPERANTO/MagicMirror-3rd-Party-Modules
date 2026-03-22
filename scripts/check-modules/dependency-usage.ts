@@ -1,8 +1,7 @@
 import { builtinModules } from "node:module";
 import path from "node:path";
 
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-export { MISSING_DEPENDENCY_RULE_ID } from "./missing-dependency-rule.js";
+export { MISSING_DEPENDENCY_RULE_ID } from "./missing-dependency-rule.ts";
 
 type DependencyIgnoreInput = string | string[] | Set<string> | undefined;
 

@@ -1,9 +1,8 @@
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { MISSING_DEPENDENCY_RULE_DEFINITION } from "./missing-dependency-rule.js";
+import { MISSING_DEPENDENCY_RULE_DEFINITION } from "./missing-dependency-rule.ts";
 
 type RuleSeverity = "info" | "warning" | "error";
 type RuleCategory = "Deprecated" | "Outdated" | "Typo" | "Recommendation";
-type RuleScope = "text" | "package-json" | "package-lock" | "module-structure";
+type RuleScope = "text" | "package-json" | "package-lock" | "module-structure" | "module-analysis";
 
 interface RuleCategoryInfo {
   defaultSeverity: RuleSeverity;
