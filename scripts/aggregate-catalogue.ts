@@ -53,7 +53,7 @@ interface RunAggregateCatalogueOptions {
   outputWriter?: OutputWriter | null;
   projectRoot?: string;
   runLogger?: AggregateLogger;
-  stage5Modules: Stage5Module[];
+  stage5Modules?: Stage5Module[];
 }
 
 export interface AggregateCatalogueResult {
@@ -102,12 +102,12 @@ export async function runAggregateCatalogue({
   outputWriter = writePublishedCatalogueOutputs,
   runLogger = logger
 }: RunAggregateCatalogueOptions): Promise<AggregateCatalogueResult> {
-  if (!Array.isArray(stage5Modules)) {
-    throw new TypeError("runAggregateCatalogue requires a stage5Modules array");
-  }
+  const resolvedStage5Modules = Array.isArray(stage5Modules)
+    ? stage5Modules
+    : await readStage5ModulesFromDisk(projectRoot);
 
   const outputResult = outputWriter
-    ? await outputWriter(stage5Modules, projectRoot)
+    ? await outputWriter(resolvedStage5Modules, projectRoot)
     : null;
 
   const outputDetails = normalizeOutputDetails(outputResult);
@@ -130,11 +130,11 @@ export async function runAggregateCatalogue({
     }
   }
 
-  runLogger.info(`Aggregated ${stage5Modules.length} module(s) into published catalogue outputs`);
+  runLogger.info(`Aggregated ${resolvedStage5Modules.length} module(s) into published catalogue outputs`);
   return {
     changeSummary: outputDetails.changeSummary,
     outputPaths: outputDetails.outputPaths,
-    stage5ModulesCount: stage5Modules.length,
+    stage5ModulesCount: resolvedStage5Modules.length,
     wroteOutputs: outputDetails.wroteOutputs
   };
 }
@@ -153,10 +153,7 @@ function parseStage5Modules(payload: unknown): Stage5Module[] {
 
 async function main(): Promise<void> {
   try {
-    const stage5Path = resolve(PROJECT_ROOT, "website/data/modules.stage.5.json");
-    logger.info(`Reading stage-5 modules from ${stage5Path}...`);
-    const payload = JSON.parse(await readFile(stage5Path, "utf-8"));
-    const stage5Modules = parseStage5Modules(payload);
+    const stage5Modules = await readStage5ModulesFromDisk(PROJECT_ROOT);
 
     await runAggregateCatalogue({
       projectRoot: PROJECT_ROOT,
@@ -174,4 +171,11 @@ const isMainEntry = Boolean(process.argv[1]) && resolve(process.argv[1]) === cur
 
 if (isMainEntry) {
   main();
+}
+
+async function readStage5ModulesFromDisk(projectRoot: string): Promise<Stage5Module[]> {
+  const stage5Path = resolve(projectRoot, "website/data/modules.stage.5.json");
+  logger.info(`Reading stage-5 modules from ${stage5Path}...`);
+  const payload = JSON.parse(await readFile(stage5Path, "utf-8"));
+  return parseStage5Modules(payload);
 }

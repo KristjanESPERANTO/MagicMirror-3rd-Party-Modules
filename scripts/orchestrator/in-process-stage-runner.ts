@@ -73,25 +73,33 @@ export function createInProcessStageRunner({
       return true;
     }
 
-    if (stage.id === "aggregate-catalogue" && artifactStore.has("modules-stage-5")) {
+    if (stage.id === "aggregate-catalogue") {
       const stage5Modules = artifactStore.get("modules-stage-5");
+      const aggregateOptions: Record<string, unknown> = {
+        projectRoot: runRoot
+      };
 
-      await aggregateCatalogue({
-        projectRoot: runRoot,
-        stage5Modules: stage5Modules as never
-      });
+      if (stage5Modules !== undefined) {
+        aggregateOptions.stage5Modules = stage5Modules;
+      }
+
+      await aggregateCatalogue(aggregateOptions);
 
       return true;
     }
 
-    if (stage.id === "generate-result-markdown" && artifactStore.has("modules-stage-5")) {
+    if (stage.id === "generate-result-markdown") {
       const stage5Modules = artifactStore.get("modules-stage-5");
+      const markdownOptions: Record<string, unknown> = {
+        projectRoot: runRoot
+      };
+
+      if (stage5Modules !== undefined) {
+        markdownOptions.stage5Modules = stage5Modules;
+      }
 
       try {
-        await generateResultMarkdown({
-          projectRoot: runRoot,
-          stage5Modules: stage5Modules as never
-        });
+        await generateResultMarkdown(markdownOptions);
       }
       finally {
         artifactStore.delete("modules-stage-5");
