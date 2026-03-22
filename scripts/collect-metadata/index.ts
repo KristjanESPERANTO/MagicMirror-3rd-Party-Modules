@@ -8,8 +8,7 @@ import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/h
 import { createHttpClient } from "../shared/http-client.js";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createLogger } from "../shared/logger.js";
-// @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
-import { createPersistentCache } from "../shared/persistent-cache.js";
+import { createPersistentCache } from "../shared/persistent-cache.ts";
 // @ts-ignore -- legacy JS helper module, typing deferred to later migration slice
 import { createRateLimiter } from "../shared/rate-limiter.js";
 import { fileURLToPath } from "node:url";

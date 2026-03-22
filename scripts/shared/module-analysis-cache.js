@@ -1,4 +1,4 @@
-import { createPersistentCache } from "./persistent-cache.js";
+import { createPersistentCache } from "./persistent-cache.ts";
 import { getCurrentCommit } from "./git.js";
 import { resolve } from "node:path";
 import { stringifyDeterministic } from "./deterministic-output.ts";

@@ -1,6 +1,6 @@
 import { equal, ok } from "node:assert/strict";
 import { mkdtemp, readFile } from "node:fs/promises";
-import { createPersistentCache } from "../../shared/persistent-cache.js";
+import { createPersistentCache } from "../../shared/persistent-cache.ts";
 import { join } from "node:path";
 import { test } from "node:test";
 import { tmpdir } from "node:os";
