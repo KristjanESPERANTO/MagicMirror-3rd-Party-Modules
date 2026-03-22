@@ -35,7 +35,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
    - `pipeline logs [runId|--latest]` — inspect structured run metadata saved to `.pipeline-runs/`.
    - `pipeline doctor` — check external prerequisites (Node.js version, Git availability, required env vars).
    - `pipeline benchmark` — summarize persisted run durations for performance baselining.
-   - `pipeline progress` — summarize run outcomes and stage reliability trends.
+   - `pipeline progress` — summarize run outcomes, stage reliability trends, baseline median deltas, and telemetry coverage consistency.
 
 2. **Execution Engine** — Core runtime that:
    - Loads the stage graph via `loadStageGraph` and resolves an execution plan with `buildExecutionPlan`.
@@ -64,7 +64,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 - `pipeline logs --latest` — inspect the most recent persisted run record.
 - `pipeline benchmark --pipeline <id> --limit <n>` — summarize recent matching run records.
 - `pipeline benchmark --include-filtered --include-failed --json` — include non-canonical runs and print machine-readable output.
-- `pipeline progress --pipeline <id> --limit <n>` — summarize recent run outcomes and stage-level success rates.
+- `pipeline progress --pipeline <id> --limit <n>` — summarize recent run outcomes, stage-level success rates, and latest-vs-baseline duration/resource deltas.
 - `pipeline progress --include-filtered --json` — include filtered runs and print machine-readable output.
 
 Commander validates the mutually exclusive options (`--only`/`--skip`) so that unknown stage IDs or conflicting filters surface errors before execution. Skipped stages are still recorded in the run ledger so you can see exactly what was omitted.

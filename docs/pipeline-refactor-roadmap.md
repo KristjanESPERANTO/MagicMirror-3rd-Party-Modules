@@ -117,8 +117,8 @@ Measure and visualize pipeline performance.
 | ---- | --------------------- |
 | P9.1 | ✅ Benchmarking       |
 | P9.2 | ✅ Progress tracking  |
-| P9.3 | In progress           |
-| P9.4 | Performance dashboard |
+| P9.3 | ✅ Resource monitoring |
+| P9.4 | In progress           |
 
 ---
 
@@ -126,14 +126,7 @@ Measure and visualize pipeline performance.
 
 See [worker-pool-design.md](pipeline/worker-pool-design.md) for architecture details.
 
-**Current focus: P9.3** — Resource monitoring
-
-- Track run success-rate and stage reliability trends across persisted orchestrator runs
-- Capture CPU and memory peaks per run to spot regressions over time
-- Compare recent runs against baseline medians to surface potential regressions earlier
-- Validate telemetry consistency across full runs and filtered `--only`/`--skip` executions
-
-**Next: P9.4** — Performance dashboard
+**Current focus: P9.4** — Performance dashboard
 
 - Define a concise dashboard metric set shared by benchmark, progress, and logs views
 - Surface overall and per-stage duration/resource trends from persisted run history
