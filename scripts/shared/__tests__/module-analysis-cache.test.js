@@ -40,7 +40,7 @@ test("buildModuleAnalysisCacheKey returns a deterministic contract key", () => {
   });
 
   equal(left, right);
-  ok(left?.includes("\"schemaVersion\":2"));
+  ok(left?.includes(`"schemaVersion":${MODULE_ANALYSIS_CACHE_SCHEMA_VERSION}`));
   ok(left?.includes("\"catalogueRevision\":\"abc123\""));
 });
 

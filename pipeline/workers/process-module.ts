@@ -4,6 +4,7 @@ import { rename, rm } from "node:fs/promises";
 import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysis-cache.ts";
 import { createDeterministicImageName } from "../../scripts/shared/deterministic-output.ts";
 import { createLogger } from "../../scripts/shared/logger.ts";
+import { analyzeModule as performModuleAnalysis } from "../../scripts/check-modules/module-analyzer.ts";
 import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import path from "node:path";
@@ -127,6 +128,28 @@ interface AnalysisResult {
 
 function getErrorMessage(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
+}
+
+function normalizeIssueList(issues: unknown): string[] {
+  if (Array.isArray(issues)) {
+    return issues.filter((issue): issue is string => typeof issue === "string" && issue.length > 0);
+  }
+
+  if (typeof issues === "string" && issues.length > 0) {
+    return [issues];
+  }
+
+  return [];
+}
+
+function mergeUniqueIssues(target: string[], issues: unknown): void {
+  const existing = new Set(target);
+  for (const issue of normalizeIssueList(issues)) {
+    if (!existing.has(issue)) {
+      target.push(issue);
+      existing.add(issue);
+    }
+  }
 }
 
 /**
@@ -786,16 +809,66 @@ async function enrichModule(module: ModuleInput, config: ProcessModuleConfig): P
 }
 
 /**
- * Placeholder for future Stage 5 analysis integration
- * Will include checks like ESLint, npm-check-updates, dependency detection, etc.
+ * Stage 5: Analyze module for code quality issues, deprecated patterns, and best practices.
+ * Runs comprehensive checks including deprecated APIs, typos, package validation, and README structure.
  *
  * @returns {{analysisIssues: string[], recommendations: string[]}}
  */
-function analyzeModule(_module?: ModuleInput, _config?: ProcessModuleConfig): AnalysisResult {
-  return {
-    analysisIssues: [],
-    recommendations: []
-  };
+async function analyzeModule(module: ModuleInput, config: ProcessModuleConfig): Promise<AnalysisResult> {
+  const cloneDir = path.join(
+    config.modulesDir,
+    `${module.name}-----${module.maintainer}`
+  );
+
+  try {
+    // Get list of all files in the cloned directory, excluding .git and node_modules
+    const getAllFiles = (dir: string, baseDir: string = dir, files: string[] = []): string[] => {
+      try {
+        const entries = fs.readdirSync(dir, { withFileTypes: true });
+        for (const entry of entries) {
+          const fullPath = path.join(dir, entry.name);
+          const relativePath = path.relative(baseDir, fullPath);
+
+          if (!relativePath.includes(".git") && !relativePath.includes("node_modules")) {
+            if (entry.isDirectory()) {
+              getAllFiles(fullPath, baseDir, files);
+            } else {
+              files.push(fullPath);
+            }
+          }
+        }
+      } catch {
+        // Silently ignore read errors
+      }
+      return files;
+    };
+
+    const files = getAllFiles(cloneDir);
+    if (files.length === 0) {
+      return {
+        analysisIssues: ["Error: Unable to read module files for analysis"],
+        recommendations: []
+      };
+    }
+
+    const analysisResult = await performModuleAnalysis(
+      cloneDir,
+      module.name,
+      module.url,
+      files
+    );
+
+    return {
+      analysisIssues: analysisResult.issues,
+      recommendations: analysisResult.recommendations
+    };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return {
+      analysisIssues: [`Analysis error: ${message}`],
+      recommendations: []
+    };
+  }
 }
 
 /**
@@ -810,7 +883,7 @@ function analyzeModule(_module?: ModuleInput, _config?: ProcessModuleConfig): An
  */
 export async function processModule(module: ModuleInput, config: ProcessModuleConfig): Promise<ModuleResult> {
   const startTime = Date.now();
-  const allIssues = [...(module.issues || [])];
+  const allIssues = normalizeIssueList(module.issues);
   const cacheKey = config.cacheEnabled
     ? buildModuleAnalysisCacheKey({
       module,
@@ -870,7 +943,7 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
   let enrichResult;
   try {
     enrichResult = await enrichModule(module, config);
-    allIssues.push(...enrichResult.enrichIssues);
+    mergeUniqueIssues(allIssues, enrichResult.enrichIssues);
   }
   catch (error) {
     const message = error instanceof Error ? error.message : String(error);
@@ -903,7 +976,7 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
     };
   }
 
-  // Stage 5: Analyze (placeholder)
+  // Stage 5: Analyze
   let analysisResult;
   try {
     if (config.moduleLogger) {
@@ -911,12 +984,16 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
     }
 
     analysisResult = await analyzeModule(module, config);
-    allIssues.push(...analysisResult.analysisIssues);
+    // Merge analysis issues into the issues list
+    mergeUniqueIssues(allIssues, analysisResult.analysisIssues);
+
+    // Add recommendations separately if any
+    mergeUniqueIssues(allIssues, analysisResult.recommendations);
 
     if (config.moduleLogger) {
       await config.moduleLogger.info("analyze", "Analysis complete", {
-        issuesCount: analysisResult.analysisIssues.length,
-        recommendationsCount: analysisResult.recommendations.length
+        issuesCount: analysisResult.analysisIssues?.length || 0,
+        recommendationsCount: analysisResult.recommendations?.length || 0
       });
     }
   }
