@@ -331,17 +331,35 @@ export async function analyzeModule(
 ): Promise<AnalysisResult> {
   const issues: string[] = [];
 
-  // Filter out files in node_modules and .git
+  // Filter out files in node_modules and .git directories.
+  // Use path segments instead of substring matching so ".github" files are not excluded.
   const relevantFiles = files.filter(
-    (f) => !f.includes("node_modules") && !f.includes(".git")
+    (f) => {
+      const segments = f.split("/");
+      return !segments.includes("node_modules") && !segments.includes(".git");
+    }
   );
 
   // Check for each file
   for (const filePath of relevantFiles) {
     const content = await readFile(filePath, "utf-8").catch(() => "");
+    const filename = filePath.split("/").pop() ?? "";
+    const filenameLower = filename.toLowerCase();
+    const isChangelogFile = filenameLower === "changelog" || filenameLower.startsWith("changelog.");
+    const isPackageLockFile = filenameLower === "package-lock.json";
 
     // Check TEXT_RULES
     for (const [, rule] of Object.entries(TEXT_RULES)) {
+      // CHANGELOG entries are historical context and produce low-quality findings.
+      if (isChangelogFile) {
+        continue;
+      }
+
+      // lockfiles should only be checked via lockfile-specific rules.
+      if (isPackageLockFile) {
+        continue;
+      }
+
       if (content.includes(rule.pattern)) {
         issues.push(
           `${rule.category}: Found \`${rule.pattern}\` in file \`${filePath.split("/").pop()}\`: ${rule.description}`
@@ -367,7 +385,7 @@ export async function analyzeModule(
     }
 
     // Package-lock.json rules
-    if (filePath.endsWith("package-lock.json")) {
+    if (isPackageLockFile) {
       for (const [, rule] of Object.entries(PACKAGE_LOCK_RULES)) {
         if (content.includes(rule.pattern)) {
           issues.push(

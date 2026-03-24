@@ -9,10 +9,10 @@
     "artefacts",
     "aseag",
     "axios",
+    "baselining",
     "bergfex",
     "bugsounet",
     "buildctl",
-    "baselining",
     "checkjs",
     "checkts",
     "codeberg",
@@ -35,6 +35,7 @@
     "ipfilter",
     "Itay",
     "Kristjan",
+    "lockfiles",
     "magicmirror",
     "magicmirrororg",
     "mainbranch",
@@ -83,5 +84,7 @@
     "container/",
     "website/test/3rd-Party-Modules.md"
   ],
-  "dictionaries": ["node"]
+  "dictionaries": [
+    "node"
+  ]
 }

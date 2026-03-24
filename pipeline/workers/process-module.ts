@@ -829,7 +829,11 @@ async function analyzeModule(module: ModuleInput, config: ProcessModuleConfig): 
           const fullPath = path.join(dir, entry.name);
           const relativePath = path.relative(baseDir, fullPath);
 
-          if (!relativePath.includes(".git") && !relativePath.includes("node_modules")) {
+          const pathSegments = relativePath.split(path.sep);
+          const isGitDir = pathSegments.includes(".git");
+          const isNodeModulesDir = pathSegments.includes("node_modules");
+
+          if (!isGitDir && !isNodeModulesDir) {
             if (entry.isDirectory()) {
               getAllFiles(fullPath, baseDir, files);
             } else {
