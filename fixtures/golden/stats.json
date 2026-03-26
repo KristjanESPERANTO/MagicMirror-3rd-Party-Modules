@@ -46,6 +46,7 @@
     "ByteException_": 1,
     "C-Deck": 1,
     "CBrooker": 1,
+    "CE-Timmer": 1,
     "CFenner": 7,
     "Canonip": 1,
     "Captsi": 1,
@@ -358,6 +359,7 @@
     "boazarad": 1,
     "bogenpirat": 2,
     "bohemtucsok": 1,
+    "brandaorafael": 2,
     "brentpabst": 1,
     "brssaricicek": 1,
     "brucetony": 1,
@@ -462,6 +464,7 @@
     "fry0815": 2,
     "fuerst": 1,
     "galaktor": 1,
+    "garethsprice": 1,
     "gauravsacc": 1,
     "gberg927": 1,
     "gertperdZA": 1,
@@ -724,7 +727,7 @@
     "sp4ceman": 1,
     "spectroman": 1,
     "spelinski": 1,
-    "spitzlbergerj": 3,
+    "spitzlbergerj": 1,
     "splattner": 1,
     "spydersoft-consulting": 1,
     "sqall01": 1,
@@ -815,12 +818,12 @@
     "zuo000": 1,
     "zzflops": 1
   },
-  "moduleCounter": 1369,
-  "modulesWithImageCounter": 966,
-  "modulesWithIssuesCounter": 887,
+  "moduleCounter": 1371,
+  "modulesWithImageCounter": 972,
+  "modulesWithIssuesCounter": 1359,
   "repositoryHoster": {
     "bitbucket": 1,
-    "github": 1356,
+    "github": 1358,
     "gitlab": 12
   }
 }

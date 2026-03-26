@@ -1292,17 +1292,11 @@
       "description": "Displays current Steam deals. Companion to MMM-SteamUpcoming",
       "hasGithubIssues": null,
       "id": "badubada/MMM-SteamDeals",
-      "image": "MMM-SteamDeals---badubada.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "badubada",
       "maintainerURL": "https://github.com/badubada",
       "name": "MMM-SteamDeals",
-      "tags": [
-        "steam",
-        "deals",
-        "games"
-      ],
       "url": "https://github.com/badubada/MMM-SteamDeals"
     },
     {
@@ -1310,17 +1304,11 @@
       "description": "Displays upcoming Steam games. Companion to MMM-SteamDeals",
       "hasGithubIssues": null,
       "id": "badubada/MMM-SteamUpcoming",
-      "image": "MMM-SteamUpcoming---badubada.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "badubada",
       "maintainerURL": "https://github.com/badubada",
       "name": "MMM-SteamUpcoming",
-      "tags": [
-        "steam",
-        "upcoming",
-        "games"
-      ],
       "url": "https://github.com/badubada/MMM-SteamUpcoming"
     },
     {
@@ -2079,6 +2067,46 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display a live WebRTC stream from a Google Nest camera via the Device Access API. Includes an audio frequency visualizer synced to the camera audio.",
+      "hasGithubIssues": null,
+      "id": "brandaorafael/MMM-Nest-Camera-WebRTC",
+      "image": "MMM-Nest-Camera-WebRTC---brandaorafael.webp",
+      "isArchived": null,
+      "license": "ISC",
+      "maintainer": "brandaorafael",
+      "maintainerURL": "https://github.com/brandaorafael",
+      "name": "MMM-Nest-Camera-WebRTC",
+      "tags": [
+        "nest",
+        "camera",
+        "webrtc",
+        "google",
+        "smart-home"
+      ],
+      "url": "https://github.com/brandaorafael/MMM-Nest-Camera-WebRTC"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Show which streamers from your list are currently live on Twitch, Kick, and YouTube. Displays name, platform, current game/category, and live viewer count. List and card display styles.",
+      "hasGithubIssues": null,
+      "id": "brandaorafael/MMM-StreamerStatus",
+      "image": "MMM-StreamerStatus---brandaorafael.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "brandaorafael",
+      "maintainerURL": "https://github.com/brandaorafael",
+      "name": "MMM-StreamerStatus",
+      "tags": [
+        "twitch",
+        "kick",
+        "youtube",
+        "streaming",
+        "live"
+      ],
+      "url": "https://github.com/brandaorafael/MMM-StreamerStatus"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display real-time GPS data from GPSD.",
       "hasGithubIssues": true,
       "id": "brentpabst/MMM-gpsd",
@@ -2267,11 +2295,15 @@
       "description": "Shows system stats similar to MMM-SystemStats.",
       "hasGithubIssues": true,
       "id": "btastic/MMM-SystemMonitor",
+      "image": "MMM-SystemMonitor---btastic.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "btastic",
       "maintainerURL": "https://github.com/btastic",
       "name": "MMM-SystemMonitor",
+      "tags": [
+        "systemmonitor"
+      ],
       "url": "https://github.com/btastic/MMM-SystemMonitor"
     },
     {
@@ -2619,6 +2651,24 @@
         "wunderlist"
       ],
       "url": "https://github.com/cbrooker/MMM-Todoist"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Display information about departures, trip duration and arrival times for Dutch pubic transport (excluding trains).",
+      "hasGithubIssues": null,
+      "id": "CE-Timmer/MMM-NL-Busses",
+      "image": "MMM-NL-Busses---CE-Timmer.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "CE-Timmer",
+      "maintainerURL": "https://github.com/CE-Timmer",
+      "name": "MMM-NL-Busses",
+      "tags": [
+        "bus",
+        "public transport",
+        "times"
+      ],
+      "url": "https://github.com/CE-Timmer/MMM-NL-Busses"
     },
     {
       "category": "Weather",
@@ -3095,9 +3145,11 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Provides a simple UI with buttons to send customizable notifications to other modules.",
-      "hasGithubIssues": null,
+      "hasGithubIssues": true,
       "id": "ChrisF1976/MMM-NotificationSender",
-      "isArchived": null,
+      "image": "MMM-NotificationSender---ChrisF1976.webp",
+      "isArchived": false,
+      "license": "MIT",
       "maintainer": "ChrisF1976",
       "maintainerURL": "https://github.com/ChrisF1976",
       "name": "MMM-NotificationSender",
@@ -5504,11 +5556,17 @@
       "description": "Displays Valorant Esports matches in a continuous scrolling ticker with live scores and schedules.",
       "hasGithubIssues": null,
       "id": "FabienBounoir/MMM-VALORANT-BANNER",
+      "image": "MMM-VALORANTE-BANNER---fabienbounoir.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "fabienbounoir",
       "maintainerURL": "https://github.com/FabienBounoir",
       "name": "MMM-VALORANTE-BANNER",
+      "tags": [
+        "esports",
+        "valorant",
+        "banner"
+      ],
       "url": "https://github.com/FabienBounoir/MMM-VALORANT-BANNER"
     },
     {
@@ -6189,6 +6247,28 @@
       "url": "https://github.com/galaktor/MMM-DublinRTPI"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Uses an LLM to summarize other dashboard modules. Supports OpenAI, Anthropic, and any OpenAI-compatible API (Ollama, LM Studio). Features smart change detection, diff-based prompts, quiet hours, and adaptive polling.",
+      "hasGithubIssues": null,
+      "id": "garethsprice/MMM-LLM-Summary",
+      "image": "MMM-LLM-Summary---garethsprice.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "garethsprice",
+      "maintainerURL": "https://github.com/garethsprice",
+      "name": "MMM-LLM-Summary",
+      "tags": [
+        "llm",
+        "ai",
+        "summary",
+        "openai",
+        "anthropic",
+        "ollama",
+        "smart-mirror"
+      ],
+      "url": "https://github.com/garethsprice/MMM-LLM-Summary"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Record daily 1-second-clips and automatically generate a 1-second-a-day video of your life.",
       "hasGithubIssues": true,
@@ -6235,16 +6315,11 @@
       "description": "Displays daily trivia questions from Ivy Tech's educational website with an interactive toggle to reveal/hide answers. Auto-hides answer after 10 seconds.",
       "hasGithubIssues": null,
       "id": "GeeYouEss/MMM-TriviaQOTD",
-      "image": "MMM-TriviaQOTD---GeeYouEss.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "GeeYouEss",
       "maintainerURL": "https://github.com/GeeYouEss",
       "name": "MMM-TriviaQOTD",
-      "tags": [
-        "trivia",
-        "question of the day"
-      ],
       "url": "https://github.com/GeeYouEss/MMM-TriviaQOTD"
     },
     {
@@ -7289,6 +7364,7 @@
       "description": "Advanced Tado Thermostat module.",
       "hasGithubIssues": null,
       "id": "htilburgs/MMM-MyTado",
+      "image": "MMM-MyTado---HTilburgs.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "HTilburgs",
@@ -7701,9 +7777,9 @@
     {
       "category": "Finance",
       "description": "Displays top Polymarket events from a chosen tag in a nice card.",
-      "hasGithubIssues": null,
+      "hasGithubIssues": true,
       "id": "ItsMeBrille/MMM-Polymarket",
-      "isArchived": null,
+      "isArchived": false,
       "license": "MIT",
       "maintainer": "ItsMeBrille",
       "maintainerURL": "https://github.com/ItsMeBrille",
@@ -8440,11 +8516,18 @@
       "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
       "hasGithubIssues": null,
       "id": "JHWelch/MMM-CTA",
+      "image": "MMM-CTA---JHWelch.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "JHWelch",
       "maintainerURL": "https://github.com/JHWelch",
       "name": "MMM-CTA",
+      "tags": [
+        "cta",
+        "train",
+        "bus",
+        "tracker"
+      ],
       "url": "https://github.com/JHWelch/MMM-CTA"
     },
     {
@@ -8665,6 +8748,7 @@
       "description": "Displays notifications sent with a simple HTTP POST request.",
       "hasGithubIssues": true,
       "id": "john3300/MMM-HomeAutomationNotifications",
+      "image": "MMM-HomeAutomationNotifications---john3300.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "john3300",
@@ -9867,6 +9951,12 @@
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "name": "MMM-PublicTransportHub",
+      "tags": [
+        "public transport",
+        "hafas",
+        "vendo",
+        "transitous"
+      ],
       "url": "https://github.com/KristjanESPERANTO/MMM-PublicTransportHub"
     },
     {
@@ -13087,9 +13177,6 @@
       "maintainer": "n00b42",
       "maintainerURL": "https://github.com/n00b42",
       "name": "MMM-Jokes",
-      "tags": [
-        "jokes"
-      ],
       "url": "https://github.com/n00b42/MMM-Jokes"
     },
     {
@@ -13519,6 +13606,11 @@
       "maintainer": "Nischi",
       "maintainerURL": "https://github.com/nischi",
       "name": "MMM-CECControl",
+      "tags": [
+        "cec",
+        "control",
+        "tv"
+      ],
       "url": "https://github.com/nischi/MMM-CECControl"
     },
     {
@@ -13752,11 +13844,17 @@
       "description": "Visualize data as heatmaps, charts, and more. A lightweight wrapper over Heat.js with live file updates.",
       "hasGithubIssues": null,
       "id": "nonguyen1/MMM-HeatMaps",
+      "image": "MMM-HeatMaps---nonguyen1.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "nonguyen1",
       "maintainerURL": "https://github.com/nonguyen1",
       "name": "MMM-HeatMaps",
+      "tags": [
+        "heatmap",
+        "habit-tracker",
+        "heat.js"
+      ],
       "url": "https://github.com/nonguyen1/MMM-HeatMaps"
     },
     {
@@ -14019,10 +14117,10 @@
     {
       "category": "Finance",
       "description": "Display your eToro portfolio summary, including total equity, current profit/loss, and percentage gains in real-time.",
-      "hasGithubIssues": null,
+      "hasGithubIssues": true,
       "id": "owensy/MMM-eToro",
       "image": "MMM-eToro---Owensy.webp",
-      "isArchived": null,
+      "isArchived": false,
       "license": "MIT",
       "maintainer": "Owensy",
       "maintainerURL": "https://github.com/owensy",
@@ -14631,6 +14729,7 @@
       "hasGithubIssues": null,
       "id": "poonasor/MMM-GTAGasPrices",
       "isArchived": null,
+      "license": "MIT",
       "maintainer": "poonasor",
       "maintainerURL": "https://github.com/poonasor",
       "name": "MMM-GTAGasPrices",
@@ -17216,20 +17315,6 @@
     },
     {
       "category": "Outdated Modules",
-      "description": "Extension of the standard module currentweather by the possibility to process and integrate MQTT telegrams of an own weather station.",
-      "hasGithubIssues": true,
-      "id": "spitzlbergerj/MMM-Currentweather-MQTT",
-      "image": "MMM-Currentweather-MQTT---spitzlbergerj.webp",
-      "isArchived": true,
-      "license": "MIT",
-      "maintainer": "spitzlbergerj",
-      "maintainerURL": "https://github.com/spitzlbergerj",
-      "name": "MMM-Currentweather-MQTT",
-      "outdated": "Abandoned. Repo has been archived at 2025-04-21.",
-      "url": "https://github.com/spitzlbergerj/MMM-Currentweather-MQTT"
-    },
-    {
-      "category": "Outdated Modules",
       "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
       "hasGithubIssues": false,
       "id": "spitzlbergerj/MMM-Homematic-Thermostats",
@@ -17240,19 +17325,6 @@
       "name": "MMM-Homematic-Thermostats",
       "outdated": "Abandoned. Repo has been archived at 2026-03-18.",
       "url": "https://github.com/spitzlbergerj/MMM-Homematic-Thermostats"
-    },
-    {
-      "category": "Transport / Travel",
-      "description": "Displays data from [TeslaLogger](https://github.com/bassmaster187/TeslaLogger) or/and [TeslaMate](https://github.com/adriankumpf/teslamate) via MQTT.",
-      "hasGithubIssues": true,
-      "id": "spitzlbergerj/MMM-TeslaLogger",
-      "image": "MMM-TeslaLogger---spitzlbergerj.webp",
-      "isArchived": false,
-      "license": "AGPL-3.0",
-      "maintainer": "spitzlbergerj",
-      "maintainerURL": "https://github.com/spitzlbergerj",
-      "name": "MMM-TeslaLogger",
-      "url": "https://github.com/spitzlbergerj/MMM-TeslaLogger"
     },
     {
       "category": "Entertainment / Misc",
@@ -18031,11 +18103,17 @@
       "description": "Learn a (new foreign language) word every time you look in the mirror.",
       "hasGithubIssues": true,
       "id": "thekampany/MMM-learnlanguage",
+      "image": "MMM-learnlanguage---theKampany.webp",
       "isArchived": false,
       "license": "ISC",
       "maintainer": "theKampany",
       "maintainerURL": "https://github.com/thekampany",
       "name": "MMM-learnlanguage",
+      "tags": [
+        "learn",
+        "language",
+        "vocabulary"
+      ],
       "url": "https://github.com/thekampany/MMM-learnlanguage"
     },
     {
@@ -20549,20 +20627,11 @@
       "description": "Display photos from your Synology library as a slideshow. Supports personal Space, albums, folders, size presets, and auto refreshes.",
       "hasGithubIssues": null,
       "id": "zarif98/MMM-SynologyPhotos",
-      "image": "MMM-SynologyPhotos---zarif98.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "zarif98",
       "maintainerURL": "https://github.com/zarif98",
       "name": "MMM-SynologyPhotos",
-      "tags": [
-        "synology",
-        "synology photos",
-        "nas",
-        "photo",
-        "slideshow",
-        "digital frame"
-      ],
       "url": "https://github.com/zarif98/MMM-SynologyPhotos"
     },
     {
