@@ -9,7 +9,6 @@ export interface CheckGroupToggles {
 
 export interface CheckIntegrationToggles {
   eslint: boolean;
-  ghSlimify: boolean;
   npmCheckUpdates: boolean;
   npmDeprecatedCheck: boolean;
 }
@@ -31,7 +30,6 @@ interface PartialGroupsShape {
 
 interface PartialIntegrationsShape {
   eslint?: unknown;
-  ghSlimify?: unknown;
   npmCheckUpdates?: unknown;
   npmDeprecatedCheck?: unknown;
 }
@@ -61,8 +59,7 @@ export const DEFAULT_CHECK_GROUP_CONFIG = Object.freeze({
   integrations: Object.freeze({
     npmCheckUpdates: true,
     npmDeprecatedCheck: true,
-    eslint: true,
-    ghSlimify: true
+    eslint: true
   })
 });
 
@@ -75,8 +72,7 @@ function createMutableConfig(): CheckGroupConfig {
     integrations: {
       npmCheckUpdates: DEFAULT_CHECK_GROUP_CONFIG.integrations.npmCheckUpdates,
       npmDeprecatedCheck: DEFAULT_CHECK_GROUP_CONFIG.integrations.npmDeprecatedCheck,
-      eslint: DEFAULT_CHECK_GROUP_CONFIG.integrations.eslint,
-      ghSlimify: DEFAULT_CHECK_GROUP_CONFIG.integrations.ghSlimify
+      eslint: DEFAULT_CHECK_GROUP_CONFIG.integrations.eslint
     }
   };
 }
@@ -116,9 +112,6 @@ function normalizePartial(input: unknown): PartialCheckGroupConfig {
     if (typeof integrations.eslint === "boolean") {
       normalized.integrations.eslint = integrations.eslint;
     }
-    if (typeof integrations.ghSlimify === "boolean") {
-      normalized.integrations.ghSlimify = integrations.ghSlimify;
-    }
   }
 
   return normalized;
@@ -142,9 +135,6 @@ function applyPartialConfig(target: CheckGroupConfig, partial: PartialCheckGroup
   if (partial.integrations.eslint !== undefined) {
     target.integrations.eslint = partial.integrations.eslint;
   }
-  if (partial.integrations.ghSlimify !== undefined) {
-    target.integrations.ghSlimify = partial.integrations.ghSlimify;
-  }
 
   return target;
 }
@@ -158,8 +148,7 @@ function freezeConfig(config: CheckGroupConfig): Readonly<CheckGroupConfig> {
     integrations: Object.freeze({
       npmCheckUpdates: config.integrations.npmCheckUpdates,
       npmDeprecatedCheck: config.integrations.npmDeprecatedCheck,
-      eslint: config.integrations.eslint,
-      ghSlimify: config.integrations.ghSlimify
+      eslint: config.integrations.eslint
     })
   });
 }

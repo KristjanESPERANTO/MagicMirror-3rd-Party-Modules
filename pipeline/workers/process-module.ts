@@ -1,6 +1,7 @@
 import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.ts";
 import { ensureRepository, getCommitDate } from "../../scripts/shared/git.ts";
 import { rename, rm } from "node:fs/promises";
+import { execFile } from "node:child_process";
 import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysis-cache.ts";
 import { createDeterministicImageName } from "../../scripts/shared/deterministic-output.ts";
 import { createLogger } from "../../scripts/shared/logger.ts";
@@ -9,9 +10,11 @@ import fs from "node:fs";
 import normalizeData from "normalize-package-data";
 import path from "node:path";
 import sharp from "sharp";
+import { promisify } from "node:util";
 import type { ModuleLogger } from "./module-logger.ts";
 
 const logger = createLogger({ name: "worker" });
+const execFileAsync = promisify(execFile);
 
 interface ModuleInput {
   branch?: string;
@@ -34,6 +37,7 @@ interface AnalysisConfig {
   eslint?: boolean;
   fast?: boolean;
   ncu?: boolean;
+  npmDeprecatedCheck?: boolean;
   [key: string]: unknown;
 }
 
@@ -152,6 +156,176 @@ function mergeUniqueIssues(target: string[], issues: unknown): void {
   }
 }
 
+async function runNpmCheckUpdates(moduleDir: string): Promise<string[]> {
+  try {
+    const { stdout } = await execFileAsync("npx", ["npm-check-updates", "--jsonUpgraded"], {
+      cwd: moduleDir,
+      timeout: 60_000
+    });
+
+    const output = String(stdout ?? "").trim();
+    if (!output) {
+      return [];
+    }
+
+    const parsed = JSON.parse(output) as Record<string, string>;
+    return Object.entries(parsed).map(([dependency, targetVersion]) => `${dependency} -> ${targetVersion}`);
+  }
+  catch (error) {
+    logger.warn(`npm-check-updates failed in ${moduleDir}: ${getErrorMessage(error)}`);
+    return [];
+  }
+}
+
+async function runDeprecatedCheck(moduleDir: string): Promise<string | null> {
+  try {
+    const { stdout, stderr } = await execFileAsync("npx", ["ndc", "current"], {
+      cwd: moduleDir,
+      timeout: 60_000
+    });
+
+    const output = `${String(stdout ?? "")}${String(stderr ?? "")}`.trim();
+    if (!output || output.includes("There are no deprecated dependencies.")) {
+      return null;
+    }
+
+    const lines = output
+      .split(/\r?\n/u)
+      .map(line => line.trim())
+      .filter(line => line.includes(":"));
+
+    if (lines.length === 0) {
+      return null;
+    }
+
+    return lines.join("\n");
+  }
+  catch (error) {
+    logger.warn(`npm-deprecated-check failed in ${moduleDir}: ${getErrorMessage(error)}`);
+    return null;
+  }
+}
+
+async function runEslintCheck(moduleDir: string, config: ProcessModuleConfig): Promise<string[]> {
+  const eslintConfigPath = path.join(config.projectRoot, "eslint.testconfig.js");
+  if (!fileExists(eslintConfigPath)) {
+    return [];
+  }
+
+  const parseIssues = (stdout: unknown): string[] => {
+    const output = String(stdout ?? "").trim();
+    if (!output) {
+      return [];
+    }
+
+    const parsed = JSON.parse(output) as Array<{
+      filePath?: string;
+      messages?: Array<{ column?: number; line?: number; message?: string; ruleId?: string }>;
+    }>;
+
+    const issues: string[] = [];
+    for (const entry of parsed) {
+      const relativePath = entry.filePath
+        ? path.relative(moduleDir, entry.filePath)
+        : "unknown";
+
+      for (const message of entry.messages ?? []) {
+        if (!message?.message || message.message.includes("Definition for rule")) {
+          continue;
+        }
+
+        const location = `${relativePath}: Line ${message.line}, Column ${message.column}`;
+        issues.push(`${location}: ${message.message} (rule: ${message.ruleId})`);
+      }
+    }
+
+    return issues;
+  };
+
+  try {
+    const { stdout } = await execFileAsync(
+      "npx",
+      [
+        "eslint",
+        "--format",
+        "json",
+        "--config",
+        eslintConfigPath,
+        moduleDir
+      ],
+      {
+        cwd: config.projectRoot,
+        timeout: 120_000
+      }
+    );
+
+    return parseIssues(stdout);
+  }
+  catch (error) {
+    if (error && typeof error === "object" && "stdout" in error) {
+      try {
+        return parseIssues(error.stdout);
+      }
+      catch {
+        logger.warn(`ESLint check failed in ${moduleDir}: ${getErrorMessage(error)}`);
+        return [];
+      }
+    }
+
+    logger.warn(`ESLint check failed in ${moduleDir}: ${getErrorMessage(error)}`);
+    return [];
+  }
+}
+
+async function applyDependencyIntegrations(moduleDir: string, issues: string[], config: ProcessModuleConfig): Promise<void> {
+  const analysisConfig = config.analysisConfig ?? config.checkGroups ?? {};
+
+  if (analysisConfig.deep === false) {
+    return;
+  }
+
+  const packageJsonPath = path.join(moduleDir, "package.json");
+  if (!fileExists(packageJsonPath)) {
+    return;
+  }
+
+  if (issues.length >= 4) {
+    return;
+  }
+
+  if (analysisConfig.ncu !== false) {
+    const upgrades = await runNpmCheckUpdates(moduleDir);
+    if (upgrades.length > 0) {
+      const header = `Information: There are updates for ${upgrades.length} dependencie(s):`;
+      const details = upgrades.map(entry => `   - ${entry}`).join("\n");
+      mergeUniqueIssues(issues, [`${header}\n${details}`]);
+    }
+  }
+
+  if (issues.length >= 3) {
+    return;
+  }
+
+  if (analysisConfig.npmDeprecatedCheck !== false) {
+    const deprecated = await runDeprecatedCheck(moduleDir);
+    if (deprecated) {
+      mergeUniqueIssues(issues, [deprecated]);
+    }
+  }
+
+  if (issues.length >= 3) {
+    return;
+  }
+
+  if (analysisConfig.eslint !== false) {
+    const eslintIssues = await runEslintCheck(moduleDir, config);
+    if (eslintIssues.length > 0) {
+      const body = eslintIssues.map(entry => `   - ${entry}`).join("\n");
+      mergeUniqueIssues(issues, [`ESLint issues:\n${body}`]);
+    }
+  }
+}
+
 /**
  * @typedef {Object} ModuleInput
  * @property {string} name
@@ -183,11 +357,13 @@ function mergeUniqueIssues(target: string[], issues: unknown): void {
  * @property {boolean} [analysisConfig.deep]
  * @property {boolean} [analysisConfig.eslint]
  * @property {boolean} [analysisConfig.ncu]
+ * @property {boolean} [analysisConfig.npmDeprecatedCheck]
  * @property {Object} [checkGroups]
  * @property {boolean} [checkGroups.fast]
  * @property {boolean} [checkGroups.deep]
  * @property {boolean} [checkGroups.eslint]
  * @property {boolean} [checkGroups.ncu]
+ * @property {boolean} [checkGroups.npmDeprecatedCheck]
  * @property {number} [timeoutMs]
  * @property {Object} [moduleLogger] - Per-module logger instance
  */
@@ -993,6 +1169,8 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
 
     // Add recommendations separately if any
     mergeUniqueIssues(allIssues, analysisResult.recommendations);
+
+    await applyDependencyIntegrations(cloneDir, allIssues, config);
 
     if (config.moduleLogger) {
       await config.moduleLogger.info("analyze", "Analysis complete", {

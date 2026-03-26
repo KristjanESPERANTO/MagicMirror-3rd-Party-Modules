@@ -16,7 +16,6 @@ interface SummaryConfig {
   };
   integrations?: {
     eslint?: boolean;
-    ghSlimify?: boolean;
     npmCheckUpdates?: boolean;
     npmDeprecatedCheck?: boolean;
   };

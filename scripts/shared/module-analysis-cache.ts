@@ -3,7 +3,7 @@ import { getCurrentCommit } from "./git.ts";
 import { resolve } from "node:path";
 import { stringifyDeterministic } from "./deterministic-output.ts";
 
-export const MODULE_ANALYSIS_CACHE_SCHEMA_VERSION = 6;
+export const MODULE_ANALYSIS_CACHE_SCHEMA_VERSION = 7;
 export const MODULE_ANALYSIS_CACHE_RELATIVE_PATH = "website/data/moduleCache.json";
 
 interface ModuleAnalysisCheckGroupsInput {
@@ -11,6 +11,7 @@ interface ModuleAnalysisCheckGroupsInput {
   eslint?: unknown;
   fast?: unknown;
   ncu?: unknown;
+  npmDeprecatedCheck?: unknown;
 }
 
 export interface NormalizedModuleAnalysisCheckGroups {
@@ -18,6 +19,7 @@ export interface NormalizedModuleAnalysisCheckGroups {
   eslint: boolean;
   fast: boolean;
   ncu: boolean;
+  npmDeprecatedCheck: boolean;
 }
 
 interface ModuleAnalysisModuleInput {
@@ -70,7 +72,8 @@ export function normalizeModuleAnalysisCheckGroups(
     fast: Boolean(checkGroups.fast),
     deep: Boolean(checkGroups.deep),
     eslint: Boolean(checkGroups.eslint),
-    ncu: Boolean(checkGroups.ncu)
+    ncu: Boolean(checkGroups.ncu),
+    npmDeprecatedCheck: Boolean(checkGroups.npmDeprecatedCheck)
   };
 }
 

@@ -19,7 +19,8 @@ const DEFAULT_ANALYSIS_CONFIG = normalizeModuleAnalysisCheckGroups({
   fast: true,
   deep: true,
   eslint: true,
-  ncu: true
+  ncu: true,
+  npmDeprecatedCheck: true
 });
 
 async function createTempCachePath(prefix = "parallel-cache-runtime-test-") {

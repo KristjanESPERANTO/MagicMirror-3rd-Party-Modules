@@ -26,7 +26,7 @@ test("buildModuleAnalysisCacheKey returns a deterministic contract key", () => {
   const left = buildModuleAnalysisCacheKey({
     module,
     catalogueRevision: "abc123",
-    checkGroups: { deep: true, fast: true, ncu: false, eslint: true }
+    checkGroups: { deep: true, fast: true, ncu: false, eslint: true, npmDeprecatedCheck: true }
   });
   const right = buildModuleAnalysisCacheKey({
     module: {
@@ -36,7 +36,7 @@ test("buildModuleAnalysisCacheKey returns a deterministic contract key", () => {
       branch: "main"
     },
     catalogueRevision: "abc123",
-    checkGroups: { eslint: true, fast: true, deep: true, ncu: false }
+    checkGroups: { eslint: true, fast: true, deep: true, ncu: false, npmDeprecatedCheck: true }
   });
 
   equal(left, right);

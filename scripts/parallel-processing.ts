@@ -22,6 +22,7 @@ interface AnalysisConfig {
   eslint?: boolean;
   fast?: boolean;
   ncu?: boolean;
+  npmDeprecatedCheck?: boolean;
 }
 
 interface Stage2Module {
@@ -111,7 +112,8 @@ const DEFAULT_ANALYSIS_CONFIG = normalizeModuleAnalysisCheckGroups({
   fast: true,
   deep: true,
   eslint: true,
-  ncu: true
+  ncu: true,
+  npmDeprecatedCheck: true
 });
 
 /**
