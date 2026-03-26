@@ -110,3 +110,35 @@ test("analyzer keeps .github files and applies only lockfile-specific package-lo
 
   assert.ok(Array.isArray(result.issues));
 });
+
+test("analyzer applies classic-module exceptions for mmpm", async () => {
+  const moduleRoot = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-mmpm-test-"));
+
+  await fsPromises.writeFile(join(moduleRoot, "README.md"), "# mmpm\n");
+  await fsPromises.writeFile(join(moduleRoot, "LICENSE.md"), "MIT\n");
+  await fsPromises.writeFile(
+    join(moduleRoot, "package.json"),
+    JSON.stringify({
+      name: "mmpm",
+      version: "1.0.0"
+    })
+  );
+
+  const files = [
+    join(moduleRoot, "README.md"),
+    join(moduleRoot, "LICENSE.md"),
+    join(moduleRoot, "package.json")
+  ];
+
+  const result = await analyzeModule(
+    moduleRoot,
+    "mmpm",
+    "https://github.com/Bee-Mar/mmpm",
+    files
+  );
+
+  assert.equal(result.issues.some(issue => issue.includes("README seems not to have an update section")), false);
+  assert.equal(result.issues.some(issue => issue.includes("There is no CODE_OF_CONDUCT file")), true);
+  assert.equal(result.issues.some(issue => issue.includes("There is no dependabot configuration file")), false);
+  assert.equal(result.issues.some(issue => issue.includes("No ESLint configuration was found")), false);
+});

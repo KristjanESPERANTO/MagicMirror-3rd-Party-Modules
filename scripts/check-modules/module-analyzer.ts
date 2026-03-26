@@ -16,6 +16,44 @@ interface AnalysisResult {
   recommendations: string[];
 }
 
+interface ModuleCheckExceptions {
+  skipCodeOfConductCheck?: boolean;
+  skipDependabotCheck?: boolean;
+  skipEslintChecks?: boolean;
+  skipReadmeChecks?: boolean;
+}
+
+const MODULE_CHECK_EXCEPTIONS: Record<string, ModuleCheckExceptions> = {
+  // mmpm is a standalone management tool, not a classic MM module runtime package.
+  // Some mirror-module README/community checks are not meaningful for it.
+  "Bee-Mar/mmpm": {
+    skipReadmeChecks: true,
+    skipDependabotCheck: true,
+    skipEslintChecks: true
+  }
+};
+
+function getRepositoryId(moduleUrl: string): string | null {
+  try {
+    const url = new URL(moduleUrl);
+    const segments = url.pathname.split("/").filter(Boolean);
+    if (segments.length < 2) {
+      return null;
+    }
+
+    const owner = segments[0];
+    const repo = segments[1].replace(/\.git$/u, "");
+    if (!owner || !repo) {
+      return null;
+    }
+
+    return `${owner}/${repo}`;
+  }
+  catch {
+    return null;
+  }
+}
+
 // Comprehensive TEXT_RULES with all deprecated APIs, typos, and recommendations
 const TEXT_RULES: Record<string, TextRule> = {
   "new Buffer(": {
@@ -330,6 +368,8 @@ export async function analyzeModule(
   files: string[]
 ): Promise<AnalysisResult> {
   const issues: string[] = [];
+  const moduleRepoId = getRepositoryId(moduleUrl);
+  const moduleExceptions = moduleRepoId ? MODULE_CHECK_EXCEPTIONS[moduleRepoId] ?? {} : {};
 
   // Filter out files in node_modules and .git directories.
   // Use path segments instead of substring matching so ".github" files are not excluded.
@@ -399,7 +439,7 @@ export async function analyzeModule(
     const relativePath = filePath.startsWith(modulePath)
       ? filePath.slice(modulePath.length).replace(/^\/+/, "")
       : filePath;
-    if (relativePath === "README.md") {
+    if (relativePath === "README.md" && !moduleExceptions.skipReadmeChecks) {
       // Check for update section
       if (!content.includes("## Updat")) {
         issues.push(
@@ -471,69 +511,71 @@ export async function analyzeModule(
     );
   }
 
-  if (!filenames.has("CODE_OF_CONDUCT") && !filenames.has("CODE_OF_CONDUCT.MD")) {
+  if (!moduleExceptions.skipCodeOfConductCheck && !filenames.has("CODE_OF_CONDUCT") && !filenames.has("CODE_OF_CONDUCT.MD")) {
     issues.push(
       "Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md))."
     );
   }
 
-  if (!filenames.has("DEPENDABOT.YAML") && !filenames.has("DEPENDABOT.YML")) {
+  if (!moduleExceptions.skipDependabotCheck && !filenames.has("DEPENDABOT.YAML") && !filenames.has("DEPENDABOT.YML")) {
     issues.push(
       "Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml))."
     );
   }
 
   // ESLint checks
-  const hasOldEslintrc = filenames.has("ESLINTRC") || filenames.has("ESLINTRC.JSON") || filenames.has("ESLINTRC.JS") || filenames.has("ESLINTRC.YML") || filenames.has("ESLINTRC.YAML");
-  const hasNewEslint = filenames.has("ESLINT.CONFIG.JS") || filenames.has("ESLINT.CONFIG.MJS");
+  if (!moduleExceptions.skipEslintChecks) {
+    const hasOldEslintrc = filenames.has("ESLINTRC") || filenames.has("ESLINTRC.JSON") || filenames.has("ESLINTRC.JS") || filenames.has("ESLINTRC.YML") || filenames.has("ESLINTRC.YAML");
+    const hasNewEslint = filenames.has("ESLINT.CONFIG.JS") || filenames.has("ESLINT.CONFIG.MJS");
 
-  if (hasOldEslintrc) {
-    issues.push("Recommendation: Replace eslintrc by new flat config.");
-  } else if (!hasNewEslint) {
-    issues.push(
-      "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md))."
-    );
-  } else {
-    // Check if ESLint is in package.json dependencies
-    const packageJsonFiles = relevantFiles.filter((f) => f.endsWith("package.json"));
-    for (const pkgFile of packageJsonFiles) {
-      const pkgContent = await readFile(pkgFile, "utf-8").catch(() => "{}");
-      try {
-        const pkg = JSON.parse(pkgContent);
-        if (
-          !pkg.dependencies?.eslint &&
-          !pkg.devDependencies?.eslint
-        ) {
-          issues.push(
-            "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them."
-          );
-        }
-
-        // Check lint script
-        if (pkg.scripts) {
-          if (!pkg.scripts.lint) {
-            issues.push("Recommendation: No lint script found in package.json. It is recommended to add one.");
-          } else if (!pkg.scripts.lint.includes("eslint")) {
+    if (hasOldEslintrc) {
+      issues.push("Recommendation: Replace eslintrc by new flat config.");
+    } else if (!hasNewEslint) {
+      issues.push(
+        "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md))."
+      );
+    } else {
+      // Check if ESLint is in package.json dependencies
+      const packageJsonFiles = relevantFiles.filter((f) => f.endsWith("package.json"));
+      for (const pkgFile of packageJsonFiles) {
+        const pkgContent = await readFile(pkgFile, "utf-8").catch(() => "{}");
+        try {
+          const pkg = JSON.parse(pkgContent);
+          if (
+            !pkg.dependencies?.eslint &&
+            !pkg.devDependencies?.eslint
+          ) {
             issues.push(
-              "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it."
+              "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them."
             );
           }
-        }
-      } catch {
-        // Silently ignore JSON parse errors
-      }
-    }
 
-    // Check for defineConfig in eslint.config.js
-    const eslintConfigFiles = relevantFiles.filter(
-      (f) => f.endsWith("eslint.config.js") || f.endsWith("eslint.config.mjs")
-    );
-    for (const configFile of eslintConfigFiles) {
-      const configContent = await readFile(configFile, "utf-8").catch(() => "");
-      if (!configContent.includes("defineConfig")) {
-        issues.push(
-          `Recommendation: The ESLint configuration file \`${configFile.split("/").pop()}\` does not contain \`defineConfig\`. It is recommended to use it.`
-        );
+          // Check lint script
+          if (pkg.scripts) {
+            if (!pkg.scripts.lint) {
+              issues.push("Recommendation: No lint script found in package.json. It is recommended to add one.");
+            } else if (!pkg.scripts.lint.includes("eslint")) {
+              issues.push(
+                "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it."
+              );
+            }
+          }
+        } catch {
+          // Silently ignore JSON parse errors
+        }
+      }
+
+      // Check for defineConfig in eslint.config.js
+      const eslintConfigFiles = relevantFiles.filter(
+        (f) => f.endsWith("eslint.config.js") || f.endsWith("eslint.config.mjs")
+      );
+      for (const configFile of eslintConfigFiles) {
+        const configContent = await readFile(configFile, "utf-8").catch(() => "");
+        if (!configContent.includes("defineConfig")) {
+          issues.push(
+            `Recommendation: The ESLint configuration file \`${configFile.split("/").pop()}\` does not contain \`defineConfig\`. It is recommended to use it.`
+          );
+        }
       }
     }
   }
