@@ -523,18 +523,19 @@ export async function analyzeModule(
     );
   }
 
-  // ESLint checks
+  // Linting setup checks (ESLint or Biome)
   if (!moduleExceptions.skipEslintChecks) {
     const hasOldEslintrc = filenames.has("ESLINTRC") || filenames.has("ESLINTRC.JSON") || filenames.has("ESLINTRC.JS") || filenames.has("ESLINTRC.YML") || filenames.has("ESLINTRC.YAML");
     const hasNewEslint = filenames.has("ESLINT.CONFIG.JS") || filenames.has("ESLINT.CONFIG.MJS");
+    const hasBiome = filenames.has("BIOME.JSON") || filenames.has("BIOME.JSONC");
 
     if (hasOldEslintrc) {
       issues.push("Recommendation: Replace eslintrc by new flat config.");
-    } else if (!hasNewEslint) {
+    } else if (!hasNewEslint && !hasBiome) {
       issues.push(
-        "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md))."
+        "Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md))."
       );
-    } else {
+    } else if (hasNewEslint) {
       // Check if ESLint is in package.json dependencies
       const packageJsonFiles = relevantFiles.filter((f) => f.endsWith("package.json"));
       for (const pkgFile of packageJsonFiles) {

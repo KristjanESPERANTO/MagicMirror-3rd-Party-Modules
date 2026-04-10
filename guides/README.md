@@ -8,9 +8,9 @@ Sometimes it's not so easy to find the entry point, so we provide a few hints to
 
 Please help use to improve this guide. If you have any suggestions, please create an issue or a pull request.
 
-## Hint "No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects."
+## Hint "No linter configuration was found. A linter is very helpful, it is worth using one even for small projects."
 
-To get started with ESLint, check out [ESLint](eslint.md).
+To get started with a linter, check out [ESLint](eslint.md) or [Biome](biome.md).
 
 ## Hint "Recommendation: The README seems not to have a config example. Please add one."
 

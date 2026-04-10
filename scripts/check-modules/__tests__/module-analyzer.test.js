@@ -140,5 +140,42 @@ test("analyzer applies classic-module exceptions for mmpm", async () => {
   assert.equal(result.issues.some(issue => issue.includes("README seems not to have an update section")), false);
   assert.equal(result.issues.some(issue => issue.includes("There is no CODE_OF_CONDUCT file")), true);
   assert.equal(result.issues.some(issue => issue.includes("There is no dependabot configuration file")), false);
-  assert.equal(result.issues.some(issue => issue.includes("No ESLint configuration was found")), false);
+  assert.equal(result.issues.some(issue => issue.includes("No linter configuration was found")), false);
+});
+
+test("analyzer accepts biome config as linting setup", async () => {
+  const moduleRoot = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-biome-test-"));
+
+  await fsPromises.writeFile(join(moduleRoot, "README.md"), "# MMM-Biome-Test\n");
+  await fsPromises.writeFile(join(moduleRoot, "CHANGELOG.md"), "changelog\n");
+  await fsPromises.writeFile(join(moduleRoot, "CODE_OF_CONDUCT.md"), "code of conduct\n");
+  await fsPromises.writeFile(join(moduleRoot, "LICENSE.md"), "MIT\n");
+  await fsPromises.writeFile(join(moduleRoot, "biome.jsonc"), "{\n  \"linter\": { \"enabled\": true }\n}\n");
+  await fsPromises.writeFile(
+    join(moduleRoot, "package.json"),
+    JSON.stringify({
+      name: "mmm-biome-test",
+      version: "1.0.0"
+    })
+  );
+
+  const files = [
+    join(moduleRoot, "README.md"),
+    join(moduleRoot, "CHANGELOG.md"),
+    join(moduleRoot, "CODE_OF_CONDUCT.md"),
+    join(moduleRoot, "LICENSE.md"),
+    join(moduleRoot, "biome.jsonc"),
+    join(moduleRoot, "package.json")
+  ];
+
+  const result = await analyzeModule(
+    moduleRoot,
+    "MMM-Biome-Test",
+    "https://github.com/example/MMM-Biome-Test",
+    files
+  );
+
+  assert.equal(result.issues.some(issue => issue.includes("No linter configuration was found")), false);
+  assert.equal(result.issues.some(issue => issue.includes("ESLint is not in the dependencies or devDependencies")), false);
+  assert.equal(result.issues.some(issue => issue.includes("lint script in package.json does not contain `eslint`")), false);
 });
