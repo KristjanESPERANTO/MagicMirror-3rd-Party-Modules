@@ -46,4 +46,18 @@ describe("collect-metadata/parser", () => {
     assert.strictEqual(modules.length, 0);
     assert.strictEqual(issues.length, 0); // Google.com doesn't match repo patterns, so line is ignored
   });
+
+  it("should parse markdown links without regex backtracking", () => {
+    const markdown = `
+### Utilities
+| [MMM-Title](https://github.com/example/MMM-Title "Repo Title") | [Example User](https://github.com/example) | Description |
+`;
+    const { modules, issues } = parseModuleList(markdown);
+
+    assert.strictEqual(issues.length, 0);
+    assert.strictEqual(modules.length, 1);
+    assert.strictEqual(modules[0].name, "MMM-Title");
+    assert.strictEqual(modules[0].url, "https://github.com/example/MMM-Title");
+    assert.strictEqual(modules[0].maintainer, "Example User");
+  });
 });

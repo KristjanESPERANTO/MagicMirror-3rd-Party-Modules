@@ -55,6 +55,25 @@ function stripUrlTitle(url: string): string {
   return url.substring(0, urlTitleStart);
 }
 
+function parseMarkdownLink(cell: string): { text: string; url: string } | null {
+  const textStart = cell.indexOf("[");
+  const textEnd = cell.indexOf("]", textStart + 1);
+  const urlStart = cell.indexOf("(", textEnd + 1);
+  const urlEnd = cell.indexOf(")", urlStart + 1);
+
+  if (textStart === -1 || textEnd === -1 || urlStart === -1 || urlEnd === -1) {
+    return null;
+  }
+
+  const text = cell.slice(textStart + 1, textEnd).trim();
+  const url = stripUrlTitle(cell.slice(urlStart + 1, urlEnd).trim());
+  if (!text || !url) {
+    return null;
+  }
+
+  return { text, url };
+}
+
 function parseModuleRow(line: string, category: string, issues: string[]): ParsedModuleEntry | null {
   if (!isRepositoryRow(line)) {
     return null;
@@ -66,21 +85,21 @@ function parseModuleRow(line: string, category: string, issues: string[]): Parse
   }
 
   const repoCell = parts[1];
-  const repoMatch = repoCell.match(/\[(.*?)\]\((.*?)\)/u);
-  if (!repoMatch) {
+  const repoLink = parseMarkdownLink(repoCell);
+  if (!repoLink) {
     return null;
   }
 
-  const name = repoMatch[1].trim();
-  const url = stripUrlTitle(repoMatch[2].trim());
+  const name = repoLink.text;
+  const url = repoLink.url;
   const maintainerCell = parts[2] || "";
   const description = parts[3] || "";
   const outdatedInfo = parts[4] ? parts[4].trim() : "";
 
   let maintainer = maintainerCell;
-  const maintainerMatch = maintainerCell.match(/\[(.*?)\]\((.*?)\)/u);
-  if (maintainerMatch) {
-    maintainer = maintainerMatch[1].trim();
+  const maintainerLink = parseMarkdownLink(maintainerCell);
+  if (maintainerLink) {
+    maintainer = maintainerLink.text;
   }
 
   const repoType = getRepositoryType(url);

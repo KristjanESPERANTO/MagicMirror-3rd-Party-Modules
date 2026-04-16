@@ -8,6 +8,7 @@
 import { buildAuthHeadersFromEnv, createHttpClient } from "../shared/http-client.ts";
 import { createLogger } from "../shared/logger.ts";
 import { createRateLimiter } from "../shared/rate-limiter.ts";
+import { getRepositoryType } from "../updateRepositoryApiData/helpers.ts";
 
 interface RepoCoordinates {
   owner: string;
@@ -263,24 +264,17 @@ export async function getRemoteCommitSha(url: string, branch = "master"): Promis
     return null;
   }
 
-  // Try each platform
-  if (url.includes("github.com")) {
-    return await getGitHubCommitSha(url, branch);
+  switch (getRepositoryType(url)) {
+    case "github":
+      return await getGitHubCommitSha(url, branch);
+    case "gitlab":
+      return await getGitLabCommitSha(url, branch);
+    case "bitbucket":
+      return await getBitbucketCommitSha(url, branch);
+    case "codeberg":
+      return await getCodebergCommitSha(url, branch);
+    default:
+      logger.debug(`Unsupported platform for URL: ${url}`);
+      return null;
   }
-
-  if (url.includes("gitlab.com")) {
-    return await getGitLabCommitSha(url, branch);
-  }
-
-  if (url.includes("bitbucket.org")) {
-    return await getBitbucketCommitSha(url, branch);
-  }
-
-  if (url.includes("codeberg.org")) {
-    return await getCodebergCommitSha(url, branch);
-  }
-
-  // Unsupported platform - caller must clone
-  logger.debug(`Unsupported platform for URL: ${url}`);
-  return null;
 }

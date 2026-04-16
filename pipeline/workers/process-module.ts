@@ -1,5 +1,6 @@
 import { ensureDirectory, fileExists } from "../../scripts/shared/fs-utils.ts";
 import { ensureRepository, getCommitDate } from "../../scripts/shared/git.ts";
+import { isRepositoryType } from "../../scripts/updateRepositoryApiData/helpers.ts";
 import { rename, rm } from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysis-cache.ts";
@@ -912,7 +913,7 @@ async function enrichModule(module: ModuleInput, config: ProcessModuleConfig): P
   }
 
   // Check GitHub issues
-  if (module.url.includes("github.com") && module.hasGithubIssues === false) {
+  if (isRepositoryType(module.url, "github") && module.hasGithubIssues === false) {
     enrichIssues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
   }
 
