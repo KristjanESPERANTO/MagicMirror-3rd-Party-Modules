@@ -30,7 +30,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "ntl --size 50",
+    "start": "node scripts/menu.ts",
     "all": "node scripts/orchestrator/index.ts run full-refresh-parallel",
     "collectMetadata": "node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata",
     "pipeline": "node scripts/orchestrator/index.ts",
@@ -51,8 +51,7 @@
     "test": "node --run test:fixtures && node --run lint && node --run golden:check && node --run schemas:check && node --run test:unit && node --run test:types && node --run test:spelling",
     "test:unit": "node --test scripts/**/__tests__/**/*.test.js",
     "test:spelling": "cspell .",
-    "test:types": "tsc --noEmit",
-    "leaveMenu": "echo 'Leaving menu...'"
+    "test:types": "tsc --noEmit"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -71,7 +70,6 @@
     "normalize-package-data": "^8.0.0",
     "npm-check-updates": "^21.0.1",
     "npm-deprecated-check": "^1.8.0",
-    "ntl": "^5.1.0",
     "sanitize-html": "^2.17.3",
     "sharp": "^0.34.5"
   },
@@ -95,17 +93,29 @@
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.2"
   },
-  "ntl": {
+  "menu": {
     "descriptions": {
-      "all": "Run the canonical full refresh pipeline (`full-refresh-parallel`) on all modules. Requires a lot of time and storage space!",
-      "collectMetadata": "Run only the collect-metadata stage from the canonical full refresh pipeline.",
-      "pipeline:benchmark": "Summarize recent persisted run durations for the canonical pipeline.",
-      "pipeline:dashboard": "Render a compact performance and reliability dashboard for the canonical pipeline.",
-      "pipeline:progress": "Summarize run outcomes and stage reliability trend for the canonical pipeline.",
-      "lint": "Check this repository for linter and formatting problems.",
-      "lint:fix": "Fix automatically fixable linter or formatting problems of this repository.",
-      "prepare": "simple-git-hooks",
-      "leaveMenu": "Leave this menu."
+      "all": "Run the full-refresh pipeline on all modules.",
+      "collectMetadata": "Run only the collect-metadata stage.",
+      "fixtures:generate": "Generate synthetic fixture artifacts.",
+      "fixtures:update-baseline-shas": "Refresh baseline fixture commit SHAs.",
+      "golden:check": "Validate outputs against the golden baseline.",
+      "golden:update": "Update golden artifacts from current outputs.",
+      "lint": "Check linting and formatting.",
+      "lint:fix": "Auto-fix linting and formatting issues.",
+      "pipeline": "Open the pipeline CLI.",
+      "pipeline:benchmark": "Summarize recent pipeline run durations.",
+      "pipeline:dashboard": "Show a compact pipeline dashboard.",
+      "pipeline:progress": "Summarize run outcomes and stage reliability.",
+      "prepare": "Install simple-git-hooks.",
+      "release:validate": "Validate release artifacts.",
+      "schemas:build": "Build JSON schemas.",
+      "schemas:check": "Check that committed schemas are up to date.",
+      "test": "Run the full test suite.",
+      "test:fixtures": "Validate fixture consistency and schemas.",
+      "test:spelling": "Run cspell across the repository.",
+      "test:types": "Run TypeScript type checks.",
+      "test:unit": "Run unit tests for scripts and helpers."
     }
   }
 }
