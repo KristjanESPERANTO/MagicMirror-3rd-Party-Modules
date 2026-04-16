@@ -2,7 +2,7 @@
 
 _Last updated: March 19, 2026_
 
-This page consolidates the material that previously lived in early planning documents. It should stay up to date as we evolve Stage 5 (`scripts/check-modules/index.ts`) and the curated fixture set.
+This page consolidates the material that previously lived in early planning documents. It should stay up to date as we evolve the check-modules pipeline and the curated fixture set.
 
 ## Status snapshot
 
