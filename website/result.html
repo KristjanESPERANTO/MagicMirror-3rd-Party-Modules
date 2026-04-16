@@ -39,7 +39,7 @@
             .replaceAll("/", "");
           const anchor = document.createElement("a");
           anchor.id = anchorId;
-          anchor.href = "#" + anchorId;
+          anchor.href = `#${anchorId}`;
           anchor.classList.add("heading-anchor");
           anchor.textContent = "#";
           heading.appendChild(anchor);
@@ -48,7 +48,10 @@
         const hash = window.location.hash;
         if (hash) {
           const decodedHash = decodeURIComponent(hash);
-          const target = document.querySelector(decodedHash);
+          const targetId = decodedHash.startsWith("#")
+            ? decodedHash.slice(1)
+            : decodedHash;
+          const target = document.getElementById(targetId);
           if (target) {
             target.scrollIntoView();
           }
