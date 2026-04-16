@@ -162,7 +162,9 @@ npm run test:spelling
 
 ### Golden artifacts (regression testing)
 
-Golden artifacts are reference outputs stored in `fixtures/golden/` that serve as snapshots for regression testing. They ensure pipeline changes don't accidentally alter outputs.
+Golden artifacts are reference outputs stored in `fixtures/golden/` that serve as snapshots for regression testing. They are a narrow contract guard for published artifacts, not a proof that the full pipeline is semantically correct.
+
+The check intentionally compares sanitized, deterministic output only. Volatile live fields such as timestamps, stars, issue counters, and other environment-dependent values are normalized or excluded so the snapshot highlights contract drift instead of operational noise.
 
 **Workflow when modifying pipeline code:**
 
@@ -192,9 +194,15 @@ Golden artifacts are reference outputs stored in `fixtures/golden/` that serve a
 
 **What they test:**
 
-- Pipeline produces consistent outputs for the same inputs
-- No accidental regressions in data structure or content
+- Published artifact shape stays stable after deterministic sanitization
+- No accidental regressions in committed contract-level output
 - Contract changes are explicit and reviewable in PRs
+
+**What they do not test:**
+
+- End-to-end semantic correctness of the full pipeline
+- Live repository state, current stars, or other volatile upstream data
+- Non-deterministic outputs such as `skipped_modules.json`
 
 ## Helpful references
 
