@@ -2,7 +2,7 @@
   "modules": [
     {
       "category": "Development / Core MagicMirror²",
-      "defaultSortWeight": -5,
+      "defaultSortWeight": -6,
       "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
       "hasGithubIssues": true,
       "id": "Bee-Mar/mmpm",
@@ -14,7 +14,7 @@
       "maintainer": "Bee-Mar",
       "maintainerURL": "https://github.com/Bee-Mar",
       "name": "mmpm",
-      "stars": 239,
+      "stars": 241,
       "tags": [
         "package manager",
         "module installer"
@@ -63,6 +63,27 @@
     },
     {
       "category": "Development / Core MagicMirror²",
+      "defaultSortWeight": 9,
+      "description": "Transforms your mirror into a digital art gallery.",
+      "hasGithubIssues": true,
+      "id": "christian-klein/MMM-Art",
+      "image": "MMM-Art---christian-klein.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2026-04-01T02:54:20Z",
+      "license": "MIT",
+      "maintainer": "christian-klein",
+      "maintainerURL": "https://github.com/christian-klein",
+      "name": "MMM-Art",
+      "stars": 1,
+      "tags": [
+        "art",
+        "wikidata"
+      ],
+      "url": "https://github.com/christian-klein/MMM-Art"
+    },
+    {
+      "category": "Development / Core MagicMirror²",
       "defaultSortWeight": 6,
       "description": "Set 1 or more schedules to dim and brighten your screen at specific times.",
       "hasGithubIssues": true,
@@ -74,7 +95,7 @@
       "maintainer": "Fifteen15Studios",
       "maintainerURL": "https://github.com/Fifteen15Studios",
       "name": "MMM-AutoDimmer",
-      "stars": 30,
+      "stars": 29,
       "url": "https://github.com/Fifteen15Studios/MMM-AutoDimmer"
     },
     {
@@ -172,7 +193,7 @@
       "maintainer": "shbatm & KristjanESPERANTO",
       "maintainerURL": "https://github.com/shbatm",
       "name": "MMM-Carousel",
-      "stars": 54,
+      "stars": 56,
       "tags": [
         "carousel",
         "navigation",
@@ -440,7 +461,7 @@
       "maintainer": "MMRIZE",
       "maintainerURL": "https://github.com/MMRIZE",
       "name": "MMM-GroveGestures",
-      "stars": 44,
+      "stars": 47,
       "tags": [
         "grove gesture",
         "gesture",
@@ -493,7 +514,7 @@
       "maintainer": "Aws505",
       "maintainerURL": "https://github.com/Aws505",
       "name": "MMM-LaunchBrowser",
-      "stars": 2,
+      "stars": 3,
       "tags": [
         "browser",
         "launcher",
@@ -2069,6 +2090,21 @@
     },
     {
       "category": "News / Information",
+      "defaultSortWeight": 13,
+      "description": "Fetches RSS feeds and displays AI-generated summaries using the GitHub Copilot API.",
+      "hasGithubIssues": null,
+      "id": "supermem613/MMM-AINews",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "supermem613",
+      "maintainerURL": "https://github.com/supermem613",
+      "name": "MMM-AINews",
+      "url": "https://github.com/supermem613/MMM-AINews"
+    },
+    {
+      "category": "News / Information",
       "defaultSortWeight": 14,
       "description": "Shows the current status of air raid sirens in Ukraine.",
       "hasGithubIssues": true,
@@ -2084,7 +2120,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 1,
       "description": "Modified version of the default newsfeed module.",
       "hasGithubIssues": true,
       "id": "MMRIZE/MMM-anotherNewsFeed",
@@ -2103,6 +2139,28 @@
         "media"
       ],
       "url": "https://github.com/MMRIZE/MMM-anotherNewsFeed"
+    },
+    {
+      "category": "News / Information",
+      "defaultSortWeight": 8,
+      "description": "Local monitoring of your APsystems EZ1 microinverter.",
+      "hasGithubIssues": null,
+      "id": "yourdawi/MMM-APSystemsEZ1",
+      "image": "MMM-APSystemsEZ1---Dawi.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "Dawi",
+      "maintainerURL": "https://github.com/yourdawi",
+      "name": "MMM-APSystemsEZ1",
+      "tags": [
+        "apsystems",
+        "ez1",
+        "solar",
+        "photovoltaic"
+      ],
+      "url": "https://github.com/yourdawi/MMM-APSystemsEZ1"
     },
     {
       "category": "News / Information",
@@ -2386,6 +2444,21 @@
         "calendar"
       ],
       "url": "https://github.com/randomBrainstormer/MMM-GoogleCalendar"
+    },
+    {
+      "category": "News / Information",
+      "defaultSortWeight": 13,
+      "description": "Fetches a public Google Sheet and displays a filtered table of matching entries",
+      "hasGithubIssues": null,
+      "id": "supermem613/MMM-GoogleSheetToTable",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "supermem613",
+      "maintainerURL": "https://github.com/supermem613",
+      "name": "MMM-GoogleSheetToTable",
+      "url": "https://github.com/supermem613/MMM-GoogleSheetToTable"
     },
     {
       "category": "News / Information",
@@ -2765,7 +2838,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 3,
       "description": "Displays Israeli missile alerts (Tzeva Adom / צבע אדום) as a full-screen overlay using the official Pikud HaOref API. Filters by location and alert category. Auto-dismisses after 90 seconds.",
       "hasGithubIssues": null,
       "id": "Moran-k/MMM-RedAlert",
@@ -3272,25 +3345,18 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 1,
       "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
       "hasGithubIssues": null,
       "id": "JHWelch/MMM-CTA",
-      "image": "MMM-CTA---JHWelch.webp",
       "isArchived": null,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "JHWelch",
       "maintainerURL": "https://github.com/JHWelch",
       "name": "MMM-CTA",
       "stars": 0,
-      "tags": [
-        "cta",
-        "train",
-        "bus",
-        "tracker"
-      ],
       "url": "https://github.com/JHWelch/MMM-CTA"
     },
     {
@@ -3453,25 +3519,18 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 1,
       "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
       "hasGithubIssues": true,
       "id": "galaktor/MMM-DublinRTPI",
-      "image": "MMM-DublinRTPI---galaktor.webp",
       "isArchived": false,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2018-01-09T18:55:50Z",
       "license": "GPL-3.0",
       "maintainer": "galaktor",
       "maintainerURL": "https://github.com/galaktor",
       "name": "MMM-DublinRTPI",
       "stars": 1,
-      "tags": [
-        "public transport",
-        "dublin bus",
-        "dublin luas",
-        "irish rail"
-      ],
       "url": "https://github.com/galaktor/MMM-DublinRTPI"
     },
     {
@@ -5042,7 +5101,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 0,
       "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
       "hasGithubIssues": true,
       "id": "deg0nz/MMM-PublicTransportBerlin",
@@ -5947,20 +6006,19 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "description": "Displays LIVE UK information about a specific bus stop and the routes that serve it.",
-      "hasGithubIssues": false,
-      "id": "AndyHazz/MMM-UKLiveBusStopInfo",
-      "image": "MMM-UKLiveBusStopInfo---AndyHazz.webp",
-      "isArchived": false,
+      "hasGithubIssues": null,
+      "id": "nwootton/MMM-UKLiveBusStopInfo",
+      "image": "MMM-UKLiveBusStopInfo---nwootton.webp",
+      "isArchived": null,
       "issues": true,
-      "lastCommit": "2024-10-20T08:20:40Z",
+      "lastCommit": "2026-04-16T06:52:27.519Z",
       "license": "MIT",
-      "maintainer": "AndyHazz",
-      "maintainerURL": "https://github.com/AndyHazz",
+      "maintainer": "nwootton",
+      "maintainerURL": "https://github.com/nwootton",
       "name": "MMM-UKLiveBusStopInfo",
-      "stars": 0,
-      "url": "https://github.com/AndyHazz/MMM-UKLiveBusStopInfo"
+      "url": "https://github.com/nwootton/MMM-UKLiveBusStopInfo"
     },
     {
       "category": "Transport / Travel",
@@ -6023,25 +6081,18 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 1,
       "description": "Module to display public transport from Nürnberg in Germany.",
       "hasGithubIssues": null,
       "id": "wiesty/MMM-VAG",
-      "image": "MMM-VAG---Wiesty.webp",
       "isArchived": null,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "Wiesty",
       "maintainerURL": "https://github.com/wiesty",
       "name": "MMM-VAG",
       "stars": 0,
-      "tags": [
-        "public transport",
-        "vag",
-        "nürnberg",
-        "nuremberg"
-      ],
       "url": "https://github.com/wiesty/MMM-VAG"
     },
     {
@@ -6254,7 +6305,7 @@
     },
     {
       "category": "Voice Control",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 3,
       "description": "Modular, offline-first voice assistant for MagicMirror² processes the user input using AI running locally or cloud.",
       "hasGithubIssues": true,
       "id": "rahil234/MMM-Assistant",
@@ -6599,6 +6650,26 @@
     {
       "category": "Weather",
       "defaultSortWeight": 12,
+      "description": "Air pollution in Polish cities. Data from [airly](https://airly.eu).",
+      "hasGithubIssues": true,
+      "id": "mstarzec386/MMM-Airly",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2025-02-10T08:37:34Z",
+      "license": "MIT",
+      "maintainer": "mstarzec386",
+      "maintainerURL": "https://github.com/mstarzec386",
+      "name": "MMM-Airly",
+      "stars": 1,
+      "tags": [
+        "air polution",
+        "airly"
+      ],
+      "url": "https://github.com/mstarzec386/MMM-Airly"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 12,
       "description": "Simple display of air quality based on the US AirNow API.",
       "hasGithubIssues": true,
       "id": "nigel-daniels/MMM-AirNow",
@@ -6662,23 +6733,17 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 12,
-      "description": "Air pollution in Polish cities. Data from [airly](https://airly.eu).",
-      "hasGithubIssues": true,
-      "id": "mstarzec386/MMM-Airly",
-      "isArchived": false,
+      "defaultSortWeight": 10,
+      "description": "Weather aware background image generator using a free AI service, which is highly configureable",
+      "hasGithubIssues": null,
+      "id": "AJOCHAM/MMM-AIWallpaper",
+      "isArchived": null,
       "issues": true,
-      "lastCommit": "2025-02-10T08:37:34Z",
-      "license": "MIT",
-      "maintainer": "mstarzec386",
-      "maintainerURL": "https://github.com/mstarzec386",
-      "name": "MMM-Airly",
-      "stars": 1,
-      "tags": [
-        "air polution",
-        "airly"
-      ],
-      "url": "https://github.com/mstarzec386/MMM-Airly"
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "maintainer": "ajocham",
+      "maintainerURL": "https://github.com/AJOCHAM",
+      "name": "MMM-AIWallpaper",
+      "url": "https://github.com/AJOCHAM/MMM-AIWallpaper"
     },
     {
       "category": "Weather",
@@ -6907,23 +6972,6 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 7,
-      "description": "Reads the temperature and humidity from a DHT22 sensor and displays one or both with custom coloring based on a temperature/humidity range you specify.",
-      "hasGithubIssues": true,
-      "id": "ckoutavas/MMM-DHT",
-      "image": "MMM-DHT---ckoutavas.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2023-08-15T13:39:31Z",
-      "license": "MIT",
-      "maintainer": "ckoutavas",
-      "maintainerURL": "https://github.com/ckoutavas",
-      "name": "MMM-DHT",
-      "stars": 1,
-      "url": "https://github.com/ckoutavas/MMM-DHT"
-    },
-    {
-      "category": "Weather",
       "defaultSortWeight": 11,
       "description": "Display the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
       "hasGithubIssues": false,
@@ -6950,37 +6998,24 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 12,
-      "description": "Displays weather warnings for Germany.",
+      "defaultSortWeight": 8,
+      "description": "Displays temperature/humidity readings from DHT22 sensor.",
       "hasGithubIssues": true,
-      "id": "LukeSkywalker92/MMM-DWD-WarnWeather",
-      "image": "MMM-DWD-WarnWeather---LukeSkywalker92.webp",
+      "id": "J0n4e/MMM-DHT22",
+      "image": "MMM-DHT22---J0n4e.webp",
       "isArchived": false,
       "issues": true,
-      "lastCommit": "2026-01-02T08:05:54Z",
+      "lastCommit": "2025-07-06T14:57:53Z",
       "license": "MIT",
-      "maintainer": "LukeSkywalker92",
-      "maintainerURL": "https://github.com/LukeSkywalker92",
-      "name": "MMM-DWD-WarnWeather",
-      "stars": 64,
-      "url": "https://github.com/LukeSkywalker92/MMM-DWD-WarnWeather"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 15,
-      "description": "Displays Pollen data from DWD for Germany.",
-      "hasGithubIssues": true,
-      "id": "carstendirks/MMM-DWD-Pollen",
-      "image": "MMM-DWD-Pollen---carstendirks.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2025-10-23T14:46:27Z",
-      "license": "MIT",
-      "maintainer": "carstendirks",
-      "maintainerURL": "https://github.com/carstendirks",
-      "name": "MMM-DWD-Pollen",
-      "stars": 12,
-      "url": "https://github.com/carstendirks/MMM-DWD-Pollen"
+      "maintainer": "J0n4e",
+      "maintainerURL": "https://github.com/J0n4e",
+      "name": "MMM-DHT22",
+      "stars": 5,
+      "tags": [
+        "dht22",
+        "sensor"
+      ],
+      "url": "https://github.com/J0n4e/MMM-DHT22"
     },
     {
       "category": "Weather",
@@ -7005,24 +7040,54 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 8,
-      "description": "Displays temperature/humidity readings from DHT22 sensor.",
+      "defaultSortWeight": 7,
+      "description": "Reads the temperature and humidity from a DHT22 sensor and displays one or both with custom coloring based on a temperature/humidity range you specify.",
       "hasGithubIssues": true,
-      "id": "J0n4e/MMM-DHT22",
-      "image": "MMM-DHT22---J0n4e.webp",
+      "id": "ckoutavas/MMM-DHT",
+      "image": "MMM-DHT---ckoutavas.webp",
       "isArchived": false,
       "issues": true,
-      "lastCommit": "2025-07-06T14:57:53Z",
+      "lastCommit": "2023-08-15T13:39:31Z",
       "license": "MIT",
-      "maintainer": "J0n4e",
-      "maintainerURL": "https://github.com/J0n4e",
-      "name": "MMM-DHT22",
-      "stars": 5,
-      "tags": [
-        "dht22",
-        "sensor"
-      ],
-      "url": "https://github.com/J0n4e/MMM-DHT22"
+      "maintainer": "ckoutavas",
+      "maintainerURL": "https://github.com/ckoutavas",
+      "name": "MMM-DHT",
+      "stars": 1,
+      "url": "https://github.com/ckoutavas/MMM-DHT"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 15,
+      "description": "Displays Pollen data from DWD for Germany.",
+      "hasGithubIssues": true,
+      "id": "carstendirks/MMM-DWD-Pollen",
+      "image": "MMM-DWD-Pollen---carstendirks.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2025-10-23T14:46:27Z",
+      "license": "MIT",
+      "maintainer": "carstendirks",
+      "maintainerURL": "https://github.com/carstendirks",
+      "name": "MMM-DWD-Pollen",
+      "stars": 12,
+      "url": "https://github.com/carstendirks/MMM-DWD-Pollen"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 12,
+      "description": "Displays weather warnings for Germany.",
+      "hasGithubIssues": true,
+      "id": "LukeSkywalker92/MMM-DWD-WarnWeather",
+      "image": "MMM-DWD-WarnWeather---LukeSkywalker92.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2026-01-02T08:05:54Z",
+      "license": "MIT",
+      "maintainer": "LukeSkywalker92",
+      "maintainerURL": "https://github.com/LukeSkywalker92",
+      "name": "MMM-DWD-WarnWeather",
+      "stars": 64,
+      "url": "https://github.com/LukeSkywalker92/MMM-DWD-WarnWeather"
     },
     {
       "category": "Weather",
@@ -7149,21 +7214,6 @@
     {
       "category": "Weather",
       "defaultSortWeight": 12,
-      "description": "Displays tide graph for Norway.",
-      "hasGithubIssues": true,
-      "id": "kagjerde/MMM-FloGraph",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2019-04-11T22:00:01Z",
-      "maintainer": "KAG",
-      "maintainerURL": "https://github.com/kagjerde",
-      "name": "MMM-FloGraph",
-      "stars": 0,
-      "url": "https://github.com/kagjerde/MMM-FloGraph"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 12,
       "description": "Displays tide table for Norway.",
       "hasGithubIssues": true,
       "id": "kagjerde/MMM-Flo",
@@ -7175,6 +7225,21 @@
       "name": "MMM-Flo",
       "stars": 0,
       "url": "https://github.com/kagjerde/MMM-Flo"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 12,
+      "description": "Displays tide graph for Norway.",
+      "hasGithubIssues": true,
+      "id": "kagjerde/MMM-FloGraph",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2019-04-11T22:00:01Z",
+      "maintainer": "KAG",
+      "maintainerURL": "https://github.com/kagjerde",
+      "name": "MMM-FloGraph",
+      "stars": 0,
+      "url": "https://github.com/kagjerde/MMM-FloGraph"
     },
     {
       "category": "Weather",
@@ -7246,23 +7311,19 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 14,
-      "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default [Current Weather module](https://github.com/MagicMirrorOrg/MagicMirror/tree/develop/modules/default/currentweather).",
-      "hasGithubIssues": false,
-      "id": "sebastianhodapp/MMM-IndoorTemp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2017-12-03T20:36:55Z",
+      "defaultSortWeight": 1,
+      "description": "Visualize data as heatmaps, charts, and more. A lightweight wrapper over Heat.js with live file updates.",
+      "hasGithubIssues": null,
+      "id": "nonguyen1/MMM-HeatMaps",
+      "isArchived": null,
+      "issues": false,
+      "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
-      "maintainer": "sebastianhodapp",
-      "maintainerURL": "https://github.com/sebastianhodapp",
-      "name": "MMM-IndoorTemp",
-      "stars": 4,
-      "tags": [
-        "mqtt",
-        "indoor_temperature"
-      ],
-      "url": "https://github.com/sebastianhodapp/MMM-IndoorTemp"
+      "maintainer": "nonguyen1",
+      "maintainerURL": "https://github.com/nonguyen1",
+      "name": "MMM-HeatMaps",
+      "stars": 0,
+      "url": "https://github.com/nonguyen1/MMM-HeatMaps"
     },
     {
       "category": "Weather",
@@ -7283,6 +7344,26 @@
     {
       "category": "Weather",
       "defaultSortWeight": 14,
+      "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default [Current Weather module](https://github.com/MagicMirrorOrg/MagicMirror/tree/develop/modules/default/currentweather).",
+      "hasGithubIssues": false,
+      "id": "sebastianhodapp/MMM-IndoorTemp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2017-12-03T20:36:55Z",
+      "license": "MIT",
+      "maintainer": "sebastianhodapp",
+      "maintainerURL": "https://github.com/sebastianhodapp",
+      "name": "MMM-IndoorTemp",
+      "stars": 4,
+      "tags": [
+        "mqtt",
+        "indoor_temperature"
+      ],
+      "url": "https://github.com/sebastianhodapp/MMM-IndoorTemp"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 14,
       "description": "Air quality widget based on [IQAir API](https://www.iqair.com).",
       "hasGithubIssues": true,
       "id": "PavlenkoM/MagicMirror-IQAir",
@@ -7297,24 +7378,18 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 1,
       "description": "Display French agricultural weather from lameteoagricole.net. No API key required — data is scraped directly. Shows current conditions, hourly and 10-day forecast, rain by the minute.",
       "hasGithubIssues": null,
       "id": "Kamasoutra/MMM-LaMeteoAgricole",
-      "image": "MMM-LaMeteoAgricole---Kamasoutra.webp",
       "isArchived": null,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "Kamasoutra",
       "maintainerURL": "https://github.com/Kamasoutra",
       "name": "MMM-LaMeteoAgricole",
       "stars": 0,
-      "tags": [
-        "weather",
-        "meteo",
-        "france"
-      ],
       "url": "https://github.com/Kamasoutra/MMM-LaMeteoAgricole"
     },
     {
@@ -7528,23 +7603,6 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 8,
-      "description": "Simple Weather module based on the free PiratesWeather API.",
-      "hasGithubIssues": true,
-      "id": "htilburgs/MMM-MyWeatherForecast",
-      "image": "MMM-MyWeatherForecast---HTilburgs.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2026-01-27T13:42:50Z",
-      "license": "MIT",
-      "maintainer": "HTilburgs",
-      "maintainerURL": "https://github.com/htilburgs",
-      "name": "MMM-MyWeatherForecast",
-      "stars": 0,
-      "url": "https://github.com/htilburgs/MMM-MyWeatherForecast"
-    },
-    {
-      "category": "Weather",
       "defaultSortWeight": 12,
       "description": "Weather module based on the Weatherbit API.",
       "hasGithubIssues": false,
@@ -7565,6 +7623,23 @@
         "module\""
       ],
       "url": "https://github.com/martinkooij/MMM-MyWeather"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 8,
+      "description": "Simple Weather module based on the free PiratesWeather API.",
+      "hasGithubIssues": true,
+      "id": "htilburgs/MMM-MyWeatherForecast",
+      "image": "MMM-MyWeatherForecast---HTilburgs.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2026-01-27T13:42:50Z",
+      "license": "MIT",
+      "maintainer": "HTilburgs",
+      "maintainerURL": "https://github.com/htilburgs",
+      "name": "MMM-MyWeatherForecast",
+      "stars": 0,
+      "url": "https://github.com/htilburgs/MMM-MyWeatherForecast"
     },
     {
       "category": "Weather",
@@ -7730,7 +7805,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 3,
       "description": "Comprehensive weather module with customizable forecast layouts and separate rain/snow display. Features temperature-based snow depth calculation using scientific ratios for accurate estimates. Includes time-windowed weather alerts with automatic deduplication. Choose from multiple icon sets including animated SVGs.",
       "hasGithubIssues": true,
       "id": "KristjanESPERANTO/MMM-OneCallWeather",
@@ -7849,18 +7924,20 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 15,
-      "description": "Display pollen.com information for your US zipcode.",
+      "defaultSortWeight": 11,
+      "description": "Display pollen.fr information for your FR region code.",
       "hasGithubIssues": true,
-      "id": "vincep5/MMM-Pollen",
+      "id": "lekesako/MMM-Pollen-FR",
+      "image": "MMM-Pollen-FR---lekesako.webp",
       "isArchived": false,
       "issues": true,
-      "lastCommit": "2022-01-06T02:44:18Z",
-      "maintainer": "vincep5",
-      "maintainerURL": "https://github.com/vincep5",
-      "name": "MMM-Pollen",
-      "stars": 11,
-      "url": "https://github.com/vincep5/MMM-Pollen"
+      "lastCommit": "2021-07-25T15:03:06Z",
+      "license": "MIT",
+      "maintainer": "lekesako",
+      "maintainerURL": "https://github.com/lekesako",
+      "name": "MMM-Pollen-FR",
+      "stars": 0,
+      "url": "https://github.com/lekesako/MMM-Pollen-FR"
     },
     {
       "category": "Weather",
@@ -7881,20 +7958,18 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 11,
-      "description": "Display pollen.fr information for your FR region code.",
+      "defaultSortWeight": 15,
+      "description": "Display pollen.com information for your US zipcode.",
       "hasGithubIssues": true,
-      "id": "lekesako/MMM-Pollen-FR",
-      "image": "MMM-Pollen-FR---lekesako.webp",
+      "id": "vincep5/MMM-Pollen",
       "isArchived": false,
       "issues": true,
-      "lastCommit": "2021-07-25T15:03:06Z",
-      "license": "MIT",
-      "maintainer": "lekesako",
-      "maintainerURL": "https://github.com/lekesako",
-      "name": "MMM-Pollen-FR",
-      "stars": 0,
-      "url": "https://github.com/lekesako/MMM-Pollen-FR"
+      "lastCommit": "2022-01-06T02:44:18Z",
+      "maintainer": "vincep5",
+      "maintainerURL": "https://github.com/vincep5",
+      "name": "MMM-Pollen",
+      "stars": 11,
+      "url": "https://github.com/vincep5/MMM-Pollen"
     },
     {
       "category": "Weather",
@@ -7929,60 +8004,6 @@
       "name": "MMM-PurpleAir",
       "stars": 2,
       "url": "https://github.com/ajones/MMM-PurpleAir"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 20,
-      "description": "Display RBB weather data.",
-      "hasGithubIssues": true,
-      "id": "nkl-kst/MMM-RBB-Weather",
-      "image": "MMM-RBB-Weather---nkl-kst.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2022-01-25T19:11:27Z",
-      "license": "MIT",
-      "maintainer": "nkl-kst",
-      "maintainerURL": "https://github.com/nkl-kst",
-      "name": "MMM-RBB-Weather",
-      "stars": 4,
-      "url": "https://github.com/nkl-kst/MMM-RBB-Weather"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 12,
-      "description": "2 hour Dutch rain forecast graph based on Buienradar.",
-      "hasGithubIssues": true,
-      "id": "73cirdan/MMM-rainfc",
-      "image": "MMM-rainfc---cirdan.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2024-01-13T13:01:57Z",
-      "license": "MIT",
-      "maintainer": "cirdan",
-      "maintainerURL": "https://github.com/73cirdan",
-      "name": "MMM-rainfc",
-      "stars": 8,
-      "tags": [
-        "rain",
-        "forecast"
-      ],
-      "url": "https://github.com/73cirdan/MMM-rainfc"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 18,
-      "description": "Show rain forecast weather maps based on OpenStreeMap. Highlight multiple points of interest with colored markers.",
-      "hasGithubIssues": true,
-      "id": "jupadin/MMM-RainForecast",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2025-06-20T13:36:12Z",
-      "license": "MIT",
-      "maintainer": "jupadin",
-      "maintainerURL": "https://github.com/jupadin",
-      "name": "MMM-RainForecast",
-      "stars": 2,
-      "url": "https://github.com/jupadin/MMM-RainForecast"
     },
     {
       "category": "Weather",
@@ -8029,6 +8050,27 @@
     {
       "category": "Weather",
       "defaultSortWeight": 12,
+      "description": "2 hour Dutch rain forecast graph based on Buienradar.",
+      "hasGithubIssues": true,
+      "id": "73cirdan/MMM-rainfc",
+      "image": "MMM-rainfc---cirdan.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2024-01-13T13:01:57Z",
+      "license": "MIT",
+      "maintainer": "cirdan",
+      "maintainerURL": "https://github.com/73cirdan",
+      "name": "MMM-rainfc",
+      "stars": 8,
+      "tags": [
+        "rain",
+        "forecast"
+      ],
+      "url": "https://github.com/73cirdan/MMM-rainfc"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 12,
       "description": "Graphical and textual rain forecast for France.",
       "hasGithubIssues": true,
       "id": "tttooommm56/MMM-RainForecast-FR",
@@ -8042,6 +8084,63 @@
       "name": "MMM-RainForecast-FR",
       "stars": 7,
       "url": "https://github.com/tttooommm56/MMM-RainForecast-FR"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 18,
+      "description": "Show rain forecast weather maps based on OpenStreeMap. Highlight multiple points of interest with colored markers.",
+      "hasGithubIssues": true,
+      "id": "jupadin/MMM-RainForecast",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2025-06-20T13:36:12Z",
+      "license": "MIT",
+      "maintainer": "jupadin",
+      "maintainerURL": "https://github.com/jupadin",
+      "name": "MMM-RainForecast",
+      "stars": 2,
+      "url": "https://github.com/jupadin/MMM-RainForecast"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 2,
+      "description": "Rain radar map for Germany, based on data from DWD, Openstreet Map and Bright Sky",
+      "hasGithubIssues": null,
+      "id": "realoliwer/MMM-RainRadarDWD",
+      "image": "MMM-RainRadarDWD---Oliwer.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "Oliwer",
+      "maintainerURL": "https://github.com/realoliwer",
+      "name": "MMM-RainRadarDWD",
+      "tags": [
+        "weather",
+        "rain",
+        "map",
+        "radar",
+        "clouds",
+        "dwd"
+      ],
+      "url": "https://github.com/realoliwer/MMM-RainRadarDWD"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 20,
+      "description": "Display RBB weather data.",
+      "hasGithubIssues": true,
+      "id": "nkl-kst/MMM-RBB-Weather",
+      "image": "MMM-RBB-Weather---nkl-kst.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2022-01-25T19:11:27Z",
+      "license": "MIT",
+      "maintainer": "nkl-kst",
+      "maintainerURL": "https://github.com/nkl-kst",
+      "name": "MMM-RBB-Weather",
+      "stars": 4,
+      "url": "https://github.com/nkl-kst/MMM-RBB-Weather"
     },
     {
       "category": "Weather",
@@ -8208,28 +8307,6 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 8,
-      "description": "Visualize data as heatmaps, charts, and more. A lightweight wrapper over Heat.js with live file updates.",
-      "hasGithubIssues": null,
-      "id": "nonguyen1/MMM-HeatMaps",
-      "image": "MMM-HeatMaps---nonguyen1.webp",
-      "isArchived": null,
-      "issues": true,
-      "lastCommit": "2026-03-22T11:47:02.429Z",
-      "license": "MIT",
-      "maintainer": "nonguyen1",
-      "maintainerURL": "https://github.com/nonguyen1",
-      "name": "MMM-HeatMaps",
-      "stars": 0,
-      "tags": [
-        "heatmap",
-        "habit-tracker",
-        "heat.js"
-      ],
-      "url": "https://github.com/nonguyen1/MMM-HeatMaps"
-    },
-    {
-      "category": "Weather",
       "defaultSortWeight": 14,
       "description": "Display METAR and TAF data for airports world-wide.",
       "hasGithubIssues": true,
@@ -8313,18 +8390,18 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 13,
-      "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <https://www.openuv.io/>.",
-      "hasGithubIssues": false,
-      "id": "rsperezn/mmm-uvindex",
+      "defaultSortWeight": 9,
+      "description": "Display tidal data in British Isles with free data from UKHO/Admiralty.",
+      "hasGithubIssues": true,
+      "id": "Captsi/MMM-UKTide",
       "isArchived": false,
       "issues": true,
-      "lastCommit": "2019-12-14T21:46:27+11:00",
-      "maintainer": "rsperezn",
-      "maintainerURL": "https://bitbucket.org/rsperezn",
-      "name": "MMM-UVIndex",
+      "lastCommit": "2024-11-20T23:24:32Z",
+      "maintainer": "Captsi",
+      "maintainerURL": "https://github.com/Captsi",
+      "name": "MMM-UKTide",
       "stars": 1,
-      "url": "https://bitbucket.org/rsperezn/mmm-uvindex"
+      "url": "https://github.com/Captsi/MMM-UKTide"
     },
     {
       "category": "Weather",
@@ -8348,18 +8425,35 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 9,
-      "description": "Display tidal data in British Isles with free data from UKHO/Admiralty.",
-      "hasGithubIssues": true,
-      "id": "Captsi/MMM-UKTide",
+      "defaultSortWeight": 13,
+      "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <https://www.openuv.io/>.",
+      "hasGithubIssues": false,
+      "id": "rsperezn/mmm-uvindex",
       "isArchived": false,
       "issues": true,
-      "lastCommit": "2024-11-20T23:24:32Z",
-      "maintainer": "Captsi",
-      "maintainerURL": "https://github.com/Captsi",
-      "name": "MMM-UKTide",
+      "lastCommit": "2019-12-14T21:46:27+11:00",
+      "maintainer": "rsperezn",
+      "maintainerURL": "https://bitbucket.org/rsperezn",
+      "name": "MMM-UVIndex",
       "stars": 1,
-      "url": "https://github.com/Captsi/MMM-UKTide"
+      "url": "https://bitbucket.org/rsperezn/mmm-uvindex"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 10,
+      "description": "Display the last value of water level at a station in the Vigicrues network in France.",
+      "hasGithubIssues": true,
+      "id": "grenagit/MMM-VigiCrues",
+      "image": "MMM-VigiCrues---Grena.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2022-06-26T19:42:46Z",
+      "license": "MIT",
+      "maintainer": "Grena",
+      "maintainerURL": "https://github.com/grenagit",
+      "name": "MMM-VigiCrues",
+      "stars": 2,
+      "url": "https://github.com/grenagit/MMM-VigiCrues"
     },
     {
       "category": "Weather",
@@ -8391,23 +8485,6 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 10,
-      "description": "Display the last value of water level at a station in the Vigicrues network in France.",
-      "hasGithubIssues": true,
-      "id": "grenagit/MMM-VigiCrues",
-      "image": "MMM-VigiCrues---Grena.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2022-06-26T19:42:46Z",
-      "license": "MIT",
-      "maintainer": "Grena",
-      "maintainerURL": "https://github.com/grenagit",
-      "name": "MMM-VigiCrues",
-      "stars": 2,
-      "url": "https://github.com/grenagit/MMM-VigiCrues"
-    },
-    {
-      "category": "Weather",
       "defaultSortWeight": 12,
       "description": "Display weather data from weather stations available at vindsiden.no (Norway).",
       "hasGithubIssues": false,
@@ -8422,46 +8499,6 @@
       "name": "MMM-Vindsiden",
       "stars": 1,
       "url": "https://github.com/erikmohn/MMM-Vindsiden"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 4,
-      "description": "Adds dynamic weather-based effects to your mirror.",
-      "hasGithubIssues": true,
-      "id": "cgillinger/MMM-WeatherEffects",
-      "image": "MMM-WeatherEffects---cgillinger.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2026-01-13T20:39:57Z",
-      "license": "MIT",
-      "maintainer": "cgillinger",
-      "maintainerURL": "https://github.com/cgillinger",
-      "name": "MMM-WeatherEffects",
-      "stars": 10,
-      "tags": [
-        "snow",
-        "rain",
-        "effect",
-        "weather",
-        "animation",
-        "dynamic"
-      ],
-      "url": "https://github.com/cgillinger/MMM-WeatherEffects"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 12,
-      "description": "Weather forecast with rain & temp graphs. Lots of options to turn on & off. Data from OpenWeatherMap API.",
-      "hasGithubIssues": true,
-      "id": "FlatPepsi17/MMM-WeatherGraph",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2024-11-01T11:31:05Z",
-      "maintainer": "FlatPepsi",
-      "maintainerURL": "https://github.com/FlatPepsi17",
-      "name": "MMM-WeatherGraph",
-      "stars": 18,
-      "url": "https://github.com/FlatPepsi17/MMM-WeatherGraph"
     },
     {
       "category": "Weather",
@@ -8483,38 +8520,6 @@
         "forecast"
       ],
       "url": "https://github.com/nigel-daniels/MMM-Weather-Now"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 6,
-      "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Contrary to the description in the README, the DarkSky API is not used.",
-      "hasGithubIssues": true,
-      "id": "mykle1/MMM-WeatherOrNot",
-      "image": "MMM-WeatherOrNot---Mykle1.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2020-11-23T02:21:53Z",
-      "license": "MIT",
-      "maintainer": "Mykle1",
-      "maintainerURL": "https://github.com/mykle1",
-      "name": "MMM-WeatherOrNot",
-      "stars": 22,
-      "url": "https://github.com/mykle1/MMM-WeatherOrNot"
-    },
-    {
-      "category": "Weather",
-      "defaultSortWeight": 11,
-      "description": "Presents appropriate outfit depending on current outside temperature received from Otto Paulsen's outstanding [MQTT module](https://github.com/ottopaulsen/MMM-MQTT).",
-      "hasGithubIssues": true,
-      "id": "Lavve/MMM-WeatherOutfit",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2022-01-17T15:44:20Z",
-      "maintainer": "Lavve",
-      "maintainerURL": "https://github.com/Lavve",
-      "name": "MMM-WeatherOutfit",
-      "stars": 1,
-      "url": "https://github.com/Lavve/MMM-WeatherOutfit"
     },
     {
       "category": "Weather",
@@ -8589,6 +8594,22 @@
     },
     {
       "category": "Weather",
+      "defaultSortWeight": 9,
+      "description": "Display a weather forecast chart using [OpenWeather](https://openweathermap.org) API and [Chart.js](https://www.chartjs.org), an open-source library to plot data on charts.",
+      "hasGithubIssues": true,
+      "id": "mtatsuma/MMM-WeatherChart",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2024-08-28T13:28:30Z",
+      "license": "MIT",
+      "maintainer": "mtatsuma",
+      "maintainerURL": "https://github.com/mtatsuma",
+      "name": "MMM-WeatherChart",
+      "stars": 27,
+      "url": "https://github.com/mtatsuma/MMM-WeatherChart"
+    },
+    {
+      "category": "Weather",
       "defaultSortWeight": 14,
       "description": "Display a weather diagram provided by yr.no.",
       "hasGithubIssues": true,
@@ -8606,22 +8627,6 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 9,
-      "description": "Display a weather forecast chart using [OpenWeather](https://openweathermap.org) API and [Chart.js](https://www.chartjs.org), an open-source library to plot data on charts.",
-      "hasGithubIssues": true,
-      "id": "mtatsuma/MMM-WeatherChart",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2024-08-28T13:28:30Z",
-      "license": "MIT",
-      "maintainer": "mtatsuma",
-      "maintainerURL": "https://github.com/mtatsuma",
-      "name": "MMM-WeatherChart",
-      "stars": 27,
-      "url": "https://github.com/mtatsuma/MMM-WeatherChart"
-    },
-    {
-      "category": "Weather",
       "defaultSortWeight": 12,
       "description": "Display clothing depending on the weather forecast and your personal preferences.",
       "hasGithubIssues": true,
@@ -8634,6 +8639,46 @@
       "name": "MMM-WeatherDependentClothes",
       "stars": 39,
       "url": "https://github.com/fruestueck/MMM-WeatherDependentClothes"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 4,
+      "description": "Adds dynamic weather-based effects to your mirror.",
+      "hasGithubIssues": true,
+      "id": "cgillinger/MMM-WeatherEffects",
+      "image": "MMM-WeatherEffects---cgillinger.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2026-01-13T20:39:57Z",
+      "license": "MIT",
+      "maintainer": "cgillinger",
+      "maintainerURL": "https://github.com/cgillinger",
+      "name": "MMM-WeatherEffects",
+      "stars": 10,
+      "tags": [
+        "snow",
+        "rain",
+        "effect",
+        "weather",
+        "animation",
+        "dynamic"
+      ],
+      "url": "https://github.com/cgillinger/MMM-WeatherEffects"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 12,
+      "description": "Weather forecast with rain & temp graphs. Lots of options to turn on & off. Data from OpenWeatherMap API.",
+      "hasGithubIssues": true,
+      "id": "FlatPepsi17/MMM-WeatherGraph",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2024-11-01T11:31:05Z",
+      "maintainer": "FlatPepsi",
+      "maintainerURL": "https://github.com/FlatPepsi17",
+      "name": "MMM-WeatherGraph",
+      "stars": 18,
+      "url": "https://github.com/FlatPepsi17/MMM-WeatherGraph"
     },
     {
       "category": "Weather",
@@ -8656,6 +8701,38 @@
         "by day"
       ],
       "url": "https://github.com/dWoolridge/MMM-WeatherHourlyByDay"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 6,
+      "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Contrary to the description in the README, the DarkSky API is not used.",
+      "hasGithubIssues": true,
+      "id": "mykle1/MMM-WeatherOrNot",
+      "image": "MMM-WeatherOrNot---Mykle1.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2020-11-23T02:21:53Z",
+      "license": "MIT",
+      "maintainer": "Mykle1",
+      "maintainerURL": "https://github.com/mykle1",
+      "name": "MMM-WeatherOrNot",
+      "stars": 22,
+      "url": "https://github.com/mykle1/MMM-WeatherOrNot"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 11,
+      "description": "Presents appropriate outfit depending on current outside temperature received from Otto Paulsen's outstanding [MQTT module](https://github.com/ottopaulsen/MMM-MQTT).",
+      "hasGithubIssues": true,
+      "id": "Lavve/MMM-WeatherOutfit",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2022-01-17T15:44:20Z",
+      "maintainer": "Lavve",
+      "maintainerURL": "https://github.com/Lavve",
+      "name": "MMM-WeatherOutfit",
+      "stars": 1,
+      "url": "https://github.com/Lavve/MMM-WeatherOutfit"
     },
     {
       "category": "Weather",
@@ -8701,13 +8778,12 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 1,
       "description": "Adds the windy weather map which covers the whole screen.",
       "hasGithubIssues": null,
       "id": "jhogendorn/MMM-WindyV3",
-      "image": "MMM-WindyV3---jhogendorn.webp",
       "isArchived": null,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "ISC",
       "maintainer": "jhogendorn",
@@ -8737,6 +8813,20 @@
         "flood"
       ],
       "url": "https://github.com/yawnsde/MMM-WorldTides"
+    },
+    {
+      "category": "Weather",
+      "defaultSortWeight": 1,
+      "description": "Displays current weather and short forecast using [Yandex Weather API v3](https://yandex.ru/dev/weather/).",
+      "hasGithubIssues": null,
+      "id": "igor-semenov/MMM-YandexWeather",
+      "isArchived": null,
+      "issues": false,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "maintainer": "igor-semenov",
+      "maintainerURL": "https://github.com/igor-semenov",
+      "name": "MMM-YandexWeather",
+      "url": "https://github.com/igor-semenov/MMM-YandexWeather"
     },
     {
       "category": "Weather",
@@ -8835,18 +8925,23 @@
     },
     {
       "category": "Religion",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 39,
       "description": "Displays daily verse from one of the four LDS scriptures.",
       "hasGithubIssues": null,
       "id": "bccmba/MMM-DailyLDSVerse",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "bccmba",
       "maintainerURL": "https://github.com/bccmba",
       "name": "MMM-DailyLDSVerse",
       "stars": 0,
+      "tags": [
+        "lds",
+        "scripture",
+        "verse"
+      ],
       "url": "https://github.com/bccmba/MMM-DailyLDSVerse"
     },
     {
@@ -8929,6 +9024,20 @@
       "name": "MMM-hukamnama",
       "stars": 1,
       "url": "https://github.com/harv-singh/MMM-hukamnama"
+    },
+    {
+      "category": "Religion",
+      "defaultSortWeight": 1,
+      "description": "Displays a daily reminder of Hadith, Quranic Verse and Reflection from https://reminder.dev/api.",
+      "hasGithubIssues": null,
+      "id": "mdbkabirbd/MMM-ILM-DailyReminder",
+      "isArchived": null,
+      "issues": false,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "maintainer": "MD B Kabir",
+      "maintainerURL": "https://github.com/mdbkabirbd",
+      "name": "MMM-ILM-DailyReminder",
+      "url": "https://github.com/mdbkabirbd/MMM-ILM-DailyReminder"
     },
     {
       "category": "Religion",
@@ -9587,7 +9696,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "description": "Display scores for your favorite teams from many major sports.",
       "hasGithubIssues": true,
       "id": "dathbe/MMM-MyScoreboard",
@@ -9627,7 +9736,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 2,
       "description": "Display standings and rankings for your favorite leagues and divisions from many major sports, including Olympics.",
       "hasGithubIssues": true,
       "id": "dathbe/MMM-MyStandings",
@@ -9934,7 +10043,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 3,
       "description": "Displays PGA leaderboards, tournaments, and rankings.",
       "hasGithubIssues": true,
       "id": "dathbe/MMM-PGA",
@@ -10813,7 +10922,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": -5,
+      "defaultSortWeight": -4,
       "description": "Extended calendar with 10+ view types (agenda, timeline, upcoming, current events), attendee display, and extensive customization options.",
       "hasGithubIssues": true,
       "id": "MMM-CalendarExt2/MMM-CalendarExt2",
@@ -10833,7 +10942,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": -4,
+      "defaultSortWeight": -3,
       "description": "Lightweight calendar with week/month views, weather integration, and interactive popovers.",
       "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3",
@@ -10964,6 +11073,27 @@
       "name": "MMM-CalendarExtPlan",
       "stars": 10,
       "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtPlan"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 6,
+      "description": "Displays a clean legend/key for your configured calendar feeds.",
+      "hasGithubIssues": null,
+      "id": "ex247/MMM-CalendarLegend",
+      "image": "MMM-CalendarLegend---ex247.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "ex247",
+      "maintainerURL": "https://github.com/ex247",
+      "name": "MMM-CalendarLegend",
+      "tags": [
+        "calendar",
+        "legend",
+        "display"
+      ],
+      "url": "https://github.com/ex247/MMM-CalendarLegend"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -11269,7 +11399,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 1,
       "description": "Display a custom message on your mirror, updatable via notification.  Similar to MMM-CustomMessage, but allows multiple instances.",
       "hasGithubIssues": true,
       "id": "dathbe/MMM-CustomText",
@@ -11488,6 +11618,34 @@
       "name": "MMM-DoomsdayClock",
       "stars": 1,
       "url": "https://github.com/crimsonclyde/MMM-DoomsdayClock"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 6,
+      "description": "Displays images from a Google Drive folder as a slideshow.",
+      "hasGithubIssues": null,
+      "id": "Dresch360/MMM-DriveImages",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "maintainer": "Dresch360",
+      "maintainerURL": "https://github.com/Dresch360",
+      "name": "MMM-DriveImages",
+      "url": "https://github.com/Dresch360/MMM-DriveImages"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 1,
+      "description": "Displays and plays videos from a Google Drive folder as a looping video slideshow.",
+      "hasGithubIssues": null,
+      "id": "Dresch360/MMM-DriveVideos",
+      "isArchived": null,
+      "issues": false,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "maintainer": "Dresch360",
+      "maintainerURL": "https://github.com/Dresch360",
+      "name": "MMM-DriveVideos",
+      "url": "https://github.com/Dresch360/MMM-DriveVideos"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -12066,12 +12224,12 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 8,
       "description": "Use Gamepad to send event of exec a command.",
       "hasGithubIssues": true,
       "id": "victor-paumier/MMM-GamepadEvents",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2020-04-08T03:11:59Z",
       "maintainer": "victor-paumier",
       "maintainerURL": "https://github.com/victor-paumier",
@@ -12775,7 +12933,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "description": "Shows status such as remaining program time of your Home Connect appliances. Based on djeriks module MMM-HomeConnect, but with headless auth workflow.",
       "hasGithubIssues": true,
       "id": "HeikoGr/MMM-HomeConnect2",
@@ -12845,12 +13003,12 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 10,
       "description": "Monitors reachability of local IP addresses.",
       "hasGithubIssues": true,
       "id": "tomgroenwoldt/MMM-home-presence",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2023-03-20T12:14:43Z",
       "license": "MIT",
       "maintainer": "tomgroenwoldt",
@@ -13491,7 +13649,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 0,
+      "defaultSortWeight": 1,
       "description": "Getting Bluetooth remote control and keyboard inputs.",
       "hasGithubIssues": true,
       "id": "shbatm/MMM-KeyBindings",
@@ -14984,6 +15142,27 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 10,
+      "description": "A module to display, manage and edit Nextcloud calendar events.",
+      "hasGithubIssues": null,
+      "id": "ndp15/MMM-Nextcloud-Calendar",
+      "image": "MMM-Nextcloud-Calendar---ndp15.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "ndp15",
+      "maintainerURL": "https://github.com/ndp15",
+      "name": "MMM-Nextcloud-Calendar",
+      "tags": [
+        "nextcloud",
+        "manager",
+        "smart home"
+      ],
+      "url": "https://github.com/ndp15/MMM-Nextcloud-Calendar"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "defaultSortWeight": 13,
       "description": "Display a count down to the next event from [MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2).",
       "hasGithubIssues": true,
@@ -15077,23 +15256,18 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 1,
       "description": "Create an iCalendar feed from a Notion Database for use in the `calendar` module.",
       "hasGithubIssues": null,
       "id": "JHWelch/MMM-NotionCalendar",
-      "image": "MMM-NotionCalendar---JHWelch.webp",
       "isArchived": null,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "JHWelch",
       "maintainerURL": "https://github.com/JHWelch",
       "name": "MMM-NotionCalendar",
       "stars": 0,
-      "tags": [
-        "notion",
-        "calendar"
-      ],
       "url": "https://github.com/JHWelch/MMM-NotionCalendar"
     },
     {
@@ -15260,13 +15434,12 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": -1,
       "description": "Show lights and window states on a floorplan of an openhab server.",
       "hasGithubIssues": true,
       "id": "paphko/mmm-openhabfloorplan",
-      "image": "MMM-openhabfloorplan---paphko.webp",
       "isArchived": false,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2025-03-03T08:42:31Z",
       "license": "MIT",
       "maintainer": "paphko",
@@ -17394,7 +17567,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 1,
       "description": "Display your processor temperature. Optional: Shut down your system safely if the temperature is too high (using MMM-Remote-Control).",
       "hasGithubIssues": true,
       "id": "KristjanESPERANTO/MMM-SystemTemperature",
@@ -17599,6 +17772,26 @@
         "school"
       ],
       "url": "https://github.com/evanhsu/MMM-TitanSchoolMealMenu"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 6,
+      "description": "Displays today's calendar events in a clean, minimal block.",
+      "hasGithubIssues": null,
+      "id": "ex247/MMM-TodayBlock",
+      "image": "MMM-TodayBlock---ex247.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "ex247",
+      "maintainerURL": "https://github.com/ex247",
+      "name": "MMM-TodayBlock",
+      "tags": [
+        "calendar",
+        "today"
+      ],
+      "url": "https://github.com/ex247/MMM-TodayBlock"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -19291,7 +19484,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 2,
       "description": "Presenting Pictures from Dropbox (Successor of MMM-DropboxWallpaper).",
       "hasGithubIssues": true,
       "id": "MMRIZE/MMM-DropboxPictures",
@@ -20276,18 +20469,21 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 15,
       "description": "Load random jokes from the web (Fork of outdated aegis1980 MMM-jokes).",
       "hasGithubIssues": false,
       "id": "n00b42/MMM-Jokes",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2025-05-12T17:41:52Z",
       "license": "MIT",
       "maintainer": "n00b42",
       "maintainerURL": "https://github.com/n00b42",
       "name": "MMM-Jokes",
       "stars": 0,
+      "tags": [
+        "jokes"
+      ],
       "url": "https://github.com/n00b42/MMM-Jokes"
     },
     {
@@ -20492,12 +20688,12 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 1,
       "description": "Displays random Lord of the rings quotes.",
       "hasGithubIssues": true,
       "id": "jaylingelbach/MMM-LOTR-Quotes",
       "isArchived": false,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2025-03-04T02:58:22Z",
       "maintainer": "Jay Lingelbach",
       "maintainerURL": "https://github.com/jaylingelbach",
@@ -20697,29 +20893,18 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 1,
       "description": "Displays animated portrait videos with support for multiple portraits, rotation, smooth transitions, and customizable frame styles.<br>Perfect for creating a Hogwarts-style moving portrait gallery on your mirror!",
       "hasGithubIssues": null,
       "id": "fischi87/MMM-MovingPortrait",
       "isArchived": null,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "fischi87",
       "maintainerURL": "https://github.com/fischi87",
       "name": "MMM-MovingPortrait",
       "stars": 0,
-      "tags": [
-        "portrait",
-        "video",
-        "animated",
-        "hogwarts",
-        "harry-potter",
-        "moving-portrait",
-        "rotation",
-        "gallery",
-        "media"
-      ],
       "url": "https://github.com/fischi87/MMM-MovingPortrait"
     },
     {
@@ -22155,12 +22340,12 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 8,
       "description": "Add events to MMM-Spotify to manage volume and playlists.",
       "hasGithubIssues": true,
       "id": "victor-paumier/MMM-SpotifyHelper",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2020-04-08T03:05:51Z",
       "maintainer": "victor-paumier",
       "maintainerURL": "https://github.com/victor-paumier",
@@ -22259,18 +22444,27 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 13,
       "description": "Display photos from your Synology library as a slideshow. Supports personal Space, albums, folders, size presets, and auto refreshes.",
       "hasGithubIssues": null,
       "id": "zarif98/MMM-SynologyPhotos",
+      "image": "MMM-SynologyPhotos---zarif98.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "zarif98",
       "maintainerURL": "https://github.com/zarif98",
       "name": "MMM-SynologyPhotos",
       "stars": 0,
+      "tags": [
+        "synology",
+        "synology photos",
+        "nas",
+        "photo",
+        "slideshow",
+        "digital frame"
+      ],
       "url": "https://github.com/zarif98/MMM-SynologyPhotos"
     },
     {
@@ -22314,6 +22508,26 @@
       "name": "MMM-TautulliActivity",
       "stars": 12,
       "url": "https://github.com/derekn/MMM-TautulliActivity"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "defaultSortWeight": 1,
+      "description": "Show the latest added Movies and TV-Series Episodes from Tautulli (Plex).",
+      "hasGithubIssues": null,
+      "id": "Snille/MMM-TautulliLatest",
+      "image": "MMM-TautulliLatest---Snille.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "Snille",
+      "maintainerURL": "https://github.com/Snille",
+      "name": "MMM-TautulliLatest",
+      "tags": [
+        "plex",
+        "tautulli"
+      ],
+      "url": "https://github.com/Snille/MMM-TautulliLatest"
     },
     {
       "category": "Entertainment / Misc",
@@ -22416,18 +22630,23 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 14,
       "description": "Displays daily trivia questions from Ivy Tech's educational website with an interactive toggle to reveal/hide answers. Auto-hides answer after 10 seconds.",
       "hasGithubIssues": null,
       "id": "GeeYouEss/MMM-TriviaQOTD",
+      "image": "MMM-TriviaQOTD---GeeYouEss.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "GeeYouEss",
       "maintainerURL": "https://github.com/GeeYouEss",
       "name": "MMM-TriviaQOTD",
       "stars": 0,
+      "tags": [
+        "trivia",
+        "question of the day"
+      ],
       "url": "https://github.com/GeeYouEss/MMM-TriviaQOTD"
     },
     {
@@ -22944,6 +23163,20 @@
         "clock"
       ],
       "url": "https://github.com/ulrichwisser/MMM-Worldclock"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "defaultSortWeight": 11,
+      "description": "See your online xbox friends, and their games and party status.",
+      "hasGithubIssues": null,
+      "id": "iamktothek/MMM-XboxFriends",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "maintainer": "iamktothek",
+      "maintainerURL": "https://github.com/iamktothek",
+      "name": "MMM-XboxFriends",
+      "url": "https://github.com/iamktothek/MMM-XboxFriends"
     },
     {
       "category": "Entertainment / Misc",
@@ -23625,6 +23858,30 @@
         "timetable"
       ],
       "url": "https://github.com/HeikoGr/MMM-Webuntis"
+    },
+    {
+      "category": "Education",
+      "defaultSortWeight": 9,
+      "description": "This module allows you to show your basic Whoop data with a comparison to the prior day along with today's activity. Multi-user support included.",
+      "hasGithubIssues": null,
+      "id": "frankrenehan/MMM-Whoop",
+      "image": "MMM-Whoop---frankrenehan.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
+      "maintainer": "frankrenehan",
+      "maintainerURL": "https://github.com/frankrenehan",
+      "name": "MMM-Whoop",
+      "tags": [
+        "magic-mirror-modules",
+        "whoop",
+        "health",
+        "recovery",
+        "sleep",
+        "strain"
+      ],
+      "url": "https://github.com/frankrenehan/MMM-Whoop"
     },
     {
       "category": "Education",

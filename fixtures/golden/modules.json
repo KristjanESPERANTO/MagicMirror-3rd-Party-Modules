@@ -375,6 +375,17 @@
       "url": "https://github.com/ahmedwab/MMM-TranslatedMessages"
     },
     {
+      "category": "Weather",
+      "description": "Weather aware background image generator using a free AI service, which is highly configureable",
+      "hasGithubIssues": null,
+      "id": "AJOCHAM/MMM-AIWallpaper",
+      "isArchived": null,
+      "maintainer": "ajocham",
+      "maintainerURL": "https://github.com/AJOCHAM",
+      "name": "MMM-AIWallpaper",
+      "url": "https://github.com/AJOCHAM/MMM-AIWallpaper"
+    },
+    {
       "category": "Education",
       "description": "A simple timetable module for MagicMirror. Configuration exclusively via config.js. Supports iCal holiday calendars, multiple children, colors, times, and rooms.",
       "hasGithubIssues": true,
@@ -776,19 +787,6 @@
       "maintainerURL": "https://github.com/AndyHazz",
       "name": "MMM-Scrapey",
       "url": "https://github.com/AndyHazz/MMM-Scrapey"
-    },
-    {
-      "category": "Transport / Travel",
-      "description": "Displays LIVE UK information about a specific bus stop and the routes that serve it.",
-      "hasGithubIssues": false,
-      "id": "AndyHazz/MMM-UKLiveBusStopInfo",
-      "image": "MMM-UKLiveBusStopInfo---AndyHazz.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "AndyHazz",
-      "maintainerURL": "https://github.com/AndyHazz",
-      "name": "MMM-UKLiveBusStopInfo",
-      "url": "https://github.com/AndyHazz/MMM-UKLiveBusStopInfo"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -1583,6 +1581,11 @@
       "maintainer": "bccmba",
       "maintainerURL": "https://github.com/bccmba",
       "name": "MMM-DailyLDSVerse",
+      "tags": [
+        "lds",
+        "scripture",
+        "verse"
+      ],
       "url": "https://github.com/bccmba/MMM-DailyLDSVerse"
     },
     {
@@ -3247,6 +3250,23 @@
       "url": "https://github.com/ChrisF1976/MMM-Temp2IOT"
     },
     {
+      "category": "Development / Core MagicMirror²",
+      "description": "Transforms your mirror into a digital art gallery.",
+      "hasGithubIssues": true,
+      "id": "christian-klein/MMM-Art",
+      "image": "MMM-Art---christian-klein.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "christian-klein",
+      "maintainerURL": "https://github.com/christian-klein",
+      "name": "MMM-Art",
+      "tags": [
+        "art",
+        "wikidata"
+      ],
+      "url": "https://github.com/christian-klein/MMM-Art"
+    },
+    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays energy usage history for your Octopus Energy account.",
       "hasGithubIssues": true,
@@ -4808,6 +4828,28 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays images from a Google Drive folder as a slideshow.",
+      "hasGithubIssues": null,
+      "id": "Dresch360/MMM-DriveImages",
+      "isArchived": null,
+      "maintainer": "Dresch360",
+      "maintainerURL": "https://github.com/Dresch360",
+      "name": "MMM-DriveImages",
+      "url": "https://github.com/Dresch360/MMM-DriveImages"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays and plays videos from a Google Drive folder as a looping video slideshow.",
+      "hasGithubIssues": null,
+      "id": "Dresch360/MMM-DriveVideos",
+      "isArchived": null,
+      "maintainer": "Dresch360",
+      "maintainerURL": "https://github.com/Dresch360",
+      "name": "MMM-DriveVideos",
+      "url": "https://github.com/Dresch360/MMM-DriveVideos"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "FRITZ!Box Callmonitor. Display an alert when someone is calling and offers a call history.",
       "hasGithubIssues": true,
       "id": "drtorchwood/MMM-FRITZ-Box-Callmonitor-py3",
@@ -5517,6 +5559,41 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays a clean legend/key for your configured calendar feeds.",
+      "hasGithubIssues": null,
+      "id": "ex247/MMM-CalendarLegend",
+      "image": "MMM-CalendarLegend---ex247.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "ex247",
+      "maintainerURL": "https://github.com/ex247",
+      "name": "MMM-CalendarLegend",
+      "tags": [
+        "calendar",
+        "legend",
+        "display"
+      ],
+      "url": "https://github.com/ex247/MMM-CalendarLegend"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays today's calendar events in a clean, minimal block.",
+      "hasGithubIssues": null,
+      "id": "ex247/MMM-TodayBlock",
+      "image": "MMM-TodayBlock---ex247.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "ex247",
+      "maintainerURL": "https://github.com/ex247",
+      "name": "MMM-TodayBlock",
+      "tags": [
+        "calendar",
+        "today"
+      ],
+      "url": "https://github.com/ex247/MMM-TodayBlock"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display Age of Empire stats by player ID.",
       "hasGithubIssues": true,
       "id": "FabianNiehaus89/MMM-AOE2-STATS",
@@ -5993,17 +6070,6 @@
       "maintainer": "fischi87",
       "maintainerURL": "https://github.com/fischi87",
       "name": "MMM-MovingPortrait",
-      "tags": [
-        "portrait",
-        "video",
-        "animated",
-        "hogwarts",
-        "harry-potter",
-        "moving-portrait",
-        "rotation",
-        "gallery",
-        "media"
-      ],
       "url": "https://github.com/fischi87/MMM-MovingPortrait"
     },
     {
@@ -6155,6 +6221,27 @@
       "url": "https://github.com/framboise-pi/MMM-MyWordsRandomed"
     },
     {
+      "category": "Education",
+      "description": "This module allows you to show your basic Whoop data with a comparison to the prior day along with today's activity. Multi-user support included.",
+      "hasGithubIssues": null,
+      "id": "frankrenehan/MMM-Whoop",
+      "image": "MMM-Whoop---frankrenehan.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "frankrenehan",
+      "maintainerURL": "https://github.com/frankrenehan",
+      "name": "MMM-Whoop",
+      "tags": [
+        "magic-mirror-modules",
+        "whoop",
+        "health",
+        "recovery",
+        "sleep",
+        "strain"
+      ],
+      "url": "https://github.com/frankrenehan/MMM-Whoop"
+    },
+    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Simply displays logo with local image file path or url.",
       "hasGithubIssues": true,
@@ -6232,18 +6319,11 @@
       "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
       "hasGithubIssues": true,
       "id": "galaktor/MMM-DublinRTPI",
-      "image": "MMM-DublinRTPI---galaktor.webp",
       "isArchived": false,
       "license": "GPL-3.0",
       "maintainer": "galaktor",
       "maintainerURL": "https://github.com/galaktor",
       "name": "MMM-DublinRTPI",
-      "tags": [
-        "public transport",
-        "dublin bus",
-        "dublin luas",
-        "irish rail"
-      ],
       "url": "https://github.com/galaktor/MMM-DublinRTPI"
     },
     {
@@ -6315,11 +6395,16 @@
       "description": "Displays daily trivia questions from Ivy Tech's educational website with an interactive toggle to reveal/hide answers. Auto-hides answer after 10 seconds.",
       "hasGithubIssues": null,
       "id": "GeeYouEss/MMM-TriviaQOTD",
+      "image": "MMM-TriviaQOTD---GeeYouEss.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "GeeYouEss",
       "maintainerURL": "https://github.com/GeeYouEss",
       "name": "MMM-TriviaQOTD",
+      "tags": [
+        "trivia",
+        "question of the day"
+      ],
       "url": "https://github.com/GeeYouEss/MMM-TriviaQOTD"
     },
     {
@@ -7417,6 +7502,17 @@
       "url": "https://github.com/hxreborn/MMM-TUZSAZaragoza"
     },
     {
+      "category": "Entertainment / Misc",
+      "description": "See your online xbox friends, and their games and party status.",
+      "hasGithubIssues": null,
+      "id": "iamktothek/MMM-XboxFriends",
+      "isArchived": null,
+      "maintainer": "iamktothek",
+      "maintainerURL": "https://github.com/iamktothek",
+      "name": "MMM-XboxFriends",
+      "url": "https://github.com/iamktothek/MMM-XboxFriends"
+    },
+    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays energy usage history for your Octopus Energy account. For use if you are on the Intelligent Octopus tarrif. Based on MMM-OctoMon.",
       "hasGithubIssues": true,
@@ -7526,6 +7622,17 @@
       "maintainerURL": "https://github.com/idoodler",
       "name": "MMM-RPI-LED",
       "url": "https://github.com/idoodler/MMM-RPI-LED"
+    },
+    {
+      "category": "Weather",
+      "description": "Displays current weather and short forecast using [Yandex Weather API v3](https://yandex.ru/dev/weather/).",
+      "hasGithubIssues": null,
+      "id": "igor-semenov/MMM-YandexWeather",
+      "isArchived": null,
+      "maintainer": "igor-semenov",
+      "maintainerURL": "https://github.com/igor-semenov",
+      "name": "MMM-YandexWeather",
+      "url": "https://github.com/igor-semenov/MMM-YandexWeather"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -8503,7 +8610,6 @@
       "description": "Adds the windy weather map which covers the whole screen.",
       "hasGithubIssues": null,
       "id": "jhogendorn/MMM-WindyV3",
-      "image": "MMM-WindyV3---jhogendorn.webp",
       "isArchived": null,
       "license": "ISC",
       "maintainer": "jhogendorn",
@@ -8516,18 +8622,11 @@
       "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
       "hasGithubIssues": null,
       "id": "JHWelch/MMM-CTA",
-      "image": "MMM-CTA---JHWelch.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "JHWelch",
       "maintainerURL": "https://github.com/JHWelch",
       "name": "MMM-CTA",
-      "tags": [
-        "cta",
-        "train",
-        "bus",
-        "tracker"
-      ],
       "url": "https://github.com/JHWelch/MMM-CTA"
     },
     {
@@ -8535,16 +8634,11 @@
       "description": "Create an iCalendar feed from a Notion Database for use in the `calendar` module.",
       "hasGithubIssues": null,
       "id": "JHWelch/MMM-NotionCalendar",
-      "image": "MMM-NotionCalendar---JHWelch.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "JHWelch",
       "maintainerURL": "https://github.com/JHWelch",
       "name": "MMM-NotionCalendar",
-      "tags": [
-        "notion",
-        "calendar"
-      ],
       "url": "https://github.com/JHWelch/MMM-NotionCalendar"
     },
     {
@@ -9368,17 +9462,11 @@
       "description": "Display French agricultural weather from lameteoagricole.net. No API key required — data is scraped directly. Shows current conditions, hourly and 10-day forecast, rain by the minute.",
       "hasGithubIssues": null,
       "id": "Kamasoutra/MMM-LaMeteoAgricole",
-      "image": "MMM-LaMeteoAgricole---Kamasoutra.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "Kamasoutra",
       "maintainerURL": "https://github.com/Kamasoutra",
       "name": "MMM-LaMeteoAgricole",
-      "tags": [
-        "weather",
-        "meteo",
-        "france"
-      ],
       "url": "https://github.com/Kamasoutra/MMM-LaMeteoAgricole"
     },
     {
@@ -11180,6 +11268,17 @@
       "maintainerURL": "https://github.com/mcintyrehh",
       "name": "MMM-Live-Stream-TV",
       "url": "https://github.com/mcintyrehh/MMM-Live-Stream-TV"
+    },
+    {
+      "category": "Religion",
+      "description": "Displays a daily reminder of Hadith, Quranic Verse and Reflection from https://reminder.dev/api.",
+      "hasGithubIssues": null,
+      "id": "mdbkabirbd/MMM-ILM-DailyReminder",
+      "isArchived": null,
+      "maintainer": "MD B Kabir",
+      "maintainerURL": "https://github.com/mdbkabirbd",
+      "name": "MMM-ILM-DailyReminder",
+      "url": "https://github.com/mdbkabirbd/MMM-ILM-DailyReminder"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -13177,6 +13276,9 @@
       "maintainer": "n00b42",
       "maintainerURL": "https://github.com/n00b42",
       "name": "MMM-Jokes",
+      "tags": [
+        "jokes"
+      ],
       "url": "https://github.com/n00b42/MMM-Jokes"
     },
     {
@@ -13201,6 +13303,24 @@
       "maintainerURL": "https://github.com/NateDee",
       "name": "MMM-CTA",
       "url": "https://github.com/NateDee/MMM-CTA"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "A module to display, manage and edit Nextcloud calendar events.",
+      "hasGithubIssues": null,
+      "id": "ndp15/MMM-Nextcloud-Calendar",
+      "image": "MMM-Nextcloud-Calendar---ndp15.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "ndp15",
+      "maintainerURL": "https://github.com/ndp15",
+      "name": "MMM-Nextcloud-Calendar",
+      "tags": [
+        "nextcloud",
+        "manager",
+        "smart home"
+      ],
+      "url": "https://github.com/ndp15/MMM-Nextcloud-Calendar"
     },
     {
       "category": "Weather",
@@ -13844,17 +13964,11 @@
       "description": "Visualize data as heatmaps, charts, and more. A lightweight wrapper over Heat.js with live file updates.",
       "hasGithubIssues": null,
       "id": "nonguyen1/MMM-HeatMaps",
-      "image": "MMM-HeatMaps---nonguyen1.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "nonguyen1",
       "maintainerURL": "https://github.com/nonguyen1",
       "name": "MMM-HeatMaps",
-      "tags": [
-        "heatmap",
-        "habit-tracker",
-        "heat.js"
-      ],
       "url": "https://github.com/nonguyen1/MMM-HeatMaps"
     },
     {
@@ -13932,6 +14046,19 @@
         "scanner"
       ],
       "url": "https://github.com/nsprawling/MMM-NetworkScanner"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Displays LIVE UK information about a specific bus stop and the routes that serve it.",
+      "hasGithubIssues": null,
+      "id": "nwootton/MMM-UKLiveBusStopInfo",
+      "image": "MMM-UKLiveBusStopInfo---nwootton.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "nwootton",
+      "maintainerURL": "https://github.com/nwootton",
+      "name": "MMM-UKLiveBusStopInfo",
+      "url": "https://github.com/nwootton/MMM-UKLiveBusStopInfo"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -14193,7 +14320,6 @@
       "description": "Show lights and window states on a floorplan of an openhab server.",
       "hasGithubIssues": true,
       "id": "paphko/mmm-openhabfloorplan",
-      "image": "MMM-openhabfloorplan---paphko.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "paphko",
@@ -15267,6 +15393,27 @@
       "maintainerURL": "https://github.com/rcollie",
       "name": "MMM-MarsWeather",
       "url": "https://github.com/rcollie/MMM-MarsWeather"
+    },
+    {
+      "category": "Weather",
+      "description": "Rain radar map for Germany, based on data from DWD, Openstreet Map and Bright Sky",
+      "hasGithubIssues": null,
+      "id": "realoliwer/MMM-RainRadarDWD",
+      "image": "MMM-RainRadarDWD---Oliwer.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "Oliwer",
+      "maintainerURL": "https://github.com/realoliwer",
+      "name": "MMM-RainRadarDWD",
+      "tags": [
+        "weather",
+        "rain",
+        "map",
+        "radar",
+        "clouds",
+        "dwd"
+      ],
+      "url": "https://github.com/realoliwer/MMM-RainRadarDWD"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -17174,6 +17321,23 @@
     },
     {
       "category": "Entertainment / Misc",
+      "description": "Show the latest added Movies and TV-Series Episodes from Tautulli (Plex).",
+      "hasGithubIssues": null,
+      "id": "Snille/MMM-TautulliLatest",
+      "image": "MMM-TautulliLatest---Snille.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "Snille",
+      "maintainerURL": "https://github.com/Snille",
+      "name": "MMM-TautulliLatest",
+      "tags": [
+        "plex",
+        "tautulli"
+      ],
+      "url": "https://github.com/Snille/MMM-TautulliLatest"
+    },
+    {
+      "category": "Entertainment / Misc",
       "description": "Play a video file (from local folder or internet) in any region. The module will pause the video when hidden and resume when shown. You can also pause and play by using notifications.",
       "hasGithubIssues": true,
       "id": "Snille/MMM-Videoplayer",
@@ -17618,6 +17782,30 @@
       "maintainerURL": "https://github.com/stuloh",
       "name": "MMM-aviationwx",
       "url": "https://github.com/stuloh/MMM-aviationwx"
+    },
+    {
+      "category": "News / Information",
+      "description": "Fetches RSS feeds and displays AI-generated summaries using the GitHub Copilot API.",
+      "hasGithubIssues": null,
+      "id": "supermem613/MMM-AINews",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "supermem613",
+      "maintainerURL": "https://github.com/supermem613",
+      "name": "MMM-AINews",
+      "url": "https://github.com/supermem613/MMM-AINews"
+    },
+    {
+      "category": "News / Information",
+      "description": "Fetches a public Google Sheet and displays a filtered table of matching entries",
+      "hasGithubIssues": null,
+      "id": "supermem613/MMM-GoogleSheetToTable",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "supermem613",
+      "maintainerURL": "https://github.com/supermem613",
+      "name": "MMM-GoogleSheetToTable",
+      "url": "https://github.com/supermem613/MMM-GoogleSheetToTable"
     },
     {
       "category": "Weather",
@@ -19841,18 +20029,11 @@
       "description": "Module to display public transport from Nürnberg in Germany.",
       "hasGithubIssues": null,
       "id": "wiesty/MMM-VAG",
-      "image": "MMM-VAG---Wiesty.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "Wiesty",
       "maintainerURL": "https://github.com/wiesty",
       "name": "MMM-VAG",
-      "tags": [
-        "public transport",
-        "vag",
-        "nürnberg",
-        "nuremberg"
-      ],
       "url": "https://github.com/wiesty/MMM-VAG"
     },
     {
@@ -20474,6 +20655,25 @@
     },
     {
       "category": "News / Information",
+      "description": "Local monitoring of your APsystems EZ1 microinverter.",
+      "hasGithubIssues": null,
+      "id": "yourdawi/MMM-APSystemsEZ1",
+      "image": "MMM-APSystemsEZ1---Dawi.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "Dawi",
+      "maintainerURL": "https://github.com/yourdawi",
+      "name": "MMM-APSystemsEZ1",
+      "tags": [
+        "apsystems",
+        "ez1",
+        "solar",
+        "photovoltaic"
+      ],
+      "url": "https://github.com/yourdawi/MMM-APSystemsEZ1"
+    },
+    {
+      "category": "News / Information",
       "description": "Show radar traps around based on blitzer.de.",
       "hasGithubIssues": true,
       "id": "yourdawi/MMM-Blitzer",
@@ -20627,11 +20827,20 @@
       "description": "Display photos from your Synology library as a slideshow. Supports personal Space, albums, folders, size presets, and auto refreshes.",
       "hasGithubIssues": null,
       "id": "zarif98/MMM-SynologyPhotos",
+      "image": "MMM-SynologyPhotos---zarif98.webp",
       "isArchived": null,
       "license": "MIT",
       "maintainer": "zarif98",
       "maintainerURL": "https://github.com/zarif98",
       "name": "MMM-SynologyPhotos",
+      "tags": [
+        "synology",
+        "synology photos",
+        "nas",
+        "photo",
+        "slideshow",
+        "digital frame"
+      ],
       "url": "https://github.com/zarif98/MMM-SynologyPhotos"
     },
     {
