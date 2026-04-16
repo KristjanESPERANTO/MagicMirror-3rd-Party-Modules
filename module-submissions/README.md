@@ -6,6 +6,8 @@ This directory contains the infrastructure for the new PR-based module submissio
 
 Replace the wiki-based module list with a modern, quality-controlled submission process using GitHub Pull Requests.
 
+> **Status:** This system is under development. The validation infrastructure and GitHub Actions workflows exist, but the submission flow has not yet been used in production. The documentation below describes the intended design.
+
 ## 📁 Directory Structure
 
 ```text
@@ -108,13 +110,13 @@ gh api orgs/MagicMirrorOrg/teams/trusted-contributors/memberships/USERNAME -X DE
 
 All submissions must conform to this schema:
 
-```json
+```jsonc
 {
   "url": "https://github.com/username/MMM-ModuleName",
   "name": "MMM-ModuleName",
   "description": "Brief description of what the module does",
   "category": "Category name",
-  "submissionType": "New Module" | "Update Existing Module",
+  "submissionType": "New Module", // or "Update Existing Module"
   "additionalInfo": "Optional additional context",
   "submittedBy": "github-username",
   "submittedAt": "2025-10-19T12:00:00Z",

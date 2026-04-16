@@ -1,6 +1,6 @@
 # Pipeline Orchestrator CLI — Reference
 
-_Last updated: 2025-09-30_
+_Last updated: 2026-04-16_
 
 A lightweight Node.js command-line interface reads the declarative stage graph, executes the pipeline end-to-end, and provides structured feedback to contributors. This document now serves as the reference for the shipped implementation.
 
@@ -98,5 +98,4 @@ The original exploration surfaced a few ideas that remain on the backlog:
 
 ## Integration with Existing Scripts
 
-- Stage runner resolves script paths from the graph and executes them raw (no refactor needed initially).
-- Shared helper for environment preparation (e.g. ensuring `modules_temp` rotation) remains a follow-up task and can live under `scripts/lib/pipeline/` when extracted.
+- All supported stages run in-process via the stage runner abstraction (`in-process-stage-runner.ts`). The stage graph declares script paths which the runner resolves and executes within the same Node process.

@@ -1,15 +1,8 @@
 # Check Modules Reference
 
-_Last updated: March 19, 2026_
+_Last updated: April 16, 2026_
 
 This page consolidates the material that previously lived in early planning documents. It should stay up to date as we evolve the check-modules pipeline and the curated fixture set.
-
-## Status snapshot
-
-- ✅ TypeScript implementation is the default Stage 5 runner.
-- ✅ CLI progress indicator renders live module throughput and emits a per-run Markdown summary under `.pipeline-runs/check-modules/`.
-- ✅ Stage 5 flags modules that import any non built-in dependency without declaring it in their own `package.json` (Node built-ins and the allowlist `express`, `node_helper`, `logger` are ignored).
-- ✅ README install and update sections now require a copy-pasteable fenced command block so users can run the instructions without manual reformatting.
 
 ## Check group configuration
 
@@ -24,12 +17,6 @@ The Stage 5 runner reads `scripts/check-modules/check-groups.config.json` to de
 | `integrations.eslint`             | `true`  | Invokes the curated ESLint configuration on each module clone.                                                                                    |
 
 > The runner logs whenever overrides are applied so CI output records which groups were disabled.
-
-## CLI progress & run summaries
-
-- When the stage runs interactively (TTY), it renders a single-line progress gauge on `stderr`. Disable it with `CHECK_MODULES_DISABLE_PROGRESS=1` or `CHECK_MODULES_PROGRESS=off` if you prefer verbose line-by-line logging.
-- Every execution writes a Markdown + JSON summary to `.pipeline-runs/check-modules/<run-id>/`. The Markdown combines toggle state, aggregate stats, and the top modules with issues; the JSON mirrors the key metrics for tooling.
-- Artifact links inside the summary resolve relative to the run directory, making it easy to inspect `website/result.md`, `modules.json`, and `stats.json` produced by the run.
 
 ## Rule inventory
 
@@ -157,4 +144,4 @@ The curated fixture repositories live in `fixtures/modules/`. Keep this table in
 
 ## Housekeeping
 
-- Update this page whenever you add or modify Stage 5 rules or fixtures.
+- Update this page whenever you add or modify check-modules rules or fixtures.

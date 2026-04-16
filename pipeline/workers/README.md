@@ -50,7 +50,7 @@ const results = await pool.processModules(modules, moduleConfig);
 
 The worker pool is integrated into the pipeline via:
 
-- **Script**: `scripts/parallel-processing.js`
+- **Script**: `scripts/parallel-processing.ts`
 - **Pipeline**: `full-refresh-parallel` (in `stage-graph.json`)
 
 Run with:
@@ -109,7 +109,7 @@ See [../docs/architecture.md](../../docs/architecture.md) for the canonical pipe
 │  Input: ModuleInput (from in-memory metadata payload)        │
 │                                                              │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │ Stage 3: Clone Repository                            │   │
+│  │ Phase 1: Clone Repository                            │   │
 │  │  - Check if repo is up-to-date (skip if cached)     │   │
 │  │  - Clone or update repository                        │   │
 │  │  - Move from temp to final location                  │   │
@@ -117,7 +117,7 @@ See [../docs/architecture.md](../../docs/architecture.md) for the canonical pipe
 │                          │                                   │
 │                          ▼                                   │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │ Stage 4: Enrich Metadata                             │   │
+│  │ Phase 2: Enrich Metadata                             │   │
 │  │  - Load package.json                                 │   │
 │  │  - Derive tags from keywords                         │   │
 │  │  - Find and resize screenshot                        │   │
@@ -126,7 +126,7 @@ See [../docs/architecture.md](../../docs/architecture.md) for the canonical pipe
 │                          │                                   │
 │                          ▼                                   │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │ Stage 5: Analyze                                     │   │
+│  │ Phase 3: Analyze                                     │   │
 │  │  - Fast checks + deep heuristics                     │   │
 │  │  - Optional ESLint / npm-check-updates integrations  │   │
 │  │  - Dependency and README rule evaluation             │   │

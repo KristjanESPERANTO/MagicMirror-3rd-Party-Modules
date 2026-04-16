@@ -30,7 +30,7 @@ Use the canonical helper scripts from `package.json` or call the orchestrator di
 | Inspect the pipeline      | `node --run pipeline -- list` / `describe` / `logs`                                                           | Inspect the registered stages, pipelines, and recent run records.                                     |
 | Re-run processing+publish | `node scripts/orchestrator/index.ts run full-refresh-parallel --only=parallel-processing,aggregate-catalogue` | Re-run worker analysis and publication without re-running markdown parsing manually.                  |
 
-The `parallel-processing` stage is the expensive part of the run: it clones repositories, extracts metadata and screenshots, and performs the deeper checks that produce the stage-5 payload in memory. The follow-up `aggregate-catalogue` stage turns that payload into `modules.json`, `modules.min.json`, and `stats.json`.
+The `parallel-processing` stage is the expensive part of the run: it clones repositories, extracts metadata and screenshots, and performs the deeper checks that produce the analysis payload in memory. The follow-up `aggregate-catalogue` stage turns that payload into `modules.json`, `modules.min.json`, and `stats.json`.
 
 ### Orchestrator CLI for partial runs
 
@@ -52,17 +52,7 @@ Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) f
 
 ### Stage details
 
-#### Stage 1+2 – `collect-metadata/index.js`
-
-Reads the official wiki list of third-party modules and fetches metadata (stars, topics, default branch, etc.) from the hosting service (GitHub/GitLab). The stage returns an in-memory enriched payload for downstream stages and updates the API cache on disk.
-
-#### Stage 3+4+5 – `parallel-processing.js`
-
-Combines repository cloning, `package.json` enrichment, screenshot extraction, and deep analysis inside the worker pool. The stage emits the analysis payload in memory.
-
-#### Stage 6 – `aggregate-catalogue.js`
-
-Consumes the stage-5 payload and writes the published catalogue outputs (`modules.json`, `modules.min.json`, `stats.json`).
+For canonical stage definitions, responsibilities, and data flow, use [docs/architecture.md](architecture.md) as the single source of truth. This avoids drift between contributor instructions and pipeline design docs.
 
 #### `validate_release_artifacts.ts`
 
@@ -80,7 +70,7 @@ For regression testing, prefer the curated fixtures (`node --run fixtures:genera
 
 ## Release validation
 
-As of September 2025, schema validation is part of the release gate. After you regenerate the website data, run:
+Schema validation is part of the release gate. After you regenerate the website data, run:
 
 ```bash
 node --run release:validate
@@ -121,17 +111,6 @@ npm run schemas:check
 ```
 
 The bundled files live in `dist/schemas/`. They ship with the repository so `node --run release:validate` can run without extra setup.
-
-## Prerequisites & installation
-
-1. Install [Node.js](https://nodejs.org).
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules
-   cd MagicMirror-3rd-Party-Modules
-   npm install
-   ```
-3. Optional: Launch the task menu with `npm start` or run `node --run all` to execute every stage sequentially (note: takes >10 minutes and >2 GB disk when cloning the full catalogue).
 
 ## Running the container locally
 
@@ -219,10 +198,9 @@ Golden artifacts are reference outputs stored in `fixtures/golden/` that serve a
 
 ## Helpful references
 
-- [`docs/architecture.md`](architecture.md) – current vs. target pipeline topology.
+- [`docs/architecture.md`](architecture.md) – current pipeline topology.
 - [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – command reference for partial runs, diagnostics, and logs.
 - [`fixtures/README.md`](../fixtures/README.md) – curated dataset and validation troubleshooting.
-- [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – current CLI and schema validation flow.
 
 ### Troubleshooting
 

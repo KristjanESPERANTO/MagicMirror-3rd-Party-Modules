@@ -36,6 +36,6 @@ Each fixture directory contains:
 4. Ensure every rule listed in the registry has at least one fixture (baseline or synthetic) that will trigger it. Record a short explanation in `FIXTURE.md` so future updates know the expected findings.
 5. When adding a new fixture, update `docs/pipeline/check-modules-reference.md` with the coverage matrix and, if needed, regenerate the curated dataset under `fixtures/data/`.
 
-## Next steps
+## Maintenance
 
-- Ensure contributors rerun `node scripts/fixtures/updateBaselineShas.ts` whenever we refresh the curated dataset so recorded commits stay accurate.
+- Rerun `node scripts/fixtures/updateBaselineShas.ts` whenever you refresh the curated dataset so recorded commits stay accurate.

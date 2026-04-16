@@ -2,18 +2,18 @@
 
 Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current canonical pipeline and the parts of the broader architecture that are still future-facing.
 
-## Current State (March 2026)
+## Current State (April 2026)
 
 The supported production pipeline is orchestrated via `node scripts/orchestrator/index.ts run full-refresh-parallel` (also exposed as `node --run all`). The orchestrator now drives four registered stages across three operational phases: metadata collection, parallel module processing, and publication.
 
 ### Stage Overview
 
-| Order | Stage ID                   | Key Outputs                                                               |
-| ----- | -------------------------- | ------------------------------------------------------------------------- |
-| 1     | `collect-metadata`         | in-memory metadata payload, `gitHubData.json`                             |
-| 2     | `parallel-processing`      | in-memory stage-5 payload, `modules/`, `modules_temp/`, `website/images/` |
-| 3     | `aggregate-catalogue`      | `modules.json`, `modules.min.json`, `stats.json`                          |
-| 4     | `generate-result-markdown` | `result.md`                                                               |
+| Order | Stage ID                   | Key Outputs                                                                                        |
+| ----- | -------------------------- | -------------------------------------------------------------------------------------------------- |
+| 1     | `collect-metadata`         | in-memory metadata payload, `gitHubData.json`                                                      |
+| 2     | `parallel-processing`      | in-memory analysis payload, `modules/`, `modules_temp/`, `website/images/`, `skipped_modules.json` |
+| 3     | `aggregate-catalogue`      | `modules.json`, `modules.min.json`, `stats.json`                                                   |
+| 4     | `generate-result-markdown` | `result.md`                                                                                        |
 
 ### Current Workflow Diagram
 
@@ -31,13 +31,13 @@ flowchart TB
     metadata --> parallel{{Parallel processing}}
     parallel --> clones[("modules/<br>modules_temp/")]
     parallel --> images[("website/images/")]
-    parallel --> stage5["stage-5 payload (in-memory)"]
+    parallel --> analysisPayload["analysis payload (in-memory)"]
   end
 
   subgraph Phase 3: Catalogue Aggregation
-    stage5 --> aggregate{{Aggregate catalogue}}
+    analysisPayload --> aggregate{{Aggregate catalogue}}
     aggregate --> outputs[("modules.json<br>modules.min.json<br>stats.json")]
-    stage5 --> result{{Generate result markdown}}
+    analysisPayload --> result{{Generate result markdown}}
     outputs --> result
     result --> resultMd[("result.md")]
   end
@@ -51,7 +51,7 @@ flowchart TB
 
 - **Orchestrator CLI**: Declarative stage graph with `--only/--skip` support, retries, and structured logging
 - **Worker Pool Stage**: `parallel-processing` encapsulates clone, enrich, image, and analysis work behind a single supported stage
-- **Aggregation Stage**: `aggregate-catalogue` builds published JSON artifacts from the in-memory stage-5 payload
+- **Aggregation Stage**: `aggregate-catalogue` builds published JSON artifacts from the in-memory analysis payload
 - **Schema Validation**: JSON schemas enforce contracts at the published boundaries (`modules.json`, `modules.min.json`, `stats.json`)
 - **Shared Utilities**: HTTP, Git, filesystem, and rate limiting in `scripts/shared/`
 
