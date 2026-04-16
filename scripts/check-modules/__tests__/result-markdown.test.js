@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { strict as assert } from "node:assert";
 
 describe("result-markdown", () => {
-  it("collects issue summaries from stage-5 modules", () => {
+  it("collects issue summaries from processed modules", () => {
     const summaries = collectIssueSummaries([
       {
         name: "MMM-Example",

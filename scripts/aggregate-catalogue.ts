@@ -6,7 +6,7 @@ import process from "node:process";
 import { resolve } from "node:path";
 import { writePublishedCatalogueOutputs } from "./shared/module-catalogue-output.ts";
 
-interface Stage5Module {
+interface ProcessedModule {
   id: string;
   [key: string]: unknown;
 }
@@ -48,19 +48,19 @@ interface AggregateLogger {
   warn: (message: string, data?: unknown) => void;
 }
 
-type OutputWriter = (stage5Modules: Stage5Module[], projectRoot: string) => Promise<OutputResult | OutputPaths> | OutputResult | OutputPaths;
+type OutputWriter = (processedModules: ProcessedModule[], projectRoot: string) => Promise<OutputResult | OutputPaths> | OutputResult | OutputPaths;
 
 interface RunAggregateCatalogueOptions {
   outputWriter?: OutputWriter | null;
   projectRoot?: string;
   runLogger?: AggregateLogger;
-  stage5Modules: Stage5Module[];
+  processedModules: ProcessedModule[];
 }
 
 export interface AggregateCatalogueResult {
   changeSummary: ChangeSummary | null;
   outputPaths: OutputPaths | null;
-  stage5ModulesCount: number;
+  processedModulesCount: number;
   stats?: unknown;
   wroteOutputs: boolean;
 }
@@ -100,17 +100,17 @@ function normalizeOutputDetails(outputResult: OutputResult | OutputPaths | null)
 }
 
 export async function runAggregateCatalogue({
-  stage5Modules,
+  processedModules,
   projectRoot = PROJECT_ROOT,
   outputWriter = writePublishedCatalogueOutputs,
   runLogger = logger
 }: RunAggregateCatalogueOptions): Promise<AggregateCatalogueResult> {
-  if (!Array.isArray(stage5Modules)) {
-    throw new TypeError("runAggregateCatalogue requires stage5Modules from the in-memory pipeline handoff");
+  if (!Array.isArray(processedModules)) {
+    throw new TypeError("runAggregateCatalogue requires processedModules from the in-memory pipeline handoff");
   }
 
   const outputResult = outputWriter
-    ? await outputWriter(stage5Modules, projectRoot)
+    ? await outputWriter(processedModules, projectRoot)
     : null;
 
   const outputDetails = normalizeOutputDetails(outputResult);
@@ -133,11 +133,11 @@ export async function runAggregateCatalogue({
     }
   }
 
-  runLogger.info(`Aggregated ${stage5Modules.length} module(s) into published catalogue outputs`);
+  runLogger.info(`Aggregated ${processedModules.length} module(s) into published catalogue outputs`);
   return {
     changeSummary: outputDetails.changeSummary,
     outputPaths: outputDetails.outputPaths,
-    stage5ModulesCount: stage5Modules.length,
+    processedModulesCount: processedModules.length,
     stats: outputDetails.stats,
     wroteOutputs: outputDetails.wroteOutputs
   };
@@ -145,7 +145,7 @@ export async function runAggregateCatalogue({
 
 async function main(): Promise<void> {
   try {
-    throw new Error("aggregate-catalogue must be executed via the orchestrator; direct stage-5 file input is no longer supported");
+    throw new Error("aggregate-catalogue must be executed via the orchestrator; direct per-module file input is no longer supported");
   }
   catch (error) {
     logger.error("Fatal error:", getErrorMessage(error));

@@ -8,7 +8,7 @@
  */
 
 import { MODULE_ANALYSIS_CACHE_SCHEMA_VERSION, buildModuleAnalysisCacheKey, createModuleAnalysisCache, getProjectRevision, normalizeModuleAnalysisCheckGroups, resolveModuleAnalysisCachePath } from "../scripts/shared/module-analysis-cache.ts";
-import { toStage5Module } from "../scripts/shared/module-catalogue-output.ts";
+import { toProcessedModule } from "../scripts/shared/module-catalogue-output.ts";
 import { WorkerPool } from "../pipeline/workers/worker-pool.ts";
 import { cpus } from "node:os";
 import { createLogger } from "../scripts/shared/logger.ts";
@@ -99,7 +99,7 @@ export interface ParallelProcessingResult {
   failedCount: number;
   results: ModuleResult[];
   skippedCount: number;
-  stage5Modules: unknown[];
+  processedModules: unknown[];
   successCount: number;
 }
 
@@ -314,7 +314,7 @@ function buildMergedModules(modules: Stage2Module[], results: ModuleResult[]): M
   });
 }
 
-function summarizeResults(results: ModuleResult[], durationMs: number): Omit<ParallelProcessingResult, "durationMs" | "results" | "stage5Modules"> {
+function summarizeResults(results: ModuleResult[], durationMs: number): Omit<ParallelProcessingResult, "durationMs" | "results" | "processedModules"> {
   const successCount = results.filter(result => result.status === "success").length;
   const failedCount = results.filter(result => result.status === "failed").length;
   const skippedCount = results.filter(result => result.status === "skipped").length;
@@ -330,7 +330,7 @@ function summarizeResults(results: ModuleResult[], durationMs: number): Omit<Par
   };
 }
 
-function logProcessingSummary(results: ModuleResult[], durationMs: number, runLogger: ParallelLogger): Omit<ParallelProcessingResult, "durationMs" | "results" | "stage5Modules"> {
+function logProcessingSummary(results: ModuleResult[], durationMs: number, runLogger: ParallelLogger): Omit<ParallelProcessingResult, "durationMs" | "results" | "processedModules"> {
   const summary = summarizeResults(results, durationMs);
 
   runLogger.info("\n========== Processing Complete ==========");
@@ -360,7 +360,7 @@ function logProcessingSummary(results: ModuleResult[], durationMs: number, runLo
  * @param {string|null} [options.catalogueRevision] Catalogue revision override
  * @param {object|null} [options.workerPool] Injected worker pool for tests/future orchestrator wiring
  * @param {object} [options.runLogger] Logger implementation
- * @returns {Promise<object>} Summary, results, and generated stage5 modules
+ * @returns {Promise<object>} Summary, results, and generated processed modules
  */
 export async function runParallelProcessing({
   modules,
@@ -469,7 +469,7 @@ export async function runParallelProcessing({
   }
 
   const mergedModules = buildMergedModules(modules, results);
-  const stage5Modules = mergedModules.map(module => toStage5Module(module));
+  const processedModules = mergedModules.map(module => toProcessedModule(module));
   const durationMs = Date.now() - startTime;
   const summary = logProcessingSummary(results, durationMs, runLogger);
 
@@ -477,7 +477,7 @@ export async function runParallelProcessing({
     ...summary,
     durationMs,
     results,
-    stage5Modules
+    processedModules
   };
 }
 

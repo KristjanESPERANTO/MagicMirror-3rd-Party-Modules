@@ -13,7 +13,7 @@ interface StageRuntimeOverrides {
   aggregateCatalogue?: (options: Record<string, unknown>) => Promise<unknown>;
   collectMetadata?: (options: Record<string, unknown>) => Promise<{ modules: unknown[] }>;
   generateResultMarkdown?: (options: Record<string, unknown>) => Promise<unknown>;
-  parallelProcessing?: (options: Record<string, unknown>) => Promise<{ results?: unknown[]; stage5Modules: unknown[] }>;
+  parallelProcessing?: (options: Record<string, unknown>) => Promise<{ results?: unknown[]; processedModules: unknown[] }>;
   writeSkippedModules?: (results: unknown[], projectRoot: string) => Promise<void>;
 }
 
@@ -68,16 +68,16 @@ export function createInProcessStageRunner({
         artifactStore.delete("modules-stage-2");
       }
 
-      artifactStore.set("modules-stage-5", result.stage5Modules);
+      artifactStore.set("modules-processed", result.processedModules);
       await writeSkippedModules(result.results ?? [], runRoot);
       return true;
     }
 
-    if (stage.id === "aggregate-catalogue" && artifactStore.has("modules-stage-5")) {
-      const stage5Modules = artifactStore.get("modules-stage-5") as unknown[];
+    if (stage.id === "aggregate-catalogue" && artifactStore.has("modules-processed")) {
+      const processedModules = artifactStore.get("modules-processed") as unknown[];
       const aggregateOptions = {
         projectRoot: runRoot,
-        stage5Modules: stage5Modules as never
+        processedModules: processedModules as never
       };
 
       const aggregateResult = await aggregateCatalogue(aggregateOptions);
@@ -93,12 +93,12 @@ export function createInProcessStageRunner({
       return true;
     }
 
-    if (stage.id === "generate-result-markdown" && artifactStore.has("modules-stage-5") && artifactStore.has("stats-json")) {
-      const stage5Modules = artifactStore.get("modules-stage-5");
+    if (stage.id === "generate-result-markdown" && artifactStore.has("modules-processed") && artifactStore.has("stats-json")) {
+      const processedModules = artifactStore.get("modules-processed");
       const stats = artifactStore.get("stats-json");
       const markdownOptions: Record<string, unknown> = {
         projectRoot: runRoot,
-        stage5Modules,
+        processedModules,
         stats
       };
 
@@ -106,7 +106,7 @@ export function createInProcessStageRunner({
         await generateResultMarkdown(markdownOptions);
       }
       finally {
-        artifactStore.delete("modules-stage-5");
+        artifactStore.delete("modules-processed");
         artifactStore.delete("stats-json");
       }
 

@@ -14,7 +14,7 @@ export interface IssueSummary {
   url?: string;
 }
 
-interface Stage5ModuleLike {
+interface ProcessedModuleLike {
   issues?: boolean | string[] | string | null;
   maintainer?: string;
   name?: string;
@@ -39,7 +39,7 @@ export function collectIssueSummaries(modules: unknown[]): IssueSummary[] {
       return [];
     }
 
-    const stageModule = module as Stage5ModuleLike;
+    const stageModule = module as ProcessedModuleLike;
     const issues = normalizeIssuesInput(stageModule.issues);
 
     if (issues.length === 0 || typeof stageModule.name !== "string" || typeof stageModule.maintainer !== "string") {

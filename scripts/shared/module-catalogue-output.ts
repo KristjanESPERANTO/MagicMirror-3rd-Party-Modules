@@ -4,7 +4,7 @@ import { stringifyDeterministic } from "./deterministic-output.ts";
 
 type ModuleRecord = Record<string, unknown>;
 
-export interface Stage5Module extends ModuleRecord {
+export interface ProcessedModule extends ModuleRecord {
   category?: string;
   description?: string;
   id?: string;
@@ -94,7 +94,7 @@ export interface PublishedOutputResult {
   wroteOutputs: boolean;
 }
 
-const STAGE5_ALLOWED_KEYS: string[] = [
+const PROCESSED_MODULE_ALLOWED_KEYS: string[] = [
   "name",
   "category",
   "url",
@@ -136,11 +136,11 @@ const FINAL_ALLOWED_KEYS: string[] = [
   "keywords"
 ];
 
-export function toStage5Module(module: Stage5Module): Stage5Module {
-  const sourceModule = module as Stage5Module;
-  const entry: Stage5Module = {};
+export function toProcessedModule(module: ProcessedModule): ProcessedModule {
+  const sourceModule = module as ProcessedModule;
+  const entry: ProcessedModule = {};
 
-  for (const key of STAGE5_ALLOWED_KEYS) {
+  for (const key of PROCESSED_MODULE_ALLOWED_KEYS) {
     if (Object.hasOwn(sourceModule, key) && typeof sourceModule[key] !== "undefined") {
       entry[key] = sourceModule[key];
     }
@@ -172,7 +172,7 @@ function getRepositoryHost(moduleUrl: unknown): string {
   }
 }
 
-function toFinalModule(module: Stage5Module, fallbackTimestamp: string): FinalModule {
+function toFinalModule(module: ProcessedModule, fallbackTimestamp: string): FinalModule {
   const issueList = Array.isArray(module.issues) ? module.issues : [];
   const stars = typeof module.stars === "number" ? module.stars : 0;
 
@@ -225,7 +225,7 @@ function toFinalModule(module: Stage5Module, fallbackTimestamp: string): FinalMo
   return entry;
 }
 
-function buildStats(stage5Modules: Stage5Module[], finalModules: FinalModule[], timestamp: string): CatalogueStats {
+function buildStats(processedModules: ProcessedModule[], finalModules: FinalModule[], timestamp: string): CatalogueStats {
   const repositoryHoster: Record<string, number> = {};
   const maintainer: Record<string, number> = {};
 
@@ -238,7 +238,7 @@ function buildStats(stage5Modules: Stage5Module[], finalModules: FinalModule[], 
     maintainer[maintainerName] = (maintainer[maintainerName] ?? 0) + 1;
   }
 
-  const issueCounter = stage5Modules.reduce((count, module) => {
+  const issueCounter = processedModules.reduce((count, module) => {
     if (Array.isArray(module.issues)) {
       return count + module.issues.length;
     }
@@ -370,10 +370,10 @@ async function allFilesExist(paths: string[]): Promise<boolean> {
 }
 
 export async function writePublishedCatalogueOutputs(
-  stage5Modules: unknown[],
+  processedModules: unknown[],
   projectRoot: string
 ): Promise<PublishedOutputResult> {
-  const normalizedStage5Modules = stage5Modules as Stage5Module[];
+  const normalizedProcessedModules = processedModules as ProcessedModule[];
   const modulesJsonPath = resolve(projectRoot, "website/data/modules.json");
   const modulesMinPath = resolve(projectRoot, "website/data/modules.min.json");
   const statsPath = resolve(projectRoot, "website/data/stats.json");
@@ -386,7 +386,7 @@ export async function writePublishedCatalogueOutputs(
     : null;
   const nowTimestamp = new Date().toISOString();
   const comparisonTimestamp = previousLastUpdate ?? nowTimestamp;
-  const comparableFinalModules = normalizedStage5Modules.map(module => toFinalModule(module, comparisonTimestamp));
+  const comparableFinalModules = normalizedProcessedModules.map(module => toFinalModule(module, comparisonTimestamp));
   const changeSummary = buildModuleDiffSummary(previousModules, comparableFinalModules);
 
   const outputsAlreadyPresent = await allFilesExist([modulesJsonPath, modulesMinPath, statsPath]);
@@ -410,9 +410,9 @@ export async function writePublishedCatalogueOutputs(
 
   const lastUpdate = changeSummary.hasChanges ? nowTimestamp : comparisonTimestamp;
   const finalModules = changeSummary.hasChanges && lastUpdate !== comparisonTimestamp
-    ? normalizedStage5Modules.map(module => toFinalModule(module, lastUpdate))
+    ? normalizedProcessedModules.map(module => toFinalModule(module, lastUpdate))
     : comparableFinalModules;
-  const stats = buildStats(normalizedStage5Modules, finalModules, lastUpdate);
+  const stats = buildStats(normalizedProcessedModules, finalModules, lastUpdate);
 
   await writeFile(modulesJsonPath, stringifyDeterministic({ modules: finalModules }), "utf-8");
   await writeFile(modulesMinPath, stringifyDeterministic({ modules: finalModules }, 0), "utf-8");

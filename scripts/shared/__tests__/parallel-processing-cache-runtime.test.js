@@ -244,7 +244,7 @@ test("runParallelProcessing processes in-memory modules independently of CLI fil
   equal(capturedModuleConfig.cacheEnabled, false);
   equal(capturedModuleConfig.catalogueRevision, "catalogue-rev-runtime-test");
   equal(result.results.length, modules.length);
-  equal(result.stage5Modules.length, modules.length);
+  equal(result.processedModules.length, modules.length);
   equal(result.successCount, modules.length);
   equal(result.failedCount, 0);
   equal(result.skippedCount, 0);

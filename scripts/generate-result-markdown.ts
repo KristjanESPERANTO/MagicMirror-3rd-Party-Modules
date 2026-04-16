@@ -25,7 +25,7 @@ interface GenerateResultMarkdownOptions {
   projectRoot?: string;
   resultPath?: string;
   runLogger?: ResultMarkdownLogger;
-  stage5Modules?: unknown[];
+  processedModules?: unknown[];
   stats?: ResultMarkdownStats;
 }
 
@@ -36,17 +36,17 @@ export async function runGenerateResultMarkdown({
   projectRoot = PROJECT_ROOT,
   resultPath,
   runLogger = logger,
-  stage5Modules,
+  processedModules,
   stats
 }: GenerateResultMarkdownOptions = {}): Promise<{ issueCount: number; outputPath: string }> {
-  if (!Array.isArray(stage5Modules)) {
-    throw new TypeError("runGenerateResultMarkdown requires stage5Modules from the in-memory pipeline handoff");
+  if (!Array.isArray(processedModules)) {
+    throw new TypeError("runGenerateResultMarkdown requires processedModules from the in-memory pipeline handoff");
   }
 
   const outputPath = resultPath ?? resolve(projectRoot, "website", "result.md");
   const resolvedStats = stats
     ?? await readJson<ResultMarkdownStats>(resolve(projectRoot, "website", "data", "stats.json"));
-  const summaries = collectIssueSummaries(stage5Modules);
+  const summaries = collectIssueSummaries(processedModules);
   const markdown = buildResultMarkdown(resolvedStats, summaries);
 
   await ensureDirectory(dirname(outputPath));
@@ -60,7 +60,7 @@ export async function runGenerateResultMarkdown({
 }
 
 async function main(): Promise<void> {
-  throw new Error("generate-result-markdown must be executed via the orchestrator; direct stage-5 file input is no longer supported");
+  throw new Error("generate-result-markdown must be executed via the orchestrator; direct per-module file input is no longer supported");
 }
 
 const currentFile = fileURLToPath(import.meta.url);

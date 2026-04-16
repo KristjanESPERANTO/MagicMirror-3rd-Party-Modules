@@ -11,7 +11,7 @@ async function createProjectRoot(prefix = "module-catalogue-output-test-") {
   return root;
 }
 
-function createStage5Module(overrides = {}) {
+function createProcessedModule(overrides = {}) {
   return {
     category: "Test",
     id: "owner/module-a",
@@ -25,9 +25,9 @@ function createStage5Module(overrides = {}) {
 
 test("writePublishedCatalogueOutputs writes outputs on first publish and reports additions", async () => {
   const projectRoot = await createProjectRoot();
-  const stage5Modules = [createStage5Module()];
+  const processedModules = [createProcessedModule()];
 
-  const result = await writePublishedCatalogueOutputs(stage5Modules, projectRoot);
+  const result = await writePublishedCatalogueOutputs(processedModules, projectRoot);
 
   equal(result.wroteOutputs, true);
   ok(result.changeSummary);
@@ -40,13 +40,13 @@ test("writePublishedCatalogueOutputs writes outputs on first publish and reports
 
 test("writePublishedCatalogueOutputs skips writes when modules are unchanged", async () => {
   const projectRoot = await createProjectRoot();
-  const stage5Modules = [createStage5Module()];
+  const processedModules = [createProcessedModule()];
 
-  const firstResult = await writePublishedCatalogueOutputs(stage5Modules, projectRoot);
+  const firstResult = await writePublishedCatalogueOutputs(processedModules, projectRoot);
   equal(firstResult.wroteOutputs, true);
 
   const firstStats = await readFile(firstResult.statsPath, "utf-8");
-  const secondResult = await writePublishedCatalogueOutputs(stage5Modules, projectRoot);
+  const secondResult = await writePublishedCatalogueOutputs(processedModules, projectRoot);
   const secondStats = await readFile(secondResult.statsPath, "utf-8");
 
   equal(secondResult.wroteOutputs, false);
@@ -61,8 +61,8 @@ test("writePublishedCatalogueOutputs skips writes when modules are unchanged", a
 
 test("writePublishedCatalogueOutputs writes outputs and reports changed modules", async () => {
   const projectRoot = await createProjectRoot();
-  const initialModules = [createStage5Module({ stars: 5 })];
-  const updatedModules = [createStage5Module({ stars: 10 })];
+  const initialModules = [createProcessedModule({ stars: 5 })];
+  const updatedModules = [createProcessedModule({ stars: 10 })];
 
   await writePublishedCatalogueOutputs(initialModules, projectRoot);
   const result = await writePublishedCatalogueOutputs(updatedModules, projectRoot);

@@ -27,20 +27,20 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
   ];
   let capturedModules = null;
   let capturedParallelOutputWriter = "unset";
-  let capturedStage5Modules = null;
+  let capturedProcessedModules = null;
 
   const stageRunner = createInProcessStageRunner({
     projectRoot: "/virtual/project",
     stageRuntimes: {
       aggregateCatalogue: (options) => {
-        capturedStage5Modules = options.stage5Modules;
+        capturedProcessedModules = options.processedModules;
         return Promise.resolve({
           outputPaths: {
             modulesJsonPath: "/virtual/project/website/data/modules.json",
             modulesMinPath: "/virtual/project/website/data/modules.min.json",
             statsPath: "/virtual/project/website/data/stats.json"
           },
-          stage5ModulesCount: options.stage5Modules.length
+          processedModulesCount: options.processedModules.length
         });
       },
       collectMetadata: () => Promise.resolve({ modules }),
@@ -49,7 +49,7 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
         capturedParallelOutputWriter = options.outputWriter;
         return Promise.resolve({
           results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
-          stage5Modules: options.modules
+          processedModules: options.modules
         });
       },
       writeSkippedModules: () => Promise.resolve()
@@ -84,7 +84,7 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
 
   assert.deepStrictEqual(capturedModules, modules);
   assert.strictEqual(capturedParallelOutputWriter, null);
-  assert.deepStrictEqual(capturedStage5Modules, modules);
+  assert.deepStrictEqual(capturedProcessedModules, modules);
   assert.strictEqual(completedStages.length, 3);
   assert.strictEqual(completedStages[0].stage.id, "collect-metadata");
   assert.strictEqual(completedStages[1].stage.id, "parallel-processing");
@@ -114,7 +114,7 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
         capturedParallelOutputWriter = options.outputWriter;
         return Promise.resolve({
           results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
-          stage5Modules: options.modules
+          processedModules: options.modules
         });
       },
       writeSkippedModules: () => Promise.resolve()
@@ -179,7 +179,7 @@ test("runStagesSequentially passes aggregate stats in memory to result markdown 
           modulesMinPath: "/virtual/project/website/data/modules.min.json",
           statsPath: "/virtual/project/website/data/stats.json"
         },
-        stage5ModulesCount: 1,
+        processedModulesCount: 1,
         stats,
         wroteOutputs: true
       }),
@@ -193,7 +193,7 @@ test("runStagesSequentially passes aggregate stats in memory to result markdown 
       },
       parallelProcessing: () => Promise.resolve({
         results: modules.map(module => ({ ...module, fromCache: false, status: "success" })),
-        stage5Modules: modules
+        processedModules: modules
       }),
       writeSkippedModules: () => Promise.resolve()
     }
@@ -233,7 +233,7 @@ test("runStagesSequentially passes aggregate stats in memory to result markdown 
   assert.strictEqual(completedStages.length, 4);
   assert.deepStrictEqual(capturedMarkdownOptions, {
     projectRoot: "/virtual/project",
-    stage5Modules: modules,
+    processedModules: modules,
     stats
   });
   assert.deepStrictEqual(stageRunner.getBufferedArtifactIds(), []);

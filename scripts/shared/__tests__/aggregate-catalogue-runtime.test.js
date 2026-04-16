@@ -10,8 +10,8 @@ function createSilentLogger() {
   };
 }
 
-test("runAggregateCatalogue consumes in-memory stage-5 modules and delegates published output writing", async () => {
-  const stage5Modules = [
+test("runAggregateCatalogue consumes in-memory processed modules and delegates published output writing", async () => {
+  const processedModules = [
     {
       category: "Test",
       id: "owner/module-a",
@@ -39,13 +39,13 @@ test("runAggregateCatalogue consumes in-memory stage-5 modules and delegates pub
     },
     projectRoot: "/virtual/project",
     runLogger: createSilentLogger(),
-    stage5Modules
+    processedModules
   });
 
-  assert.deepStrictEqual(capturedModules, stage5Modules);
+  assert.deepStrictEqual(capturedModules, processedModules);
   assert.strictEqual(capturedProjectRoot, "/virtual/project");
   assert.deepStrictEqual(result.outputPaths, outputPaths);
   assert.strictEqual(result.wroteOutputs, true);
   assert.strictEqual(result.changeSummary, null);
-  assert.strictEqual(result.stage5ModulesCount, stage5Modules.length);
+  assert.strictEqual(result.processedModulesCount, processedModules.length);
 });

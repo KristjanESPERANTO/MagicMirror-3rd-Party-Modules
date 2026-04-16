@@ -359,7 +359,7 @@ function searchRegexInFile(content: string, pattern: RegExp): boolean {
 
 /**
  * Analyze a module for issues and recommendations.
- * This is the core analysis function for Stage 5 of the pipeline.
+ * This is the core analysis function for the parallel-processing stage.
  */
 export async function analyzeModule(
   modulePath: string,

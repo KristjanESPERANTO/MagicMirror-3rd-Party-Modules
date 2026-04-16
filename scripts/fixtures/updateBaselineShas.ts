@@ -62,7 +62,7 @@ function updateFixtureFile({ slug, repo, lastCommit }: BaselineFixture, sha: str
   }
   const raw = fs.readFileSync(fixturePath, "utf8");
 
-  const snapshotLine = `- Snapshot reference: Stage 5 dataset as of 2025-09-28 (\`lastCommit\`: ${lastCommit})`;
+  const snapshotLine = `- Snapshot reference: processed module dataset as of 2025-09-28 (\`lastCommit\`: ${lastCommit})`;
   const updated = raw
     .replace(/- Snapshot reference:.*\n/u, `${snapshotLine}\n`)
     .replace(/- Upstream commit SHA:.*\n/u, `- Upstream commit SHA: \`${sha}\` (HEAD at update time for ${repo})\n`);
