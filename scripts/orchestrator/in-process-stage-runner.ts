@@ -5,7 +5,7 @@ import process from "node:process";
 import { resolve } from "node:path";
 import { runAggregateCatalogue } from "../aggregate-catalogue.ts";
 import { runCollectMetadata } from "../collect-metadata/index.ts";
-import { runParallelProcessing } from "../parallel-processing.ts";
+import { runParallelProcessing, writeSkippedModulesFile } from "../parallel-processing.ts";
 import type { ResolvedStageDefinition } from "./stage-graph.ts";
 import type { StageExecutionContext } from "./stage-executor.ts";
 
@@ -13,7 +13,8 @@ interface StageRuntimeOverrides {
   aggregateCatalogue?: (options: Record<string, unknown>) => Promise<unknown>;
   collectMetadata?: (options: Record<string, unknown>) => Promise<{ modules: unknown[] }>;
   generateResultMarkdown?: (options: Record<string, unknown>) => Promise<unknown>;
-  parallelProcessing?: (options: Record<string, unknown>) => Promise<{ stage5Modules: unknown[] }>;
+  parallelProcessing?: (options: Record<string, unknown>) => Promise<{ results?: unknown[]; stage5Modules: unknown[] }>;
+  writeSkippedModules?: (results: unknown[], projectRoot: string) => Promise<void>;
 }
 
 interface CreateInProcessStageRunnerOptions {
@@ -30,6 +31,7 @@ export function createInProcessStageRunner({
   const collectMetadata = stageRuntimes.collectMetadata ?? runCollectMetadata;
   const generateResultMarkdown = stageRuntimes.generateResultMarkdown ?? runGenerateResultMarkdown;
   const parallelProcessing = stageRuntimes.parallelProcessing ?? runParallelProcessing;
+  const writeSkippedModules = stageRuntimes.writeSkippedModules ?? writeSkippedModulesFile;
 
   const runStageInProcess = async (
     stage: ResolvedStageDefinition,
@@ -67,6 +69,7 @@ export function createInProcessStageRunner({
       }
 
       artifactStore.set("modules-stage-5", result.stage5Modules);
+      await writeSkippedModules(result.results ?? [], runRoot);
       return true;
     }
 

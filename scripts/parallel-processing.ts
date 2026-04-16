@@ -13,6 +13,7 @@ import { WorkerPool } from "../pipeline/workers/worker-pool.ts";
 import { cpus } from "node:os";
 import { createLogger } from "../scripts/shared/logger.ts";
 import { fileURLToPath } from "node:url";
+import { writeJson } from "../scripts/shared/fs-utils.ts";
 import process from "node:process";
 import { runCollectMetadata } from "../scripts/collect-metadata/index.ts";
 import { resolve } from "node:path";
@@ -480,10 +481,43 @@ export async function runParallelProcessing({
   };
 }
 
+type SkipCategory = "NOT_FOUND" | "AUTHENTICATION" | "NETWORK" | "INFRASTRUCTURE" | "UNKNOWN";
+
+function classifyFailure(result: ModuleResult): SkipCategory {
+  if (result.failurePhase && result.failurePhase !== "clone") {
+    return "INFRASTRUCTURE";
+  }
+  const error = result.error?.toLowerCase() ?? "";
+  if (error.includes("not found") || error.includes("does not exist")) return "NOT_FOUND";
+  if (error.includes("authentication") || error.includes("permission denied") || error.includes("access denied")) return "AUTHENTICATION";
+  if (error.includes("econnrefused") || error.includes("etimedout") || error.includes("enotfound") || error.includes("timeout")) return "NETWORK";
+  return "UNKNOWN";
+}
+
+export async function writeSkippedModulesFile(results: ModuleResult[], projectRoot: string): Promise<void> {
+  const failedResults = results.filter(r => r.status === "failed");
+  const skippedEntries = failedResults.map(r => ({
+    id: r.id,
+    name: r.name,
+    maintainer: r.maintainer,
+    url: r.url,
+    error: r.error ?? "Processing failed",
+    reason: r.failurePhase ? `Processing failed during ${r.failurePhase}` : "Processing failed",
+    metadata: {
+      category: classifyFailure(r),
+      ...(r.error ? { error: r.error } : {})
+    }
+  }));
+
+  const outputPath = resolve(projectRoot, "website/data/skipped_modules.json");
+  await writeJson(outputPath, skippedEntries);
+}
+
 async function main(): Promise<void> {
   try {
     const { modules } = await runCollectMetadata();
-    await runParallelProcessing({ modules, projectRoot: PROJECT_ROOT });
+    const result = await runParallelProcessing({ modules, projectRoot: PROJECT_ROOT });
+    await writeSkippedModulesFile(result.results, PROJECT_ROOT);
   }
   catch (error) {
     logger.error("Fatal error:", getErrorMessage(error));

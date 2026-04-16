@@ -51,7 +51,8 @@ test("runStagesSequentially passes modules in memory across collect, parallel, a
           results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
           stage5Modules: options.modules
         });
-      }
+      },
+      writeSkippedModules: () => Promise.resolve()
     }
   });
 
@@ -115,7 +116,8 @@ test("runStagesSequentially clears buffered artifacts after filtered collect+par
           results: options.modules.map(module => ({ ...module, fromCache: false, status: "success" })),
           stage5Modules: options.modules
         });
-      }
+      },
+      writeSkippedModules: () => Promise.resolve()
     }
   });
 
@@ -192,7 +194,8 @@ test("runStagesSequentially passes aggregate stats in memory to result markdown 
       parallelProcessing: () => Promise.resolve({
         results: modules.map(module => ({ ...module, fromCache: false, status: "success" })),
         stage5Modules: modules
-      })
+      }),
+      writeSkippedModules: () => Promise.resolve()
     }
   });
 

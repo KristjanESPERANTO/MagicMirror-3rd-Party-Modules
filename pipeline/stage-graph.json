@@ -63,6 +63,13 @@
       "schema": "dist/schemas/stats.schema.json"
     },
     {
+      "id": "skipped-modules-json",
+      "type": "file",
+      "path": "website/data/skipped_modules.json",
+      "format": "json",
+      "description": "Modules that failed processing (e.g. inaccessible repositories), displayed separately on the website."
+    },
+    {
       "id": "result-markdown",
       "type": "file",
       "path": "website/result.md",
@@ -130,6 +137,10 @@
         },
         {
           "artifact": "images-catalogue",
+          "mode": "write"
+        },
+        {
+          "artifact": "skipped-modules-json",
           "mode": "write"
         }
       ],
