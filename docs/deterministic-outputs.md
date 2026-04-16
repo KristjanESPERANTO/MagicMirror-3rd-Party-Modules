@@ -162,7 +162,3 @@ Downstream consumers should always read screenshot paths from `modules.json` rat
 ## Status
 
 Deterministic output safeguards (sorted keys and deterministic image naming) are part of the current pipeline behavior.
-
-## Follow-Up Tracking
-
-Potential deterministic-output enhancements are tracked centrally in [Open Items](open-items.md) under "Backlog (Optional)".

@@ -81,10 +81,6 @@ Successfully tested with multiple module sets:
 - Estimated time: ~3-5 minutes (vs 10-15 minutes sequential)
 - 3-4x speedup depending on I/O and CPU availability
 
-### Follow-Up Tracking
-
-Open follow-up work is tracked centrally in [Open Items](../../docs/open-items.md).
-
 ### Configuration Options
 
 **CLI Arguments:**
@@ -217,7 +213,7 @@ Each phase wraps its logic in try-catch and returns early on failure:
 ```typescript
 const cloneResult = await cloneModule(module, config);
 if (!cloneResult.success) {
-  return { status: "failed", failurePhase: "clone", ... };
+  return { status: "failed", failurePhase: "clone", error: cloneResult.error };
 }
 ```
 

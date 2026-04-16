@@ -68,10 +68,6 @@ The pipeline implements intelligent caching and skip logic to avoid redundant wo
 
 ---
 
-### Follow-Up Tracking
-
-Open follow-up work is tracked centrally in [Open Items](open-items.md).
-
 No persisted intermediate stage boundary remains. Stage handoffs are fully in-memory.
 
 ---

@@ -223,7 +223,6 @@ Golden artifacts are reference outputs stored in `fixtures/golden/` that serve a
 - [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – command reference for partial runs, diagnostics, and logs.
 - [`fixtures/README.md`](../fixtures/README.md) – curated dataset and validation troubleshooting.
 - [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – current CLI and schema validation flow.
-- [`docs/open-items.md`](open-items.md) – central list of active cross-doc follow-up work.
 
 ### Troubleshooting
 
