@@ -110,6 +110,12 @@ export default defineConfig([
       "max-depth": ["warn", 6]
     }
   },
+  {
+    files: ["website/*.js"],
+    languageOptions: {
+      sourceType: "module"
+    }
+  },
   { files: ["**/*.json"], ignores: ["package.json", "package-lock.json"], plugins: { json }, extends: ["json/recommended"], language: "json/json" },
   { files: ["package.json"], plugins: { packageJson }, extends: ["packageJson/recommended"], rules: { "package-json/sort-collections": "off", "package-json/require-files": "off", "package-json/require-sideEffects": "off" } },
   { files: ["**/*.md"], plugins: { markdown }, language: "markdown/gfm", extends: ["markdown/recommended"] }

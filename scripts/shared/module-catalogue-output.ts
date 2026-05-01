@@ -82,9 +82,11 @@ interface PreviousStatsPayload {
 
 export interface PublishedOutputResult {
   changeSummary: ChangeSummary;
+  issuesJsonPath: string;
   modulesJsonPath: string;
   modulesMinPath: string;
   outputPaths: {
+    issuesJsonPath: string;
     modulesJsonPath: string;
     modulesMinPath: string;
     statsPath: string;
@@ -374,6 +376,7 @@ export async function writePublishedCatalogueOutputs(
   projectRoot: string
 ): Promise<PublishedOutputResult> {
   const normalizedProcessedModules = processedModules as ProcessedModule[];
+  const issuesJsonPath = resolve(projectRoot, "website/data/issues.json");
   const modulesJsonPath = resolve(projectRoot, "website/data/modules.json");
   const modulesMinPath = resolve(projectRoot, "website/data/modules.min.json");
   const statsPath = resolve(projectRoot, "website/data/stats.json");
@@ -389,15 +392,17 @@ export async function writePublishedCatalogueOutputs(
   const comparableFinalModules = normalizedProcessedModules.map(module => toFinalModule(module, comparisonTimestamp));
   const changeSummary = buildModuleDiffSummary(previousModules, comparableFinalModules);
 
-  const outputsAlreadyPresent = await allFilesExist([modulesJsonPath, modulesMinPath, statsPath]);
+  const outputsAlreadyPresent = await allFilesExist([issuesJsonPath, modulesJsonPath, modulesMinPath, statsPath]);
   const shouldSkipWrites = !changeSummary.hasChanges && outputsAlreadyPresent;
 
   if (shouldSkipWrites) {
     return {
       changeSummary,
+      issuesJsonPath,
       modulesJsonPath,
       modulesMinPath,
       outputPaths: {
+        issuesJsonPath,
         modulesJsonPath,
         modulesMinPath,
         statsPath
@@ -414,15 +419,25 @@ export async function writePublishedCatalogueOutputs(
     : comparableFinalModules;
   const stats = buildStats(normalizedProcessedModules, finalModules, lastUpdate);
 
+  const issuesMap: Record<string, string[]> = {};
+  for (const module of normalizedProcessedModules) {
+    if (typeof module.id === "string" && Array.isArray(module.issues) && module.issues.length > 0) {
+      issuesMap[module.id] = module.issues as string[];
+    }
+  }
+
+  await writeFile(issuesJsonPath, stringifyDeterministic(issuesMap, 0), "utf-8");
   await writeFile(modulesJsonPath, stringifyDeterministic({ modules: finalModules }), "utf-8");
   await writeFile(modulesMinPath, stringifyDeterministic({ modules: finalModules }, 0), "utf-8");
   await writeFile(statsPath, stringifyDeterministic(stats), "utf-8");
 
   return {
     changeSummary,
+    issuesJsonPath,
     modulesJsonPath,
     modulesMinPath,
     outputPaths: {
+      issuesJsonPath,
       modulesJsonPath,
       modulesMinPath,
       statsPath

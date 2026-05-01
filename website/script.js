@@ -1,7 +1,8 @@
+import { createCard } from "./card.js";
+
 let allModules = [];
 let skippedModules = [];
 let filteredModuleList = [];
-const cardTemplate = document.getElementById("card-template");
 const resetButton = document.getElementById("reset-button");
 const moduleCardContainer = document.getElementById("module-container");
 const searchInput = document.getElementById("search-input");
@@ -30,121 +31,6 @@ function toggleMenu() {
   navMenu.classList.toggle("visible");
 }
 
-function createCard(moduleData) {
-  const card = document.importNode(cardTemplate.content, true);
-
-  if (moduleData.skipped) {
-    card.querySelector(".card").classList.add("skipped");
-    card.querySelector(".name").textContent = moduleData.name || "Unknown Module";
-    card.querySelector(".name").href = moduleData.url || "#";
-    card.querySelector(".description").innerHTML = `<span style='color:red;font-weight:bold'>Error: Module could not be loaded.</span><br>${moduleData.error || "Unknown Error"}`;
-    card.querySelector(".maintainer").textContent = moduleData.maintainer || "?";
-    [".stars", ".tags", ".img-container", ".info", ".outdated-note"].forEach((selector) => {
-      const element = card.querySelector(selector);
-      if (element) {
-        element.remove();
-      }
-    });
-    return card;
-  }
-
-  card.querySelector(".name").href = moduleData.url;
-  card.querySelector(".name").textContent = moduleData.name;
-
-  const maintainerContainer = card.querySelector(".maintainer");
-  maintainerContainer.textContent = `${moduleData.maintainer}`;
-  maintainerContainer.addEventListener("click", () => {
-    filterByMaintainer(moduleData.maintainer);
-  });
-
-  if (typeof moduleData.stars === "undefined") {
-    card.querySelector(".stars").remove();
-  }
-  else {
-    card.querySelector(".stars").textContent = `${moduleData.stars} stars`;
-  }
-
-  if (moduleData.tags) {
-    moduleData.tags.forEach((tag) => {
-      const tagElement = document.createElement("div");
-      tagElement.setAttribute("data-tag", tag);
-      tagElement.textContent = tag;
-
-      tagElement.addEventListener("click", () => {
-        filterByTag(tag);
-      });
-
-      card.querySelector(".tags").appendChild(tagElement);
-    });
-  }
-  else {
-    card.querySelector(".tags").remove();
-  }
-
-  card.querySelector(".description").innerHTML = moduleData.description;
-
-  if (moduleData.image) {
-    const imagePath = `./images/${moduleData.image}`;
-    const image = card.querySelector(".img-container img");
-    image.src = imagePath;
-    image.alt = `${moduleData.name} image`;
-
-    const overlay = image.nextElementSibling;
-    image.onclick = () => {
-      // Move overlay to body to escape card's overflow/containment
-      document.body.appendChild(overlay);
-      overlay.style.display = "flex";
-      overlay.getElementsByTagName("img")[0].src = image.src;
-    };
-
-    overlay.onclick = () => {
-      overlay.style.display = "none";
-      // Move overlay back to its original position
-      image.parentElement.appendChild(overlay);
-    };
-  }
-  else {
-    card.querySelector(".img-container").remove();
-  }
-
-  const license = card.querySelector(".info .container.license .text");
-  license.href = `${moduleData.url}`;
-  if (moduleData.license) {
-    license.textContent = `©${moduleData.license}`;
-  }
-  else {
-    license.style.color = "red";
-    license.textContent = "unknown";
-  }
-
-  if (moduleData.lastCommit) {
-    const commit = card.querySelector(".info .container.commit .text");
-    commit.href = `${moduleData.url}/commits/`;
-    commit.textContent = `${moduleData.lastCommit.split("T")[0]}`;
-  }
-  else {
-    card.querySelector(".info .container.commit").remove();
-  }
-
-  if (moduleData.issues) {
-    const url = `result.html#${moduleData.name}-by-${moduleData.maintainer.replaceAll(" ", "-").replaceAll("&", "").replaceAll("/", "")}`;
-    card.querySelector(".info .container.issues .text").href = url;
-  }
-  else {
-    card.querySelector(".info .container.issues").remove();
-  }
-
-  if (moduleData.outdated) {
-    card.querySelector(".card").classList.add("outdated");
-    card.querySelector(".outdated-note").innerHTML = moduleData.outdated;
-  }
-  else {
-    card.querySelector(".outdated-note").remove();
-  }
-
-  return card;
-}
-
 function updateModuleCardContainer() {
   moduleCardContainer.innerHTML = "";
   const fragment = document.createDocumentFragment();
@@ -154,7 +40,7 @@ function updateModuleCardContainer() {
   filteredModuleList.forEach((moduleData) => {
     if ((!moduleData.outdated || showOutdated.checked) && (!moduleData.skipped || showOutdated.checked)) {
       try {
-        const cardNode = createCard(moduleData);
+        const cardNode = createCard(moduleData, { filterByMaintainer, filterByTag });
         if (cardNode) {
           fragment.appendChild(cardNode);
         }
@@ -468,7 +354,6 @@ async function initiate() {
   }
 }
 
-// eslint-disable-next-line no-unused-vars
 function switchDarkMode() {
   const header = document.getElementsByTagName("header")[0];
   const body = document.getElementsByTagName("body")[0];
@@ -491,4 +376,8 @@ function switchDarkMode() {
   }
 }
 
+darkMode.addEventListener("click", switchDarkMode);
+for (const id of ["close-menu", "nav-toggler"]) {
+  document.getElementById(id).addEventListener("click", toggleMenu);
+}
 initiate();

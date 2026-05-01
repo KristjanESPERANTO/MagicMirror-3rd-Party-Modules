@@ -402,6 +402,96 @@ main {
   }
 }
 
+/* ------------------------------- HINTS DIALOG */
+#hints-dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  max-width: min(600px, 90vw);
+  max-height: 80vh;
+  background-color: var(--color-card-background);
+  color: var(--color-background);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 40%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#hints-dialog::backdrop {
+  background: rgb(0 0 0 / 50%);
+}
+
+#hints-dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 1em;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  gap: 1em;
+}
+
+#hints-dialog-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#hints-dialog-close {
+  background: none;
+  border: none;
+  color: var(--color-foreground);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+#hints-dialog-close:hover {
+  background-color: #fff3;
+}
+
+#hints-dialog-body {
+  padding: 0.8em 1.2em;
+  overflow-y: auto;
+  flex: 1;
+}
+
+#hints-dialog-body ol {
+  margin: 0;
+  padding-left: 1.4em;
+}
+
+#hints-dialog-body li {
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+#hints-dialog-body code {
+  background-color: #0001;
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+  font-size: 0.85em;
+}
+
+#hints-dialog-footer {
+  padding: 0.6em 1.2em;
+  border-top: 1px solid #0002;
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+#hints-dialog-footer a {
+  color: var(--color-selected);
+}
+
 [data-tag].selected {
   margin: 0 0.4em;
 }
