@@ -2,14 +2,14 @@
   "modules": [
     {
       "category": "Development / Core MagicMirror²",
-      "defaultSortWeight": -6,
+      "defaultSortWeight": -3,
       "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
       "hasGithubIssues": true,
       "id": "Bee-Mar/mmpm",
       "image": "mmpm---Bee-Mar.webp",
       "isArchived": false,
       "issues": true,
-      "lastCommit": "2026-02-22T20:08:34Z",
+      "lastCommit": "2026-04-29T03:54:55Z",
       "license": "MIT",
       "maintainer": "Bee-Mar",
       "maintainerURL": "https://github.com/Bee-Mar",
@@ -162,14 +162,14 @@
       "defaultSortWeight": 3,
       "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror².",
       "hasGithubIssues": true,
-      "id": "KristjanESPERANTO/MMM-Buttons",
+      "id": "MagicMirrorModules/MMM-Buttons",
       "image": "MMM-Buttons---KristjanESPERANTO.webp",
       "isArchived": false,
       "issues": true,
-      "lastCommit": "2026-03-09T23:28:33Z",
+      "lastCommit": "2026-04-25T10:47:07Z",
       "license": "MIT",
       "maintainer": "KristjanESPERANTO",
-      "maintainerURL": "https://github.com/KristjanESPERANTO",
+      "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-Buttons",
       "stars": 9,
       "tags": [
@@ -177,7 +177,7 @@
         "gpio",
         "notifications"
       ],
-      "url": "https://github.com/KristjanESPERANTO/MMM-Buttons"
+      "url": "https://github.com/MagicMirrorModules/MMM-Buttons"
     },
     {
       "category": "Development / Core MagicMirror²",
@@ -1094,7 +1094,7 @@
     },
     {
       "category": "Development / Core MagicMirror²",
-      "defaultSortWeight": -26,
+      "defaultSortWeight": -27,
       "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
       "hasGithubIssues": true,
       "id": "Jopyth/MMM-Remote-Control",
@@ -2101,6 +2101,7 @@
       "maintainer": "supermem613",
       "maintainerURL": "https://github.com/supermem613",
       "name": "MMM-AINews",
+      "stars": 0,
       "url": "https://github.com/supermem613/MMM-AINews"
     },
     {
@@ -2154,6 +2155,7 @@
       "maintainer": "Dawi",
       "maintainerURL": "https://github.com/yourdawi",
       "name": "MMM-APSystemsEZ1",
+      "stars": 0,
       "tags": [
         "apsystems",
         "ez1",
@@ -2458,6 +2460,7 @@
       "maintainer": "supermem613",
       "maintainerURL": "https://github.com/supermem613",
       "name": "MMM-GoogleSheetToTable",
+      "stars": 0,
       "url": "https://github.com/supermem613/MMM-GoogleSheetToTable"
     },
     {
@@ -3205,6 +3208,20 @@
     },
     {
       "category": "Transport / Travel",
+      "defaultSortWeight": 8,
+      "description": "Displays live BMW 🚗 vehicle data (mileage, range, fuel, battery, tyre pressure, charging status) via a bmw-cardata-bridge instance.",
+      "hasGithubIssues": null,
+      "id": "wiesty/MMM-BMWCD",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "maintainer": "wiesty",
+      "maintainerURL": "https://github.com/wiesty",
+      "name": "MMM-BMWCD",
+      "url": "https://github.com/wiesty/MMM-BMWCD"
+    },
+    {
+      "category": "Transport / Travel",
       "defaultSortWeight": 9,
       "description": "Display Dutch bus and some other public transports for a targeted set of bus stops.",
       "hasGithubIssues": true,
@@ -3315,12 +3332,12 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 0,
+      "defaultSortWeight": 10,
       "description": "Real time tram departure from selected stop in Cracow (Poland).",
       "hasGithubIssues": true,
       "id": "wkra/MMM-CracowMPK",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2019-11-12T18:23:09Z",
       "maintainer": "wkra",
       "maintainerURL": "https://github.com/wkra",
@@ -3345,18 +3362,25 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 4,
       "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
       "hasGithubIssues": null,
       "id": "JHWelch/MMM-CTA",
+      "image": "MMM-CTA---JHWelch.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "JHWelch",
       "maintainerURL": "https://github.com/JHWelch",
       "name": "MMM-CTA",
       "stars": 0,
+      "tags": [
+        "cta",
+        "train",
+        "bus",
+        "tracker"
+      ],
       "url": "https://github.com/JHWelch/MMM-CTA"
     },
     {
@@ -3433,6 +3457,27 @@
         "dbf"
       ],
       "url": "https://github.com/Pascal-nie/MMM-DBF-Navigator"
+    },
+    {
+      "category": "Transport / Travel",
+      "defaultSortWeight": 1,
+      "description": "Displays live Washington DC Metro train arrivals (and MetroBus too!) and active service alerts using the WMATA API.",
+      "hasGithubIssues": null,
+      "id": "rroach3753/MMM-DCMetroTrains",
+      "image": "MMM-DCMetroTrains---Rickey Roach.webp",
+      "isArchived": null,
+      "issues": false,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "Rickey Roach",
+      "maintainerURL": "https://github.com/rroach3753",
+      "name": "MMM-DCMetroTrains",
+      "tags": [
+        "wmata",
+        "dc-metro",
+        "train"
+      ],
+      "url": "https://github.com/rroach3753/MMM-DCMetroTrains"
     },
     {
       "category": "Transport / Travel",
@@ -3519,18 +3564,25 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 10,
       "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
       "hasGithubIssues": true,
       "id": "galaktor/MMM-DublinRTPI",
+      "image": "MMM-DublinRTPI---galaktor.webp",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2018-01-09T18:55:50Z",
       "license": "GPL-3.0",
       "maintainer": "galaktor",
       "maintainerURL": "https://github.com/galaktor",
       "name": "MMM-DublinRTPI",
       "stars": 1,
+      "tags": [
+        "public transport",
+        "dublin bus",
+        "dublin luas",
+        "irish rail"
+      ],
       "url": "https://github.com/galaktor/MMM-DublinRTPI"
     },
     {
@@ -3751,6 +3803,27 @@
     },
     {
       "category": "Transport / Travel",
+      "defaultSortWeight": 11,
+      "description": "Shows flights overhead using OpenSky API.",
+      "hasGithubIssues": null,
+      "id": "Jcurrie314/MMM-FlightsOverhead",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "Jcurrie314",
+      "maintainerURL": "https://github.com/Jcurrie314",
+      "name": "MMM-FlightsOverhead",
+      "tags": [
+        "flights",
+        "aircraft",
+        "opensky",
+        "adsb"
+      ],
+      "url": "https://github.com/Jcurrie314/MMM-FlightsOverhead"
+    },
+    {
+      "category": "Transport / Travel",
       "defaultSortWeight": 22,
       "description": "Display gas station prices.",
       "hasGithubIssues": true,
@@ -3769,6 +3842,27 @@
         "gas station"
       ],
       "url": "https://github.com/fewieden/MMM-Fuel"
+    },
+    {
+      "category": "Transport / Travel",
+      "defaultSortWeight": 3,
+      "description": "Display Norwegian fuel prices using the Drivstoff App API.",
+      "hasGithubIssues": null,
+      "id": "matskkolstad/MMM-FuelNorway",
+      "image": "MMM-FuelNorway---matskkolstad.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "matskkolstad",
+      "maintainerURL": "https://github.com/matskkolstad",
+      "name": "MMM-FuelNorway",
+      "tags": [
+        "fuel",
+        "norway",
+        "price"
+      ],
+      "url": "https://github.com/matskkolstad/MMM-FuelNorway"
     },
     {
       "category": "Transport / Travel",
@@ -3985,12 +4079,12 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 9,
       "description": "Displays current and forecasted gas prices for the Greater Toronto Area (GTA) from CityNews.",
       "hasGithubIssues": null,
       "id": "poonasor/MMM-GTAGasPrices",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "poonasor",
@@ -4170,6 +4264,30 @@
         "map"
       ],
       "url": "https://github.com/basti0001/MMM-iHaveBeenThere"
+    },
+    {
+      "category": "Transport / Travel",
+      "defaultSortWeight": 7,
+      "description": "MM module designed for travelers and flight enthusiasts to track upcoming trips and visualize their past travel history, uses amChart5.",
+      "hasGithubIssues": null,
+      "id": "gitgitaway/MMM-iAmGoingThere",
+      "image": "MMM-iAmGoingThere---gitgitaway.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "gitgitaway",
+      "maintainerURL": "https://github.com/gitgitaway",
+      "name": "MMM-iAmGoingThere",
+      "tags": [
+        "live flight tracker",
+        "amchart5",
+        "travel",
+        "flights",
+        "tracking",
+        "flightaware"
+      ],
+      "url": "https://github.com/gitgitaway/MMM-iAmGoingThere"
     },
     {
       "category": "Transport / Travel",
@@ -4474,12 +4592,12 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 17,
       "description": "Displays the arrival time of the next few buses for a particular bus stop. This is for the Metropolitan Transit Authority (MTA) in New York City.",
       "hasGithubIssues": true,
       "id": "tie624/MMM-MTA-NextBus",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2017-09-26T03:09:49Z",
       "license": "MIT",
       "maintainer": "Tie",
@@ -4577,7 +4695,7 @@
     {
       "category": "Transport / Travel",
       "defaultSortWeight": 12,
-      "description": "Displays your commute times to several destinations. Highly configurable.",
+      "description": "Displays your commute times to several destinations. Highly configurable. [TomTom API Fork](https://github.com/poonasor/MMM-MyCommute)",
       "hasGithubIssues": true,
       "id": "qistoph/MMM-MyCommute",
       "image": "MMM-MyCommute---Jeff Clarke.webp",
@@ -6018,6 +6136,7 @@
       "maintainer": "nwootton",
       "maintainerURL": "https://github.com/nwootton",
       "name": "MMM-UKLiveBusStopInfo",
+      "stars": 0,
       "url": "https://github.com/nwootton/MMM-UKLiveBusStopInfo"
     },
     {
@@ -6081,18 +6200,25 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 6,
       "description": "Module to display public transport from Nürnberg in Germany.",
       "hasGithubIssues": null,
       "id": "wiesty/MMM-VAG",
+      "image": "MMM-VAG---Wiesty.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "Wiesty",
       "maintainerURL": "https://github.com/wiesty",
       "name": "MMM-VAG",
       "stars": 0,
+      "tags": [
+        "public transport",
+        "vag",
+        "nürnberg",
+        "nuremberg"
+      ],
       "url": "https://github.com/wiesty/MMM-VAG"
     },
     {
@@ -6305,7 +6431,7 @@
     },
     {
       "category": "Voice Control",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 2,
       "description": "Modular, offline-first voice assistant for MagicMirror² processes the user input using AI running locally or cloud.",
       "hasGithubIssues": true,
       "id": "rahil234/MMM-Assistant",
@@ -6743,6 +6869,7 @@
       "maintainer": "ajocham",
       "maintainerURL": "https://github.com/AJOCHAM",
       "name": "MMM-AIWallpaper",
+      "stars": 0,
       "url": "https://github.com/AJOCHAM/MMM-AIWallpaper"
     },
     {
@@ -7311,18 +7438,24 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 8,
       "description": "Visualize data as heatmaps, charts, and more. A lightweight wrapper over Heat.js with live file updates.",
       "hasGithubIssues": null,
       "id": "nonguyen1/MMM-HeatMaps",
+      "image": "MMM-HeatMaps---nonguyen1.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "nonguyen1",
       "maintainerURL": "https://github.com/nonguyen1",
       "name": "MMM-HeatMaps",
       "stars": 0,
+      "tags": [
+        "heatmap",
+        "habit-tracker",
+        "heat.js"
+      ],
       "url": "https://github.com/nonguyen1/MMM-HeatMaps"
     },
     {
@@ -7378,18 +7511,24 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 10,
       "description": "Display French agricultural weather from lameteoagricole.net. No API key required — data is scraped directly. Shows current conditions, hourly and 10-day forecast, rain by the minute.",
       "hasGithubIssues": null,
       "id": "Kamasoutra/MMM-LaMeteoAgricole",
+      "image": "MMM-LaMeteoAgricole---Kamasoutra.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "Kamasoutra",
       "maintainerURL": "https://github.com/Kamasoutra",
       "name": "MMM-LaMeteoAgricole",
       "stars": 0,
+      "tags": [
+        "weather",
+        "meteo",
+        "france"
+      ],
       "url": "https://github.com/Kamasoutra/MMM-LaMeteoAgricole"
     },
     {
@@ -7805,24 +7944,23 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 1,
       "description": "Comprehensive weather module with customizable forecast layouts and separate rain/snow display. Features temperature-based snow depth calculation using scientific ratios for accurate estimates. Includes time-windowed weather alerts with automatic deduplication. Choose from multiple icon sets including animated SVGs.",
-      "hasGithubIssues": true,
-      "id": "KristjanESPERANTO/MMM-OneCallWeather",
+      "hasGithubIssues": null,
+      "id": "MagicMirrorModules/MMM-OneCallWeather",
       "image": "MMM-OneCallWeather---KristjanESPERANTO.webp",
-      "isArchived": false,
+      "isArchived": null,
       "issues": true,
-      "lastCommit": "2026-01-25T15:37:59Z",
+      "lastCommit": "2026-05-01T10:34:06.770Z",
       "license": "MIT",
       "maintainer": "KristjanESPERANTO",
-      "maintainerURL": "https://github.com/KristjanESPERANTO",
+      "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-OneCallWeather",
-      "stars": 12,
       "tags": [
         "weather",
         "openweathermap"
       ],
-      "url": "https://github.com/KristjanESPERANTO/MMM-OneCallWeather"
+      "url": "https://github.com/MagicMirrorModules/MMM-OneCallWeather"
     },
     {
       "category": "Weather",
@@ -8103,7 +8241,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 1,
       "description": "Rain radar map for Germany, based on data from DWD, Openstreet Map and Bright Sky",
       "hasGithubIssues": null,
       "id": "realoliwer/MMM-RainRadarDWD",
@@ -8115,6 +8253,7 @@
       "maintainer": "Oliwer",
       "maintainerURL": "https://github.com/realoliwer",
       "name": "MMM-RainRadarDWD",
+      "stars": 0,
       "tags": [
         "weather",
         "rain",
@@ -8778,12 +8917,13 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 13,
       "description": "Adds the windy weather map which covers the whole screen.",
       "hasGithubIssues": null,
       "id": "jhogendorn/MMM-WindyV3",
+      "image": "MMM-WindyV3---jhogendorn.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "ISC",
       "maintainer": "jhogendorn",
@@ -8816,16 +8956,26 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 18,
       "description": "Displays current weather and short forecast using [Yandex Weather API v3](https://yandex.ru/dev/weather/).",
       "hasGithubIssues": null,
       "id": "igor-semenov/MMM-YandexWeather",
+      "image": "MMM-YandexWeather---igor-semenov.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-04-16T06:52:27.519Z",
+      "license": "MIT",
       "maintainer": "igor-semenov",
       "maintainerURL": "https://github.com/igor-semenov",
       "name": "MMM-YandexWeather",
+      "stars": 0,
+      "tags": [
+        "weather",
+        "yandex",
+        "yandex-weather",
+        "forecast",
+        "smart-mirror"
+      ],
       "url": "https://github.com/igor-semenov/MMM-YandexWeather"
     },
     {
@@ -9024,20 +9174,6 @@
       "name": "MMM-hukamnama",
       "stars": 1,
       "url": "https://github.com/harv-singh/MMM-hukamnama"
-    },
-    {
-      "category": "Religion",
-      "defaultSortWeight": 1,
-      "description": "Displays a daily reminder of Hadith, Quranic Verse and Reflection from https://reminder.dev/api.",
-      "hasGithubIssues": null,
-      "id": "mdbkabirbd/MMM-ILM-DailyReminder",
-      "isArchived": null,
-      "issues": false,
-      "lastCommit": "2026-04-16T06:52:27.519Z",
-      "maintainer": "MD B Kabir",
-      "maintainerURL": "https://github.com/mdbkabirbd",
-      "name": "MMM-ILM-DailyReminder",
-      "url": "https://github.com/mdbkabirbd/MMM-ILM-DailyReminder"
     },
     {
       "category": "Religion",
@@ -9245,6 +9381,27 @@
         "sweden"
       ],
       "url": "https://github.com/retroflex/MMM-AllsvenskanStandings"
+    },
+    {
+      "category": "Sports",
+      "defaultSortWeight": 9,
+      "description": "Displays Australian Football League (AFL) scores, fixtures, and upcoming games.",
+      "hasGithubIssues": null,
+      "id": "jlcloudtea/MMM-AFL",
+      "image": "MMM-AFL---jlcloudtea.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "jlcloudtea",
+      "maintainerURL": "https://github.com/jlcloudtea",
+      "name": "MMM-AFL",
+      "tags": [
+        "afl",
+        "sports",
+        "squiggle"
+      ],
+      "url": "https://github.com/jlcloudtea/MMM-AFL"
     },
     {
       "category": "Sports",
@@ -9696,7 +9853,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 1,
       "description": "Display scores for your favorite teams from many major sports.",
       "hasGithubIssues": true,
       "id": "dathbe/MMM-MyScoreboard",
@@ -10043,7 +10200,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 2,
       "description": "Displays PGA leaderboards, tournaments, and rankings.",
       "hasGithubIssues": true,
       "id": "dathbe/MMM-PGA",
@@ -10456,6 +10613,22 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 12,
+      "description": "Displays your current Anthropic plan usage.",
+      "hasGithubIssues": null,
+      "id": "Jcurrie314/MMM-AnthropicUsage",
+      "image": "MMM-AnthropicUsage---Jcurrie314.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "Jcurrie314",
+      "maintainerURL": "https://github.com/Jcurrie314",
+      "name": "MMM-AnthropicUsage",
+      "url": "https://github.com/Jcurrie314/MMM-AnthropicUsage"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "defaultSortWeight": 13,
       "description": "Displays the status of an Anycubic 3D printer.",
       "hasGithubIssues": true,
@@ -10611,6 +10784,21 @@
         "serialport"
       ],
       "url": "https://github.com/Dentrax/MMM-ArduPort"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 15,
+      "description": "Shows a random Arla recipe with QR code and cooking time.",
+      "hasGithubIssues": null,
+      "id": "dentrass/MMM-ArlaRandomMeal",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "dentrass",
+      "maintainerURL": "https://github.com/dentrass",
+      "name": "MMM-ArlaRandomMeal",
+      "url": "https://github.com/dentrass/MMM-ArlaRandomMeal"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -10922,27 +11110,26 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": -4,
+      "defaultSortWeight": 1,
       "description": "Extended calendar with 10+ view types (agenda, timeline, upcoming, current events), attendee display, and extensive customization options.",
-      "hasGithubIssues": true,
-      "id": "MMM-CalendarExt2/MMM-CalendarExt2",
+      "hasGithubIssues": null,
+      "id": "MagicMirrorModules/MMM-CalendarExt2",
       "image": "MMM-CalendarExt2---klaernie & KristjanESPERANTO.webp",
-      "isArchived": false,
+      "isArchived": null,
       "issues": true,
-      "lastCommit": "2026-01-18T15:33:30Z",
+      "lastCommit": "2026-05-01T10:34:06.770Z",
       "license": "MIT",
       "maintainer": "klaernie & KristjanESPERANTO",
-      "maintainerURL": "https://github.com/MMM-CalendarExt2",
+      "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-CalendarExt2",
-      "stars": 123,
       "tags": [
         "calendar"
       ],
-      "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExt2"
+      "url": "https://github.com/MagicMirrorModules/MMM-CalendarExt2"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": -3,
+      "defaultSortWeight": -4,
       "description": "Lightweight calendar with week/month views, weather integration, and interactive popovers.",
       "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3",
@@ -11025,54 +11212,45 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "description": "Display current timeline schedules. This is a plugin module for `MMM-CalendarExt2`.",
-      "hasGithubIssues": true,
-      "id": "MMM-CalendarExt2/MMM-CalendarExtTimeline",
-      "image": "MMM-CalendarExtTimeline---klaernie.webp",
-      "isArchived": false,
+      "hasGithubIssues": null,
+      "id": "MagicMirrorModules/MMM-CalendarExtTimeline",
+      "isArchived": null,
       "issues": true,
-      "lastCommit": "2022-04-05T17:57:21Z",
-      "license": "MIT",
+      "lastCommit": "2026-05-01T10:34:06.770Z",
       "maintainer": "klaernie",
-      "maintainerURL": "https://github.com/MMM-CalendarExt2",
+      "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-CalendarExtTimeline",
-      "stars": 18,
-      "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtTimeline"
+      "url": "https://github.com/MagicMirrorModules/MMM-CalendarExtTimeline"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "defaultSortWeight": 8,
       "description": "Display mini month calendar. This is a plugin module for `MMM-CalendarExt2`.",
-      "hasGithubIssues": true,
-      "id": "MMM-CalendarExt2/MMM-CalendarExtMinimonth",
-      "image": "MMM-CalendarExtMinimonth---klaernie.webp",
-      "isArchived": false,
+      "hasGithubIssues": null,
+      "id": "MagicMirrorModules/MMM-CalendarExtMinimonth",
+      "isArchived": null,
       "issues": true,
-      "lastCommit": "2025-06-10T07:53:45Z",
-      "license": "MIT",
+      "lastCommit": "2026-05-01T10:34:06.770Z",
       "maintainer": "klaernie",
-      "maintainerURL": "https://github.com/MMM-CalendarExt2",
+      "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-CalendarExtMinimonth",
-      "stars": 11,
-      "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtMinimonth"
+      "url": "https://github.com/MagicMirrorModules/MMM-CalendarExtMinimonth"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "description": "Display daily plan by criteria. This is a plugin module for `MMM-CalendarExt2`.",
-      "hasGithubIssues": true,
-      "id": "MMM-CalendarExt2/MMM-CalendarExtPlan",
-      "image": "MMM-CalendarExtPlan---klaernie.webp",
-      "isArchived": false,
+      "hasGithubIssues": null,
+      "id": "MagicMirrorModules/MMM-CalendarExtPlan",
+      "isArchived": null,
       "issues": true,
-      "lastCommit": "2022-02-18T22:53:07Z",
-      "license": "MIT",
+      "lastCommit": "2026-05-01T10:34:06.770Z",
       "maintainer": "klaernie",
-      "maintainerURL": "https://github.com/MMM-CalendarExt2",
+      "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-CalendarExtPlan",
-      "stars": 10,
-      "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtPlan"
+      "url": "https://github.com/MagicMirrorModules/MMM-CalendarExtPlan"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -11088,6 +11266,7 @@
       "maintainer": "ex247",
       "maintainerURL": "https://github.com/ex247",
       "name": "MMM-CalendarLegend",
+      "stars": 0,
       "tags": [
         "calendar",
         "legend",
@@ -11631,20 +11810,22 @@
       "maintainer": "Dresch360",
       "maintainerURL": "https://github.com/Dresch360",
       "name": "MMM-DriveImages",
+      "stars": 0,
       "url": "https://github.com/Dresch360/MMM-DriveImages"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 6,
       "description": "Displays and plays videos from a Google Drive folder as a looping video slideshow.",
       "hasGithubIssues": null,
       "id": "Dresch360/MMM-DriveVideos",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-04-16T06:52:27.519Z",
       "maintainer": "Dresch360",
       "maintainerURL": "https://github.com/Dresch360",
       "name": "MMM-DriveVideos",
+      "stars": 0,
       "url": "https://github.com/Dresch360/MMM-DriveVideos"
     },
     {
@@ -12575,6 +12756,26 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 2,
+      "description": "Display several gauges in a row generated by Grafana.",
+      "hasGithubIssues": null,
+      "id": "MagicMirrorModules/MMM-GrafanaGauges",
+      "image": "MMM-GrafanaGauges---SvenSommer.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "SvenSommer",
+      "maintainerURL": "https://github.com/MagicMirrorModules",
+      "name": "MMM-GrafanaGauges",
+      "tags": [
+        "grafana",
+        "gauges"
+      ],
+      "url": "https://github.com/MagicMirrorModules/MMM-GrafanaGauges"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "defaultSortWeight": 5,
       "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
       "hasGithubIssues": true,
@@ -12933,7 +13134,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 1,
       "description": "Shows status such as remaining program time of your Home Connect appliances. Based on djeriks module MMM-HomeConnect, but with headless auth workflow.",
       "hasGithubIssues": true,
       "id": "HeikoGr/MMM-HomeConnect2",
@@ -13649,7 +13850,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 0,
       "description": "Getting Bluetooth remote control and keyboard inputs.",
       "hasGithubIssues": true,
       "id": "shbatm/MMM-KeyBindings",
@@ -14653,7 +14854,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 2,
       "description": "Display multiple mini-calendars at the same time.",
       "hasGithubIssues": true,
       "id": "BKeyport/MMM-Multimonth",
@@ -15154,6 +15355,7 @@
       "maintainer": "ndp15",
       "maintainerURL": "https://github.com/ndp15",
       "name": "MMM-Nextcloud-Calendar",
+      "stars": 0,
       "tags": [
         "nextcloud",
         "manager",
@@ -15164,7 +15366,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "defaultSortWeight": 13,
-      "description": "Display a count down to the next event from [MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2).",
+      "description": "Display a count down to the next event from [MMM-CalendarExt2](https://github.com/MagicMirrorModules/MMM-CalendarExt2).",
       "hasGithubIssues": true,
       "id": "cure/MMM-NextEvent",
       "image": "MMM-NextEvent---cure.webp",
@@ -15256,18 +15458,23 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 4,
       "description": "Create an iCalendar feed from a Notion Database for use in the `calendar` module.",
       "hasGithubIssues": null,
       "id": "JHWelch/MMM-NotionCalendar",
+      "image": "MMM-NotionCalendar---JHWelch.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "JHWelch",
       "maintainerURL": "https://github.com/JHWelch",
       "name": "MMM-NotionCalendar",
       "stars": 0,
+      "tags": [
+        "notion",
+        "calendar"
+      ],
       "url": "https://github.com/JHWelch/MMM-NotionCalendar"
     },
     {
@@ -15434,12 +15641,13 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": -1,
+      "defaultSortWeight": 11,
       "description": "Show lights and window states on a floorplan of an openhab server.",
       "hasGithubIssues": true,
       "id": "paphko/mmm-openhabfloorplan",
+      "image": "MMM-openhabfloorplan---paphko.webp",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2025-03-03T08:42:31Z",
       "license": "MIT",
       "maintainer": "paphko",
@@ -16040,6 +16248,32 @@
         "notification"
       ],
       "url": "https://github.com/basknol/MMM-PushBulletNotifications"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 4,
+      "description": "Display Solar PV generation and consumption data based on pvoutput.org API.",
+      "hasGithubIssues": null,
+      "id": "mw46d/MMM-PVoutput",
+      "image": "MMM-PVoutput---mw46d.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "mw46d",
+      "maintainerURL": "https://github.com/mw46d",
+      "name": "MMM-PVoutput",
+      "tags": [
+        "magicmirror module",
+        "electricity chart",
+        "energy",
+        "smart home",
+        "dashboard",
+        "home automation",
+        "electricity consumption",
+        "energy monitoring"
+      ],
+      "url": "https://github.com/mw46d/MMM-PVoutput"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -17569,22 +17803,21 @@
       "category": "Utility / IoT / 3rd Party / Integration",
       "defaultSortWeight": 1,
       "description": "Display your processor temperature. Optional: Shut down your system safely if the temperature is too high (using MMM-Remote-Control).",
-      "hasGithubIssues": true,
-      "id": "KristjanESPERANTO/MMM-SystemTemperature",
+      "hasGithubIssues": null,
+      "id": "MagicMirrorModules/MMM-SystemTemperature",
       "image": "MMM-SystemTemperature---KristjanESPERANTO.webp",
-      "isArchived": false,
+      "isArchived": null,
       "issues": true,
-      "lastCommit": "2025-09-10T20:36:08Z",
+      "lastCommit": "2026-05-01T10:34:06.770Z",
       "license": "MIT",
       "maintainer": "KristjanESPERANTO",
-      "maintainerURL": "https://github.com/KristjanESPERANTO",
+      "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-SystemTemperature",
-      "stars": 2,
       "tags": [
         "temperature",
         "system"
       ],
-      "url": "https://github.com/KristjanESPERANTO/MMM-SystemTemperature"
+      "url": "https://github.com/MagicMirrorModules/MMM-SystemTemperature"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -17787,10 +18020,7 @@
       "maintainer": "ex247",
       "maintainerURL": "https://github.com/ex247",
       "name": "MMM-TodayBlock",
-      "tags": [
-        "calendar",
-        "today"
-      ],
+      "stars": 0,
       "url": "https://github.com/ex247/MMM-TodayBlock"
     },
     {
@@ -18057,6 +18287,28 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 3,
+      "description": "Display UniFi Hotspot Vouchers For UniFi Hotspot Portal Access.",
+      "hasGithubIssues": null,
+      "id": "rroach3753/MMM-UniFiHotspotVouchers",
+      "image": "MMM-UniFiHotspotVouchers---Rickey Roach.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "Rickey Roach",
+      "maintainerURL": "https://github.com/rroach3753",
+      "name": "MMM-UniFiHotspotVouchers",
+      "tags": [
+        "unifi",
+        "ubiquiti",
+        "hotspot",
+        "voucher"
+      ],
+      "url": "https://github.com/rroach3753/MMM-UniFiHotspotVouchers"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "defaultSortWeight": 5,
       "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
       "hasGithubIssues": false,
@@ -18129,6 +18381,28 @@
         "robot"
       ],
       "url": "https://github.com/mrVragec/MMM-uptimerobot"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 9,
+      "description": "Display monitor data (online/offline detection) from <https://uptimerobot.com/>. Fork of [MMM-uptimerobot](https://github.com/mrVragec/MMM-uptimerobot) using `fetch` instead of `request`",
+      "hasGithubIssues": null,
+      "id": "kaczmar986/MMM-UptimeRobot-Modern",
+      "image": "MMM-UptimeRobot-Modern---kaczmar986.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "kaczmar986",
+      "maintainerURL": "https://github.com/kaczmar986",
+      "name": "MMM-UptimeRobot-Modern",
+      "tags": [
+        "uptimerobot",
+        "uptime robot",
+        "uptime",
+        "robot"
+      ],
+      "url": "https://github.com/kaczmar986/MMM-UptimeRobot-Modern"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -18253,6 +18527,20 @@
       "name": "MMM-VietNamEventsCalendar",
       "stars": 0,
       "url": "https://github.com/phungorquan/MMM-VietNamEventsCalendar"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 12,
+      "description": "Displays your Discogs vinyl collection with stats and random albums.",
+      "hasGithubIssues": null,
+      "id": "dentrass/MMM-VinylCollection",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "maintainer": "dentrass",
+      "maintainerURL": "https://github.com/dentrass",
+      "name": "MMM-VinylCollection",
+      "url": "https://github.com/dentrass/MMM-VinylCollection"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -18593,6 +18881,26 @@
       "name": "mmm-zabbix-alerts",
       "stars": 1,
       "url": "https://github.com/spectroman/mmm-zabbix-alerts"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 10,
+      "description": "UniFi Protect: live camera video (fMP4/MSE), motion and doorbell alerts, smart (AI) detection events. Auth, WebSockets, and streaming run in node_helper.js on the mirror; the browser gets video segments, snapshots, and notifications.",
+      "hasGithubIssues": null,
+      "id": "awestley/MMM-UniFiProtect",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "awestley",
+      "maintainerURL": "https://github.com/awestley",
+      "name": "MMM-UniFiProtect",
+      "tags": [
+        "unifi",
+        "unifi-protect",
+        "camera"
+      ],
+      "url": "https://github.com/awestley/MMM-UniFiProtect"
     },
     {
       "category": "Entertainment / Misc",
@@ -20688,12 +20996,12 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 16,
       "description": "Displays random Lord of the rings quotes.",
       "hasGithubIssues": true,
       "id": "jaylingelbach/MMM-LOTR-Quotes",
       "isArchived": false,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2025-03-04T02:58:22Z",
       "maintainer": "Jay Lingelbach",
       "maintainerURL": "https://github.com/jaylingelbach",
@@ -20893,18 +21201,29 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 7,
       "description": "Displays animated portrait videos with support for multiple portraits, rotation, smooth transitions, and customizable frame styles.<br>Perfect for creating a Hogwarts-style moving portrait gallery on your mirror!",
       "hasGithubIssues": null,
       "id": "fischi87/MMM-MovingPortrait",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "fischi87",
       "maintainerURL": "https://github.com/fischi87",
       "name": "MMM-MovingPortrait",
       "stars": 0,
+      "tags": [
+        "portrait",
+        "video",
+        "animated",
+        "hogwarts",
+        "harry-potter",
+        "moving-portrait",
+        "rotation",
+        "gallery",
+        "media"
+      ],
       "url": "https://github.com/fischi87/MMM-MovingPortrait"
     },
     {
@@ -22372,34 +22691,46 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 5,
       "description": "Displays current Steam deals. Companion to MMM-SteamUpcoming",
       "hasGithubIssues": null,
       "id": "badubada/MMM-SteamDeals",
+      "image": "MMM-SteamDeals---badubada.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "badubada",
       "maintainerURL": "https://github.com/badubada",
       "name": "MMM-SteamDeals",
       "stars": 0,
+      "tags": [
+        "steam",
+        "deals",
+        "games"
+      ],
       "url": "https://github.com/badubada/MMM-SteamDeals"
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 6,
       "description": "Displays upcoming Steam games. Companion to MMM-SteamDeals",
       "hasGithubIssues": null,
       "id": "badubada/MMM-SteamUpcoming",
+      "image": "MMM-SteamUpcoming---badubada.webp",
       "isArchived": null,
-      "issues": false,
+      "issues": true,
       "lastCommit": "2026-03-22T11:47:02.429Z",
       "license": "MIT",
       "maintainer": "badubada",
       "maintainerURL": "https://github.com/badubada",
       "name": "MMM-SteamUpcoming",
       "stars": 0,
+      "tags": [
+        "steam",
+        "upcoming",
+        "games"
+      ],
       "url": "https://github.com/badubada/MMM-SteamUpcoming"
     },
     {
@@ -22523,6 +22854,7 @@
       "maintainer": "Snille",
       "maintainerURL": "https://github.com/Snille",
       "name": "MMM-TautulliLatest",
+      "stars": 0,
       "tags": [
         "plex",
         "tautulli"
@@ -23176,6 +23508,7 @@
       "maintainer": "iamktothek",
       "maintainerURL": "https://github.com/iamktothek",
       "name": "MMM-XboxFriends",
+      "stars": 0,
       "url": "https://github.com/iamktothek/MMM-XboxFriends"
     },
     {
@@ -23758,6 +24091,28 @@
     },
     {
       "category": "Education",
+      "defaultSortWeight": 6,
+      "description": "Display [phase6](https://www.phase-6.de/) vocabulary learning statistics (last learned, due count, learning streak) for one or more family profiles.",
+      "hasGithubIssues": null,
+      "id": "ms-zone-41/MMM-phase6",
+      "image": "MMM-phase6---ms-zone-41.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-05-01T10:34:06.770Z",
+      "license": "MIT",
+      "maintainer": "ms-zone-41",
+      "maintainerURL": "https://github.com/ms-zone-41",
+      "name": "MMM-phase6",
+      "tags": [
+        "phase6",
+        "vocabulary",
+        "learning",
+        "kids"
+      ],
+      "url": "https://github.com/ms-zone-41/MMM-phase6"
+    },
+    {
+      "category": "Education",
       "defaultSortWeight": 13,
       "description": "Displays a Polish word of the day with examples and the English translations.",
       "hasGithubIssues": true,
@@ -23873,6 +24228,7 @@
       "maintainer": "frankrenehan",
       "maintainerURL": "https://github.com/frankrenehan",
       "name": "MMM-Whoop",
+      "stars": 0,
       "tags": [
         "magic-mirror-modules",
         "whoop",
@@ -25869,22 +26225,6 @@
         "motion detection"
       ],
       "url": "https://github.com/MarcLandis/MMM-PIR-Sensor"
-    },
-    {
-      "category": "Outdated Modules",
-      "defaultSortWeight": 913,
-      "description": "Display Solar PV generation and consumption data based on pvoutput.org API.",
-      "hasGithubIssues": true,
-      "id": "mrvanes/MMM-PVoutput",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2019-04-25T10:21:20Z",
-      "maintainer": "mrvanes",
-      "maintainerURL": "https://github.com/mrvanes",
-      "name": "MMM-PVoutput",
-      "outdated": "Abandoned. No updates since years. But may still work.",
-      "stars": 2,
-      "url": "https://github.com/mrvanes/MMM-PVoutput"
     },
     {
       "category": "Outdated Modules",

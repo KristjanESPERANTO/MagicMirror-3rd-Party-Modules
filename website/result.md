@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2026-04-16T06:52:27.519Z
+Last update: 2026-05-01T10:34:06.770Z
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2026-04-16T06:52:27.519Z
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1387   |
-| maintainers          |    827   |
-| modules with issues  |   1369   |
-| issues               |  14038   |
-| modules at github    |   1374   |
+| modules analyzed     |   1400   |
+| maintainers          |    833   |
+| modules with issues  |   1399   |
+| issues               |  14286   |
+| modules at github    |   1387   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -25,10 +25,13 @@ Last update: 2026-04-16T06:52:27.519Z
 
 1. Recommendation: Found `uses: actions/checkout@v4` in file `workflow.yaml`: Replace it with v5.
 2. Recommendation: Found `npm run` in file `workflow.yaml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `axios` in file `bun.lock`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Recommendation: Found `axios` in file `bun.nix`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+3. Recommendation: Found `npm run` in file `CLAUDE.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `npm run` in file `test_controller.py`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `git checkout` in file `test_magicmirror.py`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
+6. Recommendation: Found `axios` in file `bun.lock`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+7. Recommendation: Found `axios` in file `bun.nix`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 
 ### [MMM-Template by Dennis-Rosenbaum](https://github.com/Dennis-Rosenbaum/MMM-Template)
 
@@ -109,31 +112,29 @@ Last update: 2026-04-16T06:52:27.519Z
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
-### [MMM-Buttons by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Buttons)
+### [MMM-Buttons by KristjanESPERANTO](https://github.com/MagicMirrorModules/MMM-Buttons)
 
 1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 2. Information: There are updates for 6 dependencie(s):
    - @eslint/markdown -> ^8.0.1
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
-3. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=20.19.0[39m
-[41m ERROR [49m [31m@eslint/js: fetch failed[39m
-[41m ERROR [49m [31m@eslint/markdown: fetch failed[39m
+3. ESLint issues:
+   - package.json: Line 26, Column 12: Invalid bugs: the value of `url` should be a valid URL (rule: package-json/valid-bugs)
 
 ### [MMM-Carousel by shbatm & KristjanESPERANTO](https://github.com/shbatm/MMM-Carousel)
 
 1. Information: There are updates for 12 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - eslint-plugin-jsdoc -> ^62.9.0
    - globals -> ^17.5.0
@@ -230,11 +231,11 @@ Minimum engines.node: [35m>=20.19.0[39m
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
 1. Information: There are updates for 7 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/json -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
 
@@ -376,7 +377,7 @@ Minimum engines.node: [35m>=20.19.0[39m
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
@@ -504,7 +505,7 @@ Minimum engines.node: [35m>=20.19.0[39m
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/markdown -> ^8.0.1
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 2. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
@@ -528,7 +529,7 @@ Minimum engines.node: [35m>=20.19.0[39m
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-jsdoc -> ^62.9.0
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
@@ -561,14 +562,14 @@ Minimum engines.node: [35m>=20.19.0[39m
 ### [MMM-page-indicator by edward-shen & KristjanESPERANTO](https://github.com/edward-shen/MMM-page-indicator)
 
 1. Information: There are updates for 13 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/json -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - happy-dom -> ^20.9.0
@@ -708,25 +709,23 @@ Minimum engines.node: [35m>=20.19.0[39m
 
 ### [MMM-Remote-Control by Jopyth & KristjanESPERANTO](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. Information: There are updates for 14 dependencie(s):
-   - marked -> ^18.0.0
+1. Information: There are updates for 15 dependencie(s):
+   - marked -> ^18.0.2
    - simple-git -> ^3.36.0
-   - swagger-ui-dist -> ^5.32.4
-   - @eslint/css -> ^1.1.0
+   - swagger-ui-dist -> ^5.32.5
+   - uuid -> ^14.0.0
+   - @eslint/css -> ^1.2.0
    - @eslint/json -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-jsdoc -> ^62.9.0
    - eslint-plugin-unicorn -> ^64.0.0
    - globals -> ^17.5.0
    - happy-dom -> ^20.9.0
    - prettier -> ^3.8.3
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=10.13.0[39m
-[41m ERROR [49m [31mmarked: fetch failed[39m
-3. ESLint issues:
+2. ESLint issues:
    - package.json: Line 14, Column 12: Invalid bugs: the value of `url` should be a valid URL (rule: package-json/valid-bugs)
 
 ### [MM-Remote by Klettner](https://github.com/Klettner/MM-Remote)
@@ -1098,8 +1097,9 @@ Minimum engines.node: [35m>=10.13.0[39m
 
 ### [MMM-eToro by Owensy](https://github.com/owensy/MMM-eToro)
 
-1. Information: There are updates for 2 dependencie(s):
-   - eslint -> ^10.2.0
+1. Information: There are updates for 3 dependencie(s):
+   - uuid -> ^14.0.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-EUElectricityPrice by late4marshmellow](https://github.com/late4marshmellow/MMM-EUElectricityPrice)
@@ -1155,16 +1155,16 @@ Minimum engines.node: [35m>=10.13.0[39m
    - yahoo-finance2 -> ^3.14.0
    - @rollup/plugin-commonjs -> ^29.0.2
    - @rollup/plugin-terser -> ^1.0.0
-   - @vitest/coverage-v8 -> ^4.1.4
+   - @vitest/coverage-v8 -> ^4.1.5
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-jsdoc -> ^62.9.0
    - lint-staged -> ^16.4.0
    - prettier -> ^3.8.3
-   - rollup -> ^4.60.1
-   - typescript -> ^6.0.2
-   - typescript-eslint -> ^8.58.2
-   - vitest -> ^4.1.4
+   - rollup -> ^4.60.2
+   - typescript -> ^6.0.3
+   - typescript-eslint -> ^8.59.1
+   - vitest -> ^4.1.5
 
 ### [MMM-MktIndex by thess](https://github.com/thess/MMM-MktIndex)
 
@@ -1400,12 +1400,13 @@ Minimum engines.node: [35m>=10.13.0[39m
 
 ### [MMM-anotherNewsFeed by MMRIZE](https://github.com/MMRIZE/MMM-anotherNewsFeed)
 
-1. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 7 dependencie(s):
+   - html-to-text -> ^10.0.0
    - iconv-lite -> ^0.7.2
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-APSystemsEZ1 by Dawi](https://github.com/yourdawi/MMM-APSystemsEZ1)
@@ -1503,10 +1504,10 @@ Minimum engines.node: [35m>=10.13.0[39m
 
 1. Information: There are updates for 6 dependencie(s):
    - geolib -> ^3.3.14
-   - moment-timezone -> ^0.6.1
+   - moment-timezone -> ^0.6.2
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-EarthquakeMonitor by rcollie](https://github.com/rcollie/MMM-EarthquakeMonitor)
@@ -1602,7 +1603,7 @@ Minimum engines.node: [35m>=10.13.0[39m
 3. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 4. Information: There are updates for 4 dependencie(s):
    - dayjs -> ^1.11.20
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-prettier -> ^5.5.5
    - prettier -> ^3.8.3
 
@@ -1738,11 +1739,11 @@ Minimum engines.node: [35m>=10.13.0[39m
 ### [MMM-Mastodon by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Mastodon)
 
 1. Information: There are updates for 7 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
 
@@ -1780,12 +1781,12 @@ Minimum engines.node: [35m>=10.13.0[39m
    - @rollup/plugin-commonjs -> ^29.0.2
    - @rollup/plugin-terser -> ^1.0.0
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-jsdoc -> ^62.9.0
    - prettier -> ^3.8.3
-   - rollup -> ^4.60.1
-   - typescript -> ^6.0.2
-   - typescript-eslint -> ^8.58.2
+   - rollup -> ^4.60.2
+   - typescript -> ^6.0.3
+   - typescript-eslint -> ^8.59.1
 2. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
 
@@ -1883,7 +1884,7 @@ Minimum engines.node: [35m>=10.13.0[39m
 
 1. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Information: There are updates for 3 dependencie(s):
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
 3. ESLint issues:
@@ -2142,6 +2143,17 @@ Minimum engines.node: [35m>=10.13.0[39m
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-BMWCD by wiesty](https://github.com/wiesty/MMM-BMWCD)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+4. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-bustimes by cirdan](https://github.com/73cirdan/MMM-bustimes)
 
 1. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -2218,6 +2230,19 @@ Minimum engines.node: [35m>=10.13.0[39m
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-CracowMPK by wkra](https://github.com/wkra/MMM-CracowMPK)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-CracowMPK.js`: Replace it with `MagicMirror²`.
+3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-CTA by NateDee](https://github.com/NateDee/MMM-CTA)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -2230,6 +2255,16 @@ Minimum engines.node: [35m>=10.13.0[39m
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-CTA by JHWelch](https://github.com/JHWelch/MMM-CTA)
+
+1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+4. Information: There are updates for 3 dependencie(s):
+   - @jhwelch/mmm-eslint-config -> ^4.0.0
+   - eslint -> ^10.2.1
+   - jest -> ^30.3.0
 
 ### [MMM-Ctan by Infinitte](https://github.com/Infinitte/MMM-Ctan)
 
@@ -2353,6 +2388,19 @@ Minimum engines.node: [35m>=10.13.0[39m
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-DublinRTPI by galaktor](https://github.com/galaktor/MMM-DublinRTPI)
+
+1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+4. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+5. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+6. Deprecated: Found `require('request')` in file `rtpifetcher.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-DVB by skastenholz](https://github.com/skastenholz/MMM-DVB)
 
@@ -2494,6 +2542,20 @@ Minimum engines.node: [35m>=10.13.0[39m
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-FlightsOverhead by Jcurrie314](https://github.com/Jcurrie314/MMM-FlightsOverhead)
+
+1. `package.json` issue: No repository field.
+2. No image found.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+7. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-Fuel by fewieden](https://github.com/fewieden/MMM-Fuel)
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v5.
@@ -2521,6 +2583,20 @@ Minimum engines.node: [35m>=10.13.0[39m
 23. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 24. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 25. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-FuelNorway by matskkolstad](https://github.com/matskkolstad/MMM-FuelNorway)
+
+1. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
+2. Recommendation: No lint script found in package.json. It is recommended to add one.
+3. ESLint issues:
+   - MMM-FuelNorway-Design/package.json: Line 1, Column 1: Property 'description' is required. (rule: package-json/require-description)
+   - MMM-FuelNorway-Design/package.json: Line 9, Column 19: Entries in 'dependencies' are not in lexicographical order (rule: package-json/sort-collections)
+   - MMM-FuelNorway-Design/package.json: Line 73, Column 5: Peer dependency "react" is not also declared in `devDependencies`. (rule: package-json/specify-peers-locally)
+   - MMM-FuelNorway-Design/package.json: Line 74, Column 5: Peer dependency "react-dom" is not also declared in `devDependencies`. (rule: package-json/specify-peers-locally)
+   - node_helper.js: Line 196, Column 16: '_e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 242, Column 16: '_e' is defined but never used. (rule: no-unused-vars)
+   - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
+   - test/node_helper.test.js: Line 92, Column 12: 'e' is defined but never used. (rule: no-unused-vars)
 
 ### [MMM-Fuel-NSW by bughaver](https://github.com/bughaver/MMM-Fuel-NSW)
 
@@ -2676,6 +2752,18 @@ Minimum engines.node: [35m>=10.13.0[39m
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-GTAGasPrices by poonasor](https://github.com/poonasor/MMM-GTAGasPrices)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-HAEV by robotfishe](https://github.com/robotfishe/MMM-HAEV)
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just "magicmirror" or "module".
@@ -2790,6 +2878,16 @@ Minimum engines.node: [35m>=10.13.0[39m
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+
+### [MMM-iAmGoingThere by gitgitaway](https://github.com/gitgitaway/MMM-iAmGoingThere)
+
+1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+2. Recommendation: Found `npm run` in file `mapMigrationPlan.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+5. Recommendation: Found `XMLHttpRequest` in file `index.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-Ilevia-Lille by Jilano5](https://github.com/Jilano5/MMM-Ilevia-Lille)
 
@@ -2974,6 +3072,26 @@ Minimum engines.node: [35m>=10.13.0[39m
 2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
 3. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+
+### [MMM-MTA-NextBus by Tie](https://github.com/tie624/MMM-MTA-NextBus)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-MTA-NextBus.js`: Replace it with `MagicMirror²`.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+10. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+11. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+12. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
+13. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+14. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+17. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-MTA-SubwayAlerts by avianto](https://github.com/avianto/MMM-MTA-SubwayAlerts)
 
@@ -3360,11 +3478,11 @@ Minimum engines.node: [35m>=10.13.0[39m
 3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Information: There are updates for 7 dependencie(s):
    - node-fetch -> ^3.3.2
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-Planefinder by kds54](https://github.com/kds54/MMM-Planefinder)
@@ -3394,13 +3512,13 @@ Minimum engines.node: [35m>=10.13.0[39m
 
 1. Information: There are updates for 12 dependencie(s):
    - dayjs -> ^1.11.20
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/json -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
@@ -3410,18 +3528,19 @@ Minimum engines.node: [35m>=10.13.0[39m
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 14 dependencie(s):
+1. Information: There are updates for 15 dependencie(s):
+   - db-vendo-client -> ^6.10.9
    - temporal-polyfill -> ^0.3.2
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/json -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
-   - eslint-plugin-package-json -> ^0.91.1
+   - eslint-plugin-package-json -> ^0.91.2
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
    - prettier -> ^3.8.3
@@ -3429,13 +3548,14 @@ Minimum engines.node: [35m>=10.13.0[39m
 ### [MMM-PublicTransportHub by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHub)
 
 1. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-2. Information: There are updates for 8 dependencie(s):
+2. Information: There are updates for 9 dependencie(s):
    - @motis-project/motis-client -> ^2.9.2
-   - @eslint/css -> ^1.1.0
+   - db-vendo-client -> ^6.10.9
+   - @eslint/css -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
-   - eslint-plugin-package-json -> ^0.91.1
+   - eslint -> ^10.2.1
+   - eslint-plugin-package-json -> ^0.91.2
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
 3. ESLint issues:
@@ -3505,12 +3625,12 @@ Minimum engines.node: [35m>=10.13.0[39m
    - @rollup/plugin-commonjs -> ^29.0.2
    - @rollup/plugin-terser -> ^1.0.0
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-jsdoc -> ^62.9.0
    - prettier -> ^3.8.3
-   - rollup -> ^4.60.1
-   - typescript -> ^6.0.2
-   - typescript-eslint -> ^8.58.2
+   - rollup -> ^4.60.2
+   - typescript -> ^6.0.3
+   - typescript-eslint -> ^8.59.1
 3. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
    - package.json: Line 28, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
@@ -4179,6 +4299,15 @@ Minimum engines.node: [35m>=10.13.0[39m
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-VAG by Wiesty](https://github.com/wiesty/MMM-VAG)
+
+1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-Vrr by Klizzy](https://github.com/Klizzy/MMM-Vrr)
 
 1. Recommendation: Found `uses: actions/checkout@v3` in file `automated-tests.yaml`: Replace it with v5.
@@ -4330,18 +4459,15 @@ Minimum engines.node: [35m>=10.13.0[39m
 ### [MMM-Assistant by rahil234](https://github.com/rahil234/MMM-Assistant)
 
 1. Information: There are updates for 8 dependencie(s):
-   - @langchain/langgraph -> ^1.2.8
+   - @langchain/langgraph -> ^1.2.9
    - better-sqlite3 -> ^12.9.0
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
    - prettier -> 3.8.3
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=20.0.0[39m
-[41m ERROR [49m [31m@langchain/langgraph: fetch failed[39m
-3. ESLint issues:
+2. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
 
 ### [MMM-GoogleTTS by MMRIZE](https://github.com/MMRIZE/MMM-GoogleTTS)
@@ -4536,14 +4662,13 @@ Minimum engines.node: [35m>=20.0.0[39m
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
    - prettier -> ^3.8.3
-3. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=20.17.0[39m
-[41m ERROR [49m [31m@eslint/js: fetch failed[39m
+3. ESLint issues:
+   - package.json: Line 41, Column 22: Entries in 'devDependencies' are not in lexicographical order (rule: package-json/sort-collections)
 
 ### [MMM-2Day-NOAA-Forecast by jinserk](https://github.com/jinserk/MMM-2Day-NOAA-Forecast)
 
@@ -5041,6 +5166,17 @@ Minimum engines.node: [35m>=20.17.0[39m
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-HeatMaps by nonguyen1](https://github.com/nonguyen1/MMM-HeatMaps)
+
+1. `package.json` issue: No repository field.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+4. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-IndoorClimate-Endpoint by buxxi](https://github.com/buxxi/MMM-IndoorClimate-Endpoint)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -5087,6 +5223,19 @@ Minimum engines.node: [35m>=20.17.0[39m
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-LaMeteoAgricole by Kamasoutra](https://github.com/Kamasoutra/MMM-LaMeteoAgricole)
+
+1. `package.json` issue: No repository field.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+4. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+6. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-LocalTemperature by glitch452](https://github.com/glitch452/MMM-LocalTemperature)
 
@@ -5268,7 +5417,7 @@ Minimum engines.node: [35m>=20.17.0[39m
 
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-NestRemoteThermostat by sisimomo](https://github.com/sisimomo/MMM-NestRemoteThermostat)
@@ -5368,27 +5517,19 @@ Minimum engines.node: [35m>=20.17.0[39m
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
-### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/MagicMirrorModules/MMM-OneCallWeather)
 
-1. Information: There are updates for 12 dependencie(s):
-   - @eslint/css -> ^1.1.0
+1. Information: There are updates for 10 dependencie(s):
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
-   - @eslint/json -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
-   - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
    - prettier -> ^3.8.3
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=20.17.0[39m
-[41m ERROR [49m [31m@eslint/css: fetch failed[39m
-3. ESLint issues:
-   - package.json: Line 22, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
-   - package.json: Line 23, Column 5: Invalid contributors: item 1 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
 
 ### [MMM-OpenmapWeather by SathyarajV](https://github.com/sathyarajv/MMM-OpenmapWeather)
 
@@ -5423,11 +5564,11 @@ Minimum engines.node: [35m>=20.17.0[39m
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 6 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-OpenWeatherMapForecast by MarcLandis](https://github.com/MarcLandis/MMM-OpenWeatherMapForecast)
@@ -5535,12 +5676,12 @@ Minimum engines.node: [35m>=20.17.0[39m
 1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 2. Information: There are updates for 7 dependencie(s):
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - lint-staged -> ^16.4.0
    - prettier -> ^3.8.3
-   - rollup -> ^4.60.1
-   - typescript -> ^6.0.2
-   - typescript-eslint -> ^8.58.2
+   - rollup -> ^4.60.2
+   - typescript -> ^6.0.3
+   - typescript-eslint -> ^8.59.1
 
 ### [MMM-rainfc by cirdan](https://github.com/73cirdan/MMM-rainfc)
 
@@ -5596,9 +5737,6 @@ Minimum engines.node: [35m>=20.17.0[39m
 ### [MMM-RainRadarDWD by Oliwer](https://github.com/realoliwer/MMM-RainRadarDWD)
 
 1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-RainRadarDWD.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. ESLint issues:
-   - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
-   - package.json: Line 2, Column 11: Invalid npm package name: name can no longer contain capital letters. (rule: package-json/valid-name)
 
 ### [MMM-RBB-Weather by nkl-kst](https://github.com/nkl-kst/MMM-RBB-Weather)
 
@@ -6054,9 +6192,25 @@ Minimum engines.node: [35m>=20.17.0[39m
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-prettier -> ^5.5.5
    - prettier -> ^3.8.3
+
+### [MMM-WindyV3 by jhogendorn](https://github.com/jhogendorn/MMM-WindyV3)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Outdated: Found `MichMich/MagicMirror` in file `MMM-WindyV3.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+8. Recommendation: The README seems not to have clone instructions.
+9. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-WorldTides by yawns](https://github.com/yawnsde/MMM-WorldTides)
 
@@ -6074,6 +6228,27 @@ Minimum engines.node: [35m>=20.17.0[39m
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-YandexWeather by igor-semenov](https://github.com/igor-semenov/MMM-YandexWeather)
+
+1. Deprecated: Found `node-version: [18` in file `README.md`: Update to current version.
+2. Recommendation: Found `uses: actions/checkout@v4` in file `dependency-check.yml`: Replace it with v5.
+3. Recommendation: Found `npm run` in file `dependency-check.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `uses: actions/checkout@v4` in file `pr-checks.yml`: Replace it with v5.
+5. Deprecated: Found `node-version: [18` in file `pr-checks.yml`: Update to current version.
+6. Recommendation: Found `npm run` in file `pr-checks.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `uses: actions/checkout@v4` in file `release.yml`: Replace it with v5.
+8. Recommendation: Found `npm run` in file `release.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+9. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+10. Recommendation: Found `git checkout` in file `README.md`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
+11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+12. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+13. Recommendation: Found `axios` in file `check.sh`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+14. Recommendation: Found `npm run` in file `check.sh`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+15. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+16. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+18. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 
 ### [MMM-YrMeteogram by andreakn](https://github.com/andreakn/MMM-YrMeteogram)
 
@@ -6439,6 +6614,18 @@ Minimum engines.node: [35m>=20.17.0[39m
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-AFL by jlcloudtea](https://github.com/jlcloudtea/MMM-AFL)
+
+1. `package.json` issue: No repository field.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+4. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-Biathlon by 2hdlockness](https://github.com/2hdlockness/MMM-Biathlon)
 
 1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Biathlon.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
@@ -6527,7 +6714,7 @@ Minimum engines.node: [35m>=20.17.0[39m
 1. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
 2. Information: There are updates for 2 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
 3. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
    - package.json: Line 35, Column 3: At least one contributor should be defined. (rule: package-json/require-attribution)
@@ -6735,16 +6922,12 @@ Minimum engines.node: [35m>=20.17.0[39m
 ### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
 
 1. Information: There are updates for 5 dependencie(s):
-   - moment-timezone -> ^0.6.1
+   - moment-timezone -> ^0.6.2
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=18.18.0[39m
-[41m ERROR [49m [31mmoment-timezone: fetch failed[39m
-[41m ERROR [49m [31m@eslint/js: fetch failed[39m
-3. ESLint issues:
+2. ESLint issues:
    - MMM-MyScoreboard.js: Line 731, Column 11: The value assigned to 'leagueSeparator' is not used in subsequent statements. (rule: no-useless-assignment)
    - MMM-MyScoreboard.js: Line 764, Column 7: The value assigned to 'leagueSeparator' is not used in subsequent statements. (rule: no-useless-assignment)
    - providers/ESPN.js: Line 710, Column 11: The value assigned to 'gameState' is not used in subsequent statements. (rule: no-useless-assignment)
@@ -6759,7 +6942,7 @@ Minimum engines.node: [35m>=18.18.0[39m
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 2. ESLint issues:
    - package.json: Line 40, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
@@ -6935,15 +7118,12 @@ Minimum engines.node: [35m>=18.18.0[39m
 ### [MMM-PGA by dathbe](https://github.com/dathbe/MMM-PGA)
 
 1. Information: There are updates for 5 dependencie(s):
-   - moment-timezone -> ^0.6.1
+   - moment-timezone -> ^0.6.2
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=18.18.0[39m
-[41m ERROR [49m [31mmoment-timezone: fetch failed[39m
-3. ESLint issues:
+2. ESLint issues:
    - ESPN.js: Line 28, Column 11: The value assigned to 'event' is not used in subsequent statements. (rule: no-useless-assignment)
    - ESPN.js: Line 223, Column 9: The value assigned to 'totalTourn' is not used in subsequent statements. (rule: no-useless-assignment)
    - package.json: Line 19, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
@@ -7224,7 +7404,22 @@ Minimum engines.node: [35m>=18.18.0[39m
 2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 3. Information: There are updates for 2 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
+
+### [MMM-AnthropicUsage by Jcurrie314](https://github.com/Jcurrie314/MMM-AnthropicUsage)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+8. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-Anycubic by balassy](https://github.com/balassy/MMM-Anycubic)
 
@@ -7338,6 +7533,24 @@ Minimum engines.node: [35m>=18.18.0[39m
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-ArlaRandomMeal by dentrass](https://github.com/dentrass/MMM-ArlaRandomMeal)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+5. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+8. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+9. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+10. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+11. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-August-Lock by relm923](https://github.com/relm923/MMM-August-Lock)
 
@@ -7549,34 +7762,21 @@ Minimum engines.node: [35m>=18.18.0[39m
 17. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 18. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
-### [MMM-CalendarExt2 by klaernie & KristjanESPERANTO](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
+### [MMM-CalendarExt2 by klaernie & KristjanESPERANTO](https://github.com/MagicMirrorModules/MMM-CalendarExt2)
 
-1. Information: There are updates for 8 dependencie(s):
-   - node-ical -> ^0.26.0
-   - @eslint/json -> ^1.2.0
-   - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
-   - globals -> ^17.5.0
-   - markdownlint-cli2 -> ^0.22.0
-   - prettier -> ^3.8.3
-   - stylelint -> ^17.8.0
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=18.0.0[39m
-[41m ERROR [49m [31mdayjs: fetch failed[39m
+1. Information: There are updates for 1 dependencie(s):
+   - stylelint -> ^17.9.1
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. Information: There are updates for 7 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=18.18.0[39m
-[41m ERROR [49m [31m@eslint/css: fetch failed[39m
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
 
@@ -7606,20 +7806,19 @@ Minimum engines.node: [35m>=18.18.0[39m
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
-### [MMM-CalendarExtTimeline by klaernie](https://github.com/MMM-CalendarExt2/MMM-CalendarExtTimeline)
+### [MMM-CalendarExtTimeline by klaernie](https://github.com/MagicMirrorModules/MMM-CalendarExtTimeline)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-CalendarExtTimeline.js`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-4. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
-### [MMM-CalendarExtMinimonth by klaernie](https://github.com/MMM-CalendarExt2/MMM-CalendarExtMinimonth)
+### [MMM-CalendarExtMinimonth by klaernie](https://github.com/MagicMirrorModules/MMM-CalendarExtMinimonth)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-CalendarExtMinimonth.js`: Replace it with `MagicMirror²`.
+2. Typo: Found `Magic Mirror` in file `MMM-CalendarExtMiniMonth.js`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 5. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
@@ -7627,16 +7826,15 @@ Minimum engines.node: [35m>=18.18.0[39m
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
-### [MMM-CalendarExtPlan by klaernie](https://github.com/MMM-CalendarExt2/MMM-CalendarExtPlan)
+### [MMM-CalendarExtPlan by klaernie](https://github.com/MagicMirrorModules/MMM-CalendarExtPlan)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-CalendarExtPlan.js`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-5. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-CalendarLegend by ex247](https://github.com/ex247/MMM-CalendarLegend)
 
@@ -7850,7 +8048,7 @@ Minimum engines.node: [35m>=18.18.0[39m
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-CzechPost by richardfous](https://github.com/richardfous/MMM-CzechPost)
@@ -8003,6 +8201,15 @@ Minimum engines.node: [35m>=18.18.0[39m
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-DriveImages by Dresch360](https://github.com/Dresch360/MMM-DriveImages)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-DriveVideos by Dresch360](https://github.com/Dresch360/MMM-DriveVideos)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -8627,6 +8834,11 @@ Minimum engines.node: [35m>=18.18.0[39m
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-GrafanaGauges by SvenSommer](https://github.com/MagicMirrorModules/MMM-GrafanaGauges)
+
+1. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+2. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-Growatt by mumblebaj](https://github.com/mumblebaj/MMM-Growatt)
 
 1. Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.
@@ -8893,15 +9105,10 @@ Minimum engines.node: [35m>=18.18.0[39m
 1. Information: There are updates for 6 dependencie(s):
    - undici -> ^8.1.0
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-n -> ^17.24.0
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=20.18.1[39m
-Current: [36m>=20[39m
-[41m ERROR [49m [31meventsource: fetch failed[39m
-[103m WARN [49m [33mRecommendation: Update package.json engines.node to ">=20.18.1"[39m
 
 ### [MMM-Homematic by Sickboy78](https://github.com/Sickboy78/MMM-Homematic)
 
@@ -9436,12 +9643,9 @@ Current: [36m>=20[39m
    - @eslint/markdown -> ^8.0.1
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=20.19.0[39m
-[41m ERROR [49m [31m@eslint/js: fetch failed[39m
 
 ### [MMM-Keyboard by lavolp3](https://github.com/lavolp3/MMM-Keyboard)
 
@@ -9529,10 +9733,10 @@ Minimum engines.node: [35m>=20.19.0[39m
 
 1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Replace it with v5.
 2. Information: There are updates for 5 dependencie(s):
-   - moment-timezone -> ^0.6.1
+   - moment-timezone -> ^0.6.2
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 3. ESLint issues:
    - package.json: Line 18, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
@@ -10133,12 +10337,9 @@ Minimum engines.node: [35m>=20.19.0[39m
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
-2. [96m📊 Node Version Summary:[39m
-Minimum engines.node: [35m>=18.18.0[39m
-[41m ERROR [49m [31m@eslint/js: fetch failed[39m
-3. ESLint issues:
+2. ESLint issues:
    - MMM-Multimonth.js: Line 77, Column 13: 'dayOfWeek' is assigned a value but never used. (rule: no-unused-vars)
    - package.json: Line 1, Column 1: Property 'version' is required. (rule: package-json/require-version)
 
@@ -10577,6 +10778,13 @@ Minimum engines.node: [35m>=18.18.0[39m
 17. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 18. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-NotionCalendar by JHWelch](https://github.com/JHWelch/MMM-NotionCalendar)
+
+1. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+2. Recommendation: Found `https://cdn.jsdelivr.net` in file `index.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+
 ### [MMM-ObjectBlocks by jimmykh](https://github.com/jimmykh/MMM-ObjectBlocks)
 
 1. `package.json` issue: No repository field.
@@ -10699,6 +10907,21 @@ Minimum engines.node: [35m>=18.18.0[39m
 11. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
 12. Recommendation: No lint script found in package.json. It is recommended to add one.
 13. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
+
+### [MMM-openhabfloorplan by paphko](https://github.com/paphko/mmm-openhabfloorplan)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+7. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
+8. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-OpenHAB-Items by hggh](https://github.com/hggh/MMM-OpenHAB-Items)
 
@@ -11173,6 +11396,23 @@ Minimum engines.node: [35m>=18.18.0[39m
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-PVoutput by mw46d](https://github.com/mw46d/MMM-PVoutput)
+
+1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+4. Information: There are updates for 10 dependencie(s):
+   - @eslint/css -> ^1.2.0
+   - @eslint/js -> ^10.0.1
+   - @eslint/markdown -> ^8.0.1
+   - @stylistic/eslint-plugin -> ^5.10.0
+   - eslint -> ^10.2.1
+   - eslint-plugin-import-x -> ^4.16.2
+   - eslint-plugin-package-json -> ^0.91.2
+   - eslint-plugin-playwright -> ^2.10.2
+   - globals -> ^17.5.0
+   - prettier -> ^3.8.3
+
 ### [MMM-QRCode by uxigene](https://github.com/uxigene/MMM-QRCode)
 
 1. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -11256,12 +11496,12 @@ Minimum engines.node: [35m>=18.18.0[39m
 
 1. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
 2. Information: There are updates for 9 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
@@ -11350,7 +11590,7 @@ Minimum engines.node: [35m>=18.18.0[39m
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 2. ESLint issues:
    - MMM-Rest.js: Line 138, Column 23: The value assigned to 'match' is not used in subsequent statements. (rule: no-useless-assignment)
@@ -11603,7 +11843,7 @@ Minimum engines.node: [35m>=18.18.0[39m
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 4. Information: There are updates for 2 dependencie(s):
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - @eslint/js -> ^10.0.1
 
 ### [Shelly-HT by Medve](https://github.com/Medve01/Shelly-HT)
@@ -12195,14 +12435,14 @@ Minimum engines.node: [35m>=18.18.0[39m
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
-### [MMM-SystemTemperature by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-SystemTemperature)
+### [MMM-SystemTemperature by KristjanESPERANTO](https://github.com/MagicMirrorModules/MMM-SystemTemperature)
 
 1. Information: There are updates for 7 dependencie(s):
    - systeminformation -> ^5.31.5
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
 
@@ -12328,7 +12568,7 @@ Minimum engines.node: [35m>=18.18.0[39m
 
 ### [MMM-TodayBlock by ex247](https://github.com/ex247/MMM-TodayBlock)
 
-1. `package.json` issue: No repository field.
+1. An error occurred while getting information from 'package.json': Expected double-quoted property name in JSON at position 567 (line 23 column 1)
 2. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -12527,6 +12767,12 @@ Minimum engines.node: [35m>=18.18.0[39m
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-UniFiHotspotVouchers by Rickey Roach](https://github.com/rroach3753/MMM-UniFiHotspotVouchers)
+
+1. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+
 ### [MMM-Universal-Pir by karsten13](https://gitlab.com/khassel/MMM-Universal-Pir)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -12581,6 +12827,18 @@ Minimum engines.node: [35m>=18.18.0[39m
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-UptimeRobot-Modern by kaczmar986](https://github.com/kaczmar986/MMM-UptimeRobot-Modern)
+
+1. Typo: Found `Magic Mirror` in file `MMM-UptimeRobot-Modern.js`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+4. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
 
@@ -12673,6 +12931,21 @@ Minimum engines.node: [35m>=18.18.0[39m
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-VinylCollection by dentrass](https://github.com/dentrass/MMM-VinylCollection)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. `package.json` issue: No license field.
+4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+8. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-WasteCollectionWuerzburg by mercredo](https://github.com/mercredo/MMM-WasteCollectionWuerzburg)
 
@@ -12907,6 +13180,19 @@ Minimum engines.node: [35m>=18.18.0[39m
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-UniFiProtect by awestley](https://github.com/awestley/MMM-UniFiProtect)
+
+1. `package.json` issue: No repository field.
+2. No image found.
+3. Recommendation: Found `uses: actions/checkout@v4` in file `ci.yml`: Replace it with v5.
+4. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+6. Recommendation: The README seems not to have clone instructions.
+7. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+8. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 
 ### [MMM-1-Second-A-Day by GaryLChew](https://github.com/GaryLChew/MMM-1-Second-A-Day)
 
@@ -13181,13 +13467,13 @@ Minimum engines.node: [35m>=18.18.0[39m
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
 1. Information: There are updates for 11 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - cspell -> ^10.0.0
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
@@ -13548,11 +13834,11 @@ Minimum engines.node: [35m>=18.18.0[39m
 
 1. Information: There are updates for 8 dependencie(s):
    - dotenv -> ^17.4.2
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/markdown -> ^8.0.1
    - commit-and-tag-version -> ^12.7.1
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
 2. ESLint issues:
@@ -13564,13 +13850,13 @@ Minimum engines.node: [35m>=18.18.0[39m
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
 1. Information: There are updates for 11 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/json -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
@@ -14106,7 +14392,7 @@ Minimum engines.node: [35m>=18.18.0[39m
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
@@ -14420,6 +14706,25 @@ Minimum engines.node: [35m>=18.18.0[39m
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-LOTR-Quotes by Jay Lingelbach](https://github.com/jaylingelbach/MMM-LOTR-Quotes)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. `package.json` issue: No license field.
+4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+9. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+10. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+11. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+12. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+16. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-LunarDate by MMRIZE](https://github.com/MMRIZE/MMM-LunarDate)
 
 1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
@@ -14533,6 +14838,16 @@ Minimum engines.node: [35m>=18.18.0[39m
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-MovingPortrait by fischi87](https://github.com/fischi87/MMM-MovingPortrait)
+
+1. No image found.
+2. Recommendation: Found `npm run` in file `INSTALL.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-MP3Player by x3mEr](https://github.com/x3mEr/MMM-MP3Player)
 
@@ -15004,7 +15319,7 @@ Minimum engines.node: [35m>=18.18.0[39m
    - undici -> ^8.1.0
    - @eslint/js -> ^10.0.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-n -> ^17.24.0
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
@@ -15582,6 +15897,23 @@ Minimum engines.node: [35m>=18.18.0[39m
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-SteamDeals by badubada](https://github.com/badubada/MMM-SteamDeals)
+
+1. `package.json` issue: No repository field.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-SteamUpcoming by badubada](https://github.com/badubada/MMM-SteamUpcoming)
+
+1. `package.json` issue: No repository field.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-SpotifyReleases by Ruud14](https://github.com/Ruud14/MMM-SpotifyReleases)
 
 1. No image found.
@@ -15662,7 +15994,8 @@ Minimum engines.node: [35m>=18.18.0[39m
 
 ### [MMM-TautulliLatest by Snille](https://github.com/Snille/MMM-TautulliLatest)
 
-1. Information: There are updates for 1 dependencie(s):
+1. Information: There are updates for 2 dependencie(s):
+   - eslint -> ^10.2.1
    - globals -> ^17.5.0
 
 ### [MMM-text-clock by ngnijland](https://github.com/ngnijland/MMM-text-clock)
@@ -16247,14 +16580,14 @@ Minimum engines.node: [35m>=18.18.0[39m
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
 1. Information: There are updates for 12 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/js -> ^10.0.1
    - @eslint/json -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-import-x -> ^4.16.2
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
@@ -16476,11 +16809,11 @@ Minimum engines.node: [35m>=18.18.0[39m
 ### [MMM-AtomVisualizer by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-AtomVisualizer)
 
 1. Information: There are updates for 7 dependencie(s):
-   - @eslint/css -> ^1.1.0
+   - @eslint/css -> ^1.2.0
    - @eslint/markdown -> ^8.0.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
-   - eslint-plugin-package-json -> ^0.91.1
+   - eslint -> ^10.2.1
+   - eslint-plugin-package-json -> ^0.91.2
    - globals -> ^17.5.0
    - prettier -> ^3.8.3
 
@@ -16591,6 +16924,15 @@ Minimum engines.node: [35m>=18.18.0[39m
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 
+### [MMM-phase6 by ms-zone-41](https://github.com/ms-zone-41/MMM-phase6)
+
+1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-PL_WOTD by mjb527](https://github.com/mjb527/MMM-PL_WOTD)
 
 1. Typo: Found `Magic Mirror` in file `MMM-PL_WOTD.js`: Replace it with `MagicMirror²`.
@@ -16650,7 +16992,7 @@ Minimum engines.node: [35m>=18.18.0[39m
    - otplib -> ^13.4.0
    - @eslint/js -> ^10.0.1
    - cspell -> ^10.0.0
-   - eslint -> ^10.2.0
+   - eslint -> ^10.2.1
    - eslint-plugin-n -> ^17.24.0
    - globals -> ^17.5.0
    - lint-staged -> ^16.4.0
@@ -18188,22 +18530,6 @@ Minimum engines.node: [35m>=18.18.0[39m
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
-
-### [MMM-PVoutput by mrvanes](https://github.com/mrvanes/MMM-PVoutput)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-PVoutput.js`: Replace it with `MagicMirror²`.
-3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-4. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-6. Recommendation: The README seems not to have clone instructions.
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-9. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
-10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-RAIN-RADAR by jojoDuQuartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
 
