@@ -76,6 +76,7 @@ test("writePublishedCatalogueOutputs writes outputs and reports changed modules"
   equal(result.changeSummary.unchangedCount, 0);
 
   deepEqual(result.outputPaths, {
+    issuesJsonPath: result.issuesJsonPath,
     modulesJsonPath: result.modulesJsonPath,
     modulesMinPath: result.modulesMinPath,
     statsPath: result.statsPath
