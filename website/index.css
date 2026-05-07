@@ -413,6 +413,9 @@ main {
   color: var(--color-background);
   box-shadow: 0 8px 32px rgb(0 0 0 / 40%);
   overflow: hidden;
+}
+
+#hints-dialog[open] {
   display: flex;
   flex-direction: column;
 }
