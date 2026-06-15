@@ -44,8 +44,8 @@ Your README file should have a "Config" or "Configuration" section that includes
 ````markdown
 ```js
 {
-  module: MMM-MyModule,
-  position: bottom_bar,
+  module: "MMM-MyModule",
+  position: "bottom_bar",
   config: {
     myCustomVariable: 400,
     MySecondCustomVariable: false
