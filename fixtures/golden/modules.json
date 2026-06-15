@@ -4178,6 +4178,17 @@
       "url": "https://github.com/dbeltjr/MMM-Canvas"
     },
     {
+      "category": "Education",
+      "description": "Displays upcoming assignments from the Canvas LMS via the built-in iCal calendar feed. No API token is required.",
+      "hasGithubIssues": null,
+      "id": "dbeltjr/MMM-CanvasCalendar",
+      "isArchived": null,
+      "maintainer": "Dale Belt",
+      "maintainerURL": "https://github.com/dbeltjr",
+      "name": "MMM-CanvasCalendar",
+      "url": "https://github.com/dbeltjr/MMM-CanvasCalendar"
+    },
+    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Same functionality as the default Calendar app but different display formatting.",
       "hasGithubIssues": false,
@@ -4441,6 +4452,27 @@
       "maintainerURL": "https://github.com/dentrass",
       "name": "MMM-ArlaRandomMeal",
       "url": "https://github.com/dentrass/MMM-ArlaRandomMeal"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "description": "Spin a random record from your Discogs collection with a realistic vinyl wheel and mobile remote interface.",
+      "hasGithubIssues": null,
+      "id": "dentrass/MMM-SpinTheWheel",
+      "image": "MMM-SpinTheWheel---dentrass.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "dentrass",
+      "maintainerURL": "https://github.com/dentrass",
+      "name": "MMM-SpinTheWheel",
+      "tags": [
+        "discogs",
+        "vinyl",
+        "records",
+        "music",
+        "collection",
+        "mobile"
+      ],
+      "url": "https://github.com/dentrass/MMM-SpinTheWheel"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -5252,6 +5284,24 @@
       "maintainerURL": "https://github.com/efritz09",
       "name": "MMM-Caltrain",
       "url": "https://github.com/efritz09/MMM-Caltrain"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "description": "Now-playing display (artist, album, song, progress, album art) for a Music Assistant server.",
+      "hasGithubIssues": null,
+      "id": "egeekial/MMM-MusicAssistant",
+      "image": "MMM-MusicAssistant---egeekial.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "egeekial",
+      "maintainerURL": "https://github.com/egeekial",
+      "name": "MMM-MusicAssistant",
+      "tags": [
+        "music assistant",
+        "now playing",
+        "music"
+      ],
+      "url": "https://github.com/egeekial/MMM-MusicAssistant"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -6280,6 +6330,23 @@
       "url": "https://github.com/framboise-pi/MMM-MyWordsRandomed"
     },
     {
+      "category": "Entertainment / Misc",
+      "description": "Shows your TicketMaster events in your area.",
+      "hasGithubIssues": null,
+      "id": "frankhu-2021/MMM-TicketEvents",
+      "image": "MMM-TicketEvents---frankhu-2021.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "frankhu-2021",
+      "maintainerURL": "https://github.com/frankhu-2021",
+      "name": "MMM-TicketEvents",
+      "tags": [
+        "ticketmaster",
+        "events"
+      ],
+      "url": "https://github.com/frankhu-2021/MMM-TicketEvents"
+    },
+    {
       "category": "Education",
       "description": "This module allows you to show your basic Whoop data with a comparison to the prior day along with today's activity. Multi-user support included.",
       "hasGithubIssues": null,
@@ -6603,7 +6670,7 @@
     },
     {
       "category": "Transport / Travel",
-      "description": "MM module designed for travelers and flight enthusiasts to track upcoming trips and visualize their past travel history, uses amChart5.",
+      "description": "Designed for travelers and flight enthusiasts to track upcoming trips and visualize their past travel history, uses amChart5.",
       "hasGithubIssues": null,
       "id": "gitgitaway/MMM-iAmGoingThere",
       "image": "MMM-iAmGoingThere---gitgitaway.webp",
@@ -6613,8 +6680,7 @@
       "maintainerURL": "https://github.com/gitgitaway",
       "name": "MMM-iAmGoingThere",
       "tags": [
-        "live flight tracker",
-        "amchart5",
+        "amchart",
         "travel",
         "flights",
         "tracking",
@@ -6950,6 +7016,17 @@
       "url": "https://github.com/gravitykillseverything/MMM-Sonarr"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display live Valheim dedicated server status via A2S query — online/offline, player count, and world name. No external APIs, no npm install required.",
+      "hasGithubIssues": null,
+      "id": "Gregoid88/MMM-ValheimServer",
+      "isArchived": null,
+      "maintainer": "Gregoid88",
+      "maintainerURL": "https://github.com/Gregoid88",
+      "name": "MMM-ValheimServer",
+      "url": "https://github.com/Gregoid88/MMM-ValheimServer"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
       "hasGithubIssues": true,
@@ -7146,6 +7223,24 @@
       "maintainerURL": "https://github.com/hakanmhmd",
       "name": "MMM-Stock",
       "url": "https://github.com/hakanmhmd/MMM-Stock"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Display data and map with position and most recent route for your BMW or MINI.",
+      "hasGithubIssues": null,
+      "id": "hamsil/MMM-BMWCarData",
+      "image": "MMM-BMWCarData---hamsil.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "hamsil",
+      "maintainerURL": "https://github.com/hamsil",
+      "name": "MMM-BMWCarData",
+      "tags": [
+        "bmw",
+        "mini",
+        "cardata"
+      ],
+      "url": "https://github.com/hamsil/MMM-BMWCarData"
     },
     {
       "category": "Cryptocurrency",
@@ -9089,6 +9184,27 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Track family chores with personal tasks, rotating daily assignments that cycle through family members on completion, configurable family-wide summary and per-person views, interactive on-mirror checkboxes, and a web-based admin panel with activity history and optional PIN protection.",
+      "hasGithubIssues": null,
+      "id": "jonyo/MMM-FamilyChores",
+      "image": "MMM-FamilyChores---jonyo.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "jonyo",
+      "maintainerURL": "https://github.com/jonyo",
+      "name": "MMM-FamilyChores",
+      "tags": [
+        "family",
+        "household",
+        "chores",
+        "tasks",
+        "todo",
+        "rotating"
+      ],
+      "url": "https://github.com/jonyo/MMM-FamilyChores"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display a candle burning down towards a specific date (e.g. an advent candle).",
       "hasGithubIssues": true,
       "id": "Jopyth/MMM-Advent",
@@ -9102,6 +9218,23 @@
         "buttons"
       ],
       "url": "https://github.com/Jopyth/MMM-Advent"
+    },
+    {
+      "category": "Weather",
+      "description": "Displays temperature/humidity readings from DHT22 sensor connected via GPIOs.",
+      "hasGithubIssues": null,
+      "id": "Jopyth/MMM-dht22",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "Jopyth",
+      "maintainerURL": "https://github.com/Jopyth",
+      "name": "MMM-dht22",
+      "tags": [
+        "dht22",
+        "temperature",
+        "humidity"
+      ],
+      "url": "https://github.com/Jopyth/MMM-dht22"
     },
     {
       "category": "Development / Core MagicMirror²",
@@ -9242,6 +9375,24 @@
         "confucius"
       ],
       "url": "https://github.com/jttaylor/MMM-Confucius-say"
+    },
+    {
+      "category": "Health",
+      "description": "Displays real-time baby tracking data from Baby Buddy: last feeding, sleep, diaper changes, and active timers. Supports multiple children with an auto-cycling carousel.",
+      "hasGithubIssues": null,
+      "id": "jualfoar/MMM-BabyBuddy",
+      "image": "MMM-BabyBuddy---jualfoar.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "jualfoar",
+      "maintainerURL": "https://github.com/jualfoar",
+      "name": "MMM-BabyBuddy",
+      "tags": [
+        "babybuddy",
+        "baby",
+        "tracker"
+      ],
+      "url": "https://github.com/jualfoar/MMM-BabyBuddy"
     },
     {
       "category": "Transport / Travel",
@@ -10212,6 +10363,25 @@
         "webspeech"
       ],
       "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays Blynk values (datastreams). Supports multiple devices/pins but only receives data to display... for now.",
+      "hasGithubIssues": null,
+      "id": "kritch83/MMM-Blynk",
+      "image": "MMM-Blynk---kritch83.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "kritch83",
+      "maintainerURL": "https://github.com/kritch83",
+      "name": "MMM-Blynk",
+      "tags": [
+        "blynk",
+        "iot",
+        "datastream",
+        "virtual-pin"
+      ],
+      "url": "https://github.com/kritch83/MMM-Blynk"
     },
     {
       "category": "Transport / Travel",
@@ -13554,41 +13724,6 @@
       "url": "https://github.com/ndp15/MMM-Nextcloud-Calendar"
     },
     {
-      "category": "Weather",
-      "description": "Displays temperature/humidity readings from DHT22 sensor connected via GPIOs.",
-      "hasGithubIssues": true,
-      "id": "nebulx29/MMM-dht22",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "nebulx29",
-      "maintainerURL": "https://github.com/nebulx29",
-      "name": "MMM-dht22",
-      "tags": [
-        "dht22",
-        "temperature",
-        "humidity"
-      ],
-      "url": "https://github.com/nebulx29/MMM-dht22"
-    },
-    {
-      "category": "Outdated Modules",
-      "description": "Display NASA's astronomy picture of the day.",
-      "hasGithubIssues": true,
-      "id": "nebulx29/MMM-nasaastropic",
-      "isArchived": false,
-      "license": "Apache-2.0",
-      "maintainer": "nebulx29",
-      "maintainerURL": "https://github.com/nebulx29",
-      "name": "MMM-nasaastropic",
-      "outdated": "Abandoned. No reactions to issues and PRs since years. Uses deprecated package 'request'. Use MMM-APOD instead.",
-      "tags": [
-        "nasa",
-        "astronomy",
-        "picture of the day"
-      ],
-      "url": "https://github.com/nebulx29/MMM-nasaastropic"
-    },
-    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Hebrew calendar in monthly view.",
       "hasGithubIssues": true,
@@ -14422,15 +14557,13 @@
     {
       "category": "Transport / Travel",
       "description": "Show how many minutes until the next bus(es) goes from given bus stops.",
-      "hasGithubIssues": true,
-      "id": "ottopaulsen/MMM-NesteBussAtB",
-      "image": "MMM-NesteBussAtB---ottopaulsen.webp",
-      "isArchived": false,
-      "license": "MIT",
+      "hasGithubIssues": null,
+      "id": "ottopaulsen/MMM-NesteBuss",
+      "isArchived": null,
       "maintainer": "ottopaulsen",
       "maintainerURL": "https://github.com/ottopaulsen",
-      "name": "MMM-NesteBussAtB",
-      "url": "https://github.com/ottopaulsen/MMM-NesteBussAtB"
+      "name": "MMM-NesteBuss",
+      "url": "https://github.com/ottopaulsen/MMM-NesteBuss"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -15164,19 +15297,6 @@
       "maintainerURL": "https://github.com/Protonosgit",
       "name": "MMM-PingTime",
       "url": "https://github.com/Protonosgit/MMM-PingTime"
-    },
-    {
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "description": "Display values from Home automation software [JEEDOM](https://www.jeedom.com).",
-      "hasGithubIssues": true,
-      "id": "prysme01/MMM-Jeedom",
-      "image": "MMM-Jeedom---prysme.webp",
-      "isArchived": false,
-      "license": "GPL-3.0",
-      "maintainer": "prysme",
-      "maintainerURL": "https://github.com/prysme01",
-      "name": "MMM-Jeedom",
-      "url": "https://github.com/prysme01/MMM-Jeedom"
     },
     {
       "category": "Entertainment / Misc",
@@ -16103,7 +16223,46 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "description": "Display UniFi Hotspot Vouchers For UniFi Hotspot Portal Access.",
+      "description": "Displays your Govee Smart Devices.",
+      "hasGithubIssues": null,
+      "id": "rroach3753/MMM-GoveeSmartHomeStatus",
+      "image": "MMM-GoveeSmartHomeStatus---Rickey Roach.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "Rickey Roach",
+      "maintainerURL": "https://github.com/rroach3753",
+      "name": "MMM-GoveeSmartHomeStatus",
+      "tags": [
+        "govee",
+        "smart home",
+        "iot",
+        "device status"
+      ],
+      "url": "https://github.com/rroach3753/MMM-GoveeSmartHomeStatus"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays a qr code to scan to connect along with voucher code or portal password to a UniFi Guest WiFi network making use of the Hotspot Portal Feature.",
+      "hasGithubIssues": null,
+      "id": "rroach3753/MMM-UniFiGuestWiFi",
+      "image": "MMM-UniFiGuestWiFi---Rickey Roach.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "Rickey Roach",
+      "maintainerURL": "https://github.com/rroach3753",
+      "name": "MMM-UniFiGuestWiFi",
+      "tags": [
+        "unifi",
+        "ubiquiti",
+        "wifi",
+        "guest",
+        "qr code"
+      ],
+      "url": "https://github.com/rroach3753/MMM-UniFiGuestWiFi"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display UniFi Hotspot Vouchers for UniFi Hotspot Portal Access.",
       "hasGithubIssues": null,
       "id": "rroach3753/MMM-UniFiHotspotVouchers",
       "image": "MMM-UniFiHotspotVouchers---Rickey Roach.webp",
@@ -17234,6 +17393,25 @@
       "url": "https://github.com/Sjohn21/MMM-GPIO-HANDLER"
     },
     {
+      "category": "Entertainment / Misc",
+      "description": "Displays your photos as a stack of overlapping, slightly-rotated polaroid-style cards.",
+      "hasGithubIssues": null,
+      "id": "Skarabaeus/MMM-PhotoStack",
+      "image": "MMM-PhotoStack---Skarabaeus.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "Skarabaeus",
+      "maintainerURL": "https://github.com/Skarabaeus",
+      "name": "MMM-PhotoStack",
+      "tags": [
+        "photos",
+        "slideshow",
+        "polaroid",
+        "media"
+      ],
+      "url": "https://github.com/Skarabaeus/MMM-PhotoStack"
+    },
+    {
       "category": "Transport / Travel",
       "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
       "hasGithubIssues": true,
@@ -18083,6 +18261,19 @@
       "url": "https://github.com/supermem613/MMM-GoogleSheetToTable"
     },
     {
+      "category": "Religion",
+      "description": "A compact moed agenda.",
+      "hasGithubIssues": null,
+      "id": "supermem613/MMM-Moed",
+      "image": "MMM-Moed---supermem613.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "supermem613",
+      "maintainerURL": "https://github.com/supermem613",
+      "name": "MMM-Moed",
+      "url": "https://github.com/supermem613/MMM-Moed"
+    },
+    {
       "category": "Weather",
       "description": "Displays weather forecast information from NOAA for locations in the United States and its territories. Drop-in replacement for MMM-OpenWeatherForecast. (free, no API keys needed)",
       "hasGithubIssues": true,
@@ -18305,6 +18496,24 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Provides real-time status updates from your Bambulab printer and AMS.",
+      "hasGithubIssues": null,
+      "id": "TAGinside/MMM-Bambulink",
+      "image": "MMM-Bambulink---TAGinside.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "TAGinside",
+      "maintainerURL": "https://github.com/TAGinside",
+      "name": "MMM-Bambulink",
+      "tags": [
+        "bambulab",
+        "3d printer",
+        "mqtt"
+      ],
+      "url": "https://github.com/TAGinside/MMM-Bambulink"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display Synology Download Station tasks. Auto-hide when no tasks.",
       "hasGithubIssues": true,
       "id": "TAGinside/MMM-Synology-Download_Station",
@@ -18512,6 +18721,70 @@
       "url": "https://github.com/TeraTech/MMM-WiFiPassword"
     },
     {
+      "category": "Entertainment / Misc",
+      "description": "Displays rotating quote, affirmation, family prompt, reminder, or themed charm packs, with local/remote packs, timed sets, and optional on-screen controls.",
+      "hasGithubIssues": null,
+      "id": "testingonlypi/MMM-Charms",
+      "image": "MMM-Charms---testingonlypi.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "testingonlypi",
+      "maintainerURL": "https://github.com/testingonlypi",
+      "name": "MMM-Charms",
+      "tags": [
+        "smart-mirror",
+        "affirmations",
+        "quotes",
+        "prompts",
+        "reminders",
+        "family",
+        "charms"
+      ],
+      "url": "https://github.com/testingonlypi/MMM-Charms"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Lightweight RSS module.",
+      "hasGithubIssues": null,
+      "id": "th3pajay/MMM-LeanRSS",
+      "image": "MMM-LeanRSS---th3pajay.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "th3pajay",
+      "maintainerURL": "https://github.com/th3pajay",
+      "name": "MMM-LeanRSS",
+      "tags": [
+        "rss",
+        "ticker",
+        "newsfeed"
+      ],
+      "url": "https://github.com/th3pajay/MMM-LeanRSS"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display QBittorrent overall and per torrent progress and transfer details.",
+      "hasGithubIssues": null,
+      "id": "th3pajay/MMM-QBittorrent",
+      "isArchived": null,
+      "maintainer": "th3pajay",
+      "maintainerURL": "https://github.com/th3pajay",
+      "name": "MMM-QBittorrent",
+      "url": "https://github.com/th3pajay/MMM-QBittorrent"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "description": "Displays steam friends, statuses, games in-progress with rating and time played.",
+      "hasGithubIssues": null,
+      "id": "th3pajay/MMM-SteamFriends",
+      "image": "MMM-SteamFriends---th3pajay.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "th3pajay",
+      "maintainerURL": "https://github.com/th3pajay",
+      "name": "MMM-SteamFriends",
+      "url": "https://github.com/th3pajay/MMM-SteamFriends"
+    },
+    {
       "category": "Transport / Travel",
       "description": "Public transit departure times from [Transit App](https://transitapp.com/), supporting 25 countries and 800+ cities.",
       "hasGithubIssues": true,
@@ -18613,6 +18886,17 @@
       "maintainerURL": "https://github.com/themox",
       "name": "MMM-Oura2",
       "url": "https://github.com/themox/MMM-Oura2"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Basic [Puck.js](https://www.puck-js.com/) bluetooth button integration with your mirror.",
+      "hasGithubIssues": null,
+      "id": "themox/MMM-Puck",
+      "isArchived": null,
+      "maintainer": "themox",
+      "maintainerURL": "https://github.com/themox",
+      "name": "MMM-Puck",
+      "url": "https://github.com/themox/MMM-Puck"
     },
     {
       "category": "Entertainment / Misc",
@@ -19533,6 +19817,17 @@
       "url": "https://github.com/tttooommm56/MMM-Ecowatt"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display values from Home automation software [JEEDOM](https://www.jeedom.com).",
+      "hasGithubIssues": null,
+      "id": "tttooommm56/MMM-Jeedom",
+      "isArchived": null,
+      "maintainer": "tttooommm56",
+      "maintainerURL": "https://github.com/tttooommm56",
+      "name": "MMM-Jeedom",
+      "url": "https://github.com/tttooommm56/MMM-Jeedom"
+    },
+    {
       "category": "Weather",
       "description": "Graphical and textual rain forecast for France.",
       "hasGithubIssues": true,
@@ -19819,6 +20114,28 @@
       "maintainerURL": "https://github.com/usncahill",
       "name": "MMM-Tesla3",
       "url": "https://github.com/usncahill/MMM-Tesla3"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display data from Anker Solix Powerbank 3 battery and Anker Solix Smart Meter.",
+      "hasGithubIssues": null,
+      "id": "utzl/MMM-AnkerSolixMQTT",
+      "image": "MMM-AnkerSolixMQTT---utzl.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "utzl",
+      "maintainerURL": "https://github.com/utzl",
+      "name": "MMM-AnkerSolixMQTT",
+      "tags": [
+        "anker",
+        "solix",
+        "solarbank",
+        "solar",
+        "mqtt",
+        "energy",
+        "smart home"
+      ],
+      "url": "https://github.com/utzl/MMM-AnkerSolixMQTT"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -20232,17 +20549,6 @@
       "maintainerURL": "https://github.com/wiedsee",
       "name": "MMM-IconDisplayer",
       "url": "https://github.com/wiedsee/MMM-IconDisplayer"
-    },
-    {
-      "category": "Transport / Travel",
-      "description": "Displays live BMW 🚗 vehicle data (mileage, range, fuel, battery, tyre pressure, charging status) via a bmw-cardata-bridge instance.",
-      "hasGithubIssues": null,
-      "id": "wiesty/MMM-BMWCD",
-      "isArchived": null,
-      "maintainer": "wiesty",
-      "maintainerURL": "https://github.com/wiesty",
-      "name": "MMM-BMWCD",
-      "url": "https://github.com/wiesty/MMM-BMWCD"
     },
     {
       "category": "Entertainment / Misc",
