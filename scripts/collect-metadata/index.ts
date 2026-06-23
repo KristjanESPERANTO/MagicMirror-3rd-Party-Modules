@@ -21,6 +21,7 @@ interface EnrichedModule extends ParsedModuleEntry {
   isArchived?: boolean | null;
   lastCommit?: string | null;
   license?: string | null;
+  notFound?: boolean;
   stars?: number;
   [key: string]: unknown;
 }
@@ -114,6 +115,14 @@ interface RunCollectMetadataResult {
 
 function getErrorMessage(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
+}
+
+/**
+ * Returns true when an error message indicates a definitive "repository does not
+ * exist" response (HTTP 404) rather than a transient failure.
+ */
+function isDefinitive404(errorMessage: string): boolean {
+  return errorMessage.includes("404");
 }
 
 const logger = createLogger({ name: "collect-metadata" });
@@ -357,7 +366,7 @@ async function appendGitHubBatchResult({
     logger.info(`Using fallback data for ${module.name} (batch failure)`);
     stats.fallbacks += 1;
   }
-  enrichedModules.push(fallback);
+  enrichedModules.push(isDefinitive404(recovery.error.message) ? { ...fallback, notFound: true } : fallback);
 
   repositoryCache.set(repoId, {
     isFailed: true,
@@ -398,7 +407,7 @@ async function processModule(module: EnrichedModule, context: ProcessModuleConte
       if (fallback !== module) {
         stats.fallbacks += 1;
       }
-      return fallback;
+      return isDefinitive404(cachedEntry.value.error ?? "") ? { ...fallback, notFound: true } : fallback;
     }
     return {
       ...module,
@@ -449,7 +458,7 @@ async function processModule(module: EnrichedModule, context: ProcessModuleConte
   // Cache negative result
   repositoryCache.set(repoId, { isFailed: true, error: recovery.error.message }, NEGATIVE_CACHE_TTL_MS);
   stats.errors += 1;
-  return fallback;
+  return isDefinitive404(recovery.error.message) ? { ...fallback, notFound: true } : fallback;
 }
 
 /**

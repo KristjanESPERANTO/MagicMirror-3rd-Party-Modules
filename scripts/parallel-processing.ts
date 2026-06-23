@@ -32,6 +32,7 @@ interface Stage2Module {
   lastCommit?: string | null;
   maintainer: string;
   name: string;
+  notFound?: boolean;
   url: string;
   [key: string]: unknown;
 }
@@ -218,6 +219,16 @@ export function partitionModulesByCache(
   const uncachedModules: Stage2Module[] = [];
 
   for (const module of modules) {
+    if (module.notFound) {
+      cachedResults.push({
+        ...module,
+        status: "failed",
+        failurePhase: "not-found",
+        error: "Repository not found (confirmed 404)"
+      } as ModuleResult);
+      continue;
+    }
+
     const cacheKey = catalogueRevision
       ? buildModuleAnalysisCacheKey({
         module,
@@ -484,6 +495,7 @@ export async function runParallelProcessing({
 type SkipCategory = "NOT_FOUND" | "AUTHENTICATION" | "NETWORK" | "INFRASTRUCTURE" | "UNKNOWN";
 
 function classifyFailure(result: ModuleResult): SkipCategory {
+  if (result.failurePhase === "not-found") return "NOT_FOUND";
   if (result.failurePhase && result.failurePhase !== "clone") {
     return "INFRASTRUCTURE";
   }
