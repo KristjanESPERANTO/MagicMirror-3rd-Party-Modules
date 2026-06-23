@@ -192,6 +192,7 @@ function mapStageResults({
     status: string;
     durationMs?: number;
     error?: string | null;
+    resourceUsage?: ProcessResourceUsage;
   }> = [];
   const completedMap = new Map<string, StageExecutionResult<ResolvedStageDefinition>>();
   for (const entry of completedStages) {
@@ -224,11 +225,12 @@ function mapStageResults({
     }
 
     if (completedMap.has(stage.id)) {
-      const { durationMs } = completedMap.get(stage.id)!;
+      const { durationMs, resourceUsage } = completedMap.get(stage.id)!;
       results.push({
         ...base,
         status: "succeeded",
-        durationMs
+        durationMs,
+        ...(resourceUsage ? { resourceUsage } : {})
       });
       continue;
     }

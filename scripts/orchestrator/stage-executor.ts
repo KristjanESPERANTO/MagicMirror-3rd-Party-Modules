@@ -1,6 +1,8 @@
 import process from "node:process";
 import { spawn } from "node:child_process";
+import { createResourceMonitor } from "./resource-monitor.ts";
 import type { StageCommand, StageDefinition } from "./stage-graph.ts";
+import type { ProcessResourceUsage } from "./resource-monitor.ts";
 
 export interface StageExecutionContext {
   cwd: string;
@@ -10,6 +12,7 @@ export interface StageExecutionContext {
 export interface StageExecutionResult<TStage extends StageDefinition = StageDefinition> {
   stage: TStage;
   durationMs: number;
+  resourceUsage?: ProcessResourceUsage;
 }
 
 export interface StageProgressDetails {
@@ -117,6 +120,8 @@ export async function runStagesSequentially<TStage extends StageDefinition>(
       logger?.start?.(stage, { stepNumber, total, message });
 
       const startedAt = Date.now();
+      const stageMonitor = createResourceMonitor();
+      stageMonitor.start();
 
       try {
         await executeStage(stage, { cwd, env, stageRunner });
@@ -126,6 +131,7 @@ export async function runStagesSequentially<TStage extends StageDefinition>(
         }
       }
       catch (error) {
+        stageMonitor.stop();
         logger?.fail?.(stage, { stepNumber, total, message, error });
 
         if (error instanceof Error) {
@@ -141,10 +147,11 @@ export async function runStagesSequentially<TStage extends StageDefinition>(
       }
 
       const durationMs = Date.now() - startedAt;
+      const resourceUsage = stageMonitor.stop() ?? undefined;
       const formattedDuration = formatDuration(durationMs);
       logger?.succeed?.(stage, { stepNumber, total, message, durationMs, formattedDuration });
 
-      results.push({ stage, durationMs });
+      results.push({ stage, durationMs, resourceUsage });
     }
   }
   finally {
