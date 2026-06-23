@@ -48,7 +48,7 @@
     "lint": "eslint && prettier --check .",
     "lint:fix": "eslint --fix && prettier . --write",
     "prepare": "simple-git-hooks",
-    "test": "node --run test:fixtures && node --run lint && node --run golden:check && node --run schemas:check && node --run test:unit && node --run test:types && node --run test:spelling",
+    "test": "node --run test:fixtures && concurrently --group --kill-others-on-fail -n lint,golden,schemas,unit,types,spelling \"node --run lint\" \"node --run golden:check\" \"node --run schemas:check\" \"node --run test:unit\" \"node --run test:types\" \"node --run test:spelling\"",
     "test:unit": "node --test scripts/**/__tests__/**/*.test.js",
     "test:spelling": "cspell .",
     "test:types": "tsc --noEmit"
@@ -82,6 +82,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^26.0.0",
     "@types/normalize-package-data": "^2.4.4",
+    "concurrently": "^10.0.3",
     "cspell": "^10.0.1",
     "eslint": "^10.5.0",
     "eslint-plugin-depend": "^1.5.0",
