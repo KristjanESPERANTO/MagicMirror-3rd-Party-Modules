@@ -264,6 +264,14 @@ main {
   color: var(--color-background);
 }
 
+.description a {
+  color: var(--color-background-gray);
+}
+
+.description a:hover {
+  color: var(--color-selected);
+}
+
 .img-container {
   flex: 1;
 }

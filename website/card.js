@@ -2,6 +2,14 @@ import { openHintsDialog } from "./hints-dialog.js";
 
 const cardTemplate = document.getElementById("card-template");
 
+function renderDescription(description) {
+  if (typeof window.marked?.parseInline !== "function") {
+    return description || "";
+  }
+
+  return window.marked.parseInline(description || "");
+}
+
 export function createCard(moduleData, { filterByMaintainer, filterByTag }) {
   const card = document.importNode(cardTemplate.content, true);
 
@@ -53,7 +61,12 @@ export function createCard(moduleData, { filterByMaintainer, filterByTag }) {
     card.querySelector(".tags").remove();
   }
 
-  card.querySelector(".description").innerHTML = moduleData.description;
+  const description = card.querySelector(".description");
+  description.innerHTML = renderDescription(moduleData.description);
+  description.querySelectorAll("a").forEach((link) => {
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  });
 
   if (moduleData.image) {
     const imagePath = `./images/${moduleData.image}`;
