@@ -303,10 +303,11 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
       "uses: actions/checkout@v2",
       "uses: actions/checkout@v3",
       "uses: actions/checkout@v4",
-      "uses: actions/checkout@v5"
+      "uses: actions/checkout@v5",
+      "uses: actions/checkout@v6"
     ],
     category: "Recommendation",
-    description: "Upgrade workflows to use actions/checkout@v6."
+    description: "Upgrade workflows to use actions/checkout@v7."
   },
   {
     id: "text-recommend-actions-setup-node",
