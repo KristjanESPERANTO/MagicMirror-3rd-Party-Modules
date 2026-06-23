@@ -15,7 +15,9 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true
+    "noEmit": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo"
   },
   "include": ["scripts/**/*.ts", "pipeline/**/*.ts", "create_own_module_list.ts"],
   "exclude": ["node_modules", "dist", "modules", "modules_temp", "fixtures"]
