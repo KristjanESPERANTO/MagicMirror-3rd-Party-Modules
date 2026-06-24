@@ -130,7 +130,6 @@ const logger = createLogger({ name: "collect-metadata" });
 const WIKI_URL = "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md";
 const REPOSITORY_CACHE_PATH = path.join("website", "data", "cache", "repository-api-cache.json");
 const REPOSITORY_CACHE_TTL_MS = 1000 * 60 * 60 * 24 * 3; // 3 days
-const NEGATIVE_CACHE_TTL_MS = 1000 * 60 * 60 * 24; // 1 day
 const GITHUB_GRAPHQL_BATCH_SIZE = 100;
 const FORCE_REFRESH = process.env.FORCE_REFRESH === "true";
 
@@ -367,11 +366,6 @@ async function appendGitHubBatchResult({
     stats.fallbacks += 1;
   }
   enrichedModules.push(isDefinitive404(recovery.error.message) ? { ...fallback, notFound: true } : fallback);
-
-  repositoryCache.set(repoId, {
-    isFailed: true,
-    error: recovery.error.message
-  }, NEGATIVE_CACHE_TTL_MS);
   stats.errors += 1;
 }
 
@@ -400,15 +394,8 @@ async function processModule(module: EnrichedModule, context: ProcessModuleConte
 
   const cachedEntry = repositoryCache.get(repoId) as CachedRepositoryEntry | null;
 
-  if (!FORCE_REFRESH && cachedEntry) {
+  if (!FORCE_REFRESH && cachedEntry && !cachedEntry.value.isFailed) {
     stats.hits += 1;
-    if (cachedEntry.value.isFailed) {
-      const fallback = getFallbackOrOriginal(module, previousModulesMap);
-      if (fallback !== module) {
-        stats.fallbacks += 1;
-      }
-      return isDefinitive404(cachedEntry.value.error ?? "") ? { ...fallback, notFound: true } : fallback;
-    }
     return {
       ...module,
       ...cachedEntry.value
@@ -454,9 +441,6 @@ async function processModule(module: EnrichedModule, context: ProcessModuleConte
   if (fallback !== module) {
     stats.fallbacks += 1;
   }
-
-  // Cache negative result
-  repositoryCache.set(repoId, { isFailed: true, error: recovery.error.message }, NEGATIVE_CACHE_TTL_MS);
   stats.errors += 1;
   return isDefinitive404(recovery.error.message) ? { ...fallback, notFound: true } : fallback;
 }
