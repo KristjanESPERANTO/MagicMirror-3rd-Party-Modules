@@ -1,4 +1,4 @@
-import { openHintsDialog } from "./hints-dialog.js";
+import { openHintsDialog } from "./hints-dialog.js?v=__ASSET_VERSION__";
 
 const cardTemplate = document.getElementById("card-template");
 

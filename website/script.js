@@ -1,4 +1,4 @@
-import { createCard } from "./card.js";
+import { createCard } from "./card.js?v=__ASSET_VERSION__";
 
 let allModules = [];
 let skippedModules = [];

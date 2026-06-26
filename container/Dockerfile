@@ -4,7 +4,7 @@ WORKDIR /workspace
 
 COPY . .
 
-ARG GITHUB_TOKEN WIKI_FILE
+ARG GITHUB_TOKEN WIKI_FILE ASSET_VERSION
 
 RUN <<EOF
 set -e
@@ -13,6 +13,11 @@ git log -1
 export GITHUB_TOKEN="${GITHUB_TOKEN}"
 npm clean-install
 node --run all
+
+# Replace cache-busting placeholder with the current commit SHA for deployed assets.
+ASSET_VERSION="${ASSET_VERSION:-dev}"
+find website -type f \( -name "*.html" -o -name "*.js" -o -name "*.css" \) \
+	-exec sed -i "s/__ASSET_VERSION__/${ASSET_VERSION}/g" {} +
 EOF
 
 FROM nginxinc/nginx-unprivileged:alpine-slim

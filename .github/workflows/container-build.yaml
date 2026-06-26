@@ -55,6 +55,7 @@ jobs:
         run: mkdir -p website/data/cache
       - name: Build container
         run: |
+          VERSION="${GITHUB_SHA::12}"
           RUN_KIND="${{ github.event_name }}"
           case "$RUN_KIND" in
             workflow_dispatch|schedule)
@@ -77,6 +78,7 @@ jobs:
             --local context=. \
             --local dockerfile=container \
             --opt build-arg:GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
+            --opt build-arg:ASSET_VERSION="$VERSION" \
             $PARAMS \
             --output type=local,dest=build-output
           # The local exporter writes the final image filesystem; our website
