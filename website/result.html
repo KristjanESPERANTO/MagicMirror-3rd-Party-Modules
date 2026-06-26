@@ -9,6 +9,37 @@
   <body>
     <div id="markdown-container"></div>
     <script>
+      function normalizeModuleSlug(text) {
+        return text
+          .replaceAll(" ", "-")
+          .replaceAll("&", "")
+          .replaceAll("/", "");
+      }
+
+      function filterToModule(markdownContainer, moduleSlug) {
+        if (!moduleSlug) {
+          return;
+        }
+
+        const headings = [...markdownContainer.querySelectorAll("h3")];
+        const targetHeading = headings.find(
+          (heading) => normalizeModuleSlug(heading.textContent) === moduleSlug
+        );
+
+        if (!targetHeading) {
+          return;
+        }
+
+        const section = [targetHeading];
+        let node = targetHeading.nextElementSibling;
+        while (node && node.tagName !== "H3") {
+          section.push(node);
+          node = node.nextElementSibling;
+        }
+
+        markdownContainer.replaceChildren(...section);
+      }
+
       async function loadAndDisplayMarkdown() {
         const markdownContainer = document.getElementById("markdown-container");
         const markdownFile = "result.md";
@@ -22,6 +53,10 @@
           }
           const markdownText = await response.text();
           markdownContainer.innerHTML = marked.parse(markdownText);
+          filterToModule(
+            markdownContainer,
+            new URLSearchParams(window.location.search).get("module")
+          );
           addHeadingAnchors();
         } catch (error) {
           console.error("Error loading markdown:", error);
@@ -33,10 +68,7 @@
       function addHeadingAnchors() {
         const headings = document.querySelectorAll("h1, h2, h3, h4");
         headings.forEach((heading) => {
-          const anchorId = heading.textContent
-            .replaceAll(" ", "-")
-            .replaceAll("&", "")
-            .replaceAll("/", "");
+          const anchorId = normalizeModuleSlug(heading.textContent);
           const anchor = document.createElement("a");
           anchor.id = anchorId;
           anchor.href = `#${anchorId}`;

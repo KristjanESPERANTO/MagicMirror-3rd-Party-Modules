@@ -50,6 +50,7 @@
   --font-size-xlarge: 3.75rem;
 }
 
+html,
 body {
   margin: 0;
   font-size: var(--font-size);
@@ -128,7 +129,10 @@ header {
   border: 1px solid #888;
   border-radius: 5px;
   background-color: #eee;
-  min-width: 25em;
+  min-width: 0;
+  width: min(25em, 100%);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 #top-left {
@@ -155,6 +159,8 @@ header {
   background-color: var(--color-background-gray);
   border-radius: 5px;
   min-width: 37ch;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 #sort-label,
@@ -391,6 +397,14 @@ main {
   #header-comment {
     margin-top: -10px;
   }
+
+  #search-input,
+  #sort-dropdown,
+  #category-filter {
+    width: calc(100% - 1rem);
+    min-width: 0;
+    max-width: calc(100% - 1rem);
+  }
 }
 
 @media (0 <= width <= 664px) {
@@ -412,11 +426,19 @@ main {
 
 /* ------------------------------- HINTS DIALOG */
 #hints-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
   border: none;
   border-radius: 10px;
   padding: 0;
-  max-width: min(600px, 90vw);
-  max-height: 80vh;
+  width: min(600px, calc(100vw - 1rem));
+  max-width: min(600px, calc(100vw - 1rem));
+  max-height: min(80vh, calc(100dvh - 1rem));
   background-color: var(--color-card-background);
   color: var(--color-background);
   box-shadow: 0 8px 32px rgb(0 0 0 / 40%);
@@ -472,6 +494,7 @@ main {
   padding: 0.8em 1.2em;
   overflow-y: auto;
   flex: 1;
+  -webkit-overflow-scrolling: touch;
 }
 
 #hints-dialog-body ol {
@@ -501,6 +524,32 @@ main {
 
 #hints-dialog-footer a {
   color: var(--color-selected);
+}
+
+@media (max-width: 640px) {
+  #hints-dialog {
+    max-width: none;
+    width: calc(100vw - 1rem);
+    max-height: calc(100dvh - 1rem);
+    border-radius: 14px;
+  }
+
+  #hints-dialog-header,
+  #hints-dialog-body,
+  #hints-dialog-footer {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+
+  #hints-dialog-body li {
+    font-size: 1rem;
+  }
+
+  #hints-dialog-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--color-card-background);
+  }
 }
 
 [data-tag].selected {
@@ -679,18 +728,23 @@ input:checked + .slider::before {
 
 #nav-menu {
   color: #fff;
-  position: absolute;
-  right: -200%;
+  position: fixed;
+  right: 0;
   top: 0;
   z-index: 10000;
   background-color: #303030;
-  transition: right 0.5s ease;
+  width: min(90vw, 420px);
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 #nav-menu.visible {
   overflow: hidden auto;
-  right: 0;
-  transition: right 0.5s ease;
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav-item {

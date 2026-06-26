@@ -112,7 +112,8 @@ export function createCard(moduleData, { filterByMaintainer, filterByTag }) {
   }
 
   if (moduleData.issues) {
-    const url = `result.html#${moduleData.name}-by-${moduleData.maintainer.replaceAll(" ", "-").replaceAll("&", "").replaceAll("/", "")}`;
+    const moduleSlug = `${moduleData.name}-by-${moduleData.maintainer.replaceAll(" ", "-").replaceAll("&", "").replaceAll("/", "")}`;
+    const url = `result.html?module=${encodeURIComponent(moduleSlug)}#${moduleSlug}`;
     const issuesLink = card.querySelector(".info .container.issues .text");
     issuesLink.href = url;
     issuesLink.addEventListener("click", (event) => {
