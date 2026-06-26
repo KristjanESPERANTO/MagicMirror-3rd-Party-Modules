@@ -9,6 +9,7 @@ ARG GITHUB_TOKEN WIKI_FILE ASSET_VERSION
 RUN <<EOF
 set -e
 export GITHUB_TOKEN="${GITHUB_TOKEN}"
+export SKIP_INSTALL_SIMPLE_GIT_HOOKS=1
 npm clean-install
 node --run all
 
