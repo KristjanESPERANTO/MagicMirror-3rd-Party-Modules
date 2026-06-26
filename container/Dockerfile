@@ -8,8 +8,6 @@ ARG GITHUB_TOKEN WIKI_FILE ASSET_VERSION
 
 RUN <<EOF
 set -e
-git config --global --add safe.directory /workspace
-git log -1
 export GITHUB_TOKEN="${GITHUB_TOKEN}"
 npm clean-install
 node --run all

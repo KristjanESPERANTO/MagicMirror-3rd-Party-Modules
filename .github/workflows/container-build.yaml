@@ -71,6 +71,7 @@ jobs:
           # registry credentials
           export DOCKER_CONFIG="$(pwd)/container"
           echo "{\"auths\":{\"ghcr.io\":{\"auth\":\"$(echo -n ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} | base64 -w 0)\"}}}" > $DOCKER_CONFIG/config.json
+          echo "ASSET_VERSION=$VERSION"
           # build
           buildctl-daemonless.sh build \
             --progress plain \
