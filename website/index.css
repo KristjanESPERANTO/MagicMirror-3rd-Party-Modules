@@ -58,7 +58,14 @@ body {
   font-weight: 400;
   line-height: 1.5;
   background-color: var(--color-background);
-  overflow-x: hidden; /* So that the nav menu is no longer visible when it is closed. */
+  overflow-x: hidden; /* Fallback for browsers that do not support overflow clip. */
+}
+
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
 }
 
 a {
