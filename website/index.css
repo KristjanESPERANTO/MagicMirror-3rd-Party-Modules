@@ -583,8 +583,8 @@ main {
 }
 
 [data-tag="calendar"] {
-  color: #022126 !important;
-  background-color: #5bc7d9 !important;
+  color: #022126;
+  background-color: #5bc7d9;
 }
 
 [data-tag="media"].tag-button::before {
@@ -592,8 +592,8 @@ main {
 }
 
 [data-tag="media"] {
-  color: #141e1e !important;
-  background-color: #18fef6 !important;
+  color: #141e1e;
+  background-color: #18fef6;
 }
 
 [data-tag="motion detection"].tag-button::before {
@@ -601,8 +601,8 @@ main {
 }
 
 [data-tag="motion detection"] {
-  color: #220212 !important;
-  background-color: #ff419e !important;
+  color: #220212;
+  background-color: #ff419e;
 }
 
 [data-tag="news"].tag-button::before {
@@ -610,8 +610,8 @@ main {
 }
 
 [data-tag="news"] {
-  color: #141e1e !important;
-  background-color: #e0fffe !important;
+  color: #141e1e;
+  background-color: #e0fffe;
 }
 
 [data-tag="public transport"].tag-button::before {
@@ -619,8 +619,8 @@ main {
 }
 
 [data-tag="public transport"] {
-  color: #231602 !important;
-  background-color: #f9c376 !important;
+  color: #231602;
+  background-color: #f9c376;
 }
 
 [data-tag="smart home"].tag-button::before {
@@ -628,8 +628,8 @@ main {
 }
 
 [data-tag="smart home"] {
-  color: #2c1802 !important;
-  background-color: #ef9531 !important;
+  color: #2c1802;
+  background-color: #ef9531;
 }
 
 [data-tag="sports"].tag-button::before {
@@ -637,8 +637,8 @@ main {
 }
 
 [data-tag="sports"] {
-  color: #01041f !important;
-  background-color: #737ef7 !important;
+  color: #01041f;
+  background-color: #737ef7;
 }
 
 [data-tag="stock"].tag-button::before {
@@ -646,8 +646,8 @@ main {
 }
 
 [data-tag="stock"] {
-  color: #000 !important;
-  background-color: #a9acb6 !important;
+  color: #000;
+  background-color: #a9acb6;
 }
 
 [data-tag="text-to-speech"].tag-button::before {
@@ -655,8 +655,8 @@ main {
 }
 
 [data-tag="text-to-speech"] {
-  color: #1f2302 !important;
-  background-color: #cce060 !important;
+  color: #1f2302;
+  background-color: #cce060;
 }
 
 [data-tag="traffic"].tag-button::before {
@@ -664,8 +664,8 @@ main {
 }
 
 [data-tag="traffic"] {
-  color: #021603 !important;
-  background-color: #86f58b !important;
+  color: #021603;
+  background-color: #86f58b;
 }
 
 [data-tag="voice control"].tag-button::before {
@@ -673,8 +673,8 @@ main {
 }
 
 [data-tag="voice control"] {
-  color: #021527 !important;
-  background-color: #5fb2ff !important;
+  color: #021527;
+  background-color: #5fb2ff;
 }
 
 [data-tag="weather"].tag-button::before {
@@ -682,8 +682,8 @@ main {
 }
 
 [data-tag="weather"] {
-  color: #270202 !important;
-  background-color: #f17272 !important;
+  color: #270202;
+  background-color: #f17272;
 }
 
 .switch {
