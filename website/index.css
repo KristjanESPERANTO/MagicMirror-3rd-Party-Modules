@@ -166,7 +166,8 @@ header {
   color: var(--color-foreground-text);
   background-color: var(--color-background-gray);
   border-radius: 5px;
-  min-width: 37ch;
+  min-width: clamp(14rem, 45vw, 37ch);
+  width: min(37ch, 100%);
   max-width: 100%;
   box-sizing: border-box;
 }
