@@ -189,8 +189,8 @@ main {
   box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
   transition:
     transform 200ms ease-in-out,
-    scale 200ms ease-in-out,
-    box-shadow 200ms ease-in-out;
+    box-shadow 200ms ease-in-out,
+    outline-color 200ms ease-in-out;
   overflow: hidden;
   min-width: 250px;
   padding: 0.92em 0.92em 0;
@@ -201,9 +201,8 @@ main {
 }
 
 .card:hover {
+  transform: translateY(-2px);
   box-shadow: rgb(149 157 165 / 70%) 0 8px 24px;
-  top: -2px;
-  transition: all 100ms;
   outline: var(--color-hover) solid 2px !important;
 }
 
