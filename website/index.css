@@ -386,21 +386,33 @@ main {
 
 @media (0 <= width <= 800px) {
   header {
-    padding-top: 2.8rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "left right"
+      "title title"
+      "comment comment"
+      "disclaimer disclaimer"
+      "search search"
+      "container container"
+      "tags tags";
+    align-items: start;
+    row-gap: 0.35rem;
+    padding-top: 0.5rem;
   }
 
   #top-left {
-    top: 0.45rem;
-    left: 0.5rem;
-    right: auto;
+    grid-area: left;
+    position: static;
     text-align: left;
     color: var(--color-background-gray);
-    max-width: calc(100% - 4rem);
+    max-width: 100%;
   }
 
   #top-right {
-    top: 0.35rem;
-    right: 0.35rem;
+    grid-area: right;
+    position: static;
+    justify-self: end;
   }
 
   #sort-container,
@@ -409,11 +421,33 @@ main {
   }
 
   h1 {
-    margin: 0.25em 2.5rem 0.25em 0.5rem;
+    grid-area: title;
+    margin: 0.2em 0;
   }
 
   #header-comment {
-    margin-top: -10px;
+    grid-area: comment;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #disclaimer {
+    grid-area: disclaimer;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #search-input {
+    grid-area: search;
+    justify-self: center;
+  }
+
+  #container {
+    grid-area: container;
+  }
+
+  #tag-buttons {
+    grid-area: tags;
   }
 
   #search-input,
