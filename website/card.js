@@ -1,5 +1,3 @@
-import { openHintsDialog } from "./hints-dialog.js?v=__ASSET_VERSION__";
-
 const cardTemplate = document.getElementById("card-template");
 
 function renderDescription(description) {
@@ -116,10 +114,7 @@ export function createCard(moduleData, { filterByMaintainer, filterByTag }) {
     const url = `result.html?module=${encodeURIComponent(moduleSlug)}#${moduleSlug}`;
     const issuesLink = card.querySelector(".info .container.issues .text");
     issuesLink.href = url;
-    issuesLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      openHintsDialog(moduleData, url);
-    });
+    issuesLink.target = "_self";
   }
   else {
     card.querySelector(".info .container.issues").remove();

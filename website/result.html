@@ -1,13 +1,35 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Result of the module analysis</title>
     <link rel="icon" type="image/x-icon" href="favicon.svg" />
     <link rel="stylesheet" href="result.css?v=__ASSET_VERSION__" />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
-    <div id="markdown-container"></div>
+    <header id="page-header">
+      <div id="page-actions">
+        <a class="action-button" id="back-link" href="index.html"
+          >Modules list</a
+        >
+        <a class="action-button" id="full-results-link" href="result.html"
+          >Full hints list</a
+        >
+        <a
+          class="action-button"
+          id="repo-link"
+          href="https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/"
+          target="_blank"
+          >GitHub Repository</a
+        >
+      </div>
+      <p id="page-eyebrow">Hints for developers</p>
+    </header>
+    <main id="page-content">
+      <div id="markdown-container"></div>
+    </main>
     <script>
       function normalizeModuleSlug(text) {
         return text
@@ -18,7 +40,7 @@
 
       function filterToModule(markdownContainer, moduleSlug) {
         if (!moduleSlug) {
-          return;
+          return null;
         }
 
         const headings = [...markdownContainer.querySelectorAll("h3")];
@@ -27,7 +49,7 @@
         );
 
         if (!targetHeading) {
-          return;
+          return null;
         }
 
         const section = [targetHeading];
@@ -38,11 +60,73 @@
         }
 
         markdownContainer.replaceChildren(...section);
+        return targetHeading.textContent;
+      }
+
+      function extractGeneralNotes(markdownContainer) {
+        const heading = [...markdownContainer.querySelectorAll("h2")].find(
+          (node) => node.textContent === "General notes"
+        );
+
+        if (!heading) {
+          return [];
+        }
+
+        const notes = [];
+        let node = heading.nextElementSibling;
+        while (node && node.tagName !== "H2") {
+          notes.push(node.cloneNode(true));
+          const nextNode = node.nextElementSibling;
+          node.remove();
+          node = nextNode;
+        }
+
+        heading.remove();
+        return notes;
+      }
+
+      function injectModuleIntroSections(markdownContainer, notes) {
+        if (notes.length === 0) {
+          return;
+        }
+
+        const headings = [...markdownContainer.querySelectorAll("h3")];
+        for (const heading of headings) {
+          const introSection = document.createElement("section");
+          introSection.className = "module-intro";
+
+          const notesHeading = document.createElement("h4");
+          notesHeading.className = "module-section-heading";
+          notesHeading.textContent = "General notes";
+
+          const findingsHeading = document.createElement("h4");
+          findingsHeading.className = "module-section-heading";
+          findingsHeading.textContent = "Findings";
+
+          introSection.appendChild(notesHeading);
+          for (const note of notes) {
+            introSection.appendChild(note.cloneNode(true));
+          }
+          introSection.appendChild(findingsHeading);
+          heading.insertAdjacentElement("afterend", introSection);
+        }
+      }
+
+      function setPageTitle(title) {
+        document.title = `${title} · Module hints`;
       }
 
       async function loadAndDisplayMarkdown() {
         const markdownContainer = document.getElementById("markdown-container");
         const markdownFile = "result.md";
+        const moduleSlug = new URLSearchParams(window.location.search).get(
+          "module"
+        );
+        const fullResultsLink = document.getElementById("full-results-link");
+
+        if (!moduleSlug) {
+          fullResultsLink.remove();
+        }
 
         try {
           const response = await fetch(markdownFile);
@@ -53,10 +137,22 @@
           }
           const markdownText = await response.text();
           markdownContainer.innerHTML = marked.parse(markdownText);
-          filterToModule(
-            markdownContainer,
-            new URLSearchParams(window.location.search).get("module")
-          );
+          if (moduleSlug) {
+            const generalNotes = extractGeneralNotes(markdownContainer);
+            injectModuleIntroSections(markdownContainer, generalNotes);
+          }
+          const moduleTitle = filterToModule(markdownContainer, moduleSlug);
+          if (moduleTitle) {
+            setPageTitle(moduleTitle);
+            fullResultsLink.href = "result.html";
+            fullResultsLink.textContent = "Full hints list";
+          } else if (moduleSlug) {
+            markdownContainer.innerHTML =
+              "<p>No hints found for this module.</p>";
+            setPageTitle("Module hints");
+            fullResultsLink.href = "result.html";
+            fullResultsLink.textContent = "Full hints list";
+          }
           addHeadingAnchors();
         } catch (error) {
           console.error("Error loading markdown:", error);
@@ -66,8 +162,13 @@
       }
 
       function addHeadingAnchors() {
-        const headings = document.querySelectorAll("h1, h2, h3, h4");
+        const markdownContainer = document.getElementById("markdown-container");
+        const headings = markdownContainer.querySelectorAll("h1, h2, h3, h4");
         headings.forEach((heading) => {
+          if (heading.classList.contains("module-section-heading")) {
+            return;
+          }
+
           const anchorId = normalizeModuleSlug(heading.textContent);
           const anchor = document.createElement("a");
           anchor.id = anchorId;

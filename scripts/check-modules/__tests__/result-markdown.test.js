@@ -54,6 +54,7 @@ describe("result-markdown", () => {
     );
 
     assert.ok(markdown.includes("Last update: 2026-03-22T05:08:24.251Z"));
+    assert.ok(markdown.includes("## General notes"));
     assert.ok(markdown.includes("### [MMM-Example by Alice](https://github.com/example/MMM-Example)"));
     assert.ok(markdown.includes("1. Issue one"));
     assert.ok(markdown.includes("2. Issue two"));
