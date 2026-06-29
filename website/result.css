@@ -103,6 +103,23 @@ h3 > a {
   color: var(--color-link);
 }
 
+h2 {
+  margin: 1.2rem 0 0.4rem;
+  font-size: 1.85rem;
+  line-height: 1.2;
+}
+
+h3 {
+  margin: 1rem 0 0.35rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+h2 > a,
+h3 > a {
+  color: var(--color-link);
+}
+
 a:hover {
   text-decoration: underline;
 }
