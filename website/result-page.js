@@ -1,3 +1,6 @@
+// eslint-disable-next-line import-x/no-unresolved
+import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+
 function normalizeModuleSlug(text) {
   return text
     .replaceAll(" ", "-")
@@ -17,6 +20,20 @@ function parseModuleHeadingText(line) {
   return plainHeadingMatch ? plainHeadingMatch[1].trim() : "";
 }
 
+function collectLinesUntil(lines, startIndex, isEndLine) {
+  const collected = [];
+
+  for (let lineIndex = startIndex; lineIndex < lines.length; lineIndex += 1) {
+    const line = lines[lineIndex];
+    if (isEndLine(line)) {
+      break;
+    }
+    collected.push(line);
+  }
+
+  return collected;
+}
+
 function extractGeneralNotesMarkdown(lines) {
   const startIndex = lines.findIndex(
     line => line.trim() === "## General notes"
@@ -25,40 +42,33 @@ function extractGeneralNotesMarkdown(lines) {
     return [];
   }
 
-  const notes = [];
-  for (let lineIndex = startIndex + 1; lineIndex < lines.length; lineIndex += 1) {
-    if (/^##\s+/u.test(lines[lineIndex])) {
-      break;
-    }
-    notes.push(lines[lineIndex]);
-  }
-
-  return notes;
+  return collectLinesUntil(
+    lines,
+    startIndex + 1,
+    line => /^##\s+/u.test(line)
+  );
 }
 
 function extractModuleSectionMarkdown(lines, moduleSlug) {
-  let startIndex = -1;
-
-  for (const [lineIndex, line] of lines.entries()) {
-    if (line.startsWith("### ")) {
-      const headingText = parseModuleHeadingText(line);
-      if (normalizeModuleSlug(headingText) === moduleSlug) {
-        startIndex = lineIndex;
-        break;
-      }
+  const startIndex = lines.findIndex((line) => {
+    if (!line.startsWith("### ")) {
+      return false;
     }
-  }
+
+    const headingText = parseModuleHeadingText(line);
+    return normalizeModuleSlug(headingText) === moduleSlug;
+  });
 
   if (startIndex === -1) {
     return null;
   }
 
+  const relativeEndIndex = lines
+    .slice(startIndex + 1)
+    .findIndex(line => line.startsWith("### "));
   let endIndex = lines.length;
-  for (let lineIndex = startIndex + 1; lineIndex < lines.length; lineIndex += 1) {
-    if (lines[lineIndex].startsWith("### ")) {
-      endIndex = lineIndex;
-      break;
-    }
+  if (relativeEndIndex !== -1) {
+    endIndex = startIndex + 1 + relativeEndIndex;
   }
 
   return {
@@ -77,12 +87,13 @@ function buildFilteredModuleMarkdown(markdownText, moduleSlug) {
 
   const generalNotes = extractGeneralNotesMarkdown(lines);
   const moduleHeadingLine = moduleSection.headingLine.replace(/^###\s+/u, "## ");
-  const outputLines = [moduleHeadingLine, ""];
+  const outputLines = [];
 
   if (generalNotes.length > 0) {
     outputLines.push("### General notes", "", ...generalNotes, "");
   }
 
+  outputLines.push(moduleHeadingLine, "");
   outputLines.push("### Findings", "", ...moduleSection.bodyLines);
 
   return {
@@ -95,6 +106,11 @@ function setPageTitle(title) {
   document.title = `${title} · Module hints`;
 }
 
+function setFullHintsListLink(fullResultsLink) {
+  fullResultsLink.href = "result.html";
+  fullResultsLink.textContent = "Full hints list";
+}
+
 async function loadAndDisplayMarkdown() {
   const markdownContainer = document.getElementById("markdown-container");
   const markdownFile = "result.md";
@@ -102,11 +118,6 @@ async function loadAndDisplayMarkdown() {
     "module"
   );
   const fullResultsLink = document.getElementById("full-results-link");
-  const markedParser = window.marked?.parse;
-
-  if (typeof markedParser !== "function") {
-    throw new Error("Marked parser is not available");
-  }
 
   if (!moduleSlug) {
     fullResultsLink.remove();
@@ -127,21 +138,19 @@ async function loadAndDisplayMarkdown() {
         moduleSlug
       );
       if (filtered) {
-        markdownContainer.innerHTML = markedParser(filtered.markdown);
+        markdownContainer.innerHTML = marked.parse(filtered.markdown);
         setPageTitle(filtered.title);
-        fullResultsLink.href = "result.html";
-        fullResultsLink.textContent = "Full hints list";
+        setFullHintsListLink(fullResultsLink);
       }
       else {
         markdownContainer.innerHTML
           = "<p>No hints found for this module.</p>";
         setPageTitle("Module hints");
-        fullResultsLink.href = "result.html";
-        fullResultsLink.textContent = "Full hints list";
+        setFullHintsListLink(fullResultsLink);
       }
     }
     else {
-      markdownContainer.innerHTML = markedParser(markdownText);
+      markdownContainer.innerHTML = marked.parse(markdownText);
     }
 
     addHeadingAnchors();
@@ -179,4 +188,4 @@ function addHeadingAnchors() {
   }
 }
 
-window.onload = loadAndDisplayMarkdown;
+loadAndDisplayMarkdown();

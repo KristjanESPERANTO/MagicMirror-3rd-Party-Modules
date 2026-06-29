@@ -51,6 +51,9 @@ body {
   line-height: 1;
   text-decoration: none;
   border: 1px solid transparent;
+  background: linear-gradient(135deg, #7b7b7b, #616161);
+  color: #fff;
+  border-color: #a9a9a9;
   box-shadow: 0 8px 20px rgb(0 0 0 / 18%);
   transition:
     transform 140ms ease,
@@ -63,22 +66,13 @@ body {
 .action-button:hover {
   text-decoration: none;
   transform: translateY(-1px);
+  background: linear-gradient(135deg, #8a8a8a, #707070);
   box-shadow: 0 10px 24px rgb(0 0 0 / 26%);
 }
 
 .action-button:focus-visible {
   outline: 3px solid #fff8;
   outline-offset: 3px;
-}
-
-.action-button {
-  background: linear-gradient(135deg, #7b7b7b, #616161);
-  color: #fff;
-  border-color: #a9a9a9;
-}
-
-.action-button:hover {
-  background: linear-gradient(135deg, #8a8a8a, #707070);
 }
 
 #page-eyebrow {
@@ -120,7 +114,7 @@ h3 > a {
   color: var(--color-link);
 }
 
-a:hover {
+#markdown-container a:hover {
   text-decoration: underline;
 }
 
