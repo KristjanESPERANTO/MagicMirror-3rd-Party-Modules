@@ -552,6 +552,64 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Parses a Google Calendar iCal feed for events tagged with people's initials (e.g. [A], [M], [A&M]) to display upcoming days off. Makes it easy to see shared vs individual days off for household planning.",
+      "hasGithubIssues": null,
+      "id": "AliceNewsum/MMM-DaysOff",
+      "image": "MMM-DaysOff---AliceNewsum.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "AliceNewsum",
+      "maintainerURL": "https://github.com/AliceNewsum",
+      "name": "MMM-DaysOff",
+      "tags": [
+        "calendar",
+        "days-off",
+        "ical",
+        "smart-mirror"
+      ],
+      "url": "https://github.com/AliceNewsum/MMM-DaysOff"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Scans IMAP email accounts for shipping notifications from carriers like Amazon, UPS, FedEx, and USPS. Automatically detects carrier and delivery status (Shipped, Out for Delivery, Delivered) with item name extraction and deduplication.",
+      "hasGithubIssues": null,
+      "id": "AliceNewsum/MMM-Packages",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "AliceNewsum",
+      "maintainerURL": "https://github.com/AliceNewsum",
+      "name": "MMM-Packages",
+      "tags": [
+        "packages",
+        "delivery",
+        "shipping",
+        "tracking",
+        "imap",
+        "email"
+      ],
+      "url": "https://github.com/AliceNewsum/MMM-Packages"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays Google Tasks split into active (due today or overdue) and backlog sections. Overdue tasks are highlighted in amber so nothing slips through the cracks.",
+      "hasGithubIssues": null,
+      "id": "AliceNewsum/MMM-Tasks",
+      "image": "MMM-Tasks---AliceNewsum.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "AliceNewsum",
+      "maintainerURL": "https://github.com/AliceNewsum",
+      "name": "MMM-Tasks",
+      "tags": [
+        "google-tasks",
+        "tasks",
+        "todo",
+        "smart-mirror"
+      ],
+      "url": "https://github.com/AliceNewsum/MMM-Tasks"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Shows either the time remaining to an event, or the time since an event. This module also supports having a supporting image.",
       "hasGithubIssues": true,
       "id": "alltopafi/MMM-DateCounter",
@@ -6193,6 +6251,17 @@
       "url": "https://github.com/FlatPepsi17/MMM-WeatherGraph"
     },
     {
+      "category": "Health",
+      "description": "Fetches and displays the Fordham Tri-State Tick Risk.",
+      "hasGithubIssues": null,
+      "id": "Fleker/MMM-TickRisk",
+      "isArchived": null,
+      "maintainer": "fleker",
+      "maintainerURL": "https://github.com/Fleker",
+      "name": "MMM-TickRisk",
+      "url": "https://github.com/Fleker/MMM-TickRisk"
+    },
+    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays Hive (British Gas) inside / outside temperature.",
       "hasGithubIssues": true,
@@ -6441,7 +6510,7 @@
       "url": "https://github.com/fuerst/MMM-MensaMax"
     },
     {
-      "category": "Transport / Travel",
+      "category": "Outdated Modules",
       "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
       "hasGithubIssues": true,
       "id": "galaktor/MMM-DublinRTPI",
@@ -6451,6 +6520,7 @@
       "maintainer": "galaktor",
       "maintainerURL": "https://github.com/galaktor",
       "name": "MMM-DublinRTPI",
+      "outdated": "Abandoned. Developer is no longer active. Doesn't work anymore.",
       "tags": [
         "public transport",
         "dublin bus",
@@ -7371,6 +7441,26 @@
       "url": "https://github.com/HeikoGr/MMM-HomeConnect2"
     },
     {
+      "category": "Education",
+      "description": "module to show which media are currently borrowed from the local library (via OPAC account) and when they are due.",
+      "hasGithubIssues": null,
+      "id": "HeikoGr/MMM-LibraryMonitor",
+      "image": "MMM-LibraryMonitor---HeikoGr.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "HeikoGr",
+      "maintainerURL": "https://github.com/HeikoGr",
+      "name": "MMM-LibraryMonitor",
+      "tags": [
+        "library-monitor",
+        "open-opac",
+        "library",
+        "books",
+        "media"
+      ],
+      "url": "https://github.com/HeikoGr/MMM-LibraryMonitor"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Show pictures from Photoprism (local photo gallery). Adds Thumbnail API support and optimized resource management, such as a suspend feature, for improved performance.",
       "hasGithubIssues": true,
@@ -7479,7 +7569,7 @@
       "url": "https://github.com/hermanho/MMM-OneDrive"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Outdated Modules",
       "description": "Display a weekly (n days) calendar view.",
       "hasGithubIssues": true,
       "id": "heskja/MMM-CalendarWeek",
@@ -7489,6 +7579,7 @@
       "maintainer": "heskja",
       "maintainerURL": "https://github.com/heskja",
       "name": "MMM-CalendarWeek",
+      "outdated": "Abandoned. Developer is no longer active. Doesn't work anymore.",
       "url": "https://github.com/heskja/MMM-CalendarWeek"
     },
     {
@@ -9117,6 +9208,87 @@
       "url": "https://github.com/johnny-co/MMM-OpenSprinkler"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "A polished month-view calendar module that connects directly to Google Calendar via iCal URL.",
+      "hasGithubIssues": null,
+      "id": "johnster000/MMM-MyGCalendar",
+      "image": "MMM-MyGCalendar---johnster000.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "johnster000",
+      "maintainerURL": "https://github.com/johnster000",
+      "name": "MMM-MyGCalendar",
+      "tags": [
+        "calendar",
+        "google",
+        "google calendar",
+        "ical",
+        "month-view"
+      ],
+      "url": "https://github.com/johnster000/MMM-MyGCalendar"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays a shared household need/shopping list on your mirror. Add items from any device through the built-in admin web interface — they appear on the mirror immediately. When you've picked something up, tap it on the mirror to cross it off; after 60 seconds it's removed and logged to history.",
+      "hasGithubIssues": null,
+      "id": "johnster000/MMM-NeedList",
+      "image": "MMM-NeedList---johnster000.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "johnster000",
+      "maintainerURL": "https://github.com/johnster000",
+      "name": "MMM-NeedList",
+      "tags": [
+        "shopping",
+        "needs",
+        "household",
+        "list",
+        "admin"
+      ],
+      "url": "https://github.com/johnster000/MMM-NeedList"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Shows what's currently playing on your Google Nest / Chromecast speakers. It discovers speakers automatically on your local network and displays album art, song title, artist, and the speaker name — with play/pause/skip controls right on the mirror.",
+      "hasGithubIssues": null,
+      "id": "johnster000/MMM-NowPlaying",
+      "image": "MMM-NowPlaying---johnster000.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "johnster000",
+      "maintainerURL": "https://github.com/johnster000",
+      "name": "MMM-NowPlaying",
+      "tags": [
+        "google",
+        "cast",
+        "nest",
+        "music",
+        "now-playing",
+        "chromecast"
+      ],
+      "url": "https://github.com/johnster000/MMM-NowPlaying"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays household members and their assigned tasks on the mirror, with admin interface.",
+      "hasGithubIssues": null,
+      "id": "johnster000/MMM-Tasklist",
+      "image": "MMM-Tasklist---johnster000.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "johnster000",
+      "maintainerURL": "https://github.com/johnster000",
+      "name": "MMM-Tasklist",
+      "tags": [
+        "tasks",
+        "chores",
+        "household",
+        "todo",
+        "admin"
+      ],
+      "url": "https://github.com/johnster000/MMM-Tasklist"
+    },
+    {
       "category": "Outdated Modules",
       "description": "Displays a Precipitation Radar for your location.",
       "hasGithubIssues": true,
@@ -9997,6 +10169,17 @@
       "url": "https://gitlab.com/khassel/MMM-WeatherBridge"
     },
     {
+      "category": "Weather Themes",
+      "description": "Weather module theme which uses [skycons](https://github.com/maxdow/skycons).",
+      "hasGithubIssues": null,
+      "id": "khassel/MMT-WeatherSkycons",
+      "isArchived": null,
+      "maintainer": "khassel",
+      "maintainerURL": "https://gitlab.com/khassel",
+      "name": "MMT-WeatherSkycons",
+      "url": "https://gitlab.com/khassel/MMT-WeatherSkycons"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Display your upcoming Shows from your [trakt.tv](https://trakt.tv) account.",
       "hasGithubIssues": true,
@@ -10363,6 +10546,20 @@
         "webspeech"
       ],
       "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS"
+    },
+    {
+      "category": "Weather Themes",
+      "description": "Weather module theme which adds a compact badge-based style and enables multiple icon sets.",
+      "hasGithubIssues": null,
+      "id": "KristjanESPERANTO/MMT-WeatherOneTheme",
+      "isArchived": null,
+      "maintainer": "KristjanESPERANTO",
+      "maintainerURL": "https://github.com/KristjanESPERANTO",
+      "name": "MMT-WeatherOneTheme",
+      "tags": [
+        "weather"
+      ],
+      "url": "https://github.com/KristjanESPERANTO/MMT-WeatherOneTheme"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -11239,6 +11436,18 @@
       "maintainerURL": "https://github.com/marcomerens",
       "name": "coinsquaremodule",
       "url": "https://github.com/marcomerens/coinsquaremodule"
+    },
+    {
+      "category": "News / Information",
+      "description": "Display the daily special deal from [eshopspecials.gr](https://www.eshopspecials.gr/) — including the product image, price, and description.",
+      "hasGithubIssues": null,
+      "id": "mariosgouros/MMM-eshopspecials",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "MSg",
+      "maintainerURL": "https://github.com/mariosgouros",
+      "name": "MMM-eshopspecials",
+      "url": "https://github.com/mariosgouros/MMM-eshopspecials"
     },
     {
       "category": "Weather",
@@ -12746,6 +12955,18 @@
         "öbb"
       ],
       "url": "https://github.com/mscharl/MMM-oebb-station-board"
+    },
+    {
+      "category": "Sports",
+      "description": "Displays the FIFA World Cup Bracket - Live.",
+      "hasGithubIssues": null,
+      "id": "msimon360/MMM-FIFAWorldCup",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "Mark Simon",
+      "maintainerURL": "https://github.com/msimon360",
+      "name": "MMM-FIFAWorldCup",
+      "url": "https://github.com/msimon360/MMM-FIFAWorldCup"
     },
     {
       "category": "Weather",
@@ -15129,6 +15350,42 @@
       "url": "https://github.com/Pip1405/MMM-FearAndGreedIndex"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays data from your Hoymiles solar inverter collected by AhoiDTU.",
+      "hasGithubIssues": null,
+      "id": "pixxelfriend/MMM-Dtu",
+      "image": "MMM-Dtu---pixxelfriend.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "pixxelfriend",
+      "maintainerURL": "https://github.com/pixxelfriend",
+      "name": "MMM-Dtu",
+      "tags": [
+        "ahoydtu",
+        "inverter",
+        "solar"
+      ],
+      "url": "https://github.com/pixxelfriend/MMM-Dtu"
+    },
+    {
+      "category": "News / Information",
+      "description": "A fork of the default MagicMirror² calendar module that displays multiple calendars in a weekly table view. Designed for family planning with 2–4 calendars side by side for a quick shared overview.",
+      "hasGithubIssues": null,
+      "id": "pixxelfriend/MMM-FamilyWeekCalendar",
+      "image": "MMM-FamilyWeekCalendar---pixxelfriend.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "pixxelfriend",
+      "maintainerURL": "https://github.com/pixxelfriend",
+      "name": "MMM-FamilyWeekCalendar",
+      "tags": [
+        "calendar",
+        "family",
+        "week"
+      ],
+      "url": "https://github.com/pixxelfriend/MMM-FamilyWeekCalendar"
+    },
+    {
       "category": "Weather",
       "description": "Displays data (particulate matter PM2.5/PM10, temperature, pressure) from air quality sensors, connected to [sensor.community](https://sensor.community) or local wifi.",
       "hasGithubIssues": true,
@@ -15687,23 +15944,6 @@
       "url": "https://github.com/raywo/MMM-GameOfLife"
     },
     {
-      "category": "Outdated Modules",
-      "description": "Display the song you are currently listening to on Spotify.",
-      "hasGithubIssues": true,
-      "id": "raywo/MMM-NowPlayingOnSpotify",
-      "image": "MMM-NowPlayingOnSpotify---raywo.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "raywo",
-      "maintainerURL": "https://github.com/raywo",
-      "name": "MMM-NowPlayingOnSpotify",
-      "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
-      "tags": [
-        "spotify"
-      ],
-      "url": "https://github.com/raywo/MMM-NowPlayingOnSpotify"
-    },
-    {
       "category": "Transport / Travel",
       "description": "Displays the closest aircraft's callsign and altitude using ADS-B data.",
       "hasGithubIssues": true,
@@ -16096,6 +16336,22 @@
       "maintainerURL": "https://github.com/rkorell",
       "name": "MMM-Globe",
       "url": "https://github.com/rkorell/MMM-Globe"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display the song you are currently listening to on Spotify.",
+      "hasGithubIssues": null,
+      "id": "rkorell/MMM-NowPlayingOnSpotify",
+      "image": "MMM-NowPlayingOnSpotify---rkorell.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "rkorell",
+      "maintainerURL": "https://github.com/rkorell",
+      "name": "MMM-NowPlayingOnSpotify",
+      "tags": [
+        "spotify"
+      ],
+      "url": "https://github.com/rkorell/MMM-NowPlayingOnSpotify"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
