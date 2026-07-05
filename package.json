@@ -32,6 +32,7 @@
   "scripts": {
     "start": "node scripts/menu.ts",
     "all": "node scripts/orchestrator/index.ts run full-refresh-parallel",
+    "clone:all-modules": "rm -rf modules modules_temp && mkdir -p modules modules_temp && node scripts/parallel-processing.ts --no-cache",
     "collectMetadata": "node scripts/orchestrator/index.ts run full-refresh-parallel --only=collect-metadata",
     "pipeline": "node scripts/orchestrator/index.ts",
     "pipeline:benchmark": "node scripts/orchestrator/index.ts benchmark --pipeline=full-refresh-parallel --limit=20",
