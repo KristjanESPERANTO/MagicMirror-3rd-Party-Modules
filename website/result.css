@@ -40,6 +40,20 @@ body {
   margin-bottom: 0.75rem;
 }
 
+#page-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+  color: #c8c8c8;
+  font-weight: 600;
+}
+
+#page-filters input {
+  width: 1rem;
+  height: 1rem;
+}
+
 .action-button {
   display: inline-flex;
   align-items: center;

@@ -78,6 +78,94 @@ function extractModuleSectionMarkdown(lines, moduleSlug) {
   };
 }
 
+function extractIssueSections(lines) {
+  const modulesWithIssuesIndex = lines.findIndex(
+    line => line.trim() === "## Modules with issues"
+  );
+  if (modulesWithIssuesIndex === -1) {
+    return [];
+  }
+
+  const moduleSections = [];
+
+  for (
+    let lineIndex = modulesWithIssuesIndex + 1;
+    lineIndex < lines.length;
+    lineIndex += 1
+  ) {
+    const line = lines[lineIndex];
+    if (line.startsWith("### ")) {
+      const relativeEndIndex = lines
+        .slice(lineIndex + 1)
+        .findIndex(candidate => candidate.startsWith("### "));
+      const endIndex = relativeEndIndex === -1
+        ? lines.length
+        : lineIndex + 1 + relativeEndIndex;
+
+      moduleSections.push({
+        bodyLines: lines.slice(lineIndex + 1, endIndex),
+        headingLine: lines[lineIndex],
+        title: parseModuleHeadingText(lines[lineIndex])
+      });
+
+      lineIndex = endIndex - 1;
+    }
+  }
+
+  return moduleSections;
+}
+
+function buildResultsMarkdown(markdownText, outdatedModulesBySlug, showOutdated) {
+  if (showOutdated) {
+    return markdownText;
+  }
+
+  const lines = markdownText.split("\n");
+  const modulesWithIssuesIndex = lines.findIndex(
+    line => line.trim() === "## Modules with issues"
+  );
+  if (modulesWithIssuesIndex === -1) {
+    return markdownText;
+  }
+
+  const preservedLines = lines.slice(0, modulesWithIssuesIndex + 1);
+  const visibleSections = extractIssueSections(lines).filter((section) => {
+    const moduleSlug = normalizeModuleSlug(section.title);
+    return !outdatedModulesBySlug.has(moduleSlug);
+  });
+
+  if (visibleSections.length > 0) {
+    preservedLines.push("");
+  }
+
+  visibleSections.forEach((section, index) => {
+    if (index > 0) {
+      preservedLines.push("");
+    }
+
+    preservedLines.push(section.headingLine, "", ...section.bodyLines);
+  });
+
+  return preservedLines.join("\n").trim();
+}
+
+function buildOutdatedModulesSet(modulesData) {
+  const modules = Array.isArray(modulesData?.modules)
+    ? modulesData.modules
+    : [];
+
+  return new Set(
+    modules
+      .filter(moduleData => Boolean(moduleData?.outdated))
+      .map((moduleData) => {
+        const maintainer = typeof moduleData.maintainer === "string"
+          ? moduleData.maintainer
+          : "";
+        return normalizeModuleSlug(`${moduleData.name}-by-${maintainer}`);
+      })
+  );
+}
+
 function buildFilteredModuleMarkdown(markdownText, moduleSlug) {
   const lines = markdownText.split("\n");
   const moduleSection = extractModuleSectionMarkdown(lines, moduleSlug);
@@ -111,6 +199,16 @@ function setFullHintsListLink(fullResultsLink) {
   fullResultsLink.textContent = "Full hints list";
 }
 
+async function fetchOutdatedModulesSet() {
+  const response = await fetch("data/modules.json");
+  if (!response.ok) {
+    throw new Error(`Error fetching modules metadata: ${response.statusText}`);
+  }
+
+  const modulesData = await response.json();
+  return buildOutdatedModulesSet(modulesData);
+}
+
 async function loadAndDisplayMarkdown() {
   const markdownContainer = document.getElementById("markdown-container");
   const markdownFile = "result.md";
@@ -118,19 +216,26 @@ async function loadAndDisplayMarkdown() {
     "module"
   );
   const fullResultsLink = document.getElementById("full-results-link");
+  const outdatedFilter = document.getElementById("show-outdated-findings");
 
-  if (!moduleSlug) {
+  if (moduleSlug) {
+    outdatedFilter.closest("#page-filters")?.remove();
+  }
+  else {
     fullResultsLink.remove();
   }
 
   try {
-    const response = await fetch(markdownFile);
-    if (!response.ok) {
+    const [markdownResponse, outdatedModulesBySlug] = await Promise.all([
+      fetch(markdownFile),
+      moduleSlug ? Promise.resolve(new Set()) : fetchOutdatedModulesSet()
+    ]);
+    if (!markdownResponse.ok) {
       throw new Error(
-        `Error fetching the markdown file: ${response.statusText}`
+        `Error fetching the markdown file: ${markdownResponse.statusText}`
       );
     }
-    const markdownText = await response.text();
+    const markdownText = await markdownResponse.text();
 
     if (moduleSlug) {
       const filtered = buildFilteredModuleMarkdown(
@@ -150,7 +255,19 @@ async function loadAndDisplayMarkdown() {
       }
     }
     else {
-      markdownContainer.innerHTML = marked.parse(markdownText);
+      const renderMarkdown = () => {
+        const filteredMarkdown = buildResultsMarkdown(
+          markdownText,
+          outdatedModulesBySlug,
+          outdatedFilter.checked
+        );
+        markdownContainer.innerHTML = marked.parse(filteredMarkdown);
+        addHeadingAnchors();
+      };
+
+      outdatedFilter.addEventListener("change", renderMarkdown);
+      renderMarkdown();
+      return;
     }
 
     addHeadingAnchors();
