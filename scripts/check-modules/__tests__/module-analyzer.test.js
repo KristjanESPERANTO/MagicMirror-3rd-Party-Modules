@@ -179,3 +179,72 @@ test("analyzer accepts biome config as linting setup", async () => {
   assert.equal(result.issues.some(issue => issue.includes("ESLint is not in the dependencies or devDependencies")), false);
   assert.equal(result.issues.some(issue => issue.includes("lint script in package.json does not contain `eslint`")), false);
 });
+
+test("analyzer flags likely core-provided moment usage per module", async () => {
+  const moduleRoot = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-moment-core-test-"));
+  const frontendPath = join(moduleRoot, "MMM-Moment.js");
+
+  await fsPromises.writeFile(
+    frontendPath,
+    "Module.register('MMM-Moment', { start () { this.value = moment().format('HH:mm'); } });\n"
+  );
+
+  const result = await analyzeModule(
+    moduleRoot,
+    "MMM-Moment",
+    "https://github.com/example/MMM-Moment",
+    [frontendPath]
+  );
+
+  const momentIssue = result.issues.find(issue => issue.includes("likely relies on core-provided Moment"));
+
+  assert.equal(
+    Boolean(momentIssue),
+    true
+  );
+  assert.equal(Boolean(momentIssue?.includes("`MMM-Moment.js`")), true);
+});
+
+test("analyzer does not flag moment core reliance when module imports moment", async () => {
+  const moduleRoot = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-moment-import-test-"));
+  const helperPath = join(moduleRoot, "node_helper.js");
+
+  await fsPromises.writeFile(
+    helperPath,
+    "const moment = require('moment');\nmodule.exports = { value: moment().format('HH:mm') };\n"
+  );
+
+  const result = await analyzeModule(
+    moduleRoot,
+    "MMM-Moment-Import",
+    "https://github.com/example/MMM-Moment-Import",
+    [helperPath]
+  );
+
+  assert.equal(
+    result.issues.some(issue => issue.includes("likely relies on core-provided Moment")),
+    false
+  );
+});
+
+test("analyzer ignores plain-text moment mentions in comments", async () => {
+  const moduleRoot = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-moment-comment-test-"));
+  const frontendPath = join(moduleRoot, "MMM-CommentOnly.js");
+
+  await fsPromises.writeFile(
+    frontendPath,
+    "//#timezone // reserved for later usage... but I have no idea at this moment.\n"
+  );
+
+  const result = await analyzeModule(
+    moduleRoot,
+    "MMM-CommentOnly",
+    "https://github.com/example/MMM-CommentOnly",
+    [frontendPath]
+  );
+
+  assert.equal(
+    result.issues.some(issue => issue.includes("likely relies on core-provided Moment")),
+    false
+  );
+});

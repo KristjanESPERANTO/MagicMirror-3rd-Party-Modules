@@ -349,6 +349,26 @@ const PACKAGE_LOCK_RULES: Record<string, TextRule> = {
   },
 };
 
+const MOMENT_USAGE_REGEX = /\bmoment\s*\(|\bmoment\.[A-Za-z_$][\w$]*\s*\(/;
+const MOMENT_IMPORT_REQUIRE_REGEX = /require\(["']moment(?:-timezone)?["']\)|from\s+["']moment(?:-timezone)?["']|import\(["']moment(?:-timezone)?["']\)/;
+const MOMENT_CORE_INDICATOR_REGEX = /["']moment\.js["']|["']moment-timezone\.js["']/;
+
+function isExcludedForMomentScan(modulePath: string, filePath: string): boolean {
+  const relativePath = filePath.startsWith(modulePath)
+    ? filePath.slice(modulePath.length).replace(/^\/+/, "")
+    : filePath;
+  const segments = relativePath.toLowerCase().split("/");
+
+  return segments.includes("test")
+    || segments.includes("tests")
+    || segments.includes("__tests__")
+    || segments.includes("spec")
+    || segments.includes("node_modules")
+    || segments.includes("dist")
+    || segments.includes("build")
+    || segments.includes("coverage");
+}
+
 function searchRegexInFile(content: string, pattern: RegExp): boolean {
   try {
     return pattern.test(content);
@@ -370,6 +390,10 @@ export async function analyzeModule(
   const issues: string[] = [];
   const moduleRepoId = getRepositoryId(moduleUrl);
   const moduleExceptions = moduleRepoId ? MODULE_CHECK_EXCEPTIONS[moduleRepoId] ?? {} : {};
+  let hasMomentUsage = false;
+  let hasMomentImportOrRequire = false;
+  let hasOwnMomentDependency = false;
+  const momentUsageFiles = new Set<string>();
 
   // Filter out files in node_modules and .git directories.
   // Use path segments instead of substring matching so ".github" files are not excluded.
@@ -387,6 +411,21 @@ export async function analyzeModule(
     const filenameLower = filename.toLowerCase();
     const isChangelogFile = filenameLower === "changelog" || filenameLower.startsWith("changelog.");
     const isPackageLockFile = filenameLower === "package-lock.json";
+    const relativePath = filePath.startsWith(modulePath)
+      ? filePath.slice(modulePath.length).replace(/^\/+/, "")
+      : filePath;
+
+    if (!isExcludedForMomentScan(modulePath, filePath) && !filenameLower.endsWith(".min.js")) {
+      if (MOMENT_USAGE_REGEX.test(content) || MOMENT_CORE_INDICATOR_REGEX.test(content)) {
+        hasMomentUsage = true;
+        momentUsageFiles.add(relativePath || filename);
+      }
+
+      if (MOMENT_IMPORT_REQUIRE_REGEX.test(content)) {
+        hasMomentImportOrRequire = true;
+        hasMomentUsage = true;
+      }
+    }
 
     // Check TEXT_RULES
     for (const [, rule] of Object.entries(TEXT_RULES)) {
@@ -415,6 +454,20 @@ export async function analyzeModule(
 
     // Package.json specific rules
     if (filePath.endsWith("package.json")) {
+      try {
+        const pkg = JSON.parse(content);
+        if (pkg?.dependencies?.moment || pkg?.dependencies?.["moment-timezone"]
+          || pkg?.devDependencies?.moment || pkg?.devDependencies?.["moment-timezone"]
+          || pkg?.peerDependencies?.moment || pkg?.peerDependencies?.["moment-timezone"]
+          || pkg?.optionalDependencies?.moment || pkg?.optionalDependencies?.["moment-timezone"]) {
+          hasOwnMomentDependency = true;
+          hasMomentUsage = true;
+        }
+      }
+      catch {
+        // Silently ignore JSON parse errors
+      }
+
       for (const [, rule] of Object.entries(PACKAGE_JSON_RULES)) {
         if (content.includes(rule.pattern)) {
           issues.push(
@@ -436,9 +489,6 @@ export async function analyzeModule(
     }
 
     // README.md validations (only top-level module README, matching legacy behavior)
-    const relativePath = filePath.startsWith(modulePath)
-      ? filePath.slice(modulePath.length).replace(/^\/+/, "")
-      : filePath;
     if (relativePath === "README.md" && !moduleExceptions.skipReadmeChecks) {
       // Check for update section
       if (!content.includes("## Updat")) {
@@ -585,6 +635,17 @@ export async function analyzeModule(
   if (relevantFiles.some((f) => f.endsWith("/node_modules"))) {
     issues.push(
       "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`."
+    );
+  }
+
+  if (hasMomentUsage && !hasMomentImportOrRequire && !hasOwnMomentDependency) {
+    const usageLocations = Array.from(momentUsageFiles).slice(0, 3);
+    const usageLocationsText = usageLocations.length > 0
+      ? ` Detected in: ${usageLocations.map(location => `\`${location}\``).join(", ")}.`
+      : "";
+
+    issues.push(
+      `Recommendation: Moment usage was detected, but no module-owned \`moment\`/\`moment-timezone\` dependency or import was found. This likely relies on core-provided Moment.${usageLocationsText} Please declare and import your own dependency.`
     );
   }
 
