@@ -14,7 +14,7 @@
       "maintainer": "Bee-Mar",
       "maintainerURL": "https://github.com/Bee-Mar",
       "name": "mmpm",
-      "stars": 242,
+      "stars": 244,
       "tags": [
         "package manager",
         "module installer"
@@ -171,7 +171,7 @@
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-Buttons",
-      "stars": 10,
+      "stars": 11,
       "tags": [
         "buttons",
         "gpio",
@@ -193,7 +193,7 @@
       "maintainer": "shbatm & KristjanESPERANTO",
       "maintainerURL": "https://github.com/shbatm",
       "name": "MMM-Carousel",
-      "stars": 56,
+      "stars": 57,
       "tags": [
         "carousel",
         "navigation",
@@ -324,7 +324,7 @@
       "maintainer": "jancalve",
       "maintainerURL": "https://github.com/jancalve",
       "name": "MMM-Flick-Gestures",
-      "stars": 6,
+      "stars": 7,
       "tags": [
         "flick",
         "board",
@@ -375,7 +375,7 @@
     },
     {
       "category": "Development / Core MagicMirror²",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displays merge requests from gitlab and their status.",
       "hasGithubIssues": true,
       "id": "jkschoen/MMM-Gitlab-MergeRequests",
@@ -727,7 +727,7 @@
     },
     {
       "category": "Development / Core MagicMirror²",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display network connection status (ping, download speed, upload speed).",
       "hasGithubIssues": true,
       "id": "slametps/MMM-NetworkConnection",
@@ -1078,7 +1078,7 @@
     },
     {
       "category": "Development / Core MagicMirror²",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Customize all the relative times in the default module (and others) that depend on moment.js",
       "hasGithubIssues": true,
       "id": "buxxi/MMM-RelativeTime-i18n",
@@ -1232,7 +1232,7 @@
     },
     {
       "category": "Development / Core MagicMirror²",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display a list of notifications that have been broadcast to all the modules.",
       "hasGithubIssues": true,
       "id": "glitch452/MMM-ViewNotifications",
@@ -1424,7 +1424,7 @@
     },
     {
       "category": "Cryptocurrency",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Displays the current value of the Lil Nouns Treasury.",
       "hasGithubIssues": true,
       "id": "XppaiCyberr/MMM-LilNounsTreasury",
@@ -1497,7 +1497,7 @@
     },
     {
       "category": "Cryptocurrency",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Displays the current value of the Nouns Treasury.",
       "hasGithubIssues": true,
       "id": "XppaiCyberr/MMM-NounsTreasury",
@@ -1836,7 +1836,7 @@
     },
     {
       "category": "Finance",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "Display market indices using (free) Yahoo Finance API.",
       "hasGithubIssues": true,
       "id": "thess/MMM-MktIndex",
@@ -1947,7 +1947,7 @@
     },
     {
       "category": "Finance",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displaying transactions and account balance from Sbanken (Norway).",
       "hasGithubIssues": true,
       "id": "reidarw/MMM-Sbanken",
@@ -2020,7 +2020,7 @@
     },
     {
       "category": "Finance",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Display UAH currency from bank.gov.ua.",
       "hasGithubIssues": true,
       "id": "wzooff/mmm-uah-currency",
@@ -2121,7 +2121,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "description": "Modified version of the default newsfeed module.",
       "hasGithubIssues": true,
       "id": "MMRIZE/MMM-anotherNewsFeed",
@@ -2197,7 +2197,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "News feed from the **Swedish** Government Crisis Information (krisinformation.se).",
       "hasGithubIssues": true,
       "id": "Pejjo/MMM-CrisisInformationSweden",
@@ -2334,7 +2334,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Graphical and textual informations from [Ecowatt](https://www.monecowatt.fr).",
       "hasGithubIssues": true,
       "id": "tttooommm56/MMM-Ecowatt",
@@ -2357,7 +2357,23 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 9,
+      "description": "Display the daily special deal from [eshopspecials.gr](https://www.eshopspecials.gr/) — including the product image, price, and description.",
+      "hasGithubIssues": null,
+      "id": "mariosgouros/MMM-eshopspecials",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "MSg",
+      "maintainerURL": "https://github.com/mariosgouros",
+      "name": "MMM-eshopspecials",
+      "stars": 0,
+      "url": "https://github.com/mariosgouros/MMM-eshopspecials"
+    },
+    {
+      "category": "News / Information",
+      "defaultSortWeight": 15,
       "description": "Displays the rig infos from [Ethos API](http://ethosdistro.com).",
       "hasGithubIssues": true,
       "id": "Helpi90/MMM-Ethos",
@@ -2371,6 +2387,28 @@
       "name": "MMM-Ethos",
       "stars": 0,
       "url": "https://github.com/Helpi90/MMM-Ethos"
+    },
+    {
+      "category": "News / Information",
+      "defaultSortWeight": 12,
+      "description": "A fork of the default MagicMirror² calendar module that displays multiple calendars in a weekly table view. Designed for family planning with 2–4 calendars side by side for a quick shared overview.",
+      "hasGithubIssues": null,
+      "id": "pixxelfriend/MMM-FamilyWeekCalendar",
+      "image": "MMM-FamilyWeekCalendar---pixxelfriend.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "pixxelfriend",
+      "maintainerURL": "https://github.com/pixxelfriend",
+      "name": "MMM-FamilyWeekCalendar",
+      "stars": 0,
+      "tags": [
+        "calendar",
+        "family",
+        "week"
+      ],
+      "url": "https://github.com/pixxelfriend/MMM-FamilyWeekCalendar"
     },
     {
       "category": "News / Information",
@@ -2428,7 +2466,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
       "hasGithubIssues": true,
       "id": "randomBrainstormer/MMM-GoogleCalendar",
@@ -2465,7 +2503,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Show CS:GO matches provided by HLTV.",
       "hasGithubIssues": true,
       "id": "Helpi90/MMM-HLTV",
@@ -2482,7 +2520,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Shows the different ranges of electricity prices in Spain during the day.",
       "hasGithubIssues": true,
       "id": "jirsis/JIR-tarifa-luz",
@@ -2679,7 +2717,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
       "hasGithubIssues": true,
       "id": "jalibu/MMM-NINA",
@@ -2805,7 +2843,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
       "hasGithubIssues": null,
       "id": "njwilliams/MMM-PlaceInfo",
@@ -2959,7 +2997,7 @@
     },
     {
       "category": "News / Information",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Track the progress of the current year / month.",
       "hasGithubIssues": true,
       "id": "ryck/MMM-Year-Progress",
@@ -3038,7 +3076,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Avinor flight schedule for airports in Norway.",
       "hasGithubIssues": true,
       "id": "kagjerde/MMM-Avinor",
@@ -3072,7 +3110,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displays the current info for scheduled sailings of specified BC Ferries route.",
       "hasGithubIssues": true,
       "id": "stonecrown/MMM-BCFerries",
@@ -3132,7 +3170,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Displays the number of available bikes and electric bikes on any Bixi stations in Montreal.",
       "hasGithubIssues": true,
       "id": "nictruong/MMM-Bixi",
@@ -3199,6 +3237,7 @@
       "maintainer": "hamsil",
       "maintainerURL": "https://github.com/hamsil",
       "name": "MMM-BMWCarData",
+      "stars": 0,
       "tags": [
         "bmw",
         "mini",
@@ -3229,7 +3268,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display Dutch bus and some other public transports for a targeted set of bus stops.",
       "hasGithubIssues": true,
       "id": "73cirdan/MMM-bustimes",
@@ -3339,7 +3378,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Real time tram departure from selected stop in Cracow (Poland).",
       "hasGithubIssues": true,
       "id": "wkra/MMM-CracowMPK",
@@ -3354,7 +3393,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Displays arrival times for the Chicago Transit Authority 'L' system buses and trains.",
       "hasGithubIssues": true,
       "id": "NateDee/MMM-CTA",
@@ -3538,7 +3577,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Displays ride wait times at the Disney World Parks.",
       "hasGithubIssues": true,
       "id": "gberg927/MMM-DisneyWaitTimes",
@@ -3572,30 +3611,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 10,
-      "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
-      "hasGithubIssues": true,
-      "id": "galaktor/MMM-DublinRTPI",
-      "image": "MMM-DublinRTPI---galaktor.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2018-01-09T18:55:50Z",
-      "license": "GPL-3.0",
-      "maintainer": "galaktor",
-      "maintainerURL": "https://github.com/galaktor",
-      "name": "MMM-DublinRTPI",
-      "stars": 1,
-      "tags": [
-        "public transport",
-        "dublin bus",
-        "dublin luas",
-        "irish rail"
-      ],
-      "url": "https://github.com/galaktor/MMM-DublinRTPI"
-    },
-    {
-      "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
       "hasGithubIssues": true,
       "id": "skastenholz/MMM-DVB",
@@ -3681,7 +3697,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Displays Hungarian public train departure times using real-time data from the \"Elvira\" service provided by the Hungarian national railway company (MÁV).",
       "hasGithubIssues": true,
       "id": "balassy/MMM-Elvira",
@@ -3729,7 +3745,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Display public transport information/departure boards for any public transport in Norway.",
       "hasGithubIssues": true,
       "id": "Arve/MMM-Entur-tavle",
@@ -3876,7 +3892,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "description": "Get real-time fuel prices from over 800 NSW service stations.",
       "hasGithubIssues": true,
       "id": "bughaver/MMM-Fuel-NSW",
@@ -3899,7 +3915,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Displays Budapest public transport information directly from the Futár webservice.",
       "hasGithubIssues": true,
       "id": "balassy/MMM-Futar",
@@ -3922,7 +3938,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Display gas station prices in the USA.",
       "hasGithubIssues": true,
       "id": "cowboysdude/MMM-Gas",
@@ -4015,7 +4031,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
       "hasGithubIssues": true,
       "id": "mrdis/MMM-google-route",
@@ -4142,7 +4158,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Display Estimated Time of Arrival (ETA) of Hong Kong public transport.",
       "hasGithubIssues": true,
       "id": "winstonma/MMM-HK-Transport-ETA",
@@ -4234,7 +4250,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France region in France using IDFM API.",
       "hasGithubIssues": true,
       "id": "FalseIlyu/MMM-IdF-Transport",
@@ -4429,7 +4445,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "description": "Display the next public transport connections for a certain route.",
       "hasGithubIssues": true,
       "id": "CFenner/MMM-LocalTransport",
@@ -4449,7 +4465,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Display live timetables for specific bus stops of Lothian buses network.",
       "hasGithubIssues": true,
       "id": "tbouron/MMM-LothianBuses",
@@ -4466,7 +4482,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "description": "Luxembourg public transport departures in real time.",
       "hasGithubIssues": true,
       "id": "uxigene/MMM-Luxembourg-Public-Transport",
@@ -4502,7 +4518,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Displays information about a Massachusetts Bay Transportation Authority (MBTA) station, including upcoming arrivals and alerts and warnings.",
       "hasGithubIssues": true,
       "id": "edward-shen/MMM-MBTA",
@@ -4602,7 +4618,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "description": "Displays the arrival time of the next few buses for a particular bus stop. This is for the Metropolitan Transit Authority (MTA) in New York City.",
       "hasGithubIssues": true,
       "id": "tie624/MMM-MTA-NextBus",
@@ -4833,6 +4849,7 @@
       "maintainer": "ottopaulsen",
       "maintainerURL": "https://github.com/ottopaulsen",
       "name": "MMM-NesteBuss",
+      "stars": 0,
       "url": "https://github.com/ottopaulsen/MMM-NesteBuss"
     },
     {
@@ -4875,7 +4892,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Display information about departures, trip duration and arrival times for Dutch pubic transport (excluding trains).",
       "hasGithubIssues": null,
       "id": "CE-Timmer/MMM-NL-Busses",
@@ -4897,7 +4914,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Shows departure times and delays of Dutch public transport in a configurable way.",
       "hasGithubIssues": null,
       "id": "vpilo/MMM-NLDepartureTimes",
@@ -4917,7 +4934,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Display upcoming trains between 2 NMBS/SNCB stations (Belgium).",
       "hasGithubIssues": true,
       "id": "Jan-Bart/MMM-NMBS-Connection",
@@ -4957,7 +4974,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Shows information on trains departuring a configurable Dutch trainstation.",
       "hasGithubIssues": true,
       "id": "qistoph/MMM-nstreinen",
@@ -4974,7 +4991,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Shows live estimates of train arrival times at stations along the Nexus Tyne and Wear Metro, located in the North-East of the UK.",
       "hasGithubIssues": true,
       "id": "jcktwd/MMM-NexusMetroRTI",
@@ -5293,7 +5310,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display live departures from public passenger transport service of the 'Verkehrsverbund Oberelbe' (VVO).",
       "hasGithubIssues": false,
       "id": "ostfilinchen/MMM-PublicTransportVVO",
@@ -5396,7 +5413,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "description": "Departure Monitor for stations in the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
       "hasGithubIssues": true,
       "id": "jupadin/MMM-RNV",
@@ -5416,7 +5433,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "description": "Monitor a given station in the RNV traffic network.",
       "hasGithubIssues": false,
       "id": "bogenpirat/MMM-RNV",
@@ -5452,7 +5469,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Display order of turn information for ships transiting the St Lawrence Seaway Locks.",
       "hasGithubIssues": true,
       "id": "ProfKP/MMM-SeawayLockTraffic",
@@ -5486,7 +5503,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Based on MMM-Ruter, but for the municipality of Hordaland in Norway.",
       "hasGithubIssues": false,
       "id": "PabloDons/MMM-Skyss",
@@ -5503,7 +5520,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display public transport in Stockholm in Sweden. Updated to use latest API (mandatory from April 2024)!",
       "hasGithubIssues": true,
       "id": "ulrichwisser/MMM-SL-PublicTransport",
@@ -5621,7 +5638,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "description": "Display the next departures for your favorite (train) connection in Switzerland (SBB).",
       "hasGithubIssues": true,
       "id": "nixnuex/MMM-SwissCommute",
@@ -5637,7 +5654,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Display the next departures in every direction for your favorite trainstation in Switzerland with delay information.",
       "hasGithubIssues": true,
       "id": "vanhoekd/MMM-SwissStationboard",
@@ -5702,7 +5719,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 22,
+      "defaultSortWeight": 23,
       "description": "Display Tesla data from either [TeslaFi](https://teslafi.com) or [Tessie](https://www.tessie.com).",
       "hasGithubIssues": true,
       "id": "mattdy/MMM-Tesla",
@@ -5758,7 +5775,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "description": "Display my tesla status using data from firebase realtime database.",
       "hasGithubIssues": true,
       "id": "aduyng/MMM-TeslaStatus",
@@ -5792,7 +5809,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
       "hasGithubIssues": false,
       "id": "vita10gy/MMM-ThemeParkWaitTimes",
@@ -5895,7 +5912,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "time to the next buses lines for Toulouse (Tisseo).",
       "hasGithubIssues": true,
       "id": "LoneWanderer-GH/MMM-Toulouse-Transports",
@@ -5953,7 +5970,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Display trains from your favorite departure station to any destination in Europe.",
       "hasGithubIssues": true,
       "id": "Bangee44/MMM-TrainConnections",
@@ -6032,7 +6049,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Displays live train times making use of the [RTT.io](https://api.rtt.io) api.",
       "hasGithubIssues": true,
       "id": "tticehurst/MMM-TrainTimesRTT",
@@ -6048,7 +6065,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
       "hasGithubIssues": true,
       "id": "OrangeHoopla/MMM-TransLoc",
@@ -6131,7 +6148,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Displays LIVE UK information about a specific bus stop and the routes that serve it.",
       "hasGithubIssues": null,
       "id": "nwootton/MMM-UKLiveBusStopInfo",
@@ -6148,7 +6165,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Show live train departure/arrival times for the UK's National Rail network.",
       "hasGithubIssues": true,
       "id": "XBCreepinJesus/MMM-UKLiveTrainDepartures",
@@ -6165,7 +6182,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "description": "Displays LIVE UK National Rail train arrivals & departures from a specified station.",
       "hasGithubIssues": true,
       "id": "mattdy/MMM-UKNationalRail",
@@ -6186,7 +6203,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. This version is updated to support multi-filtering and Vasttrafik's API version 4.",
       "hasGithubIssues": true,
       "id": "Xkhi/MMM-Vasttrafik-PublicTransport",
@@ -6230,7 +6247,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 20,
+      "defaultSortWeight": 21,
       "description": "Easy configuration module to display bus and train arrivals/departures with different display types for Germany (VRR and more EFA).",
       "hasGithubIssues": true,
       "id": "Klizzy/MMM-Vrr",
@@ -6274,7 +6291,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
       "hasGithubIssues": false,
       "id": "fhinder/MMM-vvsDeparture",
@@ -6332,7 +6349,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Display Public Transport timetable of Vienna/Austria.",
       "hasGithubIssues": true,
       "id": "fewieden/MMM-WienerLinien",
@@ -6355,7 +6372,7 @@
     },
     {
       "category": "Transport / Travel",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Display WMATA Bus and Train arrival times. Rewritten version from MMM-DCMetroTimes and MMM-DCMetroTrainTimes.",
       "hasGithubIssues": true,
       "id": "btoconnor/MMM-WMATA",
@@ -6645,7 +6662,7 @@
     },
     {
       "category": "Voice Control",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Voice control based on annyang.",
       "hasGithubIssues": true,
       "id": "dr4ke616/MMM-Voice-Control",
@@ -6926,7 +6943,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "description": "Get the Air Quality Index (AQI) using the World Air Quality Index project API.",
       "hasGithubIssues": true,
       "id": "ryck/MMM-AQI",
@@ -6981,7 +6998,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Display aviation weather (METAR) and FAA delay data for continental U.S. airports.",
       "hasGithubIssues": true,
       "id": "stuloh/MMM-aviationwx",
@@ -6998,7 +7015,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Displays snow reports from bergfex.at. Countries provided by bergfex.at can be configured and set.<br>This is a fork of [the unmaintained module from nebulux](https://github.com/nebulx29/MMM-bergfex).",
       "hasGithubIssues": false,
       "id": "MajorChris1983/MMM-bergfex",
@@ -7039,7 +7056,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Gets weather watches, warnings, and advisories for user specified regions. Using alert data published by Environment Canada.",
       "hasGithubIssues": true,
       "id": "aSouchereau/MMM-CanadianPublicWeatherAlerts",
@@ -7089,7 +7106,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Adds animated icons and changes layout of default weather plugin.",
       "hasGithubIssues": true,
       "id": "MatthiPi/MMM-DefaultWeatherAnimated",
@@ -7164,6 +7181,7 @@
       "maintainer": "Jopyth",
       "maintainerURL": "https://github.com/Jopyth",
       "name": "MMM-dht22",
+      "stars": 0,
       "tags": [
         "dht22",
         "temperature",
@@ -7207,7 +7225,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Displays weather warnings for Germany.",
       "hasGithubIssues": true,
       "id": "LukeSkywalker92/MMM-DWD-WarnWeather",
@@ -7346,7 +7364,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Displays tide table for Norway.",
       "hasGithubIssues": true,
       "id": "kagjerde/MMM-Flo",
@@ -7361,7 +7379,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Displays tide graph for Norway.",
       "hasGithubIssues": true,
       "id": "kagjerde/MMM-FloGraph",
@@ -7590,7 +7608,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Displays data (particulate matter PM2.5/PM10, temperature, pressure) from air quality sensors, connected to [sensor.community](https://sensor.community) or local wifi.",
       "hasGithubIssues": true,
       "id": "pixxelfriend/MMM-Luftdaten",
@@ -7668,7 +7686,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Display current weather based on the Meteoblue.com API.",
       "hasGithubIssues": true,
       "id": "Bangee44/MMM-meteoblueCurrent",
@@ -7971,7 +7989,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display current weather as image based on the Openmap Weather API data with different formatting.",
       "hasGithubIssues": true,
       "id": "sathyarajv/MMM-OpenmapWeather",
@@ -8086,7 +8104,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display 2 day pollen forecast based on DWD geoserver data.",
       "hasGithubIssues": true,
       "id": "devduisburg/MMM-pollen",
@@ -8215,7 +8233,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Graphical and textual rain forecast for France.",
       "hasGithubIssues": true,
       "id": "tttooommm56/MMM-RainForecast-FR",
@@ -8322,7 +8340,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
       "hasGithubIssues": true,
       "id": "balassy/MMM-RemoteTemperature",
@@ -8436,7 +8454,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Allows you to view climatic data from stations of the measuring network [Smart Urban Heat Map Bern](https://smart-urban-heat-map.ch) (temperature & humidity).",
       "hasGithubIssues": true,
       "id": "git-pesche/MMM-SwissSmartUrbanHeatMap",
@@ -8453,7 +8471,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Display METAR and TAF data for airports world-wide.",
       "hasGithubIssues": true,
       "id": "imperian/MMM-TAF",
@@ -8536,7 +8554,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display tidal data in British Isles with free data from UKHO/Admiralty.",
       "hasGithubIssues": true,
       "id": "Captsi/MMM-UKTide",
@@ -8571,7 +8589,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <https://www.openuv.io/>.",
       "hasGithubIssues": false,
       "id": "rsperezn/mmm-uvindex",
@@ -8586,7 +8604,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display the last value of water level at a station in the Vigicrues network in France.",
       "hasGithubIssues": true,
       "id": "grenagit/MMM-VigiCrues",
@@ -8603,7 +8621,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display the current level of vigilance of weather phenomena and associated risks for France.",
       "hasGithubIssues": true,
       "id": "grenagit/MMM-VigilanceMeteoFrance",
@@ -8686,7 +8704,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displays active weather alerts provided by [OpenWeatherMap's onecall API](https://openweathermap.org/api/one-call-3#listsource).",
       "hasGithubIssues": true,
       "id": "gjonesme/MMM-WeatherAlerts",
@@ -8725,7 +8743,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Uses the default weather module as data provider with own njk templates and animated weather icons.",
       "hasGithubIssues": false,
       "id": "khassel/MMM-WeatherBridge",
@@ -8740,7 +8758,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display a weather forecast chart using [OpenWeather](https://openweathermap.org) API and [Chart.js](https://www.chartjs.org), an open-source library to plot data on charts.",
       "hasGithubIssues": true,
       "id": "mtatsuma/MMM-WeatherChart",
@@ -8756,7 +8774,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Display a weather diagram provided by yr.no.",
       "hasGithubIssues": true,
       "id": "paphko/mmm-weatherchart",
@@ -8813,7 +8831,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Weather forecast with rain & temp graphs. Lots of options to turn on & off. Data from OpenWeatherMap API.",
       "hasGithubIssues": true,
       "id": "FlatPepsi17/MMM-WeatherGraph",
@@ -8828,7 +8846,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Displays an hourly forecast table for multiple days. Allows you to specify what hours of the day to include and which forecast components will be displayed.",
       "hasGithubIssues": true,
       "id": "dWoolridge/MMM-WeatherHourlyByDay",
@@ -8941,7 +8959,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info.",
       "hasGithubIssues": true,
       "id": "yawnsde/MMM-WorldTides",
@@ -8963,7 +8981,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 18,
+      "defaultSortWeight": 19,
       "description": "Displays current weather and short forecast using [Yandex Weather API v3](https://yandex.ru/dev/weather/).",
       "hasGithubIssues": null,
       "id": "igor-semenov/MMM-YandexWeather",
@@ -9018,7 +9036,7 @@
     },
     {
       "category": "Weather",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Displays weather forecast from [Yr](https://www.yr.no). Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
       "hasGithubIssues": false,
       "id": "fmandal/MMM-YrThen",
@@ -9030,6 +9048,39 @@
       "name": "MMM-YrThen",
       "stars": 16,
       "url": "https://github.com/fmandal/MMM-YrThen"
+    },
+    {
+      "category": "Weather Themes",
+      "defaultSortWeight": 4,
+      "description": "Weather module theme which adds a compact badge-based style and enables multiple icon sets.",
+      "hasGithubIssues": null,
+      "id": "KristjanESPERANTO/MMT-WeatherOneTheme",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "maintainer": "KristjanESPERANTO",
+      "maintainerURL": "https://github.com/KristjanESPERANTO",
+      "name": "MMT-WeatherOneTheme",
+      "stars": 0,
+      "tags": [
+        "weather"
+      ],
+      "url": "https://github.com/KristjanESPERANTO/MMT-WeatherOneTheme"
+    },
+    {
+      "category": "Weather Themes",
+      "defaultSortWeight": 8,
+      "description": "Weather module theme which uses [skycons](https://github.com/maxdow/skycons).",
+      "hasGithubIssues": null,
+      "id": "khassel/MMT-WeatherSkycons",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "maintainer": "khassel",
+      "maintainerURL": "https://gitlab.com/khassel",
+      "name": "MMT-WeatherSkycons",
+      "stars": 0,
+      "url": "https://gitlab.com/khassel/MMT-WeatherSkycons"
     },
     {
       "category": "Religion",
@@ -9065,7 +9116,7 @@
     },
     {
       "category": "Religion",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Display a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
       "hasGithubIssues": true,
       "id": "anthpham/MMM-DailyBuddhismWisdom",
@@ -9152,7 +9203,7 @@
     },
     {
       "category": "Religion",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displays praying times from East London Mosque in London.",
       "hasGithubIssues": true,
       "id": "moinahmed001/MMM-ELMPrayerTime",
@@ -9245,6 +9296,7 @@
       "maintainer": "supermem613",
       "maintainerURL": "https://github.com/supermem613",
       "name": "MMM-Moed",
+      "stars": 0,
       "url": "https://github.com/supermem613/MMM-Moed"
     },
     {
@@ -9266,7 +9318,7 @@
     },
     {
       "category": "Religion",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displays moslem praying time with Adhan recital.",
       "hasGithubIssues": true,
       "id": "slametps/MMM-PrayerTime",
@@ -9311,7 +9363,7 @@
     },
     {
       "category": "Religion",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Display shabbat times for the current week and optionally hide all modules.",
       "hasGithubIssues": true,
       "id": "sheyabernstein/MMM-shabbat",
@@ -9429,7 +9481,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "Displays biathlon race results and upcoming events. It relies on the official biathlon API to provide up-to-date information.",
       "hasGithubIssues": true,
       "id": "2hdlockness/MMM-Biathlon",
@@ -9536,7 +9588,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Display cricket scores for ongoing live cricket matches.",
       "hasGithubIssues": true,
       "id": "dsouzadrian/MMM-CricketScores",
@@ -9639,7 +9691,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display the driver standings from the current Formula 1 season.",
       "hasGithubIssues": true,
       "id": "ianperrin/MMM-Formula1",
@@ -9659,7 +9711,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "description": "Displays the current driver standings of the current Formula 1 season.",
       "hasGithubIssues": true,
       "id": "jupadin/MMM-F1",
@@ -9780,7 +9832,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Shows the upcoming IMSA endurance races, along with expanded data on the next race.",
       "hasGithubIssues": true,
       "id": "skylinrcr01/MMM-IMSA",
@@ -10025,7 +10077,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Displays a graphical depction of all the major trophys your team has won.",
       "hasGithubIssues": true,
       "id": "gitgitaway/MMM-MyTeams-Honours",
@@ -10120,7 +10172,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "description": "Display scores of National Football League (optional voice-control).",
       "hasGithubIssues": true,
       "id": "fewieden/MMM-NFL",
@@ -10300,7 +10352,7 @@
     },
     {
       "category": "Sports",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Displays your [Sleeper](https://sleeper.com) fantasy football matchup with live updating scores.",
       "hasGithubIssues": true,
       "id": "jackmeyer/MMM-SleeperNFL",
@@ -10414,6 +10466,22 @@
         "valorant"
       ],
       "url": "https://github.com/xadamxk/MMM-VALORANTESPORTS-SCHEDULES"
+    },
+    {
+      "category": "Sports",
+      "defaultSortWeight": 13,
+      "description": "Displays the FIFA World Cup Bracket - Live.",
+      "hasGithubIssues": null,
+      "id": "msimon360/MMM-FIFAWorldCup",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "Mark Simon",
+      "maintainerURL": "https://github.com/msimon360",
+      "name": "MMM-FIFAWorldCup",
+      "stars": 0,
+      "url": "https://github.com/msimon360/MMM-FIFAWorldCup"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -10556,7 +10624,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Alarm Clock Module (touch and non-touch).",
       "hasGithubIssues": true,
       "id": "fewieden/MMM-AlarmClock",
@@ -10649,6 +10717,7 @@
       "maintainer": "utzl",
       "maintainerURL": "https://github.com/utzl",
       "name": "MMM-AnkerSolixMQTT",
+      "stars": 0,
       "tags": [
         "anker",
         "solix",
@@ -10679,7 +10748,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Displays the status of an Anycubic 3D printer.",
       "hasGithubIssues": true,
       "id": "balassy/MMM-Anycubic",
@@ -10928,6 +10997,7 @@
       "maintainer": "TAGinside",
       "maintainerURL": "https://github.com/TAGinside",
       "name": "MMM-Bambulink",
+      "stars": 0,
       "tags": [
         "bambulab",
         "3d printer",
@@ -11027,6 +11097,7 @@
       "maintainer": "kritch83",
       "maintainerURL": "https://github.com/kritch83",
       "name": "MMM-Blynk",
+      "stars": 0,
       "tags": [
         "blynk",
         "iot",
@@ -11058,7 +11129,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Show the date you must be born before to enter premises.",
       "hasGithubIssues": true,
       "id": "justjim1220/MMM-BornBeforeDate",
@@ -11224,7 +11295,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": -4,
+      "defaultSortWeight": -3,
       "description": "Lightweight calendar with week/month views, weather integration, and interactive popovers.",
       "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3",
@@ -11245,7 +11316,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Extended calendar and event view. Show calendar as agenda.",
       "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3Agenda",
@@ -11307,7 +11378,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Display current timeline schedules. This is a plugin module for `MMM-CalendarExt2`.",
       "hasGithubIssues": null,
       "id": "MagicMirrorModules/MMM-CalendarExtTimeline",
@@ -11322,7 +11393,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Display mini month calendar. This is a plugin module for `MMM-CalendarExt2`.",
       "hasGithubIssues": null,
       "id": "MagicMirrorModules/MMM-CalendarExtMinimonth",
@@ -11337,7 +11408,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Display daily plan by criteria. This is a plugin module for `MMM-CalendarExt2`.",
       "hasGithubIssues": null,
       "id": "MagicMirrorModules/MMM-CalendarExtPlan",
@@ -11374,24 +11445,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 15,
-      "description": "Display a weekly (n days) calendar view.",
-      "hasGithubIssues": true,
-      "id": "heskja/MMM-CalendarWeek",
-      "image": "MMM-CalendarWeek---heskja.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2019-08-25T17:28:27Z",
-      "license": "MIT",
-      "maintainer": "heskja",
-      "maintainerURL": "https://github.com/heskja",
-      "name": "MMM-CalendarWeek",
-      "stars": 56,
-      "url": "https://github.com/heskja/MMM-CalendarWeek"
-    },
-    {
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Extension for [MMM-FRITZ-Box-Callmonitor](https://github.com/paviro/MMM-FRITZ-Box-Callmonitor). Displays the currently active call.",
       "hasGithubIssues": false,
       "id": "armybean/MMM-Callmonitor-Current-Call",
@@ -11597,7 +11651,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Count down to or up from a datetime.",
       "hasGithubIssues": true,
       "id": "daterrell/MMM-CountDown",
@@ -11791,6 +11845,29 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "defaultSortWeight": 10,
+      "description": "Parses a Google Calendar iCal feed for events tagged with people's initials (e.g. [A], [M], [A&M]) to display upcoming days off. Makes it easy to see shared vs individual days off for household planning.",
+      "hasGithubIssues": null,
+      "id": "AliceNewsum/MMM-DaysOff",
+      "image": "MMM-DaysOff---AliceNewsum.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "AliceNewsum",
+      "maintainerURL": "https://github.com/AliceNewsum",
+      "name": "MMM-DaysOff",
+      "stars": 0,
+      "tags": [
+        "calendar",
+        "days-off",
+        "ical",
+        "smart-mirror"
+      ],
+      "url": "https://github.com/AliceNewsum/MMM-DaysOff"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 11,
       "description": "Shows either the time remaining to an event, or the time since an event. This module also supports having a supporting image.",
       "hasGithubIssues": true,
       "id": "alltopafi/MMM-DateCounter",
@@ -11807,7 +11884,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Display trash collection days in Den Haag / the Netherlands.",
       "hasGithubIssues": true,
       "id": "cokceken/MMM-DenHaag-TrashCalendar",
@@ -11824,7 +11901,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Display messages from discord channels.",
       "hasGithubIssues": true,
       "id": "Smiche/MMM-DiscordWatch",
@@ -11925,6 +12002,28 @@
       "name": "MMM-DriveVideos",
       "stars": 0,
       "url": "https://github.com/Dresch360/MMM-DriveVideos"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 11,
+      "description": "Displays data from your Hoymiles solar inverter collected by AhoiDTU.",
+      "hasGithubIssues": null,
+      "id": "pixxelfriend/MMM-Dtu",
+      "image": "MMM-Dtu---pixxelfriend.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "pixxelfriend",
+      "maintainerURL": "https://github.com/pixxelfriend",
+      "name": "MMM-Dtu",
+      "stars": 0,
+      "tags": [
+        "ahoydtu",
+        "inverter",
+        "solar"
+      ],
+      "url": "https://github.com/pixxelfriend/MMM-Dtu"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -12056,7 +12155,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+).",
       "hasGithubIssues": true,
       "id": "matt-thurling/MMM-EnphaseSolar",
@@ -12106,6 +12205,7 @@
       "maintainer": "jonyo",
       "maintainerURL": "https://github.com/jonyo",
       "name": "MMM-FamilyChores",
+      "stars": 0,
       "tags": [
         "family",
         "household",
@@ -12243,7 +12343,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "A fortune cookie for your mirror.",
       "hasGithubIssues": true,
       "id": "jasonmce/MMM-Fortune",
@@ -12664,7 +12764,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Show a list of unread gmails.",
       "hasGithubIssues": true,
       "id": "shaneapowell/MMM-GmailFeed",
@@ -12734,7 +12834,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 17,
       "description": "Display notes from a Google Doc.",
       "hasGithubIssues": true,
       "id": "No3x/MMM-GoogleDocs-Notes",
@@ -12782,7 +12882,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "description": "Display Google Tasks with Planned View.",
       "hasGithubIssues": true,
       "id": "spydersoft-consulting/MMM-GoogleTasks",
@@ -12824,7 +12924,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display real-time GPS data from GPSD.",
       "hasGithubIssues": true,
       "id": "brentpabst/MMM-gpsd",
@@ -12878,7 +12978,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 3,
+      "defaultSortWeight": 2,
       "description": "Display several gauges in a row generated by Grafana.",
       "hasGithubIssues": null,
       "id": "MagicMirrorModules/MMM-GrafanaGauges",
@@ -12957,7 +13057,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Display your an overview of your [Habitica](https://habitica.com) player stats.",
       "hasGithubIssues": true,
       "id": "delightedCrow/MMM-HabiticaStats",
@@ -13046,7 +13146,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Displays Hive (British Gas) inside / outside temperature.",
       "hasGithubIssues": true,
       "id": "flick116/MMM-Hive",
@@ -13149,7 +13249,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
       "hasGithubIssues": true,
       "id": "Snille/MMM-homeassistant-sensors",
@@ -13223,7 +13323,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displays notifications sent with a simple HTTP POST request.",
       "hasGithubIssues": true,
       "id": "john3300/MMM-HomeAutomationNotifications",
@@ -13240,7 +13340,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Shows status such as remaining program time of your Home Connect appliances.",
       "hasGithubIssues": true,
       "id": "djerik/MMM-HomeConnect",
@@ -13621,7 +13721,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
       "hasGithubIssues": true,
       "id": "mathew-fleisch/MMM-iframes",
@@ -13653,7 +13753,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP cameras, etc.). Several functionalities like auto-refresh, Ping the URL before to display it and last update time display. See also [MMM-SmartWebDisplay](https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm).",
       "hasGithubIssues": true,
       "id": "AgP42/MMM-iFrame-Ping",
@@ -13788,7 +13888,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display ipcam feed.",
       "hasGithubIssues": true,
       "id": "RedNax67/MMM-IPCam",
@@ -13904,7 +14004,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Display values from Home automation software [JEEDOM](https://www.jeedom.com).",
       "hasGithubIssues": null,
       "id": "tttooommm56/MMM-Jeedom",
@@ -13914,6 +14014,7 @@
       "maintainer": "tttooommm56",
       "maintainerURL": "https://github.com/tttooommm56",
       "name": "MMM-Jeedom",
+      "stars": 0,
       "url": "https://github.com/tttooommm56/MMM-Jeedom"
     },
     {
@@ -13949,7 +14050,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
       "hasGithubIssues": true,
       "id": "timdows/MMM-JsonTable",
@@ -14077,6 +14178,7 @@
       "maintainer": "th3pajay",
       "maintainerURL": "https://github.com/th3pajay",
       "name": "MMM-LeanRSS",
+      "stars": 0,
       "tags": [
         "rss",
         "ticker",
@@ -14323,7 +14425,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Determine the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by [Ian Perrin](https://github.com/ianperrin).",
       "hasGithubIssues": true,
       "id": "doctorfree/MMM-MacAddressScan",
@@ -14381,7 +14483,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "Send messages to be displayed on your MagicMirror via e-mail.",
       "hasGithubIssues": true,
       "id": "Unclearogre/MMM-MailMessage",
@@ -14481,7 +14583,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Show the menu of german school lunch service provider MensaMax.",
       "hasGithubIssues": true,
       "id": "fuerst/MMM-MensaMax",
@@ -14535,7 +14637,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Displays your Microsoft To Do tasks on your mirror.",
       "hasGithubIssues": true,
       "id": "thobach/MMM-MicrosoftToDo",
@@ -14556,7 +14658,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Displays the status of you Miele@Home Devices.",
       "hasGithubIssues": true,
       "id": "SAR71/MMM-MieleAtHome",
@@ -14814,7 +14916,27 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 6,
+      "description": "Display the song you are currently listening to on Spotify.",
+      "hasGithubIssues": null,
+      "id": "rkorell/MMM-NowPlayingOnSpotify",
+      "image": "MMM-NowPlayingOnSpotify---rkorell.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "rkorell",
+      "maintainerURL": "https://github.com/rkorell",
+      "name": "MMM-NowPlayingOnSpotify",
+      "stars": 0,
+      "tags": [
+        "spotify"
+      ],
+      "url": "https://github.com/rkorell/MMM-NowPlayingOnSpotify"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 11,
       "description": "Displays downloads from Download Station running on a QNAP NAS.",
       "hasGithubIssues": true,
       "id": "flick116/MMM-qnapDownloadStation",
@@ -14959,7 +15081,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Add one to many memo notes (\"post-it look & feel\"). Content is manageable through HTTP get requests.",
       "hasGithubIssues": true,
       "id": "schnibel/MMM-Memo",
@@ -14976,7 +15098,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "description": "Camera based motion detector that turns of your display after a while, updated fork of alexyaks version.",
       "hasGithubIssues": true,
       "id": "rejas/MMM-MotionDetector",
@@ -15084,6 +15206,30 @@
       "name": "MMM-MyGarbage",
       "stars": 38,
       "url": "https://github.com/htilburgs/MMM-MyGarbage"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 3,
+      "description": "A polished month-view calendar module that connects directly to Google Calendar via iCal URL.",
+      "hasGithubIssues": null,
+      "id": "johnster000/MMM-MyGCalendar",
+      "image": "MMM-MyGCalendar---johnster000.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "johnster000",
+      "maintainerURL": "https://github.com/johnster000",
+      "name": "MMM-MyGCalendar",
+      "stars": 0,
+      "tags": [
+        "calendar",
+        "google",
+        "google calendar",
+        "ical",
+        "month-view"
+      ],
+      "url": "https://github.com/johnster000/MMM-MyGCalendar"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -15329,7 +15475,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Viewer for Nextcloud Deck app decks.",
       "hasGithubIssues": true,
       "id": "motey/MMM_ncdeck",
@@ -15343,6 +15489,30 @@
       "name": "MMM_ncdeck",
       "stars": 2,
       "url": "https://github.com/motey/MMM_ncdeck"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 3,
+      "description": "Displays a shared household need/shopping list on your mirror. Add items from any device through the built-in admin web interface — they appear on the mirror immediately. When you've picked something up, tap it on the mirror to cross it off; after 60 seconds it's removed and logged to history.",
+      "hasGithubIssues": null,
+      "id": "johnster000/MMM-NeedList",
+      "image": "MMM-NeedList---johnster000.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "johnster000",
+      "maintainerURL": "https://github.com/johnster000",
+      "name": "MMM-NeedList",
+      "stars": 0,
+      "tags": [
+        "shopping",
+        "needs",
+        "household",
+        "list",
+        "admin"
+      ],
+      "url": "https://github.com/johnster000/MMM-NeedList"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -15419,7 +15589,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Display live snapshot of Netatmo Presence and Welcome cameras and an events timeline of all your Netatmo Presence cameras.",
       "hasGithubIssues": true,
       "id": "AgP42/MMM-Netatmo-Presence",
@@ -15441,7 +15611,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
       "hasGithubIssues": false,
       "id": "nsprawling/MMM-NetworkScanner",
@@ -15506,7 +15676,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Display a count down to the next event from [MMM-CalendarExt2](https://github.com/MagicMirrorModules/MMM-CalendarExt2).",
       "hasGithubIssues": true,
       "id": "cure/MMM-NextEvent",
@@ -15617,6 +15787,31 @@
         "calendar"
       ],
       "url": "https://github.com/JHWelch/MMM-NotionCalendar"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 3,
+      "description": "Shows what's currently playing on your Google Nest / Chromecast speakers. It discovers speakers automatically on your local network and displays album art, song title, artist, and the speaker name — with play/pause/skip controls right on the mirror.",
+      "hasGithubIssues": null,
+      "id": "johnster000/MMM-NowPlaying",
+      "image": "MMM-NowPlaying---johnster000.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "johnster000",
+      "maintainerURL": "https://github.com/johnster000",
+      "name": "MMM-NowPlaying",
+      "stars": 0,
+      "tags": [
+        "google",
+        "cast",
+        "nest",
+        "music",
+        "now-playing",
+        "chromecast"
+      ],
+      "url": "https://github.com/johnster000/MMM-NowPlaying"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -15850,7 +16045,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Display information from your OpenTherm gateway.",
       "hasGithubIssues": true,
       "id": "RedNax67/MMM-OpenTherm",
@@ -15879,6 +16074,30 @@
       "name": "MMM-ovos-wakeword",
       "stars": 4,
       "url": "https://github.com/smartgic/MMM-ovos-wakeword"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 8,
+      "description": "Scans IMAP email accounts for shipping notifications from carriers like Amazon, UPS, FedEx, and USPS. Automatically detects carrier and delivery status (Shipped, Out for Delivery, Delivered) with item name extraction and deduplication.",
+      "hasGithubIssues": null,
+      "id": "AliceNewsum/MMM-Packages",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "AliceNewsum",
+      "maintainerURL": "https://github.com/AliceNewsum",
+      "name": "MMM-Packages",
+      "stars": 0,
+      "tags": [
+        "packages",
+        "delivery",
+        "shipping",
+        "tracking",
+        "imap",
+        "email"
+      ],
+      "url": "https://github.com/AliceNewsum/MMM-Packages"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -15948,7 +16167,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Get system stats from a PC board. Supports multiple core CPU's.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-PC-Stats",
@@ -15965,7 +16184,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "This will show you your Peloton information to keep you motivated to achieve your goals.",
       "hasGithubIssues": true,
       "id": "chicohernando/MMM-Peloton",
@@ -16120,7 +16339,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display the mirrors connection status.",
       "hasGithubIssues": true,
       "id": "CFenner/MMM-Ping",
@@ -16248,7 +16467,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email.",
       "hasGithubIssues": true,
       "id": "bureus/MMM-Postnord",
@@ -16380,6 +16599,7 @@
       "maintainer": "themox",
       "maintainerURL": "https://github.com/themox",
       "name": "MMM-Puck",
+      "stars": 0,
       "url": "https://github.com/themox/MMM-Puck"
     },
     {
@@ -16443,6 +16663,7 @@
       "maintainer": "th3pajay",
       "maintainerURL": "https://github.com/th3pajay",
       "name": "MMM-QBittorrent",
+      "stars": 0,
       "url": "https://github.com/th3pajay/MMM-QBittorrent"
     },
     {
@@ -16761,7 +16982,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Display when and which type of trash will be collected by Dutch garbage service ROVA.",
       "hasGithubIssues": true,
       "id": "jeroenpeters1986/MMM-ROVA-trashcalendar",
@@ -16783,7 +17004,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "description": "Skim council website and extract rubish collection times.",
       "hasGithubIssues": true,
       "id": "nikobix/MMM-RubbishCollection",
@@ -17192,7 +17413,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 20,
       "description": "Display your shipment tracking status.",
       "hasGithubIssues": true,
       "id": "fewieden/MMM-ShipmentTracking",
@@ -17229,7 +17450,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Shows trash days with simple setup.",
       "hasGithubIssues": true,
       "id": "sabo10o29/MMM-SimpleNotifyTrashDay",
@@ -17338,7 +17559,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Integrate [Smappee](https://www.smappee.com)s smart home energy consumption monitor.",
       "hasGithubIssues": true,
       "id": "CFenner/MMM-Smappee",
@@ -17355,7 +17576,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. [MMM-SmartWebDisplay forum](https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm).",
       "hasGithubIssues": true,
       "id": "ItsMeBrille/MMM-SmartWebDisplay",
@@ -17467,7 +17688,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "Display Soliscloud inverter data.",
       "hasGithubIssues": true,
       "id": "dekinet/MMM-Soliscloud",
@@ -17776,7 +17997,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<https://www.sunnyportal.com>).",
       "hasGithubIssues": true,
       "id": "linuxtuxie/MMM-SunnyPortal",
@@ -17793,7 +18014,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "description": "Display a classic railway clock.",
       "hasGithubIssues": true,
       "id": "mumblebaj/MMM-SweepClock",
@@ -17898,7 +18119,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "API for sending notifications to your mirror.",
       "hasGithubIssues": false,
       "id": "marcinomen/MMM-syslog",
@@ -17930,7 +18151,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Shows system stats similar to MMM-SystemStats.",
       "hasGithubIssues": true,
       "id": "btastic/MMM-SystemMonitor",
@@ -18006,6 +18227,53 @@
       "name": "MMM-Tado",
       "stars": 7,
       "url": "https://github.com/WouterEekhout/MMM-Tado"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 3,
+      "description": "Displays household members and their assigned tasks on the mirror, with admin interface.",
+      "hasGithubIssues": null,
+      "id": "johnster000/MMM-Tasklist",
+      "image": "MMM-Tasklist---johnster000.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "johnster000",
+      "maintainerURL": "https://github.com/johnster000",
+      "name": "MMM-Tasklist",
+      "stars": 0,
+      "tags": [
+        "tasks",
+        "chores",
+        "household",
+        "todo",
+        "admin"
+      ],
+      "url": "https://github.com/johnster000/MMM-Tasklist"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "defaultSortWeight": 8,
+      "description": "Displays Google Tasks split into active (due today or overdue) and backlog sections. Overdue tasks are highlighted in amber so nothing slips through the cracks.",
+      "hasGithubIssues": null,
+      "id": "AliceNewsum/MMM-Tasks",
+      "image": "MMM-Tasks---AliceNewsum.webp",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "AliceNewsum",
+      "maintainerURL": "https://github.com/AliceNewsum",
+      "name": "MMM-Tasks",
+      "stars": 0,
+      "tags": [
+        "google-tasks",
+        "tasks",
+        "todo",
+        "smart-mirror"
+      ],
+      "url": "https://github.com/AliceNewsum/MMM-Tasks"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -18093,7 +18361,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
       "hasGithubIssues": true,
       "id": "ryck/MMM-TFL-Arrivals",
@@ -18179,7 +18447,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Displays today's calendar events in a clean, minimal block.",
       "hasGithubIssues": null,
       "id": "ex247/MMM-TodayBlock",
@@ -18196,7 +18464,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Displays your todos from Todoist.",
       "hasGithubIssues": true,
       "id": "cbrooker/MMM-Todoist",
@@ -18342,7 +18610,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "This module can show [Trello](https://trello.com) cards on your mirror.",
       "hasGithubIssues": false,
       "id": "benjaminflessner/MMM-Trello",
@@ -18362,7 +18630,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 10,
       "description": "Display the waste plan for your destination in Trondheim, Norway.",
       "hasGithubIssues": true,
       "id": "reidarw/MMM-TRV-WastePlan",
@@ -18487,12 +18755,13 @@
       "id": "rroach3753/MMM-GoveeSmartHomeStatus",
       "image": "MMM-GoveeSmartHomeStatus---Rickey Roach.webp",
       "isArchived": null,
-      "issues": true,
+      "issues": false,
       "lastCommit": "2026-06-15T21:23:39.169Z",
       "license": "MIT",
       "maintainer": "Rickey Roach",
       "maintainerURL": "https://github.com/rroach3753",
       "name": "MMM-GoveeSmartHomeStatus",
+      "stars": 0,
       "tags": [
         "govee",
         "smart home",
@@ -18515,6 +18784,7 @@
       "maintainer": "Rickey Roach",
       "maintainerURL": "https://github.com/rroach3753",
       "name": "MMM-UniFiGuestWiFi",
+      "stars": 0,
       "tags": [
         "unifi",
         "ubiquiti",
@@ -18694,6 +18964,7 @@
       "maintainer": "Gregoid88",
       "maintainerURL": "https://github.com/Gregoid88",
       "name": "MMM-ValheimServer",
+      "stars": 0,
       "url": "https://github.com/Gregoid88/MMM-ValheimServer"
     },
     {
@@ -18854,7 +19125,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Calendar of current month with weeks numbers.",
       "hasGithubIssues": true,
       "id": "arnaudsnomsed/MMM-WeeksCalendar",
@@ -19123,7 +19394,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Show the status of triggers from Zabbix via API calls.",
       "hasGithubIssues": true,
       "id": "spectroman/mmm-zabbix-alerts",
@@ -19272,7 +19543,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Displays daily, weekly or monthly horoscopes for MM2.",
       "hasGithubIssues": true,
       "id": "cowboysdude/MMM-Astrology",
@@ -19304,7 +19575,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": -5,
+      "defaultSortWeight": -4,
       "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
       "hasGithubIssues": true,
       "id": "darickc/MMM-BackgroundSlideshow",
@@ -19325,7 +19596,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displays a Word Clock written in the Swiss German dialect of Bern.",
       "hasGithubIssues": true,
       "id": "splattner/MMM-bernwordclock",
@@ -19342,7 +19613,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Simple Binary Clock.",
       "hasGithubIssues": true,
       "id": "nikobix/MMM-BinaryClock",
@@ -19579,6 +19850,7 @@
       "maintainer": "testingonlypi",
       "maintainerURL": "https://github.com/testingonlypi",
       "name": "MMM-Charms",
+      "stars": 0,
       "tags": [
         "smart-mirror",
         "affirmations",
@@ -19717,7 +19989,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Shows concerts around you of the bands you listen to the most.",
       "hasGithubIssues": true,
       "id": "muilpp/MM-concert-calendar",
@@ -19808,7 +20080,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Virtual model of physical Cronixie (Led Nixie) clock.",
       "hasGithubIssues": true,
       "id": "timophey/MMM-Cronixie",
@@ -19967,7 +20239,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Displays the daily XKCD web comic.",
       "hasGithubIssues": true,
       "id": "Blastitt/DailyXKCD",
@@ -19983,7 +20255,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Shows the date without a clock (if you have one in another place).",
       "hasGithubIssues": true,
       "id": "grabenhenrich/MMM-DateOnly",
@@ -19998,7 +20270,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "modified defult clock showing only the digital part.",
       "hasGithubIssues": true,
       "id": "justjim1220/MMM-DigClock",
@@ -20015,7 +20287,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "A vintage-style Digital Alarm Clock integrating MMM-DigClock and MMM-AlarmClock.",
       "hasGithubIssues": true,
       "id": "justjim1220/MMM-DigitalAlarmClock",
@@ -20361,7 +20633,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Shows a fish every day, fish is good for you :)",
       "hasGithubIssues": true,
       "id": "nigel-daniels/MMM-Fish",
@@ -20378,7 +20650,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Load last 20 images posted to user's Flickr photostream to mirror and animate them. API key required.",
       "hasGithubIssues": true,
       "id": "kapsolas/MMM-Flickr",
@@ -20397,7 +20669,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 3,
       "description": "A classic flip clock that is powered by the awesome [flip plugin](https://pqina.nl/flip).",
       "hasGithubIssues": true,
       "id": "MarcLandis/MMM-FlipClock",
@@ -20458,7 +20730,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "description": "Show what is playing on your Frontier Silicon powered radio.",
       "hasGithubIssues": true,
       "id": "MarcLandis/MMM-FSAPI",
@@ -20498,7 +20770,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Displays a Word Clock written in German.",
       "hasGithubIssues": false,
       "id": "princemaxwell/MMM-germanwordclock",
@@ -20624,7 +20896,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 20,
       "description": "Find and display local happy hours.",
       "hasGithubIssues": true,
       "id": "aleckeller/MMM-HappyHours",
@@ -20639,7 +20911,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Displays History that happened on today's date.",
       "hasGithubIssues": true,
       "id": "cowboysdude/MMM-History",
@@ -20898,7 +21170,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Display images fullscreen, one at a time on a fixed interval, from [Immich](https://immich.app/).",
       "hasGithubIssues": true,
       "id": "pelaxa/MMM-ImmichSlideShow",
@@ -21021,7 +21293,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Displays the current Jewish date.",
       "hasGithubIssues": true,
       "id": "yohaybn/MMM-JewishDate",
@@ -21234,7 +21506,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Upcoming events in your city from G**gle. Could be an update to the \"Eventful API\". Modular so additional event providers can be added.",
       "hasGithubIssues": true,
       "id": "dwoolridge/MMM-LocalEvents",
@@ -21407,7 +21679,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Display daily menu 🍔🥕 information from the canteens of the Studierendenwerk München Oberbayern as well as some other canteens.",
       "hasGithubIssues": true,
       "id": "wiesty/MMM-Mensamuc",
@@ -21423,7 +21695,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
       "hasGithubIssues": true,
       "id": "blixhavn/MMM-Minigjenbruksstasjon",
@@ -21544,7 +21816,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Display Swedish name of day.",
       "hasGithubIssues": false,
       "id": "andersarstrand/MMM-Meniny",
@@ -21712,6 +21984,7 @@
       "maintainer": "egeekial",
       "maintainerURL": "https://github.com/egeekial",
       "name": "MMM-MusicAssistant",
+      "stars": 0,
       "tags": [
         "music assistant",
         "now playing",
@@ -21721,7 +21994,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Displays new music releases from tracked artists on musicbutler.io.",
       "hasGithubIssues": true,
       "id": "jrettsch/MMM-MusicButler",
@@ -21910,7 +22183,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "description": "Simple virtual Nixie Clock.",
       "hasGithubIssues": true,
       "id": "nikobix/MMM-Nixie-Clock",
@@ -21944,7 +22217,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Shows something on odd, even, or both, days.",
       "hasGithubIssues": true,
       "id": "daterrell/MMM-OddEven",
@@ -22088,7 +22361,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Recipes collection as cards from local file or Paprika.",
       "hasGithubIssues": true,
       "id": "ivlovric/MMM-MagicReplicator",
@@ -22222,6 +22495,7 @@
       "maintainer": "Skarabaeus",
       "maintainerURL": "https://github.com/Skarabaeus",
       "name": "MMM-PhotoStack",
+      "stars": 0,
       "tags": [
         "photos",
         "slideshow",
@@ -22312,7 +22586,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Displays current or upcoming Pokemon GO Events. Event data is scraped from [LeekDuck](https://www.leekduck.com/events).",
       "hasGithubIssues": true,
       "id": "bigfoott/MMM-PokemonGOEvents",
@@ -22329,7 +22603,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "A simple module to show a profilpicture with your name and wheater report.",
       "hasGithubIssues": true,
       "id": "kurtern84/MMM-profile",
@@ -22560,7 +22834,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "description": "Displays a new recipe everyday.",
       "hasGithubIssues": true,
       "id": "cowboysdude/MMM-Recipe",
@@ -22593,7 +22867,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Shows specified subreddits(Text only), can have multiple instances.",
       "hasGithubIssues": true,
       "id": "bittiez/MMM-Reddito",
@@ -22908,7 +23182,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "description": "Show the previous and upcoming launches of SpaceX rockets.",
       "hasGithubIssues": true,
       "id": "koxm/MMM-SpaceX",
@@ -22935,6 +23209,7 @@
       "maintainer": "dentrass",
       "maintainerURL": "https://github.com/dentrass",
       "name": "MMM-SpinTheWheel",
+      "stars": 0,
       "tags": [
         "discogs",
         "vinyl",
@@ -23012,6 +23287,7 @@
       "maintainer": "th3pajay",
       "maintainerURL": "https://github.com/th3pajay",
       "name": "MMM-SteamFriends",
+      "stars": 0,
       "url": "https://github.com/th3pajay/MMM-SteamFriends"
     },
     {
@@ -23142,7 +23418,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 20,
+      "defaultSortWeight": 21,
       "description": "Show full screen slideshow in background using images from Synology Photos.",
       "hasGithubIssues": true,
       "id": "spydersoft-consulting/MMM-SynPhotoSlideshow",
@@ -23228,7 +23504,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Shows a different text each week.",
       "hasGithubIssues": true,
       "id": "retroflex/MMM-TextPerWeek",
@@ -23244,7 +23520,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
       "hasGithubIssues": true,
       "id": "AlexMNet/MMM-TheSpaceDevs",
@@ -23278,6 +23554,7 @@
       "maintainer": "frankhu-2021",
       "maintainerURL": "https://github.com/frankhu-2021",
       "name": "MMM-TicketEvents",
+      "stars": 0,
       "tags": [
         "ticketmaster",
         "events"
@@ -23286,7 +23563,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "Shows your TimeTree event.",
       "hasGithubIssues": true,
       "id": "sabo10o29/MMM-TimeTreeEvent",
@@ -23345,7 +23622,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Show your upcoming Tvheadend recordings.",
       "hasGithubIssues": true,
       "id": "XBCreepinJesus/MMM-TvheadendDVR",
@@ -23465,7 +23742,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "Display the next time on a clear morning or evening that you can go outside and experience the brightness of high noon on Pluto.",
       "hasGithubIssues": true,
       "id": "croxis/PlutoTime",
@@ -23501,7 +23778,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "description": "Display a random quote from various authorship using Ninjas API.",
       "hasGithubIssues": true,
       "id": "Jacopo1891/MMM-RandomQuotes",
@@ -23566,7 +23843,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 13,
       "description": "Display your Twitter feed.",
       "hasGithubIssues": true,
       "id": "Blastitt/twitControl",
@@ -23770,7 +24047,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 22,
+      "defaultSortWeight": 23,
       "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
       "hasGithubIssues": false,
       "id": "mvlbarcelos/WallberryTheme",
@@ -23875,7 +24152,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "defaultSortWeight": 18,
+      "defaultSortWeight": 19,
       "description": "Displays either the daily XKCD comic or a random XKCD comic.",
       "hasGithubIssues": true,
       "id": "jupadin/MMM-XKCD",
@@ -24008,6 +24285,7 @@
       "maintainer": "jualfoar",
       "maintainerURL": "https://github.com/jualfoar",
       "name": "MMM-BabyBuddy",
+      "stars": 0,
       "tags": [
         "babybuddy",
         "baby",
@@ -24159,7 +24437,7 @@
     },
     {
       "category": "Health",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "description": "A more detailed Oura data display including readiness scores and heart rate data.",
       "hasGithubIssues": true,
       "id": "themox/MMM-Oura2",
@@ -24191,7 +24469,7 @@
     },
     {
       "category": "Health",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "description": "Tracks pregnancy progress and displays fetus images based on the current week of pregnancy.",
       "hasGithubIssues": true,
       "id": "gowthamravichandran/MMM-PregnancyTracker",
@@ -24279,6 +24557,21 @@
     {
       "category": "Health",
       "defaultSortWeight": 10,
+      "description": "Fetches and displays the Fordham Tri-State Tick Risk.",
+      "hasGithubIssues": null,
+      "id": "Fleker/MMM-TickRisk",
+      "isArchived": null,
+      "issues": true,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "maintainer": "fleker",
+      "maintainerURL": "https://github.com/Fleker",
+      "name": "MMM-TickRisk",
+      "stars": 0,
+      "url": "https://github.com/Fleker/MMM-TickRisk"
+    },
+    {
+      "category": "Health",
+      "defaultSortWeight": 11,
       "description": "A simple Water Reminder Module.",
       "hasGithubIssues": true,
       "id": "thiagomides/MMM-WaterReminder",
@@ -24340,7 +24633,7 @@
     },
     {
       "category": "Education",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "description": "Display upcoming assignments from Canvas LMS platform. Fork from chase-cromwell/MMM-Canvas (no longer active).",
       "hasGithubIssues": false,
       "id": "dbeltjr/MMM-Canvas",
@@ -24367,6 +24660,7 @@
       "maintainer": "Dale Belt",
       "maintainerURL": "https://github.com/dbeltjr",
       "name": "MMM-CanvasCalendar",
+      "stars": 0,
       "url": "https://github.com/dbeltjr/MMM-CanvasCalendar"
     },
     {
@@ -24449,7 +24743,7 @@
     },
     {
       "category": "Education",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "description": "Learn Chinese Hanzi characters directly on your MagicMirror². This module rotates between a configurable number of characters.",
       "hasGithubIssues": true,
       "id": "tderflinger/MMM-Hanzi",
@@ -24463,6 +24757,30 @@
       "name": "MMM-Hanzi",
       "stars": 4,
       "url": "https://github.com/tderflinger/MMM-Hanzi"
+    },
+    {
+      "category": "Education",
+      "defaultSortWeight": 1,
+      "description": "module to show which media are currently borrowed from the local library (via OPAC account) and when they are due.",
+      "hasGithubIssues": null,
+      "id": "HeikoGr/MMM-LibraryMonitor",
+      "image": "MMM-LibraryMonitor---HeikoGr.webp",
+      "isArchived": null,
+      "issues": false,
+      "lastCommit": "2026-07-05T12:35:04.429Z",
+      "license": "MIT",
+      "maintainer": "HeikoGr",
+      "maintainerURL": "https://github.com/HeikoGr",
+      "name": "MMM-LibraryMonitor",
+      "stars": 0,
+      "tags": [
+        "library-monitor",
+        "open-opac",
+        "library",
+        "books",
+        "media"
+      ],
+      "url": "https://github.com/HeikoGr/MMM-LibraryMonitor"
     },
     {
       "category": "Education",
@@ -24488,7 +24806,7 @@
     },
     {
       "category": "Education",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 7,
       "description": "Display [phase6](https://www.phase-6.de/) vocabulary learning statistics (last learned, due count, learning streak) for one or more family profiles.",
       "hasGithubIssues": null,
       "id": "ms-zone-41/MMM-phase6",
@@ -24756,7 +25074,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "Displays alertR sensor alerts on the mirror.",
       "hasGithubIssues": true,
       "id": "sqall01/MMM-alertRsensoralerts",
@@ -24885,7 +25203,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Weather designed for bottom bar position, now using the ClimaCell API.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-BMW-CC",
@@ -24921,7 +25239,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Weather designed for bottom bar position.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-BMW-DS",
@@ -24939,7 +25257,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 910,
+      "defaultSortWeight": 911,
       "description": "Weather designed for bottom bar position, now using the OpenWeather API.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-BMW-OW",
@@ -24957,7 +25275,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 910,
+      "defaultSortWeight": 911,
       "description": "Display a compact monthly calendar view.",
       "hasGithubIssues": null,
       "id": "KirAsh4/calendar_monthly",
@@ -24970,6 +25288,24 @@
       "outdated": "Abandoned. No updates since years. But may still work.",
       "stars": 0,
       "url": "https://github.com/KirAsh4/calendar_monthly"
+    },
+    {
+      "category": "Outdated Modules",
+      "defaultSortWeight": 915,
+      "description": "Display a weekly (n days) calendar view.",
+      "hasGithubIssues": true,
+      "id": "heskja/MMM-CalendarWeek",
+      "image": "MMM-CalendarWeek---heskja.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2019-08-25T17:28:27Z",
+      "license": "MIT",
+      "maintainer": "heskja",
+      "maintainerURL": "https://github.com/heskja",
+      "name": "MMM-CalendarWeek",
+      "outdated": "Abandoned. Developer is no longer active. Doesn't work anymore.",
+      "stars": 56,
+      "url": "https://github.com/heskja/MMM-CalendarWeek"
     },
     {
       "category": "Outdated Modules",
@@ -24991,7 +25327,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "World Population and demographics, by age and sex, or by individual country. 1950 - 2100.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-Census",
@@ -25009,7 +25345,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 916,
+      "defaultSortWeight": 917,
       "description": "Display your chess.com games on your mirror (chess skills optional!).",
       "hasGithubIssues": true,
       "id": "nout-kleef/MMM-Chess-Daily",
@@ -25045,7 +25381,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Hourly weather designed for bottom bar position using the Climacell API.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-Climacell-Hourly",
@@ -25101,7 +25437,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 907,
+      "defaultSortWeight": 908,
       "description": "Keep track of Corona Virus (COVID-19) cases via rapidapi API.",
       "hasGithubIssues": true,
       "id": "bibaldo/MMM-COVID19",
@@ -25229,7 +25565,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 907,
+      "defaultSortWeight": 908,
       "description": "Daily recurrent event alarms.",
       "hasGithubIssues": true,
       "id": "eouia/MMM-DailyAlarm",
@@ -25247,7 +25583,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 913,
+      "defaultSortWeight": 914,
       "description": "Hourly weather and precipitation pulled from DarkSky.",
       "hasGithubIssues": true,
       "id": "jacquesCedric/MMM-darksky-hourly",
@@ -25339,7 +25675,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 913,
+      "defaultSortWeight": 914,
       "description": "Connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror² and stream stations via omxplayer.",
       "hasGithubIssues": true,
       "id": "Ax-LED/MMM-Dreambox",
@@ -25390,6 +25726,30 @@
       "outdated": "Successor is MMM-DropboxPictures.",
       "stars": 17,
       "url": "https://github.com/Mong-ni/MMM-DropboxWallpaper"
+    },
+    {
+      "category": "Outdated Modules",
+      "defaultSortWeight": 910,
+      "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
+      "hasGithubIssues": true,
+      "id": "galaktor/MMM-DublinRTPI",
+      "image": "MMM-DublinRTPI---galaktor.webp",
+      "isArchived": false,
+      "issues": true,
+      "lastCommit": "2018-01-09T18:55:50Z",
+      "license": "GPL-3.0",
+      "maintainer": "galaktor",
+      "maintainerURL": "https://github.com/galaktor",
+      "name": "MMM-DublinRTPI",
+      "outdated": "Abandoned. Developer is no longer active. Doesn't work anymore.",
+      "stars": 1,
+      "tags": [
+        "public transport",
+        "dublin bus",
+        "dublin luas",
+        "irish rail"
+      ],
+      "url": "https://github.com/galaktor/MMM-DublinRTPI"
     },
     {
       "category": "Outdated Modules",
@@ -25531,7 +25891,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 914,
+      "defaultSortWeight": 915,
       "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
       "hasGithubIssues": false,
       "id": "jimbydude/MMM-Face-Multi-User-Recognition-SMAI",
@@ -25605,7 +25965,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "Track packages from Finnish Posti and/or Matkahuolto.",
       "hasGithubIssues": true,
       "id": "jesmak/MMM-FinParcel",
@@ -25650,7 +26010,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "Fetches one recipe type per day from food2fork API and display as a small menu.",
       "hasGithubIssues": true,
       "id": "spectroman/mmm-food2fork-recipes",
@@ -25666,7 +26026,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "Display weather based on forecast API (DarkSky).",
       "hasGithubIssues": true,
       "id": "dmcinnes/MMM-forecast-io",
@@ -25735,7 +26095,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 914,
+      "defaultSortWeight": 915,
       "description": "Display weather from a self-updated GPS Location.",
       "hasGithubIssues": true,
       "id": "mochman/MMM-GPSWeather",
@@ -25773,7 +26133,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "Voice-Control module based on Google Speech Recognizer (annyang). Send a notification to all other modules on voice detection.",
       "hasGithubIssues": true,
       "id": "Matzefication/MMM-Hello-Mirror",
@@ -25806,7 +26166,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 914,
+      "defaultSortWeight": 915,
       "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
       "hasGithubIssues": false,
       "id": "spitzlbergerj/MMM-Homematic-Thermostats",
@@ -25880,7 +26240,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
       "hasGithubIssues": true,
       "id": "kapsolas/MMM-Instagram",
@@ -25900,7 +26260,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-ISS",
@@ -25976,7 +26336,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 914,
+      "defaultSortWeight": 915,
       "description": "Display the song you are currently streaming on your [Librespot Java](https://github.com/librespot-org/librespot-java) Spotify Speaker.",
       "hasGithubIssues": false,
       "id": "l3d00m/MMM-LibrespotJava",
@@ -25997,7 +26357,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Live International Currency Exchange.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-LICE",
@@ -26015,7 +26375,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-Lottery",
@@ -26094,7 +26454,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 913,
+      "defaultSortWeight": 914,
       "description": "Show an image of the current moon phase.",
       "hasGithubIssues": false,
       "id": "spectroman/mmm-moon-phases",
@@ -26239,7 +26599,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-NEO",
@@ -26275,27 +26635,6 @@
         "aimp"
       ],
       "url": "https://github.com/jesmak/MMM-NowPlayingOnAIMP"
-    },
-    {
-      "category": "Outdated Modules",
-      "defaultSortWeight": 902,
-      "description": "Display the song you are currently listening to on Spotify.",
-      "hasGithubIssues": true,
-      "id": "raywo/MMM-NowPlayingOnSpotify",
-      "image": "MMM-NowPlayingOnSpotify---raywo.webp",
-      "isArchived": false,
-      "issues": true,
-      "lastCommit": "2020-11-29T12:06:16Z",
-      "license": "MIT",
-      "maintainer": "raywo",
-      "maintainerURL": "https://github.com/raywo",
-      "name": "MMM-NowPlayingOnSpotify",
-      "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
-      "stars": 212,
-      "tags": [
-        "spotify"
-      ],
-      "url": "https://github.com/raywo/MMM-NowPlayingOnSpotify"
     },
     {
       "category": "Outdated Modules",
@@ -26345,7 +26684,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 906,
+      "defaultSortWeight": 907,
       "description": "O-clock inspired by PolarClock Screensaver.",
       "hasGithubIssues": true,
       "id": "eouia/MMM-OClock",
@@ -26363,7 +26702,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "Display the medals for the summer olympics 2016.",
       "hasGithubIssues": true,
       "id": "GHLasse/MagicMirror-Olympia-Module",
@@ -26379,7 +26718,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Static or Rotating Weather for Pilots. International ICAO's.",
       "hasGithubIssues": true,
       "id": "mykle1/MMM-PilotWX",
@@ -26437,7 +26776,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "This module can stream the video of 100 Sekunden Tagesschau by using omxplayer. It can be controlled by MM notification system.",
       "hasGithubIssues": true,
       "id": "Ax-LED/MMM-Podcast2",
@@ -26515,7 +26854,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 911,
+      "defaultSortWeight": 912,
       "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands.",
       "hasGithubIssues": true,
       "id": "mboskamp/MMM-PIR",
@@ -26533,7 +26872,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 914,
+      "defaultSortWeight": 915,
       "description": "PIR module. No support. Try [MMM-Universal-Pir](https://gitlab.com/khassel/MMM-Universal-Pir) if you have any issues.",
       "hasGithubIssues": true,
       "id": "Coernel82/MMM-Pir",
@@ -26812,7 +27151,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
       "hasGithubIssues": null,
       "id": "mykle1/MMM-SORT",
@@ -26828,7 +27167,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 910,
+      "defaultSortWeight": 911,
       "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
       "hasGithubIssues": null,
       "id": "koxm/MMM-SpaceLaunchNow",
@@ -26860,7 +27199,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "More information than you ever wanted to know about the rising and setting of the sun.",
       "hasGithubIssues": null,
       "id": "mykle1/MMM-SunRiseSet",
@@ -26892,7 +27231,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 913,
+      "defaultSortWeight": 914,
       "description": "Display train departures from your favourite train station.",
       "hasGithubIssues": null,
       "id": "Bangee44/MMM-swisstransport",
@@ -26995,7 +27334,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 907,
+      "defaultSortWeight": 908,
       "description": "Displays pollen forecast for your area in the UK.",
       "hasGithubIssues": null,
       "id": "szech/mmm-uk-pollen-forecast",
@@ -27076,7 +27415,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 912,
+      "defaultSortWeight": 913,
       "description": "This is a new version of the weather forecast module. This one does not come as a default module. This version has been edited to allow the days of the week to span left to right, each with its own weather icon and details. Uses openweathermap.org API Key.",
       "hasGithubIssues": null,
       "id": "jharttech/MMM-weatherforecast",
@@ -27092,7 +27431,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 913,
+      "defaultSortWeight": 914,
       "description": "Weather Underground Forecast Module retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
       "hasGithubIssues": null,
       "id": "MattLugar/wuforecast",
@@ -27140,7 +27479,7 @@
     },
     {
       "category": "Outdated Modules",
-      "defaultSortWeight": 909,
+      "defaultSortWeight": 910,
       "description": "Nope! Not World War I. It's **Weather Without Icons**. Up to the minute weather. Full weather information, yet a small footprint.",
       "hasGithubIssues": null,
       "id": "mykle1/MMM-WWI",

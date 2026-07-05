@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2026-06-15T21:23:39.169Z
+Last update: 2026-07-05T12:56:10.947Z
 
 ## General notes
 
@@ -11,12 +11,12 @@ Last update: 2026-06-15T21:23:39.169Z
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1418   |
-| maintainers          |    841   |
-| modules with issues  |   1418   |
-| issues               |  14393   |
-| modules at github    |   1405   |
-| modules at gitlab    |     12   |
+| modules analyzed     |   1433   |
+| maintainers          |    847   |
+| modules with issues  |   1431   |
+| issues               |  14752   |
+| modules at github    |   1419   |
+| modules at gitlab    |     13   |
 | modules at bitbucket |      1   |
 
 ## Modules with issues
@@ -113,30 +113,30 @@ Last update: 2026-06-15T21:23:39.169Z
 
 1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 2. Information: There are updates for 6 dependencie(s):
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
 3. ESLint issues:
    - package.json: Line 26, Column 12: Invalid bugs: the value of `url` should be a valid URL (rule: package-json/valid-bugs)
 
 ### [MMM-Carousel by shbatm & KristjanESPERANTO](https://github.com/shbatm/MMM-Carousel)
 
 1. Information: There are updates for 12 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - eslint-plugin-jsdoc -> ^63.0.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - eslint-plugin-jsdoc -> ^63.0.11
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-ClickToNavigate by Aws505](https://github.com/Aws505/MMM-ClickToNavigate)
 
@@ -227,16 +227,17 @@ Last update: 2026-06-15T21:23:39.169Z
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 9 dependencie(s):
-   - @eslint/css -> ^1.3.0
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+1. Information: There are updates for 10 dependencie(s):
+   - @eslint/css -> ^1.4.0
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-Gestures by thobach](https://github.com/thobach/MMM-Gestures)
 
@@ -269,6 +270,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Gitlab-MergeRequests.js`. Please declare and import your own dependency.
 
 ### [MMM-GitHub-Monitor by fpfuetsch](https://github.com/fpfuetsch/MMM-GitHub-Monitor)
 
@@ -374,10 +376,10 @@ Last update: 2026-06-15T21:23:39.169Z
 1. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 2. Information: There are updates for 5 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
 
@@ -475,6 +477,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NetworkConnection.js`. Please declare and import your own dependency.
 
 ### [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
 
@@ -502,11 +505,11 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-NotificationTrigger by MMRIZE](https://github.com/MMRIZE/MMM-NotificationTrigger)
 
 1. Information: There are updates for 5 dependencie(s):
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
 2. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
 
@@ -526,13 +529,13 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-pages by edward-shen & KristjanESPERANTO](https://github.com/edward-shen/MMM-pages)
 
 1. Information: There are updates for 7 dependencie(s):
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - eslint-plugin-jsdoc -> ^63.0.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
+   - eslint -> ^10.6.0
+   - eslint-plugin-jsdoc -> ^63.0.11
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
 
 ### [MMM-pages by sdetweil](https://github.com/sdetweil/MMM-pages)
 
@@ -562,19 +565,19 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-page-indicator by edward-shen & KristjanESPERANTO](https://github.com/edward-shen/MMM-page-indicator)
 
 1. Information: There are updates for 13 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - happy-dom -> ^20.10.3
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - happy-dom -> ^20.10.6
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-Page-Pusher by zerosamski](https://github.com/zerosamski/MMM-Page-Pusher)
 
@@ -706,26 +709,28 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-RelativeTime-i18n.js`. Please declare and import your own dependency.
 
 ### [MMM-Remote-Control by Jopyth & KristjanESPERANTO](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. Information: There are updates for 16 dependencie(s):
+1. Information: There are updates for 17 dependencie(s):
    - marked -> ^18.0.5
    - simple-git -> ^3.36.0
-   - swagger-ui-dist -> ^5.32.6
-   - uuid -> ^14.0.0
-   - @eslint/css -> ^1.3.0
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - swagger-ui-dist -> ^5.32.8
+   - uuid -> ^14.0.1
+   - @eslint/css -> ^1.4.0
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-jsdoc -> ^63.0.2
-   - eslint-plugin-unicorn -> ^66.0.0
-   - globals -> ^17.6.0
-   - happy-dom -> ^20.10.3
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - eslint-plugin-jsdoc -> ^63.0.11
+   - eslint-plugin-unicorn -> ^70.0.0
+   - globals -> ^17.7.0
+   - happy-dom -> ^20.10.6
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 2. ESLint issues:
    - package.json: Line 14, Column 12: Invalid bugs: the value of `url` should be a valid URL (rule: package-json/valid-bugs)
 
@@ -810,6 +815,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-ViewNotifications.js`. Please declare and import your own dependency.
 
 ### [MMM-bitcoin by valmassoi](https://github.com/valmassoi/MMM-bitcoin)
 
@@ -959,6 +965,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-LilNounsTreasury.js`. Please declare and import your own dependency.
 
 ### [MMM-NouncilVotes by XppaiCyberr](https://github.com/XppaiCyberr/MMM-NouncilVotes)
 
@@ -989,6 +996,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NounsTreasury.js`. Please declare and import your own dependency.
 
 ### [MMM-NounsProposal by XppaiCyberr](https://github.com/XppaiCyberr/MMM-NounsProposal)
 
@@ -1099,9 +1107,9 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-eToro by Owensy](https://github.com/owensy/MMM-eToro)
 
 1. Information: There are updates for 3 dependencie(s):
-   - uuid -> ^14.0.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - uuid -> ^14.0.1
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-EUElectricityPrice by late4marshmellow](https://github.com/late4marshmellow/MMM-EUElectricityPrice)
 
@@ -1153,19 +1161,19 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-Jast by jalibu & KristjanESPERANTO](https://github.com/jalibu/MMM-Jast)
 
 1. Information: There are updates for 13 dependencie(s):
-   - yahoo-finance2 -> ^3.15.3
+   - yahoo-finance2 -> ^3.15.4
    - @rollup/plugin-commonjs -> ^29.0.3
    - @rollup/plugin-terser -> ^1.0.0
-   - @vitest/coverage-v8 -> ^4.1.8
+   - @vitest/coverage-v8 -> ^4.1.9
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - eslint-plugin-jsdoc -> ^63.0.2
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
-   - rollup -> ^4.62.0
+   - eslint -> ^10.6.0
+   - eslint-plugin-jsdoc -> ^63.0.11
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
+   - rollup -> ^4.62.2
    - typescript -> ^6.0.3
-   - typescript-eslint -> ^8.61.0
-   - vitest -> ^4.1.8
+   - typescript-eslint -> ^8.62.1
+   - vitest -> ^4.1.9
 
 ### [MMM-MktIndex by thess](https://github.com/thess/MMM-MktIndex)
 
@@ -1174,6 +1182,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+6. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MktIndex.js`. Please declare and import your own dependency.
 
 ### [MMM-NFTcollections by TemianMihai](https://github.com/TemianMihai/MMM-NFTcollections)
 
@@ -1261,6 +1270,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Sbanken.js`. Please declare and import your own dependency.
 
 ### [MMM-SingleStock by balassy](https://github.com/balassy/MMM-SingleStock)
 
@@ -1329,6 +1339,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `mmm-uah-currency.js`. Please declare and import your own dependency.
 
 ### [MMM-YNAB by thesoftwarejedi](https://github.com/thesoftwarejedi/MMM-YNAB)
 
@@ -1401,14 +1412,15 @@ Last update: 2026-06-15T21:23:39.169Z
 
 ### [MMM-anotherNewsFeed by MMRIZE](https://github.com/MMRIZE/MMM-anotherNewsFeed)
 
-1. Information: There are updates for 7 dependencie(s):
+1. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-anotherNewsFeed.js`. Please declare and import your own dependency.
+2. Information: There are updates for 7 dependencie(s):
    - html-to-text -> ^10.0.0
-   - iconv-lite -> ^0.7.2
-   - @eslint/css -> ^1.3.0
+   - iconv-lite -> ^0.7.3
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - @eslint/markdown -> ^8.0.3
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-APSystemsEZ1 by Dawi](https://github.com/yourdawi/MMM-APSystemsEZ1)
 
@@ -1453,6 +1465,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+6. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CrisisInformationSweden.js`. Please declare and import your own dependency.
 
 ### [MMM-CustomTable by Uncle Roger](https://github.com/Unclearogre/MMM-CustomTable)
 
@@ -1508,8 +1521,8 @@ Last update: 2026-06-15T21:23:39.169Z
    - moment-timezone -> ^0.6.2
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-EarthquakeMonitor by rcollie](https://github.com/rcollie/MMM-EarthquakeMonitor)
 
@@ -1551,6 +1564,19 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Ecowatt.js`. Please declare and import your own dependency.
+
+### [MMM-eshopspecials by MSg](https://github.com/mariosgouros/MMM-eshopspecials)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-Ethos by Helpi90](https://github.com/Helpi90/MMM-Ethos)
 
@@ -1568,6 +1594,22 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Ethos.js`. Please declare and import your own dependency.
+
+### [MMM-FamilyWeekCalendar by pixxelfriend](https://github.com/pixxelfriend/MMM-FamilyWeekCalendar)
+
+1. `package.json` issue: No repository field.
+2. Typo: Found `Magic Mirror` in file `MMM-FamilyWeekCalendar.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+8. Recommendation: The README seems not to have clone instructions.
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-Flatastic by joschi27](https://github.com/joschi27/MMM-Flatastic)
 
@@ -1604,11 +1646,11 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 4. Information: There are updates for 6 dependencie(s):
    - dayjs -> ^1.11.21
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
    - eslint-plugin-prettier -> ^5.5.6
-   - prettier -> ^3.8.4
-   - prettier-eslint -> ^17.0.1
-   - prettier-eslint-cli -> ^9.0.0
+   - prettier -> ^3.9.4
+   - prettier-eslint -> ^17.1.1
+   - prettier-eslint-cli -> ^9.2.1
 
 ### [MMM-GoogleCalendar by randomBrainstormer](https://github.com/randomBrainstormer/MMM-GoogleCalendar)
 
@@ -1621,6 +1663,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-GoogleCalendar.js`. Please declare and import your own dependency.
 
 ### [MMM-GoogleSheetToTable by supermem613](https://github.com/supermem613/MMM-GoogleSheetToTable)
 
@@ -1652,6 +1695,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-HLTV.js`, `templates/matches.njk`. Please declare and import your own dependency.
 
 ### [JIR-Tarifa-luz by jirsis](https://github.com/jirsis/JIR-tarifa-luz)
 
@@ -1663,6 +1707,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `JIR-tarifa-luz.js`. Please declare and import your own dependency.
 
 ### [MMM-IsraelNews by neshkoli](https://github.com/neshkoli/MMM-IsraelNews)
 
@@ -1742,13 +1787,13 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-Mastodon by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Mastodon)
 
 1. Information: There are updates for 7 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
+   - prettier -> ^3.9.4
 
 ### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
 
@@ -1779,18 +1824,19 @@ Last update: 2026-06-15T21:23:39.169Z
 
 ### [MMM-NINA by jalibu & KristjanESPERANTO](https://github.com/jalibu/MMM-NINA)
 
-1. Information: There are updates for 10 dependencie(s):
+1. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NINA.js`, `src/frontend/Frontend.ts`. Please declare and import your own dependency.
+2. Information: There are updates for 10 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @rollup/plugin-commonjs -> ^29.0.3
    - @rollup/plugin-terser -> ^1.0.0
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - eslint-plugin-jsdoc -> ^63.0.2
-   - prettier -> ^3.8.4
-   - rollup -> ^4.62.0
+   - eslint -> ^10.6.0
+   - eslint-plugin-jsdoc -> ^63.0.11
+   - prettier -> ^3.9.4
+   - rollup -> ^4.62.2
    - typescript -> ^6.0.3
-   - typescript-eslint -> ^8.61.0
-2. ESLint issues:
+   - typescript-eslint -> ^8.62.1
+3. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
 
 ### [MMM-NOKElectricityForecast by Andreas Hagman](https://github.com/AndreasHagman/MMM-NOKElectricityForecast)
@@ -1868,6 +1914,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-PlaceInfo.js`. Please declare and import your own dependency.
 
 ### [MMM-Pelletpreise by Eckonator](https://github.com/eckonator/MMM-Pelletpreise)
 
@@ -1887,9 +1934,9 @@ Last update: 2026-06-15T21:23:39.169Z
 
 1. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Information: There are updates for 3 dependencie(s):
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
 3. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
 
@@ -1973,6 +2020,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Year-Progress.js`, `README.md`. Please declare and import your own dependency.
 
 ### [MMM-AtbSanntid by Springvar](https://github.com/Springvar/MMM-AtbSanntid)
 
@@ -2031,6 +2079,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Avinor.js`. Please declare and import your own dependency.
 
 ### [MMM-BartTimes by Alex Goldstein](https://github.com/falafel2222/MMM-BartTimes)
 
@@ -2057,6 +2106,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-BCFerries.js`. Please declare and import your own dependency.
 
 ### [MMM-BdxBus by kuitin](https://github.com/kuitin/MMM-BdxBus)
 
@@ -2102,6 +2152,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Bixi.js`. Please declare and import your own dependency.
 
 ### [MMM-Bluebikes by jschless](https://github.com/jschless/MMM-Bluebikes)
 
@@ -2132,8 +2183,9 @@ Last update: 2026-06-15T21:23:39.169Z
 
 ### [MMM-BMWCarData by hamsil](https://github.com/hamsil/MMM-BMWCarData)
 
-1. Information: There are updates for 1 dependencie(s):
-   - eslint -> ^10.5.0
+1. Information: There are updates for 2 dependencie(s):
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-Bubi by balassy](https://github.com/balassy/MMM-Bubi)
 
@@ -2162,6 +2214,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-bustimes.js`. Please declare and import your own dependency.
 
 ### [MMM-Bysykkel by JonasTriki](https://github.com/JonasTriki/MMM-Bysykkel)
 
@@ -2239,6 +2292,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CracowMPK.js`. Please declare and import your own dependency.
 
 ### [MMM-CTA by NateDee](https://github.com/NateDee/MMM-CTA)
 
@@ -2252,6 +2306,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CTA.js`. Please declare and import your own dependency.
 
 ### [MMM-CTA by JHWelch](https://github.com/JHWelch/MMM-CTA)
 
@@ -2260,7 +2315,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Information: There are updates for 3 dependencie(s):
    - @jhwelch/mmm-eslint-config -> ^4.0.0
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
    - jest -> ^30.4.2
 
 ### [MMM-Ctan by Infinitte](https://github.com/Infinitte/MMM-Ctan)
@@ -2305,7 +2360,7 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-DCMetroTrains by Rickey Roach](https://github.com/rroach3753/MMM-DCMetroTrains)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
 
 ### [MMM-DCMetroTimes by Kyle Kelly](https://github.com/kyle-kelly/MMM-DCMetroTimes)
 
@@ -2376,6 +2431,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DisneyWaitTimes.js`. Please declare and import your own dependency.
 
 ### [MMM-Dorba-Trails by drventure](https://github.com/drventure/MMM-Dorba-Trails)
 
@@ -2391,19 +2447,6 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
-### [MMM-DublinRTPI by galaktor](https://github.com/galaktor/MMM-DublinRTPI)
-
-1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-4. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-5. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-6. Deprecated: Found `require('request')` in file `rtpifetcher.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
-
 ### [MMM-DVB by skastenholz](https://github.com/skastenholz/MMM-DVB)
 
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
@@ -2417,6 +2460,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DVB.js`, `README.md`. Please declare and import your own dependency.
 
 ### [DWD-RealtimeIrishRail by DavidLSmyth](https://github.com/DavidLSmyth/DWD-RealtimeIrishRail)
 
@@ -2482,6 +2526,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Elvira.js`. Please declare and import your own dependency.
 
 ### [MMM-EMTValencia by raulbalanza](https://github.com/raulbalanza/MMM-EMTValencia)
 
@@ -2506,6 +2551,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Entur-tavle.js`, `README.md`. Please declare and import your own dependency.
 
 ### [MMM-Flights by karsten13](https://gitlab.com/khassel/MMM-Flights)
 
@@ -2591,7 +2637,7 @@ Last update: 2026-06-15T21:23:39.169Z
 1. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
 2. Recommendation: No lint script found in package.json. It is recommended to add one.
 3. Information: There are updates for 1 dependencie(s):
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
 
 ### [MMM-Fuel-NSW by bughaver](https://github.com/bughaver/MMM-Fuel-NSW)
 
@@ -2611,6 +2657,7 @@ Last update: 2026-06-15T21:23:39.169Z
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+17. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Fuel-NSW.js`, `src/frontend/Frontend.ts`. Please declare and import your own dependency.
 
 ### [MMM-Futar by balassy](https://github.com/balassy/MMM-Futar)
 
@@ -2628,6 +2675,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Futar.js`. Please declare and import your own dependency.
 
 ### [MMM-Gas by cowboysdude](https://github.com/cowboysdude/MMM-Gas)
 
@@ -2642,6 +2690,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Gas.js`. Please declare and import your own dependency.
 
 ### [MMM-GasPricesPT by Fneves7](https://github.com/Fneves7/MMM-GasPricesPT)
 
@@ -2706,6 +2755,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-google-route.js`. Please declare and import your own dependency.
 
 ### [MMM-GoogleTrafficTimes by Jacopo1891](https://github.com/Jacopo1891/MMM-GoogleTrafficTimes)
 
@@ -2795,6 +2845,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-HK-Transport-ETA.js`, `providers/kmb.js`, `providers/lrt.js`. Please declare and import your own dependency.
 
 ### [mm-hsl-timetable by ZakarFin](https://github.com/ZakarFin/mm-hsl-timetable)
 
@@ -2857,6 +2908,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-IdF-Transport.js`. Please declare and import your own dependency.
 
 ### [MMM-idos by soyrubio](https://github.com/soyrubio/MMM-idos)
 
@@ -2976,6 +3028,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-LocalTransport.js`. Please declare and import your own dependency.
 
 ### [MMM-LothianBuses by tbouron](https://github.com/tbouron/MMM-LothianBuses)
 
@@ -2992,6 +3045,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-LothianBuses.js`. Please declare and import your own dependency.
 
 ### [MMM-Luxembourg-Public-Transport by uxigene](https://github.com/uxigene/MMM-Luxembourg-Public-Transport)
 
@@ -2999,6 +3053,7 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+5. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Luxembourg-Public-Transport.js`. Please declare and import your own dependency.
 
 ### [MMM-lyft by kyle-kelly](https://github.com/kyle-kelly/MMM-lyft)
 
@@ -3024,6 +3079,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MBTA.js`. Please declare and import your own dependency.
 
 ### [mmm-miami-transit by istvanfedak](https://github.com/istvanfedak/mmm-miami-transit)
 
@@ -3087,6 +3143,7 @@ Last update: 2026-06-15T21:23:39.169Z
 15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 17. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+18. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MTA-NextBus.js`. Please declare and import your own dependency.
 
 ### [MMM-MTA-SubwayAlerts by avianto](https://github.com/avianto/MMM-MTA-SubwayAlerts)
 
@@ -3271,6 +3328,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NL-Busses.js`. Please declare and import your own dependency.
 
 ### [MMM-NLDepartureTimes by vpilo](https://github.com/vpilo/MMM-NLDepartureTimes)
 
@@ -3282,6 +3340,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NLDepartureTimes.js`. Please declare and import your own dependency.
 
 ### [MMM-NMBS-Connection by Jan-Bart](https://github.com/Jan-Bart/MMM-NMBS-Connection)
 
@@ -3292,6 +3351,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NMBS-Connection.js`. Please declare and import your own dependency.
 
 ### [MMM-NsInfo by ItsCrotix](https://github.com/ItsCrotix/MMM-NsInfo)
 
@@ -3321,6 +3381,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `nstreinen.js`. Please declare and import your own dependency.
 
 ### [MMM-NexusMetroRTI by jcktwd](https://github.com/jcktwd/MMM-NexusMetroRTI)
 
@@ -3334,6 +3395,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NexusMetroRTI.js`. Please declare and import your own dependency.
 
 ### [MMM-nyc-transit by elaniobro](https://github.com/elaniobro/MMM-nyc-transit)
 
@@ -3471,12 +3533,12 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Information: There are updates for 7 dependencie(s):
    - node-fetch -> ^3.3.2
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-Planefinder by kds54](https://github.com/kds54/MMM-Planefinder)
 
@@ -3505,54 +3567,55 @@ Last update: 2026-06-15T21:23:39.169Z
 
 1. Information: There are updates for 12 dependencie(s):
    - dayjs -> ^1.11.21
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 2. ESLint issues:
    - package.json: Line 27, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
 1. Information: There are updates for 15 dependencie(s):
-   - db-vendo-client -> ^6.10.11
-   - temporal-polyfill -> ^0.3.2
-   - @eslint/css -> ^1.3.0
+   - db-vendo-client -> ^6.10.12
+   - temporal-polyfill -> ^1.0.1
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - eslint-plugin-package-json -> ^1.3.0
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - eslint-plugin-package-json -> ^1.5.0
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-PublicTransportHub by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHub)
 
 1. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-2. Information: There are updates for 11 dependencie(s):
+2. Information: There are updates for 12 dependencie(s):
    - @motis-project/motis-client -> ^2.10.2
-   - db-vendo-client -> ^6.10.11
-   - @eslint/css -> ^1.3.0
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - db-vendo-client -> ^6.10.12
+   - @eslint/css -> ^1.4.0
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-package-json -> ^1.3.0
-   - globals -> ^17.6.0
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - eslint-plugin-package-json -> ^1.5.0
+   - globals -> ^17.7.0
+   - prettier -> ^3.9.4
 3. ESLint issues:
    - package.json: Line 1, Column 1: Property attribution is required. Either `author` or `contributors` should be defined. (rule: package-json/require-attribution)
 
@@ -3567,6 +3630,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-PublicTransportVVO.js`. Please declare and import your own dependency.
 
 ### [MMM-RATP by closingin](https://gitlab.com/closingin/mmm-ratp)
 
@@ -3615,21 +3679,18 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-RNV by jalibu & KristjanESPERANTO](https://github.com/jalibu/MMM-RNV)
 
 1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-2. Information: There are updates for 10 dependencie(s):
+2. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-RNV.js`, `src/frontend/Frontend.ts`, `templates/MMM-RNV.njk`. Please declare and import your own dependency.
+3. Information: There are updates for 10 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @rollup/plugin-commonjs -> ^29.0.3
    - @rollup/plugin-terser -> ^1.0.0
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - eslint-plugin-jsdoc -> ^63.0.2
-   - prettier -> ^3.8.4
-   - rollup -> ^4.62.0
+   - eslint -> ^10.6.0
+   - eslint-plugin-jsdoc -> ^63.0.11
+   - prettier -> ^3.9.4
+   - rollup -> ^4.62.2
    - typescript -> ^6.0.3
-   - typescript-eslint -> ^8.61.0
-3. ESLint issues:
-   - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
-   - package.json: Line 28, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
-   - package.json: Line 29, Column 5: Invalid contributors: item 1 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
+   - typescript-eslint -> ^8.62.1
 
 ### [MMM-RNV by jupadin](https://github.com/jupadin/MMM-RNV)
 
@@ -3649,6 +3710,7 @@ Last update: 2026-06-15T21:23:39.169Z
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+17. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-RNV.js`. Please declare and import your own dependency.
 
 ### [MMM-RNV by bogenpirat](https://github.com/bogenpirat/MMM-RNV)
 
@@ -3668,6 +3730,7 @@ Last update: 2026-06-15T21:23:39.169Z
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+17. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-RNV.js`. Please declare and import your own dependency.
 
 ### [MMM-RVV by sebikolon](https://github.com/sebikolon/MMM-RVV)
 
@@ -3695,6 +3758,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SeawayLockTraffic.js`. Please declare and import your own dependency.
 
 ### [MMM-SG-Transport-V2 by mosesyong](https://github.com/mosesyong/MMM-SG-Transport-V2)
 
@@ -3723,6 +3787,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Skyss.js`. Please declare and import your own dependency.
 
 ### [MMM-SL-PublicTransport by ulrichwisser](https://github.com/ulrichwisser/MMM-SL-PublicTransport)
 
@@ -3736,6 +3801,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SL-PublicTransport.js`. Please declare and import your own dependency.
 
 ### [MMM-SNCF by tsoonav](https://github.com/tsoonav/MMM-SNCF)
 
@@ -3822,6 +3888,7 @@ Last update: 2026-06-15T21:23:39.169Z
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+17. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SwissCommute.js`. Please declare and import your own dependency.
 
 ### [MMM-SwissStationboard by vanhoekd](https://github.com/vanhoekd/MMM-SwissStationboard)
 
@@ -3837,6 +3904,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SwissStationboard.js`. Please declare and import your own dependency.
 
 ### [MMM-TakeAndDrive by sejka](https://github.com/sejka/MMM-TakeAndDrive)
 
@@ -3891,6 +3959,7 @@ Last update: 2026-06-15T21:23:39.169Z
 20. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
 21. Recommendation: No lint script found in package.json. It is recommended to add one.
 22. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+23. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Tesla.js`, `dataitems/charge.js`, `dataitems/state.js`. Please declare and import your own dependency.
 
 ### [MMM-Tesla3 by usncahill](https://github.com/usncahill/MMM-Tesla3)
 
@@ -3940,6 +4009,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TeslaStatus.js`. Please declare and import your own dependency.
 
 ### [MMM-TFL-Status by emanuele-albini](https://github.com/emanuele-albini/MMM-TFL-Status)
 
@@ -3972,6 +4042,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-ThemeParkWaitTimes.js`. Please declare and import your own dependency.
 
 ### [MMM-TMB by jaumebosch](https://github.com/jaumebosch/MMM-TMB)
 
@@ -4059,6 +4130,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Toulouse-Transports.js`. Please declare and import your own dependency.
 
 ### [MMM-TracCar by asimhsidd](https://github.com/asimhsidd/MMM-TracCar)
 
@@ -4105,6 +4177,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `trainconnections.js`. Please declare and import your own dependency.
 
 ### [MMM-Trains-Trafikverket by per-garden](https://github.com/per-garden/MMM-Trains-Trafikverket)
 
@@ -4158,6 +4231,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TrainTimesRTT.js`. Please declare and import your own dependency.
 
 ### [MMM-TransLoc by OrangleHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
@@ -4172,6 +4246,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Transloc.js`. Please declare and import your own dependency.
 
 ### [MMM-Tronity by robotfishe](https://github.com/robotfishe/MMM-Tronity)
 
@@ -4249,6 +4324,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-UKLiveBusStopInfo.js`. Please declare and import your own dependency.
 
 ### [MMM-UKLiveTrainDepartures by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-UKLiveTrainDepartures)
 
@@ -4259,6 +4335,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-UKLiveTrainDepartures.js`, `Trains.js`. Please declare and import your own dependency.
 
 ### [MMM-UKNationalRail by mattdy](https://github.com/mattdy/MMM-UKNationalRail)
 
@@ -4278,6 +4355,7 @@ Last update: 2026-06-15T21:23:39.169Z
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+17. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-UKNationalRail.js`. Please declare and import your own dependency.
 
 ### [MMM-Vasttrafik-PublicTransport by Xkhi](https://github.com/Xkhi/MMM-Vasttrafik-PublicTransport)
 
@@ -4293,6 +4371,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Vasttrafik-PublicTransport.js`. Please declare and import your own dependency.
 
 ### [MMM-VAG by Wiesty](https://github.com/wiesty/MMM-VAG)
 
@@ -4325,6 +4404,7 @@ Last update: 2026-06-15T21:23:39.169Z
 18. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 19. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 20. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+21. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Vrr.js`. Please declare and import your own dependency.
 
 ### [MMM-VTA-Live by nigel-daniels](https://github.com/nigel-daniels/MMM-VTA-Live)
 
@@ -4353,6 +4433,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-vvsDeparture.js`. Please declare and import your own dependency.
 
 ### [MMM-WeasleyClock by Brian Hepler](https://github.com/BrianHepler/MMM-WeasleyClock)
 
@@ -4397,6 +4478,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WienerLinien.js`. Please declare and import your own dependency.
 
 ### [MMM-WMATA by btoconnor](https://github.com/btoconnor/MMM-WMATA)
 
@@ -4408,6 +4490,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: The ESLint configuration file `.eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
 8. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WMATA.js`. Please declare and import your own dependency.
 
 ### [MMM-yandex-route by DimmanT](https://github.com/DimmanT/MMM-yandex-route)
 
@@ -4454,15 +4537,15 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-Assistant by rahil234](https://github.com/rahil234/MMM-Assistant)
 
 1. Information: There are updates for 9 dependencie(s):
-   - @langchain/langgraph -> ^1.4.2
-   - better-sqlite3 -> ^12.10.1
-   - @eslint/css -> ^1.3.0
+   - @langchain/langgraph -> ^1.4.7
+   - better-sqlite3 -> ^12.11.1
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
-   - eslint -> ^10.5.0
+   - @eslint/markdown -> ^8.0.3
+   - eslint -> ^10.6.0
    - eslint-plugin-prettier -> ^5.5.6
-   - globals -> ^17.6.0
-   - prettier -> 3.8.4
+   - globals -> ^17.7.0
+   - prettier -> 3.9.4
 2. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
 
@@ -4625,6 +4708,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Voice-Control.js`. Please declare and import your own dependency.
 
 ### [MMM-WhisperGPT by Nikro](https://github.com/Nikro/MMM-WhisperGPT)
 
@@ -4653,16 +4737,16 @@ Last update: 2026-06-15T21:23:39.169Z
 1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 2. Information: There are updates for 11 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 3. ESLint issues:
    - package.json: Line 41, Column 22: Entries in 'devDependencies' are not in lexicographical order (rule: package-json/sort-collections)
 
@@ -4811,6 +4895,7 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+5. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-AQI.js`. Please declare and import your own dependency.
 
 ### [MMM-aqicn by gpailler](https://github.com/gpailler/MMM-aqicn)
 
@@ -4856,6 +4941,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-aviationwx.js`. Please declare and import your own dependency.
 
 ### [MMM-bergfex by MajorChris1983](https://gitlab.com/MajorChris1983/MMM-bergfex)
 
@@ -4868,6 +4954,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-bergfex.js`. Please declare and import your own dependency.
 
 ### [MMM-Buienradar by StefanNienhuis](https://github.com/StefanNienhuis/MMM-Buienradar)
 
@@ -4898,6 +4985,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CanadianPublicWeatherAlerts.js`. Please declare and import your own dependency.
 
 ### [MMM-ChameleonWeather by ChrisF1976](https://github.com/ChrisF1976/MMM-ChameleonWeather)
 
@@ -4918,6 +5006,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `weather.js`. Please declare and import your own dependency.
 
 ### [MMM-DHT-Sensor by Grena](https://github.com/grenagit/MMM-DHT-Sensor)
 
@@ -5005,6 +5094,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DWD-WarnWeather.js`. Please declare and import your own dependency.
 
 ### [MMM-DynamicWeather by scottcl88](https://github.com/scottcl88/MMM-DynamicWeather)
 
@@ -5093,6 +5183,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Flo.js`. Please declare and import your own dependency.
 
 ### [MMM-FloGraph by KAG](https://github.com/kagjerde/MMM-FloGraph)
 
@@ -5108,6 +5199,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-FloGraph.js`. Please declare and import your own dependency.
 
 ### [MMM-FOSHKplugin-PWS-Observations by olicat](https://github.com/git-olicat/MMM-FOSHKplugin-PWS-Observations)
 
@@ -5290,6 +5382,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Luftdaten.js`. Please declare and import your own dependency.
 
 ### [MMM-MarineWeather by Grena](https://github.com/grenagit/MMM-MarineWeather)
 
@@ -5354,6 +5447,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-meteoblueCurrent.js`. Please declare and import your own dependency.
 
 ### [MMM-Moon by EnderFlop](https://github.com/EnderFlop/MMM-Moon)
 
@@ -5414,8 +5508,8 @@ Last update: 2026-06-15T21:23:39.169Z
 
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-NestRemoteThermostat by sisimomo](https://github.com/sisimomo/MMM-NestRemoteThermostat)
 
@@ -5517,16 +5611,16 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/MagicMirrorModules/MMM-OneCallWeather)
 
 1. Information: There are updates for 10 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-OpenmapWeather by SathyarajV](https://github.com/sathyarajv/MMM-OpenmapWeather)
 
@@ -5541,6 +5635,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-OpenmapWeather.js`. Please declare and import your own dependency.
 
 ### [MMM-OpenWeather24Hours by thobach](https://github.com/thobach/MMM-OpenWeather24Hours)
 
@@ -5561,12 +5656,12 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 6 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-OpenWeatherMapForecast by MarcLandis](https://github.com/MarcLandis/MMM-OpenWeatherMapForecast)
 
@@ -5608,6 +5703,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-pollen.js`. Please declare and import your own dependency.
 
 ### [MMM-Pollen by vincep5](https://github.com/vincep5/MMM-Pollen)
 
@@ -5674,12 +5770,12 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Information: There are updates for 8 dependencie(s):
    - @rollup/plugin-commonjs -> ^29.0.3
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
-   - rollup -> ^4.62.0
+   - eslint -> ^10.6.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
+   - rollup -> ^4.62.2
    - typescript -> ^6.0.3
-   - typescript-eslint -> ^8.61.0
+   - typescript-eslint -> ^8.62.1
 
 ### [MMM-rainfc by cirdan](https://github.com/73cirdan/MMM-rainfc)
 
@@ -5710,6 +5806,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-RainForecast-FR.js`. Please declare and import your own dependency.
 
 ### [MMM-RainForecast by jupadin](https://github.com/jupadin/MMM-RainForecast)
 
@@ -5736,8 +5833,8 @@ Last update: 2026-06-15T21:23:39.169Z
 
 1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-RainRadarDWD.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
 2. Information: There are updates for 2 dependencie(s):
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-RBB-Weather by nkl-kst](https://github.com/nkl-kst/MMM-RBB-Weather)
 
@@ -5804,6 +5901,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-RemoteTemperature.js`. Please declare and import your own dependency.
 
 ### [MMM-RunningForecast by supermem613](https://github.com/supermem613/MMM-RunningForecast)
 
@@ -5871,6 +5969,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SwissSmartUrbanHeatMap.js`. Please declare and import your own dependency.
 
 ### [MMM-TAF by imperian](https://github.com/imperian/MMM-TAF)
 
@@ -5888,6 +5987,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TAF.js`. Please declare and import your own dependency.
 
 ### [MMM-Temperature by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Temperature)
 
@@ -5939,6 +6039,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-UKTide.js`. Please declare and import your own dependency.
 
 ### [MMM-uv-index by thariq-shanavas](https://github.com/thariq-shanavas/MMM-uv-index)
 
@@ -5967,6 +6068,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-UVIndex.js`. Please declare and import your own dependency.
 
 ### [MMM-VigiCrues by Grena](https://github.com/grenagit/MMM-VigiCrues)
 
@@ -5980,6 +6082,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-VigiCrues.js`. Please declare and import your own dependency.
 
 ### [MMM-VigilanceMeteoFrance by Grena](https://github.com/grenagit/MMM-VigilanceMeteoFrance)
 
@@ -5993,6 +6096,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-VigilanceMeteoFrance.js`. Please declare and import your own dependency.
 
 ### [MMM-Vindsiden by erikmohn](https://github.com/erikmohn/MMM-Vindsiden)
 
@@ -6053,6 +6157,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WeatherAlerts.js`. Please declare and import your own dependency.
 
 ### [MMM-WeatherBackground by Brian Hepler](https://github.com/BrianHepler/MMM-WeatherBackground)
 
@@ -6073,6 +6178,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WeatherBridge.js`. Please declare and import your own dependency.
 
 ### [MMM-WeatherChart by mtatsuma](https://github.com/mtatsuma/MMM-WeatherChart)
 
@@ -6086,6 +6192,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WeatherChart.js`. Please declare and import your own dependency.
 
 ### [mmm-weatherchart by paphko](https://github.com/paphko/mmm-weatherchart)
 
@@ -6104,6 +6211,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `mmm-weatherchart.js`. Please declare and import your own dependency.
 
 ### [MMM-WeatherDependentClothes by fruestueck](https://github.com/fruestueck/MMM-WeatherDependentClothes)
 
@@ -6142,6 +6250,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WeatherGraph.js`. Please declare and import your own dependency.
 
 ### [MMM-WeatherHourlyByDay by dWoolridge](https://github.com/dWoolridge/MMM-WeatherHourlyByDay)
 
@@ -6152,6 +6261,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WeatherHourlyByDay.js`, `weatherobjecthourlybyday.js`. Please declare and import your own dependency.
 
 ### [MMM-WeatherOrNot by Mykle1](https://github.com/mykle1/MMM-WeatherOrNot)
 
@@ -6193,11 +6303,11 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Information: There are updates for 6 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
    - eslint-plugin-prettier -> ^5.5.6
-   - prettier -> ^3.8.4
-   - prettier-eslint -> ^17.0.1
-   - prettier-eslint-cli -> ^9.0.0
+   - prettier -> ^3.9.4
+   - prettier-eslint -> ^17.1.1
+   - prettier-eslint-cli -> ^9.2.1
 
 ### [MMM-WindyV3 by jhogendorn](https://github.com/jhogendorn/MMM-WindyV3)
 
@@ -6231,6 +6341,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WorldTides.js`. Please declare and import your own dependency.
 
 ### [MMM-YandexWeather by igor-semenov](https://github.com/igor-semenov/MMM-YandexWeather)
 
@@ -6252,6 +6363,7 @@ Last update: 2026-06-15T21:23:39.169Z
 16. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 18. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+19. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-YandexWeather.js`. Please declare and import your own dependency.
 
 ### [MMM-YrMeteogram by andreakn](https://github.com/andreakn/MMM-YrMeteogram)
 
@@ -6299,6 +6411,26 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-YrThen.js`. Please declare and import your own dependency.
+
+### [MMT-WeatherOneTheme by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMT-WeatherOneTheme)
+
+1. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+3. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+4. Information: There are updates for 1 dependencie(s):
+   - eslint -> ^10.6.0
+
+### [MMT-WeatherSkycons by khassel](https://gitlab.com/khassel/MMT-WeatherSkycons)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `weathertheme.js`. Please declare and import your own dependency.
 
 ### [MMM-BibleVerseClock by Tydyrium](https://github.com/Tydyrium/MMM-BibleVerseClock)
 
@@ -6346,6 +6478,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DailyBuddhismWisdom.js`. Please declare and import your own dependency.
 
 ### [MMM-DailyLDSVerse by bccmba](https://github.com/bccmba/MMM-DailyLDSVerse)
 
@@ -6456,6 +6589,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-ELMPrayerTime.js`. Please declare and import your own dependency.
 
 ### [MMM-hukamnama by harv-singh](https://github.com/harv-singh/MMM-hukamnama)
 
@@ -6542,6 +6676,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-PrayerTime.js`. Please declare and import your own dependency.
 
 ### [MMM-RandomQuranAyah by Slamet PS](https://github.com/slametps/MMM-RandomQuranAyah)
 
@@ -6572,6 +6707,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-shabbat.js`. Please declare and import your own dependency.
 
 ### [MMM-ShulSchedule by supermem613](https://github.com/supermem613/MMM-ShulSchedule)
 
@@ -6646,6 +6782,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+6. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Biathlon.js`. Please declare and import your own dependency.
 
 ### [MMM-BiathlonResults by Grena](https://github.com/grenagit/MMM-BiathlonResults)
 
@@ -6714,6 +6851,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CricketScores.js`. Please declare and import your own dependency.
 
 ### [MMM-Cricket-Scores by Dennis-Rosenbaum](https://github.com/Dennis-Rosenbaum/MMM-Cricket-Scores)
 
@@ -6727,7 +6865,7 @@ Last update: 2026-06-15T21:23:39.169Z
 1. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
 2. Information: There are updates for 2 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
 3. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
    - package.json: Line 35, Column 3: At least one contributor should be defined. (rule: package-json/require-attribution)
@@ -6776,6 +6914,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Formula1.js`. Please declare and import your own dependency.
 
 ### [MMM-F1 by jupadin](https://github.com/jupadin/MMM-F1)
 
@@ -6794,6 +6933,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-F1.js`. Please declare and import your own dependency.
 
 ### [MMM-FieldHockey-FFH by mmourcia](https://github.com/mmourcia/MMM-FieldHockey-FFH)
 
@@ -6888,6 +7028,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-IMSA.js`. Please declare and import your own dependency.
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
@@ -6938,8 +7079,8 @@ Last update: 2026-06-15T21:23:39.169Z
    - moment-timezone -> ^0.6.2
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 2. ESLint issues:
    - MMM-MyScoreboard.js: Line 731, Column 11: The value assigned to 'leagueSeparator' is not used in subsequent statements. (rule: no-useless-assignment)
    - MMM-MyScoreboard.js: Line 764, Column 7: The value assigned to 'leagueSeparator' is not used in subsequent statements. (rule: no-useless-assignment)
@@ -6955,8 +7096,8 @@ Last update: 2026-06-15T21:23:39.169Z
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 2. ESLint issues:
    - package.json: Line 40, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
    - package.json: Line 41, Column 5: Invalid contributors: item 1 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
@@ -7009,6 +7150,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MyTeams-Honours.js`. Please declare and import your own dependency.
 
 ### [MMM-MyTeams-LeagueTable by gitgitaway](https://github.com/gitgitaway/MMM-MyTeams-LeagueTable)
 
@@ -7073,6 +7215,7 @@ Last update: 2026-06-15T21:23:39.169Z
 15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 17. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+18. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NFL.js`. Please declare and import your own dependency.
 
 ### [MMM-NHL by parnic](https://github.com/parnic/MMM-NHL)
 
@@ -7135,8 +7278,8 @@ Last update: 2026-06-15T21:23:39.169Z
    - moment-timezone -> ^0.6.2
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 2. ESLint issues:
    - ESPN.js: Line 28, Column 11: The value assigned to 'event' is not used in subsequent statements. (rule: no-useless-assignment)
    - ESPN.js: Line 223, Column 9: The value assigned to 'totalTourn' is not used in subsequent statements. (rule: no-useless-assignment)
@@ -7197,6 +7340,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SleeperNFL.js`. Please declare and import your own dependency.
 
 ### [MMM-SoccerLiveScore by 0m4r](https://github.com/0m4r/MMM-SoccerLiveScore)
 
@@ -7273,6 +7417,22 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-FIFAWorldCup by Mark Simon](https://github.com/msimon360/MMM-FIFAWorldCup)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+7. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+9. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-mmpm by Bee-Mar](https://github.com/Bee-Mar/MMM-mmpm)
 
@@ -7380,6 +7540,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-AlarmClock.js`, `templates/MMM-AlarmClock.njk`. Please declare and import your own dependency.
 
 ### [MMM-AlphaESS by El-Chloro](https://github.com/El-Chloro/MMM-AlphaESS)
 
@@ -7418,7 +7579,7 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 3. Information: There are updates for 2 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
 
 ### [MMM-AnkerSolixMQTT by utzl](https://github.com/utzl/MMM-AnkerSolixMQTT)
 
@@ -7459,6 +7620,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Anycubic.js`. Please declare and import your own dependency.
 
 ### [MMM-AnyList by codetheweb](https://github.com/codetheweb/MMM-AnyList)
 
@@ -7702,6 +7864,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-BornBeforeDate.js`. Please declare and import your own dependency.
 
 ### [MMM-Bose-Soundtouch by Carl](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
 
@@ -7807,24 +7970,28 @@ Last update: 2026-06-15T21:23:39.169Z
 
 ### [MMM-CalendarExt2 by klaernie & KristjanESPERANTO](https://github.com/MagicMirrorModules/MMM-CalendarExt2)
 
-1. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 9 dependencie(s):
    - dayjs -> ^1.11.21
-   - @eslint/json -> ^2.0.0
-   - eslint -> ^10.5.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
-   - stylelint -> ^17.13.0
+   - @eslint/json -> ^2.0.1
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - markdownlint-cli2 -> ^0.23.0
+   - prettier -> ^3.9.4
+   - stylelint -> ^17.14.0
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/css -> ^1.3.0
+1. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CalendarExt3.js`. Please declare and import your own dependency.
+2. Information: There are updates for 7 dependencie(s):
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
 
@@ -7835,6 +8002,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
 6. Recommendation: No lint script found in package.json. It is recommended to add one.
 7. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CalendarExt3Agenda.js`. Please declare and import your own dependency.
 
 ### [MMM-CalendarExt3Journal by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Journal)
 
@@ -7862,6 +8030,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CalendarExtTimeline.js`. Please declare and import your own dependency.
 
 ### [MMM-CalendarExtMinimonth by klaernie](https://github.com/MagicMirrorModules/MMM-CalendarExtMinimonth)
 
@@ -7873,6 +8042,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CalendarExtMiniMonth.js`. Please declare and import your own dependency.
 
 ### [MMM-CalendarExtPlan by klaernie](https://github.com/MagicMirrorModules/MMM-CalendarExtPlan)
 
@@ -7883,6 +8053,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CalendarExtPlan.js`. Please declare and import your own dependency.
 
 ### [MMM-CalendarLegend by ex247](https://github.com/ex247/MMM-CalendarLegend)
 
@@ -7892,26 +8063,6 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
-
-### [MMM-CalendarWeek by heskja](https://github.com/heskja/MMM-CalendarWeek)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-CalendarWeek.js`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `MMM-CalendarWeek.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-9. Typo: Found `Magic Mirror` in file `calendarfetcher.js`: Replace it with `MagicMirror²`.
-10. Outdated: Found `MichMich/MagicMirror` in file `calendarfetcher.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
-11. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-12. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-13. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-14. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-17. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-Callmonitor-Current-Call by armybean](https://github.com/armybean/MMM-Callmonitor-Current-Call)
 
@@ -7928,6 +8079,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Callmonitor-Current-Call.js`. Please declare and import your own dependency.
 
 ### [camera by Rallymen007](https://github.com/Rallymen007/camera)
 
@@ -8064,6 +8216,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-CountDown.js`. Please declare and import your own dependency.
 
 ### [MMM-CountEvents by MMRIZE](https://github.com/MMRIZE/MMM-CountEvents)
 
@@ -8096,8 +8249,8 @@ Last update: 2026-06-15T21:23:39.169Z
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-CzechPost by richardfous](https://github.com/richardfous/MMM-CzechPost)
 
@@ -8166,6 +8319,19 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-DaysOff by AliceNewsum](https://github.com/AliceNewsum/MMM-DaysOff)
+
+1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+3. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+4. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-DateCounter by alltopafi](https://github.com/alltopafi/MMM-DateCounter)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -8178,6 +8344,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DateCounter.js`. Please declare and import your own dependency.
 
 ### [MMM-DenHaag-TrashCalendar by cokceken](https://github.com/cokceken/MMM-DenHaag-TrashCalendar)
 
@@ -8194,6 +8361,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DenHaag-trashcalendar.js`. Please declare and import your own dependency.
 
 ### [MMM-DiscordWatch by smiche](https://github.com/Smiche/MMM-DiscordWatch)
 
@@ -8209,6 +8377,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DiscordWatch.js`. Please declare and import your own dependency.
 
 ### [MMM-Discourse-notifications by jordy-u & OsinixXx](https://github.com/jordy-u/MMM-Discourse-notifications)
 
@@ -8265,6 +8434,20 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-Dtu by pixxelfriend](https://github.com/pixxelfriend/MMM-Dtu)
+
+1. `package.json` issue: No repository field.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+4. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+5. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Recommendation: The README seems not to have clone instructions.
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Dtu.js`. Please declare and import your own dependency.
 
 ### [MMM-Ecobee by Parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -8367,6 +8550,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-EnphaseSolar.js`. Please declare and import your own dependency.
 
 ### [MMM-EskomSePush by mumblebaj](https://github.com/mumblebaj/MMM-EskomSePush)
 
@@ -8502,6 +8686,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Fortune.js`. Please declare and import your own dependency.
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 
@@ -8734,6 +8919,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-GmailFeed.js`. Please declare and import your own dependency.
 
 ### [MMM-GmailNotifier by Kurtern84](https://github.com/kurtern84/MMM-GmailNotifier)
 
@@ -8796,6 +8982,7 @@ Last update: 2026-06-15T21:23:39.169Z
 15. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 16. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 17. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+18. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-GoogleDocs-Notes.js`. Please declare and import your own dependency.
 
 ### [MMM-GoogleKeep by taxilof](https://github.com/taxilof/MMM-GoogleKeep)
 
@@ -8846,6 +9033,7 @@ Last update: 2026-06-15T21:23:39.169Z
 15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 17. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+18. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `src/MMM-GoogleTasks.ts`. Please declare and import your own dependency.
 
 ### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
@@ -8867,6 +9055,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-gpsd.js`. Please declare and import your own dependency.
 
 ### [MMM-GPIO-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications)
 
@@ -8895,10 +9084,8 @@ Last update: 2026-06-15T21:23:39.169Z
 
 ### [MMM-GrafanaGauges by SvenSommer](https://github.com/MagicMirrorModules/MMM-GrafanaGauges)
 
-1. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+1. Recommendation: Found `npm run` in file `automated-tests.yaml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
 2. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
-3. Information: There are updates for 1 dependencie(s):
-   - commit-and-tag-version -> ^12.7.3
 
 ### [MMM-Growatt by mumblebaj](https://github.com/mumblebaj/MMM-Growatt)
 
@@ -8949,6 +9136,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-HabiticaStats.js`. Please declare and import your own dependency.
 
 ### [MMM-hass by aserramonner](https://github.com/aserramonner/MMM-HASS)
 
@@ -9016,6 +9204,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Hive.js`. Please declare and import your own dependency.
 
 ### [MMM-HolidayCountdown by TouaregWarrior](https://github.com/TouaregWarrior/MMM-HolidayCountdown)
 
@@ -9089,6 +9278,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-homeassistant-sensors.js`. Please declare and import your own dependency.
 
 ### [MMM-HomeAssistant-Touch by mathewmeconry](https://github.com/mathewmeconry/MMM-HomeAssistant-Touch)
 
@@ -9147,6 +9337,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-HomeAutomationNotifications.js`. Please declare and import your own dependency.
 
 ### [MMM-HomeConnect by djerik](https://github.com/djerik/MMM-HomeConnect)
 
@@ -9160,16 +9351,17 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-HomeConnect.js`. Please declare and import your own dependency.
 
 ### [MMM-HomeConnect2 by HeikoGr](https://github.com/HeikoGr/MMM-HomeConnect2)
 
 1. Information: There are updates for 6 dependencie(s):
-   - undici -> ^8.4.1
+   - undici -> ^8.7.0
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-n -> ^18.1.0
-   - globals -> ^17.6.0
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-n -> ^18.2.1
+   - globals -> ^17.7.0
+   - prettier -> ^3.9.4
 
 ### [MMM-Homematic by Sickboy78](https://github.com/Sickboy78/MMM-Homematic)
 
@@ -9418,6 +9610,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-iframes.js`. Please declare and import your own dependency.
 
 ### [MMM-iFrame-GSlides by jharttech](https://github.com/jharttech/MMM-iFrame-GSlides)
 
@@ -9451,6 +9644,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-iFrame-Ping.js`. Please declare and import your own dependency.
 
 ### [MMM-IntelliCenter by Parnic](https://github.com/parnic/MMM-IntelliCenter)
 
@@ -9554,6 +9748,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-IPCam.js`. Please declare and import your own dependency.
 
 ### [MMM-ISY by shbatm](https://github.com/shbatm/MMM-ISY)
 
@@ -9657,6 +9852,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Jeedom.js`. Please declare and import your own dependency.
 
 ### [MMM-jitsi by nomis6432](https://github.com/nomis6432/MMM-jitsi)
 
@@ -9697,18 +9893,20 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-JsonTable.js`. Please declare and import your own dependency.
 
 ### [MMM-KeyBindings by shbatm & KristjanESPERANTO](https://github.com/shbatm/MMM-KeyBindings)
 
-1. Information: There are updates for 8 dependencie(s):
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+1. Information: There are updates for 9 dependencie(s):
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-Keyboard by lavolp3](https://github.com/lavolp3/MMM-Keyboard)
 
@@ -9810,8 +10008,8 @@ Last update: 2026-06-15T21:23:39.169Z
    - moment-timezone -> ^0.6.2
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 3. ESLint issues:
    - package.json: Line 18, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
 
@@ -9940,6 +10138,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MacAddressScan.js`. Please declare and import your own dependency.
 
 ### [MMM-MagicHexClock by Lavve](https://github.com/Lavve/MMM-MagicHexClock)
 
@@ -9973,6 +10172,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+6. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MailMessage.js`. Please declare and import your own dependency.
 
 ### [MMM-Mashie-Skolmat by Alvinger](https://github.com/Alvinger/MMM-Mashie-Skolmat)
 
@@ -10043,6 +10243,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MensaMax.js`. Please declare and import your own dependency.
 
 ### [MMM-MHZ19 by awitwicki](https://github.com/awitwicki/MMM-MHZ19)
 
@@ -10093,6 +10294,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MicrosoftToDo.js`. Please declare and import your own dependency.
 
 ### [MMM-MieleAtHome by ViDiBi](https://github.com/SAR71/MMM-MieleAtHome)
 
@@ -10105,6 +10307,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MieleAtHome.js`. Please declare and import your own dependency.
 
 ### [MMM-MinecraftServer by ItsMeBrille](https://github.com/ItsMeBrille/MMm-MinecraftServer)
 
@@ -10273,6 +10476,15 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-NowPlayingOnSpotify by rkorell](https://github.com/rkorell/MMM-NowPlayingOnSpotify)
+
+1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+2. Recommendation: Found `require('http')` in file `SpotifyAuthServer.js`: Replace 'http' by 'node:http'.
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-qnapDownloadStation by flick116](https://github.com/flick116/MMM-qnapDownloadStation)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -10285,6 +10497,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-qnapDownloadStation.js`. Please declare and import your own dependency.
 
 ### [MMM-MQTTbridge by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MQTTbridge)
 
@@ -10396,6 +10609,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Memo.js`. Please declare and import your own dependency.
 
 ### [MMM-MotionDetector by rejas](https://github.com/rejas/MMM-MotionDetector)
 
@@ -10405,14 +10619,15 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MotionDetector.js`. Please declare and import your own dependency.
 
 ### [MMM-Multimonth by BKeyport](https://github.com/BKeyport/MMM-Multimonth)
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 2. ESLint issues:
    - MMM-Multimonth.js: Line 77, Column 13: 'dayOfWeek' is assigned a value but never used. (rule: no-unused-vars)
    - package.json: Line 1, Column 1: Property 'version' is required. (rule: package-json/require-version)
@@ -10470,6 +10685,13 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-MyGCalendar by johnster000](https://github.com/johnster000/MMM-MyGCalendar)
+
+1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+2. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+3. Information: There are updates for 1 dependencie(s):
+   - node-ical -> ^0.26.1
 
 ### [MMM-MyHomeWizard by HTilburgs](https://github.com/htilburgs/MMM-MyHomeWizard)
 
@@ -10652,6 +10874,17 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM_ncdeck.js`. Please declare and import your own dependency.
+
+### [MMM-NeedList by johnster000](https://github.com/johnster000/MMM-NeedList)
+
+1. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+2. Information: There are updates for 1 dependencie(s):
+   - express -> ^5.2.1
+3. ESLint issues:
+   - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
+   - package.json: Line 1, Column 1: Property attribution is required. Either `author` or `contributors` should be defined. (rule: package-json/require-attribution)
+   - package.json: Line 2, Column 11: Invalid name: name can no longer contain capital letters (rule: package-json/valid-name)
 
 ### [MMM-neoomAPI by Martin Loidolt](https://github.com/MartinLoidolt/MMM-neoomAPI)
 
@@ -10721,6 +10954,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Netatmo-Presence.js`. Please declare and import your own dependency.
 
 ### [MMM-NetworkScanner by nsprawling](https://github.com/nsprawling/MMM-NetworkScanner)
 
@@ -10736,6 +10970,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NetworkScanner.js`. Please declare and import your own dependency.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -10777,6 +11012,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NextEvent.js`. Please declare and import your own dependency.
 
 ### [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
 
@@ -10858,6 +11094,30 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: Found `https://cdn.jsdelivr.net` in file `index.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+
+### [MMM-NowPlaying by johnster000](https://github.com/johnster000/MMM-NowPlaying)
+
+1. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+2. Information: There are updates for 2 dependencie(s):
+   - bonjour-service -> ^1.4.2
+   - express -> ^5.2.1
+3. ESLint issues:
+   - node_helper.js: Line 56, Column 62: '_' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 56, Column 65: Empty block statement. (rule: no-empty)
+   - node_helper.js: Line 57, Column 68: '_' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 57, Column 71: Empty block statement. (rule: no-empty)
+   - node_helper.js: Line 128, Column 43: '_' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 128, Column 46: Empty block statement. (rule: no-empty)
+   - node_helper.js: Line 207, Column 35: '_' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 207, Column 38: Empty block statement. (rule: no-empty)
+   - node_helper.js: Line 274, Column 35: '_' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 274, Column 38: Empty block statement. (rule: no-empty)
+   - node_helper.js: Line 301, Column 16: '_' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 305, Column 16: '_' is defined but never used. (rule: no-unused-vars)
+   - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
+   - package.json: Line 1, Column 1: Property attribution is required. Either `author` or `contributors` should be defined. (rule: package-json/require-attribution)
+   - package.json: Line 2, Column 11: Invalid name: name can no longer contain capital letters (rule: package-json/valid-name)
+   - package.json: Line 12, Column 19: Entries in 'dependencies' are not in lexicographical order (rule: package-json/sort-collections)
 
 ### [MMM-ObjectBlocks by jimmykh](https://github.com/jimmykh/MMM-ObjectBlocks)
 
@@ -11055,6 +11315,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-OpenTherm.js`. Please declare and import your own dependency.
 
 ### [MMM-ovos-wakeword by Smart'Gic](https://github.com/smartgic/MMM-ovos-wakeword)
 
@@ -11068,6 +11329,17 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-Packages by AliceNewsum](https://github.com/AliceNewsum/MMM-Packages)
+
+1. No image found.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-PageReader by dgburr](https://github.com/dgburr/MMM-PageReader)
 
@@ -11136,6 +11408,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-PC-Stats.js`. Please declare and import your own dependency.
 
 ### [MMM-Peloton by chicohernando](https://github.com/chicohernando/MMM-Peloton)
 
@@ -11148,6 +11421,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Peloton.js`. Please declare and import your own dependency.
 
 ### [MMM-PhilipsHue by mumblebaj](https://github.com/mumblebaj/MMM-PhilipsHue)
 
@@ -11235,8 +11509,7 @@ Last update: 2026-06-15T21:23:39.169Z
 1. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 2. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 3. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
-4. Information: There are updates for 1 dependencie(s):
-   - systeminformation -> ^5.31.7
+4. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Pinfo.js`. Please declare and import your own dependency.
 
 ### [MMM-Ping by CFenner](https://github.com/CFenner/MMM-Ping)
 
@@ -11250,6 +11523,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `ping.js`. Please declare and import your own dependency.
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
 
@@ -11352,6 +11626,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Postnord.js`. Please declare and import your own dependency.
 
 ### [MMM-PresenceScreenControl by Dr. Ralf Korell](https://github.com/rkorell/MMM-PresenceScreenControl)
 
@@ -11485,16 +11760,16 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 10 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - eslint-plugin-package-json -> ^1.3.0
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - eslint-plugin-package-json -> ^1.5.0
    - eslint-plugin-playwright -> ^2.10.4
-   - globals -> ^17.6.0
-   - prettier -> ^3.8.4
+   - globals -> ^17.7.0
+   - prettier -> ^3.9.4
 
 ### [MMM-QBittorrent by th3pajay](https://github.com/th3pajay/MMM-QBittorrent)
 
@@ -11594,15 +11869,15 @@ Last update: 2026-06-15T21:23:39.169Z
 
 1. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
 2. Information: There are updates for 9 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - prettier -> ^3.9.4
 3. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
 
@@ -11688,8 +11963,8 @@ Last update: 2026-06-15T21:23:39.169Z
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js -> ^10.0.1
    - @stylistic/eslint-plugin -> ^5.10.0
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 2. ESLint issues:
    - MMM-Rest.js: Line 138, Column 23: The value assigned to 'match' is not used in subsequent statements. (rule: no-useless-assignment)
    - MMM-Rest.js: Line 162, Column 23: The value assigned to 'value' is not used in subsequent statements. (rule: no-useless-assignment)
@@ -11735,6 +12010,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-ROVA-trashcalendar.js`. Please declare and import your own dependency.
 
 ### [MMM-RubbishCollection by nikobix](https://github.com/nikobix/MMM-RubbishCollection)
 
@@ -11753,6 +12029,7 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+16. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `RubishCollection.js`. Please declare and import your own dependency.
 
 ### [MMM-Scrapey by AndyHazz](https://github.com/AndyHazz/MMM-Scrapey)
 
@@ -11941,7 +12218,7 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 4. Information: There are updates for 2 dependencie(s):
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
    - @eslint/js -> ^10.0.1
 
 ### [Shelly-HT by Medve](https://github.com/Medve01/Shelly-HT)
@@ -12017,6 +12294,7 @@ Last update: 2026-06-15T21:23:39.169Z
 18. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 19. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 20. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+21. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-ShipmentTracking.js`. Please declare and import your own dependency.
 
 ### [MMM-SimpleLogo by frdteknikelektro](https://github.com/frdteknikelektro/MMM-SimpleLogo)
 
@@ -12041,6 +12319,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SimpleNotifyTrashDay.js`. Please declare and import your own dependency.
 
 ### [MMM-SimplePIR by ryanjblajda](https://github.com/ryanjblajda/MMM-SimplePIR)
 
@@ -12112,6 +12391,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Smappee.js`. Please declare and import your own dependency.
 
 ### [MMM-SmartWebDisplay by ItsMeBrille](https://github.com/ItsMeBrille/MMM-SmartWebDisplay)
 
@@ -12120,6 +12400,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+6. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SmartWebDisplay.js`. Please declare and import your own dependency.
 
 ### [MMM-Solar by tkrywit](https://github.com/tkrywit/MMM-Solar)
 
@@ -12192,6 +12473,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+6. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Soliscloud.js`. Please declare and import your own dependency.
 
 ### [MMM-SolaxPV by KayosPi](https://github.com/KayosPi/MMM-SolaxPV)
 
@@ -12400,6 +12682,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SunnyPortal.js`. Please declare and import your own dependency.
 
 ### [MMM-SweepClock by mumblebaj](https://github.com/mumblebaj/MMM-SweepClock)
 
@@ -12407,6 +12690,7 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+5. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SweepClock.js`. Please declare and import your own dependency.
 
 ### [MMM-Swipe by Simon089](https://github.com/Simon089/MMM-Swipe)
 
@@ -12492,6 +12776,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-syslog.js`. Please declare and import your own dependency.
 
 ### [MMM-SystemInfo by dientuki](https://github.com/dientuki/MMM-SystemInfo)
 
@@ -12517,6 +12802,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SystemMonitor.js`. Please declare and import your own dependency.
 
 ### [MMM-SystemStats by fry0815](https://github.com/fry0815/MMM-SystemStats)
 
@@ -12536,13 +12822,13 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-SystemTemperature by KristjanESPERANTO](https://github.com/MagicMirrorModules/MMM-SystemTemperature)
 
 1. Information: There are updates for 7 dependencie(s):
-   - systeminformation -> ^5.31.7
-   - @eslint/css -> ^1.3.0
+   - systeminformation -> ^5.31.13
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
-   - prettier -> ^3.8.4
+   - @eslint/markdown -> ^8.0.3
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
+   - prettier -> ^3.9.4
 
 ### [MMM-Tado by WouterEekhout](https://github.com/WouterEekhout/MMM-Tado)
 
@@ -12555,6 +12841,27 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-Tasklist by johnster000](https://github.com/johnster000/MMM-Tasklist)
+
+1. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+2. Information: There are updates for 1 dependencie(s):
+   - express -> ^5.2.1
+3. ESLint issues:
+   - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
+   - package.json: Line 1, Column 1: Property attribution is required. Either `author` or `contributors` should be defined. (rule: package-json/require-attribution)
+   - package.json: Line 2, Column 11: Invalid name: name can no longer contain capital letters (rule: package-json/valid-name)
+
+### [MMM-Tasks by AliceNewsum](https://github.com/AliceNewsum/MMM-Tasks)
+
+1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+2. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+3. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-TelegramBot by MMRIZE](https://github.com/MMRIZE/MMM-TelegramBot)
 
@@ -12621,6 +12928,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TFL-Arrivals.js`. Please declare and import your own dependency.
 
 ### [MMM-Thingiverse by appdevelopmentandsuch](https://github.com/appdevelopmentandsuch/MMM-Thingiverse)
 
@@ -12672,6 +12980,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TodayBlock.js`. Please declare and import your own dependency.
 
 ### [MMM-Todoist by CBrooker](https://github.com/cbrooker/MMM-Todoist)
 
@@ -12691,6 +13000,7 @@ Last update: 2026-06-15T21:23:39.169Z
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+17. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Todoist.js`. Please declare and import your own dependency.
 
 ### [MMM-TodoList by tomoki13](https://github.com/tomoki13/MMM-TodoList)
 
@@ -12799,6 +13109,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Trello.js`. Please declare and import your own dependency.
 
 ### [MMM-TRV-WastePlan by reidarw](https://github.com/reidarw/MMM-TRV-WastePlan)
 
@@ -12811,6 +13122,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TRV-WastePlan.js`. Please declare and import your own dependency.
 
 ### [MMM-TuyaSL by Slamet PS](https://github.com/slametps/MMM-TuyaSL)
 
@@ -12868,17 +13180,12 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-UniFiHotspotVouchers by Rickey Roach](https://github.com/rroach3753/MMM-UniFiHotspotVouchers)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint -> ^10.5.0
-
-### [MMM-GoveeSmartHomeStatus by Rickey Roach](https://github.com/rroach3753/MMM-GoveeSmartHomeStatus)
-
-1. Information: There are updates for 1 dependencie(s):
-   - eslint -> ^10.5.0
+   - eslint -> ^10.6.0
 
 ### [MMM-UniFiGuestWiFi by Rickey Roach](https://github.com/rroach3753/MMM-UniFiGuestWiFi)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint -> ^10.5.0
+   - markdownlint-cli2 -> ^0.23.0
 
 ### [MMM-Universal-Pir by karsten13](https://gitlab.com/khassel/MMM-Universal-Pir)
 
@@ -13125,6 +13432,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WeeksCalendar.js`. Please declare and import your own dependency.
 
 ### [MMM-WestBerksBinDay by hdurdle](https://github.com/hdurdle/MMM-WestBerksBinDay)
 
@@ -13310,6 +13618,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `mmm-zabbix-alerts.js`. Please declare and import your own dependency.
 
 ### [MMM-1-Second-A-Day by GaryLChew](https://github.com/GaryLChew/MMM-1-Second-A-Day)
 
@@ -13419,6 +13728,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Astrology.js`. Please declare and import your own dependency.
 
 ### [MMM-AvfallshentingOslo by Blixhavn](https://github.com/blixhavn/MMM-AvfallshentingOslo)
 
@@ -13437,6 +13747,7 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+5. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-BackgroundSlideshow.js`. Please declare and import your own dependency.
 
 ### [MMM-bernwordclock by splattner](https://github.com/splattner/MMM-bernwordclock)
 
@@ -13451,6 +13762,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-bernwordclock.js`. Please declare and import your own dependency.
 
 ### [MMM-BinaryClock by Nikobix](https://github.com/nikobix/MMM-BinaryClock)
 
@@ -13467,6 +13779,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-BinaryClock.js`. Please declare and import your own dependency.
 
 ### [MMM-BirdOfTheDay by cgillinger](https://github.com/cgillinger/MMM-BirdOfTheDay)
 
@@ -13584,17 +13897,17 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
 1. Information: There are updates for 11 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - cspell -> ^10.0.1
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 2. ESLint issues:
    - package.json: Line 64, Column 22: Entries in 'devDependencies' are not in lexicographical order (rule: package-json/sort-collections)
 
@@ -13733,6 +14046,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `concertcalendar.js`. Please declare and import your own dependency.
 
 ### [MMM-Confucius-say by jttaylor](https://github.com/jttaylor/MMM-Confucius-say)
 
@@ -13788,6 +14102,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Cronixie.js`. Please declare and import your own dependency.
 
 ### [MMM-CrumblCOTW by dcwestra](https://github.com/dcwestra/MMM-CrumblCOTW)
 
@@ -13895,6 +14210,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `DailyXKCD.js`. Please declare and import your own dependency.
 
 ### [MMM-DateOnly by grabenhenrich](https://github.com/grabenhenrich/MMM-DateOnly)
 
@@ -13910,6 +14226,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DateOnly.js`. Please declare and import your own dependency.
 
 ### [MMM-DigClock by justjim1220](https://github.com/justjim1220/MMM-DigClock)
 
@@ -13923,6 +14240,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DigClock.js`. Please declare and import your own dependency.
 
 ### [MMM-DigitalAlarmClock by justjim1220](https://github.com/justjim1220/MMM-DigitalAlarmClock)
 
@@ -13939,6 +14257,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DigitalAlarmClock.js`, `MMM-DigitalAlarmClock.njk`. Please declare and import your own dependency.
 
 ### [mmm-dropbox by michael5r](https://github.com/michael5r/mmm-dropbox)
 
@@ -13958,13 +14277,13 @@ Last update: 2026-06-15T21:23:39.169Z
 
 1. Information: There are updates for 8 dependencie(s):
    - dotenv -> ^17.4.2
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
+   - prettier -> ^3.9.4
 2. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
    - package.json: Line 14, Column 17: Prefer an object locator for a repository. (rule: package-json/repository-shorthand)
@@ -13974,17 +14293,17 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
 1. Information: There are updates for 11 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 2. ESLint issues:
    - package.json: Line 25, Column 5: Invalid contributors: item 0 is invalid; it should be a person object with at least a `name` (rule: package-json/valid-contributors)
 
@@ -14212,6 +14531,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Fish.js`. Please declare and import your own dependency.
 
 ### [MMM-Flickr by kapsolas](https://github.com/kapsolas/MMM-Flickr)
 
@@ -14227,12 +14547,14 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Flickr.js`. Please declare and import your own dependency.
 
 ### [MMM-FlipClock by MarcLandis](https://github.com/MarcLandis/MMM-FlipClock)
 
 1. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+4. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-FlipClock.js`. Please declare and import your own dependency.
 
 ### [MMM-fortnite-stats by sebastian-ch](https://github.com/sebastian-ch/MMM-fortnite-stats)
 
@@ -14267,6 +14589,7 @@ Last update: 2026-06-15T21:23:39.169Z
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+5. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-FSAPI.js`. Please declare and import your own dependency.
 
 ### [MMM-FunnyHolidays by Mattileh](https://github.com/mattileh/MMM-FunnyHolidays)
 
@@ -14298,6 +14621,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-germanwordclock.js`. Please declare and import your own dependency.
 
 ### [MMM-Globe by Eunanibus](https://github.com/Eunanibus/MMM-Globe)
 
@@ -14404,6 +14728,7 @@ Last update: 2026-06-15T21:23:39.169Z
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 18. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 19. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+20. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-HappyHours.js`. Please declare and import your own dependency.
 
 ### [MMM-History by Cowboysdude](https://github.com/cowboysdude/MMM-History)
 
@@ -14419,6 +14744,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-History.js`. Please declare and import your own dependency.
 
 ### [MMM-HolidayLights by justjim1220](https://github.com/justjim1220/MMM-HolidayLights)
 
@@ -14512,15 +14838,15 @@ Last update: 2026-06-15T21:23:39.169Z
 
 1. Information: There are updates for 10 dependencie(s):
    - @eslint/js -> ^10.0.1
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-ITCH-IO by Xanthus1](https://github.com/Xanthus1/MMM-ITCH-IO)
 
@@ -14602,6 +14928,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-ImmichSlideShow.js`. Please declare and import your own dependency.
 
 ### [MMM-ImmichTileSlideShow by enarciso](https://github.com/enarciso/MMM-ImmichTileSlideShow)
 
@@ -14690,6 +15017,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-JewishDate.js`. Please declare and import your own dependency.
 
 ### [MMM-Jokes by n00b42](https://github.com/n00b42/MMM-Jokes)
 
@@ -14829,6 +15157,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-LocalEvents.js`, `eventprovider.js`, `providers/google.js`. Please declare and import your own dependency.
 
 ### [MMM-LOTR-Quotes by Jay Lingelbach](https://github.com/jaylingelbach/MMM-LOTR-Quotes)
 
@@ -14939,6 +15268,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Mensamuc.js`. Please declare and import your own dependency.
 
 ### [MMM-Minigjenbruksstasjon by Blixhavn](https://github.com/blixhavn/MMM-Minigjenbruksstasjon)
 
@@ -14948,6 +15278,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Minigjenbruksstasjon.js`. Please declare and import your own dependency.
 
 ### [MMM-Mopidy-MPD by c0d3rpu55y](https://github.com/coderpussy/MMM-Mopidy-MPD)
 
@@ -15016,6 +15347,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Meniny.js`. Please declare and import your own dependency.
 
 ### [MMM-MinecraftStatus by ralberth](https://github.com/ralberth/MMM-MinecraftStatus)
 
@@ -15113,8 +15445,8 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Information: There are updates for 4 dependencie(s):
    - ws -> ^8.21.0
    - @eslint/js -> ^10.0.1
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-MusicButler by jrettsch](https://github.com/jrettsch/MMM-MusicButler)
 
@@ -15126,6 +15458,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-MusicButler.js`. Please declare and import your own dependency.
 
 ### [MMM-MyMinecraft by framboise-pi](https://github.com/framboise-pi/MMM-MyMinecraft)
 
@@ -15261,6 +15594,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Nixie-Clock-working.js`, `MMM-Nixie-Clock.js`. Please declare and import your own dependency.
 
 ### [MMM-nixie-clock by Isaac-the-Man](https://github.com/Isaac-the-Man/MMM-nixie-clock)
 
@@ -15288,6 +15622,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-OddEven.js`. Please declare and import your own dependency.
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
 
@@ -15397,6 +15732,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `node_helper.js`. Please declare and import your own dependency.
 
 ### [MMM-parrot-or-gif by tjmnmk](https://github.com/tjmnmk/MMM-parrot-or-gif)
 
@@ -15451,13 +15787,13 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-Photoprism2 by HeikoGr](https://github.com/HeikoGr/MMM-Photoprism2)
 
 1. Information: There are updates for 8 dependencie(s):
-   - undici -> ^8.4.1
+   - undici -> ^8.7.0
    - @eslint/js -> ^10.0.1
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-n -> ^18.1.0
-   - globals -> ^17.6.0
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-n -> ^18.2.1
+   - globals -> ^17.7.0
+   - prettier -> ^3.9.4
    - prettier-plugin-jinja-template -> 2.2.0
 
 ### [MMM-PhotoStack by Skarabaeus](https://github.com/Skarabaeus/MMM-PhotoStack)
@@ -15560,6 +15896,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-PokemonGOEvents.js`. Please declare and import your own dependency.
 
 ### [MMM-profile by Kurtern84](https://github.com/kurtern84/MMM-profile)
 
@@ -15573,6 +15910,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Profile.js`. Please declare and import your own dependency.
 
 ### [MMM-Pure-Snow by ptornhult](https://github.com/ptornhult/MMM-Pure-Snow)
 
@@ -15733,6 +16071,7 @@ Last update: 2026-06-15T21:23:39.169Z
 15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 17. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+18. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Recipe.js`. Please declare and import your own dependency.
 
 ### [MMM-Reddit by kjb085](https://github.com/kjb085/MMM-Reddit)
 
@@ -15768,6 +16107,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Reddito.js`. Please declare and import your own dependency.
 
 ### [MMM-RedditKarma by rcberg3](https://github.com/rcberg3/MMM-RedditKarma)
 
@@ -15992,6 +16332,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SpaceX.js`. Please declare and import your own dependency.
 
 ### [MMM-SpinTheWheel by dentrass](https://github.com/dentrass/MMM-SpinTheWheel)
 
@@ -16151,6 +16492,7 @@ Last update: 2026-06-15T21:23:39.169Z
 18. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 19. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 20. Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it.
+21. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `src/MMM-SynPhotoSlideshow.ts`, `src/frontend/ModuleController.ts`. Please declare and import your own dependency.
 
 ### [MMM-TautulliActivity by derekn](https://github.com/derekn/MMM-TautulliActivity)
 
@@ -16168,8 +16510,8 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-TautulliLatest by Snille](https://github.com/Snille/MMM-TautulliLatest)
 
 1. Information: There are updates for 2 dependencie(s):
-   - eslint -> ^10.5.0
-   - globals -> ^17.6.0
+   - eslint -> ^10.6.0
+   - globals -> ^17.7.0
 
 ### [MMM-text-clock by ngnijland](https://github.com/ngnijland/MMM-text-clock)
 
@@ -16203,6 +16545,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TextPerWeek.js`. Please declare and import your own dependency.
 
 ### [MMM-TheSpaceDevs by AlexMNet](https://github.com/AlexMNet/MMM-TheSpaceDevs)
 
@@ -16212,6 +16555,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TheSpaceDevs.js`. Please declare and import your own dependency.
 
 ### [MMM-TicketEvents by frankhu-2021](https://github.com/frankhu-2021/MMM-TicketEvents)
 
@@ -16237,6 +16581,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TimeTreeEvent.js`. Please declare and import your own dependency.
 
 ### [MMM-Trakt by Kiina](https://github.com/Kiina/MMM-trakt)
 
@@ -16278,6 +16623,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-TvheadendDVR.js`. Please declare and import your own dependency.
 
 ### [MMM-TweetsByTimelineOrList by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-TweetsByTimelineOrList)
 
@@ -16357,6 +16703,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 5. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+6. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `PlutoTime.js`. Please declare and import your own dependency.
 
 ### [random_quotes by KirAsh4](https://github.com/KirAsh4/random_quotes)
 
@@ -16380,6 +16727,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-RandomQuotes.js`. Please declare and import your own dependency.
 
 ### [MMM-SimpleBackgroundSlideshow by muhammedsaidckr](https://github.com/muhammedsaidckr/MMM-SimpleBackgroundSlideshow)
 
@@ -16421,6 +16769,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `twitControl.js`. Please declare and import your own dependency.
 
 ### [MMM-Udvaronc by balassy](https://github.com/balassy/MMM-Udvaronc)
 
@@ -16577,6 +16926,7 @@ Last update: 2026-06-15T21:23:39.169Z
 20. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 21. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 22. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+23. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `WB-clock/WB-clock.js`, `WB-weather/WB-weather.js`. Please declare and import your own dependency.
 
 ### [MMM-WebHookAlerts by PJTewkesbury-GitHub](https://github.com/PjTewkesbury/MMM-WebHookAlerts)
 
@@ -16675,6 +17025,7 @@ Last update: 2026-06-15T21:23:39.169Z
 16. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 17. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 18. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+19. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-XKCD.js`. Please declare and import your own dependency.
 
 ### [MMM-yijv by jdonge](https://github.com/jdonge/MMM-yijv)
 
@@ -16764,18 +17115,18 @@ Last update: 2026-06-15T21:23:39.169Z
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
 1. Information: There are updates for 12 dependencie(s):
-   - @eslint/css -> ^1.3.0
+   - @eslint/css -> ^1.4.0
    - @eslint/js -> ^10.0.1
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - @stylistic/eslint-plugin -> ^5.10.0
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-import-x -> ^4.16.2
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-BabyBuddy by jualfoar](https://github.com/jualfoar/MMM-BabyBuddy)
 
@@ -16931,6 +17282,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Oura2.js`. Please declare and import your own dependency.
 
 ### [MMM-Pregnancy by bibaldo](https://github.com/bibaldo/MMM-Pregnancy)
 
@@ -16949,6 +17301,7 @@ Last update: 2026-06-15T21:23:39.169Z
 3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-PregnancyTracker.js`. Please declare and import your own dependency.
 
 ### [MMM-SkinAnalysis by Saniya Afzali](https://github.com/syedali040205/MMM-SkinAnalysis)
 
@@ -16991,6 +17344,19 @@ Last update: 2026-06-15T21:23:39.169Z
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
+### [MMM-TickRisk by fleker](https://github.com/Fleker/MMM-TickRisk)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems not to have clone instructions.
+4. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+6. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
 ### [MMM-WaterReminder by thiagomides](https://github.com/thiagomides/MMM-WaterReminder)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -17003,20 +17369,22 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WaterReminder.js`. Please declare and import your own dependency.
 
 ### [MMM-AtomVisualizer by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-AtomVisualizer)
 
-1. Information: There are updates for 10 dependencie(s):
-   - @eslint/css -> ^1.3.0
-   - @eslint/json -> ^2.0.0
-   - @eslint/markdown -> ^8.0.2
+1. Information: There are updates for 11 dependencie(s):
+   - @eslint/css -> ^1.4.0
+   - @eslint/json -> ^2.0.1
+   - @eslint/markdown -> ^8.0.3
    - commit-and-tag-version -> ^12.7.3
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-package-json -> ^1.3.0
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-import-x -> ^4.17.1
+   - eslint-plugin-package-json -> ^1.5.0
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 
 ### [MMM-BirdNET by Brian Hepler](https://github.com/BrianHepler/MMM-BirdNET)
 
@@ -17046,6 +17414,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Canvas.js`. Please declare and import your own dependency.
 
 ### [MMM-CanvasCalendar by Dale Belt](https://github.com/dbeltjr/MMM-CanvasCalendar)
 
@@ -17128,6 +17497,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `hsk-level-1.json`. Please declare and import your own dependency.
 
 ### [MMM-Planetarium by MMRIZE](https://github.com/MMRIZE/MMM-Planetarium)
 
@@ -17144,6 +17514,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `node_helper.js`. Please declare and import your own dependency.
 
 ### [MMM-PL_WOTD by mjb527](https://github.com/mjb527/MMM-PL_WOTD)
 
@@ -17204,11 +17575,11 @@ Last update: 2026-06-15T21:23:39.169Z
    - otplib -> ^13.4.1
    - @eslint/js -> ^10.0.1
    - cspell -> ^10.0.1
-   - eslint -> ^10.5.0
-   - eslint-plugin-n -> ^18.1.0
-   - globals -> ^17.6.0
-   - lint-staged -> ^17.0.7
-   - prettier -> ^3.8.4
+   - eslint -> ^10.6.0
+   - eslint-plugin-n -> ^18.2.1
+   - globals -> ^17.7.0
+   - lint-staged -> ^17.0.8
+   - prettier -> ^3.9.4
 2. ESLint issues:
    - lib/authService.js: Line 705, Column 9: The value assigned to 'effectivePersonId' is not used in subsequent statements. (rule: no-useless-assignment)
    - lib/fetchClient.js: Line 29, Column 7: There is no `cause` attached to the symptom error being thrown. (rule: preserve-caught-error)
@@ -17332,6 +17703,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-alertRsensoralerts.js`. Please declare and import your own dependency.
 
 ### [MMM-alexa by sakirtemel](https://github.com/sakirtemel/MMM-alexa)
 
@@ -17437,6 +17809,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-BMW-CC.js`. Please declare and import your own dependency.
 
 ### [MMM-BMWConnected by jannekalliola](https://github.com/jannekalliola/MMM-BMWConnected)
 
@@ -17464,6 +17837,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-BMW-DS.js`. Please declare and import your own dependency.
 
 ### [MMM-BMW-OW by Mykle1](https://github.com/mykle1/MMM-BMW-OW)
 
@@ -17477,6 +17851,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-BMW-OW.js`. Please declare and import your own dependency.
 
 ### [calendar_monthly by KirAsh4](https://github.com/KirAsh4/calendar_monthly)
 
@@ -17490,6 +17865,27 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `calendar_monthly.js`. Please declare and import your own dependency.
+
+### [MMM-CalendarWeek by heskja](https://github.com/heskja/MMM-CalendarWeek)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-CalendarWeek.js`: Replace it with `MagicMirror²`.
+3. Outdated: Found `MichMich/MagicMirror` in file `MMM-CalendarWeek.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+9. Typo: Found `Magic Mirror` in file `calendarfetcher.js`: Replace it with `MagicMirror²`.
+10. Outdated: Found `MichMich/MagicMirror` in file `calendarfetcher.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
+11. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+12. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+13. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+14. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+17. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-CARDS by Mykle1](https://github.com/mykle1/MMM-CARDS)
 
@@ -17514,6 +17910,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Census.js`. Please declare and import your own dependency.
 
 ### [MMM-Chess-Daily by nout-kleef](https://github.com/nout-kleef/MMM-Chess-Daily)
 
@@ -17533,6 +17930,7 @@ Last update: 2026-06-15T21:23:39.169Z
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+17. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Chess-Daily.js`. Please declare and import your own dependency.
 
 ### [MMM-chuck-joke by bunnymc](https://github.com/bunnymc/MMM-chuck-joke)
 
@@ -17560,6 +17958,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Climacell-Hourly.js`. Please declare and import your own dependency.
 
 ### [MMM-Cocktails by Mykle1](https://github.com/mykle1/MMM-Cocktails)
 
@@ -17595,6 +17994,7 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+9. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-COVID19.js`. Please declare and import your own dependency.
 
 ### [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
 
@@ -17703,6 +18103,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-DailyAlarm.js`. Please declare and import your own dependency.
 
 ### [MMM-darksky-hourly by JacquesCedric](https://github.com/jacquesCedric/MMM-darksky-hourly)
 
@@ -17719,6 +18120,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-darksky-hourly.js`. Please declare and import your own dependency.
 
 ### [MMM-DarkSkyRadar by vincep5](https://github.com/vincep5/MMM-DarkSkyRadar)
 
@@ -17792,6 +18194,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Dreambox.js`. Please declare and import your own dependency.
 
 ### [MMM-Dribbble by marcobiedermann](https://github.com/marcobiedermann/MMM-dribbble)
 
@@ -17819,6 +18222,19 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+
+### [MMM-DublinRTPI by galaktor](https://github.com/galaktor/MMM-DublinRTPI)
+
+1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+4. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+5. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+6. Deprecated: Found `require('request')` in file `rtpifetcher.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
 
 ### [MMM-EARTH by Mykle1](https://github.com/mykle1/MMM-EARTH)
 
@@ -17922,6 +18338,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Face-Multi-User-Recognition-SMAI.js`. Please declare and import your own dependency.
 
 ### [MMM-Facial-Recognition-OCV3 by normyx](https://github.com/normyx/MMM-Facial-Recognition-OCV3)
 
@@ -17976,6 +18393,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-FinParcel.js`. Please declare and import your own dependency.
 
 ### [MMM-FlightRadarTracker by jesmak](https://github.com/jesmak/MMM-FlightRadarTracker)
 
@@ -18005,6 +18423,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `mmm-food2fork-recipes.js`. Please declare and import your own dependency.
 
 ### [MMM-forecast-io by dmcinnes](https://github.com/dmcinnes/MMM-forecast-io)
 
@@ -18022,6 +18441,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-forecast-io.js`. Please declare and import your own dependency.
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
@@ -18077,6 +18497,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-GPSWeather.js`. Please declare and import your own dependency.
 
 ### [Hello-Lucy by Mykle1](https://github.com/mykle1/Hello-Lucy)
 
@@ -18104,6 +18525,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Hello-Mirror.js`. Please declare and import your own dependency.
 
 ### [mm-hide-all by masters1222](https://github.com/masters1222/mm-hide-all)
 
@@ -18138,6 +18560,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Homematic-Thermostats.js`, `README.md`. Please declare and import your own dependency.
 
 ### [MMM-HTTPRequestDisplay by Eunanibus](https://github.com/Eunanibus/MMM-HTTPRequestDisplay)
 
@@ -18207,6 +18630,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Instagram.js`. Please declare and import your own dependency.
 
 ### [MMM-ISS by Mykle1](https://github.com/mykle1/MMM-ISS)
 
@@ -18219,6 +18643,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-ISS.js`. Please declare and import your own dependency.
 
 ### [MMM-json-feed by amcolash](https://github.com/amcolash/MMM-json-feed)
 
@@ -18275,6 +18700,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-LibrespotJava.js`, `core/NPOS_DomBuilder.js`. Please declare and import your own dependency.
 
 ### [MMM-LICE by Mykle1](https://github.com/mykle1/MMM-LICE)
 
@@ -18287,6 +18713,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-LICE.js`. Please declare and import your own dependency.
 
 ### [MMM-Lottery by Mykle1](https://github.com/mykle1/MMM-Lottery)
 
@@ -18299,6 +18726,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Lottery.js`. Please declare and import your own dependency.
 
 ### [MMM-Lunartic by Mykle1](https://github.com/mykle1/MMM-Lunartic)
 
@@ -18361,6 +18789,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 14. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `mmm-moon-phases.js`. Please declare and import your own dependency.
 
 ### [MMM-MPD by timjong93](https://github.com/timjong93/MMM-MPD)
 
@@ -18481,6 +18910,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-NEO.js`. Please declare and import your own dependency.
 
 ### [MMM-NowPlayingOnAIMP by jesmak](https://github.com/jesmak/MMM-NowPlayingOnAIMP)
 
@@ -18492,21 +18922,6 @@ Last update: 2026-06-15T21:23:39.169Z
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
-
-### [MMM-NowPlayingOnSpotify by raywo](https://github.com/raywo/MMM-NowPlayingOnSpotify)
-
-1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
-2. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-6. Deprecated: Found `new Buffer(` in file `app.js`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
-7. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-8. Deprecated: Found `new Buffer(` in file `SpotifyConnector.js`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
 9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -18557,6 +18972,7 @@ Last update: 2026-06-15T21:23:39.169Z
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 6. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+7. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-OClock.js`. Please declare and import your own dependency.
 
 ### [MagicMirror-Olympia-Module by ghlasse](https://github.com/GHLasse/MagicMirror-Olympia-Module)
 
@@ -18572,6 +18988,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `olympia.js`. Please declare and import your own dependency.
 
 ### [MMM-PilotWX by Mykle1](https://github.com/mykle1/MMM-PilotWX)
 
@@ -18584,6 +19001,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-PilotWX.js`. Please declare and import your own dependency.
 
 ### [MMM-PLOW by Mykle1](https://github.com/mykle1/MMM-PLOW)
 
@@ -18627,6 +19045,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-Podcast2.js`. Please declare and import your own dependency.
 
 ### [MMM-Porcupine by SikandAlex](https://github.com/SikandAlex/MMM-Porcupine)
 
@@ -18682,6 +19101,7 @@ Last update: 2026-06-15T21:23:39.169Z
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+12. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-PIR.js`. Please declare and import your own dependency.
 
 ### [MMM-Pir by Coernel82](https://github.com/Coernel82/MMM-Pir)
 
@@ -18699,6 +19119,7 @@ Last update: 2026-06-15T21:23:39.169Z
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+15. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `src/components/screenDisplayer.js`. Please declare and import your own dependency.
 
 ### [MMM-PIR-Sensor-Lite by Grena](https://github.com/grenagit/MMM-PIR-Sensor-Lite)
 
@@ -18884,6 +19305,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SORT.js`. Please declare and import your own dependency.
 
 ### [MMM-SpaceLaunchNow by koxm](https://github.com/koxm/MMM-SpaceLaunchNow)
 
@@ -18897,6 +19319,7 @@ Last update: 2026-06-15T21:23:39.169Z
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+11. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SpaceLaunchNow.js`. Please declare and import your own dependency.
 
 ### [MMM-stib by danito](https://github.com/danito/MMM-stib)
 
@@ -18925,6 +19348,7 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-SunRiseSet.js`. Please declare and import your own dependency.
 
 ### [MMM-Surf by Privacywonk](https://github.com/Privacywonk/MMM-Surf)
 
@@ -18956,6 +19380,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-swisstransport.js`. Please declare and import your own dependency.
 
 ### [MagicMirror-Module-Template by roramirez](https://github.com/roramirez/MagicMirror-Module-Template)
 
@@ -19044,6 +19469,7 @@ Last update: 2026-06-15T21:23:39.169Z
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 7. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+8. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `mmm-uk-pollen-forecast.js`. Please declare and import your own dependency.
 
 ### [voicecontrol by alexyak](https://github.com/alexyak/voicecontrol)
 
@@ -19097,6 +19523,7 @@ Last update: 2026-06-15T21:23:39.169Z
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+13. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-weatherforecast.js`. Please declare and import your own dependency.
 
 ### [wuforecast by MattLugar](https://github.com/MattLugar/wuforecast)
 
@@ -19113,6 +19540,7 @@ Last update: 2026-06-15T21:23:39.169Z
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+14. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `wuforecast.js`. Please declare and import your own dependency.
 
 ### [MMM-WunderGround by RedNax67](https://github.com/RedNax67/MMM-WunderGround)
 
@@ -19154,3 +19582,4 @@ Last update: 2026-06-15T21:23:39.169Z
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No linter configuration was found. A linter is very helpful, it is worth using one even for small projects. You can use ESLint or Biome ([ESLint guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md), [Biome guide](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/biome.md)).
+10. Recommendation: Moment usage was detected, but no module-owned `moment`/`moment-timezone` dependency or import was found. This likely relies on core-provided Moment. Detected in: `MMM-WWI.js`, `README.md`. Please declare and import your own dependency.
