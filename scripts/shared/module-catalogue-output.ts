@@ -17,6 +17,7 @@ export interface ProcessedModule extends ModuleRecord {
   maintainer?: string;
   name?: string;
   outdated?: boolean;
+  watchersCount?: number;
   stars?: number;
   tags?: string[];
   url?: string;
@@ -107,6 +108,7 @@ const PROCESSED_MODULE_ALLOWED_KEYS: string[] = [
   "outdated",
   "issues",
   "stars",
+  "watchersCount",
   "license",
   "hasGithubIssues",
   "isArchived",

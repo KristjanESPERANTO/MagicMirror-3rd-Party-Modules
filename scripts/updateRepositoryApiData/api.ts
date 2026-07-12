@@ -41,6 +41,7 @@ interface RepositoryApiData {
   stargazerCount?: number;
   stargazers_count?: number;
   stars_count?: number;
+  subscribers_count?: number;
   watchers_count?: number;
   [key: string]: unknown;
 }
@@ -68,6 +69,7 @@ export interface NormalizedRepositoryMetadata {
   isArchived: boolean;
   lastCommit: string | null;
   license: string | null;
+  watchersCount?: number;
   stars: number;
 }
 
@@ -171,6 +173,7 @@ export function normalizeRepositoryData(data: RepositoryApiData, branchData: Rep
   let license: string | null = null;
   let hasGithubIssues = false;
   let lastCommit: string | null = null;
+  let watchersCount: number | undefined;
 
   switch (repoType) {
     case "github":
@@ -178,6 +181,7 @@ export function normalizeRepositoryData(data: RepositoryApiData, branchData: Rep
       license = data.license?.spdx_id ?? data.licenseInfo?.spdxId ?? null;
       hasGithubIssues = data.has_issues ?? data.hasIssuesEnabled ?? false;
       lastCommit = branchData?.commit?.author?.date ?? data.defaultBranchRef?.target?.committedDate ?? data.pushedAt ?? null;
+      watchersCount = data.subscribers_count ?? 0;
       break;
     case "gitlab":
       stars = data.star_count ?? 0;
@@ -205,6 +209,7 @@ export function normalizeRepositoryData(data: RepositoryApiData, branchData: Rep
     license,
     hasGithubIssues,
     isArchived,
-    lastCommit
+    lastCommit,
+    watchersCount
   };
 }

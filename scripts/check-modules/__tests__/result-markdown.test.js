@@ -20,6 +20,12 @@ describe("result-markdown", () => {
         name: "MMM-Boolean",
         maintainer: "Carol",
         issues: true
+      },
+      {
+        name: "MMM-Quiet",
+        maintainer: "Dana",
+        url: "https://github.com/example/MMM-Quiet",
+        watchersCount: 0
       }
     ]);
 
@@ -29,6 +35,12 @@ describe("result-markdown", () => {
         maintainer: "Alice",
         url: "https://github.com/example/MMM-Example",
         issues: ["Issue one", "Issue two"]
+      },
+      {
+        name: "MMM-Quiet",
+        maintainer: "Dana",
+        url: "https://github.com/example/MMM-Quiet",
+        issues: ["GitHub reports 0 watchers; maintainer notifications may be missed."]
       }
     ]);
   });

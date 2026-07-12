@@ -18,6 +18,7 @@ interface ProcessedModuleLike {
   issues?: boolean | string[] | string | null;
   maintainer?: string;
   name?: string;
+  watchersCount?: number;
   url?: string;
 }
 
@@ -41,13 +42,18 @@ export function collectIssueSummaries(modules: unknown[]): IssueSummary[] {
 
     const stageModule = module as ProcessedModuleLike;
     const issues = normalizeIssuesInput(stageModule.issues);
+    const watcherIssue = stageModule.watchersCount === 0
+      ? "GitHub reports 0 watchers; maintainer notifications may be missed."
+      : null;
 
-    if (issues.length === 0 || typeof stageModule.name !== "string" || typeof stageModule.maintainer !== "string") {
+    const combinedIssues = watcherIssue ? [...issues, watcherIssue] : issues;
+
+    if (combinedIssues.length === 0 || typeof stageModule.name !== "string" || typeof stageModule.maintainer !== "string") {
       return [];
     }
 
     return [{
-      issues,
+      issues: combinedIssues,
       maintainer: stageModule.maintainer,
       name: stageModule.name,
       url: typeof stageModule.url === "string" ? stageModule.url : undefined
@@ -67,6 +73,7 @@ export function buildResultMarkdown(stats: ResultMarkdownStats, summaries: Issue
     "* Some issues are opinionated recommendations. Please feel free to ignore them.",
     ""
   );
+
   lines.push("## Statistics", "");
   lines.push("|                      | number   |");
   lines.push("|:---------------------|:--------:|");
