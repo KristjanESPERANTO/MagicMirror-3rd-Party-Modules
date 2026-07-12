@@ -55,7 +55,7 @@
     "test:types": "tsc --noEmit"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx lint-staged && node --run test:spelling"
   },
   "lint-staged": {
     "*": [

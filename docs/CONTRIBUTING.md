@@ -160,6 +160,8 @@ Spelling is checked with `cspell`:
 npm run test:spelling
 ```
 
+The repository pre-commit hook also runs this spelling check before each commit.
+
 ### Golden artifacts (regression testing)
 
 Golden artifacts are reference outputs stored in `fixtures/golden/` that serve as snapshots for regression testing. They are a narrow contract guard for published artifacts, not a proof that the full pipeline is semantically correct.
