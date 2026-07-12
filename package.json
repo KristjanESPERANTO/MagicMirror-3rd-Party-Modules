@@ -120,5 +120,9 @@
       "test:types": "Run TypeScript type checks.",
       "test:unit": "Run unit tests for scripts and helpers."
     }
+  },
+  "allowScripts": {
+    "simple-git-hooks@2.13.1": true,
+    "unrs-resolver": false
   }
 }
