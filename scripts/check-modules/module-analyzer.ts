@@ -369,12 +369,73 @@ function isExcludedForMomentScan(modulePath: string, filePath: string): boolean 
     || segments.includes("coverage");
 }
 
-function searchRegexInFile(content: string, pattern: RegExp): boolean {
-  try {
-    return pattern.test(content);
-  } catch {
-    return false;
+function findReadmeConfigObjects(content: string): Array<{ hasTrailingComma: boolean }> {
+  const lines = content.split(/\r?\n/u);
+  const objects: Array<{ hasTrailingComma: boolean }> = [];
+  const headingRegex = /^(#{2,6})\s+(.+?)\s*$/u;
+  const fenceOpenRegex = /^```([A-Za-z0-9_-]+)?\s*$/u;
+  const fenceCloseRegex = /^```\s*$/u;
+
+  let inConfigSection = false;
+  let configSectionLevel = 0;
+  let inFence = false;
+  let fenceLanguage = "";
+  let fenceLines: string[] = [];
+  let fenceWasInConfigSection = false;
+
+  for (const line of lines) {
+    if (!inFence) {
+      const headingMatch = line.match(headingRegex);
+      if (headingMatch) {
+        const headingLevel = headingMatch[1].length;
+        const headingText = headingMatch[2].trim().toLowerCase();
+
+        if (headingText === "config" || headingText === "configuration") {
+          inConfigSection = true;
+          configSectionLevel = headingLevel;
+        }
+        else if (inConfigSection && headingLevel <= configSectionLevel) {
+          inConfigSection = false;
+        }
+      }
+
+      const fenceOpenMatch = line.match(fenceOpenRegex);
+      if (fenceOpenMatch) {
+        inFence = true;
+        fenceLanguage = (fenceOpenMatch[1] ?? "").toLowerCase();
+        fenceLines = [];
+        fenceWasInConfigSection = inConfigSection;
+      }
+
+      continue;
+    }
+
+    if (fenceCloseRegex.test(line)) {
+      const isJavaScriptFence = fenceLanguage === "" || fenceLanguage === "js" || fenceLanguage === "javascript";
+      if (fenceWasInConfigSection && isJavaScriptFence) {
+        const blockText = fenceLines.join("\n");
+        const hasModuleKey = /\bmodule\s*:/u.test(blockText);
+        const hasConfigKey = /\bconfig\s*:/u.test(blockText);
+
+        if (hasModuleKey && hasConfigKey) {
+          const lastNonEmptyLine = [...fenceLines].reverse().find((fenceLine) => fenceLine.trim().length > 0) ?? "";
+          objects.push({
+            hasTrailingComma: /^\s*\},\s*(?:\/\/.*)?$/u.test(lastNonEmptyLine)
+          });
+        }
+      }
+
+      inFence = false;
+      fenceLanguage = "";
+      fenceLines = [];
+      fenceWasInConfigSection = false;
+      continue;
+    }
+
+    fenceLines.push(line);
   }
+
+  return objects;
 }
 
 /**
@@ -513,8 +574,8 @@ export async function analyzeModule(
       }
 
       // Check for config example
-      const configRegex = /\{\s*[^}]*?\s*config:\s*\{\s*[^}]*\}(?:[,\s]\s*[^}]*?)}/;
-      const hasConfigExample = searchRegexInFile(content, configRegex);
+      const configObjects = findReadmeConfigObjects(content);
+      const hasConfigExample = configObjects.length > 0;
 
       if (!hasConfigExample) {
         const falsePositivesConfig = ["MMM-CalendarExt2"];
@@ -525,8 +586,7 @@ export async function analyzeModule(
         }
       } else {
         // Check for trailing comma
-        const trailingCommaRegex = /\{\s*[^}]*?\s*config:\s*\{\s*[^}]*\}(?:[,\s]\s*[^}]*?)},/;
-        const hasTrailingComma = searchRegexInFile(content, trailingCommaRegex);
+        const hasTrailingComma = configObjects.some((object) => object.hasTrailingComma);
         const falsePositivesTrailing = ["MMM-MealieMenu", "MMM-Remote-Control"];
         if (!hasTrailingComma && !falsePositivesTrailing.includes(moduleName)) {
           issues.push(

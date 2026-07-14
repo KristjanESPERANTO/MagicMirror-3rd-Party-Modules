@@ -21,12 +21,17 @@ async function createTempModule() {
       "Update steps",
       "",
       "## Config",
+      "```javascript",
       "{",
       "  module: \"MMM-Remote-Control\",",
       "  config: {",
+      "    credentials: {",
+      "      clientId: \"\"",
+      "    },",
       "    foo: true",
-      "  },",
+      "  }",
       "},",
+      "```",
       ""
     ].join("\n")
   );
