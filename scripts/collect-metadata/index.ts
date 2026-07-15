@@ -311,6 +311,31 @@ async function fetchIndividualModule(module: EnrichedModule, repoType: string, c
   }
 }
 
+/**
+ * Public fallback for unauthenticated GitHub API rate limits.
+ * GitHub's commits Atom feed is typically still reachable when REST API returns 403.
+ */
+async function fetchGitHubLastCommitFromAtom(moduleUrl: string, client: HttpClient): Promise<string | null> {
+  const repoId = getRepositoryId(moduleUrl);
+  if (!repoId) {
+    return null;
+  }
+
+  try {
+    const atomUrl = `https://github.com/${repoId}/commits.atom`;
+    const result = await client.getText(atomUrl) as FetchTextResult;
+    if (!result.ok) {
+      return null;
+    }
+
+    const updatedMatch = result.data.match(/<updated>([^<]+)<\/updated>/u);
+    return updatedMatch?.[1] ?? null;
+  }
+  catch {
+    return null;
+  }
+}
+
 async function appendGitHubBatchResult({
   module,
   batchResults,
@@ -428,6 +453,25 @@ async function processModule(module: EnrichedModule, context: ProcessModuleConte
       ...module,
       ...recovery.data
     };
+  }
+
+  if (repoType === "github" && !process.env.GITHUB_TOKEN && recovery.error.message.includes("403")) {
+    const lastCommitFromAtom = await fetchGitHubLastCommitFromAtom(module.url, client);
+    if (lastCommitFromAtom) {
+      const atomRecovery: CachedRepositoryValue = {
+        lastCommit: lastCommitFromAtom,
+        isArchived: typeof module.isArchived === "boolean" ? module.isArchived : undefined,
+        hasGithubIssues: typeof module.hasGithubIssues === "boolean" ? module.hasGithubIssues : undefined
+      };
+
+      repositoryCache.set(repoId, atomRecovery);
+      logger.info(`Recovered ${module.name} lastCommit via GitHub Atom fallback`);
+
+      return {
+        ...module,
+        ...atomRecovery
+      };
+    }
   }
 
   logger.warn(`Failed to fetch metadata for ${module.name}`, { url: module.url, error: recovery.error.message });

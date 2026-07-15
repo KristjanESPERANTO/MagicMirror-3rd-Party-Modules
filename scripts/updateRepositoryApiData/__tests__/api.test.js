@@ -28,4 +28,15 @@ describe("updateRepositoryApiData/api", () => {
 
     assert.strictEqual(normalized.watchersCount, 7);
   });
+
+  it("does not infer watchersCount when subscribers_count is missing", () => {
+    const normalized = normalizeRepositoryData({
+      stargazers_count: 12,
+      has_issues: true,
+      archived: false,
+      defaultBranchRef: { target: { committedDate: "2026-01-01T00:00:00.000Z" } }
+    }, null, "github");
+
+    assert.strictEqual(typeof normalized.watchersCount, "undefined");
+  });
 });

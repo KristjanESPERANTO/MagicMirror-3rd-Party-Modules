@@ -37,6 +37,7 @@ interface RepositoryApiData {
   licenses?: Array<string | null>;
   mainbranch?: { name?: string | null } | null;
   pushedAt?: string | null;
+  pushed_at?: string | null;
   star_count?: number;
   stargazerCount?: number;
   stargazers_count?: number;
@@ -180,8 +181,13 @@ export function normalizeRepositoryData(data: RepositoryApiData, branchData: Rep
       stars = data.stargazers_count ?? data.stargazerCount ?? 0;
       license = data.license?.spdx_id ?? data.licenseInfo?.spdxId ?? null;
       hasGithubIssues = data.has_issues ?? data.hasIssuesEnabled ?? false;
-      lastCommit = branchData?.commit?.author?.date ?? data.defaultBranchRef?.target?.committedDate ?? data.pushedAt ?? null;
-      watchersCount = data.subscribers_count ?? 0;
+      lastCommit = branchData?.commit?.author?.date
+        ?? data.defaultBranchRef?.target?.committedDate
+        ?? data.pushed_at
+        ?? data.pushedAt
+        ?? null;
+      // Only trust an explicit API value. GraphQL batch payloads do not provide subscribers_count.
+      watchersCount = typeof data.subscribers_count === "number" ? data.subscribers_count : undefined;
       break;
     case "gitlab":
       stars = data.star_count ?? 0;

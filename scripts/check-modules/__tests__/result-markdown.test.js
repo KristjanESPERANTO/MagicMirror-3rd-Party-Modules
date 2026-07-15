@@ -26,6 +26,12 @@ describe("result-markdown", () => {
         maintainer: "Dana",
         url: "https://github.com/example/MMM-Quiet",
         watchersCount: 0
+      },
+      {
+        name: "MMM-NotGitHub",
+        maintainer: "Erin",
+        url: "https://gitlab.com/example/MMM-NotGitHub",
+        watchersCount: 0
       }
     ]);
 

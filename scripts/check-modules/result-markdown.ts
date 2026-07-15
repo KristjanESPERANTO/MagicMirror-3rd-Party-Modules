@@ -22,6 +22,20 @@ interface ProcessedModuleLike {
   url?: string;
 }
 
+function isGitHubUrl(url: unknown): boolean {
+  if (typeof url !== "string" || url.length === 0) {
+    return false;
+  }
+
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    return host === "github.com" || host === "www.github.com";
+  }
+  catch {
+    return false;
+  }
+}
+
 export function normalizeIssuesInput(issues: string[] | string | boolean | null | undefined): string[] {
   if (Array.isArray(issues)) {
     return issues.slice();
@@ -42,7 +56,7 @@ export function collectIssueSummaries(modules: unknown[]): IssueSummary[] {
 
     const stageModule = module as ProcessedModuleLike;
     const issues = normalizeIssuesInput(stageModule.issues);
-    const watcherIssue = stageModule.watchersCount === 0
+    const watcherIssue = isGitHubUrl(stageModule.url) && stageModule.watchersCount === 0
       ? "GitHub reports 0 watchers; maintainer notifications may be missed."
       : null;
 
