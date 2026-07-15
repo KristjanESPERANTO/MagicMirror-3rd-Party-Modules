@@ -39,4 +39,16 @@ describe("updateRepositoryApiData/api", () => {
 
     assert.strictEqual(typeof normalized.watchersCount, "undefined");
   });
+
+  it("uses GraphQL watchers totalCount when subscribers_count is missing", () => {
+    const normalized = normalizeRepositoryData({
+      stargazers_count: 12,
+      watchers: { totalCount: 4 },
+      has_issues: true,
+      archived: false,
+      defaultBranchRef: { target: { committedDate: "2026-01-01T00:00:00.000Z" } }
+    }, null, "github");
+
+    assert.strictEqual(normalized.watchersCount, 4);
+  });
 });

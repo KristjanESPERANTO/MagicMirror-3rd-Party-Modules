@@ -43,6 +43,7 @@ interface RepositoryApiData {
   stargazers_count?: number;
   stars_count?: number;
   subscribers_count?: number;
+  watchers?: { totalCount?: number };
   watchers_count?: number;
   [key: string]: unknown;
 }
@@ -186,8 +187,10 @@ export function normalizeRepositoryData(data: RepositoryApiData, branchData: Rep
         ?? data.pushed_at
         ?? data.pushedAt
         ?? null;
-      // Only trust an explicit API value. GraphQL batch payloads do not provide subscribers_count.
-      watchersCount = typeof data.subscribers_count === "number" ? data.subscribers_count : undefined;
+      // Prefer the REST subscribers_count, then GraphQL watchers.totalCount.
+      watchersCount = typeof data.subscribers_count === "number"
+        ? data.subscribers_count
+        : (typeof data.watchers?.totalCount === "number" ? data.watchers.totalCount : undefined);
       break;
     case "gitlab":
       stars = data.star_count ?? 0;

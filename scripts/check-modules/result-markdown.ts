@@ -57,7 +57,7 @@ export function collectIssueSummaries(modules: unknown[]): IssueSummary[] {
     const stageModule = module as ProcessedModuleLike;
     const issues = normalizeIssuesInput(stageModule.issues);
     const watcherIssue = isGitHubUrl(stageModule.url) && stageModule.watchersCount === 0
-      ? "GitHub reports 0 watchers; maintainer notifications may be missed."
+      ? "GitHub reports 0 subscribers (Watch); maintainer notifications may be missed."
       : null;
 
     const combinedIssues = watcherIssue ? [...issues, watcherIssue] : issues;

@@ -16,7 +16,7 @@ test("runCollectMetadata retries repositories even when a stale negative cache e
   const cachePath = join(cacheDir, "repository-api-cache.json");
   const repoId = "MagicMirrorOrg/MagicMirror";
   const cachePayload = {
-    version: "repository-api/v1",
+    version: "repository-api/v2",
     generatedAt: "2026-06-24T00:00:00.000Z",
     entries: {
       [repoId]: {

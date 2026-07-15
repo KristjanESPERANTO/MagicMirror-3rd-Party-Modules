@@ -52,6 +52,7 @@ interface GraphQlRepoData {
   hasIssuesEnabled?: boolean;
   isArchived?: boolean;
   stargazerCount?: number;
+  watchers?: { totalCount?: number };
   [key: string]: unknown;
 }
 
@@ -143,7 +144,7 @@ const httpClient = createHttpClient({ rateLimiter });
 const repositoryCache = createPersistentCache({
   filePath: REPOSITORY_CACHE_PATH,
   defaultTtlMs: REPOSITORY_CACHE_TTL_MS,
-  version: "repository-api/v1"
+  version: "repository-api/v2"
 });
 
 /**
@@ -185,6 +186,7 @@ async function fetchGitHubBatch(modules: EnrichedModule[]): Promise<GitHubBatchR
         ${alias}: repository(owner: "${owner}", name: "${name}") {
           openIssues: issues(states: OPEN) { totalCount }
           stargazerCount
+          watchers { totalCount }
           isArchived
           isDisabled
           hasIssuesEnabled
