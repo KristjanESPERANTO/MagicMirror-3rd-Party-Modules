@@ -1,6 +1,6 @@
 {
-  "issueCounter": 14752,
-  "lastUpdate": "2026-07-05T12:56:10.947Z",
+  "issueCounter": 14766,
+  "lastUpdate": "2026-07-15T18:50:24.938Z",
   "maintainer": {
     "0lek": 1,
     "0m4r": 3,
@@ -175,7 +175,6 @@
     "MStoltzfus": 1,
     "MajorChris1983": 1,
     "MarcLandis": 4,
-    "Mark Simon": 1,
     "Martin Andreassen": 1,
     "Martin Kooij": 1,
     "Martin Loidolt": 1,
@@ -339,6 +338,7 @@
     "andoramb": 1,
     "andreakn": 1,
     "andrecarlucci": 1,
+    "andyklimczak": 1,
     "anthpham": 1,
     "appdevelopmentandsuch": 1,
     "arirobinson": 1,
@@ -642,6 +642,7 @@
     "mrdis": 2,
     "mrinzis": 1,
     "ms-zone-41": 1,
+    "msimon360": 3,
     "mstarzec386": 1,
     "msteinkogler": 1,
     "mtatsuma": 2,
@@ -710,7 +711,7 @@
     "relm923": 2,
     "retroflex": 8,
     "richardfous": 2,
-    "rkorell": 2,
+    "rkorell": 3,
     "robotfishe": 2,
     "ronny3050": 2,
     "roramirez": 1,
@@ -824,7 +825,7 @@
     "vita10gy": 1,
     "vpilo": 1,
     "wathmal": 1,
-    "werthdavid": 3,
+    "werthdavid": 2,
     "whyjustin": 1,
     "wiedsee": 1,
     "wiesty": 4,
@@ -850,12 +851,12 @@
     "zuo000": 1,
     "zzflops": 1
   },
-  "moduleCounter": 1433,
-  "modulesWithImageCounter": 1015,
-  "modulesWithIssuesCounter": 1431,
+  "moduleCounter": 1436,
+  "modulesWithImageCounter": 1021,
+  "modulesWithIssuesCounter": 1435,
   "repositoryHoster": {
     "bitbucket": 1,
-    "github": 1419,
+    "github": 1422,
     "gitlab": 13
   }
 }

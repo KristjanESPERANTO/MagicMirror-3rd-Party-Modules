@@ -847,6 +847,22 @@
       "url": "https://github.com/AndyHazz/MMM-Scrapey"
     },
     {
+      "category": "Entertainment / Misc",
+      "description": "Watch the top live games on lichess.",
+      "hasGithubIssues": null,
+      "id": "andyklimczak/MMM-lichess-tv-live",
+      "isArchived": null,
+      "license": "SEE LICENSE IN LICENSE.md",
+      "maintainer": "andyklimczak",
+      "maintainerURL": "https://github.com/andyklimczak",
+      "name": "MMM-lichess-tv-live",
+      "tags": [
+        "lichess",
+        "chess"
+      ],
+      "url": "https://github.com/andyklimczak/MMM-lichess-tv-live"
+    },
+    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology. Depends on go2rtc installed.",
       "hasGithubIssues": true,
@@ -1099,14 +1115,6 @@
       "maintainer": "ASteinsdoerfer",
       "maintainerURL": "https://github.com/ASteinsdoerfer",
       "name": "MMM-HusqvarnaAutomower",
-      "tags": [
-        "husqvarna",
-        "automower",
-        "smartmirror",
-        "modul",
-        "open-source",
-        "smart home"
-      ],
       "url": "https://github.com/ASteinsdoerfer/MMM-HusqvarnaAutomower"
     },
     {
@@ -2655,6 +2663,7 @@
       "description": "Display METAR data for airports world-wide. (optionally no formatting)",
       "hasGithubIssues": true,
       "id": "calonmerc/MMM-Metar",
+      "image": "MMM-Metar---calonmerc.webp",
       "isArchived": false,
       "license": "Apache-2.0",
       "maintainer": "calonmerc",
@@ -6097,7 +6106,7 @@
       "url": "https://github.com/fewieden/MMM-VocabularyTrainer"
     },
     {
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
       "hasGithubIssues": true,
       "id": "fewieden/MMM-voice",
@@ -6106,6 +6115,7 @@
       "maintainer": "fewieden",
       "maintainerURL": "https://github.com/fewieden",
       "name": "MMM-voice",
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
       "tags": [
         "voice recognition",
         "speech to text"
@@ -6850,7 +6860,15 @@
       "tags": [
         "football",
         "fixtures",
-        "celtic"
+        "soccer",
+        "sports",
+        "team-agnostic",
+        "celtic",
+        "rangers",
+        "manchester united",
+        "liverpool",
+        "arsenal",
+        "barcelona"
       ],
       "url": "https://github.com/gitgitaway/MMM-MyTeams-Fixtures"
     },
@@ -6870,6 +6888,7 @@
         "soccer",
         "celtic",
         "honours",
+        "trophys",
         "myteams"
       ],
       "url": "https://github.com/gitgitaway/MMM-MyTeams-Honours"
@@ -8997,6 +9016,11 @@
       "maintainerURL": "https://github.com/jimbydude",
       "name": "MMM-Face-Multi-User-Recognition-SMAI",
       "outdated": "Abandoned. No updates since years. Seems not to work anymore.",
+      "tags": [
+        "face-recognition",
+        "mmm-face-reco-dnn",
+        "smart-mirror"
+      ],
       "url": "https://github.com/jimbydude/MMM-Face-Multi-User-Recognition-SMAI"
     },
     {
@@ -11167,14 +11191,20 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "description": "Display mini month calendar. This is a plugin module for `MMM-CalendarExt2`.",
+      "description": "Display mini month calendar. Works with the default `calendar` module or `MMM-CalendarExt2`.",
       "hasGithubIssues": null,
-      "id": "MagicMirrorModules/MMM-CalendarExtMinimonth",
+      "id": "MagicMirrorModules/MMM-CalendarExtMiniMonth",
+      "image": "MMM-CalendarExtMiniMonth---klaernie.webp",
       "isArchived": null,
+      "license": "MIT",
       "maintainer": "klaernie",
       "maintainerURL": "https://github.com/MagicMirrorModules",
-      "name": "MMM-CalendarExtMinimonth",
-      "url": "https://github.com/MagicMirrorModules/MMM-CalendarExtMinimonth"
+      "name": "MMM-CalendarExtMiniMonth",
+      "tags": [
+        "calendar",
+        "minimonth"
+      ],
+      "url": "https://github.com/MagicMirrorModules/MMM-CalendarExtMiniMonth"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -11189,13 +11219,17 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "description": "Display current timeline schedules. This is a plugin module for `MMM-CalendarExt2`.",
+      "description": "Display current timeline schedules. Works with the default `calendar` module or `MMM-CalendarExt2`.",
       "hasGithubIssues": null,
       "id": "MagicMirrorModules/MMM-CalendarExtTimeline",
       "isArchived": null,
       "maintainer": "klaernie",
       "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-CalendarExtTimeline",
+      "tags": [
+        "calendar",
+        "timeline"
+      ],
       "url": "https://github.com/MagicMirrorModules/MMM-CalendarExtTimeline"
     },
     {
@@ -12422,6 +12456,7 @@
       "description": "Presenting events as daily/weekly journal style.",
       "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3Journal",
+      "image": "MMM-CalendarExt3Journal---MMRIZE.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "MMRIZE",
@@ -12958,15 +12993,40 @@
     },
     {
       "category": "Sports",
-      "description": "Displays the FIFA World Cup Bracket - Live.",
+      "description": "Displays a mirrored knockout tournament bracket for any sport.",
+      "hasGithubIssues": null,
+      "id": "msimon360/MMM-BracketEngine",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "msimon360",
+      "maintainerURL": "https://github.com/msimon360",
+      "name": "MMM-BracketEngine",
+      "url": "https://github.com/msimon360/MMM-BracketEngine"
+    },
+    {
+      "category": "Sports",
+      "description": "Displays the FIFA World Cup Bracket - live.",
       "hasGithubIssues": null,
       "id": "msimon360/MMM-FIFAWorldCup",
       "isArchived": null,
       "license": "MIT",
-      "maintainer": "Mark Simon",
+      "maintainer": "msimon360",
       "maintainerURL": "https://github.com/msimon360",
       "name": "MMM-FIFAWorldCup",
       "url": "https://github.com/msimon360/MMM-FIFAWorldCup"
+    },
+    {
+      "category": "Weather",
+      "description": "A Weather module and standalone provider for a Personal Weather Station at [Weather Underground](https://www.wunderground.com).",
+      "hasGithubIssues": null,
+      "id": "msimon360/MMM-PWSWeather",
+      "image": "MMM-PWSWeather---msimon360.webp",
+      "isArchived": null,
+      "license": "ISC",
+      "maintainer": "msimon360",
+      "maintainerURL": "https://github.com/msimon360",
+      "name": "MMM-PWSWeather",
+      "url": "https://github.com/msimon360/MMM-PWSWeather"
     },
     {
       "category": "Weather",
@@ -14442,10 +14502,17 @@
       "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
       "hasGithubIssues": null,
       "id": "njwilliams/MMM-PlaceInfo",
+      "image": "MMM-PlaceInfo---njwilliams.webp",
       "isArchived": null,
+      "license": "MIT",
       "maintainer": "njwilliams",
       "maintainerURL": "https://github.com/njwilliams",
       "name": "MMM-PlaceInfo",
+      "tags": [
+        "weather",
+        "currency",
+        "place"
+      ],
       "url": "https://github.com/njwilliams/MMM-PlaceInfo"
     },
     {
@@ -15396,6 +15463,11 @@
       "maintainer": "pixxelfriend",
       "maintainerURL": "https://github.com/pixxelfriend",
       "name": "MMM-Luftdaten",
+      "tags": [
+        "luftdaten",
+        "sensor-community",
+        "airrohr"
+      ],
       "url": "https://github.com/pixxelfriend/MMM-Luftdaten"
     },
     {
@@ -16311,6 +16383,7 @@
       "maintainerURL": "https://github.com/RineshRamadhin",
       "name": "MMM-Lastfm",
       "tags": [
+        "media",
         "spotify",
         "last.fm",
         "youtube",
@@ -16323,6 +16396,23 @@
         "pandora"
       ],
       "url": "https://github.com/RineshRamadhin/MMM-Lastfm"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display a Bring! shopping list in a flexible view and touch support.",
+      "hasGithubIssues": null,
+      "id": "rkorell/MMM-Bring",
+      "image": "MMM-Bring---rkorell.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "rkorell",
+      "maintainerURL": "https://github.com/rkorell",
+      "name": "MMM-Bring",
+      "tags": [
+        "bring",
+        "shopping-list"
+      ],
+      "url": "https://github.com/rkorell/MMM-Bring"
     },
     {
       "category": "Entertainment / Misc",
@@ -16847,6 +16937,12 @@
       "maintainer": "sanghviharshit",
       "maintainerURL": "https://github.com/sanghviharshit",
       "name": "MMM-TemperatureRadar",
+      "tags": [
+        "temperature",
+        "radar",
+        "home-assistant",
+        "chart"
+      ],
       "url": "https://github.com/sanghviharshit/MMM-TemperatureRadar"
     },
     {
@@ -17973,7 +18069,11 @@
       "maintainerURL": "https://github.com/Snille",
       "name": "MMM-HideAll",
       "tags": [
-        "smart-mirror"
+        "visibility",
+        "show",
+        "hide",
+        "screen",
+        "toggle"
       ],
       "url": "https://github.com/Snille/MMM-HideAll"
     },
@@ -19130,6 +19230,10 @@
       "maintainer": "themox",
       "maintainerURL": "https://github.com/themox",
       "name": "MMM-EveryNews",
+      "tags": [
+        "news",
+        "utility"
+      ],
       "url": "https://github.com/themox/MMM-EveryNews"
     },
     {
@@ -19137,10 +19241,17 @@
       "description": "A more detailed Oura data display including readiness scores and heart rate data.",
       "hasGithubIssues": true,
       "id": "themox/MMM-Oura2",
+      "image": "MMM-Oura2---themox.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "themox",
       "maintainerURL": "https://github.com/themox",
       "name": "MMM-Oura2",
+      "tags": [
+        "fitness",
+        "health",
+        "wearables"
+      ],
       "url": "https://github.com/themox/MMM-Oura2"
     },
     {
@@ -19880,6 +19991,10 @@
       "maintainer": "TouaregWarrior",
       "maintainerURL": "https://github.com/TouaregWarrior",
       "name": "MMM-HolidayCountdown",
+      "tags": [
+        "holiday",
+        "trip"
+      ],
       "url": "https://github.com/TouaregWarrior/MMM-HolidayCountdown"
     },
     {
@@ -19894,9 +20009,8 @@
       "maintainerURL": "https://github.com/TouaregWarrior",
       "name": "MMM-MortgageCountdown",
       "tags": [
-        "mortage",
-        "finance",
-        "countdown"
+        "mortgage",
+        "house"
       ],
       "url": "https://github.com/TouaregWarrior/MMM-MortgageCountdown"
     },
@@ -19911,6 +20025,10 @@
       "maintainer": "TouaregWarrior",
       "maintainerURL": "https://github.com/TouaregWarrior",
       "name": "MMM-OctoGo",
+      "tags": [
+        "octopus",
+        "energy"
+      ],
       "url": "https://github.com/TouaregWarrior/MMM-OctoGo"
     },
     {
@@ -19937,6 +20055,10 @@
       "maintainer": "TouaregWarrior",
       "maintainerURL": "https://github.com/TouaregWarrior",
       "name": "MMM-SpaceLaunch",
+      "tags": [
+        "spacecraft",
+        "launch"
+      ],
       "url": "https://github.com/TouaregWarrior/MMM-SpaceLaunch"
     },
     {
@@ -20353,7 +20475,17 @@
       "name": "MMM-S3Photos",
       "tags": [
         "s3",
+        "aws",
         "photos",
+        "videos",
+        "photo",
+        "video",
+        "slideshow",
+        "background",
+        "wallpaper",
+        "lambda",
+        "cdk",
+        "serverless",
         "media"
       ],
       "url": "https://github.com/uphillcheddar/MMM-S3Photos"
@@ -20727,22 +20859,6 @@
       "maintainerURL": "https://github.com/wctimmer",
       "name": "MMM-DagelijksWoord",
       "url": "https://github.com/wctimmer/MMM-DagelijksWoord"
-    },
-    {
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "description": "Display a Bring! shopping list in a flexible view and touch support.",
-      "hasGithubIssues": true,
-      "id": "werthdavid/MMM-Bring",
-      "image": "MMM-Bring---werthdavid.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "werthdavid",
-      "maintainerURL": "https://github.com/werthdavid",
-      "name": "MMM-Bring",
-      "tags": [
-        "bring"
-      ],
-      "url": "https://github.com/werthdavid/MMM-Bring"
     },
     {
       "category": "Development / Core MagicMirror²",
