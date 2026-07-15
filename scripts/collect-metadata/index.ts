@@ -1,6 +1,11 @@
 /* Unified metadata collector for stage 1+2 */
 
-import { fetchRepositoryData, normalizeRepositoryData } from "../updateRepositoryApiData/api.ts";
+import {
+  fetchRepositoryData,
+  getRepositoryApiMetrics,
+  normalizeRepositoryData,
+  resetRepositoryApiMetrics
+} from "../updateRepositoryApiData/api.ts";
 import type { NormalizedRepositoryMetadata } from "../updateRepositoryApiData/api.ts";
 import { getRepositoryId, getRepositoryType } from "../updateRepositoryApiData/helpers.ts";
 import { createHttpClient } from "../shared/http-client.ts";
@@ -69,6 +74,12 @@ interface ModuleStats {
   misses: number;
 }
 
+interface GitHubBatchDiagnostics {
+  individualFallbackAttempts: number;
+  individualFallbackSuccesses: number;
+  splitRetries: number;
+}
+
 interface CircuitBreaker {
   consecutive403Errors: number;
   stopFetching: boolean;
@@ -95,10 +106,12 @@ interface IndividualFetchFailure {
 }
 
 type IndividualFetchResult = IndividualFetchSuccess | IndividualFetchFailure;
+type IndividualFetchSource = "direct" | "batch-recovery";
 
 interface AppendGitHubBatchResultOptions {
   batchFailed: boolean;
   batchResults: Record<string, GraphQlRepoData>;
+  diagnostics: GitHubBatchDiagnostics;
   enrichedModules: EnrichedModule[];
   module: EnrichedModule;
   previousModulesMap: Map<string, EnrichedModule>;
@@ -132,6 +145,7 @@ const WIKI_URL = "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMir
 const REPOSITORY_CACHE_PATH = path.join("website", "data", "cache", "repository-api-cache.json");
 const REPOSITORY_CACHE_TTL_MS = 1000 * 60 * 60 * 24 * 3; // 3 days
 const GITHUB_GRAPHQL_BATCH_SIZE = 100;
+const GITHUB_GRAPHQL_MIN_BATCH_SIZE = 20;
 const FORCE_REFRESH = process.env.FORCE_REFRESH === "true";
 
 const rateLimiter = createRateLimiter({
@@ -297,9 +311,16 @@ function getFallbackOrOriginal(module: EnrichedModule, previousModulesMap: Map<s
 /**
  * Helper to fetch individual repository data.
  */
-async function fetchIndividualModule(module: EnrichedModule, repoType: string, client: HttpClient): Promise<IndividualFetchResult> {
+async function fetchIndividualModule(
+  module: EnrichedModule,
+  repoType: string,
+  client: HttpClient,
+  source: IndividualFetchSource
+): Promise<IndividualFetchResult> {
   try {
-    const { response, data, branchData } = await fetchRepositoryData(module, client);
+    const { response, data, branchData } = await fetchRepositoryData(module, client, process.env, {
+      githubCommitCallSource: repoType === "github" ? source : undefined
+    });
 
     if (response && !response.ok) {
       throw new Error(`API Error: ${response.status} ${response.statusText || ""}`);
@@ -342,6 +363,7 @@ async function appendGitHubBatchResult({
   module,
   batchResults,
   batchFailed,
+  diagnostics,
   previousModulesMap,
   stats,
   enrichedModules
@@ -371,10 +393,15 @@ async function appendGitHubBatchResult({
     logger.warn(`No data returned for ${module.name} in batch`, { url: module.url });
   }
 
-  const recovery = await fetchIndividualModule(module, "github", httpClient);
+  if (batchFailed) {
+    diagnostics.individualFallbackAttempts += 1;
+  }
+
+  const recovery = await fetchIndividualModule(module, "github", httpClient, "batch-recovery");
   if (recovery.success) {
     const normalized = recovery.data;
     if (batchFailed) {
+      diagnostics.individualFallbackSuccesses += 1;
       logger.info(`Recovered ${module.name} via individual GitHub fetch after batch failure`);
     }
     repositoryCache.set(repoId, normalized);
@@ -394,6 +421,89 @@ async function appendGitHubBatchResult({
   }
   enrichedModules.push(isDefinitive404(recovery.error.message) ? { ...fallback, notFound: true } : fallback);
   stats.errors += 1;
+}
+
+function shouldRetryBatchWithSmallerChunks(batchFailed: boolean, batchError: string | null, chunkSize: number): boolean {
+  if (!batchFailed || typeof batchError !== "string") {
+    return false;
+  }
+
+  return batchError.toLowerCase().includes("terminated") && chunkSize > GITHUB_GRAPHQL_MIN_BATCH_SIZE;
+}
+
+async function processGitHubChunk({
+  chunk,
+  chunkStart,
+  diagnostics,
+  previousModulesMap,
+  stats,
+  enrichedModules
+}: {
+  chunk: EnrichedModule[];
+  chunkStart: number;
+  diagnostics: GitHubBatchDiagnostics;
+  previousModulesMap: Map<string, EnrichedModule>;
+  stats: ModuleStats;
+  enrichedModules: EnrichedModule[];
+}): Promise<void> {
+  const { results: batchResults, failed: batchFailed, error: batchError } = await fetchGitHubBatch(chunk);
+
+  if (shouldRetryBatchWithSmallerChunks(batchFailed, batchError, chunk.length)) {
+    diagnostics.splitRetries += 1;
+    const splitPoint = Math.ceil(chunk.length / 2);
+    const leftChunk = chunk.slice(0, splitPoint);
+    const rightChunk = chunk.slice(splitPoint);
+
+    logger.warn("GitHub GraphQL chunk terminated, retrying with smaller batches", {
+      chunkStart,
+      chunkSize: chunk.length,
+      leftChunkSize: leftChunk.length,
+      rightChunkSize: rightChunk.length,
+      error: batchError
+    });
+
+    await processGitHubChunk({
+      chunk: leftChunk,
+      chunkStart,
+      diagnostics,
+      previousModulesMap,
+      stats,
+      enrichedModules
+    });
+
+    if (rightChunk.length > 0) {
+      await processGitHubChunk({
+        chunk: rightChunk,
+        chunkStart: chunkStart + splitPoint,
+        diagnostics,
+        previousModulesMap,
+        stats,
+        enrichedModules
+      });
+    }
+
+    return;
+  }
+
+  if (batchFailed) {
+    logger.warn("GitHub GraphQL chunk failed, retrying repositories individually", {
+      chunkStart,
+      chunkSize: chunk.length,
+      error: batchError
+    });
+  }
+
+  for (const module of chunk) {
+    await appendGitHubBatchResult({
+      module,
+      batchResults,
+      batchFailed,
+      diagnostics,
+      previousModulesMap,
+      stats,
+      enrichedModules
+    });
+  }
 }
 
 /**
@@ -446,7 +556,7 @@ async function processModule(module: EnrichedModule, context: ProcessModuleConte
   }
 
   // Fetch individual (non-GitHub or no token)
-  const recovery = await fetchIndividualModule(module, repoType, client);
+  const recovery = await fetchIndividualModule(module, repoType, client, "direct");
 
   if (recovery.success) {
     circuitBreaker.recordSuccess();
@@ -498,6 +608,11 @@ async function enrichModules(modules: ParsedModuleEntry[], previousModulesMap: M
   const enrichedModules: EnrichedModule[] = [];
   const githubModulesToFetch: EnrichedModule[] = [];
   const stats: ModuleStats = { hits: 0, misses: 0, errors: 0, fallbacks: 0 };
+  const githubBatchDiagnostics: GitHubBatchDiagnostics = {
+    splitRetries: 0,
+    individualFallbackAttempts: 0,
+    individualFallbackSuccesses: 0
+  };
   let processedCount = 0;
   const totalModules = modules.length;
 
@@ -545,27 +660,17 @@ async function enrichModules(modules: ParsedModuleEntry[], previousModulesMap: M
     logger.info(`Batch fetching ${githubModulesToFetch.length} GitHub repositories...`);
     for (let index = 0; index < githubModulesToFetch.length; index += GITHUB_GRAPHQL_BATCH_SIZE) {
       const chunk = githubModulesToFetch.slice(index, index + GITHUB_GRAPHQL_BATCH_SIZE);
-      const { results: batchResults, failed: batchFailed, error: batchError } = await fetchGitHubBatch(chunk);
-
-      if (batchFailed) {
-        logger.warn("GitHub GraphQL chunk failed, retrying repositories individually", {
-          chunkStart: index,
-          chunkSize: chunk.length,
-          error: batchError
-        });
-      }
-
-      for (const module of chunk) {
-        await appendGitHubBatchResult({
-          module,
-          batchResults,
-          batchFailed,
-          previousModulesMap,
-          stats,
-          enrichedModules
-        });
-      }
+      await processGitHubChunk({
+        chunk,
+        chunkStart: index,
+        diagnostics: githubBatchDiagnostics,
+        previousModulesMap,
+        stats,
+        enrichedModules
+      });
     }
+
+    logger.info("GitHub batch diagnostics", githubBatchDiagnostics);
   }
 
   logger.info("Metadata collection stats", stats);
@@ -587,6 +692,7 @@ export async function runCollectMetadata({
   previousModulesMap = loadPreviousModules<EnrichedModule>()
 }: RunCollectMetadataOptions = {}): Promise<RunCollectMetadataResult> {
   logger.info("Starting unified metadata collection...");
+  resetRepositoryApiMetrics();
 
   if (!process.env.GITHUB_TOKEN) {
     logger.warn("GITHUB_TOKEN is not set. Rate limits will be strict and processing may be slow.");
@@ -621,6 +727,7 @@ export async function runCollectMetadata({
   }
 
   await repositoryCache.flush();
+  logger.info("Repository API diagnostics", getRepositoryApiMetrics());
   logger.info(`Collected ${enrichedModules.length} modules.`);
 
   return {

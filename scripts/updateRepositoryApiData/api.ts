@@ -24,6 +24,12 @@ interface HttpClientLike {
   getJson: <TData = unknown>(url: string, options?: { headers?: RequestHeaders }) => Promise<HttpResponse<TData>>;
 }
 
+type GitHubCommitCallSource = "direct" | "batch-recovery";
+
+interface FetchRepositoryDataOptions {
+  githubCommitCallSource?: GitHubCommitCallSource;
+}
+
 interface RepositoryApiData {
   archived?: boolean;
   default_branch?: string;
@@ -75,7 +81,38 @@ export interface NormalizedRepositoryMetadata {
   stars: number;
 }
 
-export async function fetchRepositoryData(module: RepositoryModuleRef, httpClient: HttpClientLike, env: NodeJS.ProcessEnv = process.env): Promise<FetchRepositoryDataResult> {
+interface RepositoryApiMetricsSnapshot {
+  githubBranchCommitApiCallsBatchRecovery: number;
+  githubBranchCommitApiCallsDirect: number;
+  githubBranchCommitApiCalls: number;
+}
+
+const repositoryApiMetrics: RepositoryApiMetricsSnapshot = {
+  githubBranchCommitApiCallsBatchRecovery: 0,
+  githubBranchCommitApiCallsDirect: 0,
+  githubBranchCommitApiCalls: 0
+};
+
+export function resetRepositoryApiMetrics(): void {
+  repositoryApiMetrics.githubBranchCommitApiCallsBatchRecovery = 0;
+  repositoryApiMetrics.githubBranchCommitApiCallsDirect = 0;
+  repositoryApiMetrics.githubBranchCommitApiCalls = 0;
+}
+
+export function getRepositoryApiMetrics(): RepositoryApiMetricsSnapshot {
+  return {
+    githubBranchCommitApiCallsBatchRecovery: repositoryApiMetrics.githubBranchCommitApiCallsBatchRecovery,
+    githubBranchCommitApiCallsDirect: repositoryApiMetrics.githubBranchCommitApiCallsDirect,
+    githubBranchCommitApiCalls: repositoryApiMetrics.githubBranchCommitApiCalls
+  };
+}
+
+export async function fetchRepositoryData(
+  module: RepositoryModuleRef,
+  httpClient: HttpClientLike,
+  env: NodeJS.ProcessEnv = process.env,
+  options: FetchRepositoryDataOptions = {}
+): Promise<FetchRepositoryDataResult> {
   const repoType = getRepositoryType(module.url);
   const repoId = getRepositoryId(module.url);
 
@@ -144,6 +181,15 @@ export async function fetchRepositoryData(module: RepositoryModuleRef, httpClien
     }
 
     if (branchUrl) {
+      if (repoType === "github") {
+        repositoryApiMetrics.githubBranchCommitApiCalls += 1;
+        if (options.githubCommitCallSource === "batch-recovery") {
+          repositoryApiMetrics.githubBranchCommitApiCallsBatchRecovery += 1;
+        }
+        else {
+          repositoryApiMetrics.githubBranchCommitApiCallsDirect += 1;
+        }
+      }
       const branchResult = await httpClient.getJson<RepositoryBranchData>(branchUrl, { headers });
       branchData = branchResult.data;
     }
