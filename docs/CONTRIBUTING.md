@@ -66,7 +66,7 @@ For focused manual runs, point the pipeline at a small local wiki snapshot inste
 2. Run `WIKI_FILE=path/to/3rd-Party-Modules.md node --run all`.
 3. Inspect the generated files under [`website/data/`](../website/data/) just like a full run.
 
-For regression testing, prefer the curated fixtures (`node --run fixtures:generate`, `node --run test:fixtures`, `node --run golden:check`) over ad-hoc subsets.
+For regression testing, prefer the curated fixtures (`node --run fixtures -- generate`, `node --run fixtures -- validate`, `node --run fixtures -- golden-check`) over ad-hoc subsets.
 
 ## Release validation
 
@@ -88,8 +88,8 @@ This script powers the validation command above. Keep it in your release checkli
 
 1. Regenerate the curated fixtures to ensure the schemas match the current expectations:
    ```bash
-   node --run fixtures:generate
-   node --run test:fixtures
+   node --run fixtures -- generate
+   node --run fixtures -- validate
    ```
 2. Re-run the affected pipeline stages (or `node --run all`) to rebuild the real datasets.
 3. Execute `node --run release:validate` again. Keep iterating until the exit code is zero.
@@ -123,7 +123,7 @@ npm test
 The shared utilities in `scripts/shared/` have unit tests using Node.js's built-in test runner. Run them with:
 
 ```bash
-npm run test:unit
+node --run test:unit
 ```
 
 These tests verify core functionality like logging, rate limiting, and HTTP client behavior. When adding new utilities or modifying existing ones, update the tests in `scripts/shared/__tests__/`.
@@ -133,19 +133,19 @@ These tests verify core functionality like logging, rate limiting, and HTTP clie
 The project enforces code quality through ESLint and Prettier:
 
 ```bash
-npm run lint        # Check all files
-npm run lint:fix    # Auto-fix issues
+node --run lint        # Check all files
+node --run lint:fix    # Auto-fix issues
 ```
 
 TypeScript files are included in ESLint checks via `typescript-eslint` v8+. Production scripts
-are `.ts` format with type safety enforced via `npm run test:types`.
+are `.ts` format with type safety enforced via `node --run test:types`.
 
 ### Spelling
 
 Spelling is checked with `cspell`:
 
 ```bash
-npm run test:spelling
+node --run test:spelling
 ```
 
 The repository pre-commit hook also runs this spelling check before each commit.
@@ -158,7 +158,7 @@ The check intentionally compares sanitized, deterministic output only. Volatile 
 
 **Workflow when modifying pipeline code:**
 
-1. **Run tests**: `npm run golden:check`
+1. **Run tests**: `node --run fixtures -- golden-check`
    - ✅ **Pass**: Your changes didn't affect outputs
    - ❌ **Fail**: Outputs changed - review required
 
@@ -166,7 +166,7 @@ The check intentionally compares sanitized, deterministic output only. Volatile 
    - Are these changes expected and intentional?
    - Do they match your code changes?
 
-3. **Update golden files** (only if changes are intentional): `npm run golden:update`
+3. **Update golden files** (only if changes are intentional): `node --run fixtures -- golden-update`
    - Updates reference outputs to match new behavior
    - Creates new baseline for future tests
 
@@ -208,7 +208,7 @@ The check intentionally compares sanitized, deterministic output only. Volatile 
 
 The project enforces strict linting rules. If your build fails due to linting:
 
-1.  Run `npm run lint:fix` to automatically fix formatting and simple errors.
+1.  Run `node --run lint:fix` to automatically fix formatting and simple errors.
 2.  Manually resolve any remaining issues reported by the linter.
 
 **Schema Validation Failures**
@@ -216,7 +216,7 @@ The project enforces strict linting rules. If your build fails due to linting:
 If `node --run release:validate` fails:
 
 1.  Check the error message to identify which file violates the schema.
-2.  If you modified the schema, regenerate fixtures: `node --run fixtures:generate`.
+2.  If you modified the schema, regenerate fixtures: `node --run fixtures -- generate`.
 3.  If you modified code that generates data, ensure the output matches the schemas in `dist/schemas/`.
 
 **Rate Limiting**

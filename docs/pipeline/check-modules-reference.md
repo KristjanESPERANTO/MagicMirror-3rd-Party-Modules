@@ -139,7 +139,7 @@ The curated fixture repositories live in `fixtures/modules/`. Keep this table in
 **Maintenance checklist**
 
 - Keep each fixture’s `FIXTURE.md` updated with triggered rule IDs and upstream commit references.
-- When adding a fixture, update the table above and regenerate `fixtures/data/` via `npm run fixtures:generate`.
+- When adding a fixture, update the table above and regenerate `fixtures/data/` via `node --run fixtures -- generate`.
 - Trim binaries and large assets before committing fixture snapshots.
 
 ## Housekeeping

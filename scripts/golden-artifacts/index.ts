@@ -113,7 +113,7 @@ function processArtifact(artifact: GoldenArtifact): string | null {
   }
 
   if (!fs.existsSync(target)) {
-    return `Golden artifact missing for ${name}. Run npm run golden:update.`;
+    return `Golden artifact missing for ${name}. Run node --run fixtures -- golden-update.`;
   }
 
   const expectedRaw = fs.readFileSync(target, "utf8");
@@ -134,7 +134,7 @@ if (mode === "check") {
     for (const message of discrepancies) {
       console.error(` • ${message}`);
     }
-    console.error("\nRun \"npm run golden:update\" and commit the refreshed artifacts if the changes are expected.");
+    console.error("\nRun \"node --run fixtures -- golden-update\" and commit the refreshed artifacts if the changes are expected.");
     process.exit(1);
   }
   console.log("Golden artifacts match the current pipeline outputs.");

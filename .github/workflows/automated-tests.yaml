@@ -23,15 +23,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Validate fixtures
-        run: npm run test:fixtures
+        run: node --run fixtures -- validate
       - name: Verify golden artifacts
-        run: npm run golden:check
+        run: node --run fixtures -- golden-check
       - name: Check spelling
         run: node --run test:spelling
       - name: Check linting
         run: node --run lint
       - name: Run Unit Tests
-        run: npm run test:unit
+        run: node --run test:unit
       - name: Check TypeScript types
         run: node --run test:types
       - run: echo "🍏 This job's status is ${{ job.status }}."
