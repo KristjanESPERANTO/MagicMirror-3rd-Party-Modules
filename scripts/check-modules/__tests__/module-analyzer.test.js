@@ -61,7 +61,7 @@ async function createTempModule() {
         name: "x",
         note: "jshint",
         lockfileVersion: 2,
-        scripts: { test: "npm run lint" }
+        scripts: { test: "node --run lint" }
       },
       null,
       2

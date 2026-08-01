@@ -6,7 +6,7 @@ A lightweight Node.js command-line interface reads the declarative stage graph, 
 
 ## Key capabilities
 
-- Provide a single entry point (e.g. `npm run pipeline -- run full-refresh-parallel`) that replaces the existing ad-hoc shell scripts.
+- Provide a single entry point (e.g. `node --run pipeline -- run full-refresh-parallel`) that replaces the existing ad-hoc shell scripts.
 - Interpret `pipeline/stage-graph.json` at runtime to determine stage ordering, inputs/outputs, and side-effects.
 - Emit structured logs and progress indicators so maintainers can trace stage execution locally and in CI.
 - Persist run metadata (planned, skipped, succeeded, failed) to `.pipeline-runs/` so partial runs stay auditable.

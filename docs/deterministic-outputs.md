@@ -111,13 +111,13 @@ To verify deterministic output:
 
 ```bash
 # Run pipeline twice
-npm run pipeline
+node --run pipeline
 
 # Copy output
 cp website/data/modules.json /tmp/modules-run1.json
 
 # Run pipeline again
-npm run pipeline
+node --run pipeline
 
 # Compare outputs - should be identical
 diff website/data/modules.json /tmp/modules-run1.json

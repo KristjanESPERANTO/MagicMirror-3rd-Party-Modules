@@ -56,7 +56,7 @@ The worker pool is integrated into the pipeline via:
 Run with:
 
 ```bash
-npm run pipeline -- run full-refresh-parallel --workers=4 --batch-size=50
+node --run pipeline -- run full-refresh-parallel --workers=4 --batch-size=50
 ```
 
 ### Test Results

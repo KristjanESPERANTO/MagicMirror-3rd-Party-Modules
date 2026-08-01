@@ -110,10 +110,10 @@ And also in the `package.json` file, add the following lines to the `scripts` se
 Apply the hook configuration by running the following command in your terminal:
 
 ```bash
-npm run prepare
+node --run prepare
 ```
 
-This will set up `simple-git-hooks` to run the `lint-staged` command before committing any changes. The `lint-staged` command will only lint the files that are staged for commit, which can save time and resources. If you change the `simple-git-hooks` configuration later, run `npm run prepare` again to update the hooks.
+This will set up `simple-git-hooks` to run the `lint-staged` command before committing any changes. The `lint-staged` command will only lint the files that are staged for commit, which can save time and resources. If you change the `simple-git-hooks` configuration later, run `node --run prepare` again to update the hooks.
 
 #### B - Run it manually before committing (optional)
 

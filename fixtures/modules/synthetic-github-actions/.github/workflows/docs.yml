@@ -16,4 +16,4 @@ jobs:
           node-version: "18"
 
       - name: Build docs
-        run: npm run docs
+        run: node --run docs

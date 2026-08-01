@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build bundled schemas
-        run: npm run schemas:build
+        run: node --run schemas:build
 
       - name: Validate release artifacts
-        run: npm run release:validate
+        run: node --run release:validate
