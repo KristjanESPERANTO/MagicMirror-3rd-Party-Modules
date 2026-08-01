@@ -315,10 +315,11 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
     patterns: [
       "uses: actions/setup-node@v3",
       "uses: actions/setup-node@v4",
-      "uses: actions/setup-node@v5"
+      "uses: actions/setup-node@v5",
+      "uses: actions/setup-node@v6"
     ],
     category: "Recommendation",
-    description: "Upgrade workflows to use actions/setup-node@v6."
+    description: "Upgrade workflows to use actions/setup-node@v7."
   },
   {
     id: "text-deprecated-node-version",
