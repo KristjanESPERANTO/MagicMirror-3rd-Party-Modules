@@ -3,54 +3,27 @@
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import process from "node:process";
-import { validateStageFile } from "./lib/schemaValidator.ts";
+import { validateArtifactSet, type ArtifactDefinition } from "./lib/validate-artifacts.ts";
 
 const PROJECT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-type ReleaseStageId = "modules.final" | "modules.min" | "stats";
-
-interface ReleaseArtifactDefinition {
-  relativePath: string;
-  stageId: ReleaseStageId;
-}
-
-const RELEASE_ARTIFACTS: ReleaseArtifactDefinition[] = [
+const RELEASE_ARTIFACTS: ArtifactDefinition[] = [
   { stageId: "modules.final", relativePath: "website/data/modules.json" },
   { stageId: "modules.min", relativePath: "website/data/modules.min.json" },
   { stageId: "stats", relativePath: "website/data/stats.json" }
 ];
 
-function resolvePath(relativePath: string): string {
-  return path.join(PROJECT_ROOT, relativePath);
-}
-
-async function validateArtifact({ stageId, relativePath }: ReleaseArtifactDefinition): Promise<string> {
-  const absolutePath = resolvePath(relativePath);
-  await validateStageFile(stageId, absolutePath);
-  return absolutePath;
-}
-
 async function main() {
-  const failures: Array<{ artifact: ReleaseArtifactDefinition; error: unknown }> = [];
+  const valid = await validateArtifactSet({
+    artifacts: RELEASE_ARTIFACTS,
+    failureMessage: "Release artifact validation failed. Inspect the errors above and address the offending files before publishing a new package.",
+    projectRoot: PROJECT_ROOT,
+    successMessage: "All release artifacts validated successfully."
+  });
 
-  for (const artifact of RELEASE_ARTIFACTS) {
-    try {
-      const absolutePath = await validateArtifact(artifact);
-      console.log(`✔ ${artifact.stageId} → ${path.relative(PROJECT_ROOT, absolutePath)}`);
-    }
-    catch (error) {
-      failures.push({ artifact, error });
-      const message = error instanceof Error ? error.message : String(error);
-      console.error(`✖ ${artifact.stageId} failed: ${message}`);
-    }
-  }
-
-  if (failures.length > 0) {
-    console.error("\nRelease artifact validation failed. Inspect the errors above and address the offending files before publishing a new package.");
+  if (!valid) {
     process.exit(1);
   }
-
-  console.log("All release artifacts validated successfully.");
 }
 
 main();
