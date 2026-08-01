@@ -44,12 +44,10 @@
     "fixtures:update-baseline-shas": "node scripts/fixtures/updateBaselineShas.ts",
     "test:fixtures": "node scripts/fixtures/validateFixtures.ts",
     "release:validate": "node scripts/validate_release_artifacts.ts",
-    "schemas:build": "node pipeline/schemas/build.ts",
-    "schemas:check": "node pipeline/schemas/build.ts --check",
     "lint": "eslint && prettier --check .",
     "lint:fix": "eslint --fix && prettier . --write",
     "prepare": "simple-git-hooks",
-    "test": "node --run test:fixtures && concurrently --group --kill-others-on-fail -n lint,golden,schemas,unit,types,spelling \"node --run lint\" \"node --run golden:check\" \"node --run schemas:check\" \"node --run test:unit\" \"node --run test:types\" \"node --run test:spelling\"",
+    "test": "node --run test:fixtures && concurrently --group --kill-others-on-fail -n lint,golden,unit,types,spelling \"node --run lint\" \"node --run golden:check\" \"node --run test:unit\" \"node --run test:types\" \"node --run test:spelling\"",
     "test:unit": "node --test scripts/**/__tests__/**/*.test.js",
     "test:spelling": "cspell .",
     "test:types": "tsc --noEmit"
@@ -75,7 +73,6 @@
     "sharp": "^0.35.3"
   },
   "devDependencies": {
-    "@apidevtools/json-schema-ref-parser": "^15.5.1",
     "@eslint/css": "^1.4.0",
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^2.0.1",
@@ -112,8 +109,6 @@
       "pipeline:progress": "Summarize run outcomes and stage reliability.",
       "prepare": "Install simple-git-hooks.",
       "release:validate": "Validate release artifacts.",
-      "schemas:build": "Build JSON schemas.",
-      "schemas:check": "Check that committed schemas are up to date.",
       "test": "Run the full test suite.",
       "test:fixtures": "Validate fixture consistency and schemas.",
       "test:spelling": "Run cspell across the repository.",

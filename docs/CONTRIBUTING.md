@@ -98,19 +98,7 @@ Document regressions or schema updates in [`docs/architecture.md`](architecture.
 
 ## Maintaining schemas
 
-Schema sources live under `pipeline/schemas/src/` (with reusable fragments in `pipeline/schemas/partials/`). After editing them, regenerate the bundled artifacts that power validation:
-
-```bash
-npm run schemas:build
-```
-
-To verify that no additional changes are pending, run:
-
-```bash
-npm run schemas:check
-```
-
-The bundled files live in `dist/schemas/`. They ship with the repository so `node --run release:validate` can run without extra setup.
+The checked-in schemas under `dist/schemas/` are the canonical validation artifacts. If the data contract changes, edit the affected schema there and run `node --run release:validate`.
 
 ## Running the container locally
 
@@ -229,7 +217,7 @@ If `node --run release:validate` fails:
 
 1.  Check the error message to identify which file violates the schema.
 2.  If you modified the schema, regenerate fixtures: `node --run fixtures:generate`.
-3.  If you modified code that generates data, ensure the output matches the schema definitions in `pipeline/schemas/`.
+3.  If you modified code that generates data, ensure the output matches the schemas in `dist/schemas/`.
 
 **Rate Limiting**
 

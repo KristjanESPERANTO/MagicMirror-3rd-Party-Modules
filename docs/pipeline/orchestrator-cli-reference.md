@@ -23,7 +23,7 @@ A lightweight Node.js command-line interface reads the declarative stage graph, 
 ## Context & Inputs
 
 - Stage metadata lives in [`pipeline/stage-graph.json`](../../pipeline/stage-graph.json).
-- Schemas for stage artifacts are bundled in `dist/schemas/*.schema.json` and are enforced after each stage.
+- Schemas for stage artifacts live in `dist/schemas/*.schema.json` and are enforced after each stage.
 - The CLI lives under `scripts/orchestrator/` (primary entrypoint `index.ts`, helper modules `cli-helpers.ts` and `cli-commands.ts`) with shared utilities documented in [`docs/architecture.md`](../architecture.md).
 
 ## Architecture Overview
