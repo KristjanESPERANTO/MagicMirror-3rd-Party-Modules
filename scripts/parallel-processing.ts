@@ -2,7 +2,7 @@
 /**
  * Parallel module analysis stage.
  *
- * Consolidates the legacy stages 3-5 responsibilities into a worker-pool run.
+ * Runs module cloning, enrichment, and analysis in a worker pool.
  * The CLI wrapper refreshes metadata and then produces the in-memory
  * analysis payload for downstream pipeline stages.
  */

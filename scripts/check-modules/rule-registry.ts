@@ -67,7 +67,6 @@ const RULE_CATEGORY_METADATA: Readonly<Record<RuleCategory, RuleCategoryInfo>> =
 });
 
 const PIPELINE_CHECK_STAGE_IDS = Object.freeze({
-  LEGACY: "check-modules-js",
   MODERN: "check-modules"
 });
 
@@ -482,14 +481,6 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
     category: "Deprecated",
     description: "Run `npm update` to update to lockfileVersion 3."
   },
-  {
-    id: "legacy-main-js-mismatch",
-    scope: "module-structure",
-    stages: [PIPELINE_CHECK_STAGE_IDS.LEGACY, PIPELINE_CHECK_STAGE_IDS.MODERN],
-    patterns: ["legacy-main-js-mismatch"],
-    category: "Recommendation",
-    description: "Repository name and main js file name is not the same."
-  }
 ];
 
 RULE_DEFINITIONS.push(MISSING_DEPENDENCY_RULE_DEFINITION as RuleDefinition);

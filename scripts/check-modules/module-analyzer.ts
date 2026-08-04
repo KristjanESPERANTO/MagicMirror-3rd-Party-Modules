@@ -1,6 +1,6 @@
 /**
  * Module analyzer with comprehensive text rules, README validation, and package.json checks.
- * Migrated from legacy Python implementation (check_modules.py).
+ * Performs text, package, dependency, and README checks for a module.
  */
 
 import { readFile } from "node:fs/promises";
@@ -259,7 +259,7 @@ export async function analyzeModule(
       }
     }
 
-    // README.md validations (only top-level module README, matching legacy behavior)
+    // README.md validations (only top-level module README)
     if (relativePath === "README.md" && !moduleExceptions.skipReadmeChecks) {
       // Check for update section
       if (!content.includes("## Updat")) {

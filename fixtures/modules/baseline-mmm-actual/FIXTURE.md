@@ -15,9 +15,9 @@ Captures the licence-related findings produced for `MMM-Actual` so we can verify
 ## Captured From
 
 - Upstream repository: [`trumpetx/MMM-Actual`](https://github.com/trumpetx/MMM-Actual)
-- Snapshot reference: Stage 5 dataset as of 2025-09-28 (`lastCommit`: 2025-05-01T07:33:34-05:00)
+- Snapshot reference: dataset as of 2025-09-28 (`lastCommit`: 2025-05-01T07:33:34-05:00)
 - Upstream commit SHA: `2a561a9f2debe29f715aa701eb2ca64cfe5a2001` (HEAD at update time for trumpetx/MMM-Actual)
 
 ## Notes
 
-This fixture only keeps metadata needed for the legacy findings. No functional module code is included.
+This fixture only keeps metadata needed for the recorded findings. No functional module code is included.

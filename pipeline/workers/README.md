@@ -8,10 +8,9 @@ The worker pool orchestration is complete and functional. Modules can now be pro
 
 ### Files
 
-- **`process-module.js`**: Core module processing logic (merges 3 stages)
-- **`worker.js`**: Worker process entry point - runs in child processes
-- **`worker-pool.js`**: Orchestrator that manages worker processes, batches, and queues
-- **`test-pool.js`**: Test script for validating worker pool functionality
+- **`process-module.ts`**: Core module processing logic
+- **`worker.ts`**: Worker process entry point - runs in child processes
+- **`worker-pool.ts`**: Orchestrator that manages worker processes, batches, and queues
 
 ### Features
 
@@ -188,7 +187,6 @@ Instead of calling separate stage scripts, `processModule()` executes all stages
 
 **Trade-offs:**
 
-- Stage 5 logic not yet fully integrated (placeholder for now)
 - Need to ensure memory doesn't grow unbounded
 
 ### Clone Optimization

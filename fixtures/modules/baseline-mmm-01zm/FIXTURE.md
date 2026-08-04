@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Golden sample for a clean module run. Mirrors the behaviour of `MMM-01ZM` which should produce **no** findings in Stage 5.
+Golden sample for a clean module run. Mirrors the behaviour of `MMM-01ZM` which should produce **no** findings.
 
 ## Expected Findings
 
