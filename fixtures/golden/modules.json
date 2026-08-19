@@ -360,7 +360,6 @@
       "tags": [
         "mmm-weatherhero",
         "weather",
-        "openweathermap",
         "forecast"
       ],
       "url": "https://github.com/ago1776/MMM-WeatherHero"
@@ -2369,6 +2368,24 @@
         "timer"
       ],
       "url": "https://github.com/bwente/MMM-KitchenTimer"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "description": "Displays a literary passage that mentions the current time, with the time phrase emphasized.",
+      "id": "bwente/MMM-LiteraryClock",
+      "image": "MMM-LiteraryClock---bwente.webp",
+      "license": "MIT",
+      "maintainer": "bwente",
+      "maintainerURL": "https://github.com/bwente",
+      "name": "MMM-LiteraryClock",
+      "tags": [
+        "clock",
+        "literature",
+        "literary-clock",
+        "quotes",
+        "books"
+      ],
+      "url": "https://github.com/bwente/MMM-LiteraryClock"
     },
     {
       "category": "Entertainment / Misc",
@@ -6723,6 +6740,28 @@
       "url": "https://github.com/hggh/MMM-OpenHAB-Items"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Shows last night's sleep from a Google Fitbit Air, or any device that syncs sleep to Google Health, using the Google Health API that replaces the retiring Fitbit Web API. Displays a donut chart of the sleep stages with each stage checked against typical adult ranges.",
+      "id": "Hkattelu/MMM-FitbitAir",
+      "image": "MMM-FitbitAir---Hkattelu.webp",
+      "license": "MIT",
+      "maintainer": "Hkattelu",
+      "maintainerURL": "https://github.com/Hkattelu",
+      "name": "MMM-FitbitAir",
+      "tags": [
+        "fitbit",
+        "fitbit air",
+        "google health",
+        "google health api",
+        "google fit",
+        "pixel watch",
+        "sleep",
+        "sleep tracking",
+        "health"
+      ],
+      "url": "https://github.com/Hkattelu/MMM-FitbitAir"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Enables easy integration of YouTube videos.",
       "id": "HolmstromL/MMM-YouTube-API",
@@ -8931,17 +8970,6 @@
       "url": "https://gitlab.com/khassel/MMM-Universal-Pir"
     },
     {
-      "category": "Weather",
-      "description": "Uses the default weather module as data provider with own njk templates and animated weather icons.",
-      "hasGithubIssues": false,
-      "id": "khassel/MMM-WeatherBridge",
-      "isArchived": false,
-      "maintainer": "karsten13",
-      "maintainerURL": "https://gitlab.com/khassel",
-      "name": "MMM-WeatherBridge",
-      "url": "https://gitlab.com/khassel/MMM-WeatherBridge"
-    },
-    {
       "category": "Weather Themes",
       "description": "Weather module theme which uses [skycons](https://github.com/maxdow/skycons).",
       "hasGithubIssues": false,
@@ -9636,6 +9664,8 @@
         "live scores",
         "atp",
         "wta",
+        "challenger",
+        "itf",
         "sports"
       ],
       "url": "https://github.com/livetennisapi/MMM-LiveTennis"
@@ -11367,6 +11397,11 @@
       "maintainer": "msimon360",
       "maintainerURL": "https://github.com/msimon360",
       "name": "MMM-PWSWeather",
+      "tags": [
+        "weather",
+        "pws",
+        "weather-underground"
+      ],
       "url": "https://github.com/msimon360/MMM-PWSWeather"
     },
     {
@@ -12887,6 +12922,17 @@
       "url": "https://github.com/ottopaulsen/MMM-Tibber"
     },
     {
+      "category": "Transport / Travel",
+      "description": "Show status of your pre-ID eGolf or other VW.",
+      "id": "ottopaulsen/MMM-WeConnect",
+      "image": "MMM-WeConnect---ottopaulsen.webp",
+      "license": "MIT",
+      "maintainer": "ottopaulsen",
+      "maintainerURL": "https://github.com/ottopaulsen",
+      "name": "MMM-WeConnect",
+      "url": "https://github.com/ottopaulsen/MMM-WeConnect"
+    },
+    {
       "category": "Outdated Modules",
       "description": "Netatmo thermostat module.",
       "id": "overflOw11/MMM-Netatmo-Thermostat",
@@ -13336,15 +13382,6 @@
       "maintainerURL": "https://github.com/pinsdorf",
       "name": "MMM-WeeklySchedule",
       "url": "https://github.com/pinsdorf/MMM-WeeklySchedule"
-    },
-    {
-      "category": "Finance",
-      "description": "Displays color-coded Fear & Greed Index Values from CNBC for Stocks and from Alternative.me for Crypto.",
-      "id": "Pip1405/MMM-FearAndGreedIndex",
-      "maintainer": "Pip1405",
-      "maintainerURL": "https://github.com/Pip1405",
-      "name": "MMM-FearAndGreedIndex",
-      "url": "https://github.com/Pip1405/MMM-FearAndGreedIndex"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -14163,9 +14200,9 @@
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display a Bring! shopping list in a flexible view and touch support.",
       "id": "rkorell/MMM-Bring",
-      "image": "MMM-Bring---rkorell.webp",
+      "image": "MMM-Bring---Dr. Ralf Korell.webp",
       "license": "MIT",
-      "maintainer": "rkorell",
+      "maintainer": "Dr. Ralf Korell",
       "maintainerURL": "https://github.com/rkorell",
       "name": "MMM-Bring",
       "tags": [
@@ -14178,26 +14215,49 @@
       "category": "Entertainment / Misc",
       "description": "Displays live image of our planet.",
       "id": "rkorell/MMM-Globe",
-      "image": "MMM-Globe---rkorell.webp",
+      "image": "MMM-Globe---Dr. Ralf Korell.webp",
       "license": "MIT",
-      "maintainer": "rkorell",
+      "maintainer": "Dr. Ralf Korell",
       "maintainerURL": "https://github.com/rkorell",
       "name": "MMM-Globe",
+      "tags": [
+        "globe",
+        "satellite",
+        "weather",
+        "goes",
+        "meteosat",
+        "himawari"
+      ],
       "url": "https://github.com/rkorell/MMM-Globe"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display the song you are currently listening to on Spotify.",
       "id": "rkorell/MMM-NowPlayingOnSpotify",
-      "image": "MMM-NowPlayingOnSpotify---rkorell.webp",
+      "image": "MMM-NowPlayingOnSpotify---Dr. Ralf Korell.webp",
       "license": "MIT",
-      "maintainer": "rkorell",
+      "maintainer": "Dr. Ralf Korell",
       "maintainerURL": "https://github.com/rkorell",
       "name": "MMM-NowPlayingOnSpotify",
       "tags": [
         "spotify"
       ],
       "url": "https://github.com/rkorell/MMM-NowPlayingOnSpotify"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display the song you are currently Playing on your Volumio.",
+      "id": "rkorell/MMM-NowPlayingOnVolumio",
+      "image": "MMM-NowPlayingOnVolumio---Dr. Ralf Korell.webp",
+      "license": "MIT",
+      "maintainer": "Dr. Ralf Korell",
+      "maintainerURL": "https://github.com/rkorell",
+      "name": "MMM-NowPlayingOnVolumio",
+      "tags": [
+        "volumio",
+        "tidal"
+      ],
+      "url": "https://github.com/rkorell/MMM-NowPlayingOnVolumio"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -14208,6 +14268,13 @@
       "maintainer": "Dr. Ralf Korell",
       "maintainerURL": "https://github.com/rkorell",
       "name": "MMM-PresenceScreenControl",
+      "tags": [
+        "pir",
+        "presence",
+        "mqtt",
+        "screen-control",
+        "motion-sensor"
+      ],
       "url": "https://github.com/rkorell/MMM-PresenceScreenControl"
     },
     {
@@ -16223,6 +16290,23 @@
       "url": "https://github.com/syntosys-101/MMM-SevereWeatherAlerts"
     },
     {
+      "category": "Transport / Travel",
+      "description": "Danish public transport departures (Rejseplanen API).",
+      "id": "SyS64760/MMM-DSBDepartures",
+      "image": "MMM-DSBDepartures---sys64760.webp",
+      "license": "MIT",
+      "maintainer": "sys64760",
+      "maintainerURL": "https://github.com/SyS64760",
+      "name": "MMM-DSBDepartures",
+      "tags": [
+        "rejseplanen",
+        "denmark",
+        "transport",
+        "departures"
+      ],
+      "url": "https://github.com/SyS64760/MMM-DSBDepartures"
+    },
+    {
       "category": "Outdated Modules",
       "description": "Displays pollen forecast for your area in the UK.",
       "id": "szech/mmm-uk-pollen-forecast",
@@ -17245,14 +17329,10 @@
       "description": "Displays the number of days until a Holiday/Trip. Displays the next 4 trips from a configured list.",
       "id": "TouaregWarrior/MMM-HolidayCountdown",
       "image": "MMM-HolidayCountdown---TouaregWarrior.webp",
-      "license": "MIT",
+      "license": "ISC",
       "maintainer": "TouaregWarrior",
       "maintainerURL": "https://github.com/TouaregWarrior",
       "name": "MMM-HolidayCountdown",
-      "tags": [
-        "holiday",
-        "trip"
-      ],
       "url": "https://github.com/TouaregWarrior/MMM-HolidayCountdown"
     },
     {
@@ -17260,14 +17340,10 @@
       "description": "Tracks the number of mortgage payments left.",
       "id": "TouaregWarrior/MMM-MortgageCountdown",
       "image": "MMM-MortgageCountdown---TouaregWarrior.webp",
-      "license": "MIT",
+      "license": "ISC",
       "maintainer": "TouaregWarrior",
       "maintainerURL": "https://github.com/TouaregWarrior",
       "name": "MMM-MortgageCountdown",
-      "tags": [
-        "mortgage",
-        "house"
-      ],
       "url": "https://github.com/TouaregWarrior/MMM-MortgageCountdown"
     },
     {
