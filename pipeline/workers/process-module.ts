@@ -16,6 +16,7 @@ import type { ModuleLogger } from "./module-logger.ts";
 
 const logger = createLogger({ name: "worker" });
 const execFileAsync = promisify(execFile);
+export const NCU_COOLDOWN = "7d";
 
 interface ModuleInput {
   branch?: string;
@@ -159,7 +160,7 @@ function mergeUniqueIssues(target: string[], issues: unknown): void {
 
 async function runNpmCheckUpdates(moduleDir: string): Promise<string[]> {
   try {
-    const { stdout } = await execFileAsync("npx", ["npm-check-updates", "--jsonUpgraded"], {
+    const { stdout } = await execFileAsync("npx", ["npm-check-updates", "--jsonUpgraded", "--cooldown", NCU_COOLDOWN], {
       cwd: moduleDir,
       timeout: 60_000
     });
