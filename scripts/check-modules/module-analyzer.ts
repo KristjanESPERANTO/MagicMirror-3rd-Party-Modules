@@ -56,6 +56,22 @@ function getRepositoryId(moduleUrl: string): string | null {
 const MOMENT_USAGE_REGEX = /\bmoment\s*\(|\bmoment\.[A-Za-z_$][\w$]*\s*\(/;
 const MOMENT_IMPORT_REQUIRE_REGEX = /require\(["']moment(?:-timezone)?["']\)|from\s+["']moment(?:-timezone)?["']|import\(["']moment(?:-timezone)?["']\)/;
 const MOMENT_CORE_INDICATOR_REGEX = /["']moment\.js["']|["']moment-timezone\.js["']/;
+const GIT_CLONE_FLAG_REGEX = /(?:-|--)[^\s=]+(?:=[^\s]+)?/u;
+
+function escapeRegex(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+}
+
+function hasValidGitCloneInstruction(content: string, moduleUrl: string): boolean {
+  const normalizedUrl = moduleUrl.replace(/\.git$/u, "");
+  const baseUrlPattern = escapeRegex(normalizedUrl);
+  const gitClonePattern = new RegExp(
+    `git\\s+clone(?:\\s+${GIT_CLONE_FLAG_REGEX.source})*\\s+${baseUrlPattern}(?:\\.git)?(?:\\s+${GIT_CLONE_FLAG_REGEX.source})*`,
+    "iu"
+  );
+
+  return gitClonePattern.test(content);
+}
 
 function isExcludedForMomentScan(modulePath: string, filePath: string): boolean {
   const relativePath = filePath.startsWith(modulePath)
@@ -308,10 +324,8 @@ export async function analyzeModule(
       // Check clone instructions
       if (!content.includes("git clone")) {
         issues.push("Recommendation: The README seems not to have clone instructions.");
-      } else {
-        if (!content.includes(`git clone ${moduleUrl}`)) {
-          issues.push("Recommendation: The README seems to have incorrect clone instructions. Please check the URL.");
-        }
+      } else if (!hasValidGitCloneInstruction(content, moduleUrl)) {
+        issues.push("Recommendation: The README seems to have incorrect clone instructions. Please check the URL.");
       }
     }
   }

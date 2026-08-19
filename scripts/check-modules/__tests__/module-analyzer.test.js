@@ -116,6 +116,59 @@ test("analyzer keeps .github files and applies only lockfile-specific package-lo
   assert.ok(Array.isArray(result.issues));
 });
 
+test("analyzer accepts valid git clone commands with flags", async () => {
+  const moduleRoot = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-clone-flags-test-"));
+
+  await fsPromises.writeFile(
+    join(moduleRoot, "README.md"),
+    [
+      "# MMM-Clone-Flags-Test",
+      "",
+      "## Installation",
+      "git clone --depth=1 https://github.com/example/MMM-Clone-Flags-Test",
+      "git clone --recurse-submodules https://github.com/example/MMM-Clone-Flags-Test",
+      "git clone -b main https://github.com/example/MMM-Clone-Flags-Test",
+      "",
+      "## Update",
+      "Update steps",
+      "",
+      "## Config",
+      "```javascript",
+      "{",
+      "  module: \"MMM-Clone-Flags-Test\"",
+      "}",
+      "```"
+    ].join("\n")
+  );
+  await fsPromises.writeFile(join(moduleRoot, "CHANGELOG.md"), "changelog\n");
+  await fsPromises.writeFile(join(moduleRoot, "CODE_OF_CONDUCT.md"), "code of conduct\n");
+  await fsPromises.writeFile(join(moduleRoot, "LICENSE.md"), "MIT\n");
+  await fsPromises.writeFile(
+    join(moduleRoot, "package.json"),
+    JSON.stringify({
+      name: "mmm-clone-flags-test",
+      version: "1.0.0"
+    })
+  );
+
+  const files = [
+    join(moduleRoot, "README.md"),
+    join(moduleRoot, "CHANGELOG.md"),
+    join(moduleRoot, "CODE_OF_CONDUCT.md"),
+    join(moduleRoot, "LICENSE.md"),
+    join(moduleRoot, "package.json")
+  ];
+
+  const result = await analyzeModule(
+    moduleRoot,
+    "MMM-Clone-Flags-Test",
+    "https://github.com/example/MMM-Clone-Flags-Test",
+    files
+  );
+
+  assert.equal(result.issues.some(issue => issue.includes("incorrect clone instructions")), false);
+});
+
 test("analyzer applies classic-module exceptions for mmpm", async () => {
   const moduleRoot = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-mmpm-test-"));
 
