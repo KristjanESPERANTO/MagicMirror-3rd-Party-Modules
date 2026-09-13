@@ -407,14 +407,22 @@ export class WorkerPool {
         worker.batchTimeout = null;
       }
       const promise = new Promise<void>((resolve) => {
-        worker.process.once("exit", resolve);
-        worker.process.send({ type: "shutdown" });
-
-        // Force kill after timeout
-        setTimeout(() => {
+        let settled = false;
+        const forceKillTimeout = setTimeout(() => {
           worker.process.kill();
-          resolve();
+          if (!settled) {
+            settled = true;
+            resolve();
+          }
         }, 5000);
+        worker.process.once("exit", () => {
+          if (!settled) {
+            settled = true;
+            clearTimeout(forceKillTimeout);
+            resolve();
+          }
+        });
+        worker.process.send({ type: "shutdown" });
       });
       shutdownPromises.push(promise);
     }
