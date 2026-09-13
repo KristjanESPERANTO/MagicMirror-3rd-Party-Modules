@@ -118,6 +118,7 @@ function createEmitter({ writer, getLevelPriority, name, format }: EmitterParams
   };
 
   const emit: EmitFn = (levelName, message, details) => {
+    const definedDetails = details.filter(detail => detail !== undefined);
     const priority = LOG_LEVEL_PRIORITIES.get(levelName) ?? LOG_LEVEL_PRIORITIES.get("info")!;
     if (priority > getLevelPriority()) {
       return;
@@ -138,12 +139,12 @@ function createEmitter({ writer, getLevelPriority, name, format }: EmitterParams
        * If the first detail is an object, merge it into the log entry for cleaner JSON
        * Otherwise, put all details in a 'data' array
        */
-      if (details.length > 0) {
-        if (details.length === 1 && typeof details[0] === "object" && details[0] !== null) {
-          Object.assign(logEntry, details[0]);
+      if (definedDetails.length > 0) {
+        if (definedDetails.length === 1 && typeof definedDetails[0] === "object" && definedDetails[0] !== null) {
+          Object.assign(logEntry, definedDetails[0]);
         }
         else {
-          logEntry.data = details;
+          logEntry.data = definedDetails;
         }
       }
 
@@ -157,8 +158,8 @@ function createEmitter({ writer, getLevelPriority, name, format }: EmitterParams
       name ? `[${name}]` : null
     ]);
 
-    if (typeof message === "string" && details.length > 0) {
-      output(`${prefix} ${message}`, ...details);
+    if (typeof message === "string" && definedDetails.length > 0) {
+      output(`${prefix} ${message}`, ...definedDetails);
       return;
     }
 
@@ -167,7 +168,7 @@ function createEmitter({ writer, getLevelPriority, name, format }: EmitterParams
       return;
     }
 
-    output(prefix, message, ...details);
+    output(prefix, message, ...definedDetails);
   };
 
   return emit;

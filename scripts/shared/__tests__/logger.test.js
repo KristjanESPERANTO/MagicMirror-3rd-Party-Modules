@@ -109,6 +109,7 @@ describe("Logger", () => {
       progressLogger.start({ id: "test-stage", name: "Test Stage" }, { stepNumber: 1, total: 3 });
 
       assert.strictEqual(mockWriter.info.mock.calls.length, 1);
+      assert.strictEqual(mockWriter.info.mock.calls[0].arguments.length, 1);
       assert.match(mockWriter.info.mock.calls[0].arguments[0], /▶︎.*\[1\/3\].*test-stage.*Test Stage/u);
     });
 
