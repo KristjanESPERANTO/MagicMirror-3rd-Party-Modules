@@ -1,29 +1,19 @@
 #!/usr/bin/env node
 
 import { basename, dirname, join, relative, resolve } from "node:path";
-import { applyStageFilters, normalizeStageFilters, parseCommaSeparatedList } from "./stage-filters.ts";
 import { buildExecutionPlan, loadStageGraph } from "./stage-graph.ts";
 import { createLogger, createStageProgressLogger } from "../shared/logger.ts";
 import type { LogFormat } from "../shared/logger.ts";
-import { mkdir, writeFile } from "node:fs/promises";
-import { Command } from "commander";
-import { createResourceMonitor } from "./resource-monitor.ts";
-import { execFile } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
-import { promisify } from "node:util";
-import { registerAdditionalCommands } from "./cli-commands.ts";
 import { runAggregateCatalogue } from "../aggregate-catalogue.ts";
 import { runCollectMetadata } from "../collect-metadata/index.ts";
 import { runGenerateResultMarkdown } from "../generate-result-markdown.ts";
 import { runParallelProcessing, writeSkippedModulesFile } from "../parallel-processing.ts";
 import { validateStageFile } from "../lib/schemaValidator.ts";
 import type { ArtifactDefinition, ResolvedStageDefinition } from "./stage-graph.ts";
-import type { StageFilters } from "./stage-filters.ts";
-import type { ProcessResourceUsage } from "./resource-monitor.ts";
 
 type PipelineExecutionError = Error & {
-  completedStages?: DirectStageExecutionResult[];
   stage?: ResolvedStageDefinition;
   stepNumber?: number;
   totalStages?: number;
@@ -35,19 +25,10 @@ interface DirectPipelineState {
   stats?: unknown;
 }
 
-interface DirectStageExecutionResult {
-  stage: ResolvedStageDefinition;
-  durationMs: number;
-  resourceUsage?: ProcessResourceUsage;
-}
-
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFile);
 const PROJECT_ROOT = resolve(currentDir, "..", "..");
 const DEFAULT_GRAPH_PATH = join(PROJECT_ROOT, "pipeline", "stage-graph.json");
-const RUNS_DIRECTORY = join(PROJECT_ROOT, ".pipeline-runs");
-const MIN_NODE_VERSION = { major: 22, minor: 6, patch: 0 };
-const execFileAsync = promisify(execFile);
 
 function isMissingFileError(error: unknown): error is NodeJS.ErrnoException {
   if (!error || typeof error !== "object") {
@@ -146,194 +127,6 @@ function createArtifactValidator() {
   };
 }
 
-async function ensureRunsDirectoryExists() {
-  await mkdir(RUNS_DIRECTORY, { recursive: true });
-}
-
-function sanitizePipelineIdForFilename(pipelineId: string): string {
-  const fallback = pipelineId && pipelineId.length > 0 ? pipelineId : "pipeline";
-  const normalized = fallback
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/gu, "-")
-    .replace(/^-+|-+$/gu, "");
-
-  return normalized || "pipeline";
-}
-
-function buildRunRecordFilePath(startedAt: number, pipelineId: string): string {
-  const timestamp = new Date(startedAt).toISOString()
-    .replace(/[:.]/gu, "-");
-  const safePipelineId = sanitizePipelineIdForFilename(pipelineId);
-  const filename = `${timestamp}_${safePipelineId}.json`;
-
-  return join(RUNS_DIRECTORY, filename);
-}
-
-function extractFailureDetails(failure: unknown) {
-  if (!(failure instanceof Error)) {
-    return {
-      message: String(failure)
-    };
-  }
-
-  const pipelineError = failure as PipelineExecutionError;
-  const stage = pipelineError.stage;
-
-  return {
-    message: failure.message,
-    stageId: stage?.id ?? null,
-    stageName: stage?.name ?? null,
-    stepNumber: pipelineError.stepNumber ?? null,
-    totalStages: pipelineError.totalStages ?? null
-  };
-}
-
-function mapStageResults({
-  orderedStages,
-  completedStages,
-  skippedStages,
-  failure
-}: {
-  orderedStages: ResolvedStageDefinition[];
-  completedStages: DirectStageExecutionResult[];
-  skippedStages: ResolvedStageDefinition[];
-  failure: unknown;
-}) {
-  const results: Array<{
-    id: string;
-    name: string | null;
-    status: string;
-    durationMs?: number;
-    error?: string | null;
-    resourceUsage?: ProcessResourceUsage;
-  }> = [];
-  const completedMap = new Map<string, DirectStageExecutionResult>();
-  for (const entry of completedStages) {
-    completedMap.set(entry.stage.id, entry);
-  }
-
-  const skippedSet = new Set(skippedStages.map(stage => stage.id));
-  const pipelineError = failure instanceof Error ? failure as PipelineExecutionError : null;
-  const failureStageId = pipelineError?.stage?.id ?? null;
-  let failureMessage = null;
-  if (failure instanceof Error) {
-    failureMessage = failure.message;
-  }
-  else if (failure) {
-    failureMessage = String(failure);
-  }
-
-  for (const stage of orderedStages) {
-    const base = {
-      id: stage.id,
-      name: stage.name ?? null
-    };
-
-    if (skippedSet.has(stage.id)) {
-      results.push({
-        ...base,
-        status: "skipped"
-      });
-      continue;
-    }
-
-    if (completedMap.has(stage.id)) {
-      const { durationMs, resourceUsage } = completedMap.get(stage.id)!;
-      results.push({
-        ...base,
-        status: "succeeded",
-        durationMs,
-        ...(resourceUsage ? { resourceUsage } : {})
-      });
-      continue;
-    }
-
-    if (failureStageId === stage.id) {
-      results.push({
-        ...base,
-        status: "failed",
-        error: failureMessage
-      });
-      continue;
-    }
-
-    results.push({
-      ...base,
-      status: "pending"
-    });
-  }
-
-  return results;
-}
-
-async function writePipelineRunRecord({
-  pipelineId,
-  graphPath,
-  filters,
-  plannedStages,
-  skippedStages,
-  orderedStages,
-  completedStages,
-  startedAt,
-  finishedAt,
-  status,
-  resourceUsage,
-  failure
-}: {
-  completedStages: DirectStageExecutionResult[];
-  failure?: unknown;
-  filters: StageFilters;
-  finishedAt: number;
-  graphPath: string;
-  orderedStages: ResolvedStageDefinition[];
-  pipelineId: string;
-  plannedStages: ResolvedStageDefinition[];
-  resourceUsage?: ProcessResourceUsage | null;
-  skippedStages: ResolvedStageDefinition[];
-  startedAt: number;
-  status: string;
-}) {
-  const durationMs = finishedAt - startedAt;
-  const record = {
-    pipelineId,
-    graphPath: relative(PROJECT_ROOT, graphPath),
-    filters,
-    status,
-    startedAt: new Date(startedAt).toISOString(),
-    finishedAt: new Date(finishedAt).toISOString(),
-    durationMs,
-    plannedStageIds: plannedStages.map(stage => stage.id),
-    skippedStageIds: skippedStages.map(stage => stage.id),
-    stageResults: mapStageResults({
-      orderedStages,
-      completedStages,
-      skippedStages,
-      failure
-    }),
-    failure: undefined as ReturnType<typeof extractFailureDetails> | undefined,
-    resourceUsage: undefined as ProcessResourceUsage | undefined
-  };
-
-  if (status === "failed" && failure) {
-    record.failure = extractFailureDetails(failure);
-  }
-
-  if (resourceUsage) {
-    record.resourceUsage = resourceUsage;
-  }
-
-  try {
-    await ensureRunsDirectoryExists();
-    const outputPath = buildRunRecordFilePath(startedAt, pipelineId);
-    await writeFile(outputPath, `${JSON.stringify(record, null, 2)}\n`, "utf8");
-    return outputPath;
-  }
-  catch (error) {
-    console.warn(`Unable to persist pipeline run metadata: ${error instanceof Error ? error.message : error}`);
-    return null;
-  }
-}
-
 function formatStageDuration(durationMs: number): string {
   const seconds = durationMs / 1000;
   return seconds >= 1 ? `${seconds.toFixed(1)}s` : `${durationMs}ms`;
@@ -350,19 +143,16 @@ async function runStagesDirectly(
     projectRoot: string;
     validateArtifacts: ReturnType<typeof createArtifactValidator>;
   }
-): Promise<DirectStageExecutionResult[]> {
+): Promise<void> {
   const state: DirectPipelineState = {};
-  const completedStages: DirectStageExecutionResult[] = [];
 
   for (let index = 0; index < stages.length; index += 1) {
     const stage = stages[index];
     const stepNumber = index + 1;
     const total = stages.length;
     const startedAt = Date.now();
-    const stageMonitor = createResourceMonitor();
 
     logger.start(stage, { stepNumber, total });
-    stageMonitor.start();
 
     try {
       switch (stage.id) {
@@ -418,7 +208,6 @@ async function runStagesDirectly(
       await validateArtifacts(stage, { cwd: projectRoot, logger });
     }
     catch (error) {
-      stageMonitor.stop();
       logger.fail(stage, { stepNumber, total, error });
 
       if (error instanceof Error) {
@@ -426,193 +215,74 @@ async function runStagesDirectly(
         pipelineError.stage = stage;
         pipelineError.stepNumber = stepNumber;
         pipelineError.totalStages = total;
-        pipelineError.completedStages = completedStages.slice();
       }
 
       throw error;
     }
 
     const durationMs = Date.now() - startedAt;
-    const resourceUsage = stageMonitor.stop() ?? undefined;
     logger.succeed(stage, {
       stepNumber,
       total,
       durationMs,
       formattedDuration: formatStageDuration(durationMs)
     });
-    completedStages.push({ stage, durationMs, resourceUsage });
   }
-
-  return completedStages;
 }
 
 async function runPipeline(
-  pipelineId: string,
-  { graphPath = DEFAULT_GRAPH_PATH, filters, jsonLogs }: {
-    filters?: Partial<StageFilters>;
-    graphPath?: string;
-    jsonLogs?: boolean;
-  } = {}
 ): Promise<void> {
+  const graphPath = DEFAULT_GRAPH_PATH;
+  const pipelineId = "full-refresh-parallel";
   const graph = await loadStageGraph(graphPath);
   const { pipeline, stages } = buildExecutionPlan(graph, pipelineId);
-  const logFormat = jsonLogs ? "json" : process.env.LOG_FORMAT ?? "text";
+  const logFormat = process.env.LOG_FORMAT ?? "text";
   const baseLogger = createLogger({ name: "pipeline", format: logFormat as LogFormat });
   const stageLogger = createStageProgressLogger(baseLogger);
   const validateArtifacts = createArtifactValidator();
-  const normalizedFilters = normalizeStageFilters(filters);
-  const { selectedStages, skippedStages } = applyStageFilters(stages, normalizedFilters);
 
   if (logFormat !== "json") {
     console.log(`Running pipeline "${pipeline.id}" using graph ${relative(PROJECT_ROOT, graphPath)}\n`);
   }
 
-  if (normalizedFilters.only.length > 0 || normalizedFilters.skip.length > 0) {
-    if (logFormat !== "json") {
-      console.log(`Filters applied — running ${selectedStages.length} of ${stages.length} stages.`);
-
-      if (normalizedFilters.only.length > 0) {
-        console.log(`   --only: ${normalizedFilters.only.join(", ")}`);
-      }
-
-      if (normalizedFilters.skip.length > 0) {
-        console.log(`   --skip: ${normalizedFilters.skip.join(", ")}`);
-      }
-
-      console.log("");
-    }
-  }
-
-  const resourceMonitor = createResourceMonitor();
-  resourceMonitor.start();
-  const startedAt = Date.now();
-
   try {
-    const completedStages = await runStagesDirectly(selectedStages, {
+    await runStagesDirectly(stages, {
       logger: stageLogger,
       projectRoot: PROJECT_ROOT,
       validateArtifacts
     });
 
-    const finishedAt = Date.now();
-    const resourceUsage = resourceMonitor.stop();
-    const recordPath = await writePipelineRunRecord({
-      pipelineId: pipeline.id,
-      graphPath,
-      filters: normalizedFilters,
-      plannedStages: selectedStages,
-      skippedStages,
-      orderedStages: stages,
-      completedStages,
-      startedAt,
-      finishedAt,
-      resourceUsage,
-      status: "success"
-    });
-
     if (logFormat === "json") {
       baseLogger.info(`Pipeline "${pipeline.id}" completed successfully.`, {
         event: "pipeline_succeed",
-        pipelineId: pipeline.id,
-        durationMs: finishedAt - startedAt,
-        resourceUsage,
-        runRecordPath: recordPath ? relative(PROJECT_ROOT, recordPath) : null
+        pipelineId: pipeline.id
       });
     }
     else {
       console.log(`\nPipeline "${pipeline.id}" completed successfully.`);
-
-      if (recordPath) {
-        console.log(`Run metadata saved to ${relative(PROJECT_ROOT, recordPath)}`);
-      }
     }
   }
   catch (error) {
-    const finishedAt = Date.now();
-    const resourceUsage = resourceMonitor.stop();
-    const pipelineError = error as PipelineExecutionError;
-    const completedStages: DirectStageExecutionResult[] =
-      error instanceof Error && Array.isArray(pipelineError.completedStages)
-        ? pipelineError.completedStages
-        : [];
-
-    const recordPath = await writePipelineRunRecord({
-      pipelineId: pipeline.id,
-      graphPath,
-      filters: normalizedFilters,
-      plannedStages: selectedStages,
-      skippedStages,
-      orderedStages: stages,
-      completedStages,
-      startedAt,
-      finishedAt,
-      resourceUsage,
-      status: "failed",
-      failure: error
-    });
-
     if (logFormat === "json") {
       baseLogger.error(`Pipeline execution failed: ${error instanceof Error ? error.message : error}`, {
         event: "pipeline_fail",
         pipelineId: pipeline.id,
-        durationMs: finishedAt - startedAt,
-        resourceUsage,
-        runRecordPath: recordPath ? relative(PROJECT_ROOT, recordPath) : null,
         error: error instanceof Error ? error.message : String(error)
       });
-    }
-    else if (recordPath) {
-      console.log(`Run metadata saved to ${relative(PROJECT_ROOT, recordPath)}`);
     }
 
     throw error;
   }
 }
 
-export async function main(argv = process.argv) {
-  const program = new Command();
-
-  program
-    .name("pipeline")
-    .description("MagicMirror pipeline orchestrator");
-
-  registerAdditionalCommands(program, {
-    defaultGraphPath: DEFAULT_GRAPH_PATH,
-    projectRoot: PROJECT_ROOT,
-    runsDirectory: RUNS_DIRECTORY,
-    minNodeVersion: MIN_NODE_VERSION,
-    execFileAsync
-  });
-
-  program
-    .command("run [pipelineId]")
-    .description("Execute the stages defined for the given pipeline")
-    .option("-g, --graph <path>", "Path to the stage graph", DEFAULT_GRAPH_PATH)
-    .option("--only <stageIds>", "Comma-separated list of stage ids to run exclusively", parseCommaSeparatedList, [])
-    .option("--skip <stageIds>", "Comma-separated list of stage ids to skip", parseCommaSeparatedList, [])
-    .option("--json-logs", "Output logs in JSON format")
-    .action(async (pipelineId, options) => {
-      const graphPath = resolve(options.graph);
-      const selectedPipeline = pipelineId ?? "full-refresh-parallel";
-      const filters = {
-        only: options.only,
-        skip: options.skip
-      };
-      const jsonLogs = options.jsonLogs;
-
-      try {
-        await runPipeline(selectedPipeline, { graphPath, filters, jsonLogs });
-      }
-      catch (error) {
-        if (!jsonLogs) {
-          const message = error instanceof Error ? error.message : error;
-          console.error(`\nPipeline execution failed: ${message}`);
-        }
-        process.exitCode = 1;
-      }
-    });
-
-  await program.parseAsync(argv);
+export async function main(): Promise<void> {
+  try {
+    await runPipeline();
+  }
+  catch (error) {
+    console.error(`\nPipeline execution failed: ${error instanceof Error ? error.message : error}`);
+    process.exitCode = 1;
+  }
 }
 
 if (import.meta.url === `file://${currentFile}`) {
