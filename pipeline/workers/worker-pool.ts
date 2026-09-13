@@ -34,6 +34,7 @@ interface WorkerMessage {
 }
 
 interface WorkerInfo {
+  batchStartedAt: number | null;
   currentBatchId: number | null;
   id: number;
   lastHeartbeat: Date;
@@ -147,6 +148,7 @@ export class WorkerPool {
       });
 
       const workerInfo: WorkerInfo = {
+        batchStartedAt: null,
         id: workerId,
         process: workerProcess,
         status: "idle",
@@ -252,6 +254,7 @@ export class WorkerPool {
     this.results.push(result);
     this.completedBatches += 1;
     worker.status = "idle";
+    worker.batchStartedAt = null;
     worker.currentBatchId = null;
     worker.modulesProcessed += result.results.length;
 
@@ -287,6 +290,7 @@ export class WorkerPool {
       return;
     }
     worker.status = "busy";
+    worker.batchStartedAt = Date.now();
     worker.currentBatchId = batch.batchId;
 
     logger.info(`Assigning batch ${batch.batchId} to worker ${worker.id}`);
@@ -337,10 +341,13 @@ export class WorkerPool {
     workers.forEach(worker => this.assignBatch(worker));
 
     // Wait for all batches to complete
-    await this.waitForCompletion();
-
-    // Shutdown workers
-    await this.shutdown();
+    try {
+      await this.waitForCompletion();
+    }
+    finally {
+      // Always shut down workers, including after a batch timeout.
+      await this.shutdown();
+    }
 
     // Aggregate and return results
     return this.aggregateResults();
@@ -351,11 +358,26 @@ export class WorkerPool {
    * @returns {Promise<void>}
    */
   waitForCompletion(): Promise<void> {
-    return new Promise<void>((resolve) => {
+    return new Promise<void>((resolve, reject) => {
       const checkInterval = setInterval(() => {
         if (this.completedBatches >= this.totalBatches) {
           clearInterval(checkInterval);
           resolve();
+          return;
+        }
+
+        const now = Date.now();
+        const timedOutWorker = [...this.workers.values()].find(worker => (
+          worker.status === "busy"
+          && worker.batchStartedAt !== null
+          && now - worker.batchStartedAt >= this.config.batchTimeoutMs
+        ));
+
+        if (timedOutWorker) {
+          clearInterval(checkInterval);
+          reject(new Error(
+            `Worker ${timedOutWorker.id} timed out processing batch ${timedOutWorker.currentBatchId}`
+          ));
         }
       }, 100);
     });
