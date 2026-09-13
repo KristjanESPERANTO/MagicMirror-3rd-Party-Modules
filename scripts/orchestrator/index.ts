@@ -1,32 +1,45 @@
 #!/usr/bin/env node
 
-import { applyStageFilters, normalizeStageFilters, parseCommaSeparatedList } from "./stage-filters.ts";
 import { basename, dirname, join, relative, resolve } from "node:path";
+import { applyStageFilters, normalizeStageFilters, parseCommaSeparatedList } from "./stage-filters.ts";
 import { buildExecutionPlan, loadStageGraph } from "./stage-graph.ts";
 import { createLogger, createStageProgressLogger } from "../shared/logger.ts";
 import type { LogFormat } from "../shared/logger.ts";
 import { mkdir, writeFile } from "node:fs/promises";
 import { Command } from "commander";
-import { createInProcessStageRunner } from "./in-process-stage-runner.ts";
 import { createResourceMonitor } from "./resource-monitor.ts";
 import { execFile } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import process from "node:process";
 import { promisify } from "node:util";
 import { registerAdditionalCommands } from "./cli-commands.ts";
-import { runStagesSequentially } from "./stage-executor.ts";
+import { runAggregateCatalogue } from "../aggregate-catalogue.ts";
+import { runCollectMetadata } from "../collect-metadata/index.ts";
+import { runGenerateResultMarkdown } from "../generate-result-markdown.ts";
+import { runParallelProcessing, writeSkippedModulesFile } from "../parallel-processing.ts";
 import { validateStageFile } from "../lib/schemaValidator.ts";
 import type { ArtifactDefinition, ResolvedStageDefinition } from "./stage-graph.ts";
 import type { StageFilters } from "./stage-filters.ts";
 import type { ProcessResourceUsage } from "./resource-monitor.ts";
-import type { StageExecutionResult } from "./stage-executor.ts";
 
 type PipelineExecutionError = Error & {
-  completedStages?: StageExecutionResult<ResolvedStageDefinition>[];
+  completedStages?: DirectStageExecutionResult[];
   stage?: ResolvedStageDefinition;
   stepNumber?: number;
   totalStages?: number;
 };
+
+interface DirectPipelineState {
+  modules?: unknown[];
+  processedModules?: unknown[];
+  stats?: unknown;
+}
+
+interface DirectStageExecutionResult {
+  stage: ResolvedStageDefinition;
+  durationMs: number;
+  resourceUsage?: ProcessResourceUsage;
+}
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFile);
@@ -182,7 +195,7 @@ function mapStageResults({
   failure
 }: {
   orderedStages: ResolvedStageDefinition[];
-  completedStages: StageExecutionResult<ResolvedStageDefinition>[];
+  completedStages: DirectStageExecutionResult[];
   skippedStages: ResolvedStageDefinition[];
   failure: unknown;
 }) {
@@ -194,7 +207,7 @@ function mapStageResults({
     error?: string | null;
     resourceUsage?: ProcessResourceUsage;
   }> = [];
-  const completedMap = new Map<string, StageExecutionResult<ResolvedStageDefinition>>();
+  const completedMap = new Map<string, DirectStageExecutionResult>();
   for (const entry of completedStages) {
     completedMap.set(entry.stage.id, entry);
   }
@@ -267,7 +280,7 @@ async function writePipelineRunRecord({
   resourceUsage,
   failure
 }: {
-  completedStages: StageExecutionResult<ResolvedStageDefinition>[];
+  completedStages: DirectStageExecutionResult[];
   failure?: unknown;
   filters: StageFilters;
   finishedAt: number;
@@ -321,6 +334,118 @@ async function writePipelineRunRecord({
   }
 }
 
+function formatStageDuration(durationMs: number): string {
+  const seconds = durationMs / 1000;
+  return seconds >= 1 ? `${seconds.toFixed(1)}s` : `${durationMs}ms`;
+}
+
+async function runStagesDirectly(
+  stages: ResolvedStageDefinition[],
+  {
+    logger,
+    projectRoot,
+    validateArtifacts
+  }: {
+    logger: ReturnType<typeof createStageProgressLogger>;
+    projectRoot: string;
+    validateArtifacts: ReturnType<typeof createArtifactValidator>;
+  }
+): Promise<DirectStageExecutionResult[]> {
+  const state: DirectPipelineState = {};
+  const completedStages: DirectStageExecutionResult[] = [];
+
+  for (let index = 0; index < stages.length; index += 1) {
+    const stage = stages[index];
+    const stepNumber = index + 1;
+    const total = stages.length;
+    const startedAt = Date.now();
+    const stageMonitor = createResourceMonitor();
+
+    logger.start(stage, { stepNumber, total });
+    stageMonitor.start();
+
+    try {
+      switch (stage.id) {
+        case "collect-metadata": {
+          const result = await runCollectMetadata();
+          state.modules = result.modules;
+          break;
+        }
+        case "parallel-processing": {
+          if (!state.modules) {
+            throw new Error("parallel-processing requires collect-metadata output");
+          }
+
+          const result = await runParallelProcessing({
+            modules: state.modules as never,
+            projectRoot,
+            runLogger: logger
+          });
+          state.processedModules = result.processedModules;
+          await writeSkippedModulesFile(result.results, projectRoot);
+          break;
+        }
+        case "aggregate-catalogue": {
+          if (!state.processedModules) {
+            throw new Error("aggregate-catalogue requires parallel-processing output");
+          }
+
+          const result = await runAggregateCatalogue({
+            processedModules: state.processedModules as never,
+            projectRoot,
+            runLogger: logger
+          });
+          state.stats = result.stats;
+          break;
+        }
+        case "generate-result-markdown": {
+          if (!state.processedModules || !state.stats) {
+            throw new Error("generate-result-markdown requires aggregate-catalogue output");
+          }
+
+          await runGenerateResultMarkdown({
+            processedModules: state.processedModules,
+            projectRoot,
+            runLogger: logger,
+            stats: state.stats as never
+          });
+          break;
+        }
+        default:
+          throw new Error(`Unsupported direct pipeline stage "${stage.id}".`);
+      }
+
+      await validateArtifacts(stage, { cwd: projectRoot, logger });
+    }
+    catch (error) {
+      stageMonitor.stop();
+      logger.fail(stage, { stepNumber, total, error });
+
+      if (error instanceof Error) {
+        const pipelineError = error as PipelineExecutionError;
+        pipelineError.stage = stage;
+        pipelineError.stepNumber = stepNumber;
+        pipelineError.totalStages = total;
+        pipelineError.completedStages = completedStages.slice();
+      }
+
+      throw error;
+    }
+
+    const durationMs = Date.now() - startedAt;
+    const resourceUsage = stageMonitor.stop() ?? undefined;
+    logger.succeed(stage, {
+      stepNumber,
+      total,
+      durationMs,
+      formattedDuration: formatStageDuration(durationMs)
+    });
+    completedStages.push({ stage, durationMs, resourceUsage });
+  }
+
+  return completedStages;
+}
+
 async function runPipeline(
   pipelineId: string,
   { graphPath = DEFAULT_GRAPH_PATH, filters, jsonLogs }: {
@@ -334,7 +459,6 @@ async function runPipeline(
   const logFormat = jsonLogs ? "json" : process.env.LOG_FORMAT ?? "text";
   const baseLogger = createLogger({ name: "pipeline", format: logFormat as LogFormat });
   const stageLogger = createStageProgressLogger(baseLogger);
-  const stageRunner = createInProcessStageRunner({ projectRoot: PROJECT_ROOT });
   const validateArtifacts = createArtifactValidator();
   const normalizedFilters = normalizeStageFilters(filters);
   const { selectedStages, skippedStages } = applyStageFilters(stages, normalizedFilters);
@@ -364,11 +488,9 @@ async function runPipeline(
   const startedAt = Date.now();
 
   try {
-    const completedStages = await runStagesSequentially(selectedStages, {
-      cwd: PROJECT_ROOT,
-      env: { ...process.env, LOG_FORMAT: logFormat },
+    const completedStages = await runStagesDirectly(selectedStages, {
       logger: stageLogger,
-      stageRunner,
+      projectRoot: PROJECT_ROOT,
       validateArtifacts
     });
 
@@ -409,7 +531,7 @@ async function runPipeline(
     const finishedAt = Date.now();
     const resourceUsage = resourceMonitor.stop();
     const pipelineError = error as PipelineExecutionError;
-    const completedStages: StageExecutionResult<ResolvedStageDefinition>[] =
+    const completedStages: DirectStageExecutionResult[] =
       error instanceof Error && Array.isArray(pipelineError.completedStages)
         ? pipelineError.completedStages
         : [];
