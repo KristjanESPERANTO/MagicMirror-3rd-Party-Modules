@@ -1,0 +1,27 @@
+import { describe, it } from "node:test";
+import assert from "node:assert/strict";
+import { getRepositoryStatusIssues } from "../../../pipeline/workers/process-module.ts";
+
+describe("repository status issues", () => {
+  it("reports archived GitHub repositories", () => {
+    const issues = getRepositoryStatusIssues({
+      id: "SVendittelli/MMM-fitbit",
+      isArchived: true,
+      url: "https://github.com/SVendittelli/MMM-fitbit"
+    });
+
+    assert.deepStrictEqual(issues, [
+      "This GitHub repository is archived and read-only. It may no longer receive fixes or updates."
+    ]);
+  });
+
+  it("does not report archive status for active repositories", () => {
+    const issues = getRepositoryStatusIssues({
+      id: "example/MMM-example",
+      isArchived: false,
+      url: "https://github.com/example/MMM-example"
+    });
+
+    assert.deepStrictEqual(issues, []);
+  });
+});

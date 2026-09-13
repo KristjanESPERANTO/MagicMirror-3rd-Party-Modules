@@ -148,6 +148,23 @@ function normalizeIssueList(issues: unknown): string[] {
   return [];
 }
 
+export function getRepositoryStatusIssues(module: Pick<ModuleInput, "url" | "hasGithubIssues" | "isArchived">): string[] {
+  if (!isRepositoryType(module.url, "github")) {
+    return [];
+  }
+
+  const issues: string[] = [];
+  if (module.hasGithubIssues === false) {
+    issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
+  }
+
+  if (module.isArchived === true) {
+    issues.push("This GitHub repository is archived and read-only. It may no longer receive fixes or updates.");
+  }
+
+  return issues;
+}
+
 function mergeUniqueIssues(target: string[], issues: unknown): void {
   const existing = new Set(target);
   for (const issue of normalizeIssueList(issues)) {
@@ -913,10 +930,7 @@ async function enrichModule(module: ModuleInput, config: ProcessModuleConfig): P
     enrichIssues.push(`An error occurred while getting information from 'package.json': ${packageJson.error}`);
   }
 
-  // Check GitHub issues
-  if (isRepositoryType(module.url, "github") && module.hasGithubIssues === false) {
-    enrichIssues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
-  }
+  enrichIssues.push(...getRepositoryStatusIssues(module));
 
   // Process images only if we have a compatible license
   const useableLicenses = [

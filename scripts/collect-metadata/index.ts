@@ -158,7 +158,7 @@ const httpClient = createHttpClient({ rateLimiter });
 const repositoryCache = createPersistentCache({
   filePath: REPOSITORY_CACHE_PATH,
   defaultTtlMs: REPOSITORY_CACHE_TTL_MS,
-  version: "repository-api/v2"
+  version: "repository-api/v3"
 });
 
 /**
@@ -353,6 +353,24 @@ async function fetchGitHubLastCommitFromAtom(moduleUrl: string, client: HttpClie
 
     const updatedMatch = result.data.match(/<updated>([^<]+)<\/updated>/u);
     return updatedMatch?.[1] ?? null;
+  }
+  catch {
+    return null;
+  }
+}
+
+export function detectArchivedRepositoryPage(page: string): boolean {
+  return /This repository was archived by the owner\b/iu.test(page);
+}
+
+async function fetchGitHubArchivedStatus(moduleUrl: string, client: HttpClient): Promise<boolean | null> {
+  try {
+    const result = await client.getText(moduleUrl) as FetchTextResult;
+    if (!result.ok) {
+      return null;
+    }
+
+    return detectArchivedRepositoryPage(result.data);
   }
   catch {
     return null;
@@ -568,11 +586,14 @@ async function processModule(module: EnrichedModule, context: ProcessModuleConte
   }
 
   if (repoType === "github" && !process.env.GITHUB_TOKEN && recovery.error.message.includes("403")) {
-    const lastCommitFromAtom = await fetchGitHubLastCommitFromAtom(module.url, client);
-    if (lastCommitFromAtom) {
+    const [lastCommitFromAtom, archivedFromPage] = await Promise.all([
+      fetchGitHubLastCommitFromAtom(module.url, client),
+      fetchGitHubArchivedStatus(module.url, client)
+    ]);
+    if (lastCommitFromAtom || typeof archivedFromPage === "boolean") {
       const atomRecovery: CachedRepositoryValue = {
         lastCommit: lastCommitFromAtom,
-        isArchived: typeof module.isArchived === "boolean" ? module.isArchived : undefined,
+        isArchived: archivedFromPage ?? (typeof module.isArchived === "boolean" ? module.isArchived : undefined),
         hasGithubIssues: typeof module.hasGithubIssues === "boolean" ? module.hasGithubIssues : undefined
       };
 
