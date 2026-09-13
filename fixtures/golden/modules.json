@@ -296,7 +296,7 @@
     },
     {
       "category": "Weather",
-      "description": "Weekly school timetable — active day shown in full (colour blocks, times, breaks as gaps), other days compact. Configurable subjects/days/locale.",
+      "description": "Clean comic moon phase with sunrise/sunset flanking the moon (SunCalc, no API key).",
       "id": "ago1776/MMM-MoonClear",
       "image": "MMM-MoonClear---ago1776.webp",
       "license": "MIT",
@@ -803,6 +803,8 @@
       "category": "News / Information",
       "description": "Norwegian electricity prices forecast.",
       "id": "AndreasHagman/MMM-NOKElectricityForecast",
+      "image": "MMM-NOKElectricityForecast---Andreas Hagman.webp",
+      "license": "MIT",
       "maintainer": "Andreas Hagman",
       "maintainerURL": "https://github.com/AndreasHagman",
       "name": "MMM-NOKElectricityForecast",
@@ -1484,6 +1486,21 @@
       "url": "https://github.com/balharrie/MMM-SugarValue"
     },
     {
+      "category": "Entertainment / Misc",
+      "description": "Syncs private iCloud calendars via CalDAV to local .ics files.",
+      "id": "bananaoverflow/MMM-iCloudCalendar",
+      "license": "MIT",
+      "maintainer": "BananaOverflow",
+      "maintainerURL": "https://github.com/bananaoverflow",
+      "name": "MMM-iCloudCalendar",
+      "tags": [
+        "icloud",
+        "caldav",
+        "calendar"
+      ],
+      "url": "https://github.com/bananaoverflow/MMM-iCloudCalendar"
+    },
+    {
       "category": "Weather",
       "description": "Display current weather based on the Meteoblue.com API.",
       "id": "Bangee44/MMM-meteoblueCurrent",
@@ -1892,6 +1909,15 @@
       "maintainerURL": "https://github.com/blixhavn",
       "name": "MMM-Minigjenbruksstasjon",
       "url": "https://github.com/blixhavn/MMM-Minigjenbruksstasjon"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Displays live bus departure times for a specified stop within Wellington, New Zealand's Metlink public transport network.",
+      "id": "BlueberryEggTart88/MMM-metlinkBus",
+      "maintainer": "BlueberryEggTart",
+      "maintainerURL": "https://github.com/BlueberryEggTart88",
+      "name": "MMM-metlinkBus",
+      "url": "https://github.com/BlueberryEggTart88/MMM-metlinkBus"
     },
     {
       "category": "Transport / Travel",
@@ -2388,6 +2414,23 @@
       "url": "https://github.com/bwente/MMM-LiteraryClock"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "A centralized notification inbox that normalizes, prioritizes, and displays messages from MagicMirror modules, REST webhooks, MQTT, Home Assistant, and local services.",
+      "id": "bwente/MMM-MessageCenter",
+      "image": "MMM-MessageCenter---bwente.webp",
+      "license": "MIT",
+      "maintainer": "bwente",
+      "maintainerURL": "https://github.com/bwente",
+      "name": "MMM-MessageCenter",
+      "tags": [
+        "notifications",
+        "home-assistant",
+        "mqtt",
+        "smart-home"
+      ],
+      "url": "https://github.com/bwente/MMM-MessageCenter"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Displays the active queue, provides touch-enabled playback controls, switches between players, and launches configured playlists.",
       "id": "bwente/MMM-MusicAssistant-Controller",
@@ -2406,6 +2449,21 @@
         "compact"
       ],
       "url": "https://github.com/bwente/MMM-MusicAssistant-Controller"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "description": "Display clocks for multiple time zones with an optional real-time day/night world map.",
+      "id": "bwente/MMM-WorldClockMap",
+      "image": "MMM-WorldClockMap---bwente.webp",
+      "license": "MIT",
+      "maintainer": "bwente",
+      "maintainerURL": "https://github.com/bwente",
+      "name": "MMM-WorldClockMap",
+      "tags": [
+        "world-clock",
+        "timezone"
+      ],
+      "url": "https://github.com/bwente/MMM-WorldClockMap"
     },
     {
       "category": "Transport / Travel",
@@ -2464,6 +2522,24 @@
         "rest"
       ],
       "url": "https://github.com/c-klinger/MMM-JsonValue"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "description": "Display a single GIF (animated, transparent-background friendly) at a fixed size and position on your mirror.",
+      "id": "calicopizzadelivery/MMM-GIFDisplayer",
+      "maintainer": "calicopizzadelivery",
+      "maintainerURL": "https://github.com/calicopizzadelivery",
+      "name": "MMM-GIFDisplayer",
+      "url": "https://github.com/calicopizzadelivery/MMM-GIFDisplayer"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Idle-triggered screensaver with a Windows-3D-Starfield-style animation and a drifting digital clock, to reduce burn-in on always-on displays. Dismisses on any touch/mouse/keyboard activity.",
+      "id": "calicopizzadelivery/MMM-StarfieldSaver",
+      "maintainer": "calicopizzadelivery",
+      "maintainerURL": "https://github.com/calicopizzadelivery",
+      "name": "MMM-StarfieldSaver",
+      "url": "https://github.com/calicopizzadelivery/MMM-StarfieldSaver"
     },
     {
       "category": "Weather",
@@ -2737,7 +2813,7 @@
       "url": "https://github.com/ChielChiel/MMM-SE-Reputation"
     },
     {
-      "category": "Finance",
+      "category": "Outdated Modules",
       "description": "Display your bunq account balance.",
       "id": "choffmann/MMM-bunq",
       "image": "MMM-bunq---choffmann.webp",
@@ -2745,6 +2821,7 @@
       "maintainer": "choffmann",
       "maintainerURL": "https://github.com/choffmann",
       "name": "MMM-bunq",
+      "outdated": "Abandoned. No reaction to PRs since years.",
       "url": "https://github.com/choffmann/MMM-bunq"
     },
     {
@@ -4557,6 +4634,23 @@
       "url": "https://github.com/DustinBryant/MMM-Ring"
     },
     {
+      "category": "Weather",
+      "description": "Displays real-time weather observations and a five-day forecast from a WeatherFlow Tempest personal weather station.",
+      "id": "dwburger/MMM-TempestWeather",
+      "image": "MMM-TempestWeather---D.W. Burger.webp",
+      "license": "MIT",
+      "maintainer": "D.W. Burger",
+      "maintainerURL": "https://github.com/dwburger",
+      "name": "MMM-TempestWeather",
+      "tags": [
+        "weather",
+        "weatherflow",
+        "tempest",
+        "forecast"
+      ],
+      "url": "https://github.com/dwburger/MMM-TempestWeather"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Upcoming events in your city from G**gle. Could be an update to the \"Eventful API\". Modular so additional event providers can be added.",
       "id": "dwoolridge/MMM-LocalEvents",
@@ -5813,21 +5907,6 @@
         "irish rail"
       ],
       "url": "https://github.com/galaktor/MMM-DublinRTPI"
-    },
-    {
-      "category": "Transport / Travel",
-      "description": "Displays live bus departure times for a specified stop within Wellington, New Zealand's Metlink public transport network.",
-      "id": "galaxatea/MMM-metlinkBus",
-      "license": "MIT",
-      "maintainer": "GalaxaTea",
-      "maintainerURL": "https://github.com/galaxatea",
-      "name": "MMM-metlinkBus",
-      "tags": [
-        "metlink",
-        "bus",
-        "transit"
-      ],
-      "url": "https://github.com/galaxatea/MMM-metlinkBus"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -7589,7 +7668,12 @@
       "maintainerURL": "https://github.com/jaumebosch",
       "name": "MMM-TMB",
       "tags": [
-        "public transport"
+        "public transport",
+        "tmb",
+        "barcelona",
+        "bus",
+        "ibus",
+        "transit"
       ],
       "url": "https://github.com/jaumebosch/MMM-TMB"
     },
@@ -9301,6 +9385,8 @@
       "category": "Weather Themes",
       "description": "Weather module theme which adds a compact badge-based style and enables multiple icon sets (some sets are animated).",
       "id": "KristjanESPERANTO/MMT-WeatherOneTheme",
+      "image": "MMT-WeatherOneTheme---KristjanESPERANTO.webp",
+      "license": "MIT",
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "name": "MMT-WeatherOneTheme",
@@ -10089,17 +10175,6 @@
       "maintainerURL": "https://github.com/mariosgouros",
       "name": "MMM-eshopspecials",
       "url": "https://github.com/mariosgouros/MMM-eshopspecials"
-    },
-    {
-      "category": "Weather",
-      "description": "Display the air quality index from [looko2](https://looko2.pl) sensor.",
-      "id": "marska/MMM-Looko2-aq",
-      "image": "MMM-Looko2-aq---marska.webp",
-      "license": "MIT",
-      "maintainer": "marska",
-      "maintainerURL": "https://github.com/marska",
-      "name": "MMM-Looko2-aq",
-      "url": "https://github.com/marska/MMM-Looko2-aq"
     },
     {
       "category": "Weather",
@@ -11112,23 +11187,8 @@
       "url": "https://github.com/MMRIZE/MMM-Remote-Control-Repository"
     },
     {
-      "category": "Outdated Modules",
-      "description": "Change screen scenes by time and order with animation effect.",
-      "id": "MMRIZE/MMM-Scenes",
-      "license": "MIT",
-      "maintainer": "MMRIZE",
-      "maintainerURL": "https://github.com/MMRIZE",
-      "name": "MMM-Scenes",
-      "outdated": "Deprecated. The successor is MMM-Scenes2.",
-      "tags": [
-        "paging",
-        "animation"
-      ],
-      "url": "https://github.com/MMRIZE/MMM-Scenes"
-    },
-    {
       "category": "Development / Core MagicMirror²",
-      "description": "Change screen scenes by time and order with animation effect. Successor of MMM-Scenes since MM 2.25 (AnimateCSS is introduced).",
+      "description": "Change screen scenes by time and order with animation effect.",
       "id": "MMRIZE/MMM-Scenes2",
       "image": "MMM-Scenes2---MMRIZE.webp",
       "license": "MIT",
@@ -11143,7 +11203,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "description": "Interact with your mirror via Telegram. Revamped 2024.",
+      "description": "Interact with your mirror via Telegram.",
       "id": "MMRIZE/MMM-TelegramBot",
       "image": "MMM-TelegramBot---MMRIZE.webp",
       "license": "MIT",
@@ -11387,6 +11447,21 @@
       "maintainerURL": "https://github.com/msimon360",
       "name": "MMM-FIFAWorldCup",
       "url": "https://github.com/msimon360/MMM-FIFAWorldCup"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Utility module that does a one-way sync of an iCloud Photos album onto your device.",
+      "id": "msimon360/MMM-iCloudPhotos",
+      "license": "MIT",
+      "maintainer": "Mark Simon",
+      "maintainerURL": "https://github.com/msimon360",
+      "name": "MMM-iCloudPhotos",
+      "tags": [
+        "icloud",
+        "photos",
+        "media"
+      ],
+      "url": "https://github.com/msimon360/MMM-iCloudPhotos"
     },
     {
       "category": "Weather",
@@ -15055,8 +15130,10 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "More details and customization for MM's Node.js console logs.",
+      "hasGithubIssues": true,
       "id": "shbatm/MMM-Logging",
       "image": "MMM-Logging---shbatm.webp",
+      "isArchived": false,
       "license": "MIT",
       "maintainer": "shbatm",
       "maintainerURL": "https://github.com/shbatm",
@@ -17644,7 +17721,7 @@
     },
     {
       "category": "Entertainment / Misc",
-      "description": "Display local time of several locations. Fully supported and updated.",
+      "description": "Display local time of several locations.",
       "id": "ulrichwisser/MMM-Worldclock",
       "image": "MMM-Worldclock---ulrichwisser.webp",
       "license": "MIT",
