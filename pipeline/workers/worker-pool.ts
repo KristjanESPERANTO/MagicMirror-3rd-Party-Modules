@@ -34,7 +34,7 @@ interface WorkerMessage {
 }
 
 interface WorkerInfo {
-  batchStartedAt: number | null;
+  batchTimeout: NodeJS.Timeout | null;
   currentBatchId: number | null;
   id: number;
   lastHeartbeat: Date;
@@ -104,6 +104,8 @@ export class WorkerPool {
   private batchQueue: WorkerBatch[];
   private completedBatches: number;
   private config: Required<WorkerPoolConfig>;
+  private completionReject: ((error: Error) => void) | null;
+  private completionResolve: (() => void) | null;
   private progressCallback: ((event: ProgressEvent) => void) | null;
   private results: BatchResult[];
   private totalBatches: number;
@@ -121,6 +123,8 @@ export class WorkerPool {
     };
 
     this.workers = new Map();
+    this.completionResolve = null;
+    this.completionReject = null;
     this.batchQueue = [];
     this.results = [];
     this.totalBatches = 0;
@@ -148,7 +152,7 @@ export class WorkerPool {
       });
 
       const workerInfo: WorkerInfo = {
-        batchStartedAt: null,
+        batchTimeout: null,
         id: workerId,
         process: workerProcess,
         status: "idle",
@@ -254,7 +258,10 @@ export class WorkerPool {
     this.results.push(result);
     this.completedBatches += 1;
     worker.status = "idle";
-    worker.batchStartedAt = null;
+    if (worker.batchTimeout) {
+      clearTimeout(worker.batchTimeout);
+      worker.batchTimeout = null;
+    }
     worker.currentBatchId = null;
     worker.modulesProcessed += result.results.length;
 
@@ -270,6 +277,13 @@ export class WorkerPool {
         total: this.totalBatches,
         durationMs: result.durationMs
       });
+    }
+
+    if (this.completedBatches >= this.totalBatches) {
+      const resolve = this.completionResolve;
+      this.completionResolve = null;
+      this.completionReject = null;
+      resolve?.();
     }
 
     // Assign next batch if available
@@ -290,8 +304,17 @@ export class WorkerPool {
       return;
     }
     worker.status = "busy";
-    worker.batchStartedAt = Date.now();
     worker.currentBatchId = batch.batchId;
+    worker.batchTimeout = setTimeout(() => {
+      if (worker.status !== "busy" || worker.currentBatchId !== batch.batchId) {
+        return;
+      }
+
+      const reject = this.completionReject;
+      this.completionResolve = null;
+      this.completionReject = null;
+      reject?.(new Error(`Worker ${worker.id} timed out processing batch ${batch.batchId}`));
+    }, this.config.batchTimeoutMs);
 
     logger.info(`Assigning batch ${batch.batchId} to worker ${worker.id}`);
 
@@ -320,6 +343,8 @@ export class WorkerPool {
     // Create batches
     const batches = distributeBatches(modules, this.config.batchSize);
     this.totalBatches = batches.length;
+    this.completionResolve = null;
+    this.completionReject = null;
     this.batchQueue = batches.map(batch => ({
       ...batch,
       config: moduleConfig
@@ -358,28 +383,13 @@ export class WorkerPool {
    * @returns {Promise<void>}
    */
   waitForCompletion(): Promise<void> {
+    if (this.completedBatches >= this.totalBatches) {
+      return Promise.resolve();
+    }
+
     return new Promise<void>((resolve, reject) => {
-      const checkInterval = setInterval(() => {
-        if (this.completedBatches >= this.totalBatches) {
-          clearInterval(checkInterval);
-          resolve();
-          return;
-        }
-
-        const now = Date.now();
-        const timedOutWorker = [...this.workers.values()].find(worker => (
-          worker.status === "busy"
-          && worker.batchStartedAt !== null
-          && now - worker.batchStartedAt >= this.config.batchTimeoutMs
-        ));
-
-        if (timedOutWorker) {
-          clearInterval(checkInterval);
-          reject(new Error(
-            `Worker ${timedOutWorker.id} timed out processing batch ${timedOutWorker.currentBatchId}`
-          ));
-        }
-      }, 100);
+      this.completionResolve = resolve;
+      this.completionReject = reject;
     });
   }
 
@@ -392,6 +402,10 @@ export class WorkerPool {
 
     const shutdownPromises = [];
     for (const worker of this.workers.values()) {
+      if (worker.batchTimeout) {
+        clearTimeout(worker.batchTimeout);
+        worker.batchTimeout = null;
+      }
       const promise = new Promise<void>((resolve) => {
         worker.process.once("exit", resolve);
         worker.process.send({ type: "shutdown" });
