@@ -16,7 +16,7 @@ export interface ProcessedModule extends ModuleRecord {
   license?: string;
   maintainer?: string;
   name?: string;
-  outdated?: boolean;
+  outdated?: string;
   watchersCount?: number;
   stars?: number;
   tags?: string[];

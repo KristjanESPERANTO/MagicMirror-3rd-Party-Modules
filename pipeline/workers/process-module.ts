@@ -29,6 +29,7 @@ interface ModuleInput {
   license?: string;
   maintainer: string;
   name: string;
+  outdated?: string;
   stars?: number;
   url: string;
   [key: string]: unknown;
@@ -1179,14 +1180,18 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
       await config.moduleLogger.info("analyze", "Starting analysis stage");
     }
 
-    analysisResult = await analyzeModule(module, config);
+    analysisResult = module.outdated
+      ? { analysisIssues: [], recommendations: [] }
+      : await analyzeModule(module, config);
     // Merge analysis issues into the issues list
     mergeUniqueIssues(allIssues, analysisResult.analysisIssues);
 
     // Add recommendations separately if any
     mergeUniqueIssues(allIssues, analysisResult.recommendations);
 
-    await applyDependencyIntegrations(cloneDir, allIssues, config);
+    if (!module.outdated) {
+      await applyDependencyIntegrations(cloneDir, allIssues, config);
+    }
 
     if (config.moduleLogger) {
       await config.moduleLogger.info("analyze", "Analysis complete", {

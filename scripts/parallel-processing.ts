@@ -33,6 +33,7 @@ interface Stage2Module {
   maintainer: string;
   name: string;
   notFound?: boolean;
+  outdated?: string;
   url: string;
   [key: string]: unknown;
 }
