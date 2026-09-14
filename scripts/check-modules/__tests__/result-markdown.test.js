@@ -32,6 +32,12 @@ describe("result-markdown", () => {
         maintainer: "Erin",
         url: "https://gitlab.com/example/MMM-NotGitHub",
         watchersCount: 0
+      },
+      {
+        name: "MMM-Outdated",
+        maintainer: "Frank",
+        outdated: "This module is marked as outdated in the official module list.",
+        issues: ["Developer hint that should be hidden"]
       }
     ]);
 

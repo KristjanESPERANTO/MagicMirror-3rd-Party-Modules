@@ -18,6 +18,7 @@ interface ProcessedModuleLike {
   issues?: boolean | string[] | string | null;
   maintainer?: string;
   name?: string;
+  outdated?: string;
   watchersCount?: number;
   url?: string;
 }
@@ -55,6 +56,10 @@ export function collectIssueSummaries(modules: unknown[]): IssueSummary[] {
     }
 
     const stageModule = module as ProcessedModuleLike;
+    if (stageModule.outdated) {
+      return [];
+    }
+
     const issues = normalizeIssuesInput(stageModule.issues);
     const watcherIssue = isGitHubUrl(stageModule.url) && stageModule.watchersCount === 0
       ? "GitHub reports 0 subscribers (Watch); maintainer notifications may be missed."

@@ -43,7 +43,7 @@ describe("createCard", () => {
     assert.ok(description.textContent.includes(payload));
   });
 
-  it("renders outdated notices as text", () => {
+  it("renders the outdated note safely", () => {
     const payload = "<img src=x onerror=alert(1)>";
     const card = createCard({
       name: "Test module",
