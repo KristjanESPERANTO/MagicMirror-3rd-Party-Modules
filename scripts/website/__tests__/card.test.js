@@ -55,5 +55,6 @@ describe("createCard", () => {
 
     assert.equal(notice.querySelector("img"), null);
     assert.equal(notice.textContent, payload);
+    assert.equal(card.querySelector(".container.issues"), null);
   });
 });

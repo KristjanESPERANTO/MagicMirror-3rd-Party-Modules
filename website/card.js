@@ -114,7 +114,7 @@ export function createCard(moduleData, { filterByMaintainer, filterByTag }) {
     card.querySelector(".info .container.commit").remove();
   }
 
-  if (moduleData.issues) {
+  if (moduleData.issues && !moduleData.outdated) {
     const moduleSlug = `${moduleData.name}-by-${moduleData.maintainer.replaceAll(" ", "-").replaceAll("&", "").replaceAll("/", "")}`;
     const url = `result.html?module=${encodeURIComponent(moduleSlug)}#${moduleSlug}`;
     const issuesLink = card.querySelector(".info .container.issues .text");
