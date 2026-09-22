@@ -3,7 +3,7 @@
  * Performs text, package, dependency, and README checks for a module.
  */
 
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 import {
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES,
@@ -57,6 +57,31 @@ const MOMENT_USAGE_REGEX = /\bmoment\s*\(|\bmoment\.[A-Za-z_$][\w$]*\s*\(/;
 const MOMENT_IMPORT_REQUIRE_REGEX = /require\(["']moment(?:-timezone)?["']\)|from\s+["']moment(?:-timezone)?["']|import\(["']moment(?:-timezone)?["']\)/;
 const MOMENT_CORE_INDICATOR_REGEX = /["']moment\.js["']|["']moment-timezone\.js["']/;
 const GIT_CLONE_FLAG_REGEX = /(?:-|--)[^\s=]+(?:=[^\s]+)?/u;
+const LARGE_FILE_BYTES = 10 * 1024 * 1024;
+const LARGE_MODULE_BYTES = 10 * 1024 * 1024;
+const VERY_LARGE_MODULE_BYTES = 25 * 1024 * 1024;
+const SIZE_EXCLUDED_DIRECTORIES = new Set([".git", "node_modules", "dist", "build", "coverage"]);
+const SIZE_EXCLUDED_EXTENSIONS = new Set([
+  ".gif",
+  ".avi",
+  ".jpeg",
+  ".jpg",
+  ".m4v",
+  ".mkv",
+  ".mp3",
+  ".mp4",
+  ".mpeg",
+  ".mpg",
+  ".mov",
+  ".png",
+  ".svg",
+  ".wav",
+  ".webp",
+  ".webm",
+  ".woff",
+  ".woff2",
+  ".wmv"
+]);
 
 function escapeRegex(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
@@ -87,6 +112,22 @@ function isExcludedForMomentScan(modulePath: string, filePath: string): boolean 
     || segments.includes("dist")
     || segments.includes("build")
     || segments.includes("coverage");
+}
+
+function isExcludedFromSizeScan(modulePath: string, filePath: string): boolean {
+  const relativePath = filePath.startsWith(modulePath)
+    ? filePath.slice(modulePath.length).replace(/^\/+/, "")
+    : filePath;
+  const segments = relativePath.toLowerCase().split("/");
+  const filename = segments.at(-1) ?? "";
+  const extension = filename.includes(".") ? filename.slice(filename.lastIndexOf(".")) : "";
+
+  return segments.some(segment => SIZE_EXCLUDED_DIRECTORIES.has(segment))
+    || SIZE_EXCLUDED_EXTENSIONS.has(extension);
+}
+
+function formatMiB(bytes: number): string {
+  return `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
 }
 
 function findReadmeConfigObjects(content: string): Array<{ hasTrailingComma: boolean }> {
@@ -184,6 +225,41 @@ export async function analyzeModule(
       return !segments.includes("node_modules") && !segments.includes(".git");
     }
   );
+
+  let moduleSize = 0;
+  const largeFiles: Array<{ path: string; size: number }> = [];
+
+  for (const filePath of relevantFiles) {
+    if (isExcludedFromSizeScan(modulePath, filePath)) {
+      continue;
+    }
+
+    const fileSize = await stat(filePath).then(fileStat => fileStat.size).catch(() => 0);
+    moduleSize += fileSize;
+    if (fileSize >= LARGE_FILE_BYTES) {
+      largeFiles.push({
+        path: filePath,
+        size: fileSize
+      });
+    }
+  }
+
+  for (const largeFile of largeFiles) {
+    issues.push(
+      `Recommendation: The file \`${largeFile.path.split("/").pop()}\` is unusually large (${formatMiB(largeFile.size)}). Consider optimizing it or keeping generated files out of the repository.`
+    );
+  }
+
+  if (moduleSize >= VERY_LARGE_MODULE_BYTES) {
+    issues.push(
+      `Warning: The repository contains ${formatMiB(moduleSize)} of non-media files. Consider optimizing large files or excluding generated files from the repository.`
+    );
+  }
+  else if (moduleSize >= LARGE_MODULE_BYTES) {
+    issues.push(
+      `Recommendation: The repository contains ${formatMiB(moduleSize)} of non-media files. Consider optimizing large files or excluding generated files from the repository.`
+    );
+  }
 
   // Check for each file
   for (const filePath of relevantFiles) {

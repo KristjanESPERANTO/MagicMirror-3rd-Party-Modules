@@ -306,3 +306,38 @@ test("analyzer ignores plain-text moment mentions in comments", async () => {
     false
   );
 });
+
+test("analyzer reports large non-media repositories but excludes images", async () => {
+  const moduleRoot = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-size-test-"));
+  const sourcePath = join(moduleRoot, "large-source.js");
+  const imagePath = join(moduleRoot, "large-image.png");
+  const videoPath = join(moduleRoot, "large-video.mp4");
+
+  await fsPromises.writeFile(sourcePath, new Uint8Array(11 * 1024 * 1024));
+  await fsPromises.writeFile(imagePath, new Uint8Array(30 * 1024 * 1024));
+  await fsPromises.writeFile(videoPath, new Uint8Array(30 * 1024 * 1024));
+
+  const result = await analyzeModule(
+    moduleRoot,
+    "MMM-Size-Test",
+    "https://github.com/example/MMM-Size-Test",
+    [sourcePath, imagePath, videoPath]
+  );
+
+  assert.equal(
+    result.issues.some(issue => issue.includes("large-source.js") && issue.includes("unusually large")),
+    true
+  );
+  assert.equal(
+    result.issues.some(issue => issue.includes("large-image.png")),
+    false
+  );
+  assert.equal(
+    result.issues.some(issue => issue.includes("large-video.mp4")),
+    false
+  );
+  assert.equal(
+    result.issues.some(issue => issue.includes("repository contains") && issue.includes("Warning")),
+    false
+  );
+});
