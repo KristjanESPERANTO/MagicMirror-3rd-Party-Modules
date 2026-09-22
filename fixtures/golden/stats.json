@@ -22,6 +22,7 @@
     "AndorAmb": 1,
     "AndreaGrandieri": 1,
     "Andreas Hagman": 1,
+    "AndreasHagman": 1,
     "AndyHazz": 2,
     "Anonym-tsk": 3,
     "Arthur Garza": 1,
@@ -367,6 +368,7 @@
     "basknol": 2,
     "basti0001": 1,
     "bccmba": 1,
+    "bdavj": 1,
     "bendardenne": 2,
     "benjaminflessner": 1,
     "bertieuk": 1,
@@ -390,7 +392,7 @@
     "bunnymc": 1,
     "bureus": 3,
     "buxxi": 6,
-    "bwente": 5,
+    "bwente": 6,
     "byronxlg": 1,
     "c-klinger": 1,
     "c0d3rpu55y": 3,
@@ -529,7 +531,7 @@
     "ianmccon": 1,
     "ianperrin": 2,
     "iceship": 1,
-    "idoodler": 2,
+    "idoodler": 1,
     "igor-semenov": 1,
     "ilenhart": 1,
     "ilsegs": 1,
@@ -608,6 +610,7 @@
     "linuxtuxie": 1,
     "livetennisapi": 1,
     "lucasbotka": 1,
+    "lucienkerl": 1,
     "mabahj": 1,
     "macd2point0": 1,
     "magic21nrw": 1,
@@ -863,12 +866,12 @@
     "zuo000": 1,
     "zzflops": 1
   },
-  "moduleCounter": 1461,
-  "modulesWithImageCounter": 816,
-  "modulesWithIssuesCounter": 1442,
+  "moduleCounter": 1464,
+  "modulesWithImageCounter": 819,
+  "modulesWithIssuesCounter": 1443,
   "repositoryHoster": {
     "bitbucket": 1,
-    "github": 1448,
+    "github": 1451,
     "gitlab": 12
   }
 }
