@@ -61,7 +61,9 @@ const LARGE_FILE_BYTES = 10 * 1024 * 1024;
 const LARGE_MODULE_BYTES = 10 * 1024 * 1024;
 const VERY_LARGE_MODULE_BYTES = 25 * 1024 * 1024;
 const SIZE_EXCLUDED_DIRECTORIES = new Set([".git", "node_modules", "dist", "build", "coverage"]);
+const SIZE_EXCLUDED_FILENAMES = new Set(["tcx-ls", "tcx-ls-arm"]);
 const SIZE_EXCLUDED_EXTENSIONS = new Set([
+  ".caffemodel",
   ".gif",
   ".avi",
   ".jpeg",
@@ -75,6 +77,7 @@ const SIZE_EXCLUDED_EXTENSIONS = new Set([
   ".mov",
   ".png",
   ".svg",
+  ".t7",
   ".wav",
   ".webp",
   ".webm",
@@ -122,7 +125,8 @@ function isExcludedFromSizeScan(modulePath: string, filePath: string): boolean {
   const filename = segments.at(-1) ?? "";
   const extension = filename.includes(".") ? filename.slice(filename.lastIndexOf(".")) : "";
 
-  return segments.some(segment => SIZE_EXCLUDED_DIRECTORIES.has(segment))
+  return SIZE_EXCLUDED_FILENAMES.has(filename)
+    || segments.some(segment => SIZE_EXCLUDED_DIRECTORIES.has(segment))
     || SIZE_EXCLUDED_EXTENSIONS.has(extension);
 }
 
