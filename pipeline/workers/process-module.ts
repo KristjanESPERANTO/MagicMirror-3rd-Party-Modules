@@ -98,6 +98,7 @@ interface ModuleResult {
   issues: string[];
   lastCommit?: string;
   license?: string;
+  licenseStatus?: "mismatch";
   maintainer: string;
   name: string;
   packageJson?: PackageJsonInfo;
@@ -124,6 +125,7 @@ interface EnrichResult {
   enrichIssues: string[];
   image?: string;
   license?: string;
+  licenseStatus?: "mismatch";
   packageJson: PackageJsonInfo;
   tags?: string[];
 }
@@ -881,6 +883,7 @@ async function enrichModule(module: ModuleInput, config: ProcessModuleConfig): P
   let tags: string[] | undefined;
   let imageName: string | undefined;
   let effectiveLicense = module.license;
+  let licenseStatus: "mismatch" | undefined;
 
   // Process package.json if parsed successfully
   if (packageJson.status === "parsed") {
@@ -914,6 +917,8 @@ async function enrichModule(module: ModuleInput, config: ProcessModuleConfig): P
       }
       else if (!packageLicense.includes(module.license)) {
         enrichIssues.push(`Issue: The license in the package.json (${packageLicense}) doesn't match the license file (${module.license}).`);
+        effectiveLicense = undefined;
+        licenseStatus = "mismatch";
       }
     }
   }
@@ -997,6 +1002,7 @@ async function enrichModule(module: ModuleInput, config: ProcessModuleConfig): P
     tags,
     image: imageName,
     license: effectiveLicense,
+    licenseStatus,
     enrichIssues
   };
 }
@@ -1227,6 +1233,7 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
       tags: enrichResult.tags,
       image: enrichResult.image,
       license: enrichResult.license,
+      licenseStatus: enrichResult.licenseStatus,
       issues: allIssues,
       processingTimeMs: Date.now() - startTime,
       ...cacheMetadata,
@@ -1259,6 +1266,7 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
     tags: enrichResult.tags,
     image: enrichResult.image,
     license: enrichResult.license,
+    licenseStatus: enrichResult.licenseStatus,
     issues: allIssues,
     recommendations: analysisResult.recommendations,
     stars: module.stars,

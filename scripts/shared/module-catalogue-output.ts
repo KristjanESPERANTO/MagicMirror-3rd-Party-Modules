@@ -14,6 +14,7 @@ export interface ProcessedModule extends ModuleRecord {
   keywords?: string[];
   lastCommit?: string | null;
   license?: string;
+  licenseStatus?: "mismatch";
   maintainer?: string;
   name?: string;
   outdated?: string;
@@ -110,6 +111,7 @@ const PROCESSED_MODULE_ALLOWED_KEYS: string[] = [
   "stars",
   "watchersCount",
   "license",
+  "licenseStatus",
   "hasGithubIssues",
   "isArchived",
   "lastCommit",
@@ -131,6 +133,7 @@ const FINAL_ALLOWED_KEYS: string[] = [
   "issues",
   "stars",
   "license",
+  "licenseStatus",
   "hasGithubIssues",
   "isArchived",
   "tags",

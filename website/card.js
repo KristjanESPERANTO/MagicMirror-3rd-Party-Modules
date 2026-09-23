@@ -102,7 +102,7 @@ export function createCard(moduleData, { filterByMaintainer, filterByTag }) {
   }
   else {
     license.style.color = "red";
-    license.textContent = "unknown";
+    license.textContent = moduleData.licenseStatus === "mismatch" ? "mismatch" : "unknown";
   }
 
   if (moduleData.lastCommit) {
