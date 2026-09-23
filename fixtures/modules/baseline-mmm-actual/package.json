@@ -1,7 +1,7 @@
 {
   "name": "mmm-actual-fixture",
   "version": "1.0.0",
-  "description": "Fixture representing MMM-Actual metadata for licence checks.",
+  "description": "Fixture representing MMM-Actual metadata for license checks.",
   "author": "trumpetx",
   "license": "AGPL3",
   "repository": {

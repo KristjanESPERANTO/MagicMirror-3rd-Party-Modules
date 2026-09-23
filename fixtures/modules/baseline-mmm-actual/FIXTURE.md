@@ -2,14 +2,14 @@
 
 ## Purpose
 
-Captures the licence-related findings produced for `MMM-Actual` so we can verify parity during the TypeScript migration.
+Captures the license-related findings produced for `MMM-Actual` so we can verify parity during the TypeScript migration.
 
 ## Expected Findings
 
 | Rule / Heuristic | Trigger file | Notes |
 | ---------------- | ------------ | ----- |
-| Invalid SPDX expression | `package.json` | Licence string uses `AGPL3`. |
-| Licence mismatch | `package.json` vs `LICENSE.md` | Manifest declares `AGPL3` while LICENSE references `AGPL-3.0`. |
+| Invalid SPDX expression | `package.json` | License string uses `AGPL3`. |
+| License mismatch | `package.json` vs `LICENSE.md` | Manifest declares `AGPL3` while LICENSE references `AGPL-3.0`. |
 | No image found | _n/a_ | There is no screenshot or image asset in the fixture. |
 
 ## Captured From
