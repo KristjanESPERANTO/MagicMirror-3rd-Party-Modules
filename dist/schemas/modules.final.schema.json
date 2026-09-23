@@ -175,6 +175,10 @@
               "license": {
                 "type": "string",
                 "minLength": 1
+              },
+              "licenseStatus": {
+                "type": "string",
+                "enum": ["mismatch"]
               }
             }
           }
@@ -222,6 +226,10 @@
           "license": {
             "type": "string",
             "minLength": 1
+          },
+          "licenseStatus": {
+            "type": "string",
+            "enum": ["mismatch"]
           },
           "hasGithubIssues": {
             "type": [
