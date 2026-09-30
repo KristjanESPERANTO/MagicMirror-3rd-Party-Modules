@@ -43,6 +43,7 @@ function isRepositoryRow(line: string): boolean {
     line.includes("](https://github.com/")
     || line.includes("](https://gitlab.com/")
     || line.includes("](https://bitbucket.org/")
+    || line.includes("](https://codeberg.org/")
   );
 }
 

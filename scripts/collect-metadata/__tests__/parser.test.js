@@ -60,4 +60,24 @@ describe("collect-metadata/parser", () => {
     assert.strictEqual(modules[0].url, "https://github.com/example/MMM-Title");
     assert.strictEqual(modules[0].maintainer, "Example User");
   });
+
+  it("should parse Codeberg repositories", () => {
+    const markdown = `
+### Transport / Travel
+| [MMM-NCTtimes](https://codeberg.org/drdisgust/MMM-NCTtimes) | drdisgust | NCT departure times |
+`;
+    const { modules, issues } = parseModuleList(markdown);
+
+    assert.strictEqual(issues.length, 0);
+    assert.deepStrictEqual(modules[0], {
+      name: "MMM-NCTtimes",
+      url: "https://codeberg.org/drdisgust/MMM-NCTtimes",
+      id: "drdisgust/MMM-NCTtimes",
+      description: "NCT departure times",
+      maintainer: "drdisgust",
+      maintainerURL: "https://codeberg.org/drdisgust",
+      category: "Transport / Travel",
+      issues: []
+    });
+  });
 });
