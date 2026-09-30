@@ -57,12 +57,12 @@
   "dependencies": {
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
-    "dompurify": "^3.4.15",
+    "dompurify": "^3.4.16",
     "marked": "^18.0.14",
     "normalize-package-data": "^9.0.0",
     "npm-check-updates": "^23.1.0",
     "npm-deprecated-check": "^2.1.1",
-    "sharp": "^0.35.4"
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@eslint/css": "^2.0.0",
@@ -70,21 +70,21 @@
     "@eslint/json": "^2.1.0",
     "@eslint/markdown": "^8.0.3",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^26.6.2",
+    "@types/node": "^26.6.3",
     "@types/normalize-package-data": "^2.4.4",
     "concurrently": "^10.0.5",
-    "cspell": "^10.3.3",
+    "cspell": "^10.3.6",
     "eslint": "^10.11.0",
     "eslint-plugin-depend": "^1.5.0",
     "eslint-plugin-import-x": "^4.17.1",
-    "eslint-plugin-package-json": "^1.10.0",
+    "eslint-plugin-package-json": "^1.10.1",
     "globals": "^17.12.0",
     "happy-dom": "^20.14.5",
-    "lint-staged": "^17.5.1",
-    "prettier": "^3.9.8",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.9",
     "simple-git-hooks": "^2.14.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.70.1"
+    "typescript-eslint": "^8.71.0"
   },
   "menu": {
     "descriptions": {
