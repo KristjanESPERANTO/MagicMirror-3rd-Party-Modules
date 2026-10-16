@@ -223,7 +223,7 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-deprecated-request",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["require(\"request\")", "require('request')"],
     category: "Deprecated",
     description:
@@ -231,7 +231,7 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-deprecated-request-promise",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["require(\"request-promise\")", "require('request-promise')"],
     category: "Deprecated",
     description:
@@ -239,7 +239,7 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-deprecated-native-request",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["require(\"native-request\")"],
     category: "Deprecated",
     description:
@@ -261,21 +261,21 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-recommend-node-fetch",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["'node-fetch'", "\"node-fetch\""],
     category: "Recommendation",
     description: "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
   },
   {
     id: "text-recommend-require-fetch",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["require(\"fetch\")", "require('fetch')"],
     category: "Recommendation",
     description: "Use the global fetch API instead of requiring a shim."
   },
   {
     id: "text-recommend-axios",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["axios"],
     category: "Recommendation",
     description: "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."

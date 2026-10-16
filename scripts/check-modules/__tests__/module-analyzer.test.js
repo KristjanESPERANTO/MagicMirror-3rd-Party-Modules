@@ -1,9 +1,62 @@
 import * as fsPromises from "node:fs/promises";
 import { analyzeModule } from "../../check-modules/module-analyzer.ts";
 import { strict as assert } from "node:assert";
+import { checkHttpImports } from "../http-import-check.ts";
 import { join } from "node:path";
 import { test } from "node:test";
 import { tmpdir } from "node:os";
+
+test("HTTP imports use ESLint for imports, requires, re-exports and dynamic imports", () => {
+  for (const packageName of ["node-fetch", "request", "request-promise", "native-request", "fetch", "axios"]) {
+    for (const source of [
+      `import client from '${packageName}';`,
+      `const client = require ( '${packageName}' );`,
+      `const client = import('${packageName}');`,
+      `export { default } from '${packageName}';`,
+      `export * from '${packageName}';`
+    ]) {
+      const issues = checkHttpImports(source, "src/client.js");
+      assert.equal(issues.length, 1, source);
+      assert.match(issues[0], /src\/client\.js:1:\d+/u);
+      assert.ok(issues[0].includes(`${packageName}:`));
+      assert.match(issues[0], packageName.startsWith("request") || packageName === "native-request" ? /^Deprecated:/u : /^Recommendation:/u);
+    }
+  }
+});
+
+test("HTTP imports ignore text mentions, unrelated packages and shadowed require", () => {
+  for (const source of [
+    "// require('request')\nconst axios = 'node-fetch';",
+    "const example = \"require('request')\";",
+    "import client from 'axios-extra';",
+    "function load(require) { return require('axios'); }",
+    "const require = () => null; require('request');"
+  ]) {
+    assert.deepEqual(checkHttpImports(source, "client.js"), [], source);
+  }
+  assert.deepEqual(checkHttpImports("require('request')", "README.md"), []);
+  assert.deepEqual(checkHttpImports("{\"dependencies\":{\"axios\":\"*\"}}", "package.json"), []);
+});
+
+test("HTTP imports cover CommonJS, subpaths and ignore inline ESLint configuration", () => {
+  assert.equal(checkHttpImports("const client = require('axios');", "client.cjs").length, 1);
+  assert.equal(checkHttpImports("import 'axios/unsafe/core/Axios.js';", "client.mjs").length, 1);
+  assert.equal(checkHttpImports("/* eslint-disable */\nrequire('node-fetch');", "client.js").length, 1);
+});
+
+test("analyzer reports HTTP imports once and ignores README mentions", async (context) => {
+  const moduleRoot = await createTempModule();
+  context.after(() => fsPromises.rm(moduleRoot, { recursive: true, force: true }));
+  const codePath = join(moduleRoot, "node_helper.js");
+  const readmePath = join(moduleRoot, "README.md");
+  await fsPromises.writeFile(codePath, "const client = require('axios');\n");
+  await fsPromises.appendFile(readmePath, "\nUse axios or 'node-fetch' or require('request').\n");
+
+  const result = await analyzeModule(moduleRoot, "MMM-Test", "https://github.com/example/MMM-Test", [codePath, readmePath]);
+  const httpIssues = result.issues.filter(issue => issue.includes("built-in fetch"));
+  assert.equal(httpIssues.length, 1);
+  assert.match(httpIssues[0], /node_helper\.js:1:\d+/u);
+});
 
 async function createTempModule() {
   const root = await fsPromises.mkdtemp(join(tmpdir(), "module-analyzer-test-"));

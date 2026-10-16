@@ -26,40 +26,62 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 
 ### Text scanning rules
 
-| Rule ID                           | Pattern                                         | Category       | Notes                        |
-| --------------------------------- | ----------------------------------------------- | -------------- | ---------------------------- |
-| text-deprecated-new-buffer        | `new Buffer(`                                   | Deprecated     | Replace with `Buffer.from`.  |
-| text-deprecated-fs-F_OK           | `fs.F_OK`                                       | Deprecated     | Use `fs.constants.F_OK`.     |
-| text-deprecated-fs-R_OK           | `fs.R_OK`                                       | Deprecated     | Use `fs.constants.R_OK`.     |
-| text-deprecated-fs-W_OK           | `fs.W_OK`                                       | Deprecated     | Use `fs.constants.W_OK`.     |
-| text-deprecated-fs-X_OK           | `fs.X_OK`                                       | Deprecated     | Use `fs.constants.X_OK`.     |
-| text-typo-magic-mirror            | `Magic Mirror`                                  | Typo           | Should be `MagicMirror²`.    |
-| text-typo-magicmirror2            | `MagicMirror2`                                  | Typo           | Should be `MagicMirror²`.    |
-| text-typo-magicmirror-brackets    | `[MagicMirror]`                                 | Typo           | Should be `[MagicMirror²]`.  |
-| text-typo-html-sub2               | `<sub>2</sub>`                                  | Typo           | Replace with `²`.            |
-| text-deprecated-request           | `require("request")` (and variants)             | Deprecated     | Replace with built-in fetch. |
-| text-deprecated-request-promise   | `require("request-promise")` (and variants)     | Deprecated     | Replace with fetch.          |
-| text-deprecated-native-request    | `require("native-request")`                     | Deprecated     | Replace with fetch.          |
-| text-recommend-http-module        | `require("http")`/`require('http')`             | Recommendation | Use `node:http`.             |
-| text-recommend-https-module       | `require("https")`/`require('https')`           | Recommendation | Use `node:https`.            |
-| text-recommend-node-fetch         | `'node-fetch'`/`"node-fetch"`                   | Recommendation | Use built-in fetch.          |
-| text-recommend-require-fetch      | `require("fetch")`/`require('fetch')`           | Recommendation | Use built-in fetch.          |
-| text-recommend-axios              | `axios`                                         | Recommendation | Suggest fetch.               |
-| text-deprecated-omxplayer         | `omxplayer`                                     | Deprecated     | Suggest `mplayer` or `vlc`.  |
-| text-recommend-xmlhttprequest     | `XMLHttpRequest`                                | Recommendation | Suggest fetch.               |
-| text-recommend-actions-checkout   | `uses: actions/checkout@v2`/`@v3`/`@v4`         | Recommendation | Upgrade to v5.               |
-| text-recommend-actions-setup-node | `uses: actions/setup-node@v3`/`@v4`/`@v5`/`@v6` | Recommendation | Upgrade to v7.               |
-| text-deprecated-node-version      | `node-version: 14/16/18` (variants)             | Deprecated     | Upgrade to current LTS.      |
-| text-recommend-npm-run            | `npm run`                                       | Recommendation | Prefer `node --run`.         |
-| text-recommend-jshint             | `jshint`                                        | Recommendation | Suggest ESLint.              |
-| text-deprecated-getYear           | `getYear()`                                     | Deprecated     | Use `getFullYear()`.         |
-| text-outdated-michmich            | `MichMich/MagicMirror`                          | Outdated       | Update org name.             |
-| text-outdated-husky               | `/_/husky.sh`                                   | Outdated       | Husky v9 change.             |
-| text-deprecated-openweathermap    | `api.openweathermap.org/data/2.5`               | Deprecated     | Upgrade to API 3.0.          |
-| text-recommend-cdn-cdnjs          | `https://cdnjs.cloudflare.com`                  | Recommendation | Prefer local npm package.    |
-| text-recommend-cdn-jsdelivr       | `https://cdn.jsdelivr.net`                      | Recommendation | Prefer local npm package.    |
-| text-recommend-eslint-dot         | `eslint .` / `eslint --fix .`                   | Recommendation | Drop trailing dot.           |
-| text-recommend-git-checkout       | `git checkout`                                  | Recommendation | Switch to `git switch`.      |
+| Rule ID                           | Pattern                                         | Category       | Notes                       |
+| --------------------------------- | ----------------------------------------------- | -------------- | --------------------------- |
+| text-deprecated-new-buffer        | `new Buffer(`                                   | Deprecated     | Replace with `Buffer.from`. |
+| text-deprecated-fs-F_OK           | `fs.F_OK`                                       | Deprecated     | Use `fs.constants.F_OK`.    |
+| text-deprecated-fs-R_OK           | `fs.R_OK`                                       | Deprecated     | Use `fs.constants.R_OK`.    |
+| text-deprecated-fs-W_OK           | `fs.W_OK`                                       | Deprecated     | Use `fs.constants.W_OK`.    |
+| text-deprecated-fs-X_OK           | `fs.X_OK`                                       | Deprecated     | Use `fs.constants.X_OK`.    |
+| text-typo-magic-mirror            | `Magic Mirror`                                  | Typo           | Should be `MagicMirror²`.   |
+| text-typo-magicmirror2            | `MagicMirror2`                                  | Typo           | Should be `MagicMirror²`.   |
+| text-typo-magicmirror-brackets    | `[MagicMirror]`                                 | Typo           | Should be `[MagicMirror²]`. |
+| text-typo-html-sub2               | `<sub>2</sub>`                                  | Typo           | Replace with `²`.           |
+| text-recommend-http-module        | `require("http")`/`require('http')`             | Recommendation | Use `node:http`.            |
+| text-recommend-https-module       | `require("https")`/`require('https')`           | Recommendation | Use `node:https`.           |
+| text-deprecated-omxplayer         | `omxplayer`                                     | Deprecated     | Suggest `mplayer` or `vlc`. |
+| text-recommend-xmlhttprequest     | `XMLHttpRequest`                                | Recommendation | Suggest fetch.              |
+| text-recommend-actions-checkout   | `uses: actions/checkout@v2`/`@v3`/`@v4`         | Recommendation | Upgrade to v5.              |
+| text-recommend-actions-setup-node | `uses: actions/setup-node@v3`/`@v4`/`@v5`/`@v6` | Recommendation | Upgrade to v7.              |
+| text-deprecated-node-version      | `node-version: 14/16/18` (variants)             | Deprecated     | Upgrade to current LTS.     |
+| text-recommend-npm-run            | `npm run`                                       | Recommendation | Prefer `node --run`.        |
+| text-recommend-jshint             | `jshint`                                        | Recommendation | Suggest ESLint.             |
+| text-deprecated-getYear           | `getYear()`                                     | Deprecated     | Use `getFullYear()`.        |
+| text-outdated-michmich            | `MichMich/MagicMirror`                          | Outdated       | Update org name.            |
+| text-outdated-husky               | `/_/husky.sh`                                   | Outdated       | Husky v9 change.            |
+| text-deprecated-openweathermap    | `api.openweathermap.org/data/2.5`               | Deprecated     | Upgrade to API 3.0.         |
+| text-recommend-cdn-cdnjs          | `https://cdnjs.cloudflare.com`                  | Recommendation | Prefer local npm package.   |
+| text-recommend-cdn-jsdelivr       | `https://cdn.jsdelivr.net`                      | Recommendation | Prefer local npm package.   |
+| text-recommend-eslint-dot         | `eslint .` / `eslint --fix .`                   | Recommendation | Drop trailing dot.          |
+| text-recommend-git-checkout       | `git checkout`                                  | Recommendation | Switch to `git switch`.     |
+
+### ESLint HTTP import rule
+
+`scripts/check-modules/http-import-check.ts` exports `HTTP_IMPORT_ESLINT_CONFIG`,
+which provides the local rule `magicmirror/prefer-native-fetch`. The module
+analyzer runs it on `.js`, `.mjs`, and `.cjs` files using ESLint's isolated
+`Linter` API. It does not load configuration or plugins from module repositories,
+and inline ESLint comments cannot disable the check.
+
+The rule detects static imports, re-exports, literal dynamic imports, and
+`require()` calls without a local binding, including package subpaths. Comments, ordinary
+strings, README mentions, and dependency declarations are not import findings.
+TypeScript files and files that ESLint cannot parse are not analyzed by this
+first migration. No automatic fixes are offered because replacing an HTTP client
+can require changes to response and error handling.
+
+The existing registry IDs are retained with scope `module-analysis`; they no
+longer participate in text scanning. Reports preserve their categories and
+guidance and include the package name, relative file path, line, and column.
+
+| Registry ID                     | Package           | Category       |
+| ------------------------------- | ----------------- | -------------- |
+| text-deprecated-request         | `request`         | Deprecated     |
+| text-deprecated-request-promise | `request-promise` | Deprecated     |
+| text-deprecated-native-request  | `native-request`  | Deprecated     |
+| text-recommend-node-fetch       | `node-fetch`      | Recommendation |
+| text-recommend-require-fetch    | `fetch`           | Recommendation |
+| text-recommend-axios            | `axios`           | Recommendation |
 
 ### `package.json` rules
 
