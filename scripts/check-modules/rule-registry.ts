@@ -247,14 +247,14 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-recommend-http-module",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["require(\"http\")", "require('http')"],
     category: "Recommendation",
     description: "Replace `http` with the scoped import `node:http`."
   },
   {
     id: "text-recommend-https-module",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["require(\"https\")", "require('https')"],
     category: "Recommendation",
     description: "Replace `https` with the scoped import `node:https`."

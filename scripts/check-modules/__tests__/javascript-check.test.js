@@ -1,10 +1,66 @@
+import { JAVASCRIPT_ESLINT_CONFIG, checkJavaScript } from "../javascript-check.ts";
 import { mkdtemp, rm, writeFile } from "node:fs/promises";
+import { Linter } from "eslint";
 import { analyzeModule } from "../module-analyzer.ts";
 import assert from "node:assert/strict";
-import { checkJavaScript } from "../javascript-check.ts";
 import { join } from "node:path";
 import { test } from "node:test";
 import { tmpdir } from "node:os";
+
+test("Node protocol checks cover HTTP imports, requires, dynamic imports and re-exports", () => {
+  for (const moduleName of ["http", "https"]) {
+    for (const source of [
+      `import client from '${moduleName}';`,
+      `const client = require ( '${moduleName}' );`,
+      `import('${moduleName}');`,
+      `export { request } from '${moduleName}';`,
+      `export * from '${moduleName}';`
+    ]) {
+      const issues = checkJavaScript(source, "client.js");
+      assert.equal(issues.length, 1, source);
+      assert.match(issues[0], /^Recommendation: In `client\.js:1:\d+`: /u);
+      assert.ok(issues[0].includes(`node:${moduleName}`));
+      assert.match(issues[0], /client\.js:1:\d+/u);
+    }
+    assert.equal(checkJavaScript(`require('${moduleName}');`, "client.cjs").length, 1);
+  }
+});
+
+test("Node protocol checks ignore text, modern imports, unrelated modules and local require bindings", () => {
+  for (const source of [
+    "// require('http')\nconst example = \"require('https')\";",
+    "require('node:http'); import('node:https');",
+    "import client from 'node:http'; export * from 'node:https';",
+    "require('http-proxy'); import('https-proxy-agent');",
+    "import fs from 'fs'; require('path');",
+    "function load(require) { return require('http'); }",
+    "const require = () => null; require('https');"
+  ]) {
+    assert.deepEqual(checkJavaScript(source, "client.js"), [], source);
+  }
+  assert.deepEqual(checkJavaScript("require('http')", "README.md"), []);
+  assert.equal(checkJavaScript("const require = () => null; import('http');", "client.js").length, 1);
+});
+
+test("Node protocol checks preserve the plugin autofix without changing unrelated imports", () => {
+  const result = new Linter().verifyAndFix("import http from 'http'; const https = require('https'); import fs from 'fs';", JAVASCRIPT_ESLINT_CONFIG);
+  assert.equal(result.output, "import http from 'node:http'; const https = require('node:https'); import fs from 'fs';");
+  assert.deepEqual(result.messages, []);
+  assert.deepEqual(checkJavaScript(result.output, "client.js"), []);
+});
+
+test("analyzer reports Node protocol recommendations once and ignores README examples", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "node-protocol-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  const codePath = join(root, "node_helper.js");
+  const readmePath = join(root, "README.md");
+  await writeFile(codePath, "require('http'); require('https');\n");
+  await writeFile(readmePath, "require('http'); require('https');\n");
+  const result = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [codePath, readmePath]);
+  const protocolIssues = result.issues.filter(issue => issue.includes("scoped import"));
+  assert.equal(protocolIssues.length, 2);
+  assert.ok(protocolIssues.every(issue => /node_helper\.js:1:\d+/u.test(issue)));
+});
 
 test("deprecated Buffer checks resolve global, imported and aliased constructors", () => {
   for (const source of [
