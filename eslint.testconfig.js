@@ -1,5 +1,4 @@
 import { MAGICMIRROR_PLUGIN } from "./scripts/check-modules/javascript-check.ts";
-import { MIGRATED_PACKAGE_NAMES } from "./scripts/check-modules/package-json-check.ts";
 import { defineConfig } from "eslint/config";
 import depend from "eslint-plugin-depend";
 import globals from "globals";
@@ -70,15 +69,17 @@ export default defineConfig([
   },
   {
     files: ["**/package.json"],
-    plugins: { depend, packageJson, magicmirror: MAGICMIRROR_PLUGIN },
+    plugins: { depend, packageJson },
     extends: ["packageJson/recommended"],
     languageOptions: {
       parserOptions: { jsonSyntax: "JSON" }
     },
     linterOptions: { noInlineConfig: true },
     rules: {
-      "magicmirror/no-outdated-packages": "warn",
-      "depend/ban-dependencies": ["error", { allowed: ["lint-staged", "moment", ...MIGRATED_PACKAGE_NAMES] }],
+      "depend/ban-dependencies": [
+        "error",
+        { allowed: ["lint-staged", "moment"] }
+      ],
       "package-json/require-type": "error",
       "package-json/order-properties": "off",
       "package-json/require-exports": "off",

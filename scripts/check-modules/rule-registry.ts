@@ -506,7 +506,23 @@ const EMPTY_RULE_LIST = Object.freeze([]) as readonly Readonly<RuleRecord>[];
 
 const TEXT_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "text" && rule.stages.includes(DEFAULT_STAGE_ID)));
 
-const PACKAGE_JSON_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "package-json" && rule.stages.includes(DEFAULT_STAGE_ID)));
+const PACKAGE_JSON_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.id.startsWith("pkg-") && rule.stages.includes(DEFAULT_STAGE_ID)));
+
+const PACKAGE_DEPENDENCY_RULES = new Map([
+  ["electron-rebuild", "pkg-deprecated-electron-rebuild"],
+  ["eslint-config-airbnb", "pkg-deprecated-eslint-config-airbnb"],
+  ["eslint-config-airbnb-base", "pkg-deprecated-eslint-config-airbnb"],
+  ["eslint-config-airbnb-typescript", "pkg-deprecated-eslint-config-airbnb"],
+  ["eslint-config-airbnb-typescript-base", "pkg-deprecated-eslint-config-airbnb"],
+  ["eslint-plugin-json", "pkg-recommend-eslint-plugin-json"],
+  ["eslint-plugin-jsonc", "pkg-recommend-eslint-plugin-json"],
+  ["grunt", "pkg-deprecated-grunt"],
+  ["needle", "pkg-recommend-needle"],
+  ["rollup-plugin-banner", "pkg-deprecated-rollup-banner"],
+  ["rollup-plugin-banner2", "pkg-deprecated-rollup-banner"],
+  ["stylelint-config-prettier", "pkg-deprecated-stylelint-config-prettier"],
+  ["stylelint-config-prettier-scss", "pkg-deprecated-stylelint-config-prettier"]
+]);
 
 const PACKAGE_LOCK_RULES = Object.freeze(RULE_REGISTRY.filter(rule => rule.scope === "package-lock" && rule.stages.includes(DEFAULT_STAGE_ID)));
 const RULE_INDEX = new Map<string, Readonly<RuleRecord>>(RULE_REGISTRY.map(rule => [rule.id, rule]));
@@ -519,6 +535,7 @@ export {
   PIPELINE_CHECK_STAGE_IDS,
   TEXT_RULES,
   PACKAGE_JSON_RULES,
+  PACKAGE_DEPENDENCY_RULES,
   PACKAGE_LOCK_RULES
 };
 export function getRuleById(ruleId: string): Readonly<RuleRecord> | null {

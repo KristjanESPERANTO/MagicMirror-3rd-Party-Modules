@@ -256,7 +256,10 @@ test("package checks ignore dependency names and commands in unrelated metadata"
   assert.deepEqual(await runEslintCheck(root, false), []);
 });
 
-test("package rules cover dependency declarations without duplicate generic recommendations", () => {
+test("structured package checks cover dependency declarations without duplicate generic recommendations", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "analyzer-package-dependencies-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  const packagePath = join(root, "package.json");
   const expectedRules = new Map([
     ["electron-rebuild", "pkg-deprecated-electron-rebuild"],
     ["eslint-config-airbnb", "pkg-deprecated-eslint-config-airbnb"],
@@ -273,53 +276,60 @@ test("package rules cover dependency declarations without duplicate generic reco
     ["stylelint-config-prettier-scss", "pkg-deprecated-stylelint-config-prettier"]
   ]);
   for (const section of ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"]) {
-    const source = JSON.stringify({
+    await writeFile(packagePath, JSON.stringify({
       name: "mmm-test",
       version: "1.0.0",
+      type: "module",
       [section]: Object.fromEntries(Array.from(expectedRules.keys(), name => [name, "^1.0.0"]))
-    }, null, 2);
-    const messages = linter.verify(source, eslintConfig, { filename: "package.json" });
-    const packageMessages = messages.filter(message => message.ruleId === "magicmirror/no-outdated-packages");
-    assert.equal(packageMessages.length, expectedRules.size, section);
-    assert.equal(messages.some(message => message.ruleId === "depend/ban-dependencies"), false, section);
+    }, null, 2));
+    const analysis = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [packagePath]);
+    const packageIssues = analysis.issues.filter(issue => issue.includes("In `package.json`:"));
+    assert.equal(packageIssues.length, expectedRules.size, section);
     for (const [name, ruleId] of expectedRules) {
-      const matching = packageMessages.filter(message => message.message.startsWith(`${name}:`));
+      const matching = packageIssues.filter(issue => issue.includes(`\`${name}\`:`));
       assert.equal(matching.length, 1, `${section}.${name}`);
-      assert.equal(matching[0].messageId, ruleId);
-      assert.ok(matching[0].line > 1);
+      assert.ok(matching[0].startsWith(`${getRuleById(ruleId).category}: In \`package.json\`:`));
+      assert.ok(matching[0].includes(getRuleById(ruleId).description));
     }
+    assert.deepEqual(await runEslintCheck(root, false), []);
   }
-  const messages = linter.verify(JSON.stringify({ dependencies: { axios: "^1.0.0", needle: "^3.0.0" } }), eslintConfig, { filename: "package.json" });
-  assert.equal(messages.filter(message => message.ruleId === "depend/ban-dependencies").length, 1);
-  assert.equal(messages.filter(message => message.messageId === "pkg-recommend-needle").length, 1);
+  await writeFile(packagePath, JSON.stringify({ name: "mmm-test", version: "1.0.0", dependencies: { axios: "^1.0.0", needle: "^3.0.0" } }));
+  const generalIssues = await runEslintCheck(root);
+  assert.ok(generalIssues.some(issue => issue.includes("depend/ban-dependencies") && issue.includes("axios")));
+  assert.equal(generalIssues.some(issue => issue.includes("depend/ban-dependencies") && issue.includes("needle")), false);
 });
 
-test("package rules inspect script values rather than script names or nested metadata", () => {
+test("structured package checks inspect script values rather than script names or nested metadata", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "analyzer-package-scripts-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  const packagePath = join(root, "package.json");
   for (const command of ["husky install", "npx husky install", "husky   install .husky", "test && husky install"]) {
-    const messages = linter.verify(JSON.stringify({ scripts: { prepare: command } }), eslintConfig, { filename: "package.json" });
-    assert.equal(messages.filter(message => message.messageId === "pkg-outdated-husky-install").length, 1, command);
+    await writeFile(packagePath, JSON.stringify({ scripts: { prepare: command } }));
+    const analysis = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [packagePath]);
+    assert.equal(analysis.issues.filter(issue => issue.includes(getRuleById("pkg-outdated-husky-install").description)).length, 1, command);
   }
-  const source = JSON.stringify({
+  await writeFile(packagePath, JSON.stringify({
     scripts: { "husky install": "husky", test: "husky installer", build: ["my", "husky install"].join("") },
     customConfig: { dependencies: { grunt: "^1.0.0" }, scripts: { prepare: "husky install" } }
-  });
-  assert.equal(linter.verify(source, eslintConfig, { filename: "package.json" }).some(message => message.ruleId === "magicmirror/no-outdated-packages"), false);
+  }));
+  const analysis = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [packagePath]);
+  assert.equal(analysis.issues.some(issue => issue.includes(getRuleById("pkg-outdated-husky-install").description)), false);
+  assert.equal(analysis.issues.some(issue => issue.includes(getRuleById("pkg-deprecated-grunt").description)), false);
 });
 
-test("worker reports package recommendations once even when general checks are disabled", async (context) => {
+test("worker separates structured package recommendations from general ESLint findings", async (context) => {
   const root = await mkdtemp(join(tmpdir(), "eslint-package-worker-test-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const packagePath = join(root, "package.json");
-  const source = JSON.stringify({ dependencies: { needle: "^3.0.0" }, scripts: { prepare: "husky install" } });
+  const source = JSON.stringify({ name: "mmm-test", version: "1.0.0", dependencies: { needle: "^3.0.0" }, scripts: { prepare: "husky install" } });
   await writeFile(packagePath, source);
   const analysis = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [packagePath]);
-  assert.equal(analysis.issues.some(issue => issue.includes(getRuleById("pkg-recommend-needle").description)), false);
-  assert.equal(analysis.issues.some(issue => issue.includes(getRuleById("pkg-outdated-husky-install").description)), false);
-  const issues = await runEslintCheck(root, false);
-  assert.equal(issues.length, 2);
-  assert.ok(issues.every(issue => /In `package\.json:1:\d+`/u.test(issue)));
-  assert.ok(issues.some(issue => issue.startsWith("Recommendation:") && issue.includes("needle:")));
-  assert.ok(issues.some(issue => issue.startsWith("Outdated:") && issue.includes("Husky v9")));
+  assert.equal(analysis.issues.filter(issue => issue.includes(getRuleById("pkg-recommend-needle").description)).length, 1);
+  assert.equal(analysis.issues.filter(issue => issue.includes(getRuleById("pkg-outdated-husky-install").description)).length, 1);
+  const eslintIssues = await runEslintCheck(root, false);
+  assert.deepEqual(eslintIssues, []);
+  const generalIssues = await runEslintCheck(root);
+  assert.equal(generalIssues.some(issue => issue.includes("depend/ban-dependencies")), false);
   assert.equal(await readFile(packagePath, "utf8"), source);
 });
 

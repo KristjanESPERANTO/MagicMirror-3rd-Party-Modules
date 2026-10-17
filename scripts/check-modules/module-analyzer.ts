@@ -5,9 +5,12 @@
 
 import { readFile, stat } from "node:fs/promises";
 import {
+  PACKAGE_DEPENDENCY_RULES,
   PACKAGE_LOCK_RULES,
-  TEXT_RULES
+  TEXT_RULES,
+  getRuleById
 } from "./rule-registry.ts";
+const PACKAGE_DEPENDENCY_SECTIONS = ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"];
 
 interface AnalysisResult {
   issues: string[];
@@ -318,6 +321,28 @@ export async function analyzeModule(
     if (filePath.endsWith("package.json")) {
       try {
         const pkg = JSON.parse(content);
+        for (const section of PACKAGE_DEPENDENCY_SECTIONS) {
+          const dependencies = pkg?.[section];
+          if (!dependencies || typeof dependencies !== "object" || Array.isArray(dependencies)) {
+            continue;
+          }
+          for (const packageName of Object.keys(dependencies)) {
+            const ruleId = PACKAGE_DEPENDENCY_RULES.get(packageName);
+            const rule = ruleId ? getRuleById(ruleId) : null;
+            if (rule) {
+              issues.push(`${rule.category}: In \`${relativePath}\`: \`${packageName}\`: ${rule.description}`);
+            }
+          }
+        }
+
+        const scripts = pkg?.scripts;
+        if (scripts && typeof scripts === "object" && Object.values(scripts).some(command => typeof command === "string" && /\bhusky\s+install\b/u.test(command))) {
+          const rule = getRuleById("pkg-outdated-husky-install");
+          if (rule) {
+            issues.push(`${rule.category}: In \`${relativePath}\`: ${rule.description}`);
+          }
+        }
+
         if (pkg?.dependencies?.moment || pkg?.dependencies?.["moment-timezone"]
           || pkg?.devDependencies?.moment || pkg?.devDependencies?.["moment-timezone"]
           || pkg?.peerDependencies?.moment || pkg?.peerDependencies?.["moment-timezone"]
