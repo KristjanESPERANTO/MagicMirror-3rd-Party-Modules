@@ -231,6 +231,29 @@ test("worker ESLint uses one trusted config for JavaScript and package.json with
   }
 });
 
+test("worker ESLint reports invalid package JSON without aborting JavaScript checks", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "eslint-invalid-package-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  const source = "require('axios');\n";
+  await writeFile(join(root, "helper.cjs"), source);
+  for (const packageSource of [
+    "{\"keywords\":[\"magicmirror\",]}",
+    "{\"author\":{\"name\":\"Example\",}}",
+    "{\"name\": /* comment */ \"example\"}",
+    "{name:\"example\"}"
+  ]) {
+    await writeFile(join(root, "package.json"), packageSource);
+    for (const includeGeneralChecks of [true, false]) {
+      const issues = await runEslintCheck(root, includeGeneralChecks);
+      assert.equal(issues.length, 2);
+      assert.equal(issues.filter(issue => issue.includes("axios:")).length, 1);
+      assert.ok(issues.some(issue => /package\.json.*Parsing error/u.test(issue)));
+    }
+    assert.equal(await readFile(join(root, "package.json"), "utf8"), packageSource);
+  }
+  assert.equal(await readFile(join(root, "helper.cjs"), "utf8"), source);
+});
+
 test("worker ESLint reports parsing failures even when general checks are disabled", async (context) => {
   const root = await mkdtemp(join(tmpdir(), "eslint-parse-test-"));
   context.after(() => rm(root, { recursive: true, force: true }));

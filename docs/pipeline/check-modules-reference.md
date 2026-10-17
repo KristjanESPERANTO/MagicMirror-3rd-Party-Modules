@@ -61,6 +61,9 @@ The pass checks `.js`, `.mjs`, `.cjs`, and `package.json` files. Minified `.min.
 files, `node_modules`, and `.git` are excluded. TypeScript files are not included.
 The worker only reports findings and never applies fixes. Parsing failures are
 reported rather than silently hiding checks that could not run.
+Package files use strict JSON syntax: comments, trailing commas, and unquoted
+keys are reported as parsing failures before package rules run, without stopping
+the JavaScript checks for the module.
 
 The following local rules run even without a package.json file, when dependency
 helpers exceed their issue budget, or when general ESLint or deep checks are

@@ -71,6 +71,9 @@ export default defineConfig([
     files: ["**/package.json"],
     plugins: { depend, packageJson },
     extends: ["packageJson/recommended"],
+    languageOptions: {
+      parserOptions: { jsonSyntax: "JSON" }
+    },
     rules: {
       "depend/ban-dependencies": ["error", { allowed: ["lint-staged", "moment"] }],
       "package-json/require-type": "error",
