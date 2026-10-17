@@ -4,7 +4,6 @@
  */
 
 import { readFile, stat } from "node:fs/promises";
-import { checkJavaScript } from "./javascript-check.ts";
 import {
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES,
@@ -276,8 +275,6 @@ export async function analyzeModule(
     const relativePath = filePath.startsWith(modulePath)
       ? filePath.slice(modulePath.length).replace(/^\/+/, "")
       : filePath;
-
-    issues.push(...checkJavaScript(content, relativePath));
 
     if (!isExcludedForMomentScan(modulePath, filePath) && !filenameLower.endsWith(".min.js")) {
       if (MOMENT_USAGE_REGEX.test(content) || MOMENT_CORE_INDICATOR_REGEX.test(content)) {

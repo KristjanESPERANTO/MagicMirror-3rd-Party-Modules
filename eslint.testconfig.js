@@ -1,3 +1,4 @@
+import { MAGICMIRROR_PLUGIN } from "./scripts/check-modules/javascript-check.ts";
 import { defineConfig } from "eslint/config";
 import depend from "eslint-plugin-depend";
 import globals from "globals";
@@ -10,7 +11,17 @@ export default defineConfig([
     ignores: ["**/*.min.js"]
   },
   {
-    files: ["**/*.js"],
+    files: ["**/*.{js,mjs,cjs}"],
+    plugins: { magicmirror: MAGICMIRROR_PLUGIN },
+    rules: {
+      "magicmirror/prefer-native-fetch": "warn",
+      "magicmirror/no-deprecated-apis": "warn",
+      "magicmirror/prefer-node-protocol": ["warn", { version: ">=22.6.0" }]
+    },
+    linterOptions: { noInlineConfig: true }
+  },
+  {
+    files: ["**/*.{js,cjs}"],
     languageOptions: {
       ecmaVersion: "latest",
       globals: {

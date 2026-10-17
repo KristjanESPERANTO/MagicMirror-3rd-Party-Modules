@@ -3,6 +3,9 @@ import { ensureRepository, getCommitDate } from "../../scripts/shared/git.ts";
 import { isRepositoryType } from "../../scripts/updateRepositoryApiData/helpers.ts";
 import { rename, rm } from "node:fs/promises";
 import { execFile } from "node:child_process";
+import { ESLint } from "eslint";
+import { fileURLToPath } from "node:url";
+import { getRuleById } from "../../scripts/check-modules/rule-registry.ts";
 import { buildModuleAnalysisCacheKey } from "../../scripts/shared/module-analysis-cache.ts";
 import { createDeterministicImageName } from "../../scripts/shared/deterministic-output.ts";
 import { createLogger } from "../../scripts/shared/logger.ts";
@@ -229,75 +232,35 @@ async function runDeprecatedCheck(moduleDir: string): Promise<string | null> {
   }
 }
 
-async function runEslintCheck(moduleDir: string, config: ProcessModuleConfig): Promise<string[]> {
-  const eslintConfigPath = path.join(config.projectRoot, "eslint.testconfig.js");
-  if (!fileExists(eslintConfigPath)) {
-    return [];
-  }
-
-  const parseIssues = (stdout: unknown): string[] => {
-    const output = String(stdout ?? "").trim();
-    if (!output) {
-      return [];
-    }
-
-    const parsed = JSON.parse(output) as Array<{
-      filePath?: string;
-      messages?: Array<{ column?: number; line?: number; message?: string; ruleId?: string }>;
-    }>;
-
-    const issues: string[] = [];
-    for (const entry of parsed) {
-      const relativePath = entry.filePath
-        ? path.relative(moduleDir, entry.filePath)
-        : "unknown";
-
-      for (const message of entry.messages ?? []) {
-        if (!message?.message || message.message.includes("Definition for rule")) {
-          continue;
+export async function runEslintCheck(moduleDir: string, includeGeneralChecks = true): Promise<string[]> {
+  const eslint = new ESLint({
+    cwd: path.resolve(moduleDir),
+    overrideConfigFile: fileURLToPath(new URL("../../eslint.testconfig.js", import.meta.url)),
+    allowInlineConfig: false,
+    errorOnUnmatchedPattern: false,
+    fix: false
+  });
+  const results = await eslint.lintFiles(["**/*.{js,mjs,cjs}", "**/package.json"]);
+  const issues: string[] = [];
+  const generalIssues: string[] = [];
+  for (const result of results) {
+    const relativePath = path.relative(moduleDir, result.filePath);
+    for (const message of result.messages) {
+      if (message.ruleId?.startsWith("magicmirror/")) {
+        const rule = message.messageId ? getRuleById(message.messageId) : null;
+        if (rule) {
+          issues.push(`${rule.category}: In \`${relativePath}:${message.line}:${message.column}\`: ${message.message}`);
         }
-
-        const location = `${relativePath}: Line ${message.line}, Column ${message.column}`;
-        issues.push(`${location}: ${message.message} (rule: ${message.ruleId})`);
+      }
+      else if (includeGeneralChecks || message.fatal) {
+        generalIssues.push(`${relativePath}: Line ${message.line}, Column ${message.column}: ${message.message} (rule: ${message.ruleId})`);
       }
     }
-
-    return issues;
-  };
-
-  try {
-    const { stdout } = await execFileAsync(
-      "npx",
-      [
-        "eslint",
-        "--format",
-        "json",
-        "--config",
-        eslintConfigPath,
-        moduleDir
-      ],
-      {
-        cwd: config.projectRoot,
-        timeout: 120_000
-      }
-    );
-
-    return parseIssues(stdout);
   }
-  catch (error) {
-    if (error && typeof error === "object" && "stdout" in error) {
-      try {
-        return parseIssues(error.stdout);
-      }
-      catch {
-        logger.warn(`ESLint check failed in ${moduleDir}: ${getErrorMessage(error)}`);
-        return [];
-      }
-    }
-
-    logger.warn(`ESLint check failed in ${moduleDir}: ${getErrorMessage(error)}`);
-    return [];
+  if (generalIssues.length > 0) {
+    issues.push(`ESLint issues:\n${generalIssues.map(entry => `   - ${entry}`).join("\n")}`);
   }
+  return issues;
 }
 
 async function applyDependencyIntegrations(moduleDir: string, issues: string[], config: ProcessModuleConfig): Promise<void> {
@@ -336,17 +299,6 @@ async function applyDependencyIntegrations(moduleDir: string, issues: string[], 
     }
   }
 
-  if (issues.length >= 3) {
-    return;
-  }
-
-  if (analysisConfig.eslint !== false) {
-    const eslintIssues = await runEslintCheck(moduleDir, config);
-    if (eslintIssues.length > 0) {
-      const body = eslintIssues.map(entry => `   - ${entry}`).join("\n");
-      mergeUniqueIssues(issues, [`ESLint issues:\n${body}`]);
-    }
-  }
 }
 
 /**
@@ -1215,6 +1167,12 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
 
     // Add recommendations separately if any
     mergeUniqueIssues(allIssues, analysisResult.recommendations);
+
+    if (!module.outdated || config.localOnly) {
+      const analysisConfig = config.analysisConfig ?? config.checkGroups ?? {};
+      const eslintIssues = await runEslintCheck(cloneDir, analysisConfig.eslint !== false && analysisConfig.deep !== false);
+      mergeUniqueIssues(allIssues, eslintIssues);
+    }
 
     if (!module.outdated) {
       await applyDependencyIntegrations(cloneDir, allIssues, config);

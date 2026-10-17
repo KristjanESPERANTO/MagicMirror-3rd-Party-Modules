@@ -1,4 +1,3 @@
-import { Linter } from "eslint";
 import type { Node } from "estree";
 import type { Rule } from "eslint";
 import { getRuleById } from "./rule-registry.ts";
@@ -12,7 +11,7 @@ const HTTP_IMPORT_RULE_IDS = new Map([
   ["axios", "text-recommend-axios"]
 ]);
 
-const httpImportsRule: Rule.RuleModule = {
+export const httpImportsRule: Rule.RuleModule = {
   meta: {
     type: "suggestion",
     schema: [],
@@ -66,33 +65,3 @@ const httpImportsRule: Rule.RuleModule = {
     };
   }
 };
-
-export const HTTP_IMPORT_ESLINT_CONFIG: Linter.Config = {
-  languageOptions: { ecmaVersion: "latest", sourceType: "module" },
-  linterOptions: { noInlineConfig: true },
-  plugins: { "magicmirror": { rules: { "prefer-native-fetch": httpImportsRule } } },
-  rules: { "magicmirror/prefer-native-fetch": "warn" }
-};
-
-const linter = new Linter();
-
-export function checkHttpImports(content: string, relativePath: string): string[] {
-  if (!/\.(?:[cm]?js)$/iu.test(relativePath)) {
-    return [];
-  }
-
-  const messages = linter.verify(content, {
-    ...HTTP_IMPORT_ESLINT_CONFIG,
-    languageOptions: {
-      ...HTTP_IMPORT_ESLINT_CONFIG.languageOptions,
-      sourceType: relativePath.toLowerCase().endsWith(".cjs") ? "commonjs" : "module"
-    }
-  });
-
-  return messages.flatMap(message => {
-    const rule = message.messageId ? getRuleById(message.messageId) : null;
-    return rule
-      ? [`${rule.category}: Found an HTTP dependency import in file \`${relativePath}:${message.line}:${message.column}\`: ${message.message}`]
-      : [];
-  });
-}

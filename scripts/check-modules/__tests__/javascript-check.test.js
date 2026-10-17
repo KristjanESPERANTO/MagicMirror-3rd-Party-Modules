@@ -1,11 +1,60 @@
-import { JAVASCRIPT_ESLINT_CONFIG, checkJavaScript } from "../javascript-check.ts";
-import { mkdtemp, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { Linter } from "eslint";
 import { analyzeModule } from "../module-analyzer.ts";
 import assert from "node:assert/strict";
+import eslintConfig from "../../../eslint.testconfig.js";
+import { getRuleById } from "../rule-registry.ts";
 import { join } from "node:path";
+import { runEslintCheck } from "../../../pipeline/workers/process-module.ts";
 import { test } from "node:test";
 import { tmpdir } from "node:os";
+
+const linter = new Linter();
+
+function checkJavaScript(content, relativePath) {
+  return linter.verify(content, eslintConfig, { filename: relativePath }).flatMap((message) => {
+    const rule = message.ruleId?.startsWith("magicmirror/") && message.messageId ? getRuleById(message.messageId) : null;
+    return rule ? [`${rule.category}: In \`${relativePath}:${message.line}:${message.column}\`: ${message.message}`] : [];
+  });
+}
+
+test("HTTP imports use the central config for imports, requires, re-exports and dynamic imports", () => {
+  for (const packageName of ["node-fetch", "request", "request-promise", "native-request", "fetch", "axios"]) {
+    for (const source of [
+      `import client from '${packageName}';`,
+      `const client = require ( '${packageName}' );`,
+      `const client = import('${packageName}');`,
+      `export { default } from '${packageName}';`,
+      `export * from '${packageName}';`
+    ]) {
+      const issues = checkJavaScript(source, "src/client.js");
+      assert.equal(issues.length, 1, source);
+      assert.match(issues[0], /src\/client\.js:1:\d+/u);
+      assert.ok(issues[0].includes(`${packageName}:`));
+      assert.match(issues[0], packageName.startsWith("request") || packageName === "native-request" ? /^Deprecated:/u : /^Recommendation:/u);
+    }
+  }
+});
+
+test("HTTP imports ignore text mentions, unrelated packages and shadowed require", () => {
+  for (const source of [
+    "// require('request')\nconst axios = 'node-fetch';",
+    "const example = \"require('request')\";",
+    "import client from 'axios-extra';",
+    "function load(require) { return require('axios'); }",
+    "const require = () => null; require('request');"
+  ]) {
+    assert.deepEqual(checkJavaScript(source, "client.js"), [], source);
+  }
+  assert.deepEqual(checkJavaScript("require('request')", "README.md"), []);
+  assert.deepEqual(checkJavaScript("{\"dependencies\":{\"axios\":\"*\"}}", "package.json"), []);
+});
+
+test("HTTP imports cover CommonJS, subpaths and ignore inline ESLint configuration", () => {
+  assert.equal(checkJavaScript("const client = require('axios');", "client.cjs").length, 1);
+  assert.equal(checkJavaScript("import 'axios/unsafe/core/Axios.js';", "client.mjs").length, 1);
+  assert.equal(checkJavaScript("/* eslint-disable */\nrequire('node-fetch');", "client.js").length, 1);
+});
 
 test("Node protocol checks cover HTTP imports, requires, dynamic imports and re-exports", () => {
   for (const moduleName of ["http", "https"]) {
@@ -43,21 +92,21 @@ test("Node protocol checks ignore text, modern imports, unrelated modules and lo
 });
 
 test("Node protocol checks preserve the plugin autofix without changing unrelated imports", () => {
-  const result = new Linter().verifyAndFix("import http from 'http'; const https = require('https'); import fs from 'fs';", JAVASCRIPT_ESLINT_CONFIG);
+  const result = linter.verifyAndFix("import http from 'http'; const https = require('https'); import fs from 'fs';", eslintConfig, { filename: "client.js" });
   assert.equal(result.output, "import http from 'node:http'; const https = require('node:https'); import fs from 'fs';");
-  assert.deepEqual(result.messages, []);
+  assert.deepEqual(result.messages.filter(message => message.ruleId?.startsWith("magicmirror/")), []);
   assert.deepEqual(checkJavaScript(result.output, "client.js"), []);
 });
 
-test("analyzer reports Node protocol recommendations once and ignores README examples", async (context) => {
+test("worker ESLint reports Node protocol recommendations once and ignores README examples", async (context) => {
   const root = await mkdtemp(join(tmpdir(), "node-protocol-test-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const codePath = join(root, "node_helper.js");
   const readmePath = join(root, "README.md");
   await writeFile(codePath, "require('http'); require('https');\n");
   await writeFile(readmePath, "require('http'); require('https');\n");
-  const result = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [codePath, readmePath]);
-  const protocolIssues = result.issues.filter(issue => issue.includes("scoped import"));
+  const issues = await runEslintCheck(root, false);
+  const protocolIssues = issues.filter(issue => issue.includes("scoped import"));
   assert.equal(protocolIssues.length, 2);
   assert.ok(protocolIssues.every(issue => /node_helper\.js:1:\d+/u.test(issue)));
 });
@@ -130,16 +179,56 @@ test("deprecated API checks ignore text, modern APIs and custom or reassigned bi
   assert.deepEqual(checkJavaScript("new Buffer('value');", "README.md"), []);
 });
 
-test("analyzer reports migrated APIs once and runs HTTP checks in the same pass", async (context) => {
+test("worker ESLint reports migrated APIs once and runs HTTP checks in the same pass", async (context) => {
   const root = await mkdtemp(join(tmpdir(), "javascript-check-test-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const codePath = join(root, "node_helper.js");
   const readmePath = join(root, "README.md");
   await writeFile(codePath, "const fs = require('fs'); fs.F_OK; new Buffer('value'); new Date().getYear(); require('axios');\n");
   await writeFile(readmePath, "new Buffer('value'); fs.F_OK; date.getYear();\n");
-  const result = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [codePath, readmePath]);
-  const deprecatedIssues = result.issues.filter(issue => issue.startsWith("Deprecated:"));
+  const analysis = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [codePath, readmePath]);
+  assert.equal(analysis.issues.some(issue => issue.includes("node_helper.js:")), false);
+  const issues = await runEslintCheck(root, false);
+  const deprecatedIssues = issues.filter(issue => issue.startsWith("Deprecated:"));
   assert.equal(deprecatedIssues.length, 3);
   assert.ok(deprecatedIssues.every(issue => /node_helper\.js:1:\d+/u.test(issue)));
-  assert.equal(result.issues.filter(issue => issue.includes("axios:")).length, 1);
+  assert.equal(issues.filter(issue => issue.includes("axios:")).length, 1);
+});
+
+test("worker ESLint uses one trusted config for JavaScript and package.json without modifying files", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "central-eslint-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  const source = "/* eslint-disable */\nrequire('axios'); const unused = 1;\n";
+  for (const filename of ["module.js", "helper.cjs", "library.mjs"]) {
+    await writeFile(join(root, filename), source);
+  }
+  await writeFile(join(root, "package.json"), JSON.stringify({ name: "mmm-test", version: "1.0.0" }));
+  await writeFile(join(root, "eslint.config.js"), "throw new Error('Foreign config must not execute');\n");
+  await writeFile(join(root, "bundle.min.js"), "require('request');\n");
+  await mkdir(join(root, "node_modules", "example"), { recursive: true });
+  await writeFile(join(root, "node_modules", "example", "ignored.js"), "require('request');\n");
+
+  const issues = await runEslintCheck(root);
+  assert.equal(issues.filter(issue => issue.includes("axios:")).length, 3);
+  assert.equal(issues.some(issue => issue.includes("request:")), false);
+  const generalIssues = issues.filter(issue => issue.startsWith("ESLint issues:"));
+  assert.equal(generalIssues.length, 1);
+  assert.ok(generalIssues[0].includes("no-unused-vars"));
+  assert.ok(generalIssues[0].includes("package-json/require-type"));
+
+  const requiredOnly = await runEslintCheck(root, false);
+  assert.equal(requiredOnly.length, 3);
+  for (const filename of ["module.js", "helper.cjs", "library.mjs"]) {
+    assert.equal(await readFile(join(root, filename), "utf8"), source);
+  }
+});
+
+test("worker ESLint reports parsing failures even when general checks are disabled", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "eslint-parse-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  assert.deepEqual(await runEslintCheck(root), []);
+  await writeFile(join(root, "broken.js"), "const = ;\n");
+  const issues = await runEslintCheck(root, false);
+  assert.equal(issues.length, 1);
+  assert.match(issues[0], /ESLint issues:.*\n.*broken\.js.*Parsing error/u);
 });

@@ -14,7 +14,7 @@ The Stage 5 runner reads `scripts/check-modules/check-groups.config.json` to de
 | `groups.deep`                     | `true`  | Repository heuristics (README/license/dependabot checks) plus dependency helpers. Disabling this also suppresses the optional integrations below. |
 | `integrations.npmCheckUpdates`    | `true`  | Runs `npm-check-updates` when the helper budget allows.                                                                                           |
 | `integrations.npmDeprecatedCheck` | `true`  | Executes `npm-deprecated-check` to surface deprecated dependencies.                                                                               |
-| `integrations.eslint`             | `true`  | Invokes the curated ESLint configuration on each module clone.                                                                                    |
+| `integrations.eslint`             | `true`  | Includes general ESLint findings. The built-in MagicMirror rules always run, independently of this toggle and the dependency-helper budget.       |
 
 > The runner logs whenever overrides are applied so CI output records which groups were disabled.
 
@@ -28,17 +28,10 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 
 | Rule ID                           | Pattern                                         | Category       | Notes                       |
 | --------------------------------- | ----------------------------------------------- | -------------- | --------------------------- |
-| text-deprecated-new-buffer        | `new Buffer(`                                   | Deprecated     | Replace with `Buffer.from`. |
-| text-deprecated-fs-F_OK           | `fs.F_OK`                                       | Deprecated     | Use `fs.constants.F_OK`.    |
-| text-deprecated-fs-R_OK           | `fs.R_OK`                                       | Deprecated     | Use `fs.constants.R_OK`.    |
-| text-deprecated-fs-W_OK           | `fs.W_OK`                                       | Deprecated     | Use `fs.constants.W_OK`.    |
-| text-deprecated-fs-X_OK           | `fs.X_OK`                                       | Deprecated     | Use `fs.constants.X_OK`.    |
 | text-typo-magic-mirror            | `Magic Mirror`                                  | Typo           | Should be `MagicMirror²`.   |
 | text-typo-magicmirror2            | `MagicMirror2`                                  | Typo           | Should be `MagicMirror²`.   |
 | text-typo-magicmirror-brackets    | `[MagicMirror]`                                 | Typo           | Should be `[MagicMirror²]`. |
 | text-typo-html-sub2               | `<sub>2</sub>`                                  | Typo           | Replace with `²`.           |
-| text-recommend-http-module        | `require("http")`/`require('http')`             | Recommendation | Use `node:http`.            |
-| text-recommend-https-module       | `require("https")`/`require('https')`           | Recommendation | Use `node:https`.           |
 | text-deprecated-omxplayer         | `omxplayer`                                     | Deprecated     | Suggest `mplayer` or `vlc`. |
 | text-recommend-xmlhttprequest     | `XMLHttpRequest`                                | Recommendation | Suggest fetch.              |
 | text-recommend-actions-checkout   | `uses: actions/checkout@v2`/`@v3`/`@v4`         | Recommendation | Upgrade to v5.              |
@@ -46,7 +39,6 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 | text-deprecated-node-version      | `node-version: 14/16/18` (variants)             | Deprecated     | Upgrade to current LTS.     |
 | text-recommend-npm-run            | `npm run`                                       | Recommendation | Prefer `node --run`.        |
 | text-recommend-jshint             | `jshint`                                        | Recommendation | Suggest ESLint.             |
-| text-deprecated-getYear           | `getYear()`                                     | Deprecated     | Use `getFullYear()`.        |
 | text-outdated-michmich            | `MichMich/MagicMirror`                          | Outdated       | Update org name.            |
 | text-outdated-husky               | `/_/husky.sh`                                   | Outdated       | Husky v9 change.            |
 | text-deprecated-openweathermap    | `api.openweathermap.org/data/2.5`               | Deprecated     | Upgrade to API 3.0.         |
@@ -55,20 +47,40 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 | text-recommend-eslint-dot         | `eslint .` / `eslint --fix .`                   | Recommendation | Drop trailing dot.          |
 | text-recommend-git-checkout       | `git checkout`                                  | Recommendation | Switch to `git switch`.     |
 
-### ESLint HTTP import rule
+### Central ESLint checks
 
-`scripts/check-modules/http-import-check.ts` exports `HTTP_IMPORT_ESLINT_CONFIG`,
-which provides the local rule `magicmirror/prefer-native-fetch`. The module
-analyzer runs it on `.js`, `.mjs`, and `.cjs` files using ESLint's isolated
-`Linter` API. It does not load configuration or plugins from module repositories,
-and inline ESLint comments cannot disable the check.
+`eslint.testconfig.js` selects all ESLint rules for module repositories. It
+registers the local `MAGICMIRROR_PLUGIN` from
+`scripts/check-modules/javascript-check.ts` alongside the general JavaScript,
+import, and package.json rules. The worker runs this configuration once per
+module using the ESLint API, with the module directory as its working directory.
+It explicitly selects this trusted configuration and disables inline ESLint
+configuration; repository-owned configuration files are never executed.
 
-The rule detects static imports, re-exports, literal dynamic imports, and
+The pass checks `.js`, `.mjs`, `.cjs`, and `package.json` files. Minified `.min.js`
+files, `node_modules`, and `.git` are excluded. TypeScript files are not included.
+The worker only reports findings and never applies fixes. Parsing failures are
+reported rather than silently hiding checks that could not run.
+
+The following local rules run even without a package.json file, when dependency
+helpers exceed their issue budget, or when general ESLint or deep checks are
+disabled. General ESLint findings remain grouped under `ESLint issues` and are
+included when both general ESLint and deep checks are enabled, without an issue
+budget or package.json requirement. The text/README analyzer no longer invokes
+ESLint separately.
+
+| Local rule                         | Purpose                                                                         |
+| ---------------------------------- | ------------------------------------------------------------------------------- |
+| `magicmirror/prefer-native-fetch`  | Recommend native fetch instead of legacy HTTP clients.                          |
+| `magicmirror/no-deprecated-apis`   | Detect deprecated Buffer constructors, Date.getYear(), and fs access constants. |
+| `magicmirror/prefer-node-protocol` | Adapt `eslint-plugin-n` to prefer `node:http` and `node:https`.                 |
+
+The HTTP import rule detects static imports, re-exports, literal dynamic imports, and
 `require()` calls without a local binding, including package subpaths. Comments, ordinary
 strings, README mentions, and dependency declarations are not import findings.
-TypeScript files and files that ESLint cannot parse are not analyzed by this
-first migration. No automatic fixes are offered because replacing an HTTP client
-can require changes to response and error handling.
+No HTTP client migration fixes are offered because replacing a client can require
+changes to response and error handling. The Node protocol rule preserves its
+upstream autofix capability, but the worker does not apply it.
 
 The existing registry IDs are retained with scope `module-analysis`; they no
 longer participate in text scanning. Reports preserve their categories and

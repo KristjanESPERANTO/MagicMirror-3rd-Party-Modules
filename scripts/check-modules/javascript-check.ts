@@ -1,7 +1,6 @@
-import { Linter } from "eslint";
 import type { Rule } from "eslint";
 import type { Node } from "estree";
-import { HTTP_IMPORT_ESLINT_CONFIG } from "./http-import-check.ts";
+import { httpImportsRule } from "./http-import-check.ts";
 import { getRuleById } from "./rule-registry.ts";
 import nodePlugin from "eslint-plugin-n";
 
@@ -18,7 +17,7 @@ const NODE_PROTOCOL_RULE_IDS = new Map([
   ["http", "text-recommend-http-module"],
   ["https", "text-recommend-https-module"]
 ]);
-const nodeProtocolRule: Rule.RuleModule = nodePlugin.rules["prefer-node-protocol"];
+const nodeProtocolRule: Rule.RuleModule = nodePlugin.rules!["prefer-node-protocol"];
 const httpNodeProtocolRule: Rule.RuleModule = {
   meta: {
     ...nodeProtocolRule.meta,
@@ -28,8 +27,8 @@ const httpNodeProtocolRule: Rule.RuleModule = {
     return nodeProtocolRule.create(Object.create(context, {
       report: {
         value(descriptor: Rule.ReportDescriptor) {
-          const source = "node" in descriptor ? descriptor.node : null;
-          if (source?.type !== "Literal" || typeof source.value !== "string" || !source.range) {
+          const source = ("node" in descriptor ? descriptor.node : null) as Node | null;
+          if (source?.type !== "Literal" || typeof source.value !== "string") {
             return;
           }
           const messageId = NODE_PROTOCOL_RULE_IDS.get(source.value);
@@ -37,7 +36,7 @@ const httpNodeProtocolRule: Rule.RuleModule = {
             return;
           }
 
-          const parent = context.sourceCode.getNodeByRangeIndex(source.range[0])?.parent;
+          const parent = context.sourceCode.getAncestors(source).at(-1);
           if (parent?.type === "CallExpression" && parent.callee.type === "Identifier" && parent.callee.name === "require") {
             let scope: ReturnType<typeof context.sourceCode.getScope> | null = context.sourceCode.getScope(source);
             while (scope) {
@@ -170,43 +169,10 @@ const deprecatedApisRule: Rule.RuleModule = {
   }
 };
 
-export const JAVASCRIPT_ESLINT_CONFIG: Linter.Config = {
-  ...HTTP_IMPORT_ESLINT_CONFIG,
-  plugins: {
-    magicmirror: {
-      rules: {
-        ...HTTP_IMPORT_ESLINT_CONFIG.plugins?.magicmirror.rules,
-        "no-deprecated-apis": deprecatedApisRule,
-        "prefer-node-protocol": httpNodeProtocolRule
-      }
-    }
-  },
+export const MAGICMIRROR_PLUGIN = {
   rules: {
-    ...HTTP_IMPORT_ESLINT_CONFIG.rules,
-    "magicmirror/no-deprecated-apis": "warn",
-    "magicmirror/prefer-node-protocol": ["warn", { version: ">=22.6.0" }]
+    "prefer-native-fetch": httpImportsRule,
+    "no-deprecated-apis": deprecatedApisRule,
+    "prefer-node-protocol": httpNodeProtocolRule
   }
 };
-
-const linter = new Linter();
-
-export function checkJavaScript(content: string, relativePath: string): string[] {
-  if (!/\.[cm]?js$/iu.test(relativePath)) {
-    return [];
-  }
-
-  const messages = linter.verify(content, {
-    ...JAVASCRIPT_ESLINT_CONFIG,
-    languageOptions: {
-      ...JAVASCRIPT_ESLINT_CONFIG.languageOptions,
-      sourceType: relativePath.toLowerCase().endsWith(".cjs") ? "commonjs" : "module"
-    }
-  });
-
-  return messages.flatMap(message => {
-    const rule = message.messageId ? getRuleById(message.messageId) : null;
-    return rule
-      ? [`${rule.category}: In \`${relativePath}:${message.line}:${message.column}\`: ${message.message}`]
-      : [];
-  });
-}

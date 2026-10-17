@@ -297,6 +297,17 @@ test("local-only workers analyze existing files without Git and skip missing clo
   ok(result.issues.some(issue => issue.includes("axios:") && issue.includes("node_helper.js:1:")));
   equal(await readFile(sourcePath, "utf8"), source);
 
+  const requiredOnly = await processModule({
+    ...module,
+    issues: ["existing-1", "existing-2", "existing-3", "existing-4", "existing-5"]
+  }, {
+    ...config,
+    analysisConfig: { deep: false, eslint: false, ncu: false, npmDeprecatedCheck: false }
+  });
+  equal(requiredOnly.status, "success");
+  equal(requiredOnly.issues.filter(issue => issue.includes("axios:")).length, 1);
+  equal(requiredOnly.issues.some(issue => issue.startsWith("ESLint issues:")), false);
+
   const parallelResult = await runParallelProcessing({
     modules: [module, { ...module, id: "example/MMM-Missing", name: "MMM-Missing" }],
     projectRoot,
