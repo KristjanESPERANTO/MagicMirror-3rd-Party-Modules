@@ -281,8 +281,9 @@
       "url": "https://github.com/aduyng/MMM-TeslaStatus"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Compact family agenda on top of the default calendar module — events grouped by day with semantic emojis, participant avatars and optional per-event weather (needs an OpenWeather API key).",
+      "hasGithubIssues": true,
       "id": "ago1776/MMM-FamilyAgenda",
       "image": "MMM-FamilyAgenda---ago1776.webp",
       "isArchived": false,
@@ -445,6 +446,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "An application that adds and removes any desired modules found on this website.",
+      "hasGithubIssues": true,
       "id": "ahmedwab/MMM-ModuleHandler",
       "image": "MMM-ModuleHandler---ahmedwab.webp",
       "isArchived": false,
@@ -476,7 +478,7 @@
     },
     {
       "category": "Education",
-      "description": "A simple timetable module for MagicMirror. Configuration exclusively via config.js. Supports iCal holiday calendars, multiple children, colors, times, and rooms.",
+      "description": "Displays a simple timetable. Configuration exclusively via config.js. Supports iCal holiday calendars, multiple children, colors, times, and rooms.",
       "id": "AJOCHAM/MMM-Stundenplan",
       "isArchived": false,
       "maintainer": "AJocham",
@@ -514,6 +516,7 @@
     {
       "category": "Outdated Modules",
       "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
+      "hasGithubIssues": true,
       "id": "alberttwong/MMM-iFrame",
       "isArchived": true,
       "license": "MIT",
@@ -575,6 +578,7 @@
     {
       "category": "Outdated Modules",
       "description": "Simple player to play your music.",
+      "hasGithubIssues": true,
       "id": "AlexDespain01/mm-music-player",
       "isArchived": false,
       "maintainer": "AlexDespain01",
@@ -603,6 +607,7 @@
     {
       "category": "Outdated Modules",
       "description": "Camera based motion detector.",
+      "hasGithubIssues": true,
       "id": "alexyak/motiondetector",
       "isArchived": false,
       "maintainer": "alexyak",
@@ -623,8 +628,9 @@
       "url": "https://github.com/alexyak/voicecontrol"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Parses a Google Calendar iCal feed for events tagged with people's initials (e.g. [A], [M], [A&M]) to display upcoming days off. Makes it easy to see shared vs individual days off for household planning.",
+      "hasGithubIssues": true,
       "id": "AliceNewsum/MMM-DaysOff",
       "image": "MMM-DaysOff---AliceNewsum.webp",
       "isArchived": false,
@@ -660,7 +666,7 @@
       "url": "https://github.com/AliceNewsum/MMM-Packages"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Displays Google Tasks split into active (due today or overdue) and backlog sections. Overdue tasks are highlighted in amber so nothing slips through the cracks.",
       "id": "AliceNewsum/MMM-Tasks",
       "image": "MMM-Tasks---AliceNewsum.webp",
@@ -703,6 +709,7 @@
     {
       "category": "Outdated Modules",
       "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus).",
+      "hasGithubIssues": true,
       "id": "Alvinger/MMM-Koket-by-Sodexo",
       "isArchived": true,
       "license": "MIT",
@@ -779,8 +786,11 @@
     {
       "category": "Outdated Modules",
       "description": "Display data from any JSON source.",
+      "hasGithubIssues": true,
       "id": "amcolash/MMM-json-feed",
+      "image": "MMM-json-feed---amcolash.webp",
       "isArchived": true,
+      "license": "MIT",
       "maintainer": "amcolash",
       "maintainerURL": "https://github.com/amcolash",
       "name": "MMM-json-feed",
@@ -1014,7 +1024,7 @@
       "url": "https://github.com/armybean/MMM-Callmonitor-Current-Call"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Calendar of current month with weeks numbers.",
       "id": "arnaudsnomsed/MMM-WeeksCalendar",
       "image": "MMM-WeeksCalendar---arnaudsnomsed.webp",
@@ -1090,6 +1100,7 @@
     {
       "category": "Outdated Modules",
       "description": "Displays EV/Fuel status and Range of Mercedes cars.",
+      "hasGithubIssues": true,
       "id": "ashishtank/MMM-MercedesMe",
       "image": "MMM-MercedesMe---ashishtank.webp",
       "isArchived": false,
@@ -1279,6 +1290,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display CO2 readings from MH-Z19 sensor.",
+      "hasGithubIssues": true,
       "id": "awitwicki/MMM-MHZ19",
       "image": "MMM-MHZ19---awitwicki.webp",
       "isArchived": false,
@@ -1291,7 +1303,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Make clickable text to navigate to different pages.",
-      "hasGithubIssues": true,
       "id": "Aws505/MMM-ClickToNavigate",
       "image": "MMM-ClickToNavigate---Aws505.webp",
       "isArchived": false,
@@ -1311,7 +1322,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Let your MagicMirror² launch a browser on top of itself. Contains control bar to return to MagicMirror².",
-      "hasGithubIssues": true,
       "id": "Aws505/MMM-LaunchBrowser",
       "isArchived": false,
       "license": "MIT",
@@ -1790,11 +1800,8 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
-      "hasGithubIssues": true,
       "id": "Bee-Mar/mmpm",
-      "image": "mmpm---Bee-Mar.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Bee-Mar",
       "maintainerURL": "https://github.com/Bee-Mar",
       "name": "mmpm",
@@ -1834,7 +1841,7 @@
       "url": "https://github.com/bendardenne/MMM-TomTomTraffic"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "This module can show [Trello](https://trello.com) cards on your mirror.",
       "id": "benjaminflessner/MMM-Trello",
       "image": "MMM-Trello---benjaminflessner.webp",
@@ -1976,8 +1983,9 @@
       "url": "https://github.com/BigMac1999/MMM-ProfileSwitcher"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Load iCloud addressbook and provide birthday iCal feed for calendar module and addressbook for [MMM-FRITZ-Box-Callmonitor](https://github.com/paviro/MMM-FRITZ-Box-Callmonitor).",
+      "hasGithubIssues": true,
       "id": "bitte-ein-bit/MMM-iCloud-Client",
       "isArchived": false,
       "license": "MIT",
@@ -2020,8 +2028,9 @@
       "url": "https://github.com/BKeyport/MMM-Block"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Display multiple mini-calendars at the same time.",
+      "hasGithubIssues": true,
       "id": "BKeyport/MMM-Multimonth",
       "image": "MMM-Multimonth---BKeyport.webp",
       "isArchived": false,
@@ -2033,6 +2042,31 @@
         "calendar"
       ],
       "url": "https://github.com/BKeyport/MMM-Multimonth"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "description": "It adds a seasonal overlay.",
+      "id": "bl8demast3r/MMM-OverlayEffects",
+      "image": "MMM-OverlayEffects---bl8demast3r.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "bl8demast3r",
+      "maintainerURL": "https://github.com/bl8demast3r",
+      "name": "MMM-OverlayEffects",
+      "tags": [
+        "overlay",
+        "effects",
+        "holidays",
+        "halloween",
+        "christmas",
+        "thanksgiving",
+        "fireworks",
+        "confetti",
+        "snow",
+        "st-patricks-day",
+        "valentines-day"
+      ],
+      "url": "https://github.com/bl8demast3r/MMM-OverlayEffects"
     },
     {
       "category": "Entertainment / Misc",
@@ -2374,6 +2408,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Moonraker API integration for Klipper powered 3D printers.",
+      "hasGithubIssues": true,
       "id": "btastic/MMM-moonraker",
       "image": "MMM-moonraker---btastic.webp",
       "isArchived": false,
@@ -2632,6 +2667,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "A centralized notification inbox that normalizes, prioritizes, and displays messages from MagicMirror modules, REST webhooks, MQTT, Home Assistant, and local services.",
+      "hasGithubIssues": true,
       "id": "bwente/MMM-MessageCenter",
       "image": "MMM-MessageCenter---bwente.webp",
       "isArchived": false,
@@ -2688,6 +2724,23 @@
       "url": "https://github.com/bwente/MMM-Neko"
     },
     {
+      "category": "Education",
+      "description": "A phone-controlled teleprompter for rehearsing speeches on your mirror, with voice tracking, automatic pacing, and private local scoring.",
+      "id": "bwente/MMM-Rehearsal",
+      "image": "MMM-Rehearsal---bwente.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "bwente",
+      "maintainerURL": "https://github.com/bwente",
+      "name": "MMM-Rehearsal",
+      "tags": [
+        "teleprompter",
+        "rehearsal",
+        "speech-recognition"
+      ],
+      "url": "https://github.com/bwente/MMM-Rehearsal"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "Display clocks for multiple time zones with an optional real-time day/night world map.",
       "id": "bwente/MMM-WorldClockMap",
@@ -2723,7 +2776,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Displays clickable GitHub notifications.",
-      "hasGithubIssues": true,
       "id": "ByteExceptionM/MMM-GitHub-Notifications",
       "isArchived": false,
       "maintainer": "ByteException_",
@@ -2852,7 +2904,7 @@
       "url": "https://github.com/CatoAntonsen/MMM-SpotifyConnectUI"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Displays your todos from Todoist.",
       "id": "cbrooker/MMM-Todoist",
       "image": "MMM-Todoist---CBrooker.webp",
@@ -3046,6 +3098,355 @@
       "url": "https://github.com/CharlesMorris78/MMM-EnvCanada"
     },
     {
+      "category": "Education",
+      "description": "Chaos theory in motion: the Lorenz attractor, diverging double pendulums, fractal basins, the three-body problem and more, physically correct, with their equations and live numbers.",
+      "id": "charleswest775/MMM-ChaosTheory",
+      "image": "MMM-ChaosTheory---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-ChaosTheory",
+      "tags": [
+        "chaos",
+        "chaos theory",
+        "double pendulum",
+        "lorenz attractor",
+        "three-body problem",
+        "fractal",
+        "logistic map",
+        "billiards",
+        "rule 30",
+        "standard map",
+        "waterwheel",
+        "sandpile",
+        "physics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-ChaosTheory"
+    },
+    {
+      "category": "Education",
+      "description": "Chaotic billiards: balls leaving one point 10⁻⁶ rad apart stay together in an ellipse and part in Bunimovich's stadium, drawn as a long exposure.",
+      "id": "charleswest775/MMM-ChaoticBilliards",
+      "image": "MMM-ChaoticBilliards---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-ChaoticBilliards",
+      "tags": [
+        "chaos",
+        "chaos theory",
+        "billiards",
+        "bunimovich stadium",
+        "dynamical systems",
+        "physics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-ChaoticBilliards"
+    },
+    {
+      "category": "Education",
+      "description": "Chladni figures: sand on a vibrating plate settles on its nodal lines; 49 modes, with the note a steel plate would sound.",
+      "id": "charleswest775/MMM-Chladni",
+      "image": "MMM-Chladni---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-Chladni",
+      "tags": [
+        "chladni",
+        "cymatics",
+        "vibration",
+        "acoustics",
+        "physics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-Chladni"
+    },
+    {
+      "category": "Education",
+      "description": "Sensitive dependence: five double pendulums released 10⁻⁶ rad apart swing as one, then fan out, with a log plot of their spread.",
+      "id": "charleswest775/MMM-DoublePendulum",
+      "image": "MMM-DoublePendulum---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-DoublePendulum",
+      "tags": [
+        "chaos",
+        "chaos theory",
+        "double pendulum",
+        "butterfly effect",
+        "sensitive dependence",
+        "physics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-DoublePendulum"
+    },
+    {
+      "category": "Education",
+      "description": "A pendulum over three magnets: each pixel coloured by the magnet it ends over, then a zoom into the fractal boundary between them.",
+      "id": "charleswest775/MMM-FractalBasins",
+      "image": "MMM-FractalBasins---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-FractalBasins",
+      "tags": [
+        "chaos",
+        "chaos theory",
+        "fractal",
+        "magnetic pendulum",
+        "basins of attraction",
+        "physics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-FractalBasins"
+    },
+    {
+      "category": "Education",
+      "description": "An infinite zoom into the Mandelbrot set and Julia sets, down to 10¹⁰×, rendered in web workers.",
+      "id": "charleswest775/MMM-FractalZoom",
+      "image": "MMM-FractalZoom---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-FractalZoom",
+      "tags": [
+        "fractal",
+        "mandelbrot",
+        "julia set",
+        "zoom",
+        "mathematics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-FractalZoom"
+    },
+    {
+      "category": "Education",
+      "description": "The road to chaos: the logistic map's bifurcation diagram paints itself, then a cobweb sweeps through period doubling into chaos.",
+      "id": "charleswest775/MMM-LogisticMap",
+      "image": "MMM-LogisticMap---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-LogisticMap",
+      "tags": [
+        "chaos",
+        "chaos theory",
+        "logistic map",
+        "bifurcation",
+        "feigenbaum",
+        "mathematics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-LogisticMap"
+    },
+    {
+      "category": "Education",
+      "description": "The Lorenz attractor: three trajectories released 10⁻⁵ apart trace the butterfly as one, then split, while the view turns in 3D.",
+      "id": "charleswest775/MMM-LorenzAttractor",
+      "image": "MMM-LorenzAttractor---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-LorenzAttractor",
+      "tags": [
+        "chaos",
+        "chaos theory",
+        "lorenz attractor",
+        "butterfly effect",
+        "strange attractor",
+        "physics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-LorenzAttractor"
+    },
+    {
+      "category": "Education",
+      "description": "Tonight's sky over your mirror as a star chart: constellations, planets, the Moon in its phase, risings, and one star's story.",
+      "id": "charleswest775/MMM-NightSky",
+      "image": "MMM-NightSky---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-NightSky",
+      "tags": [
+        "star chart",
+        "sky",
+        "astronomy",
+        "constellations",
+        "moon phase",
+        "planets",
+        "night sky",
+        "canvas",
+        "raspberry pi"
+      ],
+      "url": "https://github.com/charleswest775/MMM-NightSky"
+    },
+    {
+      "category": "Education",
+      "description": "Real orbits from today drawn as figures: Venus's five-petalled rose, the planets' loops, Jupiter and Saturn's great conjunctions.",
+      "id": "charleswest775/MMM-PlanetsDance",
+      "image": "MMM-PlanetsDance---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-PlanetsDance",
+      "tags": [
+        "planets",
+        "orbits",
+        "astronomy",
+        "solar system",
+        "venus pentagram",
+        "ephemeris",
+        "kepler",
+        "canvas",
+        "raspberry pi"
+      ],
+      "url": "https://github.com/charleswest775/MMM-PlanetsDance"
+    },
+    {
+      "category": "Education",
+      "description": "Rule 30: one rule, drawn a row at a time from a single cell: regular on the left, random on the right.",
+      "id": "charleswest775/MMM-Rule30",
+      "image": "MMM-Rule30---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-Rule30",
+      "tags": [
+        "chaos",
+        "cellular automaton",
+        "rule 30",
+        "wolfram",
+        "randomness",
+        "mathematics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-Rule30"
+    },
+    {
+      "category": "Education",
+      "description": "A new sacred geometry figure each time (Flower of Life, Metatron's Cube, star polygons…), drawn with compass and straightedge from the centre out.",
+      "id": "charleswest775/MMM-SacredGeometry",
+      "image": "MMM-SacredGeometry---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-SacredGeometry",
+      "tags": [
+        "sacred geometry",
+        "flower of life",
+        "metatron's cube",
+        "mandala",
+        "compass and straightedge",
+        "geometry",
+        "generative art"
+      ],
+      "url": "https://github.com/charleswest775/MMM-SacredGeometry"
+    },
+    {
+      "category": "Education",
+      "description": "A snow crystal grown live in Reiter's model, never the same twice, with the stories of Kepler, Bentley and Nakaya.",
+      "id": "charleswest775/MMM-SnowCrystal",
+      "image": "MMM-SnowCrystal---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-SnowCrystal",
+      "tags": [
+        "snowflake",
+        "snow crystal",
+        "winter",
+        "reiter",
+        "cellular automaton",
+        "physics"
+      ],
+      "url": "https://github.com/charleswest775/MMM-SnowCrystal"
+    },
+    {
+      "category": "Education",
+      "description": "Symmetry in chaos: one point hopping chaotically, millions of times, develops a symmetric picture (after Field & Golubitsky).",
+      "id": "charleswest775/MMM-SymmetricIcons",
+      "image": "MMM-SymmetricIcons---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-SymmetricIcons",
+      "tags": [
+        "chaos",
+        "chaos theory",
+        "symmetric icons",
+        "symmetry in chaos",
+        "field and golubitsky",
+        "attractor",
+        "generative art",
+        "mathematics"
+      ],
+      "url": "https://github.com/charleswest775/MMM-SymmetricIcons"
+    },
+    {
+      "category": "Education",
+      "description": "The three-body problem as a long exposure: Burrau's Pythagorean problem, Lagrange's triangle and the figure-eight, each with a ghost 10⁻⁶ away.",
+      "id": "charleswest775/MMM-ThreeBody",
+      "image": "MMM-ThreeBody---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-ThreeBody",
+      "tags": [
+        "chaos",
+        "chaos theory",
+        "three-body problem",
+        "n-body",
+        "gravity",
+        "orbits",
+        "physics",
+        "animation"
+      ],
+      "url": "https://github.com/charleswest775/MMM-ThreeBody"
+    },
+    {
+      "category": "Education",
+      "description": "Tilings that never repeat, laid tile by tile: Penrose, Ammann–Beenker, hyperbolic Circle Limits, and the hat.",
+      "id": "charleswest775/MMM-Tilings",
+      "image": "MMM-Tilings---Charles West.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Charles West",
+      "maintainerURL": "https://github.com/charleswest775",
+      "name": "MMM-Tilings",
+      "tags": [
+        "tiling",
+        "penrose",
+        "aperiodic",
+        "einstein",
+        "hat tile",
+        "hyperbolic",
+        "escher",
+        "circle limit",
+        "quasicrystal",
+        "mathematics"
+      ],
+      "url": "https://github.com/charleswest775/MMM-Tilings"
+    },
+    {
       "category": "Entertainment / Misc",
       "description": "This will show you your upcoming chests to open in ClashRoyale.",
       "id": "chicohernando/MMM-ClashRoyaleChests",
@@ -3091,7 +3492,7 @@
       "url": "https://github.com/choffmann/MMM-bunq"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display your Notion database.",
       "id": "choffmann/MMM-Notion",
       "image": "MMM-Notion---choffmann.webp",
@@ -3158,10 +3559,16 @@
       "category": "Entertainment / Misc",
       "description": "Fetches and displays event information using the SerpAPI to search for events based on a given query.",
       "id": "ChrisF1976/MMM-EventSearch",
+      "image": "MMM-EventSearch---ChrisF1976.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "ChrisF1976",
       "maintainerURL": "https://github.com/ChrisF1976",
       "name": "MMM-EventSearch",
+      "tags": [
+        "events",
+        "braunschweig"
+      ],
       "url": "https://github.com/ChrisF1976/MMM-EventSearch"
     },
     {
@@ -3411,9 +3818,29 @@
       "url": "https://github.com/ChrisF1976/MMM-Temp2IOT"
     },
     {
+      "category": "Transport / Travel",
+      "description": "Displays live vehicle data from Volkswagen Group cars (VW, Audi, SEAT, Škoda, Cupra) using the EU Data Act portal as data source.",
+      "id": "ChrisF1976/MMM-weconnectid_MQTT",
+      "image": "MMM-weconnectid_MQTT---ChrisF1976.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "name": "MMM-weconnectid_MQTT",
+      "tags": [
+        "volkswagen",
+        "vw",
+        "id",
+        "hybrid",
+        "weconnect",
+        "weconnectid",
+        "eu data act"
+      ],
+      "url": "https://github.com/ChrisF1976/MMM-weconnectid_MQTT"
+    },
+    {
       "category": "Development / Core MagicMirror²",
       "description": "Transforms your mirror into a digital art gallery.",
-      "hasGithubIssues": true,
       "id": "christian-klein/MMM-Art",
       "image": "MMM-Art---christian-klein.webp",
       "isArchived": false,
@@ -3524,7 +3951,7 @@
       "url": "https://github.com/coderpussy/MMM-WS281X-Server"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display a list from the AnyList app.",
       "id": "codetheweb/MMM-AnyList",
       "image": "MMM-AnyList---codetheweb.webp",
@@ -3546,7 +3973,7 @@
       "url": "https://github.com/codingis-life/MMM-openhabQuickWatch"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options. Formerly this module was called MMM-Nextcloud-Tasks.",
       "id": "Coernel82/MMM-CalDAV-Tasks",
       "image": "MMM-CalDAV-Tasks---Coernel82.webp",
@@ -3844,16 +4271,19 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Provides notification if any module updates are available. Note: There is already a module (https://docs.magicmirror.builders/modules/updatenotification.html) for this functionality, which is included in the MagicMirror core.",
+      "hasGithubIssues": true,
       "id": "ctd-mh3/MMM-ModuleUpdateNotifier",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "ctd-mh3",
       "maintainerURL": "https://github.com/ctd-mh3",
       "name": "MMM-ModuleUpdateNotifier",
       "url": "https://github.com/ctd-mh3/MMM-ModuleUpdateNotifier"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Display a count down to the next event from [MMM-CalendarExt2](https://github.com/MagicMirrorModules/MMM-CalendarExt2).",
+      "hasGithubIssues": true,
       "id": "cure/MMM-NextEvent",
       "image": "MMM-NextEvent---cure.webp",
       "isArchived": false,
@@ -3866,8 +4296,11 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Publishe notifications with any payload (messages, values, etc) sent via received by `sendNotification()` method to specified topics on MQTT Broker(s).",
+      "hasGithubIssues": false,
       "id": "cybex-dev/MMM-MQTT-Publisher",
+      "image": "MMM-MQTT-Publisher---cybex-dev.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "cybex-dev",
       "maintainerURL": "https://github.com/cybex-dev",
       "name": "MMM-MQTT-Publisher",
@@ -3941,6 +4374,48 @@
         "ratp"
       ],
       "url": "https://github.com/da4throux/MMM-Paris-RATP-PG"
+    },
+    {
+      "category": "Weather",
+      "description": "Displays aurora viewing probability for your location along with the 3-day Kp index forecast from NOAA.",
+      "id": "damithsj/MMM-AuroraForecast",
+      "image": "MMM-AuroraForecast---damithsj.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "damithsj",
+      "maintainerURL": "https://github.com/damithsj",
+      "name": "MMM-AuroraForecast",
+      "tags": [
+        "aurora",
+        "northern-lights",
+        "kp-index",
+        "noaa",
+        "space-weather"
+      ],
+      "url": "https://github.com/damithsj/MMM-AuroraForecast"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Shows upcoming bus/tram/train arrivals and/or departures for a given stop in Sweden, using the [Trafiklab Realtime API](https://www.trafiklab.se/api/our-apis/trafiklab-realtime-apis).",
+      "id": "damithsj/MMM-Trafiklab",
+      "image": "MMM-Trafiklab---damithsj.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "damithsj",
+      "maintainerURL": "https://github.com/damithsj",
+      "name": "MMM-Trafiklab",
+      "tags": [
+        "trafiklab",
+        "public transport",
+        "sweden",
+        "bus",
+        "train",
+        "tram",
+        "metro",
+        "departures",
+        "arrivals"
+      ],
+      "url": "https://github.com/damithsj/MMM-Trafiklab"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -4258,10 +4733,12 @@
       "url": "https://github.com/dbeltjr/MMM-CanvasCalendar"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Same functionality as the default Calendar app but different display formatting.",
+      "hasGithubIssues": false,
       "id": "dbeltjr/MMM-MyCalendar",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "dbeltjr",
       "maintainerURL": "https://github.com/dbeltjr",
       "name": "MMM-MyCalendar",
@@ -4472,7 +4949,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "A template for creating new MagicMirror² modules.",
-      "hasGithubIssues": true,
       "id": "Dennis-Rosenbaum/MMM-Template",
       "image": "MMM-Template---Dennis-Rosenbaum.webp",
       "isArchived": false,
@@ -4575,6 +5051,7 @@
     {
       "category": "Outdated Modules",
       "description": "A simple way to add an iFrame of any web content.",
+      "hasGithubIssues": true,
       "id": "desertblade/iFrame",
       "isArchived": true,
       "license": "MIT",
@@ -4662,10 +5139,11 @@
     {
       "category": "Outdated Modules",
       "description": "Real-time bus tracking for NJ Transit.",
+      "hasGithubIssues": true,
       "id": "dimitrystd/MMM-NJTransit",
       "image": "MMM-NJTransit---dimitrystd.webp",
       "isArchived": false,
-      "license": "GPL-3.0-or-later",
+      "license": "GPL-3.0",
       "maintainer": "dimitrystd",
       "maintainerURL": "https://github.com/dimitrystd",
       "name": "MMM-NJTransit",
@@ -4759,8 +5237,11 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Subscribe to topics from MQTT message queues, and display the sensor results on a floor plan of your house.",
+      "hasGithubIssues": true,
       "id": "DMailMan/MMM-MQTTfloorplan",
+      "image": "MMM-MQTTfloorplan---DMailMan.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "DMailMan",
       "maintainerURL": "https://github.com/DMailMan",
       "name": "MMM-MQTTfloorplan",
@@ -4776,23 +5257,6 @@
       "name": "MMM-forecast-io",
       "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
       "url": "https://github.com/dmcinnes/MMM-forecast-io"
-    },
-    {
-      "category": "Transport / Travel",
-      "description": "Displays bus information for the Nottingham bus company, NCT.",
-      "hasGithubIssues": false,
-      "id": "dnmmrdr1/MMM-NCTtimes",
-      "image": "MMM-NCTtimes---dnmmrdr.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "dnmmrdr",
-      "maintainerURL": "https://gitlab.com/dnmmrdr1",
-      "name": "MMM-NCTtimes",
-      "tags": [
-        "nct",
-        "buses"
-      ],
-      "url": "https://gitlab.com/dnmmrdr1/MMM-NCTtimes"
     },
     {
       "category": "Religion",
@@ -4898,6 +5362,23 @@
       "url": "https://github.com/dr4ke616/MMM-Voice-Control"
     },
     {
+      "category": "Transport / Travel",
+      "description": "Displays bus information for the Nottingham bus company, NCT.",
+      "hasGithubIssues": null,
+      "id": "drdisgust/MMM-NCTtimes",
+      "image": "MMM-NCTtimes---dnmmrdr.webp",
+      "isArchived": null,
+      "license": "MIT",
+      "maintainer": "dnmmrdr",
+      "maintainerURL": "https://codeberg.org/drdisgust",
+      "name": "MMM-NCTtimes",
+      "tags": [
+        "nct",
+        "buses"
+      ],
+      "url": "https://codeberg.org/drdisgust/MMM-NCTtimes"
+    },
+    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Control other MagicMirror modules using Philips Hue v2 API.",
       "id": "DreamyChloe/MMM-HueControl",
@@ -4989,6 +5470,25 @@
       "url": "https://github.com/drventure/MMM-WordGenius"
     },
     {
+      "category": "Transport / Travel",
+      "description": "Displays every member of one Life360 circle on a map, with profile avatars, names, battery percentages, charging state, admin crowns, and the age of each location report.",
+      "id": "DrWatson/MMM-Life360-Leaflet",
+      "image": "MMM-Life360-Leaflet---DrWatson.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "DrWatson",
+      "maintainerURL": "https://github.com/DrWatson",
+      "name": "MMM-Life360-Leaflet",
+      "tags": [
+        "gps",
+        "tracking",
+        "life360",
+        "leaflet",
+        "map"
+      ],
+      "url": "https://github.com/DrWatson/MMM-Life360-Leaflet"
+    },
+    {
       "category": "Sports",
       "description": "Display cricket scores for ongoing live cricket matches.",
       "id": "dsouzadrian/MMM-CricketScores",
@@ -5004,7 +5504,7 @@
       "url": "https://github.com/dsouzadrian/MMM-CricketScores"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Show your daily time spent using your digital devices with [RescueTime](https://www.rescuetime.com).",
       "id": "Duske/MMM-RescueTime",
       "image": "MMM-RescueTime---Duske.webp",
@@ -5381,6 +5881,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays school breakfast and lunch menus from MealViewer.",
+      "hasGithubIssues": true,
       "id": "ElliAndDad/MMM-MealViewer",
       "image": "MMM-MealViewer---ElliAndDad.webp",
       "isArchived": false,
@@ -5479,8 +5980,11 @@
     {
       "category": "Outdated Modules",
       "description": "O-clock inspired by PolarClock Screensaver.",
+      "hasGithubIssues": true,
       "id": "eouia/MMM-OClock",
+      "image": "MMM-OClock---eouia.webp",
       "isArchived": true,
+      "license": "MIT",
       "maintainer": "eouia",
       "maintainerURL": "https://github.com/eouia",
       "name": "MMM-OClock",
@@ -5575,8 +6079,10 @@
     {
       "category": "Outdated Modules",
       "description": "Display XML data from a HTTP response.",
+      "hasGithubIssues": true,
       "id": "Eunanibus/MMM-HTTPRequestDisplay",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Eunanibus",
       "maintainerURL": "https://github.com/Eunanibus",
       "name": "MMM-HTTPRequestDisplay",
@@ -5604,6 +6110,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Uses MPlayer to display various video files and RTSP streams.",
+      "hasGithubIssues": true,
       "id": "evroom/MMM-MPlayer",
       "image": "MMM-MPlayer---evroom.webp",
       "isArchived": false,
@@ -5639,8 +6146,9 @@
       "url": "https://github.com/EwwYumYuck/MMM-NRL"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Displays a clean legend/key for your configured calendar feeds.",
+      "hasGithubIssues": true,
       "id": "ex247/MMM-CalendarLegend",
       "image": "MMM-CalendarLegend---ex247.webp",
       "isArchived": false,
@@ -5656,10 +6164,13 @@
       "url": "https://github.com/ex247/MMM-CalendarLegend"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Displays today's calendar events in a clean, minimal block.",
+      "hasGithubIssues": true,
       "id": "ex247/MMM-TodayBlock",
+      "image": "MMM-TodayBlock---ex247.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "ex247",
       "maintainerURL": "https://github.com/ex247",
       "name": "MMM-TodayBlock",
@@ -6085,10 +6596,8 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Set 1 or more schedules to dim and brighten your screen at specific times.",
-      "hasGithubIssues": true,
       "id": "Fifteen15Studios/MMM-AutoDimmer",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Fifteen15Studios",
       "maintainerURL": "https://github.com/Fifteen15Studios",
       "name": "MMM-AutoDimmer",
@@ -6170,8 +6679,11 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays downloads from Download Station running on a QNAP NAS.",
+      "hasGithubIssues": true,
       "id": "flick116/MMM-qnapDownloadStation",
+      "image": "MMM-qnapDownloadStation---flick116.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "flick116",
       "maintainerURL": "https://github.com/flick116",
       "name": "MMM-qnapDownloadStation",
@@ -6222,11 +6734,8 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Displays GitHub repository information.",
-      "hasGithubIssues": true,
       "id": "fpfuetsch/MMM-GitHub-Monitor",
-      "image": "MMM-GitHub-Monitor---fpfuetsch.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "fpfuetsch",
       "maintainerURL": "https://github.com/fpfuetsch",
       "name": "MMM-GitHub-Monitor",
@@ -6368,6 +6877,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Show the menu of german school lunch service provider MensaMax.",
+      "hasGithubIssues": true,
       "id": "fuerst/MMM-MensaMax",
       "isArchived": false,
       "license": "MIT",
@@ -6511,6 +7021,7 @@
     {
       "category": "Outdated Modules",
       "description": "Display the medals for the summer olympics 2016.",
+      "hasGithubIssues": true,
       "id": "GHLasse/MagicMirror-Olympia-Module",
       "isArchived": false,
       "maintainer": "ghlasse",
@@ -6831,7 +7342,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Change positions of modules.",
-      "hasGithubIssues": false,
       "id": "gonzonia/MMM-Dynamic-Modules",
       "isArchived": false,
       "maintainer": "gonzonia",
@@ -7202,13 +7712,168 @@
     },
     {
       "category": "Weather",
-      "description": "A modern, real-time Ambient Weather display module featuring liquid-glass UI, 3D animated weather icons, dynamic AQI and UV gradients, and real-time data streaming via the Ambient Weather Realtime API.",
+      "description": "A modern, real-time Ambient Weather display featuring liquid-glass UI, 3D animated weather icons, dynamic AQI and UV gradients, and realtime data streaming via the Ambient Weather Realtime API.",
       "id": "hearter20176/MMM-AmbientWeather",
+      "image": "MMM-AmbientWeather---hearter20176.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "hearter20176",
       "maintainerURL": "https://github.com/hearter20176",
       "name": "MMM-AmbientWeather",
+      "tags": [
+        "weather",
+        "ambient-weather",
+        "lightning",
+        "lottie"
+      ],
       "url": "https://github.com/hearter20176/MMM-AmbientWeather"
+    },
+    {
+      "category": "Weather",
+      "description": "Full-screen looping video backdrops that change with the current weather condition and time of day. Meant to sit behind the other modules on a MagicMirror page.",
+      "id": "hearter20176/MMM-AnimatedWeatherBackgrounds",
+      "image": "MMM-AnimatedWeatherBackgrounds---hearter20176.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "name": "MMM-AnimatedWeatherBackgrounds",
+      "tags": [
+        "weather",
+        "background",
+        "video",
+        "animated",
+        "media"
+      ],
+      "url": "https://github.com/hearter20176/MMM-AnimatedWeatherBackgrounds"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "A [MagicMirror²](https://magicmirror.builders/) module that displays bird-detection alerts from your Birdfy smart feeder camera — showing the recorded video clip, a thumbnail, or a live stream whenever a bird is spotted.",
+      "id": "hearter20176/MMM-Birdfy",
+      "image": "MMM-Birdfy---hearter20176.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "name": "MMM-Birdfy",
+      "tags": [
+        "birdfy",
+        "netvue",
+        "birds",
+        "camera"
+      ],
+      "url": "https://github.com/hearter20176/MMM-Birdfy"
+    },
+    {
+      "category": "Entertainment / Misc",
+      "description": "Displays a liquid glass clock.",
+      "id": "hearter20176/MMM-GlassClock",
+      "image": "MMM-GlassClock---hearter20176.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "name": "MMM-GlassClock",
+      "tags": [
+        "clock",
+        "sunrise",
+        "moon",
+        "glass"
+      ],
+      "url": "https://github.com/hearter20176/MMM-GlassClock"
+    },
+    {
+      "category": "Calendar",
+      "description": "Glass-style horizontal daily calendar strip for bottom_bar. Pulls ICS feeds plus optional events from Calendar/MyAgenda and weather from MMM-AmbientWeather + weather.gov to keep a concise, day-by-day view.",
+      "hasGithubIssues": true,
+      "id": "hearter20176/MMM-GlassDailyCalendar",
+      "image": "MMM-GlassDailyCalendar---hearter20176.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "name": "MMM-GlassDailyCalendar",
+      "tags": [
+        "calendar",
+        "ical",
+        "weather",
+        "glass"
+      ],
+      "url": "https://github.com/hearter20176/MMM-GlassDailyCalendar"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Grafana home-trends dashboard (Home Assistant + InfluxDB) that follows the mirror's day/night theme.",
+      "id": "hearter20176/MMM-GrafanaTrends",
+      "image": "MMM-GrafanaTrends---hearter20176.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "name": "MMM-GrafanaTrends",
+      "tags": [
+        "grafana",
+        "dashboard",
+        "home-assistant",
+        "trends"
+      ],
+      "url": "https://github.com/hearter20176/MMM-GrafanaTrends"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Shows a real-time status dashboard for Home Assistant entities, with visual alerting for any conditions that require attention. Uses the Home Assistant WebSocket API for near-instant state updates — no polling delay.",
+      "id": "hearter20176/MMM-HomeAssistantStatusDashboard",
+      "image": "MMM-HomeAssistantStatusDashboard---hearter20176.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "name": "MMM-HomeAssistantStatusDashboard",
+      "tags": [
+        "home-assistant",
+        "dashboard",
+        "smart-home",
+        "websocket"
+      ],
+      "url": "https://github.com/hearter20176/MMM-HomeAssistantStatusDashboard"
+    },
+    {
+      "category": "Calendar",
+      "description": "Displays a multi-day agenda list with a liquid-glass theme, color-coded calendars, and contextual icons. It can pull events either from the core calendar module's CALENDAR_EVENTS broadcast, or fetch .ics feeds directly via its own node_helper (using [node-ical](https://www.npmjs.com/package/node-ical)).",
+      "hasGithubIssues": true,
+      "id": "hearter20176/MMM-MyAgenda",
+      "image": "MMM-MyAgenda---hearter20176.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "name": "MMM-MyAgenda",
+      "tags": [
+        "calendar",
+        "agenda",
+        "ical",
+        "glass"
+      ],
+      "url": "https://github.com/hearter20176/MMM-MyAgenda"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Front-door package banner with carrier icons, driven by Home Assistant (Nest via Google Home + carrier emails).",
+      "id": "hearter20176/MMM-PackageAlert",
+      "image": "MMM-PackageAlert---hearter20176.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "hearter20176",
+      "maintainerURL": "https://github.com/hearter20176",
+      "name": "MMM-PackageAlert",
+      "tags": [
+        "home assistant",
+        "package",
+        "delivery",
+        "doorbell"
+      ],
+      "url": "https://github.com/hearter20176/MMM-PackageAlert"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -7234,7 +7899,7 @@
     },
     {
       "category": "Education",
-      "description": "module to show which media are currently borrowed from the local library (via OPAC account) and when they are due.",
+      "description": "Shows which media are currently borrowed from the local library (via OPAC account) and when they are due.",
       "id": "HeikoGr/MMM-LibraryMonitor",
       "image": "MMM-LibraryMonitor---HeikoGr.webp",
       "isArchived": false,
@@ -7543,7 +8208,7 @@
       "url": "https://github.com/htilburgs/MMM-MyTado"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Simple task list, adding tasks through webpage.",
       "id": "htilburgs/MMM-MyTasklist",
       "isArchived": false,
@@ -7904,6 +8569,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display Minecraft server status and shows list of active players.",
+      "hasGithubIssues": true,
       "id": "ItsMeBrille/MMm-MinecraftServer",
       "image": "MMM-MinecraftServer---ItsMeBrille.webp",
       "isArchived": false,
@@ -8176,7 +8842,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Detecting 3D gesture with GestIC Sensor (MGC3130).",
-      "hasGithubIssues": true,
       "id": "jancalve/MMM-flick-gestures",
       "isArchived": false,
       "license": "MIT",
@@ -8193,6 +8858,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Subscribe to MQTT topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts.",
+      "hasGithubIssues": true,
       "id": "janm84/MMM-MQTTbind",
       "image": "MMM-MQTTbind---Janm84.webp",
       "isArchived": false,
@@ -8532,57 +9198,6 @@
       "url": "https://github.com/jeroenpeters1986/MMM-SolarEdgeLite"
     },
     {
-      "category": "Outdated Modules",
-      "description": "Track packages from Finnish Posti and/or Matkahuolto.",
-      "id": "jesmak/MMM-FinParcel",
-      "image": "MMM-FinParcel---jesmak.webp",
-      "isArchived": true,
-      "license": "MIT",
-      "maintainer": "jesmak",
-      "maintainerURL": "https://github.com/jesmak",
-      "name": "MMM-FinParcel",
-      "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-      "tags": [
-        "parcel",
-        "posti",
-        "matkahuolto"
-      ],
-      "url": "https://github.com/jesmak/MMM-FinParcel"
-    },
-    {
-      "category": "Outdated Modules",
-      "description": "Track nearby planes based on Flightradar24 data.",
-      "id": "jesmak/MMM-FlightRadarTracker",
-      "image": "MMM-FlightRadarTracker---jesmak.webp",
-      "isArchived": true,
-      "license": "MIT",
-      "maintainer": "jesmak",
-      "maintainerURL": "https://github.com/jesmak",
-      "name": "MMM-FlightRadarTracker",
-      "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-      "tags": [
-        "flights",
-        "flightradar24"
-      ],
-      "url": "https://github.com/jesmak/MMM-FlightRadarTracker"
-    },
-    {
-      "category": "Outdated Modules",
-      "description": "Display the song you are currently listening to on AIMP.",
-      "id": "jesmak/MMM-NowPlayingOnAIMP",
-      "image": "MMM-NowPlayingOnAIMP---jesmak.webp",
-      "isArchived": true,
-      "license": "MIT",
-      "maintainer": "jesmak",
-      "maintainerURL": "https://github.com/jesmak",
-      "name": "MMM-NowPlayingOnAIMP",
-      "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-      "tags": [
-        "aimp"
-      ],
-      "url": "https://github.com/jesmak/MMM-NowPlayingOnAIMP"
-    },
-    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Requests device information from the HomeMatic CCU and displays them grouped by the assigned room.",
       "id": "JFWenisch/MMM-Homematic-Rooms",
@@ -8634,6 +9249,26 @@
       "url": "https://github.com/jhogendorn/MMM-WindyV3"
     },
     {
+      "category": "Productivity",
+      "description": "Shows what's due today in your [Chores Machine](https://choresmachine.com) lists, with whose turn it is, and stays quiet when nothing is. Needs Chores Machine Pro.",
+      "id": "Jhonte/MMM-ChoresMachine",
+      "image": "MMM-ChoresMachine---Jhonte.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Jhonte",
+      "maintainerURL": "https://github.com/Jhonte",
+      "name": "MMM-ChoresMachine",
+      "tags": [
+        "chores",
+        "household",
+        "tasks",
+        "todo",
+        "family",
+        "rotating"
+      ],
+      "url": "https://github.com/Jhonte/MMM-ChoresMachine"
+    },
+    {
       "category": "Transport / Travel",
       "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
       "id": "JHWelch/MMM-CTA",
@@ -8652,8 +9287,9 @@
       "url": "https://github.com/JHWelch/MMM-CTA"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Create an iCalendar feed from a Notion Database for use in the `calendar` module.",
+      "hasGithubIssues": true,
       "id": "JHWelch/MMM-NotionCalendar",
       "image": "MMM-NotionCalendar---JHWelch.webp",
       "isArchived": false,
@@ -8775,7 +9411,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Displays merge requests from gitlab and their status.",
-      "hasGithubIssues": true,
       "id": "jkschoen/MMM-Gitlab-MergeRequests",
       "image": "MMM-Gitlab-MergeRequests---jkschoen.webp",
       "isArchived": false,
@@ -8840,7 +9475,7 @@
       "url": "https://github.com/joanaz/MMM-MirrorMirrorOnTheWall"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display your notes stored by Alexa skill [Note Taker](https://github.com/joanaz/AS-NoteTaker).",
       "id": "joanaz/MMM-NoteTaker",
       "isArchived": false,
@@ -8893,8 +9528,9 @@
       "url": "https://github.com/johnny-co/MMM-OpenSprinkler"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "A polished month-view calendar module that connects directly to Google Calendar via iCal URL.",
+      "hasGithubIssues": true,
       "id": "johnster000/MMM-MyGCalendar",
       "image": "MMM-MyGCalendar---johnster000.webp",
       "isArchived": false,
@@ -8912,7 +9548,7 @@
       "url": "https://github.com/johnster000/MMM-MyGCalendar"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Displays a shared household need/shopping list on your mirror. Add items from any device through the built-in admin web interface — they appear on the mirror immediately. When you've picked something up, tap it on the mirror to cross it off; after 60 seconds it's removed and logged to history.",
       "id": "johnster000/MMM-NeedList",
       "image": "MMM-NeedList---johnster000.webp",
@@ -8951,7 +9587,7 @@
       "url": "https://github.com/johnster000/MMM-NowPlaying"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Displays household members and their assigned tasks on the mirror, with admin interface.",
       "id": "johnster000/MMM-Tasklist",
       "image": "MMM-Tasklist---johnster000.webp",
@@ -9025,7 +9661,7 @@
       "url": "https://github.com/JonathanAndersonPE/MMM-inspirobot"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Track family chores with personal tasks, rotating daily assignments that cycle through family members on completion, configurable family-wide summary and per-person views, interactive on-mirror checkboxes, and a web-based admin panel with activity history and optional PIN protection.",
       "id": "jonyo/MMM-FamilyChores",
       "image": "MMM-FamilyChores---jonyo.webp",
@@ -9283,8 +9919,10 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display received MQTT messages from a MQTT-Broker.",
+      "hasGithubIssues": true,
       "id": "jupadin/MMM-MQTT",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "jupadin",
       "maintainerURL": "https://github.com/jupadin",
       "name": "MMM-MQTT",
@@ -9615,6 +10253,7 @@
     {
       "category": "Outdated Modules",
       "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
+      "hasGithubIssues": true,
       "id": "kapsolas/MMM-Instagram",
       "isArchived": false,
       "license": "MIT",
@@ -9769,7 +10408,7 @@
       "hasGithubIssues": false,
       "id": "khassel/MMT-WeatherSkycons",
       "isArchived": false,
-      "maintainer": "khassel",
+      "maintainer": "karsten13",
       "maintainerURL": "https://gitlab.com/khassel",
       "name": "MMT-WeatherSkycons",
       "url": "https://gitlab.com/khassel/MMT-WeatherSkycons"
@@ -9889,10 +10528,13 @@
       "url": "https://github.com/kodejak/MMM-cryptocoin"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Display your calendar events in a monthly calendar view.",
+      "hasGithubIssues": true,
       "id": "kolbyjack/MMM-MonthlyCalendar",
+      "image": "MMM-MonthlyCalendar---kolbyjack.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "kolbyjack",
       "maintainerURL": "https://github.com/kolbyjack",
       "name": "MMM-MonthlyCalendar",
@@ -9933,7 +10575,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Show jokes from the JokeAPI.",
-      "hasGithubIssues": true,
       "id": "Kreshnik/MMM-JokeAPI",
       "isArchived": false,
       "maintainer": "Kreshnik",
@@ -10013,7 +10654,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Displays information from the MagicMirror² forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
-      "hasGithubIssues": true,
       "id": "KristjanESPERANTO/MMM-Forum",
       "image": "MMM-Forum---KristjanESPERANTO.webp",
       "isArchived": false,
@@ -10148,6 +10788,26 @@
       "url": "https://github.com/kritch83/MMM-Blynk"
     },
     {
+      "category": "Cryptocurrency",
+      "description": "A simple horizontal or vertical scrolling cryptocurrency ticker that displays prices, 24hr change, 7day change, and vol via Kraken & other exchanges with 9 themes.",
+      "id": "kritch83/MMM-CryptoTicker",
+      "image": "MMM-CryptoTicker---kritch83.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "kritch83",
+      "maintainerURL": "https://github.com/kritch83",
+      "name": "MMM-CryptoTicker",
+      "tags": [
+        "crypto",
+        "cryptocurrency",
+        "ticker",
+        "ccxt",
+        "kraken",
+        "bitcoin"
+      ],
+      "url": "https://github.com/kritch83/MMM-CryptoTicker"
+    },
+    {
       "category": "Transport / Travel",
       "description": "Hour bus station of Bordeaux.",
       "id": "kuitin/MMM-BdxBus",
@@ -10259,6 +10919,7 @@
     {
       "category": "Outdated Modules",
       "description": "Display the song you are currently streaming on your [Librespot Java](https://github.com/librespot-org/librespot-java) Spotify Speaker.",
+      "hasGithubIssues": false,
       "id": "l3d00m/MMM-LibrespotJava",
       "image": "MMM-LibrespotJava---l3d00m.webp",
       "isArchived": true,
@@ -10499,27 +11160,6 @@
       "url": "https://github.com/linuxtuxie/MMM-SunnyPortal"
     },
     {
-      "category": "Sports",
-      "description": "Displays live ATP/WTA tennis scores — sets, games, current points and who is serving — plus upcoming matches. Powered by the Live Tennis API; a free key (1,000 requests/day, no card) is available.",
-      "id": "livetennisapi/MMM-LiveTennis",
-      "image": "MMM-LiveTennis---livetennisapi.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "livetennisapi",
-      "maintainerURL": "https://github.com/livetennisapi",
-      "name": "MMM-LiveTennis",
-      "tags": [
-        "tennis",
-        "live scores",
-        "atp",
-        "wta",
-        "challenger",
-        "itf",
-        "sports"
-      ],
-      "url": "https://github.com/livetennisapi/MMM-LiveTennis"
-    },
-    {
       "category": "Transport / Travel",
       "description": "time to the next buses lines for Toulouse (Tisseo).",
       "id": "LoneWanderer-GH/MMM-Toulouse-Transports",
@@ -10678,7 +11318,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror².",
-      "hasGithubIssues": true,
       "id": "MagicMirrorModules/MMM-Buttons",
       "image": "MMM-Buttons---KristjanESPERANTO.webp",
       "isArchived": false,
@@ -10694,8 +11333,9 @@
       "url": "https://github.com/MagicMirrorModules/MMM-Buttons"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Extended calendar with 10+ view types (agenda, timeline, upcoming, current events), attendee display, and extensive customization options.",
+      "hasGithubIssues": true,
       "id": "MagicMirrorModules/MMM-CalendarExt2",
       "image": "MMM-CalendarExt2---klaernie & KristjanESPERANTO.webp",
       "isArchived": false,
@@ -10709,8 +11349,9 @@
       "url": "https://github.com/MagicMirrorModules/MMM-CalendarExt2"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Display mini month calendar. Works with the default `calendar` module or `MMM-CalendarExt2`.",
+      "hasGithubIssues": true,
       "id": "MagicMirrorModules/MMM-CalendarExtMiniMonth",
       "image": "MMM-CalendarExtMiniMonth---klaernie.webp",
       "isArchived": false,
@@ -10725,20 +11366,26 @@
       "url": "https://github.com/MagicMirrorModules/MMM-CalendarExtMiniMonth"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Display daily plan by criteria. This is a plugin module for `MMM-CalendarExt2`.",
+      "hasGithubIssues": true,
       "id": "MagicMirrorModules/MMM-CalendarExtPlan",
+      "image": "MMM-CalendarExtPlan---klaernie.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "klaernie",
       "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-CalendarExtPlan",
       "url": "https://github.com/MagicMirrorModules/MMM-CalendarExtPlan"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Display current timeline schedules. Works with the default `calendar` module or `MMM-CalendarExt2`.",
+      "hasGithubIssues": true,
       "id": "MagicMirrorModules/MMM-CalendarExtTimeline",
+      "image": "MMM-CalendarExtTimeline---klaernie.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "klaernie",
       "maintainerURL": "https://github.com/MagicMirrorModules",
       "name": "MMM-CalendarExtTimeline",
@@ -10808,7 +11455,7 @@
     },
     {
       "category": "Weather",
-      "description": "Displays snow reports from bergfex.at. Countries provided by bergfex.at can be configured and set.<br>This is a fork of [the unmaintained module from nebulux](https://github.com/nebulx29/MMM-bergfex).",
+      "description": "Displays snow reports from bergfex.at. Countries provided by bergfex.at can be configured and set.",
       "hasGithubIssues": false,
       "id": "MajorChris1983/MMM-bergfex",
       "image": "MMM-bergfex---MajorChris1983.webp",
@@ -11077,10 +11724,9 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "A simple module to run a bash/terminal command on a loop, displaying stdout/stderr to screen.",
-      "hasGithubIssues": true,
       "id": "mathew-fleisch/MMM-Bash",
       "isArchived": false,
-      "license": "MIT",
+      "license": "ISC",
       "maintainer": "draxiom",
       "maintainerURL": "https://github.com/mathew-fleisch",
       "name": "MMM-Bash",
@@ -11446,6 +12092,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Group modules and toggle their visibility over time.",
+      "hasGithubIssues": true,
       "id": "mezderman/MMM-ModulesGroupsRotation",
       "isArchived": false,
       "maintainer": "mezderman",
@@ -11738,6 +12385,7 @@
     {
       "category": "Outdated Modules",
       "description": "Display your NiceHash projected income and rigs highest temperature.",
+      "hasGithubIssues": true,
       "id": "mlbonniec/MMM-NiceHash",
       "isArchived": true,
       "license": "Apache-2.0",
@@ -11769,7 +12417,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Alternative programmable alert/notification presenter.",
-      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-AlertExt",
       "image": "MMM-AlertExt---MMRIZE.webp",
       "isArchived": false,
@@ -11800,8 +12447,9 @@
       "url": "https://github.com/MMRIZE/MMM-anotherNewsFeed"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "CalDav Parser to convert to iCal format.",
+      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalDAV",
       "image": "MMM-CalDAV---MMRIZE.webp",
       "isArchived": false,
@@ -11815,8 +12463,9 @@
       "url": "https://github.com/MMRIZE/MMM-CalDAV"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Lightweight calendar with week/month views, weather integration, and interactive popovers.",
+      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3",
       "image": "MMM-CalendarExt3---MMRIZE.webp",
       "isArchived": false,
@@ -11831,8 +12480,9 @@
       "url": "https://github.com/MMRIZE/MMM-CalendarExt3"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Extended calendar and event view. Show calendar as agenda.",
+      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3Agenda",
       "image": "MMM-CalendarExt3Agenda---MMRIZE.webp",
       "isArchived": false,
@@ -11847,8 +12497,9 @@
       "url": "https://github.com/MMRIZE/MMM-CalendarExt3Agenda"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Presenting events as daily/weekly journal style.",
+      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3Journal",
       "image": "MMM-CalendarExt3Journal---MMRIZE.webp",
       "isArchived": false,
@@ -11864,8 +12515,9 @@
       "url": "https://github.com/MMRIZE/MMM-CalendarExt3Journal"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Extended calendar and event view. Show calendar timeline.",
+      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CalendarExt3Timeline",
       "isArchived": false,
       "license": "MIT",
@@ -11897,10 +12549,8 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Custom element `mm-time` launcher.",
-      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-CustomElementTime",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "MMRIZE",
       "maintainerURL": "https://github.com/MMRIZE",
       "name": "MMM-CustomElementTime",
@@ -11945,7 +12595,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Detecting 3D gesture with GroveGesture Sensor(PAJ7620u2).",
-      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-GroveGestures",
       "image": "MMM-GroveGestures---MMRIZE.webp",
       "isArchived": false,
@@ -11979,7 +12628,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Deliver the logs from frontend to backend and more features.",
-      "hasGithubIssues": true,
       "id": "MMRIZE/MMM-LogExt",
       "image": "MMM-LogExt---MMRIZE.webp",
       "isArchived": false,
@@ -12145,7 +12793,6 @@
       "category": "Outdated Modules",
       "description": "Show photos from `Dropbox` as wallpaper.",
       "id": "Mong-ni/MMM-DropboxWallpaper",
-      "image": "MMM-DropboxWallpaper---Mong-ni.webp",
       "isArchived": false,
       "license": "MIT",
       "maintainer": "Mong-ni",
@@ -12212,7 +12859,7 @@
       "url": "https://github.com/mosesyong/MMM-SG-Transport-V2"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Viewer for Nextcloud Deck app decks.",
       "id": "motey/MMM_ncdeck",
       "isArchived": false,
@@ -12244,6 +12891,7 @@
     {
       "category": "Outdated Modules",
       "description": "Displays the public transport information for Munich - Germany.",
+      "hasGithubIssues": true,
       "id": "mrVragec/MMM-mvgmunich",
       "image": "MMM-mvgmunich---mrVragec.webp",
       "isArchived": false,
@@ -12291,6 +12939,7 @@
         "phase6",
         "vocabulary",
         "learning",
+        "education",
         "kids"
       ],
       "url": "https://github.com/ms-zone-41/MMM-phase6"
@@ -12962,8 +13611,11 @@
     {
       "category": "Outdated Modules",
       "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-ISS",
+      "image": "MMM-ISS---Mykle1.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-ISS",
@@ -12973,8 +13625,11 @@
     {
       "category": "Outdated Modules",
       "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don’t believe it? Neither did I.",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-Launch",
+      "image": "MMM-Launch---Mykle1.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-Launch",
@@ -12984,8 +13639,11 @@
     {
       "category": "Outdated Modules",
       "description": "Live International Currency Exchange.",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-LICE",
+      "image": "MMM-LICE---Mykle1.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-LICE",
@@ -12995,8 +13653,11 @@
     {
       "category": "Outdated Modules",
       "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-Lottery",
+      "image": "MMM-Lottery---Mykle1.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-Lottery",
@@ -13006,6 +13667,7 @@
     {
       "category": "Outdated Modules",
       "description": "Up to the minute information about our Lunar partner, with a splash of EyeCandy, to boot!",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-Lunartic",
       "image": "MMM-Lunartic---Mykle1.webp",
       "isArchived": false,
@@ -13023,8 +13685,11 @@
     {
       "category": "Outdated Modules",
       "description": "Mars Exploration Rover missions.",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-MARS",
+      "image": "MMM-MARS---Mykle1.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-MARS",
@@ -13034,8 +13699,11 @@
     {
       "category": "Outdated Modules",
       "description": "Stunning imagery and information about your universe. Choose from a host of categories. Looks amazing on your mirror!",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-NASA",
+      "image": "MMM-NASA---Mykle1.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-NASA",
@@ -13055,8 +13723,11 @@
     {
       "category": "Outdated Modules",
       "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-NEO",
+      "image": "MMM-NEO---Mykle1.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-NEO",
@@ -13078,6 +13749,7 @@
     {
       "category": "Outdated Modules",
       "description": "Static or Rotating Weather for Pilots. International ICAO's.",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-PilotWX",
       "image": "MMM-PilotWX---Mykle1.webp",
       "isArchived": false,
@@ -13091,8 +13763,11 @@
     {
       "category": "Outdated Modules",
       "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API.",
+      "hasGithubIssues": true,
       "id": "mykle1/MMM-PLOW",
+      "image": "MMM-PLOW---Mykle1.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-PLOW",
@@ -13163,8 +13838,9 @@
       "url": "https://github.com/mykle1/MMM-WWI"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Enables you to display birthdays from a contacts via a vCard.",
+      "hasGithubIssues": true,
       "id": "n-gao/MMM-vCard2Calendar",
       "isArchived": false,
       "license": "MIT",
@@ -13213,8 +13889,9 @@
       "url": "https://github.com/NateDee/MMM-CTA"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "A module to display, manage and edit Nextcloud calendar events.",
+      "hasGithubIssues": true,
       "id": "ndp15/MMM-Nextcloud-Calendar",
       "image": "MMM-Nextcloud-Calendar---ndp15.webp",
       "isArchived": false,
@@ -13631,7 +14308,7 @@
       "url": "https://github.com/nitpum/MMM-EmbedYoutube"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display non-completed ToDos from an iCal source like CalDAV or the Task App in ownCloud or Nextcloud.",
       "id": "nixnuex/MMM-iCal-ToDo",
       "image": "MMM-iCal-ToDo---nixnuex.webp",
@@ -13727,7 +14404,7 @@
       "url": "https://github.com/nkl-kst/MMM-RBB-Weather"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display notes from a Google Doc.",
       "id": "No3x/MMM-GoogleDocs-Notes",
       "isArchived": false,
@@ -13921,6 +14598,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Allows you to control the mirror screen on/off state using MQTT messages, for example from a smart home motion sensor via Zigbee2MQTT or any other MQTT-compatible source.",
+      "hasGithubIssues": true,
       "id": "olexs/MMM-MQTTScreenOnOff",
       "isArchived": false,
       "license": "MIT",
@@ -13983,6 +14661,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Subscribe topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
+      "hasGithubIssues": true,
       "id": "ottopaulsen/MMM-MQTT",
       "image": "MMM-MQTT---ottopaulsen.webp",
       "isArchived": false,
@@ -14118,8 +14797,9 @@
       "url": "https://github.com/pal-thomassen/MMM-stoic-quotes"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Integrate your Google Contact's birthdays in the MagicMirror² calendar.",
+      "hasGithubIssues": true,
       "id": "PalatinCoder/MMM-GoogleBirthdaysProvider",
       "image": "MMM-GoogleBirthdaysProvider---PalatinCoder.webp",
       "isArchived": false,
@@ -14252,6 +14932,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Connects multiple touch (capacitive) buttons via a MPR121 touch controller to send notifications to other modules (based on MMM-Buttons).",
+      "hasGithubIssues": true,
       "id": "PatriceG/MMM-MPR121",
       "isArchived": false,
       "license": "MIT",
@@ -14427,7 +15108,7 @@
       "url": "https://github.com/PierreGode/MMM-airquality"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Manage and keep track of your household chores.",
       "id": "PierreGode/MMM-Chores",
       "image": "MMM-Chores---PierreGode.webp",
@@ -14543,8 +15224,9 @@
       "url": "https://github.com/pixxelfriend/MMM-Dtu"
     },
     {
-      "category": "News / Information",
+      "category": "Calendar",
       "description": "A fork of the default MagicMirror² calendar module that displays multiple calendars in a weekly table view. Designed for family planning with 2–4 calendars side by side for a quick shared overview.",
+      "hasGithubIssues": true,
       "id": "pixxelfriend/MMM-FamilyWeekCalendar",
       "image": "MMM-FamilyWeekCalendar---pixxelfriend.webp",
       "isArchived": false,
@@ -14579,6 +15261,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display motion detected by your security camera.",
+      "hasGithubIssues": true,
       "id": "pjestico/MMM-MotionDisplay",
       "isArchived": false,
       "maintainer": "pjestico",
@@ -14614,7 +15297,7 @@
       "url": "https://github.com/PjTewkesbury/MMM-WebHookAlerts"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Can be used for adding notes using fast and easy web interface.",
       "id": "polarbearjngl/MMM-FastNotes",
       "isArchived": false,
@@ -14729,7 +15412,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Use a button to hide or show different modules via a broadcast message.",
-      "hasGithubIssues": true,
       "id": "ptrbld/MMM-Button",
       "isArchived": false,
       "license": "MIT",
@@ -14818,6 +15500,7 @@
     {
       "category": "Outdated Modules",
       "description": "A MagicMirror² Module for Nagios.",
+      "hasGithubIssues": true,
       "id": "qistoph/MMM-nagios",
       "image": "MMM-nagios---qistoph.webp",
       "isArchived": true,
@@ -14859,11 +15542,12 @@
       "url": "https://github.com/QNimbus/MMM-YouLess"
     },
     {
-      "category": "News / Information",
+      "category": "Calendar",
       "description": "This calendar module functions the same as the default calendar app, but it only displays Today and Tomorrows events.",
+      "hasGithubIssues": true,
       "id": "qunu/MMM-CalendarTodayTomorrow",
       "isArchived": false,
-      "maintainer": "Qunu",
+      "maintainer": "qunu",
       "maintainerURL": "https://github.com/qunu",
       "name": "MMM-CalendarTodayTomorrow",
       "url": "https://github.com/qunu/MMM-CalendarTodayTomorrow"
@@ -14981,8 +15665,9 @@
       "url": "https://github.com/Rallymen007/camera"
     },
     {
-      "category": "News / Information",
+      "category": "Calendar",
       "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
+      "hasGithubIssues": true,
       "id": "randomBrainstormer/MMM-GoogleCalendar",
       "image": "MMM-GoogleCalendar---randomBrainstormer.webp",
       "isArchived": false,
@@ -15403,7 +16088,7 @@
       "url": "https://github.com/RineshRamadhin/MMM-Lastfm"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display a Bring! shopping list in a flexible view and touch support.",
       "id": "rkorell/MMM-Bring",
       "image": "MMM-Bring---Dr. Ralf Korell.webp",
@@ -15441,6 +16126,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display the song you are currently listening to on Spotify.",
+      "hasGithubIssues": true,
       "id": "rkorell/MMM-NowPlayingOnSpotify",
       "image": "MMM-NowPlayingOnSpotify---Dr. Ralf Korell.webp",
       "isArchived": false,
@@ -15456,6 +16142,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display the song you are currently Playing on your Volumio.",
+      "hasGithubIssues": true,
       "id": "rkorell/MMM-NowPlayingOnVolumio",
       "image": "MMM-NowPlayingOnVolumio---Dr. Ralf Korell.webp",
       "isArchived": false,
@@ -15572,6 +16259,25 @@
       "url": "https://github.com/RpDp-git/PiDisplaySleep"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Displays Anker SOLIX and supported Wi-Fi power device status.",
+      "id": "rroach3753/MMM-AnkerDeviceStatus",
+      "image": "MMM-AnkerDeviceStatus---Rickey Roach.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Rickey Roach",
+      "maintainerURL": "https://github.com/rroach3753",
+      "name": "MMM-AnkerDeviceStatus",
+      "tags": [
+        "anker",
+        "anker-solix",
+        "solix",
+        "energy-monitor",
+        "iot"
+      ],
+      "url": "https://github.com/rroach3753/MMM-AnkerDeviceStatus"
+    },
+    {
       "category": "Transport / Travel",
       "description": "Displays live Washington DC Metro train arrivals (and MetroBus too!) and active service alerts using the WMATA API.",
       "id": "rroach3753/MMM-DCMetroTrains",
@@ -15644,7 +16350,7 @@
       "url": "https://github.com/rroach3753/MMM-UniFiHotspotVouchers"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display a Bring! shopping list in a tabular view.",
       "id": "rseidt/MMM-bringList",
       "image": "MMM-BringList---rseidt.webp",
@@ -15945,6 +16651,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays the status of you Miele@Home Devices.",
+      "hasGithubIssues": true,
       "id": "SAR71/MMM-MieleAtHome",
       "isArchived": false,
       "maintainer": "ViDiBi",
@@ -15983,7 +16690,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Monitor your system logs, application logs, or any text file with live updates and beautiful log-level color coding.",
-      "hasGithubIssues": true,
       "id": "schlomm/MMM-LogfileViewer",
       "image": "MMM-LogfileViewer---schlomm.webp",
       "isArchived": false,
@@ -16016,7 +16722,7 @@
       "url": "https://github.com/schlomm/MMM-Nextcloud"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Add one to many memo notes (\"post-it look & feel\"). Content is manageable through HTTP get requests.",
       "id": "schnibel/MMM-Memo",
       "isArchived": false,
@@ -16234,7 +16940,7 @@
       "url": "https://github.com/sharmstr/MMM-ApexCharts"
     },
     {
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "description": "Simple Mirror Control from External Home Assistant (Alexa/Google Home/HASS.io).",
       "id": "shbatm/MMM-AlexaOnOff",
       "isArchived": false,
@@ -16242,6 +16948,7 @@
       "maintainer": "shbatm",
       "maintainerURL": "https://github.com/shbatm",
       "name": "MMM-AlexaOnOff",
+      "outdated": "Abandoned. Doesn't work anymore.",
       "tags": [
         "alexaonoff",
         "wemos",
@@ -16252,7 +16959,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Create dynamic slideshows of your modules. Switch between different screens automatically or manually, organize modules by position, or build custom slide layouts. Great for small screens or information-rich setups.",
-      "hasGithubIssues": true,
       "id": "shbatm/MMM-Carousel",
       "image": "MMM-Carousel---shbatm & KristjanESPERANTO.webp",
       "isArchived": false,
@@ -16319,13 +17025,12 @@
     },
     {
       "category": "Development / Core MagicMirror²",
-      "description": "More details and customization for MM's Node.js console logs.",
-      "hasGithubIssues": true,
+      "description": "Formats and displays MagicMirror's Node.js and browser console logs, with optional on-screen output.",
       "id": "shbatm/MMM-Logging",
-      "image": "MMM-Logging---shbatm.webp",
+      "image": "MMM-Logging---shbatm & KristjanESPERANTO.webp",
       "isArchived": false,
       "license": "MIT",
-      "maintainer": "shbatm",
+      "maintainer": "shbatm & KristjanESPERANTO",
       "maintainerURL": "https://github.com/shbatm",
       "name": "MMM-Logging",
       "tags": [
@@ -16393,7 +17098,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Display internet connection status.",
-      "hasGithubIssues": true,
       "id": "sheyabernstein/MMM-connection-status",
       "image": "MMM-connection-status---SheyaBernstein.webp",
       "isArchived": false,
@@ -16457,10 +17161,8 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Multi purpose module to inject code and mess around with your mirror without developing a complete new module.",
-      "hasGithubIssues": true,
       "id": "shin10/MMM-FF-code-injector",
       "isArchived": false,
-      "license": "ISC",
       "maintainer": "shin10",
       "maintainerURL": "https://github.com/shin10",
       "name": "MMM-FF-code-injector",
@@ -16662,7 +17364,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
-      "hasGithubIssues": true,
       "id": "Sjohn21/MMM-GPIO-HANDLER",
       "isArchived": false,
       "license": "MIT",
@@ -16718,7 +17419,7 @@
       "url": "https://github.com/skastenholz/MMM-DVB"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "A shopping list module for users of the StorH app.",
       "id": "SkogDev/MMM-StorH",
       "image": "MMM-StorH---SkogDev.webp",
@@ -17004,6 +17705,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Add touch buttons for showing/hiding other modules.",
+      "hasGithubIssues": true,
       "id": "Snille/MMM-Modulebar",
       "image": "MMM-Modulebar---Snille.webp",
       "isArchived": false,
@@ -17149,8 +17851,10 @@
     {
       "category": "Outdated Modules",
       "description": "Show an image of the current moon phase.",
+      "hasGithubIssues": false,
       "id": "spectroman/mmm-moon-phases",
       "isArchived": true,
+      "license": "MIT",
       "maintainer": "spectroman",
       "maintainerURL": "https://github.com/spectroman",
       "name": "mmm-moon-phases",
@@ -17178,10 +17882,30 @@
       "url": "https://github.com/spelinski/MMM-PandorasMirror"
     },
     {
+      "category": "Calendar",
+      "description": "Calendar-aware multi-countdowns with calendar days, regional working days, selected weekdays, public holidays, and configurable excluded dates.",
+      "hasGithubIssues": true,
+      "id": "spitzlbergerj/MMM-CalendarAwareCountdown",
+      "image": "MMM-CalendarAwareCountdown---spitzlbergerj.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "spitzlbergerj",
+      "maintainerURL": "https://github.com/spitzlbergerj",
+      "name": "MMM-CalendarAwareCountdown",
+      "tags": [
+        "countdown",
+        "working-days",
+        "public-holidays"
+      ],
+      "url": "https://github.com/spitzlbergerj/MMM-CalendarAwareCountdown"
+    },
+    {
       "category": "Outdated Modules",
       "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
+      "hasGithubIssues": false,
       "id": "spitzlbergerj/MMM-Homematic-Thermostats",
       "isArchived": true,
+      "license": "AGPL-3.0",
       "maintainer": "spitzlbergerj",
       "maintainerURL": "https://github.com/spitzlbergerj",
       "name": "MMM-Homematic-Thermostats",
@@ -17229,7 +17953,7 @@
       "url": "https://github.com/Springvar/MMM-AtbSanntid"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display Google Tasks with Planned View.",
       "id": "spydersoft-consulting/MMM-GoogleTasks",
       "image": "MMM-GoogleTasks---Spydersoft Consulting.webp",
@@ -17407,21 +18131,6 @@
       "maintainerURL": "https://github.com/stewartmckee",
       "name": "MMM-Property-Managed",
       "url": "https://github.com/stewartmckee/MMM-Property-managed"
-    },
-    {
-      "category": "Entertainment / Misc",
-      "description": "Amazon Photos as background images.",
-      "id": "sthuber90/mmm-amazon-photos",
-      "image": "mmm-amazon-photos---sthuber90.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "sthuber90",
-      "maintainerURL": "https://github.com/sthuber90",
-      "name": "mmm-amazon-photos",
-      "tags": [
-        "amazon-photos"
-      ],
-      "url": "https://github.com/sthuber90/mmm-amazon-photos"
     },
     {
       "category": "Transport / Travel",
@@ -17746,7 +18455,7 @@
       "url": "https://github.com/tataille/MMM-FreeBox-Monitor"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Displays one list from Google Keep.",
       "id": "taxilof/MMM-GoogleKeep",
       "isArchived": false,
@@ -17839,7 +18548,7 @@
       "url": "https://github.com/tderflinger/MMM-Hanzi"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Shows the latest hours tracked by the time tracking application Timetagger.",
       "id": "tderflinger/MMM-Timetagger",
       "image": "MMM-Timetagger---TD.webp",
@@ -18202,7 +18911,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
-      "hasGithubIssues": true,
       "id": "thobach/MMM-Gestures",
       "isArchived": false,
       "license": "MIT",
@@ -18216,7 +18924,7 @@
       "url": "https://github.com/thobach/MMM-Gestures"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Displays your Microsoft To Do tasks on your mirror.",
       "id": "thobach/MMM-MicrosoftToDo",
       "image": "MMM-MicrosoftToDo---thobach.webp",
@@ -18311,6 +19019,7 @@
     {
       "category": "Outdated Modules",
       "description": "Uses MPD to show the state and playlist of your music player.",
+      "hasGithubIssues": true,
       "id": "timjong93/MMM-MPD",
       "isArchived": false,
       "license": "MIT License",
@@ -18494,6 +19203,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
+      "hasGithubIssues": true,
       "id": "Tom-Hirschberger/MMM-MQTTbridge",
       "image": "MMM-MQTTbridge---Tom-Hirschberger.webp",
       "isArchived": false,
@@ -18689,7 +19399,7 @@
       "url": "https://github.com/tomgroenwoldt/MMM-home-presence"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Create To do list tasks with touch screen interface.",
       "id": "tomoki13/MMM-TodoList",
       "isArchived": false,
@@ -18774,10 +19484,11 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Tracks the number of mortgage payments left.",
+      "hasGithubIssues": true,
       "id": "TouaregWarrior/MMM-MortgageCountdown",
-      "image": "MMM-MortgageCountdown---TouaregWarrior.webp",
       "isArchived": false,
-      "license": "ISC",
+      "license": "MIT",
+      "licenseStatus": "mismatch",
       "maintainer": "TouaregWarrior",
       "maintainerURL": "https://github.com/TouaregWarrior",
       "name": "MMM-MortgageCountdown",
@@ -19048,8 +19759,9 @@
       "url": "https://github.com/tylerstambaugh/MMM-StravaWeekInBike"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Calendar",
       "description": "Birthday calendar from your CardDav contacts.",
+      "hasGithubIssues": true,
       "id": "ulrichwisser/MMM-CardDavBirthdaysProvider",
       "image": "MMM-CardDavBirthdaysProvider---Ulrich Wisser.webp",
       "isArchived": false,
@@ -19066,11 +19778,8 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Include arbitrary HTML snippets in an iframe (script tags work).",
-      "hasGithubIssues": true,
       "id": "ulrichwisser/MMM-HTMLSnippet",
-      "image": "MMM-HTMLSnippet---ulrichwisser.webp",
       "isArchived": false,
-      "license": "GPL-3.0",
       "maintainer": "ulrichwisser",
       "maintainerURL": "https://github.com/ulrichwisser",
       "name": "MMM-HTMLSnippet",
@@ -19508,6 +20217,22 @@
       "url": "https://github.com/vita10gy/MMM-ThemeParkWaitTimes"
     },
     {
+      "category": "Productivity",
+      "description": "Display notes from your Note Bridge Android app directly on your MagicMirror, with automatic syncing and customizable display options.",
+      "id": "voldsom2102/MMM-NoteBridgeDisplay",
+      "image": "MMM-NoteBridgeDisplay---voldsom2102.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "voldsom2102",
+      "maintainerURL": "https://github.com/voldsom2102",
+      "name": "MMM-NoteBridgeDisplay",
+      "tags": [
+        "note-bridge",
+        "supabase"
+      ],
+      "url": "https://github.com/voldsom2102/MMM-NoteBridgeDisplay"
+    },
+    {
       "category": "Transport / Travel",
       "description": "Shows departure times and delays of Dutch public transport in a configurable way.",
       "id": "vpilo/MMM-NLDepartureTimes",
@@ -19559,7 +20284,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "Flicker the whole screen to prevent a burn-in effect on your display.",
-      "hasGithubIssues": true,
       "id": "werthdavid/MMM-BurnIn",
       "image": "MMM-BurnIn---werthdavid.webp",
       "isArchived": false,
@@ -19678,7 +20402,7 @@
     },
     {
       "category": "Transport / Travel",
-      "description": "Module to display public transport from Nürnberg in Germany.",
+      "description": "Displays public transport from Nürnberg in Germany.",
       "id": "wiesty/MMM-VAG",
       "image": "MMM-VAG---Wiesty.webp",
       "isArchived": false,
@@ -19840,7 +20564,6 @@
     {
       "category": "Development / Core MagicMirror²",
       "description": "CookieCutter template for generating MagicMirror² modules.",
-      "hasGithubIssues": true,
       "id": "xadamxk/cookiecutter-magic-mirror-module",
       "isArchived": false,
       "maintainer": "xadamxk",
@@ -20162,7 +20885,7 @@
       "url": "https://github.com/XppaiCyberr/MMM-NounsTreasury"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Productivity",
       "description": "Display tables from Airtable.",
       "id": "yashatgit/MMM-Airtable",
       "image": "MMM-Airtable---Yash.webp",
@@ -20329,6 +21052,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display CO2 readings from SCD-30 sensor.",
+      "hasGithubIssues": false,
       "id": "Yours3lf/MMM-SCD-30",
       "image": "MMM-SCD-30---Yours3lf.webp",
       "isArchived": false,
@@ -20382,6 +21106,7 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Show video from motion camera feed.",
+      "hasGithubIssues": true,
       "id": "yusinv/MMM-Motion-Camera",
       "isArchived": false,
       "license": "MIT",
