@@ -4,6 +4,7 @@ import {
   normalizeModuleAnalysisCheckGroups
 } from "../../shared/module-analysis-cache.ts";
 import { deepEqual, equal, ok } from "node:assert/strict";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import {
   partitionModulesByCache,
   pruneStaleCacheEntries,
@@ -11,7 +12,7 @@ import {
   writeSuccessfulResultsToCache
 } from "../../parallel-processing.ts";
 import { join } from "node:path";
-import { mkdtemp } from "node:fs/promises";
+import { processModule } from "../../../pipeline/workers/process-module.ts";
 import { test } from "node:test";
 import { tmpdir } from "node:os";
 
@@ -192,7 +193,7 @@ test("integration: second run has higher cache skip-rate", async () => {
   ok(secondRunSkipRate > firstRunSkipRate);
 });
 
-test("runParallelProcessing processes in-memory modules independently of CLI file loading", async () => {
+test("runParallelProcessing processes local modules without enabling the analysis cache", async () => {
   const modules = [
     createModule({ id: "owner/module-a", url: "https://github.com/owner/module-a", lastCommit: "sha-a" }),
     createModule({ id: "owner/module-b", url: "https://github.com/owner/module-b", lastCommit: "sha-b" })
@@ -233,7 +234,8 @@ test("runParallelProcessing processes in-memory modules independently of CLI fil
     projectRoot: "/virtual/project",
     workerCount: 1,
     batchSize: modules.length,
-    cacheDisabled: true,
+    cacheDisabled: false,
+    localOnly: true,
     catalogueRevision: "catalogue-rev-runtime-test",
     workerPool,
     runLogger: createSilentLogger()
@@ -242,6 +244,7 @@ test("runParallelProcessing processes in-memory modules independently of CLI fil
   deepEqual(capturedModules, modules);
   equal(capturedModuleConfig.projectRoot, "/virtual/project");
   equal(capturedModuleConfig.cacheEnabled, false);
+  equal(capturedModuleConfig.localOnly, true);
   equal(capturedModuleConfig.catalogueRevision, "catalogue-rev-runtime-test");
   equal(result.results.length, modules.length);
   equal(result.processedModules.length, modules.length);
@@ -249,4 +252,65 @@ test("runParallelProcessing processes in-memory modules independently of CLI fil
   equal(result.failedCount, 0);
   equal(result.skippedCount, 0);
   equal(result.cachedCount, 0);
+});
+
+test("local-only workers analyze existing files without Git and skip missing clones", async (context) => {
+  const projectRoot = await mkdtemp(join(tmpdir(), "local-only-worker-test-"));
+  context.after(() => rm(projectRoot, { recursive: true, force: true }));
+  const module = {
+    id: "example/MMM-Local",
+    name: "MMM-Local",
+    maintainer: "example",
+    url: "not-a-git-url",
+    lastCommit: "2099-01-01T00:00:00Z",
+    outdated: "Marked outdated",
+    issues: []
+  };
+  const config = {
+    projectRoot,
+    modulesDir: join(projectRoot, "modules"),
+    modulesTempDir: join(projectRoot, "modules_temp"),
+    imagesDir: join(projectRoot, "website", "images"),
+    cacheEnabled: true,
+    localOnly: true
+  };
+
+  const missing = await processModule(module, config);
+  equal(missing.status, "skipped");
+  equal(missing.skippedReason, "No local clone available");
+  equal(missing.cloned, false);
+  equal("cacheKey" in missing, false);
+
+  const cloneDir = join(config.modulesDir, "MMM-Local-----example");
+  await mkdir(config.modulesDir, { recursive: true });
+  await writeFile(cloneDir, "not a directory");
+  equal((await processModule(module, config)).status, "skipped");
+  await rm(cloneDir);
+  await mkdir(cloneDir);
+  const sourcePath = join(cloneDir, "node_helper.js");
+  const source = "const client = require('axios');\n";
+  await writeFile(sourcePath, source);
+  const result = await processModule(module, config);
+  equal(result.status, "success");
+  equal(result.fromCache, false);
+  equal("cacheKey" in result, false);
+  ok(result.issues.some(issue => issue.includes("axios:") && issue.includes("node_helper.js:1:")));
+  equal(await readFile(sourcePath, "utf8"), source);
+
+  const parallelResult = await runParallelProcessing({
+    modules: [module, { ...module, id: "example/MMM-Missing", name: "MMM-Missing" }],
+    projectRoot,
+    localOnly: true,
+    cacheDisabled: false,
+    catalogueRevision: "local-test-revision",
+    workerCount: 1,
+    batchSize: 2,
+    runLogger: createSilentLogger()
+  });
+  equal(parallelResult.successCount, 1);
+  equal(parallelResult.skippedCount, 1);
+  equal(parallelResult.failedCount, 0);
+  equal(parallelResult.cachedCount, 0);
+  ok(parallelResult.results.find(entry => entry.id === module.id).issues.some(issue => issue.includes("axios:")));
+  equal(await readFile(sourcePath, "utf8"), source);
 });

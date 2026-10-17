@@ -52,6 +52,7 @@ interface ProcessModuleConfig {
   catalogueRevision?: string | null;
   checkGroups?: AnalysisConfig;
   imagesDir: string;
+  localOnly?: boolean;
   moduleLogger?: ModuleLogger | null;
   modulesDir: string;
   modulesTempDir: string;
@@ -437,6 +438,10 @@ async function cloneModule(module: ModuleInput, config: ProcessModuleConfig): Pr
   const identifier = `${module.name}-----${module.maintainer}`;
   const tempPath = path.join(config.modulesTempDir, identifier);
   const finalPath = path.join(config.modulesDir, identifier);
+
+  if (config.localOnly) {
+    return { success: true };
+  }
 
   const branch
     = typeof module.branch === "string" && module.branch.length > 0
@@ -1087,7 +1092,7 @@ async function analyzeModule(module: ModuleInput, config: ProcessModuleConfig): 
 export async function processModule(module: ModuleInput, config: ProcessModuleConfig): Promise<ModuleResult> {
   const startTime = Date.now();
   const allIssues = normalizeIssueList(module.issues);
-  const cacheKey = config.cacheEnabled
+  const cacheKey = config.cacheEnabled && !config.localOnly
     ? buildModuleAnalysisCacheKey({
       module,
       moduleRevision: module.lastCommit,
@@ -1108,6 +1113,22 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
   }
 
   // Stage 3: Clone
+  if (config.localOnly && !await fs.promises.stat(path.join(config.modulesDir, `${module.name}-----${module.maintainer}`)).then(info => info.isDirectory()).catch(() => false)) {
+    if (config.moduleLogger) {
+      await config.moduleLogger.info("end", "Skipped - no local clone available");
+      await config.moduleLogger.close();
+    }
+    return {
+      ...module,
+      status: "skipped",
+      skippedReason: "No local clone available",
+      cloned: false,
+      issues: allIssues,
+      processingTimeMs: Date.now() - startTime,
+      fromCache: false
+    };
+  }
+
   const cloneResult = await cloneModule(module, config);
   if (!cloneResult.success) {
     const processingTime = Date.now() - startTime;
@@ -1186,7 +1207,7 @@ export async function processModule(module: ModuleInput, config: ProcessModuleCo
       await config.moduleLogger.info("analyze", "Starting analysis stage");
     }
 
-    analysisResult = module.outdated
+    analysisResult = module.outdated && !config.localOnly
       ? { analysisIssues: [], recommendations: [] }
       : await analyzeModule(module, config);
     // Merge analysis issues into the issues list

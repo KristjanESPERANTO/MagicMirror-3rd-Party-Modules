@@ -56,6 +56,28 @@ A lightweight Node.js command-line interface reads the declarative stage graph, 
 
 ## CLI Options & Flags
 
+### Recheck existing clones
+
+```bash
+npm run all -- --local-only
+```
+
+This reruns the module checks against existing directories in `modules/` without
+cloning, pulling, or fetching repositories. Missing clones are skipped. The
+metadata stage reads the previous `website/data/modules.json` catalogue instead
+of fetching the Wiki or repository APIs; a non-empty previous catalogue is
+required. Modules absent from that catalogue are not discovered by this mode.
+
+The analysis cache is disabled automatically, so `--no-cache` is not necessary.
+Even modules marked outdated are analyzed. Old check findings are discarded,
+while repository metadata such as stars and commit dates remains unchanged.
+The usual catalogue, images, statistics, and `website/result.md` outputs are
+regenerated. This is not a strictly offline mode: checks that query npm may
+still use the network.
+
+`node scripts/parallel-processing.ts --local-only` runs only the processing
+stage; use the full command above to regenerate the published reports as well.
+
 ### Currently available
 
 - `pipeline run --only <stageIds>` — run only the specified stages (comma-separated) after dependency resolution.

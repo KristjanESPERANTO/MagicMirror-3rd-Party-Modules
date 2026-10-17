@@ -1,4 +1,4 @@
-import { deepEqual, equal, ok } from "node:assert/strict";
+import { deepEqual, equal, ok, rejects } from "node:assert/strict";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { join, resolve } from "node:path";
 import { mkdir, mkdtemp, writeFile } from "node:fs/promises";
@@ -9,6 +9,29 @@ import { tmpdir } from "node:os";
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = resolve(currentFile, "..");
 const projectRoot = resolve(currentDir, "..", "..", "..");
+
+test("local-only metadata uses the previous catalogue and discards old findings", async () => {
+  const { runCollectMetadata } = await import("../index.ts");
+  const module = {
+    id: "example/MMM-Local",
+    name: "MMM-Local",
+    maintainer: "example",
+    url: "not-a-network-url",
+    issues: ["Old finding"],
+    lastCommit: "2026-01-01T00:00:00Z"
+  };
+  const result = await runCollectMetadata({
+    localOnly: true,
+    previousModulesMap: new Map([[module.url, module]])
+  });
+  deepEqual(result.modules, [{ ...module, issues: [] }]);
+  deepEqual(module.issues, ["Old finding"]);
+});
+
+test("local-only metadata fails without a previous catalogue", async () => {
+  const { runCollectMetadata } = await import("../index.ts");
+  await rejects(runCollectMetadata({ localOnly: true, previousModulesMap: new Map() }), /requires an existing website\/data\/modules\.json/u);
+});
 
 test("runCollectMetadata retries repositories even when a stale negative cache entry exists", async () => {
   const tempRoot = await mkdtemp(join(tmpdir(), "collect-metadata-runtime-test-"));

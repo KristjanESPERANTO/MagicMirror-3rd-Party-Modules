@@ -119,6 +119,7 @@ interface AppendGitHubBatchResultOptions {
 }
 
 interface RunCollectMetadataOptions {
+  localOnly?: boolean;
   markdown?: string;
   previousModulesMap?: Map<string, EnrichedModule>;
 }
@@ -709,9 +710,20 @@ async function main(): Promise<void> {
 }
 
 export async function runCollectMetadata({
+  localOnly = process.argv.includes("--local-only"),
   markdown,
   previousModulesMap = loadPreviousModules<EnrichedModule>()
 }: RunCollectMetadataOptions = {}): Promise<RunCollectMetadataResult> {
+  if (localOnly) {
+    if (previousModulesMap.size === 0) {
+      throw new Error("--local-only requires an existing website/data/modules.json catalogue. Run the normal pipeline first.");
+    }
+    logger.info(`Local-only mode: using ${previousModulesMap.size} modules from the previous catalogue without fetching metadata.`);
+    return {
+      modules: Array.from(previousModulesMap.values(), module => ({ ...module, issues: [] }))
+    };
+  }
+
   logger.info("Starting unified metadata collection...");
   resetRepositoryApiMetrics();
 

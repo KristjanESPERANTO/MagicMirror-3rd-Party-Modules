@@ -32,6 +32,7 @@
   "scripts": {
     "start": "node scripts/menu.ts",
     "all": "node scripts/orchestrator/index.ts",
+    "all:local": "node scripts/orchestrator/index.ts --local-only",
     "clone:all-modules": "rm -rf modules modules_temp && mkdir -p modules modules_temp && node scripts/parallel-processing.ts --no-cache",
     "collectMetadata": "node scripts/collect-metadata/index.ts",
     "fixtures": "node scripts/fixtures.ts",
@@ -89,6 +90,7 @@
   "menu": {
     "descriptions": {
       "all": "Run the full-refresh pipeline on all modules.",
+      "all:local": "Recheck existing clones without fetching metadata or repositories.",
       "collectMetadata": "Run only the collect-metadata stage.",
       "fixtures": "Manage fixture and golden artifacts.",
       "lint": "Check linting and formatting.",

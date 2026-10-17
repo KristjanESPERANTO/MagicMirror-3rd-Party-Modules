@@ -86,6 +86,7 @@ interface RunParallelProcessingOptions {
   batchSize?: number;
   cacheDisabled?: boolean;
   catalogueRevision?: string | null;
+  localOnly?: boolean;
   modules: Stage2Module[];
   projectRoot?: string;
   runLogger?: ParallelLogger;
@@ -380,6 +381,7 @@ export async function runParallelProcessing({
   workerCount = getWorkerCount(),
   batchSize = getBatchSize(),
   cacheDisabled = isCacheDisabled(),
+  localOnly = process.argv.includes("--local-only"),
   analysisConfig = DEFAULT_ANALYSIS_CONFIG,
   catalogueRevision,
   workerPool = null,
@@ -389,6 +391,8 @@ export async function runParallelProcessing({
     throw new TypeError("runParallelProcessing requires a modules array");
   }
 
+  cacheDisabled ||= localOnly;
+
   const startTime = Date.now();
   const pool = workerPool ?? createWorkerPool(workerCount, batchSize);
   const normalizedAnalysisConfig = normalizeModuleAnalysisCheckGroups(analysisConfig) as AnalysisConfig;
@@ -396,8 +400,12 @@ export async function runParallelProcessing({
   runLogger.info(`Loaded ${modules.length} modules`);
   runLogger.info(`Starting parallel processing with ${workerCount} workers, batch size ${batchSize}`);
 
+  if (localOnly) {
+    runLogger.info("Local-only mode: rechecking existing clones without cloning or updating repositories; missing clones will be skipped.");
+  }
+
   if (cacheDisabled) {
-    runLogger.warn("Cache disabled (--no-cache / PIPELINE_CACHE_DISABLED): all modules will be processed fresh");
+    runLogger.warn("Analysis cache disabled: all modules will be processed fresh");
   }
 
   let processedCount = 0;
@@ -456,6 +464,7 @@ export async function runParallelProcessing({
 
   const moduleConfig = {
     projectRoot,
+    localOnly,
     modulesDir: resolve(projectRoot, "modules"),
     modulesTempDir: resolve(projectRoot, "modules_temp"),
     imagesDir: resolve(projectRoot, "website/images"),
