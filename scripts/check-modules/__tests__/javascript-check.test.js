@@ -207,17 +207,25 @@ test("worker ESLint uses one trusted config for JavaScript and package.json with
   await writeFile(join(root, "bundle.min.js"), "require('request');\n");
   await mkdir(join(root, "node_modules", "example"), { recursive: true });
   await writeFile(join(root, "node_modules", "example", "ignored.js"), "require('request');\n");
+  for (const directory of ["vendor", "public/vendor"]) {
+    await mkdir(join(root, directory), { recursive: true });
+    await writeFile(join(root, directory, "checked.js"), "require('request'); const vendorOnlyUnused = 1;\n");
+  }
 
   const issues = await runEslintCheck(root);
   assert.equal(issues.filter(issue => issue.includes("axios:")).length, 3);
-  assert.equal(issues.some(issue => issue.includes("request:")), false);
+  const vendorIssues = issues.filter(issue => issue.includes("request:"));
+  assert.equal(vendorIssues.length, 2);
+  assert.ok(vendorIssues.some(issue => issue.includes("In `vendor/checked.js:")));
+  assert.ok(vendorIssues.some(issue => issue.includes("In `public/vendor/checked.js:")));
   const generalIssues = issues.filter(issue => issue.startsWith("ESLint issues:"));
   assert.equal(generalIssues.length, 1);
   assert.ok(generalIssues[0].includes("no-unused-vars"));
   assert.ok(generalIssues[0].includes("package-json/require-type"));
+  assert.equal(generalIssues[0].match(/vendorOnlyUnused/gu)?.length, 2);
 
   const requiredOnly = await runEslintCheck(root, false);
-  assert.equal(requiredOnly.length, 3);
+  assert.equal(requiredOnly.length, 5);
   for (const filename of ["module.js", "helper.cjs", "library.mjs"]) {
     assert.equal(await readFile(join(root, filename), "utf8"), source);
   }
