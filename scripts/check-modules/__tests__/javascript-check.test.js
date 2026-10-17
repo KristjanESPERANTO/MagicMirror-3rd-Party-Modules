@@ -1,0 +1,89 @@
+import { mkdtemp, rm, writeFile } from "node:fs/promises";
+import { analyzeModule } from "../module-analyzer.ts";
+import assert from "node:assert/strict";
+import { checkJavaScript } from "../javascript-check.ts";
+import { join } from "node:path";
+import { test } from "node:test";
+import { tmpdir } from "node:os";
+
+test("deprecated Buffer checks resolve global, imported and aliased constructors", () => {
+  for (const source of [
+    "new Buffer ('value');",
+    "import { Buffer as Bytes } from 'node:buffer'; new Bytes('value');",
+    "const { Buffer: Bytes } = require('buffer'); new Bytes('value');",
+    "const buffers = require('node:buffer'); new buffers.Buffer('value');",
+    "const Bytes = Buffer; new Bytes('value');"
+  ]) {
+    const issues = checkJavaScript(source, "node_helper.js");
+    assert.equal(issues.length, 1, source);
+    assert.match(issues[0], /^Deprecated:.*new Buffer\(\)/u);
+    assert.match(issues[0], /node_helper\.js:1:\d+/u);
+  }
+});
+
+test("deprecated fs checks resolve imports, aliases and computed constant names", () => {
+  for (const constant of ["F_OK", "R_OK", "W_OK", "X_OK"]) {
+    for (const source of [
+      `const fs = require('fs'); fs.${constant};`,
+      `import filesystem from 'node:fs'; filesystem['${constant}'];`,
+      `import * as filesystem from 'fs'; filesystem.${constant};`,
+      `require('node:fs').${constant};`
+    ]) {
+      const issues = checkJavaScript(source, source.startsWith("import") ? "module.mjs" : "node_helper.cjs");
+      assert.equal(issues.length, 1, source);
+      assert.ok(issues[0].includes(`fs.constants.${constant}`));
+    }
+  }
+});
+
+test("deprecated getYear checks require a statically known Date instance", () => {
+  for (const source of [
+    "new Date().getYear();",
+    "const date = new Date(); date.getYear ();",
+    "const date = new Date(); const alias = date; alias['getYear']();",
+    "const date = new Date(); date?.getYear?.();",
+    "const Clock = Date; new Clock().getYear();"
+  ]) {
+    const issues = checkJavaScript(source, "module.js");
+    assert.equal(issues.length, 1, source);
+    assert.match(issues[0], /getFullYear/u);
+  }
+});
+
+test("deprecated API checks ignore text, modern APIs and custom or reassigned bindings", () => {
+  for (const source of [
+    "// new Buffer('x'); fs.F_OK; date.getYear()\nconst example = 'getYear()';",
+    "Buffer.from('value'); Buffer.alloc(3); new Date().getFullYear();",
+    "const fs = require('fs'); fs.constants.F_OK;",
+    "function custom(Buffer) { return new Buffer('value'); }",
+    "const Buffer = class {}; new Buffer();",
+    "function custom(fs) { return fs.F_OK; }",
+    "const fs = { F_OK: 1 }; fs.F_OK;",
+    "import fs from 'custom-fs'; fs.F_OK;",
+    "function custom(require) { const fs = require('fs'); return fs.F_OK; }",
+    "const custom = { getYear() {} }; custom.getYear();",
+    "function custom(date) { return date.getYear(); }",
+    "function custom(Date) { return new Date().getYear(); }",
+    "let date = new Date(); date = {}; date.getYear();",
+    "let fs = require('fs'); fs = {}; fs.F_OK;",
+    "let Bytes = Buffer; Bytes = class {}; new Bytes();",
+    "const fs = require('fs'); const property = 'F_OK'; fs[property];"
+  ]) {
+    assert.deepEqual(checkJavaScript(source, "module.js"), [], source);
+  }
+  assert.deepEqual(checkJavaScript("new Buffer('value');", "README.md"), []);
+});
+
+test("analyzer reports migrated APIs once and runs HTTP checks in the same pass", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "javascript-check-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  const codePath = join(root, "node_helper.js");
+  const readmePath = join(root, "README.md");
+  await writeFile(codePath, "const fs = require('fs'); fs.F_OK; new Buffer('value'); new Date().getYear(); require('axios');\n");
+  await writeFile(readmePath, "new Buffer('value'); fs.F_OK; date.getYear();\n");
+  const result = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [codePath, readmePath]);
+  const deprecatedIssues = result.issues.filter(issue => issue.startsWith("Deprecated:"));
+  assert.equal(deprecatedIssues.length, 3);
+  assert.ok(deprecatedIssues.every(issue => /node_helper\.js:1:\d+/u.test(issue)));
+  assert.equal(result.issues.filter(issue => issue.includes("axios:")).length, 1);
+});

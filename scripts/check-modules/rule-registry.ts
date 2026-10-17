@@ -159,7 +159,7 @@ function createRule(definition: RuleDefinition): Readonly<RuleRecord> {
 const RULE_DEFINITIONS: RuleDefinition[] = [
   {
     id: "text-deprecated-new-buffer",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["new Buffer("],
     category: "Deprecated",
     description:
@@ -167,28 +167,28 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-deprecated-fs-F_OK",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["fs.F_OK"],
     category: "Deprecated",
     description: "Replace it with `fs.constants.F_OK`."
   },
   {
     id: "text-deprecated-fs-R_OK",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["fs.R_OK"],
     category: "Deprecated",
     description: "Replace it with `fs.constants.R_OK`."
   },
   {
     id: "text-deprecated-fs-W_OK",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["fs.W_OK"],
     category: "Deprecated",
     description: "Replace it with `fs.constants.W_OK`."
   },
   {
     id: "text-deprecated-fs-X_OK",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["fs.X_OK"],
     category: "Deprecated",
     description: "Replace it with `fs.constants.X_OK`."
@@ -350,7 +350,7 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-deprecated-getYear",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["getYear()"],
     category: "Deprecated",
     description: "Replace `getYear()` with `getFullYear()`."
