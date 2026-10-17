@@ -2,6 +2,7 @@ import type { Rule } from "eslint";
 import type { Node } from "estree";
 import { httpImportsRule } from "./http-import-check.ts";
 import { getRuleById } from "./rule-registry.ts";
+import { packageJsonRule } from "./package-json-check.ts";
 import nodePlugin from "eslint-plugin-n";
 
 const DEPRECATED_API_RULE_IDS = [
@@ -172,6 +173,7 @@ const deprecatedApisRule: Rule.RuleModule = {
 export const MAGICMIRROR_PLUGIN = {
   rules: {
     "prefer-native-fetch": httpImportsRule,
+    "no-outdated-packages": packageJsonRule,
     "no-deprecated-apis": deprecatedApisRule,
     "prefer-node-protocol": httpNodeProtocolRule
   }

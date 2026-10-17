@@ -5,7 +5,6 @@
 
 import { readFile, stat } from "node:fs/promises";
 import {
-  PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES,
   TEXT_RULES
 } from "./rule-registry.ts";
@@ -331,15 +330,6 @@ export async function analyzeModule(
         // Silently ignore JSON parse errors
       }
 
-      for (const rule of PACKAGE_JSON_RULES) {
-        for (const pattern of rule.patterns) {
-          if (content.includes(pattern)) {
-            issues.push(
-              `${rule.category}: Found \`${pattern}\` in file \`package.json\`: ${rule.description}`
-            );
-          }
-        }
-      }
     }
 
     // Package-lock.json rules

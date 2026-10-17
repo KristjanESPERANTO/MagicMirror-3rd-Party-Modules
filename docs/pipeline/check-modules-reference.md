@@ -10,7 +10,7 @@ The Stage 5 runner reads `scripts/check-modules/check-groups.config.json` to de
 
 | Toggle                            | Default | Controls                                                                                                                                          |
 | --------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `groups.fast`                     | `true`  | Registry-backed text and `package.json`/`package-lock.json` pattern scanning.                                                                     |
+| `groups.fast`                     | `true`  | Registry-backed text and `package-lock.json` pattern scanning.                                                                                    |
 | `groups.deep`                     | `true`  | Repository heuristics (README/license/dependabot checks) plus dependency helpers. Disabling this also suppresses the optional integrations below. |
 | `integrations.npmCheckUpdates`    | `true`  | Runs `npm-check-updates` when the helper budget allows.                                                                                           |
 | `integrations.npmDeprecatedCheck` | `true`  | Executes `npm-deprecated-check` to surface deprecated dependencies.                                                                               |
@@ -77,6 +77,7 @@ ESLint separately.
 | `magicmirror/prefer-native-fetch`  | Recommend native fetch instead of legacy HTTP clients.                          |
 | `magicmirror/no-deprecated-apis`   | Detect deprecated Buffer constructors, Date.getYear(), and fs access constants. |
 | `magicmirror/prefer-node-protocol` | Adapt `eslint-plugin-n` to prefer `node:http` and `node:https`.                 |
+| `magicmirror/no-outdated-packages` | Adapt `eslint-plugin-depend` for legacy dependencies and check Husky scripts.   |
 
 The HTTP import rule detects static imports, re-exports, literal dynamic imports, and
 `require()` calls without a local binding, including package subpaths. Comments, ordinary
@@ -100,17 +101,32 @@ guidance and include the package name, relative file path, line, and column.
 
 ### `package.json` rules
 
-| Rule ID                                  | Pattern                                      | Category       | Notes                                                                                                                                                                         |
-| ---------------------------------------- | -------------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| pkg-deprecated-electron-rebuild          | `"electron-rebuild"`                         | Deprecated     | Use `@electron/rebuild`.                                                                                                                                                      |
-| pkg-deprecated-eslint-config-airbnb      | `eslint-config-airbnb`                       | Deprecated     | Seek modern configuration.                                                                                                                                                    |
-| pkg-recommend-eslint-plugin-json         | `"eslint-plugin-json"`/`eslint-plugin-jsonc` | Recommendation | Suggest `@eslint/json`.                                                                                                                                                       |
-| pkg-deprecated-grunt                     | `"grunt"`                                    | Deprecated     | Tool largely unmaintained.                                                                                                                                                    |
-| pkg-outdated-husky-install               | `husky install`                              | Outdated       | Husky v9 no longer needs it.                                                                                                                                                  |
-| pkg-recommend-needle                     | `"needle"`                                   | Recommendation | Suggest fetch.                                                                                                                                                                |
-| pkg-missing-dependency                   | _n/a (detected via usage scan)_              | Recommendation | Flags modules that import third-party packages without declaring them in `package.json` (built-ins and the default allowlist `express`, `node_helper`, `logger` are ignored). |
-| pkg-deprecated-rollup-banner             | `rollup-plugin-banner`                       | Deprecated     | Replace with built-in banner.                                                                                                                                                 |
-| pkg-deprecated-stylelint-config-prettier | `stylelint-config-prettier`                  | Deprecated     | Remove in newer Stylelint setups.                                                                                                                                             |
+The eight legacy dependency and script rules below run through
+`magicmirror/no-outdated-packages` in the central ESLint pass, not text scanning.
+The adapter in `scripts/check-modules/package-json-check.ts` reuses
+`depend/ban-dependencies` for `dependencies` and `devDependencies`, extending its
+declaration checks to `peerDependencies` and `optionalDependencies`. The Husky
+check inspects only top-level `scripts` values. Package names, descriptions,
+keywords, and custom nested metadata do not trigger these checks.
+
+Registry IDs and categories are preserved with scope `module-analysis`, and
+findings include file, line, and column. The migrated dependency names are
+allowed in the general `depend/ban-dependencies` rule to avoid duplicate reports
+for the same declaration; its other dependency recommendations remain enabled.
+The local rules run even when general ESLint findings are disabled. The separate
+missing-dependency usage scan remains unchanged.
+
+| Rule ID                                  | Dependency or script                             | Category       | Notes                                                                                                                                                                         |
+| ---------------------------------------- | ------------------------------------------------ | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| pkg-deprecated-electron-rebuild          | `"electron-rebuild"`                             | Deprecated     | Use `@electron/rebuild`.                                                                                                                                                      |
+| pkg-deprecated-eslint-config-airbnb      | Airbnb ESLint presets                            | Deprecated     | Covers `eslint-config-airbnb`, `-base`, `-typescript`, and `-typescript-base`. Seek modern configuration.                                                                     |
+| pkg-recommend-eslint-plugin-json         | `"eslint-plugin-json"`/`eslint-plugin-jsonc`     | Recommendation | Suggest `@eslint/json`.                                                                                                                                                       |
+| pkg-deprecated-grunt                     | `"grunt"`                                        | Deprecated     | Tool largely unmaintained.                                                                                                                                                    |
+| pkg-outdated-husky-install               | `husky install`                                  | Outdated       | Husky v9 no longer needs it.                                                                                                                                                  |
+| pkg-recommend-needle                     | `"needle"`                                       | Recommendation | Suggest fetch.                                                                                                                                                                |
+| pkg-missing-dependency                   | _n/a (detected via usage scan)_                  | Recommendation | Flags modules that import third-party packages without declaring them in `package.json` (built-ins and the default allowlist `express`, `node_helper`, `logger` are ignored). |
+| pkg-deprecated-rollup-banner             | `rollup-plugin-banner` / `rollup-plugin-banner2` | Deprecated     | Replace with built-in banner.                                                                                                                                                 |
+| pkg-deprecated-stylelint-config-prettier | `stylelint-config-prettier` / `-scss`            | Deprecated     | Remove in newer Stylelint setups.                                                                                                                                             |
 
 ### `package-lock.json` rules
 

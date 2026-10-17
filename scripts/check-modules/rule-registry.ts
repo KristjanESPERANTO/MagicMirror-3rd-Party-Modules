@@ -413,56 +413,56 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "pkg-deprecated-electron-rebuild",
-    scope: "package-json",
+    scope: "module-analysis",
     patterns: ["\"electron-rebuild\""],
     category: "Deprecated",
     description: "Use `@electron/rebuild` instead."
   },
   {
     id: "pkg-deprecated-eslint-config-airbnb",
-    scope: "package-json",
+    scope: "module-analysis",
     patterns: ["eslint-config-airbnb"],
     category: "Deprecated",
     description: "Replace the preset with a maintained ESLint configuration."
   },
   {
     id: "pkg-recommend-eslint-plugin-json",
-    scope: "package-json",
+    scope: "module-analysis",
     patterns: ["\"eslint-plugin-json\"", "\"eslint-plugin-jsonc\""],
     category: "Recommendation",
     description: "Suggest adopting `@eslint/json` for JSON linting."
   },
   {
     id: "pkg-deprecated-grunt",
-    scope: "package-json",
+    scope: "module-analysis",
     patterns: ["\"grunt\""],
     category: "Deprecated",
     description: "Grunt is effectively unmaintained. Move on to something modern."
   },
   {
     id: "pkg-outdated-husky-install",
-    scope: "package-json",
+    scope: "module-analysis",
     patterns: ["husky install"],
     category: "Outdated",
     description: "Husky v9 no longer needs manual install scripts."
   },
   {
     id: "pkg-recommend-needle",
-    scope: "package-json",
+    scope: "module-analysis",
     patterns: ["\"needle\""],
     category: "Recommendation",
     description: "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
   },
   {
     id: "pkg-deprecated-rollup-banner",
-    scope: "package-json",
+    scope: "module-analysis",
     patterns: ["rollup-plugin-banner"],
     category: "Deprecated",
     description: "Use Rollup's built-in banner support."
   },
   {
     id: "pkg-deprecated-stylelint-config-prettier",
-    scope: "package-json",
+    scope: "module-analysis",
     patterns: ["stylelint-config-prettier"],
     category: "Deprecated",
     description: "Remove `stylelint-config-prettier` in modern Stylelint setups."
