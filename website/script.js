@@ -246,12 +246,19 @@ moduleCardContainer.addEventListener("click", (event) => {
   }
 });
 
+function updateOutdatedFilterUrl() {
+  const url = new URL(window.location.href);
+  url.searchParams.set("showOutdated", showOutdated.checked);
+  window.history.replaceState({}, "", url);
+}
+
 resetButton.addEventListener("click", () => {
   resetCategoryFilter();
   const root = document.querySelector(":root");
   filteredModuleList = allModules.concat(skippedModules);
   searchInput.value = "";
   showOutdated.checked = true;
+  updateOutdatedFilterUrl();
   removeSelectedMarkingFromTagsAndCards();
   sortDropdown.value = "default";
   sortData(sortDropdown.value);
@@ -284,9 +291,7 @@ sortDropdown.addEventListener("change", () => {
 });
 
 showOutdated.addEventListener("change", () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  urlParams.set("showOutdated", showOutdated.checked);
-  window.history.replaceState({}, "", `${window.location.pathname}?${urlParams}`);
+  updateOutdatedFilterUrl();
   updateModuleCardContainer();
 });
 

@@ -111,4 +111,22 @@ describe("website module catalogue", () => {
     document.getElementById("reset-button").click();
     assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
   });
+
+  it("keeps the outdated filter and URL synchronized when toggled and reset", () => {
+    window.history.replaceState({}, "", "/index.html?keep=value#modules");
+    const showOutdated = document.getElementById("show-outdated");
+    showOutdated.checked = false;
+    showOutdated.dispatchEvent(new window.Event("change"));
+
+    assert.equal(new URLSearchParams(window.location.search).get("showOutdated"), "false");
+    assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta"]);
+
+    document.getElementById("reset-button").click();
+
+    assert.equal(showOutdated.checked, true);
+    assert.equal(new URLSearchParams(window.location.search).get("showOutdated"), "true");
+    assert.equal(new URLSearchParams(window.location.search).get("keep"), "value");
+    assert.equal(window.location.hash, "#modules");
+    assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
+  });
 });
