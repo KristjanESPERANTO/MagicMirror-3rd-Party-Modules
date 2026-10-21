@@ -3,6 +3,7 @@ import { createCard } from "./card.js?v=__ASSET_VERSION__";
 let allModules = [];
 let skippedModules = [];
 let filteredModuleList = [];
+const moduleCardCache = new WeakMap();
 const resetButton = document.getElementById("reset-button");
 const moduleCardContainer = document.getElementById("module-container");
 const searchInput = document.getElementById("search-input");
@@ -40,8 +41,16 @@ function updateModuleCardContainer() {
   filteredModuleList.forEach((moduleData) => {
     if ((!moduleData.outdated || showOutdated.checked) && (!moduleData.skipped || showOutdated.checked)) {
       try {
-        const cardNode = createCard(moduleData, { filterByMaintainer, filterByTag });
+        let cardNode = moduleCardCache.get(moduleData);
+        if (!cardNode) {
+          cardNode = createCard(moduleData, { filterByMaintainer, filterByTag }).firstElementChild;
+          if (cardNode) {
+            moduleCardCache.set(moduleData, cardNode);
+          }
+        }
         if (cardNode) {
+          cardNode.classList.remove("selected");
+          cardNode.querySelectorAll("[data-tag].selected").forEach(element => element.classList.remove("selected"));
           fragment.appendChild(cardNode);
         }
       }

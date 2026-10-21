@@ -50,6 +50,7 @@ const modules = [
     description: "Weather module",
     category: "weather",
     tags: ["weather"],
+    image: "alpha.png",
     stars: 5,
     lastCommit: "2026-01-01T00:00:00.000Z",
     defaultSortWeight: 1
@@ -127,14 +128,20 @@ describe("website module catalogue", () => {
   });
 
   it("sorts modules by stars", () => {
+    const initialCards = [...document.querySelectorAll("#module-container .card")];
     const sortDropdown = document.getElementById("sort-dropdown");
     sortDropdown.value = "stars";
     sortDropdown.dispatchEvent(new window.Event("change"));
 
     assert.deepEqual(cardNames(), ["MMM-Beta", "MMM-Alpha", "MMM-Skipped"]);
+    const sortedCards = [...document.querySelectorAll("#module-container .card")];
+    assert.ok(sortedCards[0] === initialCards[1]);
+    assert.ok(sortedCards[1] === initialCards[0]);
+    assert.ok(sortedCards[2] === initialCards[2]);
   });
 
   it("filters by category and resets the catalogue", () => {
+    const initialCards = [...document.querySelectorAll("#module-container .card")];
     const categoryFilter = document.getElementById("category-filter");
     categoryFilter.value = "weather";
     categoryFilter.dispatchEvent(new window.Event("change"));
@@ -142,6 +149,10 @@ describe("website module catalogue", () => {
 
     document.getElementById("reset-button").click();
     assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
+    const resetCards = [...document.querySelectorAll("#module-container .card")];
+    assert.ok(resetCards[0] === initialCards[1]);
+    assert.ok(resetCards[1] === initialCards[0]);
+    assert.ok(resetCards[2] === initialCards[2]);
   });
 
   it("keeps the outdated filter and URL synchronized when toggled and reset", () => {
@@ -160,6 +171,73 @@ describe("website module catalogue", () => {
     assert.equal(new URLSearchParams(window.location.search).get("keep"), "value");
     assert.equal(window.location.hash, "#modules");
     assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
+  });
+
+  it("reuses cards after searching", (context) => {
+    context.mock.timers.enable({ apis: ["setTimeout"] });
+    const initialCards = [...document.querySelectorAll("#module-container .card")];
+    const searchInput = document.getElementById("search-input");
+    searchInput.value = "calendar";
+    searchInput.dispatchEvent(new window.Event("input"));
+    context.mock.timers.tick(180);
+
+    assert.deepEqual(cardNames(), ["MMM-Beta"]);
+    assert.ok(document.querySelector("#module-container .card") === initialCards[1]);
+
+    searchInput.value = "";
+    searchInput.dispatchEvent(new window.Event("input"));
+    context.mock.timers.tick(180);
+
+    const restoredCards = [...document.querySelectorAll("#module-container .card")];
+    assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
+    assert.ok(restoredCards.every((card, index) => card === initialCards[index]));
+  });
+
+  it("retains card callbacks and clears selection on reused cards", () => {
+    const card = document.querySelector("#module-container .card");
+    card.click();
+    assert.ok(card.classList.contains("selected"));
+
+    const sortDropdown = document.getElementById("sort-dropdown");
+    sortDropdown.dispatchEvent(new window.Event("change"));
+    assert.equal(card.classList.contains("selected"), false);
+
+    card.querySelector("[data-tag=weather]").click();
+    assert.deepEqual(cardNames(), ["MMM-Alpha"]);
+    assert.ok(card.querySelector("[data-tag=weather]").classList.contains("selected"));
+
+    document.getElementById("reset-button").click();
+    assert.equal(card.querySelector("[data-tag=weather]").classList.contains("selected"), false);
+
+    card.querySelector(".maintainer").click();
+    assert.deepEqual(cardNames(), ["MMM-Alpha"]);
+    assert.ok(document.querySelector("#module-container .card") === card);
+    document.getElementById("reset-button").click();
+  });
+
+  it("keeps image overlays attached to their reused card", () => {
+    const card = document.querySelector("#module-container .card");
+    const image = card.querySelector(".img-container img");
+    const overlay = image.nextElementSibling;
+    image.click();
+    assert.ok(overlay.parentElement === document.body);
+    assert.equal(overlay.style.display, "flex");
+
+    const categoryFilter = document.getElementById("category-filter");
+    categoryFilter.value = "calendar";
+    categoryFilter.dispatchEvent(new window.Event("change"));
+    assert.equal(card.isConnected, false);
+
+    overlay.click();
+    assert.equal(overlay.style.display, "none");
+    assert.ok(overlay.parentElement === image.parentElement);
+
+    document.getElementById("reset-button").click();
+    assert.ok(document.querySelector("#module-container .card") === card);
+    image.click();
+    assert.equal(overlay.style.display, "flex");
+    overlay.click();
+    assert.equal(document.querySelector("body > .overlay"), null);
   });
 });
 
