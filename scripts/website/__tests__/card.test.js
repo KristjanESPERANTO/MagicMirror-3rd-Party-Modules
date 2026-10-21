@@ -1,10 +1,11 @@
-import { describe, it, mock } from "node:test";
-import { Window } from "happy-dom";
+import { after, describe, it, mock } from "node:test";
+import { JSDOM } from "jsdom";
 import assert from "node:assert/strict";
 
-const window = new Window();
+const { window } = new JSDOM();
 globalThis.window = window;
 globalThis.document = window.document;
+after(() => window.close());
 
 document.body.innerHTML = `
   <template id="card-template">
@@ -56,6 +57,20 @@ describe("createCard", () => {
 
     assert.equal(description.querySelector("img"), null);
     assert.ok(description.textContent.includes(payload));
+  });
+
+  it("removes executable HTML while preserving safe Markdown", () => {
+    const card = createCard({
+      name: "Test module",
+      maintainer: "Test maintainer",
+      url: "https://example.com",
+      description: "**Weather** <img src=\"x\" onerror=\"alert(1)\"> <script>alert(1)</script> [Unsafe](javascript:alert(1)) [Docs](https://example.com/docs)"
+    }, callbacks);
+    const description = card.querySelector(".description");
+
+    assert.equal(description.querySelector("strong").textContent, "Weather");
+    assert.equal(description.querySelector("script, [onerror], a[href^='javascript:']"), null);
+    assert.equal(description.querySelector("a[href='https://example.com/docs']").rel, "noopener noreferrer");
   });
 
   it("renders the outdated note safely", () => {

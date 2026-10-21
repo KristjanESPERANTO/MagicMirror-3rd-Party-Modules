@@ -1,10 +1,16 @@
-import { describe, it } from "node:test";
-import { Window } from "happy-dom";
+import { after, describe, it } from "node:test";
+import { JSDOM } from "jsdom";
 import assert from "node:assert/strict";
 
-const window = new Window({ url: "https://example.com/index.html" });
+const { window } = new JSDOM("", { url: "https://example.com/index.html" });
 globalThis.window = window;
 globalThis.document = window.document;
+after(() => window.close());
+document.addEventListener("click", (event) => {
+  if (event.target.closest("a")) {
+    event.preventDefault();
+  }
+});
 
 const pageMarkup = `
   <nav id="nav-menu"><a id="nav-toggler"></a><a id="close-menu"></a></nav>
@@ -79,7 +85,7 @@ globalThis.fetch = (url) => {
     "data/skipped_modules.json": skippedModules,
     "data/stats.json": { lastUpdate: "2026-03-01T00:00:00.000Z" }
   };
-  const response = { json: () => Promise.resolve(responses[url]) };
+  const response = { ok: true, json: () => Promise.resolve(responses[url]) };
   if (url === "data/stats.json") {
     return statisticsResponse.promise.then(() => response);
   }
@@ -98,6 +104,18 @@ await new Promise((resolve) => {
 function cardNames() {
   return [...document.querySelectorAll("#module-container .name")]
     .map(card => card.textContent);
+}
+
+let catalogueInstance = 0;
+async function initializeCatalogue(context, fetchResponse, url = "/index.html") {
+  document.body.innerHTML = pageMarkup;
+  window.history.replaceState({}, "", url);
+  context.mock.method(globalThis, "fetch", fetchResponse);
+  catalogueInstance += 1;
+  await import(`../../../website/script.js?instance=${catalogueInstance}`);
+  await new Promise((resolve) => {
+    setTimeout(resolve, 0);
+  });
 }
 
 describe("website module catalogue", () => {
@@ -241,38 +259,141 @@ describe("website module catalogue", () => {
   });
 });
 
+describe("website search debounce", () => {
+  for (const filter of ["category", "tag", "maintainer", "reset"]) {
+    it(`does not let a pending search override ${filter}`, (context) => {
+      context.mock.timers.enable({ apis: ["setTimeout"] });
+      document.getElementById("reset-button").click();
+      const searchInput = document.getElementById("search-input");
+      searchInput.value = "calendar";
+      searchInput.dispatchEvent(new window.Event("input"));
+
+      if (filter === "category") {
+        const categoryFilter = document.getElementById("category-filter");
+        categoryFilter.value = "weather";
+        categoryFilter.dispatchEvent(new window.Event("change"));
+      }
+      else if (filter === "tag") {
+        document.querySelector("#tag-buttons [data-tag=weather]").click();
+      }
+      else if (filter === "maintainer") {
+        document.querySelector("#module-container .maintainer").click();
+      }
+      else {
+        document.getElementById("reset-button").click();
+      }
+
+      const expectedNames = cardNames();
+      context.mock.timers.tick(180);
+      assert.deepEqual(cardNames(), expectedNames);
+      document.getElementById("reset-button").click();
+    });
+  }
+
+  it("only applies the latest search after the debounce interval", (context) => {
+    context.mock.timers.enable({ apis: ["setTimeout"] });
+    const searchInput = document.getElementById("search-input");
+    searchInput.value = "weather";
+    searchInput.dispatchEvent(new window.Event("input"));
+    context.mock.timers.tick(100);
+    searchInput.value = "calendar";
+    searchInput.dispatchEvent(new window.Event("input"));
+    context.mock.timers.tick(179);
+    assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
+    context.mock.timers.tick(1);
+    assert.deepEqual(cardNames(), ["MMM-Beta"]);
+    document.getElementById("reset-button").click();
+  });
+});
+
+describe("website outdated modules", () => {
+  it("honors the initial URL and reuses outdated cards after toggling", async (context) => {
+    const outdatedModule = {
+      ...modules[0],
+      name: "MMM-Legacy",
+      outdated: "No longer maintained",
+      defaultSortWeight: 999,
+      issues: true
+    };
+    const responses = {
+      "data/modules.min.json": { modules: [...modules, outdatedModule] },
+      "data/skipped_modules.json": skippedModules,
+      "data/stats.json": { lastUpdate: "2026-03-01T00:00:00.000Z" }
+    };
+    await initializeCatalogue(context, url => Promise.resolve(new Response(JSON.stringify(responses[url]))), "/index.html?showOutdated=false&keep=value#modules");
+
+    const showOutdated = document.getElementById("show-outdated");
+    assert.equal(showOutdated.checked, false);
+    assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta"]);
+    assert.equal(document.getElementById("module-count-value").textContent, "2 of 3");
+
+    showOutdated.checked = true;
+    showOutdated.dispatchEvent(new window.Event("change"));
+    const outdatedCard = document.querySelector("#module-container .outdated");
+    assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Legacy", "MMM-Skipped"]);
+    assert.equal(document.getElementById("module-count-value").textContent, "4 of 4");
+    assert.equal(outdatedCard.querySelector(".outdated-note").textContent, "No longer maintained");
+    assert.equal(outdatedCard.querySelector(".container.issues"), null);
+
+    showOutdated.checked = false;
+    showOutdated.dispatchEvent(new window.Event("change"));
+    assert.equal(outdatedCard.isConnected, false);
+    showOutdated.checked = true;
+    showOutdated.dispatchEvent(new window.Event("change"));
+    assert.ok(document.querySelector("#module-container .outdated") === outdatedCard);
+    assert.equal(new URLSearchParams(window.location.search).get("keep"), "value");
+    assert.equal(window.location.hash, "#modules");
+  });
+});
+
 describe("website initialization failures", () => {
-  for (const failedFile of ["data/modules.min.json", "data/skipped_modules.json", "data/stats.json"]) {
-    it(`continues loading when ${failedFile} fails`, async (context) => {
-      document.body.innerHTML = pageMarkup;
+  const responses = {
+    "data/modules.min.json": { modules },
+    "data/skipped_modules.json": skippedModules,
+    "data/stats.json": { lastUpdate: "2026-03-01T00:00:00.000Z" }
+  };
+
+  for (const failure of ["network", "json", "http"]) {
+    for (const failedFile of Object.keys(responses)) {
+      it(`continues loading after a ${failure} failure in ${failedFile}`, async (context) => {
+        const errors = context.mock.method(console, "error", () => null);
+        await initializeCatalogue(context, (url) => {
+          if (url === failedFile && failure === "network") {
+            return Promise.reject(new Error("Request failed"));
+          }
+          const body = url === failedFile && failure === "json" ? "{" : JSON.stringify(responses[url]);
+          const status = url === failedFile && failure === "http" ? 503 : 200;
+          return Promise.resolve(new Response(body, { status }));
+        });
+
+        const expectedNames = [];
+        if (failedFile !== "data/modules.min.json") {
+          expectedNames.push("MMM-Alpha", "MMM-Beta");
+        }
+        if (failedFile !== "data/skipped_modules.json") {
+          expectedNames.push("MMM-Skipped");
+        }
+        assert.deepEqual(cardNames(), expectedNames);
+        assert.equal(errors.mock.callCount(), failedFile === "data/skipped_modules.json" ? 0 : 1);
+        assert.equal(document.getElementById("last-update").textContent === "", failedFile === "data/stats.json");
+      });
+    }
+  }
+
+  for (const statisticsFail of [false, true]) {
+    it(`renders an empty catalogue when catalogue requests fail and statistics ${statisticsFail ? "fail" : "succeed"}`, async (context) => {
       const errors = context.mock.method(console, "error", () => null);
-      context.mock.method(globalThis, "fetch", (url) => {
-        if (url === failedFile) {
+      await initializeCatalogue(context, (url) => {
+        if (url !== "data/stats.json" || statisticsFail) {
           return Promise.reject(new Error("Request failed"));
         }
-        const responses = {
-          "data/modules.min.json": { modules },
-          "data/skipped_modules.json": skippedModules,
-          "data/stats.json": { lastUpdate: "2026-03-01T00:00:00.000Z" }
-        };
-        return Promise.resolve({ json: () => Promise.resolve(responses[url]) });
+        return Promise.resolve(new Response(JSON.stringify(responses[url])));
       });
-
-      await import(`../../../website/script.js?failed=${failedFile}`);
-      await new Promise((resolve) => {
-        setTimeout(resolve, 0);
-      });
-
-      const expectedNames = [];
-      if (failedFile !== "data/modules.min.json") {
-        expectedNames.push("MMM-Alpha", "MMM-Beta");
-      }
-      if (failedFile !== "data/skipped_modules.json") {
-        expectedNames.push("MMM-Skipped");
-      }
-      assert.deepEqual(cardNames(), expectedNames);
-      assert.equal(errors.mock.callCount(), failedFile === "data/skipped_modules.json" ? 0 : 1);
-      assert.equal(document.getElementById("last-update").textContent === "", failedFile === "data/stats.json");
+      assert.deepEqual(cardNames(), []);
+      assert.equal(document.getElementById("module-count-value").textContent, "0 of 0");
+      assert.equal(document.getElementById("reset-button").style.display, "none");
+      assert.equal(errors.mock.callCount(), statisticsFail ? 2 : 1);
+      assert.equal(document.getElementById("last-update").textContent === "", statisticsFail);
     });
   }
 });

@@ -6,7 +6,7 @@ Welcome! This document bundles the day-to-day tasks contributors perform when wo
 
 ### Prerequisites
 
-- **Node.js**: Current Node.js version (LTS or later) is required.
+- **Node.js**: Node.js 24.15.0 or later is required.
 - **Git**: Ensure Git is installed and available in your path.
 
 ### Installation

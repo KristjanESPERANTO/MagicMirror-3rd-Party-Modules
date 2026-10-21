@@ -3,6 +3,7 @@ import { createCard } from "./card.js?v=__ASSET_VERSION__";
 let allModules = [];
 let skippedModules = [];
 let filteredModuleList = [];
+let searchDebounceTimer = null;
 const moduleCardCache = new WeakMap();
 const resetButton = document.getElementById("reset-button");
 const moduleCardContainer = document.getElementById("module-container");
@@ -180,10 +181,16 @@ function filterBySearchText(searchText) {
   updateModuleCardContainer();
 }
 
+function resetSearchInput() {
+  clearTimeout(searchDebounceTimer);
+  searchDebounceTimer = null;
+  searchInput.value = "";
+}
+
 function filterByMaintainer(maintainer) {
   filteredModuleList = allModules.filter(card => card.maintainer === maintainer);
 
-  searchInput.value = "";
+  resetSearchInput();
 
   removeSelectedMarkingFromTagsAndCards();
 
@@ -200,7 +207,7 @@ function filterByTag(tag) {
     return false;
   });
 
-  searchInput.value = "";
+  resetSearchInput();
 
   removeSelectedMarkingFromTagsAndCards();
 
@@ -238,7 +245,7 @@ function addCategoryFilter() {
       filteredModuleList = allModules.filter(module => module.category === selectedCategory);
     }
 
-    searchInput.value = "";
+    resetSearchInput();
     removeSelectedMarkingFromTagsAndCards();
     sortData(sortDropdown.value);
     updateModuleCardContainer();
@@ -265,7 +272,7 @@ resetButton.addEventListener("click", () => {
   resetCategoryFilter();
   const root = document.querySelector(":root");
   filteredModuleList = allModules.concat(skippedModules);
-  searchInput.value = "";
+  resetSearchInput();
   showOutdated.checked = true;
   updateOutdatedFilterUrl();
   removeSelectedMarkingFromTagsAndCards();
@@ -277,12 +284,12 @@ resetButton.addEventListener("click", () => {
   updateModuleCardContainer();
 });
 
-let searchDebounceTimer = null;
 searchInput.addEventListener("input", () => {
   if (searchDebounceTimer) {
     clearTimeout(searchDebounceTimer);
   }
   searchDebounceTimer = setTimeout(() => {
+    searchDebounceTimer = null;
     if (searchInput.value) {
       filterBySearchText(searchInput.value);
     }
@@ -324,10 +331,17 @@ navLinks.forEach((link) => {
   });
 });
 
+async function fetchJson(path) {
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error(`Error fetching ${path}: HTTP ${response.status}`);
+  }
+  return response.json();
+}
+
 async function loadModules() {
   try {
-    const response = await fetch("data/modules.min.json");
-    const data = await response.json();
+    const data = await fetchJson("data/modules.min.json");
     allModules = data.modules;
   }
   catch (error) {
@@ -338,8 +352,7 @@ async function loadModules() {
 
 async function loadSkippedModules() {
   try {
-    const response = await fetch("data/skipped_modules.json");
-    const data = await response.json();
+    const data = await fetchJson("data/skipped_modules.json");
     skippedModules = data.map(moduleObj => ({ ...moduleObj, skipped: true, defaultSortWeight: 1000, lastCommit: "" }));
   }
   catch {
@@ -349,8 +362,7 @@ async function loadSkippedModules() {
 
 async function loadStatistics() {
   try {
-    const response = await fetch("data/stats.json");
-    const data = await response.json();
+    const data = await fetchJson("data/stats.json");
     displayStatistics(data);
   }
   catch (error) {
