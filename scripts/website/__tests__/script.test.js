@@ -6,7 +6,7 @@ const window = new Window({ url: "https://example.com/index.html" });
 globalThis.window = window;
 globalThis.document = window.document;
 
-document.body.innerHTML = `
+const pageMarkup = `
   <nav id="nav-menu"><a id="nav-toggler"></a><a id="close-menu"></a></nav>
   <header></header>
   <input id="dark-mode" type="checkbox" />
@@ -40,6 +40,7 @@ document.body.innerHTML = `
     </article>
   </template>
 `;
+document.body.innerHTML = pageMarkup;
 
 const modules = [
   {
@@ -67,16 +68,28 @@ const modules = [
 ];
 
 const skippedModules = [{ name: "MMM-Skipped", error: "Load failed" }];
+const requestedFiles = [];
+const modulesResponse = Promise.withResolvers();
+const statisticsResponse = Promise.withResolvers();
 globalThis.fetch = (url) => {
+  requestedFiles.push(url);
   const responses = {
     "data/modules.min.json": { modules },
     "data/skipped_modules.json": skippedModules,
     "data/stats.json": { lastUpdate: "2026-03-01T00:00:00.000Z" }
   };
-  return { json: () => Promise.resolve(responses[url]) };
+  const response = { json: () => Promise.resolve(responses[url]) };
+  if (url === "data/stats.json") {
+    return statisticsResponse.promise.then(() => response);
+  }
+  return url === "data/modules.min.json"
+    ? modulesResponse.promise.then(() => response)
+    : Promise.resolve(response);
 };
 
 await import("../../../website/script.js");
+const initialRequests = [...requestedFiles];
+modulesResponse.resolve();
 await new Promise((resolve) => {
   setTimeout(resolve, 0);
 });
@@ -87,10 +100,30 @@ function cardNames() {
 }
 
 describe("website module catalogue", () => {
+  it("starts all data requests before the modules request finishes", () => {
+    assert.deepEqual(initialRequests, [
+      "data/modules.min.json",
+      "data/skipped_modules.json",
+      "data/stats.json"
+    ]);
+  });
+
   it("loads modules and renders categories", () => {
     assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
     assert.ok(document.querySelector("#category-filter option[value=weather]"));
     assert.equal(document.getElementById("module-count-value").textContent, "3 of 3");
+  });
+
+  it("renders the catalogue without waiting for statistics", async () => {
+    assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
+    assert.equal(document.getElementById("last-update").textContent, "");
+
+    statisticsResponse.resolve();
+    await new Promise((resolve) => {
+      setTimeout(resolve, 0);
+    });
+
+    assert.match(document.getElementById("last-update").textContent, /^Last Update: /u);
   });
 
   it("sorts modules by stars", () => {
@@ -128,4 +161,40 @@ describe("website module catalogue", () => {
     assert.equal(window.location.hash, "#modules");
     assert.deepEqual(cardNames(), ["MMM-Alpha", "MMM-Beta", "MMM-Skipped"]);
   });
+});
+
+describe("website initialization failures", () => {
+  for (const failedFile of ["data/modules.min.json", "data/skipped_modules.json", "data/stats.json"]) {
+    it(`continues loading when ${failedFile} fails`, async (context) => {
+      document.body.innerHTML = pageMarkup;
+      const errors = context.mock.method(console, "error", () => null);
+      context.mock.method(globalThis, "fetch", (url) => {
+        if (url === failedFile) {
+          return Promise.reject(new Error("Request failed"));
+        }
+        const responses = {
+          "data/modules.min.json": { modules },
+          "data/skipped_modules.json": skippedModules,
+          "data/stats.json": { lastUpdate: "2026-03-01T00:00:00.000Z" }
+        };
+        return Promise.resolve({ json: () => Promise.resolve(responses[url]) });
+      });
+
+      await import(`../../../website/script.js?failed=${failedFile}`);
+      await new Promise((resolve) => {
+        setTimeout(resolve, 0);
+      });
+
+      const expectedNames = [];
+      if (failedFile !== "data/modules.min.json") {
+        expectedNames.push("MMM-Alpha", "MMM-Beta");
+      }
+      if (failedFile !== "data/skipped_modules.json") {
+        expectedNames.push("MMM-Skipped");
+      }
+      assert.deepEqual(cardNames(), expectedNames);
+      assert.equal(errors.mock.callCount(), failedFile === "data/skipped_modules.json" ? 0 : 1);
+      assert.equal(document.getElementById("last-update").textContent === "", failedFile === "data/stats.json");
+    });
+  }
 });

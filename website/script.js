@@ -315,16 +315,9 @@ navLinks.forEach((link) => {
   });
 });
 
-async function initiate() {
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has("showOutdated")) {
-    const showOutdatedParam = urlParams.get("showOutdated");
-    showOutdated.checked = showOutdatedParam === "true";
-  }
-
-  const modulesFile = "data/modules.min.json";
+async function loadModules() {
   try {
-    const response = await fetch(modulesFile);
+    const response = await fetch("data/modules.min.json");
     const data = await response.json();
     allModules = data.modules;
   }
@@ -332,31 +325,46 @@ async function initiate() {
     allModules = [];
     console.error("Error fetching modules:", error);
   }
+}
 
+async function loadSkippedModules() {
   try {
-    const skippedRes = await fetch("data/skipped_modules.json");
-    const skippedRaw = await skippedRes.json();
-    skippedModules = skippedRaw.map(moduleObj => ({ ...moduleObj, skipped: true, defaultSortWeight: 1000, lastCommit: "" }));
+    const response = await fetch("data/skipped_modules.json");
+    const data = await response.json();
+    skippedModules = data.map(moduleObj => ({ ...moduleObj, skipped: true, defaultSortWeight: 1000, lastCommit: "" }));
   }
   catch {
     skippedModules = [];
   }
+}
 
-  filteredModuleList = allModules.concat(skippedModules);
-  sortData(sortDropdown.value);
-  updateModuleCardContainer();
-  displayTagButtonContainer();
-  addCategoryFilter();
-
-  const statisticsFile = "data/stats.json";
+async function loadStatistics() {
   try {
-    const response = await fetch(statisticsFile);
+    const response = await fetch("data/stats.json");
     const data = await response.json();
     displayStatistics(data);
   }
   catch (error) {
     console.error("Error fetching data:", error);
   }
+}
+
+async function initiate() {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has("showOutdated")) {
+    const showOutdatedParam = urlParams.get("showOutdated");
+    showOutdated.checked = showOutdatedParam === "true";
+  }
+
+  const modulesPromise = loadModules();
+  const skippedModulesPromise = loadSkippedModules();
+  loadStatistics();
+  await Promise.all([modulesPromise, skippedModulesPromise]);
+  filteredModuleList = allModules.concat(skippedModules);
+  sortData(sortDropdown.value);
+  updateModuleCardContainer();
+  displayTagButtonContainer();
+  addCategoryFilter();
 }
 
 function switchDarkMode() {
