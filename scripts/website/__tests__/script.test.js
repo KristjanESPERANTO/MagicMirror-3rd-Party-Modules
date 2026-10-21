@@ -5,7 +5,6 @@ import assert from "node:assert/strict";
 const window = new Window({ url: "https://example.com/index.html" });
 globalThis.window = window;
 globalThis.document = window.document;
-window.marked = { parseInline: text => text };
 
 document.body.innerHTML = `
   <nav id="nav-menu"><a id="nav-toggler"></a><a id="close-menu"></a></nav>

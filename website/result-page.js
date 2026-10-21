@@ -1,6 +1,5 @@
 import createDOMPurify from "./vendor/dompurify.js";
-// eslint-disable-next-line import-x/no-unresolved
-import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+import { marked } from "./vendor/marked.js?v=__ASSET_VERSION__";
 
 const DOMPurify = createDOMPurify(window);
 

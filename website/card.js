@@ -1,14 +1,11 @@
 import createDOMPurify from "./vendor/dompurify.js";
+import { marked } from "./vendor/marked.js?v=__ASSET_VERSION__";
 
 const cardTemplate = document.getElementById("card-template");
 const DOMPurify = createDOMPurify(window);
 
 function renderDescription(description) {
-  if (typeof window.marked?.parseInline !== "function") {
-    return description || "";
-  }
-
-  const rendered = window.marked.parseInline(description || "");
+  const rendered = marked.parseInline(description || "");
   return DOMPurify.sanitize(rendered);
 }
 

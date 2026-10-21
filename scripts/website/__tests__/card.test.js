@@ -5,7 +5,6 @@ import assert from "node:assert/strict";
 const window = new Window();
 globalThis.window = window;
 globalThis.document = window.document;
-window.marked = { parseInline: text => text };
 
 document.body.innerHTML = `
   <template id="card-template">
@@ -34,6 +33,22 @@ const callbacks = {
 };
 
 describe("createCard", () => {
+  it("renders Markdown descriptions with local marked", () => {
+    const card = createCard({
+      name: "Test module",
+      maintainer: "Test maintainer",
+      url: "https://example.com",
+      description: "Weather with **forecast** and [Docs](https://example.com/docs)"
+    }, callbacks);
+    const description = card.querySelector(".description");
+    const link = description.querySelector("a");
+
+    assert.equal(description.querySelector("strong").textContent, "forecast");
+    assert.equal(link.href, "https://example.com/docs");
+    assert.equal(link.target, "_blank");
+    assert.equal(link.rel, "noopener noreferrer");
+  });
+
   it("renders skipped-module errors as text", () => {
     const payload = "<img src=x onerror=alert(1)>";
     const card = createCard({ skipped: true, error: payload }, callbacks);

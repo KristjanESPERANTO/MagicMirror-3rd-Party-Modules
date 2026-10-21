@@ -52,6 +52,8 @@
     "mplayer",
     "mtimes",
     "NOASSERTION",
+    "noopener",
+    "noreferrer",
     "omxplayer",
     "openweathermap",
     "pasteable",
