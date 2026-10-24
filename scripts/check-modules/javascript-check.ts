@@ -2,6 +2,7 @@ import type { Rule } from "eslint";
 import type { Node } from "estree";
 import { httpImportsRule } from "./http-import-check.ts";
 import { getRuleById } from "./rule-registry.ts";
+import { workflowYamlRule } from "./workflow-yaml-check.ts";
 import nodePlugin from "eslint-plugin-n";
 
 const DEPRECATED_API_RULE_IDS = [
@@ -208,6 +209,7 @@ export const MAGICMIRROR_PLUGIN = {
     "prefer-native-fetch": httpImportsRule,
     "no-xmlhttprequest": xmlHttpRequestRule,
     "no-deprecated-apis": deprecatedApisRule,
-    "prefer-node-protocol": httpNodeProtocolRule
+    "prefer-node-protocol": httpNodeProtocolRule,
+    "workflow-yaml": workflowYamlRule
   }
 };

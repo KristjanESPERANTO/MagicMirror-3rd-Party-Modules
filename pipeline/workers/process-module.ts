@@ -251,7 +251,7 @@ export async function runEslintCheck(moduleDir: string, includeGeneralChecks = t
     errorOnUnmatchedPattern: false,
     fix: false
   });
-  const results = await eslint.lintFiles(["**/*.{js,mjs,cjs}", "**/package.json"]);
+  const results = await eslint.lintFiles(["**/*.{js,mjs,cjs,yaml,yml}", "**/package.json"]);
   const issues: string[] = [];
   const generalIssues: string[] = [];
   for (const result of results) {

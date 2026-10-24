@@ -1,4 +1,5 @@
 import { MISSING_DEPENDENCY_RULE_DEFINITION } from "./missing-dependency-rule.ts";
+import { WORKFLOW_VERSION_POLICY } from "./workflow-version-policy.ts";
 
 type RuleSeverity = "info" | "warning" | "error";
 type RuleCategory = "Deprecated" | "Outdated" | "Typo" | "Recommendation";
@@ -297,42 +298,24 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-recommend-actions-checkout",
-    scope: "text",
-    patterns: [
-      "uses: actions/checkout@v2",
-      "uses: actions/checkout@v3",
-      "uses: actions/checkout@v4",
-      "uses: actions/checkout@v5",
-      "uses: actions/checkout@v6"
-    ],
+    scope: "module-analysis",
+    patterns: [`actions/checkout@vN where N < ${WORKFLOW_VERSION_POLICY.actions["actions/checkout"].currentMajor}`],
     category: "Recommendation",
-    description: "Upgrade workflows to use actions/checkout@v7."
+    description: `Upgrade workflows to use actions/checkout@v${WORKFLOW_VERSION_POLICY.actions["actions/checkout"].currentMajor}.`
   },
   {
     id: "text-recommend-actions-setup-node",
-    scope: "text",
-    patterns: [
-      "uses: actions/setup-node@v3",
-      "uses: actions/setup-node@v4",
-      "uses: actions/setup-node@v5",
-      "uses: actions/setup-node@v6"
-    ],
+    scope: "module-analysis",
+    patterns: [`actions/setup-node@vN where N < ${WORKFLOW_VERSION_POLICY.actions["actions/setup-node"].currentMajor}`],
     category: "Recommendation",
-    description: "Upgrade workflows to use actions/setup-node@v7."
+    description: `Upgrade workflows to use actions/setup-node@v${WORKFLOW_VERSION_POLICY.actions["actions/setup-node"].currentMajor}.`
   },
   {
     id: "text-deprecated-node-version",
-    scope: "text",
-    patterns: [
-      "node-version: 14",
-      "node-version: [14",
-      "node-version: 16",
-      "node-version: [16",
-      "node-version: 18",
-      "node-version: [18"
-    ],
+    scope: "module-analysis",
+    patterns: [`node-version below v${WORKFLOW_VERSION_POLICY.node.currentMajor}`],
     category: "Deprecated",
-    description: "Update CI workflows to target a supported Node.js LTS release."
+    description: `Update CI workflows to target Node.js v${WORKFLOW_VERSION_POLICY.node.currentMajor} or newer.`
   },
   {
     id: "text-recommend-npm-run",

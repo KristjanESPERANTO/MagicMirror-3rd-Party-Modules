@@ -1,5 +1,6 @@
 import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { Linter } from "eslint";
+import { WORKFLOW_VERSION_POLICY } from "../workflow-version-policy.ts";
 import { analyzeModule } from "../module-analyzer.ts";
 import assert from "node:assert/strict";
 import eslintConfig from "../../../eslint.testconfig.js";
@@ -57,6 +58,58 @@ test("XMLHttpRequest rule reports constructor use and ignores text or shadowed c
   ]) {
     assert.deepEqual(checkJavaScript(source, "src/client.js"), [], source);
   }
+});
+
+test("workflow YAML rules inspect action references and Node versions structurally", () => {
+  const nodeMajor = WORKFLOW_VERSION_POLICY.node.currentMajor;
+  const nodeVersions = [nodeMajor - 2, nodeMajor - 1, `${nodeMajor}.x`, nodeMajor, nodeMajor + 2];
+  const expectedNodeFindings = nodeVersions.filter((version) => {
+    const match = String(version).match(/^v?(\d+)(?:$|[.-])/u);
+    return match && Number(match[1]) < nodeMajor;
+  }).length;
+  const actionSteps = Object.entries(WORKFLOW_VERSION_POLICY.actions).flatMap(([name, policy]) => [
+    `      - uses: ${name}@v1`,
+    `      - uses: ${name}@v${policy.currentMajor - 1}.1.0`,
+    `      - uses: ${name}@v${policy.currentMajor}`,
+    `      - uses: ${name}@v${policy.currentMajor + 1}`
+  ]);
+  const expectedActionFindings = Object.values(WORKFLOW_VERSION_POLICY.actions)
+    .reduce((total, policy) => total + [1, policy.currentMajor - 1].filter(major => major < policy.currentMajor).length, 0);
+  const source = [
+    "jobs:",
+    "  test:",
+    "    strategy:",
+    "      matrix:",
+    `        node-version: [${nodeVersions.join(", ")}]`,
+    "    steps:",
+    ...actionSteps,
+    "        with:",
+    "          node-version: matrix.node-version",
+    "      - uses: actions/checkout@main",
+    "      - uses: actions/setup-node@0123456789abcdef0123456789abcdef01234567",
+    "      - uses: ./local-action",
+    "      - run: \"echo uses: actions/checkout@v3\"",
+    "# uses: actions/checkout@v2",
+    "unrelated:",
+    "  node-version: 14"
+  ].join("\n");
+  const issues = checkJavaScript(source, ".github/workflows/ci.yml");
+  assert.equal(issues.length, expectedNodeFindings + expectedActionFindings);
+  assert.equal(issues.filter(issue => issue.includes("Update CI workflows")).length, expectedNodeFindings);
+  assert.equal(issues.filter(issue => issue.includes("Upgrade workflows")).length, expectedActionFindings);
+});
+
+test("worker lints workflow YAML and does not report action text in Markdown", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "eslint-workflow-yaml-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  await mkdir(join(root, ".github", "workflows"), { recursive: true });
+  const oldCheckoutMajor = WORKFLOW_VERSION_POLICY.actions["actions/checkout"].currentMajor - 1;
+  await writeFile(join(root, "README.md"), `uses: actions/checkout@v${oldCheckoutMajor}\nnode-version: 14\n`);
+  await writeFile(join(root, ".github", "workflows", "ci.yml"), `jobs:\n  test:\n    steps:\n      - uses: actions/checkout@v${oldCheckoutMajor}\n`);
+  const issues = await runEslintCheck(root, false);
+  assert.equal(issues.length, 1);
+  assert.match(issues[0], /\.github\/workflows\/ci\.yml:4:\d+/u);
+  assert.ok(issues[0].startsWith("Recommendation:"));
 });
 
 test("worker XMLHttpRequest rule ignores README examples", async (context) => {

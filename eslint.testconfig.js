@@ -5,10 +5,18 @@ import globals from "globals";
 import { flatConfigs as importX } from "eslint-plugin-import-x";
 import js from "@eslint/js";
 import packageJson from "eslint-plugin-package-json";
+import { configs as ymlConfigs } from "eslint-plugin-yml";
 
 export default defineConfig([
   {
     ignores: ["**/*.min.js"]
+  },
+  ...ymlConfigs.base,
+  {
+    files: ["**/*.{yaml,yml}"],
+    plugins: { magicmirror: MAGICMIRROR_PLUGIN },
+    rules: { "magicmirror/workflow-yaml": "warn" },
+    linterOptions: { noInlineConfig: true }
   },
   {
     files: ["**/*.{js,mjs,cjs}"],

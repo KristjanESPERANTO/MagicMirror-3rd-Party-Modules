@@ -26,25 +26,22 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 
 ### Text scanning rules
 
-| Rule ID                           | Pattern                                         | Category       | Notes                       |
-| --------------------------------- | ----------------------------------------------- | -------------- | --------------------------- |
-| text-typo-magic-mirror            | `Magic Mirror`                                  | Typo           | Should be `MagicMirror²`.   |
-| text-typo-magicmirror2            | `MagicMirror2`                                  | Typo           | Should be `MagicMirror²`.   |
-| text-typo-magicmirror-brackets    | `[MagicMirror]`                                 | Typo           | Should be `[MagicMirror²]`. |
-| text-typo-html-sub2               | `<sub>2</sub>`                                  | Typo           | Replace with `²`.           |
-| text-deprecated-omxplayer         | `omxplayer`                                     | Deprecated     | Suggest `mplayer` or `vlc`. |
-| text-recommend-actions-checkout   | `uses: actions/checkout@v2`/`@v3`/`@v4`         | Recommendation | Upgrade to v5.              |
-| text-recommend-actions-setup-node | `uses: actions/setup-node@v3`/`@v4`/`@v5`/`@v6` | Recommendation | Upgrade to v7.              |
-| text-deprecated-node-version      | `node-version: 14/16/18` (variants)             | Deprecated     | Upgrade to current LTS.     |
-| text-recommend-npm-run            | `npm run`                                       | Recommendation | Prefer `node --run`.        |
-| text-recommend-jshint             | `jshint`                                        | Recommendation | Suggest ESLint.             |
-| text-outdated-michmich            | `MichMich/MagicMirror`                          | Outdated       | Update org name.            |
-| text-outdated-husky               | `/_/husky.sh`                                   | Outdated       | Husky v9 change.            |
-| text-deprecated-openweathermap    | `api.openweathermap.org/data/2.5`               | Deprecated     | Upgrade to API 3.0.         |
-| text-recommend-cdn-cdnjs          | `https://cdnjs.cloudflare.com`                  | Recommendation | Prefer local npm package.   |
-| text-recommend-cdn-jsdelivr       | `https://cdn.jsdelivr.net`                      | Recommendation | Prefer local npm package.   |
-| text-recommend-eslint-dot         | `eslint .` / `eslint --fix .`                   | Recommendation | Drop trailing dot.          |
-| text-recommend-git-checkout       | `git checkout`                                  | Recommendation | Switch to `git switch`.     |
+| Rule ID                        | Pattern                           | Category       | Notes                       |
+| ------------------------------ | --------------------------------- | -------------- | --------------------------- |
+| text-typo-magic-mirror         | `Magic Mirror`                    | Typo           | Should be `MagicMirror²`.   |
+| text-typo-magicmirror2         | `MagicMirror2`                    | Typo           | Should be `MagicMirror²`.   |
+| text-typo-magicmirror-brackets | `[MagicMirror]`                   | Typo           | Should be `[MagicMirror²]`. |
+| text-typo-html-sub2            | `<sub>2</sub>`                    | Typo           | Replace with `²`.           |
+| text-deprecated-omxplayer      | `omxplayer`                       | Deprecated     | Suggest `mplayer` or `vlc`. |
+| text-recommend-npm-run         | `npm run`                         | Recommendation | Prefer `node --run`.        |
+| text-recommend-jshint          | `jshint`                          | Recommendation | Suggest ESLint.             |
+| text-outdated-michmich         | `MichMich/MagicMirror`            | Outdated       | Update org name.            |
+| text-outdated-husky            | `/_/husky.sh`                     | Outdated       | Husky v9 change.            |
+| text-deprecated-openweathermap | `api.openweathermap.org/data/2.5` | Deprecated     | Upgrade to API 3.0.         |
+| text-recommend-cdn-cdnjs       | `https://cdnjs.cloudflare.com`    | Recommendation | Prefer local npm package.   |
+| text-recommend-cdn-jsdelivr    | `https://cdn.jsdelivr.net`        | Recommendation | Prefer local npm package.   |
+| text-recommend-eslint-dot      | `eslint .` / `eslint --fix .`     | Recommendation | Drop trailing dot.          |
+| text-recommend-git-checkout    | `git checkout`                    | Recommendation | Switch to `git switch`.     |
 
 ### Central ESLint checks
 
@@ -56,8 +53,9 @@ module using the ESLint API, with the module directory as its working directory.
 It explicitly selects this trusted configuration and disables inline ESLint
 configuration; repository-owned configuration files are never executed.
 
-The pass checks `.js`, `.mjs`, `.cjs`, and `package.json` files. Minified `.min.js`
-files, `node_modules`, and `.git` are excluded. TypeScript files are not included.
+The pass checks `.js`, `.mjs`, `.cjs`, `.yaml`, `.yml`, and `package.json` files.
+Minified `.min.js` files, `node_modules`, and `.git` are excluded. TypeScript files
+are not included.
 The worker only reports findings and never applies fixes. Parsing failures are
 reported rather than silently hiding checks that could not run.
 Package files use strict JSON syntax: comments, trailing commas, and unquoted
@@ -77,6 +75,7 @@ ESLint separately.
 | `magicmirror/no-xmlhttprequest`    | Recommend fetch when JavaScript constructs `XMLHttpRequest`.                    |
 | `magicmirror/no-deprecated-apis`   | Detect deprecated Buffer constructors, Date.getYear(), and fs access constants. |
 | `magicmirror/prefer-node-protocol` | Adapt `eslint-plugin-n` to prefer `node:http` and `node:https`.                 |
+| `magicmirror/workflow-yaml`        | Check GitHub Actions majors and deprecated Node.js matrix versions in YAML.     |
 
 The HTTP import rule detects static imports, re-exports, literal dynamic imports, and
 `require()` calls without a local binding, including package subpaths. Comments, ordinary
@@ -87,6 +86,11 @@ upstream autofix capability, but the worker does not apply it.
 The XMLHttpRequest rule reports constructor calls in JavaScript, including
 `window`, `self`, and `globalThis` constructors. It ignores comments, strings,
 locally shadowed constructors, and README examples.
+Workflow YAML is parsed by `eslint-plugin-yml`. The workflow rule reports numeric
+`actions/checkout` and `actions/setup-node` tags below their configured major
+versions, and Node.js versions below its configured major only in job matrices or
+`actions/setup-node` inputs. Branch references, SHA pins, current and newer major
+tags, and unrelated YAML fields are ignored.
 
 The existing registry IDs are retained with scope `module-analysis`; they no
 longer participate in text scanning. Reports preserve their categories and
