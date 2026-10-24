@@ -174,7 +174,7 @@ export async function fetchRepositoryData(
         branchUrl = `https://api.bitbucket.org/2.0/repositories/${repoId}/commits/${data.mainbranch?.name || "main"}`;
         break;
       case "codeberg":
-        branchUrl = `https://codeberg.org/api/v1/repos/${repoId}/commits/${data.default_branch}`;
+        branchUrl = `https://codeberg.org/api/v1/repos/${repoId}/commits?sha=${encodeURIComponent(data.default_branch || "main")}&limit=1`;
         break;
       default:
         break;
@@ -190,8 +190,8 @@ export async function fetchRepositoryData(
           repositoryApiMetrics.githubBranchCommitApiCallsDirect += 1;
         }
       }
-      const branchResult = await httpClient.getJson<RepositoryBranchData>(branchUrl, { headers });
-      branchData = branchResult.data;
+      const branchResult = await httpClient.getJson<RepositoryBranchData | RepositoryBranchData[]>(branchUrl, { headers });
+      branchData = Array.isArray(branchResult.data) ? branchResult.data[0] ?? null : branchResult.data;
     }
 
     if (repoType === "bitbucket") {

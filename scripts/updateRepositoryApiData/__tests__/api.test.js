@@ -1,9 +1,39 @@
 import { describe, it } from "node:test";
+import { fetchRepositoryData, normalizeRepositoryData } from "../api.ts";
 import assert from "node:assert";
 
-import { normalizeRepositoryData } from "../api.ts";
-
 describe("updateRepositoryApiData/api", () => {
+  it("fetches the latest Codeberg commit through the commits list endpoint", async () => {
+    const repositoryUrl = "https://codeberg.org/drdisgust/MMM-NCTtimes";
+    const commitDate = "2022-08-07T11:24:59Z";
+    const requestedUrls = [];
+    const httpClient = {
+      getJson: (url) => {
+        requestedUrls.push(url);
+        if (url === "https://codeberg.org/api/v1/repos/drdisgust/MMM-NCTtimes") {
+          return {
+            status: 200,
+            ok: true,
+            data: { default_branch: "main" }
+          };
+        }
+        return {
+          status: 200,
+          ok: true,
+          data: [{ commit: { author: { date: commitDate } } }]
+        };
+      }
+    };
+
+    const result = await fetchRepositoryData({ url: repositoryUrl }, httpClient, {});
+
+    assert.deepStrictEqual(requestedUrls, [
+      "https://codeberg.org/api/v1/repos/drdisgust/MMM-NCTtimes",
+      "https://codeberg.org/api/v1/repos/drdisgust/MMM-NCTtimes/commits?sha=main&limit=1"
+    ]);
+    assert.strictEqual(normalizeRepositoryData(result.data, result.branchData, result.repoType).lastCommit, commitDate);
+  });
+
   it("exposes GitHub subscriber count as watchersCount", () => {
     const normalized = normalizeRepositoryData({
       stargazers_count: 12,
