@@ -12,6 +12,7 @@ const DEPRECATED_API_RULE_IDS = [
   "text-deprecated-fs-W_OK",
   "text-deprecated-fs-X_OK"
 ];
+const XMLHttpRequest_RULE_ID = "text-recommend-xmlhttprequest";
 const FS_ACCESS_CONSTANTS = new Set(["F_OK", "R_OK", "W_OK", "X_OK"]);
 const NODE_PROTOCOL_RULE_IDS = new Map([
   ["http", "text-recommend-http-module"],
@@ -50,6 +51,39 @@ const httpNodeProtocolRule: Rule.RuleModule = {
         }
       }
     }));
+  }
+};
+const xmlHttpRequestRule: Rule.RuleModule = {
+  meta: {
+    type: "suggestion",
+    schema: [],
+    messages: {
+      [XMLHttpRequest_RULE_ID]: getRuleById(XMLHttpRequest_RULE_ID)!.description
+    }
+  },
+  create(context) {
+    function isShadowed(node: Node, name: string): boolean {
+      let scope: ReturnType<typeof context.sourceCode.getScope> | null = context.sourceCode.getScope(node);
+      while (scope) {
+        if (scope.set.get(name)?.defs.length) {
+          return true;
+        }
+        scope = scope.upper;
+      }
+      return false;
+    }
+
+    return {
+      NewExpression(node) {
+        if (node.callee.type === "Identifier" && node.callee.name === "XMLHttpRequest" && !isShadowed(node, "XMLHttpRequest")) {
+          context.report({ node: node.callee, messageId: XMLHttpRequest_RULE_ID });
+          return;
+        }
+        if (node.callee.type === "MemberExpression" && !node.callee.computed && node.callee.property.type === "Identifier" && node.callee.property.name === "XMLHttpRequest" && node.callee.object.type === "Identifier" && ["window", "self", "globalThis"].includes(node.callee.object.name) && !isShadowed(node, node.callee.object.name)) {
+          context.report({ node: node.callee.property, messageId: XMLHttpRequest_RULE_ID });
+        }
+      }
+    };
   }
 };
 type Builtin = "Buffer" | "Date" | "date-instance" | "buffer-module" | "fs-module";
@@ -172,6 +206,7 @@ const deprecatedApisRule: Rule.RuleModule = {
 export const MAGICMIRROR_PLUGIN = {
   rules: {
     "prefer-native-fetch": httpImportsRule,
+    "no-xmlhttprequest": xmlHttpRequestRule,
     "no-deprecated-apis": deprecatedApisRule,
     "prefer-node-protocol": httpNodeProtocolRule
   }

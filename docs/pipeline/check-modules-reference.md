@@ -33,7 +33,6 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 | text-typo-magicmirror-brackets    | `[MagicMirror]`                                 | Typo           | Should be `[MagicMirror²]`. |
 | text-typo-html-sub2               | `<sub>2</sub>`                                  | Typo           | Replace with `²`.           |
 | text-deprecated-omxplayer         | `omxplayer`                                     | Deprecated     | Suggest `mplayer` or `vlc`. |
-| text-recommend-xmlhttprequest     | `XMLHttpRequest`                                | Recommendation | Suggest fetch.              |
 | text-recommend-actions-checkout   | `uses: actions/checkout@v2`/`@v3`/`@v4`         | Recommendation | Upgrade to v5.              |
 | text-recommend-actions-setup-node | `uses: actions/setup-node@v3`/`@v4`/`@v5`/`@v6` | Recommendation | Upgrade to v7.              |
 | text-deprecated-node-version      | `node-version: 14/16/18` (variants)             | Deprecated     | Upgrade to current LTS.     |
@@ -75,9 +74,9 @@ ESLint separately.
 | Local rule                         | Purpose                                                                         |
 | ---------------------------------- | ------------------------------------------------------------------------------- |
 | `magicmirror/prefer-native-fetch`  | Recommend native fetch instead of legacy HTTP clients.                          |
+| `magicmirror/no-xmlhttprequest`    | Recommend fetch when JavaScript constructs `XMLHttpRequest`.                    |
 | `magicmirror/no-deprecated-apis`   | Detect deprecated Buffer constructors, Date.getYear(), and fs access constants. |
 | `magicmirror/prefer-node-protocol` | Adapt `eslint-plugin-n` to prefer `node:http` and `node:https`.                 |
-| `magicmirror/no-outdated-packages` | Adapt `eslint-plugin-depend` for legacy dependencies and check Husky scripts.   |
 
 The HTTP import rule detects static imports, re-exports, literal dynamic imports, and
 `require()` calls without a local binding, including package subpaths. Comments, ordinary
@@ -85,6 +84,9 @@ strings, README mentions, and dependency declarations are not import findings.
 No HTTP client migration fixes are offered because replacing a client can require
 changes to response and error handling. The Node protocol rule preserves its
 upstream autofix capability, but the worker does not apply it.
+The XMLHttpRequest rule reports constructor calls in JavaScript, including
+`window`, `self`, and `globalThis` constructors. It ignores comments, strings,
+locally shadowed constructors, and README examples.
 
 The existing registry IDs are retained with scope `module-analysis`; they no
 longer participate in text scanning. Reports preserve their categories and

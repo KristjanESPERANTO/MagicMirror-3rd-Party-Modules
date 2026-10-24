@@ -36,6 +36,42 @@ test("HTTP imports use the central config for imports, requires, re-exports and 
   }
 });
 
+test("XMLHttpRequest rule reports constructor use and ignores text or shadowed constructors", () => {
+  for (const source of [
+    "new XMLHttpRequest();",
+    "new window.XMLHttpRequest();",
+    "new self.XMLHttpRequest();",
+    "new globalThis.XMLHttpRequest();"
+  ]) {
+    const issues = checkJavaScript(source, "src/client.js");
+    assert.equal(issues.length, 1, source);
+    assert.match(issues[0], /Replace it with built-in fetch/u);
+  }
+
+  for (const source of [
+    "// new XMLHttpRequest();",
+    "const example = 'new XMLHttpRequest()';",
+    "function create(XMLHttpRequest) { return new XMLHttpRequest(); }",
+    "class XMLHttpRequest {} new XMLHttpRequest();",
+    "const XMLHttpRequest = CustomRequest; new XMLHttpRequest();"
+  ]) {
+    assert.deepEqual(checkJavaScript(source, "src/client.js"), [], source);
+  }
+});
+
+test("worker XMLHttpRequest rule ignores README examples", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "eslint-xmlhttprequest-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  await writeFile(join(root, "README.md"), "Use `new XMLHttpRequest()` in this example.\n");
+  await writeFile(join(root, "client.js"), "new XMLHttpRequest();\n");
+  const analysis = await analyzeModule(root, "MMM-Test", "https://github.com/example/MMM-Test", [join(root, "README.md"), join(root, "client.js")]);
+  assert.equal(analysis.issues.some(issue => issue.includes("Replace it with built-in fetch")), false);
+  const issues = await runEslintCheck(root, false);
+  assert.equal(issues.length, 1);
+  assert.match(issues[0], /client\.js:1:\d+/u);
+  assert.ok(issues[0].includes("Replace it with built-in fetch"));
+});
+
 test("HTTP imports ignore text mentions, unrelated packages and shadowed require", () => {
   for (const source of [
     "// require('request')\nconst axios = 'node-fetch';",

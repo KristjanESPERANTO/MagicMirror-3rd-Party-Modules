@@ -15,6 +15,7 @@ export default defineConfig([
     plugins: { magicmirror: MAGICMIRROR_PLUGIN },
     rules: {
       "magicmirror/prefer-native-fetch": "warn",
+      "magicmirror/no-xmlhttprequest": "warn",
       "magicmirror/no-deprecated-apis": "warn",
       "magicmirror/prefer-node-protocol": ["warn", { version: ">=22.6.0" }]
     },

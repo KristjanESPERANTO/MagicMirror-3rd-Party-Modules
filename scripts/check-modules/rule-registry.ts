@@ -290,7 +290,7 @@ const RULE_DEFINITIONS: RuleDefinition[] = [
   },
   {
     id: "text-recommend-xmlhttprequest",
-    scope: "text",
+    scope: "module-analysis",
     patterns: ["XMLHttpRequest"],
     category: "Recommendation",
     description: "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
