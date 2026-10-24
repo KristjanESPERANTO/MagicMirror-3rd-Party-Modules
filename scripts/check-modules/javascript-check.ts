@@ -6,7 +6,6 @@ import { workflowYamlRule } from "./workflow-yaml-check.ts";
 import nodePlugin from "eslint-plugin-n";
 
 const DEPRECATED_API_RULE_IDS = [
-  "text-deprecated-new-buffer",
   "text-deprecated-getYear",
   "text-deprecated-fs-F_OK",
   "text-deprecated-fs-R_OK",
@@ -87,7 +86,7 @@ const xmlHttpRequestRule: Rule.RuleModule = {
     };
   }
 };
-type Builtin = "Buffer" | "Date" | "date-instance" | "buffer-module" | "fs-module";
+type Builtin = "Date" | "date-instance" | "fs-module";
 
 function propertyName(node: Node): string | null {
   if (node.type === "Identifier") {
@@ -97,10 +96,7 @@ function propertyName(node: Node): string | null {
 }
 
 function moduleBuiltin(name: string): Builtin | null {
-  if (name === "fs" || name === "node:fs") {
-    return "fs-module";
-  }
-  return name === "buffer" || name === "node:buffer" ? "buffer-module" : null;
+  return name === "fs" || name === "node:fs" ? "fs-module" : null;
 }
 
 const deprecatedApisRule: Rule.RuleModule = {
@@ -139,17 +135,13 @@ const deprecatedApisRule: Rule.RuleModule = {
         const source = node.arguments[0];
         return source.type === "Literal" && typeof source.value === "string" ? moduleBuiltin(source.value) : null;
       }
-      if (node.type === "MemberExpression") {
-        const name = !node.computed || node.property.type === "Literal" ? propertyName(node.property) : null;
-        return name === "Buffer" && resolveBuiltin(node.object, visited) === "buffer-module" ? "Buffer" : null;
-      }
       if (node.type !== "Identifier") {
         return null;
       }
 
       const variable = findVariable(node, node.name);
       if (!variable?.defs.length) {
-        return node.name === "Buffer" || node.name === "Date" ? node.name : null;
+        return node.name === "Date" ? node.name : null;
       }
       if (variable.defs.length !== 1 || variable.references.some(reference => reference.isWrite() && !reference.init)) {
         return null;
@@ -158,33 +150,17 @@ const deprecatedApisRule: Rule.RuleModule = {
       const definition = variable.defs[0];
       if (definition.type === "ImportBinding" && definition.parent.type === "ImportDeclaration") {
         const builtin = moduleBuiltin(String(definition.parent.source.value));
-        if (definition.node.type === "ImportSpecifier") {
-          return builtin === "buffer-module" && propertyName(definition.node.imported) === "Buffer" ? "Buffer" : null;
-        }
-        return builtin;
+        return definition.node.type === "ImportSpecifier" ? null : builtin;
       }
       if (definition.type === "Variable" && definition.node.type === "VariableDeclarator") {
         if (definition.node.id.type === "Identifier") {
           return resolveBuiltin(definition.node.init, visited);
-        }
-        if (definition.node.id.type === "ObjectPattern") {
-          const property = definition.node.id.properties.find(entry => entry.type === "Property"
-            && entry.value.type === "Identifier" && entry.value.name === node.name);
-          if (property?.type === "Property" && (!property.computed || property.key.type === "Literal")
-            && propertyName(property.key) === "Buffer" && resolveBuiltin(definition.node.init, visited) === "buffer-module") {
-            return "Buffer";
-          }
         }
       }
       return null;
     }
 
     return {
-      NewExpression(node) {
-        if (resolveBuiltin(node.callee) === "Buffer") {
-          context.report({ node, messageId: "text-deprecated-new-buffer", data: { api: "new Buffer()" } });
-        }
-      },
       CallExpression(node) {
         const callee = node.callee;
         if (callee.type !== "MemberExpression" || (callee.computed && callee.property.type !== "Literal")) {

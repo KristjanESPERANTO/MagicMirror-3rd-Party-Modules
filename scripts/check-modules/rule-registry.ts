@@ -159,12 +159,11 @@ function createRule(definition: RuleDefinition): Readonly<RuleRecord> {
 
 const RULE_DEFINITIONS: RuleDefinition[] = [
   {
-    id: "text-deprecated-new-buffer",
+    id: "text-deprecated-node-api",
     scope: "module-analysis",
-    patterns: ["new Buffer("],
+    patterns: ["eslint-plugin-n/no-deprecated-api"],
     category: "Deprecated",
-    description:
-      "This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html)."
+    description: "Replace deprecated Node.js APIs with their supported alternatives."
   },
   {
     id: "text-deprecated-fs-F_OK",

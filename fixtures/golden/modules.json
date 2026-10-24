@@ -112,6 +112,7 @@
     {
       "category": "Transport / Travel",
       "description": "Display Dutch bus and some other public transports for a targeted set of bus stops.",
+      "hasGithubIssues": true,
       "id": "73cirdan/MMM-bustimes",
       "image": "MMM-bustimes---cirdan.webp",
       "isArchived": false,
@@ -196,8 +197,11 @@
     {
       "category": "Transport / Travel",
       "description": "Displays the arrival time of trains to any station in the Washington DC subway metro system (WMATA) as well as incidents reported for any of the line colors.",
+      "hasGithubIssues": true,
       "id": "AdamMoses-GitHub/MMM-DCMetroTrainTimes",
+      "image": "MMM-DCMetroTrainTimes---AdamMoses-GitHub.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "AdamMoses-GitHub",
       "maintainerURL": "https://github.com/AdamMoses-GitHub",
       "name": "MMM-DCMetroTrainTimes",
@@ -446,7 +450,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "An application that adds and removes any desired modules found on this website.",
-      "hasGithubIssues": true,
       "id": "ahmedwab/MMM-ModuleHandler",
       "image": "MMM-ModuleHandler---ahmedwab.webp",
       "isArchived": false,
@@ -516,7 +519,6 @@
     {
       "category": "Outdated Modules",
       "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
-      "hasGithubIssues": true,
       "id": "alberttwong/MMM-iFrame",
       "isArchived": true,
       "license": "MIT",
@@ -578,7 +580,6 @@
     {
       "category": "Outdated Modules",
       "description": "Simple player to play your music.",
-      "hasGithubIssues": true,
       "id": "AlexDespain01/mm-music-player",
       "isArchived": false,
       "maintainer": "AlexDespain01",
@@ -607,7 +608,6 @@
     {
       "category": "Outdated Modules",
       "description": "Camera based motion detector.",
-      "hasGithubIssues": true,
       "id": "alexyak/motiondetector",
       "isArchived": false,
       "maintainer": "alexyak",
@@ -709,7 +709,6 @@
     {
       "category": "Outdated Modules",
       "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus).",
-      "hasGithubIssues": true,
       "id": "Alvinger/MMM-Koket-by-Sodexo",
       "isArchived": true,
       "license": "MIT",
@@ -786,11 +785,8 @@
     {
       "category": "Outdated Modules",
       "description": "Display data from any JSON source.",
-      "hasGithubIssues": true,
       "id": "amcolash/MMM-json-feed",
-      "image": "MMM-json-feed---amcolash.webp",
       "isArchived": true,
-      "license": "MIT",
       "maintainer": "amcolash",
       "maintainerURL": "https://github.com/amcolash",
       "name": "MMM-json-feed",
@@ -1100,7 +1096,6 @@
     {
       "category": "Outdated Modules",
       "description": "Displays EV/Fuel status and Range of Mercedes cars.",
-      "hasGithubIssues": true,
       "id": "ashishtank/MMM-MercedesMe",
       "image": "MMM-MercedesMe---ashishtank.webp",
       "isArchived": false,
@@ -1290,7 +1285,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display CO2 readings from MH-Z19 sensor.",
-      "hasGithubIssues": true,
       "id": "awitwicki/MMM-MHZ19",
       "image": "MMM-MHZ19---awitwicki.webp",
       "isArchived": false,
@@ -1493,6 +1487,7 @@
     {
       "category": "Transport / Travel",
       "description": "Displays the number of available bikes on the selected stations of the Budapest public bike system (aka MOL Bubi).",
+      "hasGithubIssues": true,
       "id": "balassy/MMM-Bubi",
       "image": "MMM-Bubi---balassy.webp",
       "isArchived": false,
@@ -1933,8 +1928,11 @@
     {
       "category": "Transport / Travel",
       "description": "Real time bus information from Rosario, Santa Fe, Argentina.",
+      "hasGithubIssues": true,
       "id": "bibaldo/MMM-CuandoLlega",
+      "image": "MMM-CuandoLlega---bibaldo.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "bibaldo",
       "maintainerURL": "https://github.com/bibaldo",
       "name": "MMM-CuandoLlega",
@@ -2030,7 +2028,6 @@
     {
       "category": "Calendar",
       "description": "Display multiple mini-calendars at the same time.",
-      "hasGithubIssues": true,
       "id": "BKeyport/MMM-Multimonth",
       "image": "MMM-Multimonth---BKeyport.webp",
       "isArchived": false,
@@ -2198,10 +2195,11 @@
     {
       "category": "Transport / Travel",
       "description": "Display COUP e-scooters around you and sort them by distance. It works for Berlin and other cities.",
+      "hasGithubIssues": true,
       "id": "bogomips/MMM-CoupEscooters",
-      "image": "MMM-CoupEscooters---Bogomips.webp",
       "isArchived": false,
-      "license": "ISC",
+      "license": "GPL-3.0",
+      "licenseStatus": "mismatch",
       "maintainer": "Bogomips",
       "maintainerURL": "https://github.com/bogomips",
       "name": "MMM-CoupEscooters",
@@ -2408,7 +2406,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Moonraker API integration for Klipper powered 3D printers.",
-      "hasGithubIssues": true,
       "id": "btastic/MMM-moonraker",
       "image": "MMM-moonraker---btastic.webp",
       "isArchived": false,
@@ -2667,7 +2664,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "A centralized notification inbox that normalizes, prioritizes, and displays messages from MagicMirror modules, REST webhooks, MQTT, Home Assistant, and local services.",
-      "hasGithubIssues": true,
       "id": "bwente/MMM-MessageCenter",
       "image": "MMM-MessageCenter---bwente.webp",
       "isArchived": false,
@@ -4271,10 +4267,8 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Provides notification if any module updates are available. Note: There is already a module (https://docs.magicmirror.builders/modules/updatenotification.html) for this functionality, which is included in the MagicMirror core.",
-      "hasGithubIssues": true,
       "id": "ctd-mh3/MMM-ModuleUpdateNotifier",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "ctd-mh3",
       "maintainerURL": "https://github.com/ctd-mh3",
       "name": "MMM-ModuleUpdateNotifier",
@@ -4283,7 +4277,6 @@
     {
       "category": "Calendar",
       "description": "Display a count down to the next event from [MMM-CalendarExt2](https://github.com/MagicMirrorModules/MMM-CalendarExt2).",
-      "hasGithubIssues": true,
       "id": "cure/MMM-NextEvent",
       "image": "MMM-NextEvent---cure.webp",
       "isArchived": false,
@@ -4296,11 +4289,8 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Publishe notifications with any payload (messages, values, etc) sent via received by `sendNotification()` method to specified topics on MQTT Broker(s).",
-      "hasGithubIssues": false,
       "id": "cybex-dev/MMM-MQTT-Publisher",
-      "image": "MMM-MQTT-Publisher---cybex-dev.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "cybex-dev",
       "maintainerURL": "https://github.com/cybex-dev",
       "name": "MMM-MQTT-Publisher",
@@ -4686,9 +4676,11 @@
     {
       "category": "Transport / Travel",
       "description": "Display Realtime Irish Rail data for a targeted station.",
+      "hasGithubIssues": false,
       "id": "DavidLSmyth/DWD-RealtimeIrishRail",
       "isArchived": false,
-      "license": "ISC",
+      "license": "MIT",
+      "licenseStatus": "mismatch",
       "maintainer": "DavidLSmyth",
       "maintainerURL": "https://github.com/DavidLSmyth",
       "name": "DWD-RealtimeIrishRail",
@@ -4735,10 +4727,8 @@
     {
       "category": "Calendar",
       "description": "Same functionality as the default Calendar app but different display formatting.",
-      "hasGithubIssues": false,
       "id": "dbeltjr/MMM-MyCalendar",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "dbeltjr",
       "maintainerURL": "https://github.com/dbeltjr",
       "name": "MMM-MyCalendar",
@@ -5051,7 +5041,6 @@
     {
       "category": "Outdated Modules",
       "description": "A simple way to add an iFrame of any web content.",
-      "hasGithubIssues": true,
       "id": "desertblade/iFrame",
       "isArchived": true,
       "license": "MIT",
@@ -5139,11 +5128,10 @@
     {
       "category": "Outdated Modules",
       "description": "Real-time bus tracking for NJ Transit.",
-      "hasGithubIssues": true,
       "id": "dimitrystd/MMM-NJTransit",
       "image": "MMM-NJTransit---dimitrystd.webp",
       "isArchived": false,
-      "license": "GPL-3.0",
+      "license": "GPL-3.0-or-later",
       "maintainer": "dimitrystd",
       "maintainerURL": "https://github.com/dimitrystd",
       "name": "MMM-NJTransit",
@@ -5237,11 +5225,8 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Subscribe to topics from MQTT message queues, and display the sensor results on a floor plan of your house.",
-      "hasGithubIssues": true,
       "id": "DMailMan/MMM-MQTTfloorplan",
-      "image": "MMM-MQTTfloorplan---DMailMan.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "DMailMan",
       "maintainerURL": "https://github.com/DMailMan",
       "name": "MMM-MQTTfloorplan",
@@ -5257,18 +5242,6 @@
       "name": "MMM-forecast-io",
       "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
       "url": "https://github.com/dmcinnes/MMM-forecast-io"
-    },
-    {
-      "category": "Religion",
-      "description": "Displays the daily bible verse from ther german “Losungstext” and the additional teaching text.",
-      "id": "Dobherrmann/MMM-Losung",
-      "image": "MMM-Losung---Dobherrmann.webp",
-      "isArchived": false,
-      "license": "ISC",
-      "maintainer": "Dobherrmann",
-      "maintainerURL": "https://github.com/Dobherrmann",
-      "name": "MMM-Losung",
-      "url": "https://github.com/Dobherrmann/MMM-Losung"
     },
     {
       "category": "Entertainment / Misc",
@@ -5448,10 +5421,11 @@
     {
       "category": "Transport / Travel",
       "description": "Display status of mountain bike trails via the trailforks.com website.",
+      "hasGithubIssues": true,
       "id": "drventure/MMM-Dorba-Trails",
-      "image": "MMM-Dorba-Trails---drventure.webp",
       "isArchived": false,
-      "license": "ISC",
+      "license": "MIT",
+      "licenseStatus": "mismatch",
       "maintainer": "drventure",
       "maintainerURL": "https://github.com/drventure",
       "name": "MMM-Dorba-Trails",
@@ -5781,8 +5755,11 @@
     {
       "category": "Transport / Travel",
       "description": "Caltrain (San Francisco Bay Area) status monitoring.",
+      "hasGithubIssues": true,
       "id": "efritz09/MMM-Caltrain",
+      "image": "MMM-Caltrain---efritz09.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "efritz09",
       "maintainerURL": "https://github.com/efritz09",
       "name": "MMM-Caltrain",
@@ -5881,7 +5858,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays school breakfast and lunch menus from MealViewer.",
-      "hasGithubIssues": true,
       "id": "ElliAndDad/MMM-MealViewer",
       "image": "MMM-MealViewer---ElliAndDad.webp",
       "isArchived": false,
@@ -5980,11 +5956,8 @@
     {
       "category": "Outdated Modules",
       "description": "O-clock inspired by PolarClock Screensaver.",
-      "hasGithubIssues": true,
       "id": "eouia/MMM-OClock",
-      "image": "MMM-OClock---eouia.webp",
       "isArchived": true,
-      "license": "MIT",
       "maintainer": "eouia",
       "maintainerURL": "https://github.com/eouia",
       "name": "MMM-OClock",
@@ -6079,10 +6052,8 @@
     {
       "category": "Outdated Modules",
       "description": "Display XML data from a HTTP response.",
-      "hasGithubIssues": true,
       "id": "Eunanibus/MMM-HTTPRequestDisplay",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Eunanibus",
       "maintainerURL": "https://github.com/Eunanibus",
       "name": "MMM-HTTPRequestDisplay",
@@ -6110,7 +6081,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Uses MPlayer to display various video files and RTSP streams.",
-      "hasGithubIssues": true,
       "id": "evroom/MMM-MPlayer",
       "image": "MMM-MPlayer---evroom.webp",
       "isArchived": false,
@@ -6166,11 +6136,8 @@
     {
       "category": "Calendar",
       "description": "Displays today's calendar events in a clean, minimal block.",
-      "hasGithubIssues": true,
       "id": "ex247/MMM-TodayBlock",
-      "image": "MMM-TodayBlock---ex247.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "ex247",
       "maintainerURL": "https://github.com/ex247",
       "name": "MMM-TodayBlock",
@@ -6578,22 +6545,6 @@
       "url": "https://github.com/fhinder/MMM-RKI-Covid19"
     },
     {
-      "category": "Transport / Travel",
-      "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
-      "id": "fhinder/MMM-vvsDeparture",
-      "image": "MMM-vvsDeparture---Fabian Hinder.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "Fabian Hinder",
-      "maintainerURL": "https://github.com/fhinder",
-      "name": "MMM-vvsDeparture",
-      "tags": [
-        "vvs",
-        "public transport"
-      ],
-      "url": "https://github.com/fhinder/MMM-vvsDeparture"
-    },
-    {
       "category": "Development / Core MagicMirror²",
       "description": "Set 1 or more schedules to dim and brighten your screen at specific times.",
       "id": "Fifteen15Studios/MMM-AutoDimmer",
@@ -6679,11 +6630,8 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays downloads from Download Station running on a QNAP NAS.",
-      "hasGithubIssues": true,
       "id": "flick116/MMM-qnapDownloadStation",
-      "image": "MMM-qnapDownloadStation---flick116.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "flick116",
       "maintainerURL": "https://github.com/flick116",
       "name": "MMM-qnapDownloadStation",
@@ -6824,6 +6772,16 @@
       "url": "https://github.com/frankrenehan/MMM-Whoop"
     },
     {
+      "category": "Entertainment / Misc",
+      "description": "Native German WordClock module.",
+      "id": "frankturban/MMM-WordClock-Native",
+      "isArchived": false,
+      "maintainer": "frankturban",
+      "maintainerURL": "https://github.com/frankturban",
+      "name": "MMM-WordClock-Native",
+      "url": "https://github.com/frankturban/MMM-WordClock-Native"
+    },
+    {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Simply displays logo with local image file path or url.",
       "id": "frdteknikelektro/MMM-SimpleLogo",
@@ -6877,7 +6835,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Show the menu of german school lunch service provider MensaMax.",
-      "hasGithubIssues": true,
       "id": "fuerst/MMM-MensaMax",
       "isArchived": false,
       "license": "MIT",
@@ -6958,6 +6915,7 @@
     {
       "category": "Transport / Travel",
       "description": "Displays ride wait times at the Disney World Parks.",
+      "hasGithubIssues": true,
       "id": "gberg927/MMM-DisneyWaitTimes",
       "image": "MMM-DisneyWaitTimes---gberg927.webp",
       "isArchived": false,
@@ -7021,7 +6979,6 @@
     {
       "category": "Outdated Modules",
       "description": "Display the medals for the summer olympics 2016.",
-      "hasGithubIssues": true,
       "id": "GHLasse/MagicMirror-Olympia-Module",
       "isArchived": false,
       "maintainer": "ghlasse",
@@ -7615,6 +7572,7 @@
     {
       "category": "Transport / Travel",
       "description": "Display data and map with position and most recent route for your BMW or MINI.",
+      "hasGithubIssues": true,
       "id": "hamsil/MMM-BMWCarData",
       "image": "MMM-BMWCarData---hamsil.webp",
       "isArchived": false,
@@ -7841,7 +7799,6 @@
     {
       "category": "Calendar",
       "description": "Displays a multi-day agenda list with a liquid-glass theme, color-coded calendars, and contextual icons. It can pull events either from the core calendar module's CALENDAR_EVENTS broadcast, or fetch .ics feeds directly via its own node_helper (using [node-ical](https://www.npmjs.com/package/node-ical)).",
-      "hasGithubIssues": true,
       "id": "hearter20176/MMM-MyAgenda",
       "image": "MMM-MyAgenda---hearter20176.webp",
       "isArchived": false,
@@ -7954,6 +7911,7 @@
     {
       "category": "Transport / Travel",
       "description": "Display train arrivals/departures (unofficial frontend for db navigator) with details for Germany.",
+      "hasGithubIssues": true,
       "id": "Helpi90/MMM-DBF",
       "image": "MMM-DBF---Helpi90.webp",
       "isArchived": false,
@@ -8380,10 +8338,11 @@
     {
       "category": "Transport / Travel",
       "description": "Displays some of your Hyundai's data on your mirror.",
+      "hasGithubIssues": true,
       "id": "ilenhart/MMM-Bluelinky2",
-      "image": "MMM-Bluelinky2---ilenhart.webp",
       "isArchived": false,
-      "license": "ISC",
+      "license": "MIT",
+      "licenseStatus": "mismatch",
       "maintainer": "ilenhart",
       "maintainerURL": "https://github.com/ilenhart",
       "name": "MMM-Bluelinky2",
@@ -8421,8 +8380,11 @@
     {
       "category": "Transport / Travel",
       "description": "Arrival times for Andalusian Transport Consortium.",
+      "hasGithubIssues": true,
       "id": "Infinitte/MMM-Ctan",
+      "image": "MMM-Ctan---Infinitte.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Infinitte",
       "maintainerURL": "https://github.com/Infinitte",
       "name": "MMM-Ctan",
@@ -8522,6 +8484,7 @@
     {
       "category": "Transport / Travel",
       "description": "Display current fuel prices at your nearest gas station in Norway.",
+      "hasGithubIssues": true,
       "id": "ItsMeBrille/MMM-Bensinpriser",
       "image": "MMM-Bensinpriser---ItsMeBrille.webp",
       "isArchived": false,
@@ -8569,7 +8532,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display Minecraft server status and shows list of active players.",
-      "hasGithubIssues": true,
       "id": "ItsMeBrille/MMm-MinecraftServer",
       "image": "MMM-MinecraftServer---ItsMeBrille.webp",
       "isArchived": false,
@@ -8858,7 +8820,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Subscribe to MQTT topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts.",
-      "hasGithubIssues": true,
       "id": "janm84/MMM-MQTTbind",
       "image": "MMM-MQTTbind---Janm84.webp",
       "isArchived": false,
@@ -9271,6 +9232,7 @@
     {
       "category": "Transport / Travel",
       "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
+      "hasGithubIssues": true,
       "id": "JHWelch/MMM-CTA",
       "image": "MMM-CTA---JHWelch.webp",
       "isArchived": false,
@@ -9289,7 +9251,6 @@
     {
       "category": "Calendar",
       "description": "Create an iCalendar feed from a Notion Database for use in the `calendar` module.",
-      "hasGithubIssues": true,
       "id": "JHWelch/MMM-NotionCalendar",
       "image": "MMM-NotionCalendar---JHWelch.webp",
       "isArchived": false,
@@ -9518,19 +9479,19 @@
       "url": "https://github.com/john3300/MMM-HomeAutomationNotifications"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Outdated Modules",
       "description": "Display OpenSprinkler lawn care station and programs.",
       "id": "johnny-co/MMM-OpenSprinkler",
       "isArchived": false,
       "maintainer": "johnny-co",
       "maintainerURL": "https://github.com/johnny-co",
       "name": "MMM-OpenSprinkler",
+      "outdated": "Abandoned. No reactions to PRs and issues since years. Missing instructions to install dependency 'request'.",
       "url": "https://github.com/johnny-co/MMM-OpenSprinkler"
     },
     {
       "category": "Calendar",
       "description": "A polished month-view calendar module that connects directly to Google Calendar via iCal URL.",
-      "hasGithubIssues": true,
       "id": "johnster000/MMM-MyGCalendar",
       "image": "MMM-MyGCalendar---johnster000.webp",
       "isArchived": false,
@@ -9643,8 +9604,11 @@
     {
       "category": "Transport / Travel",
       "description": "Display the availability of the city bikes around in Norway from A to B.",
+      "hasGithubIssues": true,
       "id": "JonasTriki/MMM-Bysykkel",
+      "image": "MMM-Bysykkel---JonasTriki.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "JonasTriki",
       "maintainerURL": "https://github.com/JonasTriki",
       "name": "MMM-Bysykkel",
@@ -9802,6 +9766,7 @@
     {
       "category": "Transport / Travel",
       "description": "Displays the number of available bikes at selected stations of the Boston public bike system (Bluebikes).",
+      "hasGithubIssues": true,
       "id": "jschless/MMM-Bluebikes",
       "image": "MMM-Bluebikes---jschless.webp",
       "isArchived": false,
@@ -9919,10 +9884,8 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display received MQTT messages from a MQTT-Broker.",
-      "hasGithubIssues": true,
       "id": "jupadin/MMM-MQTT",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "jupadin",
       "maintainerURL": "https://github.com/jupadin",
       "name": "MMM-MQTT",
@@ -9996,6 +9959,24 @@
         "slack"
       ],
       "url": "https://github.com/Jupter1/MMM-Slack2"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Settings page that edits config.js in place: only changes what you edit, keeps comments, validates before saving, backs up every change, and live-reloads custom.css.",
+      "id": "Justin-Shultz/MMM-ConfigEditor",
+      "image": "MMM-ConfigEditor---Justin-Shultz.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "Justin-Shultz",
+      "maintainerURL": "https://github.com/Justin-Shultz",
+      "name": "MMM-ConfigEditor",
+      "tags": [
+        "config",
+        "configuration",
+        "editor",
+        "settings"
+      ],
+      "url": "https://github.com/Justin-Shultz/MMM-ConfigEditor"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -10253,7 +10234,6 @@
     {
       "category": "Outdated Modules",
       "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
-      "hasGithubIssues": true,
       "id": "kapsolas/MMM-Instagram",
       "isArchived": false,
       "license": "MIT",
@@ -10810,8 +10790,10 @@
     {
       "category": "Transport / Travel",
       "description": "Hour bus station of Bordeaux.",
+      "hasGithubIssues": true,
       "id": "kuitin/MMM-BdxBus",
       "isArchived": false,
+      "license": "NOASSERTION",
       "maintainer": "kuitin",
       "maintainerURL": "https://github.com/kuitin",
       "name": "MMM-BdxBus",
@@ -10864,8 +10846,11 @@
     {
       "category": "Transport / Travel",
       "description": "A fork of [MMM-DCMetroTrainTimes](https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes) (above) that also displays arrival times for buses.",
+      "hasGithubIssues": false,
       "id": "kyle-kelly/MMM-DCMetroTimes",
+      "image": "MMM-DCMetroTimes---Kyle Kelly.webp",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "Kyle Kelly",
       "maintainerURL": "https://github.com/kyle-kelly",
       "name": "MMM-DCMetroTimes",
@@ -10919,7 +10904,6 @@
     {
       "category": "Outdated Modules",
       "description": "Display the song you are currently streaming on your [Librespot Java](https://github.com/librespot-org/librespot-java) Spotify Speaker.",
-      "hasGithubIssues": false,
       "id": "l3d00m/MMM-LibrespotJava",
       "image": "MMM-LibrespotJava---l3d00m.webp",
       "isArchived": true,
@@ -12092,7 +12076,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Group modules and toggle their visibility over time.",
-      "hasGithubIssues": true,
       "id": "mezderman/MMM-ModulesGroupsRotation",
       "isArchived": false,
       "maintainer": "mezderman",
@@ -12385,7 +12368,6 @@
     {
       "category": "Outdated Modules",
       "description": "Display your NiceHash projected income and rigs highest temperature.",
-      "hasGithubIssues": true,
       "id": "mlbonniec/MMM-NiceHash",
       "isArchived": true,
       "license": "Apache-2.0",
@@ -12891,7 +12873,6 @@
     {
       "category": "Outdated Modules",
       "description": "Displays the public transport information for Munich - Germany.",
-      "hasGithubIssues": true,
       "id": "mrVragec/MMM-mvgmunich",
       "image": "MMM-mvgmunich---mrVragec.webp",
       "isArchived": false,
@@ -12926,6 +12907,44 @@
       "url": "https://github.com/mrVragec/MMM-uptimerobot"
     },
     {
+      "category": "Religion",
+      "description": "Display the Losung and the Lehrtext of the day from [Die Losungen](https://www.losungen.de), the German daily Bible texts of the Herrnhuter Brüdergemeine.",
+      "id": "ms-zone-41/MMM-Losung",
+      "image": "MMM-Losung---ms-zone-41.webp",
+      "isArchived": false,
+      "license": "ISC",
+      "maintainer": "ms-zone-41",
+      "maintainerURL": "https://github.com/ms-zone-41",
+      "name": "MMM-Losung",
+      "tags": [
+        "losungen",
+        "herrnhut",
+        "bible",
+        "religion",
+        "german"
+      ],
+      "url": "https://github.com/ms-zone-41/MMM-Losung"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
+      "id": "ms-zone-41/MMM-NetworkScanner",
+      "image": "MMM-NetworkScanner---ms-zone-41.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "ms-zone-41",
+      "maintainerURL": "https://github.com/ms-zone-41",
+      "name": "MMM-NetworkScanner",
+      "tags": [
+        "network",
+        "presence",
+        "phone",
+        "arp-scan",
+        "ping"
+      ],
+      "url": "https://github.com/ms-zone-41/MMM-NetworkScanner"
+    },
+    {
       "category": "Education",
       "description": "Display [phase6](https://www.phase-6.de/) vocabulary learning statistics (last learned, due count, learning streak) for one or more family profiles.",
       "id": "ms-zone-41/MMM-phase6",
@@ -12943,6 +12962,24 @@
         "kids"
       ],
       "url": "https://github.com/ms-zone-41/MMM-phase6"
+    },
+    {
+      "category": "Transport / Travel",
+      "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
+      "id": "ms-zone-41/MMM-vvsDeparture",
+      "image": "MMM-vvsDeparture---ms-zone-41.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "ms-zone-41",
+      "maintainerURL": "https://github.com/ms-zone-41",
+      "name": "MMM-vvsDeparture",
+      "tags": [
+        "vvs",
+        "stuttgart",
+        "public transport",
+        "departures"
+      ],
+      "url": "https://github.com/ms-zone-41/MMM-vvsDeparture"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
@@ -13611,11 +13648,8 @@
     {
       "category": "Outdated Modules",
       "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-ISS",
-      "image": "MMM-ISS---Mykle1.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-ISS",
@@ -13625,11 +13659,8 @@
     {
       "category": "Outdated Modules",
       "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don’t believe it? Neither did I.",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-Launch",
-      "image": "MMM-Launch---Mykle1.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-Launch",
@@ -13639,11 +13670,8 @@
     {
       "category": "Outdated Modules",
       "description": "Live International Currency Exchange.",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-LICE",
-      "image": "MMM-LICE---Mykle1.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-LICE",
@@ -13653,11 +13681,8 @@
     {
       "category": "Outdated Modules",
       "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-Lottery",
-      "image": "MMM-Lottery---Mykle1.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-Lottery",
@@ -13667,7 +13692,6 @@
     {
       "category": "Outdated Modules",
       "description": "Up to the minute information about our Lunar partner, with a splash of EyeCandy, to boot!",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-Lunartic",
       "image": "MMM-Lunartic---Mykle1.webp",
       "isArchived": false,
@@ -13685,11 +13709,8 @@
     {
       "category": "Outdated Modules",
       "description": "Mars Exploration Rover missions.",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-MARS",
-      "image": "MMM-MARS---Mykle1.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-MARS",
@@ -13699,11 +13720,8 @@
     {
       "category": "Outdated Modules",
       "description": "Stunning imagery and information about your universe. Choose from a host of categories. Looks amazing on your mirror!",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-NASA",
-      "image": "MMM-NASA---Mykle1.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-NASA",
@@ -13723,11 +13741,8 @@
     {
       "category": "Outdated Modules",
       "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-NEO",
-      "image": "MMM-NEO---Mykle1.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-NEO",
@@ -13749,7 +13764,6 @@
     {
       "category": "Outdated Modules",
       "description": "Static or Rotating Weather for Pilots. International ICAO's.",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-PilotWX",
       "image": "MMM-PilotWX---Mykle1.webp",
       "isArchived": false,
@@ -13763,11 +13777,8 @@
     {
       "category": "Outdated Modules",
       "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API.",
-      "hasGithubIssues": true,
       "id": "mykle1/MMM-PLOW",
-      "image": "MMM-PLOW---Mykle1.webp",
       "isArchived": false,
-      "license": "MIT",
       "maintainer": "Mykle1",
       "maintainerURL": "https://github.com/mykle1",
       "name": "MMM-PLOW",
@@ -13840,7 +13851,6 @@
     {
       "category": "Calendar",
       "description": "Enables you to display birthdays from a contacts via a vCard.",
-      "hasGithubIssues": true,
       "id": "n-gao/MMM-vCard2Calendar",
       "isArchived": false,
       "license": "MIT",
@@ -13881,6 +13891,7 @@
     {
       "category": "Transport / Travel",
       "description": "Displays arrival times for the Chicago Transit Authority 'L' system buses and trains.",
+      "hasGithubIssues": true,
       "id": "NateDee/MMM-CTA",
       "isArchived": false,
       "maintainer": "NateDee",
@@ -13891,7 +13902,6 @@
     {
       "category": "Calendar",
       "description": "A module to display, manage and edit Nextcloud calendar events.",
-      "hasGithubIssues": true,
       "id": "ndp15/MMM-Nextcloud-Calendar",
       "image": "MMM-Nextcloud-Calendar---ndp15.webp",
       "isArchived": false,
@@ -14052,6 +14062,7 @@
     {
       "category": "Transport / Travel",
       "description": "Displays the number of available bikes and electric bikes on any Bixi stations in Montreal.",
+      "hasGithubIssues": true,
       "id": "nictruong/MMM-Bixi",
       "image": "MMM-Bixi---Nicolas Truong.webp",
       "isArchived": false,
@@ -14536,22 +14547,6 @@
       "url": "https://github.com/nsieg/MMM-piwigo-photo-wheel"
     },
     {
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
-      "id": "nsprawling/MMM-NetworkScanner",
-      "image": "MMM-NetworkScanner---nsprawling.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "nsprawling",
-      "maintainerURL": "https://github.com/nsprawling",
-      "name": "MMM-NetworkScanner",
-      "tags": [
-        "network",
-        "scanner"
-      ],
-      "url": "https://github.com/nsprawling/MMM-NetworkScanner"
-    },
-    {
       "category": "Transport / Travel",
       "description": "Displays LIVE UK information about a specific bus stop and the routes that serve it.",
       "id": "nwootton/MMM-UKLiveBusStopInfo",
@@ -14598,7 +14593,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Allows you to control the mirror screen on/off state using MQTT messages, for example from a smart home motion sensor via Zigbee2MQTT or any other MQTT-compatible source.",
-      "hasGithubIssues": true,
       "id": "olexs/MMM-MQTTScreenOnOff",
       "isArchived": false,
       "license": "MIT",
@@ -14661,7 +14655,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Subscribe topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
-      "hasGithubIssues": true,
       "id": "ottopaulsen/MMM-MQTT",
       "image": "MMM-MQTT---ottopaulsen.webp",
       "isArchived": false,
@@ -14913,6 +14906,7 @@
     {
       "category": "Transport / Travel",
       "description": "Display real time Deutsche Bahn train departures, including delays, from one or more selected stations.",
+      "hasGithubIssues": true,
       "id": "Pascal-nie/MMM-DBF-Navigator",
       "image": "MMM-DBF-Navigator---Paschke.webp",
       "isArchived": false,
@@ -14932,7 +14926,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Connects multiple touch (capacitive) buttons via a MPR121 touch controller to send notifications to other modules (based on MMM-Buttons).",
-      "hasGithubIssues": true,
       "id": "PatriceG/MMM-MPR121",
       "isArchived": false,
       "license": "MIT",
@@ -15261,7 +15254,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display motion detected by your security camera.",
-      "hasGithubIssues": true,
       "id": "pjestico/MMM-MotionDisplay",
       "isArchived": false,
       "maintainer": "pjestico",
@@ -15500,7 +15492,6 @@
     {
       "category": "Outdated Modules",
       "description": "A MagicMirror² Module for Nagios.",
-      "hasGithubIssues": true,
       "id": "qistoph/MMM-nagios",
       "image": "MMM-nagios---qistoph.webp",
       "isArchived": true,
@@ -15732,7 +15723,7 @@
       "url": "https://github.com/RaxoCoding/MMM-OTIS"
     },
     {
-      "category": "Weather",
+      "category": "Entertainment / Misc",
       "description": "Displays a grid simulating the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).",
       "id": "raywo/MMM-GameOfLife",
       "image": "MMM-GameOfLife---raywo.webp",
@@ -15747,10 +15738,27 @@
       "url": "https://github.com/raywo/MMM-GameOfLife"
     },
     {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Display the song you are currently listening to on Spotify.",
+      "id": "raywo/MMM-NowPlayingOnSpotify",
+      "image": "MMM-NowPlayingOnSpotify---raywo.webp",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "raywo",
+      "maintainerURL": "https://github.com/raywo",
+      "name": "MMM-NowPlayingOnSpotify",
+      "tags": [
+        "spotify"
+      ],
+      "url": "https://github.com/raywo/MMM-NowPlayingOnSpotify"
+    },
+    {
       "category": "Transport / Travel",
       "description": "Displays the closest aircraft's callsign and altitude using ADS-B data.",
+      "hasGithubIssues": true,
       "id": "rc7/MMM-ClosestFlight",
       "isArchived": false,
+      "license": "MIT",
       "maintainer": "RC7",
       "maintainerURL": "https://github.com/rc7",
       "name": "MMM-ClosestFlight",
@@ -16125,24 +16133,7 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
-      "description": "Display the song you are currently listening to on Spotify.",
-      "hasGithubIssues": true,
-      "id": "rkorell/MMM-NowPlayingOnSpotify",
-      "image": "MMM-NowPlayingOnSpotify---Dr. Ralf Korell.webp",
-      "isArchived": false,
-      "license": "MIT",
-      "maintainer": "Dr. Ralf Korell",
-      "maintainerURL": "https://github.com/rkorell",
-      "name": "MMM-NowPlayingOnSpotify",
-      "tags": [
-        "spotify"
-      ],
-      "url": "https://github.com/rkorell/MMM-NowPlayingOnSpotify"
-    },
-    {
-      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display the song you are currently Playing on your Volumio.",
-      "hasGithubIssues": true,
       "id": "rkorell/MMM-NowPlayingOnVolumio",
       "image": "MMM-NowPlayingOnVolumio---Dr. Ralf Korell.webp",
       "isArchived": false,
@@ -16280,6 +16271,7 @@
     {
       "category": "Transport / Travel",
       "description": "Displays live Washington DC Metro train arrivals (and MetroBus too!) and active service alerts using the WMATA API.",
+      "hasGithubIssues": true,
       "id": "rroach3753/MMM-DCMetroTrains",
       "image": "MMM-DCMetroTrains---Rickey Roach.webp",
       "isArchived": false,
@@ -16651,7 +16643,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Displays the status of you Miele@Home Devices.",
-      "hasGithubIssues": true,
       "id": "SAR71/MMM-MieleAtHome",
       "isArchived": false,
       "maintainer": "ViDiBi",
@@ -17402,6 +17393,7 @@
     {
       "category": "Transport / Travel",
       "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
+      "hasGithubIssues": true,
       "id": "skastenholz/MMM-DVB",
       "image": "MMM-DVB---skastenholz.webp",
       "isArchived": false,
@@ -17705,7 +17697,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Add touch buttons for showing/hiding other modules.",
-      "hasGithubIssues": true,
       "id": "Snille/MMM-Modulebar",
       "image": "MMM-Modulebar---Snille.webp",
       "isArchived": false,
@@ -17851,10 +17842,8 @@
     {
       "category": "Outdated Modules",
       "description": "Show an image of the current moon phase.",
-      "hasGithubIssues": false,
       "id": "spectroman/mmm-moon-phases",
       "isArchived": true,
-      "license": "MIT",
       "maintainer": "spectroman",
       "maintainerURL": "https://github.com/spectroman",
       "name": "mmm-moon-phases",
@@ -17902,10 +17891,8 @@
     {
       "category": "Outdated Modules",
       "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
-      "hasGithubIssues": false,
       "id": "spitzlbergerj/MMM-Homematic-Thermostats",
       "isArchived": true,
-      "license": "AGPL-3.0",
       "maintainer": "spitzlbergerj",
       "maintainerURL": "https://github.com/spitzlbergerj",
       "name": "MMM-Homematic-Thermostats",
@@ -18135,6 +18122,7 @@
     {
       "category": "Transport / Travel",
       "description": "Displays the current info for scheduled sailings of specified BC Ferries route.",
+      "hasGithubIssues": true,
       "id": "stonecrown/MMM-BCFerries",
       "isArchived": false,
       "license": "MIT",
@@ -18361,6 +18349,7 @@
     {
       "category": "Transport / Travel",
       "description": "Danish public transport departures (Rejseplanen API).",
+      "hasGithubIssues": true,
       "id": "SyS64760/MMM-DSBDepartures",
       "image": "MMM-DSBDepartures---sys64760.webp",
       "isArchived": false,
@@ -19019,7 +19008,6 @@
     {
       "category": "Outdated Modules",
       "description": "Uses MPD to show the state and playlist of your music player.",
-      "hasGithubIssues": true,
       "id": "timjong93/MMM-MPD",
       "isArchived": false,
       "license": "MIT License",
@@ -19203,7 +19191,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
-      "hasGithubIssues": true,
       "id": "Tom-Hirschberger/MMM-MQTTbridge",
       "image": "MMM-MQTTbridge---Tom-Hirschberger.webp",
       "isArchived": false,
@@ -19484,11 +19471,10 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Tracks the number of mortgage payments left.",
-      "hasGithubIssues": true,
       "id": "TouaregWarrior/MMM-MortgageCountdown",
+      "image": "MMM-MortgageCountdown---TouaregWarrior.webp",
       "isArchived": false,
-      "license": "MIT",
-      "licenseStatus": "mismatch",
+      "license": "ISC",
       "maintainer": "TouaregWarrior",
       "maintainerURL": "https://github.com/TouaregWarrior",
       "name": "MMM-MortgageCountdown",
@@ -20475,6 +20461,7 @@
     {
       "category": "Transport / Travel",
       "description": "Real time tram departure from selected stop in Cracow (Poland).",
+      "hasGithubIssues": true,
       "id": "wkra/MMM-CracowMPK",
       "isArchived": false,
       "maintainer": "wkra",
@@ -20516,6 +20503,7 @@
     {
       "category": "Transport / Travel",
       "description": "Retrieves live timings of busses for a specific bus stop.",
+      "hasGithubIssues": true,
       "id": "wouter-heerwegh/MMM-DeLijn",
       "isArchived": false,
       "maintainer": "wouter-heerwegh",
@@ -21052,7 +21040,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Display CO2 readings from SCD-30 sensor.",
-      "hasGithubIssues": false,
       "id": "Yours3lf/MMM-SCD-30",
       "image": "MMM-SCD-30---Yours3lf.webp",
       "isArchived": false,
@@ -21106,7 +21093,6 @@
     {
       "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Show video from motion camera feed.",
-      "hasGithubIssues": true,
       "id": "yusinv/MMM-Motion-Camera",
       "isArchived": false,
       "license": "MIT",
@@ -21215,6 +21201,7 @@
     {
       "category": "Transport / Travel",
       "description": "Display departure times or estimated time to departure for the selected Caltrain station.",
+      "hasGithubIssues": true,
       "id": "zzflops/MMM-Caltrain",
       "isArchived": false,
       "maintainer": "zzflops",

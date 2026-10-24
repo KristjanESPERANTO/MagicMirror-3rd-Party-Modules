@@ -8,7 +8,7 @@ Covers the deprecated Node.js APIs and GitHub Actions recommendations listed in 
 
 | Rule ID | Trigger file | Notes |
 | ------- | ------------ | ----- |
-| text-deprecated-new-buffer | `lib/index.js` | Uses `new Buffer()` constructor. |
+| text-deprecated-node-api | `lib/index.js` | Uses deprecated Node.js APIs, including the `Buffer` constructor. |
 | text-deprecated-fs-F_OK | `lib/index.js` | Accesses `fs.F_OK`. |
 | text-deprecated-fs-R_OK | `lib/index.js` | Accesses `fs.R_OK`. |
 | text-deprecated-fs-W_OK | `lib/index.js` | Accesses `fs.W_OK`. |

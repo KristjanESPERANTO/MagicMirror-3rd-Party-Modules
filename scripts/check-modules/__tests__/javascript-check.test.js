@@ -14,6 +14,10 @@ const linter = new Linter();
 
 function checkJavaScript(content, relativePath) {
   return linter.verify(content, eslintConfig, { filename: relativePath }).flatMap((message) => {
+    if (message.ruleId === "eslintN/no-deprecated-api") {
+      const rule = getRuleById("text-deprecated-node-api");
+      return rule ? [`${rule.category}: In \`${relativePath}:${message.line}:${message.column}\`: ${message.message}`] : [];
+    }
     const rule = message.ruleId?.startsWith("magicmirror/") && message.messageId ? getRuleById(message.messageId) : null;
     return rule ? [`${rule.category}: In \`${relativePath}:${message.line}:${message.column}\`: ${message.message}`] : [];
   });
@@ -155,10 +159,17 @@ test("Node protocol checks cover HTTP imports, requires, dynamic imports and re-
       `export * from '${moduleName}';`
     ]) {
       const issues = checkJavaScript(source, "client.js");
-      assert.equal(issues.length, 1, source);
-      assert.match(issues[0], /^Recommendation: In `client\.js:1:\d+`: /u);
-      assert.ok(issues[0].includes(`node:${moduleName}`));
-      assert.match(issues[0], /client\.js:1:\d+/u);
+      const protocolIssues = issues.filter(issue => issue.includes(`node:${moduleName}`));
+      assert.equal(protocolIssues.length, 1, source);
+      assert.match(protocolIssues[0], /^Recommendation: In `client\.js:1:\d+`: /u);
+      assert.match(protocolIssues[0], /client\.js:1:\d+/u);
+      if (source.startsWith("export * from") && moduleName === "http") {
+        assert.equal(issues.length, 2, source);
+        assert.ok(issues.some(issue => issue.includes("'http.createClient' was deprecated")));
+      }
+      else {
+        assert.equal(issues.length, 1, source);
+      }
     }
     assert.equal(checkJavaScript(`require('${moduleName}');`, "client.cjs").length, 1);
   }
@@ -220,7 +231,7 @@ test("worker ESLint allows the Module shim assignment only in node_helper.js", a
   assert.match(otherModuleIssues[0], /node_helper\.js: Line 1, Column 1: Read-only global 'Module' should not be modified\. \(rule: no-global-assign\)/u);
 });
 
-test("deprecated Buffer checks resolve global, imported and aliased constructors", () => {
+test("eslint-plugin-n detects deprecated Node APIs and additional core APIs", () => {
   for (const source of [
     "new Buffer ('value');",
     "import { Buffer as Bytes } from 'node:buffer'; new Bytes('value');",
@@ -230,9 +241,13 @@ test("deprecated Buffer checks resolve global, imported and aliased constructors
   ]) {
     const issues = checkJavaScript(source, "node_helper.js");
     assert.equal(issues.length, 1, source);
-    assert.match(issues[0], /^Deprecated:.*new Buffer\(\)/u);
+    assert.match(issues[0], /^Deprecated:/u);
     assert.match(issues[0], /node_helper\.js:1:\d+/u);
   }
+
+  const additionalApiIssues = checkJavaScript("require('url').parse('https://example.com');", "node_helper.js");
+  assert.equal(additionalApiIssues.length, 1);
+  assert.match(additionalApiIssues[0], /url\.parse/u);
 });
 
 test("deprecated fs checks resolve imports, aliases and computed constant names", () => {
@@ -280,7 +295,6 @@ test("deprecated API checks ignore text, modern APIs and custom or reassigned bi
     "function custom(Date) { return new Date().getYear(); }",
     "let date = new Date(); date = {}; date.getYear();",
     "let fs = require('fs'); fs = {}; fs.F_OK;",
-    "let Bytes = Buffer; Bytes = class {}; new Bytes();",
     "const fs = require('fs'); const property = 'F_OK'; fs[property];"
   ]) {
     assert.deepEqual(checkJavaScript(source, "module.js"), [], source);

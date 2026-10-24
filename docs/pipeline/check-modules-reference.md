@@ -69,13 +69,14 @@ included when both general ESLint and deep checks are enabled, without an issue
 budget or package.json requirement. The text/README analyzer no longer invokes
 ESLint separately.
 
-| Local rule                         | Purpose                                                                         |
-| ---------------------------------- | ------------------------------------------------------------------------------- |
-| `magicmirror/prefer-native-fetch`  | Recommend native fetch instead of legacy HTTP clients.                          |
-| `magicmirror/no-xmlhttprequest`    | Recommend fetch when JavaScript constructs `XMLHttpRequest`.                    |
-| `magicmirror/no-deprecated-apis`   | Detect deprecated Buffer constructors, Date.getYear(), and fs access constants. |
-| `magicmirror/prefer-node-protocol` | Adapt `eslint-plugin-n` to prefer `node:http` and `node:https`.                 |
-| `magicmirror/workflow-yaml`        | Check GitHub Actions majors and deprecated Node.js matrix versions in YAML.     |
+| Local rule                         | Purpose                                                                                          |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `magicmirror/prefer-native-fetch`  | Recommend native fetch instead of legacy HTTP clients.                                           |
+| `magicmirror/no-xmlhttprequest`    | Recommend fetch when JavaScript constructs `XMLHttpRequest`.                                     |
+| `eslintN/no-deprecated-api`        | Detect deprecated Node.js APIs using `eslint-plugin-n`; findings stay categorized as Deprecated. |
+| `magicmirror/no-deprecated-apis`   | Detect Date.getYear() and legacy fs access constants not covered by the plugin.                  |
+| `magicmirror/prefer-node-protocol` | Adapt `eslint-plugin-n` to prefer `node:http` and `node:https`.                                  |
+| `magicmirror/workflow-yaml`        | Check GitHub Actions majors and deprecated Node.js matrix versions in YAML.                      |
 
 The HTTP import rule detects static imports, re-exports, literal dynamic imports, and
 `require()` calls without a local binding, including package subpaths. Comments, ordinary

@@ -257,7 +257,13 @@ export async function runEslintCheck(moduleDir: string, includeGeneralChecks = t
   for (const result of results) {
     const relativePath = path.relative(moduleDir, result.filePath);
     for (const message of result.messages) {
-      if (message.ruleId?.startsWith("magicmirror/")) {
+      if (message.ruleId === "eslintN/no-deprecated-api") {
+        const rule = getRuleById("text-deprecated-node-api");
+        if (rule) {
+          issues.push(`${rule.category}: In \`${relativePath}:${message.line}:${message.column}\`: ${message.message}`);
+        }
+      }
+      else if (message.ruleId?.startsWith("magicmirror/")) {
         const rule = message.messageId ? getRuleById(message.messageId) : null;
         if (rule) {
           issues.push(`${rule.category}: In \`${relativePath}:${message.line}:${message.column}\`: ${message.message}`);
