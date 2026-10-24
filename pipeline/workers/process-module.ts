@@ -233,9 +233,20 @@ async function runDeprecatedCheck(moduleDir: string): Promise<string | null> {
 }
 
 export async function runEslintCheck(moduleDir: string, includeGeneralChecks = true): Promise<string[]> {
+  const moduleOverrides = path.basename(path.resolve(moduleDir)).startsWith("MMM-Remote-Control")
+    ? [{
+        files: ["**/node_helper.js"],
+        languageOptions: {
+          globals: {
+            Module: "writable"
+          }
+        }
+      }]
+    : [];
   const eslint = new ESLint({
     cwd: path.resolve(moduleDir),
     overrideConfigFile: fileURLToPath(new URL("../../eslint.testconfig.js", import.meta.url)),
+    overrideConfig: moduleOverrides,
     allowInlineConfig: false,
     errorOnUnmatchedPattern: false,
     fix: false

@@ -111,6 +111,26 @@ test("worker ESLint reports Node protocol recommendations once and ignores READM
   assert.ok(protocolIssues.every(issue => /node_helper\.js:1:\d+/u.test(issue)));
 });
 
+test("worker ESLint allows the Module shim assignment only in node_helper.js", async (context) => {
+  const root = await mkdtemp(join(tmpdir(), "module-global-test-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  const remoteControlDir = join(root, "MMM-Remote-Control-copy");
+  const otherModuleDir = join(root, "MMM-Other-Module");
+  await mkdir(remoteControlDir);
+  await mkdir(otherModuleDir);
+  await writeFile(join(remoteControlDir, "node_helper.js"), "Module = {}\n");
+  await writeFile(join(remoteControlDir, "client.js"), "Module = {}\n");
+  await writeFile(join(otherModuleDir, "node_helper.js"), "Module = {}\n");
+
+  const remoteControlIssues = await runEslintCheck(remoteControlDir);
+  const otherModuleIssues = await runEslintCheck(otherModuleDir);
+
+  assert.equal(remoteControlIssues.length, 1);
+  assert.match(remoteControlIssues[0], /client\.js: Line 1, Column 1: Read-only global 'Module' should not be modified\. \(rule: no-global-assign\)/u);
+  assert.equal(otherModuleIssues.length, 1);
+  assert.match(otherModuleIssues[0], /node_helper\.js: Line 1, Column 1: Read-only global 'Module' should not be modified\. \(rule: no-global-assign\)/u);
+});
+
 test("deprecated Buffer checks resolve global, imported and aliased constructors", () => {
   for (const source of [
     "new Buffer ('value');",
