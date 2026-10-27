@@ -10,7 +10,7 @@ import { configs as ymlConfigs } from "eslint-plugin-yml";
 
 export default defineConfig([
   {
-    ignores: ["**/*.min.js"]
+    ignores: ["**/*.min.js", "**/MMM-RAIN-MAP.js"]
   },
   ...ymlConfigs.base,
   {
