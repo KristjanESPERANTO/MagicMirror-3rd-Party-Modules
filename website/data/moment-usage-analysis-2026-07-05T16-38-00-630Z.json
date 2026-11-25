@@ -1,0 +1,7264 @@
+{
+  "generatedAt": "2026-07-05T16:38:00.630Z",
+  "summary": {
+    "scannedDirectories": 1432,
+    "modulesUsingMoment": 386,
+    "modulesLikelyCoreProvided": 256,
+    "modulesWithOwnMomentDependency": 73,
+    "modulesWithMomentImportRequire": 108,
+    "topStaticFunctions": [
+      {
+        "fn": "locale",
+        "modules": 112
+      },
+      {
+        "fn": "duration",
+        "modules": 32
+      },
+      {
+        "fn": "unix",
+        "modules": 29
+      },
+      {
+        "fn": "utc",
+        "modules": 22
+      },
+      {
+        "fn": "updateLocale",
+        "modules": 16
+      },
+      {
+        "fn": "localeData",
+        "modules": 6
+      },
+      {
+        "fn": "tz",
+        "modules": 6
+      },
+      {
+        "fn": "weekdaysShort",
+        "modules": 5
+      },
+      {
+        "fn": "format",
+        "modules": 3
+      },
+      {
+        "fn": "getDate",
+        "modules": 2
+      },
+      {
+        "fn": "getFullYear",
+        "modules": 2
+      },
+      {
+        "fn": "getMonth",
+        "modules": 2
+      },
+      {
+        "fn": "now",
+        "modules": 2
+      },
+      {
+        "fn": "isMoment",
+        "modules": 2
+      },
+      {
+        "fn": "monthsShort",
+        "modules": 2
+      },
+      {
+        "fn": "valueOf",
+        "modules": 1
+      },
+      {
+        "fn": "add",
+        "modules": 1
+      },
+      {
+        "fn": "relativeTimeThreshold",
+        "modules": 1
+      },
+      {
+        "fn": "max",
+        "modules": 1
+      },
+      {
+        "fn": "min",
+        "modules": 1
+      },
+      {
+        "fn": "parseZone",
+        "modules": 1
+      },
+      {
+        "fn": "locales",
+        "modules": 1
+      },
+      {
+        "fn": "defineLocale",
+        "modules": 1
+      },
+      {
+        "fn": "invalid",
+        "modules": 1
+      },
+      {
+        "fn": "updateOffset",
+        "modules": 1
+      }
+    ],
+    "topDirectChainFunctions": [
+      {
+        "fn": "format",
+        "modules": 140
+      },
+      {
+        "fn": "add",
+        "modules": 45
+      },
+      {
+        "fn": "startOf",
+        "modules": 35
+      },
+      {
+        "fn": "diff",
+        "modules": 27
+      },
+      {
+        "fn": "fromNow",
+        "modules": 25
+      },
+      {
+        "fn": "subtract",
+        "modules": 22
+      },
+      {
+        "fn": "endOf",
+        "modules": 13
+      },
+      {
+        "fn": "isBetween",
+        "modules": 10
+      },
+      {
+        "fn": "tz",
+        "modules": 10
+      },
+      {
+        "fn": "year",
+        "modules": 10
+      },
+      {
+        "fn": "hour",
+        "modules": 9
+      },
+      {
+        "fn": "local",
+        "modules": 9
+      },
+      {
+        "fn": "isAfter",
+        "modules": 8
+      },
+      {
+        "fn": "isBefore",
+        "modules": 8
+      },
+      {
+        "fn": "month",
+        "modules": 6
+      },
+      {
+        "fn": "calendar",
+        "modules": 6
+      },
+      {
+        "fn": "isSame",
+        "modules": 6
+      },
+      {
+        "fn": "date",
+        "modules": 4
+      },
+      {
+        "fn": "locale",
+        "modules": 4
+      },
+      {
+        "fn": "valueOf",
+        "modules": 4
+      },
+      {
+        "fn": "unix",
+        "modules": 4
+      },
+      {
+        "fn": "weekday",
+        "modules": 4
+      },
+      {
+        "fn": "clone",
+        "modules": 3
+      },
+      {
+        "fn": "toDate",
+        "modules": 3
+      },
+      {
+        "fn": "isValid",
+        "modules": 3
+      },
+      {
+        "fn": "utc",
+        "modules": 3
+      },
+      {
+        "fn": "seconds",
+        "modules": 3
+      },
+      {
+        "fn": "utcOffset",
+        "modules": 2
+      },
+      {
+        "fn": "second",
+        "modules": 2
+      },
+      {
+        "fn": "toISOString",
+        "modules": 2
+      }
+    ],
+    "priorityShimSurface": [
+      "moment.locale()",
+      "moment.duration()",
+      "moment.unix()",
+      "moment.utc()",
+      "moment.updateLocale()",
+      "moment().format()",
+      "moment().add()",
+      "moment().startOf()",
+      "moment().diff()",
+      "moment().fromNow()",
+      "moment().subtract()"
+    ]
+  },
+  "modules": [
+    {
+      "moduleFolder": "DailyXKCD-----Blastitt",
+      "moduleName": "DailyXKCD",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "DailyXKCD.js"
+      ]
+    },
+    {
+      "moduleFolder": "JIR-Tarifa-luz-----jirsis",
+      "moduleName": "JIR-Tarifa-luz",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "date",
+        "diff"
+      ],
+      "usageFiles": [
+        "JIR-tarifa-luz.js"
+      ]
+    },
+    {
+      "moduleFolder": "MM-concert-calendar-----muilpp",
+      "moduleName": "MM-concert-calendar",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "concertcalendar.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-1-Second-A-Day-----GaryLChew",
+      "moduleName": "MMM-1-Second-A-Day",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-AC-aseag-----j-hiller",
+      "moduleName": "MMM-AC-aseag",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "diff"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-AQI-----ryck",
+      "moduleName": "MMM-AQI",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-AQI.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-AVStock-----lavolp3",
+      "moduleName": "MMM-AVStock",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-AVStock.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-AccuWeatherForecastDeluxe-----maxbethge",
+      "moduleName": "MMM-AccuWeatherForecastDeluxe",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-AccuWeatherForecastDeluxe.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Afvalwijzer-----gertperdZA",
+      "moduleName": "MMM-Afvalwijzer",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format",
+        "getTime",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-Afvalwijzer.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-AlarmClock-----fewieden",
+      "moduleName": "MMM-AlarmClock",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "format",
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "diff"
+      ],
+      "usageFiles": [
+        "MMM-AlarmClock.js",
+        "templates/MMM-AlarmClock.njk"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Anycubic-----balassy",
+      "moduleName": "MMM-Anycubic",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Anycubic.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Astrology-----Cowboysdude",
+      "moduleName": "MMM-Astrology",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Astrology.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-AvfallshentingOslo-----Blixhavn",
+      "moduleName": "MMM-AvfallshentingOslo",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-AvfallshentingOslo.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Avinor-----KAG",
+      "moduleName": "MMM-Avinor",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Avinor.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BCFerries-----stonecrown",
+      "moduleName": "MMM-BCFerries",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-BCFerries.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BMW-CC-----Mykle1",
+      "moduleName": "MMM-BMW-CC",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-BMW-CC.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BMW-DS-----Mykle1",
+      "moduleName": "MMM-BMW-DS",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-BMW-DS.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BMW-OW-----Mykle1",
+      "moduleName": "MMM-BMW-OW",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-BMW-OW.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BMWConnected-----jannekalliola",
+      "moduleName": "MMM-BMWConnected",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-BMWConnected.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BackgroundSlideshow-----darickc",
+      "moduleName": "MMM-BackgroundSlideshow",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-BackgroundSlideshow.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Biathlon-----2hdlockness",
+      "moduleName": "MMM-Biathlon",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Biathlon.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BiathlonResults-----Grena",
+      "moduleName": "MMM-BiathlonResults",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "endOf",
+        "filter",
+        "format",
+        "fromNow",
+        "isAfter",
+        "month",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-BiathlonResults.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BinaryClock-----Nikobix",
+      "moduleName": "MMM-BinaryClock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-BinaryClock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Bixi-----Nicolas Truong",
+      "moduleName": "MMM-Bixi",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Bixi.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-BornBeforeDate-----justjim1220",
+      "moduleName": "MMM-BornBeforeDate",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-BornBeforeDate.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-COVID19-----bibaldo",
+      "moduleName": "MMM-COVID19",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-COVID19.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CTA-----NateDee",
+      "moduleName": "MMM-CTA",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-CTA.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CalDAV-Tasks-----Coernel82",
+      "moduleName": "MMM-CalDAV-Tasks",
+      "filesScanned": 8,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "webDavHelper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CalendarExt3-----MMRIZE",
+      "moduleName": "MMM-CalendarExt3",
+      "filesScanned": 8,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "getDate",
+        "getFullYear",
+        "getMonth",
+        "valueOf"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-CalendarExt3.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CalendarExt3Agenda-----MMRIZE",
+      "moduleName": "MMM-CalendarExt3Agenda",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "getDate",
+        "getFullYear",
+        "getMonth"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-CalendarExt3Agenda.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CalendarExtMinimonth-----klaernie",
+      "moduleName": "MMM-CalendarExtMinimonth",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "unix"
+      ],
+      "directChainFunctions": [
+        "endOf",
+        "format",
+        "locale",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-CalendarExtMiniMonth.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CalendarExtPlan-----klaernie",
+      "moduleName": "MMM-CalendarExtPlan",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "add",
+        "endOf",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-CalendarExtPlan.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CalendarExtTimeline-----klaernie",
+      "moduleName": "MMM-CalendarExtTimeline",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "add",
+        "endOf",
+        "format",
+        "hour",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-CalendarExtTimeline.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CalendarTodayTomorrow-----Qunu",
+      "moduleName": "MMM-CalendarTodayTomorrow",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "localeData",
+        "tz",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "clone",
+        "endOf",
+        "format",
+        "isBetween",
+        "startOf",
+        "subtract",
+        "toDate",
+        "utcOffset"
+      ],
+      "usageFiles": [
+        "MMM-CalendarTodayTomorrow.js",
+        "calendarutils.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CalendarWeek-----heskja",
+      "moduleName": "MMM-CalendarWeek",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "localeData",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "calendar",
+        "endOf",
+        "format",
+        "fromNow",
+        "isBetween",
+        "isSame",
+        "startOf",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-CalendarWeek.js",
+        "calendarfetcher.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Callmonitor-Current-Call-----armybean",
+      "moduleName": "MMM-Callmonitor-Current-Call",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [
+        "diff",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Callmonitor-Current-Call.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Caltrain-----zzflops",
+      "moduleName": "MMM-Caltrain",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [
+        "local"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CanadianPublicWeatherAlerts-----aSouchereau",
+      "moduleName": "MMM-CanadianPublicWeatherAlerts",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-CanadianPublicWeatherAlerts.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Canvas-----Dale Belt",
+      "moduleName": "MMM-Canvas",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Canvas.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CanvasCalendar-----Dale Belt",
+      "moduleName": "MMM-CanvasCalendar",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "localeData",
+        "tz",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "tz"
+      ],
+      "usageFiles": [
+        "MMM-CanvasCalendar.js",
+        "calendarfetcherutils.js",
+        "calendarutils.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CardDavBirthdaysProvider-----Ulrich Wisser",
+      "moduleName": "MMM-CardDavBirthdaysProvider",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Census-----Mykle1",
+      "moduleName": "MMM-Census",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Census.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Chess-Daily-----nout-kleef",
+      "moduleName": "MMM-Chess-Daily",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-Chess-Daily.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Climacell-Hourly-----Mykle1",
+      "moduleName": "MMM-Climacell-Hourly",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Climacell-Hourly.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Config-----sdetweil",
+      "moduleName": "MMM-Config",
+      "filesScanned": 26,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "tz"
+      ],
+      "usageFiles": [
+        "module_installer/runserver.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CountDown-----daterrell",
+      "moduleName": "MMM-CountDown",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [
+        "milliseconds",
+        "year"
+      ],
+      "usageFiles": [
+        "MMM-CountDown.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CoupleDays-----wiesty",
+      "moduleName": "MMM-CoupleDays",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-CoupleDays.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CracowMPK-----wkra",
+      "moduleName": "MMM-CracowMPK",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-CracowMPK.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CricketScores-----dsouzadrian",
+      "moduleName": "MMM-CricketScores",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-CricketScores.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CrisisInformationSweden-----Pejjo",
+      "moduleName": "MMM-CrisisInformationSweden",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "diff"
+      ],
+      "usageFiles": [
+        "MMM-CrisisInformationSweden.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Cronixie-----timophey",
+      "moduleName": "MMM-Cronixie",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "hour",
+        "minute",
+        "second"
+      ],
+      "usageFiles": [
+        "MMM-Cronixie.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-CulversFOTD-----dcwestra",
+      "moduleName": "MMM-CulversFOTD",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js",
+        "test.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DBF-Navigator-----Paschke",
+      "moduleName": "MMM-DBF-Navigator",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "valueOf"
+      ],
+      "usageFiles": [
+        "MMM-DBF-Navigator.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DWD-WarnWeather-----LukeSkywalker92",
+      "moduleName": "MMM-DWD-WarnWeather",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-DWD-WarnWeather.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DailyAlarm-----eouia",
+      "moduleName": "MMM-DailyAlarm",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-DailyAlarm.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DailyBuddhismWisdom-----anthpham",
+      "moduleName": "MMM-DailyBuddhismWisdom",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-DailyBuddhismWisdom.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DarkSkyForecast-----jclarke0000",
+      "moduleName": "MMM-DarkSkyForecast",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-DarkSkyForecast.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DateCounter-----alltopafi",
+      "moduleName": "MMM-DateCounter",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "diff",
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-DateCounter.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DateOnly-----grabenhenrich",
+      "moduleName": "MMM-DateOnly",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-DateOnly.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DefaultWeatherAnimated-----MatthiPi",
+      "moduleName": "MMM-DefaultWeatherAnimated",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "weather.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DenHaag-TrashCalendar-----cokceken",
+      "moduleName": "MMM-DenHaag-TrashCalendar",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-DenHaag-trashcalendar.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DigClock-----justjim1220",
+      "moduleName": "MMM-DigClock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-DigClock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DigitalAlarmClock-----justjim1220",
+      "moduleName": "MMM-DigitalAlarmClock",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "add",
+        "format",
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "diff"
+      ],
+      "usageFiles": [
+        "MMM-DigitalAlarmClock.js",
+        "MMM-DigitalAlarmClock.njk"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DiscordWatch-----smiche",
+      "moduleName": "MMM-DiscordWatch",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-DiscordWatch.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DisneyWaitTimes-----gberg927",
+      "moduleName": "MMM-DisneyWaitTimes",
+      "filesScanned": 14,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-DisneyWaitTimes.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Dreambox-----Ax-LED",
+      "moduleName": "MMM-Dreambox",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Dreambox.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-DropboxWallpaper-----Mong-ni",
+      "moduleName": "MMM-DropboxWallpaper",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "format",
+        "isValid"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Dtu-----pixxelfriend",
+      "moduleName": "MMM-Dtu",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Dtu.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-EARTH-----Mykle1",
+      "moduleName": "MMM-EARTH",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-EARTH.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-EFA-departures-----sourceforge807",
+      "moduleName": "MMM-EFA-departures",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ELMPrayerTime-----Moin Ahmed",
+      "moduleName": "MMM-ELMPrayerTime",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "unix"
+      ],
+      "usageFiles": [
+        "MMM-ELMPrayerTime.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-EarthquakeAlerts-----dathbe",
+      "moduleName": "MMM-EarthquakeAlerts",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "tz"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Ecowatt-----tttooommm56",
+      "moduleName": "MMM-Ecowatt",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "diff",
+        "isSame"
+      ],
+      "usageFiles": [
+        "MMM-Ecowatt.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Elvira-----balassy",
+      "moduleName": "MMM-Elvira",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Elvira.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-EnphaseSolar-----matt-thurling",
+      "moduleName": "MMM-EnphaseSolar",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-EnphaseSolar.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Entur-tavle-----Arve",
+      "moduleName": "MMM-Entur-tavle",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [
+        "add",
+        "diff",
+        "local"
+      ],
+      "usageFiles": [
+        "MMM-Entur-tavle.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Ethos-----Helpi90",
+      "moduleName": "MMM-Ethos",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Ethos.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-F1-----jupadin",
+      "moduleName": "MMM-F1",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-F1.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-FOSHKplugin-PWS-Observations-----olicat",
+      "moduleName": "MMM-FOSHKplugin-PWS-Observations",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-FOSHKplugin-PWS-Observations.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-FRITZ-Box-Callmonitor-py3-----drtorchwood",
+      "moduleName": "MMM-FRITZ-Box-Callmonitor-py3",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "diff",
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-FRITZ-Box-Callmonitor-py3.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-FSAPI-----MarcLandis",
+      "moduleName": "MMM-FSAPI",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-FSAPI.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Face-Multi-User-Recognition-SMAI-----jimbydude",
+      "moduleName": "MMM-Face-Multi-User-Recognition-SMAI",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "hour"
+      ],
+      "usageFiles": [
+        "MMM-Face-Multi-User-Recognition-SMAI.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-FamilyWeekCalendar-----pixxelfriend",
+      "moduleName": "MMM-FamilyWeekCalendar",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "localeData",
+        "tz",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "isBetween",
+        "subtract",
+        "tz"
+      ],
+      "usageFiles": [
+        "MMM-FamilyWeekCalendar.js",
+        "calendarfetcherutils.js",
+        "calendarutils.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-FinParcel-----jesmak",
+      "moduleName": "MMM-FinParcel",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-FinParcel.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Fish-----nigel-daniels",
+      "moduleName": "MMM-Fish",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Fish.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Flickr-----kapsolas",
+      "moduleName": "MMM-Flickr",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Flickr.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-FlipClock-----MarcLandis",
+      "moduleName": "MMM-FlipClock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-FlipClock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Flo-----KAG",
+      "moduleName": "MMM-Flo",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Flo.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-FloGraph-----KAG",
+      "moduleName": "MMM-FloGraph",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-FloGraph.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Formula1-----ian",
+      "moduleName": "MMM-Formula1",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format",
+        "second",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-Formula1.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Fortune-----JasonMcE",
+      "moduleName": "MMM-Fortune",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Fortune.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-FreeBox-Monitor-----tataille",
+      "moduleName": "MMM-FreeBox-Monitor",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-FreeBox-Monitor.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Fuel-----fewieden",
+      "moduleName": "MMM-Fuel",
+      "filesScanned": 11,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "utc"
+      ],
+      "usageFiles": [
+        "apis/nsw.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Fuel-NSW-----bughaver",
+      "moduleName": "MMM-Fuel-NSW",
+      "filesScanned": 35,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Fuel-NSW.js",
+        "src/frontend/Frontend.ts"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Futar-----balassy",
+      "moduleName": "MMM-Futar",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "tz"
+      ],
+      "usageFiles": [
+        "MMM-Futar.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-GPSWeather-----mochman",
+      "moduleName": "MMM-GPSWeather",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-GPSWeather.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Gas-----cowboysdude",
+      "moduleName": "MMM-Gas",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Gas.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Gitlab-MergeRequests-----jkschoen",
+      "moduleName": "MMM-Gitlab-MergeRequests",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Gitlab-MergeRequests.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-GmailFeed-----shaneapowell",
+      "moduleName": "MMM-GmailFeed",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-GmailFeed.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-GoogleBirthdaysProvider-----PalatinCoder",
+      "moduleName": "MMM-GoogleBirthdaysProvider",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-GoogleCalendar-----randomBrainstormer",
+      "moduleName": "MMM-GoogleCalendar",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "localeData",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "calendar",
+        "format",
+        "fromNow",
+        "startOf",
+        "valueOf"
+      ],
+      "usageFiles": [
+        "MMM-GoogleCalendar.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-GoogleDocs-Notes-----No3x",
+      "moduleName": "MMM-GoogleDocs-Notes",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-GoogleDocs-Notes.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-GooglePhotos-----hermanho",
+      "moduleName": "MMM-GooglePhotos",
+      "filesScanned": 11,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format",
+        "fromNow",
+        "isAfter",
+        "isBefore"
+      ],
+      "usageFiles": [
+        "GPhotos.js",
+        "MMM-GooglePhotos.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-GoogleTasks-----Spydersoft Consulting",
+      "moduleName": "MMM-GoogleTasks",
+      "filesScanned": 16,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "src/MMM-GoogleTasks.ts"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Grocy-----B0neD0ct0r",
+      "moduleName": "MMM-Grocy",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": []
+    },
+    {
+      "moduleFolder": "MMM-HK-Transport-ETA-----winstonma",
+      "moduleName": "MMM-HK-Transport-ETA",
+      "filesScanned": 11,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "relativeTimeThreshold",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format",
+        "isValid"
+      ],
+      "usageFiles": [
+        "MMM-HK-Transport-ETA.js",
+        "providers/ctb.js",
+        "providers/kmb.js",
+        "providers/lrt.js",
+        "providers/mtrbus.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-HLTV-----Helpi90",
+      "moduleName": "MMM-HLTV",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-HLTV.js",
+        "templates/matches.njk"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-HabiticaStats-----delightedCrow, ArrayOfFrost",
+      "moduleName": "MMM-HabiticaStats",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-HabiticaStats.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Handball-Netz-----tschumel",
+      "moduleName": "MMM-Handball-Netz",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "diff",
+        "format",
+        "isSame",
+        "isoWeek",
+        "startOf",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-handball-netz.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-HappyHours-----aleckeller",
+      "moduleName": "MMM-HappyHours",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-HappyHours.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-HebrewCalendar-----neshkoli",
+      "moduleName": "MMM-HebrewCalendar",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": []
+    },
+    {
+      "moduleFolder": "MMM-Hello-Mirror-----Matzefication",
+      "moduleName": "MMM-Hello-Mirror",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Hello-Mirror.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-History-----Cowboysdude",
+      "moduleName": "MMM-History",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-History.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Hive-----flick116",
+      "moduleName": "MMM-Hive",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Hive.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-HomeAutomationNotifications-----john3300",
+      "moduleName": "MMM-HomeAutomationNotifications",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [
+        "fromNow",
+        "isAfter"
+      ],
+      "usageFiles": [
+        "MMM-HomeAutomationNotifications.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-HomeConnect-----djerik",
+      "moduleName": "MMM-HomeConnect",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-HomeConnect.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Homematic-Thermostats-----spitzlbergerj",
+      "moduleName": "MMM-Homematic-Thermostats",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "set"
+      ],
+      "usageFiles": [
+        "MMM-Homematic-Thermostats.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-IDF-LOCALTRANSPORT-----djey47",
+      "moduleName": "MMM-IDF-LOCALTRANSPORT",
+      "filesScanned": 80,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "clone",
+        "format",
+        "isAfter",
+        "seconds",
+        "toISOString",
+        "valueOf"
+      ],
+      "usageFiles": [
+        "src/client/dom/renderer.js",
+        "src/client/dom/renderer.spec.js",
+        "src/client/module.js",
+        "src/client/support/date.js",
+        "src/client/support/format.js",
+        "src/client/support/format.spec.js",
+        "src/server/citymapper/ResponseProcessor.js",
+        "src/server/citymapper/ResponseProcessor.spec.js",
+        "src/server/legacy/ResponseProcessor.js",
+        "src/server/legacy/ResponseProcessor.spec.js",
+        "src/server/legacy/TrafficResponseProcessor.js",
+        "src/server/legacy/TrafficResponseProcessor.spec.js",
+        "src/server/transilien-idf-mobi/ResponseProcessor.js",
+        "src/server/transilien-idf-mobi/ResponseProcessor.spec.js",
+        "tools/dev-server/mocks/legacy/schedule-rer.js",
+        "tools/dev-server/mocks/transilien/schedule.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-IMSA-----skylinrcr01",
+      "moduleName": "MMM-IMSA",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "startOf",
+        "year"
+      ],
+      "usageFiles": [
+        "MMM-IMSA.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-IPCam-----RedNax67",
+      "moduleName": "MMM-IPCam",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-IPCam.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ISS-----Mykle1",
+      "moduleName": "MMM-ISS",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-ISS.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-IdF-Transport-----FalseIlyu",
+      "moduleName": "MMM-IdF-Transport",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-IdF-Transport.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ImmichSlideShow-----pelaxa",
+      "moduleName": "MMM-ImmichSlideShow",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-ImmichSlideShow.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Instagram-----kapsolas",
+      "moduleName": "MMM-Instagram",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Instagram.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Instagram2020-----AlexanderSalter",
+      "moduleName": "MMM-Instagram2020",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Instagram2020.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-InstagramView-----doctorfree",
+      "moduleName": "MMM-InstagramView",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Jeedom-----tttooommm56",
+      "moduleName": "MMM-Jeedom",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale",
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Jeedom.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-JewishDate-----yohaybn",
+      "moduleName": "MMM-JewishDate",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "date",
+        "month",
+        "year"
+      ],
+      "usageFiles": [
+        "MMM-JewishDate.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-JsonTable-----Timdows",
+      "moduleName": "MMM-JsonTable",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-JsonTable.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Koket-by-Sodexo-----Alvinger",
+      "moduleName": "MMM-Koket-by-Sodexo",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format",
+        "startOf"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-LICE-----Mykle1",
+      "moduleName": "MMM-LICE",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-LICE.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-LINQConnectCalendar-----dathbe",
+      "moduleName": "MMM-LINQConnectCalendar",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-LINQConnectCalendar.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-LibrespotJava-----l3d00m",
+      "moduleName": "MMM-LibrespotJava",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-LibrespotJava.js",
+        "core/NPOS_DomBuilder.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-LilNounsTreasury-----XppaiCyberr",
+      "moduleName": "MMM-LilNounsTreasury",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-LilNounsTreasury.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Liquipedia-Matches-----buxxi",
+      "moduleName": "MMM-Liquipedia-Matches",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Liquipedia-Matches.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-LocalEvents-----dwoolridge",
+      "moduleName": "MMM-LocalEvents",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-LocalEvents.js",
+        "providers/google.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-LocalTransport-----CFenner",
+      "moduleName": "MMM-LocalTransport",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [
+        "format",
+        "locale"
+      ],
+      "usageFiles": [
+        "MMM-LocalTransport.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-LothianBuses-----tbouron",
+      "moduleName": "MMM-LothianBuses",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "diff"
+      ],
+      "usageFiles": [
+        "MMM-LothianBuses.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Lottery-----Mykle1",
+      "moduleName": "MMM-Lottery",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Lottery.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Luftdaten-----pixxelfriend",
+      "moduleName": "MMM-Luftdaten",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Luftdaten.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-LunarDate-----MMRIZE",
+      "moduleName": "MMM-LunarDate",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Lunartic-----Mykle1",
+      "moduleName": "MMM-Lunartic",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Lunartic.js",
+        "temporary fix/MMM-Lunartic.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Luxembourg-Public-Transport-----uxigene",
+      "moduleName": "MMM-Luxembourg-Public-Transport",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Luxembourg-Public-Transport.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MBTA-----edward-shen",
+      "moduleName": "MMM-MBTA",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "isSameOrAfter",
+        "toDate"
+      ],
+      "usageFiles": [
+        "MMM-MBTA.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MTA-NextBus-----Tie",
+      "moduleName": "MMM-MTA-NextBus",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-MTA-NextBus.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MacAddressScan-----doctorfree",
+      "moduleName": "MMM-MacAddressScan",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "diff"
+      ],
+      "usageFiles": [
+        "MMM-MacAddressScan.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MagicReplicator-----ivlovric",
+      "moduleName": "MMM-MagicReplicator",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Mashie-Skolmat-----Alvinger",
+      "moduleName": "MMM-Mashie-Skolmat",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format",
+        "hour",
+        "startOf"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MealieMenu-----zanix",
+      "moduleName": "MMM-MealieMenu",
+      "filesScanned": 7,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "max",
+        "min",
+        "unix"
+      ],
+      "directChainFunctions": [
+        "add",
+        "diff",
+        "format",
+        "isBefore",
+        "isSame",
+        "startOf",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-MealieMenu.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Memo-----schnibel",
+      "moduleName": "MMM-Memo",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-Memo.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Meniny-----andersarstrand",
+      "moduleName": "MMM-Meniny",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Meniny.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MensaMax-----fuerst",
+      "moduleName": "MMM-MensaMax",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-MensaMax.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Mensamuc-----wiesty",
+      "moduleName": "MMM-Mensamuc",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format",
+        "year"
+      ],
+      "usageFiles": [
+        "MMM-Mensamuc.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MicrosoftToDo-----thobach",
+      "moduleName": "MMM-MicrosoftToDo",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add"
+      ],
+      "usageFiles": [
+        "MMM-MicrosoftToDo.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Minigjenbruksstasjon-----Blixhavn",
+      "moduleName": "MMM-Minigjenbruksstasjon",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "isBetween",
+        "isoWeekday"
+      ],
+      "usageFiles": [
+        "MMM-Minigjenbruksstasjon.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MktIndex-----thess",
+      "moduleName": "MMM-MktIndex",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-MktIndex.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Moed-----supermem613",
+      "moduleName": "MMM-Moed",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "tz"
+      ],
+      "directChainFunctions": [
+        "format",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-Moed.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MoonPhase-----Nolan Kingdon",
+      "moduleName": "MMM-MoonPhase",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": []
+    },
+    {
+      "moduleFolder": "MMM-MotionControl-----Nischi",
+      "moduleName": "MMM-MotionControl",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "isBetween"
+      ],
+      "usageFiles": [
+        "MMM-MotionControl.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MotionDetector-----rejas",
+      "moduleName": "MMM-MotionDetector",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-MotionDetector.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MovieInfo-----fewieden",
+      "moduleName": "MMM-MovieInfo",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MusicButler-----jrettsch",
+      "moduleName": "MMM-MusicButler",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-MusicButler.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyBMW-----Jargendas",
+      "moduleName": "MMM-MyBMW",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-MyBMW.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyCalendar-----dbeltjr",
+      "moduleName": "MMM-MyCalendar",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale",
+        "tz"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format",
+        "fromNow",
+        "isBetween",
+        "startOf",
+        "subtract",
+        "toDate",
+        "utcOffset"
+      ],
+      "usageFiles": [
+        "MMM-MyCalendar.js",
+        "calendarutils.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyCommute-----Jeff Clarke",
+      "moduleName": "MMM-MyCommute",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [
+        "format",
+        "hour"
+      ],
+      "usageFiles": [
+        "MMM-MyCommute.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyDutchWeather-----HTilburgs",
+      "moduleName": "MMM-MyDutchWeather",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-MyDutchWeather.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyGarbage-----HTilburgs",
+      "moduleName": "MMM-MyGarbage",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "diff",
+        "format",
+        "isSameOrAfter",
+        "isValid",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-MyGarbage.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyPrayerTimes-----HTilburgs",
+      "moduleName": "MMM-MyPrayerTimes",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-MyPrayerTimes.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyScoreboard-----dathbe",
+      "moduleName": "MMM-MyScoreboard",
+      "filesScanned": 10,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "tz",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "add",
+        "diff",
+        "format",
+        "isAfter",
+        "month",
+        "subtract",
+        "tz",
+        "year"
+      ],
+      "usageFiles": [
+        "MMM-MyScoreboard.js",
+        "node_helper.js",
+        "providers/CPL.js",
+        "providers/ESPN.js",
+        "providers/ESPN_Scorepanel.js",
+        "providers/PWHL.js",
+        "providers/SNET.js",
+        "providers/SNET_YD.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyTraktSeries-----TheVieiraAkA",
+      "moduleName": "MMM-MyTraktSeries",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-MyTraktSeries.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyVolvo-----mazim",
+      "moduleName": "MMM-MyVolvo",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "format",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-MyVolvo.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyWastePickup-----Jeff Clarke",
+      "moduleName": "MMM-MyWastePickup",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-MyWastePickup.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-MyWeather-----Martin Kooij",
+      "moduleName": "MMM-MyWeather",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-MyWeather.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NBA-----jupadin",
+      "moduleName": "MMM-NBA",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "endOf",
+        "format",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-NBA.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NEO-----Mykle1",
+      "moduleName": "MMM-NEO",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-NEO.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NFL-----fewieden",
+      "moduleName": "MMM-NFL",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-NFL.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NINA-----jalibu & KristjanESPERANTO",
+      "moduleName": "MMM-NINA",
+      "filesScanned": 14,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-NINA.js",
+        "src/frontend/Frontend.ts"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NL-Busses-----CE-Timmer",
+      "moduleName": "MMM-NL-Busses",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-NL-Busses.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NL-rain-intensity-----theKampany",
+      "moduleName": "MMM-NL-rain-intensity",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": []
+    },
+    {
+      "moduleFolder": "MMM-NLDepartureTimes-----vpilo",
+      "moduleName": "MMM-NLDepartureTimes",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-NLDepartureTimes.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NMBS-Connection-----Jan-Bart",
+      "moduleName": "MMM-NMBS-Connection",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "unix",
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-NMBS-Connection.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NOAA3-----mumblebaj",
+      "moduleName": "MMM-NOAA3",
+      "filesScanned": 7,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format",
+        "local",
+        "unix"
+      ],
+      "usageFiles": [
+        "MMM-NOAA3.js",
+        "node_helper.js",
+        "providers/aw.js",
+        "providers/ds.js",
+        "providers/ow.js",
+        "providers/wb.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NOAAForecast-----supermem613",
+      "moduleName": "MMM-NOAAForecast",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "parseZone"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-NOAAForecast.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NRL-----ewwyumyuck",
+      "moduleName": "MMM-NRL",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Namnsdag-----Menturan",
+      "moduleName": "MMM-Namnsdag",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "hour"
+      ],
+      "usageFiles": [
+        "MMM-Namnsdag.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Netatmo-----CFenner",
+      "moduleName": "MMM-Netatmo",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Netatmo-Presence-----AgP42",
+      "moduleName": "MMM-Netatmo-Presence",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Netatmo-Presence.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NetworkConnection-----Slamet PS",
+      "moduleName": "MMM-NetworkConnection",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-NetworkConnection.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NetworkScanner-----nsprawling",
+      "moduleName": "MMM-NetworkScanner",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "diff"
+      ],
+      "usageFiles": [
+        "MMM-NetworkScanner.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NewsFeedTicker-----justjim1220",
+      "moduleName": "MMM-NewsFeedTicker",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-NewsFeedTicker.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NextEvent-----cure",
+      "moduleName": "MMM-NextEvent",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "endOf",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-NextEvent.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NexusMetroRTI-----jcktwd",
+      "moduleName": "MMM-NexusMetroRTI",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-NexusMetroRTI.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Nixie-Clock-----Nikobix",
+      "moduleName": "MMM-Nixie-Clock",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Nixie-Clock-working.js",
+        "MMM-Nixie-Clock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Nordic-Electrical-Spot-Prices-----cSharpBastard",
+      "moduleName": "MMM-Nordic-Electrical-Spot-Prices",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "mmm-nordic-electrical-spot-prices.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-NounsTreasury-----XppaiCyberr",
+      "moduleName": "MMM-NounsTreasury",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-NounsTreasury.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OClock-----eouia",
+      "moduleName": "MMM-OClock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "locale"
+      ],
+      "usageFiles": [
+        "MMM-OClock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OddEven-----daterrell",
+      "moduleName": "MMM-OddEven",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "dayOfYear",
+        "diff"
+      ],
+      "usageFiles": [
+        "MMM-OddEven.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OneDrive-----hermanho",
+      "moduleName": "MMM-OneDrive",
+      "filesScanned": 36,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "isAfter",
+        "isBefore"
+      ],
+      "usageFiles": [
+        "MMM-OneDrive.js",
+        "node_helper.js",
+        "src/frontend/main.ts"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OneTouchReveal-----Canonip",
+      "moduleName": "MMM-OneTouchReveal",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format",
+        "startOf",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-OneTouchReveal.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OpenSprinkler-----johnny-co",
+      "moduleName": "MMM-OpenSprinkler",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "calendar"
+      ],
+      "usageFiles": [
+        "MMM-OS-Utilities.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OpenTherm-----RedNax67",
+      "moduleName": "MMM-OpenTherm",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-OpenTherm.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OpenWeatherForecast-----Tom-Hirschberger",
+      "moduleName": "MMM-OpenWeatherForecast",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-OpenWeatherForecast.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OpenWeatherMapForecast-----MarcLandis",
+      "moduleName": "MMM-OpenWeatherMapForecast",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-OpenWeatherMapForecast.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OpeningHours-----mumblebaj",
+      "moduleName": "MMM-OpeningHours",
+      "filesScanned": 7,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale"
+      ],
+      "directChainFunctions": [
+        "weekday"
+      ],
+      "usageFiles": [
+        "MMM-OpeningHours.js",
+        "Parsers.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-OpenmapWeather-----SathyarajV",
+      "moduleName": "MMM-OpenmapWeather",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-OpenmapWeather.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Oura2-----themox",
+      "moduleName": "MMM-Oura2",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Oura2.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PC-Stats-----mykle1",
+      "moduleName": "MMM-PC-Stats",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-PC-Stats.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PGA-----dathbe",
+      "moduleName": "MMM-PGA",
+      "filesScanned": 9,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "local",
+        "year"
+      ],
+      "usageFiles": [
+        "ESPN.js",
+        "MMM-PGA.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PIR-----mboskamp",
+      "moduleName": "MMM-PIR",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-PIR.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PaprikaMenu-----kaelspencer",
+      "moduleName": "MMM-PaprikaMenu",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "diff",
+        "format",
+        "isBefore",
+        "isSame",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-PaprikaMenu.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Parcel-----martinkooij",
+      "moduleName": "MMM-Parcel",
+      "filesScanned": 7,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "calendar",
+        "diff",
+        "format",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-Parcel.js",
+        "normalize-aftership.js",
+        "normalize-tracktry.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Peloton-----chicohernando",
+      "moduleName": "MMM-Peloton",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "format"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Peloton.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PilotWX-----Mykle1",
+      "moduleName": "MMM-PilotWX",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-PilotWX.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Pinfo-----Salekur Rahaman",
+      "moduleName": "MMM-Pinfo",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Pinfo.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Ping-----CFenner",
+      "moduleName": "MMM-Ping",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "ping.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Pir-----Coernel82",
+      "moduleName": "MMM-Pir",
+      "filesScanned": 22,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "src/components/screenDisplayer.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PirateSkyForecast-----b-reich",
+      "moduleName": "MMM-PirateSkyForecast",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-PirateSkyForecast.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PlaceInfo-----njwilliams",
+      "moduleName": "MMM-PlaceInfo",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-PlaceInfo.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Podcast2-----Ax-LED",
+      "moduleName": "MMM-Podcast2",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Podcast2.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PokemonGOEvents-----bigfoott",
+      "moduleName": "MMM-PokemonGOEvents",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-PokemonGOEvents.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Postnord-----bureus",
+      "moduleName": "MMM-Postnord",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Postnord.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PrayerTime-----Slamet PS",
+      "moduleName": "MMM-PrayerTime",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "unix"
+      ],
+      "usageFiles": [
+        "MMM-PrayerTime.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PregnancyTracker-----gowthamravichandran",
+      "moduleName": "MMM-PregnancyTracker",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-PregnancyTracker.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-PublicTransportVVO-----ostfilinchen",
+      "moduleName": "MMM-PublicTransportVVO",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-PublicTransportVVO.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RBB-Weather-----nkl-kst",
+      "moduleName": "MMM-RBB-Weather",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-RBB-Weather.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RNV-----bogenpirat",
+      "moduleName": "MMM-RNV",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-RNV.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RNV-----jalibu & KristjanESPERANTO",
+      "moduleName": "MMM-RNV",
+      "filesScanned": 14,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-RNV.js",
+        "src/frontend/Frontend.ts",
+        "templates/MMM-RNV.njk"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RNV-----jupadin",
+      "moduleName": "MMM-RNV",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "updateLocale",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "format",
+        "utc"
+      ],
+      "usageFiles": [
+        "MMM-RNV.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ROVA-trashcalendar-----jeroenpeters1986",
+      "moduleName": "MMM-ROVA-trashcalendar",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-ROVA-trashcalendar.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RainForecast-FR-----tttooommm56",
+      "moduleName": "MMM-RainForecast-FR",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-RainForecast-FR.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RandomQuotes-----Jacopo1891",
+      "moduleName": "MMM-RandomQuotes",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-RandomQuotes.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Recipe-----Cowboysdude",
+      "moduleName": "MMM-Recipe",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Recipe.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Reddito-----bittiez",
+      "moduleName": "MMM-Reddito",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Reddito.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RelativeTime-i18n-----buxxi",
+      "moduleName": "MMM-RelativeTime-i18n",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locales",
+        "updateLocale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-RelativeTime-i18n.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RemoteCompliments-----mitchelltmarino",
+      "moduleName": "MMM-RemoteCompliments",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "hour",
+        "hours",
+        "seconds"
+      ],
+      "usageFiles": [
+        "Drive/DriveUtils.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RemoteTemperature-----balassy",
+      "moduleName": "MMM-RemoteTemperature",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-RemoteTemperature.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ResRobot-----Alvinger",
+      "moduleName": "MMM-ResRobot",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "diff",
+        "isBefore"
+      ],
+      "usageFiles": [
+        "MMM-ResRobot.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-RubbishCollection-----nikobix",
+      "moduleName": "MMM-RubbishCollection",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "RubishCollection.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Ruter-----CatoAntonsen",
+      "moduleName": "MMM-Ruter",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale",
+        "now"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-Ruter.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SL-PublicTransport-----ulrichwisser",
+      "moduleName": "MMM-SL-PublicTransport",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-SL-PublicTransport.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SNCF-----tsoonav",
+      "moduleName": "MMM-SNCF",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "diff",
+        "format",
+        "toISOString"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SORT-----Mykle1",
+      "moduleName": "MMM-SORT",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SORT.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Sbanken-----reidarw",
+      "moduleName": "MMM-Sbanken",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "isSame",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-Sbanken.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Screen-Powersave-Notification-----Tom-Hirschberger",
+      "moduleName": "MMM-Screen-Powersave-Notification",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Screen-Powersave-Notification.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SeawayLockTraffic-----ProfKP",
+      "moduleName": "MMM-SeawayLockTraffic",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SeawayLockTraffic.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Selfieshot-----Brian Hepler",
+      "moduleName": "MMM-Selfieshot",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ShipmentTracking-----fewieden",
+      "moduleName": "MMM-ShipmentTracking",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-ShipmentTracking.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ShulSchedule-----supermem613",
+      "moduleName": "MMM-ShulSchedule",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-ShulSchedule.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SimpleNotifyTrashDay-----sabo10o29",
+      "moduleName": "MMM-SimpleNotifyTrashDay",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-SimpleNotifyTrashDay.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Skyss-----PabloDons",
+      "moduleName": "MMM-Skyss",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "isMoment"
+      ],
+      "directChainFunctions": [
+        "add"
+      ],
+      "usageFiles": [
+        "MMM-Skyss.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SleeperNFL-----jackmeyer",
+      "moduleName": "MMM-SleeperNFL",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SleeperNFL.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Smappee-----CFenner",
+      "moduleName": "MMM-Smappee",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-Smappee.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SmartWebDisplay-----ItsMeBrille",
+      "moduleName": "MMM-SmartWebDisplay",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SmartWebDisplay.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Soliscloud-----dekinet",
+      "moduleName": "MMM-Soliscloud",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Soliscloud.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SpaceLaunchNow-----koxm",
+      "moduleName": "MMM-SpaceLaunchNow",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SpaceLaunchNow.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SpaceX-----koxm",
+      "moduleName": "MMM-SpaceX",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SpaceX.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Spotify-----skuethe",
+      "moduleName": "MMM-Spotify",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "Spotify.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SpotifyReleases-----Ruud14",
+      "moduleName": "MMM-SpotifyReleases",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "format",
+        "isBefore"
+      ],
+      "usageFiles": [
+        "SpotifyConnector.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SteamPlaytime-----buxxi",
+      "moduleName": "MMM-SteamPlaytime",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "flatMap",
+        "format",
+        "subtract",
+        "valueOf"
+      ],
+      "usageFiles": [
+        "MMM-SteamPlaytime.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Strava-----ianperrin",
+      "moduleName": "MMM-Strava",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale",
+        "monthsShort",
+        "unix",
+        "weekdaysShort"
+      ],
+      "directChainFunctions": [
+        "month",
+        "startOf",
+        "weekday",
+        "year"
+      ],
+      "usageFiles": [
+        "MMM-Strava.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Stundenplan-----AJocham",
+      "moduleName": "MMM-Stundenplan",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Stundenplan.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SugarValue-----balharrie",
+      "moduleName": "MMM-SugarValue",
+      "filesScanned": 18,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "defineLocale",
+        "invalid",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "fromNow",
+        "lang",
+        "locale",
+        "localeData"
+      ],
+      "usageFiles": [
+        "MMM-SugarValue.js",
+        "src/index.ts"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SunRiseSet-----Mykle1",
+      "moduleName": "MMM-SunRiseSet",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "local"
+      ],
+      "usageFiles": [
+        "MMM-SunRiseSet.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SunnyPortal-----linuxtuxie",
+      "moduleName": "MMM-SunnyPortal",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "monthsShort"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SunnyPortal.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Surf-----Privacywonk",
+      "moduleName": "MMM-Surf",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "unix"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-Surf.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SweepClock-----mumblebaj",
+      "moduleName": "MMM-SweepClock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "tz"
+      ],
+      "usageFiles": [
+        "MMM-SweepClock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SwissCommute-----nixnuex",
+      "moduleName": "MMM-SwissCommute",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-SwissCommute.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SwissSmartUrbanHeatMap-----git-pesche",
+      "moduleName": "MMM-SwissSmartUrbanHeatMap",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-SwissSmartUrbanHeatMap.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SwissStationboard-----vanhoekd",
+      "moduleName": "MMM-SwissStationboard",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-SwissStationboard.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SynPhotoSlideshow-----spydersoft-consulting",
+      "moduleName": "MMM-SynPhotoSlideshow",
+      "filesScanned": 38,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "src/MMM-SynPhotoSlideshow.ts",
+        "src/frontend/ModuleController.ts"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SystemMonitor-----btastic",
+      "moduleName": "MMM-SystemMonitor",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SystemMonitor.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-SystemStats-----fry0815",
+      "moduleName": "MMM-SystemStats",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-SystemStats.js",
+        "moment-duration-format.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TAF-----imperian",
+      "moduleName": "MMM-TAF",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "local"
+      ],
+      "usageFiles": [
+        "MMM-TAF.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TFL-Arrivals-----MMM-TFL-Arrivals",
+      "moduleName": "MMM-TFL-Arrivals",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-TFL-Arrivals.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TMB-----jaumebosch",
+      "moduleName": "MMM-TMB",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-TMB.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TRV-WastePlan-----reidarw",
+      "moduleName": "MMM-TRV-WastePlan",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-TRV-WastePlan.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TelegramBot-----MMRIZE",
+      "moduleName": "MMM-TelegramBot",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-TelegramBot.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TelegramCommands-----doctorfree",
+      "moduleName": "MMM-TelegramCommands",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Tesla-----mattdy",
+      "moduleName": "MMM-Tesla",
+      "filesScanned": 15,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "diff",
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-Tesla.js",
+        "dataitems/charge.js",
+        "dataitems/state.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TextPerWeek-----retroflex",
+      "moduleName": "MMM-TextPerWeek",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "week"
+      ],
+      "usageFiles": [
+        "MMM-TextPerWeek.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TheSpaceDevs-----AlexMNet",
+      "moduleName": "MMM-TheSpaceDevs",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-TheSpaceDevs.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ThemeParkWaitTimes-----vita10gy",
+      "moduleName": "MMM-ThemeParkWaitTimes",
+      "filesScanned": 9,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-ThemeParkWaitTimes.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TiHimawari8Earth-----Zhouxichun",
+      "moduleName": "MMM-TiHimawari8Earth",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-TiHimawari8Earth.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TimeTreeEvent-----sabo10o29",
+      "moduleName": "MMM-TimeTreeEvent",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-TimeTreeEvent.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TodayBlock-----ex247",
+      "moduleName": "MMM-TodayBlock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-TodayBlock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Todoist-----CBrooker",
+      "moduleName": "MMM-Todoist",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Todoist.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Traffic-----saml-dev",
+      "moduleName": "MMM-Traffic",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "isAfter",
+        "isBefore"
+      ],
+      "usageFiles": [
+        "MMM-Traffic.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TrainConnections-----Bangee44",
+      "moduleName": "MMM-TrainConnections",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "trainconnections.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TrainTimesRTT-----tticehurst",
+      "moduleName": "MMM-TrainTimesRTT",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-TrainTimesRTT.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Trakt-----Kiina",
+      "moduleName": "MMM-Trakt",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "add",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-trakt.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TransLoc-----OrangleHoopla",
+      "moduleName": "MMM-TransLoc",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Transloc.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Trello-----benjaminflessner",
+      "moduleName": "MMM-Trello",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-Trello.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-TvheadendDVR-----CreepinJesus",
+      "moduleName": "MMM-TvheadendDVR",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-TvheadendDVR.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-UKLiveBusStopInfo-----nwootton",
+      "moduleName": "MMM-UKLiveBusStopInfo",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-UKLiveBusStopInfo.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-UKLiveTrainDepartures-----XBCreepinJesus",
+      "moduleName": "MMM-UKLiveTrainDepartures",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "local"
+      ],
+      "usageFiles": [
+        "MMM-UKLiveTrainDepartures.js",
+        "Trains.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-UKMOWeatherWarnings-----maloakes",
+      "moduleName": "MMM-UKMOWeatherWarnings",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [
+        "add",
+        "endOf"
+      ],
+      "usageFiles": [
+        "testing/createDummyWarnings.js",
+        "warningitemobject.js",
+        "warningsobject.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-UKNationalRail-----mattdy",
+      "moduleName": "MMM-UKNationalRail",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-UKNationalRail.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-UKTide-----Captsi",
+      "moduleName": "MMM-UKTide",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-UKTide.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-UVIndex-----rsperezn",
+      "moduleName": "MMM-UVIndex",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-UVIndex.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-VESAR-----ilsegs",
+      "moduleName": "MMM-VESAR",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "month",
+        "startOf",
+        "year"
+      ],
+      "usageFiles": [
+        "MMM-VESAR.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-VTA-Live-----nigel-daniels",
+      "moduleName": "MMM-VTA-Live",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Vasttrafik-PublicTransport-----Xkhi",
+      "moduleName": "MMM-Vasttrafik-PublicTransport",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Vasttrafik-PublicTransport.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-VietNamEventsCalendar-----phungorquan",
+      "moduleName": "MMM-VietNamEventsCalendar",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "calendar",
+        "endOf",
+        "format",
+        "fromNow",
+        "isBetween",
+        "startOf",
+        "subtract"
+      ],
+      "usageFiles": [
+        "MMM-VietNamEventsCalendar.js",
+        "src/calendarfetcher.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-ViewNotifications-----glitch452",
+      "moduleName": "MMM-ViewNotifications",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-ViewNotifications.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-VigiCrues-----Grena",
+      "moduleName": "MMM-VigiCrues",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "diff"
+      ],
+      "usageFiles": [
+        "MMM-VigiCrues.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-VigilanceMeteoFrance-----Grena",
+      "moduleName": "MMM-VigilanceMeteoFrance",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "isBefore",
+        "isBetween"
+      ],
+      "usageFiles": [
+        "MMM-VigilanceMeteoFrance.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Vindsiden-----erikmohn",
+      "moduleName": "MMM-Vindsiden",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-vindsiden.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Voice-Control-----dr4ke616",
+      "moduleName": "MMM-Voice-Control",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Voice-Control.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-VolvoOnCall-----eouia",
+      "moduleName": "MMM-VolvoOnCall",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "format",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-VolvoOnCall.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Vrr-----Klizzy",
+      "moduleName": "MMM-Vrr",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "now",
+        "updateLocale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-Vrr.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WMATA-----btoconnor",
+      "moduleName": "MMM-WMATA",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-WMATA.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WWI-----Mykle1",
+      "moduleName": "MMM-WWI",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "local"
+      ],
+      "usageFiles": [
+        "MMM-WWI.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WaterReminder-----thiagomides",
+      "moduleName": "MMM-WaterReminder",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-WaterReminder.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Weather-SMHI-Hourly-----Menturan",
+      "moduleName": "MMM-Weather-SMHI-Hourly",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "format",
+        "hour",
+        "seconds"
+      ],
+      "usageFiles": [
+        "MMM-Weather-SMHI-Hourly.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WeatherAlerts-----gjonesme",
+      "moduleName": "MMM-WeatherAlerts",
+      "filesScanned": 7,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-WeatherAlerts.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WeatherBridge-----karsten13",
+      "moduleName": "MMM-WeatherBridge",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-WeatherBridge.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WeatherChart-----mtatsuma",
+      "moduleName": "MMM-WeatherChart",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-WeatherChart.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WeatherGraph-----FlatPepsi",
+      "moduleName": "MMM-WeatherGraph",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "unix",
+        "weekdaysShort"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-WeatherGraph.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WeatherHourlyByDay-----dWoolridge",
+      "moduleName": "MMM-WeatherHourlyByDay",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "isBetween"
+      ],
+      "usageFiles": [
+        "MMM-WeatherHourlyByDay.js",
+        "weatherobjecthourlybyday.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WebHookAlerts-----PJTewkesbury-GitHub",
+      "moduleName": "MMM-WebHookAlerts",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WeeklySchedule-----pinsdorf",
+      "moduleName": "MMM-WeeklySchedule",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [
+        "endOf",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-WeeklySchedule.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WeeksCalendar-----arnaudsnomsed",
+      "moduleName": "MMM-WeeksCalendar",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "date",
+        "daysInMonth",
+        "endOf",
+        "startOf",
+        "weekday"
+      ],
+      "usageFiles": [
+        "MMM-WeeksCalendar.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WestBerksBinDay-----hdurdle",
+      "moduleName": "MMM-WestBerksBinDay",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "startOf"
+      ],
+      "usageFiles": [
+        "MMM-WestBerksBinDay.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WienerLinien-----fewieden",
+      "moduleName": "MMM-WienerLinien",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "to"
+      ],
+      "usageFiles": [
+        "MMM-WienerLinien.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WorldTides-----yawns",
+      "moduleName": "MMM-WorldTides",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format",
+        "startOf",
+        "unix"
+      ],
+      "usageFiles": [
+        "MMM-WorldTides.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Worldclock-----ulrichwisser",
+      "moduleName": "MMM-Worldclock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "tz"
+      ],
+      "usageFiles": [
+        "MMM-Worldclock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-WunderGround-----RedNax67",
+      "moduleName": "MMM-WunderGround",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "isAfter"
+      ],
+      "usageFiles": [
+        "MMM-WunderGround.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-XKCD-----jupadin",
+      "moduleName": "MMM-XKCD",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-XKCD.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Yahrzeit-----supermem613",
+      "moduleName": "MMM-Yahrzeit",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "tz"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-YandexWeather-----igor-semenov",
+      "moduleName": "MMM-YandexWeather",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-YandexWeather.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Year-Progress-----ryck",
+      "moduleName": "MMM-Year-Progress",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "isLeapYear"
+      ],
+      "usageFiles": [
+        "MMM-Year-Progress.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-YrThen-----fmandal",
+      "moduleName": "MMM-YrThen",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-YrThen.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-Zmanim-----supermem613",
+      "moduleName": "MMM-Zmanim",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-alertRsensoralerts-----sqall01",
+      "moduleName": "MMM-alertRsensoralerts",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-alertRsensoralerts.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-anotherNewsFeed-----MMRIZE",
+      "moduleName": "MMM-anotherNewsFeed",
+      "filesScanned": 10,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-anotherNewsFeed.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-aviationwx-----stuloh",
+      "moduleName": "MMM-aviationwx",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "diff",
+        "local"
+      ],
+      "usageFiles": [
+        "MMM-aviationwx.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-bergfex-----MajorChris1983",
+      "moduleName": "MMM-bergfex",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-bergfex.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-bernwordclock-----splattner",
+      "moduleName": "MMM-bernwordclock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-bernwordclock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-birthdays-----amitchone",
+      "moduleName": "MMM-birthdays",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "diff",
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-bustimes-----cirdan",
+      "moduleName": "MMM-bustimes",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-bustimes.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-darksky-hourly-----JacquesCedric",
+      "moduleName": "MMM-darksky-hourly",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "weekdaysShort"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-darksky-hourly.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-evcc-SolarYield-----Coernel82",
+      "moduleName": "MMM-evcc-SolarYield",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": []
+    },
+    {
+      "moduleFolder": "MMM-forecast-io-----dmcinnes",
+      "moduleName": "MMM-forecast-io",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "weekdaysShort"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-forecast-io.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-germanwordclock-----princemaxwell",
+      "moduleName": "MMM-germanwordclock",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-germanwordclock.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-google-route-----mrdis",
+      "moduleName": "MMM-google-route",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-google-route.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-gpsd-----brentpabst",
+      "moduleName": "MMM-gpsd",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-gpsd.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-homeassistant-sensors-----Snille",
+      "moduleName": "MMM-homeassistant-sensors",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-homeassistant-sensors.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-horoscope-----MMM-horoscope",
+      "moduleName": "MMM-horoscope",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "add",
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-horoscope.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-iCal-ToDo-----nixnuex",
+      "moduleName": "MMM-iCal-ToDo",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "localeData",
+        "updateLocale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "clone",
+        "endOf",
+        "format",
+        "from",
+        "fromNow",
+        "startOf",
+        "todo"
+      ],
+      "usageFiles": [
+        "MMM-iCal-ToDo.js",
+        "todofetcher.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-iFrame-Ping-----AgP42",
+      "moduleName": "MMM-iFrame-Ping",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "unix"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-iFrame-Ping.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-kudos-----thomo",
+      "moduleName": "MMM-kudos",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-kudos.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-lyft-----kyle-kelly",
+      "moduleName": "MMM-lyft",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-lyft.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-meteoblueCurrent-----Bangee44",
+      "moduleName": "MMM-meteoblueCurrent",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-meteoblueCurrent.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-moonraker-----btastic",
+      "moduleName": "MMM-moonraker",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-nixie-clock-----Isaac-the-Man",
+      "moduleName": "MMM-nixie-clock",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "isMoment",
+        "updateOffset",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "tz"
+      ],
+      "usageFiles": [
+        "MMM-nixie-clock.js",
+        "moment-timezone-with-data.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-nstreinen-----qistoph",
+      "moduleName": "MMM-nstreinen",
+      "filesScanned": 5,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "nstreinen.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-octoprint-----btastic",
+      "moduleName": "MMM-octoprint",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "utc"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-pekavm-----ytmytm",
+      "moduleName": "MMM-pekavm",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration"
+      ],
+      "directChainFunctions": [
+        "add",
+        "subtract",
+        "utc"
+      ],
+      "usageFiles": [
+        "MMM-pekavm.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-pollen-----devduisburg",
+      "moduleName": "MMM-pollen",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-pollen.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-profile-----Kurtern84",
+      "moduleName": "MMM-profile",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "hour"
+      ],
+      "usageFiles": [
+        "MMM-Profile.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-qnapDownloadStation-----flick116",
+      "moduleName": "MMM-qnapDownloadStation",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-qnapDownloadStation.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-shabbat-----SheyaBernstein",
+      "moduleName": "MMM-shabbat",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "calendar"
+      ],
+      "usageFiles": [
+        "MMM-shabbat.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-swisstransport-----Bangee44",
+      "moduleName": "MMM-swisstransport",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "utc"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-swisstransport.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-syslog-----marcinomen",
+      "moduleName": "MMM-syslog",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format",
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM-syslog.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-uber-----kyle-kelly",
+      "moduleName": "MMM-uber",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-uber.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-vCard2Calendar-----n-gao",
+      "moduleName": "MMM-vCard2Calendar",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": true,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "year"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-vvsDeparture-----Fabian Hinder",
+      "moduleName": "MMM-vvsDeparture",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "MMM-vvsDeparture.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM-weatherforecast-----jharttech",
+      "moduleName": "MMM-weatherforecast",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "MMM-weatherforecast.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMM_ncdeck-----motey",
+      "moduleName": "MMM_ncdeck",
+      "filesScanned": 3,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "fromNow"
+      ],
+      "usageFiles": [
+        "MMM_ncdeck.js"
+      ]
+    },
+    {
+      "moduleFolder": "MMT-WeatherSkycons-----khassel",
+      "moduleName": "MMT-WeatherSkycons",
+      "filesScanned": 6,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "weathertheme.js"
+      ]
+    },
+    {
+      "moduleFolder": "MagicMirror-Olympia-Module-----ghlasse",
+      "moduleName": "MagicMirror-Olympia-Module",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "olympia.js"
+      ]
+    },
+    {
+      "moduleFolder": "PlutoTime-----croxis",
+      "moduleName": "PlutoTime",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "PlutoTime.js"
+      ]
+    },
+    {
+      "moduleFolder": "WallberryTheme-----mvlbarcelos",
+      "moduleName": "WallberryTheme",
+      "filesScanned": 14,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale",
+        "weekdaysShort"
+      ],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "WB-clock/WB-clock.js",
+        "WB-weather/WB-weather.js"
+      ]
+    },
+    {
+      "moduleFolder": "calendar_monthly-----KirAsh4",
+      "moduleName": "calendar_monthly",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "locale"
+      ],
+      "directChainFunctions": [
+        "add",
+        "date",
+        "daysInMonth",
+        "format",
+        "month",
+        "subtract",
+        "weekday",
+        "year"
+      ],
+      "usageFiles": [
+        "calendar_monthly.js"
+      ]
+    },
+    {
+      "moduleFolder": "mm-hsl-timetable-----ZakarFin",
+      "moduleName": "mm-hsl-timetable",
+      "filesScanned": 4,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "hslAPIv1.js",
+        "hslAPIv2.js",
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "mm-tkl-timetable-----eerotal",
+      "moduleName": "mm-tkl-timetable",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "mmm-dropbox-----michael5r",
+      "moduleName": "mmm-dropbox",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "node_helper.js"
+      ]
+    },
+    {
+      "moduleFolder": "mmm-food2fork-recipes-----Spectroman",
+      "moduleName": "mmm-food2fork-recipes",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "mmm-food2fork-recipes.js"
+      ]
+    },
+    {
+      "moduleFolder": "mmm-moon-phases-----spectroman",
+      "moduleName": "mmm-moon-phases",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "mmm-moon-phases.js"
+      ]
+    },
+    {
+      "moduleFolder": "mmm-uah-currency-----wzooff",
+      "moduleName": "mmm-uah-currency",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "mmm-uah-currency.js"
+      ]
+    },
+    {
+      "moduleFolder": "mmm-uk-pollen-forecast-----szech",
+      "moduleName": "mmm-uk-pollen-forecast",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": false,
+      "staticFunctions": [],
+      "directChainFunctions": [
+        "toString"
+      ],
+      "usageFiles": [
+        "mmm-uk-pollen-forecast.js"
+      ]
+    },
+    {
+      "moduleFolder": "mmm-weatherchart-----paphko",
+      "moduleName": "mmm-weatherchart",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "mmm-weatherchart.js"
+      ]
+    },
+    {
+      "moduleFolder": "mmm-zabbix-alerts-----Spectroman",
+      "moduleName": "mmm-zabbix-alerts",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "mmm-zabbix-alerts.js"
+      ]
+    },
+    {
+      "moduleFolder": "publika-----alonsourbano",
+      "moduleName": "publika",
+      "filesScanned": 24,
+      "usesMoment": true,
+      "likelyCoreProvided": false,
+      "hasMomentImportRequire": true,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "duration",
+        "unix"
+      ],
+      "directChainFunctions": [
+        "asMinutes",
+        "day",
+        "diff",
+        "format",
+        "isBetween",
+        "subtract"
+      ],
+      "usageFiles": [
+        "node_helper.js",
+        "publika.js"
+      ]
+    },
+    {
+      "moduleFolder": "twitControl-----Blastitt",
+      "moduleName": "twitControl",
+      "filesScanned": 2,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [],
+      "directChainFunctions": [],
+      "usageFiles": [
+        "twitControl.js"
+      ]
+    },
+    {
+      "moduleFolder": "wuforecast-----MattLugar",
+      "moduleName": "wuforecast",
+      "filesScanned": 1,
+      "usesMoment": true,
+      "likelyCoreProvided": true,
+      "hasMomentImportRequire": false,
+      "hasOwnDependency": false,
+      "hasCoreIndicator": true,
+      "staticFunctions": [
+        "locale"
+      ],
+      "directChainFunctions": [
+        "format"
+      ],
+      "usageFiles": [
+        "wuforecast.js"
+      ]
+    }
+  ]
+}
